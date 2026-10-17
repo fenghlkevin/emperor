@@ -1,3 +1,4 @@
+import {openCourtSpecial} from './court-special-ui.mjs';
 import {openCourtRoyal} from './court-royal-ui.mjs';
 import {openCourtCampaign} from './court-campaign-ui.mjs';
 import {openCourtGarrison} from './court-garrison-ui.mjs';
@@ -189,6 +190,7 @@ function summonCourt(id){
 }
 function navigateCourt(action,options={}){
  if(warEmergency(state)){openEntry({id:'war-minister'});return;}
+ if(action==='special'){openCourtSpecial(state,root,next=>commitGame(next,{court:true}),()=>render());return;}
  if(action==='royal'){openCourtRoyal(state,root,next=>commitGame(next,{court:true}),()=>render());return;}
  if(action==='campaign'){openCourtCampaign(state,root,next=>commitGame(next,{court:true}),()=>render(),()=>openEntry({id:'war-minister'}));return;}
  if(action==='garrison'||action==='garrison-purchase'){openCourtGarrison(state,root,next=>commitGame(next,{court:true}),()=>render(),{kind:action==='garrison-purchase'?'purchase':'inventory'});return;}

@@ -64,7 +64,8 @@
     "test:court-garrison": "electron tests/court-garrison-desktop.cjs",
     "test:court-campaign": "electron tests/court-campaign-desktop.cjs",
     "test:court-defense": "electron tests/court-defense-desktop.cjs",
-    "test:court-royal": "electron tests/court-royal-desktop.cjs"
+    "test:court-royal": "electron tests/court-royal-desktop.cjs",
+    "test:court-special": "electron tests/court-special-desktop.cjs"
   },
   "devDependencies": {
     "electron": "^38.0.0",
