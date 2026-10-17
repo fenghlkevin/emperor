@@ -1,3 +1,4 @@
+import {courtMilitaryFeedback} from './court-military-feedback.mjs';
 import {courtFiscalFeedback} from './court-fiscal-feedback.mjs';
 import {countrySummary} from './domestic.mjs';
 import {foodForecast} from './food-relief.mjs';
@@ -21,6 +22,8 @@ export function courtAgenda(s){
  if(q.net<0||fiscal?.turn===s.turn&&fiscal.debtAdded>0)add('deficit','赋','国用渐紧',`${fiscal?`第${fiscal.turn}旬常规实收${fiscal.income}两、实付${fiscal.paid}两、欠支转国债${fiscal.debtAdded}两。`:''}当前预计每旬${q.net<0?'短支':'结余'}${Math.abs(q.net).toLocaleString('zh-CN')}两，宜核定赋税与支用。`,'revenue-minister','tax');
  const disaster=q.provinces.find(p=>activeDisaster(p,s.turn));
  if(disaster)add('disaster','灾',`${disaster.name}有灾`,`地方报${DISASTERS.find(([id])=>id===disaster.disaster.kind)?.[1]??'灾情'}，请阅当地钱粮与营建。`,'works-minister','atlas-build',disaster.id,true);
+ const military=courtMilitaryFeedback(s);
+ if(military?.turn===s.turn)add('military-result','军','战后归营复奏',`第${military.turn}旬：${military.lines.join('；')}`,'war-minister','garrison');
  const governed=q.provinces.map(p=>({p,f:courtGovernanceFeedback(s,p.id)})).filter(x=>x.f?.turn===s.turn).sort((a,b)=>b.f.cost-a.f.cost)[0];
  if(governed)add('governance','治',`${governed.p.name}地方复奏`,`第${governed.f.turn}旬实支${governed.f.cost}两：${governed.f.reasons.join('；')}`,'personnel-minister','personnel-delegate',governed.p.id);
  const receipt=courtDiplomaticFeedback(s).find(r=>r.turn===s.turn);
