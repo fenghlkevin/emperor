@@ -15,3 +15,17 @@ test('construction petition reports real progress and disappears with the projec
  const s=newGame('营建'),p=s.domestic.provinces[0];p.construction.project={building:'granaries',progress:2,startedTurn:1};
  const a=courtAgenda(s);assert.match(a.find(x=>x.id==='works').summary,/2\/4/);p.construction.project=null;assert.ok(!courtAgenda(s).some(x=>x.id==='works'));
 });
+
+test('long work memorial uses real progress and keeps paused work urgent without mutating state',async()=>{
+ const {executeSpecial}=await import('../src/special-buildings.mjs');
+ const {courtSpecialPlan}=await import('../src/court-special.mjs');
+ let s=newGame('工地');s=executeSpecial(s,courtSpecialPlan(s,{kind:'special',provinceId:'guannei',building:'shigu'}).command).state;
+ const p=s.domestic.provinces.find(p=>p.id==='guannei');p.population.professions.militia=0;
+ const before=JSON.stringify(s),item=courtAgenda(s).find(a=>a.id==='special');
+ assert.ok(item.urgent);assert.equal(item.action,'special');assert.equal(item.provinceId,'guannei');assert.match(item.summary,/民伕不足/);assert.match(item.summary,/0\/108/);assert.equal(JSON.stringify(s),before);
+ s.domestic.specialWorks.project=null;assert.ok(!courtAgenda(s).some(a=>a.id==='special'));
+});
+test('muster memorial opens complete equipment and soldier scene',()=>{
+ const s=newGame('军营'),item=courtAgenda(s).find(a=>a.id==='muster');
+ assert.ok(item);assert.equal(item.action,'garrison');
+});
