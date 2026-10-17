@@ -12,6 +12,7 @@ function closeThen(d,fn){d.onclose=()=>d.remove();d.close();d.remove();fn();}
 const task=(icon,title,note,action,extra={})=>({icon,title,note,action,...extra});
 function officeTasks(id){
  if(id==='revenue-minister')return [task('仓','察看钱粮','在舆图上选州，购粮或调拨','atlas-grain'),task('赋','核定赋税','逐州调整后续税率','tax'),task('籍','整顿户籍','在山河图核对新增生产人口','census'),task('册','查阅户部簿册','按需精查原始财政记录','register')];
+ if(id==='rites-minister')return [task('邦','展图通邦','世界图选国、核阅国约与颁发国书','diplomacy'),task('祀','祭祀祈福','查阅既有祈福典礼与礼部精册','register')];
  if(id==='justice-minister')return [task('案','听案裁决','核阅真实密查、在押与结案记录','justice'),task('册','查阅刑部簿册','按需精查完整记录','register')];
  if(id==='personnel-minister')return [task('任','选贤任能','人物与官位对照，拟定调任','personnel'),task('治','委任地方','察看治理者与预算，决定亲理或委任','personnel-delegate'),task('举','开科求贤','筹备制举，衔接真实录用会场','personnel-exam'),task('册','查阅吏部簿册','按需精查名录与历史','register')];
  if(id==='personnel-deputy')return [task('人','考察在朝人物','查阅实际能力，比较现任与候任','personnel'),task('册','查阅人物簿册','按需精查在朝与历史记录','register')];

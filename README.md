@@ -129,6 +129,7 @@ npm run test:court-play
 npm run test:court-fiscal
 npm run test:court-personnel
 npm run test:court-justice
+npm run test:court-diplomacy
 ```
 
 桌面验收需要可访问图形界面的本机会话。当前业务测试共四百七十六项，已全部通过；这不代表所有桌面场景与系统版本均已完成验收。
