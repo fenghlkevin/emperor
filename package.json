@@ -56,7 +56,8 @@
     "test:balance-ui": "electron tests/balance-desktop.cjs",
     "test:court-play": "electron tests/court-play-desktop.cjs",
     "preview:court": "electron scripts/preview-court.cjs",
-    "test:court-fiscal": "electron tests/court-fiscal-desktop.cjs"
+    "test:court-fiscal": "electron tests/court-fiscal-desktop.cjs",
+    "test:court-personnel": "electron tests/court-personnel-desktop.cjs"
   },
   "devDependencies": {
     "electron": "^38.0.0",

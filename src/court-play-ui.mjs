@@ -12,6 +12,8 @@ function closeThen(d,fn){d.onclose=()=>d.remove();d.close();d.remove();fn();}
 const task=(icon,title,note,action,extra={})=>({icon,title,note,action,...extra});
 function officeTasks(id){
  if(id==='revenue-minister')return [task('仓','察看钱粮','在舆图上选州，购粮或调拨','atlas-grain'),task('赋','核定赋税','逐州调整后续税率','tax'),task('籍','整顿户籍','在山河图核对新增生产人口','census'),task('册','查阅户部簿册','按需精查原始财政记录','register')];
+ if(id==='personnel-minister')return [task('任','选贤任能','人物与官位对照，拟定调任','personnel'),task('治','委任地方','察看治理者与预算，决定亲理或委任','personnel-delegate'),task('举','开科求贤','筹备制举，衔接真实录用会场','personnel-exam'),task('册','查阅吏部簿册','按需精查名录与历史','register')];
+ if(id==='personnel-deputy')return [task('人','考察在朝人物','查阅实际能力，比较现任与候任','personnel'),task('册','查阅人物簿册','按需精查在朝与历史记录','register')];
  if(id==='works-minister')return [task('建','择地营建','在州图中选建物，预览工期','atlas-build'),task('田','兴修产业','开发土地与调配职业','industry'),task('工','呈上工部簿册','查阅特殊工程与完整营建记录','register')];
  if(id==='war-minister'||id==='central-general')return [task('兵','点检各营','地图察看兵籍，发令调拨','atlas-army'),task('备','采办军装','按兵种购入完整装备','purchase'),task('令','议定军务',id==='central-general'?'训练驻军与长期练兵':'配装出征，或处置当前战事','register')];
  if(id==='prime-minister')return [task('奏','听本旬奏事','展开御案上首份奏折','petition'),task('图','察看天下','钱粮、军营与地方营建','atlas-grain'),task('政','议定国策','宗室、立储、功业与国政','register')];
