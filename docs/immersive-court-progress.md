@@ -87,4 +87,4 @@
 - `npm test`：480项业务测试、24组类型契约通过；新增4项只读预览/真实来访绑定、四约方向、拒绝/婚姻边界与跨旬/年度现金守恒测试。`test:court-negotiation`、`test:court-diplomacy` 与 `test:court-play` 实际 Electron 验收通过。受改动影响的 `test:envoy-visits` 更新为当前完整交互路径。
 - 查看1440宽、900×680与390宽截图；御批及风险固定可见，修正完整使臣画面裁切。待落印输入锁定、取消、空值、失败回滚、防重复已验证。
 - 没有新增持久化字段、类型、存档版本或结算规则；不更改寿元/财粮/兵装平衡。证据在 `outputs/immersive-court/negotiation/`，仓库截图 `docs/screenshots/court-immersive-negotiation.png`。
-- 下一项完整军务，无已知阻碍；外交标记完成仅限该项，整项朝堂方案仍未全部完成。
+- 实现提交 `8a9c2ea`。下一项完整军务，无已知阻碍；外交标记完成仅限该项，整项朝堂方案仍未全部完成。
