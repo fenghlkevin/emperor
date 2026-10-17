@@ -196,7 +196,7 @@ function navigateCourt(action,options={}){
  if(action==='royal'){openCourtRoyal(state,root,next=>commitGame(next,{court:true}),()=>render());return;}
  if(action==='campaign'){openCourtCampaign(state,root,next=>commitGame(next,{court:true}),()=>render(),()=>openEntry({id:'war-minister'}));return;}
  if(action==='garrison'||action==='garrison-purchase'){openCourtGarrison(state,root,next=>commitGame(next,{court:true}),()=>render(),{kind:action==='garrison-purchase'?'purchase':'inventory'});return;}
- if(action==='diplomacy'){openCourtDiplomacy(state,root,next=>commitGame(next,{court:true}),()=>render(),{onMeet:()=>{if(transition(next=>leaveRoom(next))){render();openEntry({id:'liming',ritesOnly:true});}}});return;}
+ if(action==='diplomacy'){openCourtDiplomacy(state,root,next=>commitGame(next,{court:true}),()=>render(),{countryId:options.countryId,onMeet:()=>{if(transition(next=>leaveRoom(next))){render();openEntry({id:'liming',ritesOnly:true});}}});return;}
  if(action==='justice'){openCourtJustice(state,root,next=>commitGame(next,{court:true}),()=>render());return;}
  if(['personnel','personnel-delegate','personnel-exam'].includes(action)){openCourtPersonnel(state,root,next=>commitGame(next,{court:true}),()=>render(),{view:action==='personnel-delegate'?'delegate':action==='personnel-exam'?'exam':'assign',onRetire:()=>{if(warEmergency(state)){openEntry({id:'war-minister'});return;}if(transition(next=>leaveRoom(next)))render();}});return;}
  if(action.startsWith('atlas-')){openCourtAtlas(state,root,next=>commitGame(next,{court:true}),()=>render(),{tab:action.slice(6),provinceId:options.provinceId,fiscalKind:options.fiscalKind});return;}
