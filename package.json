@@ -53,7 +53,9 @@
     "test:types": "node scripts/validate-data-contract.mjs",
     "test:playability": "node scripts/audit-playability.mjs",
     "test:crisis-recovery": "electron tests/crisis-recovery-desktop.cjs",
-    "test:balance-ui": "electron tests/balance-desktop.cjs"
+    "test:balance-ui": "electron tests/balance-desktop.cjs",
+    "test:court-play": "electron tests/court-play-desktop.cjs",
+    "preview:court": "electron scripts/preview-court.cjs"
   },
   "devDependencies": {
     "electron": "^38.0.0",
