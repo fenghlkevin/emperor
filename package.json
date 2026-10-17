@@ -60,7 +60,8 @@
     "test:court-personnel": "electron tests/court-personnel-desktop.cjs",
     "test:court-justice": "electron tests/court-justice-desktop.cjs",
     "test:court-diplomacy": "electron tests/court-diplomacy-desktop.cjs",
-    "test:court-negotiation": "electron tests/court-negotiation-desktop.cjs"
+    "test:court-negotiation": "electron tests/court-negotiation-desktop.cjs",
+    "test:court-garrison": "electron tests/court-garrison-desktop.cjs"
   },
   "devDependencies": {
     "electron": "^38.0.0",
