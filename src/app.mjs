@@ -1,3 +1,4 @@
+import {openCourtRoyal} from './court-royal-ui.mjs';
 import {openCourtCampaign} from './court-campaign-ui.mjs';
 import {openCourtGarrison} from './court-garrison-ui.mjs';
 import {openCourtNegotiation} from './court-negotiation-ui.mjs';
@@ -188,6 +189,7 @@ function summonCourt(id){
 }
 function navigateCourt(action,options={}){
  if(warEmergency(state)){openEntry({id:'war-minister'});return;}
+ if(action==='royal'){openCourtRoyal(state,root,next=>commitGame(next,{court:true}),()=>render());return;}
  if(action==='campaign'){openCourtCampaign(state,root,next=>commitGame(next,{court:true}),()=>render(),()=>openEntry({id:'war-minister'}));return;}
  if(action==='garrison'||action==='garrison-purchase'){openCourtGarrison(state,root,next=>commitGame(next,{court:true}),()=>render(),{kind:action==='garrison-purchase'?'purchase':'inventory'});return;}
  if(action==='diplomacy'){openCourtDiplomacy(state,root,next=>commitGame(next,{court:true}),()=>render(),{onMeet:()=>{if(transition(next=>leaveRoom(next))){render();openEntry({id:'liming',ritesOnly:true});}}});return;}
