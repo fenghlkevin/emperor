@@ -68,4 +68,4 @@
 - 天牢复核显示实际性格、已服刑旬数、累计变化与下旬预计忠诚；复奏来自实际命令，跨旬沿用既有结算。没有新增持久化字段、类型、兼容版本或结算规则。
 - `npm test`：476项业务测试及24组类型契约通过。新增4项刑案纯逻辑测试；`test:court-justice` 与 `test:court-play` 实际 Electron 验收通过。取消、空值、保存失败/重试、防重复、收押/跨旬/释放、永久处斩、特赦人口与限次、停止密查、读档通过；查看并修正三尺寸截图，御批风险始终可见。
 - 实际样本：100两密查发现8名官员，沈文远收押后第2旬忠诚+1至31%，释放为民；许景行处斩；特赦归籍14975人，随后停止密查。记录与读档一致。
-- 证据：`outputs/immersive-court/justice/` 日志、结果、五张截图；仓库截图 `docs/screenshots/court-immersive-justice.png`。当前下一项外交，无已知阻碍。
+- 证据：`outputs/immersive-court/justice/` 日志、结果、五张截图；仓库截图 `docs/screenshots/court-immersive-justice.png`。实现提交 `8690947`。当前下一项外交，无已知阻碍。
