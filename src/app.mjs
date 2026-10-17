@@ -1,3 +1,4 @@
+import {openCourtHonors} from './court-honors-ui.mjs';
 import {openCourtSpecial} from './court-special-ui.mjs';
 import {openCourtRoyal} from './court-royal-ui.mjs';
 import {openCourtCampaign} from './court-campaign-ui.mjs';
@@ -190,6 +191,7 @@ function summonCourt(id){
 }
 function navigateCourt(action,options={}){
  if(warEmergency(state)){openEntry({id:'war-minister'});return;}
+ if(action==='honors'){openCourtHonors(state,root,next=>commitGame(next,{court:next.stats.life>0,exhaustion:next.stats.life>0}),()=>render(),()=>{render();root.querySelector('#reign-result')?.click();});return;}
  if(action==='special'){openCourtSpecial(state,root,next=>commitGame(next,{court:true}),()=>render());return;}
  if(action==='royal'){openCourtRoyal(state,root,next=>commitGame(next,{court:true}),()=>render());return;}
  if(action==='campaign'){openCourtCampaign(state,root,next=>commitGame(next,{court:true}),()=>render(),()=>openEntry({id:'war-minister'}));return;}

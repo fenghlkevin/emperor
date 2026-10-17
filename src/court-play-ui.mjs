@@ -18,7 +18,7 @@ function officeTasks(id){
  if(id==='personnel-deputy')return [task('人','考察在朝人物','查阅实际能力，比较现任与候任','personnel'),task('册','查阅人物簿册','按需精查在朝与历史记录','register')];
  if(id==='works-minister')return [task('建','择地营建','在州图中选建物，预览工期','atlas-build'),task('田','兴修产业','开发土地与调配职业','industry'),task('工','察看长工程','工程图选址、核阅民伕与真实进度','special'),task('册','工部精册','按需查阅原始营建记录','register')];
  if(id==='war-minister'||id==='central-general')return [task('兵','点检各营','军营舆图与武库，募兵遣兵和兵装共同调拨','garrison'),task('备','采办军装','按真实驻地采办完整装备','garrison-purchase'),task('阵','点将布阵','边境图选敌，点将配装出征','campaign'),task('册','查阅军务精册',id==='central-general'?'训练驻军与长期练兵':'战史、原始军籍与当前战事','register')];
- if(id==='prime-minister')return [task('奏','听本旬奏事','展开御案上首份奏折','petition'),task('图','察看天下','钱粮、军营与地方营建','atlas-grain'),task('嗣','察看宗室','玉牒选人、亲授与立储','royal'),task('工','察看长工程','全国特殊工程与分段进度','special'),task('政','国政精册','特殊工程、功业与既有终局','register')];
+ if(id==='prime-minister')return [task('奏','听本旬奏事','展开御案上首份奏折','petition'),task('图','察看天下','钱粮、军营与地方营建','atlas-grain'),task('嗣','察看宗室','玉牒选人、亲授与立储','royal'),task('工','察看长工程','全国特殊工程与分段进度','special'),task('冠','本朝功业','核阅封禅、功业与真实终局','honors'),task('政','国政精册','民政、军援、任期与原始记录','register')];
  if(id.endsWith('deputy'))return [task('图','察看州情','在舆图上选州查阅','atlas-grain'),task('册','呈上簿册','查阅本部完整原始记录','register')];
  return [task('议',id==='personnel-minister'?'选贤任能':id==='justice-minister'?'察吏断狱':'通使邻邦',id==='personnel-minister'?'考察官员、任命与科举':id==='justice-minister'?'查阅案情，决定调查与处置':'颁发国书，筹备接见外臣','register'),task('图','察看山河','查阅各州实情','atlas-grain')];
 }
