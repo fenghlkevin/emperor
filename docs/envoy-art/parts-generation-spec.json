@@ -1,0 +1,745 @@
+{
+  "base": "High-end realistic historical game MODULAR PARTS ATLAS. EXACT 5 COLUMNS x 7 ROWS, 1920x2688, 35 equal square cells. No margins, borders, labels, text, numbers. Row1 FIVE DIFFERENT BALD CLEAN-SHAVEN MALE HEADS and NECKS, ages30/40/50/60/70, NO hair, NO beard or moustache. Row2 FIVE SEPARATE FACIAL HAIR parts: thin moustache, moustache+goatee, short beard, long split beard, long grey beard. NO skin/head. Row3 FIVE SEPARATE culturally styled HAIR/wigs, face openings transparent, NO head/hat/beard. Row4 FIVE DISTINCT culturally styled HATS, NO head or hair. Row5 FIVE distinct CLOTHED TORSOS with broad folded sleeves hiding hands, neck opening empty, NO head/hair/beard/hat/jewelry. Row6 FIVE separate NECKLACE/BROOCH ORNAMENT SETS, no clothes/skin/head. Row7 FIVE OPAQUE painted SCREEN backgrounds in a warm Chinese reception hall, no person or table. Rows1-6 TRUE TRANSPARENT outside each isolated item. Each object remains fully inside its cell. Different designs and silhouettes, not recolors. Consistent frontal view and warm soft daylight. Museum-grade lifelike faces, detailed woven silk and wool, real fur fibers, engraved metals and gemstone textures like a lavish historical drama. Never flat vector, never cartoon. Each column within a row a distinct design. Cultural specification: ",
+  "profiles": {
+    "tubo": {
+      "hat": [
+        "wool",
+        "fur"
+      ],
+      "robe": [
+        "chuba"
+      ],
+      "hair": [
+        "braids",
+        "long"
+      ],
+      "ornament": [
+        "turquoise"
+      ],
+      "screen": "mountain",
+      "skin": "#bc8c69",
+      "colors": [
+        "#792e2c",
+        "#674b3c",
+        "#d3bc91"
+      ]
+    },
+    "nanzhao": {
+      "hat": [
+        "wrap",
+        "band"
+      ],
+      "robe": [
+        "embroidered"
+      ],
+      "hair": [
+        "bun",
+        "long"
+      ],
+      "ornament": [
+        "silver"
+      ],
+      "screen": "bamboo",
+      "skin": "#c99a77",
+      "colors": [
+        "#324f68",
+        "#466154",
+        "#895542"
+      ]
+    },
+    "korea": {
+      "hat": [
+        "winged"
+      ],
+      "robe": [
+        "court"
+      ],
+      "hair": [
+        "bun"
+      ],
+      "ornament": [
+        "jade"
+      ],
+      "screen": "crane",
+      "skin": "#d8ae8c",
+      "colors": [
+        "#668b7a",
+        "#596e88",
+        "#814e51"
+      ]
+    },
+    "japan": {
+      "hat": [
+        "eboshi"
+      ],
+      "robe": [
+        "layered"
+      ],
+      "hair": [
+        "bun"
+      ],
+      "ornament": [
+        "fan"
+      ],
+      "screen": "pine",
+      "skin": "#d7b394",
+      "colors": [
+        "#67546b",
+        "#3d566c",
+        "#8c7954"
+      ]
+    },
+    "steppe": {
+      "hat": [
+        "fur",
+        "pointed"
+      ],
+      "robe": [
+        "riding"
+      ],
+      "hair": [
+        "braids",
+        "long"
+      ],
+      "ornament": [
+        "bronze"
+      ],
+      "screen": "steppe",
+      "skin": "#b98c6b",
+      "colors": [
+        "#685342",
+        "#60644b",
+        "#89573c"
+      ]
+    },
+    "uyghur": {
+      "hat": [
+        "round",
+        "pointed"
+      ],
+      "robe": [
+        "brocade"
+      ],
+      "hair": [
+        "waves",
+        "long"
+      ],
+      "ornament": [
+        "gold"
+      ],
+      "screen": "garden",
+      "skin": "#c59a76",
+      "colors": [
+        "#a27a32",
+        "#426d79",
+        "#884448"
+      ]
+    },
+    "persia": {
+      "hat": [
+        "round",
+        "turban"
+      ],
+      "robe": [
+        "brocade"
+      ],
+      "hair": [
+        "waves"
+      ],
+      "ornament": [
+        "pearl"
+      ],
+      "screen": "garden",
+      "skin": "#c99b79",
+      "colors": [
+        "#78383d",
+        "#3a6556",
+        "#53657f"
+      ]
+    },
+    "arabia": {
+      "hat": [
+        "turban"
+      ],
+      "robe": [
+        "mantle"
+      ],
+      "hair": [
+        "waves",
+        "short"
+      ],
+      "ornament": [
+        "gold"
+      ],
+      "screen": "stars",
+      "skin": "#b78560",
+      "colors": [
+        "#ded0ad",
+        "#344e65",
+        "#675347"
+      ]
+    },
+    "rome": {
+      "hat": [
+        "band",
+        "round"
+      ],
+      "robe": [
+        "mantle"
+      ],
+      "hair": [
+        "waves"
+      ],
+      "ornament": [
+        "brooch"
+      ],
+      "screen": "mosaic",
+      "skin": "#d0a17e",
+      "colors": [
+        "#66506f",
+        "#435b77",
+        "#853f45"
+      ]
+    },
+    "india": {
+      "hat": [
+        "turban"
+      ],
+      "robe": [
+        "draped"
+      ],
+      "hair": [
+        "waves",
+        "bun"
+      ],
+      "ornament": [
+        "gold"
+      ],
+      "screen": "lotus",
+      "skin": "#9c694d",
+      "colors": [
+        "#b4793c",
+        "#9a4435",
+        "#d8c6a1"
+      ]
+    },
+    "west-turk": {
+      "hat": [
+        "pointed",
+        "fur"
+      ],
+      "robe": [
+        "riding"
+      ],
+      "hair": [
+        "braids",
+        "long"
+      ],
+      "ornament": [
+        "bronze"
+      ],
+      "screen": "steppe",
+      "skin": "#c29a76",
+      "colors": [
+        "#476350",
+        "#87503b",
+        "#b5a181"
+      ]
+    },
+    "gaochang": {
+      "hat": [
+        "wrap",
+        "round"
+      ],
+      "robe": [
+        "brocade"
+      ],
+      "hair": [
+        "short",
+        "waves"
+      ],
+      "ornament": [
+        "jade"
+      ],
+      "screen": "garden",
+      "skin": "#cba582",
+      "colors": [
+        "#b7a67e",
+        "#3e6482",
+        "#9b713b"
+      ]
+    },
+    "east-turk": {
+      "hat": [
+        "fur",
+        "pointed"
+      ],
+      "robe": [
+        "riding"
+      ],
+      "hair": [
+        "braids"
+      ],
+      "ornament": [
+        "bronze"
+      ],
+      "screen": "steppe",
+      "skin": "#bd906c",
+      "colors": [
+        "#3b5872",
+        "#504f48",
+        "#8e4f38"
+      ]
+    },
+    "khitan": {
+      "hat": [
+        "fur"
+      ],
+      "robe": [
+        "riding"
+      ],
+      "hair": [
+        "sidebraids"
+      ],
+      "ornament": [
+        "bronze"
+      ],
+      "screen": "pine",
+      "skin": "#bd8b68",
+      "colors": [
+        "#8c433c",
+        "#3c645f",
+        "#6e5142"
+      ]
+    },
+    "xi": {
+      "hat": [
+        "wool",
+        "fur"
+      ],
+      "robe": [
+        "chuba"
+      ],
+      "hair": [
+        "braids",
+        "long"
+      ],
+      "ornament": [
+        "silver"
+      ],
+      "screen": "pine",
+      "skin": "#c49a74",
+      "colors": [
+        "#8d7544",
+        "#5a6e50",
+        "#775e4b"
+      ]
+    },
+    "tokhara": {
+      "hat": [
+        "round"
+      ],
+      "robe": [
+        "brocade"
+      ],
+      "hair": [
+        "waves",
+        "long"
+      ],
+      "ornament": [
+        "pearl"
+      ],
+      "screen": "garden",
+      "skin": "#caa080",
+      "colors": [
+        "#4b7a6b",
+        "#994e44",
+        "#4e6382"
+      ]
+    },
+    "shule": {
+      "hat": [
+        "turban",
+        "wrap"
+      ],
+      "robe": [
+        "brocade"
+      ],
+      "hair": [
+        "waves"
+      ],
+      "ornament": [
+        "silver"
+      ],
+      "screen": "stars",
+      "skin": "#b88a65",
+      "colors": [
+        "#9c604b",
+        "#3e597b",
+        "#9b835d"
+      ]
+    },
+    "kucha": {
+      "hat": [
+        "round",
+        "band"
+      ],
+      "robe": [
+        "brocade"
+      ],
+      "hair": [
+        "waves"
+      ],
+      "ornament": [
+        "gold"
+      ],
+      "screen": "lotus",
+      "skin": "#cba583",
+      "colors": [
+        "#5b8c8c",
+        "#b19a6d",
+        "#965544"
+      ]
+    },
+    "tuyuhun": {
+      "hat": [
+        "pointed",
+        "wool"
+      ],
+      "robe": [
+        "chuba"
+      ],
+      "hair": [
+        "braids"
+      ],
+      "ornament": [
+        "turquoise"
+      ],
+      "screen": "mountain",
+      "skin": "#ba8966",
+      "colors": [
+        "#c2b193",
+        "#80523c",
+        "#48604d"
+      ]
+    },
+    "bolur": {
+      "hat": [
+        "wool"
+      ],
+      "robe": [
+        "chuba"
+      ],
+      "hair": [
+        "long",
+        "waves"
+      ],
+      "ornament": [
+        "silver"
+      ],
+      "screen": "mountain",
+      "skin": "#b48d70",
+      "colors": [
+        "#395f51",
+        "#8a574a",
+        "#7e7b70"
+      ]
+    },
+    "slavs": {
+      "hat": [
+        "fur",
+        "band"
+      ],
+      "robe": [
+        "mantle"
+      ],
+      "hair": [
+        "long",
+        "waves"
+      ],
+      "ornament": [
+        "brooch"
+      ],
+      "screen": "pine",
+      "skin": "#d9ad8a",
+      "colors": [
+        "#a9a082",
+        "#415e7d",
+        "#843f39"
+      ]
+    },
+    "franks": {
+      "hat": [
+        "band",
+        "round"
+      ],
+      "robe": [
+        "mantle"
+      ],
+      "hair": [
+        "waves",
+        "long"
+      ],
+      "ornament": [
+        "brooch"
+      ],
+      "screen": "mosaic",
+      "skin": "#d5a17e",
+      "colors": [
+        "#894640",
+        "#455c7b",
+        "#79604b"
+      ]
+    },
+    "siberia": {
+      "hat": [
+        "pointed",
+        "fur"
+      ],
+      "robe": [
+        "riding"
+      ],
+      "hair": [
+        "braids",
+        "long"
+      ],
+      "ornament": [
+        "silver"
+      ],
+      "screen": "steppe",
+      "skin": "#cfa384",
+      "colors": [
+        "#b9b19a",
+        "#376968",
+        "#737c85"
+      ]
+    },
+    "mohe": {
+      "hat": [
+        "fur",
+        "wool"
+      ],
+      "robe": [
+        "riding"
+      ],
+      "hair": [
+        "braids",
+        "sidebraids"
+      ],
+      "ornament": [
+        "bronze"
+      ],
+      "screen": "pine",
+      "skin": "#be936f",
+      "colors": [
+        "#62694d",
+        "#70523f",
+        "#85463d"
+      ]
+    },
+    "pyu": {
+      "hat": [
+        "wrap",
+        "band"
+      ],
+      "robe": [
+        "draped"
+      ],
+      "hair": [
+        "bun",
+        "short"
+      ],
+      "ornament": [
+        "gold"
+      ],
+      "screen": "lotus",
+      "skin": "#b0805a",
+      "colors": [
+        "#c5b89b",
+        "#9b4d40",
+        "#9e8047"
+      ]
+    },
+    "chenla": {
+      "hat": [
+        "band"
+      ],
+      "robe": [
+        "draped"
+      ],
+      "hair": [
+        "bun",
+        "long"
+      ],
+      "ornament": [
+        "gold"
+      ],
+      "screen": "lotus",
+      "skin": "#a77451",
+      "colors": [
+        "#84463f",
+        "#a18343",
+        "#3f6353"
+      ]
+    },
+    "srivijaya": {
+      "hat": [
+        "wrap",
+        "band"
+      ],
+      "robe": [
+        "embroidered"
+      ],
+      "hair": [
+        "long",
+        "bun"
+      ],
+      "ornament": [
+        "gold"
+      ],
+      "screen": "waves",
+      "skin": "#a67651",
+      "colors": [
+        "#3f5878",
+        "#977d40",
+        "#9b5e44"
+      ]
+    },
+    "java": {
+      "hat": [
+        "wrap"
+      ],
+      "robe": [
+        "embroidered"
+      ],
+      "hair": [
+        "bun",
+        "long"
+      ],
+      "ornament": [
+        "bronze"
+      ],
+      "screen": "waves",
+      "skin": "#9f7150",
+      "colors": [
+        "#73523a",
+        "#b6a37e",
+        "#475e76"
+      ]
+    },
+    "champa": {
+      "hat": [
+        "wrap",
+        "band"
+      ],
+      "robe": [
+        "draped"
+      ],
+      "hair": [
+        "bun",
+        "long"
+      ],
+      "ornament": [
+        "gold"
+      ],
+      "screen": "lotus",
+      "skin": "#ad7b57",
+      "colors": [
+        "#b4725c",
+        "#c3b38f",
+        "#4e6182"
+      ]
+    },
+    "luzon": {
+      "hat": [
+        "band"
+      ],
+      "robe": [
+        "embroidered"
+      ],
+      "hair": [
+        "long",
+        "short"
+      ],
+      "ornament": [
+        "bronze"
+      ],
+      "screen": "waves",
+      "skin": "#af8059",
+      "colors": [
+        "#c4b58e",
+        "#8c453a",
+        "#947744"
+      ]
+    },
+    "axum": {
+      "hat": [
+        "wrap",
+        "band"
+      ],
+      "robe": [
+        "mantle"
+      ],
+      "hair": [
+        "curls",
+        "short"
+      ],
+      "ornament": [
+        "gold"
+      ],
+      "screen": "mosaic",
+      "skin": "#80523b",
+      "colors": [
+        "#c6b899",
+        "#8f473f",
+        "#807346"
+      ]
+    },
+    "maghreb": {
+      "hat": [
+        "turban",
+        "wrap"
+      ],
+      "robe": [
+        "mantle"
+      ],
+      "hair": [
+        "curls",
+        "waves"
+      ],
+      "ornament": [
+        "silver"
+      ],
+      "screen": "stars",
+      "skin": "#b18661",
+      "colors": [
+        "#3f5877",
+        "#c7b997",
+        "#9a6147"
+      ]
+    },
+    "sinhala": {
+      "hat": [
+        "band",
+        "wrap"
+      ],
+      "robe": [
+        "draped"
+      ],
+      "hair": [
+        "waves",
+        "bun"
+      ],
+      "ornament": [
+        "gold"
+      ],
+      "screen": "lotus",
+      "skin": "#936346",
+      "colors": [
+        "#d0c1a4",
+        "#9c6444",
+        "#83423a"
+      ]
+    }
+  }
+}

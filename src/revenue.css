@@ -1,0 +1,53 @@
+/* 户部沿用吏部的朱印、纸面与侧栏秩序。 */
+.revenue-dialog:where(:has(>.revenue-header)).ink-mode{width:min(1480px,96vw);height:min(940px,94vh);max-height:94vh;padding:0;border:1px solid #b7a88a;border-radius:4px;color:#332d24;background:radial-gradient(ellipse at 20% 10%,#fffaf080,transparent 60%),repeating-linear-gradient(0deg,#a3895e03 0 1px,transparent 1px 4px),#f5efe2;font-family:"Songti SC","STSong","SimSun",serif;box-shadow:0 22px 100px #211a1366}
+.revenue-dialog:where(:has(>.revenue-header)) .revenue-header{height:90px;padding:16px 30px;background:#faf5e9bb;border-color:#cbbd9e;display:flex;align-items:center;justify-content:space-between}
+.revenue-brand{display:flex;align-items:center;gap:23px;min-width:0}
+.revenue-seal{font:19px/1.2 "Kaiti SC","STKaiti",serif;text-align:center;letter-spacing:0;background:#a34232;color:#fff4dc;border:3px double #e0bba2;padding:5px 7px;box-shadow:0 0 0 1px #91432f;flex-shrink:0}
+.revenue-dialog:where(:has(>.revenue-header)) .revenue-header h1{font-size:34px;letter-spacing:6px;margin:0;white-space:nowrap}
+.revenue-dialog:where(:has(>.revenue-header)) .revenue-header small{font-size:13px;letter-spacing:3px;color:#716044}
+.revenue-header-end{display:flex;align-items:center;gap:28px;font-size:13px;color:#766449;white-space:nowrap}
+.revenue-header-end b{font-size:19px;font-weight:400;margin:0 5px;font-variant-numeric:tabular-nums}
+.revenue-dialog:where(:has(>.revenue-header)) .revenue-header .close{font:30px system-ui;color:#67563e;margin:0;padding:3px 6px}
+.revenue-nav{position:absolute;left:0;top:90px;bottom:34px;width:184px;display:flex;flex-direction:column;gap:12px;padding:28px 0 20px;border-right:1px solid #cbbd9e;background:linear-gradient(125deg,#eee5d457,transparent)}
+.revenue-dialog:where(:has(>.revenue-header)) .revenue-nav button{display:flex;align-items:center;gap:14px;width:100%;margin:0;border:0;border-left:3px solid transparent;border-radius:0;padding:16px 15px;font:16px "Songti SC",serif;letter-spacing:1px;text-align:left;color:#5b4c35;background:transparent;box-shadow:none;flex-shrink:0}
+.revenue-nav button>span{font-size:14px;border:1px solid #a38d66;padding:2px;line-height:1.2;color:#887451}
+.revenue-dialog:where(:has(>.revenue-header)) .revenue-nav button:hover{background:#bca57c20}
+.revenue-dialog:where(:has(>.revenue-header)) .revenue-nav button[aria-current]{color:#fff1dd;background:linear-gradient(100deg,#a34232,#ac4c3b);border-left-color:#f2bea4}
+.revenue-nav button[aria-current]>span{color:#f5d7b6;border-color:#e4b69a}
+.revenue-nav>p{margin:auto 0 0;text-align:center;font-size:12px;line-height:2.4;letter-spacing:4px;color:#9b8968}
+.revenue-dialog:where(:has(>.revenue-header)) .revenue-body{inset:90px 294px 34px 184px;padding:26px 28px;overflow:auto;background:transparent;scrollbar-width:thin;scrollbar-color:#b9a47e transparent}
+.revenue-workspace{display:grid;grid-template-columns:minmax(0,1fr);gap:26px;align-items:start}
+.revenue-workspace form{min-width:0}
+.revenue-dialog:where(:has(>.revenue-header)) .revenue-heading{gap:18px;align-items:flex-start;margin:0 0 22px;flex-wrap:wrap}
+.revenue-dialog:where(:has(>.revenue-header)) .revenue-heading h2{font-size:29px;font-weight:400;letter-spacing:4px;margin:10px 0 14px}
+.revenue-dialog:where(:has(>.revenue-header)) .revenue-heading p{font-size:13px;line-height:1.9;color:#817052}
+.revenue-dialog:where(:has(>.revenue-header)) .revenue-heading small{font-size:12px;letter-spacing:2px;color:#85775e}
+.revenue-dialog:where(:has(>.revenue-header)) .revenue-large{min-width:0;padding:12px 0 0;gap:5px}
+.revenue-dialog:where(:has(>.revenue-header)) .revenue-large strong{font-size:32px;color:#674e30}
+.revenue-dialog:where(:has(>.revenue-header)) .revenue-table{overflow-x:auto;overflow-y:hidden}
+.revenue-dialog:where(:has(>.revenue-header)) .revenue-table table{min-width:560px;font-size:13px;font-variant-numeric:tabular-nums}
+.revenue-dialog:where(:has(>.revenue-header)) .revenue-table :is(th,td){padding:12px 10px;font-weight:400;border-color:#cebea188}
+.revenue-dialog:where(:has(>.revenue-header)) .revenue-table thead th{background:#e9decb;color:#897453;font-size:12px}
+.revenue-dialog:where(:has(>.revenue-header)) .revenue-table tbody tr:nth-child(even){background:#e9decb40}
+.revenue-dialog:where(:has(>.revenue-header)) .revenue-table tbody tr:hover{background:#a342320b}
+.revenue-dialog:where(:has(>.revenue-header)) :is(input,select){font-family:inherit;color:#4b3c29;border:1px solid #c4b28d;border-radius:3px;background:#fcf7ecb3;padding:8px 10px}
+.revenue-dialog:where(:has(>.revenue-header)) .revenue-table input{width:105px;font-size:13px}
+.revenue-dialog:where(:has(>.revenue-header)) .revenue-command{position:absolute;top:116px;left:auto;right:28px;width:240px;bottom:auto;min-height:0;display:block;padding:0 0 0 24px;border:0;border-left:1px solid #cbbd9e;background:transparent}
+.revenue-command-heading{border-bottom:1px solid #cbbd9e;padding-bottom:16px;margin-bottom:20px}
+.revenue-command-heading small{font-size:12px;letter-spacing:2px;color:#85775e}
+.revenue-command-heading h3{font-size:27px;font-weight:400;letter-spacing:4px;margin:10px 0}
+.revenue-dialog:where(:has(>.revenue-header)) .revenue-command-heading p{font-size:13px;color:#817052}
+.revenue-dialog:where(:has(>.revenue-header)) .revenue-command [data-cost]{display:block;font-size:19px;line-height:1.8;letter-spacing:1px;color:#674e30}
+.revenue-dialog:where(:has(>.revenue-header)) .revenue-command [data-balance]{display:block;font-size:12px;margin:12px 0;color:#85775e}
+.revenue-dialog:where(:has(>.revenue-header)) .revenue-command [role=status]{font-size:12px;line-height:1.9;margin:16px 0 22px;color:#94764b}
+.revenue-dialog:where(:has(>.revenue-header)) button.primary{width:100%;background:#a34232;border:1px solid #8b372a;color:#fff3e0;border-radius:3px;padding:13px 18px;font-family:inherit;font-size:14px;letter-spacing:3px;box-shadow:inset 0 0 0 3px #f3d5b416}
+.revenue-dialog:where(:has(>.revenue-header)) button.primary:hover:not(:disabled){background:#8b372a}
+.revenue-dialog:where(:has(>.revenue-header)) .revenue-command-note{font-size:11px;line-height:2;color:#9b8968;margin-top:20px}
+.revenue-dialog:where(:has(>.revenue-header)) .civil-footer{height:34px;padding:10px 24px;border-color:#cbbd9e}
+.revenue-dialog:where(:has(>.revenue-header)) :is(button,input,select):focus-visible{outline:2px solid #a34232;outline-offset:3px}
+@media(max-width:1100px){.revenue-nav{width:160px}.revenue-dialog:where(:has(>.revenue-header)) .revenue-nav button{font-size:14px;gap:10px;padding:14px 12px}.revenue-dialog:where(:has(>.revenue-header)) .revenue-body{left:160px;right:0;bottom:154px;padding:20px}.revenue-workspace{grid-template-columns:minmax(0,1fr)}.revenue-dialog:where(:has(>.revenue-header)) .revenue-command{position:absolute;top:auto;width:auto;left:160px;right:0;bottom:34px;min-height:120px;display:flex;align-items:center;gap:15px;padding:14px 20px;border:0;border-top:1px solid #cbbd9e;background:#eee5d4}.revenue-command-heading,.revenue-dialog:where(:has(>.revenue-header)) .revenue-command-note{display:none}.revenue-dialog:where(:has(>.revenue-header)) .revenue-command button{width:auto;flex-shrink:0;margin-left:auto}.revenue-dialog:where(:has(>.revenue-header)) .revenue-command [data-cost]{font-size:16px}.revenue-dialog:where(:has(>.revenue-header)) .revenue-command [data-balance]{margin:5px 0}.revenue-dialog:where(:has(>.revenue-header)) .revenue-command [role=status]{margin:5px 0;font-size:11px}.revenue-dialog:where(:has(>.revenue-header)) .revenue-header{padding:16px 20px}.revenue-brand{gap:16px}.revenue-dialog:where(:has(>.revenue-header)) .revenue-header small{font-size:11px;letter-spacing:1px}}
+@media(max-width:650px){.revenue-dialog:where(:has(>.revenue-header)) .revenue-header{height:78px;padding:12px}.revenue-dialog:where(:has(>.revenue-header)) .revenue-header h1{font-size:24px;letter-spacing:3px}.revenue-brand{gap:12px}.revenue-dialog:where(:has(>.revenue-header)) .revenue-header small{display:none}.revenue-header-end{gap:8px;font-size:11px}.revenue-header-end b{font-size:15px;margin:0}.revenue-nav{top:78px;width:112px;padding-top:18px;gap:8px}.revenue-dialog:where(:has(>.revenue-header)) .revenue-nav button{font-size:13px;letter-spacing:0;gap:7px;padding:13px 6px}.revenue-nav>p{font-size:11px;letter-spacing:2px}.revenue-dialog:where(:has(>.revenue-header)) .revenue-body{top:78px;left:112px;bottom:196px;padding:18px 12px}.revenue-dialog:where(:has(>.revenue-header)) .revenue-command{left:112px;min-height:162px;display:block;padding:12px}.revenue-dialog:where(:has(>.revenue-header)) .revenue-command button{width:100%;padding:10px}.revenue-dialog:where(:has(>.revenue-header)) .revenue-heading h2{font-size:24px;letter-spacing:2px}.revenue-dialog:where(:has(>.revenue-header)) .civil-footer{font-size:10px;padding:10px 12px}.revenue-dialog:where(:has(>.revenue-header)) .civil-footer>span:last-child{display:none}}
+
+.revenue-dialog:where(:has(>.revenue-header)) .revenue-nav{margin:0}
+.revenue-dialog .edict-page button.primary{width:auto}
+.revenue-dialog .civil-footer>span:first-child{display:inline}

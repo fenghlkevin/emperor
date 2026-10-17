@@ -1,0 +1,30 @@
+game/.godot/
+work/runtime/
+work/emperor-original/
+work/emperor-analysis/
+outputs/*.app/
+outputs/*.zip
+outputs/*save.json*
+*.tmp
+__pycache__/
+node_modules/
+dist/
+.DS_Store
+
+# Local outputs and save data
+outputs/
+output/
+M-*.BIN
+.env
+.env.*
+!.env.example
+
+# Keep reverse-engineering notes and scripts, omit binary evidence/runtime files
+reverse/**/*
+!reverse/**/
+!reverse/**/*.md
+!reverse/**/*.py
+!reverse/**/*.js
+!reverse/**/*.mjs
+!reverse/**/*.cjs
+!reverse/**/*.sh

@@ -1,0 +1,7 @@
+import fs from 'node:fs';
+import {OFFICIAL_ART} from '../src/official-art-data.mjs';
+import {ACTIVE_HISTORICAL_PEOPLE} from '../src/exam.mjs';
+const names=new Map(ACTIVE_HISTORICAL_PEOPLE.map(p=>[p.id,p.name]));
+const cards=Object.entries(OFFICIAL_ART).map(([id,art])=>`<article><h2>${names.get(id)??id.replace('random-civil-','随机文臣 ').replace('random-military-','随机武将 ')}</h2><div>${['avatar','full','court'].map((v,i)=>`<figure><img loading="lazy" src="../../${art[v]??''}"><figcaption>${['头像','全身','朝堂'][i]}</figcaption></figure>`).join('')}</div><small>${id}</small></article>`).join('');
+fs.writeFileSync('docs/official-art/gallery.html',`<!doctype html><html lang="zh-CN"><meta charset="utf-8"><title>官员立绘总览</title><style>body{background:#e8dfca;color:#302a20;font-family:system-ui;margin:24px}main{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:16px}article{background:#faf5e8;border:1px solid #b9a77d;border-radius:8px;padding:12px}h2{font-size:18px;margin:0 0 12px}article>div{display:flex;gap:8px}figure{margin:0;flex:1;min-width:0;text-align:center}img{width:100%;height:220px;object-fit:contain;background:repeating-conic-gradient(#d9d4c9 0% 25%,#eee9df 0% 50%) 0/16px 16px}figure:first-child img{object-fit:contain}figcaption,small{font-size:12px;color:#77694e}small{display:block;margin-top:8px}</style><h1>官员立绘总览</h1><p>历史人物 100 位；随机文臣 10 套、随机武将 10 套。每套包含头像、全身像与统一朝服的朝堂立绘。</p><main>${cards}</main></html>`);
+console.log(`Gallery: ${Object.keys(OFFICIAL_ART).length} characters`);

@@ -1,0 +1,6 @@
+后宫寝室画卷
+生成方式：内置 image_gen；参考图：assets/sketch-dragon-hall.png（仅作画风参考）。
+输出：assets/sketch-harem-bedchamber.png
+
+最终提示词：
+Use case: historical-scene. Create a NEW independent Chinese imperial harem bedchamber game background, landscape 3:2. The input image is STYLE REFERENCE ONLY: match its detailed hand-painted Chinese palace illustration, fine dark outlines, muted teal green and antique gold, vermilion timber, warm lantern light and blue moonlight, painterly silk and wood textures. Change the architecture and furnishings to an intimate separate harem bedroom: a carved dark wooden canopy bed on the LEFT middle distance with ivory gauze and soft muted rose silk bedding, floral/phoenix gold ornaments rather than dragons; teal curtains, red columns, a circular lattice moon window on the RIGHT overlooking a quiet moonlit garden; embroidered folding screen and small incense/tea table. Empty bedroom, no people. Spacious clear lower foreground wooden floor for an optional character portrait at lower LEFT. Keep the center-right architectural details readable, with a darker quiet lower RIGHT area for UI text overlay. Full illustrated scene edge to edge. No lettering, text, labels, UI, borders, watermarks. Do not reproduce the original hall layout or sleeping emperor.

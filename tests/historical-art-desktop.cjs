@@ -1,0 +1,8 @@
+const {app,BrowserWindow}=require('electron');const path=require('node:path');
+app.setPath('userData','/private/tmp/emperor-historical-art-test');
+app.whenReady().then(async()=>{const w=new BrowserWindow({show:false,webPreferences:{sandbox:true,contextIsolation:true,nodeIntegration:false}});try{
+await w.loadFile(path.join(__dirname,'../index.html'));
+const allowIncomplete=process.argv.includes('--present');
+const result=await w.webContents.executeJavaScript(`(async()=>{const allowIncomplete=${allowIncomplete};const {ACTIVE_HISTORICAL_PEOPLE}=await import('./src/exam.mjs'),{officialArt}=await import('./src/official-art.mjs');let count=0;for(const person of ACTIVE_HISTORICAL_PEOPLE){const art=officialArt(person);for(const variant of ['full','court']){if(!art?.[variant]?.endsWith(person.id+'-'+variant+'.png')){if(allowIncomplete)continue;throw Error(person.name+' 缺少独立 '+variant);}const img=new Image();img.src=art[variant];await img.decode();if(!img.naturalWidth||!img.naturalHeight)throw Error(person.name+' 图片无尺寸');const c=document.createElement('canvas');c.width=img.naturalWidth;c.height=img.naturalHeight;const ctx=c.getContext('2d',{willReadFrequently:true});ctx.drawImage(img,0,0);const a=ctx.getImageData(0,0,c.width,c.height).data;let visible=0,transparent=0;for(let i=3;i<a.length;i+=4){if(a[i]>64)visible++;if(a[i]===0)transparent++;}if(visible<1000||!transparent)throw Error(person.name+' '+variant+' 缺少人物或透明背景');count++;}}return {people:ACTIVE_HISTORICAL_PEOPLE.length,images:count};})()`);
+console.log(allowIncomplete?'已存在历史人物素材解码与透明背景检查通过':'全部历史人物逐图解码与透明背景检查通过',result);app.exit(0);
+}catch(e){console.error(e);app.exit(1);}});

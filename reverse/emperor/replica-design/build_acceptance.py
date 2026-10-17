@@ -1,0 +1,43 @@
+from pathlib import Path
+import json
+R=Path(__file__).resolve().parent
+cases=[]
+def add(id,module,setup,operation,expected,status,source):
+ cases.append(dict(id=id,module=module,setup=setup,operation=operation,expected=expected,status=status,source=source))
+S='../save-analysis/README.md';W='../validation-round4/README.md';T='../rules-analysis/turns/README.md';D='../rules-analysis/war-diplomacy/diplomacy.md'
+add('SAVE-01','save','KING1/2/3原档','无编辑解码再编码','全部原字节和SHA相同；官员40/83/85','baseline_observed',S)
+add('SAVE-02','save','40官员合法档','添加一个官员并导出','后宫与后续位置+47，数量+1','new_contract','02-save-format.md')
+add('SAVE-03','save','地区贸易收入磁盘ffff','导入、再导出','领域-1，原字节ffff；40000严格导出拒绝','static_specification',S)
+add('SAVE-04','save','正式肖像标志与尾33不同','读取并无编辑保存','诊断differs，不改变领域正式标志，保留原尾','new_contract','02-save-format.md')
+add('SAVE-05','save','截短记录/巨大数量/3字节空槽','导入','区段长度错误或空槽结果；不越界分配','new_contract','02-save-format.md')
+add('NUM-01','numeric','-7 / 3；65535按s16','计算','-2；-1','static_specification','reference/numeric.py')
+add('RNG-01','rng','seed1','draw','seed1103527590，raw16838','static_specification','reference/numeric.py')
+add('RNG-02','rng','同seed，threshold0/100','各调用gate一次','均消耗一次seed；结果false/true','baseline_observed','../validation-round4/runtime/audit-summary.json')
+add('RNG-03','rng','全部32768种raw15','gate阈值1/68/99','成功数328/22304/32441','static_specification','reference/numeric.py')
+add('TIME-01','clock','progress2，普通耗时1','完成行动','进度0，阶段+1，地区更新一次','baseline_observed','../validation-round3/runtime/README.md')
+add('TIME-02','clock','progress2，额外耗时>1','完成行动','只推进一次，超额丢弃','static_specification',T)
+add('TIME-03','clock','月0，上旬，进度2','推进至下旬','无跨月，不再次半年结算','static_specification','../rules-analysis/turns/11f65.asm')
+add('TIME-04','clock','月5，下旬，进度2','推进至月6','阶段→月更新→半年结算；顺序保持','static_specification',T)
+add('ECON-01','economy','已有费用fixture','月维护','各分项、资金差异匹配原DOS结果','baseline_observed','../validation-round3/runtime/README.md')
+add('ECON-02','economy','财富level0，points200','一次升级检查','只升1级，points140','static_specification','03-domestic-and-economy.md')
+add('ECON-03','economy','至少两地区，不同积粮','半年人口增长','legacy保留跨地区carry，modern本地独立','static_specification','../rules-analysis/domestic/population-verification.json')
+add('DIP-01','diplomacy','F40/F41','贸易/勒索','拒绝/接受；非随机成功率','static_specification',D)
+add('DIP-02','diplomacy','B32768，保护条约3','计算阈值','s16先截断，再/20得-1638','static_specification','reference/numeric.py')
+add('DIP-03','diplomacy','女性15/16/28/29岁','和亲候选筛选','仅16、28允许；确认才移除正确人物','static_specification',D)
+add('DIP-04','diplomacy','F99、额度1000、利润率-20','十次半年结算','-160,-120,-80,-40,0,40,80,120,160,200','static_specification',D)
+add('DIP-05','diplomacy','贡品count24/25，F89/90','正常事件扫描','按计数/门槛和地区顺序，只选首个；低byte库存溢出不进位','static_specification',D)
+add('WAR-01','battle','单位action0,1,127,128,129,255','判定可行动','前三未完成，后三完成；129守备完成','baseline_observed',W)
+add('WAR-02','battle','special0,1,2,255，其他不变','损失计算','仅1触发85%防守损失系数','baseline_observed',W)
+add('WAR-03','battle','两队各1兵/4兵及不同装备尾数','撤退回库','逐队比例截断，不按总数一次舍入','baseline_observed','../validation-round4/territory/README.md')
+add('WAR-04','battle','种子与谈判边界fixture','招降/停战','阈值、结果、seed、钱、人口、关系方向均匹配审计','baseline_observed','../validation-round4/runtime/audit-summary.json')
+add('UI-01','ui','合法官员与国家按钮','原菜单出征到返回菜单','一次创建/扣费/关联；原提示前处理完整','baseline_observed','../validation-round6/runtime/flow2/menus.json')
+add('UI-02','ui','queued battle且正常时间进度','完成行动并关闭事件','原扫描设置current/队列，再构造场景23','baseline_observed','../validation-round6/runtime/flow2/palace-to-battle.json')
+add('E2E-01','integration','同一世界/进程/命令流','菜单出征→时间→战斗行动→结算→退出→再操作','完整字段、seed、官员、库存、队列、窗口符合，禁止写outcome绕过','blocked_original_e2e','06-ui-state-machines.md')
+add('MOD-01','identity','现代模式65537次关联、重复人物名字','创建并结算，含两将同场','稳定ID不碰撞，无悬挂，无重复删除','new_contract','09-implementation-plan.md')
+add('MOD-02','transaction','重复requestId/resultVersion、迟到旧窗口事件','重复提交','无第二次扣钱/建战/结算/时间推进','new_contract','00-architecture.md')
+add('LIFE-01','characters','孕月10→11','月更新及合法事件检查','按原先月计数、再扫描出生，不按UI帧出生','static_specification','04-turns-and-characters.md')
+add('ASSET-01','assets','所有PIC整屏/目录原资源','解码和范围检查','整屏153600字节；附加块字节保留','baseline_observed','../resource-analysis/README.md')
+for tag in ['annex255','annex256','defeat255','defeat256','local254','local255','local256']:
+ add('SET-'+tag,'settlement','独立原DOS受控fixture '+tag,'完整6668F','与settlement-observations对应人物删除/状态、领土和计数相同；不推断任意低内存无害','baseline_observed','../validation-round6/runtime/'+tag+'/result.json')
+(R/'data/acceptance-cases.json').write_text(json.dumps(cases,ensure_ascii=False,indent=2)+'\n')
+print('acceptance specifications:',len(cases))

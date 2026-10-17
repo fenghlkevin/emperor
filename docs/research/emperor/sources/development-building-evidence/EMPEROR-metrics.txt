@@ -1,0 +1,318 @@
+EMPEROR relocated object1; VA range [0x3b657, 0x3ba99); source: reverse/emperor/code-analysis/EMPEROR/object1.relocated.asm
+All listed instruction bytes checked against object1.relocated.bin; static evidence, no execution.
+
+   3b657: 68 38 00 00 00               	push	0x38
+   3b65c: e8 63 f5 05 00               	call	0x9abc4 <.image+0x8abc4>
+   3b661: 53                           	push	ebx
+   3b662: 56                           	push	esi
+   3b663: 57                           	push	edi
+   3b664: 55                           	push	ebp
+   3b665: 89 e5                        	mov	ebp, esp
+   3b667: 81 ec 1c 00 00 00            	sub	esp, 0x1c
+   3b66d: 8b 45 14                     	mov	eax, dword ptr [ebp + 0x14]
+   3b670: 83 78 24 00                  	cmp	dword ptr [eax + 0x24], 0x0
+   3b674: 0f 84 1a 01 00 00            	je	0x3b794 <.image+0x2b794>
+   3b67a: 8b 45 14                     	mov	eax, dword ptr [ebp + 0x14]
+   3b67d: 8b 40 06                     	mov	eax, dword ptr [eax + 0x6]
+   3b680: 8b 55 14                     	mov	edx, dword ptr [ebp + 0x14]
+   3b683: 8b 52 06                     	mov	edx, dword ptr [edx + 0x6]
+   3b686: c1 fa 1f                     	sar	edx, 0x1f
+   3b689: 2b c2                        	sub	eax, edx
+   3b68b: d1 f8                        	sar	eax
+   3b68d: 89 c2                        	mov	edx, eax
+   3b68f: 8b 45 14                     	mov	eax, dword ptr [ebp + 0x14]
+   3b692: 8b 58 24                     	mov	ebx, dword ptr [eax + 0x24]
+   3b695: 29 d3                        	sub	ebx, edx
+   3b697: 8b 45 14                     	mov	eax, dword ptr [ebp + 0x14]
+   3b69a: 0f bf 50 60                  	movsx	edx, word ptr [eax + 0x60]
+   3b69e: 69 d2 b8 88 00 00            	imul	edx, edx, 0x88b8
+   3b6a4: 89 d0                        	mov	eax, edx
+   3b6a6: c1 fa 1f                     	sar	edx, 0x1f
+   3b6a9: f7 fb                        	idiv	ebx
+   3b6ab: 8b 55 14                     	mov	edx, dword ptr [ebp + 0x14]
+   3b6ae: 66 89 42 6e                  	mov	word ptr [edx + 0x6e], ax
+   3b6b2: 8b 45 14                     	mov	eax, dword ptr [ebp + 0x14]
+   3b6b5: 8b 40 0a                     	mov	eax, dword ptr [eax + 0xa]
+   3b6b8: 8b 55 14                     	mov	edx, dword ptr [ebp + 0x14]
+   3b6bb: 8b 52 0a                     	mov	edx, dword ptr [edx + 0xa]
+   3b6be: c1 fa 1f                     	sar	edx, 0x1f
+   3b6c1: 2b c2                        	sub	eax, edx
+   3b6c3: d1 f8                        	sar	eax
+   3b6c5: 8b 5d 14                     	mov	ebx, dword ptr [ebp + 0x14]
+   3b6c8: 8b 5b 24                     	mov	ebx, dword ptr [ebx + 0x24]
+   3b6cb: 29 c3                        	sub	ebx, eax
+   3b6cd: 8b 55 14                     	mov	edx, dword ptr [ebp + 0x14]
+   3b6d0: 0f bf 52 62                  	movsx	edx, word ptr [edx + 0x62]
+   3b6d4: 69 d2 b8 88 00 00            	imul	edx, edx, 0x88b8
+   3b6da: 89 d0                        	mov	eax, edx
+   3b6dc: c1 fa 1f                     	sar	edx, 0x1f
+   3b6df: f7 fb                        	idiv	ebx
+   3b6e1: 8b 55 14                     	mov	edx, dword ptr [ebp + 0x14]
+   3b6e4: 66 89 42 70                  	mov	word ptr [edx + 0x70], ax
+   3b6e8: 8b 45 14                     	mov	eax, dword ptr [ebp + 0x14]
+   3b6eb: 8b 40 0e                     	mov	eax, dword ptr [eax + 0xe]
+   3b6ee: 8b 55 14                     	mov	edx, dword ptr [ebp + 0x14]
+   3b6f1: 8b 52 0e                     	mov	edx, dword ptr [edx + 0xe]
+   3b6f4: c1 fa 1f                     	sar	edx, 0x1f
+   3b6f7: 2b c2                        	sub	eax, edx
+   3b6f9: d1 f8                        	sar	eax
+   3b6fb: 8b 5d 14                     	mov	ebx, dword ptr [ebp + 0x14]
+   3b6fe: 8b 5b 24                     	mov	ebx, dword ptr [ebx + 0x24]
+   3b701: 29 c3                        	sub	ebx, eax
+   3b703: 8b 55 14                     	mov	edx, dword ptr [ebp + 0x14]
+   3b706: 0f bf 52 64                  	movsx	edx, word ptr [edx + 0x64]
+   3b70a: 69 d2 b8 88 00 00            	imul	edx, edx, 0x88b8
+   3b710: 89 d0                        	mov	eax, edx
+   3b712: c1 fa 1f                     	sar	edx, 0x1f
+   3b715: f7 fb                        	idiv	ebx
+   3b717: 8b 55 14                     	mov	edx, dword ptr [ebp + 0x14]
+   3b71a: 66 89 42 72                  	mov	word ptr [edx + 0x72], ax
+   3b71e: 8b 45 14                     	mov	eax, dword ptr [ebp + 0x14]
+   3b721: 8b 40 12                     	mov	eax, dword ptr [eax + 0x12]
+   3b724: 8b 55 14                     	mov	edx, dword ptr [ebp + 0x14]
+   3b727: 8b 52 12                     	mov	edx, dword ptr [edx + 0x12]
+   3b72a: c1 fa 1f                     	sar	edx, 0x1f
+   3b72d: 2b c2                        	sub	eax, edx
+   3b72f: d1 f8                        	sar	eax
+   3b731: 8b 5d 14                     	mov	ebx, dword ptr [ebp + 0x14]
+   3b734: 8b 5b 24                     	mov	ebx, dword ptr [ebx + 0x24]
+   3b737: 29 c3                        	sub	ebx, eax
+   3b739: 8b 55 14                     	mov	edx, dword ptr [ebp + 0x14]
+   3b73c: 0f bf 52 66                  	movsx	edx, word ptr [edx + 0x66]
+   3b740: 69 d2 b8 88 00 00            	imul	edx, edx, 0x88b8
+   3b746: 89 d0                        	mov	eax, edx
+   3b748: c1 fa 1f                     	sar	edx, 0x1f
+   3b74b: f7 fb                        	idiv	ebx
+   3b74d: 8b 55 14                     	mov	edx, dword ptr [ebp + 0x14]
+   3b750: 66 89 42 74                  	mov	word ptr [edx + 0x74], ax
+   3b754: 8b 55 14                     	mov	edx, dword ptr [ebp + 0x14]
+   3b757: 0f bf 52 68                  	movsx	edx, word ptr [edx + 0x68]
+   3b75b: 69 d2 b8 88 00 00            	imul	edx, edx, 0x88b8
+   3b761: 89 d0                        	mov	eax, edx
+   3b763: c1 fa 1f                     	sar	edx, 0x1f
+   3b766: 8b 5d 14                     	mov	ebx, dword ptr [ebp + 0x14]
+   3b769: f7 7b 24                     	idiv	dword ptr [ebx + 0x24]
+   3b76c: 8b 55 14                     	mov	edx, dword ptr [ebp + 0x14]
+   3b76f: 66 89 42 76                  	mov	word ptr [edx + 0x76], ax
+   3b773: 8b 55 14                     	mov	edx, dword ptr [ebp + 0x14]
+   3b776: 0f bf 52 6a                  	movsx	edx, word ptr [edx + 0x6a]
+   3b77a: 69 d2 b8 88 00 00            	imul	edx, edx, 0x88b8
+   3b780: 89 d0                        	mov	eax, edx
+   3b782: c1 fa 1f                     	sar	edx, 0x1f
+   3b785: 8b 5d 14                     	mov	ebx, dword ptr [ebp + 0x14]
+   3b788: f7 7b 24                     	idiv	dword ptr [ebx + 0x24]
+   3b78b: 8b 55 14                     	mov	edx, dword ptr [ebp + 0x14]
+   3b78e: 66 89 42 78                  	mov	word ptr [edx + 0x78], ax
+   3b792: eb 36                        	jmp	0x3b7ca <.image+0x2b7ca>
+   3b794: 8b 45 14                     	mov	eax, dword ptr [ebp + 0x14]
+   3b797: 66 c7 40 6e 00 00            	mov	word ptr [eax + 0x6e], 0x0
+   3b79d: 8b 45 14                     	mov	eax, dword ptr [ebp + 0x14]
+   3b7a0: 66 c7 40 70 00 00            	mov	word ptr [eax + 0x70], 0x0
+   3b7a6: 8b 45 14                     	mov	eax, dword ptr [ebp + 0x14]
+   3b7a9: 66 c7 40 72 00 00            	mov	word ptr [eax + 0x72], 0x0
+   3b7af: 8b 45 14                     	mov	eax, dword ptr [ebp + 0x14]
+   3b7b2: 66 c7 40 74 00 00            	mov	word ptr [eax + 0x74], 0x0
+   3b7b8: 8b 45 14                     	mov	eax, dword ptr [ebp + 0x14]
+   3b7bb: 66 c7 40 76 00 00            	mov	word ptr [eax + 0x76], 0x0
+   3b7c1: 8b 45 14                     	mov	eax, dword ptr [ebp + 0x14]
+   3b7c4: 66 c7 40 78 00 00            	mov	word ptr [eax + 0x78], 0x0
+   3b7ca: a1 ac 98 0c 00               	mov	eax, dword ptr [0xc98ac]
+   3b7cf: 66 0f b6 40 44               	movzx	ax, byte ptr [eax + 0x44]
+   3b7d4: 6b d0 05                     	imul	edx, eax, 0x5
+   3b7d7: 8b 45 14                     	mov	eax, dword ptr [ebp + 0x14]
+   3b7da: 66 29 50 70                  	sub	word ptr [eax + 0x70], dx
+   3b7de: 8b 45 14                     	mov	eax, dword ptr [ebp + 0x14]
+   3b7e1: 0f bf 40 70                  	movsx	eax, word ptr [eax + 0x70]
+   3b7e5: 85 c0                        	test	eax, eax
+   3b7e7: 7d 09                        	jge	0x3b7f2 <.image+0x2b7f2>
+   3b7e9: 8b 45 14                     	mov	eax, dword ptr [ebp + 0x14]
+   3b7ec: 66 c7 40 70 00 00            	mov	word ptr [eax + 0x70], 0x0
+   3b7f2: c7 45 f0 00 00 00 00         	mov	dword ptr [ebp - 0x10], 0x0
+   3b7f9: eb 06                        	jmp	0x3b801 <.image+0x2b801>
+   3b7fb: 8b 45 f0                     	mov	eax, dword ptr [ebp - 0x10]
+   3b7fe: ff 45 f0                     	inc	dword ptr [ebp - 0x10]
+   3b801: 0f bf 45 f0                  	movsx	eax, word ptr [ebp - 0x10]
+   3b805: 83 f8 10                     	cmp	eax, 0x10
+   3b808: 0f 8d 2a 01 00 00            	jge	0x3b938 <.image+0x2b938>
+   3b80e: 0f bf 45 f0                  	movsx	eax, word ptr [ebp - 0x10]
+   3b812: 01 c0                        	add	eax, eax
+   3b814: 89 c2                        	mov	edx, eax
+   3b816: a1 ac 98 0c 00               	mov	eax, dword ptr [0xc98ac]
+   3b81b: 01 d0                        	add	eax, edx
+   3b81d: 0f bf 80 98 02 00 00         	movsx	eax, word ptr [eax + 0x298]
+   3b824: 83 f8 02                     	cmp	eax, 0x2
+   3b827: 0f 85 06 01 00 00            	jne	0x3b933 <.image+0x2b933>
+   3b82d: 8b 45 f0                     	mov	eax, dword ptr [ebp - 0x10]
+   3b830: 89 45 ec                     	mov	dword ptr [ebp - 0x14], eax
+   3b833: e9 ad 00 00 00               	jmp	0x3b8e5 <.image+0x2b8e5>
+   3b838: 0f bf 45 f0                  	movsx	eax, word ptr [ebp - 0x10]
+   3b83c: 83 c0 07                     	add	eax, 0x7
+   3b83f: 6b c0 16                     	imul	eax, eax, 0x16
+   3b842: 66 8b 90 0a 51 0c 00         	mov	dx, word ptr [eax + 0xc510a]
+   3b849: 8b 45 14                     	mov	eax, dword ptr [ebp + 0x14]
+   3b84c: 66 01 50 78                  	add	word ptr [eax + 0x78], dx
+   3b850: e9 de 00 00 00               	jmp	0x3b933 <.image+0x2b933>
+   3b855: 0f bf 45 f0                  	movsx	eax, word ptr [ebp - 0x10]
+   3b859: 83 c0 07                     	add	eax, 0x7
+   3b85c: 6b c0 16                     	imul	eax, eax, 0x16
+   3b85f: 66 8b 90 0a 51 0c 00         	mov	dx, word ptr [eax + 0xc510a]
+   3b866: 8b 45 14                     	mov	eax, dword ptr [ebp + 0x14]
+   3b869: 66 01 50 76                  	add	word ptr [eax + 0x76], dx
+   3b86d: e9 c1 00 00 00               	jmp	0x3b933 <.image+0x2b933>
+   3b872: 0f bf 45 f0                  	movsx	eax, word ptr [ebp - 0x10]
+   3b876: 83 c0 07                     	add	eax, 0x7
+   3b879: 6b c0 16                     	imul	eax, eax, 0x16
+   3b87c: 66 8b 90 0a 51 0c 00         	mov	dx, word ptr [eax + 0xc510a]
+   3b883: 8b 45 14                     	mov	eax, dword ptr [ebp + 0x14]
+   3b886: 66 01 50 70                  	add	word ptr [eax + 0x70], dx
+   3b88a: e9 a4 00 00 00               	jmp	0x3b933 <.image+0x2b933>
+   3b88f: 0f bf 45 f0                  	movsx	eax, word ptr [ebp - 0x10]
+   3b893: 83 c0 07                     	add	eax, 0x7
+   3b896: 6b c0 16                     	imul	eax, eax, 0x16
+   3b899: 66 8b 90 0a 51 0c 00         	mov	dx, word ptr [eax + 0xc510a]
+   3b8a0: 8b 45 14                     	mov	eax, dword ptr [ebp + 0x14]
+   3b8a3: 66 01 50 6e                  	add	word ptr [eax + 0x6e], dx
+   3b8a7: e9 87 00 00 00               	jmp	0x3b933 <.image+0x2b933>
+   3b8ac: 0f bf 45 f0                  	movsx	eax, word ptr [ebp - 0x10]
+   3b8b0: 83 c0 07                     	add	eax, 0x7
+   3b8b3: 6b c0 16                     	imul	eax, eax, 0x16
+   3b8b6: 66 8b 90 0a 51 0c 00         	mov	dx, word ptr [eax + 0xc510a]
+   3b8bd: 8b 45 14                     	mov	eax, dword ptr [ebp + 0x14]
+   3b8c0: 66 01 50 72                  	add	word ptr [eax + 0x72], dx
+   3b8c4: e9 6a 00 00 00               	jmp	0x3b933 <.image+0x2b933>
+   3b8c9: 0f bf 45 f0                  	movsx	eax, word ptr [ebp - 0x10]
+   3b8cd: 83 c0 07                     	add	eax, 0x7
+   3b8d0: 6b c0 16                     	imul	eax, eax, 0x16
+   3b8d3: 66 8b 90 0a 51 0c 00         	mov	dx, word ptr [eax + 0xc510a]
+   3b8da: 8b 45 14                     	mov	eax, dword ptr [ebp + 0x14]
+   3b8dd: 66 01 50 74                  	add	word ptr [eax + 0x74], dx
+   3b8e1: eb 50                        	jmp	0x3b933 <.image+0x2b933>
+   3b8e3: eb 4e                        	jmp	0x3b933 <.image+0x2b933>
+   3b8e5: 8b 45 ec                     	mov	eax, dword ptr [ebp - 0x14]
+   3b8e8: 89 45 e8                     	mov	dword ptr [ebp - 0x18], eax
+   3b8eb: 66 83 7d e8 05               	cmp	word ptr [ebp - 0x18], 0x5
+   3b8f0: 72 2f                        	jb	0x3b921 <.image+0x2b921>
+   3b8f2: 66 83 7d e8 05               	cmp	word ptr [ebp - 0x18], 0x5
+   3b8f7: 0f 86 75 ff ff ff            	jbe	0x3b872 <.image+0x2b872>
+   3b8fd: 66 83 7d e8 0e               	cmp	word ptr [ebp - 0x18], 0xe
+   3b902: 72 10                        	jb	0x3b914 <.image+0x2b914>
+   3b904: 66 83 7d e8 0e               	cmp	word ptr [ebp - 0x18], 0xe
+   3b909: 76 a1                        	jbe	0x3b8ac <.image+0x2b8ac>
+   3b90b: 66 83 7d e8 0f               	cmp	word ptr [ebp - 0x18], 0xf
+   3b910: 74 b7                        	je	0x3b8c9 <.image+0x2b8c9>
+   3b912: eb cf                        	jmp	0x3b8e3 <.image+0x2b8e3>
+   3b914: 66 83 7d e8 0c               	cmp	word ptr [ebp - 0x18], 0xc
+   3b919: 0f 83 70 ff ff ff            	jae	0x3b88f <.image+0x2b88f>
+   3b91f: eb c2                        	jmp	0x3b8e3 <.image+0x2b8e3>
+   3b921: 66 83 7d e8 03               	cmp	word ptr [ebp - 0x18], 0x3
+   3b926: 0f 86 0c ff ff ff            	jbe	0x3b838 <.image+0x2b838>
+   3b92c: e9 24 ff ff ff               	jmp	0x3b855 <.image+0x2b855>
+   3b931: eb b0                        	jmp	0x3b8e3 <.image+0x2b8e3>
+   3b933: e9 c3 fe ff ff               	jmp	0x3b7fb <.image+0x2b7fb>
+   3b938: 66 0f b6 05 9b 8b 0c 00      	movzx	ax, byte ptr [0xc8b9b]
+   3b940: ba 32 00 00 00               	mov	edx, 0x32
+   3b945: 29 c2                        	sub	edx, eax
+   3b947: 89 d0                        	mov	eax, edx
+   3b949: 01 c0                        	add	eax, eax
+   3b94b: 89 45 f4                     	mov	dword ptr [ebp - 0xc], eax
+   3b94e: 0f bf 45 18                  	movsx	eax, word ptr [ebp + 0x18]
+   3b952: 50                           	push	eax
+   3b953: b8 28 99 0c 00               	mov	eax, 0xc9928
+   3b958: 50                           	push	eax
+   3b959: e8 12 2d ff ff               	call	0x2e670 <.image+0x1e670>
+   3b95e: 83 c4 08                     	add	esp, 0x8
+   3b961: 89 45 e4                     	mov	dword ptr [ebp - 0x1c], eax
+   3b964: 8b 45 e4                     	mov	eax, dword ptr [ebp - 0x1c]
+   3b967: 8b 00                        	mov	eax, dword ptr [eax]
+   3b969: 0f bf 40 10                  	movsx	eax, word ptr [eax + 0x10]
+   3b96d: 83 f8 3b                     	cmp	eax, 0x3b
+   3b970: 7d 09                        	jge	0x3b97b <.image+0x2b97b>
+   3b972: c7 45 f8 00 00 00 00         	mov	dword ptr [ebp - 0x8], 0x0
+   3b979: eb 1e                        	jmp	0x3b999 <.image+0x2b999>
+   3b97b: 8b 55 e4                     	mov	edx, dword ptr [ebp - 0x1c]
+   3b97e: 8b 12                        	mov	edx, dword ptr [edx]
+   3b980: 0f bf 52 10                  	movsx	edx, word ptr [edx + 0x10]
+   3b984: 83 ea 3b                     	sub	edx, 0x3b
+   3b987: 6b d2 19                     	imul	edx, edx, 0x19
+   3b98a: bb 0a 00 00 00               	mov	ebx, 0xa
+   3b98f: 89 d0                        	mov	eax, edx
+   3b991: c1 fa 1f                     	sar	edx, 0x1f
+   3b994: f7 fb                        	idiv	ebx
+   3b996: 89 45 f8                     	mov	dword ptr [ebp - 0x8], eax
+   3b999: 8b 55 14                     	mov	edx, dword ptr [ebp + 0x14]
+   3b99c: 0f bf 5a 6e                  	movsx	ebx, word ptr [edx + 0x6e]
+   3b9a0: 8b 55 14                     	mov	edx, dword ptr [ebp + 0x14]
+   3b9a3: 0f bf 42 70                  	movsx	eax, word ptr [edx + 0x70]
+   3b9a7: 01 c3                        	add	ebx, eax
+   3b9a9: 8b 55 14                     	mov	edx, dword ptr [ebp + 0x14]
+   3b9ac: 0f bf 42 72                  	movsx	eax, word ptr [edx + 0x72]
+   3b9b0: 01 d8                        	add	eax, ebx
+   3b9b2: 8b 55 14                     	mov	edx, dword ptr [ebp + 0x14]
+   3b9b5: 0f bf 5a 74                  	movsx	ebx, word ptr [edx + 0x74]
+   3b9b9: 01 c3                        	add	ebx, eax
+   3b9bb: 8b 55 14                     	mov	edx, dword ptr [ebp + 0x14]
+   3b9be: 0f bf 42 76                  	movsx	eax, word ptr [edx + 0x76]
+   3b9c2: 01 d8                        	add	eax, ebx
+   3b9c4: 8b 55 14                     	mov	edx, dword ptr [ebp + 0x14]
+   3b9c7: 0f bf 52 78                  	movsx	edx, word ptr [edx + 0x78]
+   3b9cb: 01 c2                        	add	edx, eax
+   3b9cd: bb 06 00 00 00               	mov	ebx, 0x6
+   3b9d2: 89 d0                        	mov	eax, edx
+   3b9d4: c1 fa 1f                     	sar	edx, 0x1f
+   3b9d7: f7 fb                        	idiv	ebx
+   3b9d9: 8b 55 14                     	mov	edx, dword ptr [ebp + 0x14]
+   3b9dc: 66 89 82 98 00 00 00         	mov	word ptr [edx + 0x98], ax
+   3b9e3: 8b 55 14                     	mov	edx, dword ptr [ebp + 0x14]
+   3b9e6: 0f bf 82 98 00 00 00         	movsx	eax, word ptr [edx + 0x98]
+   3b9ed: 83 f8 64                     	cmp	eax, 0x64
+   3b9f0: 7c 0c                        	jl	0x3b9fe <.image+0x2b9fe>
+   3b9f2: 8b 45 14                     	mov	eax, dword ptr [ebp + 0x14]
+   3b9f5: 66 c7 80 98 00 00 00 64 00   	mov	word ptr [eax + 0x98], 0x64
+   3b9fe: 0f bf 55 f4                  	movsx	edx, word ptr [ebp - 0xc]
+   3ba02: 6b d2 23                     	imul	edx, edx, 0x23
+   3ba05: 0f bf 45 f8                  	movsx	eax, word ptr [ebp - 0x8]
+   3ba09: 6b c0 0f                     	imul	eax, eax, 0xf
+   3ba0c: 01 c2                        	add	edx, eax
+   3ba0e: 8b 45 14                     	mov	eax, dword ptr [ebp + 0x14]
+   3ba11: 0f bf 80 96 00 00 00         	movsx	eax, word ptr [eax + 0x96]
+   3ba18: 6b c0 0a                     	imul	eax, eax, 0xa
+   3ba1b: 01 c2                        	add	edx, eax
+   3ba1d: 8b 45 14                     	mov	eax, dword ptr [ebp + 0x14]
+   3ba20: 0f bf 80 98 00 00 00         	movsx	eax, word ptr [eax + 0x98]
+   3ba27: 6b c0 14                     	imul	eax, eax, 0x14
+   3ba2a: 8d 1c 02                     	lea	ebx, [edx + eax]
+   3ba2d: 8b 55 14                     	mov	edx, dword ptr [ebp + 0x14]
+   3ba30: 0f bf 52 5e                  	movsx	edx, word ptr [edx + 0x5e]
+   3ba34: 89 d0                        	mov	eax, edx
+   3ba36: c1 fa 1f                     	sar	edx, 0x1f
+   3ba39: c1 e2 02                     	shl	edx, 0x2
+   3ba3c: 1b c2                        	sbb	eax, edx
+   3ba3e: c1 f8 02                     	sar	eax, 0x2
+   3ba41: 6b c0 14                     	imul	eax, eax, 0x14
+   3ba44: 8d 14 03                     	lea	edx, [ebx + eax]
+   3ba47: bb 64 00 00 00               	mov	ebx, 0x64
+   3ba4c: 89 d0                        	mov	eax, edx
+   3ba4e: c1 fa 1f                     	sar	edx, 0x1f
+   3ba51: f7 fb                        	idiv	ebx
+   3ba53: 89 c2                        	mov	edx, eax
+   3ba55: 8b 45 14                     	mov	eax, dword ptr [ebp + 0x14]
+   3ba58: 66 89 50 7a                  	mov	word ptr [eax + 0x7a], dx
+   3ba5c: a1 ac 98 0c 00               	mov	eax, dword ptr [0xc98ac]
+   3ba61: 66 8b 90 be 02 00 00         	mov	dx, word ptr [eax + 0x2be]
+   3ba68: 8b 45 14                     	mov	eax, dword ptr [ebp + 0x14]
+   3ba6b: 66 01 50 7a                  	add	word ptr [eax + 0x7a], dx
+   3ba6f: 8b 45 14                     	mov	eax, dword ptr [ebp + 0x14]
+   3ba72: 66 8b 90 94 00 00 00         	mov	dx, word ptr [eax + 0x94]
+   3ba79: 8b 45 14                     	mov	eax, dword ptr [ebp + 0x14]
+   3ba7c: 66 01 50 7a                  	add	word ptr [eax + 0x7a], dx
+   3ba80: 8b 45 14                     	mov	eax, dword ptr [ebp + 0x14]
+   3ba83: 0f bf 40 7a                  	movsx	eax, word ptr [eax + 0x7a]
+   3ba87: 85 c0                        	test	eax, eax
+   3ba89: 7d 09                        	jge	0x3ba94 <.image+0x2ba94>
+   3ba8b: 8b 45 14                     	mov	eax, dword ptr [ebp + 0x14]
+   3ba8e: 66 c7 40 7a 00 00            	mov	word ptr [eax + 0x7a], 0x0
+   3ba94: c9                           	leave
+   3ba95: 5f                           	pop	edi
+   3ba96: 5e                           	pop	esi
+   3ba97: 5b                           	pop	ebx
+   3ba98: c3                           	ret

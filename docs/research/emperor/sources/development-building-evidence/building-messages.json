@@ -1,0 +1,93 @@
+[
+  {
+    "va": "0xb2b67",
+    "object_offset": 11111,
+    "raw_hex": "092ca5abb6b0a569bc57a55bc0e7b77eadc8a141ad6ebb5cb6dca148",
+    "text": "\t,市集可增加營業值，要蓋嗎？",
+    "references": [
+      {
+        "source_object": 2,
+        "source_va": "0xc73cc"
+      }
+    ],
+    "confidence": "candidate literal, pointer reference observed; numeric false positives possible"
+  },
+  {
+    "va": "0xb2b84",
+    "object_offset": 11140,
+    "raw_hex": "092cbd5caddca569bc57a55bbf6ec2b3adc8a141ad6ebb5cb6dca148",
+    "text": "\t,穀倉可增加積糧值，要蓋嗎？",
+    "references": [
+      {
+        "source_object": 2,
+        "source_va": "0xc73d0"
+      }
+    ],
+    "confidence": "candidate literal, pointer reference observed; numeric false positives possible"
+  },
+  {
+    "va": "0xb2ba1",
+    "object_offset": 11169,
+    "raw_hex": "092ca678bc71a569bc57a55ba677a977adc8a141ad6ebb5cb6dca148",
+    "text": "\t,寺廟可增加安定值，要蓋嗎？",
+    "references": [
+      {
+        "source_object": 2,
+        "source_va": "0xc73d4"
+      }
+    ],
+    "confidence": "candidate literal, pointer reference observed; numeric false positives possible"
+  },
+  {
+    "va": "0xb2bbe",
+    "object_offset": 11198,
+    "raw_hex": "092cb8c5aaf9a569bc57a55baa76a677adc8a141ad6ebb5cb6dca148",
+    "text": "\t,衙門可增加治安值，要蓋嗎？",
+    "references": [
+      {
+        "source_object": 2,
+        "source_va": "0xc73d8"
+      }
+    ],
+    "confidence": "candidate literal, pointer reference observed; numeric false positives possible"
+  },
+  {
+    "va": "0xb2c04",
+    "object_offset": 11268,
+    "raw_hex": "092caed5b3f5a569bc57a55bb773a74ca56cb6d2aec9aabab056bd6dadc8a141ad6ebb5cb6dca148",
+    "text": "\t,校場可增加新兵召募時的訓練值，要蓋嗎？",
+    "references": [
+      {
+        "source_object": 2,
+        "source_va": "0xc73e0"
+      }
+    ],
+    "confidence": "candidate literal, pointer reference observed; numeric false positives possible"
+  },
+  {
+    "va": "0xb2e91",
+    "object_offset": 11921,
+    "raw_hex": "092ca46ab942aa65afe0c258a46aa5feb0eaaabab942bfe9b671a141a8cfc0e7b77eb671a46ab454b4a3a4c9a141ad6ebfb3abd8b6dca148",
+    "text": "\t,大運河能擴大全國的運輸量，使營業量大幅提升，要興建嗎？",
+    "references": [
+      {
+        "source_object": 2,
+        "source_va": "0xc7418"
+      }
+    ],
+    "confidence": "candidate literal, pointer reference observed; numeric false positives possible"
+  },
+  {
+    "va": "0xb2eca",
+    "object_offset": 11978,
+    "raw_hex": "092cc476a7deb3f5afe0b1c0bc73a5feb0eaa6caa96daabac5e9afe0b942b0caa141a8cfa448a448b3a3a6b3b16ab0b7aabac5e9be7aa141ad6ebfb3abd8b6dca148",
+    "text": "\t,競技場能推廣全國百姓的體能運動，使人人都有強健的體魄，要興建嗎？",
+    "references": [
+      {
+        "source_object": 2,
+        "source_va": "0xc741c"
+      }
+    ],
+    "confidence": "candidate literal, pointer reference observed; numeric false positives possible"
+  }
+]

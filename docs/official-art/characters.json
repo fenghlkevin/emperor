@@ -1,0 +1,1502 @@
+[
+  {
+    "id": "cbdb-27948",
+    "name": "刘基",
+    "role": "文职",
+    "age": 50,
+    "identity": "long narrow face, high forehead, fine forked gray goatee",
+    "clothing": "teal scholar robe, dark navy cap, rolled bamboo dispatch",
+    "status": {
+      "full": true,
+      "avatar": true,
+      "court": true
+    },
+    "artRole": "civil",
+    "reviewed": true
+  },
+  {
+    "id": "cbdb-3767",
+    "name": "苏轼",
+    "role": "文职",
+    "age": 45,
+    "identity": "broad rounded smiling face, thick rounded beard, crescent eyes",
+    "clothing": "sapphire robe, Dongpo folded cap, bamboo scroll and brush",
+    "status": {
+      "full": true,
+      "avatar": true,
+      "court": true
+    },
+    "artRole": "civil",
+    "reviewed": true
+  },
+  {
+    "id": "cbdb-1384",
+    "name": "欧阳修",
+    "role": "文职",
+    "age": 58,
+    "identity": "lean oval lined face, gentle eyes, sparse gray beard",
+    "clothing": "burgundy scholar robe, soft black cap, literary manuscript",
+    "status": {
+      "full": true,
+      "avatar": true,
+      "court": true
+    },
+    "artRole": "civil",
+    "reviewed": true
+  },
+  {
+    "id": "manual-1523",
+    "name": "李斯",
+    "role": "文职",
+    "age": 46,
+    "identity": "hard square jaw, close piercing eyes, narrow dark beard",
+    "clothing": "ivory Qin-inspired minister robe with dark geometric edging, tall archaic cap, bamboo legal code",
+    "status": {
+      "full": true,
+      "avatar": true,
+      "court": true
+    },
+    "artRole": "civil",
+    "reviewed": true
+  },
+  {
+    "id": "original-4",
+    "name": "张巡",
+    "role": "武将",
+    "age": 42,
+    "identity": "angular weathered face, thick brows and dense pointed beard",
+    "clothing": "ochre surcoat over Tang-inspired dark armor, straight sword, worn military dispatch",
+    "status": {
+      "full": true,
+      "avatar": true,
+      "court": true
+    },
+    "artRole": "military",
+    "reviewed": true
+  },
+  {
+    "id": "cbdb-17364",
+    "name": "管仲",
+    "role": "文职",
+    "age": 55,
+    "identity": "wide mature face, steady broad-set eyes, long beard",
+    "clothing": "archaic dark green statesman robes, tall simple cap, bamboo accounts and ceremonial jade",
+    "status": {
+      "full": true,
+      "avatar": true,
+      "court": true
+    },
+    "artRole": "civil",
+    "reviewed": true
+  },
+  {
+    "id": "manual-1527",
+    "name": "萧何",
+    "role": "文职",
+    "age": 52,
+    "identity": "rounded dignified face, receding forehead, neat mustache and chin beard",
+    "clothing": "Han-inspired deep gray minister robe, black cap, bamboo law scroll and document seal",
+    "status": {
+      "full": true,
+      "avatar": true,
+      "court": true
+    },
+    "artRole": "civil",
+    "reviewed": true
+  },
+  {
+    "id": "manual-1529",
+    "name": "张良",
+    "role": "文职",
+    "age": 35,
+    "identity": "slender pale oval face, gentle narrow eyes, fine short goatee",
+    "clothing": "pale blue flowing strategist robe, black silk cap, rolled military treatise",
+    "status": {
+      "full": true,
+      "avatar": true,
+      "court": true
+    },
+    "artRole": "civil",
+    "reviewed": true
+  },
+  {
+    "id": "original-8",
+    "name": "魏徵",
+    "role": "文职",
+    "age": 55,
+    "identity": "long stern face, high cheekbones, straight brows, graying beard",
+    "clothing": "dark rust Tang-style minister robes, black futou, upright ivory tablet",
+    "status": {
+      "full": true,
+      "avatar": true,
+      "court": true
+    },
+    "artRole": "civil",
+    "reviewed": true
+  },
+  {
+    "id": "cbdb-8043",
+    "name": "范仲淹",
+    "role": "武将",
+    "age": 50,
+    "identity": "broad thoughtful face, strong nose, long neatly divided beard",
+    "clothing": "deep blue scholar-official robe, black cap, scroll of public affairs, no heavy armor",
+    "status": {
+      "full": true,
+      "avatar": true,
+      "court": true
+    },
+    "artRole": "civil",
+    "reviewed": true
+  },
+  {
+    "id": "cbdb-34344",
+    "name": "曾国藩",
+    "role": "武将",
+    "age": 53,
+    "identity": "long lined face, sparse brows, drooping eyes, thin gray beard",
+    "clothing": "late Qing dark blue commander robe over concealed armor, dark red-topped cap, military letter",
+    "status": {
+      "full": true,
+      "avatar": true,
+      "court": true
+    },
+    "artRole": "military",
+    "reviewed": true
+  },
+  {
+    "id": "cbdb-1762",
+    "name": "王安石",
+    "role": "文职",
+    "age": 49,
+    "identity": "narrow angular face, hollow cheeks, intense eyes, sparse beard",
+    "clothing": "plain dark olive scholar robe, simple black headcloth, reform manuscript, restrained appearance",
+    "status": {
+      "full": true,
+      "avatar": true,
+      "court": true
+    },
+    "artRole": "civil",
+    "reviewed": true
+  },
+  {
+    "id": "manual-1510",
+    "name": "商鞅",
+    "role": "文职",
+    "age": 43,
+    "identity": "long severe clean-cut face, sharply angled brows, small pointed beard",
+    "clothing": "black Qin-inspired official robe with dark red edging, bamboo laws, archaic tall cap",
+    "status": {
+      "full": true,
+      "avatar": true,
+      "court": true
+    },
+    "artRole": "civil",
+    "reviewed": true
+  },
+  {
+    "id": "manual-1629",
+    "name": "左宗棠",
+    "role": "武将",
+    "age": 58,
+    "identity": "broad heavy face, full cheeks, piercing small eyes, thick gray beard",
+    "clothing": "dark brown late Qing military robe, red-topped cap, campaign map and sword",
+    "status": {
+      "full": true,
+      "avatar": true,
+      "court": true
+    },
+    "artRole": "military",
+    "reviewed": true
+  },
+  {
+    "id": "original-14",
+    "name": "朱庆国",
+    "role": "文职",
+    "age": 25,
+    "identity": "young square face, clear bright eyes, thin mustache",
+    "clothing": "original-game interpreted bronze-brown scholar robe, period cap, modest ivory scroll, no invented historical insignia",
+    "status": {
+      "full": true,
+      "avatar": true,
+      "court": true
+    },
+    "artRole": "civil",
+    "reviewed": true
+  },
+  {
+    "id": "manual-1543",
+    "name": "班超",
+    "role": "武将",
+    "age": 50,
+    "identity": "weathered long face, sun-tanned cheeks, firm nose, thick mustache",
+    "clothing": "Han frontier leather lamellar armor, muted ochre cloak, campaign sword and route scroll",
+    "status": {
+      "full": true,
+      "avatar": true,
+      "court": true
+    },
+    "artRole": "military",
+    "reviewed": true
+  },
+  {
+    "id": "original-16",
+    "name": "公孙侨",
+    "role": "文职",
+    "age": 48,
+    "identity": "gentle mature oval face, broad forehead, fine long beard",
+    "clothing": "archaic gray-green statesman robes, simple tall cap, bamboo administrative text",
+    "status": {
+      "full": true,
+      "avatar": true,
+      "court": true
+    },
+    "artRole": "civil",
+    "reviewed": true
+  },
+  {
+    "id": "manual-1530",
+    "name": "韩信",
+    "role": "武将",
+    "age": 32,
+    "identity": "lean long face, high cheekbones, deep focused eyes, trimmed beard",
+    "clothing": "black and red Han-inspired armor, dark cape, commander sword and bamboo military dispatch",
+    "status": {
+      "full": true,
+      "avatar": true,
+      "court": true
+    },
+    "artRole": "military",
+    "reviewed": true
+  },
+  {
+    "id": "general-874-55746",
+    "name": "施琅",
+    "role": "武将",
+    "age": 58,
+    "identity": "wide sun-weathered face, heavy brows, thick gray mustache",
+    "clothing": "late Ming-Qing navy commander armor, dark sea-blue cloak, military cap, naval chart",
+    "status": {
+      "full": true,
+      "avatar": true,
+      "court": true
+    },
+    "artRole": "military",
+    "reviewed": true
+  },
+  {
+    "id": "manual-1519",
+    "name": "蔺相如",
+    "role": "武将",
+    "age": 45,
+    "identity": "wide clear forehead, strong upright nose, measured eyes, short beard",
+    "clothing": "Warring States dignitary robes in dark red, ceremonial cap, holding round jade disk in cloth",
+    "status": {
+      "full": true,
+      "avatar": true,
+      "court": true
+    },
+    "artRole": "civil",
+    "reviewed": true
+  },
+  {
+    "id": "manual-1579",
+    "name": "房玄龄",
+    "role": "文职",
+    "age": 55,
+    "identity": "rounded composed face, broad brow, long orderly gray beard",
+    "clothing": "deep plum Tang-style official robe and black futou, ivory tablet and folded state papers",
+    "status": {
+      "full": true,
+      "avatar": true,
+      "court": true
+    },
+    "artRole": "civil",
+    "reviewed": true
+  },
+  {
+    "id": "manual-1509",
+    "name": "晏婴",
+    "role": "文职",
+    "age": 50,
+    "identity": "short compact build, narrow clever face, fine beard and alert eyes",
+    "clothing": "plain archaic brown minister robe, modest cap, small bamboo state document",
+    "status": {
+      "full": true,
+      "avatar": true,
+      "court": true
+    },
+    "artRole": "civil",
+    "reviewed": true
+  },
+  {
+    "id": "general-113-60981",
+    "name": "苏武",
+    "role": "武将",
+    "age": 60,
+    "identity": "lean deeply weathered face, white brows, long coarse gray beard",
+    "clothing": "worn russet Han robe and fur-trimmed cloak, holding Han envoy staff with yak-tail tassels",
+    "status": {
+      "full": true,
+      "avatar": true,
+      "court": true
+    },
+    "artRole": "civil",
+    "reviewed": true
+  },
+  {
+    "id": "cbdb-898",
+    "name": "寇准",
+    "role": "文职",
+    "age": 49,
+    "identity": "wide earnest face, broad nose, heavy eyebrows, thick short beard",
+    "clothing": "burgundy Song official robe, black long-wing futou, ivory tablet and border dispatch",
+    "status": {
+      "full": true,
+      "avatar": true,
+      "court": true
+    },
+    "artRole": "civil",
+    "reviewed": true
+  },
+  {
+    "id": "manual-1544",
+    "name": "马援",
+    "role": "武将",
+    "age": 56,
+    "identity": "long rugged face, graying stubble, heavy jaw and calm eyes",
+    "clothing": "Han bronze and leather armor, dark green cloak, long cavalry spear, mature upright build",
+    "status": {
+      "full": true,
+      "avatar": true,
+      "court": true
+    },
+    "artRole": "military",
+    "reviewed": true
+  },
+  {
+    "id": "general-296-67948",
+    "name": "祖逖",
+    "role": "武将",
+    "age": 37,
+    "identity": "lean athletic face, straight fierce brows, short mustache",
+    "clothing": "Jin-inspired dark lamellar armor, pale weathered cloak, straight sword and military belt",
+    "status": {
+      "full": true,
+      "avatar": true,
+      "court": true
+    },
+    "artRole": "military",
+    "reviewed": true
+  },
+  {
+    "id": "general-790-68223",
+    "name": "吴三桂",
+    "role": "武将",
+    "age": 48,
+    "identity": "broad angular face, raised heavy brows, curled mustache",
+    "clothing": "late Ming dark steel armor, red-brown cloak, engraved military helmet and sword",
+    "status": {
+      "full": true,
+      "avatar": true,
+      "court": true
+    },
+    "artRole": "military",
+    "reviewed": true
+  },
+  {
+    "id": "cbdb-94373",
+    "name": "郭子仪",
+    "role": "武将",
+    "age": 64,
+    "identity": "broad kind elderly face, full white mustache and beard, steady eyes",
+    "clothing": "Tang-inspired bronze commander armor, deep red cape, modest helmet, veteran dignified posture",
+    "status": {
+      "full": true,
+      "avatar": true,
+      "court": true
+    },
+    "artRole": "military",
+    "reviewed": true
+  },
+  {
+    "id": "general-298-58873",
+    "name": "陶侃",
+    "role": "武将",
+    "age": 55,
+    "identity": "compact square face, tough sun-dark skin, thin mustache and firm lips",
+    "clothing": "Jin-inspired dark scale armor and plain indigo cloak, military dispatch and practical sword",
+    "status": {
+      "full": true,
+      "avatar": true,
+      "court": true
+    },
+    "artRole": "military",
+    "reviewed": true
+  },
+  {
+    "id": "original-29",
+    "name": "谢安",
+    "role": "文职",
+    "age": 47,
+    "identity": "refined elongated oval face, soft composed eyes, fine black beard",
+    "clothing": "ivory wide-sleeved Jin scholar robes, black silk headcloth, small folding fan, elegant restrained bearing",
+    "status": {
+      "full": true,
+      "avatar": true,
+      "court": true
+    },
+    "artRole": "civil",
+    "reviewed": true
+  },
+  {
+    "id": "manual-1582",
+    "name": "李靖",
+    "role": "武将",
+    "age": 54,
+    "identity": "long angular mature face, focused narrow eyes, pointed graying beard",
+    "clothing": "Tang dark lamellar commander armor, jade cloak, military helmet, rolled map",
+    "status": {
+      "full": true,
+      "avatar": true,
+      "court": true
+    },
+    "artRole": "military",
+    "reviewed": true
+  },
+  {
+    "id": "general-403-90513",
+    "name": "薛仁贵",
+    "role": "武将",
+    "age": 35,
+    "identity": "rugged square face, bright wide-set eyes, short dark beard",
+    "clothing": "iconic silver-white Tang-inspired battle armor, white cloak, long halberd, strong athletic build",
+    "status": {
+      "full": true,
+      "avatar": true,
+      "court": true
+    },
+    "artRole": "military",
+    "reviewed": true
+  },
+  {
+    "id": "cbdb-630",
+    "name": "韩琦",
+    "role": "武将",
+    "age": 52,
+    "identity": "large broad face, heavy brows, calm small eyes, long dark beard",
+    "clothing": "deep green Song minister robe, black long-wing futou, ivory tablet, substantial dignified build",
+    "status": {
+      "full": true,
+      "avatar": true,
+      "court": true
+    },
+    "artRole": "civil",
+    "reviewed": true
+  },
+  {
+    "id": "original-33",
+    "name": "黄飞鸿",
+    "role": "武将",
+    "age": 42,
+    "identity": "wide smooth clean-shaven face, high cheekbones, calm sharp eyes",
+    "clothing": "late Qing dark plain martial jacket and trousers, cloth boots, unarmed disciplined martial stance",
+    "status": {
+      "full": true,
+      "avatar": true,
+      "court": true
+    },
+    "artRole": "military",
+    "reviewed": true
+  },
+  {
+    "id": "manual-1590",
+    "name": "李林甫",
+    "role": "文职",
+    "age": 56,
+    "identity": "long narrow pale face, thin lips, hooded calculating eyes, fine mustache",
+    "clothing": "luxurious dark purple Tang court robe, black futou, slender ivory tablet",
+    "status": {
+      "full": true,
+      "avatar": true,
+      "court": true
+    },
+    "artRole": "civil",
+    "reviewed": true
+  },
+  {
+    "id": "manual-1591",
+    "name": "杨国忠",
+    "role": "文职",
+    "age": 44,
+    "identity": "round full face, arched brows, bright small eyes, neat thin beard",
+    "clothing": "ornate ochre Tang official robe, black cap, jade belt and folded memorial",
+    "status": {
+      "full": true,
+      "avatar": true,
+      "court": true
+    },
+    "artRole": "civil",
+    "reviewed": true
+  },
+  {
+    "id": "general-468-78206",
+    "name": "安禄山",
+    "role": "武将",
+    "age": 48,
+    "identity": "very broad rounded face, heavy stocky build, thick beard, deep-set eyes",
+    "clothing": "frontier Tang lamellar armor with fur-edged maroon cloak, broad military belt and curved saber",
+    "status": {
+      "full": true,
+      "avatar": true,
+      "court": true
+    },
+    "artRole": "military",
+    "reviewed": true
+  },
+  {
+    "id": "original-37",
+    "name": "屈原",
+    "role": "文职",
+    "age": 40,
+    "identity": "long melancholic lean face, high brow, fine long black beard",
+    "clothing": "flowing ivory and dark blue Chu-inspired scholar robes, tall archaic cap, orchid sprig and poetry scroll",
+    "status": {
+      "full": true,
+      "avatar": true,
+      "court": true
+    },
+    "artRole": "civil",
+    "reviewed": true
+  },
+  {
+    "id": "manual-1537",
+    "name": "卫青",
+    "role": "武将",
+    "age": 35,
+    "identity": "calm strong rectangular face, short neat mustache, broad steady eyes",
+    "clothing": "dark Han lamellar armor, jade cloak, military helmet, cavalry sword and dispatch",
+    "status": {
+      "full": true,
+      "avatar": true,
+      "court": true
+    },
+    "artRole": "military",
+    "reviewed": true
+  },
+  {
+    "id": "manual-1536",
+    "name": "霍去病",
+    "role": "武将",
+    "age": 22,
+    "identity": "youthful angular clean-shaven face, sharp alert eyes, athletic lean cheeks",
+    "clothing": "dark red Han cavalry armor, compact white cloak, cavalry bow and short sword",
+    "status": {
+      "full": true,
+      "avatar": true,
+      "court": true
+    },
+    "artRole": "military",
+    "reviewed": true
+  },
+  {
+    "id": "manual-1513",
+    "name": "孙膑",
+    "role": "武将",
+    "age": 42,
+    "identity": "thin long thoughtful face, deeply set eyes, sparse pointed beard",
+    "clothing": "plain indigo strategist robes over light Warring States armor, bamboo military treatise, supported dignified standing",
+    "status": {
+      "full": true,
+      "avatar": true,
+      "court": true
+    },
+    "artRole": "military",
+    "reviewed": true
+  },
+  {
+    "id": "original-41",
+    "name": "庞涓",
+    "role": "文职",
+    "age": 36,
+    "identity": "sharp triangular face, close-set severe eyes, black wedge beard",
+    "clothing": "Warring States black bronze armor, dark red scarf, command baton and straight sword",
+    "status": {
+      "full": true,
+      "avatar": true,
+      "court": true
+    },
+    "artRole": "military",
+    "reviewed": true
+  },
+  {
+    "id": "cbdb-25403",
+    "name": "诸葛亮",
+    "role": "武将",
+    "age": 43,
+    "identity": "very slender long face, high forehead, tranquil almond eyes, long fine black goatee",
+    "clothing": "iconic white crane cloak 鹤氅, pale scholar robe, black silk lunjin 纶巾, white feather fan 羽扇",
+    "status": {
+      "full": true,
+      "avatar": true,
+      "court": true
+    },
+    "artRole": "civil",
+    "reviewed": true
+  },
+  {
+    "id": "original-43",
+    "name": "王玄策",
+    "role": "武将",
+    "age": 40,
+    "identity": "weathered narrow face, strong hooked nose, alert eyes, short beard",
+    "clothing": "Tang envoy-commander light armor with sand-colored travel cloak, envoy staff and route scroll",
+    "status": {
+      "full": true,
+      "avatar": true,
+      "court": true
+    },
+    "artRole": "military",
+    "reviewed": true
+  },
+  {
+    "id": "original-44",
+    "name": "刘仁轨",
+    "role": "武将",
+    "age": 63,
+    "identity": "broad deeply lined face, fierce narrow eyes, long white forked beard",
+    "clothing": "Tang navy commander dark armor, sea-blue cloak, modest helmet, naval command tally",
+    "status": {
+      "full": true,
+      "avatar": true,
+      "court": true
+    },
+    "artRole": "military",
+    "reviewed": true
+  },
+  {
+    "id": "general-422-82978",
+    "name": "苏定方",
+    "role": "武将",
+    "age": 55,
+    "identity": "long square face, broad cheekbones, thick mustache and short beard",
+    "clothing": "Tang bronze-black lamellar armor, gray-green campaign cloak, military bow and sword",
+    "status": {
+      "full": true,
+      "avatar": true,
+      "court": true
+    },
+    "artRole": "military",
+    "reviewed": true
+  },
+  {
+    "id": "general-523-68118",
+    "name": "狄青",
+    "role": "武将",
+    "age": 38,
+    "identity": "broad stern face with subtle small cheek tattoo mark, short dark beard",
+    "clothing": "Song dark metal armor, restrained red cloak, carrying a bronze battle face-mask at belt, sword",
+    "status": {
+      "full": true,
+      "avatar": true,
+      "court": true
+    },
+    "artRole": "military",
+    "reviewed": true
+  },
+  {
+    "id": "cbdb-1488",
+    "name": "司马光",
+    "role": "文职",
+    "age": 58,
+    "identity": "long narrow elderly face, thin eyebrows, thoughtful eyes, sparse gray beard",
+    "clothing": "plain dark gray Song scholar robe, black cap, bound historical manuscript and brush",
+    "status": {
+      "full": true,
+      "avatar": true,
+      "court": true
+    },
+    "artRole": "civil",
+    "reviewed": true
+  },
+  {
+    "id": "cbdb-8175",
+    "name": "岳飞",
+    "role": "武将",
+    "age": 34,
+    "identity": "strong oval face, determined bright eyes, curved thick brows, neat short mustache",
+    "clothing": "restrained steel Song lamellar armor, dark red cape, engraved helmet, upright spear",
+    "status": {
+      "full": true,
+      "avatar": true,
+      "court": true
+    },
+    "artRole": "military",
+    "reviewed": true
+  },
+  {
+    "id": "cbdb-19123",
+    "name": "文天祥",
+    "role": "武将",
+    "age": 40,
+    "identity": "long angular pale face, firm brow, resolute eyes, long narrow black beard",
+    "clothing": "solemn dark blue Song scholar-official robe, black long-wing cap, ivory tablet, no fantasy armor",
+    "status": {
+      "full": true,
+      "avatar": true,
+      "court": true
+    },
+    "artRole": "civil",
+    "reviewed": true
+  },
+  {
+    "id": "manual-1608",
+    "name": "徐达",
+    "role": "武将",
+    "age": 46,
+    "identity": "broad square face, strong nose, heavy brows, full trimmed black beard",
+    "clothing": "early Ming dark steel armor, deep blue cloak, commander helmet and straight sword",
+    "status": {
+      "full": true,
+      "avatar": true,
+      "court": true
+    },
+    "artRole": "military",
+    "reviewed": true
+  },
+  {
+    "id": "manual-1609",
+    "name": "常遇春",
+    "role": "武将",
+    "age": 37,
+    "identity": "broad rugged tan face, large intense eyes, thick black beard, powerful build",
+    "clothing": "early Ming black-bronze battle armor, dark red cloak, long spear, restrained shoulder armor",
+    "status": {
+      "full": true,
+      "avatar": true,
+      "court": true
+    },
+    "artRole": "military",
+    "reviewed": true
+  },
+  {
+    "id": "cbdb-54819",
+    "name": "林则徐",
+    "role": "文职",
+    "age": 55,
+    "identity": "round full mature face, thick straight brows, broad nose, short graying beard",
+    "clothing": "Qing deep blue official robe, red-topped hat, written memorial and simple official seal",
+    "status": {
+      "full": true,
+      "avatar": true,
+      "court": true
+    },
+    "artRole": "civil",
+    "reviewed": true
+  },
+  {
+    "id": "cbdb-28093",
+    "name": "方孝孺",
+    "role": "文职",
+    "age": 43,
+    "identity": "thin severe long face, high forehead, close-set steady eyes, sparse beard",
+    "clothing": "plain dark brown Ming scholar robe, black soft cap, Confucian manuscript",
+    "status": {
+      "full": true,
+      "avatar": true,
+      "court": true
+    },
+    "artRole": "civil",
+    "reviewed": true
+  },
+  {
+    "id": "manual-1614",
+    "name": "戚继光",
+    "role": "武将",
+    "age": 40,
+    "identity": "broad sun-tanned face, bright stern eyes, thick mustache and short beard",
+    "clothing": "Ming coastal commander dark lamellar armor, rust cape, practical helmet, long anti-pirate spear",
+    "status": {
+      "full": true,
+      "avatar": true,
+      "court": true
+    },
+    "artRole": "military",
+    "reviewed": true
+  },
+  {
+    "id": "manual-1611",
+    "name": "于谦",
+    "role": "武将",
+    "age": 48,
+    "identity": "lean square face, high upright brow, deep calm eyes, short black beard",
+    "clothing": "plain deep crimson Ming minister robe, black winged hat, ivory tablet and defense dispatch",
+    "status": {
+      "full": true,
+      "avatar": true,
+      "court": true
+    },
+    "artRole": "civil",
+    "reviewed": true
+  },
+  {
+    "id": "cbdb-30374",
+    "name": "王守仁",
+    "role": "武将",
+    "age": 45,
+    "identity": "lean long composed face, high cheekbones, narrow contemplative eyes, fine long beard",
+    "clothing": "ivory and slate scholar robe, simple black headcloth, bamboo philosophical manuscript and sword at waist",
+    "status": {
+      "full": true,
+      "avatar": true,
+      "court": true
+    },
+    "artRole": "civil",
+    "reviewed": true
+  },
+  {
+    "id": "original-57",
+    "name": "程咬金",
+    "role": "武将",
+    "age": 46,
+    "identity": "broad round smiling face, thick curling beard, heavy athletic build",
+    "clothing": "Tang-inspired dark iron armor, green cloak, long broad-bladed battle axe, no oversized fantasy axe",
+    "status": {
+      "full": true,
+      "avatar": true,
+      "court": true
+    },
+    "artRole": "military",
+    "reviewed": true
+  },
+  {
+    "id": "cbdb-8008",
+    "name": "秦桧",
+    "role": "文职",
+    "age": 55,
+    "identity": "long narrow face, arched thin brows, hooded eyes, precise thin goatee",
+    "clothing": "luxurious dark purple Song minister robe, long-wing black futou, ivory tablet",
+    "status": {
+      "full": true,
+      "avatar": true,
+      "court": true
+    },
+    "artRole": "civil",
+    "reviewed": true
+  },
+  {
+    "id": "original-59",
+    "name": "史可法",
+    "role": "武将",
+    "age": 40,
+    "identity": "lean solemn face, high forehead, short mustache and pointed beard",
+    "clothing": "late Ming minister robe over restrained dark armor, simple black cap, defense dispatch and sword",
+    "status": {
+      "full": true,
+      "avatar": true,
+      "court": true
+    },
+    "artRole": "military",
+    "reviewed": true
+  },
+  {
+    "id": "manual-1592",
+    "name": "包拯",
+    "role": "文职",
+    "age": 52,
+    "identity": "very dark sun-tanned broad square face, heavy straight brows, stern wide eyes",
+    "clothing": "iconic solemn black official robe, black winged hat, upright ivory tablet, imposing judge bearing",
+    "status": {
+      "full": true,
+      "avatar": true,
+      "court": true
+    },
+    "artRole": "civil",
+    "reviewed": true
+  },
+  {
+    "id": "manual-1507",
+    "name": "姜子牙",
+    "role": "武将",
+    "age": 72,
+    "identity": "deeply lined long face, long white eyebrows, flowing white beard",
+    "clothing": "ivory sage robes, simple pale linen hood, wooden staff and bamboo divination scroll",
+    "status": {
+      "full": true,
+      "avatar": true,
+      "court": true
+    },
+    "artRole": "civil",
+    "reviewed": true
+  },
+  {
+    "id": "original-62",
+    "name": "比干",
+    "role": "文职",
+    "age": 58,
+    "identity": "broad grave mature face, straight heavy brows, long gray beard",
+    "clothing": "Shang-inspired dark ochre ceremonial minister robe, archaic tall cap, jade tablet",
+    "status": {
+      "full": true,
+      "avatar": true,
+      "court": true
+    },
+    "artRole": "civil",
+    "reviewed": true
+  },
+  {
+    "id": "original-63",
+    "name": "周公",
+    "role": "文职",
+    "age": 50,
+    "identity": "strong broad forehead, long rectangular face, steady eyes, full black-gray beard",
+    "clothing": "Western Zhou-inspired dark red ceremonial robe, archaic formal headpiece, jade ritual tablet",
+    "status": {
+      "full": true,
+      "avatar": true,
+      "court": true
+    },
+    "artRole": "civil",
+    "reviewed": true
+  },
+  {
+    "id": "original-64",
+    "name": "孔子",
+    "role": "文职",
+    "age": 62,
+    "identity": "broad high forehead, solemn kind eyes, large rounded nose, long divided gray beard",
+    "clothing": "simple earth-brown ancient scholar robes, archaic black cap, bamboo classics held respectfully",
+    "status": {
+      "full": true,
+      "avatar": true,
+      "court": true
+    },
+    "artRole": "civil",
+    "reviewed": true
+  },
+  {
+    "id": "original-65",
+    "name": "康有为",
+    "role": "文职",
+    "age": 48,
+    "identity": "long narrow face, high forehead, thin mustache and sparse chin beard",
+    "clothing": "late Qing dark long scholar gown, black round scholar cap, reform manuscript",
+    "status": {
+      "full": true,
+      "avatar": true,
+      "court": true
+    },
+    "artRole": "civil",
+    "reviewed": true
+  },
+  {
+    "id": "original-66",
+    "name": "老子",
+    "role": "文职",
+    "age": 75,
+    "identity": "ancient narrow deeply wrinkled face, tall forehead, long white eyebrows and beard",
+    "clothing": "plain pale linen Daoist robes, simple white topknot, wooden walking staff, serene bearing",
+    "status": {
+      "full": true,
+      "avatar": true,
+      "court": true
+    },
+    "artRole": "civil",
+    "reviewed": true
+  },
+  {
+    "id": "manual-1512",
+    "name": "孙武",
+    "role": "武将",
+    "age": 45,
+    "identity": "lean strong face, deep dark eyes, straight thick brows, short wedge beard",
+    "clothing": "archaic dark bronze leather lamellar armor, muted brown cloak, bamboo Art of War treatise",
+    "status": {
+      "full": true,
+      "avatar": true,
+      "court": true
+    },
+    "artRole": "military",
+    "reviewed": true
+  },
+  {
+    "id": "original-68",
+    "name": "韩非",
+    "role": "文职",
+    "age": 38,
+    "identity": "long triangular face, high sharp cheekbones, thoughtful narrow eyes, sparse beard",
+    "clothing": "black Warring States scholar robe with red edging, simple high cap, bamboo legal philosophy text",
+    "status": {
+      "full": true,
+      "avatar": true,
+      "court": true
+    },
+    "artRole": "civil",
+    "reviewed": true
+  },
+  {
+    "id": "original-69",
+    "name": "墨子",
+    "role": "文职",
+    "age": 50,
+    "identity": "broad weathered tan face, thick straight brows, coarse short beard",
+    "clothing": "plain rough charcoal linen robes, cloth belt, wooden carpenter square and bamboo engineering notes",
+    "status": {
+      "full": true,
+      "avatar": true,
+      "court": true
+    },
+    "artRole": "civil",
+    "reviewed": true
+  },
+  {
+    "id": "manual-1520",
+    "name": "白起",
+    "role": "武将",
+    "age": 46,
+    "identity": "gaunt angular face, deep-set cold eyes, heavy brows, short black beard",
+    "clothing": "severe black Qin lamellar armor, dark red edging, command sword, no ornate cape",
+    "status": {
+      "full": true,
+      "avatar": true,
+      "court": true
+    },
+    "artRole": "military",
+    "reviewed": true
+  },
+  {
+    "id": "manual-1521",
+    "name": "王翦",
+    "role": "武将",
+    "age": 58,
+    "identity": "wide seasoned square face, heavy gray eyebrows, full graying beard",
+    "clothing": "Qin dark bronze commander armor, broad practical helmet, bamboo campaign map and sword",
+    "status": {
+      "full": true,
+      "avatar": true,
+      "court": true
+    },
+    "artRole": "military",
+    "reviewed": true
+  },
+  {
+    "id": "manual-1518",
+    "name": "廉颇",
+    "role": "武将",
+    "age": 67,
+    "identity": "very broad rugged elderly face, thick white eyebrows, dense white beard, powerful build",
+    "clothing": "Warring States dark red-brown heavy armor, old campaign cloak, broad straight sword",
+    "status": {
+      "full": true,
+      "avatar": true,
+      "court": true
+    },
+    "artRole": "military",
+    "reviewed": true
+  },
+  {
+    "id": "manual-1522",
+    "name": "李牧",
+    "role": "武将",
+    "age": 44,
+    "identity": "lean sun-weathered face, sharp watchful eyes, short full beard",
+    "clothing": "Zhao frontier dark leather armor, gray fur-edged cloak, cavalry bow and saber",
+    "status": {
+      "full": true,
+      "avatar": true,
+      "court": true
+    },
+    "artRole": "military",
+    "reviewed": true
+  },
+  {
+    "id": "manual-1524",
+    "name": "吕不韦",
+    "role": "文职",
+    "age": 52,
+    "identity": "broad smooth face, high receding forehead, clever small eyes, neat black beard",
+    "clothing": "rich dark green Qin-inspired minister robe, geometric gold edging, jade belt, bamboo state annals",
+    "status": {
+      "full": true,
+      "avatar": true,
+      "court": true
+    },
+    "artRole": "civil",
+    "reviewed": true
+  },
+  {
+    "id": "general-56-58629",
+    "name": "蒙恬",
+    "role": "武将",
+    "age": 38,
+    "identity": "square tough face, wide-set eyes, thick straight mustache and short beard",
+    "clothing": "Qin black frontier lamellar armor, dark ochre cloak, long spear and survey scroll",
+    "status": {
+      "full": true,
+      "avatar": true,
+      "court": true
+    },
+    "artRole": "military",
+    "reviewed": true
+  },
+  {
+    "id": "general-103-50637",
+    "name": "李广",
+    "role": "武将",
+    "age": 52,
+    "identity": "long rugged sun-dark face, slightly hooded eagle eyes, thick graying beard",
+    "clothing": "Han frontier dark leather armor, fur-edged brown cape, prominent long bow and quiver",
+    "status": {
+      "full": true,
+      "avatar": true,
+      "court": true
+    },
+    "artRole": "military",
+    "reviewed": true
+  },
+  {
+    "id": "original-77",
+    "name": "荆轲",
+    "role": "武将",
+    "age": 30,
+    "identity": "lean angular youthful face, alert dark eyes, sparse mustache",
+    "clothing": "plain dark gray travel robes over concealed light leather armor, modest short dagger and rolled map",
+    "status": {
+      "full": true,
+      "avatar": true,
+      "court": true
+    },
+    "artRole": "military",
+    "reviewed": true
+  },
+  {
+    "id": "general-38-51333",
+    "name": "田单",
+    "role": "武将",
+    "age": 42,
+    "identity": "broad expressive face, heavy raised brows, dense pointed beard",
+    "clothing": "Qi-inspired bronze leather armor, dark green cloak, fire-tactics bamboo dispatch and sword",
+    "status": {
+      "full": true,
+      "avatar": true,
+      "court": true
+    },
+    "artRole": "military",
+    "reviewed": true
+  },
+  {
+    "id": "original-79",
+    "name": "司马迁",
+    "role": "文职",
+    "age": 45,
+    "identity": "thin elongated thoughtful face, deep-set gentle eyes, sparse long beard",
+    "clothing": "plain muted brown Han scholar robe, black cap, bamboo historical scroll and writing brush",
+    "status": {
+      "full": true,
+      "avatar": true,
+      "court": true
+    },
+    "artRole": "civil",
+    "reviewed": true
+  },
+  {
+    "id": "cbdb-30257",
+    "name": "曹操",
+    "role": "文职",
+    "age": 48,
+    "identity": "short broad face, calculating small eyes, heavy black brows, thick neat mustache and short beard",
+    "clothing": "rich burgundy brocade commander robe over dark armor, black high cap, military dispatch and sword",
+    "status": {
+      "full": true,
+      "avatar": true,
+      "court": true
+    },
+    "artRole": "military",
+    "reviewed": true
+  },
+  {
+    "id": "manual-1555",
+    "name": "赵云",
+    "role": "武将",
+    "age": 30,
+    "identity": "handsome clean-shaven narrow oval face, bright calm eyes, straight brows",
+    "clothing": "iconic silver-white lamellar armor, white cloak, silver helmet, long silver spear",
+    "status": {
+      "full": true,
+      "avatar": true,
+      "court": true
+    },
+    "artRole": "military",
+    "reviewed": true
+  },
+  {
+    "id": "manual-1565",
+    "name": "司马懿",
+    "role": "武将",
+    "age": 62,
+    "identity": "long thin lined face, deeply hooded calculating eyes, sparse gray mustache and beard",
+    "clothing": "dark violet high-collared strategist robe, black silk cap, clasped hands with military dispatch",
+    "status": {
+      "full": true,
+      "avatar": true,
+      "court": true
+    },
+    "artRole": "civil",
+    "reviewed": true
+  },
+  {
+    "id": "general-285-45592",
+    "name": "吕布",
+    "role": "武将",
+    "age": 32,
+    "identity": "powerful broad angular clean-shaven face, high cheekbones, piercing eyes, athletic build",
+    "clothing": "iconic crimson-black battle armor, phoenix-wing purple-gold crown with two long pheasant plumes, 方天画戟 halberd with straight central point and two crescent side blades, complete weapon inside canvas with margin",
+    "status": {
+      "full": true,
+      "avatar": true,
+      "court": true
+    },
+    "artRole": "military",
+    "reviewed": true
+  },
+  {
+    "id": "manual-1553",
+    "name": "关羽",
+    "role": "武将",
+    "age": 42,
+    "identity": "deep ruddy red face, phoenix eyes, arched silkworm brows, exceptionally long straight black beard",
+    "clothing": "iconic emerald green robe over armor, green headcloth, complete 青龙偃月刀 crescent glaive, blade tip and shaft butt inside canvas with margin",
+    "status": {
+      "full": true,
+      "avatar": true,
+      "court": true
+    },
+    "artRole": "military",
+    "reviewed": true
+  },
+  {
+    "id": "manual-1554",
+    "name": "张飞",
+    "role": "武将",
+    "age": 38,
+    "identity": "broad dark-tan rugged face, fierce round eyes, bushy raised brows, wide nose, bristling black beard",
+    "clothing": "iconic black battle armor, dark scarf, broad powerful build, complete 丈八蛇矛 with perfectly straight rigid long shaft and short narrow rigid spearhead, subtle serpentine edges only at tip, never flexible or whip-like",
+    "status": {
+      "full": true,
+      "avatar": true,
+      "court": true
+    },
+    "artRole": "military",
+    "reviewed": true
+  },
+  {
+    "id": "manual-1569",
+    "name": "周瑜",
+    "role": "武将",
+    "age": 31,
+    "identity": "refined youthful clean-shaven oval face, elegant arched brows, bright confident eyes",
+    "clothing": "elegant red-silver light armor, white cape, finely crafted commander sword, cultured bearing",
+    "status": {
+      "full": true,
+      "avatar": true,
+      "court": true
+    },
+    "artRole": "military",
+    "reviewed": true
+  },
+  {
+    "id": "general-398-60962",
+    "name": "秦琼",
+    "role": "武将",
+    "age": 38,
+    "identity": "long golden-tan face, thick straight brows, firm nose, neat long black beard",
+    "clothing": "Tang-inspired bronze battle armor, deep brown cloak, pair of iron truncheons 双锏",
+    "status": {
+      "full": true,
+      "avatar": true,
+      "court": true
+    },
+    "artRole": "military",
+    "reviewed": true
+  },
+  {
+    "id": "original-88",
+    "name": "尉迟恭",
+    "role": "武将",
+    "age": 40,
+    "identity": "very dark rugged broad face, bulging watchful eyes, bristling beard, powerful build",
+    "clothing": "Tang black battle armor, dark red cloak, straight iron whip 钢鞭, imposing guard general",
+    "status": {
+      "full": true,
+      "avatar": true,
+      "court": true
+    },
+    "artRole": "military",
+    "reviewed": true
+  },
+  {
+    "id": "original-89",
+    "name": "李密",
+    "role": "文职",
+    "age": 38,
+    "identity": "slender long face, high forehead, narrow ambitious eyes, short pointed beard",
+    "clothing": "Sui-inspired indigo scholar-command robe over light armor, soft cap, campaign scroll",
+    "status": {
+      "full": true,
+      "avatar": true,
+      "court": true
+    },
+    "artRole": "civil",
+    "reviewed": true
+  },
+  {
+    "id": "cbdb-3332",
+    "name": "韩愈",
+    "role": "文职",
+    "age": 50,
+    "identity": "broad plain face, heavy nose, serious thoughtful eyes, coarse dark beard",
+    "clothing": "plain dark green Tang scholar robe, black futou, literary manuscript and brush",
+    "status": {
+      "full": true,
+      "avatar": true,
+      "court": true
+    },
+    "artRole": "civil",
+    "reviewed": true
+  },
+  {
+    "id": "general-638-62417",
+    "name": "拔都",
+    "role": "武将",
+    "age": 40,
+    "identity": "broad steppe face, high cheekbones, narrow dark eyes, short sparse mustache",
+    "clothing": "Mongol-inspired practical leather lamellar armor, fur-edged cap, red-brown cloak, composite bow",
+    "status": {
+      "full": true,
+      "avatar": true,
+      "court": true
+    },
+    "artRole": "military",
+    "reviewed": true
+  },
+  {
+    "id": "general-795-83328",
+    "name": "郑成功",
+    "role": "武将",
+    "age": 35,
+    "identity": "strong youthful oval face, upright brows, intense eyes, neat thin mustache",
+    "clothing": "late Ming dark naval armor, red cloak, black military cap, straight sword and sea chart",
+    "status": {
+      "full": true,
+      "avatar": true,
+      "court": true
+    },
+    "artRole": "military",
+    "reviewed": true
+  },
+  {
+    "id": "manual-1616",
+    "name": "袁崇焕",
+    "role": "武将",
+    "age": 42,
+    "identity": "long lean stern face, hollow cheeks, strong straight nose, sparse pointed beard",
+    "clothing": "late Ming dark steel armor, blue-gray cloak, simple military helmet, frontier defense map",
+    "status": {
+      "full": true,
+      "avatar": true,
+      "court": true
+    },
+    "artRole": "military",
+    "reviewed": true
+  },
+  {
+    "id": "manual-1625",
+    "name": "刘墉",
+    "role": "文职",
+    "age": 60,
+    "identity": "thin elongated humorous face, uneven brows, narrow smiling eyes, long hooked nose, wispy gray beard",
+    "clothing": "Qing dark blue official robe, red-topped hat, slightly stooped posture, ivory memorial tablet",
+    "status": {
+      "full": true,
+      "avatar": true,
+      "court": true
+    },
+    "artRole": "civil",
+    "reviewed": true
+  },
+  {
+    "id": "manual-1618",
+    "name": "魏忠贤",
+    "role": "文职",
+    "age": 56,
+    "identity": "round pale face, hooded narrow eyes, smooth beardless cheeks, thin pursed lips",
+    "clothing": "luxurious dark purple Ming eunuch court robe, tall black court cap, jade belt and ceremonial tablet",
+    "status": {
+      "full": true,
+      "avatar": true,
+      "court": true
+    },
+    "artRole": "civil",
+    "reviewed": true
+  },
+  {
+    "id": "manual-1624",
+    "name": "和珅",
+    "role": "文职",
+    "age": 38,
+    "identity": "round smooth full face, fair complexion, small smiling eyes, arched brows, fine mustache",
+    "clothing": "rich sapphire Qing official robe, red-topped hat, ornate jade belt, folded accounts",
+    "status": {
+      "full": true,
+      "avatar": true,
+      "court": true
+    },
+    "artRole": "civil",
+    "reviewed": true
+  },
+  {
+    "id": "original-97",
+    "name": "刘耀伦",
+    "role": "武将",
+    "age": 28,
+    "identity": "young broad oval face, clear dark eyes, straight brows, clean-shaven athletic build",
+    "clothing": "original-game interpreted dark steel armor, muted plum cloak, simple helmet and sword, no invented historical insignia",
+    "status": {
+      "full": true,
+      "avatar": true,
+      "court": true
+    },
+    "artRole": "military",
+    "reviewed": true
+  },
+  {
+    "id": "original-98",
+    "name": "邹鹏",
+    "role": "文职",
+    "age": 32,
+    "identity": "long rectangular face, gentle wide-set eyes, short neat chin beard",
+    "clothing": "original-game interpreted slate-blue scholar robe, plain black cap and bamboo papers, no invented historical insignia",
+    "status": {
+      "full": true,
+      "avatar": true,
+      "court": true
+    },
+    "artRole": "civil",
+    "reviewed": true
+  },
+  {
+    "id": "original-99",
+    "name": "沈昌平",
+    "role": "文职",
+    "age": 35,
+    "identity": "soft rounded face, arched fine brows, small straight nose, thin mustache",
+    "clothing": "original-game interpreted jade-green scholar robe, simple black cap, ivory scroll, no invented historical insignia",
+    "status": {
+      "full": true,
+      "avatar": true,
+      "court": true
+    },
+    "artRole": "civil",
+    "reviewed": true
+  }
+]

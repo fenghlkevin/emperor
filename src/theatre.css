@@ -1,0 +1,35 @@
+.theatre-dialog{padding:0;border:1px solid #ad8a52;border-radius:5px;width:min(1440px,96vw,138vh);max-width:96vw;max-height:94vh;background:#273b30;color:#f5e3b9;font-family:"Songti SC",serif;box-shadow:0 24px 90px #101e1ccc}
+.theatre-dialog::backdrop{background:#132019df}
+.royal-theatre{position:relative;aspect-ratio:3/2;overflow:hidden;isolation:isolate}
+.theatre-scenery{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}
+.royal-theatre:after{content:"";position:absolute;inset:0;pointer-events:none;z-index:-1;box-shadow:inset 0 0 80px #292b2333}
+.royal-theatre header{position:absolute;inset:0 0 auto;display:flex;justify-content:space-between;align-items:start;padding:24px 30px;background:linear-gradient(#182c27c9,transparent);z-index:2}
+.royal-theatre h1{color:#fff0cb;font-size:30px;font-weight:500;letter-spacing:8px;margin:8px 0;text-shadow:0 2px 10px #162c25}
+.royal-theatre small{color:#f5e3b9;font-size:11px;letter-spacing:3px}
+.royal-theatre button{background:#243b34d9;border:1px solid #c5a66f;border-radius:3px;color:#f5e3b9;padding:10px 18px;cursor:pointer;font:inherit}
+.royal-theatre button:hover{background:#405647}
+.royal-theatre .theatre-result{position:absolute;bottom:4%;left:50%;transform:translateX(-50%);margin:0;padding:13px 28px;white-space:normal;max-width:88%;width:max-content;box-sizing:border-box;text-align:center;background:#243b34eb;border:1px solid #b99b67;border-radius:3px;color:#f5e3b9;font-size:16px;letter-spacing:3px;box-shadow:0 6px 24px #16282040}
+.theatre-result.is-settled{animation:theatre-reveal .45s ease-out}
+.theatre-performance{position:absolute;inset:0;pointer-events:none;visibility:hidden}
+.is-performing .theatre-performance,.is-finished .theatre-performance{visibility:visible}
+.opera-player{position:absolute;bottom:39%;width:12%;height:18%;transform-origin:50% 97%;will-change:transform}
+.opera-player:before{content:"";position:absolute;bottom:0;left:32%;width:36%;height:3%;background:#251d1a5c;border-radius:50%;filter:blur(3px)}
+.opera-player img{position:relative;width:100%;height:100%;object-fit:contain;object-position:center bottom;filter:drop-shadow(1px 3px 2px #241c1928);transform-origin:50% 95%}
+.opera-dan{left:39%}.opera-sheng{right:37%}
+.is-performing .opera-dan{animation:opera-dan-step 3s cubic-bezier(.37,0,.27,1) both}
+.is-performing .opera-sheng{animation:opera-sheng-step 3s cubic-bezier(.37,0,.27,1) both}
+.is-performing .opera-dan img{animation:opera-dan-gesture 3s ease-in-out both}
+.is-performing .opera-sheng img{animation:opera-sheng-gesture 3s ease-in-out both}
+@keyframes opera-dan-step{0%{transform:translateX(-8%)}32%{transform:translateX(-2%)}65%{transform:translateX(1%)}100%{transform:translateX(0)}}
+@keyframes opera-sheng-step{0%{transform:translateX(7%)}38%{transform:translateX(2%)}70%{transform:translateX(-1%)}100%{transform:translateX(0)}}
+@keyframes opera-dan-gesture{0%{transform:rotate(-1deg)}28%{transform:rotate(1.3deg) translateY(-.6%)}58%{transform:rotate(-.6deg)}82%{transform:rotate(1deg) scaleY(.988)}100%{transform:none}}
+@keyframes opera-sheng-gesture{0%{transform:rotate(.8deg)}38%{transform:rotate(-1deg) translateY(-.4%)}65%{transform:rotate(.4deg)}84%{transform:rotate(-1deg) scaleY(.988)}100%{transform:none}}
+@keyframes theatre-reveal{from{opacity:0}to{opacity:1}}
+@media(prefers-reduced-motion:reduce){.is-performing .opera-player,.is-performing .opera-player img,.theatre-result.is-settled{animation:none}}
+@media(max-width:700px){.royal-theatre header{padding:12px}.royal-theatre h1{font-size:20px}.royal-theatre small{font-size:9px;letter-spacing:1px}.royal-theatre button{padding:7px 10px;font-size:12px}.royal-theatre .theatre-result{font-size:12px;padding:9px 14px;letter-spacing:1px}}
+/* Standing actors share the scale of the seated stage musicians. */
+.opera-sheng img{scale:-1 1}
+.theatre-attendants{position:absolute;bottom:4%;width:22%;height:37%;pointer-events:none;z-index:1}
+.theatre-attendants img{width:100%;height:100%;object-fit:contain;object-position:center bottom;filter:drop-shadow(1px 4px 3px #241c1938)}
+.attendants-left{left:3%}.attendants-right{right:3%}
+.royal-theatre .theatre-result{z-index:2}

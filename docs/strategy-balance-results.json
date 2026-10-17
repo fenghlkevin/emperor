@@ -1,0 +1,485 @@
+{
+  "version": 1,
+  "scenarios": [
+    {
+      "seed": 1,
+      "mode": "peaceful",
+      "rows": [
+        {
+          "elapsed": 36,
+          "treasury": 27341,
+          "debt": 0,
+          "net": 706,
+          "provinces": 10,
+          "livingStandard": 57,
+          "stability": 93,
+          "supply": 1441,
+          "services": 1642
+        },
+        {
+          "elapsed": 72,
+          "treasury": 59817,
+          "debt": 0,
+          "net": 841,
+          "provinces": 10,
+          "livingStandard": 58,
+          "stability": 99,
+          "supply": 1441,
+          "services": 1655
+        },
+        {
+          "elapsed": 108,
+          "treasury": 95041,
+          "debt": 0,
+          "net": 935,
+          "provinces": 10,
+          "livingStandard": 59,
+          "stability": 100,
+          "supply": 1441,
+          "services": 1664
+        }
+      ],
+      "strategicEvents": 0
+    },
+    {
+      "seed": 1,
+      "mode": "large-army",
+      "rows": [
+        {
+          "elapsed": 36,
+          "treasury": 0,
+          "debt": 207907,
+          "net": -5796,
+          "provinces": 10,
+          "livingStandard": 57,
+          "stability": 93,
+          "supply": 3941,
+          "services": 1643
+        },
+        {
+          "elapsed": 72,
+          "treasury": 0,
+          "debt": 405350,
+          "net": -5661,
+          "provinces": 10,
+          "livingStandard": 58,
+          "stability": 99,
+          "supply": 3941,
+          "services": 1655
+        },
+        {
+          "elapsed": 108,
+          "treasury": 0,
+          "debt": 602476,
+          "net": -5569,
+          "provinces": 10,
+          "livingStandard": 59,
+          "stability": 100,
+          "supply": 3941,
+          "services": 1664
+        }
+      ],
+      "strategicEvents": 0
+    },
+    {
+      "seed": 1,
+      "mode": "hunger",
+      "rows": [
+        {
+          "elapsed": 36,
+          "treasury": 0,
+          "debt": 79856,
+          "net": -2988,
+          "provinces": 10,
+          "livingStandard": 54,
+          "stability": 3,
+          "supply": 1441,
+          "services": 1621
+        },
+        {
+          "elapsed": 72,
+          "treasury": 0,
+          "debt": 195740,
+          "net": -3833,
+          "provinces": 10,
+          "livingStandard": 52,
+          "stability": 0,
+          "supply": 1441,
+          "services": 1608
+        },
+        {
+          "elapsed": 108,
+          "treasury": 0,
+          "debt": 335390,
+          "net": -3998,
+          "provinces": 10,
+          "livingStandard": 50,
+          "stability": 0,
+          "supply": 1441,
+          "services": 1596
+        }
+      ],
+      "strategicEvents": 0
+    },
+    {
+      "seed": 1,
+      "mode": "contested",
+      "rows": [
+        {
+          "elapsed": 36,
+          "treasury": 27387,
+          "debt": 0,
+          "net": 705,
+          "provinces": 10,
+          "livingStandard": 57,
+          "stability": 93,
+          "supply": 1441,
+          "services": 1643
+        },
+        {
+          "elapsed": 72,
+          "treasury": 61565,
+          "debt": 0,
+          "net": 839,
+          "provinces": 10,
+          "livingStandard": 58,
+          "stability": 99,
+          "supply": 1441,
+          "services": 1657
+        },
+        {
+          "elapsed": 108,
+          "treasury": 95272,
+          "debt": 0,
+          "net": 1068,
+          "provinces": 8,
+          "livingStandard": 61,
+          "stability": 100,
+          "supply": 1231,
+          "services": 1455
+        }
+      ],
+      "strategicEvents": 21
+    },
+    {
+      "seed": 7,
+      "mode": "peaceful",
+      "rows": [
+        {
+          "elapsed": 36,
+          "treasury": 24506,
+          "debt": 0,
+          "net": 669,
+          "provinces": 10,
+          "livingStandard": 57,
+          "stability": 94,
+          "supply": 1441,
+          "services": 1644
+        },
+        {
+          "elapsed": 72,
+          "treasury": 54781,
+          "debt": 0,
+          "net": 880,
+          "provinces": 10,
+          "livingStandard": 58,
+          "stability": 99,
+          "supply": 1441,
+          "services": 1654
+        },
+        {
+          "elapsed": 108,
+          "treasury": 88621,
+          "debt": 0,
+          "net": 935,
+          "provinces": 10,
+          "livingStandard": 59,
+          "stability": 100,
+          "supply": 1441,
+          "services": 1665
+        }
+      ],
+      "strategicEvents": 0
+    },
+    {
+      "seed": 7,
+      "mode": "large-army",
+      "rows": [
+        {
+          "elapsed": 36,
+          "treasury": 0,
+          "debt": 208182,
+          "net": -5820,
+          "provinces": 10,
+          "livingStandard": 57,
+          "stability": 94,
+          "supply": 3941,
+          "services": 1645
+        },
+        {
+          "elapsed": 72,
+          "treasury": 0,
+          "debt": 409228,
+          "net": -5615,
+          "provinces": 10,
+          "livingStandard": 58,
+          "stability": 99,
+          "supply": 3941,
+          "services": 1656
+        },
+        {
+          "elapsed": 108,
+          "treasury": 0,
+          "debt": 611020,
+          "net": -5564,
+          "provinces": 10,
+          "livingStandard": 59,
+          "stability": 100,
+          "supply": 3941,
+          "services": 1666
+        }
+      ],
+      "strategicEvents": 0
+    },
+    {
+      "seed": 7,
+      "mode": "hunger",
+      "rows": [
+        {
+          "elapsed": 36,
+          "treasury": 0,
+          "debt": 78122,
+          "net": -3171,
+          "provinces": 10,
+          "livingStandard": 54,
+          "stability": 3,
+          "supply": 1441,
+          "services": 1621
+        },
+        {
+          "elapsed": 72,
+          "treasury": 0,
+          "debt": 190332,
+          "net": -3746,
+          "provinces": 10,
+          "livingStandard": 52,
+          "stability": 0,
+          "supply": 1441,
+          "services": 1612
+        },
+        {
+          "elapsed": 108,
+          "treasury": 0,
+          "debt": 334561,
+          "net": -3975,
+          "provinces": 10,
+          "livingStandard": 50,
+          "stability": 0,
+          "supply": 1441,
+          "services": 1601
+        }
+      ],
+      "strategicEvents": 0
+    },
+    {
+      "seed": 7,
+      "mode": "contested",
+      "rows": [
+        {
+          "elapsed": 36,
+          "treasury": 26579,
+          "debt": 0,
+          "net": 681,
+          "provinces": 10,
+          "livingStandard": 57,
+          "stability": 94,
+          "supply": 1441,
+          "services": 1645
+        },
+        {
+          "elapsed": 72,
+          "treasury": 57390,
+          "debt": 0,
+          "net": 898,
+          "provinces": 10,
+          "livingStandard": 58,
+          "stability": 99,
+          "supply": 1441,
+          "services": 1655
+        },
+        {
+          "elapsed": 108,
+          "treasury": 91217,
+          "debt": 0,
+          "net": 1094,
+          "provinces": 8,
+          "livingStandard": 61,
+          "stability": 100,
+          "supply": 1231,
+          "services": 1455
+        }
+      ],
+      "strategicEvents": 21
+    },
+    {
+      "seed": 41,
+      "mode": "peaceful",
+      "rows": [
+        {
+          "elapsed": 36,
+          "treasury": 27838,
+          "debt": 0,
+          "net": 668,
+          "provinces": 10,
+          "livingStandard": 57,
+          "stability": 94,
+          "supply": 1441,
+          "services": 1643
+        },
+        {
+          "elapsed": 72,
+          "treasury": 61700,
+          "debt": 0,
+          "net": 908,
+          "provinces": 10,
+          "livingStandard": 58,
+          "stability": 98,
+          "supply": 1441,
+          "services": 1654
+        },
+        {
+          "elapsed": 108,
+          "treasury": 97957,
+          "debt": 0,
+          "net": 820,
+          "provinces": 10,
+          "livingStandard": 60,
+          "stability": 100,
+          "supply": 1441,
+          "services": 1667
+        }
+      ],
+      "strategicEvents": 0
+    },
+    {
+      "seed": 41,
+      "mode": "large-army",
+      "rows": [
+        {
+          "elapsed": 36,
+          "treasury": 0,
+          "debt": 208974,
+          "net": -5822,
+          "provinces": 10,
+          "livingStandard": 57,
+          "stability": 94,
+          "supply": 3941,
+          "services": 1644
+        },
+        {
+          "elapsed": 72,
+          "treasury": 0,
+          "debt": 413482,
+          "net": -5581,
+          "provinces": 10,
+          "livingStandard": 58,
+          "stability": 98,
+          "supply": 3941,
+          "services": 1655
+        },
+        {
+          "elapsed": 108,
+          "treasury": 0,
+          "debt": 613117,
+          "net": -5656,
+          "provinces": 10,
+          "livingStandard": 60,
+          "stability": 100,
+          "supply": 3941,
+          "services": 1670
+        }
+      ],
+      "strategicEvents": 0
+    },
+    {
+      "seed": 41,
+      "mode": "hunger",
+      "rows": [
+        {
+          "elapsed": 36,
+          "treasury": 0,
+          "debt": 79165,
+          "net": -2783,
+          "provinces": 10,
+          "livingStandard": 54,
+          "stability": 2,
+          "supply": 1441,
+          "services": 1622
+        },
+        {
+          "elapsed": 72,
+          "treasury": 0,
+          "debt": 186786,
+          "net": -3138,
+          "provinces": 10,
+          "livingStandard": 52,
+          "stability": 0,
+          "supply": 1441,
+          "services": 1611
+        },
+        {
+          "elapsed": 108,
+          "treasury": 0,
+          "debt": 330939,
+          "net": -4692,
+          "provinces": 10,
+          "livingStandard": 50,
+          "stability": 0,
+          "supply": 1441,
+          "services": 1600
+        }
+      ],
+      "strategicEvents": 0
+    },
+    {
+      "seed": 41,
+      "mode": "contested",
+      "rows": [
+        {
+          "elapsed": 36,
+          "treasury": 24840,
+          "debt": 0,
+          "net": 672,
+          "provinces": 10,
+          "livingStandard": 57,
+          "stability": 94,
+          "supply": 1441,
+          "services": 1644
+        },
+        {
+          "elapsed": 72,
+          "treasury": 55327,
+          "debt": 0,
+          "net": 913,
+          "provinces": 10,
+          "livingStandard": 58,
+          "stability": 98,
+          "supply": 1441,
+          "services": 1654
+        },
+        {
+          "elapsed": 108,
+          "treasury": 88340,
+          "debt": 0,
+          "net": 978,
+          "provinces": 8,
+          "livingStandard": 62,
+          "stability": 100,
+          "supply": 1231,
+          "services": 1457
+        }
+      ],
+      "strategicEvents": 21
+    }
+  ]
+}

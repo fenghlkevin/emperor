@@ -1,0 +1,69 @@
+/* Emperor's view: real controls surround a single undistorted painting. */
+.is-court{--court-paper:#f5eddb;--court-ink:#3d3525;--court-green:#193e36;--court-gold:#b29a61;grid-template-columns:156px minmax(0,1fr);background:var(--court-paper);color:var(--court-ink)}
+.is-court .topbar{background:linear-gradient(105deg,#f8f1e2,#ebe0c6);color:var(--court-ink);border-bottom:3px double var(--court-gold);box-shadow:0 2px 7px #33261426;z-index:5}
+.is-court .topbar .brand,.is-court .top-stats,.is-court .top-stats b,.is-court .topbar .reign{color:var(--court-ink)}
+.is-court .brand>span,.is-court .reign small{color:#7e7056}.is-court .topbar .reign{border-left-color:#b5a482}
+.is-court .sidebar{background:linear-gradient(100deg,#f8f0de,#e9dec5);border-right:3px double #ac9565}
+.is-court .sidebar nav{margin-top:24px}.is-court .sidebar nav button{padding:23px 15px;border-bottom:1px solid #c4b48f;color:#50452e}
+.is-court .sidebar nav .active{background:linear-gradient(110deg,#244d42,#153a33);color:#f5e7b8;box-shadow:inset 0 0 0 1px #baa169;outline:1px solid #e4d3a6;outline-offset:-5px}
+.is-court .sidebar nav .active span{color:#e0c784}.is-court .sidebar-note{padding-top:20px}.is-court .sidebar-note p{color:#7d7059}
+.is-court .emperor-panel{background:#faf3e4;border-color:#baaa80;box-shadow:none}.is-court .emperor-toggle{background:var(--court-green);color:#f4e4ba}
+.is-court .court-workspace{grid-template-columns:minmax(0,1fr) 238px;background:radial-gradient(ellipse at center,#5c4933,#201d17);overflow:hidden;min-width:0}
+
+.is-court .court-workspace .scene.court{width:min(100%,calc((100vh - 64px)*4/3))!important;height:auto;aspect-ratio:4/3;max-height:100%;justify-self:center;align-self:center;overflow:hidden}
+.is-court .court-workspace .scene.court>img{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:contain}
+.is-court .court .scene-heading{top:10px;left:10px;padding:6px 9px;background:#f6eddaeb;border:1px solid #b6a078;box-shadow:0 2px 5px #241b2426}
+.is-court .court .scene-heading h1{font-size:14px;border:0;padding:0}.is-court .court .scene-heading button{margin-top:4px;font-size:10px}
+.is-court .court footer{background:#f6eddae6;color:#55442b;bottom:9px;left:10px;font-size:10px;border:1px solid #bca779;padding:5px 8px;pointer-events:none}.is-court .court footer [role=status]{color:#756144}
+.is-court .court-roster{display:flex;flex-direction:column;width:auto;height:100%;min-height:0;overflow:auto;padding:30px 16px 20px;background:linear-gradient(100deg,#f7f0e0,#eee3ca);border-left:3px double #b9a16b;box-shadow:inset 3px 0 12px #8a693216}
+.is-court .court-roster[hidden]{display:none}.is-court .roster-title{text-align:center;border-bottom:1px solid #bdab7e;padding-bottom:18px;margin-bottom:20px}.is-court .roster-title small{font-size:10px;letter-spacing:4px}.is-court .roster-title h2{font-size:25px;letter-spacing:4px;margin:9px 0;color:#3f3320}.is-court .roster-title p{font-size:10px;letter-spacing:1px}
+.court-office-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px 7px}.court-office-grid button{padding:18px 3px;min-width:0;border:1px solid #bca77c;border-radius:3px;background:linear-gradient(#faf5e9,#ece1c8);font-size:13px;letter-spacing:1px;box-shadow:inset 0 0 0 2px #ffffff30;color:#493a26;white-space:nowrap}
+.court-office-grid button:hover,.court-office-grid button:focus-visible{background:#21483d;color:#f9edcb;border-color:#ccb77c;outline-color:#9b7e45;box-shadow:inset 0 0 0 2px #c7b17755}
+.court-roster-bottom{margin-top:auto;padding-top:25px}.court-roster-bottom p{font-size:10px;letter-spacing:1px;color:#8a7858;text-align:center}.court-dismiss{display:flex;align-items:center;justify-content:center;gap:20px;width:100%;background:linear-gradient(120deg,#285043,#12382f);border:3px double #c4ab69;outline:1px solid #867344;border-radius:2px;color:#f5e7bd;font-size:23px;letter-spacing:8px;padding:15px 10px;box-shadow:inset 0 0 0 3px #dfc78726}.court-dismiss span{margin:0}.court-dismiss:hover{background:#345d4b}
+@media(max-width:1100px){.is-court .court-workspace{grid-template-columns:minmax(0,1fr) 200px}.is-court .court-roster{padding:20px 10px 15px}.court-office-grid{gap:8px 5px}.court-office-grid button{font-size:12px;padding:14px 2px;letter-spacing:0}.is-court .roster-title h2{font-size:22px}.is-court .sidebar nav button{padding:20px 11px}}
+@media(max-width:1000px){.is-court{grid-template-columns:130px minmax(0,1fr)}.is-court .court-workspace .scene.court{width:min(100%,calc((100vh - 60px)*4/3))!important}}
+@media(max-height:760px){.is-court .court-roster{padding-top:16px}.is-court .roster-title{padding-bottom:12px;margin-bottom:13px}.is-court .roster-title p,.court-roster-bottom p{display:none}.court-office-grid button{padding:12px 2px}.court-roster-bottom{padding-top:16px}.court-dismiss{padding:10px;font-size:20px}}
+@media(max-width:900px){.is-court{grid-template-columns:90px minmax(0,1fr)}.is-court .sidebar nav button{padding:20px 8px;font-size:12px;gap:5px}.is-court .sidebar nav button span{min-width:16px}.is-court .court-workspace{grid-template-columns:minmax(0,1fr);grid-template-rows:minmax(0,1fr) auto}.is-court .court-workspace .scene.court{width:min(100%,calc((100vh - 285px)*4/3))!important;max-height:none}.is-court .court-roster{display:grid;grid-template-columns:minmax(0,1fr) 95px;gap:10px;height:auto;max-height:220px;padding:10px;border-left:0;border-top:3px double #b9a16b}.is-court .roster-title{display:none}.court-office-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:5px}.court-office-grid button{padding:9px 2px;font-size:10px}.court-roster-bottom{margin:0;padding:0;align-self:stretch;display:flex;align-items:center}.court-dismiss{font-size:17px;letter-spacing:2px;padding:15px 6px;gap:4px}.is-court .court footer{display:none}}
+@media(max-width:900px){.is-court{grid-template-columns:110px minmax(0,1fr)}.is-court .sidebar>.emperor-panel{padding:7px;margin:10px 5px 0;width:calc(100% - 10px)}.is-court .sidebar .emperor-heading>div{flex-basis:100%;min-width:0}.is-court .sidebar .emperor-heading>div>small{display:none}.is-court .sidebar .emperor-heading strong{font-size:14px;line-height:1.5}.is-court .sidebar .emperor-age{font-size:12px}.is-court .sidebar .emperor-vital-label{font-size:11px;letter-spacing:0;white-space:nowrap}.is-court .sidebar .emperor-values small{letter-spacing:0;font-size:10px}.is-court .sidebar .emperor-values b{font-size:14px}.is-court .sidebar .emperor-actions button{font-size:10px;padding:7px 2px}.is-court .court-roster-bottom p{display:none}.is-court .court-dismiss{white-space:nowrap}}
+
+/* Follow visible hats and robes; clip hit testing to the same silhouette. */
+.is-court .court .hotspot,.is-court .court .hotspot:hover,.is-court .court .hotspot:focus-visible,.is-court .court .hotspot.selected,.is-court .court .hotspot.is-focused{background:transparent;border:0;border-radius:0;outline:none;box-shadow:none}
+.is-court .court .outline{display:block;filter:none}
+.is-court .court .outline path{fill:#ffe6a008;stroke:#ffe2a0;stroke-width:4;stroke-linejoin:round}
+.is-court .court .hotspot.selected .outline path{stroke:#ff6454;fill:#ff645412}
+
+/* Folding the roster preserves the painting and dismissal control positions. */
+.is-court .court-workspace.roster-collapsed{grid-template-columns:minmax(0,1fr) 238px}
+.is-court .roster-collapsed :is(.roster-title,.court-office-grid,.court-roster-bottom p){visibility:hidden}
+@media(max-width:1100px){.is-court .court-workspace.roster-collapsed{grid-template-columns:minmax(0,1fr) 200px}}
+@media(max-width:900px){.is-court .court-workspace.roster-collapsed{grid-template-columns:minmax(0,1fr);grid-template-rows:minmax(0,1fr) auto}}
+/* Transparent full-body actors: their actual alpha silhouette is both highlight and hit area. */
+.is-court .court.has-court-actors .hotspot.court-person{padding:0;border:0!important;background:none!important;outline:none!important;box-shadow:none!important;border-radius:0;line-height:0;overflow:visible;cursor:inherit}
+.court-person-canvas{display:block;width:100%;height:100%;pointer-events:none;filter:drop-shadow(0 2px 1px #21180f66);transition:filter .12s ease}
+.is-court .court .court-person:is(.is-actor-hover,.is-focused,.selected,:focus-visible) .court-person-canvas{filter:drop-shadow(2px 0 0 #fff8c7) drop-shadow(-2px 0 0 #fff8c7) drop-shadow(0 2px 0 #fff8c7) drop-shadow(0 -2px 0 #fff8c7) drop-shadow(0 0 5px #fff0a47a)}
+.is-court .court>.court-person-caption{position:absolute;display:block;z-index:109;transform:translate(-50%,-100%);pointer-events:none;color:#322719;font-size:11px;line-height:1.5;letter-spacing:1px;padding:4px 8px;background:#f9f1df;border:1px solid #ad9157;box-shadow:0 2px 6px #21180f30;white-space:nowrap}
+.is-court .court>.court-person-caption[hidden]{display:none}
+.court.has-court-actors .scene-heading,.court.has-court-actors footer,.court.has-court-actors #next{z-index:110}
+.court-person.is-vacant{visibility:hidden}
+.official-avatar{width:36px;height:36px;object-fit:contain;vertical-align:middle;border-radius:50%;background:#e6dbc2;border:1px solid #bda87c;margin-right:7px}
+.official-identity-art{float:left;width:220px;margin:20px 28px 18px 0;padding:10px;background:radial-gradient(ellipse,#e2d9c3,transparent 72%);text-align:center}.official-identity-art>img{display:block;width:100%;height:430px;object-fit:contain}.official-identity-art figcaption{font-size:11px;letter-spacing:2px;color:#8a7956;margin-top:9px}
+.historical-profile-dialog>header{clear:both}.historical-profile-dialog::after{content:'';display:block;clear:both}
+@media(max-width:700px){.official-identity-art{float:none;margin:12px auto;width:170px}.official-identity-art>img{height:300px}.official-avatar{width:28px;height:28px}}
+@media(prefers-reduced-motion:reduce){.court-person-canvas{transition:none}}
+.court-person:not(.is-vacant)::before{content:'';position:absolute;bottom:-.6%;left:15%;width:70%;height:2.6%;border-radius:50%;background:radial-gradient(ellipse,#21180f55,transparent 70%);pointer-events:none}
+.court.has-court-actors[data-court-ready=loading]::after{content:'群臣入班…';position:absolute;bottom:12px;left:50%;transform:translateX(-50%);padding:6px 12px;background:#f7efdeeb;border:1px solid #ad9157;color:#675132;font-size:12px;line-height:1.5;z-index:110}
+
+.official-portrait-preview figure>img{display:block;width:min(72vw,calc((94vh - 80px)*.6));height:calc(94vh - 80px);object-fit:contain}
+@media(max-width:600px){.official-portrait-preview figure>img{width:min(82vw,calc((90vh - 110px)*.6));height:calc(90vh - 110px)}}
+/* Court interactions now live on the actors and left navigation. */
+.is-court .court-workspace{grid-template-columns:minmax(0,1fr);grid-template-rows:minmax(0,1fr)}
+@media(max-width:900px){.is-court .court-workspace .scene.court{width:min(100%,calc((100vh - 60px)*4/3))!important}}
+/* 人物资料固定在立绘右栏，不随浮动图片回流到左侧。 */
+.historical-profile-dialog{width:min(1040px,94vw)}
+.official-profile-layout{display:grid;grid-template-columns:260px minmax(0,1fr);gap:28px;align-items:start}
+.official-profile-layout .official-identity-art{float:none;width:100%;margin:20px 0 0;padding:10px;position:sticky;top:0}
+.official-profile-layout .official-identity-art>img{height:min(540px,65vh)}
+.official-profile-copy{min-width:0}
+.official-profile-copy .profile-scores{gap:12px;padding:15px;justify-content:space-between}
+.official-profile-copy .profile-scores div{min-width:48px}
+@media(max-width:700px){.official-profile-layout{grid-template-columns:110px minmax(0,1fr);gap:14px}.official-profile-layout .official-identity-art{width:100%;padding:0;margin-top:18px}.official-profile-layout .official-identity-art>img{height:260px}.historical-profile-dialog{padding:16px}.official-profile-copy .profile-biography{font-size:15px}.official-profile-copy .profile-scores{gap:8px;padding:10px}.official-profile-copy .profile-scores dd{font-size:22px}}

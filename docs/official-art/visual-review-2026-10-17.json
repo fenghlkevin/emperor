@@ -1,0 +1,842 @@
+[
+  {
+    "id": "cbdb-27948",
+    "name": "刘基",
+    "face_review": "三图对照，未见明显身份级面容错配",
+    "weapon_review": "按项目人物设定核对；上朝持笏板，个人图按文武服饰与道具检查",
+    "change": "保留"
+  },
+  {
+    "id": "cbdb-3767",
+    "name": "苏轼",
+    "face_review": "三图对照，未见明显身份级面容错配",
+    "weapon_review": "按项目人物设定核对；上朝持笏板，个人图按文武服饰与道具检查",
+    "change": "保留"
+  },
+  {
+    "id": "cbdb-1384",
+    "name": "欧阳修",
+    "face_review": "三图对照，未见明显身份级面容错配",
+    "weapon_review": "按项目人物设定核对；上朝持笏板，个人图按文武服饰与道具检查",
+    "change": "保留"
+  },
+  {
+    "id": "manual-1523",
+    "name": "李斯",
+    "face_review": "三图对照，未见明显身份级面容错配",
+    "weapon_review": "按项目人物设定核对；上朝持笏板，个人图按文武服饰与道具检查",
+    "change": "保留"
+  },
+  {
+    "id": "original-4",
+    "name": "张巡",
+    "face_review": "三图对照，未见明显身份级面容错配",
+    "weapon_review": "按项目人物设定核对；上朝持笏板，个人图按文武服饰与道具检查",
+    "change": "保留"
+  },
+  {
+    "id": "cbdb-17364",
+    "name": "管仲",
+    "face_review": "三图对照，未见明显身份级面容错配",
+    "weapon_review": "按项目人物设定核对；上朝持笏板，个人图按文武服饰与道具检查",
+    "change": "保留"
+  },
+  {
+    "id": "manual-1527",
+    "name": "萧何",
+    "face_review": "三图对照，未见明显身份级面容错配",
+    "weapon_review": "按项目人物设定核对；上朝持笏板，个人图按文武服饰与道具检查",
+    "change": "保留"
+  },
+  {
+    "id": "manual-1529",
+    "name": "张良",
+    "face_review": "三图对照，未见明显身份级面容错配",
+    "weapon_review": "按项目人物设定核对；上朝持笏板，个人图按文武服饰与道具检查",
+    "change": "保留"
+  },
+  {
+    "id": "original-8",
+    "name": "魏徵",
+    "face_review": "三图对照，未见明显身份级面容错配",
+    "weapon_review": "按项目人物设定核对；上朝持笏板，个人图按文武服饰与道具检查",
+    "change": "保留"
+  },
+  {
+    "id": "cbdb-8043",
+    "name": "范仲淹",
+    "face_review": "三图对照，未见明显身份级面容错配",
+    "weapon_review": "按项目人物设定核对；上朝持笏板，个人图按文武服饰与道具检查",
+    "change": "保留"
+  },
+  {
+    "id": "cbdb-34344",
+    "name": "曾国藩",
+    "face_review": "三图对照，未见明显身份级面容错配",
+    "weapon_review": "按项目人物设定核对；上朝持笏板，个人图按文武服饰与道具检查",
+    "change": "保留"
+  },
+  {
+    "id": "cbdb-1762",
+    "name": "王安石",
+    "face_review": "三图对照，未见明显身份级面容错配",
+    "weapon_review": "按项目人物设定核对；上朝持笏板，个人图按文武服饰与道具检查",
+    "change": "保留"
+  },
+  {
+    "id": "manual-1510",
+    "name": "商鞅",
+    "face_review": "三图对照，未见明显身份级面容错配",
+    "weapon_review": "按项目人物设定核对；上朝持笏板，个人图按文武服饰与道具检查",
+    "change": "保留"
+  },
+  {
+    "id": "manual-1629",
+    "name": "左宗棠",
+    "face_review": "三图对照，未见明显身份级面容错配",
+    "weapon_review": "按项目人物设定核对；上朝持笏板，个人图按文武服饰与道具检查",
+    "change": "保留"
+  },
+  {
+    "id": "original-14",
+    "name": "朱庆国",
+    "face_review": "三图对照，未见明显身份级面容错配",
+    "weapon_review": "按项目人物设定核对；上朝持笏板，个人图按文武服饰与道具检查",
+    "change": "保留"
+  },
+  {
+    "id": "manual-1543",
+    "name": "班超",
+    "face_review": "三图对照，未见明显身份级面容错配",
+    "weapon_review": "按项目人物设定核对；上朝持笏板，个人图按文武服饰与道具检查",
+    "change": "保留"
+  },
+  {
+    "id": "original-16",
+    "name": "公孙侨",
+    "face_review": "三图对照，未见明显身份级面容错配",
+    "weapon_review": "按项目人物设定核对；上朝持笏板，个人图按文武服饰与道具检查",
+    "change": "保留"
+  },
+  {
+    "id": "manual-1530",
+    "name": "韩信",
+    "face_review": "三图对照，未见明显身份级面容错配",
+    "weapon_review": "按项目人物设定核对；上朝持笏板，个人图按文武服饰与道具检查",
+    "change": "保留"
+  },
+  {
+    "id": "general-874-55746",
+    "name": "施琅",
+    "face_review": "三图对照，未见明显身份级面容错配",
+    "weapon_review": "按项目人物设定核对；上朝持笏板，个人图按文武服饰与道具检查",
+    "change": "保留"
+  },
+  {
+    "id": "manual-1519",
+    "name": "蔺相如",
+    "face_review": "三图对照，未见明显身份级面容错配",
+    "weapon_review": "按项目人物设定核对；上朝持笏板，个人图按文武服饰与道具检查",
+    "change": "保留"
+  },
+  {
+    "id": "manual-1579",
+    "name": "房玄龄",
+    "face_review": "三图对照，未见明显身份级面容错配",
+    "weapon_review": "按项目人物设定核对；上朝持笏板，个人图按文武服饰与道具检查",
+    "change": "保留"
+  },
+  {
+    "id": "manual-1509",
+    "name": "晏婴",
+    "face_review": "三图对照，未见明显身份级面容错配",
+    "weapon_review": "按项目人物设定核对；上朝持笏板，个人图按文武服饰与道具检查",
+    "change": "保留"
+  },
+  {
+    "id": "general-113-60981",
+    "name": "苏武",
+    "face_review": "三图对照，未见明显身份级面容错配",
+    "weapon_review": "按项目人物设定核对；上朝持笏板，个人图按文武服饰与道具检查",
+    "change": "保留"
+  },
+  {
+    "id": "cbdb-898",
+    "name": "寇准",
+    "face_review": "三图对照，未见明显身份级面容错配",
+    "weapon_review": "按项目人物设定核对；上朝持笏板，个人图按文武服饰与道具检查",
+    "change": "保留"
+  },
+  {
+    "id": "manual-1544",
+    "name": "马援",
+    "face_review": "三图对照，未见明显身份级面容错配",
+    "weapon_review": "按项目人物设定核对；上朝持笏板，个人图按文武服饰与道具检查",
+    "change": "保留"
+  },
+  {
+    "id": "general-296-67948",
+    "name": "祖逖",
+    "face_review": "三图对照，未见明显身份级面容错配",
+    "weapon_review": "按项目人物设定核对；上朝持笏板，个人图按文武服饰与道具检查",
+    "change": "保留"
+  },
+  {
+    "id": "general-790-68223",
+    "name": "吴三桂",
+    "face_review": "三图对照，未见明显身份级面容错配",
+    "weapon_review": "按项目人物设定核对；上朝持笏板，个人图按文武服饰与道具检查",
+    "change": "保留"
+  },
+  {
+    "id": "cbdb-94373",
+    "name": "郭子仪",
+    "face_review": "三图对照，未见明显身份级面容错配",
+    "weapon_review": "按项目人物设定核对；上朝持笏板，个人图按文武服饰与道具检查",
+    "change": "保留"
+  },
+  {
+    "id": "general-298-58873",
+    "name": "陶侃",
+    "face_review": "三图对照，未见明显身份级面容错配",
+    "weapon_review": "按项目人物设定核对；上朝持笏板，个人图按文武服饰与道具检查",
+    "change": "保留"
+  },
+  {
+    "id": "original-29",
+    "name": "谢安",
+    "face_review": "三图对照，未见明显身份级面容错配",
+    "weapon_review": "按项目人物设定核对；上朝持笏板，个人图按文武服饰与道具检查",
+    "change": "保留"
+  },
+  {
+    "id": "manual-1582",
+    "name": "李靖",
+    "face_review": "三图对照，未见明显身份级面容错配",
+    "weapon_review": "按项目人物设定核对；上朝持笏板，个人图按文武服饰与道具检查",
+    "change": "保留"
+  },
+  {
+    "id": "general-403-90513",
+    "name": "薛仁贵",
+    "face_review": "三图对照，未见明显身份级面容错配",
+    "weapon_review": "按项目人物设定核对；上朝持笏板，个人图按文武服饰与道具检查",
+    "change": "保留"
+  },
+  {
+    "id": "cbdb-630",
+    "name": "韩琦",
+    "face_review": "三图对照，未见明显身份级面容错配",
+    "weapon_review": "按项目人物设定核对；上朝持笏板，个人图按文武服饰与道具检查",
+    "change": "保留"
+  },
+  {
+    "id": "original-33",
+    "name": "黄飞鸿",
+    "face_review": "三图对照，未见明显身份级面容错配",
+    "weapon_review": "按项目人物设定核对；上朝持笏板，个人图按文武服饰与道具检查",
+    "change": "保留"
+  },
+  {
+    "id": "manual-1590",
+    "name": "李林甫",
+    "face_review": "三图对照，未见明显身份级面容错配",
+    "weapon_review": "按项目人物设定核对；上朝持笏板，个人图按文武服饰与道具检查",
+    "change": "保留"
+  },
+  {
+    "id": "manual-1591",
+    "name": "杨国忠",
+    "face_review": "三图对照，未见明显身份级面容错配",
+    "weapon_review": "按项目人物设定核对；上朝持笏板，个人图按文武服饰与道具检查",
+    "change": "保留"
+  },
+  {
+    "id": "general-468-78206",
+    "name": "安禄山",
+    "face_review": "三图对照，未见明显身份级面容错配",
+    "weapon_review": "按项目人物设定核对；上朝持笏板，个人图按文武服饰与道具检查",
+    "change": "保留"
+  },
+  {
+    "id": "original-37",
+    "name": "屈原",
+    "face_review": "三图对照，未见明显身份级面容错配",
+    "weapon_review": "按项目人物设定核对；上朝持笏板，个人图按文武服饰与道具检查",
+    "change": "保留"
+  },
+  {
+    "id": "manual-1537",
+    "name": "卫青",
+    "face_review": "三图对照，未见明显身份级面容错配",
+    "weapon_review": "按项目人物设定核对；上朝持笏板，个人图按文武服饰与道具检查",
+    "change": "保留"
+  },
+  {
+    "id": "manual-1536",
+    "name": "霍去病",
+    "face_review": "三图对照，未见明显身份级面容错配",
+    "weapon_review": "按项目人物设定核对；上朝持笏板，个人图按文武服饰与道具检查",
+    "change": "保留"
+  },
+  {
+    "id": "manual-1513",
+    "name": "孙膑",
+    "face_review": "三图对照，未见明显身份级面容错配",
+    "weapon_review": "按项目人物设定核对；上朝持笏板，个人图按文武服饰与道具检查",
+    "change": "保留"
+  },
+  {
+    "id": "original-41",
+    "name": "庞涓",
+    "face_review": "三图对照，未见明显身份级面容错配",
+    "weapon_review": "按项目人物设定核对；上朝持笏板，个人图按文武服饰与道具检查",
+    "change": "保留"
+  },
+  {
+    "id": "cbdb-25403",
+    "name": "诸葛亮",
+    "face_review": "三图对照，未见明显身份级面容错配",
+    "weapon_review": "按项目人物设定核对；上朝持笏板，个人图按文武服饰与道具检查",
+    "change": "保留"
+  },
+  {
+    "id": "original-43",
+    "name": "王玄策",
+    "face_review": "三图对照，未见明显身份级面容错配",
+    "weapon_review": "按项目人物设定核对；上朝持笏板，个人图按文武服饰与道具检查",
+    "change": "保留"
+  },
+  {
+    "id": "original-44",
+    "name": "刘仁轨",
+    "face_review": "三图对照，未见明显身份级面容错配",
+    "weapon_review": "按项目人物设定核对；上朝持笏板，个人图按文武服饰与道具检查",
+    "change": "保留"
+  },
+  {
+    "id": "general-422-82978",
+    "name": "苏定方",
+    "face_review": "三图对照，未见明显身份级面容错配",
+    "weapon_review": "按项目人物设定核对；上朝持笏板，个人图按文武服饰与道具检查",
+    "change": "保留"
+  },
+  {
+    "id": "general-523-68118",
+    "name": "狄青",
+    "face_review": "三图对照，未见明显身份级面容错配",
+    "weapon_review": "按项目人物设定核对；上朝持笏板，个人图按文武服饰与道具检查",
+    "change": "保留"
+  },
+  {
+    "id": "cbdb-1488",
+    "name": "司马光",
+    "face_review": "三图对照，未见明显身份级面容错配",
+    "weapon_review": "按项目人物设定核对；上朝持笏板，个人图按文武服饰与道具检查",
+    "change": "保留"
+  },
+  {
+    "id": "cbdb-8175",
+    "name": "岳飞",
+    "face_review": "三图对照，未见明显身份级面容错配",
+    "weapon_review": "按项目人物设定核对；上朝持笏板，个人图按文武服饰与道具检查",
+    "change": "保留"
+  },
+  {
+    "id": "cbdb-19123",
+    "name": "文天祥",
+    "face_review": "三图对照，未见明显身份级面容错配",
+    "weapon_review": "按项目人物设定核对；上朝持笏板，个人图按文武服饰与道具检查",
+    "change": "保留"
+  },
+  {
+    "id": "manual-1608",
+    "name": "徐达",
+    "face_review": "三图对照，未见明显身份级面容错配",
+    "weapon_review": "按项目人物设定核对；上朝持笏板，个人图按文武服饰与道具检查",
+    "change": "保留"
+  },
+  {
+    "id": "manual-1609",
+    "name": "常遇春",
+    "face_review": "三图对照，未见明显身份级面容错配",
+    "weapon_review": "按项目人物设定核对；上朝持笏板，个人图按文武服饰与道具检查",
+    "change": "保留"
+  },
+  {
+    "id": "cbdb-54819",
+    "name": "林则徐",
+    "face_review": "三图对照，未见明显身份级面容错配",
+    "weapon_review": "按项目人物设定核对；上朝持笏板，个人图按文武服饰与道具检查",
+    "change": "保留"
+  },
+  {
+    "id": "cbdb-28093",
+    "name": "方孝孺",
+    "face_review": "三图对照，未见明显身份级面容错配",
+    "weapon_review": "按项目人物设定核对；上朝持笏板，个人图按文武服饰与道具检查",
+    "change": "保留"
+  },
+  {
+    "id": "manual-1614",
+    "name": "戚继光",
+    "face_review": "三图对照，未见明显身份级面容错配",
+    "weapon_review": "按项目人物设定核对；上朝持笏板，个人图按文武服饰与道具检查",
+    "change": "保留"
+  },
+  {
+    "id": "manual-1611",
+    "name": "于谦",
+    "face_review": "三图对照，未见明显身份级面容错配",
+    "weapon_review": "按项目人物设定核对；上朝持笏板，个人图按文武服饰与道具检查",
+    "change": "保留"
+  },
+  {
+    "id": "cbdb-30374",
+    "name": "王守仁",
+    "face_review": "三图对照，未见明显身份级面容错配",
+    "weapon_review": "按项目人物设定核对；上朝持笏板，个人图按文武服饰与道具检查",
+    "change": "保留"
+  },
+  {
+    "id": "original-57",
+    "name": "程咬金",
+    "face_review": "三图对照，未见明显身份级面容错配",
+    "weapon_review": "按项目人物设定核对；上朝持笏板，个人图按文武服饰与道具检查",
+    "change": "保留"
+  },
+  {
+    "id": "cbdb-8008",
+    "name": "秦桧",
+    "face_review": "三图对照，未见明显身份级面容错配",
+    "weapon_review": "按项目人物设定核对；上朝持笏板，个人图按文武服饰与道具检查",
+    "change": "保留"
+  },
+  {
+    "id": "original-59",
+    "name": "史可法",
+    "face_review": "三图对照，未见明显身份级面容错配",
+    "weapon_review": "按项目人物设定核对；上朝持笏板，个人图按文武服饰与道具检查",
+    "change": "保留"
+  },
+  {
+    "id": "manual-1592",
+    "name": "包拯",
+    "face_review": "三图对照，未见明显身份级面容错配",
+    "weapon_review": "按项目人物设定核对；上朝持笏板，个人图按文武服饰与道具检查",
+    "change": "保留"
+  },
+  {
+    "id": "manual-1507",
+    "name": "姜子牙",
+    "face_review": "三图对照，未见明显身份级面容错配",
+    "weapon_review": "按项目人物设定核对；上朝持笏板，个人图按文武服饰与道具检查",
+    "change": "保留"
+  },
+  {
+    "id": "original-62",
+    "name": "比干",
+    "face_review": "三图对照，未见明显身份级面容错配",
+    "weapon_review": "按项目人物设定核对；上朝持笏板，个人图按文武服饰与道具检查",
+    "change": "保留"
+  },
+  {
+    "id": "original-63",
+    "name": "周公",
+    "face_review": "三图对照，未见明显身份级面容错配",
+    "weapon_review": "按项目人物设定核对；上朝持笏板，个人图按文武服饰与道具检查",
+    "change": "保留"
+  },
+  {
+    "id": "original-64",
+    "name": "孔子",
+    "face_review": "三图对照，未见明显身份级面容错配",
+    "weapon_review": "按项目人物设定核对；上朝持笏板，个人图按文武服饰与道具检查",
+    "change": "保留"
+  },
+  {
+    "id": "original-65",
+    "name": "康有为",
+    "face_review": "三图对照，未见明显身份级面容错配",
+    "weapon_review": "按项目人物设定核对；上朝持笏板，个人图按文武服饰与道具检查",
+    "change": "保留"
+  },
+  {
+    "id": "original-66",
+    "name": "老子",
+    "face_review": "三图对照，未见明显身份级面容错配",
+    "weapon_review": "按项目人物设定核对；上朝持笏板，个人图按文武服饰与道具检查",
+    "change": "保留"
+  },
+  {
+    "id": "manual-1512",
+    "name": "孙武",
+    "face_review": "三图对照，未见明显身份级面容错配",
+    "weapon_review": "按项目人物设定核对；上朝持笏板，个人图按文武服饰与道具检查",
+    "change": "保留"
+  },
+  {
+    "id": "original-68",
+    "name": "韩非",
+    "face_review": "三图对照，未见明显身份级面容错配",
+    "weapon_review": "按项目人物设定核对；上朝持笏板，个人图按文武服饰与道具检查",
+    "change": "保留"
+  },
+  {
+    "id": "original-69",
+    "name": "墨子",
+    "face_review": "三图对照，未见明显身份级面容错配",
+    "weapon_review": "按项目人物设定核对；上朝持笏板，个人图按文武服饰与道具检查",
+    "change": "保留"
+  },
+  {
+    "id": "manual-1520",
+    "name": "白起",
+    "face_review": "三图对照，未见明显身份级面容错配",
+    "weapon_review": "按项目人物设定核对；上朝持笏板，个人图按文武服饰与道具检查",
+    "change": "保留"
+  },
+  {
+    "id": "manual-1521",
+    "name": "王翦",
+    "face_review": "三图对照，未见明显身份级面容错配",
+    "weapon_review": "按项目人物设定核对；上朝持笏板，个人图按文武服饰与道具检查",
+    "change": "保留"
+  },
+  {
+    "id": "manual-1518",
+    "name": "廉颇",
+    "face_review": "三图对照，未见明显身份级面容错配",
+    "weapon_review": "按项目人物设定核对；上朝持笏板，个人图按文武服饰与道具检查",
+    "change": "保留"
+  },
+  {
+    "id": "manual-1522",
+    "name": "李牧",
+    "face_review": "三图对照，未见明显身份级面容错配",
+    "weapon_review": "按项目人物设定核对；上朝持笏板，个人图按文武服饰与道具检查",
+    "change": "保留"
+  },
+  {
+    "id": "manual-1524",
+    "name": "吕不韦",
+    "face_review": "三图对照，未见明显身份级面容错配",
+    "weapon_review": "按项目人物设定核对；上朝持笏板，个人图按文武服饰与道具检查",
+    "change": "保留"
+  },
+  {
+    "id": "general-56-58629",
+    "name": "蒙恬",
+    "face_review": "三图对照，未见明显身份级面容错配",
+    "weapon_review": "按项目人物设定核对；上朝持笏板，个人图按文武服饰与道具检查",
+    "change": "保留"
+  },
+  {
+    "id": "general-103-50637",
+    "name": "李广",
+    "face_review": "三图对照，未见明显身份级面容错配",
+    "weapon_review": "按项目人物设定核对；上朝持笏板，个人图按文武服饰与道具检查",
+    "change": "保留"
+  },
+  {
+    "id": "original-77",
+    "name": "荆轲",
+    "face_review": "三图对照，未见明显身份级面容错配",
+    "weapon_review": "按项目人物设定核对；上朝持笏板，个人图按文武服饰与道具检查",
+    "change": "保留"
+  },
+  {
+    "id": "general-38-51333",
+    "name": "田单",
+    "face_review": "三图对照，未见明显身份级面容错配",
+    "weapon_review": "按项目人物设定核对；上朝持笏板，个人图按文武服饰与道具检查",
+    "change": "保留"
+  },
+  {
+    "id": "original-79",
+    "name": "司马迁",
+    "face_review": "三图对照，未见明显身份级面容错配",
+    "weapon_review": "按项目人物设定核对；上朝持笏板，个人图按文武服饰与道具检查",
+    "change": "保留"
+  },
+  {
+    "id": "cbdb-30257",
+    "name": "曹操",
+    "face_review": "三图对照，未见明显身份级面容错配",
+    "weapon_review": "按项目人物设定核对；上朝持笏板，个人图按文武服饰与道具检查",
+    "change": "保留"
+  },
+  {
+    "id": "manual-1555",
+    "name": "赵云",
+    "face_review": "三图对照，未见明显身份级面容错配",
+    "weapon_review": "按项目人物设定核对；上朝持笏板，个人图按文武服饰与道具检查",
+    "change": "保留"
+  },
+  {
+    "id": "manual-1565",
+    "name": "司马懿",
+    "face_review": "三图对照，未见明显身份级面容错配",
+    "weapon_review": "按项目人物设定核对；上朝持笏板，个人图按文武服饰与道具检查",
+    "change": "保留"
+  },
+  {
+    "id": "general-285-45592",
+    "name": "吕布",
+    "face_review": "三图对照，未见明显身份级面容错配",
+    "weapon_review": "按项目人物设定核对；上朝持笏板，个人图按文武服饰与道具检查",
+    "change": "full 武器构图修正"
+  },
+  {
+    "id": "manual-1553",
+    "name": "关羽",
+    "face_review": "三图对照，未见明显身份级面容错配",
+    "weapon_review": "按项目人物设定核对；上朝持笏板，个人图按文武服饰与道具检查",
+    "change": "full 武器构图修正"
+  },
+  {
+    "id": "manual-1554",
+    "name": "张飞",
+    "face_review": "三图对照，未见明显身份级面容错配",
+    "weapon_review": "按项目人物设定核对；上朝持笏板，个人图按文武服饰与道具检查",
+    "change": "保留"
+  },
+  {
+    "id": "manual-1569",
+    "name": "周瑜",
+    "face_review": "三图对照，未见明显身份级面容错配",
+    "weapon_review": "按项目人物设定核对；上朝持笏板，个人图按文武服饰与道具检查",
+    "change": "保留"
+  },
+  {
+    "id": "general-398-60962",
+    "name": "秦琼",
+    "face_review": "三图对照，未见明显身份级面容错配",
+    "weapon_review": "按项目人物设定核对；上朝持笏板，个人图按文武服饰与道具检查",
+    "change": "保留"
+  },
+  {
+    "id": "original-88",
+    "name": "尉迟恭",
+    "face_review": "三图对照，未见明显身份级面容错配",
+    "weapon_review": "按项目人物设定核对；上朝持笏板，个人图按文武服饰与道具检查",
+    "change": "保留"
+  },
+  {
+    "id": "original-89",
+    "name": "李密",
+    "face_review": "三图对照，未见明显身份级面容错配",
+    "weapon_review": "按项目人物设定核对；上朝持笏板，个人图按文武服饰与道具检查",
+    "change": "保留"
+  },
+  {
+    "id": "cbdb-3332",
+    "name": "韩愈",
+    "face_review": "三图对照，未见明显身份级面容错配",
+    "weapon_review": "按项目人物设定核对；上朝持笏板，个人图按文武服饰与道具检查",
+    "change": "保留"
+  },
+  {
+    "id": "general-638-62417",
+    "name": "拔都",
+    "face_review": "三图对照，未见明显身份级面容错配",
+    "weapon_review": "按项目人物设定核对；上朝持笏板，个人图按文武服饰与道具检查",
+    "change": "保留"
+  },
+  {
+    "id": "general-795-83328",
+    "name": "郑成功",
+    "face_review": "三图对照，未见明显身份级面容错配",
+    "weapon_review": "按项目人物设定核对；上朝持笏板，个人图按文武服饰与道具检查",
+    "change": "保留"
+  },
+  {
+    "id": "manual-1616",
+    "name": "袁崇焕",
+    "face_review": "三图对照，未见明显身份级面容错配",
+    "weapon_review": "按项目人物设定核对；上朝持笏板，个人图按文武服饰与道具检查",
+    "change": "保留"
+  },
+  {
+    "id": "manual-1625",
+    "name": "刘墉",
+    "face_review": "三图对照，未见明显身份级面容错配",
+    "weapon_review": "按项目人物设定核对；上朝持笏板，个人图按文武服饰与道具检查",
+    "change": "保留"
+  },
+  {
+    "id": "manual-1618",
+    "name": "魏忠贤",
+    "face_review": "三图对照，未见明显身份级面容错配",
+    "weapon_review": "按项目人物设定核对；上朝持笏板，个人图按文武服饰与道具检查",
+    "change": "保留"
+  },
+  {
+    "id": "manual-1624",
+    "name": "和珅",
+    "face_review": "三图对照，未见明显身份级面容错配",
+    "weapon_review": "按项目人物设定核对；上朝持笏板，个人图按文武服饰与道具检查",
+    "change": "保留"
+  },
+  {
+    "id": "original-97",
+    "name": "刘耀伦",
+    "face_review": "三图对照，未见明显身份级面容错配",
+    "weapon_review": "按项目人物设定核对；上朝持笏板，个人图按文武服饰与道具检查",
+    "change": "保留"
+  },
+  {
+    "id": "original-98",
+    "name": "邹鹏",
+    "face_review": "三图对照，未见明显身份级面容错配",
+    "weapon_review": "按项目人物设定核对；上朝持笏板，个人图按文武服饰与道具检查",
+    "change": "保留"
+  },
+  {
+    "id": "original-99",
+    "name": "沈昌平",
+    "face_review": "三图对照，未见明显身份级面容错配",
+    "weapon_review": "按项目人物设定核对；上朝持笏板，个人图按文武服饰与道具检查",
+    "change": "保留"
+  },
+  {
+    "id": "random-civil-1",
+    "name": "本朝文臣模板1",
+    "face_review": "三图对照，未见明显身份级面容错配",
+    "weapon_review": "按项目人物设定核对；上朝持笏板，个人图按文武服饰与道具检查",
+    "change": "保留"
+  },
+  {
+    "id": "random-civil-2",
+    "name": "本朝文臣模板2",
+    "face_review": "三图对照，未见明显身份级面容错配",
+    "weapon_review": "按项目人物设定核对；上朝持笏板，个人图按文武服饰与道具检查",
+    "change": "保留"
+  },
+  {
+    "id": "random-civil-3",
+    "name": "本朝文臣模板3",
+    "face_review": "三图对照，未见明显身份级面容错配",
+    "weapon_review": "按项目人物设定核对；上朝持笏板，个人图按文武服饰与道具检查",
+    "change": "保留"
+  },
+  {
+    "id": "random-civil-4",
+    "name": "本朝文臣模板4",
+    "face_review": "三图对照，未见明显身份级面容错配",
+    "weapon_review": "按项目人物设定核对；上朝持笏板，个人图按文武服饰与道具检查",
+    "change": "保留"
+  },
+  {
+    "id": "random-civil-5",
+    "name": "本朝文臣模板5",
+    "face_review": "三图对照，未见明显身份级面容错配",
+    "weapon_review": "按项目人物设定核对；上朝持笏板，个人图按文武服饰与道具检查",
+    "change": "保留"
+  },
+  {
+    "id": "random-civil-6",
+    "name": "本朝文臣模板6",
+    "face_review": "三图对照，未见明显身份级面容错配",
+    "weapon_review": "按项目人物设定核对；上朝持笏板，个人图按文武服饰与道具检查",
+    "change": "保留"
+  },
+  {
+    "id": "random-civil-7",
+    "name": "本朝文臣模板7",
+    "face_review": "三图对照，未见明显身份级面容错配",
+    "weapon_review": "按项目人物设定核对；上朝持笏板，个人图按文武服饰与道具检查",
+    "change": "保留"
+  },
+  {
+    "id": "random-civil-8",
+    "name": "本朝文臣模板8",
+    "face_review": "三图对照，未见明显身份级面容错配",
+    "weapon_review": "按项目人物设定核对；上朝持笏板，个人图按文武服饰与道具检查",
+    "change": "保留"
+  },
+  {
+    "id": "random-civil-9",
+    "name": "本朝文臣模板9",
+    "face_review": "三图对照，未见明显身份级面容错配",
+    "weapon_review": "按项目人物设定核对；上朝持笏板，个人图按文武服饰与道具检查",
+    "change": "保留"
+  },
+  {
+    "id": "random-civil-10",
+    "name": "本朝文臣模板10",
+    "face_review": "三图对照，未见明显身份级面容错配",
+    "weapon_review": "按项目人物设定核对；上朝持笏板，个人图按文武服饰与道具检查",
+    "change": "保留"
+  },
+  {
+    "id": "random-military-1",
+    "name": "本朝武将模板1",
+    "face_review": "三图对照，未见明显身份级面容错配",
+    "weapon_review": "按项目人物设定核对；上朝持笏板，个人图按文武服饰与道具检查",
+    "change": "保留"
+  },
+  {
+    "id": "random-military-2",
+    "name": "本朝武将模板2",
+    "face_review": "三图对照，未见明显身份级面容错配",
+    "weapon_review": "按项目人物设定核对；上朝持笏板，个人图按文武服饰与道具检查",
+    "change": "保留"
+  },
+  {
+    "id": "random-military-3",
+    "name": "本朝武将模板3",
+    "face_review": "三图对照，未见明显身份级面容错配",
+    "weapon_review": "按项目人物设定核对；上朝持笏板，个人图按文武服饰与道具检查",
+    "change": "保留"
+  },
+  {
+    "id": "random-military-4",
+    "name": "本朝武将模板4",
+    "face_review": "三图对照，未见明显身份级面容错配",
+    "weapon_review": "按项目人物设定核对；上朝持笏板，个人图按文武服饰与道具检查",
+    "change": "保留"
+  },
+  {
+    "id": "random-military-5",
+    "name": "本朝武将模板5",
+    "face_review": "三图对照，未见明显身份级面容错配",
+    "weapon_review": "按项目人物设定核对；上朝持笏板，个人图按文武服饰与道具检查",
+    "change": "保留"
+  },
+  {
+    "id": "random-military-6",
+    "name": "本朝武将模板6",
+    "face_review": "三图对照，未见明显身份级面容错配",
+    "weapon_review": "按项目人物设定核对；上朝持笏板，个人图按文武服饰与道具检查",
+    "change": "保留"
+  },
+  {
+    "id": "random-military-7",
+    "name": "本朝武将模板7",
+    "face_review": "三图对照，未见明显身份级面容错配",
+    "weapon_review": "按项目人物设定核对；上朝持笏板，个人图按文武服饰与道具检查",
+    "change": "保留"
+  },
+  {
+    "id": "random-military-8",
+    "name": "本朝武将模板8",
+    "face_review": "三图对照，未见明显身份级面容错配",
+    "weapon_review": "按项目人物设定核对；上朝持笏板，个人图按文武服饰与道具检查",
+    "change": "保留"
+  },
+  {
+    "id": "random-military-9",
+    "name": "本朝武将模板9",
+    "face_review": "三图对照，未见明显身份级面容错配",
+    "weapon_review": "按项目人物设定核对；上朝持笏板，个人图按文武服饰与道具检查",
+    "change": "保留"
+  },
+  {
+    "id": "random-military-10",
+    "name": "本朝武将模板10",
+    "face_review": "三图对照，未见明显身份级面容错配",
+    "weapon_review": "按项目人物设定核对；上朝持笏板，个人图按文武服饰与道具检查",
+    "change": "保留"
+  }
+]

@@ -1,0 +1,31 @@
+.hunting-dialog{padding:0;width:min(1600px,97vw,150vh);max-width:97vw;max-height:95vh;border:1px solid #ba9d62;border-radius:4px;background:#1e332b;color:#f3e3b7;font-family:"Songti SC","SimSun",serif;box-shadow:0 22px 90px #071b15cc}
+.hunting-dialog::backdrop{background:#101f1de8}
+.royal-hunt{position:relative;aspect-ratio:8/5;overflow:hidden;isolation:isolate;container-type:inline-size}
+.hunt-landscape,.hunt-targets{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hunt-targets{touch-action:none;cursor:crosshair;z-index:1}
+.hunt-bow{position:absolute;right:0;bottom:6%;width:51%;height:auto;pointer-events:none;z-index:2;filter:drop-shadow(0 4px 5px #18271866);transform-origin:75% 90%;opacity:.95}
+.hunt-header{position:absolute;inset:0 0 auto;z-index:3;display:flex;justify-content:space-between;align-items:flex-start;padding:1.5cqw 2cqw;background:linear-gradient(#142b24ed,#142b2455,transparent);gap:1cqw;pointer-events:none}
+.hunt-heading h1{font-size:3cqw;letter-spacing:.5cqw;margin:0 0 .4cqw;font-weight:500;color:#ffedba;text-shadow:0 2px 7px #101d12}
+.hunt-heading small{font-size:1cqw;letter-spacing:.2cqw}
+.hunt-hud{display:flex;background:#1c342be8;border:1px solid #a78b51;padding:.8cqw .5cqw;box-shadow:inset 0 0 0 3px #d6b36a14}
+.hunt-hud span{padding:0 1.7cqw;text-align:center;font-size:1.05cqw;border-right:1px solid #a78b5166;white-space:nowrap}
+.hunt-hud span:last-child{border:0}.hunt-hud b{display:block;font-weight:400;font-size:2cqw;margin-top:.3cqw;font-variant-numeric:tabular-nums}
+.royal-hunt button{font:inherit;color:#f3e3b7;border:1px solid #b6985c;border-radius:2px;background:#203a30f0;padding:.8cqw 1.4cqw;cursor:pointer;pointer-events:auto}
+.royal-hunt button:hover{background:#405a42}.royal-hunt button:focus-visible{outline:2px solid #fff0ba;outline-offset:3px}.royal-hunt button:disabled{opacity:.6;cursor:wait}
+.hunt-header button{font-size:1.1cqw;white-space:nowrap}
+.hunt-footer{position:absolute;inset:auto 0 0;min-height:6.6%;display:flex;justify-content:space-between;align-items:center;gap:1cqw;padding:1.2cqw 2.3cqw;border-top:1px solid #b6985c;background:#1b3028ed;z-index:3;font-size:1.2cqw;letter-spacing:.1cqw;pointer-events:none}
+.hunt-legend{color:#eee0b8}.hunt-legend i{font-style:normal;color:#9f8f60;margin:0 .6cqw}
+.hunt-panel{position:absolute;z-index:4;left:50%;top:50%;transform:translate(-50%,-50%);width:42%;box-sizing:border-box;padding:2.5cqw 3cqw;background:linear-gradient(140deg,#253e33f5,#12291ff5);border:1px solid #b99b64;box-shadow:0 10px 55px #122017aa,inset 0 0 0 5px #d6b36a12;text-align:center}
+.hunt-panel[hidden]{display:none}.hunt-panel>small{font-size:1cqw;letter-spacing:.2cqw;color:#c9b780}.hunt-panel h2{font-weight:400;font-size:2.8cqw;letter-spacing:.5cqw;margin:1cqw 0 1.4cqw;color:#ffebba}
+.hunt-panel p{font-size:1.18cqw;line-height:1.9;margin:1cqw 0;color:#ebdfbe}.hunt-panel .hunt-note{font-size:.95cqw;color:#c6bea4}.hunt-panel button{font-size:1.3cqw;padding:.8cqw 2.8cqw;margin-top:.6cqw}
+.hunt-rules{display:flex;justify-content:center;gap:1.7cqw;padding:1.3cqw 0;border-block:1px solid #b99b6444;font-size:1.1cqw}.hunt-rules span{flex:1;line-height:1.7}.hunt-rules b{display:block;color:#ffe6a5;font-weight:400;font-size:1.4cqw}.hunt-rules small{display:block;font-size:.85cqw;color:#c6bea4}
+.hunt-feedback{position:absolute;z-index:3;left:50%;bottom:11%;transform:translateX(-50%);margin:0;color:#ffedbc;font-size:1.5cqw;text-shadow:0 2px 5px #14261a;background:#142a2180;padding:.5cqw 1.5cqw;border-radius:2px;pointer-events:none}.hunt-feedback:empty{display:none}
+.hunt-reticle{position:absolute;z-index:3;width:2.6cqw;height:2.6cqw;transform:translate(-50%,-50%);border:1px solid #ffeab0;border-radius:50%;pointer-events:none;opacity:0;box-shadow:0 0 3px #20331c}
+.hunt-reticle:before,.hunt-reticle:after{content:"";position:absolute;background:#ffeab0;left:50%;top:50%;transform:translate(-50%,-50%)}.hunt-reticle:before{width:3.6cqw;height:1px}.hunt-reticle:after{width:1px;height:3.6cqw}
+.is-shooting .hunt-bow{animation:hunt-release .25s ease-out}@keyframes hunt-release{40%{transform:rotate(3deg) translateY(1.3%)}100%{transform:none}}
+@media(max-width:760px){.hunting-dialog{width:98vw;max-width:98vw}.hunt-panel{width:55%}.hunt-panel p{font-size:1.6cqw}.hunt-panel .hunt-note{font-size:1.3cqw}.hunt-header button{font-size:1.5cqw}.hunt-hud span{font-size:1.3cqw;padding:0 1cqw}.hunt-footer{font-size:1.5cqw}.hunt-legend{display:none}}
+@media(prefers-reduced-motion:reduce){.is-shooting .hunt-bow{animation:none}}
+
+/* Keep a cool, quieter backdrop behind bright, outlined hunting targets. */
+.hunt-landscape{filter:brightness(.78) saturate(.65)}
+.hunt-legend{font-size:1.05cqw}

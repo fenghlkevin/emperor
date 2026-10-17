@@ -1,0 +1,111 @@
+{
+  "name": "emperor-foundation",
+  "version": "0.1.0",
+  "description": "皇帝游戏基础框架",
+  "main": "desktop.cjs",
+  "author": "Emperor Game",
+  "license": "UNLICENSED",
+  "scripts": {
+    "start": "electron .",
+    "dev": "python3 -m http.server 5173",
+    "test": "npm run test:types && node --test tests/*.test.mjs",
+    "pack": "electron-builder --dir",
+    "build:mac": "electron-builder --mac",
+    "build:win": "electron-builder --win",
+    "test:desktop": "electron tests/desktop-smoke.cjs",
+    "test:domestic": "electron tests/domestic-desktop.cjs",
+    "test:works": "electron tests/works-desktop.cjs",
+    "test:personnel": "electron tests/personnel-desktop.cjs",
+    "test:diplomacy": "electron tests/diplomacy-desktop.cjs",
+    "test:revenue": "electron tests/revenue-desktop.cjs",
+    "test:finance": "electron tests/finance-desktop.cjs",
+    "test:industry": "electron tests/industry-desktop.cjs",
+    "test:building-effects": "electron tests/building-effects-desktop.cjs",
+    "test:food-relief": "electron tests/food-relief-desktop.cjs",
+    "test:justice": "electron tests/justice-desktop.cjs",
+    "test:general": "electron tests/general-desktop.cjs",
+    "test:ritual": "electron tests/ritual-desktop.cjs",
+    "test:construction": "electron tests/construction-desktop.cjs",
+    "test:personnel-minister": "electron tests/personnel-minister-desktop.cjs",
+    "test:audience": "electron tests/audience-desktop.cjs",
+    "test:envoy-visits": "electron tests/envoy-visits-desktop.cjs",
+    "test:palace-atmosphere": "electron tests/palace-atmosphere-desktop.cjs",
+    "test:envoy-composition": "electron tests/envoy-wide-desktop.cjs",
+    "test:envoy-fixed": "electron tests/envoy-wide-desktop.cjs",
+    "test:envoy-wide": "electron tests/envoy-wide-desktop.cjs",
+    "test:p01": "electron tests/p01-desktop.cjs",
+    "test:balance": "node scripts/validate-p01-balance.mjs",
+    "test:longterm": "electron tests/longterm-desktop.cjs",
+    "test:longterm-balance": "node scripts/validate-longterm-balance.mjs",
+    "test:strategy": "electron tests/strategy-desktop.cjs",
+    "test:strategy-balance": "node scripts/validate-strategy-balance.mjs",
+    "test:hunting": "electron tests/hunting-desktop.cjs",
+    "test:travel": "electron tests/travel-desktop.cjs",
+    "test:travel-app": "electron tests/travel-app-desktop.cjs",
+    "test:tour-events": "electron tests/tour-events-desktop.cjs",
+    "test:alchemy": "electron tests/alchemy-desktop.cjs",
+    "test:p3": "electron tests/p3-desktop.cjs",
+    "test:kit-war": "electron tests/kit-war-desktop.cjs",
+    "test:kit-office": "electron tests/kit-office-desktop.cjs",
+    "test:kit-routing": "electron tests/kit-routing-desktop.cjs",
+    "test:kit-heavy-combat": "electron tests/kit-heavy-combat-desktop.cjs",
+    "test:war-layout": "electron tests/war-layout-desktop.cjs",
+    "test:types": "node scripts/validate-data-contract.mjs",
+    "test:playability": "node scripts/audit-playability.mjs",
+    "test:crisis-recovery": "electron tests/crisis-recovery-desktop.cjs",
+    "test:balance-ui": "electron tests/balance-desktop.cjs"
+  },
+  "devDependencies": {
+    "electron": "^38.0.0",
+    "electron-builder": "^26.0.0",
+    "typescript": "5.9.3"
+  },
+  "build": {
+    "appId": "com.emperor.game",
+    "productName": "皇帝",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "desktop.cjs",
+      "desktop-runtime.cjs",
+      "preload.cjs",
+      "index.html",
+      "src/**/*",
+      "assets/sketch-*.png",
+      "assets/war-*.png",
+      "assets/auspices/*.png",
+      "assets/royal-events/*.png",
+      "assets/officials/*.png",
+      "assets/envoys/wide/*/*.png",
+      "assets/beauties/featured/*.png",
+      "assets/beauties/random/*.png",
+      "assets/sketch-beauty-parts-*.png",
+      "assets/exam-courtyard.png",
+      "assets/exam-edict-scroll.png",
+      "assets/exam-edict-scene.png",
+      "assets/fonts/**/*",
+      "assets/exam-imperial-seal.png",
+      "assets/exam-imperial-imprint.png",
+      "assets/exam-gongyuan.png"
+    ],
+    "mac": {
+      "target": [
+        "dmg",
+        "zip"
+      ],
+      "category": "public.app-category.games",
+      "identity": null
+    },
+    "win": {
+      "target": [
+        "nsis",
+        "zip"
+      ]
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    }
+  }
+}

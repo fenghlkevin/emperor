@@ -1,0 +1,6 @@
+from common import *
+# Reuse only the fixture function, never run the other script's experiments.
+s=Path(__file__).with_name('territory_live.py').read_text();exec(s.split('results=[]')[0])
+W,B,H,w,b,nodes=setup();w[0x80]=1;b[0x12]=1;b[0x5d]=10;b[0x390]=0;put(l.R0+2,1);put(l.E+0x2e,1,1);p.write(W,w);p.write(B,b);N=alloc(8);p.write(N,struct.pack('<II',B,0));put(p.data(0xcc5e0),N,4);put(p.data(0xcc5e8),N,4);p.call(0x6668f,[W]);pre={'head':get(p.data(0xcc5e0),4,False),'current':get(p.data(0xcc5e8),4,False),'node_hex':p.read(N,8).hex(),'last_flag':get(W+0x11a,1,False)};frame=p.STACK-0x100;put(frame+0x14,W,4);block(0x657e1,0x6591f,frame);post={'head':get(p.data(0xcc5e0),4,False),'current':get(p.data(0xcc5e8),4,False),'node_hex':p.read(N,8).hex(),'stamina':get(l.E+0x19),'flag_f':get(l.E+0xf,1,False),'flag_10':get(l.E+0x10,1,False)};passed=pre['last_flag']==1 and pre['head']==post['head']==N and pre['current']==post['current']==N and pre['node_hex']==post['node_hex'] and [post[k] for k in ['stamina','flag_f','flag_10']]==[0,128,0];finish('last-chain-live',{'before_branch':pre,'after_branch':post,'passed':passed});assert passed
+# The retained record is intentional original behavior; remove test-owned fixture to restore subsequent load isolation.
+put(p.data(0xcc5e0),0,4);put(p.data(0xcc5e8),0,4);p.call(0x9ad58,[B]);p.call(0x9ad58,[N])

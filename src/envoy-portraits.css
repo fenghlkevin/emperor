@@ -1,0 +1,48 @@
+/* The complete scene and the controls have independent, non-overlapping panes. */
+.rites-audience .audience-stage{inset:88px 0 32px;display:grid;grid-template-columns:minmax(0,1fr) 380px;gap:0;background:#292c26}
+.rites-audience .audience-visual{margin:0;min-width:0;min-height:0;display:flex;flex-direction:column;background:#252922;border-right:1px solid #8f7955}
+.envoy-fixed-scene{position:relative;flex:1;min-height:0;overflow:hidden;display:flex;align-items:center;justify-content:center;background:#252922}
+.envoy-fixed-portrait{position:static;display:block;width:100%;height:100%;max-width:100%;max-height:100%;object-fit:contain;object-position:center;mask-image:none;transform:none;filter:none}
+.rites-audience .envoy-caption{position:static;width:100%;display:flex;align-items:center;gap:16px;flex-wrap:wrap;padding:13px 20px;background:#283a30;box-shadow:none;border:0;border-top:1px solid #7f7255;color:#e6dcc2;flex-shrink:0}
+.rites-audience .envoy-caption small{font-size:10px;letter-spacing:2px}.rites-audience .envoy-caption strong{font-size:20px;letter-spacing:3px;margin:0}.rites-audience .envoy-caption>span{font-size:10px;letter-spacing:1px}.rites-audience .envoy-caption .friendship-track{display:none}
+.rites-audience .audience-paper{position:relative;inset:auto;width:auto;min-width:0;min-height:0;height:100%;padding:19px 21px;border:0;box-shadow:none;background:linear-gradient(120deg,#f4eddb,#e4d6b9)}
+.rites-audience .audience-paper:before{inset:8px;z-index:0}.rites-audience .audience-paper>*{position:relative;z-index:1}
+.rites-audience .audience-paper-heading{padding-bottom:13px;flex-shrink:0}.rites-audience .audience-paper-heading>span{font-size:23px}
+.rites-audience .audience-paper-heading label{font-size:10px;gap:3px}.rites-audience .audience-paper-heading select{font-size:12px!important;max-width:130px!important;padding:5px!important}
+.rites-audience .audience-nav{position:static;inset:auto;height:auto;min-height:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:4px;background:none;border:0;border-bottom:1px solid #b49c7259;padding:11px 0;flex-shrink:0}
+.rites-audience .audience-nav button{padding:8px 3px;font-size:12px;letter-spacing:1px;color:#7a6747;white-space:nowrap}.rites-audience .audience-nav button.active{color:#4e3c20;border-color:#a88b52;background:#ad8f4b15}.rites-audience .audience-nav button:hover{background:#a88b5220;color:#4e3c20}
+.rites-audience .audience-dialogue{margin:15px 0;flex-shrink:0}.rites-audience .audience-dialogue>p{font-size:17px;line-height:1.7}.rites-audience .audience-scroll{padding-right:2px}
+.rites-audience .treaty-choices{grid-template-columns:1fr;gap:7px}.rites-audience .treaty-choices label{padding:10px 9px 10px 29px}.rites-audience .treaty-choices span{font-size:16px}.rites-audience .treaty-choices small{margin-top:4px;font-size:10px}.rites-audience .treaty-choices input{top:14px}
+.rites-audience .audience-confirm{padding:12px 14px;letter-spacing:3px;font-size:16px;margin-top:13px}
+.rites-audience[data-rites-mode=ritual] .audience-stage{grid-template-columns:1fr}.rites-audience[data-rites-mode=ritual] .audience-paper{inset:auto;width:auto;margin:0 5%;padding:20px 30px}.rites-audience[data-rites-mode=ritual] .audience-nav{display:none}
+@media(max-width:1050px){.rites-audience .audience-stage{top:72px;grid-template-columns:minmax(0,1fr) 315px}.rites-audience .audience-paper{padding:16px}.rites-audience .audience-dialogue{margin:10px 0}.rites-audience .audience-dialogue>p{font-size:15px;line-height:1.6}.rites-audience .audience-nav button{font-size:11px;padding:7px 2px}.rites-audience .envoy-caption{padding:10px 14px;gap:8px 12px}.rites-audience .envoy-caption strong{font-size:17px}.rites-audience .envoy-caption small{display:none}}
+@media(max-width:700px){.rites-audience .audience-stage{grid-template-columns:1fr 290px}.rites-audience .envoy-caption{display:block;padding:10px}.rites-audience .envoy-caption>span{display:block;margin-top:6px}.rites-audience .audience-paper{padding:14px}.rites-audience .audience-paper-heading>span{font-size:20px}}
+/* Keep each diplomatic agenda on one screen. */
+.rites-audience[data-rites-mode=meeting] .audience-paper{gap:0}
+.rites-audience[data-rites-mode=meeting] .audience-nav{flex:0 0 auto;margin:0;align-content:start;align-items:stretch;grid-auto-rows:auto;justify-content:stretch}
+.rites-audience[data-rites-mode=meeting] .audience-scroll{overflow:visible;flex:1 1 auto;min-height:0;padding:0}
+.rites-audience[data-rites-mode=meeting] .audience-scroll form{margin:0}
+.rites-audience[data-rites-mode=meeting] .treaty-choices{grid-template-columns:repeat(2,minmax(0,1fr));margin:0;min-width:0}
+.rites-audience[data-rites-mode=meeting] .treaty-choices label{min-width:0;padding:10px 5px 10px 24px}
+.rites-audience[data-rites-mode=meeting] .treaty-choices span{font-size:14px;letter-spacing:0}
+.rites-audience[data-rites-mode=meeting] .treaty-choices small{font-size:10px;line-height:1.5;letter-spacing:0}
+.rites-audience[data-rites-mode=meeting] .civil-metrics{gap:9px 12px;margin-bottom:8px;padding-bottom:10px}
+.rites-audience[data-rites-mode=meeting] .civil-metric small{font-size:10px;letter-spacing:0}
+.rites-audience[data-rites-mode=meeting] .civil-metric strong{font-size:19px;margin-top:3px}
+.rites-audience[data-rites-mode=meeting] .audience-dialogue{margin:12px 0}
+.rites-audience[data-rites-mode=meeting] .audience-scroll form>p{margin:8px 0;line-height:1.6}
+.rites-audience[data-rites-mode=meeting] .audience-receipt:not(:empty){padding:6px 8px}
+@media(max-height:760px){
+.rites-audience[data-rites-mode=meeting] .audience-paper{padding:14px 16px}
+.rites-audience[data-rites-mode=meeting] .audience-paper-heading{padding-bottom:8px}
+.rites-audience[data-rites-mode=meeting] .audience-nav{padding:7px 0;gap:2px}
+.rites-audience[data-rites-mode=meeting] .audience-nav button{padding:5px 2px;font-size:11px}
+.rites-audience[data-rites-mode=meeting] .audience-dialogue{margin:8px 0}
+.rites-audience[data-rites-mode=meeting] .audience-dialogue>p{font-size:14px;line-height:1.5;margin-top:4px}
+.rites-audience[data-rites-mode=meeting] .civil-metrics{gap:6px 10px;padding-bottom:7px}
+.rites-audience[data-rites-mode=meeting] .civil-metric strong{font-size:17px;margin-top:1px}
+.rites-audience[data-rites-mode=meeting] .treaty-choices label{padding-top:8px;padding-bottom:8px}
+.rites-audience[data-rites-mode=meeting] .audience-confirm{padding:9px 12px;margin-top:8px}
+.rites-audience[data-rites-mode=meeting] .audience-scroll form>label{margin:7px 0;gap:4px}
+.rites-audience[data-rites-mode=meeting] .civil-table td,.rites-audience[data-rites-mode=meeting] .civil-table th{padding:5px}
+}

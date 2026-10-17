@@ -1,0 +1,4820 @@
+{
+  "arabia": {
+    "width": 1060,
+    "height": 1484,
+    "parts": {
+      "head-0.png": {
+        "width": 142,
+        "height": 200
+      },
+      "head-1.png": {
+        "width": 138,
+        "height": 199
+      },
+      "head-2.png": {
+        "width": 143,
+        "height": 201
+      },
+      "head-3.png": {
+        "width": 142,
+        "height": 201
+      },
+      "head-4.png": {
+        "width": 136,
+        "height": 200
+      },
+      "beard-0.png": {
+        "width": 173,
+        "height": 150
+      },
+      "beard-1.png": {
+        "width": 179,
+        "height": 172
+      },
+      "beard-2.png": {
+        "width": 158,
+        "height": 175
+      },
+      "beard-3.png": {
+        "width": 141,
+        "height": 202
+      },
+      "beard-4.png": {
+        "width": 144,
+        "height": 212
+      },
+      "hair-0.png": {
+        "width": 179,
+        "height": 212
+      },
+      "hair-1.png": {
+        "width": 202,
+        "height": 212
+      },
+      "hair-2.png": {
+        "width": 160,
+        "height": 212
+      },
+      "hair-3.png": {
+        "width": 185,
+        "height": 212
+      },
+      "hair-4.png": {
+        "width": 194,
+        "height": 212
+      },
+      "hat-0.png": {
+        "width": 184,
+        "height": 212
+      },
+      "hat-1.png": {
+        "width": 191,
+        "height": 212
+      },
+      "hat-2.png": {
+        "width": 184,
+        "height": 212
+      },
+      "hat-3.png": {
+        "width": 185,
+        "height": 150
+      },
+      "hat-4.png": {
+        "width": 183,
+        "height": 212
+      },
+      "robe-0.png": {
+        "width": 194,
+        "height": 212
+      },
+      "robe-1.png": {
+        "width": 195,
+        "height": 212
+      },
+      "robe-2.png": {
+        "width": 194,
+        "height": 212
+      },
+      "robe-3.png": {
+        "width": 206,
+        "height": 212
+      },
+      "robe-4.png": {
+        "width": 196,
+        "height": 212
+      },
+      "ornament-0.png": {
+        "width": 161,
+        "height": 165
+      },
+      "ornament-1.png": {
+        "width": 143,
+        "height": 158
+      },
+      "ornament-2.png": {
+        "width": 194,
+        "height": 158
+      },
+      "ornament-3.png": {
+        "width": 142,
+        "height": 164
+      },
+      "ornament-4.png": {
+        "width": 178,
+        "height": 159
+      },
+      "screen-0.png": {
+        "width": 212,
+        "height": 212
+      },
+      "screen-1.png": {
+        "width": 212,
+        "height": 212
+      },
+      "screen-2.png": {
+        "width": 212,
+        "height": 212
+      },
+      "screen-3.png": {
+        "width": 212,
+        "height": 212
+      },
+      "screen-4.png": {
+        "width": 212,
+        "height": 212
+      }
+    }
+  },
+  "axum": {
+    "width": 1060,
+    "height": 1484,
+    "parts": {
+      "head-0.png": {
+        "width": 127,
+        "height": 197
+      },
+      "head-1.png": {
+        "width": 179,
+        "height": 200
+      },
+      "head-2.png": {
+        "width": 212,
+        "height": 201
+      },
+      "head-3.png": {
+        "width": 174,
+        "height": 201
+      },
+      "head-4.png": {
+        "width": 135,
+        "height": 198
+      },
+      "beard-0.png": {
+        "width": 152,
+        "height": 160
+      },
+      "beard-1.png": {
+        "width": 190,
+        "height": 185
+      },
+      "beard-2.png": {
+        "width": 212,
+        "height": 188
+      },
+      "beard-3.png": {
+        "width": 175,
+        "height": 203
+      },
+      "beard-4.png": {
+        "width": 124,
+        "height": 208
+      },
+      "hair-0.png": {
+        "width": 172,
+        "height": 212
+      },
+      "hair-1.png": {
+        "width": 193,
+        "height": 212
+      },
+      "hair-2.png": {
+        "width": 212,
+        "height": 212
+      },
+      "hair-3.png": {
+        "width": 198,
+        "height": 212
+      },
+      "hair-4.png": {
+        "width": 177,
+        "height": 212
+      },
+      "hat-0.png": {
+        "width": 187,
+        "height": 145
+      },
+      "hat-1.png": {
+        "width": 193,
+        "height": 126
+      },
+      "hat-2.png": {
+        "width": 191,
+        "height": 124
+      },
+      "hat-3.png": {
+        "width": 191,
+        "height": 212
+      },
+      "hat-4.png": {
+        "width": 186,
+        "height": 114
+      },
+      "robe-0.png": {
+        "width": 198,
+        "height": 212
+      },
+      "robe-1.png": {
+        "width": 212,
+        "height": 212
+      },
+      "robe-2.png": {
+        "width": 212,
+        "height": 212
+      },
+      "robe-3.png": {
+        "width": 212,
+        "height": 212
+      },
+      "robe-4.png": {
+        "width": 205,
+        "height": 212
+      },
+      "ornament-0.png": {
+        "width": 125,
+        "height": 155
+      },
+      "ornament-1.png": {
+        "width": 184,
+        "height": 155
+      },
+      "ornament-2.png": {
+        "width": 194,
+        "height": 155
+      },
+      "ornament-3.png": {
+        "width": 187,
+        "height": 155
+      },
+      "ornament-4.png": {
+        "width": 139,
+        "height": 155
+      },
+      "screen-0.png": {
+        "width": 212,
+        "height": 212
+      },
+      "screen-1.png": {
+        "width": 212,
+        "height": 212
+      },
+      "screen-2.png": {
+        "width": 212,
+        "height": 212
+      },
+      "screen-3.png": {
+        "width": 212,
+        "height": 212
+      },
+      "screen-4.png": {
+        "width": 212,
+        "height": 212
+      }
+    }
+  },
+  "bolur": {
+    "width": 1060,
+    "height": 1484,
+    "parts": {
+      "head-0.png": {
+        "width": 133,
+        "height": 200
+      },
+      "head-1.png": {
+        "width": 133,
+        "height": 199
+      },
+      "head-2.png": {
+        "width": 133,
+        "height": 200
+      },
+      "head-3.png": {
+        "width": 138,
+        "height": 211
+      },
+      "head-4.png": {
+        "width": 140,
+        "height": 211
+      },
+      "beard-0.png": {
+        "width": 182,
+        "height": 155
+      },
+      "beard-1.png": {
+        "width": 166,
+        "height": 182
+      },
+      "beard-2.png": {
+        "width": 151,
+        "height": 185
+      },
+      "beard-3.png": {
+        "width": 129,
+        "height": 212
+      },
+      "beard-4.png": {
+        "width": 135,
+        "height": 212
+      },
+      "hair-0.png": {
+        "width": 188,
+        "height": 212
+      },
+      "hair-1.png": {
+        "width": 174,
+        "height": 212
+      },
+      "hair-2.png": {
+        "width": 189,
+        "height": 212
+      },
+      "hair-3.png": {
+        "width": 138,
+        "height": 212
+      },
+      "hair-4.png": {
+        "width": 189,
+        "height": 212
+      },
+      "hat-0.png": {
+        "width": 185,
+        "height": 212
+      },
+      "hat-1.png": {
+        "width": 178,
+        "height": 212
+      },
+      "hat-2.png": {
+        "width": 184,
+        "height": 212
+      },
+      "hat-3.png": {
+        "width": 183,
+        "height": 212
+      },
+      "hat-4.png": {
+        "width": 186,
+        "height": 163
+      },
+      "robe-0.png": {
+        "width": 211,
+        "height": 212
+      },
+      "robe-1.png": {
+        "width": 210,
+        "height": 212
+      },
+      "robe-2.png": {
+        "width": 210,
+        "height": 212
+      },
+      "robe-3.png": {
+        "width": 211,
+        "height": 212
+      },
+      "robe-4.png": {
+        "width": 211,
+        "height": 212
+      },
+      "ornament-0.png": {
+        "width": 128,
+        "height": 173
+      },
+      "ornament-1.png": {
+        "width": 188,
+        "height": 169
+      },
+      "ornament-2.png": {
+        "width": 128,
+        "height": 173
+      },
+      "ornament-3.png": {
+        "width": 203,
+        "height": 172
+      },
+      "ornament-4.png": {
+        "width": 160,
+        "height": 171
+      },
+      "screen-0.png": {
+        "width": 212,
+        "height": 212
+      },
+      "screen-1.png": {
+        "width": 212,
+        "height": 212
+      },
+      "screen-2.png": {
+        "width": 212,
+        "height": 212
+      },
+      "screen-3.png": {
+        "width": 212,
+        "height": 212
+      },
+      "screen-4.png": {
+        "width": 212,
+        "height": 212
+      }
+    }
+  },
+  "champa": {
+    "width": 1060,
+    "height": 1484,
+    "parts": {
+      "head-0.png": {
+        "width": 129,
+        "height": 189
+      },
+      "head-1.png": {
+        "width": 128,
+        "height": 189
+      },
+      "head-2.png": {
+        "width": 139,
+        "height": 190
+      },
+      "head-3.png": {
+        "width": 133,
+        "height": 191
+      },
+      "head-4.png": {
+        "width": 134,
+        "height": 191
+      },
+      "beard-0.png": {
+        "width": 184,
+        "height": 160
+      },
+      "beard-1.png": {
+        "width": 159,
+        "height": 177
+      },
+      "beard-2.png": {
+        "width": 148,
+        "height": 190
+      },
+      "beard-3.png": {
+        "width": 140,
+        "height": 205
+      },
+      "beard-4.png": {
+        "width": 135,
+        "height": 209
+      },
+      "hair-0.png": {
+        "width": 141,
+        "height": 212
+      },
+      "hair-1.png": {
+        "width": 172,
+        "height": 212
+      },
+      "hair-2.png": {
+        "width": 142,
+        "height": 212
+      },
+      "hair-3.png": {
+        "width": 124,
+        "height": 212
+      },
+      "hair-4.png": {
+        "width": 142,
+        "height": 212
+      },
+      "hat-0.png": {
+        "width": 173,
+        "height": 212
+      },
+      "hat-1.png": {
+        "width": 173,
+        "height": 212
+      },
+      "hat-2.png": {
+        "width": 176,
+        "height": 212
+      },
+      "hat-3.png": {
+        "width": 202,
+        "height": 212
+      },
+      "hat-4.png": {
+        "width": 180,
+        "height": 212
+      },
+      "robe-0.png": {
+        "width": 196,
+        "height": 212
+      },
+      "robe-1.png": {
+        "width": 198,
+        "height": 212
+      },
+      "robe-2.png": {
+        "width": 208,
+        "height": 212
+      },
+      "robe-3.png": {
+        "width": 200,
+        "height": 212
+      },
+      "robe-4.png": {
+        "width": 197,
+        "height": 212
+      },
+      "ornament-0.png": {
+        "width": 206,
+        "height": 178
+      },
+      "ornament-1.png": {
+        "width": 204,
+        "height": 178
+      },
+      "ornament-2.png": {
+        "width": 187,
+        "height": 178
+      },
+      "ornament-3.png": {
+        "width": 173,
+        "height": 178
+      },
+      "ornament-4.png": {
+        "width": 182,
+        "height": 178
+      },
+      "screen-0.png": {
+        "width": 212,
+        "height": 212
+      },
+      "screen-1.png": {
+        "width": 212,
+        "height": 212
+      },
+      "screen-2.png": {
+        "width": 212,
+        "height": 212
+      },
+      "screen-3.png": {
+        "width": 212,
+        "height": 212
+      },
+      "screen-4.png": {
+        "width": 212,
+        "height": 212
+      }
+    }
+  },
+  "chenla": {
+    "width": 1060,
+    "height": 1484,
+    "parts": {
+      "head-0.png": {
+        "width": 135,
+        "height": 195
+      },
+      "head-1.png": {
+        "width": 138,
+        "height": 195
+      },
+      "head-2.png": {
+        "width": 137,
+        "height": 196
+      },
+      "head-3.png": {
+        "width": 134,
+        "height": 196
+      },
+      "head-4.png": {
+        "width": 136,
+        "height": 197
+      },
+      "beard-0.png": {
+        "width": 179,
+        "height": 152
+      },
+      "beard-1.png": {
+        "width": 158,
+        "height": 157
+      },
+      "beard-2.png": {
+        "width": 152,
+        "height": 173
+      },
+      "beard-3.png": {
+        "width": 119,
+        "height": 206
+      },
+      "beard-4.png": {
+        "width": 142,
+        "height": 206
+      },
+      "hair-0.png": {
+        "width": 133,
+        "height": 212
+      },
+      "hair-1.png": {
+        "width": 191,
+        "height": 212
+      },
+      "hair-2.png": {
+        "width": 143,
+        "height": 212
+      },
+      "hair-3.png": {
+        "width": 167,
+        "height": 212
+      },
+      "hair-4.png": {
+        "width": 198,
+        "height": 212
+      },
+      "hat-0.png": {
+        "width": 148,
+        "height": 141
+      },
+      "hat-1.png": {
+        "width": 161,
+        "height": 150
+      },
+      "hat-2.png": {
+        "width": 166,
+        "height": 212
+      },
+      "hat-3.png": {
+        "width": 212,
+        "height": 135
+      },
+      "hat-4.png": {
+        "width": 160,
+        "height": 144
+      },
+      "robe-0.png": {
+        "width": 208,
+        "height": 212
+      },
+      "robe-1.png": {
+        "width": 212,
+        "height": 212
+      },
+      "robe-2.png": {
+        "width": 209,
+        "height": 212
+      },
+      "robe-3.png": {
+        "width": 209,
+        "height": 212
+      },
+      "robe-4.png": {
+        "width": 207,
+        "height": 212
+      },
+      "ornament-0.png": {
+        "width": 162,
+        "height": 158
+      },
+      "ornament-1.png": {
+        "width": 178,
+        "height": 157
+      },
+      "ornament-2.png": {
+        "width": 159,
+        "height": 164
+      },
+      "ornament-3.png": {
+        "width": 194,
+        "height": 164
+      },
+      "ornament-4.png": {
+        "width": 198,
+        "height": 157
+      },
+      "screen-0.png": {
+        "width": 212,
+        "height": 212
+      },
+      "screen-1.png": {
+        "width": 212,
+        "height": 212
+      },
+      "screen-2.png": {
+        "width": 212,
+        "height": 212
+      },
+      "screen-3.png": {
+        "width": 212,
+        "height": 212
+      },
+      "screen-4.png": {
+        "width": 212,
+        "height": 212
+      }
+    }
+  },
+  "east-turk": {
+    "width": 1060,
+    "height": 1484,
+    "parts": {
+      "head-0.png": {
+        "width": 133,
+        "height": 200
+      },
+      "head-1.png": {
+        "width": 132,
+        "height": 200
+      },
+      "head-2.png": {
+        "width": 135,
+        "height": 200
+      },
+      "head-3.png": {
+        "width": 135,
+        "height": 200
+      },
+      "head-4.png": {
+        "width": 134,
+        "height": 200
+      },
+      "beard-0.png": {
+        "width": 184,
+        "height": 138
+      },
+      "beard-1.png": {
+        "width": 212,
+        "height": 152
+      },
+      "beard-2.png": {
+        "width": 212,
+        "height": 171
+      },
+      "beard-3.png": {
+        "width": 207,
+        "height": 210
+      },
+      "beard-4.png": {
+        "width": 125,
+        "height": 200
+      },
+      "hair-0.png": {
+        "width": 212,
+        "height": 212
+      },
+      "hair-1.png": {
+        "width": 212,
+        "height": 212
+      },
+      "hair-2.png": {
+        "width": 212,
+        "height": 212
+      },
+      "hair-3.png": {
+        "width": 212,
+        "height": 212
+      },
+      "hair-4.png": {
+        "width": 212,
+        "height": 212
+      },
+      "hat-0.png": {
+        "width": 167,
+        "height": 175
+      },
+      "hat-1.png": {
+        "width": 162,
+        "height": 172
+      },
+      "hat-2.png": {
+        "width": 182,
+        "height": 169
+      },
+      "hat-3.png": {
+        "width": 185,
+        "height": 212
+      },
+      "hat-4.png": {
+        "width": 194,
+        "height": 212
+      },
+      "robe-0.png": {
+        "width": 207,
+        "height": 212
+      },
+      "robe-1.png": {
+        "width": 210,
+        "height": 212
+      },
+      "robe-2.png": {
+        "width": 210,
+        "height": 212
+      },
+      "robe-3.png": {
+        "width": 209,
+        "height": 212
+      },
+      "robe-4.png": {
+        "width": 206,
+        "height": 212
+      },
+      "ornament-0.png": {
+        "width": 185,
+        "height": 164
+      },
+      "ornament-1.png": {
+        "width": 169,
+        "height": 134
+      },
+      "ornament-2.png": {
+        "width": 125,
+        "height": 161
+      },
+      "ornament-3.png": {
+        "width": 141,
+        "height": 158
+      },
+      "ornament-4.png": {
+        "width": 112,
+        "height": 155
+      },
+      "screen-0.png": {
+        "width": 212,
+        "height": 212
+      },
+      "screen-1.png": {
+        "width": 212,
+        "height": 212
+      },
+      "screen-2.png": {
+        "width": 212,
+        "height": 212
+      },
+      "screen-3.png": {
+        "width": 212,
+        "height": 212
+      },
+      "screen-4.png": {
+        "width": 212,
+        "height": 212
+      }
+    }
+  },
+  "franks": {
+    "width": 1060,
+    "height": 1484,
+    "parts": {
+      "head-0.png": {
+        "width": 124,
+        "height": 191
+      },
+      "head-1.png": {
+        "width": 127,
+        "height": 189
+      },
+      "head-2.png": {
+        "width": 122,
+        "height": 190
+      },
+      "head-3.png": {
+        "width": 122,
+        "height": 204
+      },
+      "head-4.png": {
+        "width": 129,
+        "height": 204
+      },
+      "beard-0.png": {
+        "width": 162,
+        "height": 154
+      },
+      "beard-1.png": {
+        "width": 156,
+        "height": 182
+      },
+      "beard-2.png": {
+        "width": 141,
+        "height": 172
+      },
+      "beard-3.png": {
+        "width": 119,
+        "height": 212
+      },
+      "beard-4.png": {
+        "width": 141,
+        "height": 212
+      },
+      "hair-0.png": {
+        "width": 199,
+        "height": 212
+      },
+      "hair-1.png": {
+        "width": 189,
+        "height": 212
+      },
+      "hair-2.png": {
+        "width": 189,
+        "height": 212
+      },
+      "hair-3.png": {
+        "width": 201,
+        "height": 212
+      },
+      "hair-4.png": {
+        "width": 198,
+        "height": 212
+      },
+      "hat-0.png": {
+        "width": 191,
+        "height": 128
+      },
+      "hat-1.png": {
+        "width": 202,
+        "height": 135
+      },
+      "hat-2.png": {
+        "width": 191,
+        "height": 128
+      },
+      "hat-3.png": {
+        "width": 197,
+        "height": 212
+      },
+      "hat-4.png": {
+        "width": 196,
+        "height": 131
+      },
+      "robe-0.png": {
+        "width": 200,
+        "height": 212
+      },
+      "robe-1.png": {
+        "width": 201,
+        "height": 212
+      },
+      "robe-2.png": {
+        "width": 201,
+        "height": 212
+      },
+      "robe-3.png": {
+        "width": 207,
+        "height": 212
+      },
+      "robe-4.png": {
+        "width": 203,
+        "height": 212
+      },
+      "ornament-0.png": {
+        "width": 212,
+        "height": 167
+      },
+      "ornament-1.png": {
+        "width": 198,
+        "height": 167
+      },
+      "ornament-2.png": {
+        "width": 186,
+        "height": 167
+      },
+      "ornament-3.png": {
+        "width": 209,
+        "height": 167
+      },
+      "ornament-4.png": {
+        "width": 212,
+        "height": 167
+      },
+      "screen-0.png": {
+        "width": 212,
+        "height": 212
+      },
+      "screen-1.png": {
+        "width": 212,
+        "height": 212
+      },
+      "screen-2.png": {
+        "width": 212,
+        "height": 212
+      },
+      "screen-3.png": {
+        "width": 212,
+        "height": 212
+      },
+      "screen-4.png": {
+        "width": 212,
+        "height": 212
+      }
+    }
+  },
+  "gaochang": {
+    "width": 1060,
+    "height": 1484,
+    "parts": {
+      "head-0.png": {
+        "width": 132,
+        "height": 206
+      },
+      "head-1.png": {
+        "width": 134,
+        "height": 208
+      },
+      "head-2.png": {
+        "width": 135,
+        "height": 209
+      },
+      "head-3.png": {
+        "width": 139,
+        "height": 203
+      },
+      "head-4.png": {
+        "width": 139,
+        "height": 203
+      },
+      "beard-0.png": {
+        "width": 171,
+        "height": 33
+      },
+      "beard-1.png": {
+        "width": 151,
+        "height": 151
+      },
+      "beard-2.png": {
+        "width": 146,
+        "height": 174
+      },
+      "beard-3.png": {
+        "width": 129,
+        "height": 205
+      },
+      "beard-4.png": {
+        "width": 139,
+        "height": 208
+      },
+      "hair-0.png": {
+        "width": 172,
+        "height": 198
+      },
+      "hair-1.png": {
+        "width": 157,
+        "height": 212
+      },
+      "hair-2.png": {
+        "width": 171,
+        "height": 203
+      },
+      "hair-3.png": {
+        "width": 187,
+        "height": 212
+      },
+      "hair-4.png": {
+        "width": 176,
+        "height": 212
+      },
+      "hat-0.png": {
+        "width": 176,
+        "height": 180
+      },
+      "hat-1.png": {
+        "width": 182,
+        "height": 191
+      },
+      "hat-2.png": {
+        "width": 188,
+        "height": 168
+      },
+      "hat-3.png": {
+        "width": 196,
+        "height": 180
+      },
+      "hat-4.png": {
+        "width": 193,
+        "height": 180
+      },
+      "robe-0.png": {
+        "width": 200,
+        "height": 212
+      },
+      "robe-1.png": {
+        "width": 212,
+        "height": 212
+      },
+      "robe-2.png": {
+        "width": 212,
+        "height": 212
+      },
+      "robe-3.png": {
+        "width": 210,
+        "height": 211
+      },
+      "robe-4.png": {
+        "width": 204,
+        "height": 212
+      },
+      "ornament-0.png": {
+        "width": 144,
+        "height": 200
+      },
+      "ornament-1.png": {
+        "width": 167,
+        "height": 200
+      },
+      "ornament-2.png": {
+        "width": 169,
+        "height": 200
+      },
+      "ornament-3.png": {
+        "width": 167,
+        "height": 200
+      },
+      "ornament-4.png": {
+        "width": 175,
+        "height": 200
+      },
+      "screen-0.png": {
+        "width": 212,
+        "height": 212
+      },
+      "screen-1.png": {
+        "width": 212,
+        "height": 212
+      },
+      "screen-2.png": {
+        "width": 212,
+        "height": 212
+      },
+      "screen-3.png": {
+        "width": 212,
+        "height": 212
+      },
+      "screen-4.png": {
+        "width": 212,
+        "height": 212
+      }
+    }
+  },
+  "india": {
+    "width": 1060,
+    "height": 1484,
+    "parts": {
+      "head-0.png": {
+        "width": 176,
+        "height": 207
+      },
+      "head-1.png": {
+        "width": 212,
+        "height": 212
+      },
+      "head-2.png": {
+        "width": 171,
+        "height": 211
+      },
+      "head-3.png": {
+        "width": 174,
+        "height": 212
+      },
+      "head-4.png": {
+        "width": 169,
+        "height": 212
+      },
+      "beard-0.png": {
+        "width": 192,
+        "height": 151
+      },
+      "beard-1.png": {
+        "width": 212,
+        "height": 212
+      },
+      "beard-2.png": {
+        "width": 212,
+        "height": 201
+      },
+      "beard-3.png": {
+        "width": 174,
+        "height": 206
+      },
+      "beard-4.png": {
+        "width": 179,
+        "height": 212
+      },
+      "hair-0.png": {
+        "width": 201,
+        "height": 207
+      },
+      "hair-1.png": {
+        "width": 212,
+        "height": 212
+      },
+      "hair-2.png": {
+        "width": 212,
+        "height": 212
+      },
+      "hair-3.png": {
+        "width": 212,
+        "height": 208
+      },
+      "hair-4.png": {
+        "width": 212,
+        "height": 212
+      },
+      "hat-0.png": {
+        "width": 190,
+        "height": 183
+      },
+      "hat-1.png": {
+        "width": 187,
+        "height": 182
+      },
+      "hat-2.png": {
+        "width": 194,
+        "height": 185
+      },
+      "hat-3.png": {
+        "width": 191,
+        "height": 171
+      },
+      "hat-4.png": {
+        "width": 193,
+        "height": 188
+      },
+      "robe-0.png": {
+        "width": 204,
+        "height": 212
+      },
+      "robe-1.png": {
+        "width": 208,
+        "height": 212
+      },
+      "robe-2.png": {
+        "width": 210,
+        "height": 212
+      },
+      "robe-3.png": {
+        "width": 208,
+        "height": 212
+      },
+      "robe-4.png": {
+        "width": 211,
+        "height": 212
+      },
+      "ornament-0.png": {
+        "width": 186,
+        "height": 176
+      },
+      "ornament-1.png": {
+        "width": 181,
+        "height": 172
+      },
+      "ornament-2.png": {
+        "width": 189,
+        "height": 181
+      },
+      "ornament-3.png": {
+        "width": 187,
+        "height": 181
+      },
+      "ornament-4.png": {
+        "width": 203,
+        "height": 175
+      },
+      "screen-0.png": {
+        "width": 212,
+        "height": 212
+      },
+      "screen-1.png": {
+        "width": 212,
+        "height": 212
+      },
+      "screen-2.png": {
+        "width": 212,
+        "height": 212
+      },
+      "screen-3.png": {
+        "width": 212,
+        "height": 212
+      },
+      "screen-4.png": {
+        "width": 212,
+        "height": 212
+      }
+    }
+  },
+  "japan": {
+    "width": 1060,
+    "height": 1484,
+    "parts": {
+      "head-0.png": {
+        "width": 131,
+        "height": 200
+      },
+      "head-1.png": {
+        "width": 130,
+        "height": 199
+      },
+      "head-2.png": {
+        "width": 132,
+        "height": 200
+      },
+      "head-3.png": {
+        "width": 131,
+        "height": 200
+      },
+      "head-4.png": {
+        "width": 136,
+        "height": 200
+      },
+      "beard-0.png": {
+        "width": 184,
+        "height": 141
+      },
+      "beard-1.png": {
+        "width": 150,
+        "height": 156
+      },
+      "beard-2.png": {
+        "width": 157,
+        "height": 151
+      },
+      "beard-3.png": {
+        "width": 128,
+        "height": 206
+      },
+      "beard-4.png": {
+        "width": 126,
+        "height": 207
+      },
+      "hair-0.png": {
+        "width": 150,
+        "height": 212
+      },
+      "hair-1.png": {
+        "width": 145,
+        "height": 212
+      },
+      "hair-2.png": {
+        "width": 135,
+        "height": 212
+      },
+      "hair-3.png": {
+        "width": 152,
+        "height": 212
+      },
+      "hair-4.png": {
+        "width": 165,
+        "height": 212
+      },
+      "hat-0.png": {
+        "width": 142,
+        "height": 146
+      },
+      "hat-1.png": {
+        "width": 146,
+        "height": 147
+      },
+      "hat-2.png": {
+        "width": 144,
+        "height": 146
+      },
+      "hat-3.png": {
+        "width": 144,
+        "height": 148
+      },
+      "hat-4.png": {
+        "width": 198,
+        "height": 145
+      },
+      "robe-0.png": {
+        "width": 205,
+        "height": 212
+      },
+      "robe-1.png": {
+        "width": 207,
+        "height": 212
+      },
+      "robe-2.png": {
+        "width": 197,
+        "height": 212
+      },
+      "robe-3.png": {
+        "width": 212,
+        "height": 212
+      },
+      "robe-4.png": {
+        "width": 205,
+        "height": 212
+      },
+      "ornament-0.png": {
+        "width": 198,
+        "height": 152
+      },
+      "ornament-1.png": {
+        "width": 185,
+        "height": 132
+      },
+      "ornament-2.png": {
+        "width": 168,
+        "height": 152
+      },
+      "ornament-3.png": {
+        "width": 160,
+        "height": 144
+      },
+      "ornament-4.png": {
+        "width": 179,
+        "height": 144
+      },
+      "screen-0.png": {
+        "width": 212,
+        "height": 212
+      },
+      "screen-1.png": {
+        "width": 212,
+        "height": 212
+      },
+      "screen-2.png": {
+        "width": 212,
+        "height": 212
+      },
+      "screen-3.png": {
+        "width": 212,
+        "height": 212
+      },
+      "screen-4.png": {
+        "width": 212,
+        "height": 212
+      }
+    }
+  },
+  "java": {
+    "width": 1060,
+    "height": 1484,
+    "parts": {
+      "head-0.png": {
+        "width": 141,
+        "height": 206
+      },
+      "head-1.png": {
+        "width": 141,
+        "height": 205
+      },
+      "head-2.png": {
+        "width": 142,
+        "height": 206
+      },
+      "head-3.png": {
+        "width": 142,
+        "height": 206
+      },
+      "head-4.png": {
+        "width": 145,
+        "height": 207
+      },
+      "beard-0.png": {
+        "width": 161,
+        "height": 162
+      },
+      "beard-1.png": {
+        "width": 153,
+        "height": 165
+      },
+      "beard-2.png": {
+        "width": 147,
+        "height": 187
+      },
+      "beard-3.png": {
+        "width": 112,
+        "height": 199
+      },
+      "beard-4.png": {
+        "width": 133,
+        "height": 207
+      },
+      "hair-0.png": {
+        "width": 145,
+        "height": 183
+      },
+      "hair-1.png": {
+        "width": 160,
+        "height": 212
+      },
+      "hair-2.png": {
+        "width": 158,
+        "height": 212
+      },
+      "hair-3.png": {
+        "width": 161,
+        "height": 212
+      },
+      "hair-4.png": {
+        "width": 163,
+        "height": 212
+      },
+      "hat-0.png": {
+        "width": 178,
+        "height": 158
+      },
+      "hat-1.png": {
+        "width": 152,
+        "height": 153
+      },
+      "hat-2.png": {
+        "width": 179,
+        "height": 212
+      },
+      "hat-3.png": {
+        "width": 208,
+        "height": 149
+      },
+      "hat-4.png": {
+        "width": 196,
+        "height": 154
+      },
+      "robe-0.png": {
+        "width": 206,
+        "height": 212
+      },
+      "robe-1.png": {
+        "width": 209,
+        "height": 212
+      },
+      "robe-2.png": {
+        "width": 208,
+        "height": 212
+      },
+      "robe-3.png": {
+        "width": 212,
+        "height": 212
+      },
+      "robe-4.png": {
+        "width": 210,
+        "height": 212
+      },
+      "ornament-0.png": {
+        "width": 169,
+        "height": 161
+      },
+      "ornament-1.png": {
+        "width": 178,
+        "height": 159
+      },
+      "ornament-2.png": {
+        "width": 180,
+        "height": 161
+      },
+      "ornament-3.png": {
+        "width": 148,
+        "height": 164
+      },
+      "ornament-4.png": {
+        "width": 164,
+        "height": 164
+      },
+      "screen-0.png": {
+        "width": 212,
+        "height": 212
+      },
+      "screen-1.png": {
+        "width": 212,
+        "height": 212
+      },
+      "screen-2.png": {
+        "width": 212,
+        "height": 212
+      },
+      "screen-3.png": {
+        "width": 212,
+        "height": 212
+      },
+      "screen-4.png": {
+        "width": 212,
+        "height": 212
+      }
+    }
+  },
+  "khitan": {
+    "width": 1060,
+    "height": 1484,
+    "parts": {
+      "head-0.png": {
+        "width": 135,
+        "height": 199
+      },
+      "head-1.png": {
+        "width": 136,
+        "height": 200
+      },
+      "head-2.png": {
+        "width": 138,
+        "height": 201
+      },
+      "head-3.png": {
+        "width": 141,
+        "height": 201
+      },
+      "head-4.png": {
+        "width": 137,
+        "height": 201
+      },
+      "beard-0.png": {
+        "width": 183,
+        "height": 153
+      },
+      "beard-1.png": {
+        "width": 172,
+        "height": 189
+      },
+      "beard-2.png": {
+        "width": 172,
+        "height": 189
+      },
+      "beard-3.png": {
+        "width": 130,
+        "height": 210
+      },
+      "beard-4.png": {
+        "width": 143,
+        "height": 212
+      },
+      "hair-0.png": {
+        "width": 141,
+        "height": 212
+      },
+      "hair-1.png": {
+        "width": 169,
+        "height": 212
+      },
+      "hair-2.png": {
+        "width": 180,
+        "height": 212
+      },
+      "hair-3.png": {
+        "width": 159,
+        "height": 212
+      },
+      "hair-4.png": {
+        "width": 164,
+        "height": 212
+      },
+      "hat-0.png": {
+        "width": 191,
+        "height": 212
+      },
+      "hat-1.png": {
+        "width": 186,
+        "height": 176
+      },
+      "hat-2.png": {
+        "width": 181,
+        "height": 212
+      },
+      "hat-3.png": {
+        "width": 196,
+        "height": 212
+      },
+      "hat-4.png": {
+        "width": 162,
+        "height": 212
+      },
+      "robe-0.png": {
+        "width": 208,
+        "height": 212
+      },
+      "robe-1.png": {
+        "width": 212,
+        "height": 212
+      },
+      "robe-2.png": {
+        "width": 212,
+        "height": 212
+      },
+      "robe-3.png": {
+        "width": 212,
+        "height": 191
+      },
+      "robe-4.png": {
+        "width": 209,
+        "height": 212
+      },
+      "ornament-0.png": {
+        "width": 159,
+        "height": 181
+      },
+      "ornament-1.png": {
+        "width": 212,
+        "height": 181
+      },
+      "ornament-2.png": {
+        "width": 188,
+        "height": 181
+      },
+      "ornament-3.png": {
+        "width": 197,
+        "height": 181
+      },
+      "ornament-4.png": {
+        "width": 163,
+        "height": 181
+      },
+      "screen-0.png": {
+        "width": 212,
+        "height": 212
+      },
+      "screen-1.png": {
+        "width": 212,
+        "height": 212
+      },
+      "screen-2.png": {
+        "width": 212,
+        "height": 212
+      },
+      "screen-3.png": {
+        "width": 212,
+        "height": 212
+      },
+      "screen-4.png": {
+        "width": 212,
+        "height": 212
+      }
+    }
+  },
+  "korea": {
+    "width": 1060,
+    "height": 1484,
+    "parts": {
+      "head-0.png": {
+        "width": 121,
+        "height": 197
+      },
+      "head-1.png": {
+        "width": 123,
+        "height": 199
+      },
+      "head-2.png": {
+        "width": 125,
+        "height": 199
+      },
+      "head-3.png": {
+        "width": 127,
+        "height": 200
+      },
+      "head-4.png": {
+        "width": 122,
+        "height": 196
+      },
+      "beard-0.png": {
+        "width": 161,
+        "height": 141
+      },
+      "beard-1.png": {
+        "width": 146,
+        "height": 160
+      },
+      "beard-2.png": {
+        "width": 143,
+        "height": 182
+      },
+      "beard-3.png": {
+        "width": 100,
+        "height": 195
+      },
+      "beard-4.png": {
+        "width": 134,
+        "height": 201
+      },
+      "hair-0.png": {
+        "width": 171,
+        "height": 163
+      },
+      "hair-1.png": {
+        "width": 152,
+        "height": 212
+      },
+      "hair-2.png": {
+        "width": 140,
+        "height": 212
+      },
+      "hair-3.png": {
+        "width": 149,
+        "height": 212
+      },
+      "hair-4.png": {
+        "width": 185,
+        "height": 212
+      },
+      "hat-0.png": {
+        "width": 206,
+        "height": 112
+      },
+      "hat-1.png": {
+        "width": 195,
+        "height": 109
+      },
+      "hat-2.png": {
+        "width": 204,
+        "height": 116
+      },
+      "hat-3.png": {
+        "width": 196,
+        "height": 111
+      },
+      "hat-4.png": {
+        "width": 201,
+        "height": 116
+      },
+      "robe-0.png": {
+        "width": 205,
+        "height": 212
+      },
+      "robe-1.png": {
+        "width": 212,
+        "height": 212
+      },
+      "robe-2.png": {
+        "width": 208,
+        "height": 212
+      },
+      "robe-3.png": {
+        "width": 207,
+        "height": 212
+      },
+      "robe-4.png": {
+        "width": 207,
+        "height": 212
+      },
+      "ornament-0.png": {
+        "width": 140,
+        "height": 166
+      },
+      "ornament-1.png": {
+        "width": 133,
+        "height": 153
+      },
+      "ornament-2.png": {
+        "width": 108,
+        "height": 132
+      },
+      "ornament-3.png": {
+        "width": 119,
+        "height": 160
+      },
+      "ornament-4.png": {
+        "width": 147,
+        "height": 161
+      },
+      "screen-0.png": {
+        "width": 212,
+        "height": 212
+      },
+      "screen-1.png": {
+        "width": 212,
+        "height": 212
+      },
+      "screen-2.png": {
+        "width": 212,
+        "height": 212
+      },
+      "screen-3.png": {
+        "width": 212,
+        "height": 212
+      },
+      "screen-4.png": {
+        "width": 212,
+        "height": 212
+      }
+    }
+  },
+  "kucha": {
+    "width": 1060,
+    "height": 1484,
+    "parts": {
+      "head-0.png": {
+        "width": 131,
+        "height": 198
+      },
+      "head-1.png": {
+        "width": 131,
+        "height": 198
+      },
+      "head-2.png": {
+        "width": 133,
+        "height": 198
+      },
+      "head-3.png": {
+        "width": 132,
+        "height": 198
+      },
+      "head-4.png": {
+        "width": 133,
+        "height": 208
+      },
+      "beard-0.png": {
+        "width": 155,
+        "height": 148
+      },
+      "beard-1.png": {
+        "width": 154,
+        "height": 153
+      },
+      "beard-2.png": {
+        "width": 159,
+        "height": 169
+      },
+      "beard-3.png": {
+        "width": 118,
+        "height": 207
+      },
+      "beard-4.png": {
+        "width": 135,
+        "height": 212
+      },
+      "hair-0.png": {
+        "width": 154,
+        "height": 173
+      },
+      "hair-1.png": {
+        "width": 154,
+        "height": 212
+      },
+      "hair-2.png": {
+        "width": 141,
+        "height": 212
+      },
+      "hair-3.png": {
+        "width": 147,
+        "height": 212
+      },
+      "hair-4.png": {
+        "width": 177,
+        "height": 212
+      },
+      "hat-0.png": {
+        "width": 195,
+        "height": 139
+      },
+      "hat-1.png": {
+        "width": 199,
+        "height": 142
+      },
+      "hat-2.png": {
+        "width": 196,
+        "height": 212
+      },
+      "hat-3.png": {
+        "width": 183,
+        "height": 139
+      },
+      "hat-4.png": {
+        "width": 192,
+        "height": 152
+      },
+      "robe-0.png": {
+        "width": 204,
+        "height": 212
+      },
+      "robe-1.png": {
+        "width": 207,
+        "height": 212
+      },
+      "robe-2.png": {
+        "width": 208,
+        "height": 212
+      },
+      "robe-3.png": {
+        "width": 207,
+        "height": 212
+      },
+      "robe-4.png": {
+        "width": 209,
+        "height": 212
+      },
+      "ornament-0.png": {
+        "width": 212,
+        "height": 167
+      },
+      "ornament-1.png": {
+        "width": 189,
+        "height": 167
+      },
+      "ornament-2.png": {
+        "width": 135,
+        "height": 167
+      },
+      "ornament-3.png": {
+        "width": 175,
+        "height": 167
+      },
+      "ornament-4.png": {
+        "width": 185,
+        "height": 167
+      },
+      "screen-0.png": {
+        "width": 212,
+        "height": 212
+      },
+      "screen-1.png": {
+        "width": 212,
+        "height": 212
+      },
+      "screen-2.png": {
+        "width": 212,
+        "height": 212
+      },
+      "screen-3.png": {
+        "width": 212,
+        "height": 212
+      },
+      "screen-4.png": {
+        "width": 212,
+        "height": 212
+      }
+    }
+  },
+  "luzon": {
+    "width": 1060,
+    "height": 1484,
+    "parts": {
+      "head-0.png": {
+        "width": 147,
+        "height": 207
+      },
+      "head-1.png": {
+        "width": 147,
+        "height": 206
+      },
+      "head-2.png": {
+        "width": 147,
+        "height": 206
+      },
+      "head-3.png": {
+        "width": 149,
+        "height": 207
+      },
+      "head-4.png": {
+        "width": 149,
+        "height": 207
+      },
+      "beard-0.png": {
+        "width": 148,
+        "height": 212
+      },
+      "beard-1.png": {
+        "width": 138,
+        "height": 212
+      },
+      "beard-2.png": {
+        "width": 144,
+        "height": 212
+      },
+      "beard-3.png": {
+        "width": 124,
+        "height": 212
+      },
+      "beard-4.png": {
+        "width": 120,
+        "height": 212
+      },
+      "hair-0.png": {
+        "width": 190,
+        "height": 212
+      },
+      "hair-1.png": {
+        "width": 211,
+        "height": 202
+      },
+      "hair-2.png": {
+        "width": 200,
+        "height": 212
+      },
+      "hair-3.png": {
+        "width": 158,
+        "height": 169
+      },
+      "hair-4.png": {
+        "width": 191,
+        "height": 212
+      },
+      "hat-0.png": {
+        "width": 198,
+        "height": 174
+      },
+      "hat-1.png": {
+        "width": 173,
+        "height": 195
+      },
+      "hat-2.png": {
+        "width": 200,
+        "height": 146
+      },
+      "hat-3.png": {
+        "width": 196,
+        "height": 200
+      },
+      "hat-4.png": {
+        "width": 195,
+        "height": 212
+      },
+      "robe-0.png": {
+        "width": 203,
+        "height": 212
+      },
+      "robe-1.png": {
+        "width": 212,
+        "height": 212
+      },
+      "robe-2.png": {
+        "width": 212,
+        "height": 212
+      },
+      "robe-3.png": {
+        "width": 212,
+        "height": 212
+      },
+      "robe-4.png": {
+        "width": 210,
+        "height": 212
+      },
+      "ornament-0.png": {
+        "width": 208,
+        "height": 212
+      },
+      "ornament-1.png": {
+        "width": 212,
+        "height": 212
+      },
+      "ornament-2.png": {
+        "width": 204,
+        "height": 212
+      },
+      "ornament-3.png": {
+        "width": 212,
+        "height": 212
+      },
+      "ornament-4.png": {
+        "width": 208,
+        "height": 212
+      },
+      "screen-0.png": {
+        "width": 212,
+        "height": 212
+      },
+      "screen-1.png": {
+        "width": 212,
+        "height": 212
+      },
+      "screen-2.png": {
+        "width": 212,
+        "height": 212
+      },
+      "screen-3.png": {
+        "width": 212,
+        "height": 212
+      },
+      "screen-4.png": {
+        "width": 212,
+        "height": 212
+      }
+    }
+  },
+  "maghreb": {
+    "width": 1060,
+    "height": 1484,
+    "parts": {
+      "head-0.png": {
+        "width": 146,
+        "height": 201
+      },
+      "head-1.png": {
+        "width": 138,
+        "height": 201
+      },
+      "head-2.png": {
+        "width": 137,
+        "height": 201
+      },
+      "head-3.png": {
+        "width": 141,
+        "height": 201
+      },
+      "head-4.png": {
+        "width": 144,
+        "height": 201
+      },
+      "beard-0.png": {
+        "width": 162,
+        "height": 157
+      },
+      "beard-1.png": {
+        "width": 167,
+        "height": 175
+      },
+      "beard-2.png": {
+        "width": 164,
+        "height": 200
+      },
+      "beard-3.png": {
+        "width": 157,
+        "height": 212
+      },
+      "beard-4.png": {
+        "width": 145,
+        "height": 212
+      },
+      "hair-0.png": {
+        "width": 182,
+        "height": 212
+      },
+      "hair-1.png": {
+        "width": 200,
+        "height": 212
+      },
+      "hair-2.png": {
+        "width": 184,
+        "height": 212
+      },
+      "hair-3.png": {
+        "width": 197,
+        "height": 212
+      },
+      "hair-4.png": {
+        "width": 200,
+        "height": 212
+      },
+      "hat-0.png": {
+        "width": 183,
+        "height": 212
+      },
+      "hat-1.png": {
+        "width": 172,
+        "height": 111
+      },
+      "hat-2.png": {
+        "width": 161,
+        "height": 212
+      },
+      "hat-3.png": {
+        "width": 193,
+        "height": 107
+      },
+      "hat-4.png": {
+        "width": 192,
+        "height": 212
+      },
+      "robe-0.png": {
+        "width": 203,
+        "height": 212
+      },
+      "robe-1.png": {
+        "width": 208,
+        "height": 212
+      },
+      "robe-2.png": {
+        "width": 198,
+        "height": 212
+      },
+      "robe-3.png": {
+        "width": 195,
+        "height": 212
+      },
+      "robe-4.png": {
+        "width": 199,
+        "height": 212
+      },
+      "ornament-0.png": {
+        "width": 168,
+        "height": 165
+      },
+      "ornament-1.png": {
+        "width": 174,
+        "height": 165
+      },
+      "ornament-2.png": {
+        "width": 187,
+        "height": 165
+      },
+      "ornament-3.png": {
+        "width": 177,
+        "height": 165
+      },
+      "ornament-4.png": {
+        "width": 138,
+        "height": 165
+      },
+      "screen-0.png": {
+        "width": 212,
+        "height": 212
+      },
+      "screen-1.png": {
+        "width": 212,
+        "height": 212
+      },
+      "screen-2.png": {
+        "width": 212,
+        "height": 212
+      },
+      "screen-3.png": {
+        "width": 212,
+        "height": 212
+      },
+      "screen-4.png": {
+        "width": 212,
+        "height": 212
+      }
+    }
+  },
+  "mohe": {
+    "width": 1060,
+    "height": 1484,
+    "parts": {
+      "head-0.png": {
+        "width": 127,
+        "height": 190
+      },
+      "head-1.png": {
+        "width": 126,
+        "height": 188
+      },
+      "head-2.png": {
+        "width": 128,
+        "height": 190
+      },
+      "head-3.png": {
+        "width": 130,
+        "height": 212
+      },
+      "head-4.png": {
+        "width": 132,
+        "height": 212
+      },
+      "beard-0.png": {
+        "width": 165,
+        "height": 167
+      },
+      "beard-1.png": {
+        "width": 169,
+        "height": 173
+      },
+      "beard-2.png": {
+        "width": 142,
+        "height": 169
+      },
+      "beard-3.png": {
+        "width": 109,
+        "height": 212
+      },
+      "beard-4.png": {
+        "width": 116,
+        "height": 212
+      },
+      "hair-0.png": {
+        "width": 160,
+        "height": 212
+      },
+      "hair-1.png": {
+        "width": 200,
+        "height": 212
+      },
+      "hair-2.png": {
+        "width": 151,
+        "height": 212
+      },
+      "hair-3.png": {
+        "width": 183,
+        "height": 212
+      },
+      "hair-4.png": {
+        "width": 172,
+        "height": 212
+      },
+      "hat-0.png": {
+        "width": 166,
+        "height": 212
+      },
+      "hat-1.png": {
+        "width": 177,
+        "height": 212
+      },
+      "hat-2.png": {
+        "width": 207,
+        "height": 157
+      },
+      "hat-3.png": {
+        "width": 161,
+        "height": 212
+      },
+      "hat-4.png": {
+        "width": 182,
+        "height": 212
+      },
+      "robe-0.png": {
+        "width": 210,
+        "height": 212
+      },
+      "robe-1.png": {
+        "width": 212,
+        "height": 212
+      },
+      "robe-2.png": {
+        "width": 212,
+        "height": 212
+      },
+      "robe-3.png": {
+        "width": 212,
+        "height": 212
+      },
+      "robe-4.png": {
+        "width": 210,
+        "height": 212
+      },
+      "ornament-0.png": {
+        "width": 159,
+        "height": 151
+      },
+      "ornament-1.png": {
+        "width": 170,
+        "height": 153
+      },
+      "ornament-2.png": {
+        "width": 139,
+        "height": 155
+      },
+      "ornament-3.png": {
+        "width": 184,
+        "height": 153
+      },
+      "ornament-4.png": {
+        "width": 113,
+        "height": 157
+      },
+      "screen-0.png": {
+        "width": 212,
+        "height": 212
+      },
+      "screen-1.png": {
+        "width": 212,
+        "height": 212
+      },
+      "screen-2.png": {
+        "width": 212,
+        "height": 212
+      },
+      "screen-3.png": {
+        "width": 212,
+        "height": 212
+      },
+      "screen-4.png": {
+        "width": 212,
+        "height": 212
+      }
+    }
+  },
+  "nanzhao": {
+    "width": 1060,
+    "height": 1484,
+    "parts": {
+      "head-0.png": {
+        "width": 137,
+        "height": 191
+      },
+      "head-1.png": {
+        "width": 137,
+        "height": 189
+      },
+      "head-2.png": {
+        "width": 138,
+        "height": 190
+      },
+      "head-3.png": {
+        "width": 134,
+        "height": 190
+      },
+      "head-4.png": {
+        "width": 139,
+        "height": 206
+      },
+      "beard-0.png": {
+        "width": 172,
+        "height": 150
+      },
+      "beard-1.png": {
+        "width": 172,
+        "height": 151
+      },
+      "beard-2.png": {
+        "width": 160,
+        "height": 185
+      },
+      "beard-3.png": {
+        "width": 157,
+        "height": 197
+      },
+      "beard-4.png": {
+        "width": 162,
+        "height": 212
+      },
+      "hair-0.png": {
+        "width": 182,
+        "height": 205
+      },
+      "hair-1.png": {
+        "width": 189,
+        "height": 205
+      },
+      "hair-2.png": {
+        "width": 162,
+        "height": 205
+      },
+      "hair-3.png": {
+        "width": 198,
+        "height": 212
+      },
+      "hair-4.png": {
+        "width": 188,
+        "height": 205
+      },
+      "hat-0.png": {
+        "width": 192,
+        "height": 198
+      },
+      "hat-1.png": {
+        "width": 185,
+        "height": 195
+      },
+      "hat-2.png": {
+        "width": 179,
+        "height": 170
+      },
+      "hat-3.png": {
+        "width": 191,
+        "height": 191
+      },
+      "hat-4.png": {
+        "width": 173,
+        "height": 182
+      },
+      "robe-0.png": {
+        "width": 210,
+        "height": 212
+      },
+      "robe-1.png": {
+        "width": 212,
+        "height": 212
+      },
+      "robe-2.png": {
+        "width": 212,
+        "height": 212
+      },
+      "robe-3.png": {
+        "width": 212,
+        "height": 212
+      },
+      "robe-4.png": {
+        "width": 212,
+        "height": 212
+      },
+      "ornament-0.png": {
+        "width": 188,
+        "height": 177
+      },
+      "ornament-1.png": {
+        "width": 165,
+        "height": 177
+      },
+      "ornament-2.png": {
+        "width": 158,
+        "height": 173
+      },
+      "ornament-3.png": {
+        "width": 154,
+        "height": 172
+      },
+      "ornament-4.png": {
+        "width": 186,
+        "height": 164
+      },
+      "screen-0.png": {
+        "width": 212,
+        "height": 212
+      },
+      "screen-1.png": {
+        "width": 212,
+        "height": 212
+      },
+      "screen-2.png": {
+        "width": 212,
+        "height": 212
+      },
+      "screen-3.png": {
+        "width": 212,
+        "height": 212
+      },
+      "screen-4.png": {
+        "width": 212,
+        "height": 212
+      }
+    }
+  },
+  "persia": {
+    "width": 1060,
+    "height": 1484,
+    "parts": {
+      "head-0.png": {
+        "width": 144,
+        "height": 206
+      },
+      "head-1.png": {
+        "width": 142,
+        "height": 207
+      },
+      "head-2.png": {
+        "width": 140,
+        "height": 206
+      },
+      "head-3.png": {
+        "width": 146,
+        "height": 204
+      },
+      "head-4.png": {
+        "width": 148,
+        "height": 207
+      },
+      "beard-0.png": {
+        "width": 186,
+        "height": 212
+      },
+      "beard-1.png": {
+        "width": 212,
+        "height": 212
+      },
+      "beard-2.png": {
+        "width": 158,
+        "height": 175
+      },
+      "beard-3.png": {
+        "width": 137,
+        "height": 212
+      },
+      "beard-4.png": {
+        "width": 142,
+        "height": 212
+      },
+      "hair-0.png": {
+        "width": 199,
+        "height": 212
+      },
+      "hair-1.png": {
+        "width": 201,
+        "height": 212
+      },
+      "hair-2.png": {
+        "width": 197,
+        "height": 202
+      },
+      "hair-3.png": {
+        "width": 197,
+        "height": 212
+      },
+      "hair-4.png": {
+        "width": 186,
+        "height": 212
+      },
+      "hat-0.png": {
+        "width": 193,
+        "height": 175
+      },
+      "hat-1.png": {
+        "width": 187,
+        "height": 212
+      },
+      "hat-2.png": {
+        "width": 185,
+        "height": 159
+      },
+      "hat-3.png": {
+        "width": 196,
+        "height": 144
+      },
+      "hat-4.png": {
+        "width": 207,
+        "height": 183
+      },
+      "robe-0.png": {
+        "width": 204,
+        "height": 212
+      },
+      "robe-1.png": {
+        "width": 212,
+        "height": 212
+      },
+      "robe-2.png": {
+        "width": 212,
+        "height": 212
+      },
+      "robe-3.png": {
+        "width": 212,
+        "height": 212
+      },
+      "robe-4.png": {
+        "width": 212,
+        "height": 212
+      },
+      "ornament-0.png": {
+        "width": 212,
+        "height": 163
+      },
+      "ornament-1.png": {
+        "width": 212,
+        "height": 162
+      },
+      "ornament-2.png": {
+        "width": 212,
+        "height": 160
+      },
+      "ornament-3.png": {
+        "width": 208,
+        "height": 160
+      },
+      "ornament-4.png": {
+        "width": 211,
+        "height": 163
+      },
+      "screen-0.png": {
+        "width": 212,
+        "height": 212
+      },
+      "screen-1.png": {
+        "width": 212,
+        "height": 212
+      },
+      "screen-2.png": {
+        "width": 212,
+        "height": 212
+      },
+      "screen-3.png": {
+        "width": 212,
+        "height": 212
+      },
+      "screen-4.png": {
+        "width": 212,
+        "height": 212
+      }
+    }
+  },
+  "pyu": {
+    "width": 1060,
+    "height": 1484,
+    "parts": {
+      "head-0.png": {
+        "width": 156,
+        "height": 205
+      },
+      "head-1.png": {
+        "width": 156,
+        "height": 207
+      },
+      "head-2.png": {
+        "width": 158,
+        "height": 207
+      },
+      "head-3.png": {
+        "width": 156,
+        "height": 207
+      },
+      "head-4.png": {
+        "width": 160,
+        "height": 206
+      },
+      "beard-0.png": {
+        "width": 144,
+        "height": 169
+      },
+      "beard-1.png": {
+        "width": 146,
+        "height": 187
+      },
+      "beard-2.png": {
+        "width": 128,
+        "height": 191
+      },
+      "beard-3.png": {
+        "width": 124,
+        "height": 205
+      },
+      "beard-4.png": {
+        "width": 118,
+        "height": 212
+      },
+      "hair-0.png": {
+        "width": 146,
+        "height": 212
+      },
+      "hair-1.png": {
+        "width": 169,
+        "height": 212
+      },
+      "hair-2.png": {
+        "width": 149,
+        "height": 212
+      },
+      "hair-3.png": {
+        "width": 157,
+        "height": 212
+      },
+      "hair-4.png": {
+        "width": 164,
+        "height": 212
+      },
+      "hat-0.png": {
+        "width": 177,
+        "height": 212
+      },
+      "hat-1.png": {
+        "width": 178,
+        "height": 212
+      },
+      "hat-2.png": {
+        "width": 148,
+        "height": 113
+      },
+      "hat-3.png": {
+        "width": 187,
+        "height": 212
+      },
+      "hat-4.png": {
+        "width": 209,
+        "height": 212
+      },
+      "robe-0.png": {
+        "width": 205,
+        "height": 212
+      },
+      "robe-1.png": {
+        "width": 206,
+        "height": 212
+      },
+      "robe-2.png": {
+        "width": 211,
+        "height": 212
+      },
+      "robe-3.png": {
+        "width": 203,
+        "height": 212
+      },
+      "robe-4.png": {
+        "width": 205,
+        "height": 212
+      },
+      "ornament-0.png": {
+        "width": 168,
+        "height": 157
+      },
+      "ornament-1.png": {
+        "width": 174,
+        "height": 165
+      },
+      "ornament-2.png": {
+        "width": 149,
+        "height": 165
+      },
+      "ornament-3.png": {
+        "width": 172,
+        "height": 165
+      },
+      "ornament-4.png": {
+        "width": 110,
+        "height": 155
+      },
+      "screen-0.png": {
+        "width": 212,
+        "height": 212
+      },
+      "screen-1.png": {
+        "width": 212,
+        "height": 212
+      },
+      "screen-2.png": {
+        "width": 212,
+        "height": 212
+      },
+      "screen-3.png": {
+        "width": 212,
+        "height": 212
+      },
+      "screen-4.png": {
+        "width": 212,
+        "height": 212
+      }
+    }
+  },
+  "rome": {
+    "width": 1060,
+    "height": 1484,
+    "parts": {
+      "head-0.png": {
+        "width": 140,
+        "height": 204
+      },
+      "head-1.png": {
+        "width": 143,
+        "height": 205
+      },
+      "head-2.png": {
+        "width": 141,
+        "height": 206
+      },
+      "head-3.png": {
+        "width": 141,
+        "height": 207
+      },
+      "head-4.png": {
+        "width": 140,
+        "height": 205
+      },
+      "beard-0.png": {
+        "width": 154,
+        "height": 34
+      },
+      "beard-1.png": {
+        "width": 143,
+        "height": 152
+      },
+      "beard-2.png": {
+        "width": 151,
+        "height": 166
+      },
+      "beard-3.png": {
+        "width": 122,
+        "height": 189
+      },
+      "beard-4.png": {
+        "width": 152,
+        "height": 202
+      },
+      "hair-0.png": {
+        "width": 168,
+        "height": 169
+      },
+      "hair-1.png": {
+        "width": 166,
+        "height": 212
+      },
+      "hair-2.png": {
+        "width": 187,
+        "height": 192
+      },
+      "hair-3.png": {
+        "width": 161,
+        "height": 206
+      },
+      "hair-4.png": {
+        "width": 181,
+        "height": 189
+      },
+      "hat-0.png": {
+        "width": 175,
+        "height": 112
+      },
+      "hat-1.png": {
+        "width": 188,
+        "height": 177
+      },
+      "hat-2.png": {
+        "width": 175,
+        "height": 114
+      },
+      "hat-3.png": {
+        "width": 185,
+        "height": 152
+      },
+      "hat-4.png": {
+        "width": 211,
+        "height": 112
+      },
+      "robe-0.png": {
+        "width": 207,
+        "height": 212
+      },
+      "robe-1.png": {
+        "width": 211,
+        "height": 212
+      },
+      "robe-2.png": {
+        "width": 206,
+        "height": 212
+      },
+      "robe-3.png": {
+        "width": 206,
+        "height": 191
+      },
+      "robe-4.png": {
+        "width": 207,
+        "height": 212
+      },
+      "ornament-0.png": {
+        "width": 170,
+        "height": 158
+      },
+      "ornament-1.png": {
+        "width": 203,
+        "height": 169
+      },
+      "ornament-2.png": {
+        "width": 174,
+        "height": 161
+      },
+      "ornament-3.png": {
+        "width": 210,
+        "height": 169
+      },
+      "ornament-4.png": {
+        "width": 207,
+        "height": 169
+      },
+      "screen-0.png": {
+        "width": 212,
+        "height": 212
+      },
+      "screen-1.png": {
+        "width": 212,
+        "height": 212
+      },
+      "screen-2.png": {
+        "width": 212,
+        "height": 212
+      },
+      "screen-3.png": {
+        "width": 212,
+        "height": 212
+      },
+      "screen-4.png": {
+        "width": 212,
+        "height": 212
+      }
+    }
+  },
+  "shule": {
+    "width": 1060,
+    "height": 1484,
+    "parts": {
+      "head-0.png": {
+        "width": 144,
+        "height": 201
+      },
+      "head-1.png": {
+        "width": 158,
+        "height": 202
+      },
+      "head-2.png": {
+        "width": 150,
+        "height": 201
+      },
+      "head-3.png": {
+        "width": 147,
+        "height": 202
+      },
+      "head-4.png": {
+        "width": 142,
+        "height": 201
+      },
+      "beard-0.png": {
+        "width": 169,
+        "height": 155
+      },
+      "beard-1.png": {
+        "width": 157,
+        "height": 168
+      },
+      "beard-2.png": {
+        "width": 143,
+        "height": 160
+      },
+      "beard-3.png": {
+        "width": 136,
+        "height": 200
+      },
+      "beard-4.png": {
+        "width": 154,
+        "height": 212
+      },
+      "hair-0.png": {
+        "width": 195,
+        "height": 212
+      },
+      "hair-1.png": {
+        "width": 167,
+        "height": 212
+      },
+      "hair-2.png": {
+        "width": 177,
+        "height": 212
+      },
+      "hair-3.png": {
+        "width": 183,
+        "height": 212
+      },
+      "hair-4.png": {
+        "width": 177,
+        "height": 212
+      },
+      "hat-0.png": {
+        "width": 175,
+        "height": 212
+      },
+      "hat-1.png": {
+        "width": 173,
+        "height": 212
+      },
+      "hat-2.png": {
+        "width": 169,
+        "height": 212
+      },
+      "hat-3.png": {
+        "width": 195,
+        "height": 156
+      },
+      "hat-4.png": {
+        "width": 175,
+        "height": 212
+      },
+      "robe-0.png": {
+        "width": 209,
+        "height": 212
+      },
+      "robe-1.png": {
+        "width": 206,
+        "height": 212
+      },
+      "robe-2.png": {
+        "width": 210,
+        "height": 212
+      },
+      "robe-3.png": {
+        "width": 209,
+        "height": 212
+      },
+      "robe-4.png": {
+        "width": 211,
+        "height": 212
+      },
+      "ornament-0.png": {
+        "width": 184,
+        "height": 179
+      },
+      "ornament-1.png": {
+        "width": 174,
+        "height": 179
+      },
+      "ornament-2.png": {
+        "width": 195,
+        "height": 179
+      },
+      "ornament-3.png": {
+        "width": 170,
+        "height": 173
+      },
+      "ornament-4.png": {
+        "width": 184,
+        "height": 179
+      },
+      "screen-0.png": {
+        "width": 212,
+        "height": 212
+      },
+      "screen-1.png": {
+        "width": 212,
+        "height": 212
+      },
+      "screen-2.png": {
+        "width": 212,
+        "height": 212
+      },
+      "screen-3.png": {
+        "width": 212,
+        "height": 212
+      },
+      "screen-4.png": {
+        "width": 212,
+        "height": 212
+      }
+    }
+  },
+  "siberia": {
+    "width": 1060,
+    "height": 1484,
+    "parts": {
+      "head-0.png": {
+        "width": 134,
+        "height": 199
+      },
+      "head-1.png": {
+        "width": 133,
+        "height": 198
+      },
+      "head-2.png": {
+        "width": 133,
+        "height": 198
+      },
+      "head-3.png": {
+        "width": 133,
+        "height": 206
+      },
+      "head-4.png": {
+        "width": 134,
+        "height": 198
+      },
+      "beard-0.png": {
+        "width": 168,
+        "height": 154
+      },
+      "beard-1.png": {
+        "width": 175,
+        "height": 180
+      },
+      "beard-2.png": {
+        "width": 137,
+        "height": 193
+      },
+      "beard-3.png": {
+        "width": 124,
+        "height": 212
+      },
+      "beard-4.png": {
+        "width": 119,
+        "height": 208
+      },
+      "hair-0.png": {
+        "width": 129,
+        "height": 212
+      },
+      "hair-1.png": {
+        "width": 163,
+        "height": 212
+      },
+      "hair-2.png": {
+        "width": 141,
+        "height": 212
+      },
+      "hair-3.png": {
+        "width": 139,
+        "height": 212
+      },
+      "hair-4.png": {
+        "width": 170,
+        "height": 212
+      },
+      "hat-0.png": {
+        "width": 158,
+        "height": 212
+      },
+      "hat-1.png": {
+        "width": 166,
+        "height": 140
+      },
+      "hat-2.png": {
+        "width": 157,
+        "height": 171
+      },
+      "hat-3.png": {
+        "width": 181,
+        "height": 167
+      },
+      "hat-4.png": {
+        "width": 156,
+        "height": 212
+      },
+      "robe-0.png": {
+        "width": 192,
+        "height": 212
+      },
+      "robe-1.png": {
+        "width": 186,
+        "height": 212
+      },
+      "robe-2.png": {
+        "width": 201,
+        "height": 212
+      },
+      "robe-3.png": {
+        "width": 208,
+        "height": 212
+      },
+      "robe-4.png": {
+        "width": 207,
+        "height": 212
+      },
+      "ornament-0.png": {
+        "width": 143,
+        "height": 176
+      },
+      "ornament-1.png": {
+        "width": 130,
+        "height": 176
+      },
+      "ornament-2.png": {
+        "width": 187,
+        "height": 171
+      },
+      "ornament-3.png": {
+        "width": 189,
+        "height": 167
+      },
+      "ornament-4.png": {
+        "width": 141,
+        "height": 175
+      },
+      "screen-0.png": {
+        "width": 212,
+        "height": 212
+      },
+      "screen-1.png": {
+        "width": 212,
+        "height": 212
+      },
+      "screen-2.png": {
+        "width": 212,
+        "height": 212
+      },
+      "screen-3.png": {
+        "width": 212,
+        "height": 212
+      },
+      "screen-4.png": {
+        "width": 212,
+        "height": 212
+      }
+    }
+  },
+  "sinhala": {
+    "width": 1060,
+    "height": 1484,
+    "parts": {
+      "head-0.png": {
+        "width": 138,
+        "height": 207
+      },
+      "head-1.png": {
+        "width": 148,
+        "height": 211
+      },
+      "head-2.png": {
+        "width": 138,
+        "height": 211
+      },
+      "head-3.png": {
+        "width": 140,
+        "height": 211
+      },
+      "head-4.png": {
+        "width": 146,
+        "height": 211
+      },
+      "beard-0.png": {
+        "width": 173,
+        "height": 212
+      },
+      "beard-1.png": {
+        "width": 176,
+        "height": 212
+      },
+      "beard-2.png": {
+        "width": 162,
+        "height": 212
+      },
+      "beard-3.png": {
+        "width": 143,
+        "height": 208
+      },
+      "beard-4.png": {
+        "width": 154,
+        "height": 212
+      },
+      "hair-0.png": {
+        "width": 157,
+        "height": 212
+      },
+      "hair-1.png": {
+        "width": 203,
+        "height": 212
+      },
+      "hair-2.png": {
+        "width": 179,
+        "height": 212
+      },
+      "hair-3.png": {
+        "width": 164,
+        "height": 212
+      },
+      "hair-4.png": {
+        "width": 171,
+        "height": 212
+      },
+      "hat-0.png": {
+        "width": 200,
+        "height": 132
+      },
+      "hat-1.png": {
+        "width": 197,
+        "height": 212
+      },
+      "hat-2.png": {
+        "width": 181,
+        "height": 212
+      },
+      "hat-3.png": {
+        "width": 144,
+        "height": 163
+      },
+      "hat-4.png": {
+        "width": 207,
+        "height": 139
+      },
+      "robe-0.png": {
+        "width": 209,
+        "height": 212
+      },
+      "robe-1.png": {
+        "width": 212,
+        "height": 212
+      },
+      "robe-2.png": {
+        "width": 211,
+        "height": 212
+      },
+      "robe-3.png": {
+        "width": 212,
+        "height": 212
+      },
+      "robe-4.png": {
+        "width": 208,
+        "height": 212
+      },
+      "ornament-0.png": {
+        "width": 146,
+        "height": 160
+      },
+      "ornament-1.png": {
+        "width": 171,
+        "height": 157
+      },
+      "ornament-2.png": {
+        "width": 116,
+        "height": 158
+      },
+      "ornament-3.png": {
+        "width": 178,
+        "height": 153
+      },
+      "ornament-4.png": {
+        "width": 131,
+        "height": 158
+      },
+      "screen-0.png": {
+        "width": 212,
+        "height": 212
+      },
+      "screen-1.png": {
+        "width": 212,
+        "height": 212
+      },
+      "screen-2.png": {
+        "width": 212,
+        "height": 212
+      },
+      "screen-3.png": {
+        "width": 212,
+        "height": 212
+      },
+      "screen-4.png": {
+        "width": 212,
+        "height": 212
+      }
+    }
+  },
+  "slavs": {
+    "width": 1060,
+    "height": 1484,
+    "parts": {
+      "head-0.png": {
+        "width": 141,
+        "height": 200
+      },
+      "head-1.png": {
+        "width": 142,
+        "height": 201
+      },
+      "head-2.png": {
+        "width": 143,
+        "height": 203
+      },
+      "head-3.png": {
+        "width": 143,
+        "height": 202
+      },
+      "head-4.png": {
+        "width": 146,
+        "height": 201
+      },
+      "beard-0.png": {
+        "width": 176,
+        "height": 157
+      },
+      "beard-1.png": {
+        "width": 164,
+        "height": 177
+      },
+      "beard-2.png": {
+        "width": 149,
+        "height": 187
+      },
+      "beard-3.png": {
+        "width": 129,
+        "height": 205
+      },
+      "beard-4.png": {
+        "width": 143,
+        "height": 208
+      },
+      "hair-0.png": {
+        "width": 165,
+        "height": 212
+      },
+      "hair-1.png": {
+        "width": 188,
+        "height": 212
+      },
+      "hair-2.png": {
+        "width": 157,
+        "height": 212
+      },
+      "hair-3.png": {
+        "width": 186,
+        "height": 212
+      },
+      "hair-4.png": {
+        "width": 187,
+        "height": 212
+      },
+      "hat-0.png": {
+        "width": 182,
+        "height": 151
+      },
+      "hat-1.png": {
+        "width": 181,
+        "height": 145
+      },
+      "hat-2.png": {
+        "width": 185,
+        "height": 157
+      },
+      "hat-3.png": {
+        "width": 191,
+        "height": 158
+      },
+      "hat-4.png": {
+        "width": 189,
+        "height": 161
+      },
+      "robe-0.png": {
+        "width": 205,
+        "height": 212
+      },
+      "robe-1.png": {
+        "width": 209,
+        "height": 212
+      },
+      "robe-2.png": {
+        "width": 212,
+        "height": 212
+      },
+      "robe-3.png": {
+        "width": 207,
+        "height": 212
+      },
+      "robe-4.png": {
+        "width": 211,
+        "height": 212
+      },
+      "ornament-0.png": {
+        "width": 167,
+        "height": 165
+      },
+      "ornament-1.png": {
+        "width": 190,
+        "height": 165
+      },
+      "ornament-2.png": {
+        "width": 179,
+        "height": 165
+      },
+      "ornament-3.png": {
+        "width": 163,
+        "height": 165
+      },
+      "ornament-4.png": {
+        "width": 187,
+        "height": 165
+      },
+      "screen-0.png": {
+        "width": 212,
+        "height": 212
+      },
+      "screen-1.png": {
+        "width": 212,
+        "height": 212
+      },
+      "screen-2.png": {
+        "width": 212,
+        "height": 212
+      },
+      "screen-3.png": {
+        "width": 212,
+        "height": 212
+      },
+      "screen-4.png": {
+        "width": 212,
+        "height": 212
+      }
+    }
+  },
+  "srivijaya": {
+    "width": 1060,
+    "height": 1484,
+    "parts": {
+      "head-0.png": {
+        "width": 132,
+        "height": 195
+      },
+      "head-1.png": {
+        "width": 135,
+        "height": 196
+      },
+      "head-2.png": {
+        "width": 136,
+        "height": 195
+      },
+      "head-3.png": {
+        "width": 136,
+        "height": 194
+      },
+      "head-4.png": {
+        "width": 136,
+        "height": 196
+      },
+      "beard-0.png": {
+        "width": 172,
+        "height": 167
+      },
+      "beard-1.png": {
+        "width": 171,
+        "height": 162
+      },
+      "beard-2.png": {
+        "width": 149,
+        "height": 171
+      },
+      "beard-3.png": {
+        "width": 106,
+        "height": 185
+      },
+      "beard-4.png": {
+        "width": 142,
+        "height": 183
+      },
+      "hair-0.png": {
+        "width": 185,
+        "height": 212
+      },
+      "hair-1.png": {
+        "width": 143,
+        "height": 201
+      },
+      "hair-2.png": {
+        "width": 121,
+        "height": 196
+      },
+      "hair-3.png": {
+        "width": 189,
+        "height": 212
+      },
+      "hair-4.png": {
+        "width": 128,
+        "height": 212
+      },
+      "hat-0.png": {
+        "width": 188,
+        "height": 147
+      },
+      "hat-1.png": {
+        "width": 184,
+        "height": 186
+      },
+      "hat-2.png": {
+        "width": 173,
+        "height": 199
+      },
+      "hat-3.png": {
+        "width": 171,
+        "height": 196
+      },
+      "hat-4.png": {
+        "width": 203,
+        "height": 174
+      },
+      "robe-0.png": {
+        "width": 189,
+        "height": 208
+      },
+      "robe-1.png": {
+        "width": 197,
+        "height": 208
+      },
+      "robe-2.png": {
+        "width": 185,
+        "height": 209
+      },
+      "robe-3.png": {
+        "width": 199,
+        "height": 212
+      },
+      "robe-4.png": {
+        "width": 189,
+        "height": 212
+      },
+      "ornament-0.png": {
+        "width": 192,
+        "height": 185
+      },
+      "ornament-1.png": {
+        "width": 190,
+        "height": 185
+      },
+      "ornament-2.png": {
+        "width": 192,
+        "height": 180
+      },
+      "ornament-3.png": {
+        "width": 211,
+        "height": 185
+      },
+      "ornament-4.png": {
+        "width": 158,
+        "height": 185
+      },
+      "screen-0.png": {
+        "width": 212,
+        "height": 212
+      },
+      "screen-1.png": {
+        "width": 212,
+        "height": 212
+      },
+      "screen-2.png": {
+        "width": 212,
+        "height": 212
+      },
+      "screen-3.png": {
+        "width": 212,
+        "height": 212
+      },
+      "screen-4.png": {
+        "width": 212,
+        "height": 212
+      }
+    }
+  },
+  "steppe": {
+    "width": 1060,
+    "height": 1484,
+    "parts": {
+      "head-0.png": {
+        "width": 135,
+        "height": 206
+      },
+      "head-1.png": {
+        "width": 141,
+        "height": 207
+      },
+      "head-2.png": {
+        "width": 142,
+        "height": 207
+      },
+      "head-3.png": {
+        "width": 139,
+        "height": 207
+      },
+      "head-4.png": {
+        "width": 138,
+        "height": 208
+      },
+      "beard-0.png": {
+        "width": 171,
+        "height": 157
+      },
+      "beard-1.png": {
+        "width": 162,
+        "height": 171
+      },
+      "beard-2.png": {
+        "width": 156,
+        "height": 174
+      },
+      "beard-3.png": {
+        "width": 146,
+        "height": 206
+      },
+      "beard-4.png": {
+        "width": 140,
+        "height": 207
+      },
+      "hair-0.png": {
+        "width": 160,
+        "height": 212
+      },
+      "hair-1.png": {
+        "width": 161,
+        "height": 212
+      },
+      "hair-2.png": {
+        "width": 151,
+        "height": 212
+      },
+      "hair-3.png": {
+        "width": 173,
+        "height": 212
+      },
+      "hair-4.png": {
+        "width": 166,
+        "height": 212
+      },
+      "hat-0.png": {
+        "width": 192,
+        "height": 212
+      },
+      "hat-1.png": {
+        "width": 191,
+        "height": 161
+      },
+      "hat-2.png": {
+        "width": 175,
+        "height": 171
+      },
+      "hat-3.png": {
+        "width": 177,
+        "height": 212
+      },
+      "hat-4.png": {
+        "width": 180,
+        "height": 176
+      },
+      "robe-0.png": {
+        "width": 207,
+        "height": 212
+      },
+      "robe-1.png": {
+        "width": 207,
+        "height": 212
+      },
+      "robe-2.png": {
+        "width": 204,
+        "height": 212
+      },
+      "robe-3.png": {
+        "width": 211,
+        "height": 212
+      },
+      "robe-4.png": {
+        "width": 206,
+        "height": 212
+      },
+      "ornament-0.png": {
+        "width": 169,
+        "height": 171
+      },
+      "ornament-1.png": {
+        "width": 151,
+        "height": 167
+      },
+      "ornament-2.png": {
+        "width": 170,
+        "height": 171
+      },
+      "ornament-3.png": {
+        "width": 150,
+        "height": 168
+      },
+      "ornament-4.png": {
+        "width": 149,
+        "height": 170
+      },
+      "screen-0.png": {
+        "width": 212,
+        "height": 212
+      },
+      "screen-1.png": {
+        "width": 212,
+        "height": 212
+      },
+      "screen-2.png": {
+        "width": 212,
+        "height": 212
+      },
+      "screen-3.png": {
+        "width": 212,
+        "height": 212
+      },
+      "screen-4.png": {
+        "width": 212,
+        "height": 212
+      }
+    }
+  },
+  "tokhara": {
+    "width": 1060,
+    "height": 1484,
+    "parts": {
+      "head-0.png": {
+        "width": 127,
+        "height": 196
+      },
+      "head-1.png": {
+        "width": 128,
+        "height": 197
+      },
+      "head-2.png": {
+        "width": 131,
+        "height": 197
+      },
+      "head-3.png": {
+        "width": 128,
+        "height": 197
+      },
+      "head-4.png": {
+        "width": 127,
+        "height": 196
+      },
+      "beard-0.png": {
+        "width": 164,
+        "height": 146
+      },
+      "beard-1.png": {
+        "width": 163,
+        "height": 166
+      },
+      "beard-2.png": {
+        "width": 154,
+        "height": 178
+      },
+      "beard-3.png": {
+        "width": 139,
+        "height": 207
+      },
+      "beard-4.png": {
+        "width": 133,
+        "height": 212
+      },
+      "hair-0.png": {
+        "width": 163,
+        "height": 212
+      },
+      "hair-1.png": {
+        "width": 151,
+        "height": 212
+      },
+      "hair-2.png": {
+        "width": 172,
+        "height": 212
+      },
+      "hair-3.png": {
+        "width": 170,
+        "height": 212
+      },
+      "hair-4.png": {
+        "width": 182,
+        "height": 212
+      },
+      "hat-0.png": {
+        "width": 205,
+        "height": 139
+      },
+      "hat-1.png": {
+        "width": 194,
+        "height": 149
+      },
+      "hat-2.png": {
+        "width": 193,
+        "height": 149
+      },
+      "hat-3.png": {
+        "width": 203,
+        "height": 146
+      },
+      "hat-4.png": {
+        "width": 190,
+        "height": 143
+      },
+      "robe-0.png": {
+        "width": 197,
+        "height": 212
+      },
+      "robe-1.png": {
+        "width": 200,
+        "height": 212
+      },
+      "robe-2.png": {
+        "width": 204,
+        "height": 212
+      },
+      "robe-3.png": {
+        "width": 200,
+        "height": 212
+      },
+      "robe-4.png": {
+        "width": 203,
+        "height": 212
+      },
+      "ornament-0.png": {
+        "width": 159,
+        "height": 158
+      },
+      "ornament-1.png": {
+        "width": 147,
+        "height": 159
+      },
+      "ornament-2.png": {
+        "width": 173,
+        "height": 156
+      },
+      "ornament-3.png": {
+        "width": 169,
+        "height": 161
+      },
+      "ornament-4.png": {
+        "width": 150,
+        "height": 159
+      },
+      "screen-0.png": {
+        "width": 212,
+        "height": 212
+      },
+      "screen-1.png": {
+        "width": 212,
+        "height": 212
+      },
+      "screen-2.png": {
+        "width": 212,
+        "height": 212
+      },
+      "screen-3.png": {
+        "width": 212,
+        "height": 212
+      },
+      "screen-4.png": {
+        "width": 212,
+        "height": 212
+      }
+    }
+  },
+  "tubo": {
+    "width": 1060,
+    "height": 1484,
+    "parts": {
+      "head-0.png": {
+        "width": 136,
+        "height": 206
+      },
+      "head-1.png": {
+        "width": 139,
+        "height": 207
+      },
+      "head-2.png": {
+        "width": 138,
+        "height": 206
+      },
+      "head-3.png": {
+        "width": 137,
+        "height": 206
+      },
+      "head-4.png": {
+        "width": 140,
+        "height": 207
+      },
+      "beard-0.png": {
+        "width": 169,
+        "height": 143
+      },
+      "beard-1.png": {
+        "width": 173,
+        "height": 152
+      },
+      "beard-2.png": {
+        "width": 164,
+        "height": 179
+      },
+      "beard-3.png": {
+        "width": 151,
+        "height": 209
+      },
+      "beard-4.png": {
+        "width": 166,
+        "height": 202
+      },
+      "hair-0.png": {
+        "width": 158,
+        "height": 211
+      },
+      "hair-1.png": {
+        "width": 148,
+        "height": 212
+      },
+      "hair-2.png": {
+        "width": 205,
+        "height": 212
+      },
+      "hair-3.png": {
+        "width": 165,
+        "height": 205
+      },
+      "hair-4.png": {
+        "width": 176,
+        "height": 211
+      },
+      "hat-0.png": {
+        "width": 201,
+        "height": 191
+      },
+      "hat-1.png": {
+        "width": 202,
+        "height": 189
+      },
+      "hat-2.png": {
+        "width": 184,
+        "height": 212
+      },
+      "hat-3.png": {
+        "width": 212,
+        "height": 134
+      },
+      "hat-4.png": {
+        "width": 200,
+        "height": 212
+      },
+      "robe-0.png": {
+        "width": 211,
+        "height": 212
+      },
+      "robe-1.png": {
+        "width": 212,
+        "height": 212
+      },
+      "robe-2.png": {
+        "width": 212,
+        "height": 212
+      },
+      "robe-3.png": {
+        "width": 211,
+        "height": 212
+      },
+      "robe-4.png": {
+        "width": 210,
+        "height": 212
+      },
+      "ornament-0.png": {
+        "width": 165,
+        "height": 173
+      },
+      "ornament-1.png": {
+        "width": 146,
+        "height": 175
+      },
+      "ornament-2.png": {
+        "width": 184,
+        "height": 172
+      },
+      "ornament-3.png": {
+        "width": 161,
+        "height": 175
+      },
+      "ornament-4.png": {
+        "width": 186,
+        "height": 179
+      },
+      "screen-0.png": {
+        "width": 212,
+        "height": 212
+      },
+      "screen-1.png": {
+        "width": 212,
+        "height": 212
+      },
+      "screen-2.png": {
+        "width": 212,
+        "height": 212
+      },
+      "screen-3.png": {
+        "width": 212,
+        "height": 212
+      },
+      "screen-4.png": {
+        "width": 212,
+        "height": 212
+      }
+    }
+  },
+  "tuyuhun": {
+    "width": 1060,
+    "height": 1484,
+    "parts": {
+      "head-0.png": {
+        "width": 129,
+        "height": 200
+      },
+      "head-1.png": {
+        "width": 133,
+        "height": 200
+      },
+      "head-2.png": {
+        "width": 210,
+        "height": 200
+      },
+      "head-3.png": {
+        "width": 174,
+        "height": 208
+      },
+      "head-4.png": {
+        "width": 138,
+        "height": 208
+      },
+      "beard-0.png": {
+        "width": 166,
+        "height": 147
+      },
+      "beard-1.png": {
+        "width": 166,
+        "height": 164
+      },
+      "beard-2.png": {
+        "width": 146,
+        "height": 119
+      },
+      "beard-3.png": {
+        "width": 166,
+        "height": 212
+      },
+      "beard-4.png": {
+        "width": 149,
+        "height": 212
+      },
+      "hair-0.png": {
+        "width": 121,
+        "height": 211
+      },
+      "hair-1.png": {
+        "width": 142,
+        "height": 211
+      },
+      "hair-2.png": {
+        "width": 174,
+        "height": 212
+      },
+      "hair-3.png": {
+        "width": 192,
+        "height": 212
+      },
+      "hair-4.png": {
+        "width": 164,
+        "height": 211
+      },
+      "hat-0.png": {
+        "width": 164,
+        "height": 192
+      },
+      "hat-1.png": {
+        "width": 171,
+        "height": 205
+      },
+      "hat-2.png": {
+        "width": 181,
+        "height": 194
+      },
+      "hat-3.png": {
+        "width": 179,
+        "height": 200
+      },
+      "hat-4.png": {
+        "width": 157,
+        "height": 206
+      },
+      "robe-0.png": {
+        "width": 208,
+        "height": 208
+      },
+      "robe-1.png": {
+        "width": 212,
+        "height": 209
+      },
+      "robe-2.png": {
+        "width": 211,
+        "height": 206
+      },
+      "robe-3.png": {
+        "width": 211,
+        "height": 210
+      },
+      "robe-4.png": {
+        "width": 209,
+        "height": 210
+      },
+      "ornament-0.png": {
+        "width": 147,
+        "height": 177
+      },
+      "ornament-1.png": {
+        "width": 158,
+        "height": 177
+      },
+      "ornament-2.png": {
+        "width": 143,
+        "height": 175
+      },
+      "ornament-3.png": {
+        "width": 167,
+        "height": 177
+      },
+      "ornament-4.png": {
+        "width": 159,
+        "height": 177
+      },
+      "screen-0.png": {
+        "width": 212,
+        "height": 212
+      },
+      "screen-1.png": {
+        "width": 212,
+        "height": 212
+      },
+      "screen-2.png": {
+        "width": 212,
+        "height": 212
+      },
+      "screen-3.png": {
+        "width": 212,
+        "height": 212
+      },
+      "screen-4.png": {
+        "width": 212,
+        "height": 212
+      }
+    }
+  },
+  "uyghur": {
+    "width": 1060,
+    "height": 1484,
+    "parts": {
+      "head-0.png": {
+        "width": 129,
+        "height": 200
+      },
+      "head-1.png": {
+        "width": 130,
+        "height": 200
+      },
+      "head-2.png": {
+        "width": 131,
+        "height": 200
+      },
+      "head-3.png": {
+        "width": 131,
+        "height": 200
+      },
+      "head-4.png": {
+        "width": 132,
+        "height": 200
+      },
+      "beard-0.png": {
+        "width": 154,
+        "height": 154
+      },
+      "beard-1.png": {
+        "width": 137,
+        "height": 173
+      },
+      "beard-2.png": {
+        "width": 137,
+        "height": 190
+      },
+      "beard-3.png": {
+        "width": 118,
+        "height": 206
+      },
+      "beard-4.png": {
+        "width": 135,
+        "height": 207
+      },
+      "hair-0.png": {
+        "width": 185,
+        "height": 212
+      },
+      "hair-1.png": {
+        "width": 179,
+        "height": 212
+      },
+      "hair-2.png": {
+        "width": 185,
+        "height": 212
+      },
+      "hair-3.png": {
+        "width": 182,
+        "height": 212
+      },
+      "hair-4.png": {
+        "width": 189,
+        "height": 212
+      },
+      "hat-0.png": {
+        "width": 197,
+        "height": 119
+      },
+      "hat-1.png": {
+        "width": 183,
+        "height": 146
+      },
+      "hat-2.png": {
+        "width": 190,
+        "height": 212
+      },
+      "hat-3.png": {
+        "width": 192,
+        "height": 120
+      },
+      "hat-4.png": {
+        "width": 191,
+        "height": 212
+      },
+      "robe-0.png": {
+        "width": 203,
+        "height": 212
+      },
+      "robe-1.png": {
+        "width": 206,
+        "height": 212
+      },
+      "robe-2.png": {
+        "width": 209,
+        "height": 212
+      },
+      "robe-3.png": {
+        "width": 205,
+        "height": 212
+      },
+      "robe-4.png": {
+        "width": 205,
+        "height": 212
+      },
+      "ornament-0.png": {
+        "width": 212,
+        "height": 150
+      },
+      "ornament-1.png": {
+        "width": 212,
+        "height": 150
+      },
+      "ornament-2.png": {
+        "width": 212,
+        "height": 150
+      },
+      "ornament-3.png": {
+        "width": 212,
+        "height": 150
+      },
+      "ornament-4.png": {
+        "width": 212,
+        "height": 150
+      },
+      "screen-0.png": {
+        "width": 212,
+        "height": 212
+      },
+      "screen-1.png": {
+        "width": 212,
+        "height": 212
+      },
+      "screen-2.png": {
+        "width": 212,
+        "height": 212
+      },
+      "screen-3.png": {
+        "width": 212,
+        "height": 212
+      },
+      "screen-4.png": {
+        "width": 212,
+        "height": 212
+      }
+    }
+  },
+  "west-turk": {
+    "width": 1060,
+    "height": 1484,
+    "parts": {
+      "head-0.png": {
+        "width": 147,
+        "height": 197
+      },
+      "head-1.png": {
+        "width": 148,
+        "height": 197
+      },
+      "head-2.png": {
+        "width": 151,
+        "height": 198
+      },
+      "head-3.png": {
+        "width": 149,
+        "height": 198
+      },
+      "head-4.png": {
+        "width": 154,
+        "height": 211
+      },
+      "beard-0.png": {
+        "width": 163,
+        "height": 158
+      },
+      "beard-1.png": {
+        "width": 176,
+        "height": 166
+      },
+      "beard-2.png": {
+        "width": 150,
+        "height": 185
+      },
+      "beard-3.png": {
+        "width": 144,
+        "height": 203
+      },
+      "beard-4.png": {
+        "width": 129,
+        "height": 212
+      },
+      "hair-0.png": {
+        "width": 156,
+        "height": 212
+      },
+      "hair-1.png": {
+        "width": 128,
+        "height": 212
+      },
+      "hair-2.png": {
+        "width": 173,
+        "height": 212
+      },
+      "hair-3.png": {
+        "width": 141,
+        "height": 212
+      },
+      "hair-4.png": {
+        "width": 148,
+        "height": 212
+      },
+      "hat-0.png": {
+        "width": 185,
+        "height": 212
+      },
+      "hat-1.png": {
+        "width": 170,
+        "height": 212
+      },
+      "hat-2.png": {
+        "width": 174,
+        "height": 212
+      },
+      "hat-3.png": {
+        "width": 175,
+        "height": 212
+      },
+      "hat-4.png": {
+        "width": 151,
+        "height": 212
+      },
+      "robe-0.png": {
+        "width": 204,
+        "height": 212
+      },
+      "robe-1.png": {
+        "width": 212,
+        "height": 212
+      },
+      "robe-2.png": {
+        "width": 205,
+        "height": 212
+      },
+      "robe-3.png": {
+        "width": 209,
+        "height": 212
+      },
+      "robe-4.png": {
+        "width": 205,
+        "height": 212
+      },
+      "ornament-0.png": {
+        "width": 165,
+        "height": 175
+      },
+      "ornament-1.png": {
+        "width": 191,
+        "height": 175
+      },
+      "ornament-2.png": {
+        "width": 204,
+        "height": 175
+      },
+      "ornament-3.png": {
+        "width": 205,
+        "height": 175
+      },
+      "ornament-4.png": {
+        "width": 212,
+        "height": 175
+      },
+      "screen-0.png": {
+        "width": 212,
+        "height": 212
+      },
+      "screen-1.png": {
+        "width": 212,
+        "height": 212
+      },
+      "screen-2.png": {
+        "width": 212,
+        "height": 212
+      },
+      "screen-3.png": {
+        "width": 212,
+        "height": 212
+      },
+      "screen-4.png": {
+        "width": 212,
+        "height": 212
+      }
+    }
+  },
+  "xi": {
+    "width": 1060,
+    "height": 1484,
+    "parts": {
+      "head-0.png": {
+        "width": 160,
+        "height": 195
+      },
+      "head-1.png": {
+        "width": 159,
+        "height": 196
+      },
+      "head-2.png": {
+        "width": 164,
+        "height": 196
+      },
+      "head-3.png": {
+        "width": 160,
+        "height": 196
+      },
+      "head-4.png": {
+        "width": 160,
+        "height": 196
+      },
+      "beard-0.png": {
+        "width": 153,
+        "height": 156
+      },
+      "beard-1.png": {
+        "width": 157,
+        "height": 165
+      },
+      "beard-2.png": {
+        "width": 158,
+        "height": 176
+      },
+      "beard-3.png": {
+        "width": 120,
+        "height": 206
+      },
+      "beard-4.png": {
+        "width": 128,
+        "height": 210
+      },
+      "hair-0.png": {
+        "width": 161,
+        "height": 212
+      },
+      "hair-1.png": {
+        "width": 124,
+        "height": 212
+      },
+      "hair-2.png": {
+        "width": 153,
+        "height": 195
+      },
+      "hair-3.png": {
+        "width": 195,
+        "height": 212
+      },
+      "hair-4.png": {
+        "width": 157,
+        "height": 212
+      },
+      "hat-0.png": {
+        "width": 192,
+        "height": 176
+      },
+      "hat-1.png": {
+        "width": 194,
+        "height": 173
+      },
+      "hat-2.png": {
+        "width": 194,
+        "height": 173
+      },
+      "hat-3.png": {
+        "width": 185,
+        "height": 178
+      },
+      "hat-4.png": {
+        "width": 191,
+        "height": 212
+      },
+      "robe-0.png": {
+        "width": 208,
+        "height": 212
+      },
+      "robe-1.png": {
+        "width": 210,
+        "height": 212
+      },
+      "robe-2.png": {
+        "width": 211,
+        "height": 212
+      },
+      "robe-3.png": {
+        "width": 210,
+        "height": 212
+      },
+      "robe-4.png": {
+        "width": 209,
+        "height": 212
+      },
+      "ornament-0.png": {
+        "width": 152,
+        "height": 181
+      },
+      "ornament-1.png": {
+        "width": 146,
+        "height": 179
+      },
+      "ornament-2.png": {
+        "width": 176,
+        "height": 183
+      },
+      "ornament-3.png": {
+        "width": 150,
+        "height": 177
+      },
+      "ornament-4.png": {
+        "width": 110,
+        "height": 179
+      },
+      "screen-0.png": {
+        "width": 212,
+        "height": 212
+      },
+      "screen-1.png": {
+        "width": 212,
+        "height": 212
+      },
+      "screen-2.png": {
+        "width": 212,
+        "height": 212
+      },
+      "screen-3.png": {
+        "width": 212,
+        "height": 212
+      },
+      "screen-4.png": {
+        "width": 212,
+        "height": 212
+      }
+    }
+  }
+}

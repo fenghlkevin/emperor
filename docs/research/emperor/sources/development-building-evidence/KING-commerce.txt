@@ -1,0 +1,28 @@
+KING relocated object1; VA range [0x125e5, 0x12650); source: reverse/emperor/code-analysis/KING/object1.relocated.asm
+All listed instruction bytes checked against object1.relocated.bin; static evidence, no execution.
+
+   125e5: 0f bf 55 e8                  	movsx	edx, word ptr [ebp - 0x18]
+   125e9: 69 d2 51 01 00 00            	imul	edx, edx, 0x151
+   125ef: 0f bf 82 64 99 0c 00         	movsx	eax, word ptr [edx + 0xc9964]
+   125f6: 0f bf 55 e8                  	movsx	edx, word ptr [ebp - 0x18]
+   125fa: 69 d2 51 01 00 00            	imul	edx, edx, 0x151
+   12600: 8b 92 1a 99 0c 00            	mov	edx, dword ptr [edx + 0xc991a]
+   12606: 0f af d0                     	imul	edx, eax
+   12609: bb 64 00 00 00               	mov	ebx, 0x64
+   1260e: 89 d0                        	mov	eax, edx
+   12610: c1 fa 1f                     	sar	edx, 0x1f
+   12613: f7 fb                        	idiv	ebx
+   12615: 0f bf 55 e8                  	movsx	edx, word ptr [ebp - 0x18]
+   12619: 69 d2 51 01 00 00            	imul	edx, edx, 0x151
+   1261f: 0f b6 92 2c 9a 0c 00         	movzx	edx, byte ptr [edx + 0xc9a2c]
+   12626: 0f af c2                     	imul	eax, edx
+   12629: 89 45 d8                     	mov	dword ptr [ebp - 0x28], eax
+   1262c: 0f bf 55 e8                  	movsx	edx, word ptr [ebp - 0x18]
+   12630: 69 d2 51 01 00 00            	imul	edx, edx, 0x151
+   12636: 0f bf 82 7e 99 0c 00         	movsx	eax, word ptr [edx + 0xc997e]
+   1263d: 83 c0 32                     	add	eax, 0x32
+   12640: 0f af 45 d8                  	imul	eax, dword ptr [ebp - 0x28]
+   12644: bb 64 00 00 00               	mov	ebx, 0x64
+   12649: 31 d2                        	xor	edx, edx
+   1264b: f7 f3                        	div	ebx
+   1264d: 89 45 d8                     	mov	dword ptr [ebp - 0x28], eax

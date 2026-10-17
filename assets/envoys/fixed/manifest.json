@@ -1,0 +1,464 @@
+{
+  "tubo": [
+    {
+      "width": 512,
+      "height": 1024
+    },
+    {
+      "width": 512,
+      "height": 1024
+    },
+    {
+      "width": 512,
+      "height": 1024
+    }
+  ],
+  "nanzhao": [
+    {
+      "width": 512,
+      "height": 1024
+    },
+    {
+      "width": 512,
+      "height": 1024
+    },
+    {
+      "width": 512,
+      "height": 1024
+    }
+  ],
+  "korea": [
+    {
+      "width": 512,
+      "height": 1024
+    },
+    {
+      "width": 512,
+      "height": 1024
+    },
+    {
+      "width": 512,
+      "height": 1024
+    }
+  ],
+  "japan": [
+    {
+      "width": 512,
+      "height": 1024
+    },
+    {
+      "width": 512,
+      "height": 1024
+    },
+    {
+      "width": 512,
+      "height": 1024
+    }
+  ],
+  "steppe": [
+    {
+      "width": 512,
+      "height": 1024
+    },
+    {
+      "width": 512,
+      "height": 1024
+    },
+    {
+      "width": 512,
+      "height": 1024
+    }
+  ],
+  "uyghur": [
+    {
+      "width": 512,
+      "height": 1024
+    },
+    {
+      "width": 512,
+      "height": 1024
+    },
+    {
+      "width": 512,
+      "height": 1024
+    }
+  ],
+  "persia": [
+    {
+      "width": 512,
+      "height": 1024
+    },
+    {
+      "width": 512,
+      "height": 1024
+    },
+    {
+      "width": 512,
+      "height": 1024
+    }
+  ],
+  "arabia": [
+    {
+      "width": 512,
+      "height": 1024
+    },
+    {
+      "width": 512,
+      "height": 1024
+    },
+    {
+      "width": 512,
+      "height": 1024
+    }
+  ],
+  "rome": [
+    {
+      "width": 512,
+      "height": 1024
+    },
+    {
+      "width": 512,
+      "height": 1024
+    },
+    {
+      "width": 512,
+      "height": 1024
+    }
+  ],
+  "india": [
+    {
+      "width": 512,
+      "height": 1024
+    },
+    {
+      "width": 512,
+      "height": 1024
+    },
+    {
+      "width": 512,
+      "height": 1024
+    }
+  ],
+  "west-turk": [
+    {
+      "width": 512,
+      "height": 1024
+    },
+    {
+      "width": 512,
+      "height": 1024
+    },
+    {
+      "width": 512,
+      "height": 1024
+    }
+  ],
+  "gaochang": [
+    {
+      "width": 512,
+      "height": 1024
+    },
+    {
+      "width": 512,
+      "height": 1024
+    },
+    {
+      "width": 512,
+      "height": 1024
+    }
+  ],
+  "east-turk": [
+    {
+      "width": 512,
+      "height": 1024
+    },
+    {
+      "width": 512,
+      "height": 1024
+    },
+    {
+      "width": 512,
+      "height": 1024
+    }
+  ],
+  "khitan": [
+    {
+      "width": 512,
+      "height": 1024
+    },
+    {
+      "width": 512,
+      "height": 1024
+    },
+    {
+      "width": 512,
+      "height": 1024
+    }
+  ],
+  "xi": [
+    {
+      "width": 512,
+      "height": 1024
+    },
+    {
+      "width": 512,
+      "height": 1024
+    },
+    {
+      "width": 512,
+      "height": 1024
+    }
+  ],
+  "tokhara": [
+    {
+      "width": 512,
+      "height": 1024
+    },
+    {
+      "width": 512,
+      "height": 1024
+    },
+    {
+      "width": 512,
+      "height": 1024
+    }
+  ],
+  "shule": [
+    {
+      "width": 512,
+      "height": 1024
+    },
+    {
+      "width": 512,
+      "height": 1024
+    },
+    {
+      "width": 512,
+      "height": 1024
+    }
+  ],
+  "kucha": [
+    {
+      "width": 512,
+      "height": 1024
+    },
+    {
+      "width": 512,
+      "height": 1024
+    },
+    {
+      "width": 512,
+      "height": 1024
+    }
+  ],
+  "tuyuhun": [
+    {
+      "width": 512,
+      "height": 1024
+    },
+    {
+      "width": 512,
+      "height": 1024
+    },
+    {
+      "width": 512,
+      "height": 1024
+    }
+  ],
+  "bolur": [
+    {
+      "width": 512,
+      "height": 1024
+    },
+    {
+      "width": 512,
+      "height": 1024
+    },
+    {
+      "width": 512,
+      "height": 1024
+    }
+  ],
+  "slavs": [
+    {
+      "width": 512,
+      "height": 1024
+    },
+    {
+      "width": 512,
+      "height": 1024
+    },
+    {
+      "width": 512,
+      "height": 1024
+    }
+  ],
+  "franks": [
+    {
+      "width": 512,
+      "height": 1024
+    },
+    {
+      "width": 512,
+      "height": 1024
+    },
+    {
+      "width": 512,
+      "height": 1024
+    }
+  ],
+  "siberia": [
+    {
+      "width": 512,
+      "height": 1024
+    },
+    {
+      "width": 512,
+      "height": 1024
+    },
+    {
+      "width": 512,
+      "height": 1024
+    }
+  ],
+  "mohe": [
+    {
+      "width": 512,
+      "height": 1024
+    },
+    {
+      "width": 512,
+      "height": 1024
+    },
+    {
+      "width": 512,
+      "height": 1024
+    }
+  ],
+  "pyu": [
+    {
+      "width": 512,
+      "height": 1024
+    },
+    {
+      "width": 512,
+      "height": 1024
+    },
+    {
+      "width": 512,
+      "height": 1024
+    }
+  ],
+  "chenla": [
+    {
+      "width": 512,
+      "height": 1024
+    },
+    {
+      "width": 512,
+      "height": 1024
+    },
+    {
+      "width": 512,
+      "height": 1024
+    }
+  ],
+  "srivijaya": [
+    {
+      "width": 512,
+      "height": 1024
+    },
+    {
+      "width": 512,
+      "height": 1024
+    },
+    {
+      "width": 512,
+      "height": 1024
+    }
+  ],
+  "java": [
+    {
+      "width": 512,
+      "height": 1024
+    },
+    {
+      "width": 512,
+      "height": 1024
+    },
+    {
+      "width": 512,
+      "height": 1024
+    }
+  ],
+  "champa": [
+    {
+      "width": 512,
+      "height": 1024
+    },
+    {
+      "width": 512,
+      "height": 1024
+    },
+    {
+      "width": 512,
+      "height": 1024
+    }
+  ],
+  "luzon": [
+    {
+      "width": 512,
+      "height": 1024
+    },
+    {
+      "width": 512,
+      "height": 1024
+    },
+    {
+      "width": 512,
+      "height": 1024
+    }
+  ],
+  "axum": [
+    {
+      "width": 512,
+      "height": 1024
+    },
+    {
+      "width": 512,
+      "height": 1024
+    },
+    {
+      "width": 512,
+      "height": 1024
+    }
+  ],
+  "maghreb": [
+    {
+      "width": 512,
+      "height": 1024
+    },
+    {
+      "width": 512,
+      "height": 1024
+    },
+    {
+      "width": 512,
+      "height": 1024
+    }
+  ],
+  "sinhala": [
+    {
+      "width": 512,
+      "height": 1024
+    },
+    {
+      "width": 512,
+      "height": 1024
+    },
+    {
+      "width": 512,
+      "height": 1024
+    }
+  ]
+}

@@ -1,0 +1,384 @@
+{
+  "version": 1,
+  "date": "2026-10-16",
+  "scenarios": [
+    {
+      "seed": 1,
+      "mode": "baseline",
+      "rows": [
+        {
+          "elapsed": 36,
+          "treasury": 122681,
+          "debt": 0,
+          "population": 3011796,
+          "grain": 968665,
+          "livingStandard": 57,
+          "stability": 93,
+          "maintenance": 351,
+          "officialCount": 33,
+          "academy": false
+        },
+        {
+          "elapsed": 72,
+          "treasury": 252769,
+          "debt": 0,
+          "population": 3032880,
+          "grain": 1682984,
+          "livingStandard": 58,
+          "stability": 99,
+          "maintenance": 352,
+          "officialCount": 33,
+          "academy": false
+        },
+        {
+          "elapsed": 108,
+          "treasury": 385765,
+          "debt": 0,
+          "population": 3053847,
+          "grain": 2300261,
+          "livingStandard": 59,
+          "stability": 100,
+          "maintenance": 352,
+          "officialCount": 33,
+          "academy": false
+        }
+      ]
+    },
+    {
+      "seed": 1,
+      "mode": "special-and-delegation",
+      "rows": [
+        {
+          "elapsed": 36,
+          "treasury": 84354,
+          "debt": 0,
+          "population": 3008586,
+          "grain": 956103,
+          "livingStandard": 57,
+          "stability": 95,
+          "maintenance": 441,
+          "officialCount": 33,
+          "academy": true
+        },
+        {
+          "elapsed": 72,
+          "treasury": 156721,
+          "debt": 0,
+          "population": 3037889,
+          "grain": 1675674,
+          "livingStandard": 58,
+          "stability": 99,
+          "maintenance": 524,
+          "officialCount": 33,
+          "academy": true
+        },
+        {
+          "elapsed": 108,
+          "treasury": 235319,
+          "debt": 0,
+          "population": 3054257,
+          "grain": 2307337,
+          "livingStandard": 59,
+          "stability": 100,
+          "maintenance": 600,
+          "officialCount": 33,
+          "academy": true
+        }
+      ]
+    },
+    {
+      "seed": 1,
+      "mode": "hunger",
+      "rows": [
+        {
+          "elapsed": 36,
+          "treasury": 32117,
+          "debt": 0,
+          "population": 2997193,
+          "grain": 0,
+          "livingStandard": 54,
+          "stability": 2,
+          "maintenance": 351,
+          "officialCount": 33,
+          "academy": false
+        },
+        {
+          "elapsed": 72,
+          "treasury": 69360,
+          "debt": 0,
+          "population": 2993993,
+          "grain": 0,
+          "livingStandard": 52,
+          "stability": 0,
+          "maintenance": 352,
+          "officialCount": 33,
+          "academy": false
+        },
+        {
+          "elapsed": 108,
+          "treasury": 112292,
+          "debt": 0,
+          "population": 2989005,
+          "grain": 2170,
+          "livingStandard": 50,
+          "stability": 0,
+          "maintenance": 353,
+          "officialCount": 33,
+          "academy": false
+        }
+      ]
+    },
+    {
+      "seed": 7,
+      "mode": "baseline",
+      "rows": [
+        {
+          "elapsed": 36,
+          "treasury": 127693,
+          "debt": 0,
+          "population": 3010996,
+          "grain": 958507,
+          "livingStandard": 57,
+          "stability": 94,
+          "maintenance": 350,
+          "officialCount": 33,
+          "academy": false
+        },
+        {
+          "elapsed": 72,
+          "treasury": 261922,
+          "debt": 0,
+          "population": 3028664,
+          "grain": 1663077,
+          "livingStandard": 58,
+          "stability": 99,
+          "maintenance": 350,
+          "officialCount": 33,
+          "academy": false
+        },
+        {
+          "elapsed": 108,
+          "treasury": 397672,
+          "debt": 0,
+          "population": 3043991,
+          "grain": 2332061,
+          "livingStandard": 59,
+          "stability": 100,
+          "maintenance": 351,
+          "officialCount": 33,
+          "academy": false
+        }
+      ]
+    },
+    {
+      "seed": 7,
+      "mode": "special-and-delegation",
+      "rows": [
+        {
+          "elapsed": 36,
+          "treasury": 83800,
+          "debt": 0,
+          "population": 3009590,
+          "grain": 953331,
+          "livingStandard": 57,
+          "stability": 95,
+          "maintenance": 445,
+          "officialCount": 33,
+          "academy": true
+        },
+        {
+          "elapsed": 72,
+          "treasury": 161742,
+          "debt": 0,
+          "population": 3027452,
+          "grain": 1660006,
+          "livingStandard": 58,
+          "stability": 99,
+          "maintenance": 525,
+          "officialCount": 33,
+          "academy": true
+        },
+        {
+          "elapsed": 108,
+          "treasury": 239536,
+          "debt": 0,
+          "population": 3042975,
+          "grain": 2362749,
+          "livingStandard": 59,
+          "stability": 100,
+          "maintenance": 605,
+          "officialCount": 33,
+          "academy": true
+        }
+      ]
+    },
+    {
+      "seed": 7,
+      "mode": "hunger",
+      "rows": [
+        {
+          "elapsed": 36,
+          "treasury": 33882,
+          "debt": 0,
+          "population": 2993800,
+          "grain": 0,
+          "livingStandard": 54,
+          "stability": 3,
+          "maintenance": 351,
+          "officialCount": 33,
+          "academy": false
+        },
+        {
+          "elapsed": 72,
+          "treasury": 68121,
+          "debt": 0,
+          "population": 2995796,
+          "grain": 4681,
+          "livingStandard": 52,
+          "stability": 0,
+          "maintenance": 352,
+          "officialCount": 33,
+          "academy": false
+        },
+        {
+          "elapsed": 108,
+          "treasury": 109469,
+          "debt": 0,
+          "population": 2993996,
+          "grain": 0,
+          "livingStandard": 50,
+          "stability": 0,
+          "maintenance": 353,
+          "officialCount": 33,
+          "academy": false
+        }
+      ]
+    },
+    {
+      "seed": 41,
+      "mode": "baseline",
+      "rows": [
+        {
+          "elapsed": 36,
+          "treasury": 129917,
+          "debt": 0,
+          "population": 3013607,
+          "grain": 965955,
+          "livingStandard": 57,
+          "stability": 94,
+          "maintenance": 351,
+          "officialCount": 33,
+          "academy": false
+        },
+        {
+          "elapsed": 72,
+          "treasury": 262010,
+          "debt": 0,
+          "population": 3030682,
+          "grain": 1646821,
+          "livingStandard": 58,
+          "stability": 98,
+          "maintenance": 351,
+          "officialCount": 33,
+          "academy": false
+        },
+        {
+          "elapsed": 108,
+          "treasury": 396617,
+          "debt": 0,
+          "population": 3047826,
+          "grain": 2345984,
+          "livingStandard": 60,
+          "stability": 100,
+          "maintenance": 352,
+          "officialCount": 33,
+          "academy": false
+        }
+      ]
+    },
+    {
+      "seed": 41,
+      "mode": "special-and-delegation",
+      "rows": [
+        {
+          "elapsed": 36,
+          "treasury": 84933,
+          "debt": 0,
+          "population": 3013607,
+          "grain": 968139,
+          "livingStandard": 57,
+          "stability": 96,
+          "maintenance": 437,
+          "officialCount": 33,
+          "academy": true
+        },
+        {
+          "elapsed": 72,
+          "treasury": 161336,
+          "debt": 0,
+          "population": 3029679,
+          "grain": 1640747,
+          "livingStandard": 58,
+          "stability": 98,
+          "maintenance": 516,
+          "officialCount": 33,
+          "academy": true
+        },
+        {
+          "elapsed": 108,
+          "treasury": 236007,
+          "debt": 0,
+          "population": 3050029,
+          "grain": 2346933,
+          "livingStandard": 60,
+          "stability": 100,
+          "maintenance": 601,
+          "officialCount": 33,
+          "academy": true
+        }
+      ]
+    },
+    {
+      "seed": 41,
+      "mode": "hunger",
+      "rows": [
+        {
+          "elapsed": 36,
+          "treasury": 32497,
+          "debt": 0,
+          "population": 2990607,
+          "grain": 0,
+          "livingStandard": 54,
+          "stability": 4,
+          "maintenance": 350,
+          "officialCount": 33,
+          "academy": false
+        },
+        {
+          "elapsed": 72,
+          "treasury": 71654,
+          "debt": 0,
+          "population": 2988020,
+          "grain": 0,
+          "livingStandard": 52,
+          "stability": 0,
+          "maintenance": 352,
+          "officialCount": 33,
+          "academy": false
+        },
+        {
+          "elapsed": 108,
+          "treasury": 113364,
+          "debt": 0,
+          "population": 2987833,
+          "grain": 0,
+          "livingStandard": 50,
+          "stability": 0,
+          "maintenance": 353,
+          "officialCount": 33,
+          "academy": false
+        }
+      ]
+    }
+  ]
+}

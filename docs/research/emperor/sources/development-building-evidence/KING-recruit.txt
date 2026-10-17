@@ -1,0 +1,36 @@
+KING relocated object1; VA range [0x4aff7, 0x4b0bb); source: reverse/emperor/code-analysis/KING/object1.relocated.asm
+All listed instruction bytes checked against object1.relocated.bin; static evidence, no execution.
+
+   4aff7: 0f bf 05 ac c0 0c 00         	movsx	eax, word ptr [0xcc0ac]
+   4affe: 89 85 d4 fd ff ff            	mov	dword ptr [ebp - 0x22c], eax
+   4b004: 8b 45 1c                     	mov	eax, dword ptr [ebp + 0x1c]
+   4b007: 66 01 05 ac c0 0c 00         	add	word ptr [0xcc0ac], ax
+   4b00e: c7 85 d0 fd ff ff 00 00 00 00	mov	dword ptr [ebp - 0x230], 0x0
+   4b018: eb 0c                        	jmp	0x4b026 <.image+0x3b026>
+   4b01a: 8b 85 d0 fd ff ff            	mov	eax, dword ptr [ebp - 0x230]
+   4b020: ff 85 d0 fd ff ff            	inc	dword ptr [ebp - 0x230]
+   4b026: 0f bf 85 d0 fd ff ff         	movsx	eax, word ptr [ebp - 0x230]
+   4b02d: 83 f8 1e                     	cmp	eax, 0x1e
+   4b030: 0f 8d 85 00 00 00            	jge	0x4b0bb <.image+0x3b0bb>
+   4b036: 0f bf 85 d0 fd ff ff         	movsx	eax, word ptr [ebp - 0x230]
+   4b03d: 69 c0 51 01 00 00            	imul	eax, eax, 0x151
+   4b043: 0f bf 80 0e 99 0c 00         	movsx	eax, word ptr [eax + 0xc990e]
+   4b04a: 85 c0                        	test	eax, eax
+   4b04c: 74 68                        	je	0x4b0b6 <.image+0x3b0b6>
+   4b04e: 0f bf 85 d0 fd ff ff         	movsx	eax, word ptr [ebp - 0x230]
+   4b055: 69 c0 51 01 00 00            	imul	eax, eax, 0x151
+   4b05b: 0f bf 80 80 99 0c 00         	movsx	eax, word ptr [eax + 0xc9980]
+   4b062: 89 85 cc fd ff ff            	mov	dword ptr [ebp - 0x234], eax
+   4b068: 83 bd cc fd ff ff 64         	cmp	dword ptr [ebp - 0x234], 0x64
+   4b06f: 7e 0a                        	jle	0x4b07b <.image+0x3b07b>
+   4b071: c7 85 cc fd ff ff 64 00 00 00	mov	dword ptr [ebp - 0x234], 0x64
+   4b07b: 0f bf 85 d0 fd ff ff         	movsx	eax, word ptr [ebp - 0x230]
+   4b082: 69 c0 51 01 00 00            	imul	eax, eax, 0x151
+   4b088: 0f bf 80 31 9a 0c 00         	movsx	eax, word ptr [eax + 0xc9a31]
+   4b08f: 0f af 85 cc fd ff ff         	imul	eax, dword ptr [ebp - 0x234]
+   4b096: 01 85 08 fe ff ff            	add	dword ptr [ebp - 0x1f8], eax
+   4b09c: 0f bf 85 d0 fd ff ff         	movsx	eax, word ptr [ebp - 0x230]
+   4b0a3: 69 c0 51 01 00 00            	imul	eax, eax, 0x151
+   4b0a9: 0f bf 80 31 9a 0c 00         	movsx	eax, word ptr [eax + 0xc9a31]
+   4b0b0: 01 85 04 fe ff ff            	add	dword ptr [ebp - 0x1fc], eax
+   4b0b6: e9 5f ff ff ff               	jmp	0x4b01a <.image+0x3b01a>

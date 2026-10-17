@@ -1,0 +1,98 @@
+[
+  {
+    "variant": "KING",
+    "range": [
+      "0x388ba",
+      "0x38bf8"
+    ],
+    "file": "KING-industry.txt",
+    "instructions": 181,
+    "checked_bytes": 830,
+    "object1_sha256": "8a019886ab12acb359eb31fb1b320b1fcbbf4c386feea4b2f7efb1592b124b1b",
+    "excerpt_sha256": "d616948962cb3c6a49cbf8ddf58f1ea0f03fc70c31d96df064201c3bbcf66867"
+  },
+  {
+    "variant": "KING",
+    "range": [
+      "0x3b637",
+      "0x3ba79"
+    ],
+    "file": "KING-metrics.txt",
+    "instructions": 315,
+    "checked_bytes": 1090,
+    "object1_sha256": "8a019886ab12acb359eb31fb1b320b1fcbbf4c386feea4b2f7efb1592b124b1b",
+    "excerpt_sha256": "68a7c729d947d65459ca6d0ea1975681df7b0565ef437c2b81e812bc633c141c"
+  },
+  {
+    "variant": "KING",
+    "range": [
+      "0x14c4c",
+      "0x14d71"
+    ],
+    "file": "KING-tick-order.txt",
+    "instructions": 74,
+    "checked_bytes": 293,
+    "object1_sha256": "8a019886ab12acb359eb31fb1b320b1fcbbf4c386feea4b2f7efb1592b124b1b",
+    "excerpt_sha256": "230a0d9c79e38cef33b518431780d1e813d345533e892304555207bebb658fbe"
+  },
+  {
+    "variant": "KING",
+    "range": [
+      "0x125e5",
+      "0x12650"
+    ],
+    "file": "KING-commerce.txt",
+    "instructions": 25,
+    "checked_bytes": 107,
+    "object1_sha256": "8a019886ab12acb359eb31fb1b320b1fcbbf4c386feea4b2f7efb1592b124b1b",
+    "excerpt_sha256": "8614bd5c5cc0fa5da73c2a71029cafa156175bd0cbee551cd94f604c3af8fe92"
+  },
+  {
+    "variant": "KING",
+    "range": [
+      "0x4aff7",
+      "0x4b0bb"
+    ],
+    "file": "KING-recruit.txt",
+    "instructions": 33,
+    "checked_bytes": 196,
+    "object1_sha256": "8a019886ab12acb359eb31fb1b320b1fcbbf4c386feea4b2f7efb1592b124b1b",
+    "excerpt_sha256": "0af76db7d234f82e9fd9d1854f37aa299463d2d2617cd5fed7d4a5085bfd3acf"
+  },
+  {
+    "variant": "EMPEROR",
+    "range": [
+      "0x388d2",
+      "0x38c10"
+    ],
+    "file": "EMPEROR-industry.txt",
+    "instructions": 181,
+    "checked_bytes": 830,
+    "object1_sha256": "679131855154c9119ebbcc0c10854ae379e298f58672de147ec317de7b5904da",
+    "excerpt_sha256": "80d104142ca17bc2526fdca7468b2851bc94b5e0c9ff67169efa98d22d7e59a6"
+  },
+  {
+    "variant": "EMPEROR",
+    "range": [
+      "0x3b657",
+      "0x3ba99"
+    ],
+    "file": "EMPEROR-metrics.txt",
+    "instructions": 315,
+    "checked_bytes": 1090,
+    "object1_sha256": "679131855154c9119ebbcc0c10854ae379e298f58672de147ec317de7b5904da",
+    "excerpt_sha256": "b09b7d0bd31052d1ee17fdf59b8477a1859bbc663e074e867dfdcfaa0842b1b8"
+  },
+  {
+    "variant": "EMPEROR",
+    "range": [
+      "0x14c58",
+      "0x14d7d"
+    ],
+    "file": "EMPEROR-tick-order.txt",
+    "instructions": 74,
+    "checked_bytes": 293,
+    "object1_sha256": "679131855154c9119ebbcc0c10854ae379e298f58672de147ec317de7b5904da",
+    "excerpt_sha256": "87c14bb4c839a936b6e84d139c87bf4c8edff92be40c965c5b0e712a08d7dfd3"
+  }
+]

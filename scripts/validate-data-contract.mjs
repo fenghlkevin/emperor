@@ -1,0 +1,87 @@
+// Compile actual runtime snapshots against the saved-state contract, without
+// trusting the inferred `any` types of the JavaScript implementation.
+import ts from 'typescript';
+import {mkdtempSync,writeFileSync,rmSync} from 'node:fs';
+import {tmpdir} from 'node:os';
+import {join,resolve} from 'node:path';
+import {fileURLToPath} from 'node:url';
+import {newGame,advance,validateSave} from '../src/game.mjs';
+import {countrySummary} from '../src/domestic.mjs';
+import {beginWar,finishWar,generals,borderingCountries} from '../src/war.mjs';
+import {actBattle} from '../src/battle.mjs';
+import {startCampaign,beginDefense,finishDefense} from '../src/foreign-strategy.mjs';
+import {inviteEnvoy} from '../src/envoy-visits.mjs';
+import {scheduleTravel,beginTravel,completeTravel} from '../src/travel.mjs';
+import {alchemyAction} from '../src/alchemy.mjs';
+import {executePersonnel,settlePersonnel} from '../src/personnel-actions.mjs';
+import {startConstruction} from '../src/construction.mjs';
+import {executeIndustry} from '../src/industry.mjs';
+import {ACTIVE_HISTORICAL_PEOPLE} from '../src/exam.mjs';
+import {endReign} from '../src/ending-rules.mjs';
+import {settleReignResult} from '../src/reign-result.mjs';
+import {occupyProvince} from '../src/occupation.mjs';
+import {capitalFalls} from '../src/capital-crisis.mjs';
+
+const root=resolve(fileURLToPath(new URL('..',import.meta.url)));
+const snapshots=[];
+const game=()=>{const s=newGame('数据契约');s.createdAt='2026-10-17T00:00:00.000Z';return s;};
+const capture=(label,state)=>{const s=validateSave(structuredClone(state));snapshots.push({label,type:'GameSave',value:s});return s;};
+const fresh=capture('new game',game());
+snapshots.push({label:'all active historical profiles',type:'ExamCandidate[]',value:ACTIVE_HISTORICAL_PEOPLE.map(({dimensionEvidence,ratingBasis,...p})=>({...p,age:p.initialAge,loyalty:p.initialLoyalty,experience:p.initialExperience}))});
+const annual=game();annual.turn=36;advance(annual);capture('annual settlement',annual);
+snapshots.push({label:'country summary',type:'CountrySummary',value:countrySummary(annual.domestic)});
+const g=generals(fresh.domestic),command={id:1,kitVersion:1,kind:'war',targetId:borderingCountries(fresh.domestic)[0].id,generalId:g[0].id,commanderSquad:{kind:'cavalry',count:37},squads:[{kind:'spears',count:137,generalId:g[1].id}]};
+const war=capture('offensive battle',beginWar(fresh,command));war.domestic.war.battle=actBattle(war.domestic.war.battle,{type:'retreat'});capture('offensive report',finishWar(war).state);
+const defense=game();defense.turn=37;startCampaign(defense.domestic,'xi','hebei',37);
+const defending=capture('defensive deployment',beginDefense(defense));defending.domestic.war.battle=actBattle(defending.domestic.war.battle,{type:'retreat'});capture('defensive report',finishDefense(defending).state);
+const court=game();court.scene='court';capture('envoy invitation',inviteEnvoy(court,'japan'));
+const alchemy=game();alchemy.phase=2;const brewing=capture('alchemy furnace',alchemyAction(alchemy,{kind:'brew',herbs:['A','B']}).state);for(let i=0;i<3;i++)advance(brewing);capture('alchemy batches',brewing);
+const trip=game();trip.phase=1;trip.domestic.countries.find(c=>c.id==='sheng').fiscal.treasury=30000;
+const scheduled=capture('scheduled tour',scheduleTravel(trip,'tour','guannei').state);advance(scheduled);const traveling=capture('started tour',beginTravel(scheduled).state);
+// The completed path with no encounters represents a supported older in-flight tour.
+traveling.travel.pending.encounters=[];capture('completed tour',completeTravel(traveling).state);
+const personnel=game();personnel.turn=2;personnel.domestic.personnel.examTurn=2;
+let n=0;settlePersonnel(personnel.domestic,2,()=>[0,.1,.9,.3,.6,.8][n++%6],personnel.stats);
+capture('exam candidates',personnel);const candidateId=personnel.domestic.personnel.candidates[0].id;
+capture('hired official',executePersonnel(personnel,{id:1,kind:'hire',candidateId}).state);
+capture('construction project',startConstruction(game(),'hebei','temples').state);
+const industry=executeIndustry(game(),{id:1,kind:'develop',provinceId:'hebei',industry:'agriculture',area:10}).state;
+capture('industry project',industry);advance(industry);capture('industry activation',industry);
+const occupied=game();const target=occupied.domestic.provinces.find(p=>p.countryId==='japan');
+snapshots.push({label:'occupation receipt',type:'OccupationReceipt',value:occupyProvince(occupied.domestic,'japan',1,'sheng',target.id)});capture('occupation',occupied);
+const crisis=game();capitalFalls(crisis.domestic,'xi',1);capture('capital crisis',crisis);
+const ended=game();endReign(ended,'病逝','类型验证：危重病逝');settleReignResult(ended);capture('current reign result',ended);
+const legacy=structuredClone(ended);legacy.reignResult.version=1;delete legacy.reignResult.historical;delete legacy.reignResult.warRecord;delete legacy.reignResult.evidence;capture('retained legacy result',legacy);
+
+const directory=mkdtempSync(join(tmpdir(),'emperor-data-contract-'));
+try{
+ const file=join(directory,'snapshots.mts');
+ const source=`import type {GameSave,CountrySummary,Province,DomesticState,ReignResult,TroopKind,ExamCandidate,OccupationReceipt} from ${JSON.stringify(join(root,'src/game-types.d.ts'))};\n`+
+ snapshots.map(({label,type,value},i)=>`// ${label}\nconst snapshot${i} = ${JSON.stringify(value)} satisfies ${type};`).join('\n')+`
+// Required modern fields and discriminated versions must remain enforced.
+declare const state: GameSave;
+// @ts-expect-error military equipment lives in troopKits, not the province
+state.domestic.provinces[0].military.arsenal;
+// @ts-expect-error central soldiers are a deployment, not an equipment ledger
+state.domestic.centralArmy.arsenal;
+// @ts-expect-error the ninth supported troop kind is horse-archers
+const invalidKind: TroopKind = 'horses';
+// @ts-expect-error domestic schema 6 is unsupported
+const invalidVersion: DomesticState['schemaVersion'] = 6;
+// @ts-expect-error troop stock is required after normalization
+const missingKits: DomesticState = { ...state.domestic, troopKits: undefined };
+// @ts-expect-error schema 8 requires the completed civic baselines
+const missingCivic: Province = { ...state.domestic.provinces[0], civic: undefined };
+// @ts-expect-error current reign results require historical evidence
+const missingEvidence: ReignResult = { ...state.reignResult!, version: 2, historical: undefined };
+`;
+ writeFileSync(file,source);
+ const program=ts.createProgram([file],{noEmit:true,strict:true,target:ts.ScriptTarget.ES2022,module:ts.ModuleKind.NodeNext,moduleResolution:ts.ModuleResolutionKind.NodeNext,types:[]});
+ const diagnostics=ts.getPreEmitDiagnostics(program);
+ if(diagnostics.length){
+  // JSON snapshots use a long single line. Emit compact errors without dumping
+  // the complete state, and identify the originating fixture.
+  for(const d of diagnostics){const pos=d.file?.getLineAndCharacterOfPosition(d.start??0);const line=pos?.line??0;const lines=d.file?.text.split('\n')??[];const label=lines[line-1]?.startsWith('// ')?lines[line-1].slice(3):d.file?.fileName;console.error(`${label}:${(pos?.line??0)+1} TS${d.code}: ${ts.flattenDiagnosticMessageText(d.messageText,' ')}`);}
+  process.exitCode=1;
+ }else console.log(`Data contract: ${snapshots.length} runtime snapshots and negative type checks passed (TypeScript ${ts.version}).`);
+}finally{rmSync(directory,{recursive:true,force:true});}

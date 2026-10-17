@@ -1,0 +1,7 @@
+.observation-crowd{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;animation:observation-reveal 1.2s ease-out both}
+.observation-report{position:absolute;right:2.5%;top:19%;width:180px;padding:18px;background:#243b34e8;border:1px solid #b99b67;color:#f5e3b9;box-shadow:0 8px 30px #17251e44}
+.observation-report h2{font-size:23px;font-weight:500;letter-spacing:3px;margin:12px 0}.observation-report p{font-size:13px}.observation-report p>b{font-size:28px;color:#ffe4a2}.observation-report>span{font-size:13px;letter-spacing:2px}.observation-report details{margin-top:14px;font-size:12px}.observation-report summary{cursor:pointer}.observation-report details div{display:flex;gap:10px;justify-content:space-between;margin-top:9px}.observation-report details small{font-size:10px;letter-spacing:0}.observation-report details p{font-size:11px;line-height:1.6}.royal-observation .martial-result{font-size:14px;letter-spacing:1px;bottom:3%}
+@keyframes observation-reveal{from{opacity:0}to{opacity:1}}
+@media(prefers-reduced-motion:reduce){.observation-crowd{animation:none}}
+@media(max-width:700px){.observation-report{top:18%;right:2%;width:125px;padding:10px}.observation-report h2{font-size:16px;margin:7px 0}.observation-report p>b{font-size:20px}.observation-report details{margin-top:7px}.royal-observation .martial-result{font-size:11px;padding:8px}}
+.royal-observation .observation-report p,.royal-observation .observation-report span,.royal-observation .observation-report details{color:#f5e3b9}

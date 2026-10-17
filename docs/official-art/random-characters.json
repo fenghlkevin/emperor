@@ -1,0 +1,302 @@
+[
+  {
+    "id": "random-civil-1",
+    "name": "本朝文臣模板1",
+    "role": "文职",
+    "artRole": "civil",
+    "age": 25,
+    "identity": "long narrow clean-shaven face, high forehead, large gentle almond eyes, small straight nose, pale complexion",
+    "clothing": "sage green layered Chinese scholar robe, folded dark scholar cap, black cloth shoes, bamboo scroll",
+    "reviewed": true,
+    "status": {
+      "full": true,
+      "avatar": true,
+      "court": true
+    }
+  },
+  {
+    "id": "random-civil-2",
+    "name": "本朝文臣模板2",
+    "role": "文职",
+    "artRole": "civil",
+    "age": 32,
+    "identity": "broad square face, heavy jaw, short thick beard, close-set calm eyes, flat broad nose, bronze complexion",
+    "clothing": "slate blue layered Chinese scholar robe, soft black scholar headcloth, black cloth shoes, bound manuscript",
+    "reviewed": true,
+    "status": {
+      "full": true,
+      "avatar": true,
+      "court": true
+    }
+  },
+  {
+    "id": "random-civil-3",
+    "name": "本朝文臣模板3",
+    "role": "文职",
+    "artRole": "civil",
+    "age": 39,
+    "identity": "rounded full cheeks, short chin, fine mustache, cheerful crescent eyes, small rounded nose, warm medium complexion",
+    "clothing": "warm ivory layered Chinese scholar robe, folded dark scholar cap, black cloth shoes, writing brush and scroll",
+    "reviewed": true,
+    "status": {
+      "full": true,
+      "avatar": true,
+      "court": true
+    }
+  },
+  {
+    "id": "random-civil-4",
+    "name": "本朝文臣模板4",
+    "role": "文职",
+    "artRole": "civil",
+    "age": 46,
+    "identity": "lean angular diamond face, deep-set narrow eyes, prominent nose, short pointed goatee, olive complexion",
+    "clothing": "ochre brown layered Chinese scholar robe, soft black scholar headcloth, black cloth shoes, ivory memorial tablet",
+    "reviewed": true,
+    "status": {
+      "full": true,
+      "avatar": true,
+      "court": true
+    }
+  },
+  {
+    "id": "random-civil-5",
+    "name": "本朝文臣模板5",
+    "role": "文职",
+    "artRole": "civil",
+    "age": 53,
+    "identity": "wide triangular face, high cheekbones, bushy brows, full black beard, broad nose, dark tan complexion",
+    "clothing": "deep plum layered Chinese scholar robe, folded dark scholar cap, black cloth shoes, folded state papers",
+    "reviewed": true,
+    "status": {
+      "full": true,
+      "avatar": true,
+      "court": true
+    }
+  },
+  {
+    "id": "random-civil-6",
+    "name": "本朝文臣模板6",
+    "role": "文职",
+    "artRole": "civil",
+    "age": 60,
+    "identity": "soft oval youthful face, widely spaced bright eyes, straight thick brows, clean-shaven, fair complexion",
+    "clothing": "gray green layered Chinese scholar robe, soft black scholar headcloth, black cloth shoes, bamboo scroll",
+    "reviewed": true,
+    "status": {
+      "full": true,
+      "avatar": true,
+      "court": true
+    }
+  },
+  {
+    "id": "random-civil-7",
+    "name": "本朝文臣模板7",
+    "role": "文职",
+    "artRole": "civil",
+    "age": 31,
+    "identity": "long rectangular lined face, drooping eyes, sparse gray chin beard, high hooked nose, warm tan complexion",
+    "clothing": "muted burgundy layered Chinese scholar robe, folded dark scholar cap, black cloth shoes, bound manuscript",
+    "reviewed": true,
+    "status": {
+      "full": true,
+      "avatar": true,
+      "court": true
+    }
+  },
+  {
+    "id": "random-civil-8",
+    "name": "本朝文臣模板8",
+    "role": "文职",
+    "artRole": "civil",
+    "age": 38,
+    "identity": "compact round elderly face, heavy white eyebrows, short white boxed beard, broad rounded nose",
+    "clothing": "indigo layered Chinese scholar robe, soft black scholar headcloth, black cloth shoes, writing brush and scroll",
+    "reviewed": true,
+    "status": {
+      "full": true,
+      "avatar": true,
+      "court": true
+    }
+  },
+  {
+    "id": "random-civil-9",
+    "name": "本朝文臣模板9",
+    "role": "文职",
+    "artRole": "civil",
+    "age": 45,
+    "identity": "long heart-shaped face, asymmetric thoughtful brows, narrow eyes, thin long mustache, small pointed beard",
+    "clothing": "rust brown layered Chinese scholar robe, folded dark scholar cap, black cloth shoes, ivory memorial tablet",
+    "reviewed": true,
+    "status": {
+      "full": true,
+      "avatar": true,
+      "court": true
+    }
+  },
+  {
+    "id": "random-civil-10",
+    "name": "本朝文臣模板10",
+    "role": "文职",
+    "artRole": "civil",
+    "age": 52,
+    "identity": "wide rugged face, prominent ears, deep-set steady eyes, coarse black beard, sun-dark complexion",
+    "clothing": "pale blue layered Chinese scholar robe, soft black scholar headcloth, black cloth shoes, folded state papers",
+    "reviewed": true,
+    "status": {
+      "full": true,
+      "avatar": true,
+      "court": true
+    }
+  },
+  {
+    "id": "random-military-1",
+    "name": "本朝武将模板1",
+    "role": "武将",
+    "artRole": "military",
+    "age": 59,
+    "identity": "powerful broad square clean-shaven face, thick horizontal brows, deep-set clear eyes, medium olive complexion",
+    "clothing": "sage green practical surcoat over dark steel historical lamellar armor, simple helmet, black boots, straight sword, restrained natural shoulder armor",
+    "reviewed": true,
+    "status": {
+      "full": true,
+      "avatar": true,
+      "court": true
+    }
+  },
+  {
+    "id": "random-military-2",
+    "name": "本朝武将模板2",
+    "role": "武将",
+    "artRole": "military",
+    "age": 30,
+    "identity": "slender youthful angular face, bright narrow eyes, small scar on right brow, thin mustache, light tan complexion",
+    "clothing": "slate blue practical surcoat over dark steel historical lamellar armor, dark military cap, black boots, long spear, restrained natural shoulder armor",
+    "reviewed": true,
+    "status": {
+      "full": true,
+      "avatar": true,
+      "court": true
+    }
+  },
+  {
+    "id": "random-military-3",
+    "name": "本朝武将模板3",
+    "role": "武将",
+    "artRole": "military",
+    "age": 37,
+    "identity": "round powerful face, full curled short beard, thick eyebrows, broad nose, bronze complexion",
+    "clothing": "warm ivory practical surcoat over dark steel historical lamellar armor, simple helmet, black boots, cavalry bow, restrained natural shoulder armor",
+    "reviewed": true,
+    "status": {
+      "full": true,
+      "avatar": true,
+      "court": true
+    }
+  },
+  {
+    "id": "random-military-4",
+    "name": "本朝武将模板4",
+    "role": "武将",
+    "artRole": "military",
+    "age": 44,
+    "identity": "long hawk-like face, high cheekbones, narrow watchful eyes, hooked nose, neat pointed beard, dark tan complexion",
+    "clothing": "ochre brown practical surcoat over dark steel historical lamellar armor, dark military cap, black boots, command baton, restrained natural shoulder armor",
+    "reviewed": true,
+    "status": {
+      "full": true,
+      "avatar": true,
+      "court": true
+    }
+  },
+  {
+    "id": "random-military-5",
+    "name": "本朝武将模板5",
+    "role": "武将",
+    "artRole": "military",
+    "age": 51,
+    "identity": "wide rectangular face, large steady eyes, coarse gray beard, broken-looking broad nose, veteran sun-dark skin",
+    "clothing": "deep plum practical surcoat over dark steel historical lamellar armor, simple helmet, black boots, sheathed saber, restrained natural shoulder armor",
+    "reviewed": true,
+    "status": {
+      "full": true,
+      "avatar": true,
+      "court": true
+    }
+  },
+  {
+    "id": "random-military-6",
+    "name": "本朝武将模板6",
+    "role": "武将",
+    "artRole": "military",
+    "age": 58,
+    "identity": "lean oval clean-shaven face, high arched brows, calm almond eyes, straight nose, pale warm complexion",
+    "clothing": "gray green practical surcoat over dark steel historical lamellar armor, dark military cap, black boots, straight sword, restrained natural shoulder armor",
+    "reviewed": true,
+    "status": {
+      "full": true,
+      "avatar": true,
+      "court": true
+    }
+  },
+  {
+    "id": "random-military-7",
+    "name": "本朝武将模板7",
+    "role": "武将",
+    "artRole": "military",
+    "age": 29,
+    "identity": "broad diamond face, heavy black mustache, angular chin, narrow deep-set eyes, strong neck, olive complexion",
+    "clothing": "muted burgundy practical surcoat over dark steel historical lamellar armor, simple helmet, black boots, long spear, restrained natural shoulder armor",
+    "reviewed": true,
+    "status": {
+      "full": true,
+      "avatar": true,
+      "court": true
+    }
+  },
+  {
+    "id": "random-military-8",
+    "name": "本朝武将模板8",
+    "role": "武将",
+    "artRole": "military",
+    "age": 36,
+    "identity": "long lined face, thick gray eyebrows, long divided gray beard, gentle steady eyes, mature bronze complexion",
+    "clothing": "indigo practical surcoat over dark steel historical lamellar armor, dark military cap, black boots, cavalry bow, restrained natural shoulder armor",
+    "reviewed": true,
+    "status": {
+      "full": true,
+      "avatar": true,
+      "court": true
+    }
+  },
+  {
+    "id": "random-military-9",
+    "name": "本朝武将模板9",
+    "role": "武将",
+    "artRole": "military",
+    "age": 43,
+    "identity": "compact triangular face, short sparse mustache, small lively eyes, wide cheekbones, medium warm complexion",
+    "clothing": "rust brown practical surcoat over dark steel historical lamellar armor, simple helmet, black boots, command baton, restrained natural shoulder armor",
+    "reviewed": true,
+    "status": {
+      "full": true,
+      "avatar": true,
+      "court": true
+    }
+  },
+  {
+    "id": "random-military-10",
+    "name": "本朝武将模板10",
+    "role": "武将",
+    "artRole": "military",
+    "age": 50,
+    "identity": "large oval face, bushy black beard, heavy brows, round resolute eyes, broad strong jaw, dark brown tan complexion",
+    "clothing": "pale blue practical surcoat over dark steel historical lamellar armor, dark military cap, black boots, sheathed saber, restrained natural shoulder armor",
+    "reviewed": true,
+    "status": {
+      "full": true,
+      "avatar": true,
+      "court": true
+    }
+  }
+]

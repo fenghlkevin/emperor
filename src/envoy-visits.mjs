@@ -1,0 +1,7 @@
+import {assembleEnvoy,initializeEnvoyPortraits,validateEnvoyPortraits} from './envoy-portraits.mjs';
+export function initializeEnvoyVisit(state){if(state.envoyVisit===undefined)state.envoyVisit=null;return initializeEnvoyPortraits(state);}
+export function validateEnvoyVisit(state){validateEnvoyPortraits(state);const v=state.envoyVisit;if(v===null)return;if(!v||!state.domestic.countries.some(c=>c.id===v.countryId&&c.id!==state.domestic.playerCountryId)||!Number.isSafeInteger(v.requestedTurn)||v.requestedTurn<1||v.arrivalTurn!==v.requestedTurn+1||v.requestedTurn>state.turn||typeof v.notified!=='boolean')throw Error('使臣来访记录无效');}
+export function inviteEnvoy(state,countryId){if(state.scene!=='court')throw Error('请在朝堂召见礼部尚书，商议来访国家');if(state.envoyVisit)throw Error('已有使臣行程，请先完成本次接见');if(!state.domestic.countries.some(c=>c.id===countryId&&c.id!==state.domestic.playerCountryId&&c.provinceIds.length))throw Error('请选择其他国家');const next=structuredClone(state),appearance=assembleEnvoy(countryId,Math.floor(Math.random()*4294967296));next.envoyVisit={appearance,countryId,requestedTurn:state.turn,arrivalTurn:state.turn+1,notified:false};return next;}
+export function arrivedEnvoy(state){const v=state.envoyVisit;return v&&state.turn>=v.arrivalTurn?v:null;}
+export function requireEnvoyAudience(state){const v=arrivedEnvoy(state);if(state.scene!=='palace'||!v)throw Error('外臣尚未抵达，请先于朝堂发出邀请，下一旬前往礼明殿');return v;}
+export function finishEnvoyVisit(state){requireEnvoyAudience(state);const next=structuredClone(state);next.envoyVisit=null;return next;}

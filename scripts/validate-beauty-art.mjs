@@ -1,0 +1,6 @@
+import {readFileSync,existsSync,writeFileSync} from 'node:fs';
+import {createHash} from 'node:crypto';
+import {BEAUTY_REGIONS} from '../src/beauties.mjs';
+const records=[],errors=[];
+for(const region of BEAUTY_REGIONS)for(const set of ['a','b']){const file=`assets/sketch-beauty-parts-${region.id}-${set}-v1.png`;if(!existsSync(file)){errors.push(`${region.name}/${set}: missing`);continue;}const bytes=readFileSync(file);if(bytes.subarray(1,4).toString()!=='PNG'){errors.push(`${file}: not PNG`);continue;}const width=bytes.readUInt32BE(16),height=bytes.readUInt32BE(20),colorType=bytes[25];if(width<1000||height<1300||![4,6].includes(colorType))errors.push(`${file}: insufficient dimensions or alpha (${width}x${height}, type ${colorType})`);records.push({country:region.id,name:region.name,set,file,models:5,width,height,bytes:bytes.length,sha256:createHash('sha256').update(bytes).digest('hex')});}
+console.log(`${records.length}/68 part sheets; ${records.length*5}/340 sets`);if(errors.length){console.error(errors.join('\n'));process.exitCode=1;}else{writeFileSync('src/beauty-art-manifest.json',JSON.stringify({version:1,parts:['face','hair','ornament','clothes','secondary','item','shoes'],countries:34,sets:340,records},null,2)+'\n');console.log('All national part sheets verified; immutable v1 manifest saved.');}

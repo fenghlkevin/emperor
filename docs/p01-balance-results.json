@@ -1,0 +1,354 @@
+{
+  "rules": "2026-10-16 P0/P1 trial",
+  "scenarios": [
+    {
+      "mode": "manual",
+      "seed": 1,
+      "minTreasury": 10004,
+      "rows": [
+        {
+          "elapsed": 36,
+          "treasury": 27611,
+          "debt": 0,
+          "grain": 969256,
+          "stability": 93,
+          "loyalty": 58,
+          "governanceSpent": 0,
+          "totalShortfall": 0
+        },
+        {
+          "elapsed": 72,
+          "treasury": 60033,
+          "debt": 0,
+          "grain": 1683695,
+          "stability": 99,
+          "loyalty": 58,
+          "governanceSpent": 0,
+          "totalShortfall": 0
+        },
+        {
+          "elapsed": 108,
+          "treasury": 94584,
+          "debt": 0,
+          "grain": 2193941,
+          "stability": 100,
+          "loyalty": 60,
+          "governanceSpent": 0,
+          "totalShortfall": 0
+        }
+      ]
+    },
+    {
+      "mode": "manual",
+      "seed": 7,
+      "minTreasury": 10004,
+      "rows": [
+        {
+          "elapsed": 36,
+          "treasury": 24555,
+          "debt": 0,
+          "grain": 952102,
+          "stability": 94,
+          "loyalty": 58,
+          "governanceSpent": 0,
+          "totalShortfall": 0
+        },
+        {
+          "elapsed": 72,
+          "treasury": 57327,
+          "debt": 0,
+          "grain": 1670579,
+          "stability": 99,
+          "loyalty": 58,
+          "governanceSpent": 0,
+          "totalShortfall": 0
+        },
+        {
+          "elapsed": 108,
+          "treasury": 91535,
+          "debt": 0,
+          "grain": 2224537,
+          "stability": 100,
+          "loyalty": 60,
+          "governanceSpent": 0,
+          "totalShortfall": 0
+        }
+      ]
+    },
+    {
+      "mode": "manual",
+      "seed": 41,
+      "minTreasury": 10004,
+      "rows": [
+        {
+          "elapsed": 36,
+          "treasury": 26718,
+          "debt": 0,
+          "grain": 965544,
+          "stability": 94,
+          "loyalty": 58,
+          "governanceSpent": 0,
+          "totalShortfall": 0
+        },
+        {
+          "elapsed": 72,
+          "treasury": 57781,
+          "debt": 0,
+          "grain": 1636760,
+          "stability": 98,
+          "loyalty": 58,
+          "governanceSpent": 0,
+          "totalShortfall": 0
+        },
+        {
+          "elapsed": 108,
+          "treasury": 92279,
+          "debt": 0,
+          "grain": 2218330,
+          "stability": 100,
+          "loyalty": 60,
+          "governanceSpent": 0,
+          "totalShortfall": 0
+        }
+      ]
+    },
+    {
+      "mode": "delegated",
+      "seed": 1,
+      "minTreasury": 1172,
+      "rows": [
+        {
+          "elapsed": 36,
+          "treasury": 2417,
+          "debt": 0,
+          "grain": 965255,
+          "stability": 95,
+          "loyalty": 58,
+          "governanceSpent": 23649,
+          "totalShortfall": 0
+        },
+        {
+          "elapsed": 72,
+          "treasury": 2319,
+          "debt": 0,
+          "grain": 1691782,
+          "stability": 99,
+          "loyalty": 59,
+          "governanceSpent": 50330,
+          "totalShortfall": 0
+        },
+        {
+          "elapsed": 108,
+          "treasury": 1230,
+          "debt": 0,
+          "grain": 2212090,
+          "stability": 100,
+          "loyalty": 63,
+          "governanceSpent": 74054,
+          "totalShortfall": 0
+        }
+      ]
+    },
+    {
+      "mode": "delegated",
+      "seed": 7,
+      "minTreasury": 439,
+      "rows": [
+        {
+          "elapsed": 36,
+          "treasury": 2024,
+          "debt": 0,
+          "grain": 959377,
+          "stability": 95,
+          "loyalty": 58,
+          "governanceSpent": 26178,
+          "totalShortfall": 0
+        },
+        {
+          "elapsed": 72,
+          "treasury": 2961,
+          "debt": 0,
+          "grain": 1667353,
+          "stability": 99,
+          "loyalty": 60,
+          "governanceSpent": 55684,
+          "totalShortfall": 0
+        },
+        {
+          "elapsed": 108,
+          "treasury": 942,
+          "debt": 0,
+          "grain": 2242153,
+          "stability": 100,
+          "loyalty": 65,
+          "governanceSpent": 79296,
+          "totalShortfall": 0
+        }
+      ]
+    },
+    {
+      "mode": "delegated",
+      "seed": 41,
+      "minTreasury": 93,
+      "rows": [
+        {
+          "elapsed": 36,
+          "treasury": 2688,
+          "debt": 0,
+          "grain": 977959,
+          "stability": 95,
+          "loyalty": 58,
+          "governanceSpent": 21635,
+          "totalShortfall": 0
+        },
+        {
+          "elapsed": 72,
+          "treasury": 2303,
+          "debt": 0,
+          "grain": 1643466,
+          "stability": 98,
+          "loyalty": 59,
+          "governanceSpent": 50499,
+          "totalShortfall": 0
+        },
+        {
+          "elapsed": 108,
+          "treasury": 93,
+          "debt": 0,
+          "grain": 2222041,
+          "stability": 100,
+          "loyalty": 62,
+          "governanceSpent": 78829,
+          "totalShortfall": 0
+        }
+      ]
+    },
+    {
+      "mode": "relief-stress",
+      "seed": 1,
+      "minTreasury": 0,
+      "rows": [
+        {
+          "elapsed": 36,
+          "treasury": 0,
+          "debt": 83430,
+          "grain": 0,
+          "stability": 4,
+          "loyalty": 22,
+          "governanceSpent": 2945,
+          "totalShortfall": 360995
+        },
+        {
+          "elapsed": 72,
+          "treasury": 0,
+          "debt": 199183,
+          "grain": 0,
+          "stability": 0,
+          "loyalty": 1,
+          "governanceSpent": 2945,
+          "totalShortfall": 728852
+        },
+        {
+          "elapsed": 108,
+          "treasury": 0,
+          "debt": 328550,
+          "grain": 0,
+          "stability": 0,
+          "loyalty": 0,
+          "governanceSpent": 2945,
+          "totalShortfall": 1076907
+        }
+      ]
+    },
+    {
+      "mode": "relief-stress",
+      "seed": 7,
+      "minTreasury": 0,
+      "rows": [
+        {
+          "elapsed": 36,
+          "treasury": 0,
+          "debt": 80573,
+          "grain": 0,
+          "stability": 2,
+          "loyalty": 22,
+          "governanceSpent": 2945,
+          "totalShortfall": 361135
+        },
+        {
+          "elapsed": 72,
+          "treasury": 0,
+          "debt": 199218,
+          "grain": 0,
+          "stability": 0,
+          "loyalty": 1,
+          "governanceSpent": 2945,
+          "totalShortfall": 723560
+        },
+        {
+          "elapsed": 108,
+          "treasury": 0,
+          "debt": 332429,
+          "grain": 0,
+          "stability": 0,
+          "loyalty": 0,
+          "governanceSpent": 2945,
+          "totalShortfall": 1064651
+        }
+      ]
+    },
+    {
+      "mode": "relief-stress",
+      "seed": 41,
+      "minTreasury": 0,
+      "rows": [
+        {
+          "elapsed": 36,
+          "treasury": 0,
+          "debt": 82333,
+          "grain": 1005,
+          "stability": 5,
+          "loyalty": 22,
+          "governanceSpent": 2911,
+          "totalShortfall": 358595
+        },
+        {
+          "elapsed": 72,
+          "treasury": 0,
+          "debt": 196322,
+          "grain": 0,
+          "stability": 0,
+          "loyalty": 1,
+          "governanceSpent": 2911,
+          "totalShortfall": 718399
+        },
+        {
+          "elapsed": 108,
+          "treasury": 0,
+          "debt": 327687,
+          "grain": 0,
+          "stability": 0,
+          "loyalty": 0,
+          "governanceSpent": 2911,
+          "totalShortfall": 1065927
+        }
+      ]
+    }
+  ],
+  "development": [
+    {
+      "industry": "agriculture",
+      "cost": 1000,
+      "breakevenWithin108": null,
+      "treasuryDifference": -710,
+      "grainDifference": 0
+    },
+    {
+      "industry": "commerce",
+      "cost": 1000,
+      "breakevenWithin108": null,
+      "treasuryDifference": -694,
+      "grainDifference": 0
+    }
+  ]
+}

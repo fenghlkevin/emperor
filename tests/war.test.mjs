@@ -1,0 +1,8 @@
+import test from 'node:test';import assert from 'node:assert/strict';
+import {newGame,validateSave} from '../src/game.mjs';
+import {recruitLimit,borderingCountries,quoteWar} from '../src/war.mjs';
+import {executeKitCommand} from '../src/troop-kit-world.mjs';
+import {countrySummary} from '../src/domestic.mjs';
+test('unified recruit and dismiss conserve population and retain all nine kit stocks',()=>{let s=newGame('军籍'),pop=countrySummary(s.domestic).total,stock=structuredClone(s.domestic.troopKits.depots.central.stock);assert.equal(recruitLimit(s.domestic),2500);s=executeKitCommand(s,{id:1,kind:'recruit',sourceId:'central',amount:2500}).state;assert.equal(s.stats.treasury,0);assert.equal(s.domestic.centralArmy.soldiers,4100);assert.equal(countrySummary(s.domestic).total,pop);s=executeKitCommand(s,{id:2,kind:'dismiss',sourceId:'central',amount:4100}).state;assert.equal(s.domestic.centralArmy.training,0);assert.deepEqual(s.domestic.troopKits.depots.central.stock,stock);assert.equal(countrySummary(s.domestic).total,pop);validateSave(s);});
+test('incomplete deployment is rejected without changing state',()=>{const s=newGame('军令'),before=structuredClone(s);assert.throws(()=>quoteWar(s,{kind:'war',kitVersion:1}));assert.deepEqual(s,before);});
+test('population limits recruit and isolated islands have no land border',()=>{const s=newGame('边疆');for(const p of s.domestic.provinces.filter(p=>p.countryId==='sheng'))p.population.total=Object.values(p.population.professions).reduce((a,b)=>a+b,0);assert.equal(recruitLimit(s.domestic),0);assert.ok(!borderingCountries(s.domestic).some(c=>['japan','luzon','rome'].includes(c.id)));});

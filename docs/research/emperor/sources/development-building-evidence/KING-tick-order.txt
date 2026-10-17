@@ -1,0 +1,77 @@
+KING relocated object1; VA range [0x14c4c, 0x14d71); source: reverse/emperor/code-analysis/KING/object1.relocated.asm
+All listed instruction bytes checked against object1.relocated.bin; static evidence, no execution.
+
+   14c4c: ff 35 10 98 0c 00            	push	dword ptr [0xc9810]
+   14c52: e8 63 3c 02 00               	call	0x388ba <.image+0x288ba>
+   14c57: 83 c4 04                     	add	esp, 0x4
+   14c5a: ff 35 10 98 0c 00            	push	dword ptr [0xc9810]
+   14c60: e8 61 4f 02 00               	call	0x39bc6 <.image+0x29bc6>
+   14c65: 83 c4 04                     	add	esp, 0x4
+   14c68: c7 45 f0 00 00 00 00         	mov	dword ptr [ebp - 0x10], 0x0
+   14c6f: eb 06                        	jmp	0x14c77 <.image+0x4c77>
+   14c71: 8b 45 f0                     	mov	eax, dword ptr [ebp - 0x10]
+   14c74: ff 45 f0                     	inc	dword ptr [ebp - 0x10]
+   14c77: 0f bf 45 f0                  	movsx	eax, word ptr [ebp - 0x10]
+   14c7b: 83 f8 1e                     	cmp	eax, 0x1e
+   14c7e: 7d 59                        	jge	0x14cd9 <.image+0x4cd9>
+   14c80: 0f bf 45 f0                  	movsx	eax, word ptr [ebp - 0x10]
+   14c84: 6b c0 0c                     	imul	eax, eax, 0xc
+   14c87: 0f b6 80 f6 ca 0c 00         	movzx	eax, byte ptr [eax + 0xccaf6]
+   14c8e: 85 c0                        	test	eax, eax
+   14c90: 74 45                        	je	0x14cd7 <.image+0x4cd7>
+   14c92: 0f bf 45 f0                  	movsx	eax, word ptr [ebp - 0x10]
+   14c96: 6b c0 0c                     	imul	eax, eax, 0xc
+   14c99: fe 80 f6 ca 0c 00            	inc	byte ptr [eax + 0xccaf6]
+   14c9f: 0f bf 45 f0                  	movsx	eax, word ptr [ebp - 0x10]
+   14ca3: 6b c0 0c                     	imul	eax, eax, 0xc
+   14ca6: 0f b6 80 f6 ca 0c 00         	movzx	eax, byte ptr [eax + 0xccaf6]
+   14cad: 83 f8 04                     	cmp	eax, 0x4
+   14cb0: 7c 25                        	jl	0x14cd7 <.image+0x4cd7>
+   14cb2: 0f bf 45 f0                  	movsx	eax, word ptr [ebp - 0x10]
+   14cb6: 6b c0 0c                     	imul	eax, eax, 0xc
+   14cb9: c6 80 f6 ca 0c 00 00         	mov	byte ptr [eax + 0xccaf6], 0x0
+   14cc0: 0f bf 45 f0                  	movsx	eax, word ptr [ebp - 0x10]
+   14cc4: 6b c0 0c                     	imul	eax, eax, 0xc
+   14cc7: c6 80 f5 ca 0c 00 02         	mov	byte ptr [eax + 0xccaf5], 0x2
+   14cce: c6 05 5c cc 0c 00 00         	mov	byte ptr [0xccc5c], 0x0
+   14cd5: eb 02                        	jmp	0x14cd9 <.image+0x4cd9>
+   14cd7: eb 98                        	jmp	0x14c71 <.image+0x4c71>
+   14cd9: c7 45 f0 00 00 00 00         	mov	dword ptr [ebp - 0x10], 0x0
+   14ce0: eb 06                        	jmp	0x14ce8 <.image+0x4ce8>
+   14ce2: 8b 45 f0                     	mov	eax, dword ptr [ebp - 0x10]
+   14ce5: ff 45 f0                     	inc	dword ptr [ebp - 0x10]
+   14ce8: 0f bf 45 f0                  	movsx	eax, word ptr [ebp - 0x10]
+   14cec: 83 f8 1e                     	cmp	eax, 0x1e
+   14cef: 7d 27                        	jge	0x14d18 <.image+0x4d18>
+   14cf1: 0f bf 45 f0                  	movsx	eax, word ptr [ebp - 0x10]
+   14cf5: 69 c0 51 01 00 00            	imul	eax, eax, 0x151
+   14cfb: 0f b6 80 39 9a 0c 00         	movzx	eax, byte ptr [eax + 0xc9a39]
+   14d02: 85 c0                        	test	eax, eax
+   14d04: 74 10                        	je	0x14d16 <.image+0x4d16>
+   14d06: 0f bf 45 f0                  	movsx	eax, word ptr [ebp - 0x10]
+   14d0a: 69 c0 51 01 00 00            	imul	eax, eax, 0x151
+   14d10: fe 80 39 9a 0c 00            	inc	byte ptr [eax + 0xc9a39]
+   14d16: eb ca                        	jmp	0x14ce2 <.image+0x4ce2>
+   14d18: c7 45 f0 00 00 00 00         	mov	dword ptr [ebp - 0x10], 0x0
+   14d1f: eb 06                        	jmp	0x14d27 <.image+0x4d27>
+   14d21: 8b 45 f0                     	mov	eax, dword ptr [ebp - 0x10]
+   14d24: ff 45 f0                     	inc	dword ptr [ebp - 0x10]
+   14d27: 0f bf 45 f0                  	movsx	eax, word ptr [ebp - 0x10]
+   14d2b: 83 f8 1e                     	cmp	eax, 0x1e
+   14d2e: 0f 8d 8c 01 00 00            	jge	0x14ec0 <.image+0x4ec0>
+   14d34: 0f bf 45 f0                  	movsx	eax, word ptr [ebp - 0x10]
+   14d38: 69 c0 51 01 00 00            	imul	eax, eax, 0x151
+   14d3e: 0f bf 80 0e 99 0c 00         	movsx	eax, word ptr [eax + 0xc990e]
+   14d45: 85 c0                        	test	eax, eax
+   14d47: 0f 84 6e 01 00 00            	je	0x14ebb <.image+0x4ebb>
+   14d4d: 8b 45 f0                     	mov	eax, dword ptr [ebp - 0x10]
+   14d50: 05 0d 00 00 00               	add	eax, 0xd
+   14d55: 98                           	cwde
+   14d56: 50                           	push	eax
+   14d57: 0f bf 45 f0                  	movsx	eax, word ptr [ebp - 0x10]
+   14d5b: 69 d0 51 01 00 00            	imul	edx, eax, 0x151
+   14d61: b8 0c 99 0c 00               	mov	eax, 0xc990c
+   14d66: 01 d0                        	add	eax, edx
+   14d68: 50                           	push	eax
+   14d69: e8 c9 68 02 00               	call	0x3b637 <.image+0x2b637>
+   14d6e: 83 c4 08                     	add	esp, 0x8
