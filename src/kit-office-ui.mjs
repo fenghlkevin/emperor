@@ -5,7 +5,7 @@ import {ENABLED_KITS,worldKitSummary,quoteKitCommand,executeKitCommand} from './
 import {beginWar,quoteWar,generals,borderingCountries} from './war.mjs';
 import {drawBattle} from './battle-ui.mjs';
 import {drawWarResult} from './war-result-ui.mjs';
-import {drawKitDefenseDeployment} from './kit-defense-ui.mjs';
+import {drawCourtDefense as drawKitDefenseDeployment} from './court-defense-ui.mjs';
 import {drawCapitalCrisis} from './ending-ui.mjs';
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const kits=()=>TROOP_KITS.filter(k=>ENABLED_KITS.includes(k.id));
