@@ -34,9 +34,6 @@ export function courtAgenda(s){
  if(project){const r=project.construction.project,plan=CONSTRUCTION_PLANS[r.building];add('works','工',`${project.name}${plan.name}在建`,`已施工${r.progress}/${plan.turns}旬，遇灾暂停，完工下一旬收益生效。`,'works-minister','atlas-build',project.id);}
  const excess=forecasts.filter(x=>x.f.storageLoss>0).sort((a,b)=>b.f.storageLoss-a.f.storageLoss)[0];
  if(excess&&!hungry)add('storage','仓','仓廪也需周转',`${excess.p.name}下旬预计陈粮损耗${excess.f.storageLoss.toLocaleString('zh-CN')}石，可查余粮与邻州需求。`,'revenue-minister','atlas-grain',excess.p.id);
- if(items.length<3)add('muster','兵','点检兵籍',`中央现有${d.centralArmy.soldiers.toLocaleString('zh-CN')}名士兵，调动前宜核对各地兵装。`,'war-minister','garrison');
- if(items.length<3)add('building','建','营造候旨','择一州察看民生，再定粮仓、城墙或市集。','works-minister','atlas-build');
- if(items.length<3)add('stores','粮','核阅仓廪',`本国现有存粮${q.grainReserve.toLocaleString('zh-CN')}石，可逐州察看下旬产粮、口粮与仓储。`,'revenue-minister','atlas-grain');
  return items.sort((a,b)=>Number(b.urgent)-Number(a.urgent)).slice(0,3);
 }
 export function courtSpeaker(s,office){return courtOccupant(s.domestic,office);}

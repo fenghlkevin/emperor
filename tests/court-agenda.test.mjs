@@ -4,8 +4,8 @@ import {newGame} from '../src/game.mjs';
 import {courtAgenda,courtOverview,courtSpeaker} from '../src/court-agenda.mjs';
 test('court agenda is bounded, deterministic and read-only, including real officeholders',()=>{
  const s=newGame('御案'),before=JSON.stringify(s),a=courtAgenda(s);
- assert.equal(a.length,3);assert.deepEqual(courtAgenda(s),a);assert.equal(JSON.stringify(s),before);
- assert.ok(a.some(x=>x.action==='atlas-grain'));assert.equal(courtOverview(s).treasury,10000);assert.ok(courtSpeaker(s,'revenue-minister').name);
+ assert.ok(a.length<=3);assert.deepEqual(courtAgenda(s),a);assert.equal(JSON.stringify(s),before);
+ assert.ok(a.every(x=>!['muster','building','stores'].includes(x.id)));assert.equal(courtOverview(s).treasury,10000);assert.ok(courtSpeaker(s,'revenue-minister').name);
 });
 test('actual hunger and capital crisis take priority over optional court matters',()=>{
  const s=newGame('急奏'),p=s.domestic.provinces[0];p.welfare.grainReserve=0;p.population.professions.farmers=0;s.domestic.collapse.pending={provinceId:'guannei'};
@@ -25,9 +25,9 @@ test('long work memorial uses real progress and keeps paused work urgent without
  assert.ok(item.urgent);assert.equal(item.action,'special');assert.equal(item.provinceId,'guannei');assert.match(item.summary,/民伕不足/);assert.match(item.summary,/0\/108/);assert.equal(JSON.stringify(s),before);
  s.domestic.specialWorks.project=null;assert.ok(!courtAgenda(s).some(a=>a.id==='special'));
 });
-test('muster memorial opens complete equipment and soldier scene',()=>{
- const s=newGame('军营'),item=courtAgenda(s).find(a=>a.id==='muster');
- assert.ok(item);assert.equal(item.action,'garrison');
+test('quiet court never invents muster, construction or grain petitions to fill the desk',()=>{
+ const s=newGame('静朝');for(const p of s.domestic.provinces.filter(p=>p.countryId===s.domestic.playerCountryId))p.welfare.grainReserve=0;
+ const before=JSON.stringify(s);assert.deepEqual(courtAgenda(s),[]);assert.equal(JSON.stringify(s),before);
 });
 
 test('diplomatic memorial reads actual settled receipts and expires without erasing records',async()=>{
