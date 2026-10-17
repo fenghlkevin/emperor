@@ -1,3 +1,4 @@
+import {openCourtJustice} from './court-justice-ui.mjs';
 import {openCourtPersonnel} from './court-personnel-ui.mjs';
 import {courtDeskMarkup,openCourtAudience,openCourtPetition,openCourtRoster} from './court-play-ui.mjs';
 import {openCourtAtlas} from './court-atlas-ui.mjs';
@@ -183,6 +184,7 @@ function summonCourt(id){
 }
 function navigateCourt(action,options={}){
  if(warEmergency(state)){openEntry({id:'war-minister'});return;}
+ if(action==='justice'){openCourtJustice(state,root,next=>commitGame(next,{court:true}),()=>render());return;}
  if(['personnel','personnel-delegate','personnel-exam'].includes(action)){openCourtPersonnel(state,root,next=>commitGame(next,{court:true}),()=>render(),{view:action==='personnel-delegate'?'delegate':action==='personnel-exam'?'exam':'assign',onRetire:()=>{if(warEmergency(state)){openEntry({id:'war-minister'});return;}if(transition(next=>leaveRoom(next)))render();}});return;}
  if(action.startsWith('atlas-')){openCourtAtlas(state,root,next=>commitGame(next,{court:true}),()=>render(),{tab:action.slice(6),provinceId:options.provinceId,fiscalKind:options.fiscalKind});return;}
  if(action==='petition'){const first=courtAgenda(state)[0];if(first)openCourtPetition(state,root,first.id,navigateCourt,()=>render());return;}
