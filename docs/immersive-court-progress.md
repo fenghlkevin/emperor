@@ -59,4 +59,4 @@
 - `npm test`：472项业务测试、24组类型契约全部通过。`test:court-personnel` 与 `test:court-play` 实际 Electron 验收通过。覆盖取消、失败回滚/重试、重复提交、任命替换、封赏支银、永久外调、委任撤回与预算、跨旬揭榜/治理、退朝录用及读档。
 - 查看1440宽与390宽截图；900×680和390宽断言御批/风险可见且位于侧栏，修正全局 footer/nav 样式对场景布局的干扰。
 - 新局样本：沈文远调任宰相，张守正待命后永久外调；加衔100两、开科500两，8令后国库9400两、体力192、健康84；第2旬录用两人，河北治理预算300/保留4000读档保留。
-- 证据：`outputs/immersive-court/personnel/` 日志、结果及七张截图；仓库截图 `docs/screenshots/court-immersive-personnel.png`。本轮提交见下方。下一项刑案，无已知阻碍。
+- 证据：`outputs/immersive-court/personnel/` 日志、结果及七张截图；仓库截图 `docs/screenshots/court-immersive-personnel.png`。本轮提交 `466e5b3`。下一项刑案，无已知阻碍。
