@@ -38,3 +38,12 @@ test('diplomatic memorial reads actual settled receipts and expires without eras
  assert.equal(home.fiscal.treasury,cash-10);const before=JSON.stringify(s),f=courtDiplomaticFeedback(s).find(f=>f.countryId==='rome');assert.ok(f.shortfall);assert.match(f.summary,/30\/100/);const a=courtAgenda(s).find(a=>a.id==='diplomatic-receipt');assert.equal(a.countryId,'rome');assert.equal(a.action,'diplomacy');assert.equal(JSON.stringify(s),before);
  s.turn=3;assert.ok(!courtAgenda(s).some(a=>a.id==='diplomatic-receipt'));assert.equal(courtDiplomaticFeedback(s)[0].turn,2);
 });
+
+test('local feedback preserves actual spend and historical reasons without attributing to a replacement',async()=>{
+ const {settleGovernance}=await import('../src/governance.mjs');const {courtGovernanceFeedback}=await import('../src/court-governance-feedback.mjs');
+ const s=newGame('复奏'),d=s.domestic;d.personnel.delegations=['hebei'];s.turn=2;settleGovernance(d,2);
+ const before=JSON.stringify(s),f=courtGovernanceFeedback(s,'hebei');assert.ok(f);assert.equal(f.cost,d.governance.spent);assert.ok(f.reasons.length);assert.equal(courtGovernanceFeedback(s,'henan'),null);assert.equal(JSON.stringify(s),before);
+ const a=courtAgenda(s).find(a=>a.id==='governance');assert.equal(a.provinceId,'hebei');assert.equal(a.action,'personnel-delegate');
+ s.turn=3;d.personnel.delegations=[];assert.ok(!courtAgenda(s).some(a=>a.id==='governance'));assert.equal(courtGovernanceFeedback(s,'hebei').turn,2);
+ const zero=newGame('暂缓');zero.turn=2;zero.domestic.personnel.delegations=['hebei'];zero.domestic.governance.reserve=1000000;settleGovernance(zero.domestic,2);const paused=courtGovernanceFeedback(zero,'hebei');assert.equal(paused.cost,0);assert.ok(paused.reasons.some(r=>r.includes('暂缓')));
+});

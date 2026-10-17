@@ -3,6 +3,7 @@ import {foodForecast} from './food-relief.mjs';
 import {activeDisaster,DISASTERS} from './disasters.mjs';
 import {CONSTRUCTION_PLANS} from './construction.mjs';
 import {courtOccupant} from './court-actors.mjs';
+import {courtGovernanceFeedback} from './court-governance-feedback.mjs';
 import {courtDiplomaticFeedback} from './court-diplomatic-feedback.mjs';
 import {courtSpecialStatus} from './court-special.mjs';
 
@@ -18,6 +19,8 @@ export function courtAgenda(s){
  if(q.net<0)add('deficit','赋','国用渐紧',`预计每旬短支${Math.abs(q.net).toLocaleString('zh-CN')}两，宜重新核定赋税与支用。`,'revenue-minister','tax');
  const disaster=q.provinces.find(p=>activeDisaster(p,s.turn));
  if(disaster)add('disaster','灾',`${disaster.name}有灾`,`地方报${DISASTERS.find(([id])=>id===disaster.disaster.kind)?.[1]??'灾情'}，请阅当地钱粮与营建。`,'works-minister','atlas-build',disaster.id,true);
+ const governed=q.provinces.map(p=>({p,f:courtGovernanceFeedback(s,p.id)})).filter(x=>x.f?.turn===s.turn).sort((a,b)=>b.f.cost-a.f.cost)[0];
+ if(governed)add('governance','治',`${governed.p.name}地方复奏`,`第${governed.f.turn}旬实支${governed.f.cost}两：${governed.f.reasons.join('；')}`,'personnel-minister','personnel-delegate',governed.p.id);
  const receipt=courtDiplomaticFeedback(s).find(r=>r.turn===s.turn);
  if(receipt){add('diplomatic-receipt','邦',`${receipt.name}${receipt.shortfall?'履约不足':'履约复奏'}`,`第${receipt.turn}旬：${receipt.summary}。${receipt.shortfall?'不足额已按现行规则影响友善。':'钱款已按实际结算入账。'}`,'rites-minister','diplomacy');items.at(-1).countryId=receipt.countryId;}
  const special=courtSpecialStatus(s);
