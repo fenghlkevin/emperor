@@ -224,3 +224,5 @@
 - 108旬数值模拟完成，基线国库39166/债0；缺粮压力情景仍可能进入债务，未改平衡以掩盖风险。
 - 清理试玩文档中的历史“下一批/未完成”旧说明，最终范围、证据与限制见 docs/immersive-court-acceptance.md。证据 outputs/immersive-court/final-acceptance/。补充功能原入口和受控终局/长工程边界已明确。
 - 所有指定主交互与验收项已完成。外部 docs/art/observation.md、src/observation.mjs 修改原样保留、未暂存。完成提交后停用 automation-2，避免继续空转；未推送、合并、发布或覆盖安装正式应用。
+
+最终验收提交 `8e31ded`。已通过应用自动任务工具确认 automation-2 为 PAUSED，原名称、提示和频率保留。
