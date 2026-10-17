@@ -129,3 +129,5 @@
 - 查看1440宽、900×680及390宽截图，御批与风险固定可见；`test:court-play` 与 `test:longterm` 回归通过，原工程、终局门槛与储君可玩继位保留。
 - 证据：`outputs/immersive-court/royal/` 日志及四张截图；仓库截图 `docs/screenshots/court-immersive-royal.png`。
 - 未完成：国政中的特殊工程、功业及既有终局新场景；国政总项仍不勾选。随后仍需朝堂节奏/世界反馈与全流程验收，无已知阻碍。实现提交 `14154a0`。
+
+收尾状态：另出现 `docs/art/observation.md` 与 `src/observation.mjs` 的未提交修改，非本批编辑，已原样保留且未纳入提交。下一轮先核实这些外部修改，不能按干净工作区假设覆盖。
