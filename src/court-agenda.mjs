@@ -1,3 +1,4 @@
+import {courtFiscalFeedback} from './court-fiscal-feedback.mjs';
 import {countrySummary} from './domestic.mjs';
 import {foodForecast} from './food-relief.mjs';
 import {activeDisaster,DISASTERS} from './disasters.mjs';
@@ -16,7 +17,8 @@ export function courtAgenda(s){
  const forecasts=q.provinces.map(p=>({p,f:foodForecast(p,s.turn)}));
  const hungry=forecasts.filter(x=>x.f.shortfall>0).sort((a,b)=>b.f.shortfall-a.f.shortfall)[0];
  if(hungry)add('food','赈',`${hungry.p.name}粮务告急`,`下旬预计缺粮${hungry.f.shortfall.toLocaleString('zh-CN')}石，可调邻州余粮或拨银购入。`,'revenue-minister','atlas-grain',hungry.p.id,true);
- if(q.net<0)add('deficit','赋','国用渐紧',`预计每旬短支${Math.abs(q.net).toLocaleString('zh-CN')}两，宜重新核定赋税与支用。`,'revenue-minister','tax');
+ const fiscal=courtFiscalFeedback(s);
+ if(q.net<0||fiscal?.turn===s.turn&&fiscal.debtAdded>0)add('deficit','赋','国用渐紧',`${fiscal?`第${fiscal.turn}旬常规实收${fiscal.income}两、实付${fiscal.paid}两、欠支转国债${fiscal.debtAdded}两。`:''}当前预计每旬${q.net<0?'短支':'结余'}${Math.abs(q.net).toLocaleString('zh-CN')}两，宜核定赋税与支用。`,'revenue-minister','tax');
  const disaster=q.provinces.find(p=>activeDisaster(p,s.turn));
  if(disaster)add('disaster','灾',`${disaster.name}有灾`,`地方报${DISASTERS.find(([id])=>id===disaster.disaster.kind)?.[1]??'灾情'}，请阅当地钱粮与营建。`,'works-minister','atlas-build',disaster.id,true);
  const governed=q.provinces.map(p=>({p,f:courtGovernanceFeedback(s,p.id)})).filter(x=>x.f?.turn===s.turn).sort((a,b)=>b.f.cost-a.f.cost)[0];
