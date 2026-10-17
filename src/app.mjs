@@ -82,7 +82,7 @@ function render(){
   root.querySelector('[data-court-tools]').onclick=e=>{const sidebar=root.querySelector('.sidebar');sidebar.hidden=!sidebar.hidden;e.currentTarget.setAttribute('aria-expanded',String(!sidebar.hidden));if(!sidebar.hidden)fitSidebar();};
   root.querySelectorAll('[data-court-petition]').forEach(b=>b.onclick=()=>openCourtPetition(state,root,b.dataset.courtPetition,navigateCourt,()=>render()));
   root.querySelector('[data-court-atlas]').onclick=()=>navigateCourt('atlas-grain');
-  root.querySelector('[data-court-overview]').onclick=()=>navigateCourt('atlas-grain');
+  root.querySelector('[data-court-overview]').onclick=()=>navigateCourt('atlas-finance');
   root.querySelector('[data-court-roster]').onclick=()=>openCourtRoster(state,root,summonCourt,()=>render());
  }
  root.querySelector('#chronicle').onclick=()=>{if(warEmergency(state)){openEntry({id:'war-minister'});return;}openChronicle(state,root,next=>commitGame(next,{exhaustion:false}),()=>render());};
@@ -182,9 +182,9 @@ function summonCourt(id){
 }
 function navigateCourt(action,options={}){
  if(warEmergency(state)){openEntry({id:'war-minister'});return;}
- if(action.startsWith('atlas-')){openCourtAtlas(state,root,next=>commitGame(next,{court:true}),()=>render(),{tab:action.slice(6),provinceId:options.provinceId});return;}
+ if(action.startsWith('atlas-')){openCourtAtlas(state,root,next=>commitGame(next,{court:true}),()=>render(),{tab:action.slice(6),provinceId:options.provinceId,fiscalKind:options.fiscalKind});return;}
  if(action==='petition'){const first=courtAgenda(state)[0];if(first)openCourtPetition(state,root,first.id,navigateCourt,()=>render());return;}
- if(action==='tax'){openRevenue(state,root,next=>commitGame(next,{court:true}),()=>render(),{tab:'tax'});return;}
+ if(['tax','census'].includes(action)){openCourtAtlas(state,root,next=>commitGame(next,{court:true}),()=>render(),{tab:'finance',fiscalKind:action,provinceId:options.provinceId});return;}
  if(action==='purchase'){openKitOffice(state,root,next=>commitGame(next,{court:true}),()=>render(),{tab:'purchase'});return;}
  if(action==='industry'){openIndustryReport({tab:'develop'});return;}
  openEntry(officials.find(o=>o.id===options.office)??{id:options.office});

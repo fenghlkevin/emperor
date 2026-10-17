@@ -55,7 +55,8 @@
     "test:crisis-recovery": "electron tests/crisis-recovery-desktop.cjs",
     "test:balance-ui": "electron tests/balance-desktop.cjs",
     "test:court-play": "electron tests/court-play-desktop.cjs",
-    "preview:court": "electron scripts/preview-court.cjs"
+    "preview:court": "electron scripts/preview-court.cjs",
+    "test:court-fiscal": "electron tests/court-fiscal-desktop.cjs"
   },
   "devDependencies": {
     "electron": "^38.0.0",

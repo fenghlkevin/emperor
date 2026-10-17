@@ -126,9 +126,10 @@ npm run test:desktop
 npm run test:playability
 npm run test:balance-ui
 npm run test:court-play
+npm run test:court-fiscal
 ```
 
-桌面验收需要可访问图形界面的本机会话。当前业务测试共四百六十一项，已全部通过；这不代表所有桌面场景与系统版本均已完成验收。
+桌面验收需要可访问图形界面的本机会话。当前业务测试共四百六十六项，已全部通过；这不代表所有桌面场景与系统版本均已完成验收。
 
 ## 玩法与数据文档
 
