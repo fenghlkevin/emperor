@@ -24,9 +24,9 @@
 
 ### 朝堂召见
 
-群臣分班列席，点击人物进入相应政务。
+群臣分班列席，点击人物召见；御案呈上本旬奏折，也可铺开山河图，点州调粮、调兵与营建。
 
-![宣政殿朝堂与群臣](docs/screenshots/court.png)
+![宣政殿朝堂与群臣](docs/screenshots/court-immersive-court.png)
 
 ### 天下舆图
 
@@ -57,6 +57,14 @@ npm start
 
 启动后创建角色，进入皇城；已有进度可选择继续游戏。
 
+直接试玩新版朝堂：
+
+```sh
+npm run preview:court
+```
+
+首次启动直接进入新朝堂，后续继续该试玩进度。试玩使用独立临时存档目录，不影响正常游戏进度。详细操作见[朝堂交互首版](docs/immersive-court-preview.md)。
+
 如需浏览器预览：
 
 ```sh
@@ -70,7 +78,7 @@ npm run dev
 ## 基本玩法
 
 1. **进入皇城**：点击宫殿或左侧导航，前往朝堂、内政及其他场所。
-2. **召见群臣**：点击朝堂官员，处理其主管政务；同一次早朝可以召见多位官员。
+2. **召见群臣**：点击朝堂官员听奏，再选择要办的事务；听奏和查看不消耗行动，落旨后才依原规则扣除。
 3. **查看国情**：在内政舆图选择本国或州郡，查看收支、经济、民生与地方状况。
 4. **安排起居**：办事会消耗体力，合理安排修习与休息，避免体力耗尽。
 5. **推进时日**：每旬包含早上、上午、中午、下午、傍晚和夜晚六阶段；离开宫殿推进阶段，夜间休息后进入下一旬。
@@ -117,9 +125,21 @@ npm test
 npm run test:desktop
 npm run test:playability
 npm run test:balance-ui
+npm run test:court-play
+npm run test:court-fiscal
+npm run test:court-personnel
+npm run test:court-justice
+npm run test:court-diplomacy
+npm run test:court-negotiation
+npm run test:court-garrison
+npm run test:court-campaign
+npm run test:court-defense
+npm run test:court-royal
+npm run test:court-special
+npm run test:court-honors
 ```
 
-桌面验收需要可访问图形界面的本机会话。当前业务测试共四百五十八项，已全部通过；这不代表所有桌面场景与系统版本均已完成验收。
+桌面验收需要可访问图形界面的本机会话。当前业务测试共四百九十五项，已全部通过；这不代表所有桌面场景与系统版本均已完成验收。
 
 ## 玩法与数据文档
 

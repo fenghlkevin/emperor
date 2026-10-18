@@ -4,8 +4,8 @@ import {REVENUE_TABS,CENSUS_COST,quoteRevenue,executeRevenue,projectedTax} from 
 import {countrySummary} from './domestic.mjs';
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));const fmt=n=>n.toLocaleString('zh-CN');
 const table=(headers,rows)=>`<div class="civil-table report-table revenue-table"><table><thead><tr>${headers.map(h=>`<th scope="col">${h}</th>`).join('')}</tr></thead><tbody>${rows.map(([name,...values])=>`<tr><th scope="row">${name}</th>${values.map(v=>`<td>${v}</td>`).join('')}</tr>`).join('')}</tbody></table></div>`;
-export function openRevenue(initial,root,onCommit,onClose){
- let state=initial,tab='census',receipt=null,requestId=state.domestic.fiscalActions.nextId;
+export function openRevenue(initial,root,onCommit,onClose,options={}){
+ let state=initial,tab=REVENUE_TABS.some(([id])=>id===options.tab)?options.tab:'census',receipt=null,requestId=state.domestic.fiscalActions.nextId;
  const d=document.createElement('dialog');d.className='domestic-dialog ink-mode revenue-dialog';d.setAttribute('aria-label','户部尚书财政政令');root.append(d);d.onclose=()=>{d.remove();onClose?.();};
  const summary=()=>countrySummary(state.domestic),input=(kind,id,value,max=1000000000)=>`<input type="number" data-${kind}="${id}" aria-label="${esc(id)}${kind==='rate'?'税率':'数量或金额'}" value="${value}" min="0" max="${max}" step="1" inputmode="numeric">`;
  function command(){const result={id:requestId,kind:tab};if(tab==='subsidy')result.amounts=Object.fromEntries([...d.querySelectorAll('[data-amount]')].map(el=>[el.dataset.amount,el.value===''?0:Number(el.value)]));if(tab==='tax')result.rates=Object.fromEntries([...d.querySelectorAll('[data-rate]')].map(el=>[el.dataset.rate,el.value===''?NaN:Number(el.value)]));return result;}

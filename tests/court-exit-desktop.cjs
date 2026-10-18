@@ -19,6 +19,7 @@ app.whenReady().then(async()=>{
     if(i%2){
      for(let n=0;n<300&&document.querySelector('.court').dataset.courtReady==='loading';n++)await wait(20);
      click('[data-entry="revenue-minister"]');
+     click('[data-court-action="register"]');
      click('dialog[open] .close');await wait(30);
     }
     click('[data-scene="palace"]');await wait(100);

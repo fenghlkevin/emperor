@@ -53,7 +53,21 @@
     "test:types": "node scripts/validate-data-contract.mjs",
     "test:playability": "node scripts/audit-playability.mjs",
     "test:crisis-recovery": "electron tests/crisis-recovery-desktop.cjs",
-    "test:balance-ui": "electron tests/balance-desktop.cjs"
+    "test:balance-ui": "electron tests/balance-desktop.cjs",
+    "test:court-play": "electron tests/court-play-desktop.cjs",
+    "preview:court": "electron scripts/preview-court.cjs",
+    "test:court-fiscal": "electron tests/court-fiscal-desktop.cjs",
+    "test:court-personnel": "electron tests/court-personnel-desktop.cjs",
+    "test:court-justice": "electron tests/court-justice-desktop.cjs",
+    "test:court-diplomacy": "electron tests/court-diplomacy-desktop.cjs",
+    "test:court-negotiation": "electron tests/court-negotiation-desktop.cjs",
+    "test:court-garrison": "electron tests/court-garrison-desktop.cjs",
+    "test:court-campaign": "electron tests/court-campaign-desktop.cjs",
+    "test:court-defense": "electron tests/court-defense-desktop.cjs",
+    "test:court-royal": "electron tests/court-royal-desktop.cjs",
+    "test:court-special": "electron tests/court-special-desktop.cjs",
+    "test:court-honors": "electron tests/court-honors-desktop.cjs",
+    "test:court-priority": "electron tests/court-priority-desktop.cjs"
   },
   "devDependencies": {
     "electron": "^38.0.0",
