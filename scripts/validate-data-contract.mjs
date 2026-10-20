@@ -1,6 +1,8 @@
+import {settleHanlin} from '../src/hanlin.mjs';
 // Compile actual runtime snapshots against the saved-state contract, without
 // trusting the inferred `any` types of the JavaScript implementation.
 import ts from 'typescript';
+import {initializeResourceEconomy} from '../src/province-resources.mjs';
 import {mkdtempSync,writeFileSync,rmSync} from 'node:fs';
 import {tmpdir} from 'node:os';
 import {join,resolve} from 'node:path';
@@ -16,6 +18,8 @@ import {alchemyAction} from '../src/alchemy.mjs';
 import {executePersonnel,settlePersonnel} from '../src/personnel-actions.mjs';
 import {startConstruction} from '../src/construction.mjs';
 import {executeIndustry} from '../src/industry.mjs';
+import {executeKitCommand} from '../src/troop-kit-world.mjs';
+import {laborProfile} from '../src/labor.mjs';
 import {ACTIVE_HISTORICAL_PEOPLE} from '../src/exam.mjs';
 import {endReign} from '../src/ending-rules.mjs';
 import {settleReignResult} from '../src/reign-result.mjs';
@@ -27,6 +31,9 @@ const snapshots=[];
 const game=()=>{const s=newGame('数据契约');s.createdAt='2026-10-17T00:00:00.000Z';return s;};
 const capture=(label,state)=>{const s=validateSave(structuredClone(state));snapshots.push({label,type:'GameSave',value:s});return s;};
 const fresh=capture('new game',game());
+const resourceGame=game();initializeResourceEconomy(resourceGame.domestic);
+capture('resource economy new game',resourceGame);
+advance(resourceGame);capture('resource economy settled turn',resourceGame);
 snapshots.push({label:'all active historical profiles',type:'ExamCandidate[]',value:ACTIVE_HISTORICAL_PEOPLE.map(({dimensionEvidence,ratingBasis,...p})=>({...p,age:p.initialAge,loyalty:p.initialLoyalty,experience:p.initialExperience}))});
 const annual=game();annual.turn=36;advance(annual);capture('annual settlement',annual);
 snapshots.push({label:'country summary',type:'CountrySummary',value:countrySummary(annual.domestic)});
@@ -47,11 +54,21 @@ capture('hired official',executePersonnel(personnel,{id:1,kind:'hire',candidateI
 capture('construction project',startConstruction(game(),'hebei','temples').state);
 const industry=executeIndustry(game(),{id:1,kind:'develop',provinceId:'hebei',industry:'agriculture',area:10}).state;
 capture('industry project',industry);advance(industry);capture('industry activation',industry);
+const converted=executeIndustry(game(),{id:1,kind:'convert',provinceId:'hebei',fromIndustry:'commerce',industry:'agriculture',area:10}).state;
+capture('land conversion project',converted);advance(converted);capture('land conversion activation',converted);
+capture('city capacity expansion',executeIndustry(game(),{id:1,kind:'expand',provinceId:'hebei'}).state);
+const drafted=game();initializeResourceEconomy(drafted.domestic);drafted.domestic.countries[0].fiscal.treasury=100000;
+const enlisted=laborProfile(drafted.domestic.provinces[0]).available+100;
+capture('industry drafted soldiers',executeKitCommand(drafted,{id:1,kind:'recruit',sourceId:'hebei',amount:enlisted,draftRates:{farmers:50}}).state);
+capture('industry drafted militia',executeIndustry(drafted,{id:1,kind:'levy-militia',provinceId:'hebei',amount:enlisted,draftRates:{workers:50}}).state);
+const employer=executeIndustry(drafted,{id:1,kind:'develop',provinceId:'hebei',industry:'industry',area:100}).state;advance(employer);capture('industry pending hiring',employer);advance(employer);capture('industry hired workers',employer);
 const occupied=game();const target=occupied.domestic.provinces.find(p=>p.countryId==='japan');
 snapshots.push({label:'occupation receipt',type:'OccupationReceipt',value:occupyProvince(occupied.domestic,'japan',1,'sheng',target.id)});capture('occupation',occupied);
 const crisis=game();capitalFalls(crisis.domestic,'xi',1);capture('capital crisis',crisis);
 const ended=game();endReign(ended,'病逝','类型验证：危重病逝');settleReignResult(ended);capture('current reign result',ended);
 const legacy=structuredClone(ended);legacy.reignResult.version=1;delete legacy.reignResult.historical;delete legacy.reignResult.warRecord;delete legacy.reignResult.evidence;capture('retained legacy result',legacy);
+
+const hanlin=game();initializeResourceEconomy(hanlin.domestic);const pupil=hanlin.domestic.justice.officials[0];Object.assign(pupil,{positionId:null,office:'待命',provinceId:null});const studying=executePersonnel(hanlin,{id:hanlin.domestic.personnel.nextId,kind:'hanlin-enroll',officialId:pupil.id,attribute:'politics'}).state;settleHanlin(studying.domestic,2);studying.turn=2;capture('hanlin tuition and fixed potential',studying);
 
 const directory=mkdtempSync(join(tmpdir(),'emperor-data-contract-'));
 try{

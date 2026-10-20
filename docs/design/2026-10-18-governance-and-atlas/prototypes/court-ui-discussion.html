@@ -1,0 +1,55 @@
+<div id="court-discussion">
+<style>
+#court-discussion .shell{padding:20px 0;color:var(--foreground)}
+#court-discussion .top{display:flex;gap:20px;flex-wrap:wrap;align-items:center;padding:12px 0;border-bottom:1px solid var(--border)}
+#court-discussion .workspace{display:grid;grid-template-columns:minmax(0,1fr) 240px;gap:24px;padding-top:20px;min-height:420px}
+#court-discussion .field{background:var(--muted);position:relative;min-height:330px;display:flex;flex-direction:column;justify-content:space-between;padding:24px;color:var(--foreground)}
+#court-discussion .places{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px 12px;margin:30px 0}
+#court-discussion .place{text-align:center;padding:12px 0;border-bottom:1px solid var(--border)}
+#court-discussion .chosen{background:var(--primary);color:var(--primary-foreground)}
+#court-discussion .aside{display:flex;flex-direction:column;gap:16px;min-width:0}
+#court-discussion .actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:auto}
+#court-discussion .offices{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;padding:20px 0}
+#court-discussion .office{padding:12px 0;border-bottom:1px solid var(--border)}
+#court-discussion .foot{border-top:1px solid var(--border);margin-top:20px;padding-top:12px}
+#court-discussion .stage{min-height:510px}
+@media(max-width:620px){#court-discussion .workspace{grid-template-columns:1fr}#court-discussion .offices{grid-template-columns:1fr}#court-discussion .places{gap:12px}#court-discussion .field{padding:16px}#court-discussion .stage{min-height:780px}}
+</style>
+<div class="viz-carousel" aria-label="朝堂与地方治理讨论图" data-previous-label="上一幅" data-next-label="下一幅">
+<section data-variant="舆图与办事分区" class="shell stage">
+<div class="top"><strong>皇帝 · 天下舆图</strong><span>全国 / 河北</span><span class="text-small">讨论草图 · 示例状态</span></div>
+<div class="viz-controls"><label class="form-label">专题<select class="form-select" id="topic"><option>粮食</option><option>驻军</option><option>治安</option></select></label></div>
+<div class="workspace"><div class="field" role="img" aria-label="地图空间布局示意，非地理疆域，地图独占左侧主要区域，业务按钮全部位于右侧">
+<span>地图主视区 · 桌面目标约 75%</span>
+<div class="places"><div class="place">关内</div><div class="place chosen">河北 · 缺粮</div><div class="place">河东</div><div class="place">河南</div><div class="place">淮南</div><div class="place">江南</div></div>
+<span class="text-small">此处仅示意标签密度和空间；实际底图另行重做</span>
+</div><aside class="aside"><div><span class="viz-badge">河北</span><h3 id="issue">预计下旬缺粮</h3><p id="detail">户部核粮，州牧接济；只展示当前粮食专题。</p></div><hr><div><strong>承办 · 户部尚书</strong><p>选州后办理，地图保留当前位置。</p></div><div class="actions"><button class="btn" id="inspect">核阅州情</button><button class="btn btn-primary" id="draft">拟定调粮</button></div><p class="text-small" id="receipt" aria-live="polite">尚未拟旨</p></aside></div>
+<div class="foot text-small">图上保留疆域、州名、当前专题和选中状态；数量、说明与操作移到图外。</div>
+</section>
+<section data-variant="朝堂职责入口" class="shell stage" hidden>
+<div class="top"><strong>宣政殿 · 群臣奏事</strong><span class="text-small">保留人物朝堂；以下示意召见后的职责入口</span></div>
+<div class="workspace"><div><h3>御案 · 河北缺粮奏</h3><p>奏报人：户部侍郎　承办人：户部尚书</p><div class="offices"><div class="office"><strong>宰相 · 议政督办</strong><p>国势摘要、跨部协调、逾期复奏</p><button class="btn" data-role="prime">召见宰相</button></div><div class="office"><strong>户部侍郎 · 核阅奏报</strong><p>查粮账、看缺口、核对事实</p><button class="btn" data-role="deputy">召见侍郎</button></div><div class="office"><strong>户部尚书 · 本部承办</strong><p>调粮、购粮、赋税与补助</p><button class="btn" data-role="minister">召见尚书</button></div><div class="office"><strong>地方 · 文武分治</strong><p>州牧管民政，守将管驻军</p><span class="text-small">任职、辖区、预算独立显示</span></div></div></div><aside class="aside"><div><span class="viz-badge" id="who">户部侍郎 · 奏报</span><h3 id="role-title">河北粮账</h3><p id="role-detail">可核阅库存和预计消耗，不能提交购粮、调粮或改税。</p></div><div class="actions" id="role-actions"><button class="btn">查看粮账</button></div><p class="text-small">皇帝最终落旨；官员决定所呈事实、建议和可承办事项。</p></aside></div>
+</section>
+<section data-variant="地方文武与复奏" class="shell stage" hidden>
+<div class="top"><strong>河北 · 地方治理</strong><span class="text-small">提议机制 · 尚未实施</span></div>
+<div class="offices"><div class="office"><strong>州牧 · 民政</strong><p>赈济、农商、民用营造、民生恢复</p><p>地方民政预算 · 每旬支出上限</p></div><div class="office"><strong>守将 · 军务</strong><p>练兵、巡防、守备、奉令调拨</p><p>地方军务预算 · 每旬支出上限</p></div></div>
+<div class="viz-controls"><label class="form-label">军务办理方式<select class="form-select" id="military-mode"><option>守将空缺</option><option>皇帝亲理 · 单次练兵</option><option>委任守将 · 持续练兵</option></select></label></div>
+<div class="workspace"><div><h3 id="local-title">尚未任命守将</h3><p id="local-detail">保留现有驻军与基础守备；自动练兵、巡防未启用。</p><div class="actions"><button class="btn" id="advance">演示下一旬复奏</button></div></div><aside class="aside"><strong>执行回报</strong><p id="local-report" aria-live="polite">等待演示</p><p class="text-small">统一全国拨款上限与国库保留线；同一资源不重复拨付。</p></aside></div>
+</section>
+</div>
+</div>
+<script>
+(()=>{
+const root=document.getElementById('court-discussion'),q=id=>root.querySelector('#'+id);
+const save=()=>{if(window.openai?.setWidgetState)window.openai.setWidgetState({modelContent:{topic:q('topic').value,militaryMode:q('military-mode').value}}).catch(()=>{});};
+const topics={'粮食':['预计下旬缺粮','户部核粮，州牧接济；只展示当前粮食专题。','拟定调粮'],'驻军':['守将空缺','兵部核军籍，吏部办理任官；驻军与装备分开核算。','拟任守将'],'治安':['巡防待议','守将负责巡防，州牧负责民生；统一查看治安变化。','拟定巡防']};
+q('topic').onchange=()=>{const t=topics[q('topic').value];q('issue').textContent=t[0];q('detail').textContent=t[1];q('draft').textContent=t[2];q('receipt').textContent='尚未拟旨';save();};
+q('inspect').onclick=()=>q('receipt').textContent='核阅：此处展开本州明细，保留地图与选州。';
+q('draft').onclick=()=>q('receipt').textContent='拟旨预览：列明承办、对象、资源、时效和风险，再由皇帝落旨。';
+const roles={prime:['宰相 · 督办','河北缺粮待办','可看摘要和承办进度；详细粮账交户部核阅。',['听取建议','传户部尚书']],deputy:['户部侍郎 · 奏报','河北粮账','只读核阅；此处没有调粮、购粮、改税按钮。',['查看粮账']],minister:['户部尚书 · 承办','河北救济拟旨','办理本部事务，预览资源代价后由皇帝落旨。',['核阅粮账','拟定调粮']]};
+root.querySelectorAll('[data-role]').forEach(b=>b.onclick=()=>{const r=roles[b.dataset.role];q('who').textContent=r[0];q('role-title').textContent=r[1];q('role-detail').textContent=r[2];q('role-actions').replaceChildren(...r[3].map(t=>{const el=document.createElement('button');el.className='btn';el.textContent=t;el.onclick=()=>q('role-detail').textContent='讨论示意：'+t+'，由对应官职入口衔接。';return el;}));});
+q('military-mode').onchange=()=>{const v=q('military-mode').selectedIndex;q('local-title').textContent=['尚未任命守将','拟办一次练兵','委任持续练兵'][v];q('local-detail').textContent=['保留现有驻军与基础守备；自动练兵、巡防未启用。','本次颁旨后执行一次；不会自动变成长期任务。','有兵、有粮且预算充足才执行；达标停止，无预算复奏暂缓。'][v];q('local-report').textContent='等待演示';save();};
+q('advance').onclick=()=>q('local-report').textContent=['暂缓：守将空缺；请求吏部拟任。','复奏：单次练兵已办，列实支与训练变化；任务结束。','复奏：本旬练兵已执行；展示承办人、实支、训练前后与下旬计划。'][q('military-mode').selectedIndex];
+const saved=window.openai?.widgetState?.modelContent;if(saved){if(topics[saved.topic]){q('topic').value=saved.topic;q('topic').onchange();}if([...q('military-mode').options].some(o=>o.value===saved.militaryMode)){q('military-mode').value=saved.militaryMode;q('military-mode').onchange();}}
+})();
+</script>

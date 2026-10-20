@@ -20,6 +20,6 @@
 .has-tour-portrait .travel-journey-scene{background:linear-gradient(100deg,#183c32,#3e6150);height:38vh}
 .has-tour-portrait .travel-journey-scene>.travel-scene{left:auto;right:6%;width:45%;object-fit:contain;object-position:center}
 .has-tour-portrait .travel-journey-scene::after{background:linear-gradient(90deg,#102c22b3,transparent 80%)}
-.has-tour-portrait .travel-journey-scene::before{content:"";position:absolute;inset:0;z-index:-3;background:linear-gradient(90deg,#183c32eb,#183c32b8),url('../assets/sketch-beauty-xia-yuhe-v3.png') center 65%/cover}
+.has-tour-portrait .travel-journey-scene::before{content:"";position:absolute;inset:0;z-index:-3;background:linear-gradient(90deg,#183c32eb,#183c32b8),var(--tour-portrait-scene,url('../assets/scenes/tour/sketch-beauty-xia-yuhe-v3.png')) center 65%/cover}
 .has-tour-portrait .travel-journey-scene>span{font-size:27px}
 @media(max-width:750px){.has-tour-event .travel-content{grid-template-columns:1fr;max-height:48vh;padding:14px}.tour-choices{grid-template-columns:1fr}.tour-event-story{font-size:13px}.has-tour-event .travel-summary{display:none}.has-tour-event .travel-journey-scene{height:26vh}.has-tour-portrait .travel-journey-scene{height:32vh}.has-tour-portrait .travel-journey-scene>.travel-scene{width:54%;right:0}.has-tour-portrait .travel-journey-scene>span{font-size:20px}.tour-person span{display:block;margin:5px 0 0}}

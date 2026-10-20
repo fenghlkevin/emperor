@@ -1,3 +1,5 @@
+import {ensureOfficialGrowth} from './official-growth.mjs';
+import {selectionEffect} from './central-office-effects.mjs';
 import {ability100} from './emperor-rules.mjs';
 import {HISTORICAL_PEOPLE} from './historical-people.mjs';
 import {ORIGINAL_OFFICIAL_TEMPLATES} from './original-officials.mjs';
@@ -15,22 +17,33 @@ surnames.push('欧阳','司马','上官','诸葛','夏侯','东方','皇甫','�
 const given=[...'文明德安远志怀景行守正思元承彦子仲伯季云松柏清修仁义礼智信忠宁致宏毅达谦和诚勇威杰俊贤良允成泽平康泰绍庭岳川海林山启兴昌荣华'];
 const pick=(a,r)=>a[Math.floor(r()*a.length)];
 export function historicalChance(stats={}){const v=k=>ability100(stats?.[k]??250);return .05+.35*(v('charm')+v('wisdom'))/200;}
+export function examSelection(d,stats){const e=selectionEffect(d);return {...e,historicalChance:Math.min(.8,historicalChance(stats)+e.historicalBonus),minCount:5+e.extra,maxCount:15+e.extra};}
+// Ordinary recruits have modest, middle-weighted abilities; a rare specialist is not an all-round master.
+export function randomExamAbilities(random,role,talentChance){
+ const skills=['intelligence','martial','leadership','politics'];
+ const abilities=Object.fromEntries(skills.map(key=>[key,10+Math.floor((random()+random())/2*56)]));
+ abilities.integrity=Math.floor(random()*(RANDOM_ABILITY_CAPS.integrity+1));
+ if(random()<talentChance){const [primary,secondary]=role==='武将'?['martial','leadership']:['intelligence','politics'];abilities[primary]=70+Math.floor(random()*16);abilities[secondary]=Math.max(abilities[secondary],50+Math.floor(random()*21));}
+ return abilities;
+}
 export function createExamCandidates(d,turn,random,stats){
  const excluded=new Set([...d.justice.officials.map(o=>o.name),...d.personnel.retired]);
  const pool=ACTIVE_HISTORICAL_PEOPLE.filter(o=>!excluded.has(o.name));
  const forbidden=new Set([...HISTORICAL_PEOPLE.map(p=>p.name),...ACTIVE_HISTORICAL_PEOPLE.map(p=>p.name),...excluded]);
- const count=5+Math.floor(random()*11),result=[];
+ const selection=examSelection(d,stats),count=5+Math.floor(random()*11)+selection.extra,result=[];
  for(let i=0;i<count;i++){
-  if(i<count-1&&pool.length&&random()<historicalChance(stats)){
+  if(i<count-1&&pool.length&&random()<selection.historicalChance){
    const o=pool.splice(Math.floor(random()*pool.length),1)[0];const {dimensionEvidence,ratingBasis,...profile}=o;
    result.push({...profile,age:o.initialAge,loyalty:o.initialLoyalty,experience:o.initialExperience});
   }else{
    let name=pick(surnames,random)+pick(given,random)+(random()<.7?pick(given,random):'');
    // Deterministic fallback also terminates when a supplied RNG always returns the same value.
    if(forbidden.has(name)){let n=0;do{name=surnames[n%surnames.length]+given[Math.floor(n/surnames.length)%given.length]+given[Math.floor(n/(surnames.length*given.length))%given.length];n++;}while(forbidden.has(name));}
-   const abilities=Object.fromEntries(ABILITY_KEYS.map(k=>[k,Math.floor(random()*(RANDOM_ABILITY_CAPS[k]+1))]));
-   result.push({id:`random-${turn}-${i}`,name,generated:true,dynasty:'本朝',role:i===0?'武将':i===1?'文职':random()<.5?'武将':'文职',...abilities,age:18+Math.floor(random()*28),loyalty:40+Math.floor(random()*51),experience:Math.floor(random()*51),tags:['制举新秀'],biography:'本朝制举选出的新秀。',personality:'composed'});
+   const role=i===0?'武将':i===1?'文职':random()<.5?'武将':'文职';
+   const abilities=randomExamAbilities(random,role,selection.highChance);
+   result.push({id:`random-${turn}-${i}`,name,generated:true,dynasty:'本朝',role,...abilities,age:18+Math.floor(random()*28),loyalty:40+Math.floor(random()*51),experience:Math.floor(random()*51),tags:['制举新秀'],biography:'本朝制举选出的新秀。',personality:'composed'});
   }
+  ensureOfficialGrowth(result.at(-1));
   forbidden.add(result.at(-1).name);
  }
  if(!result.some(p=>p.role==='武将'))result.at(-1).role='武将';

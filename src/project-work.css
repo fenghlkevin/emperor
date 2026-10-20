@@ -1,0 +1,29 @@
+.project-work-controls{border:1px solid #b8a478;background:#f3ecd9;padding:16px;margin:18px 0;color:#3b3020}
+.ink-mode .revenue-body .project-work-controls p,.national-body .project-work-controls p{font:14px/1.8 system-ui,sans-serif;letter-spacing:0;margin:10px 0}
+.project-work-controls h3{font-size:18px!important;letter-spacing:1px!important;margin:0 0 12px!important}
+.project-work-controls h4{font-size:15px;margin:16px 0 8px}
+.project-work-controls form{display:flex;gap:14px;flex-wrap:wrap;align-items:end}
+.project-work-controls form p{flex-basis:100%}
+.project-work-controls label,.project-work-controls select,.project-work-controls button{font-size:14px!important;letter-spacing:0!important;min-height:40px}
+/* These pages use normal flow: reserve space only for controls that exist. */
+.domestic-dialog.ink-mode.industry-dialog{display:none;flex-direction:column}
+.domestic-dialog.ink-mode.industry-dialog[open]{display:flex}
+.domestic-dialog.ink-mode.industry-dialog>.civil-header{position:static;inset:auto;order:0;height:auto;min-height:58px;padding:12px 22px;flex-shrink:0;box-sizing:border-box}
+.domestic-dialog.ink-mode.industry-dialog>.civil-tabs{position:static;inset:auto;order:1;height:auto;min-height:44px;padding:6px 20px;flex-shrink:0;box-sizing:border-box}
+.domestic-dialog.ink-mode.industry-dialog>.revenue-body{position:relative;inset:auto;order:2;flex:1;min-height:0;height:auto;max-height:none;padding:16px 22px;box-sizing:border-box}
+.domestic-dialog.ink-mode.industry-dialog>.revenue-command{position:static;inset:auto;order:3;min-height:0;height:auto;width:auto;padding:10px 22px;flex-shrink:0;box-sizing:border-box}
+.domestic-dialog.ink-mode.industry-dialog>.civil-footer{display:none}
+.industry-dialog [role=status]:empty,.project-work-controls [data-work-status]:empty{display:none}
+.industry-dialog [hidden],.project-work-controls [hidden]{display:none!important}
+.ink-mode.industry-dialog .revenue-body>p,.ink-mode.industry-dialog .revenue-body .civil-note{font-size:14px;line-height:1.7;letter-spacing:0}
+.project-work-controls{padding:12px;margin:12px 0}
+.project-work-controls form{gap:10px}
+.project-work-controls form p{margin:5px 0!important}
+@media(max-width:600px){.domestic-dialog.ink-mode.industry-dialog>.revenue-body{padding:12px}.domestic-dialog.ink-mode.industry-dialog>.civil-header{padding:10px 12px}.domestic-dialog.ink-mode.industry-dialog>.civil-tabs{padding:6px 12px;gap:10px}}
+.works-header-actions{display:flex;align-items:center;gap:12px;min-width:0}
+.works-switch{display:flex;gap:4px}
+.works-switch button{font-size:14px!important;letter-spacing:0!important;padding:8px 10px!important;min-height:40px}
+.works-switch button[aria-pressed=true]{border-bottom:2px solid #755b2b;background:#e6dcc3}
+.works-header-actions [data-works-switch]{display:none;font:14px system-ui;min-height:40px;max-width:170px}
+@media(max-width:1000px){.works-switch{display:none}.works-header-actions [data-works-switch]{display:block}.works-header-actions{gap:8px}.industry-dialog .civil-header h1{font-size:23px!important;letter-spacing:1px!important}.industry-dialog .civil-header h1 span{display:block;font-size:12px;letter-spacing:0}}
+@media(max-width:600px){.industry-dialog .civil-header{flex-wrap:wrap;gap:8px}.works-header-actions{margin-left:auto}.works-header-actions [data-special-works]{font-size:13px;padding:7px!important}}

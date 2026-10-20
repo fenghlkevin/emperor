@@ -7,7 +7,7 @@ const seen=new Map(),issues=[];
 const rows=ACTIVE_HISTORICAL_PEOPLE.map(({id,name})=>{
  const images={};
  for(const variant of variants){
-  const file=`assets/officials/${id}-${variant}.png`;
+  const file=`assets/officials/historical/${id}/${variant}.png`;
   if(!fs.existsSync(file)){images[variant]={status:'missing',file};issues.push(`${name}: 缺少 ${variant}`);continue;}
   const bytes=fs.readFileSync(file),png=bytes.subarray(0,8).equals(Buffer.from([137,80,78,71,13,10,26,10]));
   if(!png||bytes.length<33){images[variant]={status:'invalid',file};issues.push(`${name}: ${variant} 非有效PNG`);continue;}

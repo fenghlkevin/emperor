@@ -2,3 +2,15 @@ import test from 'node:test';import assert from 'node:assert/strict';import {new
 test('camp procurement quotes actual full kit cost without mutating stock or money',()=>{const s=newGame('军营'),before=JSON.stringify(s),p=courtGarrisonPlan(s,{kind:'purchase',sourceId:'central',quantities:{infantry:10,spears:20}});assert.equal(JSON.stringify(s),before);assert.equal(p.cost,320);assert.equal(p.after.kits.infantry.total,p.before.kits.infantry.total+10);assert.equal(p.after.soldiers.total,p.before.soldiers.total);assert.throws(()=>courtGarrisonPlan(s,{kind:'purchase',sourceId:'central',quantities:{camel:1}}),/产地|采购/);validateSave(executeKitCommand(s,p.command).state);});
 test('camp transfer carries selected equipment and soldiers with exact bilateral conservation',()=>{const s=newGame('调拨'),p=courtGarrisonPlan(s,{kind:'transfer',sourceId:'central',targetId:'hebei',soldiers:100,quantities:{infantry:70,spears:30}});assert.equal(p.before.soldiers.total+p.targetBefore.soldiers.total,p.after.soldiers.total+p.targetAfter.soldiers.total);for(const k of ['infantry','spears'])assert.equal(p.before.kits[k].total+p.targetBefore.kits[k].total,p.after.kits[k].total+p.targetAfter.kits[k].total);assert.equal(p.cost,0);const n=executeKitCommand(s,p.command).state;validateSave(n);assert.throws(()=>executeKitCommand(n,p.command),/已执行|更新/);});
 test('recruitment and dismissal preserve population and gear; reserved stock cannot be moved',()=>{let s=newGame('军籍'),total=s.domestic.provinces.reduce((n,p)=>n+p.population.total,0),p=courtGarrisonPlan(s,{kind:'recruit',sourceId:'central',amount:100});assert.equal(p.cost,400);assert.deepEqual(p.before.kits,p.after.kits);s=executeKitCommand(s,p.command).state;assert.equal(s.domestic.provinces.reduce((n,p)=>n+p.population.total,0),total);p=courtGarrisonPlan(s,{kind:'dismiss',sourceId:'central',amount:100});assert.deepEqual(p.before.kits,p.after.kits);s=executeKitCommand(s,p.command).state;validateSave(s);const row=worldKitSummary(s.domestic)[0];reserveWorldKits(s.domestic,'central','test-reservation',[{kind:'infantry',count:row.kits.infantry.available}]);assert.throws(()=>courtGarrisonPlan(s,{kind:'transfer',sourceId:'central',targetId:'hebei',soldiers:0,quantities:{infantry:1}}),/数量|不足|占用/);});
+
+test('recruitment outlook uses the same scheduled economy as the actual recruit command without spending source resources',async()=>{
+ const {projectScheduledEconomy}=await import('../src/economy-projection.mjs');
+ const {initializeResourceEconomy}=await import('../src/province-resources.mjs');
+ const {executeKitCommand}=await import('../src/troop-kit-world.mjs');
+ const s=newGame('扩军收支');initializeResourceEconomy(s.domestic);const before=structuredClone(s);
+ const q=courtGarrisonPlan(s,{kind:'recruit',sourceId:'hebei',amount:100});
+ assert.deepEqual(s,before);assert.deepEqual(q.economy.before,projectScheduledEconomy(s));
+ const executed=executeKitCommand(s,q.command).state;
+ assert.deepEqual(q.economy.after,projectScheduledEconomy(executed));
+ assert.equal(q.economy.after.cash.opening,q.economy.before.cash.opening-400);
+});

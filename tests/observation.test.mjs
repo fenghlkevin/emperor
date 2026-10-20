@@ -4,7 +4,7 @@ import {newGame,validateSave} from '../src/game.mjs';
 import {observationReport,observe} from '../src/observation.mjs';
 test('prosperity increases attendance, deterministic and bounded',()=>{
  const s=newGame('朝仪');const low=observationReport(s);
- for(const p of s.domestic.provinces){p.welfare.loyalty=100;p.welfare.stability=100;p.welfare.security=100;p.welfare.grainReserve=1e9;p.status.livingStandard=100;p.military.training=100;}
+ for(const p of s.domestic.provinces){p.welfare.loyalty=100;p.welfare.stability=100;p.welfare.security=100;p.status.livingStandard=100;p.military.training=100;}
  s.domestic.countries.find(c=>c.id===s.domestic.playerCountryId).fiscal.treasury=1e9;
  const high=observationReport(s);assert.ok(high.score>low.score);assert.ok(high.count>low.count);assert.ok(high.count<=6000);assert.deepEqual(high,observationReport(s));
 });

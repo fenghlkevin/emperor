@@ -1,0 +1,257 @@
+{
+  "reference": "assets/beauties/random/foreign-expansion-20261019-10-v1.png",
+  "rule": "以已确认的蒙古草原佳人为画风基准：精致柔和的半写实游戏插画；各地区肤色和脸型有区别，蒙古草原使用暖麦色、略宽脸型、自然颧骨和圆润下巴；保留各地区服装身份；真正透明RGBA PNG背景，禁止黑底或光晕；验证alpha和浅色合成预览后同路径替换，不保留旧图副本。",
+  "items": [
+    {
+      "path": "assets/beauties/random/foreign-expansion-20261019-01-summer-v1.png",
+      "status": "completed",
+      "initialSha256": "aa98fe1fb8e7700ee7ccb8190b66ced6cbfe97531b91414c8eaa5c3fa9e0abf7",
+      "generatedPath": "/Users/fengheliang/.codex/generated_images/01a15828-8bbf-7783-8fa4-7182f68eeb18/exec-a3862027-862b-4edf-9375-df81161c4b20.png",
+      "completedAt": "2026-10-20T07:34:09.476011+00:00",
+      "sha256": "969e2a1002741bb7f89a05240a1c7e757b7ecd14d86a7aca68cf39d077bd3105",
+      "tool": "built-in image_gen",
+      "promptSummary": "仅移除背景、光晕与地面阴影，保留人物；输出透明RGBA PNG。",
+      "review": "已验证真实alpha透明像素，并在浅色底合成检查人物边缘；1024×1536。",
+      "transparent": true,
+      "transparencyCorrectedAt": "2026-10-20T07:47:11.340887+00:00"
+    },
+    {
+      "path": "assets/beauties/random/foreign-expansion-20261019-02-summer-v1.png",
+      "status": "completed",
+      "initialSha256": "dc6933e5ab3025a9167a11cfc22f118b66532c8cb58b300f1243147e586b83e2",
+      "generatedPath": "/Users/fengheliang/.codex/generated_images/01a15828-8bbf-7783-8fa4-7182f68eeb18/exec-c6d7a608-ae20-499b-9aec-648900f55707.png",
+      "completedAt": "2026-10-20T07:53:44.935167+00:00",
+      "sha256": "d395a69cbbec5f13e277dfe9590d7fc6f9765c07c83659f2343e15b4ada9e595",
+      "transparent": true,
+      "tool": "built-in image_gen",
+      "promptSummary": "波斯佳人：自然橄榄肤色、独立柔和脸型、深色长辫、红金轻盈刺绣长裙、蓝金腰带、珍珠红宝石与手持卷轴；参考已确认半写实画风；真正透明背景。",
+      "review": "1024×1536 RGBA；751918个全透明像素；浅色合成检查通过，面容、持卷双手、双脚完整，边缘无背景光晕。"
+    },
+    {
+      "path": "assets/beauties/random/foreign-expansion-20261019-03-summer-v1.png",
+      "status": "completed",
+      "initialSha256": "e7c4e33c288d1047ff3044390b4af3dc1bcb67f54d52e9e12cec802d3e33b1ab",
+      "generatedPath": "/Users/fengheliang/.codex/generated_images/01a15828-8bbf-7783-8fa4-7182f68eeb18/exec-fda83527-1ba4-4c6f-b3b5-6c0e83c6ca3a.png",
+      "completedAt": "2026-10-20T08:05:17.290742+00:00",
+      "sha256": "445d961c046bba47bf78487368f3c6cd992c54e61e48fc2727cff79e8b648932",
+      "transparent": true,
+      "tool": "built-in image_gen",
+      "promptSummary": "阿拉伯佳人：自然蜜橄榄肤色、柔和独立脸型、蓝金头巾与象牙金轻盈刺绣裙、金币腰带、铜壶；统一精致柔和半写实画风，真正透明背景。",
+      "review": "已核验1024×1536 RGBA及631684全透明像素；浅色底检查面容、持壶双手、双脚完整及边缘通过。"
+    },
+    {
+      "path": "assets/beauties/random/foreign-expansion-20261019-04-summer-v1.png",
+      "status": "completed",
+      "initialSha256": "834614b81d3ea5c09cac38bf11e9b0a6bf482d98e73db8bfc0422d49e39d3eb4",
+      "generatedPath": "/Users/fengheliang/.codex/generated_images/01a15828-8bbf-7783-8fa4-7182f68eeb18/exec-001c6c0f-145f-49e2-8f16-39195e1e364b.png",
+      "completedAt": "2026-10-20T08:10:59.255282+00:00",
+      "sha256": "2ce4d07ed5bf5bfc0ac89f3e6add7c8bb7f9b8a45a916b081c8d99eee38d2bfa",
+      "transparent": true,
+      "tool": "built-in image_gen",
+      "promptSummary": "阿拉伯佳人2：自然暖橄榄肤色、柔和长椭圆脸、黑辫、赤陶红银绣轻盈裙与头纱、象牙裙层、银币饰与手持锦囊；精致半写实，透明背景。",
+      "review": "1024×1536 RGBA；800112全透明像素；浅底检查面容、双手、双脚与人物边缘通过。"
+    },
+    {
+      "path": "assets/beauties/random/foreign-expansion-20261019-07-summer-v1.png",
+      "status": "completed",
+      "initialSha256": "2166bcf4b6754df448732481e004595d6fa5c731f93f910387c4cc41c89db033",
+      "generatedPath": "/Users/fengheliang/.codex/generated_images/01a15828-8bbf-7783-8fa4-7182f68eeb18/exec-9ec4ff01-f109-44df-a463-a7f4c99c2a61.png",
+      "completedAt": "2026-10-20T08:27:39.688662+00:00",
+      "sha256": "e94e39c4c1863ecae5ea4071aebcacd47e524178b53a4461f2557e91e32e2736",
+      "transparent": true,
+      "tool": "built-in image_gen",
+      "promptSummary": "藏地佳人：暖麦色肌肤与自然红润脸颊、柔和略宽椭圆脸、黑辫与珊瑚绿松石饰、红色藏式夏裙、彩条围裙、银饰、手持野花药草篮；精致柔和半写实画风，真正透明背景。",
+      "review": "1024×1536 RGBA；844495全透明像素；浅底合成检查面容、持篮双手、双脚和边缘通过。"
+    },
+    {
+      "path": "assets/beauties/random/foreign-expansion-20261019-08-summer-v1.png",
+      "status": "completed",
+      "initialSha256": "2821a5402bfb696edcdb7d76996b4e9d829e8282486b779d462a01f9c7c6775f",
+      "generatedPath": "/Users/fengheliang/.codex/generated_images/01a15828-8bbf-7783-8fa4-7182f68eeb18/exec-96a62e3c-6907-4b05-a8d3-fb48ba0dc410.png",
+      "completedAt": "2026-10-20T08:47:38.143102+00:00",
+      "sha256": "aa18b5286e72c29ce669d089e22a04e90271026428e55453efd92b236821e103",
+      "transparent": true,
+      "tool": "built-in image_gen",
+      "promptSummary": "藏地佳人2：暖麦色与自然红润脸颊、柔和椭圆脸与圆润下巴、双长辫、深靛蓝藏式夏裙、红金几何绣边、珊瑚银饰绿松石、手持银沿木碗；精致半写实，真正透明背景。",
+      "review": "1024×1536 RGBA；931257全透明像素；浅底合成检查脸、双手持碗、双脚与边缘通过。"
+    },
+    {
+      "path": "assets/beauties/random/foreign-expansion-20261019-09-summer-v1.png",
+      "status": "completed",
+      "initialSha256": "0967c4c85e75fe37c51cb8afc870eba170ce3ef8c48d59fe262a083e0906b190",
+      "generatedPath": "/Users/fengheliang/.codex/generated_images/01a15828-8bbf-7783-8fa4-7182f68eeb18/exec-2ba6710a-4dc6-40fd-b30f-c2cef5287aa3.png",
+      "completedAt": "2026-10-20T09:57:15.727217+00:00",
+      "sha256": "c99fed070af22e8d25bf322c78d4d72d9433e12e976750537970a8e2047bb244",
+      "transparent": true,
+      "tool": "built-in image_gen",
+      "promptSummary": "蒙古草原佳人1：暖麦色、柔和略宽脸型与圆润下巴，墨绿金象牙白轻盈刺绣服饰与手持马鞭；修正腿脚为双腿自然分开站立、两只完整凉鞋，透明背景。",
+      "review": "用户指出初稿脚部错误后定向修复；浅底检查两条小腿、脚踝与双鞋连接清晰；1024×1536 RGBA及744034全透明像素。"
+    },
+    {
+      "path": "assets/beauties/random/foreign-expansion-20261019-10-v1.png",
+      "status": "approved",
+      "initialSha256": "f8fd3a9cfa2ead305ee7bc43c54bb32527974de96a35375aaa835ae5417816c3",
+      "generatedPath": "/Users/fengheliang/.codex/generated_images/01a15828-8bbf-7783-8fa4-7182f68eeb18/exec-3d91a65c-ee51-44ff-9634-ec4bb87d457c.png",
+      "sha256": "3c87d4d8eea79c12d276bb0e0a05afea8d65a9f2531534179e362f406c4bfa3f",
+      "transparent": true,
+      "transparencyCorrectedAt": "2026-10-20T07:47:11.316531+00:00",
+      "tool": "built-in image_gen",
+      "promptSummary": "仅移除背景、光晕与地面阴影，保留人物；输出透明RGBA PNG。",
+      "review": "已验证真实alpha透明像素，并在浅色底合成检查人物边缘；1024×1536。"
+    },
+    {
+      "path": "assets/beauties/random/foreign-expansion-20261019-11-v1.png",
+      "status": "completed",
+      "initialSha256": "e635021e92649b87b97398f2e464d4a7ae3d5e0e01d2979e31b99aa7d4b70761",
+      "generatedPath": "/Users/fengheliang/.codex/generated_images/01a15828-8bbf-7783-8fa4-7182f68eeb18/exec-6467b243-eb8a-431d-b231-c2b3afb0caf6.png",
+      "completedAt": "2026-10-20T14:07:19.885268+00:00",
+      "sha256": "cfc0b36317e1dd5d42002681521df0f1f00b1cf7d85c60e8c5d2696cb3ea5e16",
+      "transparent": true,
+      "tool": "built-in image_gen",
+      "promptSummary": "粟特佳人：自然暖浅橄榄肤色、柔和独立椭圆脸、黑长辫与蓝金绣帽、钴蓝金色联珠动物纹轻盈丝裙、象牙绣边、流苏腰带、双手持紫金织物；双脚分开自然站立，精致半写实透明立绘。",
+      "review": "1024×1536 RGBA；828703全透明像素；浅底检查面容、持物双手、分开双脚、双鞋和边缘通过。"
+    },
+    {
+      "path": "assets/beauties/random/foreign-expansion-20261019-12-v1.png",
+      "status": "completed",
+      "initialSha256": "27f9a9e16d3905121032e1eef878dc2be0f9a126f7ab5d5cba09152b91da9fd6",
+      "generatedPath": "/Users/fengheliang/.codex/generated_images/01a15828-8bbf-7783-8fa4-7182f68eeb18/exec-f81f2267-3a7a-46c9-96bc-475782685e78.png",
+      "completedAt": "2026-10-20T14:15:04.585203+00:00",
+      "sha256": "e193e713eab620b5dab4d1c444a07888e666134d1fd5ab7443011bf43487f253",
+      "transparent": true,
+      "tool": "built-in image_gen",
+      "promptSummary": "粟特佳人2：自然暖浅橄榄肤色、柔和独立椭圆脸、深棕卷发盘髻与银额链、赤陶玫瑰色象牙金纹轻盈丝裙、流苏腰带、双手持银壶；双脚分开站立，精致柔和半写实透明立绘。",
+      "review": "1024×1536 RGBA；888635全透明像素；浅底合成检查面容、持银壶双手、分开双脚双鞋及边缘通过。"
+    },
+    {
+      "path": "assets/beauties/random/foreign-expansion-20261019-13-v1.png",
+      "status": "pending",
+      "initialSha256": "0e88a9e5bea6bdc8870ac4b03e12911734d5e9bab2c32b2d2beb70d91bcd65fb"
+    },
+    {
+      "path": "assets/beauties/random/foreign-expansion-20261019-14-v1.png",
+      "status": "pending",
+      "initialSha256": "0912399792393b68d324114364b8a4d0fc10fec5f9727f6bf5157765e3ac4604"
+    },
+    {
+      "path": "assets/beauties/random/foreign-expansion-20261019-15-v1.png",
+      "status": "pending",
+      "initialSha256": "b1b34ea2793073f3d0867d858d2fb99ceb7a3614fa9901590a67fbcc452871ee"
+    },
+    {
+      "path": "assets/beauties/random/foreign-expansion-20261019-16-v1.png",
+      "status": "pending",
+      "initialSha256": "47895e360d743083bf5631432582c169f9f6dbb5e134d87a1a30188687840b50"
+    },
+    {
+      "path": "assets/beauties/random/foreign-expansion-20261019-17-v1.png",
+      "status": "pending",
+      "initialSha256": "6e9ea2716478411cc5da3a77d8494d1e70e7aef664d3e063daf621ae9e52b043"
+    },
+    {
+      "path": "assets/beauties/random/foreign-expansion-20261019-18-v1.png",
+      "status": "pending",
+      "initialSha256": "09b3ca0978ed788bc5295041c6a7531e9e0bf9aa609de65406e483dd43e654cf"
+    },
+    {
+      "path": "assets/beauties/random/foreign-expansion-20261019-19-v1.png",
+      "status": "pending",
+      "initialSha256": "34104bfef9905ab14ce3825680a6341ed9ed212e77187f533070d68a0e4cda71"
+    },
+    {
+      "path": "assets/beauties/random/foreign-expansion-20261019-20-v1.png",
+      "status": "pending",
+      "initialSha256": "fe684ce6d4e8d003a6cfbd4fbd906d7a7fb819c9d7506399c1da7330905d91ab"
+    },
+    {
+      "path": "assets/beauties/random/foreign-expansion-20261019-21-v1.png",
+      "status": "pending",
+      "initialSha256": "dc96ed5084f1ad4a56c9297c7bec88e310d98fe5f114d64976fad320d09d114e"
+    },
+    {
+      "path": "assets/beauties/random/foreign-expansion-20261019-22-v1.png",
+      "status": "pending",
+      "initialSha256": "9667e5f2ed21a1bef3c9de5872019bf8b355e36659d87047906503ef97704e52"
+    },
+    {
+      "path": "assets/beauties/random/foreign-expansion-20261019-23-v1.png",
+      "status": "pending",
+      "initialSha256": "f7e3fb121ca8d4c6cd6a28b7ce3633b9d0f32e70c2873ee833cce1a005de7999"
+    },
+    {
+      "path": "assets/beauties/random/foreign-expansion-20261019-24-v1.png",
+      "status": "pending",
+      "initialSha256": "32d0c0274ae42453d9ac9db461c8b602cb2fac2f6a80abfed5461185a24a9dd5"
+    },
+    {
+      "path": "assets/beauties/random/foreign-expansion-20261019-27-v1.png",
+      "status": "pending",
+      "initialSha256": "bf8e1e451eb543a1e2a00b706d299761b70e93347d9584a4fda8b690f95a07fe"
+    },
+    {
+      "path": "assets/beauties/random/foreign-expansion-20261019-28-v1.png",
+      "status": "pending",
+      "initialSha256": "eaae4d659d9690fb6ff3c501f74772415d07bb029427cd9f7880f9ef62494c79"
+    },
+    {
+      "path": "assets/beauties/random/foreign-expansion-20261019-29-v1.png",
+      "status": "pending",
+      "initialSha256": "8841a8f43c9ef5a066ffc085d7951bdf42d6a7b2e3d6ae66940b0ce4b4ea3300"
+    },
+    {
+      "path": "assets/beauties/random/foreign-expansion-20261019-30-v1.png",
+      "status": "pending",
+      "initialSha256": "29883b32abdbb2ced6332a1b4dad827e1ff6a0bbb8bc69fb385cb32e0f50ca29"
+    },
+    {
+      "path": "assets/beauties/random/foreign-expansion-20261019-31-v1.png",
+      "status": "pending",
+      "initialSha256": "97ed889c84e19a6287bb39706271afa8cd6a80417c3b4d324efed18bc6d08525"
+    },
+    {
+      "path": "assets/beauties/random/foreign-expansion-20261019-32-v1.png",
+      "status": "pending",
+      "initialSha256": "a4d84c32f4ba2e8bf39e0174ef4032044bf367b77b7432217a27a46ba7ae342e"
+    },
+    {
+      "path": "assets/beauties/random/foreign-expansion-20261019-33-v1.png",
+      "status": "pending",
+      "initialSha256": "33aaf725feb505ad3b6b4746ec57c1031b982f95182f1835905d769d448d992d"
+    },
+    {
+      "path": "assets/beauties/random/foreign-expansion-20261019-34-v1.png",
+      "status": "pending",
+      "initialSha256": "a796076073c83412a14896ac5fbdb1dcb603abb9dd22c99e12c0b7331ca21cbc"
+    },
+    {
+      "path": "assets/beauties/random/foreign-expansion-20261019-35-v1.png",
+      "status": "pending",
+      "initialSha256": "7b8af131420885b7d8700b286e9c23a5d4fa81d283ee5d362d1d2d295d323e70"
+    },
+    {
+      "path": "assets/beauties/random/foreign-expansion-20261019-36-v1.png",
+      "status": "pending",
+      "initialSha256": "468856e559bf0295e09df1966adc297c793c90202269f44191df6a6abc983c7a"
+    },
+    {
+      "path": "assets/beauties/random/foreign-expansion-20261019-37-v1.png",
+      "status": "pending",
+      "initialSha256": "3511c97b94ed236a16a734a9e5d6576e4e03c0c9944db4f20bbfb1764a221be1"
+    },
+    {
+      "path": "assets/beauties/random/foreign-expansion-20261019-38-v1.png",
+      "status": "pending",
+      "initialSha256": "df0226ab88c649c1f2547c9992689aae5072f2d0b559fa9d84e83387036e158c"
+    },
+    {
+      "path": "assets/beauties/random/foreign-expansion-20261019-39-v1.png",
+      "status": "pending",
+      "initialSha256": "0e1a8bd5e11e7c33cc13c7fe8dc5fa387a580860e63b4e5995b10398e22db6be"
+    },
+    {
+      "path": "assets/beauties/random/foreign-expansion-20261019-40-v1.png",
+      "status": "pending",
+      "initialSha256": "4aebbaed09a34bfeb84915377c7d90ec06dbec6626f354c12a6aee5860bbda5f"
+    }
+  ]
+}

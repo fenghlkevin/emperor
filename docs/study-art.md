@@ -5,7 +5,7 @@
 
 进入御书房后，在素材解码完成时立即结算一次研读；消耗40体力，智慧按随机、年龄与皇帝特长增长，最高500，显示实际增量并写入宫廷记录。提前离室或素材载入失败不结算；离室沿用六阶段推进。减少动态效果偏好不改变结算时点。
 
-素材：`assets/sketch-study-v1.png`，通过内置 image_gen 生成。打包已有 `assets/sketch-*.png` 规则覆盖该素材。
+素材：`assets/sketch-study-v1.png`，通过内置 image_gen 生成。打包已有 `assets/**/*` 规则覆盖该素材。
 
 生成提示词：
 
@@ -21,6 +21,6 @@ Use case: historical-scene. Game background illustration for Chinese emperor's i
 
 ## 空间朝向修订
 
-当前最终素材：`assets/sketch-study-v3.png`。内置 image_gen 编辑 v2：仅修改皇帝后方建筑，将通向竹园的开口替换为实墙、雕木描金山水屏风，侧面格窗采光。观者位于入口，皇帝朝向入口，背靠屏风。五名人物、御案、书卷位置与比例保留。
+当前最终素材：`assets/scenes/study/sketch-study-v3.png`。内置 image_gen 编辑 v2：仅修改皇帝后方建筑，将通向竹园的开口替换为实墙、雕木描金山水屏风，侧面格窗采光。观者位于入口，皇帝朝向入口，背靠屏风。五名人物、御案、书卷位置与比例保留。
 
 提示词：Edit only the architecture behind the emperor. Viewer stands at the entrance looking into the room; emperor faces entrance and viewer. Replace open rear courtyard doorway with solid interior rear wall and carved dark wooden imperial folding screen with restrained gilded mountains and clouds. No doorway or garden passage behind emperor. Warm light enters side lattice windows. Preserve five people, natural proportions, identities, short peach and jade jackets of adult maids, poses, positions, desk, chair, book coordinates, floor, framing, painterly style. No text, UI or watermark.

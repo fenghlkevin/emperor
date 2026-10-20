@@ -5,3 +5,16 @@
 .relief-dialog .report-table{overflow-x:auto}
 .relief-command-buttons{display:flex;gap:8px;align-items:center}
 @media(max-width:800px){.relief-command-buttons{flex-direction:column;align-items:stretch}.relief-dialog .revenue-command{gap:8px}.relief-dialog .revenue-command small{display:block;margin-left:0}}
+.grain-market-content{overflow:auto;scrollbar-width:thin;color:#4d3c28;font-size:clamp(12px,1.15cqw,18px)}
+.grain-market-intro{margin:0 0 14px;text-align:center;color:#79603c}
+.grain-market-home{display:flex;justify-content:center;gap:40px;padding:15px;border-block:1px solid #b89b6655;background:#bc9b4a13}
+.grain-market-home strong{font-size:1.6em;font-weight:400;color:#285640;margin:0 6px}
+.grain-market-content form{display:flex;gap:24px;margin:18px 0;align-items:end}
+.grain-market-content label{display:grid;gap:7px;flex:1}
+.grain-market-content select,.grain-market-content input{width:100%;min-width:0;padding:10px 12px;font:inherit;border:1px solid #b39861;background:#fff5de99;color:#47341e}
+.grain-market-price{color:#816a46;font-size:.85em}
+.grain-market-content h2{font-size:1.3em;font-weight:400;letter-spacing:2px}
+.grain-market-ledger{display:grid;grid-template-columns:1fr 1fr;gap:20px;border-block:1px solid #b3986155;padding:10px 0}
+.grain-market-ledger section{padding:0 15px}.grain-market-ledger section+section{border-left:1px solid #b3986155}.grain-market-ledger h3{margin:0;font-weight:400}.grain-market-ledger b{font-weight:400;color:#285640;font-variant-numeric:tabular-nums}
+.grain-market-command{display:flex;align-items:center;gap:20px;padding:16px 0}.grain-market-command>div{flex:1}.grain-market-command strong{font-size:1.4em;color:#903b29;font-weight:400}.grain-market-command p{margin:4px 0}.grain-market-command button{padding:12px 20px;font:inherit}.grain-market-command .court-vermilion{color:#f4dfac;background:linear-gradient(#a3432e,#79281e);border:3px double #cda86b;border-radius:6px;cursor:pointer}.grain-market-command button:disabled{opacity:.5;cursor:default}.grain-market-command [role=status]{color:#9a3e29}.grain-market-history{border-top:1px solid #b3986155;padding-top:12px;font-size:.9em}.grain-market-history summary{cursor:pointer}
+@media(max-width:700px){.grain-market-content form,.grain-market-home,.grain-market-command{flex-direction:column;gap:12px;align-items:stretch}.grain-market-ledger{grid-template-columns:1fr;gap:6px}.grain-market-ledger section+section{border-left:0;border-top:1px solid #b3986155;padding-top:10px}.grain-market-home{padding:10px}.grain-market-content{font-size:14px}.grain-market-ledger section{padding:0}}

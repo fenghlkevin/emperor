@@ -23,7 +23,7 @@ export function trainingGain(age,specialty,kind,random=Math.random){
  return Math.max(1,base-agePenalty)+(TRAINING[kind].specialty!==undefined&&specialty===TRAINING[kind].specialty?1:0);
 }
 export function companionRecovery(person,member=true){
- return Math.trunc(person.appearance**2/40)+(member?person.experience+(person.rank==null?5:person.rank<5?50:person.rank<14?20:5):0);
+ return (person.baseAbility??Math.trunc(person.appearance**2/40))+(member?person.experience+(person.rank==null?5:person.rank<5?50:person.rank<14?20:5):0);
 }
 export function companyLifeCost(streak){return [0,0,2,4,8,16,24][streak]??32;}
 // Existing non-DOS talent/talent-generation models still operate on a 100 scale.

@@ -16,3 +16,34 @@ test('execution is irreversible and undiscovered officials cannot be sentenced',
 test('amnesty adds real population once without releasing imprisoned officials; funding validates boundaries',()=>{
  let s=fund(newGame('赦令'));const id=courtJusticeCases(s)[0].official.id;s=executeJustice(s,courtJusticePlan(s,{kind:'imprison',officialId:id}).command).state;const q=courtJusticePlan(s,{kind:'amnesty'}),n=executeJustice(s,q.command).state;assert.match(q.warning,/不释放/);assert.equal(courtJusticeCases(n,'prison').length,1);for(const p of s.domestic.provinces.filter(p=>p.countryId===s.domestic.playerCountryId))assert.equal(n.domestic.provinces.find(x=>x.id===p.id).population.total,p.population.total+Math.max(1,Math.floor(p.population.total*.005)));assert.throws(()=>courtJusticePlan(n,{kind:'amnesty'}),/本旬/);for(const amount of [NaN,-1,.5,10001])assert.throws(()=>courtJusticePlan(s,{kind:'funding',amount}));validateSave(n);
 });
+
+test('pending justice cases remain on the court desk until all are resolved',async()=>{
+ const {courtAgenda}=await import('../src/court-agenda.mjs');
+ let s=fund(newGame('奏章'));const agenda=()=>courtAgenda(s,{limit:Infinity});
+ const petition=agenda().find(a=>a.id==='justice');assert.ok(petition);assert.equal(petition.office,'justice-minister');
+ assert.ok(courtAgenda(s,{archived:[petition.archiveKey],limit:Infinity}).some(a=>a.id==='justice'));
+ for(const c of courtJusticeCases(s))s=executeJustice(s,courtJusticePlan(s,{kind:'imprison',officialId:c.official.id}).command).state;
+ assert.equal(agenda().some(a=>a.id==='justice'),false);
+});
+
+test('no action dismisses a report durably without changing the official or clearing a plot',()=>{
+ let s=fund(newGame('不予处理'));const row=courtJusticeCases(s)[0],id=row.official.id;
+ row.official.plotTurn=s.turn;const before=structuredClone(row.official),treasury=s.stats.treasury;
+ const plan=courtJusticePlan(s,{kind:'dismiss',officialId:id});assert.equal(row.official.caseDismissed,undefined);
+ s=executeJustice(s,plan.command).state;const o=s.domestic.justice.officials.find(o=>o.id===id);
+ assert.equal(o.status,'serving');assert.equal(o.loyalty,before.loyalty);assert.equal(o.plotTurn,before.plotTurn);assert.equal(s.stats.treasury,treasury);assert.ok(!courtJusticeCases(s).some(c=>c.official.id===id));
+ s=validateSave(JSON.parse(JSON.stringify(s)));s=fund(s);assert.ok(!courtJusticeCases(s).some(c=>c.official.id===id));
+ assert.throws(()=>courtJusticePlan(s,{kind:'dismiss',officialId:id}));
+});
+
+test('reinstate returns a prisoner to the appointable roster without displacing the incumbent',async()=>{
+ const {servingOfficials,officeId}=await import('../src/personnel-actions.mjs');
+ let s=fund(newGame('启用'));const id=courtJusticeCases(s)[0].official.id;
+ s=executeJustice(s,courtJusticePlan(s,{kind:'imprison',officialId:id}).command).state;
+ const before=structuredClone(s.domestic.justice.officials.find(o=>o.id===id));
+ s=executeJustice(s,courtJusticePlan(s,{kind:'reinstate',officialId:id}).command).state;
+ const o=s.domestic.justice.officials.find(o=>o.id===id);assert.equal(o.status,'serving');assert.equal(officeId(o),null);assert.equal(o.office,'待命');assert.equal(o.provinceId,null);assert.equal(o.loyalty,before.loyalty);assert.equal(o.plotTurn,null);
+ assert.ok(servingOfficials(s.domestic).some(o=>o.id===id));assert.ok(!courtJusticeCases(s,'prison').some(c=>c.official.id===id));assert.ok(!courtJusticeCases(s).some(c=>c.official.id===id));
+ const prison=structuredClone(o.prison);settleJustice(s.domestic,s.turn+1,()=>1);assert.deepEqual(o.prison,prison);validateSave(JSON.parse(JSON.stringify(s)));
+ assert.throws(()=>courtJusticePlan(s,{kind:'reinstate',officialId:id}));
+});

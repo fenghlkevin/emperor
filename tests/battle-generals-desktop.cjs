@@ -1,0 +1,39 @@
+const {app,BrowserWindow}=require('electron'),fs=require('node:fs'),path=require('node:path');
+app.setPath('userData',`/private/tmp/emperor-generals-${process.pid}`);
+app.whenReady().then(async()=>{
+ const selectedKey=process.env.GENERAL_KEY??'',outDir=path.join(__dirname,'../output/battle-generals',selectedKey||'gallery');
+ const timer=setTimeout(()=>app.exit(1),60000),w=new BrowserWindow({show:false,width:1440,height:1000,webPreferences:{sandbox:true,contextIsolation:true,backgroundThrottling:false}});
+ const run=c=>w.webContents.executeJavaScript(`(async()=>{${c}})()`),pause=ms=>new Promise(r=>setTimeout(r,ms));
+ try{
+  await w.loadFile(path.join(__dirname,'../index.html'));
+  await run(`const {BATTLE_GENERALS}=await import('./src/battle-general-art.mjs'),{piece,playSprite}=await import('./src/battle-sprites.mjs');
+   window.catalog=BATTLE_GENERALS.filter(g=>!${JSON.stringify(selectedKey)}||g.key===${JSON.stringify(selectedKey)}).slice(0,${Number(process.env.GENERAL_PREVIEW_COUNT)||26});
+   document.body.innerHTML='<svg width="1440" height="800" viewBox="0 0 1440 900"><rect width="1440" height="900" fill="#d8cfb8"/><text x="24" y="36" font-size="24" fill="#433b2d">战地名将 · 骑战与兵器招式</text>'+catalog.map((g,i)=>'<g transform="translate('+(105+i%7*205)+','+(180+Math.floor(i/7)*215)+')"><g transform="scale(1.28)">'+piece({id:g.key,kind:'spears',side:i%2?'enemy':'home',general:{id:g.id,name:g.name}})+'</g><text text-anchor="middle" y="65" font-size="22" fill="#433b2d">'+g.name+'</text></g>').join('')+'</svg>';
+   await Promise.all(catalog.map(g=>new Promise((resolve,reject)=>{const im=new Image();im.onload=resolve;im.onerror=()=>reject(Error('Missing '+g.asset));im.src=g.asset;})));
+   window.seen={};window.stops=[];for(const el of document.querySelectorAll('.unit-sprite[data-sprite-kind^="general-"]')){seen[el.dataset.spriteKind]=new Set();stops.push(playSprite(el,'attack'));}
+   window.sample=setInterval(()=>document.querySelectorAll('.unit-sprite[data-sprite-kind^="general-"]').forEach(el=>seen[el.dataset.spriteKind].add(el.dataset.frame)),15);`);
+  await pause(1300);
+  await run(`clearInterval(sample);for(const [key,frames]of Object.entries(seen))if(frames.size!==4)throw Error(key+' skipped attack frames');stops.forEach(f=>f());window.play=async action=>{const {playSprite}=await import('./src/battle-sprites.mjs');window.stops=[...document.querySelectorAll('.unit-sprite[data-sprite-kind^="general-"]')].map(el=>playSprite(el,action));};await play('walk');`);
+  await pause(500);await run(`stops.forEach(f=>f());await new Promise(r=>requestAnimationFrame(()=>requestAnimationFrame(r)));`);
+  fs.mkdirSync(outDir,{recursive:true});
+  fs.writeFileSync(path.join(outDir,'standing.png'),(await w.webContents.capturePage()).toPNG());
+  await run(`await play('attack');`);await pause(390);await run(`await new Promise(r=>requestAnimationFrame(()=>requestAnimationFrame(r)));`);
+  fs.writeFileSync(path.join(outDir,'attack.png'),(await w.webContents.capturePage()).toPNG());
+  await run(`stops.forEach(f=>f());const {newGame}=await import('./src/game.mjs'),{beginWar,generals,borderingCountries}=await import('./src/war.mjs'),{openWar}=await import('./src/war-ui.mjs');const s=newGame('名将战地验收'),gs=generals(s.domestic);window.s=beginWar(s,{id:1,kitVersion:1,kind:'war',targetId:borderingCountries(s.domestic)[0].id,generalId:gs[0].id,commanderSquad:{kind:'cavalry',count:100},squads:[{kind:'spears',count:100,generalId:gs[1].id}]});const b=window.s.domestic.war.battle;const actor=b.units.find(u=>u.side==='home'&&!u.commander),target=b.units.find(u=>u.side==='enemy'&&!u.commander);actor.x=2;actor.y=4;target.x=4;target.y=4;target.count=target.initial=100;target.dead=0;b.order=[actor.id,...b.order.filter(id=>id!==actor.id)];b.cursor=0;window.attackTarget=target.id;window.actorId=actor.id;b.units.filter(u=>u.side==='home').forEach((u,i)=>u.general={...u.general,id:(catalog[i]??catalog[0]).id,name:(catalog[i]??catalog[0]).name});if(${JSON.stringify(selectedKey)}){for(const u of b.units.filter(u=>u.side==='enemy'&&(u.commander||u.id===target.id)))u.general={...u.general,id:catalog[0].id,name:catalog[0].name};const guard=b.units.find(u=>u.side==='home'&&u.commander);guard.general.id='recruit-'+catalog[0].id;}window.expectedWeapon=(await import('./src/battle-sprites.mjs')).weaponStyle(actor);document.body.innerHTML='';openWar(window.s,document.body,next=>{window.s=next;},()=>{});if(!document.querySelector('[data-sprite-kind="'+catalog[0].key+'"]')||(catalog.length>1&&!document.querySelector('[data-sprite-kind="'+catalog[1].key+'"]')))throw Error('battle did not resolve identities');`);
+  await pause(500);fs.writeFileSync(path.join(outDir,'battle.png'),(await w.webContents.capturePage()).toPNG());
+  await run(`window.walkSeen=false;window.walkSample=setInterval(()=>{if(document.querySelector('[data-unit="'+window.actorId+'"] .unit-sprite')?.dataset.animation==='walk')window.walkSeen=true;},10);document.querySelector('[data-unit="'+window.attackTarget+'"]').dispatchEvent(new MouseEvent('click'));`);
+  for(let i=0;i<100;i++){if(await run(`return !!document.querySelector('[data-effect]');`))break;await pause(20);}
+  await run(`clearInterval(window.walkSample);if(!window.walkSeen)throw Error('实际战斗未播放行进');const fx=document.querySelector('[data-effect]');if(!fx||fx.dataset.weapon!==window.expectedWeapon)throw Error('未播放对应兵器冲击');if(${JSON.stringify(selectedKey)}&&document.querySelectorAll('[data-sprite-kind="'+catalog[0].key+'"]').length<4)throw Error('双方主将与部队未全部接入');`);
+  fs.writeFileSync(path.join(outDir,'combat.png'),(await w.webContents.capturePage()).toPNG());
+  if(selectedKey){
+   for(let i=0;i<150;i++){if(await run(`return document.querySelector('dialog')?.dataset.busy==='false';`))break;await pause(20);}
+   await run(`document.querySelector('[data-save-close]').click();document.querySelectorAll('dialog:not([open])').forEach(d=>d.remove());const b=window.s.domestic.war.battle,a=b.units.find(u=>u.id===window.actorId),t=b.units.find(u=>u.id===window.attackTarget);t.count=t.initial=1;t.dead=0;t.retaliated=false;a.moved=false;a.attacked=false;a.moveSpent=0;a.waited=false;a.retaliated=false;b.order=[a.id,...b.order.filter(id=>id!==a.id)];b.cursor=0;const {openWar}=await import('./src/war-ui.mjs');openWar(window.s,document.body,next=>{window.s=next;},()=>{});document.querySelector('[data-unit="'+window.attackTarget+'"]').dispatchEvent(new MouseEvent('click'));`);
+   let fallen=false;
+   for(let i=0;i<150;i++){fallen=await run(`const t=document.querySelector('[data-unit="'+window.attackTarget+'"]');return t?.dataset.reaction==='death'&&(t.querySelector('.unit-leader .unit-idle')??t.querySelector('.unit-idle'))?.dataset.idleKind==='mounted'&&t.querySelector('.unit-art').getAnimations().some(a=>a.effect.getKeyframes().some(f=>Number(f.opacity)===0));`);if(fallen)break;await pause(10);}
+   if(!fallen){console.log(await run(`return {log:window.s.domestic.war.battle.log.slice(-4),target:document.querySelector('[data-unit="'+window.attackTarget+'"]')?.outerHTML.slice(0,500),busy:document.querySelector('dialog')?.dataset.busy,message:document.querySelector('.battle-message')?.textContent};`));throw Error('未播放骑乘阵亡反馈');}
+   await run(`const body=document.querySelector('[data-unit="'+window.attackTarget+'"] .unit-art');const death=body.getAnimations().find(a=>a.effect.getKeyframes().some(f=>Number(f.opacity)===0));death.pause();death.currentTime=death.effect.getTiming().duration*.65;await new Promise(r=>requestAnimationFrame(()=>requestAnimationFrame(r)));`);
+   fs.writeFileSync(path.join(outDir,'mounted-death.png'),(await w.webContents.capturePage()).toPNG());
+  }
+  console.log(selectedKey?selectedKey+'单人桌面验收通过：图集、行进、攻击、双方亲卫与招募身份、实战命中、骑乘阵亡':'整批图集验收通过：26位资源加载、逐帧攻击、行进复位、镜像及抽样战争；逐人实战验收另行记录');clearTimeout(timer);app.exit(0);
+ }catch(e){console.error(e);clearTimeout(timer);app.exit(1);}
+});

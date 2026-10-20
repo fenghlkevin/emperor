@@ -1,0 +1,45 @@
+/* SVG native outlines use map units, so a normal focus ring can cover a realm.
+   Keep pointer focus quiet and render keyboard focus in fixed screen pixels. */
+:is(.civil-map,.court-atlas-map,.garrison-map,.special-map,.diplomatic-map,.war-target-map) [tabindex]:focus{
+ outline:none;
+}
+:is(.civil-map,.court-atlas-map,.garrison-map,.special-map,.diplomatic-map,.war-target-map) path[tabindex]:focus-visible{
+ stroke:#743c2d;
+ stroke-width:2px;
+ vector-effect:non-scaling-stroke;
+}
+:is(.civil-map,.court-atlas-map,.garrison-map,.special-map,.diplomatic-map,.war-target-map) :is(text[tabindex],g[tabindex] text):focus-visible,
+.court-atlas-map g[tabindex]:focus-visible text{
+ fill:#743c2d;
+ text-decoration:underline;
+}
+/* Gold always means current ownership, including annexed campaign regions. */
+.ink-mode .realm.home,.ink-mode .realm.home:hover,.ink-mode .realm.home.selected{fill:#d8ae65;fill-opacity:1}
+.ink-mode .province.is-owned{fill:#d8ae65;fill-opacity:1}
+.ink-mode .province.is-foreign{fill:#ae8c61;fill-opacity:1}
+.ink-mode .realm.home.selected,.ink-mode .province.is-owned.selected{fill:#bb8155}
+.diplomatic-map path.is-home,.war-target-map path.home{fill:#d8ae65;fill-opacity:1}
+/* Owned regions remain separate administrative states on both map levels. */
+.domestic-atlas .civil-map .realm.home,
+.domestic-atlas .civil-map .realm.home:is(:hover,.selected){stroke:#715436;stroke-width:1px;vector-effect:non-scaling-stroke;stroke-dasharray:none}
+.domestic-atlas[data-level=world] .civil-map .province,
+.domestic-atlas .regional-readonly-map .province{stroke:#715436;stroke-width:1px;vector-effect:non-scaling-stroke;stroke-dasharray:none;pointer-events:all}
+.domestic-atlas[data-level=world] .civil-map .province{fill:transparent}
+.domestic-atlas[data-level=world] .civil-map .province-name{display:block;font-size:calc(1.35px * var(--ink-label-scale,1));stroke-width:calc(.18px * var(--ink-label-scale,1))}
+.domestic-atlas[data-level=world] .civil-map .realm-name[data-country=sheng]{display:none}
+.domestic-atlas .civil-map .home-boundary{stroke-width:1px}
+/* Every interactive atlas shows state boundaries in screen pixels. */
+.court-atlas-map path[data-atlas-province],
+.garrison-map path[data-garrison-depot],
+.special-map path[data-special-province],
+.diplomatic-map path[data-diplomatic-country],
+.war-target-map path[data-war-country]{stroke:#715436;stroke-width:1.2px;stroke-dasharray:none;vector-effect:non-scaling-stroke;stroke-linejoin:round;stroke-linecap:round}
+:is(.court-atlas-map,.garrison-map,.special-map,.diplomatic-map,.war-target-map) :is(.atlas-state-border,.atlas-country-border){fill:none;stroke:#715436;stroke-width:1.2px;vector-effect:non-scaling-stroke;pointer-events:none}
+.court-atlas-map path[data-atlas-province]:is(.is-target,.is-source),
+.garrison-map path[data-garrison-depot]:is(.is-source,.is-target),
+.special-map path[data-special-province].is-selected,
+.diplomatic-map path[data-diplomatic-country].is-selected,
+.war-target-map path[data-war-country].chosen{stroke:#743c2d;stroke-width:2px}
+/* Territory pigments must not change the black/white ownership masks. */
+:is(.court-atlas-map,.garrison-map,.special-map,.diplomatic-map,.war-target-map,.civil-map) defs mask path{fill:#000;fill-opacity:1;stroke:none;opacity:1}
+:is(.court-atlas-map,.garrison-map,.special-map,.diplomatic-map,.war-target-map,.civil-map) defs mask rect{fill:#fff;fill-opacity:1;stroke:none;opacity:1}

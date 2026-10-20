@@ -1,0 +1,58 @@
+.turn-economy-report{color:#302a21;background:#f5efdf;font:14px/1.6 system-ui,sans-serif;border:2px solid #9e8453;border-radius:8px}
+.turn-economy-report .civil-header{position:static;background:#423723;padding:12px 20px;min-height:48px}
+.turn-economy-report .civil-header h1{font-size:22px;letter-spacing:2px}
+.turn-economy-report .civil-tabs{position:static;order:0;padding:10px 20px;background:#e9dfc9;flex-wrap:wrap}
+.turn-economy-report .civil-tabs button{font-size:14px;min-height:40px}
+.turn-economy-report .civil-content{position:static;flex:1;width:auto;max-height:none;overflow:auto;min-height:0;padding:20px}
+.turn-economy-report h2{font-size:20px;margin:0 0 14px}.turn-economy-report h3{font-size:18px;margin:24px 0 12px}
+.turn-economy-report .civil-table{overflow-x:auto;margin:12px 0;border-color:#c5b68f}
+.turn-economy-report .civil-table table{width:100%;border-collapse:collapse;font-size:14px;white-space:nowrap}
+.turn-economy-report .civil-table th,.turn-economy-report .civil-table td{padding:10px 12px;text-align:right;border-bottom:1px solid #d8cdb5;font-size:14px}
+.turn-economy-report .civil-table th:first-child,.turn-economy-report .civil-table td:first-child{text-align:left}
+.turn-economy-report .civil-table th{background:#e9dfc9;color:#4c3e27}.turn-economy-report .civil-note{font-size:13px;line-height:1.8;color:#685c47}
+.turn-economy-report summary{cursor:pointer;padding:10px 0;font-size:15px}
+@media(max-width:600px){.turn-economy-report .civil-content{padding:12px!important}.turn-economy-report .civil-header{padding:10px 12px}.turn-economy-report .civil-tabs{padding:8px 12px}}
+.turn-economy-report .report-header-actions{display:flex;align-items:center;gap:12px}
+.turn-economy-report .civil-header .civil-tabs{padding:0;background:transparent;border:0;gap:4px}
+.turn-economy-report .civil-header .civil-tabs button{color:#f8f1df;border:1px solid transparent}
+.turn-economy-report .civil-header .civil-tabs button.active{background:#685736;border-color:#c4ad7a}
+/* Fixed leaves, like the ministry's paper folios; all navigation stays visible. */
+.court-accounts-entry{display:inline-grid;place-items:center;width:34px;height:34px;padding:0;border:1px solid #b9a57970;border-radius:50%;background:#252d26;color:#dac695;font-size:22px;cursor:pointer}.court-accounts-entry:hover{background:#4d5038}.court-accounts-entry:focus-visible{outline:2px solid #e8ce90;outline-offset:3px}
+/* The ministry atlas supplies the painted frame, title and close control. */
+.court-atlas.economy-album{width:min(1600px,98vw,153dvh);height:auto;aspect-ratio:1.6;max-height:92dvh;background:transparent;border:0;border-radius:0;overflow:visible;padding:0;font-family:GovernanceKai,'Songti SC',serif;color:#342b20;display:block}
+.court-atlas.economy-album:not([open]){display:none}
+.economy-album>*{box-sizing:border-box;min-height:0}
+.economy-album>.economy-tabs{position:absolute;inset:13.5% 8% auto;height:6%;display:flex;align-items:center;gap:10px;padding:0;margin:0;border:0;background:none}
+.economy-tabs>span{margin-left:auto;color:#6a5436;font-size:clamp(10px,1.1cqw,16px);white-space:nowrap}
+.economy-album button{font-family:inherit;cursor:pointer}
+.economy-tabs button{font-size:clamp(11px,1.1cqw,17px);padding:4px 12px;min-height:30px}
+.economy-album button:disabled{opacity:.4;cursor:default}
+.economy-album>.economy-leaf{position:absolute;inset:21% 8% 19%;padding:0;overflow:hidden;display:flex;flex-direction:column}
+.economy-pictures{flex:1;min-height:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:3%}
+.economy-pictures article{position:relative;min-width:0;display:flex;flex-direction:column}
+.economy-pictures h2{margin:0 0 6px;order:-1;font-size:clamp(17px,2cqw,30px);font-weight:400;letter-spacing:4px}
+.economy-art{flex:1;min-height:0;background:url('../assets/scenes/governance/sketch-governance-scenes-v1.png') 0 0/200% 200% no-repeat;mix-blend-mode:multiply;mask-image:url('./governance-ink-mask.svg');mask-size:100% 100%}
+.economy-art-treasury{background-image:url('../assets/scenes/governance/sketch-governance-treasury-states-v1.png')}
+.economy-art-grain{background-position:100% 0}
+.economy-pictures article>div:not(.economy-art){display:flex;justify-content:space-between;align-items:baseline;gap:6px;padding:5px 0;border-bottom:1px solid #9e875433}
+.economy-pictures small{font-size:clamp(10px,1.15cqw,17px);color:#766345}
+.economy-pictures strong{font-size:clamp(18px,2.2cqw,33px);font-weight:400;color:#254e3c;white-space:nowrap}
+.economy-pictures em{font-size:clamp(10px,1cqw,15px);font-style:normal;margin-left:4px}
+.economy-album>.economy-pagination{position:absolute!important;inset:auto 8% 10%!important;height:7%;display:flex;align-items:center;justify-content:space-between;gap:10px;margin:0!important;padding:5px 0 0!important;border-top:1px solid #a88a5466;background:none!important;color:#6f5736!important;transform:none!important;width:auto!important;letter-spacing:0!important}
+.economy-pagination>div{display:flex;align-items:center;justify-content:center;gap:12px;min-width:0}
+.economy-pagination button{font-size:clamp(12px,1.3cqw,20px);min-height:30px;padding:3px 12px}
+.economy-pagination span{font-size:clamp(10px,1.1cqw,16px);white-space:nowrap}
+.economy-pagination select{min-width:0;width:28vw;max-width:310px;padding:5px 8px;font:clamp(10px,1.1cqw,16px) GovernanceKai,serif;color:#6f5736}
+.economy-leaf>h2{font-size:clamp(18px,2cqw,30px);font-weight:400;margin:0 0 10px}
+.economy-province{color:#99372b!important;margin:0 0 6px;font-size:clamp(16px,1.8cqw,27px)!important}
+.economy-fields{flex:1;min-height:0;display:grid;grid-template-columns:1fr 1fr;grid-auto-rows:minmax(0,1fr);gap:12px}
+.economy-fields>div{border-bottom:1px solid #a88a5466;padding:6px 10px;min-width:0;display:flex;flex-direction:column;justify-content:center}
+.economy-fields small{display:block;color:#766345;font-size:clamp(11px,1.3cqw,19px)}
+.economy-fields strong{font-size:clamp(19px,2.5cqw,38px);color:#254e3c;font-weight:400;overflow-wrap:anywhere}
+.economy-help{box-sizing:border-box;width:min(620px,90vw);max-height:84dvh;padding:24px;border:1px solid #b49c6d;border-radius:2px;background:#f0e7d0;color:#342b20;font:17px/1.7 GovernanceKai,serif;overflow:hidden}
+.economy-help::backdrop{background:#17110bc4;backdrop-filter:blur(5px)}
+.economy-help h2{margin:0 0 15px;font-size:23px;font-weight:400}.economy-help p{margin:0 0 18px;overflow-wrap:anywhere;font-size:clamp(12px,2vw,17px)}
+.economy-help footer{position:static;display:flex;justify-content:space-between;align-items:center;gap:8px;background:none;color:inherit;transform:none;letter-spacing:0;width:auto}
+.economy-help button{padding:4px 12px;min-height:34px;font:inherit;cursor:pointer}
+@media(max-width:700px){.court-atlas.economy-album{width:98vw;height:88dvh;max-height:88dvh;aspect-ratio:auto}.economy-album>.economy-tabs{inset:14% 8% auto;height:6%;gap:5px}.economy-tabs button{font-size:12px;padding:3px 7px}.economy-tabs>span{font-size:10px}.economy-album>.economy-leaf{inset:22% 8% 19%}.economy-pictures{grid-template-columns:1fr;grid-template-rows:repeat(3,minmax(0,1fr));gap:10px}.economy-pictures article{display:grid;grid-template-columns:30% 1fr;grid-template-rows:auto repeat(3,1fr);column-gap:10px}.economy-pictures h2{grid-column:2;margin:0;font-size:18px}.economy-art{grid-column:1;grid-row:1/5}.economy-pictures article>div:not(.economy-art){grid-column:2;padding:1px 0}.economy-pictures strong{font-size:19px}.economy-pictures small{font-size:11px}.economy-pictures em{font-size:10px}.economy-pagination>div{gap:3px}.economy-pagination select{width:110px;padding:5px 2px;font-size:10px}.economy-pagination button{font-size:11px;padding:2px 7px}.economy-pagination span{font-size:10px}.economy-fields{gap:8px}.economy-fields small{font-size:12px}.economy-fields strong{font-size:23px}}
+@media(max-width:700px){.economy-pictures article{line-height:1.2;grid-template-rows:auto repeat(3,minmax(0,1fr))}.economy-pictures h2{font-size:17px;line-height:1.3}.economy-pictures strong{font-size:17px;line-height:1.2}.economy-pictures small{font-size:10px}.economy-pictures article>div:not(.economy-art){padding:0;align-items:center}}

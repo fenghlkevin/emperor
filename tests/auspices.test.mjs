@@ -10,8 +10,8 @@ test('all twelve auspices grant real resources, preserve population and survive 
  assert.equal(r.kind,e.id);const p=s.domestic.provinces.find(p=>p.id===r.provinceId),old=p&&before.domestic.provinces.find(v=>v.id===p.id);
  if(e.resource==='treasury')assert.equal(s.stats.treasury-before.stats.treasury,e.amount);
  else if(e.scope==='central')assert.equal(s.domestic.troopKits.depots.central.stock[e.resource]-before.domestic.troopKits.depots.central.stock[e.resource],e.amount);
- else if(e.resource==='cash')assert.equal(p.status.cash-old.status.cash,e.amount);
- else if(e.resource==='grain')assert.equal(p.welfare.grainReserve-old.welfare.grainReserve,e.amount);
+ else if(e.resource==='cash')assert.equal(s.domestic.countries[0].fiscal.treasury-before.domestic.countries[0].fiscal.treasury,e.amount);
+ else if(e.resource==='grain')assert.equal(s.domestic.countries[0].fiscal.grain-before.domestic.countries[0].fiscal.grain,e.amount);
  else {assert.equal(p.population.total-old.population.total,e.amount);if(e.resource!=='people')assert.equal(p.population.professions[e.resource]-old.population.professions[e.resource],e.amount);}
  assert.deepEqual(validateSave(JSON.parse(JSON.stringify(s))),s);
  const saved=JSON.stringify(s);assert.equal(settleAuspices(s,()=>0),null);assert.equal(JSON.stringify(s),saved);

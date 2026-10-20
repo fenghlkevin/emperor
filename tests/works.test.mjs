@@ -12,8 +12,8 @@ test('special buildings count actual records and stay within the chosen country'
  validateDomestic(d);assert.equal(worksSummary(d).specialTotal,5);assert.equal(worksSummary(d).specialBuildings[0].provinceName,'河北');assert.equal(worksSummary(d,'rome').specialTotal,9);
 });
 test('welfare, workers, development and output agree with shared economic calculations',()=>{
- const d=createDomestic(),p=d.provinces[0];p.welfare.grainReserve=0;p.economy.industry.developedArea=0;
- const detail=worksProvince(p);assert.equal(detail.grainSecurity,grainSecurity(p));assert.equal(detail.grainSecurity,0);
+ const d=createDomestic(),p=d.provinces[0];d.countries[0].fiscal.grain=0;p.economy.industry.developedArea=0;
+ const detail=worksProvince(p,d);assert.equal(detail.grainSecurity,grainSecurity(p));assert.equal(detail.grainSecurity,0);
  assert.equal(detail.industries.find(i=>i.key==='agriculture').workers,p.population.professions.farmers);assert.equal(detail.industries.find(i=>i.key==='industry').developmentRate,0);assert.equal(detail.industries.find(i=>i.key==='industry').output,0);for(const row of detail.industries)assert.equal(row.output,outputFor(p,row.key));
 });
 test('invalid special records rejected; querying and settlement preserve inventory',()=>{

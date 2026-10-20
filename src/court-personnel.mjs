@@ -8,7 +8,7 @@ export function personnelSeat(d,officeIdValue){
 }
 // The preview runs only on a private domain copy; no fictional scores or costs.
 export function courtPersonnelPlan(state,proposal){
- if(!['assign','honor','dismiss','delegate','governanceBudget','exam'].includes(proposal.kind))throw Error('请选择有效的吏部政令');
+ if(!['assign','honor','dismiss','delegate','governanceBudget','exam','hanlin-enroll','hanlin-stop'].includes(proposal.kind))throw Error('请选择有效的吏部政令');
  const command={...proposal,id:state.domestic.personnel.nextId},d=state.domestic;
  if(command.kind==='delegate'&&d.personnel.delegations.includes(command.provinceId)===command.enabled)throw Error(command.enabled?'此州已经委任':'此州已由陛下亲理');
  if(command.kind==='governanceBudget'&&command.reserve===d.governance.reserve&&command.budget===d.governance.budget)throw Error('治理预算与保留线未改变');

@@ -19,7 +19,11 @@
     "test:diplomacy": "electron tests/diplomacy-desktop.cjs",
     "test:revenue": "electron tests/revenue-desktop.cjs",
     "test:finance": "electron tests/finance-desktop.cjs",
+    "test:national-resources": "electron tests/national-resources-desktop.cjs",
     "test:industry": "electron tests/industry-desktop.cjs",
+    "test:city-capacity": "electron tests/city-capacity-desktop.cjs",
+    "test:terrain-economy": "electron tests/terrain-economy-desktop.cjs",
+    "test:industry-manpower": "electron tests/industry-manpower-desktop.cjs",
     "test:building-effects": "electron tests/building-effects-desktop.cjs",
     "test:food-relief": "electron tests/food-relief-desktop.cjs",
     "test:justice": "electron tests/justice-desktop.cjs",
@@ -43,6 +47,7 @@
     "test:travel": "electron tests/travel-desktop.cjs",
     "test:travel-app": "electron tests/travel-app-desktop.cjs",
     "test:tour-events": "electron tests/tour-events-desktop.cjs",
+    "test:tour-cameos": "electron tests/tour-cameos-desktop.cjs",
     "test:alchemy": "electron tests/alchemy-desktop.cjs",
     "test:p3": "electron tests/p3-desktop.cjs",
     "test:kit-war": "electron tests/kit-war-desktop.cjs",
@@ -67,7 +72,8 @@
     "test:court-royal": "electron tests/court-royal-desktop.cjs",
     "test:court-special": "electron tests/court-special-desktop.cjs",
     "test:court-honors": "electron tests/court-honors-desktop.cjs",
-    "test:court-priority": "electron tests/court-priority-desktop.cjs"
+    "test:court-priority": "electron tests/court-priority-desktop.cjs",
+    "test:province-overview": "electron tests/province-overview-desktop.cjs"
   },
   "devDependencies": {
     "electron": "^38.0.0",
@@ -86,22 +92,7 @@
       "preload.cjs",
       "index.html",
       "src/**/*",
-      "assets/sketch-*.png",
-      "assets/war-*.png",
-      "assets/auspices/*.png",
-      "assets/royal-events/*.png",
-      "assets/officials/*.png",
-      "assets/envoys/wide/*/*.png",
-      "assets/beauties/featured/*.png",
-      "assets/beauties/random/*.png",
-      "assets/sketch-beauty-parts-*.png",
-      "assets/exam-courtyard.png",
-      "assets/exam-edict-scroll.png",
-      "assets/exam-edict-scene.png",
-      "assets/fonts/**/*",
-      "assets/exam-imperial-seal.png",
-      "assets/exam-imperial-imprint.png",
-      "assets/exam-gongyuan.png"
+      "assets/**/*"
     ],
     "mac": {
       "target": [

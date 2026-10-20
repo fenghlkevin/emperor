@@ -1,0 +1,72 @@
+@font-face{font-family:GovernanceKai;src:url('../assets/fonts/LXGWZhenKaiSlabGB-Regular.ttf') format('truetype');font-display:swap}
+.governance-dialog{--ink:#342b20;--jade:#254e3c;--red:#99372b;box-sizing:border-box;container-type:inline-size;position:fixed;width:min(1520px,98vw,152dvh);max-width:98vw;max-height:92dvh;aspect-ratio:1.6;margin:auto;padding:0;border:0;border-radius:0;box-shadow:none;background:transparent;color:var(--ink);overflow:visible;font:17px/1.5 GovernanceKai,'Songti SC',serif;filter:drop-shadow(0 18px 24px #0007)}
+.governance-dialog::before{content:'';position:absolute;inset:0;z-index:-1;background:url('../assets/scenes/governance/sketch-governance-scroll-frame-v2.png') center / 100% 100% no-repeat;pointer-events:none}
+.governance-dialog::backdrop{background:#17130eb3;backdrop-filter:blur(4px)}
+.governance-dialog *{box-sizing:border-box}
+/* Rollers and end caps now belong to the painted frame, not metallic CSS bars. */
+.governance-roller{display:none}
+.governance-header{position:absolute;top:6.4%;left:7%;right:7%;height:5.6%;margin:0;display:flex;align-items:center;justify-content:center;background:none;border:0;padding:0}
+.governance-header h1{margin:0;color:#f0dfad;font-size:clamp(18px,2.05cqw,31px);font-weight:500;letter-spacing:.22em;line-height:1;white-space:nowrap;text-shadow:0 1px 2px #0008}
+.governance-header button{position:absolute;right:.5%;top:50%;transform:translateY(-50%);z-index:5;min-width:86px;min-height:44px;padding:5px 13px;border:1px solid #cfb477;border-radius:4px;background:#48351feb;color:#f4e4b7;box-shadow:0 2px 5px #36240d33;font:18px GovernanceKai,serif;white-space:nowrap;cursor:pointer}
+.governance-header button:hover{background:#66502e}
+.governance-header button:focus-visible{outline:2px solid #67451f;outline-offset:0}
+.governance-content{position:absolute;inset:13% 7% 9.5%;padding:0;background:none}
+.governance-scroll{height:100%;display:grid;grid-template-rows:auto minmax(0,1.42fr) minmax(0,1fr) auto}
+.governance-scope{display:flex;align-items:center;justify-content:center;gap:24px;flex-wrap:wrap;margin:0 0 6px;color:#5e4e36;font-size:clamp(11px,1.22cqw,18px);letter-spacing:1px;line-height:1.5}
+.governance-scope span{white-space:nowrap;font-size:.85em;color:#897557}
+.governance-main{display:grid;grid-template-columns:1.35fr 1fr;gap:1.5%;min-height:0}
+.governance-scroll section{min-width:0;min-height:0;position:relative;isolation:isolate}
+.governance-scroll h2{position:relative;z-index:2;margin:2px 0;font-size:clamp(18px,2cqw,30px);font-weight:500;letter-spacing:3px;line-height:1.3}
+.governance-scroll h2:after{content:'国政';display:inline-block;vertical-align:middle;margin-left:10px;padding:2px;border:1px solid #a54c36;color:#a54c36;writing-mode:vertical-rl;font-size:9px;line-height:1;letter-spacing:0;opacity:.65}
+.governance-scroll h2 small{font-size:clamp(10px,.95cqw,14px);letter-spacing:1px;color:#7d6846;margin-left:6px}
+/* The atlas cell always keeps its native 3:2 ratio. Containers only crop;
+   resizing a window must never stretch the buildings, books or abacus. */
+.governance-art{--atlas:url('../assets/scenes/governance/sketch-governance-scenes-v1.png');--cell-x:0%;--cell-y:0%;position:absolute;overflow:hidden;pointer-events:none;mix-blend-mode:multiply;mask-image:url('./governance-ink-mask.svg');mask-size:100% 100%;mask-repeat:no-repeat}
+.governance-art::before{content:'';position:absolute;left:0;top:50%;width:100%;aspect-ratio:1.5;transform:translateY(-50%);background-image:var(--atlas);background-size:200% 200%;background-position:var(--cell-x) var(--cell-y);background-repeat:no-repeat}
+.governance-art--treasury{--atlas:url('../assets/scenes/governance/sketch-governance-treasury-states-v1.png');inset:6% -2% 12% -3%}
+[data-treasury-scene=rich] .governance-art--treasury{--cell-x:0%;--cell-y:0%}
+[data-treasury-scene=low] .governance-art--treasury{--cell-x:100%;--cell-y:0%}
+[data-treasury-scene=light] .governance-art--treasury{--cell-x:0%;--cell-y:100%}
+[data-treasury-scene=heavy] .governance-art--treasury{--cell-x:100%;--cell-y:100%}
+.governance-art--accounts{inset:5% -3% 39% -3%}
+.governance-art--registers{--cell-x:100%;inset:12% 29% -3% -5%}
+.governance-art--plans{--cell-y:100%;inset:12% 29% -3% -4%}
+.governance-art--building{--cell-x:100%;--cell-y:100%;inset:12% 29% -3% -4%}
+.governance-secondary .governance-art{mask-image:url('./governance-ink-mask.svg'),linear-gradient(90deg,#000 0 73%,transparent 100%);mask-composite:intersect}
+.governance-reserves{position:absolute;left:1%;right:0;bottom:0;z-index:2;display:flex;align-items:baseline;flex-wrap:wrap;gap:4px 22px;padding:4px 0;background:linear-gradient(90deg,#efe1c144,transparent)}
+.governance-stat{display:flex;align-items:baseline;gap:10px;min-width:0}
+.governance-stat>span{white-space:nowrap;font-size:clamp(12px,1.28cqw,19px)}
+.governance-stat strong{font-weight:500;color:var(--jade);font-size:clamp(22px,2.2cqw,33px);line-height:1.2;font-variant-numeric:tabular-nums;overflow-wrap:anywhere}
+.governance-stat strong small{font-size:clamp(12px,1.05cqw,16px);margin-left:5px;white-space:nowrap}
+.governance-reserves .governance-stat:first-child strong{font-size:clamp(30px,3.5cqw,53px)}
+.governance-debt-label{display:none}
+.governance-scroll .is-deficit strong,.governance-scroll .governance-budget-lines .is-deficit{color:var(--red)}
+.governance-budget-lines{position:absolute;z-index:2;inset:60% 0 0 1%;display:grid;align-content:space-evenly;gap:4px}
+.governance-budget-lines>div{display:grid;grid-template-columns:22% minmax(0,1fr) 27%;align-items:center;gap:6px;font-size:clamp(12px,1.25cqw,19px)}
+.governance-budget-lines strong{font-size:clamp(17px,1.8cqw,27px);color:var(--jade);font-weight:500;font-variant-numeric:tabular-nums;overflow-wrap:anywhere;line-height:1.3}
+.governance-budget-lines strong small{font-size:clamp(11px,.95cqw,14px);white-space:nowrap}
+.governance-budget-lines meter{width:100%;height:10px;appearance:none;border:0;background:transparent}
+.governance-budget-lines meter::-webkit-meter-bar{background:#b7a58144;border:0;border-radius:0}
+.governance-budget-lines meter::-webkit-meter-optimum-value{background:linear-gradient(90deg,#446955,#66826a);border-radius:0}
+.governance-budget-lines .is-deficit meter::-webkit-meter-optimum-value{background:linear-gradient(90deg,#a34c39,#b17153)}
+.governance-budget-lines .governance-net{border-top:1px solid #a68c5655;padding-top:6px;grid-template-columns:22% 1fr}
+.governance-secondary{display:grid;grid-template-columns:1fr 1fr;gap:1.5%;border-top:1px solid #9e87544d;margin-top:8px;padding-top:8px;min-height:0}
+.governance-secondary-stats{position:absolute;right:0;top:37%;bottom:10%;width:32%;display:grid;align-content:center;gap:13px;z-index:2}
+.governance-secondary-stats .governance-stat{flex-wrap:wrap;gap:0 8px;padding-bottom:7px;border-bottom:1px solid #8d77422b}
+.governance-secondary-stats .governance-stat:last-child{border-bottom:0}
+.governance-secondary-stats .governance-stat>span{font-size:clamp(11px,1.15cqw,17px)}
+.governance-secondary-stats .governance-stat strong{font-size:clamp(20px,2cqw,30px)}
+.governance-settlement{position:static;inset:auto;width:auto;height:auto;transform:none;background:none;color:var(--ink);z-index:auto;letter-spacing:0;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px 12px;padding:8px 0 0;margin:0;border-top:1px solid #8e754d;border-bottom:0}
+.governance-settlement h2{font-size:clamp(16px,1.6cqw,24px);margin:0}.governance-settlement h2 small{font-size:.65em}.governance-settlement h2:after{display:none}
+.governance-settlement .governance-stat strong{font-size:clamp(18px,1.9cqw,29px)}
+.governance-settlement p{margin:0;color:#79664b;font-size:clamp(12px,1.2cqw,17px)}
+@media(max-width:1000px) and (min-width:701px){.governance-header h1{font-size:22px;letter-spacing:2px}.governance-scroll h2{letter-spacing:1px}.governance-scroll h2 small{display:none}.governance-reserves{gap:3px 12px}.governance-stat{gap:5px}.governance-reserves .governance-stat:first-child strong{font-size:30px}.governance-budget-lines>div{grid-template-columns:25% 1fr}.governance-budget-lines meter{display:none}.governance-secondary-stats{width:34%;gap:5px}.governance-secondary-stats .governance-stat{display:grid}.governance-settlement{gap:5px}.governance-settlement .governance-stat{gap:4px}.governance-settlement h2 small{display:none}}
+@media(max-width:700px){.governance-dialog{width:98vw;max-height:88dvh;aspect-ratio:auto;height:88dvh;filter:drop-shadow(0 8px 10px #0006)}.governance-dialog:before{background-size:100% 100%}.governance-header{top:6.5%;left:8%;right:8%;height:5%}.governance-header h1{font-size:14px;letter-spacing:0}.governance-header button{right:-2%;top:50%;min-width:66px;padding:5px 8px;font-size:15px}.governance-content{inset:14% 8% 9%;overflow-y:auto;overflow-x:hidden;padding:0 4px;scrollbar-width:thin}.governance-scroll{height:auto;display:block}.governance-scope{font-size:12px;gap:2px;justify-content:flex-start;margin-bottom:10px}.governance-main,.governance-secondary{display:block}.governance-scroll section{min-height:250px;margin-bottom:14px}.governance-scroll h2{font-size:22px}.governance-scroll h2 small{font-size:11px;letter-spacing:0}.governance-art--treasury{inset:9% -3% 24% -3%}.governance-reserves{gap:4px 12px}.governance-stat>span{font-size:14px}.governance-stat strong{font-size:25px}.governance-stat strong small{font-size:13px}.governance-reserves .governance-stat:first-child strong{font-size:34px}.governance-budget{min-height:300px!important}.governance-budget-lines{inset:58% 0 0}.governance-budget-lines>div{grid-template-columns:25% 1fr 20%;font-size:13px}.governance-budget-lines strong{font-size:20px}.governance-budget-lines strong small{font-size:12px}.governance-budget-lines .governance-net{grid-template-columns:25% 1fr}.governance-secondary{padding-top:12px}.governance-secondary section{min-height:210px}.governance-secondary-stats{width:34%;top:28%;gap:14px}.governance-secondary-stats .governance-stat{display:grid}.governance-secondary-stats .governance-stat>span{font-size:12px;white-space:normal}.governance-secondary-stats .governance-stat strong{font-size:25px}.governance-settlement{padding-bottom:8px;gap:10px;justify-content:flex-start}.governance-settlement h2{width:100%;font-size:21px}.governance-settlement .governance-stat{display:grid;gap:2px}.governance-settlement .governance-stat strong{font-size:22px}.governance-settlement p{font-size:13px}}
+
+/* Keep closing within easy reach at the foot of the scroll. */
+.governance-header{position:static}
+.governance-header h1{position:absolute;top:6.4%;left:25%;right:25%;height:5.6%;display:flex;align-items:center;justify-content:center}
+.governance-header button{position:absolute;top:auto;bottom:-3.6%;left:50%;right:auto;transform:translateX(-50%);width:150px;min-width:150px;min-height:42px;background:linear-gradient(#594329,#2d2318);border-color:#c5a366;box-shadow:0 3px 10px #0008}
+@media(max-width:700px){.governance-header h1{top:6.5%;left:25%;right:25%;height:5%}.governance-header button{top:auto;bottom:-4.5%;left:50%;right:auto;transform:translateX(-50%);min-width:150px;min-height:38px;font-size:16px}}
+.foreign-dialog .foreign-content{overflow:auto;overscroll-behavior:contain;padding:10px}.foreign-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(310px,1fr));gap:20px}.foreign-card{border-bottom:1px solid #9c8358;padding:12px}.foreign-card h2{margin:0;color:#63452b}.foreign-card small{color:#876546}.foreign-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.foreign-stats>div{text-align:center;position:relative;padding-top:70px;min-height:120px}.foreign-stats .governance-art{position:absolute;inset:0 0 auto;height:70px;opacity:.8}.foreign-stats span,.foreign-stats strong{display:block}.foreign-stats strong{color:#254e3c}.foreign-content form{display:flex;gap:14px;flex-wrap:wrap;align-items:end}.foreign-content label{display:grid;gap:8px}.foreign-dialog .governance-header{z-index:10}
+.foreign-cards{grid-template-columns:repeat(auto-fit,minmax(min(100%,310px),1fr))}.foreign-content select{max-width:100%}.foreign-content label{min-width:0;max-width:100%}

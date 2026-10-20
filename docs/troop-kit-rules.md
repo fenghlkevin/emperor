@@ -43,7 +43,7 @@
 
 ## 动画与验证
 
-保留刀盾、长枪和轻骑现有逐帧素材；重骑独立资产为 `assets/war-heavy-cavalry-v1.png`，实际8帧骑行、8帧攻击，接程序待机、受击和骑乘倾倒消退。图像裁切随帧更新，避免露出相邻图集内容。支持速度、自动加速、减少动态效果与关闭清理。
+保留刀盾、长枪和轻骑现有逐帧素材；重骑独立资产为 `assets/battle/units/war-heavy-cavalry-v1.png`，实际8帧骑行、8帧攻击，接程序待机、受击和骑乘倾倒消退。图像裁切随帧更新，避免露出相邻图集内容。支持速度、自动加速、减少动态效果与关闭清理。
 
 验证入口：`npm test`、`npm run test:kit-office`、`npm run test:kit-routing`、`npm run test:kit-heavy-combat`。完整开发与验收记录见 `troop-kit-development-progress.md`。
 

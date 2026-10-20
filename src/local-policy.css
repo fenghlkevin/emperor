@@ -1,0 +1,340 @@
+[data-local-policy]{border:1px solid #b9a780;background:#f5eedc;padding:12px;margin:12px 0}
+.local-policy-fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+[data-local-policy] label{font-size:14px;line-height:1.7;display:block}
+[data-local-policy] input[type=number],[data-local-policy] select{font:14px system-ui;box-sizing:border-box;max-width:100%;min-height:40px;padding:7px}
+[data-local-policy] p{font-size:13px;line-height:1.7;margin:8px 0}
+[data-local-policy] button{min-height:40px;font-size:14px}
+[data-local-policy] [hidden],[data-local-policy] [role=status]:empty{display:none!important}
+[data-local-policy] details{margin-top:10px}
+@media(max-width:600px){.local-policy-fields{grid-template-columns:1fr}}
+.has-compact-nav{display:flex!important;align-items:center;gap:12px;flex-wrap:wrap}
+.has-compact-nav>div:first-child{margin-right:auto}
+.has-compact-nav>.compact-header-nav{position:static!important;inset:auto!important;width:auto!important;height:auto!important;display:flex!important;gap:6px;padding:0!important;margin:0!important;border:0!important;background:transparent!important;flex:0 1 auto!important}
+.has-compact-nav>.compact-header-nav button{font-size:14px!important;letter-spacing:0!important;padding:8px!important;min-height:40px}
+.compact-header-menu{display:none;font:14px system-ui;max-width:180px;min-height:40px;padding:7px}
+.court-atlas .atlas-layers[hidden]{display:none!important}
+.national-dialog>header [data-national-switch]{font:14px system-ui;min-height:40px;max-width:180px;margin-left:auto}
+@media(max-width:1000px){.has-compact-nav>.compact-header-nav{display:none!important}.compact-header-menu{display:block}.has-compact-nav{gap:8px}}
+/* Memorials use content height; reserve space only for the close control. */
+.court-petition>section{padding:48px 32px 24px}
+.court-petition h1{margin:12px 0 16px}
+.court-petition .petition-fact{margin:16px 0;line-height:1.8!important}
+.court-petition .petition-salute{margin:8px 0}
+.court-petition .petition-signature{font-size:14px!important;margin:12px 0}
+.court-petition .petition-decisions{gap:10px;margin:20px 0 12px;flex-wrap:wrap}
+.court-petition .petition-decisions:empty{display:none}
+.court-petition .petition-decisions>button{font-size:14px;min-height:44px;padding:10px 14px;letter-spacing:1px}
+.court-petition .court-reading-note{display:block;font-size:14px!important}
+.court-petition [role=status]{font-size:16px;color:#59482e;line-height:1.7}
+.court-petition [role=status]:empty{display:none}
+.court-petition .court-dialog-close{font-size:14px;min-height:40px;top:8px;right:16px}
+@media(max-width:600px){.court-petition>section{padding:48px 20px 20px}.court-petition .petition-decisions>button{flex:1 1 auto}}
+.local-military-request{margin:12px 0;border-top:1px solid #b9a780;padding-top:10px}
+.local-military-request p{font-size:14px;line-height:1.7}
+.local-military-request label{display:block;font-size:14px}
+.local-military-request select,.local-military-request input{font:14px system-ui;min-height:40px;max-width:100%;box-sizing:border-box;padding:7px}
+.local-military-request button{min-height:44px;font-size:14px;margin-top:10px}
+.local-military-request [hidden],.local-military-request [role=status]:empty{display:none!important}
+.court-pending-list{width:min(900px,94vw)}
+.court-pending-list>header{display:flex;align-items:center;justify-content:space-between;padding:12px 20px;border-bottom:1px solid #b9a780}
+.court-pending-list h1{font-size:24px;margin:0}
+.court-pending-list>header button{min-width:44px;min-height:44px}
+.court-pending-list>div{padding:12px 20px;display:grid;gap:8px}
+.court-pending-list [data-list-petition]{display:grid;gap:6px;padding:12px;text-align:left;font-size:16px}
+.court-pending-list [data-list-petition] span{font-size:14px;line-height:1.7;color:#665538}
+.court-garrison .garrison-strength p,.court-garrison .garrison-selected p,.court-garrison .garrison-map-note,.court-garrison .garrison-ledger{font-size:14px;line-height:1.7}
+.court-garrison .garrison-kit-rack b{font-size:14px}
+.court-garrison .garrison-kit-rack small{font-size:12px}
+.court-garrison .garrison-depots button{font-size:14px;min-height:40px}
+.court-garrison .personnel-scene-detail>label,.court-garrison .garrison-route button{font-size:14px;min-height:40px}
+.court-garrison[data-garrison-stage=draft][data-garrison-kind=inventory] .personnel-scene-side{display:flex;flex-direction:column}
+.court-garrison[data-garrison-stage=draft][data-garrison-kind=inventory] .personnel-scene-detail{flex:1;overflow:auto}
+.court-garrison[data-garrison-stage=draft][data-garrison-kind=inventory] .personnel-decision{position:static;min-height:0;flex:0 0 auto;padding:10px 20px}
+.court-garrison .personnel-decision [role=status]:empty{display:none}
+/* Close and navigation share real header flow, including compact menus. */
+.has-compact-nav>.court-dialog-close{position:static!important;inset:auto!important;flex:0 0 auto;min-width:44px;min-height:40px;margin:0!important}
+@media(max-width:600px){.has-compact-nav>div:first-child{flex:1 1 130px;min-width:0}.has-compact-nav .compact-header-menu{flex:0 1 120px;max-width:120px}.has-compact-nav h1{white-space:normal;line-height:1.5}.has-compact-nav{padding-right:12px!important;padding-left:12px!important}}
+.relief-dialog[open]{display:flex!important;flex-direction:column;height:min(900px,94dvh);padding:0}
+.relief-dialog>.civil-header{flex:0 0 auto;height:auto;min-height:80px;padding:12px 20px;box-sizing:border-box}
+.relief-dialog>.civil-header h1{margin:6px 0;font-size:28px}
+.relief-dialog [data-relief-header-actions]{display:flex;align-items:center;gap:8px}
+.relief-dialog>.revenue-body{position:static!important;inset:auto!important;flex:1 1 auto;min-height:0;overflow:auto;padding:16px 24px}
+.relief-dialog>.revenue-command{position:static!important;inset:auto!important;flex:0 0 auto;min-height:0;width:auto;padding:12px 24px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.relief-dialog>.civil-footer{display:none}
+.relief-dialog .revenue-body>p{margin:8px 0;font-size:14px;line-height:1.7}
+.relief-dialog .relief-rules{font-size:14px;line-height:1.7}
+.relief-dialog .revenue-body h3{margin:14px 0 8px}
+@media(max-width:600px){.relief-dialog>.civil-header{padding:12px}.relief-dialog>.revenue-body{padding:12px}.relief-dialog>.revenue-command{padding:10px 12px}.relief-dialog [data-relief-header-actions]{margin-left:auto}}
+.relief-dialog>.civil-header{position:static!important;inset:auto!important;order:0;width:auto;max-height:none}
+.relief-dialog>.revenue-body{order:1;height:auto;max-height:none;margin:0;box-sizing:border-box}
+.relief-dialog>.revenue-command{order:2;box-sizing:border-box}
+.general-dialog[open]{display:flex!important;flex-direction:column;padding:0}
+.general-dialog>.general-header{position:static!important;inset:auto!important;flex:0 0 auto;height:auto;min-height:90px;box-sizing:border-box}
+.general-dialog>.general-body{position:static!important;inset:auto!important;flex:1 1 auto;height:auto;min-height:0;max-height:none;overflow:auto;padding:16px 24px;box-sizing:border-box}
+.general-dialog>.civil-footer{display:none}
+.general-dialog .general-header.has-compact-nav .general-nav button{width:auto;border:0;min-height:40px}
+.general-dialog .general-header.has-compact-nav .general-nav button>span{display:none}
+.general-dialog .general-header.has-compact-nav .general-nav button[aria-current=page]{border-bottom:2px solid #9b4b32}
+@media(max-width:600px){.general-dialog>.general-header{padding:12px}.general-dialog>.general-body{padding:12px}}
+.general-dialog:has(>.general-header)[open]{height:auto!important;max-height:94dvh}
+.general-dialog .general-overview{padding-bottom:12px!important;margin-bottom:16px!important;gap:12px!important;font-size:14px!important}
+.general-dialog .general-overview b{margin-top:6px;font-size:24px}
+.general-dialog .general-section-title p,.general-dialog .general-main>p,.general-dialog .general-toggle{font-size:14px!important;line-height:1.7}
+.general-dialog .general-kit-stock{margin-top:14px;font-size:14px}
+.general-dialog .general-note{font-size:13px;line-height:1.7;margin:10px 0}
+.general-dialog .general-detail [data-status]:empty{display:none}
+
+/* Training has one decision; avoid reserving an empty map/feature column. */
+.general-dialog>.general-header{display:flex!important;align-items:center!important;gap:16px!important;padding:16px 24px!important;min-height:0!important}
+.general-dialog .general-brand{margin-right:auto}
+.general-dialog .general-header-end{display:flex!important;align-items:center;gap:12px;position:static!important;font-size:13px}
+.general-dialog .general-nav.compact-header-nav{position:static!important;display:flex;flex-direction:row!important;width:auto!important;height:auto!important;gap:4px;padding:0!important;align-self:center}
+.general-dialog .general-workspace{display:block!important;min-height:0!important}
+.general-dialog .general-main,.general-dialog .general-detail{padding:0!important;border:0!important;min-height:0!important;width:auto!important}
+.general-dialog .general-detail>.general-section-title{display:none}
+.general-dialog .general-section-title h3{margin:4px 0 8px!important;font-size:24px!important}
+.general-dialog .general-preview{margin:12px 0!important;padding:16px!important;font-size:15px!important;line-height:1.8}
+.general-dialog [data-execute]{width:auto!important;min-width:200px}
+.general-dialog .general-note{display:inline-block;margin-left:16px}
+@media(max-width:600px){.general-dialog>.general-header{flex-wrap:wrap;padding:12px!important;gap:8px!important}.general-dialog .general-header-end{margin-left:auto}.general-dialog .general-nav.compact-header-nav{display:none!important}.general-dialog .general-note{display:block;margin-left:0}}
+@media(max-width:600px){
+ .general-dialog .general-brand{flex:1 1 100%;gap:12px!important}
+ .general-dialog .general-brand h1{white-space:nowrap;font-size:28px!important;letter-spacing:4px!important}
+ .general-dialog .general-seal{font-size:18px!important;padding:8px!important;width:auto!important;min-width:38px}
+ .general-dialog .general-header-end{font-size:0;gap:0}
+ .general-dialog .general-header-end b{display:none}
+ .general-dialog .general-header-end .close{font-size:28px}
+ .general-dialog .compact-header-menu{margin-left:auto}
+}
+
+.industry-dialog[data-works-action=buildings] .revenue-body>form{display:flex;align-items:end;gap:12px;margin:12px 0}
+.industry-dialog[data-works-action=buildings] .revenue-body>form label{margin:0}
+.industry-dialog[data-works-action=buildings] .revenue-body>p:empty{display:none}
+.industry-dialog[data-works-action=buildings] .revenue-body>details{margin:8px 0}
+.industry-dialog[data-works-action=buildings] .revenue-body>.civil-note{margin:8px 0}
+.industry-dialog .works-effects>summary{cursor:pointer;padding:12px 0;font-size:15px}
+
+/* Atlas: map first, with labels on a quiet vector ground. */
+.court-atlas .atlas-layout{grid-template-columns:minmax(0,3fr) minmax(280px,1fr)}
+.court-atlas .atlas-header{padding:12px 20px!important;min-height:76px;height:auto}
+.court-atlas .atlas-header h1{font-size:22px;letter-spacing:2px;margin:4px 0}
+.court-atlas .atlas-map-note{display:none}
+.court-atlas .atlas-map-instruction{position:static;font-size:13px!important;background:#f1e6cd;margin:0!important;padding:8px 12px}
+.court-atlas .atlas-paper{display:flex;flex-direction:column}
+.court-atlas .court-atlas-map{flex:1;min-height:0;background:#477f91}
+.court-atlas .atlas-province{fill:#d8ae65;stroke:#6d5032;stroke-width:.055}
+.court-atlas .atlas-province.is-target{fill:#ba7850;stroke:#f9df91;stroke-width:.16}
+.court-atlas .atlas-province.is-source{fill:#899b6b;stroke:#304d44;stroke-width:.16}
+.court-atlas .atlas-province.is-foreign{fill:#ad8e6a}
+.court-atlas .atlas-label text{font-size:1px;font-weight:600;fill:#30291e;stroke:#f5e2b8;stroke-width:.12;letter-spacing:.06px}
+.court-atlas .atlas-label .atlas-mark{font-size:.75px;fill:#922f24}
+.court-atlas .atlas-local{padding:16px}
+.court-atlas .atlas-local-heading{padding-bottom:12px;margin-bottom:14px}
+.court-atlas .atlas-local-heading h2{margin:8px 0;font-size:30px}
+.court-atlas .atlas-local-heading>small,.court-atlas .atlas-local-heading>span{font-size:12px;letter-spacing:1px}
+@media(max-width:800px){.court-atlas .atlas-layout{grid-template-columns:1fr;grid-template-rows:minmax(260px,45%) minmax(0,1fr)}.court-atlas .atlas-header{flex-wrap:wrap}.court-atlas .atlas-header h1{font-size:20px}.court-atlas .atlas-map-instruction{font-size:12px!important}}
+.garrison-map path.atlas-base-land{fill:#ae8c61;stroke:#58412d;stroke-width:.09;pointer-events:none}
+.garrison-map path.atlas-country-border{fill:none;stroke:#57402b;stroke-width:.18;pointer-events:none}
+.garrison-map path[data-garrison-depot]{fill:#d8ae65;stroke:#6d5032}
+.garrison-map path[data-garrison-depot].is-source{fill:#899b6b}
+.garrison-map path[data-garrison-depot].is-target{fill:#ba7850}
+.court-atlas [data-governance-feedback]{font-size:14px;line-height:1.6;margin-bottom:16px}
+.court-atlas [data-governance-feedback] summary{cursor:pointer;padding:8px 0}
+.court-atlas .atlas-facts small{font-size:12px;line-height:1.6}
+.court-atlas .atlas-facts{gap:16px 10px}
+.court-atlas .atlas-province,.garrison-map path[data-garrison-depot]{stroke:none}
+.court-atlas-map .atlas-state-border,.garrison-map path.atlas-state-border{fill:none;stroke:#715337;stroke-width:.065;pointer-events:none}
+.court-atlas-map .atlas-country-border,.garrison-map path.atlas-country-border{fill:none;stroke:#543d28;stroke-width:.16;pointer-events:none}
+.court-atlas .atlas-province.is-target{stroke:#ffe7a0;stroke-width:.16}
+.court-atlas .atlas-province.is-source{stroke:#315746;stroke-width:.15}
+@media(max-width:600px){
+ .court-atlas .atlas-label text{font-size:1.5px;stroke-width:.16;letter-spacing:0}
+ .court-atlas .atlas-label .atlas-mark{font-size:1.05px}
+ .court-atlas .atlas-header h1{font-size:20px;letter-spacing:2px;white-space:nowrap}
+ .court-atlas .atlas-local{padding:12px}
+ .court-atlas .atlas-local-heading{gap:8px;margin-bottom:12px;padding-bottom:10px}
+}
+.court-garrison .personnel-scene-body{grid-template-columns:minmax(0,3fr) minmax(280px,1fr)}
+.court-garrison .personnel-scene-main{display:flex!important;flex-direction:column;min-height:0;padding:16px!important;overflow:hidden}
+.court-garrison .garrison-map-frame{height:auto;flex:1;min-height:280px;background:#477f91}
+.court-garrison .garrison-map{display:block}
+.court-garrison .garrison-map text{font-size:1px;fill:#30291e;stroke:#f5e2b8;font-weight:600;stroke-width:.12}
+.court-garrison .garrison-depot-picker{display:flex;align-items:center;gap:12px;font-size:14px;margin-bottom:12px}
+.court-garrison select{min-height:42px;padding:8px 12px;font:inherit;background:#f7efdb;border:1px solid #b9a57e;color:#5e4a32}
+.court-garrison .garrison-map-note{font-size:13px;margin:10px 0 0}
+.court-garrison .garrison-kit-picker{font-size:14px}
+.court-garrison .personnel-scene-side{min-width:0}
+@media(max-width:700px){
+ .court-garrison .personnel-scene-body{grid-template-columns:1fr;grid-template-rows:minmax(300px,45%) minmax(0,1fr)}
+ .court-garrison .personnel-scene-main{padding:10px!important}
+ .court-garrison .garrison-map-frame{min-height:210px}
+ .court-garrison .garrison-map text{font-size:1.5px}
+ .court-garrison .garrison-map-note{display:none}
+ .court-garrison .garrison-depot-picker{margin-bottom:8px}
+}
+/* Read-only maps share the quiet palette and regional geometry. */
+.domestic-atlas .civil-map{background:#477f91}
+.domestic-atlas .world-vector-land{fill:#ae8c61;stroke:#58412d}
+.domestic-atlas .regional-readonly-map .province{fill:#d8ae65;stroke:none}
+.domestic-atlas .regional-readonly-map .province.selected{fill:#ba7850;stroke:#ffe7a0;stroke-width:.16}
+.domestic-atlas .regional-readonly-map .atlas-state-border{fill:none;stroke:#715337;stroke-width:.065}
+.domestic-atlas .regional-readonly-map .atlas-country-border{fill:none;stroke:#543d28;stroke-width:.16}
+.domestic-atlas .regional-name{font-size:1px;fill:#30291e;stroke:#f5e2b8;stroke-width:.12;paint-order:stroke;text-anchor:middle;cursor:pointer;font-weight:600}
+.domestic-atlas>.civil-header{display:flex;align-items:center;gap:12px;height:auto;min-height:90px;padding:12px 20px}
+.domestic-atlas>.civil-header>div:first-child{margin-right:auto}
+.domestic-atlas>.civil-header h1{font-size:25px;margin:4px 0}
+.domestic-atlas>.civil-header h1>span{display:none}
+.domestic-atlas>.civil-header>div:nth-child(2){display:flex;gap:4px;flex-wrap:wrap}
+.domestic-atlas>.civil-header .compact-header-nav{display:none!important}
+.domestic-atlas>.civil-header .compact-header-menu{display:block;min-height:40px;font-size:14px;max-width:145px}
+@media(max-width:700px){.domestic-atlas>.civil-header{flex-wrap:wrap}.domestic-atlas .regional-name{font-size:1.5px}}
+.domestic-atlas>.ink-map-frame{bottom:0!important}
+.domestic-atlas>.civil-info{bottom:0!important}
+.domestic-atlas:not(.has-selection)>.ink-intro{display:none}
+.domestic-atlas[data-level=world] .civil-map .province-name{display:none}
+.domestic-atlas[data-level=world] .civil-map .province{pointer-events:none;fill:transparent;stroke:none}
+.domestic-atlas .civil-map .realm:not(.home){stroke:#634a32}
+.domestic-atlas .realm-name[data-label-hidden=true]{display:none}
+.domestic-atlas[open]{display:grid!important;grid-template-columns:minmax(0,3fr) minmax(280px,1fr);grid-template-rows:auto minmax(0,1fr);overflow:hidden}
+.domestic-atlas>.civil-header{position:static!important;inset:auto!important;grid-column:1/-1;order:0;z-index:2}
+.domestic-atlas>.ink-map-frame{position:relative!important;inset:auto!important;width:auto!important;height:auto!important;min-height:0;grid-column:1;grid-row:2}
+.domestic-atlas>.ink-map-frame .civil-map{height:100%;width:100%}
+.domestic-atlas>.civil-info{position:static!important;inset:auto!important;width:auto!important;height:auto!important;max-height:none!important;min-height:0;grid-column:2;grid-row:2;overflow:auto;padding:16px!important}
+.domestic-atlas:not(.has-selection)>.ink-map-frame{grid-column:1/-1}
+.domestic-atlas .civil-header>.close{position:static!important;min-width:40px;min-height:40px;font-size:24px;order:4}
+.domestic-atlas .domestic-map-tools{order:2}
+.domestic-atlas .compact-header-menu{order:3}
+.domestic-atlas .civil-info .civil-detail-title h2{font-size:28px}
+.domestic-atlas .civil-info p,.domestic-atlas .civil-info td,.domestic-atlas .civil-info th{font-size:14px!important}
+@media(max-width:700px){
+ .domestic-atlas[open]{grid-template-columns:minmax(0,1fr);grid-template-rows:auto minmax(260px,.8fr) minmax(0,1fr)}
+ .domestic-atlas>.ink-map-frame{grid-column:1!important;grid-row:2}
+ .domestic-atlas>.civil-info{grid-column:1;grid-row:3;border-left:0;border-top:1px solid #aa946c}
+ .domestic-atlas:not(.has-selection)>.ink-map-frame{grid-row:2/4}
+ .domestic-atlas>.civil-header{padding:10px!important;min-height:0;gap:6px}
+ .domestic-atlas>.civil-header>div:first-child{flex:1 1 auto}
+ .domestic-atlas>.civil-header h1{font-size:22px}
+ .domestic-atlas .compact-header-menu{order:2;max-width:120px!important;margin-left:auto}
+ .domestic-atlas .civil-header>.close{order:3}
+ .domestic-atlas .domestic-map-tools{order:4;flex-basis:100%;justify-content:flex-start}
+ .domestic-atlas .domestic-map-tools button{min-height:36px;padding:6px 12px;font-size:14px}
+}
+.domestic-atlas .civil-info>.ink-fold{position:static!important;float:right;margin:0 0 8px 8px;font-size:14px;min-height:36px;letter-spacing:0}
+.war-office>.civil-header{display:flex!important;align-items:center;gap:12px;padding:12px 20px!important;min-height:90px;height:auto!important}
+.war-office .revenue-brand{margin-right:auto}
+.war-office .revenue-header-end{display:flex!important;align-items:center;gap:12px;position:static!important}
+.war-office .revenue-header-end .close{position:static!important;min-height:40px;min-width:40px}
+.war-office>.civil-header .compact-header-nav{display:none!important}
+.war-office>.civil-header .compact-header-menu{display:block;min-height:42px;font-size:14px;max-width:170px}
+.war-office>.revenue-body{left:0!important;right:300px!important;top:90px!important;bottom:0!important;padding:16px!important}
+.war-office>.revenue-command{top:90px!important;width:300px!important;bottom:0!important;padding:16px!important}
+.war-office .war-target-map{max-height:none;background:#477f91}
+.war-target-map path.war-base-land{fill:#ae8c61;stroke:#58412d;stroke-width:.08}
+.war-target-map path.war-territory{fill:#ae8c61;stroke:#6d5032;stroke-width:.1}
+.war-target-map path.home{fill:#d8ae65}
+.war-target-map path.available{fill:#c99254;stroke:#754827;stroke-width:.22}
+.war-target-map path.chosen{fill:#759482;stroke:#284e40;stroke-width:.35}
+@media(max-width:700px){
+ .war-office>.civil-header{flex-wrap:wrap;gap:8px;min-height:110px}
+ .war-office .revenue-brand>small{display:none}
+ .war-office .revenue-brand h1{font-size:24px!important}
+ .war-office .revenue-header-end>span{display:none}
+ .war-office>.revenue-body{top:110px!important;right:0!important;bottom:190px!important}
+ .war-office>.revenue-command{top:auto!important;width:auto!important;left:0!important;height:190px;overflow:auto}
+}
+.court-campaign .campaign-target .war-target-map{height:auto;max-height:none;aspect-ratio:1.8;background:#477f91}
+.court-campaign .campaign-target .war-map-legend,.court-campaign .campaign-target .war-target-summary{font-size:13px;line-height:1.7}
+.court-campaign .personnel-scene-body{grid-template-columns:minmax(0,3fr) minmax(280px,1fr)}
+@media(max-width:700px){.court-campaign .personnel-scene-body{grid-template-columns:1fr;grid-template-rows:minmax(280px,45%) minmax(0,1fr)}.court-campaign .campaign-target .war-target-map{height:auto;min-height:210px}}
+.court-campaign .campaign-picker{display:flex;flex-direction:column;gap:8px;font-size:14px;margin:16px 0}
+.court-campaign .campaign-picker select{min-height:44px;font:inherit;padding:8px;background:#f6edd8;border:1px solid #bca77c;color:#59442d;width:100%}
+.court-campaign .campaign-count{font-size:14px}
+.court-campaign .campaign-target>summary{font-size:15px;padding:8px 0;cursor:pointer}
+.court-campaign .campaign-field>button[data-campaign-add]{min-height:44px;justify-content:center}
+.court-campaign .campaign-field>button[data-campaign-add]>strong{font-size:24px;margin:0}
+.court-campaign .campaign-field small,.court-campaign .campaign-field span{font-size:12px;letter-spacing:0}
+.court-campaign .campaign-field b{font-size:14px}
+.court-campaign .campaign-count select{min-height:44px;font:inherit;padding:8px;background:#f6edd8;border:1px solid #bca77c;color:#59442d;width:100%}
+.court-campaign .campaign-count small{font-size:12px;line-height:1.6}
+.court-defense .defense-city{min-height:0!important;padding:12px!important;gap:0!important}
+.court-defense .defense-city h2{font-size:26px;margin:6px 0}
+.court-defense .defense-city p{font-size:14px;line-height:1.6;margin:6px 0}
+.court-defense .campaign-picker{margin:10px 0;gap:5px}
+.court-defense .personnel-scene-detail h2{font-size:26px;margin:6px 0 12px}
+.court-defense .personnel-scene-detail{padding:16px!important}
+.court-defense .defense-secondary{font-size:13px;line-height:1.7}
+.court-defense .defense-secondary>summary{cursor:pointer;padding:8px 0}
+.court-defense .personnel-decision{padding:12px!important}
+.court-defense .personnel-decision .atlas-confirm-risk{font-size:13px;line-height:1.6;margin:0 0 10px}
+@media(min-width:701px){
+ .court-defense .personnel-scene-detail{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:8px 10px;align-content:start}
+ .court-defense .personnel-scene-detail>.court-kicker,.court-defense .personnel-scene-detail>h2,.court-defense .personnel-scene-detail>p{grid-column:1/-1}
+ .court-defense .personnel-scene-detail>label{min-width:0;margin:4px 0}
+ .court-defense .personnel-scene-detail>label:last-of-type{grid-column:1/-1}
+}
+.court-defense .campaign-count small{font-size:12px;line-height:1.4;letter-spacing:0}
+.court-defense[data-defense-stage=draft] .personnel-scene-detail>h2{display:none}
+.court-defense .personnel-scene-detail{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:8px 10px;align-content:start}
+.court-defense .personnel-scene-detail>.court-kicker,.court-defense .personnel-scene-detail>h2,.court-defense .personnel-scene-detail>p{grid-column:1/-1}
+.court-defense .personnel-scene-detail>label{min-width:0;margin:4px 0}
+.court-defense .personnel-scene-detail>label:last-of-type{grid-column:1/-1}
+.court-defense .defense-context>summary{font-size:14px;padding:10px 0;cursor:pointer;line-height:1.6}
+.court-defense .personnel-scene-detail>label select{min-width:0;width:100%;font-size:14px}
+@media(max-width:700px){.court-defense .personnel-scene-body{grid-template-rows:minmax(160px,28%) minmax(0,1fr)}}
+.revenue-fiscal>.civil-header{display:flex!important;align-items:center;gap:12px;height:auto!important;min-height:90px;padding:12px 20px!important}
+.revenue-fiscal .revenue-brand{margin-right:auto}
+.revenue-fiscal .revenue-header-end{position:static!important;display:flex!important;align-items:center;gap:12px}
+.revenue-fiscal .revenue-header-end .close{position:static!important;min-width:40px;min-height:40px}
+.revenue-fiscal>.civil-header .compact-header-nav{display:none!important}
+.revenue-fiscal>.civil-header .compact-header-menu{display:block;min-height:42px;font-size:14px;max-width:160px}
+.revenue-fiscal>.revenue-body{top:90px!important;left:0!important;right:285px!important;bottom:0!important;padding:16px!important}
+.revenue-fiscal>.revenue-command{top:90px!important;bottom:0!important;width:285px!important;padding:16px!important}
+.revenue-fiscal .revenue-command-heading{margin-bottom:12px}
+.revenue-fiscal .revenue-command-heading>p,.revenue-fiscal .revenue-command-note{display:none}
+.revenue-fiscal .revenue-table th,.revenue-fiscal .revenue-table td{font-size:14px;padding:12px 8px}
+@media(max-width:700px){
+ .revenue-fiscal>.civil-header{flex-wrap:wrap;gap:8px;min-height:100px}
+ .revenue-fiscal .revenue-brand h1{font-size:24px!important}
+ .revenue-fiscal .revenue-brand small,.revenue-fiscal .revenue-header-end>span{display:none}
+ .revenue-fiscal>.revenue-body{top:100px!important;right:0!important;bottom:160px!important;padding:12px!important}
+ .revenue-fiscal>.revenue-command{top:auto!important;left:0!important;right:0!important;bottom:0!important;width:auto!important;height:160px;overflow:auto}
+ .revenue-fiscal .revenue-command-heading{display:none}
+}
+.revenue-fiscal[open]:not(:has(>.edict-page)){display:grid!important;grid-template-columns:minmax(0,1fr) 285px;grid-template-rows:auto minmax(0,1fr);overflow:hidden}
+.revenue-fiscal>.civil-header{grid-column:1/-1;position:static!important}
+.revenue-fiscal>.revenue-body{position:static!important;inset:auto!important;width:auto!important;min-width:0;min-height:0;grid-column:1;grid-row:2;overflow:auto;box-sizing:border-box}
+.revenue-fiscal>.revenue-command{position:static!important;inset:auto!important;width:auto!important;min-width:0;min-height:0;height:auto;grid-column:2;grid-row:2;overflow:auto;box-sizing:border-box}
+@media(max-width:700px){
+ .revenue-fiscal[open]:not(:has(>.edict-page)){grid-template-columns:minmax(0,1fr);grid-template-rows:auto minmax(0,1fr) 160px}
+ .revenue-fiscal>.revenue-body{grid-column:1;grid-row:2}
+ .revenue-fiscal>.revenue-command{grid-column:1;grid-row:3;height:auto}
+}
+@media(max-width:700px){.revenue-fiscal .revenue-seal{display:none}.revenue-fiscal .revenue-brand{gap:0;min-width:0}.revenue-fiscal .revenue-brand h1{white-space:nowrap}}
+.court-justice .justice-hearing[hidden]{display:none}.court-justice .justice-empty{padding:12px;font-size:14px}.court-justice.justice-no-case .justice-dossiers{padding:0}
+@media(max-width:700px){.court-justice.justice-no-case .personnel-scene-main{flex:0 0 auto;max-height:180px}.court-justice.justice-no-case .personnel-scene-side{flex:1;min-height:0}.court-justice.justice-no-case .personnel-scene-body{min-height:0;grid-template-rows:auto minmax(0,1fr)}}
+.justice-register[open]{display:grid;grid-template-rows:auto minmax(0,1fr);overflow:hidden}.justice-register>.civil-header{position:static;inset:auto;height:auto;min-height:80px;padding:16px 24px}.justice-register>.revenue-body{position:static;inset:auto;width:auto;height:auto;min-height:0;overflow:auto;padding:18px 24px}.justice-register .report-table{overflow:auto}.justice-register .civil-header h1{font-size:24px}.justice-register .civil-header h1 span{font-size:14px;margin-left:16px}
+@media(max-width:700px){.justice-register>.civil-header,.justice-register>.revenue-body{padding:12px}.justice-register .civil-header h1 span{display:block;margin:6px 0 0}.justice-register .civil-header h1{font-size:20px}}
+.rites-planner-dialog .general-workspace{display:grid;grid-template-columns:minmax(0,2fr) minmax(260px,1fr);gap:24px}.rites-planner-dialog .general-page-heading{display:none}.rites-planner-dialog .general-main,.rites-planner-dialog .general-detail{position:static;inset:auto;width:auto;min-width:0;height:auto}.rites-planner-dialog .general-detail{padding:0 0 0 20px}.rites-planner-dialog .rites-country-select{display:flex;align-items:center;gap:12px;font-size:14px}.rites-planner-dialog .rites-country-select select{flex:1;min-width:0;min-height:44px}.rites-planner-dialog .general-section-title h3{font-size:22px;margin:8px 0}.rites-planner-dialog .general-note{display:none}.rites-planner-dialog .general-header.has-compact-nav .general-nav{flex-direction:row}.rites-planner-dialog .general-header.has-compact-nav .general-nav button[aria-current]{background:transparent;color:#753e2c}.rites-planner-dialog .general-body{max-width:100%}
+@media(max-width:760px){.rites-planner-dialog .general-workspace{display:flex;flex-direction:column;gap:16px}.rites-planner-dialog .general-detail{order:0;border:0;border-top:1px solid #cbbd9e;padding:16px 0 0}.rites-planner-dialog .general-brand>.general-seal{display:none}.rites-planner-dialog .general-brand{gap:0}.rites-planner-dialog .general-header h1{font-size:24px!important;letter-spacing:2px!important}.rites-planner-dialog .general-header small{letter-spacing:0!important}}
+.rites-planner-dialog:has(>.general-header)[open]{height:auto!important;min-height:0!important}.rites-planner-dialog>.general-body{flex:0 1 auto!important}.rites-planner-dialog .general-workspace{display:grid!important}.rites-planner-dialog .general-detail>.general-section-title{display:none}
+@media(max-width:760px){.rites-planner-dialog .general-workspace{display:flex!important}}
+.rites-planner-dialog:has(>.general-header)[open]{height:fit-content!important}
+.personnel-minister-dialog[open]{display:grid;grid-template-rows:auto minmax(0,1fr);overflow:hidden}.personnel-minister-dialog>.pm-header{position:static!important;inset:auto!important;height:auto!important;min-height:80px}.personnel-minister-dialog>.personnel-minister-body{position:static!important;inset:auto!important;width:auto!important;height:auto!important;min-height:0;overflow:auto;padding:16px 24px!important}.personnel-minister-dialog>.civil-footer{display:none}.personnel-minister-dialog .pm-header .compact-header-nav{display:none!important}.personnel-minister-dialog .pm-header .compact-header-menu{display:block;max-width:180px;min-height:40px}.personnel-minister-dialog .pm-header .pm-brand{min-width:0}.personnel-minister-dialog .pm-header .pm-brand small{display:none}
+@media(max-width:700px){.personnel-minister-dialog .pm-brand .pm-seal{display:none}.personnel-minister-dialog .pm-header h1{font-size:22px;letter-spacing:2px}.personnel-minister-dialog .pm-header{padding:12px!important}.personnel-minister-dialog .pm-header-end>span{display:none}.personnel-minister-dialog>.personnel-minister-body{padding:12px!important}}
+.court-diplomacy>.personnel-scene-header{display:flex;align-items:center;gap:12px;flex-wrap:wrap;padding-right:20px}.court-diplomacy>.personnel-scene-header>div:first-child{margin-right:auto}.court-diplomacy .court-dialog-close{position:static;min-height:40px}.diplomatic-header-controls{display:flex;gap:8px}.diplomatic-header-controls select{font:14px inherit;min-height:40px;padding:8px;background:#f8efda;border:1px solid #baa780;max-width:130px}.court-diplomacy .personnel-scene-body{grid-template-columns:minmax(0,3fr) minmax(280px,1fr)}.court-diplomacy .diplomatic-map-frame{min-height:0;align-items:stretch}.court-diplomacy .diplomatic-map{height:100%;min-height:0;background:#477f91}.diplomatic-map path.diplomatic-base-land{fill:#ae8c61;stroke:#58412d;stroke-width:.08;pointer-events:none}.diplomatic-map path.diplomatic-territory{fill:#ae8c61;stroke:#695238;stroke-width:.09}.diplomatic-map path.is-home{fill:#d4ad60}.diplomatic-map path.is-selected{fill:#bb7656;stroke:#7f402f}.diplomatic-map text{fill:#35291c;stroke:#f5e7c6}.diplomatic-instruction{font-size:14px;line-height:1.6;margin:8px 0 0}
+@media(max-width:700px){.court-diplomacy .personnel-scene-body{grid-template-columns:1fr;grid-template-rows:minmax(270px,45%) minmax(0,1fr)}.court-diplomacy>.personnel-scene-header{padding:12px;gap:8px;flex-basis:auto}.court-diplomacy .personnel-scene-header h1{font-size:20px;letter-spacing:1px}.diplomatic-header-controls select{max-width:85px;padding:7px;font-size:14px}.court-diplomacy .diplomatic-instruction{display:none}.court-diplomacy .personnel-scene-main{padding:10px}.court-diplomacy .personnel-scene-detail>p,.court-diplomacy .diplomatic-terms{font-size:14px}}
+.court-diplomacy .diplomatic-map-frame{align-items:center}.court-diplomacy .diplomatic-map{height:auto;display:block}
+@media(max-width:700px){.domestic-atlas:not(.has-selection)[data-level=world][open]{height:fit-content!important;min-height:0;grid-template-rows:auto auto}.domestic-atlas:not(.has-selection)[data-level=world]>.ink-map-frame{grid-row:2!important;min-height:0!important;aspect-ratio:162/66}.domestic-atlas:not(.has-selection)[data-level=world]>.ink-map-frame .civil-map{height:100%;min-height:0!important}}
+@media(max-width:700px){.domestic-atlas.has-selection[data-level=world][open]{grid-template-rows:auto auto minmax(0,1fr)}.domestic-atlas.has-selection[data-level=world]>.ink-map-frame{min-height:0!important;aspect-ratio:162/66}}
+
+.rites-planner-dialog .ritual-risk-table table{min-width:0;width:100%;table-layout:fixed}.rites-planner-dialog .ritual-risk-table th,.rites-planner-dialog .ritual-risk-table td{font-size:14px!important;white-space:normal;overflow-wrap:anywhere;padding:10px 8px}.rites-planner-dialog .ritual-risk-table th:nth-child(1){width:28%}.rites-planner-dialog .ritual-risk-table th:nth-child(2){width:23%}
+@media(max-width:760px){.rites-planner-dialog .general-detail{order:-1!important}.rites-planner-dialog .general-detail [data-preview]{display:none}.rites-planner-dialog .general-detail [data-status]{margin:0 0 8px}.rites-planner-dialog .general-detail [data-execute]{width:100%;min-height:44px}.rites-planner-dialog .general-detail{padding:0 0 12px;border-top:0;border-bottom:1px solid #cbbd9e}}
+
+.war-office[data-kit-page=inventory]>.revenue-command{display:none!important}.war-office[data-kit-page=inventory][open]{grid-template-columns:minmax(0,1fr)!important}.war-office[data-kit-page=inventory]>.revenue-body{grid-column:1/-1!important;right:0!important;bottom:0!important}.war-office[data-kit-page=inventory] .defense-stocks{grid-template-columns:repeat(auto-fit,minmax(270px,1fr))}.war-office[data-kit-page=inventory] .defense-stock{padding:12px}.war-office[data-kit-page=inventory] .defense-stock h3{margin:0 0 8px}
+
+.kit-inventory-list details{border-bottom:1px solid #c8ba9b;padding:2px 0;margin:0!important}.kit-inventory-list summary{display:flex;gap:20px;align-items:center;min-height:44px;cursor:pointer;font-size:14px}.kit-inventory-list summary::before{content:'▸';color:#806340}.kit-inventory-list details[open]>summary::before{content:'▾'}.kit-inventory-list summary strong{min-width:70px}.kit-inventory-list table{width:100%;min-width:0!important}.kit-inventory-list td,.kit-inventory-list th{font-size:14px!important;padding:8px!important}.kit-inventory-list summary span:last-child{margin-left:auto}@media(max-width:700px){.kit-inventory-list summary{flex-wrap:wrap;gap:6px 12px}.kit-inventory-list summary span:last-child{flex-basis:100%;margin-left:22px}}
+@media(max-width:700px){.war-office>.civil-header .revenue-seal{display:none}.war-office>.civil-header h1{font-size:22px!important;letter-spacing:1px!important;white-space:nowrap}.war-office>.civil-header{padding:10px 12px!important;gap:6px!important}.war-office>.civil-header .revenue-header-end{gap:6px!important}.war-office>.civil-header .compact-header-menu{max-width:115px!important}}
+@media(max-width:700px){.court-diplomacy .personnel-scene-body{grid-template-rows:auto minmax(0,1fr)}.court-diplomacy .personnel-scene-main{min-height:0!important;height:auto!important}.court-diplomacy .diplomatic-map-frame{flex:none;width:100%;min-height:0}.court-diplomacy .diplomatic-map{max-height:none}}
+.court-defense .defense-secondary>summary{color:#6b4e32;font-size:14px}.court-defense .defense-secondary>p{color:#59452f;font-size:14px;line-height:1.6}
+
+.industry-dialog .report-table th,.industry-dialog .report-table td{font-size:14px!important;padding:10px 8px!important}.industry-dialog .revenue-body>p,.industry-dialog .revenue-body>details{font-size:14px!important}

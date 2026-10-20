@@ -23,7 +23,7 @@
 | 州 | id、countryId、name、terrain、area | 唯一 ID；国家归属；平原/河海/高山/丘陵；总土地/亩 |
 | 州人口 | total、professions | 人；职业人口合计不能超过总人口 |
 | 职业 | farmers、herders、merchants、workers、soldiers、militia | 农人、牧人、商人、工人、士兵、民伕；其他居民由总人口减去职业人口得到 |
-| 四类产业 | developedArea、capacityArea、productivity | 农业、牧业、商业、工业；开发面积/亩，可开发容量/亩，生产率/0–100 |
+| 四类产业 | developedArea、capacityArea、productivity | 农业、牧业、商业、工业；开发面积/亩、产出基准面积/亩、生产率/0–100；实际开发共用 cityCapacity.land |
 | 民生 | stability、security、activity、fitness、defense、loyalty | 安定、治安、营业、体能、防御、民忠，均 0–100 |
 | 民生 | grainReserve | 实物存粮/石，非负；积粮值和可供旬数从存粮派生 |
 | 州况 | situation、livingStandard、cash | 情势 stable/unrest/disaster/war；生活水平/0–100；地方经济现金/两，可为负 |
@@ -60,7 +60,7 @@
 
 其余33个具名地区为独立国家，各有国家ID、初始核心州、人口、财政和独立现金账本；全图共43州。确切列表由 `domestic.mjs::REALMS` 定义。原“北庭”已命名为“铁勒”。这些是当前剧本种子数据；疆界为策略示意，不用于精确历史地理。旧schema补国迁移已停止支持，不能把历史迁移步骤当作当前导入功能。
 
-水墨背景来自内置 ImageGen，保存为 `assets/sketch-ink-eurasia.png`，完整提示词见 `docs/ink-map-art.json`。地图拓扑与点击地名由程序叠加；图片内容不充当指令。
+水墨背景来自内置 ImageGen，保存为 `assets/scenes/atlas/sketch-ink-eurasia.png`，完整提示词见 `docs/ink-map-art.json`。地图拓扑与点击地名由程序叠加；图片内容不充当指令。
 
 大陆轮廓来源：[Natural Earth 1:110m Land](https://github.com/nvkelso/natural-earth-vector/blob/master/geojson/ne_110m_land.geojson)，公共领域，离线存放于 `src/world-land.mjs`，应用运行不联网获取地图。
 
@@ -141,3 +141,7 @@
 ## 平衡规则1（2026-10-17）
 
 本国新局中央其他收入400两/旬。新增繁荣公共服务费，按`round(Σ各州 人口×0.0013×max(0,生活−50)/100)`计入行政支出；预算和实际常规结算共用同一口径。商业营业增益除以600、封顶10%。粮食在灾后期初先扣超安全库存8%的陈粮损耗，再计当旬生产与口粮；详见[粮食救济](food-relief.md)。旧档既有钱粮和其他收入不重置。
+
+## 城州土地与人口承载（2026-10-19）
+
+四业共用可开发土地，满地可在工部等量转用；人口使用正常容量和120%超载上限，超载停止自然增长并产生安定压力，迁入受限，可在工部扩建。新旧档初始化、人口接纳及试行价格详见[城州容量](city-capacity.md)，先前独立产业容量描述以该规则为准。

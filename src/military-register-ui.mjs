@@ -1,0 +1,13 @@
+import {militaryPage} from './military-page.mjs';
+import {worldKitSummary} from './troop-kit-world.mjs';
+import {TROOP_KITS} from './troop-kits.mjs';
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+export function openMilitaryRegister(state,root,onClose){
+ const rows=worldKitSummary(state.domestic);let depot='central',page=0;
+ const d=document.createElement('dialog');d.className='court-play-dialog court-personnel military-register';root.append(d);d.setAttribute('aria-label','军务精册');d.onclose=()=>{d.remove();onClose?.();};
+ function draw(){const row=rows.find(r=>r.id===depot)??rows[0],history=[...state.domestic.troopKits.history,...state.domestic.war.history].sort((a,b)=>b.turn-a.turn||b.id-a.id).flatMap(h=>h.lines.flatMap(line=>Array.from({length:Math.ceil(line.length/65)},(_,i)=>({...h,lines:[line.slice(i*65,i*65+65)]})))),pages=Math.max(1,history.length);page=Math.min(page,pages-1);
+ d.innerHTML=`<header><h1>军务精册</h1><button data-register-close>关闭 ×</button></header><div class="personnel-scene-body"><section class="personnel-scene-main revenue-workspace"><label class="garrison-depot-picker">驻地<select data-register-depot aria-label="精册驻地">${rows.map(r=>`<option value="${esc(r.id)}" ${r.id===depot?'selected':''}>${esc(r.name)}</option>`).join('')}</select></label><div class="military-register-metrics"><span>兵员 <b>${row.soldiers.total}</b></span><span>占用 <b>${row.soldiers.used}</b></span><span>可用 <b>${row.soldiers.available}</b></span><span>训练 <b>${row.training}</b></span></div><table class="military-register-table"><thead><tr><th>兵种装备 / 人份</th><th>库存</th><th>占用</th><th>可用</th></tr></thead><tbody>${TROOP_KITS.map(k=>`<tr><th>${esc(k.name)}</th><td>${row.kits[k.id].total}</td><td>${row.kits[k.id].used}</td><td>${row.kits[k.id].available}</td></tr>`).join('')}</tbody></table></section><aside class="personnel-scene-side"><div class="personnel-scene-detail"><h2>军令记录</h2>${history.length?history.slice(page,page+1).map(h=>`<article><h3>第 ${h.turn} 旬</h3><p>${h.lines.map(esc).join('；')}</p></article>`).join(''):'<p data-military-fact>暂无军令记录</p>'}</div><footer class="personnel-decision"><div class="military-pager"><button data-register-prev ${page===0?'disabled':''}>上一页</button><span>${page+1} / ${pages}</span><button data-register-next ${page===pages-1?'disabled':''}>下一页</button></div></footer></aside></div>`;
+ d.querySelector('[data-register-close]').onclick=()=>d.close();d.querySelector('[data-register-depot]').onchange=e=>{depot=e.target.value;draw();};d.querySelector('[data-register-prev]').onclick=()=>{page--;draw();};d.querySelector('[data-register-next]').onclick=()=>{page++;draw();};militaryPage(d,'军务精册');
+ }
+ draw();d.showModal();return d;
+}

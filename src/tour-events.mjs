@@ -1,3 +1,9 @@
+import {TOUR_CAMEOS,TOUR_CAMEO_CHANCE,tourCameo,cameoSeen,markCameoSeen,cameoEvents} from './tour-cameos.mjs';
+import {generateBeauty,isGeneratedBeautyId} from './random-beauty-generation.mjs';
+import {postNationalGrain,nationalGrain} from './national-resources.mjs';
+import {admittedPopulation} from './city-capacity.mjs';
+import {assignArrivalJobs} from './labor.mjs';
+import {postGrain} from './grain-finance.mjs';
 import {endReign} from './ending-rules.mjs';
 import {postTreasury} from './finance.mjs';
 import {changeWelfare} from './building-effects.mjs';
@@ -88,7 +94,8 @@ export const TOUR_EVENTS=[
   option('poetry','以诗相赠，珍重作别',{stats:{talent:8,wisdom:3,happiness:5}}),
   option('patron','资助她的画坊，留一段湖畔佳话',{money:-600,local:{activity:4},stats:{talent:4,happiness:8}})]}
 ];
-export const XIA_YUHE_CHANCE=.01;
+TOUR_EVENTS.push(...cameoEvents());
+export const XIA_YUHE_CHANCE=TOUR_CAMEO_CHANCE;
 const homeProvinces=new Set(['hebei','henan','huainan','jiangnan','lingnan','hedong','guannei','shannan','jiannan','longyou']);
 const byId=new Map(TOUR_EVENTS.map(e=>[e.id,e]));
 const ordinary=BEAUTIES.filter(p=>p.origin==='原创'&&p.regionId==='sheng');
@@ -98,22 +105,47 @@ export function createTourEncounters(s,trip){
  const random=portraitRandom(portraitHash(`${s.createdAt}|${s.name}|tour:${trip.id}|${trip.provinceId}`));
  const p=s.domestic.provinces.find(p=>p.id===trip.provinceId),recent=new Set(s.travel.history.slice(0,3).flatMap(t=>(t.encounters??[]).map(e=>e.type)));
  const pool=TOUR_EVENTS.filter(e=>!e.rare).map(event=>({event,weight:(['petition','bereaved','assassin'].includes(event.id)?2:1)*(recent.has(event.id)?.3:1)*(event.id==='bandits'&&p.welfare.security<60?2:1)*(event.id==='flood'&&p.disaster?2:1)}));
- const used=new Set([...s.harem.members.map(p=>p.id),...(s.harem.seen??[]),...(s.harem.encounter?[s.harem.encounter.id]:[])]);
+ const used=new Set([...s.harem.members.map(p=>p.id),...(s.harem.seen??[]),...(s.harem.dismissed??[]),...(s.harem.encounter?[s.harem.encounter.id]:[])]);
  const records=Array.from({length:3},(_,i)=>{
   let roll=random()*pool.reduce((n,p)=>n+p.weight,0),index=pool.findIndex(p=>(roll-=p.weight)<0);if(index<0)index=pool.length-1;
   const [{event}]=pool.splice(index,1),seed=Math.floor(random()*4294967296);
   const record={id:`tour-${trip.id}-${i+1}`,type:event.id,seed,status:'pending',choiceId:null,result:null};
-  if(event.id==='bereaved'){const available=ordinary.filter(p=>!used.has(p.id));if(available.length){record.personId=available[seed%available.length].id;used.add(record.personId);}}
+  if(event.id==='bereaved')record.personId=`random-beauty-tour-${trip.id}-${i+1}`;
   return record;
  });
- if(!s.travel.easterEggs.xiaYuheSeen&&homeProvinces.has(trip.provinceId)&&random()<XIA_YUHE_CHANCE){
-  const available=ordinary.filter(p=>!used.has(p.id));if(available.length){const seed=Math.floor(random()*4294967296);records[2]={id:`tour-${trip.id}-3`,type:'xia-yuhe',seed,status:'pending',choiceId:null,result:null,personId:available[seed%available.length].id};s.travel.easterEggs.xiaYuheSeen=true;}
+ // Fixed disjoint 1% intervals: seen characters do not redistribute their chance.
+ if(homeProvinces.has(trip.provinceId)){
+  const cameo=TOUR_CAMEOS[Math.floor(random()/TOUR_CAMEO_CHANCE)];
+  if(cameo&&(!cameo.featuredId||!used.has(cameo.featuredId))&&!cameoSeen(s,cameo.id)&&(!cameo.eligibleProvinces||cameo.eligibleProvinces.includes(trip.provinceId))){
+   const available=ordinary.filter(p=>!used.has(p.id)),seed=Math.floor(random()*4294967296);
+   const personId=cameo.featuredId??(cameo.id==='xia-yuhe'?available[seed%available.length]?.id:`random-beauty-tour-${trip.id}-3`);
+   if(personId){records[2]={id:`tour-${trip.id}-3`,type:cameo.id,seed,status:'pending',choiceId:null,result:null,personId};markCameoSeen(s,cameo.id);}
+  }
  }
+
  return records;
 }
 export function nextTourEvent(s){return s.travel?.pending?.kind==='tour'?s.travel.pending.encounters?.find(e=>e.status==='pending')??null:null;}
 export function tourEventDefinition(event){return event?byId.get(event.type):null;}
 export function eventCompanion(s,event){
+ const cameo=tourCameo(event.type);
+ if(cameo&&cameo.id!=='xia-yuhe'){
+  const province=s.domestic.provinces.find(p=>p.id===s.travel.pending?.provinceId);
+  const person=isGeneratedBeautyId(event.personId)?generateBeauty({id:event.personId,cityId:cameo.homeCityId??'guannei',random:portraitRandom(event.seed)}):structuredClone(BEAUTIES.find(p=>p.id===event.personId));
+  if(!person)return null;
+  Object.assign(person,{name:cameo.name,age:cameo.age,appearance:cameo.appearance,experience:cameo.experience,ability:cameo.ability,baseAbility:cameo.ability,randomBeauty:true,rank:null,inColdPalace:false,specialty:cameo.specialty,personality:cameo.personality,
+   cityId:cameo.homeCityId??person.cityId,biography:`${cameo.story}取意${cameo.source}的巡游改编。${cameo.actor?`美术参考${cameo.actor}年轻成年时期的容貌。`:''}游戏情节、具体容貌与人物属性为艺术设计，不等同史实或原作结局。`,
+   travelOrigin:{eventId:event.id,turn:s.turn,provinceId:province?.id??'guannei',consented:true,easterEgg:cameo.id}});
+  return ensurePortrait(person,`tour:${event.id}`);
+ }
+
+ if(event.type==='bereaved'&&isGeneratedBeautyId(event.personId)){
+ const person=generateBeauty({id:event.personId,random:portraitRandom(event.seed)});
+ const province=s.domestic.provinces.find(p=>p.id===s.travel.pending?.provinceId);
+ person.biography=`巡游${province?.name??'地方'}时相逢的成年民女。父亲病故后因家贫无力安葬，在御前得到救助；父事料理妥当后，自愿随驾入宫。${person.biography}`;
+ person.travelOrigin={eventId:event.id,turn:s.turn,provinceId:province?.id??'guannei',consented:true};
+ return ensurePortrait(person,`tour:${event.id}`);
+ }
  const base=ordinary.find(p=>p.id===event.personId);if(!base)return null;
  const p=s.domestic.provinces.find(p=>p.id===s.travel.pending?.provinceId),seed=event.seed;
  const names=['沈','林','顾','苏','陆','柳','江','许'],given=['晚晴','清禾','知微','若兰','锦书','云舒','念慈','映秋'];
@@ -135,7 +167,7 @@ export function effectSummary(e){
  if(e.prestige)parts.push('威望'+signed(e.prestige));
  for(const [key,n]of Object.entries(e.stats??{}))parts.push(statNames[key]+signed(n));
  for(const [key,n]of Object.entries(e.local??{}))parts.push('当地'+welfareNames[key]+signed(n));
- for(const [key,label]of Object.entries({grain:'当地存粮',cash:'地方府库',living:'当地生活水平',productivity:'当地各业生产率',training:'中央训练',population:'当地人口'}))if(e[key])parts.push(label+signed(e[key]));
+ for(const [key,label]of Object.entries({grain:'全国存粮',cash:'全国国库',living:'当地生活水平',productivity:'当地各业生产率',training:'中央训练',population:'当地人口'}))if(e[key])parts.push(label+signed(e[key]));
  if(e.admit)parts.push('迎入后宫（自愿）');if(e.justice)parts.push('记入刑部案卷');return parts.join('，');
 }
 export function tourChoiceBlock(s,event,choice){
@@ -143,8 +175,8 @@ export function tourChoiceBlock(s,event,choice){
  if(s.stats.life===0)return '寿元已尽';
  if(p.countryId!==s.domestic.playerCountryId)return '当地已失去统治，请结束行程';
  if(country.fiscal.treasury<Math.max(0,-(choice.effects.money??0)))return '国库不足';
- if(p.welfare.grainReserve<Math.max(0,-(choice.effects.grain??0)))return '当地存粮不足';
- if(choice.effects.admit){if(!event.personId)return '暂无可相逢人物';if(s.harem.members.some(p=>p.id===event.personId)||s.harem.encounter?.id===event.personId)return '此人已在宫中或候选中';if(s.harem.members.length>=BEAUTIES.length+s.domestic.countries.length)return '宫册已满';}
+ if(nationalGrain(s.domestic,p.countryId)<Math.max(0,-(choice.effects.grain??0)))return '全国存粮不足';
+ if(choice.effects.admit){if(!event.personId)return '暂无可相逢人物';if(s.harem.members.some(p=>p.id===event.personId)||s.harem.encounter?.id===event.personId)return '此人已在宫中或候选中';}
  return '';
 }
 function applyEffects(s,e,event,lines,tag){
@@ -154,10 +186,11 @@ function applyEffects(s,e,event,lines,tag){
  for(const [key,n]of Object.entries(e.stats??{})){const before=s.stats[key],max=key==='life'?s.stats.lifeLimit:['happiness','health'].includes(key)?100:500;s.stats[key]=bounded(before+n,0,max);describe(statNames[key],before,s.stats[key]);}
  if(e.prestige){const before=c.prestige;c.prestige=bounded(c.prestige+e.prestige,0,500);s.stats.prestige=c.prestige;describe('威望',before,c.prestige);}
  for(const [key,n]of Object.entries(e.local??{})){const before=p.welfare[key];changeWelfare(p,key,n);if(key==='defense'&&p.buildingEffects)p.buildingEffects.baselineDefense=bounded(p.buildingEffects.baselineDefense+p.welfare[key]-before,0,100);describe(p.name+welfareNames[key],before,p.welfare[key]);}
- for(const [key,obj,field,max]of [['grain',p.welfare,'grainReserve',1e12],['cash',p.status,'cash',1e12],['living',p.status,'livingStandard',100],['training',d.centralArmy,'training',100]])if(e[key]){const before=obj[field];obj[field]=bounded(before+e[key],key==='cash'?-1e12:0,max);describe({grain:'当地存粮',cash:'地方府库',living:'生活水平',training:'中央训练'}[key],before,obj[field]);}
+ for(const [key,obj,field,max]of [['grain',c.fiscal,'grain',1e12],['cash',c.fiscal,'treasury',1e12],['living',p.status,'livingStandard',100],['training',d.centralArmy,'training',100]])if(e[key]){const before=obj[field],after=bounded(before+e[key],0,max);if(key==='grain')postNationalGrain(d,p.countryId,{turn:s.turn,income:Math.max(0,after-before),expense:Math.max(0,before-after),category:'event',reason:'巡游·'+byId.get(event.type).title,key:`${event.id}:${tag}:grain`});else if(key==='cash')postTreasury(d,c.id,{turn:s.turn,income:Math.max(0,after-before),expense:Math.max(0,before-after),reason:'巡游地方收入与支出',key:`${event.id}:${tag}:cash`});else obj[field]=after;describe({grain:'全国存粮',cash:'全国国库',living:'生活水平',training:'中央训练'}[key],before,obj[field]);}
+ s.stats.treasury=c.fiscal.treasury;
  if(e.productivity){for(const [key,v]of Object.entries(p.economy)){const before=v.productivity;v.productivity=bounded(v.productivity+e.productivity,0,100);describe(`${p.name}${key}生产率`,before,v.productivity);}}
- if(e.population){p.population.total+=e.population;p.population.professions.farmers+=Math.floor(e.population*.6);p.population.professions.workers+=Math.floor(e.population*.2);lines.push(`当地人口+${e.population}`);}
- if(e.admit){const person=eventCompanion(s,event);person.rank=entryConsortRank(s);s.harem.members.push(person);s.harem.seen=[...new Set([...(s.harem.seen??[]),person.id])];lines.push(`${person.name}（${person.age}岁）自愿入宫，已录入后宫名册`);}
+ if(e.population){const n=admittedPopulation(p,e.population);p.population.total+=n;assignArrivalJobs(p,{farmers:Math.floor(n*.6),workers:Math.floor(n*.2)});lines.push(`当地人口+${n}${n<e.population?'（受城州容量限制）':''}`);}
+ if(e.admit){const person=eventCompanion(s,event);person.rank=entryConsortRank(s);s.harem.members.push(person);s.harem.seen=[...new Set([...(s.harem.seen??[]),person.id])];lines.push(`${person.name}（${person.age}岁）自愿入宫，已录入后宫名册`);const reveal=tourCameo(event.type)?.admissionText;if(reveal)lines.push(reveal);}
  if(e.justice){d.justice.history.unshift(`第${s.turn}旬：巡游${p.name}，处理「${byId.get(event.type).title}」，御前指示及结果见出行纪事。`);d.justice.history=d.justice.history.slice(0,100);}
 }
 export function resolveTourEvent(state,eventId,choiceId){
@@ -179,14 +212,18 @@ export function validateTourEvents(s){
   if((trip.kind!=='tour'||trip.startedTurn===undefined)&&list.length)fail();let unresolved=false;
   for(const [i,e]of list.entries()){
    const def=byId.get(e?.type);if(!def||e.id!==`tour-${trip.id}-${i+1}`||!Number.isSafeInteger(e.seed)||e.seed<0||e.seed>4294967295||!['pending','resolved'].includes(e.status))fail();
-   if(e.personId!==undefined&&(!['bereaved','xia-yuhe'].includes(e.type)||!ordinary.some(p=>p.id===e.personId)))fail();
-   if(e.type==='xia-yuhe'&&!e.personId)fail();
+   if(e.personId!==undefined&&(!(e.type==='bereaved'||tourCameo(e.type))||!(ordinary.some(p=>p.id===e.personId)||(tourCameo(e.type)?.featuredId===e.personId)||((e.type==='bereaved'||tourCameo(e.type)?.id!=='xia-yuhe')&&isGeneratedBeautyId(e.personId)))))fail();
+   if(tourCameo(e.type)&&(!e.personId||(tourCameo(e.type).featuredId&&e.personId!==tourCameo(e.type).featuredId)))fail();
    if(e.status==='pending'){unresolved=true;if(e.choiceId!==null||e.result!==null)fail();}
    else if(unresolved||!def.choices.some(c=>c.id===e.choiceId)||typeof e.result!=='string'||!e.result||e.result.length>1000)fail();
   }
  }
- const appearances=[...(s.travel.pending?.encounters??[]),...s.travel.history.flatMap(t=>t.encounters??[])].filter(e=>e.type==='xia-yuhe');
- if(appearances.length>1||appearances.length&&!s.travel.easterEggs.xiaYuheSeen)fail();
- const companions=s.harem.members.filter(p=>p.travelOrigin?.easterEgg==='xia-yuhe');
- if(companions.length>1||companions.length&&!s.travel.easterEggs.xiaYuheSeen||companions.some(p=>p.name!=='夏雨荷'||!p.randomBeauty))fail();
+ const seen=s.travel.easterEggs.cameosSeen??[];
+ if(!Array.isArray(seen)||new Set(seen).size!==seen.length||seen.some(id=>!TOUR_CAMEOS.slice(1).some(c=>c.id===id)))fail();
+ for(const cameo of TOUR_CAMEOS){
+  const appearances=[...(s.travel.pending?.encounters??[]),...s.travel.history.flatMap(t=>t.encounters??[])].filter(e=>e.type===cameo.id);
+  if(appearances.length>1||appearances.length&&!cameoSeen(s,cameo.id))fail();
+  const companions=s.harem.members.filter(p=>p.travelOrigin?.easterEgg===cameo.id);
+  if(companions.length>1||companions.length&&!cameoSeen(s,cameo.id)||companions.some(p=>p.name!==cameo.name||!p.randomBeauty))fail();
+ }
 }

@@ -1,0 +1,65 @@
+/* Fiscal and personnel actions deliberately share the same button treatment. */
+.court-atlas .atlas-order .court-vermilion,
+.personnel-office-scroll .personnel-decision .court-vermilion,
+.works-minister-dialog .wm-order .court-vermilion,
+.wm-help [data-confirm-stop]{
+ border:3px double #cfaa65;border-radius:8px;background:linear-gradient(#a3432e,#79281e);
+ box-shadow:0 3px 5px #56371955,inset 0 0 0 2px #67281b;color:#f9dfaa;
+ font:clamp(15px,1.6cqw,25px) GovernanceKai,serif;letter-spacing:.2em;padding:10px;
+ min-height:50px;box-sizing:border-box;cursor:pointer;
+}
+.court-atlas .atlas-order .court-vermilion:hover:not(:disabled),
+.personnel-office-scroll .personnel-decision .court-vermilion:hover:not(:disabled),
+.works-minister-dialog .wm-order .court-vermilion:hover:not(:disabled),
+.wm-help [data-confirm-stop]:hover:not(:disabled){
+ background:linear-gradient(#b24d35,#8b3023);filter:none;
+}
+.court-atlas .atlas-order .court-vermilion:disabled,
+.personnel-office-scroll .personnel-decision .court-vermilion:disabled,
+.works-minister-dialog .wm-order .court-vermilion:disabled{opacity:.4;cursor:not-allowed;filter:none}
+.personnel-office-scroll .personnel-honor-options .court-vermilion{display:flex;justify-content:center;align-items:center;gap:6px;letter-spacing:.1em}
+.personnel-office-scroll .personnel-honor-options .court-vermilion small{font-size:11px;color:#f9dfaa;white-space:nowrap}
+/* All personnel pagers use the gold secondary-control finish together. */
+.personnel-office-scroll .personnel-office-pagination,
+.personnel-register .personnel-register-pages,
+.works-minister-dialog .wm-pager{gap:12px;color:#6f5736;font-family:GovernanceKai,serif;font-variant-numeric:tabular-nums}
+.personnel-office-scroll .personnel-office-pagination button,
+.personnel-register .personnel-register-pages button,
+.personnel-help-dialog nav button,
+.personnel-office-scroll .personnel-seal-actions [data-personnel-edit],
+.economy-album .economy-tabs button,
+.economy-album .economy-pagination :is(button,select),
+.works-minister-dialog .wm-pager button,
+.wm-help .wm-pager button,
+.works-minister-dialog .wm-order .wm-stop,
+.economy-help button{
+ border:3px double #b99b68;border-radius:4px;background:linear-gradient(#f8edcf,#e6d1a4);
+ box-shadow:0 1px 2px #56371926,inset 0 0 0 1px #fff5d54d;color:#6f5736;
+ font-family:GovernanceKai,serif;letter-spacing:.08em;padding:0 10px;cursor:pointer;
+}
+.personnel-office-scroll .personnel-office-pagination button:hover:not(:disabled),
+.personnel-register .personnel-register-pages button:hover:not(:disabled),
+.personnel-help-dialog nav button:hover:not(:disabled),
+.personnel-office-scroll .personnel-seal-actions [data-personnel-edit]:hover:not(:disabled),
+.economy-album .economy-tabs button:hover:not(:disabled),
+.economy-album .economy-pagination button:hover:not(:disabled),
+.works-minister-dialog .wm-pager button:hover:not(:disabled),
+.wm-help .wm-pager button:hover:not(:disabled),
+.works-minister-dialog .wm-order .wm-stop:hover:not(:disabled),
+.economy-help button:hover:not(:disabled){background:linear-gradient(#fff3d4,#dbc18e);filter:none}
+.personnel-office-scroll .personnel-office-pagination button:disabled,
+.personnel-register .personnel-register-pages button:disabled,
+.personnel-help-dialog nav button:disabled,
+.works-minister-dialog .wm-pager button:disabled,
+.wm-help .wm-pager button:disabled{opacity:.4;cursor:not-allowed;filter:none;box-shadow:none}
+@media(max-width:700px){
+ .court-atlas .atlas-order .court-vermilion,
+ .personnel-office-scroll .personnel-decision .court-vermilion,
+.works-minister-dialog .wm-order .court-vermilion,
+.wm-help [data-confirm-stop]{font-size:17px;padding:7px;min-height:44px}
+ .personnel-office-scroll .personnel-office-pagination button,
+ .personnel-register .personnel-register-pages button{padding:1px 8px;font-size:10px;line-height:1.2}
+ .grain-purchase-atlas .atlas-order .court-vermilion{font-size:13px;padding:8px 2px;letter-spacing:0}
+}
+
+.economy-album .economy-tabs button[aria-pressed=true]{border-color:#cfaa65;background:linear-gradient(#a3432e,#79281e);box-shadow:0 3px 5px #56371955,inset 0 0 0 2px #67281b;color:#f9dfaa}

@@ -1,0 +1,12 @@
+{
+  "date": "2026-10-20",
+  "tool": "内置 image_gen",
+  "input": "assets/beauties/special/huang-rong-v3.png",
+  "output": "assets/beauties/special/huang-rong-v4.png",
+  "identityReferences": [
+    "outputs/references/tour-cameos/barbara-yung-pink-hair.jpg",
+    "outputs/references/tour-cameos/barbara-yung-portrait.jpg"
+  ],
+  "correction": "收短脸部和下巴，恢复颧颊圆润度、眼型鼻唇等个人特征；保留自然站姿、粉衣和双环髻。生成式编辑仍可能与真人照片存在差异。",
+  "prompt": "FACE IDENTITY CORRECTION on IMAGE 1 existing full-body Huang Rong illustration. The user says it does not look enough like Barbara Yung 翁美玲. Use IMAGE 2 (actual 1983 Huang Rong close-up) and IMAGE 3 (her adult portrait) as authoritative identity. Correct the face to her REAL short round-oval face: fuller rounded cheek volume, broader cheek-to-jaw transition, compact midface, a SHORT softly ROUNDED chin, not the narrow elongated V-line pointed-chin fantasy face in IMAGE 1. Accurately match Barbara Yung's natural eye spacing, her large softly rounded almond eyes with recognizable upper lids and gentle outer corners (not lifted fox eyes), characteristic brows, small rounded nose tip and nostril width, recognizable upper/lower lip shape and subtle closed-mouth smile, original ear placement and natural facial proportions. Her face should read as the SAME real woman as IMAGE 2 at first glance, not a generic beautiful Asian heroine. Do not over-slim, sharpen jaw, enlarge eyes beyond reference, or modernize her makeup. Keep the normal adult face fullness and specific individual features. Use head angle and facial shadows consistent with IMAGE 1's existing relaxed neck, shoulders and three-quarter body stance. Maintain coherent delicate realistic colored-pencil/watercolor illustration across face, neck and body, no photo cut-and-paste seams. Retain IMAGE 1's full figure, natural stance, one hand at gold belt, other holding green flute low across waist, exact pink printed sheer outer tunic, white standing-collar blouse, gold belt/cuffs, white ankle-length skirt, embroidered shoes, TWO looped buns with fringe, gold butterflies and pink flowers. Do not redesign body, costume, pose or hair; focus on faithful face identity and natural expression. Full hair-to-soles, transparent alpha background, no scenery, ground, glow, text or watermark."
+}

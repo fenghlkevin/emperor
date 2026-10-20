@@ -1,3 +1,4 @@
+import {TOUR_CAMEOS,tourCameo,markCameoSeen} from '../src/tour-cameos.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {newGame,advance,validateSave} from '../src/game.mjs';
@@ -11,9 +12,9 @@ import {finishTravel} from '../src/travel-session.mjs';
 import {persistCandidate} from '../src/persistence.mjs';
 import {changeWelfare} from '../src/building-effects.mjs';
 function starting(){let s=newGame('巡游事件');s.phase=2;s.createdAt='event-fixture';s.domestic.countries[0].fiscal.treasury=100000;s.stats.treasury=100000;s=scheduleTravel(s,'tour','guannei').state;advance(s);return beginTravel(s).state;}
-function fixture(type,seed=0){const s=starting(),person=BEAUTIES.find(p=>p.origin==='原创'&&p.regionId==='sheng'&&!s.harem.members.some(m=>m.id===p.id));s.travel.pending.encounters=[{id:'tour-1-1',type,seed,status:'pending',choiceId:null,result:null,...(['bereaved','xia-yuhe'].includes(type)?{personId:person.id}:{})}];if(type==='xia-yuhe')s.travel.easterEggs.xiaYuheSeen=true;return s;}
-test('all nineteen events and fifty-seven options settle into valid saves',t=>{
- t.mock.method(Math,'random',()=>.99);assert.equal(TOUR_EVENTS.length,19);
+function fixture(type,seed=0){const s=starting();if(tourCameo(type)?.eligibleProvinces)s.travel.pending.provinceId=tourCameo(type).eligibleProvinces[0];const person=BEAUTIES.find(p=>p.origin==='原创'&&p.regionId==='sheng'&&!s.harem.members.some(m=>m.id===p.id));s.travel.pending.encounters=[{id:'tour-1-1',type,seed,status:'pending',choiceId:null,result:null,...(type==='bereaved'||tourCameo(type)?{personId:tourCameo(type)?.featuredId??(tourCameo(type)&&type!=='xia-yuhe'?'random-beauty-tour-1-1':person.id)}:{})}];if(tourCameo(type))markCameoSeen(s,type);return s;}
+test('all twenty-eight events and eighty-four options settle into valid saves',t=>{
+ t.mock.method(Math,'random',()=>.99);assert.equal(TOUR_EVENTS.length,28);
  for(const def of TOUR_EVENTS)for(const choice of def.choices){const s=fixture(def.id),before=structuredClone(s),e=nextTourEvent(s),r=resolveTourEvent(s,e.id,choice.id);assert.deepEqual(s,before);assert.equal(r.state.travel.pending.encounters[0].status,'resolved');assert.ok(r.message.includes(def.title));assert.doesNotThrow(()=>validateSave(r.state),`${def.id}/${choice.id}`);assert.throws(()=>resolveTourEvent(r.state,e.id,choice.id),/已处理/);}
 });
 test('three weighted events are unique, stable on reload, and recent events are downweighted',()=>{
@@ -54,8 +55,8 @@ test('Xia Yuhe is a one-percent original-province cameo that survives history tr
  const refused=resolveTourEvent(fixture('xia-yuhe'),'tour-1-1','poetry').state;assert.equal(refused.travel.easterEggs.xiaYuheSeen,true);assert.equal(refused.harem.members.length,1);assert.doesNotThrow(()=>validateSave(refused));
 });
 test('Xia Yuhe has independent photo-referenced portrait and higher attributes through admission/reload',()=>{
- const s=fixture('xia-yuhe'),person=eventCompanion(s,nextTourEvent(s));assert.equal(person.name,'夏雨荷');assert.equal(person.appearance,98);assert.equal(person.experience,25);assert.equal(person.ability,110);assert.match(portraitDataUrl(person),/sketch-beauty-xia-yuhe-v3.png/);
- const r=validateSave(resolveTourEvent(s,'tour-1-1','admit').state),p=r.harem.members.find(p=>p.name==='夏雨荷');assert.equal(p.travelOrigin.easterEgg,'xia-yuhe');assert.equal(p.appearance,98);assert.match(portraitDataUrl(p),/v3.png/);assert.equal(r.travel.easterEggs.xiaYuheSeen,true);
+ const s=fixture('xia-yuhe'),person=eventCompanion(s,nextTourEvent(s));assert.equal(person.name,'夏雨荷');assert.equal(person.appearance,98);assert.equal(person.experience,25);assert.equal(person.ability,110);assert.match(portraitDataUrl(person),/assets\/beauties\/special\/sketch-beauty-xia-yuhe-transparent-v6.png/);
+ const r=validateSave(resolveTourEvent(s,'tour-1-1','admit').state),p=r.harem.members.find(p=>p.name==='夏雨荷');assert.equal(p.travelOrigin.easterEgg,'xia-yuhe');assert.equal(p.appearance,98);assert.match(portraitDataUrl(p),/xia-yuhe-transparent-v6.png/);assert.equal(r.travel.easterEggs.xiaYuheSeen,true);
  const bad=structuredClone(r);bad.travel.easterEggs.xiaYuheSeen=false;assert.throws(()=>validateSave(bad),/巡游事件/);
 });
 test('failed storage cannot publish event rewards and retry commits only once',()=>{
@@ -76,4 +77,101 @@ test('prestige retains values above 100, caps at 500, and survives save reload',
  }
  const bad=newGame('无效威望');bad.domestic.countries[0].prestige=501;
  assert.throws(()=>validateSave(bad));
+});
+
+test('ordinary tour companions generate beyond the archived pool and preserve independent abilities',()=>{
+ const s=starting();s.harem.seen=BEAUTIES.map(p=>p.id);
+ let found;
+ for(let i=0;i<100;i++){s.createdAt=`generated-tour-${i}`;const a=createTourEncounters(s,s.travel.pending),b=createTourEncounters(s,s.travel.pending);assert.deepEqual(a,b);found=a.find(e=>e.type==='bereaved');if(found)break;}
+ assert.ok(found);assert.match(found.personId,/^random-beauty-tour-/);
+ // Put the chosen encounter first while preserving the event ID contract.
+ found.id='tour-1-1';s.travel.pending.encounters=[found];
+ const p=eventCompanion(s,found);assert.ok(p.baseAbility>=20&&p.baseAbility<=200);assert.ok(p.appearance>=30&&p.appearance<=100);
+ assert.deepEqual(eventCompanion(validateSave(structuredClone(s)),found),p);
+ let admitted=resolveTourEvent(s,found.id,'admit').state;admitted=validateSave(JSON.parse(JSON.stringify(admitted)));
+ assert.equal(admitted.harem.members.find(m=>m.id===p.id).baseAbility,p.baseAbility);
+});
+
+test('every unseen cameo retains its own one-percent interval, without redistributing seen chances',()=>{
+ const s=starting(),trip=s.travel.pending;trip.provinceId='hebei';const counts=Object.fromEntries(TOUR_CAMEOS.map(c=>[c.id,0]));
+ for(let i=0;i<10000;i++){
+  s.createdAt=`cameo-distribution-${i}`;s.travel.easterEggs={xiaYuheSeen:false,cameosSeen:[]};
+  const first=createTourEncounters(s,trip),rare=first.filter(e=>tourCameo(e.type));
+  assert.ok(rare.length<=1);
+  if(rare.length){const id=rare[0].type;counts[id]++;assert.equal(first[2].type,id);
+   // Only the chosen interval is suppressed; it is not rerolled into another character.
+   assert.ok(!createTourEncounters(s,trip).some(e=>tourCameo(e.type)));
+  }
+ }
+ for(const [id,n]of Object.entries(counts)){const c=tourCameo(id);if(c.eligibleProvinces&&!c.eligibleProvinces.includes(trip.provinceId))assert.equal(n,0);else assert.ok(n>=65&&n<=135,`${id}: ${n}/10000`);}
+ s.travel.easterEggs={xiaYuheSeen:true,cameosSeen:TOUR_CAMEOS.slice(1).map(c=>c.id)};
+ for(let i=0;i<100;i++){s.createdAt=`all-seen-${i}`;assert.ok(!createTourEncounters(s,trip).some(e=>tourCameo(e.type)));}
+ s.travel.easterEggs={xiaYuheSeen:false,cameosSeen:[]};trip.provinceId='japan-core';
+ for(let i=0;i<200;i++){s.createdAt=`foreign-cameo-${i}`;assert.ok(!createTourEncounters(s,trip).some(e=>tourCameo(e.type)));}
+});
+
+test('new cameos retain identities, dedicated portraits, consent and seen markers after admission/reload or refusal',()=>{
+ for(const c of TOUR_CAMEOS.slice(1)){
+  const s=fixture(c.id),candidate=eventCompanion(s,nextTourEvent(s));
+  assert.equal(candidate.name,c.name);assert.ok(candidate.age>=18);assert.equal(candidate.travelOrigin.easterEgg,c.id);
+  assert.ok(portraitDataUrl(candidate).endsWith(c.portraitAsset));
+  let admitted=resolveTourEvent(s,'tour-1-1','admit').state;
+  admitted=validateSave(JSON.parse(JSON.stringify(admitted)));
+  const person=admitted.harem.members.find(p=>p.id===candidate.id);
+  assert.ok(isActiveBeauty(person));assert.equal(person.travelOrigin.consented,true);
+  assert.equal(portraitDataUrl(person),portraitDataUrl(candidate));
+  admitted=finishTravel(admitted).state;admitted.travel.history=[];
+  assert.ok(validateSave(admitted).travel.easterEggs.cameosSeen.includes(c.id));
+  const refused=resolveTourEvent(s,'tour-1-1','part').state;
+  assert.equal(refused.harem.members.length,s.harem.members.length);
+  assert.ok(validateSave(refused).travel.easterEggs.cameosSeen.includes(c.id));
+  const bad=structuredClone(refused);bad.travel.easterEggs.cameosSeen=[];
+  assert.throws(()=>validateSave(bad),/巡游事件/);
+  const duplicate=structuredClone(admitted);duplicate.harem.members.push({...person,id:'random-beauty-tour-999-3'});
+  assert.throws(()=>validateSave(duplicate));
+ }
+});
+
+test('older saves migrate cameo markers without changing Xia Yuhe and reject corrupted marker lists',()=>{
+ const s=fixture('xia-yuhe');delete s.travel.easterEggs.cameosSeen;
+ const migrated=validateSave(JSON.parse(JSON.stringify(s)));
+ assert.equal(migrated.travel.easterEggs.xiaYuheSeen,true);assert.deepEqual(migrated.travel.easterEggs.cameosSeen,[]);
+ for(const markers of [['unknown'],['shen-fang','shen-fang'],'shen-fang']){
+  const bad=structuredClone(migrated);bad.travel.easterEggs.cameosSeen=markers;
+  assert.throws(()=>validateSave(bad),/巡游事件/);
+ }
+});
+
+test('Huang Rong reveals her true identity only through admission and retains her formal portrait after reload',()=>{
+ const c=tourCameo('huang-rong');assert.equal(c.actor,'翁美玲');assert.equal(c.encounterName,'小乞丐');
+ assert.notEqual(c.encounterPortraitAsset,c.portraitAsset);
+ const s=fixture(c.id),person=eventCompanion(s,nextTourEvent(s));
+ assert.equal(person.name,'黄蓉');assert.ok(person.age>=18);
+ const admitted=resolveTourEvent(s,'tour-1-1','admit');
+ assert.match(admitted.message,/恢复了本来容貌/);
+ const loaded=validateSave(JSON.parse(JSON.stringify(admitted.state)));
+ assert.ok(portraitDataUrl(loaded.harem.members.find(p=>p.name==='黄蓉')).endsWith(c.portraitAsset));
+ for(const choice of ['part','patron']){
+  const refused=resolveTourEvent(s,'tour-1-1',choice);
+  assert.ok(!refused.message.includes('恢复了本来容貌'));
+  assert.ok(!refused.state.harem.members.some(p=>p.name==='黄蓉'));
+  assert.ok(validateSave(refused.state).travel.easterEggs.cameosSeen.includes(c.id));
+ }
+});
+
+
+test('Huang Rong can only be generated in Hebei, where the Zhangjiakou first meeting is set',()=>{
+ const c=tourCameo('huang-rong');assert.deepEqual(c.eligibleProvinces,['hebei']);assert.equal(c.encounterCity,'张家口');
+ const s=starting(),trip=s.travel.pending;
+ for(const provinceId of ['hebei','henan','huainan','jiangnan','lingnan','hedong','guannei','shannan','jiannan','longyou']){
+  let hits=0;trip.provinceId=provinceId;
+  for(let i=0;i<5000;i++){
+   s.createdAt=`huang-rong-place-${i}`;s.travel.easterEggs={xiaYuheSeen:false,cameosSeen:[]};
+   if(createTourEncounters(s,trip).some(e=>e.type===c.id))hits++;
+  }
+  if(provinceId==='hebei')assert.ok(hits>=20&&hits<=85,`Hebei should be about 1%, got ${hits}/5000`);
+  else assert.equal(hits,0,provinceId+' must not generate Huang Rong');
+ }
+ const local=fixture('huang-rong'),person=eventCompanion(local,nextTourEvent(local));
+ assert.equal(person.travelOrigin.provinceId,'hebei');assert.equal(person.cityId,'jiangnan');
 });

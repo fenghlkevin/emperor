@@ -1,3 +1,5 @@
+> 2026-10-19 全国钱粮更新：各国各一份银两、粮食库存，州不再独立存钱存粮。灾损按受灾州人口份额扣全国资源；常规税银直接入国库。委任可先按全国缺口购粮，再统一扣全国仓损、汇总各州田赋、按需求比例供粮；短缺比例分配，按最大余数与州标识确定整数余粮。建筑收益读取实际分配后的缺粮结果。详见 [全国钱粮](national-resources.md)。
+
 # 行动阶段与旬结算顺序
 
 本文件按 `src/game.mjs::advance` 和 `src/domestic.mjs::settleDomestic` 的实际调用顺序排列。它描述现有行为，修改顺序应同时检查财政、粮食、工程生效和战争来源约束。存档版本见[兼容说明](save-compatibility.md)，字段来源见[数据字典](data-dictionary.md)。
@@ -44,13 +46,13 @@
 | 2 | settleDisasters | 到期灾害结束，按种子判断新灾，先扣地方钱粮、更新民生和情势；持续灾害不叠加 |
 | 3 | settleGeneral | 中央训练在本旬财政与生产之前结算 |
 | 4 | initializeFinance；依 countries 顺序处理有领土且未结算的国家 | countrySummary(T) 预测本旬收支，通过 postTreasury 登记 regular:T 并更新 accounting.lastSettledTurn |
-| 5 | 每个上述国家内按所属州顺序 | 先对期初超安全库存计陈粮损耗，再农业产粮、扣人口口粮、保存供粮快照；缺粮扣安定/民忠；settleBuildingEffects；必要时转动荡 |
+| 5 | 每个上述国家内按所属州顺序 | 新制本国先执行委任救急购粮，再对各州计算仓损、田赋入仓、军民夫供粮与民间不足的赈济，保存快照；旧制仍为全部产粮入仓并扣全人口口粮。真实缺口才扣安定/民忠，再 settleBuildingEffects；必要时转动荡 |
 | 6 | settleDiplomacy | 每旬贸易和年度贡银，按实际支付登记双边流水 |
 | 7 | settleConstruction | 普通工程推进；灾时冻结，到期灾害已在步骤 2 清除，故可当旬复工 |
 | 8 | settleIndustry | 产业工程推进、记录新增面积与下旬启用 |
 | 9 | settleOccupation | 占领治理与状态恢复 |
 | 10 | settleSpecialWorks | 特殊工程推进与已生效设施收益、官员年度成长；再次刷新特殊商业加成 |
-| 11 | settleStateDevelopment | 税负/缺粮/民变；年度人口、生活、地方投资；官员年龄与致仕寿终 |
+| 11 | settleStateDevelopment | 税负/缺粮/民变；每三旬生活升降；年度人口、地方投资；官员年龄与致仕寿终 |
 
 国家财政无领土时跳过；财政已结算的国家，其本轮内的供粮和普通建筑民生结算也跳过。其他业务模块用自身 lastTurn 防重复。`settleDomestic` 不递增 turn；只应按连续旬序调用，不能把跳到 T 理解为自动补算中间所有旬。
 
@@ -68,3 +70,9 @@
 防重依赖模块 lastTurn、财政 lastSettledTurn、交易 key、政令 nextId 和战场 reservation 状态。某个模块的防重标记不能代替整个推进流程；重复调用 advance 本身就是推进另一旬。
 
 灾害、祥瑞、炼丹进贡和巡游事件使用各自确定性规则。修习、怀孕、部分皇室与制举仍使用 Math.random；当前没有统一随机状态机，也没有完整事件溯源回放承诺。
+
+### 新资源制的委任救急时序
+
+`resourceRulesVersion=1`的新局在本国常规财政入账后、供粮扣粮前执行`settleGovernance(...,{reliefOnly:true})`。仅已委任本国州可自动购粮，按当旬生效产出和当旬仓损测算缺口；费用与治理损耗合计受当旬预算、国库保留线和购粮额度约束。预算不足时只买可付数量，余下缺口照实结算，不免除惩罚。
+
+`governance.reliefTurn`是可选的新制防重标记；后续人事中的一般治理沿用同一`spent/turnBudget`，不能重置预算或重复购粮。一般治理的生产/施工安排仍在供粮之后，并非本阶段已完成新的完整自治规则。旧档不改变原结算时序。

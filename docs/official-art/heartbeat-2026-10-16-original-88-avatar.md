@@ -1,6 +1,6 @@
 # 尉迟恭头像
 
-内置 ImageGen，本轮一张。人物 `original-88`，类型 `avatar`，保存至 `assets/officials/original-88-avatar.png`，参考同 ID 的 full 主图。面容、头肩构图及原服饰核验通过，正方形 RGBA 透明通道检查通过。已同步人物绑定、状态、画廊及完整性报告，录用前缀绑定通过。剩余 11 张头像；100 人双立绘审计通过。测试结果见本轮运行输出。
+内置 ImageGen，本轮一张。人物 `original-88`，类型 `avatar`，保存至 `assets/officials/historical/original-88/avatar.png`，参考同 ID 的 full 主图。面容、头肩构图及原服饰核验通过，正方形 RGBA 透明通道检查通过。已同步人物绑定、状态、画廊及完整性报告，录用前缀绑定通过。剩余 11 张头像；100 人双立绘审计通过。测试结果见本轮运行输出。
 
 提示词：
 

@@ -1,0 +1,370 @@
+{
+  "createdAt": "2026-10-20",
+  "source": "https://star6.cn/list_1.html",
+  "selectionNote": "网站为图库而非实时热度榜；当前执行队列39幅，保留各条目原服饰。",
+  "intervalMinutes": 5,
+  "total": 39,
+  "completed": 0,
+  "items": [
+    {
+      "order": 1,
+      "id": "zhongyuan",
+      "name": "zhongyuan",
+      "referenceCelebrity": "刘诗诗",
+      "originalAsset": "assets/beauties/random/zhongyuan-clean-v1.png",
+      "targetAsset": "assets/beauties/random/zhongyuan-clean-v1-celebrity-v1.png",
+      "status": "preview",
+      "startedAt": "2026-10-20T08:03:18.347661+00:00",
+      "previewAsset": "assets/beauties/random/zhongyuan-liushishi-photo-reference-preview-v2.png",
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a1584f-ca2e-7950-85ed-5fefa09b6a9d/exec-8c86e22f-128b-41c9-ad4e-6b7385c15ffc.png",
+      "validation": "第二版以真人写真作为面容参考；背景光晕仍在，未通过透明背景验收，未接入游戏。",
+      "referencePhoto": "assets/beauties/references/liu-shishi/portrait-20200621.jpeg",
+      "referencePage": "https://www.sohu.com/picture/403340061"
+    },
+    {
+      "order": 3,
+      "id": "henan",
+      "name": "henan",
+      "referenceCelebrity": "刘涛",
+      "originalAsset": "assets/beauties/random/henan-clean-v1.png",
+      "targetAsset": "assets/beauties/random/henan-clean-v1-celebrity-v1.png",
+      "status": "pending"
+    },
+    {
+      "order": 4,
+      "id": "v1-sheng-00",
+      "name": "v1-sheng-00",
+      "referenceCelebrity": "杨幂",
+      "originalAsset": "assets/beauties/random/v1-sheng-00-clean-v1.png",
+      "targetAsset": "assets/beauties/random/v1-sheng-00-clean-v1-celebrity-v1.png",
+      "status": "pending"
+    },
+    {
+      "order": 5,
+      "id": "v1-sheng-02",
+      "name": "v1-sheng-02",
+      "referenceCelebrity": "倪妮",
+      "originalAsset": "assets/beauties/random/v1-sheng-02-clean-v1.png",
+      "targetAsset": "assets/beauties/random/v1-sheng-02-clean-v1-celebrity-v1.png",
+      "status": "pending"
+    },
+    {
+      "order": 6,
+      "id": "v1-sheng-03",
+      "name": "v1-sheng-03",
+      "referenceCelebrity": "孙俪",
+      "originalAsset": "assets/beauties/random/v1-sheng-03-clean-v1.png",
+      "targetAsset": "assets/beauties/random/v1-sheng-03-clean-v1-celebrity-v1.png",
+      "status": "pending"
+    },
+    {
+      "order": 7,
+      "id": "peony-red",
+      "name": "红衣牡丹",
+      "referenceCelebrity": "范冰冰",
+      "originalAsset": "assets/beauties/random/peony-red-clean-v1.png",
+      "targetAsset": "assets/beauties/random/peony-red-clean-v1-celebrity-v1.png",
+      "status": "pending"
+    },
+    {
+      "order": 8,
+      "id": "pine-silk",
+      "name": "松下唐纱",
+      "referenceCelebrity": "景甜",
+      "originalAsset": "assets/beauties/random/pine-silk-clean-v1.png",
+      "targetAsset": "assets/beauties/random/pine-silk-clean-v1-celebrity-v1.png",
+      "status": "pending"
+    },
+    {
+      "order": 9,
+      "id": "candle-curtain",
+      "name": "秉烛卷帘",
+      "referenceCelebrity": "江疏影",
+      "originalAsset": "assets/beauties/random/candle-curtain-clean-v1.png",
+      "targetAsset": "assets/beauties/random/candle-curtain-clean-v1-celebrity-v1.png",
+      "status": "pending"
+    },
+    {
+      "order": 10,
+      "id": "lotus-picker",
+      "name": "采莲",
+      "referenceCelebrity": "李沁",
+      "originalAsset": "assets/beauties/random/lotus-picker-clean-v1.png",
+      "targetAsset": "assets/beauties/random/lotus-picker-clean-v1-celebrity-v1.png",
+      "status": "pending"
+    },
+    {
+      "order": 11,
+      "id": "railing-coral",
+      "name": "斜肩倚栏",
+      "referenceCelebrity": "张梓琳",
+      "originalAsset": "assets/beauties/random/railing-coral-clean-v1.png",
+      "targetAsset": "assets/beauties/random/railing-coral-clean-v1-celebrity-v1.png",
+      "status": "pending"
+    },
+    {
+      "order": 12,
+      "id": "spring-rider",
+      "name": "春游骑装",
+      "referenceCelebrity": "关晓彤",
+      "originalAsset": "assets/beauties/random/spring-rider-clean-v1.png",
+      "targetAsset": "assets/beauties/random/spring-rider-clean-v1-celebrity-v1.png",
+      "status": "pending"
+    },
+    {
+      "order": 13,
+      "id": "autumn-flute",
+      "name": "秋风胡笳",
+      "referenceCelebrity": "谭卓",
+      "originalAsset": "assets/beauties/random/autumn-flute-redesign-v2.png",
+      "targetAsset": "assets/beauties/random/autumn-flute-redesign-v2-celebrity-v1.png",
+      "status": "pending"
+    },
+    {
+      "order": 14,
+      "id": "red-twin-buns",
+      "name": "红花双髻",
+      "referenceCelebrity": "赵今麦",
+      "originalAsset": "assets/beauties/random/red-twin-buns-redesign-v2.png",
+      "targetAsset": "assets/beauties/random/red-twin-buns-redesign-v2-celebrity-v1.png",
+      "status": "pending"
+    },
+    {
+      "order": 15,
+      "id": "butterfly-sleeves",
+      "name": "长袖舞蝶",
+      "referenceCelebrity": "宋茜",
+      "originalAsset": "assets/beauties/random/butterfly-sleeves-redesign-v2.png",
+      "targetAsset": "assets/beauties/random/butterfly-sleeves-redesign-v2-celebrity-v1.png",
+      "status": "pending"
+    },
+    {
+      "order": 16,
+      "id": "green-fan",
+      "name": "罗衣绿扇",
+      "referenceCelebrity": "王丽坤",
+      "originalAsset": "assets/beauties/random/green-fan-clean-v1.png",
+      "targetAsset": "assets/beauties/random/green-fan-clean-v1-celebrity-v1.png",
+      "status": "pending"
+    },
+    {
+      "order": 17,
+      "id": "blue-dancer",
+      "name": "蓝裙起舞",
+      "referenceCelebrity": "蒋梦婕",
+      "originalAsset": "assets/beauties/random/blue-dancer-redesign-v2.png",
+      "targetAsset": "assets/beauties/random/blue-dancer-redesign-v2-celebrity-v1.png",
+      "status": "pending"
+    },
+    {
+      "order": 18,
+      "id": "moon-silk",
+      "name": "秋清冷月",
+      "referenceCelebrity": "杜鹃",
+      "originalAsset": "assets/beauties/random/moon-silk-clean-v1.png",
+      "targetAsset": "assets/beauties/random/moon-silk-clean-v1-celebrity-v1.png",
+      "status": "pending"
+    },
+    {
+      "order": 19,
+      "id": "rabbit-play",
+      "name": "薄衣戏兔",
+      "referenceCelebrity": "张佳宁",
+      "originalAsset": "assets/beauties/random/rabbit-play-redesign-v2.png",
+      "targetAsset": "assets/beauties/random/rabbit-play-redesign-v2-celebrity-v1.png",
+      "status": "pending"
+    },
+    {
+      "order": 20,
+      "id": "oasis-dance",
+      "name": "异域舞女",
+      "referenceCelebrity": "迪丽热巴",
+      "originalAsset": "assets/beauties/random/oasis-dance-redesign-v2.png",
+      "targetAsset": "assets/beauties/random/oasis-dance-redesign-v2-celebrity-v1.png",
+      "status": "pending"
+    },
+    {
+      "order": 21,
+      "id": "expansion-20261019-01",
+      "name": "竹青书卷",
+      "referenceCelebrity": "刘亦菲",
+      "originalAsset": "assets/beauties/random/expansion-20261019-01-v1.png",
+      "targetAsset": "assets/beauties/random/expansion-20261019-01-v1-celebrity-v1.png",
+      "status": "pending"
+    },
+    {
+      "order": 22,
+      "id": "expansion-20261019-02",
+      "name": "杏粉绣娘",
+      "referenceCelebrity": "田曦薇",
+      "originalAsset": "assets/beauties/random/expansion-20261019-02-v1.png",
+      "targetAsset": "assets/beauties/random/expansion-20261019-02-v1-celebrity-v1.png",
+      "status": "pending"
+    },
+    {
+      "order": 23,
+      "id": "expansion-20261019-03",
+      "name": "月白琴心",
+      "referenceCelebrity": "宋轶",
+      "originalAsset": "assets/beauties/random/expansion-20261019-03-v1.png",
+      "targetAsset": "assets/beauties/random/expansion-20261019-03-v1-celebrity-v1.png",
+      "status": "pending"
+    },
+    {
+      "order": 24,
+      "id": "expansion-20261019-04",
+      "name": "朱砂剑舞",
+      "referenceCelebrity": "周也",
+      "originalAsset": "assets/beauties/random/expansion-20261019-04-v1.png",
+      "targetAsset": "assets/beauties/random/expansion-20261019-04-v1-celebrity-v1.png",
+      "status": "pending"
+    },
+    {
+      "order": 25,
+      "id": "expansion-20261019-05",
+      "name": "藕荷花篮",
+      "referenceCelebrity": "杨紫",
+      "originalAsset": "assets/beauties/random/expansion-20261019-05-v1.png",
+      "targetAsset": "assets/beauties/random/expansion-20261019-05-v1-celebrity-v1.png",
+      "status": "pending"
+    },
+    {
+      "order": 26,
+      "id": "expansion-20261019-06",
+      "name": "鹅黄春燕",
+      "referenceCelebrity": "虞书欣",
+      "originalAsset": "assets/beauties/random/expansion-20261019-06-v1.png",
+      "targetAsset": "assets/beauties/random/expansion-20261019-06-v1-celebrity-v1.png",
+      "status": "pending"
+    },
+    {
+      "order": 27,
+      "id": "expansion-20261019-07",
+      "name": "茶褐药香",
+      "referenceCelebrity": "汤唯",
+      "originalAsset": "assets/beauties/random/expansion-20261019-07-v1.png",
+      "targetAsset": "assets/beauties/random/expansion-20261019-07-v1-celebrity-v1.png",
+      "status": "pending"
+    },
+    {
+      "order": 28,
+      "id": "expansion-20261019-08",
+      "name": "湖蓝纸伞",
+      "referenceCelebrity": "陈都灵",
+      "originalAsset": "assets/beauties/random/expansion-20261019-08-v1.png",
+      "targetAsset": "assets/beauties/random/expansion-20261019-08-v1-celebrity-v1.png",
+      "status": "pending"
+    },
+    {
+      "order": 29,
+      "id": "expansion-20261019-09",
+      "name": "霜紫棋趣",
+      "referenceCelebrity": "高圆圆",
+      "originalAsset": "assets/beauties/random/expansion-20261019-09-v1.png",
+      "targetAsset": "assets/beauties/random/expansion-20261019-09-v1-celebrity-v1.png",
+      "status": "pending"
+    },
+    {
+      "order": 30,
+      "id": "expansion-20261019-10",
+      "name": "银灰墨兰",
+      "referenceCelebrity": "袁泉",
+      "originalAsset": "assets/beauties/random/expansion-20261019-10-v1.png",
+      "targetAsset": "assets/beauties/random/expansion-20261019-10-v1-celebrity-v1.png",
+      "status": "pending"
+    },
+    {
+      "order": 31,
+      "id": "expansion-20261019-11",
+      "name": "石榴绫罗",
+      "referenceCelebrity": "张雨绮",
+      "originalAsset": "assets/beauties/random/expansion-20261019-11-v1.png",
+      "targetAsset": "assets/beauties/random/expansion-20261019-11-v1-celebrity-v1.png",
+      "status": "pending"
+    },
+    {
+      "order": 32,
+      "id": "expansion-20261019-12",
+      "name": "松绿竹笛",
+      "referenceCelebrity": "白鹿",
+      "originalAsset": "assets/beauties/random/expansion-20261019-12-v1.png",
+      "targetAsset": "assets/beauties/random/expansion-20261019-12-v1-celebrity-v1.png",
+      "status": "pending"
+    },
+    {
+      "order": 33,
+      "id": "expansion-20261019-13",
+      "name": "海棠折扇",
+      "referenceCelebrity": "戚薇",
+      "originalAsset": "assets/beauties/random/expansion-20261019-13-v1.png",
+      "targetAsset": "assets/beauties/random/expansion-20261019-13-v1-celebrity-v1.png",
+      "status": "pending"
+    },
+    {
+      "order": 34,
+      "id": "expansion-20261019-14",
+      "name": "靛青旅人",
+      "referenceCelebrity": "辛芷蕾",
+      "originalAsset": "assets/beauties/random/expansion-20261019-14-v1.png",
+      "targetAsset": "assets/beauties/random/expansion-20261019-14-v1-celebrity-v1.png",
+      "status": "pending"
+    },
+    {
+      "order": 35,
+      "id": "expansion-20261019-15",
+      "name": "米白梅枝",
+      "referenceCelebrity": "董洁",
+      "originalAsset": "assets/beauties/random/expansion-20261019-15-v1.png",
+      "targetAsset": "assets/beauties/random/expansion-20261019-15-v1-celebrity-v1.png",
+      "status": "pending"
+    },
+    {
+      "order": 36,
+      "id": "expansion-20261019-16",
+      "name": "琥珀葡萄",
+      "referenceCelebrity": "钟楚曦",
+      "originalAsset": "assets/beauties/random/expansion-20261019-16-v1.png",
+      "targetAsset": "assets/beauties/random/expansion-20261019-16-v1-celebrity-v1.png",
+      "status": "pending"
+    },
+    {
+      "order": 37,
+      "id": "expansion-20261019-17",
+      "name": "苍蓝弓手",
+      "referenceCelebrity": "张天爱",
+      "originalAsset": "assets/beauties/random/expansion-20261019-17-v1.png",
+      "targetAsset": "assets/beauties/random/expansion-20261019-17-v1-celebrity-v1.png",
+      "status": "pending"
+    },
+    {
+      "order": 38,
+      "id": "expansion-20261019-18",
+      "name": "浅碧荷香",
+      "referenceCelebrity": "毛晓彤",
+      "originalAsset": "assets/beauties/random/expansion-20261019-18-v1.png",
+      "targetAsset": "assets/beauties/random/expansion-20261019-18-v1-celebrity-v1.png",
+      "status": "pending"
+    },
+    {
+      "order": 39,
+      "id": "expansion-20261019-19",
+      "name": "雪青香囊",
+      "referenceCelebrity": "古力娜扎",
+      "originalAsset": "assets/beauties/random/expansion-20261019-19-v1.png",
+      "targetAsset": "assets/beauties/random/expansion-20261019-19-v1-celebrity-v1.png",
+      "status": "pending"
+    },
+    {
+      "order": 40,
+      "id": "expansion-20261019-20",
+      "name": "金橙秋穗",
+      "referenceCelebrity": "马思纯",
+      "originalAsset": "assets/beauties/random/expansion-20261019-20-v1.png",
+      "targetAsset": "assets/beauties/random/expansion-20261019-20-v1-celebrity-v1.png",
+      "status": "pending"
+    }
+  ],
+  "referencePolicy": "每位明星必须先自行上网寻找高清写真，下载原图、核对实际像素并view_image确认五官清晰无遮挡，优先长边至少1200px；作为image_gen实际输入，不只用姓名。保存来源网址和尺寸，不把低清图宣称高清。",
+  "qualityPolicy": "每张使用五官清晰无遮挡的高清成年写真，至少两遍对照验收：第一遍逐项对照脸型眉眼鼻唇及比例，不一致必须调整；第二遍重新核对写真与最终图，同时检查头颈衔接、全身比例、自然重心、双腿双脚与透明背景。检查发现差异不得虚报通过。最新要求风格接近真人古装写真，减少插画塑料感。",
+  "proportionPolicy": "各条目使用自然协调的头身比例、高腰线和合理腿长，站姿放松、不立正、不悬空；不再使用已移除角色的比例参考图。"
+}

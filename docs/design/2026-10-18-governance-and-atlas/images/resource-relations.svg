@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1120" viewBox="0 0 1440 1120" role="img" aria-labelledby="title desc">
+<title id="title">人口、民间生产、赋税、官府建设与军事关系</title>
+<desc id="desc">总人口按固定比例划分劳动力；生产人口生产民间钱粮，经赋税进入国库官仓，用于建设与军事。民夫和额外经费可在上限内赶工。中央与地方官员作用于各自职责环节，工业暂不接军备制造。</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#8a7046"/></marker><style>text{font-family:"PingFang SC","Microsoft YaHei",sans-serif;fill:#382e22;font-size:22px}.heading{font-size:32px;font-weight:600}.sub{font-size:18px;fill:#796649}.box{fill:#f7ecd4;stroke:#c4ab77;stroke-width:1.5}.accent{fill:#ead3a3;stroke:#9b7b43;stroke-width:1.5}.line{fill:none;stroke:#8a7046;stroke-width:2;marker-end:url(#arrow)}.label{font-size:19px;fill:#795839}.small{font-size:19px}.center{text-anchor:middle}.gov{fill:#efe0c1;stroke:#a27d49;stroke-width:1.5}</style></defs>
+<rect width="1440" height="1120" fill="#f1e5cd"/>
+<text x="50" y="54" class="heading">资源关系 · 简化经营模型</text><text x="50" y="86" class="sub">讨论稿：固定比例劳动力，无年龄性别模拟；钱粮两类官府资源，兵装保留套装采购。</text>
+<rect x="520" y="112" width="400" height="64" rx="6" class="accent"/><text x="720" y="152" class="center">总人口</text>
+<path d="M620 176V208H420V240" class="line"/><path d="M820 176V208H1120V240" class="line"/>
+<rect x="150" y="240" width="540" height="66" rx="6" class="box"/><text x="420" y="280" class="center">劳动力＝总人口 × 固定比例（待定）</text>
+<rect x="900" y="240" width="440" height="66" rx="6" class="box"/><text x="1120" y="280" class="center">非劳动力：统一汇总，不细分身份</text>
+<path d="M420 306V334H250V370" class="line"/><path d="M420 306V334H720V370" class="line"/><path d="M420 306V334H1190V370" class="line"/>
+<rect x="50" y="370" width="400" height="88" rx="6" class="box"/><text x="250" y="405" class="center">农人 / 牧人 / 商人 / 工人</text><text x="250" y="435" class="center small">与民夫、士兵互斥分配；其余待分配</text>
+<rect x="520" y="370" width="400" height="88" rx="6" class="box"/><text x="720" y="405" class="center">民夫</text><text x="720" y="435" class="center small">同一批人不得同时投入多个项目</text>
+<rect x="990" y="370" width="400" height="88" rx="6" class="box"/><text x="1190" y="405" class="center">招募士兵</text><text x="1190" y="435" class="center small">需获准编额、钱粮与可征人口</text>
+<path d="M250 458V500" class="line"/><path d="M720 458V500" class="line"/><path d="M1190 458V500" class="line"/>
+<rect x="50" y="500" width="400" height="112" rx="6" class="accent"/><text x="250" y="538" class="center">民间生产</text><text x="250" y="568" class="center small">农人＋已启用土地 → 粮食</text><text x="250" y="596" class="center small">各业人口＋设施 → 产值与税基</text>
+<rect x="520" y="500" width="400" height="112" rx="6" class="accent"/><text x="720" y="538" class="center">建筑与开垦土地</text><text x="720" y="568" class="center small">民夫＋钱粮 → 工程进度</text><text x="720" y="596" class="center small">加人加钱可提速，有人数与速度上限</text>
+<rect x="990" y="500" width="400" height="112" rx="6" class="accent"/><text x="1190" y="538" class="center">可用部队</text><text x="1190" y="568" class="center small">士兵＋套装兵装＋训练</text><text x="1190" y="596" class="center small">持续消耗军饷与军粮</text>
+<path d="M250 612V665" class="line"/><text x="280" y="647" class="label">赋税征收</text>
+<rect x="50" y="665" width="400" height="95" rx="6" class="gov"/><text x="250" y="703" class="center">国库银两 / 各州官仓粮食</text><text x="250" y="736" class="center small">税收为主；采购、外交等单列</text>
+<path d="M450 702H720V623" class="line"/><text x="561" y="687" class="label">拨付建设钱粮</text>
+<path d="M450 735H1190V623" class="line"/><text x="994" y="720" class="label">军饷、军粮、采购兵装</text>
+<rect x="50" y="805" width="1340" height="206" rx="6" class="box"/>
+<text x="80" y="847" style="font-size:25px">文臣武将：作用于职责环节，不凭空产生人、钱、粮</text>
+<text x="80" y="889">州牧 → 本州生产组织　　户部 → 征收与财政损耗　　工部 → 建设效率</text>
+<text x="80" y="931">地方将军 / 大将军 → 训练、守备、军需效率；通过治安间接保障生产</text>
+<text x="80" y="973" class="small">加成逐项显示来源、作用范围、实际增量和上限；同一作用不重复结算。</text>
+<text x="50" y="1053" class="sub">守恒：征兵与转业不增加总人口；农人转民夫会减少农业劳力；国内调拨全国抵销。</text>
+<text x="50" y="1086" class="sub">本期不做：家庭账户、人口年龄性别明细、工业制甲链；具体比例、赶工档位与加成上限待平衡。</text>
+</svg>

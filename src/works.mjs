@@ -6,6 +6,6 @@ export function worksSummary(domestic,countryId=domestic.playerCountryId){
  const specialBuildings=s.provinces.flatMap(p=>p.specialBuildings.map(b=>({...b,provinceId:p.id,provinceName:p.name})));
  return {...s,buildingTotal:Object.values(s.buildings).reduce((n,count)=>n+count,0),specialBuildings,specialTotal:specialBuildings.reduce((n,b)=>n+b.count,0)};
 }
-export function worksProvince(province){
- return {province,grainSecurity:grainSecurity(province),industries:INDUSTRIES.map(([key,name,job,unit])=>({key,name,unit,workers:province.population.professions[job],developedArea:province.economy[key].developedArea,developmentRate:Math.round(province.economy[key].developedArea/province.economy[key].capacityArea*100),output:outputFor(province,key)}))};
+export function worksProvince(province,domestic){
+ return {province,grainSecurity:grainSecurity(province,domestic),industries:INDUSTRIES.map(([key,name,job,unit])=>({key,name,unit,workers:province.population.professions[job],developedArea:province.economy[key].developedArea,developmentRate:Math.round(province.economy[key].developedArea/province.cityCapacity.land*100),output:outputFor(province,key)}))};
 }

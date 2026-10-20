@@ -1,3 +1,4 @@
+import {treasuryShortage} from './action-feedback.mjs';
 // Treasury is authoritative. Each open period includes every actual cash movement.
 export const FINANCE_VERSION = 1;
 const integer = n => Number.isSafeInteger(n) && n >= 0;
@@ -34,7 +35,8 @@ export function postTreasury(d, countryId, {turn, income=0, expense=0, allowDebt
   const row=c.ledger[0];
   if (row && !row.legacy && row.turn===turn && row.keys.includes(key)) throw Error('该财政交易已入账，请勿重复提交');
   const available=c.fiscal.treasury+income;
-  if (!Number.isSafeInteger(available) || (!allowDebt && available<expense)) throw Error('国库不足');
+  if (!Number.isSafeInteger(available)) fail();
+  if (!allowDebt && available<expense) throw Error(treasuryShortage(expense,available,reason));
   const paid=Math.min(available,expense), debtAdded=expense-paid;
   const closing=available-paid, debt=c.fiscal.debt+debtAdded;
   if (!integer(closing)||!integer(debt)) fail();

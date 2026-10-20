@@ -35,10 +35,14 @@ export const ENVOY_PROFILES={
  maghreb:row('turban/wrap','mantle','curls/waves','silver','stars','#b18661',['#3f5877','#c7b997','#9a6147']),
  sinhala:row('band/wrap','draped','waves/bun','gold','lotus','#936346',['#d0c1a4','#9c6444','#83423a'])
 };
+// Peripheral polities use the existing fixed portrait collections; the visit
+// still stores the new country ID and its own deterministic portrait variant.
+const frontierArt=Object.freeze({'north-sea':'slavs',frostland:'siberia',forestland:'mohe','far-east':'khitan','west-south':'maghreb',southland:'axum','east-coast':'sinhala',cape:'axum'});
+for(const [id,source]of Object.entries(frontierArt))ENVOY_PROFILES[id]=ENVOY_PROFILES[source];
 export const ENVOY_COUNTRIES=Object.keys(ENVOY_PROFILES);
 function randomStream(seed){let n=seed>>>0;return()=>{n=(Math.imul(n,1664525)+1013904223)>>>0;return n/4294967296;};}
 export const ENVOY_VARIANTS=3;
 export function assembleEnvoy(countryId,seed){if(!ENVOY_PROFILES[countryId]||!Number.isInteger(seed)||seed<0||seed>4294967295)throw Error('使臣立绘参数无效');return {version:3,countryId,seed,variant:Math.floor(randomStream(seed)()*ENVOY_VARIANTS)};}
-export function portraitAsset(a){if(!ENVOY_PROFILES[a.countryId]||!Number.isInteger(a.variant)||a.variant<0||a.variant>=ENVOY_VARIANTS)throw Error('使臣立绘编号无效');return `assets/envoys/wide/${a.countryId}/envoy-${a.variant}.png`;}
+export function portraitAsset(a){if(!ENVOY_PROFILES[a.countryId]||!Number.isInteger(a.variant)||a.variant<0||a.variant>=ENVOY_VARIANTS)throw Error('使臣立绘编号无效');return `assets/envoys/wide/${frontierArt[a.countryId]??a.countryId}/envoy-${a.variant}.png`;}
 export function initializeEnvoyPortraits(state){if(state.envoyVisit&&(!state.envoyVisit.appearance||[1,2].includes(state.envoyVisit.appearance.version))){const old=state.envoyVisit.appearance,seed=Number.isInteger(old?.seed)?old.seed:(state.envoyVisit.requestedTurn*1777+ENVOY_COUNTRIES.indexOf(state.envoyVisit.countryId)*131)>>>0;state.envoyVisit.appearance=assembleEnvoy(state.envoyVisit.countryId,seed);}return state;}
 export function validateEnvoyPortraits(state){const v=state.envoyVisit;if(!v)return;const a=v.appearance;if(!a||a.version!==3||a.countryId!==v.countryId||!Number.isInteger(a.seed)||a.seed<0||a.seed>4294967295||Object.keys(a).length!==4||!Number.isInteger(a.variant)||a.variant<0||a.variant>=ENVOY_VARIANTS)throw Error('使臣固定立绘记录无效');}

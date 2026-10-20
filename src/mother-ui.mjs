@@ -3,7 +3,7 @@ import {motherGreeting} from './mother.mjs';
 
 export function openMother(initial,root,onCommit,onClose){
  const d=document.createElement('dialog');d.className='mother-dialog';d.setAttribute('aria-label','慈宁宫');
- d.innerHTML=`<section class="royal-mother"><img class="mother-scenery" src="assets/sketch-mother-v1.png" alt="慈宁宫内，年长太后端坐寿鹤屏风前，皇帝恭敬奉茶，内侍与成年侍女在两侧侍候" draggable="false"><header><div><small>晨昏定省 · 承欢膝下</small><h1>慈宁宫</h1></div><button data-exit aria-label="离开慈宁宫">离宫 ×</button></header><div class="mother-incense" aria-hidden="true"><i></i><i></i><i></i></div><p class="mother-greeting"></p><p class="mother-result" role="status">正在入殿…</p></section>`;
+ d.innerHTML=`<section class="royal-mother palace-action-scene"><img class="mother-scenery" src="assets/scenes/mother/sketch-mother-v1.png" alt="慈宁宫内，年长太后端坐寿鹤屏风前，皇帝恭敬奉茶，内侍与成年侍女在两侧侍候" draggable="false"><header><div><small>晨昏定省 · 承欢膝下</small><h1>慈宁宫</h1></div></header><div class="mother-incense" aria-hidden="true"><i></i><i></i><i></i></div><p class="mother-greeting"></p><p class="mother-result" role="status">正在入殿…</p><button class="palace-scene-exit" data-exit aria-label="离开慈宁宫">离宫 ×</button></section>`;
  root.append(d);let cancelled=false;
  d.onclose=()=>{cancelled=true;d.remove();onClose?.();};
  d.querySelector('[data-exit]').onclick=()=>d.close();d.showModal();

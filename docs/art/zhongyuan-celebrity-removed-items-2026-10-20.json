@@ -1,0 +1,44 @@
+{
+  "reason": "用户要求从定时任务移除；仅留历史记录，不继续执行",
+  "items": [
+    {
+      "order": 2,
+      "id": "hebei",
+      "name": "hebei",
+      "referenceCelebrity": "赵丽颖",
+      "originalAsset": "assets/beauties/random/hebei-redesign-v2.png",
+      "targetAsset": "assets/beauties/random/hebei-redesign-v2-celebrity-v1.png",
+      "status": "applied_by_user_request",
+      "startedAt": "2026-10-20T09:12:45.322436+00:00",
+      "referencePhoto": "assets/beauties/references/zhao-liying/face-reference.jpg",
+      "referenceImageUrl": "https://p0.itc.cn/images01/20220512/4d098c88c2cd47458d28ff90c5a05eba.jpeg",
+      "previewAsset": "assets/beauties/random/hebei-zhaoliying-approved-proportion-preview-v8.png",
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a1584f-ca2e-7950-85ed-5fefa09b6a9d/exec-03b98831-f9ff-43e8-805b-0d14d5bde8bc.png",
+      "lastFailure": "第8版使用写真+用户批准比例双参考重新生成，PNG有alpha 1120x1405；面容和边缘不合格，不接入、不标完成。",
+      "referenceApproved": true,
+      "footwear": "boots",
+      "userRevision": "用户最新确认：以user-approved-body-proportions.png为头身比例与站姿唯一基准，保持图中头部相对大小、腰线高度、腿长、鞋和放松站姿。此前重做版本头大腿短，弃用其比例。面部用已选赵丽颖写真，写实风格，不得因写实化改变已确认比例。",
+      "reviewPass1": "写真逐项对照：脸颊与下颌偏窄、眉眼仍有插画美化，真人一致性不足。",
+      "reviewPass2": "再次对照写真及批准比例：头身和腿长基本延续模板，完整穿鞋；发丝、右手和衣摆有红白边缘杂色，画面仍偏插画，不通过。",
+      "approvedProportionReference": "assets/beauties/references/zhao-liying/user-approved-body-proportions.png",
+      "lastAttemptAt": "2026-10-20T09:24:27.010301+00:00",
+      "referenceDimensions": [
+        1080,
+        1283
+      ],
+      "referencePage": "https://ecywang.com/pic/%E6%98%8E%E6%98%9F%E8%AF%81%E4%BB%B6%E7%85%A7%E7%89%87%E5%9B%BE%E7%89%87%E5%A4%A7%E5%85%A8/",
+      "prompt": "以用户批准比例图作为完整头身和站姿基准，赵丽颖写真作为面部身份参考，重建写实古装红衣持弓全身透明立绘，保持比例、鞋、放松姿势，禁止光晕场景。",
+      "attempts": [
+        {
+          "at": "2026-10-20T09:24:27.010301+00:00",
+          "previewAsset": "assets/beauties/random/hebei-zhaoliying-approved-proportion-preview-v8.png",
+          "result": "rejected",
+          "reason": "第8版使用写真+用户批准比例双参考重新生成，PNG有alpha 1120x1405；面容和边缘不合格，不接入、不标完成。"
+        }
+      ],
+      "appliedAsset": "assets/beauties/random/hebei-redesign-v2-celebrity-v1.png",
+      "appliedAt": "2026-10-20T09:53:58.789783+00:00",
+      "approvalNote": "用户明确要求将上面已生成版本直接替换；采用最后展示的v8。保留此前验收问题记录，不将用户授权接入表述为质量检查通过。保持不在自动任务队列。"
+    }
+  ]
+}

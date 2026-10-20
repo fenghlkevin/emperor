@@ -1,6 +1,6 @@
 import {RECOVERY,welfareValue,commerceMultiplier,newRecruitTraining,buildingMarginal,effectiveBuildings} from './building-effects.mjs';
 const names={temples:'寺庙',yamen:'衙门',markets:'市集',trainingGrounds:'校场',granaries:'粮仓',walls:'城墙',palaces:'行宫'};
-const labels={stability:'安定',security:'治安',activity:'营业',fitness:'体能',loyalty:'民忠'};
+const labels={stability:'安定',security:'治安',activity:'商业活跃',fitness:'体能',loyalty:'民忠'};
 const fmt=n=>Number(n).toLocaleString('zh-CN',{maximumFractionDigits:2});
 export function buildingEffectsReport(p,turn){
  const b=p.buildingEffects,last=b?.last,counts=effectiveBuildings(p,turn),pending=b?.pending;

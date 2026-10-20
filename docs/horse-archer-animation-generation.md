@@ -1,6 +1,6 @@
 # 弓骑图集
 
-内置 imagegen 模式；项目文件 assets/war-horse-archers-v1.png。原图 /Users/fengheliang/.codex/generated_images/01a143d6-5244-7ea2-937c-d18139041e75/exec-c8e13ac2-7d65-46e6-bb80-018929d71cbe.png。
+内置 imagegen 模式；项目文件 assets/battle/units/war-horse-archers-v1.png。原图 /Users/fengheliang/.codex/generated_images/01a143d6-5244-7ea2-937c-d18139041e75/exec-c8e13ac2-7d65-46e6-bb80-018929d71cbe.png。
 
 1024×1536透明PNG，2列4行共8姿势：4马匹步态与4骑乘射击；walk8fps、attack4fps，攻击1秒，脚底锚点24。已实际播放与真实骑射箭矢命中验收。
 

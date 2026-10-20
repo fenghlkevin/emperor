@@ -1,0 +1,1653 @@
+{
+  "version": 2,
+  "policy": {
+    "mountedOnly": true,
+    "defaultArchery": false,
+    "onePersonPerRun": true,
+    "weaponSpecificActions": true,
+    "intervalMinutes": 5,
+    "actualWarIntegrationRequired": true,
+    "completionRequires": [
+      "generated",
+      "integratedIntoWar",
+      "verifiedInActualBattle"
+    ]
+  },
+  "generatedAndMeasured": [
+    {
+      "id": "manual-1553",
+      "name": "关羽",
+      "asset": "assets/battle/generals/war-general-mounted-guanyu-v2.png"
+    },
+    {
+      "id": "manual-1554",
+      "name": "张飞",
+      "asset": "assets/battle/generals/war-general-mounted-zhangfei-v2.png"
+    },
+    {
+      "id": "manual-1555",
+      "name": "赵云",
+      "asset": "assets/battle/generals/war-general-mounted-zhaoyun-v2.png"
+    },
+    {
+      "id": "manual-1556",
+      "name": "马超",
+      "asset": "assets/battle/generals/war-general-mounted-machao-v2.png"
+    },
+    {
+      "id": "manual-1557",
+      "name": "黄忠",
+      "asset": "assets/battle/generals/war-general-mounted-huangzhong-v2.png"
+    },
+    {
+      "id": "general-285-45592",
+      "name": "吕布",
+      "asset": "assets/battle/generals/war-general-mounted-lvbu-v2.png"
+    },
+    {
+      "id": "cbdb-8175",
+      "name": "岳飞",
+      "asset": "assets/battle/generals/war-general-mounted-yuefei-v2.png"
+    },
+    {
+      "id": "manual-1530",
+      "name": "韩信",
+      "asset": "assets/battle/generals/war-general-mounted-hanxin-v2.png"
+    },
+    {
+      "id": "manual-1520",
+      "name": "白起",
+      "asset": "assets/battle/generals/war-general-mounted-baiqi-v2.png"
+    },
+    {
+      "id": "manual-1537",
+      "name": "卫青",
+      "asset": "assets/battle/generals/war-general-mounted-weiqing-v2.png"
+    },
+    {
+      "id": "manual-1536",
+      "name": "霍去病",
+      "asset": "assets/battle/generals/war-general-mounted-huoqubing-v2.png"
+    },
+    {
+      "id": "cbdb-20608",
+      "name": "孙策",
+      "asset": "assets/battle/generals/war-general-mounted-sunce-v2.png"
+    },
+    {
+      "id": "manual-1569",
+      "name": "周瑜",
+      "asset": "assets/battle/generals/war-general-mounted-zhouyu-v2.png"
+    },
+    {
+      "id": "manual-1566",
+      "name": "张辽",
+      "asset": "assets/battle/generals/war-general-mounted-zhangliao-v2.png"
+    },
+    {
+      "id": "manual-1567",
+      "name": "徐晃",
+      "asset": "assets/battle/generals/war-general-mounted-xuhuang-v2.png"
+    },
+    {
+      "id": "general-185-70866",
+      "name": "许褚",
+      "asset": "assets/battle/generals/war-general-mounted-xuchu-v2.png"
+    },
+    {
+      "id": "general-186-59742",
+      "name": "典韦",
+      "asset": "assets/battle/generals/war-general-mounted-dianwei-v2.png"
+    },
+    {
+      "id": "general-254-53401",
+      "name": "甘宁",
+      "asset": "assets/battle/generals/war-general-mounted-ganning-v2.png"
+    },
+    {
+      "id": "general-253-69220",
+      "name": "太史慈",
+      "asset": "assets/battle/generals/war-general-mounted-taishici-v2.png"
+    },
+    {
+      "id": "manual-1559",
+      "name": "姜维",
+      "asset": "assets/battle/generals/war-general-mounted-jiangwei-v2.png"
+    },
+    {
+      "id": "general-198-70417",
+      "name": "邓艾",
+      "asset": "assets/battle/generals/war-general-mounted-dengai-v2.png"
+    },
+    {
+      "id": "manual-1582",
+      "name": "李靖",
+      "asset": "assets/battle/generals/war-general-mounted-lijing-v2.png"
+    },
+    {
+      "id": "manual-1614",
+      "name": "戚继光",
+      "asset": "assets/battle/generals/war-general-mounted-qijiguang-v2.png"
+    },
+    {
+      "id": "general-103-50637",
+      "name": "李广",
+      "asset": "assets/battle/generals/war-general-mounted-liguang-v2.png"
+    },
+    {
+      "id": "general-403-90513",
+      "name": "薛仁贵",
+      "asset": "assets/battle/generals/war-general-mounted-xuerengui-v2.png"
+    },
+    {
+      "id": "general-398-60962",
+      "name": "秦琼",
+      "asset": "assets/battle/generals/war-general-mounted-qinqiong-v2.png"
+    },
+    {
+      "id": "cbdb-94373",
+      "name": "郭子仪",
+      "asset": "assets/battle/generals/war-general-mounted-guoziyi-v2.png"
+    },
+    {
+      "id": "cbdb-33662",
+      "name": "陆逊",
+      "asset": "assets/battle/generals/war-general-mounted-luxun-v2.png"
+    },
+    {
+      "id": "cbdb-25403",
+      "name": "诸葛亮",
+      "asset": "assets/battle/generals/war-general-mounted-zhugeliang-v2.png"
+    },
+    {
+      "id": "manual-1518",
+      "name": "廉颇",
+      "asset": "assets/battle/generals/war-general-mounted-lianpo-v2.png"
+    },
+    {
+      "id": "manual-1521",
+      "name": "王翦",
+      "asset": "assets/battle/generals/war-general-mounted-wangjian-v2.png"
+    },
+    {
+      "id": "manual-1522",
+      "name": "李牧",
+      "asset": "assets/battle/generals/war-general-mounted-limu-v2.png"
+    },
+    {
+      "id": "manual-1558",
+      "name": "魏延",
+      "asset": "assets/battle/generals/war-general-mounted-weiyan-v2.png"
+    },
+    {
+      "id": "manual-1565",
+      "name": "司马懿",
+      "asset": "assets/battle/generals/war-general-mounted-simayi-v2.png"
+    },
+    {
+      "id": "manual-1568",
+      "name": "张郃",
+      "asset": "assets/battle/generals/war-general-mounted-zhanghe-v2.png"
+    },
+    {
+      "id": "general-169-45747",
+      "name": "孙坚",
+      "asset": "assets/battle/generals/war-general-mounted-sunjian-v2.png"
+    },
+    {
+      "id": "general-171-67973",
+      "name": "夏侯惇",
+      "asset": "assets/battle/generals/war-general-mounted-xiahoudun-v2.png"
+    },
+    {
+      "id": "general-172-71368",
+      "name": "夏侯渊",
+      "asset": "assets/battle/generals/war-general-mounted-xiahouyuan-v2.png"
+    },
+    {
+      "id": "general-173-46522",
+      "name": "曹仁",
+      "asset": "assets/battle/generals/war-general-mounted-caoren-v2.png"
+    },
+    {
+      "id": "general-174-54307",
+      "name": "曹洪",
+      "asset": "assets/battle/generals/war-general-mounted-caohong-v2.png"
+    },
+    {
+      "id": "general-181-56875",
+      "name": "乐进",
+      "asset": "assets/battle/generals/war-general-mounted-lejin-v2.png"
+    },
+    {
+      "id": "general-182-51215",
+      "name": "于禁",
+      "asset": "assets/battle/generals/war-general-mounted-yujin-v2.png"
+    },
+    {
+      "id": "general-187-48725",
+      "name": "庞德",
+      "asset": "assets/battle/generals/war-general-mounted-pangde-v2.png"
+    },
+    {
+      "id": "general-220-45030",
+      "name": "关平",
+      "asset": "assets/battle/generals/war-general-mounted-guanping-v2.png"
+    },
+    {
+      "id": "general-250-71066",
+      "name": "黄盖",
+      "asset": "assets/battle/generals/war-general-mounted-huanggai-v2.png"
+    },
+    {
+      "id": "general-256-49496",
+      "name": "周泰",
+      "asset": "assets/battle/generals/war-general-mounted-zhoutai-v2.png"
+    },
+    {
+      "id": "general-258-54891",
+      "name": "徐盛",
+      "asset": "assets/battle/generals/war-general-mounted-xusheng-v2.png"
+    },
+    {
+      "id": "general-259-42826",
+      "name": "丁奉",
+      "asset": "assets/battle/generals/war-general-mounted-dingfeng-v2.png"
+    },
+    {
+      "id": "general-275-67406",
+      "name": "袁绍",
+      "asset": "assets/battle/generals/war-general-mounted-yuanshao-v2.png"
+    },
+    {
+      "id": "general-276-61360",
+      "name": "袁术",
+      "asset": "assets/battle/generals/war-general-mounted-yuanshu-v2.png"
+    },
+    {
+      "id": "general-280-72459",
+      "name": "颜良",
+      "asset": "assets/battle/generals/war-general-mounted-yanliang-v2.png"
+    },
+    {
+      "id": "general-281-45976",
+      "name": "文丑",
+      "asset": "assets/battle/generals/war-general-mounted-wenchou-v2.png"
+    },
+    {
+      "id": "general-325-82713",
+      "name": "陈庆之",
+      "asset": "assets/battle/generals/war-general-mounted-chenqingzhi-v2.png"
+    },
+    {
+      "id": "general-523-68118",
+      "name": "狄青",
+      "asset": "assets/battle/generals/war-general-mounted-diqing-v2.png"
+    },
+    {
+      "id": "general-550-43844",
+      "name": "岳云",
+      "asset": "assets/battle/generals/war-general-mounted-yueyun-v2.png"
+    },
+    {
+      "id": "general-555-68201",
+      "name": "杨再兴",
+      "asset": "assets/battle/generals/war-general-mounted-yangzaixing-v2.png"
+    }
+  ],
+  "desktopVerified": [
+    "邓艾",
+    "李靖",
+    "戚继光",
+    "李广",
+    "薛仁贵",
+    "秦琼",
+    "关羽",
+    "张飞",
+    "赵云",
+    "马超",
+    "黄忠",
+    "吕布",
+    "岳飞",
+    "韩信",
+    "白起",
+    "卫青",
+    "霍去病",
+    "孙策",
+    "周瑜",
+    "张辽",
+    "徐晃",
+    "许褚",
+    "典韦",
+    "甘宁",
+    "太史慈",
+    "姜维",
+    "郭子仪",
+    "陆逊",
+    "诸葛亮",
+    "廉颇",
+    "王翦",
+    "李牧",
+    "魏延",
+    "司马懿",
+    "张郃",
+    "孙坚",
+    "夏侯惇",
+    "夏侯渊",
+    "曹仁",
+    "曹洪",
+    "乐进",
+    "于禁",
+    "庞德",
+    "关平",
+    "黄盖",
+    "周泰",
+    "徐盛",
+    "丁奉",
+    "袁绍",
+    "袁术",
+    "颜良",
+    "文丑",
+    "陈庆之",
+    "狄青",
+    "岳云",
+    "杨再兴"
+  ],
+  "pending": [],
+  "validation": {
+    "focusedCombatTests": "26 passed",
+    "originalRangedDesktop": "passed",
+    "firstFourMountedDesktop": "passed including guandao contact effect",
+    "fullSuite": {
+      "status": "passed",
+      "tests": 602,
+      "failures": 0,
+      "log": "output/battle-generals/first26-final-tests.log",
+      "checkedAt": "2026-10-18T05:09:11.844379+00:00"
+    },
+    "firstBatchAssets": "26/26 generated, measured and mapped into actual war renderer",
+    "firstBatchDesktop": {
+      "status": "passed",
+      "scope": "26 atlases load and play four attack/walk frames, mirrored poses, sample actual battle; NOT a substitute for individual war verification",
+      "evidenceDirectory": "output/battle-generals/gallery",
+      "checkedAt": "2026-10-18T05:09:11.844379+00:00"
+    },
+    "individualActualWarVerifiedCount": 56,
+    "firstBatchIndividualWar": {
+      "status": "passed",
+      "count": 26,
+      "checkedAt": "2026-10-18T05:09:11.844379+00:00"
+    },
+    "finalFullSuite": {
+      "status": "passed",
+      "tests": 602,
+      "failures": 0,
+      "log": "output/battle-generals/final-56-tests.log",
+      "checkedAt": "2026-10-18T11:04:05.582489+00:00"
+    }
+  },
+  "notes": [
+    "旧步战和旧骑射批次已停止，不得重新启用 v1。",
+    "首批26中剩余邓艾、李靖、戚继光、李广、薛仁贵、秦琼；以磁盘实际文件及 generalFrames 为准，避免重做。",
+    "循环生成已停止；改为每5分钟唤醒，每次最多完成一个人。",
+    "source 已有大量用户原改动；只修改本任务资源、动作模块和对应验收。",
+    "用户再次强调：必须接入战争，用人物专属资源替换实际参战单位的通用立绘；仅生成或预览不算完成，已生成者也要逐人补查。",
+    "2026-10-18：邓艾完成生成、战争接入和实战验收。原 desktopVerified 四人为早期组合验收，保留在 legacyDesktopVerified；其余20位已生成者加入 needs-war-verification 队列，首批资源齐备后在扩展人物前逐人补验，不重生成。",
+    "首批26资源齐备，572项全量测试与整批桌面播放通过；仅6位已完成新的单人完整实战验收，其余20位继续按队列逐人补验。整批预览发现吕布、张辽戟头与典韦双短戟有形制复核项，已写入各人记录，不能据整批测试把它们标为完成。"
+  ],
+  "legacyDesktopVerified": [
+    "关羽",
+    "张飞",
+    "赵云",
+    "马超"
+  ],
+  "perPerson": {
+    "manual-1553": {
+      "name": "关羽",
+      "asset": "assets/battle/generals/war-general-mounted-guanyu-v2.png",
+      "generated": true,
+      "integratedIntoWar": true,
+      "verifiedInActualBattle": true,
+      "completed": true,
+      "verifiedAt": "2026-10-18T03:46:52.779779+00:00",
+      "evidenceDirectory": "output/battle-generals/general-guanyu",
+      "checks": [
+        "八个人马轮廓及透明裁切",
+        "偃月刀蓄势横斩四帧与收势",
+        "真实双方主将和部队映射",
+        "recruit-招募身份兼容",
+        "骑乘待机和左右朝向",
+        "实际战争移动接近",
+        "偃月刀专属命中特效与时序",
+        "受击反馈",
+        "骑乘阵亡消退",
+        "assets/war-*.png打包规则"
+      ]
+    },
+    "manual-1554": {
+      "name": "张飞",
+      "asset": "assets/battle/generals/war-general-mounted-zhangfei-v2.png",
+      "generated": true,
+      "integratedIntoWar": true,
+      "verifiedInActualBattle": true,
+      "completed": true,
+      "verifiedAt": "2026-10-18T03:48:34.154011+00:00",
+      "evidenceDirectory": "output/battle-generals/general-zhangfei",
+      "checks": [
+        "八个人马轮廓及透明裁切",
+        "蛇矛双手后收蓄势、重刺伸展与收势四帧",
+        "真实双方主将和部队映射",
+        "recruit-招募身份兼容",
+        "黑马骑乘待机和左右朝向",
+        "实际战争移动接近",
+        "蛇矛重刺专属命中特效与时序",
+        "受击反馈",
+        "骑乘阵亡消退",
+        "assets/war-*.png打包规则"
+      ]
+    },
+    "manual-1555": {
+      "name": "赵云",
+      "asset": "assets/battle/generals/war-general-mounted-zhaoyun-v2.png",
+      "generated": true,
+      "integratedIntoWar": true,
+      "verifiedInActualBattle": true,
+      "completed": true,
+      "verifiedAt": "2026-10-18T03:52:38.906525+00:00",
+      "evidenceDirectory": "output/battle-generals/general-zhaoyun",
+      "checks": [
+        "八个人马轮廓及透明裁切",
+        "长枪低位蓄势、探身快刺、伸展与收势四帧",
+        "真实双方主将和部队映射",
+        "recruit-招募身份兼容",
+        "白马骑乘待机和左右朝向",
+        "实际战争移动接近",
+        "620ms快刺与34%命中时机及专属冲击反馈",
+        "受击反馈",
+        "骑乘阵亡消退",
+        "assets/war-*.png打包规则"
+      ]
+    },
+    "manual-1556": {
+      "name": "马超",
+      "asset": "assets/battle/generals/war-general-mounted-machao-v2.png",
+      "generated": true,
+      "integratedIntoWar": true,
+      "verifiedInActualBattle": true,
+      "completed": true,
+      "verifiedAt": "2026-10-18T03:56:31.697708+00:00",
+      "evidenceDirectory": "output/battle-generals/general-machao",
+      "checks": [
+        "八个人马轮廓及透明裁切",
+        "虎头枪低位蓄势、上挑、接刺与收势四帧",
+        "真实双方主将和部队映射",
+        "recruit-招募身份兼容",
+        "浅灰马骑乘待机和左右朝向",
+        "实际战争移动接近",
+        "820ms上挑接刺与48%命中时机及专属冲击反馈",
+        "受击反馈",
+        "骑乘阵亡消退",
+        "assets/war-*.png打包规则"
+      ]
+    },
+    "manual-1557": {
+      "name": "黄忠",
+      "asset": "assets/battle/generals/war-general-mounted-huangzhong-v2.png",
+      "generated": true,
+      "integratedIntoWar": true,
+      "verifiedInActualBattle": true,
+      "completed": true,
+      "verifiedAt": "2026-10-18T03:59:41.008808+00:00",
+      "evidenceDirectory": "output/battle-generals/general-huangzhong",
+      "checks": [
+        "八个人马轮廓及透明裁切",
+        "凤嘴长刀近战，无弓箭",
+        "长刀肩后蓄势、下斩横扫与竖刀收势四帧",
+        "真实双方主将和部队映射",
+        "recruit-招募身份兼容",
+        "灰马骑乘待机和左右朝向",
+        "实际战争移动接近",
+        "1040ms长刀斩击与50%命中时机及冲击反馈",
+        "受击反馈",
+        "骑乘阵亡消退",
+        "assets/war-*.png打包规则"
+      ]
+    },
+    "general-285-45592": {
+      "name": "吕布",
+      "asset": "assets/battle/generals/war-general-mounted-lvbu-v2.png",
+      "generated": true,
+      "integratedIntoWar": true,
+      "verifiedInActualBattle": true,
+      "completed": true,
+      "verifiedAt": "2026-10-18T04:04:45.101010+00:00",
+      "evidenceDirectory": "output/battle-generals/general-lvbu",
+      "checks": [
+        "戟头已修正为中央直枪尖与双侧月牙刃",
+        "八个人马轮廓及透明裁切重新测量",
+        "四帧钩挑横扫与行进复位",
+        "真实双方主将和部队映射",
+        "recruit-招募身份兼容",
+        "赤马骑乘待机和左右朝向",
+        "实际战争移动接近",
+        "画戟专属命中特效与时序",
+        "受击反馈与骑乘阵亡消退",
+        "assets/war-*.png打包规则",
+        "12项定向测试通过"
+      ]
+    },
+    "cbdb-8175": {
+      "name": "岳飞",
+      "asset": "assets/battle/generals/war-general-mounted-yuefei-v2.png",
+      "generated": true,
+      "integratedIntoWar": true,
+      "verifiedInActualBattle": true,
+      "completed": true,
+      "verifiedAt": "2026-10-18T04:07:31.971383+00:00",
+      "evidenceDirectory": "output/battle-generals/general-yuefei",
+      "checks": [
+        "八个人马轮廓及透明裁切",
+        "长矛后收蓄势、重刺伸展与收势四帧",
+        "真实双方主将和部队映射",
+        "recruit-招募身份兼容",
+        "棕马骑乘待机和左右朝向",
+        "实际战争移动接近",
+        "880ms长矛重刺与46%命中时机及专属冲击反馈",
+        "受击反馈",
+        "骑乘阵亡消退",
+        "assets/war-*.png打包规则"
+      ]
+    },
+    "manual-1530": {
+      "name": "韩信",
+      "asset": "assets/battle/generals/war-general-mounted-hanxin-v2.png",
+      "generated": true,
+      "integratedIntoWar": true,
+      "verifiedInActualBattle": true,
+      "completed": true,
+      "verifiedAt": "2026-10-18T04:10:20.133894+00:00",
+      "evidenceDirectory": "output/battle-generals/general-hanxin",
+      "checks": [
+        "八个人马轮廓及透明裁切",
+        "佩剑引剑、直击、回剑与收势四帧",
+        "真实双方主将和部队映射",
+        "recruit-招募身份兼容",
+        "棕马骑乘待机和左右朝向",
+        "实际战争移动接近",
+        "680ms佩剑直击与38%命中时机及专属冲击反馈",
+        "受击反馈",
+        "骑乘阵亡消退",
+        "assets/war-*.png打包规则"
+      ]
+    },
+    "manual-1520": {
+      "name": "白起",
+      "asset": "assets/battle/generals/war-general-mounted-baiqi-v2.png",
+      "generated": true,
+      "integratedIntoWar": true,
+      "verifiedInActualBattle": true,
+      "completed": true,
+      "verifiedAt": "2026-10-18T04:13:31.852115+00:00",
+      "evidenceDirectory": "output/battle-generals/general-baiqi",
+      "checks": [
+        "八个人马轮廓及透明裁切",
+        "佩剑引剑、直击、回剑与收势四帧",
+        "真实双方主将和部队映射",
+        "recruit-招募身份兼容",
+        "黑马骑乘待机和左右朝向",
+        "实际战争移动接近",
+        "680ms佩剑直击与38%命中时机及专属冲击反馈",
+        "受击反馈",
+        "骑乘阵亡消退",
+        "assets/war-*.png打包规则"
+      ]
+    },
+    "manual-1537": {
+      "name": "卫青",
+      "asset": "assets/battle/generals/war-general-mounted-weiqing-v2.png",
+      "generated": true,
+      "integratedIntoWar": true,
+      "verifiedInActualBattle": true,
+      "completed": true,
+      "verifiedAt": "2026-10-18T04:17:01.371214+00:00",
+      "evidenceDirectory": "output/battle-generals/general-weiqing",
+      "checks": [
+        "八个人马轮廓及透明裁切",
+        "长矛后收蓄势、重刺伸展与收势四帧",
+        "真实双方主将和部队映射",
+        "recruit-招募身份兼容",
+        "棕马骑乘待机和左右朝向",
+        "实际战争移动接近",
+        "880ms长矛重刺与46%命中时机及专属冲击反馈",
+        "受击反馈",
+        "骑乘阵亡消退",
+        "assets/war-*.png打包规则"
+      ]
+    },
+    "manual-1536": {
+      "name": "霍去病",
+      "asset": "assets/battle/generals/war-general-mounted-huoqubing-v2.png",
+      "generated": true,
+      "integratedIntoWar": true,
+      "verifiedInActualBattle": true,
+      "completed": true,
+      "verifiedAt": "2026-10-18T04:20:33.905731+00:00",
+      "evidenceDirectory": "output/battle-generals/general-huoqubing",
+      "checks": [
+        "八个人马轮廓及透明裁切",
+        "长枪低位蓄势、探身快刺、伸展与收势四帧",
+        "真实双方主将和部队映射",
+        "recruit-招募身份兼容",
+        "白马骑乘待机和左右朝向",
+        "实际战争移动接近",
+        "620ms快刺与34%命中时机及专属冲击反馈",
+        "受击反馈",
+        "骑乘阵亡消退",
+        "assets/war-*.png打包规则"
+      ]
+    },
+    "cbdb-20608": {
+      "name": "孙策",
+      "asset": "assets/battle/generals/war-general-mounted-sunce-v2.png",
+      "generated": true,
+      "integratedIntoWar": true,
+      "verifiedInActualBattle": true,
+      "completed": true,
+      "verifiedAt": "2026-10-18T04:24:32.501137+00:00",
+      "evidenceDirectory": "output/battle-generals/general-sunce",
+      "checks": [
+        "八个人马轮廓及透明裁切",
+        "长枪低位蓄势、上挑、接刺与收势四帧",
+        "真实双方主将和部队映射",
+        "recruit-招募身份兼容",
+        "栗马骑乘待机和左右朝向",
+        "实际战争移动接近",
+        "820ms上挑接刺与48%命中时机及专属冲击反馈",
+        "受击反馈",
+        "骑乘阵亡消退",
+        "assets/war-*.png打包规则"
+      ]
+    },
+    "manual-1569": {
+      "name": "周瑜",
+      "asset": "assets/battle/generals/war-general-mounted-zhouyu-v2.png",
+      "generated": true,
+      "integratedIntoWar": true,
+      "verifiedInActualBattle": true,
+      "completed": true,
+      "verifiedAt": "2026-10-18T04:28:53.209060+00:00",
+      "evidenceDirectory": "output/battle-generals/general-zhouyu",
+      "checks": [
+        "八个人马轮廓及透明裁切",
+        "佩剑引剑、直击、回剑与收势四帧",
+        "真实双方主将和部队映射",
+        "recruit-招募身份兼容",
+        "白马骑乘待机和左右朝向",
+        "实际战争移动接近",
+        "680ms佩剑直击与38%命中时机及专属冲击反馈",
+        "受击反馈",
+        "骑乘阵亡消退",
+        "assets/war-*.png打包规则"
+      ]
+    },
+    "manual-1566": {
+      "name": "张辽",
+      "asset": "assets/battle/generals/war-general-mounted-zhangliao-v2.png",
+      "generated": true,
+      "integratedIntoWar": true,
+      "verifiedInActualBattle": true,
+      "completed": true,
+      "verifiedAt": "2026-10-18T04:36:38.325203+00:00",
+      "evidenceDirectory": "output/battle-generals/general-zhangliao",
+      "checks": [
+        "戟头已修正为中央直枪尖与侧月牙刃",
+        "八个人马轮廓及透明裁切重新测量",
+        "四帧钩挑横扫与行进复位",
+        "真实双方主将和部队映射",
+        "recruit-招募身份兼容",
+        "棕马骑乘待机和左右朝向",
+        "实际战争移动接近",
+        "980ms画戟钩挑横扫与50%命中时机",
+        "受击反馈与骑乘阵亡消退",
+        "assets/war-*.png打包规则",
+        "12项定向测试通过"
+      ]
+    },
+    "manual-1567": {
+      "name": "徐晃",
+      "asset": "assets/battle/generals/war-general-mounted-xuhuang-v2.png",
+      "generated": true,
+      "integratedIntoWar": true,
+      "verifiedInActualBattle": true,
+      "completed": true,
+      "verifiedAt": "2026-10-18T04:40:36.709562+00:00",
+      "evidenceDirectory": "output/battle-generals/general-xuhuang",
+      "checks": [
+        "八个人马轮廓及透明裁切",
+        "战斧双手举斧蓄势、重劈、低位延伸与肩后收势四帧",
+        "真实双方主将和部队映射",
+        "recruit-招募身份兼容",
+        "棕马骑乘待机和左右朝向",
+        "实际战争移动接近",
+        "1120ms战斧重劈与55%命中时机及专属冲击反馈",
+        "受击反馈",
+        "骑乘阵亡消退",
+        "assets/war-*.png打包规则"
+      ]
+    },
+    "general-185-70866": {
+      "name": "许褚",
+      "asset": "assets/battle/generals/war-general-mounted-xuchu-v2.png",
+      "generated": true,
+      "integratedIntoWar": true,
+      "verifiedInActualBattle": true,
+      "completed": true,
+      "verifiedAt": "2026-10-18T04:44:15.520880+00:00",
+      "evidenceDirectory": "output/battle-generals/general-xuchu",
+      "checks": [
+        "八个人马轮廓及透明裁切",
+        "战刀肩后蓄势、斜斩、低位延伸与回刀四帧",
+        "真实双方主将和部队映射",
+        "recruit-招募身份兼容",
+        "黑马骑乘待机和左右朝向",
+        "实际战争移动接近",
+        "760ms战刀斜斩与43%命中时机及专属冲击反馈",
+        "受击反馈",
+        "骑乘阵亡消退",
+        "assets/war-*.png打包规则"
+      ]
+    },
+    "general-186-59742": {
+      "name": "典韦",
+      "asset": "assets/battle/generals/war-general-mounted-dianwei-v2.png",
+      "generated": true,
+      "integratedIntoWar": true,
+      "verifiedInActualBattle": true,
+      "completed": true,
+      "verifiedAt": "2026-10-18T04:53:03.712327+00:00",
+      "evidenceDirectory": "output/battle-generals/general-dianwei",
+      "checks": [
+        "双短戟已修正为直枪尖配独立侧月牙钩，非双短刀",
+        "八个人马轮廓及透明裁切重新测量",
+        "四帧交叉蓄势、右击、左击与交叉收势",
+        "真实双方主将和部队映射",
+        "recruit-招募身份兼容",
+        "深棕马骑乘待机和左右朝向",
+        "实际战争移动接近",
+        "900ms双戟交错连击与44%命中时机",
+        "受击反馈与骑乘阵亡消退",
+        "assets/war-*.png打包规则",
+        "12项定向测试通过"
+      ]
+    },
+    "general-254-53401": {
+      "name": "甘宁",
+      "asset": "assets/battle/generals/war-general-mounted-ganning-v2.png",
+      "generated": true,
+      "integratedIntoWar": true,
+      "verifiedInActualBattle": true,
+      "completed": true,
+      "verifiedAt": "2026-10-18T04:57:51.099063+00:00",
+      "evidenceDirectory": "output/battle-generals/general-ganning",
+      "checks": [
+        "八个人马轮廓及透明裁切",
+        "战刀举刀蓄势、斜斩、外侧延伸与回刀四帧",
+        "真实双方主将和部队映射",
+        "recruit-招募身份兼容",
+        "黑马骑乘待机和左右朝向",
+        "实际战争移动接近",
+        "760ms战刀斜斩与43%命中时机及专属冲击反馈",
+        "受击反馈",
+        "骑乘阵亡消退",
+        "assets/war-*.png打包规则"
+      ]
+    },
+    "general-253-69220": {
+      "name": "太史慈",
+      "asset": "assets/battle/generals/war-general-mounted-taishici-v2.png",
+      "generated": true,
+      "integratedIntoWar": true,
+      "verifiedInActualBattle": true,
+      "completed": true,
+      "verifiedAt": "2026-10-18T05:02:10.725734+00:00",
+      "evidenceDirectory": "output/battle-generals/general-taishici",
+      "checks": [
+        "八个人马轮廓及透明裁切",
+        "长枪低位蓄势、探身快刺、伸展与收势四帧",
+        "真实双方主将和部队映射",
+        "recruit-招募身份兼容",
+        "棕马骑乘待机和左右朝向",
+        "实际战争移动接近",
+        "620ms快刺与34%命中时机及专属冲击反馈",
+        "受击反馈",
+        "骑乘阵亡消退",
+        "assets/war-*.png打包规则"
+      ]
+    },
+    "manual-1559": {
+      "name": "姜维",
+      "asset": "assets/battle/generals/war-general-mounted-jiangwei-v2.png",
+      "generated": true,
+      "integratedIntoWar": true,
+      "verifiedInActualBattle": true,
+      "completed": true,
+      "verifiedAt": "2026-10-18T05:09:11.844379+00:00",
+      "evidenceDirectory": "output/battle-generals/general-jiangwei",
+      "checks": [
+        "八个人马轮廓及透明裁切",
+        "长枪低位蓄势、上挑、接刺与收势四帧",
+        "真实双方主将和部队映射",
+        "recruit-招募身份兼容",
+        "白马骑乘待机和左右朝向",
+        "实际战争移动接近",
+        "820ms上挑接刺与48%命中时机及专属冲击反馈",
+        "受击反馈",
+        "骑乘阵亡消退",
+        "assets/war-*.png打包规则"
+      ]
+    },
+    "general-198-70417": {
+      "name": "邓艾",
+      "asset": "assets/battle/generals/war-general-mounted-dengai-v2.png",
+      "generated": true,
+      "integratedIntoWar": true,
+      "verifiedInActualBattle": true,
+      "completed": true,
+      "verifiedAt": "2026-10-18T03:01:53.333229+00:00",
+      "evidenceDirectory": "output/battle-generals/general-dengai",
+      "checks": [
+        "真实双方主将与部队映射",
+        "recruit-招募身份兼容",
+        "骑乘待机与左右朝向",
+        "四帧图集攻击与停止复位",
+        "实际战争移动接近",
+        "佩剑直击命中特效",
+        "受击反馈",
+        "骑乘阵亡消退",
+        "assets/war-*.png打包规则"
+      ]
+    },
+    "manual-1582": {
+      "name": "李靖",
+      "asset": "assets/battle/generals/war-general-mounted-lijing-v2.png",
+      "generated": true,
+      "integratedIntoWar": true,
+      "verifiedInActualBattle": true,
+      "completed": true,
+      "verifiedAt": "2026-10-18T03:07:26.813909+00:00",
+      "evidenceDirectory": "output/battle-generals/general-lijing",
+      "checks": [
+        "八个人马轮廓及透明裁切",
+        "四帧佩剑攻击与行进复位",
+        "真实双方主将和部队映射",
+        "recruit-招募身份兼容",
+        "骑乘待机和左右朝向",
+        "实际战争移动接近",
+        "佩剑直击命中特效",
+        "受击反馈",
+        "骑乘阵亡消退",
+        "assets/war-*.png打包规则"
+      ]
+    },
+    "manual-1614": {
+      "name": "戚继光",
+      "asset": "assets/battle/generals/war-general-mounted-qijiguang-v2.png",
+      "generated": true,
+      "integratedIntoWar": true,
+      "verifiedInActualBattle": true,
+      "completed": true,
+      "verifiedAt": "2026-10-18T03:12:36.945190+00:00",
+      "evidenceDirectory": "output/battle-generals/general-qijiguang",
+      "checks": [
+        "八个人马轮廓及透明裁切",
+        "四帧战刀斜斩回刀与行进复位",
+        "真实双方主将和部队映射",
+        "recruit-招募身份兼容",
+        "骑乘待机和左右朝向",
+        "实际战争移动接近",
+        "战刀专属命中特效与时序",
+        "受击反馈",
+        "骑乘阵亡消退",
+        "assets/war-*.png打包规则"
+      ]
+    },
+    "general-103-50637": {
+      "name": "李广",
+      "asset": "assets/battle/generals/war-general-mounted-liguang-v2.png",
+      "generated": true,
+      "integratedIntoWar": true,
+      "verifiedInActualBattle": true,
+      "completed": true,
+      "verifiedAt": "2026-10-18T03:18:17.196899+00:00",
+      "evidenceDirectory": "output/battle-generals/general-liguang",
+      "checks": [
+        "八个人马轮廓及透明裁切",
+        "环首刀近战无弓箭",
+        "四帧斜斩回刀与行进复位",
+        "真实双方主将和部队映射",
+        "recruit-招募身份兼容",
+        "骑乘待机和左右朝向",
+        "实际战争移动接近",
+        "战刀命中特效与时序",
+        "受击反馈",
+        "骑乘阵亡消退",
+        "assets/war-*.png打包规则"
+      ]
+    },
+    "general-403-90513": {
+      "name": "薛仁贵",
+      "asset": "assets/battle/generals/war-general-mounted-xuerengui-v2.png",
+      "generated": true,
+      "integratedIntoWar": true,
+      "verifiedInActualBattle": true,
+      "completed": true,
+      "verifiedAt": "2026-10-18T03:25:39.104864+00:00",
+      "evidenceDirectory": "output/battle-generals/general-xuerengui",
+      "checks": [
+        "八个人马轮廓及透明裁切",
+        "中央直枪尖与双侧月牙刃画戟，已修正长刀状戟头",
+        "四帧钩挑横扫与行进复位",
+        "真实双方主将和部队映射",
+        "recruit-招募身份兼容",
+        "白马骑乘待机和左右朝向",
+        "实际战争移动接近",
+        "画戟命中特效与时序",
+        "受击反馈",
+        "骑乘阵亡消退",
+        "assets/war-*.png打包规则"
+      ]
+    },
+    "general-398-60962": {
+      "name": "秦琼",
+      "asset": "assets/battle/generals/war-general-mounted-qinqiong-v2.png",
+      "generated": true,
+      "integratedIntoWar": true,
+      "verifiedInActualBattle": true,
+      "completed": true,
+      "verifiedAt": "2026-10-18T03:35:13.476588+00:00",
+      "evidenceDirectory": "output/battle-generals/general-qinqiong",
+      "checks": [
+        "八个人马轮廓及透明裁切",
+        "双锏已修正为直长四棱无刃杆，非大头棍",
+        "四帧左右交击与行进复位",
+        "真实双方主将和部队映射",
+        "recruit-招募身份兼容",
+        "骑乘待机和左右朝向",
+        "实际战争移动接近",
+        "双锏专属命中特效与时序",
+        "受击反馈",
+        "骑乘阵亡消退",
+        "assets/war-*.png打包规则"
+      ]
+    },
+    "cbdb-94373": {
+      "name": "郭子仪",
+      "asset": "assets/battle/generals/war-general-mounted-guoziyi-v2.png",
+      "generated": true,
+      "integratedIntoWar": true,
+      "verifiedInActualBattle": true,
+      "completed": true,
+      "verifiedAt": "2026-10-18T05:19:56.059701+00:00",
+      "evidenceDirectory": "output/battle-generals/general-guoziyi",
+      "checks": [
+        "八个人马轮廓及透明裁切测量",
+        "佩剑引剑、直击、回剑与收势四帧",
+        "真实双方主将和部队映射",
+        "recruit-招募身份兼容",
+        "花灰马骑乘待机和左右朝向",
+        "实际战争移动接近",
+        "佩剑专属命中特效与时序",
+        "受击反馈及骑乘阵亡消退",
+        "assets/war-*.png打包规则",
+        "12项定向测试通过"
+      ]
+    },
+    "cbdb-33662": {
+      "name": "陆逊",
+      "asset": "assets/battle/generals/war-general-mounted-luxun-v2.png",
+      "generated": true,
+      "integratedIntoWar": true,
+      "verifiedInActualBattle": true,
+      "completed": true,
+      "verifiedAt": "2026-10-18T05:30:41.670121+00:00",
+      "evidenceDirectory": "output/battle-generals/general-luxun",
+      "checks": [
+        "八个人马轮廓及透明裁切测量",
+        "佩剑引剑、直击、回剑与收势四帧",
+        "真实双方主将和部队映射",
+        "recruit-招募身份兼容",
+        "栗马骑乘待机和左右朝向",
+        "实际战争移动接近",
+        "佩剑专属命中特效与时序",
+        "受击反馈及骑乘阵亡消退",
+        "assets/war-*.png打包规则",
+        "12项定向测试通过"
+      ]
+    },
+    "cbdb-25403": {
+      "name": "诸葛亮",
+      "asset": "assets/battle/generals/war-general-mounted-zhugeliang-v2.png",
+      "generated": true,
+      "integratedIntoWar": true,
+      "verifiedInActualBattle": true,
+      "completed": true,
+      "verifiedAt": "2026-10-18T05:41:29.711947+00:00",
+      "evidenceDirectory": "output/battle-generals/general-zhugeliang",
+      "checks": [
+        "八个人马轮廓及透明裁切测量",
+        "佩剑引剑、直击、回剑与收势四帧，羽扇仅腰间装饰",
+        "真实双方主将和部队映射",
+        "recruit-招募身份兼容",
+        "白马骑乘待机和左右朝向",
+        "实际战争移动接近",
+        "佩剑专属命中特效与时序",
+        "受击反馈及骑乘阵亡消退",
+        "assets/war-*.png打包规则",
+        "12项定向测试通过"
+      ]
+    },
+    "manual-1518": {
+      "name": "廉颇",
+      "asset": "assets/battle/generals/war-general-mounted-lianpo-v2.png",
+      "generated": true,
+      "integratedIntoWar": true,
+      "verifiedInActualBattle": true,
+      "completed": true,
+      "verifiedAt": "2026-10-18T05:53:05.474076+00:00",
+      "evidenceDirectory": "output/battle-generals/general-lianpo",
+      "checks": [
+        "八个人马轮廓及透明裁切测量",
+        "长矛后收蓄势、重刺、伸展与收势四帧",
+        "真实双方主将和部队映射",
+        "recruit-招募身份兼容",
+        "深棕马骑乘待机和左右朝向",
+        "实际战争移动接近",
+        "880ms重刺与46%命中时机及专属冲击反馈",
+        "受击反馈及骑乘阵亡消退",
+        "assets/war-*.png打包规则",
+        "12项定向测试通过"
+      ]
+    },
+    "manual-1521": {
+      "name": "王翦",
+      "asset": "assets/battle/generals/war-general-mounted-wangjian-v2.png",
+      "generated": true,
+      "integratedIntoWar": true,
+      "verifiedInActualBattle": true,
+      "completed": true,
+      "verifiedAt": "2026-10-18T06:09:29.870761+00:00",
+      "evidenceDirectory": "output/battle-generals/general-wangjian",
+      "checks": [
+        "已修正图集顺序为前两行行进、后两行攻击",
+        "八个人马轮廓及透明裁切测量",
+        "佩剑引剑、直击、回剑与收势四帧",
+        "真实双方主将和部队映射",
+        "recruit-招募身份兼容",
+        "黑马骑乘待机和左右朝向",
+        "实际战争移动接近",
+        "佩剑专属命中特效与时序",
+        "受击反馈及骑乘阵亡消退",
+        "assets/war-*.png打包规则",
+        "12项定向测试通过"
+      ]
+    },
+    "manual-1522": {
+      "name": "李牧",
+      "asset": "assets/battle/generals/war-general-mounted-limu-v2.png",
+      "generated": true,
+      "integratedIntoWar": true,
+      "verifiedInActualBattle": true,
+      "completed": true,
+      "verifiedAt": "2026-10-18T06:22:07.479348+00:00",
+      "evidenceDirectory": "output/battle-generals/general-limu",
+      "checks": [
+        "八个人马轮廓及透明裁切测量",
+        "长矛后收蓄势、重刺、伸展与收势四帧",
+        "真实双方主将和部队映射",
+        "recruit-招募身份兼容",
+        "花灰马骑乘待机和左右朝向",
+        "实际战争移动接近",
+        "880ms重刺与46%命中时机及专属冲击反馈",
+        "受击反馈及骑乘阵亡消退",
+        "assets/war-*.png打包规则",
+        "12项定向测试通过"
+      ]
+    },
+    "manual-1558": {
+      "name": "魏延",
+      "asset": "assets/battle/generals/war-general-mounted-weiyan-v2.png",
+      "generated": true,
+      "integratedIntoWar": true,
+      "verifiedInActualBattle": true,
+      "completed": true,
+      "verifiedAt": "2026-10-18T06:40:52.127622+00:00",
+      "evidenceDirectory": "output/battle-generals/general-weiyan",
+      "checks": [
+        "已修正为两列四行，前两行行进后两行攻击",
+        "八个人马轮廓及透明裁切测量",
+        "长刀肩后蓄势、下斩、低扫与竖刀收势四帧",
+        "真实双方主将和部队映射",
+        "recruit-招募身份兼容",
+        "栗马骑乘待机和左右朝向",
+        "实际战争移动接近",
+        "1040ms长刀横斩与50%命中时机及冲击反馈",
+        "受击反馈及骑乘阵亡消退",
+        "assets/war-*.png打包规则",
+        "12项定向测试通过"
+      ]
+    },
+    "manual-1565": {
+      "name": "司马懿",
+      "asset": "assets/battle/generals/war-general-mounted-simayi-v2.png",
+      "generated": true,
+      "integratedIntoWar": true,
+      "verifiedInActualBattle": true,
+      "completed": true,
+      "verifiedAt": "2026-10-18T06:54:18.475971+00:00",
+      "evidenceDirectory": "output/battle-generals/general-simayi",
+      "checks": [
+        "八个人马轮廓及透明裁切测量",
+        "佩剑引剑、直击、回剑与收势四帧",
+        "真实双方主将和部队映射",
+        "recruit-招募身份兼容",
+        "黑马骑乘待机和左右朝向",
+        "实际战争移动接近",
+        "佩剑专属命中特效与时序",
+        "受击反馈及骑乘阵亡消退",
+        "assets/war-*.png打包规则",
+        "12项定向测试通过"
+      ]
+    },
+    "manual-1568": {
+      "name": "张郃",
+      "asset": "assets/battle/generals/war-general-mounted-zhanghe-v2.png",
+      "generated": true,
+      "integratedIntoWar": true,
+      "verifiedInActualBattle": true,
+      "completed": true,
+      "verifiedAt": "2026-10-18T07:20:09.853402+00:00",
+      "evidenceDirectory": "output/battle-generals/general-zhanghe",
+      "checks": [
+        "已修正背景透明度及相邻帧连接，八个完整人马轮廓测量通过",
+        "长枪低位蓄势、上挑、接刺与收势四帧",
+        "真实双方主将和部队映射",
+        "recruit-招募身份兼容",
+        "深棕马骑乘待机和左右朝向",
+        "实际战争移动接近",
+        "820ms上挑接刺与48%命中时机",
+        "受击反馈及骑乘阵亡消退",
+        "assets/war-*.png打包规则",
+        "12项定向测试通过"
+      ]
+    },
+    "general-169-45747": {
+      "name": "孙坚",
+      "asset": "assets/battle/generals/war-general-mounted-sunjian-v2.png",
+      "generated": true,
+      "integratedIntoWar": true,
+      "verifiedInActualBattle": true,
+      "completed": true,
+      "verifiedAt": "2026-10-18T07:35:39.097194+00:00",
+      "evidenceDirectory": "output/battle-generals/general-sunjian",
+      "checks": [
+        "八个人马轮廓及透明裁切测量",
+        "战刀举刀蓄势、斜斩、外侧延伸与回刀四帧",
+        "真实双方主将和部队映射",
+        "recruit-招募身份兼容",
+        "栗马骑乘待机和左右朝向",
+        "实际战争移动接近",
+        "760ms战刀斜斩与43%命中时机",
+        "受击反馈及骑乘阵亡消退",
+        "assets/war-*.png打包规则",
+        "12项定向测试通过"
+      ]
+    },
+    "general-171-67973": {
+      "name": "夏侯惇",
+      "asset": "assets/battle/generals/war-general-mounted-xiahoudun-v2.png",
+      "generated": true,
+      "integratedIntoWar": true,
+      "verifiedInActualBattle": true,
+      "completed": true,
+      "verifiedAt": "2026-10-18T07:54:37.417581+00:00",
+      "evidenceDirectory": "output/battle-generals/general-xiahoudun",
+      "checks": [
+        "八个人马轮廓及透明裁切测量",
+        "长柄刀后引蓄势、重斩、横扫和回收四帧",
+        "真实双方主将和部队映射",
+        "recruit-招募身份兼容",
+        "黑马骑乘待机和左右朝向",
+        "实际战争移动接近",
+        "1040ms长柄刀动作与50%命中时机",
+        "受击反馈及骑乘阵亡消退",
+        "assets/war-*.png打包规则",
+        "12项定向测试通过"
+      ]
+    },
+    "general-172-71368": {
+      "name": "夏侯渊",
+      "asset": "assets/battle/generals/war-general-mounted-xiahouyuan-v2.png",
+      "generated": true,
+      "integratedIntoWar": true,
+      "verifiedInActualBattle": true,
+      "completed": true,
+      "verifiedAt": "2026-10-18T07:59:03.374046+00:00",
+      "evidenceDirectory": "output/battle-generals/general-xiahouyuan",
+      "checks": [
+        "八个人马轮廓及透明裁切测量",
+        "战刀肩后蓄势、斜斩、延伸与回刀四帧",
+        "真实双方主将和部队映射",
+        "recruit-招募身份兼容",
+        "灰马骑乘待机和左右朝向",
+        "实际战争移动接近",
+        "760ms战刀动作与43%命中时机",
+        "受击反馈及骑乘阵亡消退",
+        "assets/war-*.png打包规则",
+        "12项定向测试通过"
+      ]
+    },
+    "general-173-46522": {
+      "name": "曹仁",
+      "asset": "assets/battle/generals/war-general-mounted-caoren-v2.png",
+      "generated": true,
+      "integratedIntoWar": true,
+      "verifiedInActualBattle": true,
+      "completed": true,
+      "verifiedAt": "2026-10-18T08:03:30.948155+00:00",
+      "evidenceDirectory": "output/battle-generals/general-caoren",
+      "checks": [
+        "八个人马轮廓及透明裁切测量",
+        "长矛回收蓄势、重刺、延伸与收势四帧，矛头方向修正",
+        "真实双方主将和部队映射",
+        "recruit-招募身份兼容",
+        "深棕马骑乘待机和左右朝向",
+        "实际战争移动接近",
+        "880ms长矛重刺与46%命中时机",
+        "受击反馈及骑乘阵亡消退",
+        "assets/war-*.png打包规则",
+        "12项定向测试通过"
+      ]
+    },
+    "general-174-54307": {
+      "name": "曹洪",
+      "asset": "assets/battle/generals/war-general-mounted-caohong-v2.png",
+      "generated": true,
+      "integratedIntoWar": true,
+      "verifiedInActualBattle": true,
+      "completed": true,
+      "verifiedAt": "2026-10-18T08:07:35.973717+00:00",
+      "evidenceDirectory": "output/battle-generals/general-caohong",
+      "checks": [
+        "八个人马轮廓及透明裁切测量",
+        "战刀举刀蓄势、斜斩、外侧延伸与回刀四帧",
+        "真实双方主将和部队映射",
+        "recruit-招募身份兼容",
+        "栗马骑乘待机和左右朝向",
+        "实际战争移动接近",
+        "760ms战刀斜斩与43%命中时机",
+        "受击反馈及骑乘阵亡消退",
+        "assets/war-*.png打包规则",
+        "12项定向测试通过"
+      ]
+    },
+    "general-181-56875": {
+      "name": "乐进",
+      "asset": "assets/battle/generals/war-general-mounted-lejin-v2.png",
+      "generated": true,
+      "integratedIntoWar": true,
+      "verifiedInActualBattle": true,
+      "completed": true,
+      "verifiedAt": "2026-10-18T08:11:52.138545+00:00",
+      "evidenceDirectory": "output/battle-generals/general-lejin",
+      "checks": [
+        "八个人马轮廓及透明裁切测量",
+        "长枪低位蓄势、快刺、延伸与回收四帧",
+        "真实双方主将和部队映射",
+        "recruit-招募身份兼容",
+        "黄骠马骑乘待机和左右朝向",
+        "实际战争移动接近",
+        "620ms快枪与34%命中时机",
+        "受击反馈及骑乘阵亡消退",
+        "assets/war-*.png打包规则",
+        "12项定向测试通过"
+      ]
+    },
+    "general-182-51215": {
+      "name": "于禁",
+      "asset": "assets/battle/generals/war-general-mounted-yujin-v2.png",
+      "generated": true,
+      "integratedIntoWar": true,
+      "verifiedInActualBattle": true,
+      "completed": true,
+      "verifiedAt": "2026-10-18T08:16:52.243016+00:00",
+      "evidenceDirectory": "output/battle-generals/general-yujin",
+      "checks": [
+        "八个人马轮廓及透明裁切测量",
+        "长矛回收蓄势、重刺、延伸与回收四帧",
+        "真实双方主将和部队映射",
+        "recruit-招募身份兼容",
+        "黑马骑乘待机和左右朝向",
+        "实际战争移动接近",
+        "880ms长矛重刺与46%命中时机",
+        "受击反馈及骑乘阵亡消退",
+        "assets/war-*.png打包规则",
+        "12项定向测试通过"
+      ]
+    },
+    "general-187-48725": {
+      "name": "庞德",
+      "asset": "assets/battle/generals/war-general-mounted-pangde-v2.png",
+      "generated": true,
+      "integratedIntoWar": true,
+      "verifiedInActualBattle": true,
+      "completed": true,
+      "verifiedAt": "2026-10-18T08:22:20.281398+00:00",
+      "evidenceDirectory": "output/battle-generals/general-pangde",
+      "checks": [
+        "八个人马轮廓及透明裁切测量",
+        "长刀肩后蓄势、下斩、横扫与回收四帧",
+        "真实双方主将和部队映射",
+        "recruit-招募身份兼容",
+        "白马骑乘待机和左右朝向",
+        "实际战争移动接近",
+        "1040ms长刀动作与50%命中时机",
+        "受击反馈及骑乘阵亡消退",
+        "assets/war-*.png打包规则",
+        "12项定向测试通过"
+      ]
+    },
+    "general-220-45030": {
+      "name": "关平",
+      "asset": "assets/battle/generals/war-general-mounted-guanping-v2.png",
+      "generated": true,
+      "integratedIntoWar": true,
+      "verifiedInActualBattle": true,
+      "completed": true,
+      "verifiedAt": "2026-10-18T08:27:50.781296+00:00",
+      "evidenceDirectory": "output/battle-generals/general-guanping",
+      "checks": [
+        "八个人马轮廓及透明裁切测量",
+        "长刀肩后蓄势、下斩、横扫与回收四帧",
+        "真实双方主将和部队映射",
+        "recruit-招募身份兼容",
+        "深栗马骑乘待机和左右朝向",
+        "实际战争移动接近",
+        "1040ms长刀动作与50%命中时机",
+        "受击反馈及骑乘阵亡消退",
+        "assets/war-*.png打包规则",
+        "12项定向测试通过"
+      ]
+    },
+    "general-250-71066": {
+      "name": "黄盖",
+      "asset": "assets/battle/generals/war-general-mounted-huanggai-v2.png",
+      "generated": true,
+      "integratedIntoWar": true,
+      "verifiedInActualBattle": true,
+      "completed": true,
+      "verifiedAt": "2026-10-18T08:36:46.286441+00:00",
+      "evidenceDirectory": "output/battle-generals/general-huanggai",
+      "checks": [
+        "八个人马轮廓及透明裁切测量，补全顶部盔缨留白",
+        "战刀举刀蓄势、斜斩、外侧延伸与回刀四帧",
+        "真实双方主将和部队映射",
+        "recruit-招募身份兼容",
+        "深棕马骑乘待机和左右朝向",
+        "实际战争移动接近",
+        "760ms战刀斜斩与43%命中时机",
+        "受击反馈及骑乘阵亡消退",
+        "assets/war-*.png打包规则",
+        "12项定向测试通过"
+      ]
+    },
+    "general-256-49496": {
+      "name": "周泰",
+      "asset": "assets/battle/generals/war-general-mounted-zhoutai-v2.png",
+      "generated": true,
+      "integratedIntoWar": true,
+      "verifiedInActualBattle": true,
+      "completed": true,
+      "verifiedAt": "2026-10-18T08:45:59.332283+00:00",
+      "evidenceDirectory": "output/battle-generals/general-zhoutai",
+      "checks": [
+        "八个人马轮廓及透明裁切测量，修复盔缨与马蹄边缘留白",
+        "战刀肩后蓄势、斜斩、外侧延伸与回刀四帧",
+        "真实双方主将和部队映射",
+        "recruit-招募身份兼容",
+        "灰马骑乘待机和左右朝向",
+        "实际战争移动接近",
+        "760ms战刀斜斩与43%命中时机",
+        "受击反馈及骑乘阵亡消退",
+        "assets/war-*.png打包规则",
+        "12项定向测试通过"
+      ]
+    },
+    "general-258-54891": {
+      "name": "徐盛",
+      "asset": "assets/battle/generals/war-general-mounted-xusheng-v2.png",
+      "generated": true,
+      "integratedIntoWar": true,
+      "verifiedInActualBattle": true,
+      "completed": true,
+      "verifiedAt": "2026-10-18T08:53:38.906260+00:00",
+      "evidenceDirectory": "output/battle-generals/general-xusheng",
+      "checks": [
+        "八个人马轮廓及透明裁切测量",
+        "长枪低势蓄力、上挑、接刺与回收四帧",
+        "真实双方主将和部队映射",
+        "recruit-招募身份兼容",
+        "棕马骑乘待机和左右朝向",
+        "实际战争移动接近",
+        "820ms上挑接刺与48%命中时机",
+        "受击反馈及骑乘阵亡消退",
+        "assets/war-*.png打包规则",
+        "12项定向测试通过"
+      ]
+    },
+    "general-259-42826": {
+      "name": "丁奉",
+      "asset": "assets/battle/generals/war-general-mounted-dingfeng-v2.png",
+      "generated": true,
+      "integratedIntoWar": true,
+      "verifiedInActualBattle": true,
+      "completed": true,
+      "verifiedAt": "2026-10-18T09:02:00.915654+00:00",
+      "evidenceDirectory": "output/battle-generals/general-dingfeng",
+      "checks": [
+        "八个人马轮廓及透明裁切测量",
+        "战刀肩后蓄势、斜斩、外侧延伸与回刀四帧",
+        "真实双方主将和部队映射",
+        "recruit-招募身份兼容",
+        "黑马骑乘待机和左右朝向",
+        "实际战争移动接近",
+        "760ms战刀斜斩与43%命中时机",
+        "受击反馈及骑乘阵亡消退",
+        "assets/war-*.png打包规则",
+        "12项定向测试通过"
+      ]
+    },
+    "general-275-67406": {
+      "name": "袁绍",
+      "asset": "assets/battle/generals/war-general-mounted-yuanshao-v2.png",
+      "generated": true,
+      "integratedIntoWar": true,
+      "verifiedInActualBattle": true,
+      "completed": true,
+      "verifiedAt": "2026-10-18T09:10:49.708316+00:00",
+      "evidenceDirectory": "output/battle-generals/general-yuanshao",
+      "checks": [
+        "八个人马轮廓及透明裁切测量",
+        "佩剑引剑蓄势、直击、延伸与回收四帧",
+        "真实双方主将和部队映射",
+        "recruit-招募身份兼容",
+        "白马骑乘待机和左右朝向",
+        "实际战争移动接近",
+        "680ms佩剑直击与38%命中时机",
+        "受击反馈及骑乘阵亡消退",
+        "assets/war-*.png打包规则",
+        "12项定向测试通过"
+      ]
+    },
+    "general-276-61360": {
+      "name": "袁术",
+      "asset": "assets/battle/generals/war-general-mounted-yuanshu-v2.png",
+      "generated": true,
+      "integratedIntoWar": true,
+      "verifiedInActualBattle": true,
+      "completed": true,
+      "verifiedAt": "2026-10-18T09:20:26.348363+00:00",
+      "evidenceDirectory": "output/battle-generals/general-yuanshu",
+      "checks": [
+        "八个人马轮廓及透明裁切测量",
+        "佩剑引剑蓄势、直击、延伸与回收四帧",
+        "真实双方主将和部队映射",
+        "recruit-招募身份兼容",
+        "深棕马骑乘待机和左右朝向",
+        "实际战争移动接近",
+        "680ms佩剑直击与38%命中时机",
+        "受击反馈及骑乘阵亡消退",
+        "assets/war-*.png打包规则",
+        "12项定向测试通过"
+      ]
+    },
+    "general-280-72459": {
+      "name": "颜良",
+      "asset": "assets/battle/generals/war-general-mounted-yanliang-v2.png",
+      "generated": true,
+      "integratedIntoWar": true,
+      "verifiedInActualBattle": true,
+      "completed": true,
+      "verifiedAt": "2026-10-18T09:32:39.819687+00:00",
+      "evidenceDirectory": "output/battle-generals/general-yanliang",
+      "checks": [
+        "八个人马轮廓及透明裁切测量，修复顶部刀尖及相邻帧留白",
+        "长刀肩后蓄势、下斩、横扫与回收四帧",
+        "真实双方主将和部队映射",
+        "recruit-招募身份兼容",
+        "深栗马骑乘待机和左右朝向",
+        "实际战争移动接近",
+        "1040ms长刀动作与50%命中时机",
+        "受击反馈及骑乘阵亡消退",
+        "assets/war-*.png打包规则",
+        "12项定向测试通过"
+      ]
+    },
+    "general-281-45976": {
+      "name": "文丑",
+      "asset": "assets/battle/generals/war-general-mounted-wenchou-v2.png",
+      "generated": true,
+      "integratedIntoWar": true,
+      "verifiedInActualBattle": true,
+      "completed": true,
+      "verifiedAt": "2026-10-18T09:51:40.110355+00:00",
+      "evidenceDirectory": "output/battle-generals/general-wenchou",
+      "checks": [
+        "八个人马轮廓及透明裁切测量，修复起手和收势矛头方向及完整性",
+        "长矛回收蓄势、重刺、延伸与回收四帧",
+        "真实双方主将和部队映射",
+        "recruit-招募身份兼容",
+        "黑马骑乘待机和左右朝向",
+        "实际战争移动接近",
+        "880ms长矛重刺与46%命中时机",
+        "受击反馈及骑乘阵亡消退",
+        "assets/war-*.png打包规则",
+        "12项定向测试通过"
+      ]
+    },
+    "general-325-82713": {
+      "name": "陈庆之",
+      "asset": "assets/battle/generals/war-general-mounted-chenqingzhi-v2.png",
+      "generated": true,
+      "integratedIntoWar": true,
+      "verifiedInActualBattle": true,
+      "completed": true,
+      "verifiedAt": "2026-10-18T10:03:15.532588+00:00",
+      "evidenceDirectory": "output/battle-generals/general-chenqingzhi",
+      "checks": [
+        "八个人马轮廓及透明裁切测量",
+        "佩剑引剑蓄势、直击、延伸与回收四帧",
+        "真实双方主将和部队映射",
+        "recruit-招募身份兼容",
+        "白马骑乘待机和左右朝向",
+        "实际战争移动接近",
+        "680ms佩剑直击与38%命中时机",
+        "受击反馈及骑乘阵亡消退",
+        "assets/war-*.png打包规则",
+        "12项定向测试通过"
+      ]
+    },
+    "general-523-68118": {
+      "name": "狄青",
+      "asset": "assets/battle/generals/war-general-mounted-diqing-v2.png",
+      "generated": true,
+      "integratedIntoWar": true,
+      "verifiedInActualBattle": true,
+      "completed": true,
+      "verifiedAt": "2026-10-18T10:14:42.692169+00:00",
+      "evidenceDirectory": "output/battle-generals/general-diqing",
+      "checks": [
+        "八个人马轮廓及透明裁切测量",
+        "长刀肩后蓄势、下斩、横扫与回收四帧",
+        "真实双方主将和部队映射",
+        "recruit-招募身份兼容",
+        "灰马骑乘待机和左右朝向",
+        "实际战争移动接近",
+        "1040ms长刀动作与50%命中时机",
+        "受击反馈及骑乘阵亡消退",
+        "assets/war-*.png打包规则",
+        "12项定向测试通过"
+      ]
+    },
+    "general-550-43844": {
+      "name": "岳云",
+      "asset": "assets/battle/generals/war-general-mounted-yueyun-v2.png",
+      "generated": true,
+      "integratedIntoWar": true,
+      "verifiedInActualBattle": true,
+      "completed": true,
+      "verifiedAt": "2026-10-18T10:47:41.022429+00:00",
+      "evidenceDirectory": "output/battle-generals/general-yueyun",
+      "checks": [
+        "全新构图通过八个人马轮廓及透明裁切测量，完整盔缨留白",
+        "双锏蓄势、近侧举击、远侧横击与交叉收势四帧",
+        "真实双方主将和部队映射",
+        "recruit-招募身份兼容",
+        "栗马骑乘待机和左右朝向",
+        "实际战争移动接近",
+        "940ms双锏交击与49%命中时机",
+        "受击反馈及骑乘阵亡消退",
+        "assets/war-*.png打包规则",
+        "12项定向测试通过"
+      ]
+    },
+    "general-555-68201": {
+      "name": "杨再兴",
+      "asset": "assets/battle/generals/war-general-mounted-yangzaixing-v2.png",
+      "generated": true,
+      "integratedIntoWar": true,
+      "verifiedInActualBattle": true,
+      "completed": true,
+      "verifiedAt": "2026-10-18T11:04:05.582489+00:00",
+      "evidenceDirectory": "output/battle-generals/general-yangzaixing",
+      "checks": [
+        "八个人马轮廓及透明裁切测量",
+        "长枪低位蓄势、快刺、延伸与回收四帧",
+        "真实双方主将和部队映射",
+        "recruit-招募身份兼容",
+        "白马骑乘待机和左右朝向",
+        "实际战争移动接近",
+        "620ms快枪与34%命中时机",
+        "受击反馈及骑乘阵亡消退",
+        "assets/war-*.png打包规则",
+        "12项定向测试通过"
+      ]
+    }
+  },
+  "lastRun": {
+    "person": "杨再兴",
+    "completedAt": "2026-10-18T11:04:05.582489+00:00",
+    "result": "all 56 queued generals generated, integrated and individually verified in actual war",
+    "next": null
+  },
+  "completedAt": "2026-10-18T11:04:05.582489+00:00"
+}

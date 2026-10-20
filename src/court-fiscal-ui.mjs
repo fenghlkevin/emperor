@@ -1,14 +1,36 @@
-import {courtFiscalFeedback} from './court-fiscal-feedback.mjs';
+import {quoteDisasterSubsidy} from './disasters.mjs';
+import {quoteProvinceResources} from './province-resources.mjs';
+import {CENSUS_COST,quoteRevenue} from './revenue.mjs';
 import {countrySummary} from './domestic.mjs';
 import {courtFiscalPlan} from './court-fiscal.mjs';
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const fmt=n=>Number(n).toLocaleString('zh-CN');
-export const COURT_FISCAL_KINDS=[['tax','赋','分州定赋'],['subsidy','拨','拨银安民'],['census','籍','清查户口'],['levy','征','特别征收']];
+export const COURT_FISCAL_KINDS=[['tax','赋','核定赋税'],['subsidy','惠','中央补助'],['census','籍','招纳流民入籍']];
 export function fiscalControls(state,p,kind,edits){
- const q=countrySummary(state.domestic,undefined,state.turn),value=kind==='tax'?(edits[p.id]??Math.round(p.budget.taxRate*100)):(edits[p.id]??0);
- const actual=courtFiscalFeedback(state);
- const detail=kind==='tax'?`<label class="atlas-amount">${esc(p.name)}拟定税率 / %<div><button data-fiscal-step="-1" aria-label="降低1个百分点">−</button><input data-fiscal-value type="number" aria-label="${esc(p.name)}拟定税率" min="0" max="50" step="1" value="${Number.isFinite(value)?value:''}"><button data-fiscal-step="1" aria-label="提高1个百分点">＋</button></div></label><p>当前${Math.round(p.budget.taxRate*100)}%。点选其他州继续拟定，最后合为一道旨意；未改的州保持原税率。</p>`:kind==='subsidy'?`<label class="atlas-amount">拨往${esc(p.name)} / 两<div><button data-fiscal-step="-100" aria-label="减少100两">−</button><input data-fiscal-value type="number" aria-label="${esc(p.name)}补助银两" min="0" max="1000000000" step="1" value="${Number.isFinite(value)?value:''}"><button data-fiscal-step="100" aria-label="增加100两">＋</button></div></label><p>银两拨入地方现金，不自动变粮。可点选多州分别安排，一次统一颁旨。</p>`:kind==='census'?`<div class="fiscal-national-proposal"><span>籍</span><h3>整顿全国户籍</h3><p>拨银5,000两，登记现有人口的1%。<br>各州新增生产人口，当前所察${esc(p.name)}预计登记${fmt(Math.max(1,Math.floor(p.population.total*.01)))}人。</p></div>`:`<div class="fiscal-national-proposal is-levy"><span>征</span><h3>为国用特别征收</h3><p>向有可征现金的本国各州加征10%。<br>受征州民忠−5、安定−3；不会改变常规税率。</p></div>`;
- return `${actual?`<section class="fiscal-current" data-fiscal-feedback><span>第${actual.turn}旬 · 已结算常规收支</span><strong>实收 ${fmt(actual.income)} − 实付 ${fmt(actual.paid)} 两</strong><p>应支${fmt(actual.due)}两 · 欠支新增国债${fmt(actual.debtAdded)}两</p><small>不含购粮、营建、补助及外交等其他流水；下方为当前预算。</small></section>`:''}<div class="fiscal-current"><span>全国预计收支 / 两每旬</span><strong>${fmt(q.income)} <small>收入</small> − ${fmt(q.expenditure)} <small>支出</small></strong><p>预计${q.net>=0?'结余':'短支'} ${fmt(Math.abs(q.net))}两 · 国债${fmt(q.country.fiscal.debt)}两</p></div><p class="fiscal-local-note">本州地方现金 ${fmt(p.status.cash)} 两 · 人口 ${fmt(p.population.total)} 人</p><nav class="fiscal-proposals" aria-label="财政方案">${COURT_FISCAL_KINDS.map(([id,seal,title])=>`<button data-fiscal-kind="${id}" aria-pressed="${kind===id}"><span>${seal}</span><small>${title}</small></button>`).join('')}</nav>${detail}<div class="fiscal-draft-changes" data-fiscal-draft></div><div data-fiscal-outlook></div><details class="fiscal-ledger"><summary>查阅当前财政依据</summary><p>税收 ${fmt(q.tax)} 两/旬；其他收入 ${fmt(q.otherIncome)} 两/旬。</p><p>常规支出已含公共服务费 ${fmt(q.publicServiceCost)} 两/旬，不重复相加。此为当前预算，不是历史流水。</p></details>`;
+ if(['tax','subsidy'].includes(kind))return localFiscalControls(state,p,kind,edits);
+ if(kind!=='census')throw Error('请选择有效的财政事项');
+ let quote;try{quote=quoteRevenue(state,{kind:'census'});}catch{}
+ const added=quote?.changes.find(r=>r.provinceId===p.id)?.added??0;
+ return `<section class="fiscal-local-command"><h3 class="atlas-section-title">招纳流民入籍</h3><p class="fiscal-local-help">全国统一办理一次 · 按各州人口的1%招纳，受容量限制。</p><div class="fiscal-local-result"><small>${esc(p.name)}人口 · 当前 → 入籍后</small><strong>${fmt(p.population.total)} <span>→</span> ${fmt(p.population.total+added)}</strong><p>本州新增 <b>+${fmt(added)} 人</b></p></div><div class="fiscal-draft-changes" data-fiscal-draft></div><div data-fiscal-outlook></div></section>`;
+}
+
+function localFiscalControls(state,p,kind,edits){
+ const tax=kind==='tax',value=edits[p.id]??(tax?Math.round(p.budget.taxRate*100):0);
+ return `<section class="fiscal-local-command" data-fiscal-province="${esc(p.id)}"><h3 class="atlas-section-title">${tax?'核定赋税':'中央补助'}</h3><div class="fiscal-local-baseline">${tax?`<span>当前税率 <strong>${Math.round(p.budget.taxRate*100)}%</strong></span>`:`<span>本州人口 <strong>${fmt(p.population.total)} 人</strong></span><span>生活水平 <strong>${fmt(p.status.livingStandard)} / 100</strong></span>`}</div><label class="atlas-amount">${tax?'拟定税率 / %':'补助金额 / 两'}<div><button data-fiscal-step="${tax?-1:-100}" aria-label="${tax?'降低1个百分点':'减少100两'}">−</button><input data-fiscal-value type="number" aria-label="${esc(p.name)}${tax?'拟定税率':'补助银两'}" min="0" max="${tax?50:1000000000}" step="1" value="${Number.isFinite(value)?value:''}"><button data-fiscal-step="${tax?1:100}" aria-label="${tax?'提高1个百分点':'增加100两'}">＋</button></div></label><div data-fiscal-outlook></div><div class="fiscal-draft-changes" data-fiscal-draft></div></section>`;
+}
+function updateLocalFiscalPreview(root,state,kind,edits,plan){
+ const p=state.domestic.provinces.find(p=>p.id===root.querySelector('[data-fiscal-province]')?.dataset.fiscalProvince);if(!p)return;
+ const outlook=root.querySelector('[data-fiscal-outlook]'),row=plan?.changes.find(r=>r.provinceId===p.id);
+ if(kind==='subsidy'){
+  const after=row?.after??p.status.livingStandard;
+  const relief=row?.disaster??quoteDisasterSubsidy(p,state.turn,0);
+  outlook.innerHTML=`${relief?`<div class="fiscal-local-result"><small>本州剩余灾期</small><strong>${relief.before} <span>→</span> ${relief.after} <em>旬</em></strong></div><p class="fiscal-local-disaster">灾期 ${relief.before} → ${relief.after} 旬 · 生活水平不变 <span title="赈灾所需${fmt(relief.minimum)}两；每州每旬最多缩短1旬，至少保留1旬。受灾期间补助不增加生活水平。">?</span></p>`:`<div class="fiscal-local-result"><small>本州生活水平</small><strong>${fmt(p.status.livingStandard)} <span>→</span> ${fmt(after)} <em>/ 100</em></strong></div>`}${plan?`<p class="fiscal-local-total">合计拨款 <b>${fmt(plan.cost)} 两</b> · 国库余额 ${fmt(plan.treasuryAfter)} 两</p>`:''}`;
+ }else{
+  const rate=edits[p.id]??Math.round(p.budget.taxRate*100);
+  if(!Number.isSafeInteger(rate)||rate<0||rate>50){outlook.innerHTML='<p class="atlas-warning">税率须为0–50的整数。</p>';return;}
+  const before=quoteProvinceResources(p,{turn:state.turn+1}),after=quoteProvinceResources(p,{turn:state.turn+1,grainTaxRate:rate/100,cashTaxRate:rate/100});
+  outlook.innerHTML=`<div class="fiscal-local-result"><small>本州每旬税收 · 当前 → 拟定</small><p><span>粮赋</span><b>${fmt(before.grain.tax)} → ${fmt(after.grain.tax)} 石</b></p><p><span>工商银税</span><b>${fmt(before.cash.tax)} → ${fmt(after.cash.tax)} 两</b></p></div>${rate>25?`<p class="atlas-warning">高于25%：逐旬损害民忠与安定。${rate>30?'高于30%还会降低生活水平。':''}</p>`:''}`;
+ }
 }
 export function updateFiscalPreview(root,state,kind,edits){
  const changes=root.querySelector('[data-fiscal-draft]'),outlook=root.querySelector('[data-fiscal-outlook]');if(!changes||!outlook)return;
@@ -16,6 +38,7 @@ export function updateFiscalPreview(root,state,kind,edits){
  const owned=countrySummary(state.domestic).provinces;
  const rows=Object.entries(edits).filter(([id,v])=>kind==='tax'?v!==Math.round(owned.find(p=>p.id===id)?.budget.taxRate*100):v!==0);
  changes.innerHTML=['tax','subsidy'].includes(kind)&&rows.length?`<small>拟定 ${rows.length} 州 · 尚未颁旨</small><div>${rows.map(([id,v])=>`<button data-fiscal-clear="${esc(id)}" aria-label="撤回${esc(owned.find(p=>p.id===id)?.name??id)}安排">${esc(owned.find(p=>p.id===id)?.name??id)} <b>${Number.isSafeInteger(v)?fmt(v):'待核'}${kind==='tax'?'%':'两'}</b> ×</button>`).join('')}</div>`:'';
+ if(['tax','subsidy'].includes(kind)){updateLocalFiscalPreview(root,state,kind,edits,plan);return;}
  if(!plan){outlook.innerHTML='';return;}
- outlook.innerHTML=`<div class="fiscal-outlook"><small>本次${plan.income?'入库':'支出'}</small><strong>${fmt(plan.income||plan.cost)}<i>两</i></strong><p>颁旨后国库 ${fmt(plan.treasuryAfter)} 两</p>${plan.after?`<p>预计后续旬结余 ${fmt(plan.before.net)} → <b>${fmt(plan.after.net)}</b> 两</p>`:''}${plan.addedPopulation?`<p>全国登记生产人口 +${fmt(plan.addedPopulation)} 人</p>`:''}<p class="atlas-warning">${esc(plan.note)}</p><details><summary>展开本次各州明细</summary>${plan.lines.map(line=>`<p>${esc(line)}</p>`).join('')}</details></div>`;
+ outlook.innerHTML=`<div class="fiscal-census-summary"><p><span>全国招纳</span><strong>+${fmt(plan.addedPopulation)} 人</strong></p><p><span>一次性费用</span><strong>${fmt(CENSUS_COST)} 两</strong></p><p><span>办理后国库</span><b>${fmt(plan.treasuryAfter)} 两</b></p></div>`;
 }

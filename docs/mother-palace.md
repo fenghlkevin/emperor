@@ -6,6 +6,6 @@
 
 隐藏关系存于 `state.mother`：孝心 `filialPiety` 初始五十，每次完成问安增加五，上限一百；`lastVisitTurn` 记录问安旬序；`neglectedTurns` 记录连续整旬未探望的次数。已探望的一旬结束时清零；第三个连续未探望旬结束开始，每旬扣三，最低零。推进到下一旬时结算，单纯出入其他宫殿不扣孝心。旧存档载入时从五十和新的宽限期开始，不补扣历史旬数。
 
-场景素材由内置 imagegen 生成，位于 `assets/sketch-mother-v1.png`。按用户最新要求恢复最初的年长太后形象，保留皇帝奉茶、两侧侍从、寿鹤屏风和暖色宫殿构图。年轻形象素材 v2 留存但不再使用。
+场景素材由内置 imagegen 生成，位于 `assets/scenes/mother/sketch-mother-v1.png`。按用户最新要求恢复最初的年长太后形象，保留皇帝奉茶、两侧侍从、寿鹤屏风和暖色宫殿构图。年轻形象素材 v2 留存但不再使用。
 
 验证：`node --test tests/mother.test.mjs tests/emperor.test.mjs`；`node_modules/.bin/electron tests/mother-desktop.cjs`，界面截图保存在 `outputs/mother/`。

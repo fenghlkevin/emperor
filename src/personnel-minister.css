@@ -85,7 +85,7 @@
 .personnel-minister-dialog .pm-rules{list-style:none;margin:0;padding:0;display:grid;gap:14px}
 .personnel-minister-dialog .pm-rules li{display:grid;grid-template-columns:36px 1fr;gap:10px;font-size:12px;line-height:1.8;color:#8b7755}
 .personnel-minister-dialog .pm-rules strong{font-weight:500;color:#6f5330}
-.personnel-minister-dialog .pm-province-art{height:135px;position:relative;display:flex;justify-content:flex-end;align-items:center;padding:20px;background:linear-gradient(90deg,#f5efe22b,#f5efe2ee),url('../assets/sketch-ink-eurasia.png') center/cover;border-block:1px solid #cbbd9e88;color:#746344}
+.personnel-minister-dialog .pm-province-art{height:135px;position:relative;display:flex;justify-content:flex-end;align-items:center;padding:20px;background:linear-gradient(90deg,#f5efe22b,#f5efe2ee),url('../assets/scenes/atlas/sketch-ink-eurasia.png') center/cover;border-block:1px solid #cbbd9e88;color:#746344}
 .personnel-minister-dialog .pm-province-art span{font-size:18px;line-height:2;letter-spacing:4px}
 .personnel-minister-dialog .pm-badge{font-size:11px;padding:4px 7px;color:#8d7a59;border:1px solid #cbbd9e80;border-radius:2px;white-space:nowrap}
 .personnel-minister-dialog .pm-badge.is-on{color:#8f3d2d;background:#a342320c;border-color:#a3423233}
@@ -282,7 +282,7 @@
 .exam-session{width:min(1560px,97vw);height:min(900px,94vh);max-height:94vh;background:#e8dcc3}
 .exam-session .pm-picker-header{background:#f5efe2ed}
 .exam-session .pm-picker-header>div:last-child{display:flex;align-items:center;gap:16px}
-.exam-content{display:flex;flex:1;min-height:0;overflow:auto;background:linear-gradient(#26180e18,#26180e44),url('../assets/sketch-court-background-urban-v9.png') center/cover}
+.exam-content{display:flex;flex:1;min-height:0;overflow:auto;background:linear-gradient(#26180e18,#26180e44),url('../assets/scenes/court/sketch-court-background-urban-v9.png') center/cover}
 .exam-main{display:flex;flex-direction:column;flex:1;min-width:0;padding:16px 20px}
 .exam-stage{display:flex;align-items:stretch;justify-content:center;flex:1;min-height:230px;gap:5px}
 .exam-session .exam-person{display:flex;flex-direction:column;align-items:center;justify-content:flex-end;width:16.66%;min-width:0;border:0;background:transparent;padding:0 3px;color:#433522}
@@ -301,7 +301,7 @@
 @media(max-width:650px){.exam-content{flex-direction:column}.exam-roster{width:100%;border-left:0;border-top:1px solid #bfa676;overflow:visible}.exam-stage{min-height:180px}.exam-person img,.has-roster .exam-person img{height:180px}.exam-person span{font-size:12px;writing-mode:vertical-rl;min-width:0}.exam-person small{display:none}.exam-detail dl{grid-template-columns:repeat(4,1fr)}.exam-pagination{gap:8px;font-size:12px}.exam-session .pm-picker-header h2{font-size:20px}.exam-session .pm-picker-header p{max-width:210px}.exam-session .pm-picker-header>div:last-child{gap:4px}.exam-session .pm-picker-header button{font-size:16px}.exam-session .pm-picker-footer{gap:8px}}
 
 /* 殿试场景：标题、人物与卷轴信息融入同一画面。 */
-.exam-session{position:relative;background:#b8a282 url('../assets/exam-courtyard.png') center/cover;border:1px solid #b79b62;border-radius:3px;box-shadow:0 24px 100px #160e08aa}
+.exam-session{position:relative;background:#b8a282 url('../assets/examinations/exam-courtyard.png') center/cover;border:1px solid #b79b62;border-radius:3px;box-shadow:0 24px 100px #160e08aa}
 .exam-session::before{content:'';position:absolute;inset:0;pointer-events:none;box-shadow:inset 0 0 90px #3d230b55;z-index:0}
 .exam-session .pm-picker-header{position:relative;z-index:1;background:linear-gradient(90deg,#f5ecd9eb,#f5ecd980 62%,transparent);border:0;min-height:120px;padding:20px 32px 10px;align-items:flex-start}
 .exam-session .pm-picker-header small{display:inline-block;background:#392817ed;color:#e7cd98;padding:8px 16px;margin:-20px 0 8px -32px;font-size:16px;letter-spacing:4px;border-bottom:1px solid #a98a51}
@@ -412,7 +412,7 @@ dialog.exam-notice{width:min(1240px,94vw);max-width:94vw;max-height:92vh;overflo
 /* 制举圣旨：名单为实时文字，御印落在卷面预留位置。 */
 dialog.exam-edict{width:min(1180px,96vw);max-width:96vw;max-height:96vh;padding:0;border:0;background:transparent;color:#48250f;overflow:auto;font-family:"Songti SC","STSong",serif;filter:drop-shadow(0 20px 35px #160b06aa)}
 .exam-edict::backdrop{background:#170f09ba;backdrop-filter:blur(7px)}
-.edict-scroll{box-sizing:border-box;min-height:620px;padding:100px 16% 95px;background:url('../assets/exam-edict-scroll.png') center/100% 100% no-repeat}
+.edict-scroll{box-sizing:border-box;min-height:620px;padding:100px 16% 95px;background:url('../assets/examinations/exam-edict-scroll.png') center/100% 100% no-repeat}
 .edict-copy{text-align:center;display:flex;flex-direction:column;min-height:425px}
 .edict-copy h2{font-family:"STKaiti","Kaiti SC",serif;font-size:66px;font-weight:600;letter-spacing:18px;margin:0 0 4px;text-indent:18px;color:#80521e}
 .edict-copy .edict-heading p{font-size:17px;letter-spacing:5px;margin:0 0 24px;color:#80521e}
@@ -443,7 +443,7 @@ dialog.exam-edict{width:min(1180px,96vw);max-width:96vw;max-height:96vh;padding:
 @media(prefers-reduced-motion:reduce){.is-stamping .edict-stamp{animation:none}.is-stamping .edict-seal-mark{animation:edict-ink .25s linear both}}
 
 /* 与已确认原型保持同一画幅，文字和御印独立覆盖在原型卷面上。 */
-dialog.exam-edict{width:min(100vw,160vh);height:min(62.5vw,100vh);max-width:100vw;max-height:100vh;border-radius:0;margin:auto;box-shadow:none;filter:none;overflow:hidden;background:#372515 url('../assets/exam-edict-scene.png') center/100% 100% no-repeat;container-type:size}
+dialog.exam-edict{width:min(100vw,160vh);height:min(62.5vw,100vh);max-width:100vw;max-height:100vh;border-radius:0;margin:auto;box-shadow:none;filter:none;overflow:hidden;background:#372515 url('../assets/examinations/exam-edict-scene.png') center/100% 100% no-repeat;container-type:size}
 .exam-edict .edict-scroll{position:absolute;inset:19% 17% 26%;min-height:0;padding:0;background:none}
 .exam-edict .edict-copy{height:100%;min-height:0;display:flex;flex-direction:column;text-align:center}
 .exam-edict .edict-heading{display:block;padding:0;margin:0;background:none;border:0}

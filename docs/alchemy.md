@@ -26,7 +26,7 @@
 
 ## 美术
 
-使用内置 image_gen 生成，保存为`assets/sketch-alchemy-v1.png`，由现有`assets/sketch-*.png`打包规则包含。药名和数量由界面绘制，底图不含文字。材料用独立可选药签控件表达，没有另生成八张材料插图。
+使用内置 image_gen 生成，保存为`assets/scenes/alchemy/sketch-alchemy-v1.png`，由现有`assets/**/*`打包规则包含。药名和数量由界面绘制，底图不含文字。材料用独立可选药签控件表达，没有另生成八张材料插图。
 
 最终提示词：
 

@@ -1,7 +1,8 @@
+import {famine} from './helpers/national.mjs';
 import {kitOrder,settledVictory,settledRetreat} from './helpers/kit-war-fixture.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {newGame,advance,validateSave,resolveExhaustion} from '../src/game.mjs';
+import {newGame as baseNewGame,advance,validateSave,resolveExhaustion} from '../src/game.mjs';
 
 import {settlePersonnel,executePersonnel} from '../src/personnel-actions.mjs';
 import {governorProfile,settleGovernance} from '../src/governance.mjs';
@@ -18,9 +19,9 @@ const reload=s=>validateSave(JSON.parse(JSON.stringify(s)));
 function peaceful(s){for(const p of s.domestic.provinces)for(const k of ['stability','loyalty','security'])p.welfare[k]=80;for(const o of s.domestic.justice.officials)o.loyalty=100;return s;}
 test('P0 emergency priority, shared budget, reserve, disaster relief and settlement replay',()=>{
  const s=peaceful(newGame('治理')),d=s.domestic,p=province(s),q=d.provinces[1];
- for(const c of [p,q]){c.welfare.grainReserve=0;c.economy.agriculture.productivity=0;}
+ famine(d);
  p.disaster={kind:'fire',startTurn:1,endTurn:3};d.personnel.delegations=[q.id,p.id];d.governance.budget=1000;d.governance.reserve=9500;s.turn=2;
- settlePersonnel(d,2);assert.ok(d.governance.spent<=500);assert.ok(home(s).fiscal.treasury>=9500);assert.ok(d.foodRelief.history.length);assert.equal(d.foodRelief.history[0].targetId,q.id);assert.equal(p.construction.project,null);
+ settlePersonnel(d,2);assert.ok(d.governance.spent<=500);assert.ok(home(s).fiscal.treasury>=9500);assert.ok(d.foodRelief.history.length);assert.equal(d.foodRelief.history[0].national,true);assert.equal(p.construction.project,null);
  const before=JSON.stringify(s);settlePersonnel(d,2);settleGovernance(d,2);assert.equal(JSON.stringify(s),before);reload(s);
 });
 test('P0 no money never incurs debt or starts partial work, failed persistence leaves original unchanged',()=>{
@@ -45,9 +46,9 @@ test('P1 defeat does not transfer territory; active treaties prohibit attack unt
  let s=newGame('守约');const id=borderingCountries(s.domestic)[0].id,r=relationBetween(s.domestic,'sheng',id);r.friendship=90;s=executeDiplomacy(s,{kind:'treaty',treaty:'nonaggression',countryId:id}).state;
  const c=kitOrder(s,id);assert.throws(()=>quoteWar(s,c),/条约/);s=executeDiplomacy(s,{kind:'cancel',countryId:id}).state;assert.ok(quoteWar(s,c));const n=settledRetreat(s,id).state;assert.ok(!n.domestic.provinces.some(p=>p.occupation));reload(n);
 });
-test('P1 negotiations reject unreasonable demand without replacing agreement; cash-only nonperformance is recorded once',()=>{
+test('P1 negotiations reject unreasonable demand without replacing agreement; unused market allowance creates no debt or nonperformance',()=>{
  let s=newGame('邦交');const before=JSON.stringify(s),refused=executeDiplomacy(s,{kind:'demand',countryId:'rome',amount:1000000});assert.equal(refused.accepted,false);assert.equal(JSON.stringify(refused.state),before);
- relationBetween(s.domestic,'sheng','rome').friendship=100;s=executeDiplomacy(s,{kind:'trade',countryId:'rome',exports:100,imports:0}).state;const foreign=s.domestic.countries.find(c=>c.id==='rome');postTreasury(s.domestic,'rome',{turn:1,expense:foreign.fiscal.treasury,reason:'测试现金不足',key:'test:drain'});settleDiplomacy(s.domestic,2);s.turn=2;const r=relationBetween(s.domestic,'sheng','rome');assert.equal(r.agreement.lastPerformance.exportsPaid,0);assert.equal(r.friendship,95);assert.equal(foreign.fiscal.debt,0);const snapshot=JSON.stringify(s);settleDiplomacy(s.domestic,2);assert.equal(JSON.stringify(s),snapshot);reload(s);
+ relationBetween(s.domestic,'sheng','rome').friendship=100;s=executeDiplomacy(s,{kind:'trade',countryId:'rome',exports:100,imports:0}).state;const foreign=s.domestic.countries.find(c=>c.id==='rome');postTreasury(s.domestic,'rome',{turn:1,expense:foreign.fiscal.treasury,reason:'测试现金不足',key:'test:drain'});settleDiplomacy(s.domestic,2);s.turn=2;const r=relationBetween(s.domestic,'sheng','rome');assert.equal(r.agreement.lastPerformance,undefined);assert.equal(r.friendship,100);assert.equal(foreign.fiscal.debt,0);const snapshot=JSON.stringify(s);settleDiplomacy(s.domestic,2);assert.equal(JSON.stringify(s),snapshot);reload(s);
 });
 test('P1 life exhaustion and normal end archive a stable result with save rollback and reload',()=>{
  const s=newGame('终评');s.stats.life=1;advance(s);assert.equal(s.reignResult.turn,s.turn);assert.equal(s.reignResult.reason,'寿元已尽');const result=JSON.stringify(s.reignResult);assert.throws(()=>advance(s),/终结/);assert.equal(JSON.stringify(reload(s).reignResult),result);
@@ -71,3 +72,6 @@ test('P1 rebel province can be reconquered with the same ownership and occupatio
  const n=settledVictory(s,'rebel-hebei').state;
  assert.equal(province(n).countryId,'sheng');assert.equal(province(n).occupation.previousOwner,'rebel-hebei');assert.equal(n.domestic.countries.find(c=>c.id==='rebel-hebei').provinceIds.length,0);reload(n);
 });
+
+// Food purchases in these scenarios explicitly open a neighboring mutual market.
+function newGame(...args){const s=baseNewGame(...args);s.domestic.diplomacy.find(r=>r.countryIds.includes('sheng')&&r.countryIds.includes('nanzhao')).agreement.imports=1000000;return s;}

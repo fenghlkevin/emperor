@@ -1,0 +1,53 @@
+<div id="gov-v2">
+<style>
+#gov-v2{--paper:light-dark(#f2e7d1,#292820);--ink:light-dark(#342d24,#eee3cd);--faint:light-dark(#71624f,#c1b49c);--line:light-dark(#c7b695,#625b4a);--panel:light-dark(#e9dcc0,#343126);--seal:light-dark(#8b392c,#d2947a);font:14px/1.65 system-ui;color:var(--ink)}
+#gov-v2 *{box-sizing:border-box}#gov-v2 .window{background:var(--paper);padding:24px;min-height:650px}#gov-v2 header{display:flex;justify-content:space-between;align-items:center;gap:16px;padding-bottom:18px;border-bottom:1px solid var(--line);padding-right:70px}#gov-v2 h2{font-size:23px;font-weight:500;margin:0}#gov-v2 h3{font-size:17px;font-weight:500;margin:0 0 12px}#gov-v2 p{margin:8px 0}#gov-v2 small{font-size:12px;color:var(--faint)}#gov-v2 .body{display:grid;grid-template-columns:150px minmax(0,1fr);gap:24px;margin-top:24px}#gov-v2 .nav{display:flex;flex-direction:column;gap:14px;color:var(--faint)}#gov-v2 .current{color:var(--seal);font-weight:500}#gov-v2 .twocol{display:grid;grid-template-columns:1fr 1fr;gap:22px}#gov-v2 article{padding:18px;background:var(--panel);border:1px solid var(--line)}#gov-v2 label{display:flex;flex-direction:column;gap:7px;margin:12px 0}#gov-v2 select,#gov-v2 input{font:inherit;color:var(--ink);background:var(--paper);border:1px solid var(--line);padding:8px;min-width:0;width:100%}#gov-v2 button{font:inherit;padding:8px 14px;background:var(--paper);border:1px solid var(--line);color:var(--ink);cursor:pointer}#gov-v2 .primary{background:var(--seal);color:light-dark(#fff8ee,#221b16);border-color:var(--seal)}#gov-v2 .row{display:flex;flex-wrap:wrap;align-items:center;gap:12px}#gov-v2 .strip{padding:14px 0;border-bottom:1px solid var(--line)}#gov-v2 .footer{margin-top:22px;border-top:1px solid var(--line);padding-top:16px}#gov-v2 .tag{color:var(--seal)}#gov-v2 ol{padding-left:22px}#gov-v2 li{padding:8px 0}#gov-v2 .receipt{background:var(--panel);padding:18px;margin-top:18px}#gov-v2 .lane{display:grid;grid-template-columns:85px 1fr;gap:12px;border-bottom:1px solid var(--line);padding:14px 0}#gov-v2 .decision{border-left:3px solid var(--seal);padding-left:18px;margin:20px 0}#gov-v2 button:focus-visible{outline:2px solid var(--seal);outline-offset:3px}
+@media(max-width:700px){#gov-v2 .body{grid-template-columns:1fr}#gov-v2 .nav{flex-direction:row;flex-wrap:wrap}#gov-v2 .twocol{grid-template-columns:1fr}#gov-v2 .window{padding:16px;min-height:1000px}#gov-v2 header{padding-right:0;align-items:start;flex-direction:column}#gov-v2 .lane{grid-template-columns:1fr}}
+</style>
+<div class="viz-carousel" aria-label="中央地方治理方案" data-previous-label="上一页" data-next-label="下一页">
+<section data-variant="地方授权与预算" class="window">
+<header><div><small>皇帝 · 天下治理</small><h2>河北 · 地方治权</h2></div><small>完整方案讨论版 · 数值待平衡</small></header>
+<div class="body"><nav class="nav" aria-label="治理导航"><span>全国舆图</span><span class="current">河北治权</span><span>本旬执行簿</span><span>地方官履历</span></nav><main>
+<div class="row"><span>任命即承接日常事务</span><small>全国额度 → 本州额度 → 文武分项；上限不等于实支</small></div>
+<div class="twocol" style="margin-top:16px"><article><h3>州牧 · 民政</h3><small>已任职 · 示意官员</small><label>管理方式<select id="civil"><option>州牧治理</option><option>皇帝亲理</option></select></label><label>每旬民政上限 / 两<input id="civil-budget" type="number" min="0" step="100" value="600"></label><label>发展优先级<select id="priority"><option>保粮安民</option><option>兴农积粮</option><option>发展工商</option></select></label><p>赈济、维护、民生恢复；授权额度内的小型建设。</p></article>
+<article><h3>将军 · 地方军务</h3><small>已任职 · 示意官员</small><label>管理方式<select id="army"><option>将军治理</option><option>皇帝亲理</option></select></label><label>每旬军务上限 / 两<input id="army-budget" type="number" min="0" step="100" value="300"></label><label>军务优先级<select id="army-priority"><option>巡防安境</option><option>练兵备战</option><option>整补守备</option></select></label><p>巡防、训练、补齐核定兵装；扩军、出征与跨州调兵须奏准。</p></article></div>
+<div class="footer"><p id="authority" aria-live="polite"></p><p>建设：日常项目目录内，核总价、收益、工期与新增维护负担。</p><p>兵装：按现有驻军和既定兵种补齐；额外储备默认0，在途与占用计入。</p><div class="row"><button id="apply" class="primary">拟定治权诏令</button><span id="authorization">尚未变更</span></div><small>收回治权停止新增自动命令；已批承诺继续，专项批准单列，未用额度不扣款。</small></div>
+</main></div></section>
+<section data-variant="中央御案与重大奏事" class="window" hidden>
+<header><div><small>宣政殿 · 第十二旬</small><h2>御案 · 要事与督办</h2></div><small>示例：待决4件 · 急奏1件</small></header>
+<div class="body"><nav class="nav"><span class="current">急奏与待决</span><span>全部奏事 · 4</span><span>执行复奏</span><span>传召群臣</span></nav><main><div class="strip"><span class="tag">急奏</span>　河北灾后粮缺　·　地方额度不足</div><div class="decision"><small>户部侍郎核实 → 户部尚书拟办 → 皇帝裁决</small><h3>请求本旬追加赈济 800 两</h3><p>地方已按授权购粮，剩余缺口仍无法覆盖。</p><p>现有方案：中央追加拨银；或由邻州调粮。</p><p>宰相督办：户部筹粮，地方州牧接济；工部评估灾后修复。</p></div><div class="row"><button data-decision="批准追加赈济" class="primary">批准追加</button><button data-decision="转交户部拟定调粮">改拟调粮</button><button data-decision="留中待议">留中待议</button></div><p id="petition-result" aria-live="polite">预算、粮源、承办人与执行时点核定后落旨。</p><div class="strip">待决 · 边州扩军请求　→　兵部核定编额与兵装</div><div class="strip">待决 · 河北守将致仕　→　吏部提出接任人选</div><div class="strip">待决 · 外国盟约提案　→　礼部呈条款</div><div class="footer"><small>例行治理进入执行簿；御案只呈重点，全部未决事项始终可查。留中不消除风险。</small></div></main></div>
+</section>
+<section data-variant="每旬执行与复奏" class="window" hidden>
+<header><div><small>河北 · 跨旬预演</small><h2>执行簿 · 谁做了什么</h2></div><small>沿用第一页授权选择 · 示意时序</small></header>
+<div class="body"><nav class="nav"><span>本旬授权</span><span class="current">旬执行链</span><span>收支明细</span><span>历史复奏</span></nav><main>
+<div class="lane"><span>备办</span><div>核对治权、在任官员、国库保留线、可动用粮兵与在建承诺。</div></div>
+<div class="lane"><span>救急</span><div>灾情判定后，供粮结算前执行获准救济；不足额才计算实际缺粮。</div></div>
+<div class="lane"><span>日常</span><div>按文武额度及优先级处理；已出征兵装不可重复使用。</div></div>
+<div class="lane"><span>结算</span><div>同一笔钱粮只计一次；新开工程本次不增加施工进度。</div></div>
+<div class="lane"><span>复奏</span><div>实际结果入簿；超预算、空缺、风险恶化和越权请求上奏。</div></div>
+<div class="row" style="margin-top:18px"><button id="simulate" class="primary">预演下一旬</button><small>示例可用治理资金800两；粮食应急需求500两</small></div>
+<div class="receipt" id="simulation" aria-live="polite">选择地方授权与预算后，可预演执行、暂缓和上奏去向。</div>
+</main></div></section>
+<section data-variant="自主办理与上奏边界" class="window" hidden>
+<header><div><small>地方治理 · 权责核验</small><h2>这件事，地方能否自行办？</h2></div><small>示例判定 · 先验权限，再验资源</small></header>
+<div class="body"><nav class="nav"><span class="current">办理边界</span><span>预算与承诺</span><span>军备补齐目标</span><span>奏事追踪</span></nav><main>
+<label>拟办事项<select id="boundary-case"><option value="market">建设市场：总价500两，民政剩余额度600两</option><option value="equipment">补刀盾兵装：缺装20份，可购30份</option><option value="overspend">建设粮仓：总价600两，剩余额度400两</option><option value="recruit">补充阵亡兵员：招募100人</option><option value="transfer">从邻州调兵100人，携装同行</option><option value="grand">兴建城墙：即使预算充足</option><option value="origin">补特殊兵装：本州不具备合法产地条件</option><option value="idle">增建市场：现有容量已无有效收益</option></select></label>
+<article style="margin-top:20px"><small id="boundary-status"></small><h3 id="boundary-title"></h3><p id="boundary-detail"></p><p id="boundary-route"></p></article>
+<div class="footer"><strong>上奏去向</strong><p>缺粮、拨款 → 户部；扩军、跨州军务 → 兵部；大工程 → 工部；官位空缺 → 吏部。</p><small>普通项目本旬额度不足先排队；有迫近风险，或连续3旬仍无合法可行方案，再呈请裁决。重大越权请求首次即呈。</small></div>
+</main></div></section>
+</div>
+</div>
+<script>
+(()=>{const root=document.getElementById('gov-v2'),el=id=>root.querySelector('#'+id);const ids=['civil','army','civil-budget','army-budget','priority','army-priority','boundary-case'];
+function render(){el('authority').textContent='民政：'+el('civil').value+'；军务：'+el('army').value+'。治权变更立即阻止新的自动命令，预算用于下一次执行。';}
+function persist(){if(window.openai?.setWidgetState)window.openai.setWidgetState({modelContent:Object.fromEntries(ids.map(id=>[id,el(id).value]))}).catch(()=>{});}
+function restore(s){const data=s?.modelContent;if(!data)return;ids.forEach(id=>{if(data[id]!==undefined)el(id).value=data[id];});render();}
+ids.forEach(id=>el(id).onchange=()=>{render();el('authorization').textContent='草拟中';persist();});
+el('apply').onclick=()=>{const values=['civil-budget','army-budget'].map(id=>Number(el(id).value));if(values.some(v=>!Number.isSafeInteger(v)||v<0)){el('authorization').textContent='预算须为非负整数';return;}el('authorization').textContent='诏令预览：'+el('civil').value+' / '+el('army').value+'；每旬上限 '+values.join(' / ')+' 两（仅示意）';persist();};
+root.querySelectorAll('[data-decision]').forEach(b=>b.onclick=()=>el('petition-result').textContent='拟旨预览：'+b.dataset.decision+'。关联原奏事，另记专项额度；不重复发放地方预算。');
+el('simulate').onclick=()=>{const cb=Number(el('civil-budget').value),ab=Number(el('army-budget').value);if(!Number.isSafeInteger(cb)||cb<0||!Number.isSafeInteger(ab)||ab<0){el('simulation').textContent='请先输入有效预算。';return;}const autoC=el('civil').selectedIndex===0,autoA=el('army').selectedIndex===0;const relief=autoC?Math.floor(Math.min(500,cb,800)/2)*2:0;const military=autoA&&ab>=100&&800-relief>=100?100:0;const parts=[autoC?'州牧：获准救济实支'+relief+'两。':'民政亲理：州牧未自动购粮，等待皇帝命令。',autoA?(military===100?'将军：按“'+el('army-priority').value+'”执行一项军务，示例实支100两。':'将军：军务额度不足，暂缓执行，实支0两。'):'军务亲理：将军未新增自动命令。','合计实支'+(relief+military)+'两；未用额度不扣款。',relief<500?'上奏：粮食应急需求尚差'+(500-relief)+'两，呈户部核办。':'日常入簿：粮食应急需求已覆盖，无需重复呈奏。'];el('simulation').replaceChildren(...parts.map(t=>{const p=document.createElement('p');p.textContent=t;return p;}));persist();};
+const cases={market:['自主办理','州牧可开工','日常民用建设；总价在额度内，并须确认有收益、无冲突及维护可承担。','执行簿：列支500两；本旬新开工不同时推进工期。'],equipment:['自主办理 · 限量','只补20份，支银240两','只填补现有刀盾兵配装缺口；不因有预算而采购30份。','将军办理；本州军务额度须足够，兵部核验合法产地与库存。'],overspend:['暂缓 · 不越支','粮仓排队，尚未开工','不能将600两项目拆单，不能扣400两后留下未获准债务。','若需紧急保粮，或连续3旬无法办理，向户部呈预算请求；普通等待记执行簿。'],recruit:['必须上奏','伤亡补员也属于招募','新增兵员、补回阵亡兵员均须批准；预算充足不改变权限。','兵部呈编额、人口来源、一次征募费和后续军饷。'],transfer:['必须上奏','跨州兵员与兵装共同核定','列来源守备底线、目标缺口、人员、装备和训练变化。','兵部拟令，地方将军执行；禁止自动从邻州调兵。'],grand:['必须上奏','城墙列为重大防御工程','重大项目目录优先于金额判断，预算充足也不能自行开工。','工部主办，兵部会核；专项预算只准本项目。'],origin:['无法自主采购','本州没有合法产地','不能用本地采购绕过特殊兵种产地限制；不重复重试扣款。','兵部提出合法采购、跨州兵装调拨方案；合并到同一缺装事项追踪。'],idle:['不办理 · 不上奏','停止无效重复建设','现有设施无边际收益，无新增需求；未花额度留在国库。','执行簿记录“目标已满足”，不生成追加预算请求。']};
+function boundary(){const r=cases[el('boundary-case').value]??cases.market;['boundary-status','boundary-title','boundary-detail','boundary-route'].forEach((id,i)=>el(id).textContent=r[i]);}el('boundary-case').onchange=()=>{boundary();persist();};boundary();
+restore(window.openai?.widgetState);boundary();window.addEventListener('openai:set_globals',e=>{restore(e.detail?.globals?.widgetState);boundary();});render();
+})();
+</script>

@@ -3,7 +3,7 @@ import {palaceAction} from './emperor.mjs';
 export function openMusic(initial,root,onCommit,onClose){
  const d=document.createElement('dialog');
  d.className='music-dialog';d.setAttribute('aria-label','琴棋阁');
- d.innerHTML=`<section class="royal-music"><img class="music-scenery" src="assets/sketch-music-pavilion-v1.png" alt="临水皇家雅阁中，皇帝与青衣棋待诏对弈，左侧乐师抚琴，右侧侍从奉茶，窗外荷池垂柳相映" draggable="false"><header><div><small>一局清欢 · 琴韵入怀</small><h1>琴棋阁</h1></div><button data-exit aria-label="离开琴棋阁">离阁 ×</button></header><div class="music-notes" aria-hidden="true"><i>♪</i><i>♩</i><i>♫</i></div><div class="music-ripples" aria-hidden="true"><i></i><i></i></div><p class="music-result" role="status">正在展开雅阁画卷…</p></section>`;
+ d.innerHTML=`<section class="royal-music palace-action-scene"><img class="music-scenery" src="assets/scenes/music/sketch-music-pavilion-v1.png" alt="临水皇家雅阁中，皇帝与青衣棋待诏对弈，左侧乐师抚琴，右侧侍从奉茶，窗外荷池垂柳相映" draggable="false"><header><div><small>一局清欢 · 琴韵入怀</small><h1>琴棋阁</h1></div></header><div class="music-notes" aria-hidden="true"><i>♪</i><i>♩</i><i>♫</i></div><div class="music-ripples" aria-hidden="true"><i></i><i></i></div><p class="music-result" role="status">正在展开雅阁画卷…</p><button class="palace-scene-exit" data-exit aria-label="离开琴棋阁">离阁 ×</button></section>`;
  root.append(d);
  let cancelled=false;
  d.onclose=()=>{cancelled=true;d.remove();onClose?.();};

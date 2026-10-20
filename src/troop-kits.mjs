@@ -1,3 +1,4 @@
+import {resourceShortage} from './action-feedback.mjs';
 // One unit of stock equips one soldier, including the mount/crew allocation.
 // Project balance v1 prices; no independent weapon or mount stocks.
 export const TROOP_KITS=Object.freeze([
@@ -52,8 +53,8 @@ export function reserveKitSquads(depot,id,squads){
  if(Object.hasOwn(depot.reservations,id))throw Error('出战编号已经使用');
  if(!Array.isArray(squads)||!squads.length)throw Error('请选择出战部队');
  let soldiers=0;const stock=emptyKitStock(),rows=squads.map(row=>{key(row.kind);equipped(row);integer(row.count);if(!row.count)throw Error('编队人数须大于零');soldiers=add(soldiers,row.count);if(equipped(row))stock[row.kind]=add(stock[row.kind],row.count);return {kind:row.kind,count:row.count,...(row.equipped===false?{equipped:false}:{})};});
- if(soldiers>available.soldiers.available)throw Error('空闲士兵不足');
- for(const id of ids)if(stock[id]>available.kits[id].available)throw Error(`${TROOP_KITS.find(k=>k.id===id).name}装备不足`);
+ if(soldiers>available.soldiers.available)throw Error(resourceShortage('出征编队','空闲士兵',soldiers,available.soldiers.available,'人'));
+ for(const id of ids)if(stock[id]>available.kits[id].available)throw Error(resourceShortage('出征编队',TROOP_KITS.find(k=>k.id===id).name+'装备',stock[id],available.kits[id].available,'人份'));
  const next=structuredClone(depot);next.reservations[id]={status:'active',squads:rows};return validateKitDepot(next);
 }
 export function settleKitSquads(depot,id,survivors){
@@ -66,8 +67,8 @@ export function settleKitSquads(depot,id,survivors){
 }
 export function transferKitDepot(source,target,{soldiers=0,kits={}}={}){
  if(source.id===target.id)throw Error('来源与目标驻地不能相同');
- const available=kitAvailability(source);validateKitDepot(target);integer(soldiers,available.soldiers.available);const amounts=kitQuantities(kits);
- for(const id of ids)integer(amounts[id],available.kits[id].available);
+ const available=kitAvailability(source);validateKitDepot(target);integer(soldiers);if(soldiers>available.soldiers.available)throw Error(resourceShortage('调拨士兵','空闲士兵',soldiers,available.soldiers.available,'人'));const amounts=kitQuantities(kits);
+ for(const id of ids){integer(amounts[id]);if(amounts[id]>available.kits[id].available)throw Error(resourceShortage('调拨装备',TROOP_KITS.find(k=>k.id===id).name+'装备',amounts[id],available.kits[id].available,'人份'));}
  if(!soldiers&&!Object.values(amounts).some(Boolean))throw Error('请填写调拨数量');
  const from=structuredClone(source),to=structuredClone(target),total=add(to.soldiers,soldiers);
  to.training=total?Math.floor(to.training*(to.soldiers/total)+from.training*(soldiers/total)):0;
