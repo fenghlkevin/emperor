@@ -371,7 +371,7 @@ export const FEATURED_BEAUTY_DATA=[
     "era": "游龙戏凤等戏曲文学人物；明代背景",
     "kind": "戏曲人物",
     "specialty": "茶艺",
-    "portraitAsset": "assets/beauties/featured/li-fengjie-v5.png",
+    "portraitAsset": "assets/beauties/featured/li-fengjie-v4.png",
     "age": 18,
     "appearance": 93,
     "ability": 80,

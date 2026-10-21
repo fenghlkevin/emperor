@@ -11,7 +11,11 @@ export function portraitDataUrl(person){const cameo=tourCameo(person.travelOrigi
  const saved=resolveRandomPortraitAsset(person.randomPortraitAsset);
  const local=RANDOM_BEAUTY_ART.filter(row=>(row.regionId??'sheng')===(person.regionId??'sheng'));
  const pool=local.length?local:RANDOM_BEAUTY_ART;
- return new URL('../'+(saved??pool[(seed>>>0)%pool.length].asset),import.meta.url).href;
+ const asset=saved??pool[(seed>>>0)%pool.length].asset;
+ const url=new URL('../'+asset,import.meta.url);
+ // Refresh replaced foreign artwork even when a save keeps the original asset path.
+ if(asset.startsWith('assets/beauties/random/foreign-'))url.searchParams.set('v','20261021-transparent');
+ return url.href;
 }
 async function paintFixedBeauty(canvas,person){const url=portraitDataUrl(person),key='fixed:'+url;if(!imageCache.has(key))imageCache.set(key,new Promise((resolve,reject)=>{const im=new Image();im.onload=()=>resolve(im);im.onerror=()=>{imageCache.delete(key);reject(Error('人物专属立绘载入失败'));};im.src=url;}));const im=await imageCache.get(key);if(!canvas.isConnected)return;const pixelRatio=Math.min(2,Math.max(1,globalThis.devicePixelRatio||1));canvas.width=Math.round(480*pixelRatio);canvas.height=Math.round(800*pixelRatio);const ctx=canvas.getContext('2d');ctx.setTransform(pixelRatio,0,0,pixelRatio,0,0);ctx.imageSmoothingQuality='high';if(canvas.dataset.transparent!=='true'){ctx.fillStyle='#f4eddf';ctx.fillRect(0,0,480,800);}const ratio=Math.min(480/im.width,800/im.height),w=im.width*ratio,h=im.height*ratio;ctx.drawImage(im,(480-w)/2,(800-h)/2,w,h);canvas.dataset.ready='true';canvas.dataset.signature=url;}
 export async function paintBeauty(canvas,person){return paintFixedBeauty(canvas,person);}

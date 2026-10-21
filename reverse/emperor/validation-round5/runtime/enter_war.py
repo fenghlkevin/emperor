@@ -1,2 +1,0 @@
-from live_flow import *
-ctx=stop_main();A=p.u32(ctx['EBP']+0x14);S=A+8;p.call(0x3d82a,[S,7]);W=p.u32(S+0x14);r={'app_root':A,'scene_manager':S,'war_menu':W,'scene_id':get(S+2),'war_vtable':hex(p.u32(W)),'source_fields':{hex(o):hex(p.u32(W+o)) for o in [8,0x14,0x18,0x1c,0x20,0x28,0x30,0x34]}};(ROOT/'war-menu-context.json').write_text(json.dumps(r,indent=2));print(r);p.dump_log('enter-war-protocol.json');resume(ctx)

@@ -1,7 +1,7 @@
 import {changeWelfare,effectiveBuildings} from './building-effects.mjs';
 import {postTreasury} from './finance.mjs';
 import {INCOGNITO_PLACES,incognitoDialogue} from './incognito-data.mjs';
-import {createTourEncounters,nextTourEvent,validateTourEvents} from './tour-events.mjs';
+import {createTourEncounters,nextTourEvent,validateTourEvents,initializeTourEvents} from './tour-events.mjs';
 export {INCOGNITO_PLACES};
 
 // The numeric rules below are populated from the EMPEROR instruction evidence.
@@ -9,7 +9,7 @@ export const TRAVEL_RULES={
  tour:{name:'巡游',energyCost:20,treasuryCost:20000,lifeCost:10,healthGain:0,happinessGain:20,prestigeGain:0,description:'安排消耗20体力，次晨起驾。出发支出20,000两、快乐增加20；返宫消耗10寿元，推进至出发月的下一月上旬，期间旬务照常结算。'},
  incognito:{name:'微服体察',energyCost:20,treasuryCost:0,lifeCost:8,healthGain:0,happinessGain:20,prestigeGain:0,description:'安排消耗20体力，次晨换民服出京。入场快乐增加20、寿元减少8，不收取银两；返宫推进一个行动阶段。青楼奇遇另有寿元与健康代价。'}
 };
-export function initializeTravel(s){s.travel??={version:1,nextId:1,pending:null,history:[]};s.travel.easterEggs??={xiaYuheSeen:s.harem?.members?.some(p=>p.travelOrigin?.easterEgg==='xia-yuhe')??false};s.travel.easterEggs.cameosSeen??=[...new Set(s.harem?.members?.map(p=>p.travelOrigin?.easterEgg).filter(id=>id&&id!=='xia-yuhe')??[])];return s;}
+export function initializeTravel(s){s.travel??={version:1,nextId:1,pending:null,history:[]};s.travel.easterEggs??={xiaYuheSeen:s.harem?.members?.some(p=>p.travelOrigin?.easterEgg==='xia-yuhe')??false};s.travel.easterEggs.cameosSeen??=[...new Set(s.harem?.members?.map(p=>p.travelOrigin?.easterEgg).filter(id=>id&&id!=='xia-yuhe')??[])];initializeTourEvents(s);return s;}
 export function travelDestinations(s,kind='tour'){
  if(kind==='incognito')return s.domestic.provinces.filter(p=>p.id===s.domestic.general.capitalProvinceId&&p.countryId===s.domestic.playerCountryId);
  return s.domestic.provinces.filter(p=>p.countryId===s.domestic.playerCountryId&&effectiveBuildings(p,s.turn).palaces>0);

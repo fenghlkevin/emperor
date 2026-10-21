@@ -13,8 +13,8 @@ import {persistCandidate} from '../src/persistence.mjs';
 import {changeWelfare} from '../src/building-effects.mjs';
 function starting(){let s=newGame('巡游事件');s.phase=2;s.createdAt='event-fixture';s.domestic.countries[0].fiscal.treasury=100000;s.stats.treasury=100000;s=scheduleTravel(s,'tour','guannei').state;advance(s);return beginTravel(s).state;}
 function fixture(type,seed=0){const s=starting();if(tourCameo(type)?.eligibleProvinces)s.travel.pending.provinceId=tourCameo(type).eligibleProvinces[0];const person=BEAUTIES.find(p=>p.origin==='原创'&&p.regionId==='sheng'&&!s.harem.members.some(m=>m.id===p.id));s.travel.pending.encounters=[{id:'tour-1-1',type,seed,status:'pending',choiceId:null,result:null,...(type==='bereaved'||tourCameo(type)?{personId:tourCameo(type)?.featuredId??(tourCameo(type)&&type!=='xia-yuhe'?'random-beauty-tour-1-1':person.id)}:{})}];if(tourCameo(type))markCameoSeen(s,type);return s;}
-test('all twenty-eight events and eighty-four options settle into valid saves',t=>{
- t.mock.method(Math,'random',()=>.99);assert.equal(TOUR_EVENTS.length,28);
+test('all twenty-seven events and eighty-one options settle into valid saves',t=>{
+ t.mock.method(Math,'random',()=>.99);assert.equal(TOUR_EVENTS.length,27);
  for(const def of TOUR_EVENTS)for(const choice of def.choices){const s=fixture(def.id),before=structuredClone(s),e=nextTourEvent(s),r=resolveTourEvent(s,e.id,choice.id);assert.deepEqual(s,before);assert.equal(r.state.travel.pending.encounters[0].status,'resolved');assert.ok(r.message.includes(def.title));assert.doesNotThrow(()=>validateSave(r.state),`${def.id}/${choice.id}`);assert.throws(()=>resolveTourEvent(r.state,e.id,choice.id),/已处理/);}
 });
 test('three weighted events are unique, stable on reload, and recent events are downweighted',()=>{
@@ -174,4 +174,35 @@ test('Huang Rong can only be generated in Hebei, where the Zhangjiakou first mee
  }
  const local=fixture('huang-rong'),person=eventCompanion(local,nextTourEvent(local));
  assert.equal(person.travelOrigin.provinceId,'hebei');assert.equal(person.cityId,'jiangnan');
+});
+
+test('two imperial encounters occur only in their source locations at an independent one percent',()=>{
+ const places={'gouyi-furen':['hebei','河间'],'zhu-yunqiao':['jiangnan','苏州']};
+ const s=starting(),trip=s.travel.pending;
+ for(const [id,[province,city]]of Object.entries(places)){
+  const c=tourCameo(id);assert.deepEqual(c.eligibleProvinces,[province]);assert.equal(c.encounterCity,city);
+  for(const provinceId of ['hebei','henan','huainan','jiangnan','lingnan','hedong','guannei','shannan','jiannan','longyou']){
+   trip.provinceId=provinceId;let hits=0;
+   for(let i=0;i<5000;i++){
+    s.createdAt=`new-cameo-place-${i}`;s.travel.easterEggs={xiaYuheSeen:false,cameosSeen:[]};
+    if(createTourEncounters(s,trip).some(e=>e.type===id))hits++;
+   }
+   if(provinceId===province)assert.ok(hits>=20&&hits<=85,`${id}: ${hits}/5000`);else assert.equal(hits,0,`${id} in ${provinceId}`);
+  }
+ }
+ assert.equal(tourCameo('zhu-yunqiao').actor,'蒋勤勤');
+});
+
+test('Li Fengjie returns to the ordinary roster and retired tour saves remain readable',()=>{
+ assert.equal(tourCameo('li-fengjie'),undefined);assert.ok(!TOUR_EVENTS.some(e=>e.id==='li-fengjie'));
+ const base=BEAUTIES.find(p=>p.id==='featured-li-fengjie');assert.ok(base.portraitAsset.endsWith('li-fengjie-v4.png'));
+ const s=starting();s.travel.easterEggs.cameosSeen=['li-fengjie'];
+ s.travel.pending.encounters=['petition','li-fengjie','school'].map((type,i)=>({id:`tour-${s.travel.pending.id}-${i+1}`,type,seed:1,status:'pending',choiceId:null,result:null,...(type==='li-fengjie'?{personId:base.id}:{})}));
+ s.harem.members.push({...structuredClone(base),rank:null,randomBeauty:true,travelOrigin:{easterEgg:'li-fengjie'}});
+ const loaded=validateSave(JSON.parse(JSON.stringify(s)));
+ assert.deepEqual(loaded.travel.pending.encounters.map(e=>e.type),['petition','school']);
+ assert.deepEqual(loaded.travel.pending.encounters.map(e=>e.id),[`tour-${s.travel.pending.id}-1`,`tour-${s.travel.pending.id}-2`]);
+ assert.ok(!loaded.travel.easterEggs.cameosSeen.includes('li-fengjie'));
+ const person=loaded.harem.members.find(p=>p.id===base.id);assert.equal(person.travelOrigin.easterEgg,undefined);assert.ok(portraitDataUrl(person).endsWith('li-fengjie-v4.png'));
+ assert.doesNotThrow(()=>validateSave(JSON.parse(JSON.stringify(loaded))));
 });

@@ -100,7 +100,19 @@ const homeProvinces=new Set(['hebei','henan','huainan','jiangnan','lingnan','hed
 const byId=new Map(TOUR_EVENTS.map(e=>[e.id,e]));
 const ordinary=BEAUTIES.filter(p=>p.origin==='原创'&&p.regionId==='sheng');
 const bounded=(n,min,max)=>Math.max(min,Math.min(max,n));
-export function initializeTourEvents(s){for(const trip of [...(s.travel?.pending?[s.travel.pending]:[]),...(s.travel?.history??[])])trip.encounters??=[];return s;}
+export function initializeTourEvents(s){
+ // Retire the removed Li Fengjie encounter without making existing saves unreadable.
+ for(const trip of [...(s.travel?.pending?[s.travel.pending]:[]),...(s.travel?.history??[])]){
+  trip.encounters??=[];
+  if(Array.isArray(trip.encounters)&&trip.encounters.some(e=>e?.type==='li-fengjie')){
+   trip.encounters=trip.encounters.filter(e=>e?.type!=='li-fengjie');
+   trip.encounters.forEach((e,i)=>{e.id=`tour-${trip.id}-${i+1}`;});
+  }
+ }
+ if(Array.isArray(s.travel?.easterEggs?.cameosSeen))s.travel.easterEggs.cameosSeen=s.travel.easterEggs.cameosSeen.filter(id=>id!=='li-fengjie');
+ for(const person of [...(s.harem?.members??[]),...(s.harem?.encounter?[s.harem.encounter]:[])])if(person.travelOrigin?.easterEgg==='li-fengjie')delete person.travelOrigin.easterEgg;
+ return s;
+}
 export function createTourEncounters(s,trip){
  const random=portraitRandom(portraitHash(`${s.createdAt}|${s.name}|tour:${trip.id}|${trip.provinceId}`));
  const p=s.domestic.provinces.find(p=>p.id===trip.provinceId),recent=new Set(s.travel.history.slice(0,3).flatMap(t=>(t.encounters??[]).map(e=>e.type)));
@@ -116,9 +128,9 @@ export function createTourEncounters(s,trip){
  // Fixed disjoint 1% intervals: seen characters do not redistribute their chance.
  if(homeProvinces.has(trip.provinceId)){
   const cameo=TOUR_CAMEOS[Math.floor(random()/TOUR_CAMEO_CHANCE)];
-  if(cameo&&(!cameo.featuredId||!used.has(cameo.featuredId))&&!cameoSeen(s,cameo.id)&&(!cameo.eligibleProvinces||cameo.eligibleProvinces.includes(trip.provinceId))){
+  if(cameo&&!cameoSeen(s,cameo.id)&&(!cameo.eligibleProvinces||cameo.eligibleProvinces.includes(trip.provinceId))){
    const available=ordinary.filter(p=>!used.has(p.id)),seed=Math.floor(random()*4294967296);
-   const personId=cameo.featuredId??(cameo.id==='xia-yuhe'?available[seed%available.length]?.id:`random-beauty-tour-${trip.id}-3`);
+   const personId=cameo.id==='xia-yuhe'?available[seed%available.length]?.id:`random-beauty-tour-${trip.id}-3`;
    if(personId){records[2]={id:`tour-${trip.id}-3`,type:cameo.id,seed,status:'pending',choiceId:null,result:null,personId};markCameoSeen(s,cameo.id);}
   }
  }
@@ -212,8 +224,8 @@ export function validateTourEvents(s){
   if((trip.kind!=='tour'||trip.startedTurn===undefined)&&list.length)fail();let unresolved=false;
   for(const [i,e]of list.entries()){
    const def=byId.get(e?.type);if(!def||e.id!==`tour-${trip.id}-${i+1}`||!Number.isSafeInteger(e.seed)||e.seed<0||e.seed>4294967295||!['pending','resolved'].includes(e.status))fail();
-   if(e.personId!==undefined&&(!(e.type==='bereaved'||tourCameo(e.type))||!(ordinary.some(p=>p.id===e.personId)||(tourCameo(e.type)?.featuredId===e.personId)||((e.type==='bereaved'||tourCameo(e.type)?.id!=='xia-yuhe')&&isGeneratedBeautyId(e.personId)))))fail();
-   if(tourCameo(e.type)&&(!e.personId||(tourCameo(e.type).featuredId&&e.personId!==tourCameo(e.type).featuredId)))fail();
+   if(e.personId!==undefined&&(!(e.type==='bereaved'||tourCameo(e.type))||!(ordinary.some(p=>p.id===e.personId)||((e.type==='bereaved'||tourCameo(e.type)?.id!=='xia-yuhe')&&isGeneratedBeautyId(e.personId)))))fail();
+   if(tourCameo(e.type)&&!e.personId)fail();
    if(e.status==='pending'){unresolved=true;if(e.choiceId!==null||e.result!==null)fail();}
    else if(unresolved||!def.choices.some(c=>c.id===e.choiceId)||typeof e.result!=='string'||!e.result||e.result.length>1000)fail();
   }

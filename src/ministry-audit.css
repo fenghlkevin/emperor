@@ -1,0 +1,24 @@
+.ministry-item-picker{display:flex;align-items:center;gap:8px;min-width:0;font:inherit;color:inherit}.ministry-item-picker select{flex:1;min-width:0;max-width:100%;font:inherit;color:inherit;background:#f2e5c8;border:1px solid #b39867;padding:5px}.personnel-office-scroll .ministry-item-picker{font-size:clamp(11px,1.1vw,16px)}.personnel-help-dialog>select,.wm-help>select,.military-help-dialog>select{box-sizing:border-box;width:100%;font:inherit;color:inherit;background:#f2e5c8;border:1px solid #b39867;padding:6px;margin:8px 0}.military-spy .ministry-item-picker{margin-top:auto;font-size:clamp(11px,1vw,16px)}
+@media (max-width:1000px) and (min-width:701px){
+ .court-atlas.atlas-stable-fiscal .atlas-local-heading{min-height:38px;padding-top:0;margin-bottom:0}
+ .court-atlas.atlas-stable-fiscal .atlas-local-heading h2{font-size:24px;line-height:1.1;margin:2px 0}
+ .court-atlas.atlas-stable-fiscal .atlas-section-title{font-size:18px;margin:3px 0;padding-bottom:3px}
+ .court-atlas.atlas-stable-fiscal .fiscal-local-baseline{padding:4px 0;font-size:11px}
+ .court-atlas.atlas-stable-fiscal .atlas-amount input{font-size:22px;padding:2px}
+ .court-atlas.atlas-stable-fiscal .atlas-amount button{font-size:20px;padding:2px}
+ .court-atlas.atlas-stable-fiscal .fiscal-ledger{margin-top:4px;padding:4px 0;font-size:10px;line-height:1.2}
+ .court-atlas.atlas-stable-fiscal .fiscal-ledger p{margin:2px 0}
+ .court-atlas.atlas-stable-fiscal .fiscal-local-command .fiscal-draft-changes{margin-top:3px;font-size:10px}
+}
+@media (max-width:1000px) and (min-width:701px){
+ /* The banner already names the fiscal operation; reserve room for actionable errors. */
+ .court-atlas.atlas-stable-fiscal .fiscal-local-command>.atlas-section-title{display:none}
+ .court-atlas.atlas-stable-fiscal .atlas-local-heading{min-height:28px}
+ .court-atlas.atlas-stable-fiscal .atlas-local-heading>small{display:none}
+ .court-atlas.atlas-stable-fiscal .atlas-local-heading h2{font-size:22px;margin:0}
+ .court-atlas.atlas-stable-fiscal .fiscal-local-result{margin-top:3px;padding:2px 0}
+ .court-atlas.atlas-stable-fiscal .fiscal-local-baseline{padding:2px 0}
+}
+.court-atlas.atlas-stable-fiscal .fiscal-draft-changes>.fiscal-draft-picker{display:flex;gap:4px;align-items:stretch}
+.fiscal-draft-picker select{flex:1;min-width:0;font:inherit;font-size:12px;padding:3px;color:#634321;border:1px solid #b39867;background:#f2e5c8}
+.court-atlas.atlas-stable-fiscal .fiscal-draft-picker button{flex:0 0 auto;font-size:12px;padding:3px 6px}

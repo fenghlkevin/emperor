@@ -1,3 +1,0 @@
-from live_flow import *
-j=json.loads((ROOT/'end-action-init.json').read_text());C=j['C'];p.call(0x23c34,[C,p.u32(C+6)],20);assert get(p.data(0xcc59c),1,False)==2
-ctx=json.loads((ROOT/'resumed.json').read_text())['ctx'];resume(ctx);time.sleep(.3);ctx=stop_main();A=p.u32(p.data(0xc98d8));S=A+8;P=p.u32(p.data(0xcc588));r={'ctx':ctx,'A_fields':[get(A+o) for o in [0,2,4]],'palace':P,'P_fields':{hex(o):get(P+o,1,False) for o in [0x50,0x69]},'date':p.read(p.data(0xc98dc),4).hex(),'battle':p.u32(S+0x3c),'head':p.u32(p.data(0xcc5e0)),'current':p.u32(p.data(0xcc5e8))};(ROOT/'end-action.json').write_text(json.dumps(r,indent=2));p.dump_log('end-action-protocol.json');print(r)

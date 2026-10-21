@@ -19,12 +19,6 @@ M-*.BIN
 .env.*
 !.env.example
 
-# Keep reverse-engineering notes and scripts, omit binary evidence/runtime files
-reverse/**/*
-!reverse/**/
-!reverse/**/*.md
-!reverse/**/*.py
-!reverse/**/*.js
-!reverse/**/*.mjs
-!reverse/**/*.cjs
-!reverse/**/*.sh
+# Local research directory and Git metadata
+reverse/
+.git/

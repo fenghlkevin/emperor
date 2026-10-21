@@ -1,5 +1,0 @@
-from common import *
-rows=[]
-for counter in [240,255,256]:
- l.load();B=alloc(0x800);W=alloc(0x200);p.write(B,bytes(0x800));p.write(W,bytes(0x200));put(W+0x5d,B,4);node1=get(p.data(0xc992c),4,False);node2=get(node1+8,4,False);person2=get(node2,4,False);frame=p.STACK-0x100;put(frame-0x1c,node2,4);put(frame-0x24,B,4);put(p.data(0xcc5dc),counter);block(0x80d2b,0x80d59,frame);association=get(person2,1,False);state=get(person2+2,1,False);battleword=get(B+0x6fc);nextcounter=get(p.data(0xcc5dc),2,False);put(frame+0x14,W,4);block(0x6670e,0x66740,frame);matched=get(frame-0x10,4,False);expect=node2 if counter==240 else node1 if counter==255 else 0;rows.append({'counter':counter,'actual_person_byte':association,'actual_person_state':state,'battle_word':battleword,'next_counter':nextcounter,'assigned_node':node2,'first_unassigned_node':node1,'matched_node':matched,'expected_matched_node':expect,'passed':association==counter%256 and state==4 and battleword==counter and nextcounter==counter+1 and matched==expect})
-finish('association-live',rows);assert all(x['passed'] for x in rows);l.load()

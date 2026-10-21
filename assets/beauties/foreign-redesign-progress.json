@@ -3,7 +3,7 @@
   "rule": "以已确认的蒙古草原佳人为画风基准：精致柔和的半写实游戏插画；各地区肤色和脸型有区别，蒙古草原使用暖麦色、略宽脸型、自然颧骨和圆润下巴；保留各地区服装身份；真正透明RGBA PNG背景，禁止黑底或光晕；验证alpha和浅色合成预览后同路径替换，不保留旧图副本。",
   "items": [
     {
-      "path": "assets/beauties/random/foreign-expansion-20261019-01-summer-v1.png",
+      "path": "assets/beauties/random/foreign-expansion-20261019-01-summer-transparent-v2.png",
       "status": "completed",
       "initialSha256": "aa98fe1fb8e7700ee7ccb8190b66ced6cbfe97531b91414c8eaa5c3fa9e0abf7",
       "generatedPath": "/Users/fengheliang/.codex/generated_images/01a15828-8bbf-7783-8fa4-7182f68eeb18/exec-a3862027-862b-4edf-9375-df81161c4b20.png",
@@ -13,10 +13,11 @@
       "promptSummary": "仅移除背景、光晕与地面阴影，保留人物；输出透明RGBA PNG。",
       "review": "已验证真实alpha透明像素，并在浅色底合成检查人物边缘；1024×1536。",
       "transparent": true,
-      "transparencyCorrectedAt": "2026-10-20T07:47:11.340887+00:00"
+      "transparencyCorrectedAt": "2026-10-20T07:47:11.340887+00:00",
+      "previousPath": "assets/beauties/random/foreign-expansion-20261019-01-summer-v1.png"
     },
     {
-      "path": "assets/beauties/random/foreign-expansion-20261019-02-summer-v1.png",
+      "path": "assets/beauties/random/foreign-expansion-20261019-02-summer-transparent-v2.png",
       "status": "completed",
       "initialSha256": "dc6933e5ab3025a9167a11cfc22f118b66532c8cb58b300f1243147e586b83e2",
       "generatedPath": "/Users/fengheliang/.codex/generated_images/01a15828-8bbf-7783-8fa4-7182f68eeb18/exec-c6d7a608-ae20-499b-9aec-648900f55707.png",
@@ -25,10 +26,11 @@
       "transparent": true,
       "tool": "built-in image_gen",
       "promptSummary": "波斯佳人：自然橄榄肤色、独立柔和脸型、深色长辫、红金轻盈刺绣长裙、蓝金腰带、珍珠红宝石与手持卷轴；参考已确认半写实画风；真正透明背景。",
-      "review": "1024×1536 RGBA；751918个全透明像素；浅色合成检查通过，面容、持卷双手、双脚完整，边缘无背景光晕。"
+      "review": "1024×1536 RGBA；751918个全透明像素；浅色合成检查通过，面容、持卷双手、双脚完整，边缘无背景光晕。",
+      "previousPath": "assets/beauties/random/foreign-expansion-20261019-02-summer-v1.png"
     },
     {
-      "path": "assets/beauties/random/foreign-expansion-20261019-03-summer-v1.png",
+      "path": "assets/beauties/random/foreign-expansion-20261019-03-summer-transparent-v2.png",
       "status": "completed",
       "initialSha256": "e7c4e33c288d1047ff3044390b4af3dc1bcb67f54d52e9e12cec802d3e33b1ab",
       "generatedPath": "/Users/fengheliang/.codex/generated_images/01a15828-8bbf-7783-8fa4-7182f68eeb18/exec-fda83527-1ba4-4c6f-b3b5-6c0e83c6ca3a.png",
@@ -37,10 +39,11 @@
       "transparent": true,
       "tool": "built-in image_gen",
       "promptSummary": "阿拉伯佳人：自然蜜橄榄肤色、柔和独立脸型、蓝金头巾与象牙金轻盈刺绣裙、金币腰带、铜壶；统一精致柔和半写实画风，真正透明背景。",
-      "review": "已核验1024×1536 RGBA及631684全透明像素；浅色底检查面容、持壶双手、双脚完整及边缘通过。"
+      "review": "已核验1024×1536 RGBA及631684全透明像素；浅色底检查面容、持壶双手、双脚完整及边缘通过。",
+      "previousPath": "assets/beauties/random/foreign-expansion-20261019-03-summer-v1.png"
     },
     {
-      "path": "assets/beauties/random/foreign-expansion-20261019-04-summer-v1.png",
+      "path": "assets/beauties/random/foreign-expansion-20261019-04-summer-transparent-v2.png",
       "status": "completed",
       "initialSha256": "834614b81d3ea5c09cac38bf11e9b0a6bf482d98e73db8bfc0422d49e39d3eb4",
       "generatedPath": "/Users/fengheliang/.codex/generated_images/01a15828-8bbf-7783-8fa4-7182f68eeb18/exec-001c6c0f-145f-49e2-8f16-39195e1e364b.png",
@@ -49,10 +52,11 @@
       "transparent": true,
       "tool": "built-in image_gen",
       "promptSummary": "阿拉伯佳人2：自然暖橄榄肤色、柔和长椭圆脸、黑辫、赤陶红银绣轻盈裙与头纱、象牙裙层、银币饰与手持锦囊；精致半写实，透明背景。",
-      "review": "1024×1536 RGBA；800112全透明像素；浅底检查面容、双手、双脚与人物边缘通过。"
+      "review": "1024×1536 RGBA；800112全透明像素；浅底检查面容、双手、双脚与人物边缘通过。",
+      "previousPath": "assets/beauties/random/foreign-expansion-20261019-04-summer-v1.png"
     },
     {
-      "path": "assets/beauties/random/foreign-expansion-20261019-07-summer-v1.png",
+      "path": "assets/beauties/random/foreign-expansion-20261019-07-summer-transparent-v2.png",
       "status": "completed",
       "initialSha256": "2166bcf4b6754df448732481e004595d6fa5c731f93f910387c4cc41c89db033",
       "generatedPath": "/Users/fengheliang/.codex/generated_images/01a15828-8bbf-7783-8fa4-7182f68eeb18/exec-9ec4ff01-f109-44df-a463-a7f4c99c2a61.png",
@@ -61,10 +65,11 @@
       "transparent": true,
       "tool": "built-in image_gen",
       "promptSummary": "藏地佳人：暖麦色肌肤与自然红润脸颊、柔和略宽椭圆脸、黑辫与珊瑚绿松石饰、红色藏式夏裙、彩条围裙、银饰、手持野花药草篮；精致柔和半写实画风，真正透明背景。",
-      "review": "1024×1536 RGBA；844495全透明像素；浅底合成检查面容、持篮双手、双脚和边缘通过。"
+      "review": "1024×1536 RGBA；844495全透明像素；浅底合成检查面容、持篮双手、双脚和边缘通过。",
+      "previousPath": "assets/beauties/random/foreign-expansion-20261019-07-summer-v1.png"
     },
     {
-      "path": "assets/beauties/random/foreign-expansion-20261019-08-summer-v1.png",
+      "path": "assets/beauties/random/foreign-expansion-20261019-08-summer-transparent-v2.png",
       "status": "completed",
       "initialSha256": "2821a5402bfb696edcdb7d76996b4e9d829e8282486b779d462a01f9c7c6775f",
       "generatedPath": "/Users/fengheliang/.codex/generated_images/01a15828-8bbf-7783-8fa4-7182f68eeb18/exec-96a62e3c-6907-4b05-a8d3-fb48ba0dc410.png",
@@ -73,10 +78,11 @@
       "transparent": true,
       "tool": "built-in image_gen",
       "promptSummary": "藏地佳人2：暖麦色与自然红润脸颊、柔和椭圆脸与圆润下巴、双长辫、深靛蓝藏式夏裙、红金几何绣边、珊瑚银饰绿松石、手持银沿木碗；精致半写实，真正透明背景。",
-      "review": "1024×1536 RGBA；931257全透明像素；浅底合成检查脸、双手持碗、双脚与边缘通过。"
+      "review": "1024×1536 RGBA；931257全透明像素；浅底合成检查脸、双手持碗、双脚与边缘通过。",
+      "previousPath": "assets/beauties/random/foreign-expansion-20261019-08-summer-v1.png"
     },
     {
-      "path": "assets/beauties/random/foreign-expansion-20261019-09-summer-v1.png",
+      "path": "assets/beauties/random/foreign-expansion-20261019-09-summer-transparent-v2.png",
       "status": "completed",
       "initialSha256": "0967c4c85e75fe37c51cb8afc870eba170ce3ef8c48d59fe262a083e0906b190",
       "generatedPath": "/Users/fengheliang/.codex/generated_images/01a15828-8bbf-7783-8fa4-7182f68eeb18/exec-2ba6710a-4dc6-40fd-b30f-c2cef5287aa3.png",
@@ -85,10 +91,11 @@
       "transparent": true,
       "tool": "built-in image_gen",
       "promptSummary": "蒙古草原佳人1：暖麦色、柔和略宽脸型与圆润下巴，墨绿金象牙白轻盈刺绣服饰与手持马鞭；修正腿脚为双腿自然分开站立、两只完整凉鞋，透明背景。",
-      "review": "用户指出初稿脚部错误后定向修复；浅底检查两条小腿、脚踝与双鞋连接清晰；1024×1536 RGBA及744034全透明像素。"
+      "review": "用户指出初稿脚部错误后定向修复；浅底检查两条小腿、脚踝与双鞋连接清晰；1024×1536 RGBA及744034全透明像素。",
+      "previousPath": "assets/beauties/random/foreign-expansion-20261019-09-summer-v1.png"
     },
     {
-      "path": "assets/beauties/random/foreign-expansion-20261019-10-v1.png",
+      "path": "assets/beauties/random/foreign-expansion-20261019-10-transparent-v2.png",
       "status": "approved",
       "initialSha256": "f8fd3a9cfa2ead305ee7bc43c54bb32527974de96a35375aaa835ae5417816c3",
       "generatedPath": "/Users/fengheliang/.codex/generated_images/01a15828-8bbf-7783-8fa4-7182f68eeb18/exec-3d91a65c-ee51-44ff-9634-ec4bb87d457c.png",
@@ -97,10 +104,11 @@
       "transparencyCorrectedAt": "2026-10-20T07:47:11.316531+00:00",
       "tool": "built-in image_gen",
       "promptSummary": "仅移除背景、光晕与地面阴影，保留人物；输出透明RGBA PNG。",
-      "review": "已验证真实alpha透明像素，并在浅色底合成检查人物边缘；1024×1536。"
+      "review": "已验证真实alpha透明像素，并在浅色底合成检查人物边缘；1024×1536。",
+      "previousPath": "assets/beauties/random/foreign-expansion-20261019-10-v1.png"
     },
     {
-      "path": "assets/beauties/random/foreign-expansion-20261019-11-v1.png",
+      "path": "assets/beauties/random/foreign-expansion-20261019-11-transparent-v2.png",
       "status": "completed",
       "initialSha256": "e635021e92649b87b97398f2e464d4a7ae3d5e0e01d2979e31b99aa7d4b70761",
       "generatedPath": "/Users/fengheliang/.codex/generated_images/01a15828-8bbf-7783-8fa4-7182f68eeb18/exec-6467b243-eb8a-431d-b231-c2b3afb0caf6.png",
@@ -109,10 +117,11 @@
       "transparent": true,
       "tool": "built-in image_gen",
       "promptSummary": "粟特佳人：自然暖浅橄榄肤色、柔和独立椭圆脸、黑长辫与蓝金绣帽、钴蓝金色联珠动物纹轻盈丝裙、象牙绣边、流苏腰带、双手持紫金织物；双脚分开自然站立，精致半写实透明立绘。",
-      "review": "1024×1536 RGBA；828703全透明像素；浅底检查面容、持物双手、分开双脚、双鞋和边缘通过。"
+      "review": "1024×1536 RGBA；828703全透明像素；浅底检查面容、持物双手、分开双脚、双鞋和边缘通过。",
+      "previousPath": "assets/beauties/random/foreign-expansion-20261019-11-v1.png"
     },
     {
-      "path": "assets/beauties/random/foreign-expansion-20261019-12-v1.png",
+      "path": "assets/beauties/random/foreign-expansion-20261019-12-transparent-v2.png",
       "status": "completed",
       "initialSha256": "27f9a9e16d3905121032e1eef878dc2be0f9a126f7ab5d5cba09152b91da9fd6",
       "generatedPath": "/Users/fengheliang/.codex/generated_images/01a15828-8bbf-7783-8fa4-7182f68eeb18/exec-f81f2267-3a7a-46c9-96bc-475782685e78.png",
@@ -121,137 +130,353 @@
       "transparent": true,
       "tool": "built-in image_gen",
       "promptSummary": "粟特佳人2：自然暖浅橄榄肤色、柔和独立椭圆脸、深棕卷发盘髻与银额链、赤陶玫瑰色象牙金纹轻盈丝裙、流苏腰带、双手持银壶；双脚分开站立，精致柔和半写实透明立绘。",
-      "review": "1024×1536 RGBA；888635全透明像素；浅底合成检查面容、持银壶双手、分开双脚双鞋及边缘通过。"
+      "review": "1024×1536 RGBA；888635全透明像素；浅底合成检查面容、持银壶双手、分开双脚双鞋及边缘通过。",
+      "previousPath": "assets/beauties/random/foreign-expansion-20261019-12-v1.png"
     },
     {
-      "path": "assets/beauties/random/foreign-expansion-20261019-13-v1.png",
-      "status": "pending",
-      "initialSha256": "0e88a9e5bea6bdc8870ac4b03e12911734d5e9bab2c32b2d2beb70d91bcd65fb"
+      "path": "assets/beauties/random/foreign-expansion-20261019-13-transparent-v2.png",
+      "status": "completed",
+      "initialSha256": "0e88a9e5bea6bdc8870ac4b03e12911734d5e9bab2c32b2d2beb70d91bcd65fb",
+      "generatedPath": "/Users/fengheliang/.codex/generated_images/01a15828-8bbf-7783-8fa4-7182f68eeb18/exec-3e07ab79-94b2-4990-be5a-4982a3b6c480.png",
+      "completedAt": "2026-10-20T14:26:39.310108+00:00",
+      "sha256": "b41ff1d57eb6eb633347b86929db3952f8c78a867c2abdc522c7fac0f45197d5",
+      "transparent": true,
+      "tool": "built-in image_gen",
+      "promptSummary": "印度佳人1：自然暖棕肤色、独立柔和椭圆脸、低髻红额点、金耳饰手镯、翠绿金绣纱丽、手持粉莲、金凉鞋；精致柔和半写实、真正透明背景。",
+      "review": "1024×1536 RGBA；938584全透明像素；浅底检查面容、持莲双手、双脚双鞋及透明纱边通过。",
+      "previousPath": "assets/beauties/random/foreign-expansion-20261019-13-v1.png"
     },
     {
-      "path": "assets/beauties/random/foreign-expansion-20261019-14-v1.png",
-      "status": "pending",
-      "initialSha256": "0912399792393b68d324114364b8a4d0fc10fec5f9727f6bf5157765e3ac4604"
+      "path": "assets/beauties/random/foreign-expansion-20261019-14-transparent-v2.png",
+      "status": "completed",
+      "initialSha256": "0912399792393b68d324114364b8a4d0fc10fec5f9727f6bf5157765e3ac4604",
+      "generatedPath": "/Users/fengheliang/.codex/generated_images/01a15828-8bbf-7783-8fa4-7182f68eeb18/exec-25ff2846-5954-4886-834d-5ed284bdc1c1.png",
+      "completedAt": "2026-10-20T14:41:27.427257+00:00",
+      "sha256": "d0aa32dde2de054449f13a4f84017c81202c94ed9f2f5bfde9fdcc9158980f69",
+      "transparent": true,
+      "tool": "built-in image_gen",
+      "promptSummary": "印度佳人2：自然暖金棕肤色、柔和独立椭圆脸、黑侧长辫红额点、金耳饰手镯、朱红金绣纱丽、双手持雕花木匣、金凉鞋；精致柔和半写实、真正透明背景。",
+      "review": "1024×1536 RGBA；937552全透明像素；浅底检查面容、双手持匣、双脚双鞋及纱边通过。",
+      "previousPath": "assets/beauties/random/foreign-expansion-20261019-14-v1.png"
     },
     {
-      "path": "assets/beauties/random/foreign-expansion-20261019-15-v1.png",
-      "status": "pending",
-      "initialSha256": "b1b34ea2793073f3d0867d858d2fb99ceb7a3614fa9901590a67fbcc452871ee"
+      "path": "assets/beauties/random/foreign-expansion-20261019-15-transparent-v2.png",
+      "status": "completed",
+      "initialSha256": "b1b34ea2793073f3d0867d858d2fb99ceb7a3614fa9901590a67fbcc452871ee",
+      "generatedPath": "/Users/fengheliang/.codex/generated_images/01a15828-8bbf-7783-8fa4-7182f68eeb18/exec-a3911640-d049-44a5-a02e-e4de55354e8e.png",
+      "completedAt": "2026-10-20T14:51:58.532174+00:00",
+      "sha256": "1f2a4d823efa141df62604e43661416877aea1036f57d2f32fda0eb4697a0550",
+      "transparent": true,
+      "tool": "built-in image_gen",
+      "promptSummary": "斯里兰卡佳人1：自然暖棕肤色、柔和独立椭圆脸、茉莉花低辫髻、象牙白金绣纱丽、金耳饰手镯、双手持花篮、金凉鞋；精致柔和半写实透明立绘。",
+      "review": "1024×1536 RGBA；1073859全透明像素；浅底检查面容、持花篮双手、双脚双鞋及边缘通过。",
+      "previousPath": "assets/beauties/random/foreign-expansion-20261019-15-v1.png"
     },
     {
-      "path": "assets/beauties/random/foreign-expansion-20261019-16-v1.png",
-      "status": "pending",
-      "initialSha256": "47895e360d743083bf5631432582c169f9f6dbb5e134d87a1a30188687840b50"
+      "path": "assets/beauties/random/foreign-expansion-20261019-16-transparent-v2.png",
+      "status": "completed",
+      "initialSha256": "47895e360d743083bf5631432582c169f9f6dbb5e134d87a1a30188687840b50",
+      "generatedPath": "/Users/fengheliang/.codex/generated_images/01a15828-8bbf-7783-8fa4-7182f68eeb18/exec-32984f9d-bf3d-42f7-a71f-083cb9d8d3c3.png",
+      "completedAt": "2026-10-20T15:04:19.899516+00:00",
+      "sha256": "28394319a01c11d5235e8e0b298293e938a832eb71d443d9310de5998ec198d2",
+      "transparent": true,
+      "tool": "built-in image_gen",
+      "promptSummary": "斯里兰卡佳人2：自然暖棕肤色、柔和独立椭圆脸、黑侧长辫、金饰、紫红金绣纱丽、双手持白莲纹陶罐、棕金凉鞋；精致柔和半写实透明立绘。",
+      "review": "1024×1536 RGBA；960652全透明像素；浅底检查面容、持陶罐双手、分开双脚双鞋及纱边通过。",
+      "previousPath": "assets/beauties/random/foreign-expansion-20261019-16-v1.png"
     },
     {
-      "path": "assets/beauties/random/foreign-expansion-20261019-17-v1.png",
-      "status": "pending",
-      "initialSha256": "6e9ea2716478411cc5da3a77d8494d1e70e7aef664d3e063daf621ae9e52b043"
+      "path": "assets/beauties/random/foreign-expansion-20261019-17-transparent-v2.png",
+      "status": "completed",
+      "initialSha256": "6e9ea2716478411cc5da3a77d8494d1e70e7aef664d3e063daf621ae9e52b043",
+      "generatedPath": "/Users/fengheliang/.codex/generated_images/01a15828-8bbf-7783-8fa4-7182f68eeb18/exec-5c951fba-bbda-4f7b-ba75-68543d1d2b05.png",
+      "completedAt": "2026-10-20T15:13:00.382633+00:00",
+      "sha256": "ab6758684ca8eb0edc0e17dd68982153de87e4bc788a23af508810c3da365cab",
+      "transparent": true,
+      "tool": "built-in image_gen",
+      "promptSummary": "东南亚大陆佳人1：自然暖金棕肤色、柔和椭圆脸、靛蓝象牙头巾、银耳饰、靛蓝几何纹轻盈裹裙与短袖上衣、象牙流苏腰带、双手持织物篮、编织凉鞋；精致半写实透明立绘。",
+      "review": "1024×1536 RGBA；1113522全透明像素；浅底合成检查面容、持篮双手、双脚双鞋及边缘通过。",
+      "previousPath": "assets/beauties/random/foreign-expansion-20261019-17-v1.png"
     },
     {
-      "path": "assets/beauties/random/foreign-expansion-20261019-18-v1.png",
-      "status": "pending",
-      "initialSha256": "09b3ca0978ed788bc5295041c6a7531e9e0bf9aa609de65406e483dd43e654cf"
+      "path": "assets/beauties/random/foreign-expansion-20261019-18-transparent-v2.png",
+      "status": "completed",
+      "initialSha256": "09b3ca0978ed788bc5295041c6a7531e9e0bf9aa609de65406e483dd43e654cf",
+      "generatedPath": "/Users/fengheliang/.codex/generated_images/01a15828-8bbf-7783-8fa4-7182f68eeb18/exec-a7ff7c58-a386-48ec-bf83-e80875c78d45.png",
+      "completedAt": "2026-10-20T15:22:31.289391+00:00",
+      "sha256": "86a82e3c474da12e55587d1b75c48673de5e53e15531aa3f8a22f713f5b31f20",
+      "transparent": true,
+      "tool": "built-in image_gen",
+      "promptSummary": "东南亚大陆佳人2：自然暖浅金棕肤色、柔和独立椭圆脸、半盘编发、银饰、象牙短袖扣襟上衣、浅黄绣花流苏披巾、棕色几何绣边裹裙、手持黄白野花、银饰凉鞋；精致半写实透明立绘。",
+      "review": "1024×1536 RGBA；1084149全透明像素；浅底检查面容、持花双手、分开双脚双鞋及流苏边缘通过。",
+      "previousPath": "assets/beauties/random/foreign-expansion-20261019-18-v1.png"
     },
     {
-      "path": "assets/beauties/random/foreign-expansion-20261019-19-v1.png",
-      "status": "pending",
-      "initialSha256": "34104bfef9905ab14ce3825680a6341ed9ed212e77187f533070d68a0e4cda71"
+      "path": "assets/beauties/random/foreign-expansion-20261019-19-transparent-v2.png",
+      "status": "completed",
+      "initialSha256": "34104bfef9905ab14ce3825680a6341ed9ed212e77187f533070d68a0e4cda71",
+      "generatedPath": "/Users/fengheliang/.codex/generated_images/01a15828-8bbf-7783-8fa4-7182f68eeb18/exec-81c6c841-85d6-4f65-91a5-468edefbb075.png",
+      "completedAt": "2026-10-20T15:32:10.619719+00:00",
+      "sha256": "418c009a750b46ddb119b792f21a9886b21b5402f60fecc21172bb9426d82259",
+      "transparent": true,
+      "tool": "built-in image_gen",
+      "promptSummary": "爪哇海岛佳人1：自然暖金棕肤色、独立柔和椭圆脸、茉莉金簪低髻、象牙刺绣短袖可峇雅、靛蓝棕金蜡染裹裙与流苏腰带、双手持雕木盒、金饰凉鞋；精致柔和半写实透明立绘。",
+      "review": "1024×1536 RGBA；1142058全透明像素；浅底检查脸、持盒双手、双脚双鞋与边缘通过。",
+      "previousPath": "assets/beauties/random/foreign-expansion-20261019-19-v1.png"
     },
     {
-      "path": "assets/beauties/random/foreign-expansion-20261019-20-v1.png",
-      "status": "pending",
-      "initialSha256": "fe684ce6d4e8d003a6cfbd4fbd906d7a7fb819c9d7506399c1da7330905d91ab"
+      "path": "assets/beauties/random/foreign-expansion-20261019-20-transparent-v2.png",
+      "status": "completed",
+      "initialSha256": "fe684ce6d4e8d003a6cfbd4fbd906d7a7fb819c9d7506399c1da7330905d91ab",
+      "generatedPath": "/Users/fengheliang/.codex/generated_images/01a15828-8bbf-7783-8fa4-7182f68eeb18/exec-92fc9729-1868-46e0-a7b0-44b894d96279.png",
+      "completedAt": "2026-10-20T15:41:06.152532+00:00",
+      "sha256": "e73cf56ab09c96919a20bd95c95b8eaa9fd23f6debf5b7cd599e707d6b8f3bae",
+      "transparent": true,
+      "tool": "built-in image_gen",
+      "promptSummary": "爪哇海岛佳人2：自然暖棕肤色、独立柔和椭圆脸、长侧辫金饰、靛蓝短袖可峇雅、青蓝金色蜡染裹裙、酒红金绣流苏披巾、双手持棕叶编包、棕色雕纹凉鞋；精致半写实透明立绘。",
+      "review": "1024×1536 RGBA；1122213全透明像素；浅底检查面容、持包双手、分开双脚双鞋与流苏边缘通过。",
+      "previousPath": "assets/beauties/random/foreign-expansion-20261019-20-v1.png"
     },
     {
-      "path": "assets/beauties/random/foreign-expansion-20261019-21-v1.png",
-      "status": "pending",
-      "initialSha256": "dc96ed5084f1ad4a56c9297c7bec88e310d98fe5f114d64976fad320d09d114e"
+      "path": "assets/beauties/random/foreign-expansion-20261019-21-transparent-v2.png",
+      "status": "completed",
+      "initialSha256": "dc96ed5084f1ad4a56c9297c7bec88e310d98fe5f114d64976fad320d09d114e",
+      "generatedPath": "/Users/fengheliang/.codex/generated_images/01a15828-8bbf-7783-8fa4-7182f68eeb18/exec-730f11de-b9a7-470f-a689-ca7802782f72.png",
+      "completedAt": "2026-10-20T15:52:46.428958+00:00",
+      "sha256": "c6a06484d8b77b75020ed6bcd12410d2f6c4023be48d5d16a7d3824232f3f7aa",
+      "transparent": true,
+      "tool": "built-in image_gen",
+      "promptSummary": "南诏佳人1：自然暖浅麦肤色、柔和独立椭圆脸、蓝白头巾黑侧辫银耳饰、象牙蓝花刺绣短袖上衣、靛蓝百褶绣边裙与流苏腰带、双手持茶叶篮、蓝白编织凉鞋；精致半写实透明立绘。",
+      "review": "1024×1536 RGBA；979489全透明像素；浅底检查面容、持篮双手、分开双脚双鞋及边缘通过。",
+      "previousPath": "assets/beauties/random/foreign-expansion-20261019-21-v1.png"
     },
     {
-      "path": "assets/beauties/random/foreign-expansion-20261019-22-v1.png",
-      "status": "pending",
-      "initialSha256": "9667e5f2ed21a1bef3c9de5872019bf8b355e36659d87047906503ef97704e52"
+      "path": "assets/beauties/random/foreign-expansion-20261019-22-transparent-v2.png",
+      "status": "completed",
+      "initialSha256": "9667e5f2ed21a1bef3c9de5872019bf8b355e36659d87047906503ef97704e52",
+      "generatedPath": "/Users/fengheliang/.codex/generated_images/01a15828-8bbf-7783-8fa4-7182f68eeb18/exec-63802a21-6931-4c8c-a344-838fdde2cf9e.png",
+      "completedAt": "2026-10-20T16:01:51.708278+00:00",
+      "sha256": "8c869351d8ec8ea8a66970890980d6256c04c8748b1c22257306aaca2ecb6fd2",
+      "transparent": true,
+      "tool": "built-in image_gen",
+      "promptSummary": "南诏佳人2：自然暖麦肤色、柔和独立椭圆脸、银簪低髻银流苏耳饰叶片项链、深绿短袖绣边上衣、鼠尾草绿百褶裙、象牙条纹流苏腰带、双手持白花枝、编织凉鞋；精致半写实透明立绘。",
+      "review": "1024×1536 RGBA；966619全透明像素；浅底检查面容、持花双手、分开双脚双鞋及流苏边缘通过。",
+      "previousPath": "assets/beauties/random/foreign-expansion-20261019-22-v1.png"
     },
     {
-      "path": "assets/beauties/random/foreign-expansion-20261019-23-v1.png",
-      "status": "pending",
-      "initialSha256": "f7e3fb121ca8d4c6cd6a28b7ce3633b9d0f32e70c2873ee833cce1a005de7999"
+      "path": "assets/beauties/random/foreign-expansion-20261019-23-transparent-v2.png",
+      "status": "completed",
+      "initialSha256": "f7e3fb121ca8d4c6cd6a28b7ce3633b9d0f32e70c2873ee833cce1a005de7999",
+      "generatedPath": "/Users/fengheliang/.codex/generated_images/01a15828-8bbf-7783-8fa4-7182f68eeb18/exec-9592ddcf-3bec-4d21-b8fa-d783eb3be188.png",
+      "completedAt": "2026-10-20T16:10:58.764823+00:00",
+      "sha256": "da267b7168eb4c8d0158b5be83f02ae91d334f49b604ffdbfaa198f44cf52bbb",
+      "transparent": true,
+      "tool": "built-in image_gen",
+      "promptSummary": "高丽佳人1：自然暖浅米肤色、柔和独立椭圆脸、花玉坠低髻、浅玉绿短衣与长系带、藕粉轻盈绣花裙、玉佩粉流苏、双手持花折扇、象牙绣花平鞋；精致半写实透明立绘。",
+      "review": "1024×1536 RGBA；772250全透明像素；浅底检查脸、持扇双手、双脚双鞋和透明裙边通过。",
+      "previousPath": "assets/beauties/random/foreign-expansion-20261019-23-v1.png"
     },
     {
-      "path": "assets/beauties/random/foreign-expansion-20261019-24-v1.png",
-      "status": "pending",
-      "initialSha256": "32d0c0274ae42453d9ac9db461c8b602cb2fac2f6a80abfed5461185a24a9dd5"
+      "path": "assets/beauties/random/foreign-expansion-20261019-24-transparent-v2.png",
+      "status": "completed",
+      "initialSha256": "32d0c0274ae42453d9ac9db461c8b602cb2fac2f6a80abfed5461185a24a9dd5",
+      "generatedPath": "/Users/fengheliang/.codex/generated_images/01a15828-8bbf-7783-8fa4-7182f68eeb18/exec-cd695dcb-c96d-4b45-aa5b-7647aa10d294.png",
+      "completedAt": "2026-10-20T16:23:16.103983+00:00",
+      "sha256": "c6624b411e80f805ebd6a6cbf46ee0d7da63897588d8419a23090caa9e2893a5",
+      "transparent": true,
+      "tool": "built-in image_gen",
+      "promptSummary": "高丽佳人2：自然暖浅米肤色、柔和独立椭圆脸、白花金簪低辫髻、象牙短衣蓝系带、浅矢车菊蓝轻盈绣花长裙、双手持蓝金卷轴、蓝花绣平鞋；精致半写实透明立绘。",
+      "review": "1024×1536 RGBA；816911全透明像素；浅底检查脸、持卷双手、双脚双鞋与透明裙边通过。",
+      "previousPath": "assets/beauties/random/foreign-expansion-20261019-24-v1.png"
     },
     {
-      "path": "assets/beauties/random/foreign-expansion-20261019-27-v1.png",
-      "status": "pending",
-      "initialSha256": "bf8e1e451eb543a1e2a00b706d299761b70e93347d9584a4fda8b690f95a07fe"
+      "path": "assets/beauties/random/foreign-expansion-20261019-27-transparent-v2.png",
+      "status": "completed",
+      "initialSha256": "bf8e1e451eb543a1e2a00b706d299761b70e93347d9584a4fda8b690f95a07fe",
+      "generatedPath": "/Users/fengheliang/.codex/generated_images/01a15828-8bbf-7783-8fa4-7182f68eeb18/exec-0b6fbe91-6247-4eb7-a123-9e51f5254401.png",
+      "completedAt": "2026-10-20T16:35:49.573074+00:00",
+      "sha256": "650f90a256c04ab358ba0cde4156dbb0c499c266a5b8dbc45614a3eb06786b36",
+      "transparent": true,
+      "tool": "built-in image_gen",
+      "promptSummary": "拜占庭佳人1：自然暖浅橄榄肤色、独立柔和地中海面容、珍珠发箍卷髻与珍珠金饰、帝王紫金纹轻盈层叠长裙、象牙金流苏腰带、双手持卷轴、金饰凉鞋；精致半写实透明立绘。",
+      "review": "1024×1536 RGBA；848941全透明像素；浅底检查面容、持卷双手、分开双脚双鞋及透明衣边通过。",
+      "previousPath": "assets/beauties/random/foreign-expansion-20261019-27-v1.png"
     },
     {
-      "path": "assets/beauties/random/foreign-expansion-20261019-28-v1.png",
-      "status": "pending",
-      "initialSha256": "eaae4d659d9690fb6ff3c501f74772415d07bb029427cd9f7880f9ef62494c79"
+      "path": "assets/beauties/random/foreign-expansion-20261019-28-transparent-v2.png",
+      "status": "completed",
+      "initialSha256": "eaae4d659d9690fb6ff3c501f74772415d07bb029427cd9f7880f9ef62494c79",
+      "generatedPath": "/Users/fengheliang/.codex/generated_images/01a15828-8bbf-7783-8fa4-7182f68eeb18/exec-6dc5358d-0635-4ff7-a37c-7c6afc8c5ea2.png",
+      "completedAt": "2026-10-20T16:49:28.311272+00:00",
+      "sha256": "9b4ab1495c339b7a5513bfe88e08caafbe757e7d7a7fe502bd86924bfa2117a3",
+      "transparent": true,
+      "tool": "built-in image_gen",
+      "promptSummary": "拜占庭佳人2：自然暖浅橄榄肤色、独立柔和地中海面容、栗色侧波浪长发珍珠金饰、钴蓝金绣轻盈长裙与象牙内层、金编腰带、双手持青绿玻璃香水瓶、金饰凉鞋；精致半写实透明立绘。",
+      "review": "1024×1536 RGBA；878260全透明像素；浅底检查面容、持瓶双手、分开双脚双鞋及衣边通过。",
+      "previousPath": "assets/beauties/random/foreign-expansion-20261019-28-v1.png"
     },
     {
-      "path": "assets/beauties/random/foreign-expansion-20261019-29-v1.png",
-      "status": "pending",
-      "initialSha256": "8841a8f43c9ef5a066ffc085d7951bdf42d6a7b2e3d6ae66940b0ce4b4ea3300"
+      "path": "assets/beauties/random/foreign-expansion-20261019-29-transparent-v2.png",
+      "status": "completed",
+      "initialSha256": "8841a8f43c9ef5a066ffc085d7951bdf42d6a7b2e3d6ae66940b0ce4b4ea3300",
+      "generatedPath": "/Users/fengheliang/.codex/generated_images/01a15828-8bbf-7783-8fa4-7182f68eeb18/exec-adb1e222-4caa-4246-8bf9-28e395d751d3.png",
+      "completedAt": "2026-10-20T17:06:20.944648+00:00",
+      "sha256": "c7174db74c691a58a01f71a53aff5525e85eb27d1fea6d465b5be28d9b085cec",
+      "transparent": true,
+      "tool": "built-in image_gen",
+      "promptSummary": "斯拉夫佳人1：自然浅桃肤色与柔和红润脸颊、独立椭圆面容、黑辫白红绣头巾、象牙红几何绣边轻盈长裙、红编流苏腰带、双手持野花环、棕交叉带凉鞋；精致半写实透明立绘。",
+      "review": "1024×1536 RGBA；925520全透明像素；浅底检查面容、持花环双手、分开双脚双鞋及边缘通过。",
+      "previousPath": "assets/beauties/random/foreign-expansion-20261019-29-v1.png"
     },
     {
-      "path": "assets/beauties/random/foreign-expansion-20261019-30-v1.png",
-      "status": "pending",
-      "initialSha256": "29883b32abdbb2ced6332a1b4dad827e1ff6a0bbb8bc69fb385cb32e0f50ca29"
+      "path": "assets/beauties/random/foreign-expansion-20261019-30-transparent-v2.png",
+      "status": "completed",
+      "initialSha256": "29883b32abdbb2ced6332a1b4dad827e1ff6a0bbb8bc69fb385cb32e0f50ca29",
+      "generatedPath": "/Users/fengheliang/.codex/generated_images/01a15828-8bbf-7783-8fa4-7182f68eeb18/exec-ae8dc733-3a54-41fc-8cc2-9bb24afc9945.png",
+      "completedAt": "2026-10-20T17:20:31.664368+00:00",
+      "sha256": "b8ceaa6e3fd09add5cc58be72cf239c8e52581a0f1ed9d466865a346adf773c7",
+      "transparent": true,
+      "tool": "built-in image_gen",
+      "promptSummary": "斯拉夫佳人2：自然浅桃肤色红润脸颊、独立柔和椭圆脸、浅棕长侧辫、象牙红绣泡袖上衣、靛蓝几何绣边背带长裙、红绣流苏腰带、双手提织物篮、棕凉鞋；精致半写实透明立绘。",
+      "review": "1024×1536 RGBA；921867全透明像素；浅底检查面容、持篮双手、分开双脚双鞋与边缘通过。",
+      "previousPath": "assets/beauties/random/foreign-expansion-20261019-30-v1.png"
     },
     {
-      "path": "assets/beauties/random/foreign-expansion-20261019-31-v1.png",
-      "status": "pending",
-      "initialSha256": "97ed889c84e19a6287bb39706271afa8cd6a80417c3b4d324efed18bc6d08525"
+      "path": "assets/beauties/random/foreign-expansion-20261019-31-transparent-v2.png",
+      "status": "completed",
+      "initialSha256": "97ed889c84e19a6287bb39706271afa8cd6a80417c3b4d324efed18bc6d08525",
+      "generatedPath": "/Users/fengheliang/.codex/generated_images/01a15828-8bbf-7783-8fa4-7182f68eeb18/exec-d3531908-650e-4e22-9b64-d57d8d34f900.png",
+      "completedAt": "2026-10-20T17:32:13.692032+00:00",
+      "sha256": "d0888e3eadfe9493f5104126f454ed0f626882c94a3cdc9fbf544f3443a5cecd",
+      "transparent": true,
+      "tool": "built-in image_gen",
+      "promptSummary": "法兰西佳人1：自然暖浅桃肤色、独立柔和椭圆脸、黑侧辫象牙绣头纱、酒红系带方领金百合绣边轻盈长裙与象牙内层、金细腰带、双手持棕金书册、棕皮平鞋；精致半写实透明立绘。",
+      "review": "1024×1536 RGBA；833852全透明像素；浅底检查面容、持书双手、分开双脚双鞋和纱边通过。",
+      "previousPath": "assets/beauties/random/foreign-expansion-20261019-31-v1.png"
     },
     {
-      "path": "assets/beauties/random/foreign-expansion-20261019-32-v1.png",
-      "status": "pending",
-      "initialSha256": "a4d84c32f4ba2e8bf39e0174ef4032044bf367b77b7432217a27a46ba7ae342e"
+      "path": "assets/beauties/random/foreign-expansion-20261019-32-transparent-v2.png",
+      "status": "completed",
+      "initialSha256": "a4d84c32f4ba2e8bf39e0174ef4032044bf367b77b7432217a27a46ba7ae342e",
+      "generatedPath": "/Users/fengheliang/.codex/generated_images/01a15828-8bbf-7783-8fa4-7182f68eeb18/exec-de71e885-1be9-481f-8fe8-286d3499dc89.png",
+      "completedAt": "2026-10-20T17:44:52.893447+00:00",
+      "sha256": "eb809315fafbf90289945b9e4dafea5cf3086706149f97d00fed8930f4084b35",
+      "transparent": true,
+      "tool": "built-in image_gen",
+      "promptSummary": "法兰西佳人2：自然暖浅桃肤色、独立柔和椭圆面容、深色半编卷发铜金圆坠、矢车菊蓝方领细花绣边轻盈长裙与象牙内层、棕金长腰带、双手持薰衣草草束、棕交叉带凉鞋；精致半写实透明立绘。",
+      "review": "1024×1536 RGBA；924030全透明像素；浅底检查面容、持花双手、分开双脚双鞋及衣边通过。",
+      "previousPath": "assets/beauties/random/foreign-expansion-20261019-32-v1.png"
     },
     {
-      "path": "assets/beauties/random/foreign-expansion-20261019-33-v1.png",
-      "status": "pending",
-      "initialSha256": "33aaf725feb505ad3b6b4746ec57c1031b982f95182f1835905d769d448d992d"
+      "path": "assets/beauties/random/foreign-expansion-20261019-33-transparent-v2.png",
+      "status": "completed",
+      "initialSha256": "33aaf725feb505ad3b6b4746ec57c1031b982f95182f1835905d769d448d992d",
+      "generatedPath": "/Users/fengheliang/.codex/generated_images/01a15828-8bbf-7783-8fa4-7182f68eeb18/exec-8377eec6-01f9-48df-afcd-ba1ad2680b9c.png",
+      "completedAt": "2026-10-20T17:56:43.264437+00:00",
+      "sha256": "b9937bd4009e69e3c3a46cf540fea8e94bddbda14f35edbf0c1437a2c28bdc1e",
+      "transparent": true,
+      "tool": "built-in image_gen",
+      "promptSummary": "日耳曼佳人1：自然浅桃红润肤色与淡雀斑、独立柔和椭圆脸、赤褐双辫铜圆坠、象牙泡袖上衣与森林绿系带紧身长裙、细金几何绣边象牙腰带、双手持陶杯、棕凉鞋；精致半写实透明立绘。",
+      "review": "1024×1536 RGBA；883176全透明像素；浅底检查面容、持杯双手、分开双脚双鞋及衣边通过。",
+      "previousPath": "assets/beauties/random/foreign-expansion-20261019-33-v1.png"
     },
     {
-      "path": "assets/beauties/random/foreign-expansion-20261019-34-v1.png",
-      "status": "pending",
-      "initialSha256": "a796076073c83412a14896ac5fbdb1dcb603abb9dd22c99e12c0b7331ca21cbc"
+      "path": "assets/beauties/random/foreign-expansion-20261019-34-transparent-v2.png",
+      "status": "completed",
+      "initialSha256": "a796076073c83412a14896ac5fbdb1dcb603abb9dd22c99e12c0b7331ca21cbc",
+      "generatedPath": "/Users/fengheliang/.codex/generated_images/01a15828-8bbf-7783-8fa4-7182f68eeb18/exec-275018df-a1a2-4f55-8001-d9b50c694049.png",
+      "completedAt": "2026-10-20T18:09:02.027902+00:00",
+      "sha256": "db143827c276b5510d96797e5d369103f2671e90e1c65243fe5d13b9458d995b",
+      "transparent": true,
+      "tool": "built-in image_gen",
+      "promptSummary": "日耳曼佳人2：自然暖浅桃肤色、独立柔和椭圆脸、深色侧编长发、象牙流苏披巾、赤陶红侧系带细几何绣边轻盈长裙与象牙内层、棕细腰带、双手持藤篮、棕交叉带凉鞋；精致半写实透明立绘。",
+      "review": "1024×1536 RGBA；905576全透明像素；浅底检查面容、提篮双手、分开双脚双鞋及流苏边缘通过。",
+      "previousPath": "assets/beauties/random/foreign-expansion-20261019-34-v1.png"
     },
     {
-      "path": "assets/beauties/random/foreign-expansion-20261019-35-v1.png",
-      "status": "pending",
-      "initialSha256": "7b8af131420885b7d8700b286e9c23a5d4fa81d283ee5d362d1d2d295d323e70"
+      "path": "assets/beauties/random/foreign-expansion-20261019-35-transparent-v2.png",
+      "status": "completed",
+      "initialSha256": "7b8af131420885b7d8700b286e9c23a5d4fa81d283ee5d362d1d2d295d323e70",
+      "generatedPath": "/Users/fengheliang/.codex/generated_images/01a15828-8bbf-7783-8fa4-7182f68eeb18/exec-8f334340-1ad6-4891-9516-71a5698be3dc.png",
+      "completedAt": "2026-10-20T18:24:37.410040+00:00",
+      "sha256": "18c87c3219f8cee2443140251f16559d5fb6ba62e30c802d095326e815aabb06",
+      "transparent": true,
+      "tool": "built-in image_gen",
+      "promptSummary": "北欧佳人1：自然浅桃红润肤色与淡雀斑、独立柔和椭圆脸、灰金冠编双辫、象牙内裙与灰蓝北欧交织纹围裙长裙、双铜胸针珠链、长铜端腰带、双手持木杯、棕凉鞋；精致半写实透明立绘。",
+      "review": "1024×1536 RGBA；1013544全透明像素；浅底检查面容、持杯双手、分开双脚双鞋及衣边通过。",
+      "previousPath": "assets/beauties/random/foreign-expansion-20261019-35-v1.png"
     },
     {
-      "path": "assets/beauties/random/foreign-expansion-20261019-36-v1.png",
-      "status": "pending",
-      "initialSha256": "468856e559bf0295e09df1966adc297c793c90202269f44191df6a6abc983c7a"
+      "path": "assets/beauties/random/foreign-expansion-20261019-36-transparent-v2.png",
+      "status": "completed",
+      "initialSha256": "468856e559bf0295e09df1966adc297c793c90202269f44191df6a6abc983c7a",
+      "generatedPath": "/Users/fengheliang/.codex/generated_images/01a15828-8bbf-7783-8fa4-7182f68eeb18/exec-55a6c85b-2ff1-481e-9aa1-34741565460f.png",
+      "completedAt": "2026-10-20T18:40:16.352556+00:00",
+      "sha256": "1f17236c3adbd9df8ed44cc2ca7a74f8b11e1a9fa3f5e48b3caccecd147ce387",
+      "transparent": true,
+      "tool": "built-in image_gen",
+      "promptSummary": "北欧佳人2：自然暖浅桃肤色、独立柔和椭圆脸、黑长侧辫、象牙交织纹内裙与森林绿围裙长裙、双铜胸针琥珀珠链、象牙流苏披巾腰带、双手持雕木匣、棕凉鞋；精致半写实透明立绘。",
+      "review": "1024×1536 RGBA；975056全透明像素；浅底检查面容、持匣双手、分开双脚双鞋与流苏边缘通过。",
+      "previousPath": "assets/beauties/random/foreign-expansion-20261019-36-v1.png"
     },
     {
-      "path": "assets/beauties/random/foreign-expansion-20261019-37-v1.png",
-      "status": "pending",
-      "initialSha256": "3511c97b94ed236a16a734a9e5d6576e4e03c0c9944db4f20bbfb1764a221be1"
+      "path": "assets/beauties/random/foreign-expansion-20261019-37-transparent-v2.png",
+      "status": "completed",
+      "initialSha256": "3511c97b94ed236a16a734a9e5d6576e4e03c0c9944db4f20bbfb1764a221be1",
+      "generatedPath": "/Users/fengheliang/.codex/generated_images/01a15828-8bbf-7783-8fa4-7182f68eeb18/exec-1cf23f78-8f4c-4be1-95f7-c6d7b53d9aac.png",
+      "completedAt": "2026-10-20T18:54:07.086924+00:00",
+      "sha256": "f37ae0b42656f768d10033e5638fdc6aa22b05a3512441b0dce7901983aaf323",
+      "transparent": true,
+      "tool": "built-in image_gen",
+      "promptSummary": "伊比利亚佳人1：自然暖浅橄榄肤色、独立柔和椭圆面容、卷髻象牙金绣头纱金耳饰、绯红方领金几何绣边轻盈长裙象牙内层、金纹流苏腰带、双手持象牙金镂空折扇、金饰凉鞋；精致半写实透明立绘。",
+      "review": "1024×1536 RGBA；785227全透明像素；浅底检查面容、持扇双手、分开双脚双鞋及纱边通过。",
+      "previousPath": "assets/beauties/random/foreign-expansion-20261019-37-v1.png"
     },
     {
-      "path": "assets/beauties/random/foreign-expansion-20261019-38-v1.png",
-      "status": "pending",
-      "initialSha256": "df0226ab88c649c1f2547c9992689aae5072f2d0b559fa9d84e83387036e158c"
+      "path": "assets/beauties/random/foreign-expansion-20261019-38-transparent-v2.png",
+      "status": "completed",
+      "initialSha256": "df0226ab88c649c1f2547c9992689aae5072f2d0b559fa9d84e83387036e158c",
+      "generatedPath": "/Users/fengheliang/.codex/generated_images/01a15828-8bbf-7783-8fa4-7182f68eeb18/exec-bafddea6-37a6-4b19-9354-b4f5748ed300.png",
+      "completedAt": "2026-10-20T19:12:20.384142+00:00",
+      "sha256": "046d45138b5d1c1cb82d52e956058d41b4558e967ecf96f779c0ab30b6f06903",
+      "transparent": true,
+      "tool": "built-in image_gen",
+      "promptSummary": "伊比利亚佳人2：自然暖浅橄榄肤色、独立柔和椭圆面容、栗色半盘波浪长发铜饰、橄榄绿方领象牙赭金绣边轻盈长裙与象牙内层、棕编流苏腰带、双手持羊皮卷、棕交叉带凉鞋；精致半写实透明立绘。",
+      "review": "1024×1536 RGBA；843458全透明像素；浅底检查面容、持卷双手、分开双脚双鞋及衣边通过。",
+      "previousPath": "assets/beauties/random/foreign-expansion-20261019-38-v1.png"
     },
     {
-      "path": "assets/beauties/random/foreign-expansion-20261019-39-v1.png",
-      "status": "pending",
-      "initialSha256": "0e1a8bd5e11e7c33cc13c7fe8dc5fa387a580860e63b4e5995b10398e22db6be"
+      "path": "assets/beauties/random/foreign-expansion-20261019-39-transparent-v2.png",
+      "status": "completed",
+      "initialSha256": "0e1a8bd5e11e7c33cc13c7fe8dc5fa387a580860e63b4e5995b10398e22db6be",
+      "generatedPath": "/Users/fengheliang/.codex/generated_images/01a15828-8bbf-7783-8fa4-7182f68eeb18/exec-21eab5c1-4328-4e98-b057-5b674d5d8fe5.png",
+      "completedAt": "2026-10-20T19:24:24.943774+00:00",
+      "sha256": "adbf7a3f1f306bb8bbed8cd6c8aace9e7db21b03f7e5fc0e724568c40dafe483",
+      "transparent": true,
+      "tool": "built-in image_gen",
+      "promptSummary": "意大利佳人1：自然暖浅橄榄肤色、独立柔和椭圆面容、黑辫低髻金饰、象牙奶油方领金植物绣边轻盈长裙浅金侧层、金编流苏腰带、双手持卷轴、金饰凉鞋；精致半写实透明立绘。",
+      "review": "1024×1536 RGBA；893622全透明像素；浅底检查面容、持卷双手、分开双脚双鞋及衣边通过。",
+      "previousPath": "assets/beauties/random/foreign-expansion-20261019-39-v1.png"
     },
     {
-      "path": "assets/beauties/random/foreign-expansion-20261019-40-v1.png",
-      "status": "pending",
-      "initialSha256": "4aebbaed09a34bfeb84915377c7d90ec06dbec6626f354c12a6aee5860bbda5f"
+      "path": "assets/beauties/random/foreign-expansion-20261019-40-transparent-v2.png",
+      "status": "completed",
+      "initialSha256": "4aebbaed09a34bfeb84915377c7d90ec06dbec6626f354c12a6aee5860bbda5f",
+      "generatedPath": "/Users/fengheliang/.codex/generated_images/01a15828-8bbf-7783-8fa4-7182f68eeb18/exec-84b682e1-c191-4aa7-9461-e71333807aac.png",
+      "completedAt": "2026-10-20T19:40:24.558443+00:00",
+      "sha256": "ff4e2ce7b4a5ba9556c9160671247390441079fcecc977aff3ed60997aa6740d",
+      "transparent": true,
+      "tool": "built-in image_gen",
+      "promptSummary": "意大利佳人2：自然暖浅橄榄肤色、独立柔和椭圆面容、栗色冠辫金网低髻金坠、天蓝方领金植物绣边轻盈长裙象牙内层、金绣腰带、双手持蓝白野花、金饰凉鞋；精致半写实透明立绘。",
+      "review": "1024×1536 RGBA；908928全透明像素；浅底检查面容、持花双手、分开双脚双鞋及衣边通过。",
+      "previousPath": "assets/beauties/random/foreign-expansion-20261019-40-v1.png"
     }
-  ]
+  ],
+  "finalVerification": {
+    "verifiedAt": "2026-10-20T19:40:25.274276+00:00",
+    "total": 36,
+    "allTransparentRGBA": true,
+    "allSize": "1024x1536",
+    "pending": 0
+  }
 }

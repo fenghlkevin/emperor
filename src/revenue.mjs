@@ -33,7 +33,13 @@ export function quoteRevenue(state,command){
    const after=Math.min(100,(beforeHundredths+Math.round(amount*10000/p.population.total))/100);
    return {provinceId:p.id,amount,before,after,disaster:quoteDisasterSubsidy(p,state.turn,amount)};
   }).filter(r=>r.amount>0&&(r.after>r.before||r.disaster?.shortened));
-  if(!changes.length)throw Error('请设置有效补助：无灾州金额须足以改善生活；受灾州须达到赈灾金额，且本旬尚未赈灾、剩余灾期超过1旬');
+  if(!changes.length){
+   const entry=checkedEntries(command.amounts,provinces).find(([,n])=>n>0);
+   if(!entry)throw Error('请设置有效补助：先选择州郡并填写大于0的补助金额。');
+   const [p,n]=entry,relief=quoteDisasterSubsidy(p,state.turn,n),fmt=n=>n.toLocaleString('zh-CN');
+   const reason=relief?(relief.before<=1?'灾期仅剩1旬，不能再缩短。':p.disaster.lastReliefTurn===state.turn?'本旬已赈灾，每州每旬仅可办理一次。':`赈灾至少需${fmt(relief.minimum)}两，已填${fmt(n)}两，缺${fmt(relief.minimum-n)}两。`):p.status.livingStandard>=100?'生活水平已达100，不能继续提高。':`提高生活水平至少需${fmt(Math.max(1,Math.ceil(p.population.total/20000)))}两，已填${fmt(n)}两。`;
+   throw Error(`未形成有效补助：${p.name}${reason}`);
+  }
   cost=changes.reduce((n,r)=>n+r.amount,0);
   lines=changes.map(r=>`${provinces.find(p=>p.id===r.provinceId).name}：国库支银${r.amount}两${r.disaster?`，灾期${r.disaster.before} → ${r.disaster.after}旬；生活水平不变`:`，生活水平${r.before} → ${r.after}；直接惠民，不形成地方库存`}`);
  }else if(kind==='tax'){

@@ -37,7 +37,9 @@ export function updateFiscalPreview(root,state,kind,edits){
  let plan;try{plan=courtFiscalPlan(state,kind,edits);}catch{plan=null;}
  const owned=countrySummary(state.domestic).provinces;
  const rows=Object.entries(edits).filter(([id,v])=>kind==='tax'?v!==Math.round(owned.find(p=>p.id===id)?.budget.taxRate*100):v!==0);
- changes.innerHTML=['tax','subsidy'].includes(kind)&&rows.length?`<small>拟定 ${rows.length} 州 · 尚未颁旨</small><div>${rows.map(([id,v])=>`<button data-fiscal-clear="${esc(id)}" aria-label="撤回${esc(owned.find(p=>p.id===id)?.name??id)}安排">${esc(owned.find(p=>p.id===id)?.name??id)} <b>${Number.isSafeInteger(v)?fmt(v):'待核'}${kind==='tax'?'%':'两'}</b> ×</button>`).join('')}</div>`:'';
+ const selected=root.querySelector('[data-fiscal-province]')?.dataset.fiscalProvince,current=rows.find(([id])=>id===selected);
+ changes.innerHTML=['tax','subsidy'].includes(kind)&&rows.length?`<small>拟定 ${rows.length} 州 · 尚未颁旨</small><div class="fiscal-draft-picker"><select data-fiscal-draft-select aria-label="选择已拟定州郡"><option value="">选择拟定州郡</option>${rows.map(([id,v])=>`<option value="${esc(id)}" ${id===selected?'selected':''}>${esc(owned.find(p=>p.id===id)?.name??id)} · ${Number.isSafeInteger(v)?fmt(v):'待核'}${kind==='tax'?'%':'两'}</option>`).join('')}</select>${current?`<button data-fiscal-clear="${esc(selected)}" aria-label="撤回${esc(owned.find(p=>p.id===selected)?.name??selected)}安排">撤回 ×</button>`:''}</div>`:'';
+
  if(['tax','subsidy'].includes(kind)){updateLocalFiscalPreview(root,state,kind,edits,plan);return;}
  if(!plan){outlook.innerHTML='';return;}
  outlook.innerHTML=`<div class="fiscal-census-summary"><p><span>全国招纳</span><strong>+${fmt(plan.addedPopulation)} 人</strong></p><p><span>一次性费用</span><strong>${fmt(CENSUS_COST)} 两</strong></p><p><span>办理后国库</span><b>${fmt(plan.treasuryAfter)} 两</b></p></div>`;

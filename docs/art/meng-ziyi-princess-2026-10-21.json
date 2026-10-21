@@ -1,0 +1,30 @@
+{
+  "id": "expansion-20261019-14-princess",
+  "name": "绯樱公主",
+  "referenceCelebrity": "孟子义",
+  "operation": "add_variant",
+  "asset": "assets/beauties/random/孟子义-公主-v1.png",
+  "originalPreserved": "assets/beauties/random/孟子义-重做-v2.png",
+  "sourcePath": "/Users/fengheliang/.codex/generated_images/01a15c84-042e-7053-bd28-4dd3f9362bd9/exec-981aebf5-5358-42a4-b2b4-da50e94a9a17.png",
+  "referenceInputs": [
+    "assets/beauties/references/meng-ziyi/face-reference.jpg",
+    "assets/beauties/random/孟子义-重做-v2.png"
+  ],
+  "referenceSourcePage": "https://www.duitang.com/blog/?id=1411820970",
+  "completedAt": "2026-10-21T05:51:15.687580+00:00",
+  "reviewPass1": "对照899x1598成年写真、旅人版与公主版面部放大图，眉眼眼距、鼻尖、丰满唇形与柔和下颌保留，维持同一人物辨识。",
+  "reviewPass2": "白底、深灰底检查完整发饰、双手团扇、衣裙及双鞋；头颈肩比例协调，双鞋自然错位，粉白宫装、牡丹绣纹与珠花符合公主造型。原旅人版保留；真实alpha透明，白深合成无隐藏RGB光晕。顶部及鞋下留白较少但未裁切。",
+  "validation": {
+    "size": [
+      1024,
+      1536
+    ],
+    "mode": "RGBA",
+    "alphaRange": [
+      0,
+      254
+    ],
+    "transparentPixels": 876196,
+    "opaqueBorderPixels": 0
+  }
+}

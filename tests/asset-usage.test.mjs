@@ -53,7 +53,7 @@ test('legacy regional portraits resolve to existing complete images for every co
  for(const region of BEAUTY_REGIONS){
   const person={id:`legacy-${region.id}`,regionId:region.id,randomBeauty:true,regionalPortrait:true,portraitRecipe:{seed:123}};
   const url=portraitDataUrl(person);
-  assert.match(url,/assets\/beauties\/random\/.+\.png$/);
+  assert.match(new URL(url).pathname,/assets\/beauties\/random\/.+\.png$/);
   assert.ok(fs.existsSync(new URL(url)));
   assert.equal(portraitDataUrl(structuredClone(person)),url);
  }
