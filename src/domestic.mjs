@@ -1,3 +1,4 @@
+import {validateBattlePlanLibrary} from './card-battle-plan-data.mjs';
 import {geographicTerrain,initializeProvinceGeography,validateProvinceGeography} from './province-geography.mjs';
 import {initializeCityCapacity} from './city-capacity.mjs';
 import {settleIndustryHiring} from './industry-labor.mjs';
@@ -122,6 +123,7 @@ export function settleDomestic(domestic,turn){
 function requireNumber(value,min=0,max=1000000000000,integer=true){if(typeof value!=='number'||!Number.isFinite(value)||value<min||value>max||(integer&&!Number.isSafeInteger(value)))throw Error('内政存档含无效数值');}
 function requireText(v){if(typeof v!=='string'||!v.trim()||v.length>80)throw Error('内政存档文字格式不正确');}
 export function validateDomestic(d,turn){
+ validateBattlePlanLibrary(d.cardBattlePlans);
  if(d?.worldExpansionVersion!==1)throw Error('外围势力存档版本无效');
  validateProvinceGeography(d);
  validateNationalResources(d,turn);

@@ -1,0 +1,28 @@
+/* The card and hit target stay fixed. Status animation lives below name/stat ink. */
+.cb-prototype .cb-card-state{position:absolute;inset:0;z-index:3;pointer-events:none;border-radius:inherit;overflow:hidden}
+.cb-prototype .cb-card-state *{pointer-events:none!important}
+.cb-prototype .cb-card-state .cb-statuses{position:absolute;left:8%;top:18%;right:auto;width:1px;height:1px;max-height:1px;padding:0;margin:0;overflow:hidden;clip-path:inset(50%);white-space:nowrap;display:block}
+.cb-prototype .cb-state-effect{position:absolute;inset:15% 4% 7%;display:block;border-radius:4px;pointer-events:none}
+.cb-state-effect:before,.cb-state-effect:after{content:'';position:absolute;inset:0;border-radius:inherit;pointer-events:none}
+.cb-state-enhance{border:1px solid #b1e9a080;box-shadow:inset 0 0 10px #77d68f45,0 0 4px #c9d67c50;animation:cb-state-breathe 3.8s ease-in-out infinite}
+.cb-state-enhance:before{background:radial-gradient(circle at 7% 70%,#eaffbb 0 1px,transparent 2px),radial-gradient(circle at 92% 45%,#d4ffb2 0 1.5px,transparent 3px),radial-gradient(circle at 9% 30%,#9fe5a1 0 1px,transparent 2px),radial-gradient(circle at 94% 90%,#f7edb0 0 1px,transparent 2px);animation:cb-state-rise 3.1s ease-in-out infinite}
+.cb-state-enhance:after{inset:2px;border:1px solid #fff4b340;animation:cb-state-breathe 3.8s ease-in-out -1.8s infinite}
+.cb-state-temporary{border:1px solid #ffce6baa;box-shadow:inset 0 0 9px #ffa63155;animation:cb-state-breathe 1.9s ease-in-out infinite}
+.cb-state-temporary:before{background:radial-gradient(ellipse at 5% 84%,#ffe4a888,transparent 13%),radial-gradient(ellipse at 95% 72%,#f7b95077,transparent 15%);animation:cb-state-rise 1.7s ease-in-out infinite}
+.cb-state-weaken{box-shadow:inset 0 0 12px #84508c88;border:1px solid #c48aae77;animation:cb-state-breathe 3.7s ease-in-out infinite}
+.cb-state-weaken:before{background:radial-gradient(ellipse at 10% 30%,#be8eb266,transparent 23%),radial-gradient(ellipse at 92% 65%,#845a9666,transparent 21%);animation:cb-state-fall 3.4s linear infinite}
+.cb-prototype .cb-card.frozen:after{display:none}
+.cb-prototype .cb-state-freeze{inset:12% 2% 5%;border:1px solid #c9f8ffe0;border-radius:6px;box-shadow:inset 0 0 14px #7edbff77,0 0 5px #b4eeff77;background:linear-gradient(125deg,#d6faff40,transparent 29%,transparent 66%,#91deff40)}
+.cb-state-freeze svg{width:100%;height:100%;fill:#bcefff22;stroke:#c9f8ffe6;stroke-width:.7;stroke-linejoin:bevel}
+.cb-state-freeze:after{background:radial-gradient(circle at 12% 20%,#edffff 0 1px,transparent 2px),radial-gradient(circle at 86% 40%,#c9f8ff 0 1px,transparent 2px),radial-gradient(circle at 19% 75%,#d9ffff 0 1px,transparent 2px),radial-gradient(circle at 80% 90%,#c9f8ff 0 1px,transparent 2px);animation:cb-state-fall 4s linear infinite}
+.cb-state-shield{inset:9% 0 3%!important;border:2px solid #f7d87eaa!important;border-radius:42%!important;box-shadow:inset 0 0 7px #ffe5a733,0 0 8px #f8d66b66;background:radial-gradient(ellipse at 20% 20%,#fff7cb30,transparent 40%);animation:cb-state-shield 3.2s ease-in-out infinite}
+.cb-state-shield:after{border:1px solid #fff5cb44;inset:4px;animation:cb-state-breathe 2.3s ease-in-out infinite}
+.cb-state-silence:before{background:linear-gradient(100deg,#d6d1cd44,transparent 25%,transparent 76%,#d6d1cd44);animation:cb-state-smoke 5s ease-in-out infinite}
+.cb-state-silence svg{position:absolute;width:27%;height:24%;left:36%;bottom:4%;fill:#c4bdb299;stroke:#f6eee1cc;stroke-width:1.4;filter:drop-shadow(0 1px 2px #15110e);animation:cb-state-breathe 4.7s ease-in-out infinite}
+.cb-fx-ghost .cb-state-effect,.cb-fx-ghost .cb-state-effect:before,.cb-fx-ghost .cb-state-effect:after{animation-play-state:paused}
+@keyframes cb-state-breathe{0%,100%{opacity:.38}50%{opacity:.92}}
+@keyframes cb-state-rise{0%{transform:translateY(9%);opacity:0}35%{opacity:.9}100%{transform:translateY(-14%);opacity:0}}
+@keyframes cb-state-fall{0%{transform:translateY(-9%);opacity:0}30%{opacity:.85}100%{transform:translateY(12%);opacity:0}}
+@keyframes cb-state-shield{0%,100%{opacity:.5;transform:scale(.98)}50%{opacity:1;transform:scale(1.015)}}
+@keyframes cb-state-smoke{0%,100%{opacity:.3;transform:translateY(3%)}50%{opacity:.8;transform:translateY(-4%)}}
+@media(prefers-reduced-motion:reduce){.cb-prototype .cb-state-effect,.cb-prototype .cb-state-effect:before,.cb-prototype .cb-state-effect:after,.cb-prototype .cb-state-effect svg{animation:none!important;opacity:.8}}

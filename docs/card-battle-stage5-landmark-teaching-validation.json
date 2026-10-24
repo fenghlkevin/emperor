@@ -1,0 +1,106 @@
+{
+  "date": "2026-10-23T07:28:57.857Z",
+  "elapsedSeconds": 38.282,
+  "checks": [
+    "basic entry switches to explicit isolated landmark course with real source explanation",
+    "fast camp really deploys in the shared seven slots",
+    "fast actual counter wound is healed without reviving soldiers",
+    "fast next-own-turn activation stays blocked by real cooldown",
+    "fast second actual camp use exhausts and leaves the field",
+    "fast rally applies the real temporary two attack",
+    "fast end of turn expires rally normally",
+    "fast native details removal loses the one unused activation",
+    "fast eighteen native player actions yield a true victory and twenty-four public records",
+    "fast completion opens actual facility history",
+    "reduced camp really deploys in the shared seven slots",
+    "reduced actual counter wound is healed without reviving soldiers",
+    "reduced next-own-turn activation stays blocked by real cooldown",
+    "reduced second actual camp use exhausts and leaves the field",
+    "reduced rally applies the real temporary two attack",
+    "reduced end of turn expires rally normally",
+    "reduced native details removal loses the one unused activation",
+    "reduced eighteen native player actions yield a true victory and twenty-four public records",
+    "reduced completion opens actual facility history",
+    "restart restores the same actual facility and person identities",
+    "1440px preserves 5:7 cards and guide outside shared field",
+    "1000px preserves 5:7 cards and guide outside shared field",
+    "800px preserves 5:7 cards and guide outside shared field",
+    "landmark course switches to secret lesson without residual state",
+    "secret course can return to a fresh landmark origin",
+    "landmark lesson can return to basic teaching",
+    "switching/restart/skip clean up dialogs and leave formal world untouched"
+  ],
+  "errors": [],
+  "archivedAt": "2026-10-23T07:39:59.254795+00:00",
+  "heartbeatStartedAt": "2026-10-23T07:23:15.282000+00:00",
+  "continuedHeartbeatAt": "2026-10-23T07:36:15.392Z",
+  "wallSeconds": 1003.973,
+  "scope": "18 player actions plus six actual opponent end actions through formal engine; isolated fixed hand and declared 5/10 friendly,3/20 guard and 5HP enemy commander; real casualties retained. Five actual-engine combination boundaries. No production numerical rule or AI changes.",
+  "rulesVersion": 6,
+  "landmarkCatalogVersion": 1,
+  "landmarkAiVersion": 1,
+  "models": {
+    "command": "node --test tests/card-battle-landmark-combinations.test.mjs tests/card-battle-landmark-tutorial.test.mjs tests/card-battle-weapon-tutorial.test.mjs tests/card-battle-secret-tutorial.test.mjs",
+    "newTutorialChecks": 6,
+    "newCombinationChecks": 5,
+    "passed": 22,
+    "failed": 0,
+    "elapsedSeconds": 9.443927084,
+    "log": "/private/tmp/card-landmark-teaching-model.log"
+  },
+  "fullRegression": {
+    "command": "npm test",
+    "passed": 1005,
+    "failed": 0,
+    "runtimeContracts": 44,
+    "elapsedSeconds": 93.661874292,
+    "log": "/private/tmp/card-landmark-teaching-full-final.log"
+  },
+  "native": {
+    "command": "npm run test:card-battle-landmark-tutorial",
+    "passed": 27,
+    "elapsedSeconds": 38.282,
+    "log": "/private/tmp/card-landmark-teaching-ui.log"
+  },
+  "nativeRegressions": [
+    {
+      "command": "npm run test:card-battle-secret-tutorial",
+      "passed": 28,
+      "elapsedSeconds": 62.073,
+      "log": "/private/tmp/card-landmark-teaching-secret-regression.log"
+    },
+    {
+      "command": "npm run test:card-battle-weapon-tutorial",
+      "passed": 22,
+      "elapsedSeconds": 27.989,
+      "log": "/private/tmp/card-landmark-teaching-weapon-regression.log"
+    }
+  ],
+  "screenshots": [
+    "docs/screenshots/card-battle-landmark-tutorial-1440.png",
+    "docs/screenshots/card-battle-landmark-tutorial-1000.png",
+    "docs/screenshots/card-battle-landmark-tutorial-800.png"
+  ],
+  "resolvedFailures": [
+    "Enemy auto-selected twelve-spell deck did not contain pin. Freeze combination now explicitly configures a real twelve-spell friendly deck and targets the enemy beneficiary, then that side activates its actual facilities.",
+    "Unrevealed secret state is false rather than undefined; test now asserts the actual boolean.",
+    "Command-type skill had no injured target. Test creates actual precision damage before checking the healing skill is still available.",
+    "Weapon-watch armor test omitted existing battlefield armor. Expected armor now preserves actual original armor plus three gained minus two true weapon damage. A first full run loaded the old assertion and failed; final full1005 passed after correction."
+  ],
+  "limitations": [
+    "Fixed tutorial targets and hand are explicitly disclosed and are never production draw or balance samples.",
+    "No new audio work or save compatibility/recovery acceptance.",
+    "Final rule6 independent-seed per-group balance and long real desktop acceptance remain stage1.",
+    "Hero replacement compatibility proposal still required; actual replacement implementation remains optional and unauthorized.",
+    "Stage6 dedicated100-person performances, voice and regional art remain pending."
+  ],
+  "sourceSha256": {
+    "src/card-battle-landmark-tutorial.mjs": "a465ad1b849909bda118c91f3500d51b6dacb7781ec87aa40b48b20803c029af",
+    "src/card-battle-tutorial.mjs": "9b50bbeb8c8ebaeeb0c1e3b8dd068f84de6e526ec360bbef3da50b55f4915799",
+    "src/card-battle-tutorial-ui.mjs": "0b119730cfe562d68e951d5d782b7582dab36fb1c1389b1d07415ec664fa8b1f",
+    "tests/card-battle-landmark-tutorial.test.mjs": "f90be3028d4c944ce613d7044ff17e70e76b0eff03cec42beec4ddba47d89258",
+    "tests/card-battle-landmark-combinations.test.mjs": "b66ceed4ce5ab39fe10038e14fc2eaefc8dd3a377aeb1196740f13718dc5b4be",
+    "tests/card-battle-landmark-tutorial-desktop.cjs": "a120f28ee895350d9ee7be7c9463ed9194a38fab20499b01b542894c77f46614",
+    "package.json": "77b30276a3eb8e1c501c5cd5b992a96870ee6565b287058eb0bcccea81bdeee0"
+  }
+}

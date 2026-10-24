@@ -1,0 +1,479 @@
+{
+  "date": "2026-10-23T01:05:10.813452+00:00",
+  "scope": "Production v3 public history archives across campaign and defense settlement, persistent read-only queries and bounded capacity probe. Tutorial and phase-1 acceptance remain pending.",
+  "versions": {
+    "rules": 3,
+    "history": 1,
+    "archive": 1,
+    "catalog": "phase1-release-v5"
+  },
+  "sources": {
+    "src/card-battle-history.mjs": "f9d92fb16eb3deb1c482c1edc26bcc1e22e7bcb4c64a0f109dbba1b1dd60d088",
+    "src/card-battle-history-archive.mjs": "7e6231ad6a2cfc659b4114bbbc4ac7c17a610f5e3c86053dd81e1ffead385ccc",
+    "src/card-battle-history-view.mjs": "90db547bef4f2c38625556e7736c5d0088698a3dccbb538c7875fdc302485094",
+    "src/card-battle-history-ui.mjs": "14bf347deb1dea0eeec3c8677af1ee75fe9537737acef6ab8f6e791530ea31dd",
+    "src/card-battle-archive-ui.mjs": "fdd3f8f6ce54f13191b17552a7f7b9b630b5e1eec666b1607ca27b7e890aaf38",
+    "src/kit-war.mjs": "f8ae9641d9c0443ebdb44185a72ec226d907a9fccb01644b6f2aefeaa8a732aa",
+    "src/kit-defense.mjs": "79e08a139b1127656c5eaee7b0603c9b992f433110c3ed6900df384790ca89a7",
+    "src/war.mjs": "6728620cea621a0f02650c9229f58eef8c8518a7ccb811dd95c512881bf2c27c",
+    "src/kit-office-ui.mjs": "d06e1f1d3d5fbc54b4bcdb7f2f4a8d9879b88d575e55477a224a7372aef0fde3",
+    "src/military-register-ui.mjs": "2736cd3e2f89b3cd784fcdd1f0353aafcda7d8ad472961b70a4fe45fa961f88f",
+    "src/war-result-ui.mjs": "fe333febd3a8e3ee9bb3cbddfa946ab083386add7e386700f01d52ae9b8598d7",
+    "src/game-types.d.ts": "8d37ffeb4c61d4cfe206532e7aed42bf6b52a3c79b324cf73fb852e9e0014134",
+    "tests/card-battle-history-archive.test.mjs": "eea5e4dad22645b28023f7722722299ae79ec32271d7bc0ed3136bff47267308",
+    "tests/card-battle-history-archive-desktop.cjs": "b3324a3e90b5e802003b1963ae9cf846a22b7a168ce9b9d7570a15b81afc165b",
+    "scripts/validate-card-history-capacity.mjs": "f6bd4abeb1ee8c34eb65ab0c5a006c538407e62ca654c8d6c8475bcb9b62a647",
+    "docs/fixtures/card-history-capacity-base.json": "859f0b421cab1c99f97574036c81a5f2dc28a302fa608d0f2e91a1c45167657b",
+    "package.json": "6d27cf56d4dc7ed6cb66ad5979b16e51b29229ccdabf28e54ef382bce4eff3b4"
+  },
+  "combatEngineUnchanged": true,
+  "related": {
+    "command": "node --test tests/card-battle-history-archive.test.mjs tests/card-battle-history.test.mjs tests/card-battle-history-view.test.mjs tests/card-battle.test.mjs",
+    "tests": 32,
+    "pass": 32,
+    "fail": 0,
+    "elapsedSeconds": 4.069511667,
+    "log": "/private/tmp/card-history-archive-regression.log"
+  },
+  "regression": {
+    "command": "npm test",
+    "tests": 887,
+    "pass": 887,
+    "fail": 0,
+    "elapsedSeconds": 71.936915125,
+    "types": "36 runtime snapshots and negative type checks passed",
+    "log": "/private/tmp/card-history-archive-full-regression.log"
+  },
+  "desktopArchive": {
+    "date": "2026-10-23T01:00:23.304Z",
+    "elapsedSeconds": 8.084,
+    "checks": [
+      "native settlement commits once and exposes archived actions on the real battle report",
+      "settlement archive reproduces every public action and event exactly",
+      "archived report uses the same chronological panel with correct lifecycle wording",
+      "record inspection causes no resource changes or second settlement",
+      "reloaded military register can query the persisted battle without a live battle",
+      "reloaded archive retains all action IDs and counts",
+      "1440px archived detail keeps a bounded readable layout",
+      "1000px archived detail keeps a bounded readable layout",
+      "800px archived detail keeps a bounded readable layout",
+      "closing detail returns keyboard focus to its historical report",
+      "legacy reports explicitly disclose missing action data instead of fabricating it",
+      "real defense settlement exposes its exact archived card actions",
+      "alternate military office offers the same persistent archive library",
+      "100 complete worst-sample archives fit actual isolated Electron localStorage, autosave slots and reload without dropping actions",
+      "all persistence tests use prefixed isolated keys and leave the actual save key empty"
+    ],
+    "errors": [],
+    "capacity": {
+      "cloneValidationMs": 7.100000008940697,
+      "archiveCount": 100,
+      "validatedMs": 884.6000000089407,
+      "totalBytes": 4415105,
+      "storageCharacters": 4327570
+    }
+  },
+  "desktopPanel": {
+    "date": "2026-10-23T00:58:28.269Z",
+    "elapsedSeconds": 6.16,
+    "checks": [
+      "empty history is available during mulligan without inventing previous moves",
+      "opening moves keyboard focus into read-only dialog without state changes",
+      "Escape restores battle keyboard focus, closes and removes the history dialog",
+      "opponent timer pauses throughout history inspection",
+      "all accepted actions render exactly once with the newest round expanded",
+      "expand all exposes chronological action/event details",
+      "collapse all retains a compact round overview",
+      "actor filter preserves keyboard focus and collapsed state",
+      "round filter shows a matching group and global action count",
+      "1440px record panel fits and close button remains a stable native target",
+      "1000px record panel fits and close button remains a stable native target",
+      "800px record panel fits and close button remains a stable native target",
+      "opponent resumes after closing the record panel",
+      "finished battle has a read-only history entry before settlement",
+      "old in-progress battles explicitly label missing earlier records",
+      "snapshot names are escaped and enemy draw identities stay hidden",
+      "hidden panel acceptance never writes the actual save key"
+    ],
+    "errors": []
+  },
+  "desktopRecovery": {
+    "date": "2026-10-23T00:59:32.897Z",
+    "elapsedSeconds": 10.571,
+    "checks": [
+      "opening action is persisted exactly once",
+      "troop deployment record commits before animation completion",
+      "reload during animation restores exact state and history without duplication",
+      "new hidden window restores the same committed action history",
+      "read-only deck view creates no phantom action record",
+      "recovered record panel renders the two committed actions without publishing another",
+      "recovered input unlocks and actual game save key stays untouched"
+    ],
+    "consoleErrors": [],
+    "publicHistory": {
+      "version": 1,
+      "nextId": 3,
+      "checksum": 2785145664,
+      "startedPly": 1,
+      "partial": false,
+      "entries": [
+        {
+          "id": 1,
+          "ply": 1,
+          "round": 1,
+          "side": "home",
+          "type": "mulligan",
+          "cost": 0,
+          "actor": {
+            "id": "home-hero",
+            "side": "home",
+            "type": "hero",
+            "name": "沈文远"
+          },
+          "swaps": 0,
+          "resources": {
+            "home": {
+              "before": {
+                "mana": 0,
+                "discount": 0
+              },
+              "after": {
+                "mana": 1,
+                "discount": 0
+              }
+            },
+            "enemy": {
+              "before": {
+                "mana": 0,
+                "discount": 0
+              },
+              "after": {
+                "mana": 0,
+                "discount": 0
+              }
+            }
+          },
+          "changes": [],
+          "events": [
+            {
+              "ordinal": 1,
+              "type": "draw",
+              "ply": 1,
+              "round": 1,
+              "cause": {
+                "parents": [
+                  {
+                    "kind": "mulligan",
+                    "source": {
+                      "id": "home-hero",
+                      "side": "home",
+                      "type": "hero",
+                      "name": "沈文远"
+                    }
+                  }
+                ],
+                "kind": "start-turn",
+                "source": {
+                  "id": "home-hero",
+                  "side": "home",
+                  "type": "hero",
+                  "name": "沈文远"
+                }
+              },
+              "side": "home",
+              "subject": {
+                "id": "home-5",
+                "side": "home",
+                "type": "troop",
+                "name": "长枪兵小队"
+              },
+              "before": null,
+              "after": {
+                "attack": 2,
+                "hp": 3,
+                "maxHp": 3,
+                "tags": [],
+                "frozen": false,
+                "silenced": false,
+                "tempAttack": 0,
+                "zone": "hand"
+              }
+            },
+            {
+              "ordinal": 2,
+              "type": "turn",
+              "ply": 1,
+              "round": 1,
+              "cause": {
+                "parents": [
+                  {
+                    "kind": "mulligan",
+                    "source": {
+                      "id": "home-hero",
+                      "side": "home",
+                      "type": "hero",
+                      "name": "沈文远"
+                    }
+                  }
+                ],
+                "kind": "start-turn",
+                "source": {
+                  "id": "home-hero",
+                  "side": "home",
+                  "type": "hero",
+                  "name": "沈文远"
+                }
+              },
+              "side": "home"
+            }
+          ],
+          "checksum": 1627168026
+        },
+        {
+          "id": 2,
+          "ply": 1,
+          "round": 1,
+          "side": "home",
+          "type": "play",
+          "cost": 1,
+          "actor": {
+            "id": "home-1",
+            "side": "home",
+            "type": "troop",
+            "name": "前锋小队"
+          },
+          "resources": {
+            "home": {
+              "before": {
+                "mana": 1,
+                "discount": 0
+              },
+              "after": {
+                "mana": 0,
+                "discount": 0
+              }
+            },
+            "enemy": {
+              "before": {
+                "mana": 0,
+                "discount": 0
+              },
+              "after": {
+                "mana": 0,
+                "discount": 0
+              }
+            }
+          },
+          "changes": [
+            {
+              "subject": {
+                "id": "home-1",
+                "side": "home",
+                "type": "troop",
+                "name": "前锋小队"
+              },
+              "before": null,
+              "after": {
+                "attack": 1,
+                "hp": 2,
+                "maxHp": 2,
+                "tags": [],
+                "frozen": false,
+                "silenced": false,
+                "tempAttack": 0,
+                "zone": "board"
+              }
+            }
+          ],
+          "events": [
+            {
+              "ordinal": 1,
+              "type": "play",
+              "ply": 1,
+              "round": 1,
+              "cause": {
+                "kind": "play",
+                "source": {
+                  "id": "home-1",
+                  "side": "home",
+                  "type": "troop",
+                  "name": "前锋小队"
+                }
+              },
+              "side": "home",
+              "subject": {
+                "id": "home-1",
+                "side": "home",
+                "type": "troop",
+                "name": "前锋小队"
+              },
+              "before": null,
+              "after": {
+                "attack": 1,
+                "hp": 2,
+                "maxHp": 2,
+                "tags": [],
+                "frozen": false,
+                "silenced": false,
+                "tempAttack": 0,
+                "zone": "board"
+              }
+            }
+          ],
+          "checksum": 2785145664
+        }
+      ]
+    }
+  },
+  "capacity": {
+    "date": "2026-10-23T01:02:10.596Z",
+    "samples": [
+      {
+        "seeds": {
+          "home": 110003,
+          "enemy": 210007
+        },
+        "first": "home",
+        "actions": 140,
+        "rawBytes": 191228,
+        "packedBytes": 36773
+      },
+      {
+        "seeds": {
+          "home": 117922,
+          "enemy": 216158
+        },
+        "first": "enemy",
+        "actions": 67,
+        "rawBytes": 92806,
+        "packedBytes": 19056
+      },
+      {
+        "seeds": {
+          "home": 125841,
+          "enemy": 222309
+        },
+        "first": "home",
+        "actions": 102,
+        "rawBytes": 143473,
+        "packedBytes": 28550
+      },
+      {
+        "seeds": {
+          "home": 133760,
+          "enemy": 228460
+        },
+        "first": "enemy",
+        "actions": 116,
+        "rawBytes": 165670,
+        "packedBytes": 32108
+      },
+      {
+        "seeds": {
+          "home": 141679,
+          "enemy": 234611
+        },
+        "first": "home",
+        "actions": 68,
+        "rawBytes": 96352,
+        "packedBytes": 19924
+      },
+      {
+        "seeds": {
+          "home": 149598,
+          "enemy": 240762
+        },
+        "first": "enemy",
+        "actions": 101,
+        "rawBytes": 144446,
+        "packedBytes": 28529
+      },
+      {
+        "seeds": {
+          "home": 157517,
+          "enemy": 246913
+        },
+        "first": "home",
+        "actions": 117,
+        "rawBytes": 167104,
+        "packedBytes": 32510
+      },
+      {
+        "seeds": {
+          "home": 165436,
+          "enemy": 253064
+        },
+        "first": "enemy",
+        "actions": 55,
+        "rawBytes": 74229,
+        "packedBytes": 15635
+      },
+      {
+        "seeds": {
+          "home": 173355,
+          "enemy": 259215
+        },
+        "first": "home",
+        "actions": 83,
+        "rawBytes": 122956,
+        "packedBytes": 24332
+      },
+      {
+        "seeds": {
+          "home": 181274,
+          "enemy": 265366
+        },
+        "first": "enemy",
+        "actions": 105,
+        "rawBytes": 153644,
+        "packedBytes": 30235
+      },
+      {
+        "seeds": {
+          "home": 189193,
+          "enemy": 271517
+        },
+        "first": "home",
+        "actions": 100,
+        "rawBytes": 141935,
+        "packedBytes": 28323
+      },
+      {
+        "seeds": {
+          "home": 197112,
+          "enemy": 277668
+        },
+        "first": "enemy",
+        "actions": 82,
+        "rawBytes": 119852,
+        "packedBytes": 24093
+      }
+    ],
+    "worstSample": 0,
+    "archiveCount": 100,
+    "totalBytes": 4415105,
+    "maxImportBytes": 8388608,
+    "serializedValidationSeconds": 0.013463665999999649,
+    "warmValidationSeconds": 0.009273417000000336,
+    "elapsedSeconds": 2.6367534999999998,
+    "note": "Capacity fixture repeats the largest of 12 complete production-engine games, with distinct receipt IDs. This is not 100 real campaigns, balance evidence, or the phase-1 long-run acceptance."
+  },
+  "capacityReplayCommand": "node scripts/validate-card-history-capacity.mjs docs/fixtures/card-history-capacity-base.json",
+  "capacityNote": "Synthetic isolated fixture; largest of 12 complete games repeated with unique receipt IDs. Not 100 real campaigns or balance/long-run evidence. Desktop cold and clone validation are measured separately from Node validated-content cache times.",
+  "screenshots": [
+    "docs/screenshots/card-battle-history-archive-1440.png",
+    "docs/screenshots/card-battle-history-archive-1000.png",
+    "docs/screenshots/card-battle-history-archive-800.png"
+  ],
+  "wallClock": {
+    "startUtc": "2026-10-23T00:45:04Z",
+    "endUtc": "2026-10-23T01:05:10.813452+00:00",
+    "elapsedSeconds": 1206.813452
+  },
+  "remaining": [
+    "Phase 3 isolated interactive tutorial.",
+    "Phases 4-6 mandatory deliveries.",
+    "Then phase 1 independent balance matrices and real long-run acceptance."
+  ],
+  "retention": "Existing most recent 100 war receipt records; no extra removal or truncation of actions inside a retained archive."
+}

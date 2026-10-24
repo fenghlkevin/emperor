@@ -1,0 +1,127 @@
+{
+  "date": "2026-10-23T08:08:02.123Z",
+  "elapsedSeconds": 30.131,
+  "checks": [
+    "cbdb-27948 deployment card identity motif keeps native hit rectangle",
+    "cbdb-27948 entry skill shows its personal subtitle before old health is released",
+    "cbdb-27948 holds a readable personal motif and original subtitle during windup",
+    "cbdb-27948 entry uses the full formal engine result once and cleans transient effects",
+    "cbdb-27948 deployed character retains the same ID-bound card face",
+    "cbdb-3767 deployment card identity motif keeps native hit rectangle",
+    "cbdb-3767 entry skill shows its personal subtitle before old health is released",
+    "cbdb-3767 holds a readable personal motif and original subtitle during windup",
+    "cbdb-3767 entry uses the full formal engine result once and cleans transient effects",
+    "cbdb-3767 deployed character retains the same ID-bound card face",
+    "cbdb-8175 deployment card identity motif keeps native hit rectangle",
+    "cbdb-8175 entry skill shows its personal subtitle before old health is released",
+    "cbdb-8175 holds a readable personal motif and original subtitle during windup",
+    "cbdb-8175 entry uses the full formal engine result once and cleans transient effects",
+    "cbdb-8175 deployed character retains the same ID-bound card face",
+    "cbdb-27948 commander identity motif keeps native hit rectangle",
+    "cbdb-27948 power shows its personal subtitle before old health is released",
+    "cbdb-27948 power uses the full formal engine result once and cleans transient effects",
+    "cbdb-3767 commander identity motif keeps native hit rectangle",
+    "cbdb-3767 power shows its personal subtitle before old health is released",
+    "cbdb-3767 power uses the full formal engine result once and cleans transient effects",
+    "cbdb-8175 commander identity motif keeps native hit rectangle",
+    "cbdb-8175 power shows its personal subtitle before old health is released",
+    "cbdb-8175 power uses the full formal engine result once and cleans transient effects",
+    "fast personal motion preserves exact formal effects and unlocks",
+    "reduced personal motion preserves exact formal effects and unlocks",
+    "1440px card5:7 and fixed hero/power native hit areas remain intact",
+    "1000px card5:7 and fixed hero/power native hit areas remain intact",
+    "800px card5:7 and fixed hero/power native hit areas remain intact",
+    "battle character gallery links the same actual ID and labels original dialogue",
+    "complete deck shares the same actual character motif without reassigning identity"
+  ],
+  "errors": [],
+  "scope": "Explicit isolated historical-ID presentation fixtures, actual formal actCards results; no live world saves, no balance or all100 completion claims.",
+  "archivedAt": "2026-10-23T08:13:19.434618+00:00",
+  "heartbeatStartedAt": "2026-10-23T07:52:15.384000+00:00",
+  "wallSeconds": 1264.051,
+  "userSteering": "User explicitly chose battle character/commander card faces and skill presentation, not hero replacement cards.",
+  "presentationVersion": 1,
+  "rulesChange": false,
+  "aiChange": false,
+  "models": {
+    "command": "node --test tests/card-battle-person-presentations.test.mjs",
+    "passed": 3,
+    "failed": 0,
+    "elapsedSeconds": 0.041666,
+    "log": "/private/tmp/card-person-presentation-model.log"
+  },
+  "fullRegression": {
+    "command": "npm test",
+    "passed": 1008,
+    "failed": 0,
+    "runtimeContracts": 44,
+    "elapsedSeconds": 82.134170375,
+    "log": "/private/tmp/card-person-presentation-full.log"
+  },
+  "native": {
+    "command": "npm run test:card-battle-person-presentations",
+    "passed": 31,
+    "elapsedSeconds": 30.131,
+    "log": "/private/tmp/card-person-presentation-ui.log"
+  },
+  "nativeGenericRegression": {
+    "command": "npm run test:card-battle-weapon-tutorial",
+    "passed": 22,
+    "elapsedSeconds": 27.008,
+    "log": "/private/tmp/card-person-presentation-generic-regression.log"
+  },
+  "manifest": {
+    "command": "node scripts/audit-card-person-presentations.mjs docs/card-battle-stage6-person-production-manifest.json",
+    "total": 100,
+    "uniqueIds": 100,
+    "existingArtFiles": 300,
+    "missingExistingArtFiles": 0,
+    "catalogTraceableNotRereviewed": 74,
+    "historicalLinkPending": 26,
+    "visualSamples": 3,
+    "missingVoiceClips": 200,
+    "unassignedCultures": 100,
+    "fullyAccepted": 0,
+    "evidence": "docs/card-battle-stage6-person-production-manifest.json"
+  },
+  "screenshots": [
+    "docs/screenshots/card-battle-person-cards-1440.png",
+    "docs/screenshots/card-battle-person-cards-1000.png",
+    "docs/screenshots/card-battle-person-cards-800.png",
+    "docs/screenshots/card-battle-person-cbdb-27948-cast.png",
+    "docs/screenshots/card-battle-person-cbdb-3767-cast.png",
+    "docs/screenshots/card-battle-person-cbdb-8175-cast.png"
+  ],
+  "verification": [
+    "git diff --check",
+    "node --check src/card-battle-ui.mjs",
+    "node --check src/card-battle-skill-effects.mjs",
+    "node --check src/card-battle-deck-ui.mjs",
+    "node --check src/card-battle-person-presentations.mjs",
+    "node --check scripts/audit-card-person-presentations.mjs"
+  ],
+  "refinements": [
+    "Initial sample captures occurred during fade-in; added steady-windup readability assertions and captures, final31native checks passed. Production logic unchanged between the two native runs."
+  ],
+  "limitations": [
+    "Only three visual samples; all100 complete per-person acceptance remains false.",
+    "Current tool discovery did not find a TTS/voice generation capability.200entry/skill clips missing, voice playback/volume/mute not yet accepted. No service was opened or paid.",
+    "No new raster likeness or regional costume artwork; existing portraits retained, SVG motifs are presentation samples only.",
+    "100culture fields unassigned and26historical associations pending review; current source flags are catalog metadata, not new historical verification.",
+    "Continuous-performance/memory/frame-rate validation and complete voice/regional art remain pending.",
+    "Production combat definitions, AI, random identity generation and resource ledgers unchanged; no new balance conclusion.",
+    "Hero replacement remains proposal-only, optional and unimplemented."
+  ],
+  "sourceSha256": {
+    "src/card-battle-person-presentations.mjs": "d9c3885c19c656945caf15a15f7aa1afd5dfaded10ebad7953ab07c8534f4a12",
+    "src/card-battle-person-presentations.css": "23d8769c0dc9c6b89b78930aaa78a8627a37ae9da50152c3b54f55076b19fb71",
+    "src/card-battle-ui.mjs": "969df087cc77db47c6ab62fbe51460b488bda3b5047492f88fe5f455c439f015",
+    "src/card-battle-skill-effects.mjs": "bca71b8f6e79d357b281607e47f473c0b1e7f781a7a7f56ba2d8e82ab224b470",
+    "src/card-battle-deck-ui.mjs": "c3198d03074604fa7895d451ce0d24a645d8adf17f24a22eb6899f44c2957329",
+    "scripts/audit-card-person-presentations.mjs": "d302a4edbc11f0f87016901b8e572379e5415f43c0c687be4173694a491bede3",
+    "tests/card-battle-person-presentations.test.mjs": "b869f69668a02ec0d703422f4e23fac20a00413b76d6f99f3b94f25f0d9dcce2",
+    "tests/card-battle-person-presentations-desktop.cjs": "4eebb215c0575552787a4ff4369111c618cddea25df5014c4b93bc71e042807a",
+    "index.html": "e3b01ef8dbcd5ec7308ad3ddc77d24d4ce93f8d0f17239a34d9a45527c2bb716",
+    "package.json": "0ee958f32521145279efd7c347f80048a05eb7556887887ebbcbd1d4dd4916d6"
+  }
+}

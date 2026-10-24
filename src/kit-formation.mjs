@@ -11,3 +11,15 @@ export function automaticKitFormation(available,leaders){
  for(const kind of kinds){const n=Math.min(MAX_SQUAD_SOLDIERS,left,gear[kind]);if(!n||result.squads.length>=6||!leaders[result.squads.length+1])continue;result.squads.push({kind,count:n,generalId:leaders[result.squads.length+1].id});left-=n;}
  return {...result,reserve:left};
 }
+
+// A starting draft for a normal 30-card battle: 100 escort + up to 450 field soldiers.
+// The existing automatic formation still supplies only available equipment and serving leaders.
+export function initialCardFormation(available,leaders){
+ const result=automaticKitFormation(available,leaders),rows=result.squads,total=rows.reduce((n,u)=>n+u.count,0);
+ const wanted=Math.min(450,total),caps=rows.map(u=>u.count);let left=wanted;
+ // Share the draft across equipped types so archers/infantry cannot consume all room before cavalry.
+ for(const row of rows)row.count=0;
+ while(left){let changed=false;for(let i=0;i<rows.length&&left;i++)if(rows[i].count<caps[i]){rows[i].count++;left--;changed=true;}if(!changed)break;}
+ result.squads=rows.filter(u=>u.count);result.reserve=available.soldiers.available-result.commanderSquad.count-wanted;
+ return result;
+}

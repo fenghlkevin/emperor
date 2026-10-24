@@ -16,6 +16,7 @@ const ids=TROOP_KITS.map(k=>k.id);
 const equipped=row=>{if(row.equipped!==undefined&&typeof row.equipped!=='boolean'||row.equipped===false&&row.kind!=='infantry')throw Error('只有乡勇可以缺装步战');return row.equipped!==false;};
 const integer=(n,max=Number.MAX_SAFE_INTEGER)=>{if(!Number.isSafeInteger(n)||n<0||n>max)throw Error('兵员与套装数量须为范围内的非负整数');return n;};
 const add=(a,b)=>integer(a+b);
+const extraQuantities=value=>{const amounts=kitQuantities(value);return Object.values(amounts).some(n=>n>0)?amounts:undefined;};
 const key=id=>{if(!ids.includes(id))throw Error('兵种套装无效');return id;};
 const token=id=>{if(typeof id!=='string'||!id||id.length>120||['__proto__','constructor','prototype'].includes(id))throw Error('出战占用编号无效');return id;};
 export const emptyKitStock=()=>Object.fromEntries(ids.map(id=>[id,0]));
@@ -34,10 +35,13 @@ export function validateKitDepot(depot){
  let used=0;const reserved=emptyKitStock();
  for(const [id,r] of Object.entries(depot.reservations)){
   token(id);if(!r||!['active','settled'].includes(r.status)||!Array.isArray(r.squads)||!r.squads.length)throw Error('出战占用数据无效');
+  if(r.extraKits!==undefined){const extra=extraQuantities(r.extraKits);if(!extra)throw Error('额外装备占用无效');if(r.status==='active')for(const kind of ids)reserved[kind]=add(reserved[kind],extra[kind]);}
+  if(r.status==='active'&&r.extraKitLoss!==undefined||r.extraKits===undefined&&r.extraKitLoss!==undefined)throw Error('额外装备损耗无效');
   for(const row of r.squads){key(row.kind);equipped(row);integer(row.count);if(!row.count)throw Error('编队人数须大于零');if(r.status==='active'){used=add(used,row.count);if(equipped(row))reserved[row.kind]=add(reserved[row.kind],row.count);}}
   if(r.status==='settled'){
    if(!Array.isArray(r.survivors)||r.survivors.length!==r.squads.length)throw Error('战后生还数据无效');
    r.survivors.forEach((n,i)=>integer(n,r.squads[i].count));
+   if(r.extraKits!==undefined){if(r.extraKitLoss===undefined)throw Error('额外装备损耗缺失');const loss=kitQuantities(r.extraKitLoss);for(const kind of ids)integer(loss[kind],r.extraKits[kind]??0);}
   }
  }
  if(used>depot.soldiers||ids.some(id=>reserved[id]>stock[id]))throw Error('出战占用超过现有兵员或套装');
@@ -45,25 +49,31 @@ export function validateKitDepot(depot){
 }
 export function kitAvailability(depot){
  validateKitDepot(depot);const used=emptyKitStock();let soldiers=0;
- for(const r of Object.values(depot.reservations))if(r.status==='active')for(const row of r.squads){soldiers+=row.count;if(equipped(row))used[row.kind]+=row.count;}
+ for(const r of Object.values(depot.reservations))if(r.status==='active'){for(const row of r.squads){soldiers+=row.count;if(equipped(row))used[row.kind]+=row.count;}for(const kind of ids)used[kind]+=r.extraKits?.[kind]??0;}
  return {soldiers:{total:depot.soldiers,used:soldiers,available:depot.soldiers-soldiers},kits:Object.fromEntries(ids.map(id=>[id,{total:depot.stock[id],used:used[id],available:depot.stock[id]-used[id]}]))};
 }
-export function reserveKitSquads(depot,id,squads){
+export function reserveKitSquads(depot,id,squads,options={}){
+ if(!options||typeof options!=='object'||Array.isArray(options)||Object.keys(options).some(k=>k!=='extraKits'))throw Error('额外军备参数无效');const {extraKits}=options;
  const available=kitAvailability(depot);token(id);
  if(Object.hasOwn(depot.reservations,id))throw Error('出战编号已经使用');
  if(!Array.isArray(squads)||!squads.length)throw Error('请选择出战部队');
  let soldiers=0;const stock=emptyKitStock(),rows=squads.map(row=>{key(row.kind);equipped(row);integer(row.count);if(!row.count)throw Error('编队人数须大于零');soldiers=add(soldiers,row.count);if(equipped(row))stock[row.kind]=add(stock[row.kind],row.count);return {kind:row.kind,count:row.count,...(row.equipped===false?{equipped:false}:{})};});
+ const extra=extraKits===undefined?undefined:extraQuantities(extraKits);if(extra)for(const kind of ids)stock[kind]=add(stock[kind],extra[kind]);
  if(soldiers>available.soldiers.available)throw Error(resourceShortage('出征编队','空闲士兵',soldiers,available.soldiers.available,'人'));
  for(const id of ids)if(stock[id]>available.kits[id].available)throw Error(resourceShortage('出征编队',TROOP_KITS.find(k=>k.id===id).name+'装备',stock[id],available.kits[id].available,'人份'));
- const next=structuredClone(depot);next.reservations[id]={status:'active',squads:rows};return validateKitDepot(next);
+ const next=structuredClone(depot);next.reservations[id]={status:'active',squads:rows,...(extra?{extraKits:extra}:{})};return validateKitDepot(next);
 }
-export function settleKitSquads(depot,id,survivors){
+export function settleKitSquads(depot,id,survivors,options={}){
+ if(!options||typeof options!=='object'||Array.isArray(options)||Object.keys(options).some(k=>k!=='extraKitLoss'))throw Error('额外军备参数无效');const {extraKitLoss}=options;
  validateKitDepot(depot);token(id);const r=depot.reservations[id];
  if(!r||r.status!=='active')throw Error('出战占用不存在或已经结算');
  if(!Array.isArray(survivors)||survivors.length!==r.squads.length)throw Error('请提供各队生还人数');
  survivors.forEach((n,i)=>integer(n,r.squads[i].count));
+ if(extraKitLoss!==undefined&&r.extraKits===undefined)throw Error('没有对应的额外装备占用');
+ const loss=r.extraKits?kitQuantities(extraKitLoss):undefined;if(loss)for(const kind of ids)integer(loss[kind],r.extraKits[kind]??0);
  const next=structuredClone(depot);r.squads.forEach((row,i)=>{const dead=row.count-survivors[i];next.soldiers-=dead;if(equipped(row))next.stock[row.kind]-=dead;});
- next.reservations[id]={...next.reservations[id],status:'settled',survivors:[...survivors]};return validateKitDepot(next);
+ if(loss)for(const kind of ids)next.stock[kind]-=loss[kind];
+ next.reservations[id]={...next.reservations[id],status:'settled',survivors:[...survivors],...(loss?{extraKitLoss:loss}:{})};return validateKitDepot(next);
 }
 export function transferKitDepot(source,target,{soldiers=0,kits={}}={}){
  if(source.id===target.id)throw Error('来源与目标驻地不能相同');

@@ -1,0 +1,178 @@
+{
+  "version": "phase1-release-v5",
+  "date": "2026-10-22T12:00:00.882Z",
+  "section": "matrix",
+  "domain": "stage1-diagnostic-20261022-A",
+  "pairsPerCase": 200,
+  "sources": {
+    "src/card-battle.mjs": "0a31fb35ab2d951129cdc08beb320a3c9c5b273f6aecf0679ba46483ac14423c",
+    "src/card-battle-data.mjs": "c2015f6ada2a6081497ff05caa2d14a02e09714478766299dd91df9032f02b5a",
+    "scripts/card-battle-balance-fixture.mjs": "ee91f3149db232402821b94fdd3db56c9aebf21f4ed697a61b5423318212b656"
+  },
+  "rules": {
+    "version": 3,
+    "unitSize": 100,
+    "compactArmy": true,
+    "compactPenalty": true,
+    "troopCap": 18,
+    "boardLimit": 7,
+    "handLimit": 10,
+    "deckSize": 30,
+    "spellPackages": {
+      "martial": [
+        "precision",
+        "fire",
+        "fortify",
+        "assault",
+        "supply",
+        "pin",
+        "precision",
+        "fire",
+        "fortify",
+        "supply",
+        "dispel",
+        "heal"
+      ],
+      "intelligence": [
+        "precision",
+        "fire",
+        "arrows",
+        "barrage",
+        "pin",
+        "supply",
+        "precision",
+        "execute",
+        "arrows",
+        "barrage",
+        "pin",
+        "dispel"
+      ],
+      "command": [
+        "precision",
+        "fire",
+        "fortify",
+        "assault",
+        "supply",
+        "brace",
+        "fire",
+        "fortify",
+        "assault",
+        "supply",
+        "heal",
+        "dispel"
+      ]
+    },
+    "penaltyTiersOnly": true,
+    "reserveDeckGrowth": 2,
+    "lowTrainingPenalty": "general",
+    "scoutVariants": {
+      "intelligence": {
+        "cavalry": "cavalry_patrol_scout"
+      },
+      "command": {
+        "cavalry": "cavalry_patrol_scout"
+      }
+    }
+  },
+  "method": "Production cardAI + actCardsMutable; paired fixed A/B random streams, swapped first player. Each independent pair also varies equal ability-gated fixed person profiles. CI is paired normal 95%; draws score 0.5. Controller is heuristic, not a human or optimal policy.",
+  "games": 1200,
+  "elapsedSeconds": 4.535,
+  "rows": [
+    {
+      "id": "mixed_600-20-command",
+      "roster": "mixed_600",
+      "training": 20,
+      "hero": "command",
+      "pairs": 200,
+      "seedDomain": "stage1-diagnostic-20261022-A",
+      "games": 400,
+      "first": {
+        "mean": 0.4325,
+        "ci95": [
+          0.38403104345311606,
+          0.48096895654688393
+        ]
+      },
+      "home": {
+        "mean": 0.5175,
+        "ci95": [
+          0.46868378688062146,
+          0.5663162131193785
+        ]
+      },
+      "draws": 0,
+      "rounds": {
+        "median": 13,
+        "p90": 24,
+        "max": 32
+      },
+      "actions": 43331,
+      "validatedFinalStates": 8,
+      "deployed": []
+    },
+    {
+      "id": "ranged_1800-20-intelligence",
+      "roster": "ranged_1800",
+      "training": 20,
+      "hero": "intelligence",
+      "pairs": 200,
+      "seedDomain": "stage1-diagnostic-20261022-A",
+      "games": 400,
+      "first": {
+        "mean": 0.525,
+        "ci95": [
+          0.47699502747699285,
+          0.5730049725230072
+        ]
+      },
+      "home": {
+        "mean": 0.525,
+        "ci95": [
+          0.4750247800098356,
+          0.5749752199901644
+        ]
+      },
+      "draws": 0,
+      "rounds": {
+        "median": 14,
+        "p90": 18,
+        "max": 20
+      },
+      "actions": 39917,
+      "validatedFinalStates": 8,
+      "deployed": []
+    },
+    {
+      "id": "ranged_1800-90-intelligence",
+      "roster": "ranged_1800",
+      "training": 90,
+      "hero": "intelligence",
+      "pairs": 200,
+      "seedDomain": "stage1-diagnostic-20261022-A",
+      "games": 400,
+      "first": {
+        "mean": 0.535,
+        "ci95": [
+          0.4876224381501731,
+          0.582377561849827
+        ]
+      },
+      "home": {
+        "mean": 0.475,
+        "ci95": [
+          0.4245442379940805,
+          0.5254557620059195
+        ]
+      },
+      "draws": 0,
+      "rounds": {
+        "median": 15,
+        "p90": 18,
+        "max": 21
+      },
+      "actions": 41208,
+      "validatedFinalStates": 8,
+      "deployed": []
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-23T01:48:12.038368+00:00",
+  "wallClockAnchor": "2026-10-23T01:32:51.948661+00:00",
+  "wallClockElapsedSeconds": 920.089707,
+  "timingScope": "从教学归档后的明确计时锚点到本次归档；前面的用户需求分析不重复计入。",
+  "sources": {
+    "src/card-battle-status-effects.mjs": "4379abd4e3feaa88fe7c2e1ac30c86da81150b0333246fc40d18c09f24541440",
+    "src/card-battle-status-effects.css": "95c078b9ea008bccdc337726b8076801622f5eabcd007cbb42235f00fb00ba41",
+    "src/card-battle-ui.mjs": "80e54027b0a3cb19fcdbc968b49c6dc8d3ebd25eec3b82e692052d029836855c",
+    "index.html": "8eaad13f91e9a52d65f673cbcfab94070e7b8d7cdc3c106170666c0a53e1c02a",
+    "tests/card-battle-state-effects-desktop.cjs": "533d87d9a8d970aed553516618c7cf994bfb46b4a55396dd2596f5c7547b84de",
+    "tests/card-battle-v3-status.cjs": "8901829878489f8e5faaa21e796ccce70f5e0e018c4b96ea8d9c0e1148a0e2e5",
+    "src/card-battle.mjs": "e62167d930d57d4c5094e57ed3831db9f2797d892f813dba6dce4afb5e683a58"
+  },
+  "visual": {
+    "date": "2026-10-23T01:38:44.826Z",
+    "elapsedSeconds": 13.544,
+    "checks": [
+      "large numeric status badges are visually clipped while actual 5/10 and accessible +4 status remain exact",
+      "hover/focus detail retains exact attack and health arithmetic",
+      "persistent enhancement visibly animates over time while the physical card does not move",
+      "1440px keeps 5:7 proportions and animation never steals a native card hit",
+      "1000px keeps 5:7 proportions and animation never steals a native card hit",
+      "800px keeps 5:7 proportions and animation never steals a native card hit",
+      "frozen card has an actual ice shell and snow with distinct shield and temporary-flame layers",
+      "reduced-motion stops persistent animation while retaining the ice/shield state cues",
+      "silence uses a mist/sigil and stale ice, shield and buff layers are absent",
+      "cleared card removes its layers without touching battle values, identity or resources",
+      "closing releases animated layers and leaves the real save key untouched"
+    ],
+    "errors": [],
+    "preview": "docs/screenshots/card-battle-state-effects-preview.webm",
+    "fixture": "Explicit isolated tutorial presentation states; no rules, numeric card data or production saves changed."
+  },
+  "actualSpellLifecycle": {
+    "date": "2026-10-23T01:44:01.432Z",
+    "elapsedSeconds": 25.175,
+    "checks": [
+      "cast wind-up does not prematurely display the new status",
+      "impact shows +3 attack and this-turn duration on the target",
+      "temporary attack badge and green number remain after animation",
+      "detail explains the exact reported 1 + 3 = 4 and expiry",
+      "status survives saved-game JSON reopen",
+      "temporary attack expires with the owner turn and restores normal attack",
+      "persistent attack and health retain accessible semantics and a live enhancement layer",
+      "1440 persistent animation stays inside the fixed card and large status labels stay visually clipped",
+      "1440 end-turn lettering leaves space inside jade",
+      "1280 persistent animation stays inside the fixed card and large status labels stay visually clipped",
+      "1280 end-turn lettering leaves space inside jade",
+      "1000 persistent animation stays inside the fixed card and large status labels stay visually clipped",
+      "1000 end-turn lettering leaves space inside jade",
+      "enemy freeze has an accessible state and persistent ice shell",
+      "freeze state clears at the frozen side turn end",
+      "enemy card displays its combined active effects before silence",
+      "enemy silence remains visible after casting",
+      "actual silence removes earlier buffs, shield and freeze markers",
+      "active shield retains its accessible description",
+      "multiple effects avoid large text badges and all remain listed in detail",
+      "consumed shield does not leave a stale status"
+    ],
+    "consoleErrors": []
+  },
+  "relatedModelTests": {
+    "command": "node --test tests/card-battle-status.test.mjs tests/card-battle-history.test.mjs",
+    "passed": 10,
+    "elapsedSeconds": 2.985118125
+  },
+  "scope": "仅呈现层；正式引擎、卡表、AI、资源账本及保存格式未变。中毒机制未新增。隐藏Electron串行隔离运行。",
+  "remaining": "阶段四拖拽和基础音效，随后五、六，最后阶段一平衡及长期实机。"
+}

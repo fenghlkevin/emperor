@@ -1,0 +1,444 @@
+{
+  "date": "2026-10-22",
+  "scope": "局部静态换血，不含整局抽牌、费用时序、登场技能、武将或AI胜率",
+  "assumptions": "训练60，普通将领无额外加成，无城防；双方已就绪；交替主动攻击；双方同时伤害",
+  "matchups": [
+    {
+      "left": "轻骑",
+      "right": "刀盾",
+      "first": "轻骑",
+      "winner": "轻骑",
+      "remaining": [
+        2,
+        0
+      ],
+      "exchanges": 2,
+      "log": [
+        {
+          "attacker": "轻骑",
+          "damage": 5,
+          "counter": 3,
+          "remaining": [
+            5,
+            4
+          ]
+        },
+        {
+          "attacker": "刀盾",
+          "damage": 3,
+          "counter": 5,
+          "remaining": [
+            2,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "left": "轻骑",
+      "right": "刀盾",
+      "first": "刀盾",
+      "winner": "轻骑",
+      "remaining": [
+        2,
+        0
+      ],
+      "exchanges": 2,
+      "log": [
+        {
+          "attacker": "刀盾",
+          "damage": 3,
+          "counter": 5,
+          "remaining": [
+            5,
+            4
+          ]
+        },
+        {
+          "attacker": "轻骑",
+          "damage": 5,
+          "counter": 3,
+          "remaining": [
+            2,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "left": "长枪",
+      "right": "轻骑",
+      "first": "长枪",
+      "winner": "长枪",
+      "remaining": [
+        1,
+        0
+      ],
+      "exchanges": 2,
+      "log": [
+        {
+          "attacker": "长枪",
+          "damage": 6,
+          "counter": 5,
+          "remaining": [
+            6,
+            2
+          ]
+        },
+        {
+          "attacker": "轻骑",
+          "damage": 5,
+          "counter": 4,
+          "remaining": [
+            1,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "left": "长枪",
+      "right": "轻骑",
+      "first": "轻骑",
+      "winner": "长枪",
+      "remaining": [
+        1,
+        0
+      ],
+      "exchanges": 2,
+      "log": [
+        {
+          "attacker": "轻骑",
+          "damage": 5,
+          "counter": 4,
+          "remaining": [
+            6,
+            4
+          ]
+        },
+        {
+          "attacker": "长枪",
+          "damage": 6,
+          "counter": 5,
+          "remaining": [
+            1,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "left": "弓骑",
+      "right": "轻骑",
+      "first": "弓骑",
+      "winner": "弓骑",
+      "remaining": [
+        2,
+        0
+      ],
+      "exchanges": 2,
+      "log": [
+        {
+          "attacker": "弓骑",
+          "damage": 5,
+          "counter": 4,
+          "remaining": [
+            7,
+            3
+          ]
+        },
+        {
+          "attacker": "轻骑",
+          "damage": 5,
+          "counter": 5,
+          "remaining": [
+            2,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "left": "弓骑",
+      "right": "轻骑",
+      "first": "轻骑",
+      "winner": "弓骑",
+      "remaining": [
+        2,
+        0
+      ],
+      "exchanges": 2,
+      "log": [
+        {
+          "attacker": "轻骑",
+          "damage": 5,
+          "counter": 5,
+          "remaining": [
+            6,
+            3
+          ]
+        },
+        {
+          "attacker": "弓骑",
+          "damage": 5,
+          "counter": 4,
+          "remaining": [
+            2,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "left": "骆驼",
+      "right": "重骑",
+      "first": "骆驼",
+      "winner": "互换",
+      "remaining": [
+        0,
+        0
+      ],
+      "exchanges": 2,
+      "log": [
+        {
+          "attacker": "骆驼",
+          "damage": 7,
+          "counter": 7,
+          "remaining": [
+            3,
+            5
+          ]
+        },
+        {
+          "attacker": "重骑",
+          "damage": 7,
+          "counter": 5,
+          "remaining": [
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "left": "骆驼",
+      "right": "重骑",
+      "first": "重骑",
+      "winner": "互换",
+      "remaining": [
+        0,
+        0
+      ],
+      "exchanges": 2,
+      "log": [
+        {
+          "attacker": "重骑",
+          "damage": 7,
+          "counter": 5,
+          "remaining": [
+            3,
+            7
+          ]
+        },
+        {
+          "attacker": "骆驼",
+          "damage": 7,
+          "counter": 7,
+          "remaining": [
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "left": "象兵",
+      "right": "重骑",
+      "first": "象兵",
+      "winner": "象兵",
+      "remaining": [
+        3,
+        0
+      ],
+      "exchanges": 2,
+      "log": [
+        {
+          "attacker": "象兵",
+          "damage": 8,
+          "counter": 5,
+          "remaining": [
+            10,
+            4
+          ]
+        },
+        {
+          "attacker": "重骑",
+          "damage": 7,
+          "counter": 8,
+          "remaining": [
+            3,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "left": "象兵",
+      "right": "重骑",
+      "first": "重骑",
+      "winner": "象兵",
+      "remaining": [
+        3,
+        0
+      ],
+      "exchanges": 2,
+      "log": [
+        {
+          "attacker": "重骑",
+          "damage": 7,
+          "counter": 8,
+          "remaining": [
+            8,
+            4
+          ]
+        },
+        {
+          "attacker": "象兵",
+          "damage": 8,
+          "counter": 5,
+          "remaining": [
+            3,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "left": "弩兵",
+      "right": "刀盾",
+      "first": "弩兵",
+      "winner": "弩兵",
+      "remaining": [
+        2,
+        0
+      ],
+      "exchanges": 2,
+      "log": [
+        {
+          "attacker": "弩兵",
+          "damage": 8,
+          "counter": 3,
+          "remaining": [
+            5,
+            1
+          ]
+        },
+        {
+          "attacker": "刀盾",
+          "damage": 3,
+          "counter": 6,
+          "remaining": [
+            2,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "left": "弩兵",
+      "right": "刀盾",
+      "first": "刀盾",
+      "winner": "弩兵",
+      "remaining": [
+        2,
+        0
+      ],
+      "exchanges": 2,
+      "log": [
+        {
+          "attacker": "刀盾",
+          "damage": 3,
+          "counter": 6,
+          "remaining": [
+            5,
+            3
+          ]
+        },
+        {
+          "attacker": "弩兵",
+          "damage": 8,
+          "counter": 3,
+          "remaining": [
+            2,
+            0
+          ]
+        }
+      ]
+    }
+  ],
+  "opening": {
+    "starting_mana": 3,
+    "starting_hand": 4,
+    "mandatory_vanguard_cost": 2,
+    "remaining_after_vanguard": 1
+  },
+  "army_budget_examples": [
+    {
+      "soldiers": 1,
+      "initial_entity_cards": 1,
+      "max_general_cards": 0
+    },
+    {
+      "soldiers": 100,
+      "initial_entity_cards": 1,
+      "max_general_cards": 0
+    },
+    {
+      "soldiers": 200,
+      "initial_entity_cards": 2,
+      "max_general_cards": 1
+    },
+    {
+      "soldiers": 600,
+      "initial_entity_cards": 6,
+      "max_general_cards": 1
+    },
+    {
+      "soldiers": 840,
+      "initial_entity_cards": 8,
+      "max_general_cards": 2
+    },
+    {
+      "soldiers": 1000,
+      "initial_entity_cards": 10,
+      "max_general_cards": 2
+    },
+    {
+      "soldiers": 1800,
+      "initial_entity_cards": 18,
+      "max_general_cards": 3
+    },
+    {
+      "soldiers": 6000,
+      "initial_entity_cards": 18,
+      "max_general_cards": 3
+    }
+  ],
+  "frontline_same_training": {
+    "infantry_life": 9,
+    "heavy_cavalry_attack": 7,
+    "remaining_after_one_hit": 2
+  },
+  "stat_caps": {
+    "training90_martial_leader_infantry": {
+      "attack": 5,
+      "life": 11,
+      "with_city_life": 13
+    },
+    "training90_command_leader_infantry": {
+      "attack": 4,
+      "life": 12,
+      "with_city_life": 14
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "jobs": [
+    {
+      "id": "cbdb-94373",
+      "path": "assets/battle/people/cbdb-94373-battle-v1.png",
+      "origin": "/Users/fengheliang/.codex/generated_images/01a16381-85b9-71f1-8014-3769188dd4cf/exec-43d4d97d-f4a1-418e-90dd-8bf8b470d4f8.png",
+      "prompt": "Identity-preserving game illustration. One fullbleed vertical5:7 historical battle card illustration, no text or UI. Preserve image1 Guo Ziyi's elderly recognizable face, long white beard, bronze-gold armor, red cloak and red-plumed bronze helmet. Replace fullbody studio pose with waist-up close commanding portrait, large head upper third, whole helmet visible. Warm painterly battlefield style matching image2 original Zhang Fei UI card; golden daylight, distant ordered troops and blank red standards in fortified command camp, confident calm veteran. No magical effects, studio background, border, lettering or watermark. Game art, not archaeological reconstruction.",
+      "sha256": "24a19fbdb9abc2962bc19923c1989a31c9885e9aab88e0aa66cce5b8892a5a76",
+      "dimensions": [
+        1060,
+        1484
+      ]
+    }
+  ]
+}

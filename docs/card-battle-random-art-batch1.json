@@ -1,0 +1,264 @@
+{
+  "assets": [
+    {
+      "id": "random-civil-1",
+      "art": "assets/officials/random/random-civil-1/full.png",
+      "prompt": "One vertical 5:7 identity-preserving battle illustration of fictional civilian portrait pool random-civil-1. Image 1 is exact identity reference: preserve this individual's face, age, build, facial hair, hat, robe colors and accessories, no historical person substitution. Image 2 supplies approved warm painterly Zhang Fei battlefield style only. Waist-up close portrait with large face and shoulders, whole hat visible, field administration pavilion with distant organized troops and blank banners in golden daylight. Preserve unarmored civil robes, no added weapon or magic. Keep original scroll/book/brush accessories with no writing. No text, numbers, UI/card frame, watermark or studio backdrop. Detailed game illustration for a fixed fictional identity pool.",
+      "origin": "/Users/fengheliang/.codex/generated_images/01a16381-85b9-71f1-8014-3769188dd4cf/exec-51a6b84c-432a-4c44-9232-de46e2665080.png",
+      "path": "assets/battle/people/random-civil-1-battle-v1.png",
+      "dimensions": [
+        1060,
+        1484
+      ],
+      "sha256": "2c2d574ae1d95bc2c3c4aee871bb13e3cbbd979ef7eef4d691ed032f87a06bb1",
+      "status": "integrated-card-ui-validated"
+    },
+    {
+      "id": "random-civil-2",
+      "art": "assets/officials/random/random-civil-2/full.png",
+      "prompt": "One vertical 5:7 identity-preserving battle illustration of fictional civilian portrait pool random-civil-2. Image 1 is exact identity reference: preserve this individual's face, age, build, facial hair, hat, robe colors and accessories, no historical person substitution. Image 2 supplies approved warm painterly Zhang Fei battlefield style only. Waist-up close portrait with large face and shoulders, whole hat visible, field administration pavilion with distant organized troops and blank banners in golden daylight. Preserve unarmored civil robes, no added weapon or magic. Keep original scroll/book/brush accessories with no writing. No text, numbers, UI/card frame, watermark or studio backdrop. Detailed game illustration for a fixed fictional identity pool.",
+      "origin": "/Users/fengheliang/.codex/generated_images/01a16381-85b9-71f1-8014-3769188dd4cf/exec-c7c3fa01-41c1-4b6d-84d4-ca139613c141.png",
+      "path": "assets/battle/people/random-civil-2-battle-v1.png",
+      "dimensions": [
+        1060,
+        1484
+      ],
+      "sha256": "286c8d50ef1549de885776cec3f28a2b8dbadb60a16bcbf1d1998e383f9e230b",
+      "status": "integrated-card-ui-validated"
+    },
+    {
+      "id": "random-civil-3",
+      "art": "assets/officials/random/random-civil-3/full.png",
+      "prompt": "One vertical 5:7 identity-preserving battle illustration of fictional civilian portrait pool random-civil-3. Image 1 is exact identity reference: preserve this individual's face, age, build, facial hair, hat, robe colors and accessories, no historical person substitution. Image 2 supplies approved warm painterly Zhang Fei battlefield style only. Waist-up close portrait with large face and shoulders, whole hat visible, field administration pavilion with distant organized troops and blank banners in golden daylight. Preserve unarmored civil robes, no added weapon or magic. Keep original scroll/book/brush accessories with no writing. No text, numbers, UI/card frame, watermark or studio backdrop. Detailed game illustration for a fixed fictional identity pool.",
+      "origin": "/Users/fengheliang/.codex/generated_images/01a16381-85b9-71f1-8014-3769188dd4cf/exec-f4f639c7-c0ea-4c02-8d25-6d597efedd1a.png",
+      "path": "assets/battle/people/random-civil-3-battle-v1.png",
+      "dimensions": [
+        1060,
+        1484
+      ],
+      "sha256": "ba14586115566838aa036eda974604e8d773329ca2aa8b543d21af2b1f4d7e0f",
+      "status": "integrated-card-ui-validated"
+    },
+    {
+      "id": "random-civil-4",
+      "art": "assets/officials/random/random-civil-4/full.png",
+      "prompt": "One vertical 5:7 identity-preserving battle illustration of fictional civilian portrait pool random-civil-4. Image 1 is exact identity reference: preserve this individual's face, age, build, facial hair, hat, robe colors and accessories, no historical person substitution. Image 2 supplies approved warm painterly Zhang Fei battlefield style only. Waist-up close portrait with large face and shoulders, whole hat visible, field administration pavilion with distant organized troops and blank banners in golden daylight. Preserve unarmored civil robes, no added weapon or magic. Keep original scroll/book/brush accessories with no writing. No text, numbers, UI/card frame, watermark or studio backdrop. Detailed game illustration for a fixed fictional identity pool.",
+      "origin": "/Users/fengheliang/.codex/generated_images/01a16381-85b9-71f1-8014-3769188dd4cf/exec-70517568-bc87-4094-8b6e-b7f15214232c.png",
+      "path": "assets/battle/people/random-civil-4-battle-v1.png",
+      "dimensions": [
+        1060,
+        1484
+      ],
+      "sha256": "b5dbc04f75d8852589d401a050681d18e894c39252e9357885487ea3413f184e",
+      "status": "integrated-card-ui-validated"
+    },
+    {
+      "id": "random-civil-5",
+      "art": "assets/officials/random/random-civil-5/full.png",
+      "prompt": "One vertical 5:7 identity-preserving battle illustration of fictional civilian portrait pool random-civil-5. Image 1 is exact identity reference: preserve this individual's face, age, build, facial hair, hat, robe colors and accessories, no historical person substitution. Image 2 supplies approved warm painterly Zhang Fei battlefield style only. Waist-up close portrait with large face and shoulders, whole hat visible, field administration pavilion with distant organized troops and blank banners in golden daylight. Preserve unarmored civil robes, no added weapon or magic. Keep original scroll/book/brush accessories with no writing. No text, numbers, UI/card frame, watermark or studio backdrop. Detailed game illustration for a fixed fictional identity pool.",
+      "origin": "/Users/fengheliang/.codex/generated_images/01a16381-85b9-71f1-8014-3769188dd4cf/exec-70a78972-a296-42f2-b2cf-23e60a51c848.png",
+      "path": "assets/battle/people/random-civil-5-battle-v1.png",
+      "dimensions": [
+        1060,
+        1484
+      ],
+      "sha256": "ae37adce727d6bb463e4a803bf6cbf451f3cccee8351e007af1693a1daa249e7",
+      "status": "integrated-card-ui-validated"
+    },
+    {
+      "id": "random-civil-6",
+      "art": "assets/officials/random/random-civil-6/full.png",
+      "prompt": "One vertical 5:7 identity-preserving battle illustration of fictional civilian portrait pool random-civil-6. Image 1 is exact identity reference: preserve this individual's face, age, build, facial hair, hat, robe colors and accessories, no historical person substitution. Image 2 supplies approved warm painterly Zhang Fei battlefield style only. Waist-up close portrait with large face and shoulders, whole hat visible, field administration pavilion with distant organized troops and blank banners in golden daylight. Preserve unarmored civil robes, no added weapon or magic. Keep original scroll/book/brush accessories with no writing. No text, numbers, UI/card frame, watermark or studio backdrop. Detailed game illustration for a fixed fictional identity pool.",
+      "origin": "/Users/fengheliang/.codex/generated_images/01a16381-85b9-71f1-8014-3769188dd4cf/exec-930a5e1f-b79f-41d0-8545-053d0649d473.png",
+      "path": "assets/battle/people/random-civil-6-battle-v1.png",
+      "dimensions": [
+        1060,
+        1484
+      ],
+      "sha256": "94b64ed9fe4989d324bd8d34ecd73d4ff255634aa1a38acb64f808a2c9b05a97",
+      "status": "integrated-card-ui-validated"
+    },
+    {
+      "id": "random-civil-7",
+      "art": "assets/officials/random/random-civil-7/full.png",
+      "prompt": "One vertical 5:7 identity-preserving battle illustration of fictional civilian portrait pool random-civil-7. Image 1 is exact identity reference: preserve this individual's face, age, build, facial hair, hat, robe colors and accessories, no historical person substitution. Image 2 supplies approved warm painterly Zhang Fei battlefield style only. Waist-up close portrait with large face and shoulders, whole hat visible, field administration pavilion with distant organized troops and blank banners in golden daylight. Preserve unarmored civil robes, no added weapon or magic. Keep original scroll/book/brush accessories with no writing. No text, numbers, UI/card frame, watermark or studio backdrop. Detailed game illustration for a fixed fictional identity pool.",
+      "origin": "/Users/fengheliang/.codex/generated_images/01a16381-85b9-71f1-8014-3769188dd4cf/exec-dd5ad3bc-d213-411e-8fbd-bd39f957455d.png",
+      "path": "assets/battle/people/random-civil-7-battle-v1.png",
+      "dimensions": [
+        1060,
+        1484
+      ],
+      "sha256": "ecff16dba05be57d51966aa58e6cbcd9fe9ea3d6784f104335131b975e44d1e9",
+      "status": "integrated-card-ui-validated"
+    },
+    {
+      "id": "random-civil-8",
+      "art": "assets/officials/random/random-civil-8/full.png",
+      "prompt": "One vertical 5:7 identity-preserving battle illustration of fictional civilian portrait pool random-civil-8. Image 1 is exact identity reference: preserve this individual's face, age, build, facial hair, hat, robe colors and accessories, no historical person substitution. Image 2 supplies approved warm painterly Zhang Fei battlefield style only. Waist-up close portrait with large face and shoulders, whole hat visible, field administration pavilion with distant organized troops and blank banners in golden daylight. Preserve unarmored civil robes, no added weapon or magic. Keep original scroll/book/brush accessories with no writing. No text, numbers, UI/card frame, watermark or studio backdrop. Detailed game illustration for a fixed fictional identity pool.",
+      "origin": "/Users/fengheliang/.codex/generated_images/01a16381-85b9-71f1-8014-3769188dd4cf/exec-fc5c9c92-f3f7-4806-bdbd-14a85f2ae8cf.png",
+      "path": "assets/battle/people/random-civil-8-battle-v1.png",
+      "dimensions": [
+        1060,
+        1484
+      ],
+      "sha256": "673e114460aac281e3bb46d27328eb390eec2d304cad40c2eade7d1cf7f451f5",
+      "status": "integrated-card-ui-validated"
+    },
+    {
+      "id": "random-civil-9",
+      "art": "assets/officials/random/random-civil-9/full.png",
+      "prompt": "One vertical 5:7 identity-preserving battle illustration of fictional civilian portrait pool random-civil-9. Image 1 is exact identity reference: preserve this individual's face, age, build, facial hair, hat, robe colors and accessories, no historical person substitution. Image 2 supplies approved warm painterly Zhang Fei battlefield style only. Waist-up close portrait with large face and shoulders, whole hat visible, field administration pavilion with distant organized troops and blank banners in golden daylight. Preserve unarmored civil robes, no added weapon or magic. Keep original scroll/book/brush accessories with no writing. No text, numbers, UI/card frame, watermark or studio backdrop. Detailed game illustration for a fixed fictional identity pool.",
+      "origin": "/Users/fengheliang/.codex/generated_images/01a16381-85b9-71f1-8014-3769188dd4cf/exec-daabcdb4-077e-4043-b627-a43b7a0095d0.png",
+      "path": "assets/battle/people/random-civil-9-battle-v1.png",
+      "dimensions": [
+        1060,
+        1484
+      ],
+      "sha256": "d9364084c1a2b43a402bb5fed33a42f789dc4b7b8d4aadf1d042b9d3adb3bc56",
+      "status": "integrated-card-ui-validated"
+    },
+    {
+      "id": "random-civil-10",
+      "art": "assets/officials/random/random-civil-10/full.png",
+      "prompt": "One vertical 5:7 identity-preserving battle illustration of fictional civilian portrait pool random-civil-10. Image 1 is exact identity reference: preserve this individual's face, age, build, facial hair, hat, robe colors and accessories, no historical person substitution. Image 2 supplies approved warm painterly Zhang Fei battlefield style only. Waist-up close portrait with large face and shoulders, whole hat visible, field administration pavilion with distant organized troops and blank banners in golden daylight. Preserve unarmored civil robes, no added weapon or magic. Keep original scroll/book/brush accessories with no writing. No text, numbers, UI/card frame, watermark or studio backdrop. Detailed game illustration for a fixed fictional identity pool.",
+      "origin": "/Users/fengheliang/.codex/generated_images/01a16381-85b9-71f1-8014-3769188dd4cf/exec-929ac997-6a7b-4487-81fa-a42f3db92fee.png",
+      "path": "assets/battle/people/random-civil-10-battle-v1.png",
+      "dimensions": [
+        1060,
+        1484
+      ],
+      "sha256": "affe27366d62970c6f03afae654f9a75d59085b7bdaa47e72d2b77e0bef63f3b",
+      "status": "integrated-card-ui-validated"
+    },
+    {
+      "id": "random-military-1",
+      "art": "assets/officials/random/random-military-1/full.png",
+      "prompt": "One vertical 5:7 identity-preserving battle illustration of fictional military portrait pool random-military-1. Image 1 defines exact face, age, body build, facial hair, hairstyle, helmet or cloth hat, armor, robe colors and existing weapons. Preserve recognizable individual identity, do not substitute a famous historical general or change original headwear. Image 2 defines approved warm painterly Zhang Fei battlefield style only. Waist-up commanding close portrait with large face and shoulders and full headwear visible; golden daylight, field command pavilion, distant ordered troops and blank standards. Existing weapon only, no magic. No writing, numbers, UI/card frame, watermark or studio background. Detailed game art for a fixed fictional portrait pool.",
+      "origin": "/Users/fengheliang/.codex/generated_images/01a16381-85b9-71f1-8014-3769188dd4cf/exec-44fec266-29da-4b09-bd77-fb4b278e8bf3.png",
+      "path": "assets/battle/people/random-military-1-battle-v1.png",
+      "dimensions": [
+        1060,
+        1484
+      ],
+      "sha256": "573fa2dc58f9261bffa73f36220111b869596ae451bc4fb5e4b2db3dbcaa4b7d",
+      "status": "integrated-card-ui-validated"
+    },
+    {
+      "id": "random-military-2",
+      "art": "assets/officials/random/random-military-2/full.png",
+      "prompt": "One vertical 5:7 identity-preserving battle illustration of fictional military portrait pool random-military-2. Image 1 defines exact face, age, body build, facial hair, hairstyle, helmet or cloth hat, armor, robe colors and existing weapons. Preserve recognizable individual identity, do not substitute a famous historical general or change original headwear. Image 2 defines approved warm painterly Zhang Fei battlefield style only. Waist-up commanding close portrait with large face and shoulders and full headwear visible; golden daylight, field command pavilion, distant ordered troops and blank standards. Existing weapon only, no magic. No writing, numbers, UI/card frame, watermark or studio background. Detailed game art for a fixed fictional portrait pool.",
+      "origin": "/Users/fengheliang/.codex/generated_images/01a16381-85b9-71f1-8014-3769188dd4cf/exec-926fe5f5-0a81-4fc9-8908-f91f19505fc7.png",
+      "path": "assets/battle/people/random-military-2-battle-v1.png",
+      "dimensions": [
+        1060,
+        1484
+      ],
+      "sha256": "0c0bab56acd2bc6106f94fe5be13cbe6f074ca7069c275d323bce8c0abb2f927",
+      "status": "integrated-card-ui-validated"
+    },
+    {
+      "id": "random-military-3",
+      "art": "assets/officials/random/random-military-3/full.png",
+      "prompt": "One vertical 5:7 identity-preserving battle illustration of fictional military portrait pool random-military-3. Image 1 defines exact face, age, body build, facial hair, hairstyle, helmet or cloth hat, armor, robe colors and existing weapons. Preserve recognizable individual identity, do not substitute a famous historical general or change original headwear. Image 2 defines approved warm painterly Zhang Fei battlefield style only. Waist-up commanding close portrait with large face and shoulders and full headwear visible; golden daylight, field command pavilion, distant ordered troops and blank standards. Existing weapon only, no magic. No writing, numbers, UI/card frame, watermark or studio background. Detailed game art for a fixed fictional portrait pool.",
+      "origin": "/Users/fengheliang/.codex/generated_images/01a16381-85b9-71f1-8014-3769188dd4cf/exec-5f9a011d-a00a-4365-bf9a-32aa92dec3da.png",
+      "path": "assets/battle/people/random-military-3-battle-v1.png",
+      "dimensions": [
+        1060,
+        1484
+      ],
+      "sha256": "a875bf183ba5e7c9f54a677fa4645900d10456e4d127637301175bf22302378e",
+      "status": "integrated-card-ui-validated"
+    },
+    {
+      "id": "random-military-4",
+      "art": "assets/officials/random/random-military-4/full.png",
+      "prompt": "One vertical 5:7 identity-preserving battle illustration of fictional military portrait pool random-military-4. Image 1 defines exact face, age, body build, facial hair, hairstyle, helmet or cloth hat, armor, robe colors and existing weapons. Preserve recognizable individual identity, do not substitute a famous historical general or change original headwear. Image 2 defines approved warm painterly Zhang Fei battlefield style only. Waist-up commanding close portrait with large face and shoulders and full headwear visible; golden daylight, field command pavilion, distant ordered troops and blank standards. Existing weapon only, no magic. No writing, numbers, UI/card frame, watermark or studio background. Detailed game art for a fixed fictional portrait pool.",
+      "origin": "/Users/fengheliang/.codex/generated_images/01a16381-85b9-71f1-8014-3769188dd4cf/exec-d1dea27f-39bf-42c6-b901-a38249e1b356.png",
+      "path": "assets/battle/people/random-military-4-battle-v1.png",
+      "dimensions": [
+        1060,
+        1484
+      ],
+      "sha256": "a62efd22d7ce0f56cb6914c3eb5d1c865d6c0335c84964258a4e53d9814f7ee1",
+      "status": "integrated-card-ui-validated"
+    },
+    {
+      "id": "random-military-5",
+      "art": "assets/officials/random/random-military-5/full.png",
+      "prompt": "One vertical 5:7 identity-preserving battle illustration of fictional military portrait pool random-military-5. Image 1 defines exact face, age, body build, facial hair, hairstyle, helmet or cloth hat, armor, robe colors and existing weapons. Preserve recognizable individual identity, do not substitute a famous historical general or change original headwear. Image 2 defines approved warm painterly Zhang Fei battlefield style only. Waist-up commanding close portrait with large face and shoulders and full headwear visible; golden daylight, field command pavilion, distant ordered troops and blank standards. Existing weapon only, no magic. No writing, numbers, UI/card frame, watermark or studio background. Detailed game art for a fixed fictional portrait pool.",
+      "origin": "/Users/fengheliang/.codex/generated_images/01a16381-85b9-71f1-8014-3769188dd4cf/exec-fb7312e9-e4ed-43d2-8b12-f5737b9917b6.png",
+      "path": "assets/battle/people/random-military-5-battle-v1.png",
+      "dimensions": [
+        1060,
+        1484
+      ],
+      "sha256": "3c96527ee2d7c426c749884929501df1a699f05f0f5437b29a56b28add9139a7",
+      "status": "integrated-card-ui-validated"
+    },
+    {
+      "id": "random-military-6",
+      "art": "assets/officials/random/random-military-6/full.png",
+      "prompt": "One vertical 5:7 identity-preserving battle illustration of fictional military portrait pool random-military-6. Image 1 defines exact face, age, body build, facial hair, hairstyle, helmet or cloth hat, armor, robe colors and existing weapons. Preserve recognizable individual identity, do not substitute a famous historical general or change original headwear. Image 2 defines approved warm painterly Zhang Fei battlefield style only. Waist-up commanding close portrait with large face and shoulders and full headwear visible; golden daylight, field command pavilion, distant ordered troops and blank standards. Existing weapon only, no magic. No writing, numbers, UI/card frame, watermark or studio background. Detailed game art for a fixed fictional portrait pool.",
+      "origin": "/Users/fengheliang/.codex/generated_images/01a16381-85b9-71f1-8014-3769188dd4cf/exec-3c345113-43fc-419b-8c5e-a2bc18a7fc19.png",
+      "path": "assets/battle/people/random-military-6-battle-v1.png",
+      "dimensions": [
+        1062,
+        1482
+      ],
+      "sha256": "13f64baaa2c3aa287db92c8c164b2dd2446304e7149f8a6c94359c755e9ed8c2",
+      "status": "integrated-card-ui-validated"
+    },
+    {
+      "id": "random-military-7",
+      "art": "assets/officials/random/random-military-7/full.png",
+      "prompt": "One vertical 5:7 identity-preserving battle illustration of fictional military portrait pool random-military-7. Image 1 defines exact face, age, body build, facial hair, hairstyle, helmet or cloth hat, armor, robe colors and existing weapons. Preserve recognizable individual identity, do not substitute a famous historical general or change original headwear. Image 2 defines approved warm painterly Zhang Fei battlefield style only. Waist-up commanding close portrait with large face and shoulders and full headwear visible; golden daylight, field command pavilion, distant ordered troops and blank standards. Existing weapon only, no magic. No writing, numbers, UI/card frame, watermark or studio background. Detailed game art for a fixed fictional portrait pool.",
+      "origin": "/Users/fengheliang/.codex/generated_images/01a16381-85b9-71f1-8014-3769188dd4cf/exec-9b56abe6-2b43-4d3e-bbb7-00865aab0123.png",
+      "path": "assets/battle/people/random-military-7-battle-v1.png",
+      "dimensions": [
+        1060,
+        1484
+      ],
+      "sha256": "c817f9b92158ad5820f13cf659a6e4eb049df5e5b4811e408f98551cba9d163a",
+      "status": "integrated-card-ui-validated"
+    },
+    {
+      "id": "random-military-8",
+      "art": "assets/officials/random/random-military-8/full.png",
+      "prompt": "One vertical 5:7 identity-preserving battle illustration of fictional military portrait pool random-military-8. Image 1 defines exact face, age, body build, facial hair, hairstyle, helmet or cloth hat, armor, robe colors and existing weapons. Preserve recognizable individual identity, do not substitute a famous historical general or change original headwear. Image 2 defines approved warm painterly Zhang Fei battlefield style only. Waist-up commanding close portrait with large face and shoulders and full headwear visible; golden daylight, field command pavilion, distant ordered troops and blank standards. Existing weapon only, no magic. No writing, numbers, UI/card frame, watermark or studio background. Detailed game art for a fixed fictional portrait pool.",
+      "origin": "/Users/fengheliang/.codex/generated_images/01a16381-85b9-71f1-8014-3769188dd4cf/exec-dca73e0a-e199-4bd5-9c83-585e74fb898b.png",
+      "path": "assets/battle/people/random-military-8-battle-v1.png",
+      "dimensions": [
+        1060,
+        1484
+      ],
+      "sha256": "90ade4421bda7e4931fcbeaf338b5f5f4676383f50cd10dc3175d6481ea4c35c",
+      "status": "integrated-card-ui-validated"
+    },
+    {
+      "id": "random-military-9",
+      "art": "assets/officials/random/random-military-9/full.png",
+      "prompt": "One vertical 5:7 identity-preserving battle illustration of fictional military portrait pool random-military-9. Image 1 defines exact face, age, body build, facial hair, hairstyle, helmet or cloth hat, armor, robe colors and existing weapons. Preserve recognizable individual identity, do not substitute a famous historical general or change original headwear. Image 2 defines approved warm painterly Zhang Fei battlefield style only. Waist-up commanding close portrait with large face and shoulders and full headwear visible; golden daylight, field command pavilion, distant ordered troops and blank standards. Existing weapon only, no magic. No writing, numbers, UI/card frame, watermark or studio background. Detailed game art for a fixed fictional portrait pool.",
+      "origin": "/Users/fengheliang/.codex/generated_images/01a16381-85b9-71f1-8014-3769188dd4cf/exec-d136800b-58a6-439f-ae03-0262e59246c1.png",
+      "path": "assets/battle/people/random-military-9-battle-v1.png",
+      "dimensions": [
+        1060,
+        1484
+      ],
+      "sha256": "6292f24f7c00c66633cc183da7fd749587ef8364ca7e8782b6f343bb70e39c05",
+      "status": "integrated-card-ui-validated"
+    },
+    {
+      "id": "random-military-10",
+      "art": "assets/officials/random/random-military-10/full.png",
+      "prompt": "One vertical 5:7 identity-preserving battle illustration of fictional military portrait pool random-military-10. Image 1 defines exact face, age, body build, facial hair, hairstyle, helmet or cloth hat, armor, robe colors and existing weapons. Preserve recognizable individual identity, do not substitute a famous historical general or change original headwear. Image 2 defines approved warm painterly Zhang Fei battlefield style only. Waist-up commanding close portrait with large face and shoulders and full headwear visible; golden daylight, field command pavilion, distant ordered troops and blank standards. Existing weapon only, no magic. No writing, numbers, UI/card frame, watermark or studio background. Detailed game art for a fixed fictional portrait pool.",
+      "origin": "/Users/fengheliang/.codex/generated_images/01a16381-85b9-71f1-8014-3769188dd4cf/exec-e66c52c7-5c7b-402a-bc81-235cf8722a9a.png",
+      "path": "assets/battle/people/random-military-10-battle-v1.png",
+      "dimensions": [
+        1060,
+        1484
+      ],
+      "sha256": "f69e15260f514a893e37788f1a38cf8dd8ace4572efbf4d39110fabf93932e20",
+      "status": "integrated-card-ui-validated"
+    }
+  ]
+}

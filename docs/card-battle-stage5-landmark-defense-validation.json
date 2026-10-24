@@ -1,0 +1,140 @@
+{
+  "date": "2026-10-23T07:17:30.867Z",
+  "elapsedSeconds": 25.123,
+  "checks": [
+    "hebei opens one shared landmark draft without reserving soldiers or equipment",
+    "hebei invalid three-card landmark choice cannot apply or change the world",
+    "hebei two landmarks apply only to the draft",
+    "hebei tactic budget deducts both two weapons and two landmarks from the actual allied army deck",
+    "hebei review names actual commander military source and no extra resources",
+    "1440px keeps actual source quote inside detail and native seal reachable with five configuration controls",
+    "1000px keeps actual source quote inside detail and native seal reachable with five configuration controls",
+    "800px keeps actual source quote inside detail and native seal reachable with five configuration controls",
+    "hebei full deck shows two actual military-order cards with source and no false troop stats",
+    "hebei native seal equals the entire formal rule6 launch state exactly once",
+    "hebei landmarks share the actual commander identity and reserve no gear beyond the two selected weapons",
+    "hebei native defense facility deployment equals formal full state and unlocks",
+    "hebei native defense facility activation applies real rally and one use exactly once",
+    "hebei real retreat finishes and releases the defense once",
+    "central opens one shared landmark draft without reserving soldiers or equipment",
+    "central invalid three-card landmark choice cannot apply or change the world",
+    "central two landmarks apply only to the draft",
+    "central tactic budget deducts both two weapons and two landmarks from the actual allied army deck",
+    "central review names actual commander military source and no extra resources",
+    "central full deck shows two actual military-order cards with source and no false troop stats",
+    "central native seal equals the entire formal rule6 launch state exactly once",
+    "central landmarks share the actual commander identity and reserve no gear beyond the two selected weapons",
+    "central native defense facility deployment equals formal full state and unlocks",
+    "central native defense facility activation applies real rally and one use exactly once",
+    "central real retreat finishes and releases the defense once",
+    "tubo-core opens one shared landmark draft without reserving soldiers or equipment",
+    "tubo-core invalid three-card landmark choice cannot apply or change the world",
+    "tubo-core two landmarks apply only to the draft",
+    "tubo-core tactic budget deducts both two weapons and two landmarks from the actual allied army deck",
+    "tubo-core review names actual commander military source and no extra resources",
+    "tubo-core full deck shows two actual military-order cards with source and no false troop stats",
+    "tubo-core native seal equals the entire formal rule6 launch state exactly once",
+    "tubo-core landmarks share the actual commander identity and reserve no gear beyond the two selected weapons",
+    "tubo-core native defense facility deployment equals formal full state and unlocks",
+    "tubo-core native defense facility activation applies real rally and one use exactly once",
+    "tubo-core real retreat finishes and releases the defense once",
+    "landmark-equipped defense draft reaches existing plan library",
+    "backup shared landmark draft changes no real source resource",
+    "backup defense native deploy really starts selected rule6 landmarks"
+  ],
+  "errors": [],
+  "scope": "Three actual commander source choices; native Apply/Review/Seal plus actual facility deploy/use, exact formal full-state compare. Explicitly disclosed hand fixtures after launch for function testing only. Hidden isolated world; no old-save compatibility or audio tests.",
+  "archivedAt": "2026-10-23T07:21:10.539128+00:00",
+  "heartbeatStartedAt": "2026-10-23T07:10:15.250000+00:00",
+  "wallSeconds": 655.289,
+  "rulesVersion": 6,
+  "landmarkCatalogVersion": 1,
+  "landmarkAiVersion": 1,
+  "models": {
+    "command": "CARD_DEFENSE_LANDMARK_EVIDENCE=/private/tmp/card-defense-landmark node --test tests/card-battle-defense-landmarks.test.mjs tests/card-battle-landmark-plans.test.mjs tests/card-battle-defense-secrets.test.mjs tests/card-battle-defense-weapons.test.mjs",
+    "passed": 27,
+    "newChecks": 8,
+    "failed": 0,
+    "elapsedSeconds": 8.946146625,
+    "log": "/private/tmp/card-defense-landmark-model.log"
+  },
+  "fullRegression": {
+    "command": "npm test",
+    "passed": 994,
+    "failed": 0,
+    "runtimeContracts": 44,
+    "elapsedSeconds": 82.912124959,
+    "log": "/private/tmp/card-defense-landmark-full.log"
+  },
+  "native": {
+    "command": "npm run test:card-battle-defense-landmarks",
+    "passed": 39,
+    "elapsedSeconds": 25.123,
+    "log": "/private/tmp/card-defense-landmark-ui.log"
+  },
+  "nativeRegressions": [
+    {
+      "command": "npm run test:card-battle-defense-secrets",
+      "passed": 33,
+      "elapsedSeconds": 15.668,
+      "log": "/private/tmp/card-defense-landmark-secret-regression.log"
+    },
+    {
+      "command": "npm run test:card-battle-defense-weapons",
+      "passed": 27,
+      "elapsedSeconds": 14.333,
+      "log": "/private/tmp/card-defense-landmark-weapon-regression.log"
+    }
+  ],
+  "seedSmoke": {
+    "command": "node scripts/validate-card-defense-landmarks.mjs docs/fixtures/card-defense-landmarks-bases.json",
+    "cases": 12,
+    "sources": [
+      "central",
+      "hebei",
+      "tubo-core"
+    ],
+    "seeds": [
+      324161,
+      6700417
+    ],
+    "first": [
+      "home",
+      "enemy"
+    ],
+    "landmarkPlays": 31,
+    "landmarkUses": 39,
+    "elapsedSeconds": 4.5122789580000005,
+    "evidence": "docs/card-battle-stage5-landmark-defense-smoke.json"
+  },
+  "screenshots": [
+    "docs/screenshots/card-battle-defense-landmarks-1440.png",
+    "docs/screenshots/card-battle-defense-landmarks-1000.png",
+    "docs/screenshots/card-battle-defense-landmarks-800.png"
+  ],
+  "resolvedFailures": [
+    "Initial archive assertion read packed archive directly; corrected to readCardHistoryArchive and verified actual rule6 public history.",
+    "Extended native fixture left a closed deployment dialog in DOM, causing the next fixture to hit stale hidden nodes; fixture setup now removes its isolated test dialogs before remounting. Production behavior was not changed to satisfy this test."
+  ],
+  "limitations": [
+    "No audio work or dedicated save migration/recovery acceptance.",
+    "Landmark combination boundaries and tutorial remain pending.",
+    "Rules6, landmark catalog1 and AI1 unchanged; new defense decks require final per-group independent-seed balance at stage1. These asymmetric samples are functional evidence only.",
+    "Real long desktop acceptance remains pending; hidden tests do not substitute for twenty real games or one foreground hour."
+  ],
+  "sourceSha256": {
+    "src/kit-defense.mjs": "dfaa89b39587074b40b4e890370920ce8f2b9dc34828376e995c936829eaba82",
+    "src/court-defense-ui.mjs": "723b13a38ee35e01d917ceb4f132c549dfb25709c34350e5fd44507e3de96d63",
+    "src/kit-defense-ui.mjs": "66aac42502b5cfa148c5069f5bcde3dc45b3d29eda22e2bd8c3bb2813a5d3231",
+    "src/court-defense.css": "ff6d8cdf92e18375f7ceb5237ab061d5ebffbacc60f6ae4598d7281a32ac91f2",
+    "src/card-battle-plan-data.mjs": "ed798aa6c4dbda43beab2db007c5b3fcfda96e2667662750b01a25e6f04898af",
+    "src/game-types.d.ts": "3ebdcf1ea52a6376912cd23637aa3dab7cfe7d92061da1df10176413f9855e37",
+    "scripts/validate-data-contract.mjs": "f71f0057e1d8c787628c04b2f99506ad0ecb6303fe7ff9b3a4ff7739795ad2b3",
+    "scripts/validate-card-defense-landmarks.mjs": "433a6ddcc46fb7dfd45b60fdd5cbcd936bf8c7a4c34e0f0bdb82dc314f724165",
+    "tests/card-battle-defense-landmarks.test.mjs": "8b5b7d9e84db8c73c501688250fff17416062b79fbd35fc5cc72453104299d2c",
+    "tests/card-battle-defense-landmarks-desktop.cjs": "c4928f823a01eef22f6f3103c005d5a7af7a57190b855299464da5c5bb83761a",
+    "tests/card-battle-landmark-plans.test.mjs": "7e16fd591181a265df2710970202bacf4435b30b87f40ee9f37c0d6fd3e2db84",
+    "package.json": "cf519ad17649971555a3898550c36d97ca1d84e6d181fd324906ec658cce033d",
+    "docs/fixtures/card-defense-landmarks-bases.json": "a392f1baeb5c33e476b07750b65ff820800ff590345820d118d1e2255072a96c"
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "mode": "built-in imagegen, existing character and approved prototype references; one individual output per character",
+  "sharedPrompt": "Use case: identity-preserve. Asset type: ONE vertical production illustration for a 5:7 historical strategy battle card, art only. Image1 is the existing character identity reference; image2 is the approved game UI style reference (look at its Zhang Fei card). Create a dedicated WAR CARD illustration with a rich warm painted battlefield background and heroic CLOSE-UP composition matching that card’s painterly style. Preserve image1’s recognizable face, age, hair/beard, costume identity and role. Crop at waist/chest with large head and shoulders filling the card, face around upper third, keep headgear fully visible. Human character is the dominant focus, environment secondary. Warm daylight, parchment gold, earth colors, convincing historical fabrics/metal, illustrated brushwork, coherent atmosphere. This is game art, not an archaeological reconstruction. Full-bleed environment all the way to edges. No UI, no frame, no lettering/numbers, no title, no watermark, no logos, no black/flat studio backdrop, no full-body standing catalog portrait, no tiny figure, no extra foreground characters, no magical effects. Do not copy UI elements into the illustration.",
+  "scope": "4 dedicated battle illustrations, not100 finished performances; following batch priority historical first then random",
+  "assets": [
+    {
+      "personId": "manual-1554",
+      "name": "张飞",
+      "path": "assets/battle/people/manual-1554-battle-v1.png",
+      "origin": "exec-9bffe65e-f3f2-4db5-9744-5fbb8ad37dc3.png",
+      "characterDirection": "Fierce beard and armor, three-quarter forward stance, snake-headed spear on left, wind-swept black beard and dark cloth, bronze-black armor, distant spear ranks and dusty fortress, warm sky, muted teal blank standards, energetic large face.",
+      "sha256": "77a69e7d585e871908bd21abc51a38778479771116f6f8738b333f8a65da030c",
+      "dimensions": [
+        1060,
+        1484
+      ]
+    },
+    {
+      "personId": "cbdb-27948",
+      "name": "刘基",
+      "path": "assets/battle/people/cbdb-27948-battle-v1.png",
+      "origin": "exec-741372e7-d328-4ccf-8267-e5eb2f30b365.png",
+      "characterDirection": "Calm lean elder civilian in teal robes and tall black hat, narrow gray mustache and long goatee, upper body with bamboo map at bottom and pointing route, canvas command tent and distant warm battlefield, no armor, magic or map text.",
+      "sha256": "12f3c73dd3d3d2983c903c7ed820f977e9a91689b5defbfccd76a6e28cfa2cef",
+      "dimensions": [
+        1060,
+        1484
+      ]
+    },
+    {
+      "personId": "cbdb-3767",
+      "name": "苏轼",
+      "path": "assets/battle/people/cbdb-3767-battle-v1.png",
+      "origin": "exec-4671fa86-5b36-4bd5-b6c3-30de1dcad56a.png",
+      "characterDirection": "Warm round middle-aged civilian, gentle eyes, black mustache and short beard, blue patterned robes and black hat, upper body in supply camp holding rolled dispatch, grain carts, tents and distant troops in warm morning, composed and unarmored, no weapons, text or glow.",
+      "sha256": "0bef28847e2de37c543b4e972b074e8d2975716865a75ca9da7f758c0d45e03c",
+      "dimensions": [
+        1060,
+        1484
+      ]
+    },
+    {
+      "personId": "cbdb-8175",
+      "name": "岳飞",
+      "path": "assets/battle/people/cbdb-8175-battle-v1.png",
+      "origin": "exec-7792056a-1727-4b3b-a857-e32f5360c7ff.png",
+      "characterDirection": "Focused mustached commander, bronze-gray armor and red cape, helmet tassel, upper body with spear at side signaling advance, ordered infantry and red blank standards in golden daylight.",
+      "sha256": "d55d911c7d94de9448977fcab9c6158a42af4dca0e742768ba291669171de68a",
+      "dimensions": [
+        1060,
+        1484
+      ]
+    }
+  ]
+}

@@ -1,0 +1,383 @@
+{
+  "date": "2026-10-23T03:36:42.857Z",
+  "purpose": "Functional source/identity/ledger checks only; asymmetric defense fixture, not balance evidence.",
+  "rulesVersion": 4,
+  "weaponAllocationVersion": 1,
+  "weaponAiVersion": 1,
+  "plays": 7,
+  "attacks": 14,
+  "cases": [
+    {
+      "source": "central",
+      "seed": 104729,
+      "first": "home",
+      "result": "defeat",
+      "steps": 99,
+      "kitLoss": {
+        "home": {
+          "infantry": 350,
+          "spears": 93,
+          "cavalry": 19,
+          "heavy-cavalry": 0,
+          "archers": 0,
+          "crossbows": 0,
+          "camel": 0,
+          "elephant": 0,
+          "horse-archers": 0
+        },
+        "enemy": {
+          "infantry": 359,
+          "spears": 300,
+          "cavalry": 100,
+          "heavy-cavalry": 0,
+          "archers": 0,
+          "crossbows": 0,
+          "camel": 0,
+          "elephant": 0,
+          "horse-archers": 0
+        }
+      }
+    },
+    {
+      "source": "central",
+      "seed": 104729,
+      "first": "enemy",
+      "result": "victory",
+      "steps": 57,
+      "kitLoss": {
+        "home": {
+          "infantry": 176,
+          "spears": 92,
+          "cavalry": 7,
+          "heavy-cavalry": 0,
+          "archers": 0,
+          "crossbows": 0,
+          "camel": 0,
+          "elephant": 0,
+          "horse-archers": 0
+        },
+        "enemy": {
+          "infantry": 350,
+          "spears": 175,
+          "cavalry": 100,
+          "heavy-cavalry": 0,
+          "archers": 0,
+          "crossbows": 0,
+          "camel": 0,
+          "elephant": 0,
+          "horse-archers": 0
+        }
+      }
+    },
+    {
+      "source": "central",
+      "seed": 1299709,
+      "first": "home",
+      "result": "victory",
+      "steps": 45,
+      "kitLoss": {
+        "home": {
+          "infantry": 107,
+          "spears": 0,
+          "cavalry": 1,
+          "heavy-cavalry": 0,
+          "archers": 0,
+          "crossbows": 0,
+          "camel": 0,
+          "elephant": 0,
+          "horse-archers": 0
+        },
+        "enemy": {
+          "infantry": 150,
+          "spears": 200,
+          "cavalry": 0,
+          "heavy-cavalry": 0,
+          "archers": 0,
+          "crossbows": 0,
+          "camel": 0,
+          "elephant": 0,
+          "horse-archers": 0
+        }
+      }
+    },
+    {
+      "source": "central",
+      "seed": 1299709,
+      "first": "enemy",
+      "result": "victory",
+      "steps": 64,
+      "kitLoss": {
+        "home": {
+          "infantry": 268,
+          "spears": 0,
+          "cavalry": 3,
+          "heavy-cavalry": 0,
+          "archers": 0,
+          "crossbows": 0,
+          "camel": 0,
+          "elephant": 0,
+          "horse-archers": 0
+        },
+        "enemy": {
+          "infantry": 450,
+          "spears": 100,
+          "cavalry": 200,
+          "heavy-cavalry": 0,
+          "archers": 0,
+          "crossbows": 0,
+          "camel": 0,
+          "elephant": 0,
+          "horse-archers": 0
+        }
+      }
+    },
+    {
+      "source": "hebei",
+      "seed": 104729,
+      "first": "home",
+      "result": "defeat",
+      "steps": 142,
+      "kitLoss": {
+        "home": {
+          "infantry": 489,
+          "spears": 93,
+          "cavalry": 19,
+          "heavy-cavalry": 0,
+          "archers": 0,
+          "crossbows": 0,
+          "camel": 0,
+          "elephant": 0,
+          "horse-archers": 0
+        },
+        "enemy": {
+          "infantry": 740,
+          "spears": 500,
+          "cavalry": 200,
+          "heavy-cavalry": 0,
+          "archers": 0,
+          "crossbows": 0,
+          "camel": 0,
+          "elephant": 0,
+          "horse-archers": 0
+        }
+      }
+    },
+    {
+      "source": "hebei",
+      "seed": 104729,
+      "first": "enemy",
+      "result": "victory",
+      "steps": 57,
+      "kitLoss": {
+        "home": {
+          "infantry": 176,
+          "spears": 92,
+          "cavalry": 7,
+          "heavy-cavalry": 0,
+          "archers": 0,
+          "crossbows": 0,
+          "camel": 0,
+          "elephant": 0,
+          "horse-archers": 0
+        },
+        "enemy": {
+          "infantry": 350,
+          "spears": 175,
+          "cavalry": 100,
+          "heavy-cavalry": 0,
+          "archers": 0,
+          "crossbows": 0,
+          "camel": 0,
+          "elephant": 0,
+          "horse-archers": 0
+        }
+      }
+    },
+    {
+      "source": "hebei",
+      "seed": 1299709,
+      "first": "home",
+      "result": "victory",
+      "steps": 45,
+      "kitLoss": {
+        "home": {
+          "infantry": 107,
+          "spears": 0,
+          "cavalry": 1,
+          "heavy-cavalry": 0,
+          "archers": 0,
+          "crossbows": 0,
+          "camel": 0,
+          "elephant": 0,
+          "horse-archers": 0
+        },
+        "enemy": {
+          "infantry": 150,
+          "spears": 200,
+          "cavalry": 0,
+          "heavy-cavalry": 0,
+          "archers": 0,
+          "crossbows": 0,
+          "camel": 0,
+          "elephant": 0,
+          "horse-archers": 0
+        }
+      }
+    },
+    {
+      "source": "hebei",
+      "seed": 1299709,
+      "first": "enemy",
+      "result": "victory",
+      "steps": 68,
+      "kitLoss": {
+        "home": {
+          "infantry": 222,
+          "spears": 0,
+          "cavalry": 11,
+          "heavy-cavalry": 0,
+          "archers": 0,
+          "crossbows": 0,
+          "camel": 0,
+          "elephant": 0,
+          "horse-archers": 0
+        },
+        "enemy": {
+          "infantry": 350,
+          "spears": 100,
+          "cavalry": 100,
+          "heavy-cavalry": 0,
+          "archers": 0,
+          "crossbows": 0,
+          "camel": 0,
+          "elephant": 0,
+          "horse-archers": 0
+        }
+      }
+    },
+    {
+      "source": "tubo-core",
+      "seed": 104729,
+      "first": "home",
+      "result": "defeat",
+      "steps": 98,
+      "kitLoss": {
+        "home": {
+          "infantry": 333,
+          "spears": 93,
+          "cavalry": 19,
+          "heavy-cavalry": 0,
+          "archers": 0,
+          "crossbows": 0,
+          "camel": 0,
+          "elephant": 0,
+          "horse-archers": 0
+        },
+        "enemy": {
+          "infantry": 279,
+          "spears": 386,
+          "cavalry": 200,
+          "heavy-cavalry": 0,
+          "archers": 0,
+          "crossbows": 0,
+          "camel": 0,
+          "elephant": 0,
+          "horse-archers": 0
+        }
+      }
+    },
+    {
+      "source": "tubo-core",
+      "seed": 104729,
+      "first": "enemy",
+      "result": "victory",
+      "steps": 57,
+      "kitLoss": {
+        "home": {
+          "infantry": 211,
+          "spears": 92,
+          "cavalry": 3,
+          "heavy-cavalry": 0,
+          "archers": 0,
+          "crossbows": 0,
+          "camel": 0,
+          "elephant": 0,
+          "horse-archers": 0
+        },
+        "enemy": {
+          "infantry": 350,
+          "spears": 175,
+          "cavalry": 100,
+          "heavy-cavalry": 0,
+          "archers": 0,
+          "crossbows": 0,
+          "camel": 0,
+          "elephant": 0,
+          "horse-archers": 0
+        }
+      }
+    },
+    {
+      "source": "tubo-core",
+      "seed": 1299709,
+      "first": "home",
+      "result": "victory",
+      "steps": 45,
+      "kitLoss": {
+        "home": {
+          "infantry": 102,
+          "spears": 0,
+          "cavalry": 1,
+          "heavy-cavalry": 0,
+          "archers": 0,
+          "crossbows": 0,
+          "camel": 0,
+          "elephant": 0,
+          "horse-archers": 0
+        },
+        "enemy": {
+          "infantry": 150,
+          "spears": 200,
+          "cavalry": 0,
+          "heavy-cavalry": 0,
+          "archers": 0,
+          "crossbows": 0,
+          "camel": 0,
+          "elephant": 0,
+          "horse-archers": 0
+        }
+      }
+    },
+    {
+      "source": "tubo-core",
+      "seed": 1299709,
+      "first": "enemy",
+      "result": "victory",
+      "steps": 63,
+      "kitLoss": {
+        "home": {
+          "infantry": 253,
+          "spears": 0,
+          "cavalry": 5,
+          "heavy-cavalry": 0,
+          "archers": 0,
+          "crossbows": 0,
+          "camel": 0,
+          "elephant": 0,
+          "horse-archers": 0
+        },
+        "enemy": {
+          "infantry": 350,
+          "spears": 100,
+          "cavalry": 200,
+          "heavy-cavalry": 0,
+          "archers": 0,
+          "crossbows": 0,
+          "camel": 0,
+          "elephant": 0,
+          "horse-archers": 0
+        }
+      }
+    }
+  ]
+}

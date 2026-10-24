@@ -1,0 +1,115 @@
+{
+  "date": "2026-10-24T03:20:24.408465+00:00",
+  "presentationVersion": 43,
+  "scope": "Five historical death performances and committed-value timing accepted in isolated native UI fixtures; no culture, source research, final balance or all100 completion claim.",
+  "total": 5,
+  "people": [
+    {
+      "personId": "cbdb-28093",
+      "name": "方孝孺",
+      "theme": "unyielding-tablet",
+      "effects": [
+        {
+          "op": "draw",
+          "n": 1
+        }
+      ],
+      "sourceVerified": true,
+      "deathPresentation": "accepted-isolated-ui",
+      "evidence": "card-battle-person-death-ui-validation.json",
+      "acceptance": {
+        "normal": true,
+        "fast": true,
+        "reduced": true,
+        "exactlyOnce": true,
+        "sourceIdentity": true
+      }
+    },
+    {
+      "personId": "original-57",
+      "name": "程咬金",
+      "theme": "steadfast-axe",
+      "effects": [
+        {
+          "op": "armor",
+          "n": 2
+        }
+      ],
+      "sourceVerified": false,
+      "deathPresentation": "accepted-isolated-ui",
+      "evidence": "card-battle-person-death-ui-validation.json",
+      "acceptance": {
+        "normal": true,
+        "fast": true,
+        "reduced": true,
+        "exactlyOnce": true,
+        "sourceIdentity": true
+      }
+    },
+    {
+      "personId": "original-59",
+      "name": "史可法",
+      "theme": "last-watch",
+      "effects": [
+        {
+          "op": "armor",
+          "n": 4
+        }
+      ],
+      "sourceVerified": false,
+      "deathPresentation": "accepted-isolated-ui",
+      "evidence": "card-battle-person-death-ui-validation.json",
+      "acceptance": {
+        "normal": true,
+        "fast": true,
+        "reduced": true,
+        "exactlyOnce": true,
+        "sourceIdentity": true
+      }
+    },
+    {
+      "personId": "original-62",
+      "name": "比干",
+      "theme": "candid-slip",
+      "effects": [
+        {
+          "op": "heal",
+          "n": 3
+        }
+      ],
+      "sourceVerified": false,
+      "deathPresentation": "accepted-isolated-ui",
+      "evidence": "card-battle-person-death-ui-validation.json",
+      "acceptance": {
+        "normal": true,
+        "fast": true,
+        "reduced": true,
+        "exactlyOnce": true,
+        "sourceIdentity": true
+      }
+    },
+    {
+      "personId": "manual-1518",
+      "name": "廉颇",
+      "theme": "lasting-wall",
+      "effects": [
+        {
+          "op": "armor",
+          "n": 3
+        }
+      ],
+      "sourceVerified": true,
+      "deathPresentation": "accepted-isolated-ui",
+      "evidence": "card-battle-person-death-ui-validation.json",
+      "acceptance": {
+        "normal": true,
+        "fast": true,
+        "reduced": true,
+        "exactlyOnce": true,
+        "sourceIdentity": true
+      }
+    }
+  ],
+  "next": "Continue culture100/historical26 source review and regional art; death suite stays in regressions. Final all100, performance, Yan Ying rules and phase1 still pending.",
+  "evidence": "card-battle-person-death-ui-validation.json"
+}

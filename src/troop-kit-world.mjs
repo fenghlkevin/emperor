@@ -104,8 +104,8 @@ export function executeKitCommand(state,c){
  next.stats.treasury=d.countries.find(c=>c.id===d.playerCountryId).fiscal.treasury;validateTroopKits(d);validateManpower(d);return {state:next,receipt};
 }
 // Battle adapters operate on their private candidate state before persistence.
-export function reserveWorldKits(d,sourceId,battleId,squads){const depot=reserveKitSquads(worldKitDepot(d,sourceId),battleId,squads);writeDepot(d,depot);return depot;}
-export function settleWorldKits(d,sourceId,battleId,survivors){
- const before=worldKitDepot(d,sourceId),after=settleKitSquads(before,battleId,survivors),dead=before.soldiers-after.soldiers,p=sourceProvince(d,sourceId);
+export function reserveWorldKits(d,sourceId,battleId,squads,options){const depot=reserveKitSquads(worldKitDepot(d,sourceId),battleId,squads,options);writeDepot(d,depot);return depot;}
+export function settleWorldKits(d,sourceId,battleId,survivors,options){
+ const before=worldKitDepot(d,sourceId),after=settleKitSquads(before,battleId,survivors,options),dead=before.soldiers-after.soldiers,p=sourceProvince(d,sourceId);
  p.population.total-=dead;p.population.professions.soldiers-=dead;if(sourceId==='central')d.centralArmy.soldiers-=dead;releaseDrafts(d,sourceId,dead,{dead:true});writeDepot(d,after);return {dead,depot:after};
 }

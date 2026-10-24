@@ -18,7 +18,7 @@ import {alchemyAction} from '../src/alchemy.mjs';
 import {executePersonnel,settlePersonnel} from '../src/personnel-actions.mjs';
 import {startConstruction} from '../src/construction.mjs';
 import {executeIndustry} from '../src/industry.mjs';
-import {executeKitCommand} from '../src/troop-kit-world.mjs';
+import {reserveWorldKits,settleWorldKits,executeKitCommand} from '../src/troop-kit-world.mjs';
 import {laborProfile} from '../src/labor.mjs';
 import {ACTIVE_HISTORICAL_PEOPLE} from '../src/exam.mjs';
 import {endReign} from '../src/ending-rules.mjs';
@@ -38,8 +38,14 @@ snapshots.push({label:'all active historical profiles',type:'ExamCandidate[]',va
 const annual=game();annual.turn=36;advance(annual);capture('annual settlement',annual);
 snapshots.push({label:'country summary',type:'CountrySummary',value:countrySummary(annual.domestic)});
 const g=generals(fresh.domestic),command={id:1,kitVersion:1,kind:'war',targetId:borderingCountries(fresh.domestic)[0].id,generalId:g[0].id,commanderSquad:{kind:'cavalry',count:37},squads:[{kind:'spears',count:137,generalId:g[1].id}]};
+const cards=beginWar(game(),{...command,battleMode:'cards'});capture('card battle and fixed people',cards);capture('card battle after mulligan',(await import('../src/war.mjs')).advanceWar(cards,{type:'mulligan',ids:[]}));
+const weaponBattle=beginWar(game(),{...command,battleMode:'cards',cardWeapons:{version:1,counts:{arsenal_blade:1,arsenal_spear:1}}});capture('weapon battle v4 actual spare-kit allocation',weaponBattle);capture('secret battle v5 sourced commander orders',beginWar(game(),{...command,battleMode:'cards',cardSecrets:{version:1,counts:{secret_watch:1,secret_ambush:1}}}));
+capture('landmark battle v6 facilities plus secrets and weapons',beginWar(game(),{...command,battleMode:'cards',cardLandmarks:{version:1,counts:{field_camp:1,rally_post:1}},cardSecrets:{version:1,counts:{secret_watch:1,secret_ambush:1}},cardWeapons:{version:1,counts:{arsenal_blade:1,arsenal_spear:1}}}));
 const war=capture('offensive battle',beginWar(fresh,command));war.domestic.war.battle=actBattle(war.domestic.war.battle,{type:'retreat'});capture('offensive report',finishWar(war).state);
 const defense=game();defense.turn=37;startCampaign(defense.domestic,'xi','hebei',37);
+const dg=generals(defense.domestic);capture('defensive weapons real local source',beginDefense(defense,{deployment:{kitVersion:1,battleMode:'cards',generalId:dg[0].id,commander:{sourceId:'hebei',kind:'cavalry',count:37,equipped:true},squads:[{sourceId:'central',kind:'spears',count:137,equipped:true,generalId:dg[1].id}],cardWeapons:{version:1,counts:{arsenal_blade:1,arsenal_spear:1}}}}));
+capture('defensive secrets commander source v5',beginDefense(defense,{deployment:{kitVersion:1,battleMode:'cards',generalId:dg[0].id,commander:{sourceId:'central',kind:'cavalry',count:37,equipped:true},squads:[{sourceId:'hebei',kind:'infantry',count:73,equipped:true,generalId:dg[1].id}],cardSecrets:{version:1,counts:{secret_watch:1,secret_ambush:1}}}}));
+capture('defensive landmarks commander source v6',beginDefense(defense,{deployment:{kitVersion:1,battleMode:'cards',generalId:dg[0].id,commander:{sourceId:'central',kind:'cavalry',count:37,equipped:true},squads:[{sourceId:'hebei',kind:'infantry',count:73,equipped:true,generalId:dg[1].id}],cardLandmarks:{version:1,counts:{field_camp:1,rally_post:1}}}}));
 const defending=capture('defensive deployment',beginDefense(defense));defending.domestic.war.battle=actBattle(defending.domestic.war.battle,{type:'retreat'});capture('defensive report',finishDefense(defending).state);
 const court=game();court.scene='court';capture('envoy invitation',inviteEnvoy(court,'japan'));
 const alchemy=game();alchemy.phase=2;const brewing=capture('alchemy furnace',alchemyAction(alchemy,{kind:'brew',herbs:['A','B']}).state);for(let i=0;i<3;i++)advance(brewing);capture('alchemy batches',brewing);
@@ -70,12 +76,21 @@ const legacy=structuredClone(ended);legacy.reignResult.version=1;delete legacy.r
 
 const hanlin=game();initializeResourceEconomy(hanlin.domestic);const pupil=hanlin.domestic.justice.officials[0];Object.assign(pupil,{positionId:null,office:'待命',provinceId:null});const studying=executePersonnel(hanlin,{id:hanlin.domestic.personnel.nextId,kind:'hanlin-enroll',officialId:pupil.id,attribute:'politics'}).state;settleHanlin(studying.domestic,2);studying.turn=2;capture('hanlin tuition and fixed potential',studying);
 
+const extraGear=game();reserveWorldKits(extraGear.domestic,'central','type:extra',[{kind:'infantry',count:1}],{extraKits:{spears:2}});capture('extra equipment reservation without extra soldiers',extraGear);settleWorldKits(extraGear.domestic,'central','type:extra',[1],{extraKitLoss:{spears:1}});capture('separate equipment loss settlement',extraGear);
+
 const directory=mkdtempSync(join(tmpdir(),'emperor-data-contract-'));
 try{
  const file=join(directory,'snapshots.mts');
- const source=`import type {GameSave,CountrySummary,Province,DomesticState,ReignResult,TroopKind,ExamCandidate,OccupationReceipt} from ${JSON.stringify(join(root,'src/game-types.d.ts'))};\n`+
+ const source=`import type {GameSave,CountrySummary,Province,DomesticState,ReignResult,TroopKind,ExamCandidate,OccupationReceipt,KitReservation,KitStock} from ${JSON.stringify(join(root,'src/game-types.d.ts'))};\n`+
  snapshots.map(({label,type,value},i)=>`// ${label}\nconst snapshot${i} = ${JSON.stringify(value)} satisfies ${type};`).join('\n')+`
 // Required modern fields and discriminated versions must remain enforced.
+declare const stock: KitStock;
+// @ts-expect-error active reservations cannot already report settled equipment loss
+const earlyExtraLoss: KitReservation = {status:'active',squads:[],extraKits:stock,extraKitLoss:stock};
+// @ts-expect-error settled equipment occupancy must carry its loss receipt
+const missingExtraLoss: KitReservation = {status:'settled',squads:[],survivors:[],extraKits:stock};
+// @ts-expect-error a loss receipt cannot invent unreserved equipment
+const inventedExtraLoss: KitReservation = {status:'settled',squads:[],survivors:[],extraKitLoss:stock};
 declare const state: GameSave;
 // @ts-expect-error military equipment lives in troopKits, not the province
 state.domestic.provinces[0].military.arsenal;

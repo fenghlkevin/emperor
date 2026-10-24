@@ -28,7 +28,7 @@ function attachRuntimeDiagnostics(app, window, { onRecoveryFailed = () => {} } =
   window.webContents.on('did-fail-load', (_event, errorCode, errorDescription) => {
     if (errorCode !== -3) record('did-fail-load', { errorCode, errorDescription });
   });
-  window.webContents.on('console-message', (_event, details) => {
+  window.webContents.on('console-message', details => {
     if (details.level === 'error' || details.level === 3)
       record('renderer-error', { message: details.message, source: details.sourceId, line: details.lineNumber });
   });

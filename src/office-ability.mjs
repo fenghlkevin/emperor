@@ -2,7 +2,7 @@
 export const OFFICE_ABILITY_TYPES={
  'prime-minister':'civil','personnel-minister':'civil','personnel-deputy':'civil',
  'revenue-minister':'civil','revenue-deputy':'civil','works-minister':'civil','works-deputy':'civil',
- 'rites-minister':'civil','rites-deputy':'civil','justice-minister':'civil',
+ 'rites-minister':'civil','rites-deputy':'civil','justice-minister':'civil','justice-deputy':'civil',
  'war-minister':'military','war-deputy':'military','central-general':'military'
 };
 const clamp=(n,fallback=50)=>Math.max(0,Math.min(100,Number.isFinite(n)?n:fallback));

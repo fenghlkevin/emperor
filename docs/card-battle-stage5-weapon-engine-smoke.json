@@ -1,0 +1,171 @@
+{
+  "date": "2026-10-23T02:48:48.796Z",
+  "purpose": "Functional smoke only; asymmetric campaign fixture, not a 47–53% balance matrix or real desktop play evidence.",
+  "fixtureSha256": "a2e90d0ad4ef63af76cbb1ec67656f455efddf40ed8ad9d8c72e8b65ef2febb2",
+  "rulesVersion": 4,
+  "weaponCatalogVersion": 1,
+  "weaponAiVersion": 1,
+  "elapsedSeconds": 4.237002416999999,
+  "cases": [
+    {
+      "seed": 917711,
+      "first": "home",
+      "result": "victory",
+      "actions": 67,
+      "weaponPlays": 2,
+      "heroAttacks": 4,
+      "homeDead": 152,
+      "kitLoss": {
+        "infantry": 101,
+        "spears": 39,
+        "cavalry": 14,
+        "heavy-cavalry": 0,
+        "archers": 0,
+        "crossbows": 0,
+        "camel": 0,
+        "elephant": 0,
+        "horse-archers": 0
+      }
+    },
+    {
+      "seed": 917711,
+      "first": "enemy",
+      "result": "victory",
+      "actions": 50,
+      "weaponPlays": 0,
+      "heroAttacks": 0,
+      "homeDead": 144,
+      "kitLoss": {
+        "infantry": 88,
+        "spears": 44,
+        "cavalry": 12,
+        "heavy-cavalry": 0,
+        "archers": 0,
+        "crossbows": 0,
+        "camel": 0,
+        "elephant": 0,
+        "horse-archers": 0
+      }
+    },
+    {
+      "seed": 930337,
+      "first": "home",
+      "result": "victory",
+      "actions": 106,
+      "weaponPlays": 1,
+      "heroAttacks": 2,
+      "homeDead": 209,
+      "kitLoss": {
+        "infantry": 151,
+        "spears": 40,
+        "cavalry": 19,
+        "heavy-cavalry": 0,
+        "archers": 0,
+        "crossbows": 0,
+        "camel": 0,
+        "elephant": 0,
+        "horse-archers": 0
+      }
+    },
+    {
+      "seed": 930337,
+      "first": "enemy",
+      "result": "defeat",
+      "actions": 181,
+      "weaponPlays": 2,
+      "heroAttacks": 4,
+      "homeDead": 350,
+      "kitLoss": {
+        "infantry": 201,
+        "spears": 101,
+        "cavalry": 50,
+        "heavy-cavalry": 0,
+        "archers": 0,
+        "crossbows": 0,
+        "camel": 0,
+        "elephant": 0,
+        "horse-archers": 0
+      }
+    },
+    {
+      "seed": 104729,
+      "first": "home",
+      "result": "defeat",
+      "actions": 155,
+      "weaponPlays": 2,
+      "heroAttacks": 2,
+      "homeDead": 300,
+      "kitLoss": {
+        "infantry": 151,
+        "spears": 101,
+        "cavalry": 50,
+        "heavy-cavalry": 0,
+        "archers": 0,
+        "crossbows": 0,
+        "camel": 0,
+        "elephant": 0,
+        "horse-archers": 0
+      }
+    },
+    {
+      "seed": 104729,
+      "first": "enemy",
+      "result": "defeat",
+      "actions": 199,
+      "weaponPlays": 2,
+      "heroAttacks": 4,
+      "homeDead": 350,
+      "kitLoss": {
+        "infantry": 201,
+        "spears": 101,
+        "cavalry": 50,
+        "heavy-cavalry": 0,
+        "archers": 0,
+        "crossbows": 0,
+        "camel": 0,
+        "elephant": 0,
+        "horse-archers": 0
+      }
+    },
+    {
+      "seed": 1299709,
+      "first": "home",
+      "result": "defeat",
+      "actions": 118,
+      "weaponPlays": 2,
+      "heroAttacks": 4,
+      "homeDead": 275,
+      "kitLoss": {
+        "infantry": 126,
+        "spears": 101,
+        "cavalry": 50,
+        "heavy-cavalry": 0,
+        "archers": 0,
+        "crossbows": 0,
+        "camel": 0,
+        "elephant": 0,
+        "horse-archers": 0
+      }
+    },
+    {
+      "seed": 1299709,
+      "first": "enemy",
+      "result": "defeat",
+      "actions": 175,
+      "weaponPlays": 2,
+      "heroAttacks": 4,
+      "homeDead": 350,
+      "kitLoss": {
+        "infantry": 201,
+        "spears": 101,
+        "cavalry": 50,
+        "heavy-cavalry": 0,
+        "archers": 0,
+        "crossbows": 0,
+        "camel": 0,
+        "elephant": 0,
+        "horse-archers": 0
+      }
+    }
+  ]
+}

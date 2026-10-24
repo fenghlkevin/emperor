@@ -1,0 +1,17 @@
+/* Independent battle character faces. Outer 5:7 buttons and all hit areas stay fixed. */
+.cb-prototype .cb-card.person>.cb-card-surface{background:#dbc18f url('../assets/battle/person-card-frame-v1.svg') center/100% 100%;border-radius:5px}
+.cb-prototype .cb-card.person .cb-card-surface>strong{top:3.3%;height:9%;left:10%;right:10%;width:80%;color:#2d2116;letter-spacing:.04em;text-shadow:0 1px #fff5}
+.cb-prototype .cb-card.person .cb-art{left:5.4%;right:5.4%;width:89.2%;top:12.6%;bottom:24%;border:1px solid #6b5134;box-shadow:inset 0 0 5px #39281866;filter:saturate(.96) contrast(1.02)}
+.cb-prototype .cb-card.person.board .cb-art{bottom:4.5%}
+.cb-prototype .cb-card.person .cb-card-copy{left:7%;right:7%;bottom:4.5%;height:18%;padding:0 2%;gap:1px;justify-content:center;background:none;color:#332616}
+.cb-prototype .cb-card.person.hand .cb-card-copy b{font-size:clamp(9px,.75cqw,13px);line-height:1.15;color:#49331e}
+.cb-prototype .cb-card.person.hand .cb-card-copy small{font-size:clamp(8px,.68cqw,12px);line-height:1.16;color:#392818}
+.cb-prototype .cb-card.person .cb-person-card-mark{display:none}
+.cb-prototype .cb-card.person .cb-art[data-battle-person-art]{background-size:cover!important;background-position:center 12%!important}
+.cb-prototype .cb-card.person .cb-art[data-portrait-scene]{background-size:175% auto,cover!important;background-position:center 12%,center!important}
+.cb-prototype .cb-card.person .cb-art[data-battle-person-art]:after{box-shadow:inset 0 0 6px #3a281344}
+.cb-prototype .cb-card.person .cb-art-atmosphere{opacity:.35}
+.cb-v3 .cb-portrait[data-battle-person-art] img{object-position:center 25%}
+.cb-deck-face.person{background:#dbc18f url('../assets/battle/person-card-frame-v1.svg') center/100% 100%!important;border-color:#715434!important}
+.cb-deck-face.person .cb-art[data-battle-person-art]{background-size:cover!important;background-position:center 12%!important}
+.cb-deck-face.person .cb-person-card-mark{display:none}

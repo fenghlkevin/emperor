@@ -249,6 +249,8 @@ export interface Country {
     ledger: LedgerEntry[];
 }
 export interface DomesticState {
+    cardBattlePlans?: {version:1;nextId:number;plans:Array<{id:number;name:string;kind:'campaign'|'defense';formation:{kitVersion?:1;generalId:string;commander?:DeploymentSquad;commanderSquad?:KitSquad;squads:Array<KitSquad & {sourceId?:string;generalId:string}>;cardTactics?:CardTacticSelection;cardWeapons?:WeaponSelection;cardSecrets?:SecretSelection;cardLandmarks?:LandmarkSelection}}>};
+    cardPeople?: CardPersonRegistry;
     industryLaborVersion?: 1;
     manpowerVersion: 1;
     manpower: {version:1;drafts:Array<{originId:string;stationId:string;role:'soldiers'|'militia';job:'farmers'|'herders'|'merchants'|'workers';count:number}>};
@@ -822,11 +824,14 @@ export interface KitSquad {
 export type KitReservation = {
     status: 'active';
     squads: KitSquad[];
+    /** 单独占用完整套装；不额外占用士兵。当前v3战斗禁止接入。 */
+    extraKits?: KitStock;
+    extraKitLoss?: never;
 } | {
     status: 'settled';
     squads: KitSquad[];
     survivors: number[];
-};
+} & ({ extraKits?: never; extraKitLoss?: never } | { extraKits: KitStock; extraKitLoss: KitStock });
 export interface KitDepotRecord {
     stock: KitStock;
     reservations: Record<string, KitReservation>;
@@ -971,13 +976,32 @@ export interface DeploymentSquad extends KitSquad {
     sourceId: string;
     generalId?: string;
 }
+export interface CardTacticSelection {version:1; counts:Record<string,number>;}
 export interface DefensePlan {
+    cardLandmarks?: LandmarkSelection;
+    cardSecrets?: SecretSelection;
+    cardWeapons?: WeaponSelection;
+    cardTactics?: CardTacticSelection;
+    battleMode?: 'cards';
     kitVersion: 1;
     generalId: string;
     commander: DeploymentSquad;
     squads: DeploymentSquad[];
 }
+export interface WeaponSelection {version:1;counts:Record<string,number>;}
+export interface WeaponAllocation {version:1;home:{sourceId:string;selection:WeaponSelection};enemy:{sourceId:string;selection:WeaponSelection};}
+export interface SecretSelection {version:1;counts:Record<string,number>;}
+export interface SecretAllocation {version:1;home:{sourceId:string;selection:SecretSelection};enemy:{sourceId:string;selection:SecretSelection};}
+export interface LandmarkSelection {version:1;counts:Record<string,number>;}
+export interface LandmarkAllocation {version:1;home:{sourceId:string;selection:LandmarkSelection};enemy:{sourceId:string;selection:LandmarkSelection};}
 export interface OffensiveCommand {
+    cardLandmarks?:LandmarkSelection;landmarkAllocation?:LandmarkAllocation;
+    cardSecrets?: SecretSelection;
+    secretAllocation?: SecretAllocation;
+    cardWeapons?: WeaponSelection;
+    weaponAllocation?: WeaponAllocation;
+    cardTactics?: CardTacticSelection;
+    battleMode?: 'cards';
     id: number;
     kind: 'war';
     kitVersion: 1;
@@ -996,6 +1020,14 @@ export interface OffensiveCommand {
     defensive?: false;
 }
 export interface DefensiveCommand {
+    cardLandmarks?: LandmarkSelection;
+    landmarkAllocation?: LandmarkAllocation;
+    cardSecrets?: SecretSelection;
+    secretAllocation?: SecretAllocation;
+    cardWeapons?: WeaponSelection;
+    weaponAllocation?: WeaponAllocation;
+    cardTactics?: CardTacticSelection;
+    battleMode?: 'cards';
     id: number;
     kind: 'war';
     kitVersion: 1;
@@ -1012,6 +1044,7 @@ export interface DefensiveCommand {
     attack: Force;
 }
 export interface BattleUnit extends KitSquad {
+    cardPersonId?: string;
     id: string;
     side: 'home' | 'enemy';
     name: string;
@@ -1043,7 +1076,72 @@ export interface BattleUnit extends KitSquad {
         aura: number;
     };
 }
+/** 身份与随机生成结果持久化，战斗动作不重新生成。 */
+export interface CardEffect {
+    op: 'draw'|'armor'|'heal'|'selfdamage'|'refund'|'discount'|'aoe'|'damage'|'destroy'|'freeze'|'setattack'|'silence'|'buff'|'group';
+    n?: number; target?: 'friend'|'enemy'|'enemy_character'; a?: number; h?: number;
+    temp?: boolean; give?: string; mask?: string; limit?: number; filter?: string; injured?: boolean;
+}
+export interface CardDefinition {
+    uses?:number;cooldown?:number;ability?:{op:string;amount:number};
+    trigger?:string;effect?:string;amount?:number;text?:string;
+    id: string; name: string; type: 'troop'|'general'|'spell'|'weapon'|'secret'|'landmark'; cost: number;
+    attack?: number|null; health?: number|null; tags: string[]; enter: CardEffect[]; death: CardEffect[];
+    [metadata: string]: unknown;
+}
+export interface CardPersonProfile {
+    version: 1; personId: string; historicalDefinitionId: string|null; name: string; portraitId: string;
+    definitionId?: string; abilities: {martial: number; intelligence: number; leadership: number;politics?:number;integrity?:number;experience?:number};
+    potential?: unknown; role?: 'martial'|'intelligence'|'command'; tier?: number; poolId?: string;
+    templateId?: string; revision?:number;lastGrowthTurn?:number;generationSeed?: number; culture: string; definition?: CardDefinition;
+}
+export interface CardPersonRegistry {
+    version: 1; rng: number; worldSeed?:number; people: Record<string,CardPersonProfile>;
+    garrisons: Record<string,{id:string;name:string;martial:number;intelligence:number;leadership:number;role:'武将'|'文职';generated:true;culture:string;politics:number;integrity:number;experience:number;potential?:unknown}>;
+}
+export interface CombatCard {
+    landmarkSource?:{unitId:string;sourceId:string;personId:string};uses?:number;landmarkUsed?:number;landmarkReadyTurn?:number;landmarkDeployedTurn?:number;landmarkLastUsedTurn?:number;landmarkRemoved?:string;
+    secretSource?:{unitId:string;sourceId:string;personId:string};secretRevealed?:boolean;armedOrder?:number;secretSeal?:string;
+    id: string; definitionId: string; type: 'troop'|'general'|'tactic'|'weapon'|'secret'|'landmark'; side: 'home'|'enemy'; name:string;
+    durability?:number;
+    cost:number; definition:CardDefinition; unitId?:string; kind?:TroopKind; count?:number; training?:number;
+    general?:string; personId?:string;personInstanceId?:string;historicalDefinitionId?:string|null; attack?:number; hp?:number; maxHp?:number; printedAttack?:number;
+    printedHp?:number; ready?:boolean; rushing?:boolean; tags?:string[]; buffAttack?:number;
+    buffHealth?:number; tempAttack?:number; lossPeak?:number; played?:number; frozen?:boolean;
+    silenced?:boolean; front?:boolean; attackedPly?:number; enteredPly?:number;
+}
+export interface CardPlayer {
+    landmarks?:string[];
+    secrets?:string[];
+    weapon?:string|null;heroAttackUsed?:boolean;
+    hero:number; armor:number; mana:number; maxMana:number; hand:string[]; deck:string[];
+    board:string[]; grave:string[]; reserve:Record<string,number>; gaps:string[]; fatigue:number;
+    ownTurn:number; powerUsed:boolean; heroDamage:number; discount:number; rng:number;
+    skill:{kind:'martial'|'intelligence'|'command';name:string;text:string};
+}
+export interface CardBattleState {
+    history?: {version:1;nextId:number;checksum:number;startedPly:number;partial:boolean;entries:Array<Record<string,unknown>>};
+    deckConfiguration?: {version:1; tactics:CardTacticSelection};
+    deckConfigurationHash?: number;
+    version:2; rulesVersion:3|4|5|6; seed:number;
+    landmarkAiVersion?:1;
+    secretAiVersion?:1;secretSequence?:number;
+    weaponAiVersion?:1;
+    weaponSupplies?:Record<string,{sourceId:string;kind:TroopKind;quantity:1;lost:boolean;reason?:'exhausted'|'replaced'|'leader-defeated'}>;
+    catalogVersion:string;definitionHash:number;definitionCatalog:Record<string,CardDefinition>;personCatalog:Record<string,CardDefinition>;rulesSnapshot:{version:number;unitSize:number;compactArmy:boolean;compactPenalty:boolean;penaltyTiersOnly?:boolean;reserveDeckGrowth?:number;lowTrainingPenalty?:'general'|'elite'|'none';scoutVariants?:Record<string,Record<string,string>>;troopCap:number;boardLimit:number;handLimit:number;deckSize:number;spellPackages:Record<string,string[]>}; first:'home'|'enemy'; turn:'home'|'enemy';
+    phase:'mulligan'|'play'|'ended'; ply:number; nextId:number; sequence:number;
+    players:Record<'home'|'enemy',CardPlayer>; catalog:Record<string,CombatCard>;
+    events:Array<{type:string;[detail:string]:string|number|boolean|undefined}>; retreated?:'home'|'enemy';
+}
+export interface LegacyCardBattleState {
+    version:1; rulesVersion?:1|2; seed:number; turn:'home'|'enemy'; phase:'mulligan'|'play'|'ended';
+    ply:number; selected:string[]; players:Record<string,unknown>; catalog:Record<string,unknown>;retreated?:'home'|'enemy';
+}
+
 export interface BattleState {
+    cards?: CardBattleState | LegacyCardBattleState;
+    cardPeople?: Record<string,CardPersonProfile>;
+    cardSeed?: number;
     tiles?: ('plain' | 'road' | 'hill' | 'forest' | 'sand' | 'water')[];
     version: 2;
     command: OffensiveCommand | DefensiveCommand;
@@ -1059,7 +1157,7 @@ export interface BattleState {
     cursor: number;
     order: string[];
     log: string[];
-    result: 'victory' | 'defeat' | null;
+    result: 'victory' | 'defeat' | 'draw' | null;
 }
 export interface OccupationReceipt {
     provinceId: string;
@@ -1073,6 +1171,7 @@ export interface ArmyReport {
     survived: number;
     commander: {
         name: string;
+        personId?: string;
         count: number;
         initial: number;
         status: string;
@@ -1085,10 +1184,13 @@ export interface ArmyReport {
         dead: number;
         survived: number;
         generalName: string;
+        generalId?: string;
         sourceId: string;
     }[];
 }
+export interface CardHistoryArchive {version:1;data:{values:Array<string|number|boolean|null>;nodes:string;bytes:number;root:number};}
 export interface WarReceipt {
+    cardHistory?: CardHistoryArchive;
     id: number;
     turn: number;
     kind: 'war' | 'recruit' | 'dismiss';
@@ -1098,7 +1200,7 @@ export interface WarReceipt {
     report?: {
         kitVersion: 1;
         occupation: OccupationReceipt | null;
-        result: 'victory' | 'defeat';
+        result: 'victory' | 'defeat' | 'draw';
         targetName: string;
         rounds: number;
         reason: string;
@@ -1115,6 +1217,7 @@ export interface WarReceipt {
             sourceId: string;
             kind: TroopKind;
             generalName: string;
+        generalId?: string;
             initial: number;
             dead: number;
             survived: number;

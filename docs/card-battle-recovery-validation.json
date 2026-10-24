@@ -1,0 +1,14 @@
+{
+  "date": "2026-10-22",
+  "checks": [
+    "preview commits and persists troop deployment before animation completes",
+    "reload during deployment restores exact committed state with one troop",
+    "simulated renderer-loss recovery remounts battle without a duplicate action",
+    "new preview window restores the same isolated save",
+    "diagnostic log records simulated loss and recovery",
+    "modern Electron console errors reach the diagnostic log",
+    "preview recovery never writes the actual game save key"
+  ],
+  "consoleErrors": [],
+  "note": "Renderer-loss event was simulated in a separate test profile; this is not evidence of an actual crash."
+}

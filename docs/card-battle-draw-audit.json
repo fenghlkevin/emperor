@@ -1,0 +1,64 @@
+{
+  "date": "2026-10-22",
+  "engineSha256": "0a31fb35ab2d951129cdc08beb320a3c9c5b273f6aecf0679ba46483ac14423c",
+  "examples": [
+    {
+      "fieldSoldiers": 25,
+      "fullDeck": {
+        "troop": 1,
+        "general": 0,
+        "tactic": 29
+      }
+    },
+    {
+      "fieldSoldiers": 100,
+      "fullDeck": {
+        "troop": 3,
+        "general": 1,
+        "tactic": 26
+      }
+    },
+    {
+      "fieldSoldiers": 200,
+      "fullDeck": {
+        "troop": 7,
+        "general": 1,
+        "tactic": 22
+      }
+    },
+    {
+      "fieldSoldiers": 450,
+      "fullDeck": {
+        "troop": 16,
+        "general": 2,
+        "tactic": 12
+      }
+    },
+    {
+      "fieldSoldiers": 840,
+      "fullDeck": {
+        "troop": 16,
+        "general": 2,
+        "tactic": 12
+      }
+    },
+    {
+      "fieldSoldiers": 1800,
+      "fullDeck": {
+        "troop": 16,
+        "general": 2,
+        "tactic": 12
+      }
+    }
+  ],
+  "randomOrderAudit": {
+    "seeds": 1000,
+    "cardsInspected": 27000,
+    "drawAndBurnChecks": 52000,
+    "wrongDraws": 0,
+    "missingDraws": 0,
+    "maxConsecutiveTactics": 8,
+    "fourOrMoreTacticRunWindows": 460
+  },
+  "conclusion": "The engine draws or burns the next shuffled card. Tiny armies fill most of the 30-card deck with tactics; random tactic streaks also occur in normal 18-unit/12-tactic decks. No forced type draw is added."
+}

@@ -1,0 +1,445 @@
+{
+  "date": "2026-10-23T07:16:18.835Z",
+  "purpose": "Functional smoke only; asymmetric multi-source defense landmark fixtures, not a 47–53% balance matrix or real desktop play evidence.",
+  "fixtureSha256": "a392f1baeb5c33e476b07750b65ff820800ff590345820d118d1e2255072a96c",
+  "rulesVersion": 6,
+  "landmarkCatalogVersion": 1,
+  "landmarkAiVersion": 1,
+  "weaponCatalogVersion": 1,
+  "weaponAiVersion": 1,
+  "elapsedSeconds": 4.5122789580000005,
+  "cases": [
+    {
+      "source": "central",
+      "seed": 324161,
+      "first": "home",
+      "result": "defeat",
+      "actions": 84,
+      "weaponPlays": 1,
+      "heroAttacks": 2,
+      "landmarkPlays": 2,
+      "landmarkUses": 3,
+      "homeDead": 332,
+      "kitLoss": {
+        "home": {
+          "infantry": 267,
+          "spears": 47,
+          "cavalry": 19,
+          "heavy-cavalry": 0,
+          "archers": 0,
+          "crossbows": 0,
+          "camel": 0,
+          "elephant": 0,
+          "horse-archers": 0
+        },
+        "enemy": {
+          "infantry": 379,
+          "spears": 200,
+          "cavalry": 80,
+          "heavy-cavalry": 0,
+          "archers": 0,
+          "crossbows": 0,
+          "camel": 0,
+          "elephant": 0,
+          "horse-archers": 0
+        }
+      }
+    },
+    {
+      "source": "central",
+      "seed": 324161,
+      "first": "enemy",
+      "result": "defeat",
+      "actions": 122,
+      "weaponPlays": 2,
+      "heroAttacks": 3,
+      "landmarkPlays": 3,
+      "landmarkUses": 3,
+      "homeDead": 553,
+      "kitLoss": {
+        "home": {
+          "infantry": 489,
+          "spears": 47,
+          "cavalry": 19,
+          "heavy-cavalry": 0,
+          "archers": 0,
+          "crossbows": 0,
+          "camel": 0,
+          "elephant": 0,
+          "horse-archers": 0
+        },
+        "enemy": {
+          "infantry": 510,
+          "spears": 425,
+          "cavalry": 200,
+          "heavy-cavalry": 0,
+          "archers": 0,
+          "crossbows": 0,
+          "camel": 0,
+          "elephant": 0,
+          "horse-archers": 0
+        }
+      }
+    },
+    {
+      "source": "central",
+      "seed": 6700417,
+      "first": "home",
+      "result": "defeat",
+      "actions": 131,
+      "weaponPlays": 1,
+      "heroAttacks": 2,
+      "landmarkPlays": 3,
+      "landmarkUses": 4,
+      "homeDead": 608,
+      "kitLoss": {
+        "home": {
+          "infantry": 453,
+          "spears": 137,
+          "cavalry": 19,
+          "heavy-cavalry": 0,
+          "archers": 0,
+          "crossbows": 0,
+          "camel": 0,
+          "elephant": 0,
+          "horse-archers": 0
+        },
+        "enemy": {
+          "infantry": 881,
+          "spears": 359,
+          "cavalry": 200,
+          "heavy-cavalry": 0,
+          "archers": 0,
+          "crossbows": 0,
+          "camel": 0,
+          "elephant": 0,
+          "horse-archers": 0
+        }
+      }
+    },
+    {
+      "source": "central",
+      "seed": 6700417,
+      "first": "enemy",
+      "result": "defeat",
+      "actions": 91,
+      "weaponPlays": 1,
+      "heroAttacks": 1,
+      "landmarkPlays": 2,
+      "landmarkUses": 4,
+      "homeDead": 367,
+      "kitLoss": {
+        "home": {
+          "infantry": 258,
+          "spears": 91,
+          "cavalry": 19,
+          "heavy-cavalry": 0,
+          "archers": 0,
+          "crossbows": 0,
+          "camel": 0,
+          "elephant": 0,
+          "horse-archers": 0
+        },
+        "enemy": {
+          "infantry": 602,
+          "spears": 100,
+          "cavalry": 80,
+          "heavy-cavalry": 0,
+          "archers": 0,
+          "crossbows": 0,
+          "camel": 0,
+          "elephant": 0,
+          "horse-archers": 0
+        }
+      }
+    },
+    {
+      "source": "hebei",
+      "seed": 324161,
+      "first": "home",
+      "result": "defeat",
+      "actions": 84,
+      "weaponPlays": 1,
+      "heroAttacks": 2,
+      "landmarkPlays": 2,
+      "landmarkUses": 2,
+      "homeDead": 368,
+      "kitLoss": {
+        "home": {
+          "infantry": 303,
+          "spears": 47,
+          "cavalry": 19,
+          "heavy-cavalry": 0,
+          "archers": 0,
+          "crossbows": 0,
+          "camel": 0,
+          "elephant": 0,
+          "horse-archers": 0
+        },
+        "enemy": {
+          "infantry": 393,
+          "spears": 200,
+          "cavalry": 0,
+          "heavy-cavalry": 0,
+          "archers": 0,
+          "crossbows": 0,
+          "camel": 0,
+          "elephant": 0,
+          "horse-archers": 0
+        }
+      }
+    },
+    {
+      "source": "hebei",
+      "seed": 324161,
+      "first": "enemy",
+      "result": "defeat",
+      "actions": 137,
+      "weaponPlays": 2,
+      "heroAttacks": 4,
+      "landmarkPlays": 3,
+      "landmarkUses": 3,
+      "homeDead": 599,
+      "kitLoss": {
+        "home": {
+          "infantry": 535,
+          "spears": 47,
+          "cavalry": 19,
+          "heavy-cavalry": 0,
+          "archers": 0,
+          "crossbows": 0,
+          "camel": 0,
+          "elephant": 0,
+          "horse-archers": 0
+        },
+        "enemy": {
+          "infantry": 586,
+          "spears": 475,
+          "cavalry": 200,
+          "heavy-cavalry": 0,
+          "archers": 0,
+          "crossbows": 0,
+          "camel": 0,
+          "elephant": 0,
+          "horse-archers": 0
+        }
+      }
+    },
+    {
+      "source": "hebei",
+      "seed": 6700417,
+      "first": "home",
+      "result": "defeat",
+      "actions": 155,
+      "weaponPlays": 2,
+      "heroAttacks": 2,
+      "landmarkPlays": 3,
+      "landmarkUses": 5,
+      "homeDead": 608,
+      "kitLoss": {
+        "home": {
+          "infantry": 453,
+          "spears": 138,
+          "cavalry": 19,
+          "heavy-cavalry": 0,
+          "archers": 0,
+          "crossbows": 0,
+          "camel": 0,
+          "elephant": 0,
+          "horse-archers": 0
+        },
+        "enemy": {
+          "infantry": 922,
+          "spears": 400,
+          "cavalry": 200,
+          "heavy-cavalry": 0,
+          "archers": 0,
+          "crossbows": 0,
+          "camel": 0,
+          "elephant": 0,
+          "horse-archers": 0
+        }
+      }
+    },
+    {
+      "source": "hebei",
+      "seed": 6700417,
+      "first": "enemy",
+      "result": "defeat",
+      "actions": 80,
+      "weaponPlays": 0,
+      "heroAttacks": 0,
+      "landmarkPlays": 2,
+      "landmarkUses": 2,
+      "homeDead": 321,
+      "kitLoss": {
+        "home": {
+          "infantry": 257,
+          "spears": 45,
+          "cavalry": 19,
+          "heavy-cavalry": 0,
+          "archers": 0,
+          "crossbows": 0,
+          "camel": 0,
+          "elephant": 0,
+          "horse-archers": 0
+        },
+        "enemy": {
+          "infantry": 567,
+          "spears": 0,
+          "cavalry": 0,
+          "heavy-cavalry": 0,
+          "archers": 0,
+          "crossbows": 0,
+          "camel": 0,
+          "elephant": 0,
+          "horse-archers": 0
+        }
+      }
+    },
+    {
+      "source": "tubo-core",
+      "seed": 324161,
+      "first": "home",
+      "result": "defeat",
+      "actions": 83,
+      "weaponPlays": 1,
+      "heroAttacks": 2,
+      "landmarkPlays": 2,
+      "landmarkUses": 3,
+      "homeDead": 318,
+      "kitLoss": {
+        "home": {
+          "infantry": 253,
+          "spears": 47,
+          "cavalry": 19,
+          "heavy-cavalry": 0,
+          "archers": 0,
+          "crossbows": 0,
+          "camel": 0,
+          "elephant": 0,
+          "horse-archers": 0
+        },
+        "enemy": {
+          "infantry": 365,
+          "spears": 200,
+          "cavalry": 80,
+          "heavy-cavalry": 0,
+          "archers": 0,
+          "crossbows": 0,
+          "camel": 0,
+          "elephant": 0,
+          "horse-archers": 0
+        }
+      }
+    },
+    {
+      "source": "tubo-core",
+      "seed": 324161,
+      "first": "enemy",
+      "result": "defeat",
+      "actions": 129,
+      "weaponPlays": 2,
+      "heroAttacks": 4,
+      "landmarkPlays": 3,
+      "landmarkUses": 3,
+      "homeDead": 528,
+      "kitLoss": {
+        "home": {
+          "infantry": 464,
+          "spears": 47,
+          "cavalry": 19,
+          "heavy-cavalry": 0,
+          "archers": 0,
+          "crossbows": 0,
+          "camel": 0,
+          "elephant": 0,
+          "horse-archers": 0
+        },
+        "enemy": {
+          "infantry": 510,
+          "spears": 400,
+          "cavalry": 200,
+          "heavy-cavalry": 0,
+          "archers": 0,
+          "crossbows": 0,
+          "camel": 0,
+          "elephant": 0,
+          "horse-archers": 0
+        }
+      }
+    },
+    {
+      "source": "tubo-core",
+      "seed": 6700417,
+      "first": "home",
+      "result": "defeat",
+      "actions": 186,
+      "weaponPlays": 2,
+      "heroAttacks": 4,
+      "landmarkPlays": 4,
+      "landmarkUses": 5,
+      "homeDead": 756,
+      "kitLoss": {
+        "home": {
+          "infantry": 601,
+          "spears": 138,
+          "cavalry": 19,
+          "heavy-cavalry": 0,
+          "archers": 0,
+          "crossbows": 0,
+          "camel": 0,
+          "elephant": 0,
+          "horse-archers": 0
+        },
+        "enemy": {
+          "infantry": 919,
+          "spears": 567,
+          "cavalry": 200,
+          "heavy-cavalry": 0,
+          "archers": 0,
+          "crossbows": 0,
+          "camel": 0,
+          "elephant": 0,
+          "horse-archers": 0
+        }
+      }
+    },
+    {
+      "source": "tubo-core",
+      "seed": 6700417,
+      "first": "enemy",
+      "result": "defeat",
+      "actions": 80,
+      "weaponPlays": 0,
+      "heroAttacks": 0,
+      "landmarkPlays": 2,
+      "landmarkUses": 2,
+      "homeDead": 339,
+      "kitLoss": {
+        "home": {
+          "infantry": 244,
+          "spears": 76,
+          "cavalry": 19,
+          "heavy-cavalry": 0,
+          "archers": 0,
+          "crossbows": 0,
+          "camel": 0,
+          "elephant": 0,
+          "horse-archers": 0
+        },
+        "enemy": {
+          "infantry": 600,
+          "spears": 0,
+          "cavalry": 0,
+          "heavy-cavalry": 0,
+          "archers": 0,
+          "crossbows": 0,
+          "camel": 0,
+          "elephant": 0,
+          "horse-archers": 0
+        }
+      }
+    }
+  ]
+}

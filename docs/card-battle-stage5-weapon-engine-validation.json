@@ -1,0 +1,74 @@
+{
+  "date": "2026-10-23T02:53:52.542016+00:00",
+  "wallClockAnchor": "2026-10-23T02:32:23.542000+00:00",
+  "wallClockElapsedSeconds": 1289.000016,
+  "versions": {
+    "rules": 4,
+    "weaponCatalog": "weapons.1",
+    "weaponAI": 1
+  },
+  "sources": {
+    "src/card-battle-weapons.mjs": "0bcb4e0714d26975a5b4135af8042de6677ba2c2f205d3260203ab8518b45466",
+    "src/card-battle.mjs": "28ab64e4d9e4cc67b53f881e612ced076eaf330d711af466b52e4334174de7b8",
+    "src/kit-war.mjs": "dc21ddaa48f87ec47f7327b5efb7ab12f1b500d8128887009d735d7d4ad0d958",
+    "src/kit-defense.mjs": "1e170b5e5f00e409c5919133c6e26ff3a4150598349ae9d0d79dc78352685fd8",
+    "src/card-battle-history.mjs": "124cd193ad6507aa62c3175c8addb37d2273f2cd424052736f7022d148cc62c0",
+    "src/card-battle-history-view.mjs": "6385e0b5784dc1f6ce5b31c6377630c2011b4f5a240976fcabd1a4e1bc4cde3d",
+    "src/card-battle-history-archive.mjs": "a33caaa8c78cb18dc3d5b4e96fc254c0c0259472e21fd1ee42e602ff4ce3d435",
+    "src/game-types.d.ts": "71c4a0eab13b50276ef9218dc4b3757916ec7e47a1d81e4258427e0afdad568a",
+    "scripts/validate-data-contract.mjs": "fed661ecf90f0f0901ebae16a69bcff183e0fcb2541718bed8a8e1f27a4fbc65",
+    "tests/card-battle-weapons.test.mjs": "0a1286514f5a79fa5709004d679066297c88666c552e65bb4928f227e25844c0",
+    "scripts/validate-card-weapons-engine.mjs": "1c2e3b0c72e06a5d453fabdaec4107e6afc9e66feafb8401961be3c089543b25",
+    "docs/fixtures/card-weapons-engine-base.json": "a2e90d0ad4ef63af76cbb1ec67656f455efddf40ed8ad9d8c72e8b65ef2febb2"
+  },
+  "delivery": "武器正式引擎与出征API、真实预留及出征毁损结算、同一合法动作AI与公开记录。不是完整可玩界面版本。",
+  "related": {
+    "command": "CARD_WEAPON_ENGINE_EVIDENCE=/private/tmp/card-weapons-engine node --test tests/card-battle-weapons.test.mjs tests/card-battle-weapon-ledger.test.mjs tests/card-battle-history.test.mjs tests/card-battle-history-archive.test.mjs",
+    "passed": 36,
+    "newWeaponTests": 15,
+    "elapsedSeconds": 5.415092375,
+    "log": "/private/tmp/card-weapons-engine.log"
+  },
+  "full": {
+    "command": "npm test",
+    "passed": 916,
+    "elapsedSeconds": 92.290622125,
+    "runtimeTypeSnapshots": 39,
+    "negativeTypeChecks": "passed",
+    "log": "/private/tmp/card-weapons-full.log"
+  },
+  "desktopExistingV3Only": {
+    "drag": {
+      "passed": 62,
+      "elapsedSeconds": 21.336,
+      "log": "/private/tmp/card-weapons-drag.log"
+    },
+    "tutorial": {
+      "passed": 21,
+      "elapsedSeconds": 15.309,
+      "log": "/private/tmp/card-weapons-tutorial.log"
+    },
+    "policy": "串行show:false隔离用户目录，未停止可见试玩；这些验证当前v3界面没有退化，不能作为规则4武器界面验收。教学Electron退出后有macOS任务策略stderr警告，断言及退出码通过，渲染控制台错误0。"
+  },
+  "independentSeedFunctionalSmoke": {
+    "command": "node scripts/validate-card-weapons-engine.mjs docs/fixtures/card-weapons-engine-base.json",
+    "cases": 8,
+    "elapsedSeconds": 4.237002416999999,
+    "heroAttacks": 24,
+    "weaponPlays": 13,
+    "fixtureSha256": "a2e90d0ad4ef63af76cbb1ec67656f455efddf40ed8ad9d8c72e8b65ef2febb2",
+    "report": "docs/card-battle-stage5-weapon-engine-smoke.json",
+    "scope": "非对称出征功能样本；逐驻地人口、九兵种套装与武器毁损守恒，不报告公平胜率或长期实机结论。"
+  },
+  "notDelivered": [
+    "战前配牌UI与真实备用套装提示",
+    "5比7武器卡、主将装备槽及点击／拖拽／命中演出",
+    "守城武器配置与多来源军备结算",
+    "完整武器版组合、界面和最终逐组平衡验收"
+  ],
+  "userDeferrals": [
+    "音效暂缓",
+    "不安排存档兼容、迁移或专门恢复验收；类型合同和内存资源校验照常"
+  ],
+  "checks": "相关源码语法与git diff --check通过；未使用子代理，未推送合并发布安装，无新增生产图像或音频资产。"
+}

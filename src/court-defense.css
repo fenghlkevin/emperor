@@ -2,3 +2,9 @@
 @media(max-width:700px){.defense-city{gap:15px;padding:12px}.defense-city-wall{font-size:40px;padding:7px 14px}.defense-city h2{font-size:20px;margin:6px 0}.defense-city p,.defense-city small{font-size:9px}.defense-auto-plan{gap:8px;margin:10px 0}.defense-auto-plan input{width:90px}.defense-source-facts article{min-width:125px}.defense-shortcuts button{font-size:9px;padding:6px}}
 
 .court-defense .defense-shortcuts button{color:#725737;background:#eadcbe}.court-defense .personnel-seal-actions>button:not(.court-vermilion){color:#725737;background:#eadcbe}
+
+.court-defense .defense-config-actions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px}.court-defense .defense-config-actions>button{min-width:0;padding:8px 5px;font-size:11px;line-height:1.6;color:#725737;background:#eadcbe;border:1px solid #bba47b}
+
+.court-defense .defense-config-actions small{display:block;font-size:9px;line-height:1.4}
+
+.court-defense[data-defense-stage="confirm"] .defense-config-actions{grid-template-columns:repeat(5,minmax(0,1fr))}.court-defense[data-defense-stage="confirm"] .personnel-scene-detail h2{font-size:22px;margin:6px 0 10px}.court-defense[data-defense-stage="confirm"] .personnel-scene-detail p{font-size:11px;line-height:1.6;margin:6px 0}

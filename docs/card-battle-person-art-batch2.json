@@ -1,0 +1,66 @@
+{
+  "mode": "built-in imagegen; one asset per exact historical person ID; no paid service or CLI fallback",
+  "date": "2026-10-23T09:03:23.245Z",
+  "jobs": [
+    {
+      "personId": "cbdb-1384",
+      "prompt": "Use case: identity-preserve. ONE fullbleed vertical5:7 production illustration for a historical strategy battle card, art only. Image1 is existing identity reference, image2 is approved game UI style: match the Zhang Fei card's warm painted battlefield illustration. Preserve image1 recognizable face, age, hair, beard, headgear, costume colors and civilian role. Create a waist/chest-up CLOSE-UP with large head and shoulders, face at upper third, complete headgear within frame. Rich warm historically inspired military-camp environment, secondary to person. Golden daylight, earth colors, painterly brushwork, convincing fabric, textured atmosphere. Game art, not an archaeological reconstruction. Fullbleed environment, no studio gradient, no empty black background. No text, numbers, UI, border, logo, watermark, magic, weapons in civilian hands, no armor added, no fullbody small catalog figure. Ouyang Xiu: thoughtful elderly dignitary, gray mustache and long gray goatee, burgundy patterned robes and black hat exactly as identity. Seated beside a campaign scholar's desk, holding a bamboo dispatch and considering recommendations. Muted burgundy cloth awning, distant soldiers and warm field camp, parchment rolls at bottom without lettering. Calm measured expression.",
+      "references": [
+        "assets/officials/historical/cbdb-1384/full.png",
+        "docs/screenshots/card-battle-original-prototype.png"
+      ],
+      "origin": "/Users/fengheliang/.codex/generated_images/01a16381-85b9-71f1-8014-3769188dd4cf/exec-fdc34420-3918-4921-b7ad-f9838640ebbe.png",
+      "path": "assets/battle/people/cbdb-1384-battle-v1.png",
+      "sha256": "6e7d2b4ebfda43e296cd79889034c2d94a77042e198bcf16f060371ff588972b",
+      "dimensions": [
+        1060,
+        1484
+      ]
+    },
+    {
+      "personId": "manual-1523",
+      "prompt": "Use case: identity-preserve. ONE fullbleed vertical5:7 production illustration for a historical strategy battle card, art only. Image1 is existing identity reference, image2 is approved game UI style: match the Zhang Fei card's warm painted battlefield illustration. Preserve image1 recognizable face, age, hair, beard, headgear, costume colors and civilian role. Create a waist/chest-up CLOSE-UP with large head and shoulders, face at upper third, complete headgear within frame. Rich warm historically inspired military-camp environment, secondary to person. Golden daylight, earth colors, painterly brushwork, convincing fabric, textured atmosphere. Game art, not an archaeological reconstruction. Fullbleed environment, no studio gradient, no empty black background. No text, numbers, UI, border, logo, watermark, magic, weapons in civilian hands, no armor added, no fullbody small catalog figure. Li Si: stern middle-aged official, sharply arched brows, narrow black mustache and pointed goatee, ivory patterned robes with gray-gold trim and tall black gold-trimmed hat exactly as identity. Three-quarter upper body issuing an administrative instruction with one hand, bamboo command documents low in composition. Qin-inspired rammed-earth command courtyard, subdued dark banners without writing, warm dust, distant orderly soldiers. Authoritative civilian.",
+      "references": [
+        "assets/officials/historical/manual-1523/full.png",
+        "docs/screenshots/card-battle-original-prototype.png"
+      ],
+      "origin": "/Users/fengheliang/.codex/generated_images/01a16381-85b9-71f1-8014-3769188dd4cf/exec-e8b2ffcb-d3a4-4e3d-b0fc-a9f10b96b291.png",
+      "path": "assets/battle/people/manual-1523-battle-v1.png",
+      "sha256": "c08283f5031093c7d4944e0760e1b772beb8202e730086256572c9dd7b8d16b6",
+      "dimensions": [
+        1060,
+        1484
+      ]
+    },
+    {
+      "personId": "cbdb-17364",
+      "prompt": "Use case: identity-preserve. ONE fullbleed vertical5:7 production illustration for a historical strategy battle card, art only. Image1 is existing identity reference, image2 is approved game UI style: match the Zhang Fei card's warm painted battlefield illustration. Preserve image1 recognizable face, age, hair, beard, headgear, costume colors and civilian role. Create a waist/chest-up CLOSE-UP with large head and shoulders, face at upper third, complete headgear within frame. Rich warm historically inspired military-camp environment, secondary to person. Golden daylight, earth colors, painterly brushwork, convincing fabric, textured atmosphere. Game art, not an archaeological reconstruction. Fullbleed environment, no studio gradient, no empty black background. No text, numbers, UI, border, logo, watermark, magic, weapons in civilian hands, no armor added, no fullbody small catalog figure. Guan Zhong: composed mature statesman with strong dark eyebrows, long black beard and mustache, charcoal-gray patterned robes and black hat exactly as identity. Upper body at logistics planning table, one hand resting on a rolled bamboo record. Distant provision carts and military storehouses, bronze weights and grain baskets at lower edge, muted teal standards without writing in warm late-day light. Confident civilian administrator.",
+      "references": [
+        "assets/officials/historical/cbdb-17364/full.png",
+        "docs/screenshots/card-battle-original-prototype.png"
+      ],
+      "origin": "/Users/fengheliang/.codex/generated_images/01a16381-85b9-71f1-8014-3769188dd4cf/exec-868795fd-286a-4608-b42f-a6e2dcd7fd9c.png",
+      "path": "assets/battle/people/cbdb-17364-battle-v1.png",
+      "sha256": "20a7a43b2d8234bb77519141ae32fb70c00f3e2b3a67663ea09ebecbc092b35d",
+      "dimensions": [
+        1060,
+        1484
+      ]
+    },
+    {
+      "personId": "manual-1527",
+      "prompt": "Use case: identity-preserve. ONE fullbleed vertical5:7 production illustration for a historical strategy battle card, art only. Image1 is existing identity reference, image2 is approved game UI style: match the Zhang Fei card's warm painted battlefield illustration. Preserve image1 recognizable face, age, hair, beard, headgear, costume colors and civilian role. Create a waist/chest-up CLOSE-UP with large head and shoulders, face at upper third, complete headgear within frame. Rich warm historically inspired military-camp environment, secondary to person. Golden daylight, earth colors, painterly brushwork, convincing fabric, textured atmosphere. Game art, not an archaeological reconstruction. Fullbleed environment, no studio gradient, no empty black background. No text, numbers, UI, border, logo, watermark, magic, weapons in civilian hands, no armor added, no fullbody small catalog figure. Xiao He: calm middle-aged official with neat black mustache and pointed goatee, dark blue patterned robes and black hat exactly as identity. Close upper body gesturing toward supply movement, bamboo dispatch in other hand low in frame. Grain carts, packed sacks and field tents in warm morning light behind, dusty supply-road atmosphere. Emphasize efficient humane quartermaster, civilian without armor.",
+      "references": [
+        "assets/officials/historical/manual-1527/full.png",
+        "docs/screenshots/card-battle-original-prototype.png"
+      ],
+      "origin": "/Users/fengheliang/.codex/generated_images/01a16381-85b9-71f1-8014-3769188dd4cf/exec-9ee0ece6-6434-43cd-979e-b9c9d4ff32b4.png",
+      "path": "assets/battle/people/manual-1527-battle-v1.png",
+      "sha256": "feebd965a677016a41af5b4788de34662075fe7ddb4867a370ef88aa16c0981f",
+      "dimensions": [
+        1060,
+        1484
+      ]
+    }
+  ]
+}

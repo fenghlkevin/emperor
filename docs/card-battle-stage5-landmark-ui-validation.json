@@ -1,0 +1,128 @@
+{
+  "date": "2026-10-23T07:03:55.744Z",
+  "elapsedSeconds": 28.218,
+  "checks": [
+    "both hand facilities have distinct SVG art and readable real rules",
+    "deploy commits exactly once before its visual landing",
+    "native deployment shares the existing seven slots and shows two available uses",
+    "facility pulse preserves old uses and wounded health until actual impact",
+    "native camp use heals at impact with one spent use and two-own-turn cooldown",
+    "cooldown click spends no mana, use or record",
+    "native end and scripted opponent end use the same formal turn refresh",
+    "next own turn still has one cooldown turn",
+    "actual simultaneous retaliation creates a second wound without invented damage",
+    "native end and scripted opponent end use the same formal turn refresh",
+    "native second camp drag heals, exhausts exactly twice and frees its shared slot",
+    "native facility hand drag deploys to own shared field",
+    "facility dragged to an enemy cancels without uses or state changes",
+    "native rally drag applies the same temporary attack as formal activation",
+    "pinned facility details identify actual source and explicit loss-of-remaining-uses removal",
+    "native removal frees field and never refunds remaining use or creates a troop death",
+    "1440px six units plus facility keep exactly seven native-hit5:7 rectangles",
+    "1440px full shared field refuses another facility without payment",
+    "1000px six units plus facility keep exactly seven native-hit5:7 rectangles",
+    "1000px full shared field refuses another facility without payment",
+    "800px six units plus facility keep exactly seven native-hit5:7 rectangles",
+    "800px full shared field refuses another facility without payment",
+    "full deck facility filter shows both true-source orders without null troop statistics",
+    "campaign facility draft shares budget and changes no real resource",
+    "two facilities deduct two spells beside eighteen actual army cards",
+    "campaign review quotes actual camp/command position source",
+    "native campaign seal starts actual rule6 from selected facility plan",
+    "backup military office opens exactly one shared facility draft",
+    "fast facility deployment commits once and unlocks",
+    "fast facility use preserves formal effect and clears animation locks",
+    "reduced facility deployment commits once and unlocks",
+    "reduced facility use preserves formal effect and clears animation locks"
+  ],
+  "errors": [],
+  "scope": "Stage5 offensive landmark draft/plans/full deck, shared seven 5:7 slots, native deploy/use/drag/remove, impact timing and fast/reduced motion. Defense/teaching still pending.",
+  "rulesVersion": 6,
+  "landmarkCatalogVersion": 1,
+  "landmarkAiVersion": 1,
+  "heartbeatStartedAt": "2026-10-23T05:49:15.046Z",
+  "models": {
+    "relatedPassed": 18,
+    "elapsedSeconds": 4.949479125,
+    "command": "node --test tests/card-battle-landmarks.test.mjs tests/card-battle-plans.test.mjs tests/card-battle-deck-summary.test.mjs",
+    "log": "/private/tmp/card-landmark-ui-model.log",
+    "newPlansPassed": 2,
+    "newPlansSeconds": 2.827086125,
+    "newPlansCommand": "node --test tests/card-battle-landmark-plans.test.mjs",
+    "newPlansLog": "/private/tmp/card-landmark-ui-plans.log"
+  },
+  "fullRegression": {
+    "command": "npm test",
+    "passed": 986,
+    "failed": 0,
+    "runtimeContracts": 43,
+    "elapsedSeconds": 77.569808333,
+    "log": "/private/tmp/card-landmark-ui-full.log"
+  },
+  "native": {
+    "command": "npm run test:card-battle-landmarks",
+    "passed": 32,
+    "elapsedSeconds": 28.218,
+    "log": "/private/tmp/card-landmark-ui.log"
+  },
+  "nativeRegressions": [
+    {
+      "command": "npm run test:card-battle-weapons",
+      "passed": 26,
+      "elapsedSeconds": 16.5,
+      "log": "/private/tmp/card-landmark-ui-weapons-regression.log"
+    },
+    {
+      "command": "npm run test:card-battle-secrets",
+      "passed": 27,
+      "elapsedSeconds": 24.751,
+      "log": "/private/tmp/card-landmark-ui-secrets-regression.log"
+    },
+    {
+      "command": "npm run test:card-battle-drag",
+      "passed": 62,
+      "elapsedSeconds": 21.257,
+      "log": "/private/tmp/card-landmark-ui-drag-regression.log"
+    }
+  ],
+  "screenshots": [
+    "docs/screenshots/card-battle-landmarks-1440.png",
+    "docs/screenshots/card-battle-landmarks-1000.png",
+    "docs/screenshots/card-battle-landmarks-800.png"
+  ],
+  "resolvedFailures": [
+    "Native facility details originally inherited pointer-events:none; scoped interactive panel and explicit close now permit real removal.",
+    "800px draft apply was below viewport; sticky reachable footer and native test scroll-to-visible fixed this.",
+    "Long cooldown label overflowed small cards; compact counter retains full explanation in details.",
+    "Old drag regression asserted obsolete seven-troops wording; updated to shared seven-slot wording while retaining complete unchanged-state check."
+  ],
+  "limitations": [
+    "No audio work or new save-compatibility acceptance.",
+    "Defensive landmarks, landmark combinations and tutorial remain pending.",
+    "No new balance claim; final rule6 per-group independent-seed balance and long real-desktop acceptance remain stage1.",
+    "SVG facility art is code-native, not final stage6 area art."
+  ],
+  "sourceSha256": {
+    "src/card-battle-ui.mjs": "279a2e874dc2cd72d54601d5295878ed062a0b996d7b8a2ea9f2089ddf96a8db",
+    "src/card-battle-landmarks.mjs": "f24a9a0f1c5ac51bb5b7135cc604746ee2cd132a9c0e5a8aa05a7c9e13da62bf",
+    "src/card-battle-landmark-art.mjs": "6ea019233e51919d93823c65ae5ebae6053382d2121bc6eb0e861fb184a9502e",
+    "src/card-battle-landmarks.css": "103393b3b74bb29c0546ad70bed63964ff0554f645873d58d03e1451868ed718",
+    "src/card-battle-landmark-draft-ui.mjs": "7afee9c05633eff19713ffb387c79987355ddf136bdcba84a5d0f135466fb6d5",
+    "src/card-battle-plan-data.mjs": "e69e387ec576e227dd86be2cc9df479688a342ddecec029297e30854571db3de",
+    "src/card-battle-plans.mjs": "ad4e86d807b369e12a17ae99e6a8c49d9d7be50cd8c166f6cce7ee21629e43fc",
+    "src/card-battle-deck-summary.mjs": "3396351f8e8658caa9925350a1fbdb7185b9aeed0fd3dc795d9384c6d47588ea",
+    "src/card-battle-deck-ui.mjs": "388a070d8425492fba1f2e3c770fd119d21390550f4256cba8955aa038d67092",
+    "src/court-campaign.mjs": "fea1b557e699aab40afa1c66e2be1c6ea4a6969ba74233501e4eb23ead5df052",
+    "src/court-campaign-ui.mjs": "d92874f37377915df0bb6f296c575dbf768bf3c902cf6a4bfbbab69511533d03",
+    "src/kit-office-ui.mjs": "71065af0b2f5b11b702bed7817ad5140b33e7adac729bccd7d23d598406cd2e5",
+    "src/game-types.d.ts": "9e6797c420c880626f01a4fee7a57a9543ae1627fd1f5bd3ffe5423803a46d62",
+    "index.html": "5ce2c90d63b2969079c9edd1897cb7ad3d4755b372b5b83e2cfb5b62210885d0",
+    "package.json": "65ed984e461c91b554736e085132a23ffa6c896119fb34b3950fe6671798bf41",
+    "tests/card-battle-landmark-plans.test.mjs": "7e8cae6145d282cd3a7bbd7f7b73440982767ace2c72dce87c5fc2774b4a9844",
+    "tests/card-battle-landmarks-desktop.cjs": "f07a3e3c49fc86f7af3356252b542b058b528520a605a36969423effc7229eb4",
+    "tests/card-battle-drag-desktop.cjs": "e0ce3c8af8dae9cab499493759ae957ee629ea61e715bc3131a0a5b95afe48a7"
+  },
+  "archivedAt": "2026-10-23T07:08:39.760166+00:00",
+  "wallSeconds": 4764.714,
+  "wallTimeNote": "Whole wake-to-archive wall clock, including execution/context interruptions and resumed verification; not CPU time."
+}

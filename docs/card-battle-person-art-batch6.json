@@ -1,0 +1,78 @@
+{
+  "mode": "built-in imagegen; independent exact-ID historical references; original portraits retained",
+  "date": "2026-10-23T10:21:16.504Z",
+  "jobs": [
+    {
+      "id": "general-113-60981",
+      "name": "苏武",
+      "role": "武将",
+      "direction": "Su Wu: elderly unarmored envoy with deeply lined resolute face, white bushy eyebrows, long white beard and gray topknot, weathered rust robes and shaggy brown fur mantle exactly reference. Upper body holding the same bronze-topped ceremonial envoy staff near left edge, white horsehair tassels moving in a light wind. Distant northern frontier encampment and sparse grazing sheep near dry rolling hills, amber dawn sun and muted frost only far away. Maintain dignity and worn clothes, no added armor or spear, no magical aura.",
+      "prompt": "Use case: identity-preserve. ONE fullbleed vertical5:7 production illustration for a historical strategy battle card, art only. Image1 is existing character identity reference, image2 approved UI style: match the Zhang Fei card's warm painterly battlefield rendering. Preserve reference1 recognizable face, age, facial hair, hair/hat, costume silhouette and colors. Chest/waist-up CLOSE-UP, dominant large head and shoulders, face upper third, head/hat fully within frame with space above. Rich warm camp environment secondary to person. Golden daylight, earth colors, textured illustrated brushwork, convincing fabrics and metals. Game art, not archaeological reconstruction. No black/studio background, fullbody tiny catalog figure, magic, UI/frame, logo/watermark, text/numbers anywhere including banners/documents. No armor added to unarmored identity. Su Wu: elderly unarmored envoy with deeply lined resolute face, white bushy eyebrows, long white beard and gray topknot, weathered rust robes and shaggy brown fur mantle exactly reference. Upper body holding the same bronze-topped ceremonial envoy staff near left edge, white horsehair tassels moving in a light wind. Distant northern frontier encampment and sparse grazing sheep near dry rolling hills, amber dawn sun and muted frost only far away. Maintain dignity and worn clothes, no added armor or spear, no magical aura.",
+      "origin": "/Users/fengheliang/.codex/generated_images/01a16381-85b9-71f1-8014-3769188dd4cf/exec-40133e1e-5661-4e10-948b-dcd37e1492f0.png",
+      "path": "assets/battle/people/general-113-60981-battle-v1.png",
+      "references": [
+        "assets/officials/historical/general-113-60981/full.png",
+        "docs/screenshots/card-battle-original-prototype.png"
+      ],
+      "sha256": "4df996c6237a9db2ddfa18277e388b11bdd21b82774356b89d12554a7f608f15",
+      "dimensions": [
+        1060,
+        1484
+      ]
+    },
+    {
+      "id": "cbdb-898",
+      "name": "寇准",
+      "role": "文职",
+      "direction": "Kou Zhun: broad middle-aged face and short full dark beard, tall black horizontal-wing Song official hat and rich red patterned robe as reference. Upper body giving a firm measured instruction with one hand while holding ivory tablet low. Behind is a frontier command pavilion opening onto ramparts, rows of distant troops, plain dark-red standard and warm dusty daylight. Resolute statesman, no armor, weapons, frost magic or ice particles.",
+      "prompt": "Use case: identity-preserve. ONE fullbleed vertical5:7 production illustration for a historical strategy battle card, art only. Image1 is existing character identity reference, image2 approved UI style: match the Zhang Fei card's warm painterly battlefield rendering. Preserve reference1 recognizable face, age, facial hair, hair/hat, costume silhouette and colors. Chest/waist-up CLOSE-UP, dominant large head and shoulders, face upper third, head/hat fully within frame with space above. Rich warm camp environment secondary to person. Golden daylight, earth colors, textured illustrated brushwork, convincing fabrics and metals. Game art, not archaeological reconstruction. No black/studio background, fullbody tiny catalog figure, magic, UI/frame, logo/watermark, text/numbers anywhere including banners/documents. No armor added to unarmored identity. Kou Zhun: broad middle-aged face and short full dark beard, tall black horizontal-wing Song official hat and rich red patterned robe as reference. Upper body giving a firm measured instruction with one hand while holding ivory tablet low. Behind is a frontier command pavilion opening onto ramparts, rows of distant troops, plain dark-red standard and warm dusty daylight. Resolute statesman, no armor, weapons, frost magic or ice particles.",
+      "origin": "/Users/fengheliang/.codex/generated_images/01a16381-85b9-71f1-8014-3769188dd4cf/exec-5aae7bcc-5507-4bf8-bdf9-df84d13cce8c.png",
+      "path": "assets/battle/people/cbdb-898-battle-v1.png",
+      "references": [
+        "assets/officials/historical/cbdb-898/full.png",
+        "docs/screenshots/card-battle-original-prototype.png"
+      ],
+      "sha256": "630a2eead64d41a9b5d92834caf2fa7d552306a3156ed2e876d62f671777ce42",
+      "dimensions": [
+        1060,
+        1484
+      ]
+    },
+    {
+      "id": "manual-1544",
+      "name": "马援",
+      "role": "武将",
+      "direction": "Ma Yuan: experienced gray-haired mature general, salt-and-pepper mustache and short goatee, topknot with bronze clasp, worn green cape over brown-gold lamellar armor as reference. Strong three-quarter upper body with his spear along the left edge, free hand signaling a disciplined march. Distant footsoldiers on a fortified frontier road, green blank standards, dry mountains in warm morning light. Preserve mature dignified age and practical armor, no rejuvenation or glowing powers.",
+      "prompt": "Use case: identity-preserve. ONE fullbleed vertical5:7 production illustration for a historical strategy battle card, art only. Image1 is existing character identity reference, image2 approved UI style: match the Zhang Fei card's warm painterly battlefield rendering. Preserve reference1 recognizable face, age, facial hair, hair/hat, costume silhouette and colors. Chest/waist-up CLOSE-UP, dominant large head and shoulders, face upper third, head/hat fully within frame with space above. Rich warm camp environment secondary to person. Golden daylight, earth colors, textured illustrated brushwork, convincing fabrics and metals. Game art, not archaeological reconstruction. No black/studio background, fullbody tiny catalog figure, magic, UI/frame, logo/watermark, text/numbers anywhere including banners/documents. No armor added to unarmored identity. Ma Yuan: experienced gray-haired mature general, salt-and-pepper mustache and short goatee, topknot with bronze clasp, worn green cape over brown-gold lamellar armor as reference. Strong three-quarter upper body with his spear along the left edge, free hand signaling a disciplined march. Distant footsoldiers on a fortified frontier road, green blank standards, dry mountains in warm morning light. Preserve mature dignified age and practical armor, no rejuvenation or glowing powers.",
+      "origin": "/Users/fengheliang/.codex/generated_images/01a16381-85b9-71f1-8014-3769188dd4cf/exec-7a145238-8f22-4dfe-b90a-36ab3aab10b8.png",
+      "path": "assets/battle/people/manual-1544-battle-v1.png",
+      "references": [
+        "assets/officials/historical/manual-1544/full.png",
+        "docs/screenshots/card-battle-original-prototype.png"
+      ],
+      "sha256": "01259ecfba5f147a60ae28de11a8070b1704c2d5d146e9f260728e8d6c5522ed",
+      "dimensions": [
+        1060,
+        1484
+      ]
+    },
+    {
+      "id": "general-296-67948",
+      "name": "祖逖",
+      "role": "武将",
+      "direction": "Zu Ti: determined younger general with strong brows and short black mustache, raised black topknot with small bronze clasp, dark blue-gray lamellar armor and weathered pale gray cape as reference. Close upper body at a wooden river crossing command post, one hand resting on a horizontal oar low in composition, sword sheathed at waist. Distant timber boats, riverbank troops and subdued pale-gray blank standards in golden dawn, sense of steady forward resolve, no magical effects or modern ship.",
+      "prompt": "Use case: identity-preserve. ONE fullbleed vertical5:7 production illustration for a historical strategy battle card, art only. Image1 is existing character identity reference, image2 approved UI style: match the Zhang Fei card's warm painterly battlefield rendering. Preserve reference1 recognizable face, age, facial hair, hair/hat, costume silhouette and colors. Chest/waist-up CLOSE-UP, dominant large head and shoulders, face upper third, head/hat fully within frame with space above. Rich warm camp environment secondary to person. Golden daylight, earth colors, textured illustrated brushwork, convincing fabrics and metals. Game art, not archaeological reconstruction. No black/studio background, fullbody tiny catalog figure, magic, UI/frame, logo/watermark, text/numbers anywhere including banners/documents. No armor added to unarmored identity. Zu Ti: determined younger general with strong brows and short black mustache, raised black topknot with small bronze clasp, dark blue-gray lamellar armor and weathered pale gray cape as reference. Close upper body at a wooden river crossing command post, one hand resting on a horizontal oar low in composition, sword sheathed at waist. Distant timber boats, riverbank troops and subdued pale-gray blank standards in golden dawn, sense of steady forward resolve, no magical effects or modern ship.",
+      "origin": "/Users/fengheliang/.codex/generated_images/01a16381-85b9-71f1-8014-3769188dd4cf/exec-714d33c8-700f-4ea9-bf87-4ee48f17ac11.png",
+      "path": "assets/battle/people/general-296-67948-battle-v1.png",
+      "references": [
+        "assets/officials/historical/general-296-67948/full.png",
+        "docs/screenshots/card-battle-original-prototype.png"
+      ],
+      "sha256": "c66f8f324362ee35090b488f71886e93d944bcfe33d6a9f56170190baaba7079",
+      "dimensions": [
+        1060,
+        1484
+      ]
+    }
+  ]
+}

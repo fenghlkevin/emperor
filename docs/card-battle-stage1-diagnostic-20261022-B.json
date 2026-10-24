@@ -1,0 +1,210 @@
+{
+  "version": "phase1-release-v5",
+  "date": "2026-10-22T12:08:32.875Z",
+  "section": "matrix",
+  "domain": "stage1-diagnostic-20261022-B",
+  "pairsPerCase": 3000,
+  "sources": {
+    "src/card-battle.mjs": "0a31fb35ab2d951129cdc08beb320a3c9c5b273f6aecf0679ba46483ac14423c",
+    "src/card-battle-data.mjs": "c2015f6ada2a6081497ff05caa2d14a02e09714478766299dd91df9032f02b5a",
+    "scripts/card-battle-balance-fixture.mjs": "ee91f3149db232402821b94fdd3db56c9aebf21f4ed697a61b5423318212b656"
+  },
+  "rules": {
+    "version": 3,
+    "unitSize": 100,
+    "compactArmy": true,
+    "compactPenalty": true,
+    "troopCap": 18,
+    "boardLimit": 7,
+    "handLimit": 10,
+    "deckSize": 30,
+    "spellPackages": {
+      "martial": [
+        "precision",
+        "fire",
+        "fortify",
+        "assault",
+        "supply",
+        "pin",
+        "precision",
+        "fire",
+        "fortify",
+        "supply",
+        "dispel",
+        "heal"
+      ],
+      "intelligence": [
+        "precision",
+        "fire",
+        "arrows",
+        "barrage",
+        "pin",
+        "supply",
+        "precision",
+        "execute",
+        "arrows",
+        "barrage",
+        "pin",
+        "dispel"
+      ],
+      "command": [
+        "precision",
+        "fire",
+        "fortify",
+        "assault",
+        "supply",
+        "brace",
+        "fire",
+        "fortify",
+        "assault",
+        "supply",
+        "heal",
+        "dispel"
+      ]
+    },
+    "penaltyTiersOnly": true,
+    "reserveDeckGrowth": 2,
+    "lowTrainingPenalty": "general",
+    "scoutVariants": {
+      "intelligence": {
+        "cavalry": "cavalry_patrol_scout"
+      },
+      "command": {
+        "cavalry": "cavalry_patrol_scout"
+      }
+    }
+  },
+  "method": "Production cardAI + actCardsMutable; paired fixed A/B random streams, swapped first player. Each independent pair also varies equal ability-gated fixed person profiles. CI is paired normal 95%; draws score 0.5. Controller is heuristic, not a human or optimal policy.",
+  "games": 24000,
+  "elapsedSeconds": 68.66,
+  "rows": [
+    {
+      "id": "mixed_600-20-command",
+      "roster": "mixed_600",
+      "training": 20,
+      "hero": "command",
+      "pairs": 3000,
+      "seedDomain": "stage1-diagnostic-20261022-B",
+      "games": 6000,
+      "first": {
+        "mean": 0.4736666666666667,
+        "ci95": [
+          0.4612612472651028,
+          0.48607208606823055
+        ]
+      },
+      "home": {
+        "mean": 0.49566666666666664,
+        "ci95": [
+          0.48280457814682604,
+          0.5085287551865072
+        ]
+      },
+      "draws": 0,
+      "rounds": {
+        "median": 13,
+        "p90": 25,
+        "max": 33
+      },
+      "actions": 663970,
+      "validatedFinalStates": 120,
+      "deployed": []
+    },
+    {
+      "id": "mixed_600-20-martial",
+      "roster": "mixed_600",
+      "training": 20,
+      "hero": "martial",
+      "pairs": 3000,
+      "seedDomain": "stage1-diagnostic-20261022-B",
+      "games": 6000,
+      "first": {
+        "mean": 0.461,
+        "ci95": [
+          0.4486028899236118,
+          0.47339711007638824
+        ]
+      },
+      "home": {
+        "mean": 0.49366666666666664,
+        "ci95": [
+          0.48083888352256965,
+          0.5064944498107636
+        ]
+      },
+      "draws": 0,
+      "rounds": {
+        "median": 14,
+        "p90": 19,
+        "max": 27
+      },
+      "actions": 609993,
+      "validatedFinalStates": 120,
+      "deployed": []
+    },
+    {
+      "id": "mixed_600-60-command",
+      "roster": "mixed_600",
+      "training": 60,
+      "hero": "command",
+      "pairs": 3000,
+      "seedDomain": "stage1-diagnostic-20261022-B",
+      "games": 6000,
+      "first": {
+        "mean": 0.4661666666666667,
+        "ci95": [
+          0.4536346065227308,
+          0.47869872681060255
+        ]
+      },
+      "home": {
+        "mean": 0.5191666666666667,
+        "ci95": [
+          0.506468215367119,
+          0.5318651179662144
+        ]
+      },
+      "draws": 0,
+      "rounds": {
+        "median": 13,
+        "p90": 25,
+        "max": 32
+      },
+      "actions": 661078,
+      "validatedFinalStates": 120,
+      "deployed": []
+    },
+    {
+      "id": "mixed_600-90-command",
+      "roster": "mixed_600",
+      "training": 90,
+      "hero": "command",
+      "pairs": 3000,
+      "seedDomain": "stage1-diagnostic-20261022-B",
+      "games": 6000,
+      "first": {
+        "mean": 0.466,
+        "ci95": [
+          0.4539151690095018,
+          0.47808483099049826
+        ]
+      },
+      "home": {
+        "mean": 0.49933333333333335,
+        "ci95": [
+          0.48619120334949817,
+          0.5124754633171685
+        ]
+      },
+      "draws": 0,
+      "rounds": {
+        "median": 13,
+        "p90": 24,
+        "max": 32
+      },
+      "actions": 652130,
+      "validatedFinalStates": 120,
+      "deployed": []
+    }
+  ]
+}

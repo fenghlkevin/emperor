@@ -1,0 +1,250 @@
+{
+  "date": "2026-10-23T00:34:16.972008+00:00",
+  "historyVersion": 1,
+  "scope": "Current production v3 battle history data and restore API; record panel, post-settlement archive and tutorial remain pending.",
+  "sources": {
+    "src/card-battle-history.mjs": "111e7cf57a79e720b2d5e2c5d3d19dba231aec9d8d3b2e4439a283c05bea240d",
+    "src/card-battle.mjs": "e62167d930d57d4c5094e57ed3831db9f2797d892f813dba6dce4afb5e683a58",
+    "src/game-types.d.ts": "36f2d1316947b35c958eb00bff446e0b54a98064e84b33914fda0802c2a42faa",
+    "tests/card-battle-history.test.mjs": "b5014621c8e50146780cfcd997524431aeb50462c9ff883dc441f4cae76353a5",
+    "tests/card-battle-history-desktop.cjs": "ddea0c0f74c14b74167153d59f7a3158a87b434899aca8834a8f897449adb0fa",
+    "package.json": "5b4c38be216d7fe02ce524ca9dee4043950b65179cc26c97c01efc46ba0d0d7f"
+  },
+  "regression": {
+    "tests": 877,
+    "pass": 877,
+    "fail": 0,
+    "elapsedSeconds": 74.663115709,
+    "log": "/private/tmp/card-stage3-history-full-regression.log",
+    "types": "36 runtime snapshots and negative type checks passed"
+  },
+  "desktop": {
+    "date": "2026-10-23T00:30:21.445Z",
+    "elapsedSeconds": 9.664,
+    "checks": [
+      "opening action is persisted exactly once",
+      "troop deployment record commits before animation completion",
+      "reload during animation restores exact state and history without duplication",
+      "new hidden window restores the same committed action history",
+      "read-only deck view creates no phantom action record",
+      "recovered input unlocks and actual game save key stays untouched"
+    ],
+    "consoleErrors": [],
+    "publicHistory": {
+      "version": 1,
+      "nextId": 3,
+      "checksum": 2082639723,
+      "startedPly": 1,
+      "partial": false,
+      "entries": [
+        {
+          "id": 1,
+          "ply": 1,
+          "round": 1,
+          "side": "home",
+          "type": "mulligan",
+          "cost": 0,
+          "actor": {
+            "id": "home-hero",
+            "side": "home",
+            "type": "hero",
+            "name": "沈文远"
+          },
+          "swaps": 0,
+          "resources": {
+            "home": {
+              "before": {
+                "mana": 0,
+                "discount": 0
+              },
+              "after": {
+                "mana": 1,
+                "discount": 0
+              }
+            },
+            "enemy": {
+              "before": {
+                "mana": 0,
+                "discount": 0
+              },
+              "after": {
+                "mana": 0,
+                "discount": 0
+              }
+            }
+          },
+          "changes": [],
+          "events": [
+            {
+              "ordinal": 1,
+              "type": "draw",
+              "ply": 1,
+              "round": 1,
+              "cause": {
+                "parents": [
+                  {
+                    "kind": "mulligan",
+                    "source": {
+                      "id": "home-hero",
+                      "side": "home",
+                      "type": "hero",
+                      "name": "沈文远"
+                    }
+                  }
+                ],
+                "kind": "start-turn",
+                "source": {
+                  "id": "home-hero",
+                  "side": "home",
+                  "type": "hero",
+                  "name": "沈文远"
+                }
+              },
+              "side": "home",
+              "subject": {
+                "id": "home-27",
+                "side": "home",
+                "type": "tactic",
+                "name": "奋勇进击"
+              }
+            },
+            {
+              "ordinal": 2,
+              "type": "turn",
+              "ply": 1,
+              "round": 1,
+              "cause": {
+                "parents": [
+                  {
+                    "kind": "mulligan",
+                    "source": {
+                      "id": "home-hero",
+                      "side": "home",
+                      "type": "hero",
+                      "name": "沈文远"
+                    }
+                  }
+                ],
+                "kind": "start-turn",
+                "source": {
+                  "id": "home-hero",
+                  "side": "home",
+                  "type": "hero",
+                  "name": "沈文远"
+                }
+              },
+              "side": "home"
+            }
+          ],
+          "checksum": 346105429
+        },
+        {
+          "id": 2,
+          "ply": 1,
+          "round": 1,
+          "side": "home",
+          "type": "play",
+          "cost": 1,
+          "actor": {
+            "id": "home-1",
+            "side": "home",
+            "type": "troop",
+            "name": "前锋小队"
+          },
+          "resources": {
+            "home": {
+              "before": {
+                "mana": 1,
+                "discount": 0
+              },
+              "after": {
+                "mana": 0,
+                "discount": 0
+              }
+            },
+            "enemy": {
+              "before": {
+                "mana": 0,
+                "discount": 0
+              },
+              "after": {
+                "mana": 0,
+                "discount": 0
+              }
+            }
+          },
+          "changes": [
+            {
+              "subject": {
+                "id": "home-1",
+                "side": "home",
+                "type": "troop",
+                "name": "前锋小队"
+              },
+              "before": null,
+              "after": {
+                "attack": 1,
+                "hp": 2,
+                "maxHp": 2,
+                "tags": [],
+                "frozen": false,
+                "silenced": false,
+                "tempAttack": 0,
+                "zone": "board"
+              }
+            }
+          ],
+          "events": [
+            {
+              "ordinal": 1,
+              "type": "play",
+              "ply": 1,
+              "round": 1,
+              "cause": {
+                "kind": "play",
+                "source": {
+                  "id": "home-1",
+                  "side": "home",
+                  "type": "troop",
+                  "name": "前锋小队"
+                }
+              },
+              "side": "home",
+              "subject": {
+                "id": "home-1",
+                "side": "home",
+                "type": "troop",
+                "name": "前锋小队"
+              },
+              "before": null,
+              "after": {
+                "attack": 1,
+                "hp": 2,
+                "maxHp": 2,
+                "tags": [],
+                "frozen": false,
+                "silenced": false,
+                "tempAttack": 0,
+                "zone": "board"
+              }
+            }
+          ],
+          "checksum": 2082639723
+        }
+      ]
+    }
+  },
+  "statusRegression": {
+    "checks": 21,
+    "method": "Serial hidden Electron status/expire/silence UI regression; original script date field is fixed to its initial date."
+  },
+  "sizeProbe": {
+    "purpose": "Functional size and persistence probe, not a balance estimate",
+    "actions": 88,
+    "historyBytes": 120090,
+    "stateBytes": 569707,
+    "saveLimitBytes": 8388608,
+    "elapsedSeconds": 0.013516583000000082
+  },
+  "balance": "No balance audit or new win-rate claim. Final stage-one independent-seed review remains pending."
+}

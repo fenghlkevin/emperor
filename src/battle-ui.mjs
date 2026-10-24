@@ -1,3 +1,4 @@
+import {drawCardBattle} from './card-battle-ui.mjs';
 import {terrainNames,terrainCost} from './battle-tactics.mjs';
 import {WEAPON_ACTIONS,weaponMotion} from './battle-general-weapons.mjs';
 import {attackMotion,hitMotion,deathMotion} from './battle-motion.mjs';
@@ -9,6 +10,7 @@ const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&
 const point=(x,y)=>[58+x*76+(y%2)*38,116+y*54];
 function hex(x,y){const [a,b]=point(x,y);return [[0,-36],[38,-18],[38,18],[0,36],[-38,18],[-38,-18]].map(([c,d])=>`${a+c},${b+d}`).join(' ');}
 export function drawBattle(dialog,getState,commit,onFinish){
+ if(getState().domestic.war.battle?.cards)return drawCardBattle(dialog,getState,commit,onFinish);
  let auto=false,timer=null,disposed=false,busy=false,notice='',retreat=false,rate=1,grid=true,settling=false,settlementError=false;
  let stopIdle=()=>{};
  const animations=new Set(),spriteStops=new Set();

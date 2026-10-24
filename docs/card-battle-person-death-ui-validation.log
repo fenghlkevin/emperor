@@ -1,0 +1,130 @@
+1: cbdb-28093 normal outcome committed while death performance plays
+2: cbdb-28093 normal death benefit remains concealed during windup
+3: cbdb-28093 normal actual ID motif and rule description
+4: cbdb-28093 normal dead attacker leaves the contact point before its death benefit
+5: cbdb-28093 normal complete formal state and one commit
+6: cbdb-28093 normal exact banner count and transient cleanup
+7: cbdb-28093 normal input unlocks
+8: cbdb-28093 normal trigger source retained
+9: original-57 normal outcome committed while death performance plays
+10: original-57 normal death benefit remains concealed during windup
+11: original-57 normal actual ID motif and rule description
+12: original-57 normal dead attacker leaves the contact point before its death benefit
+13: original-57 normal complete formal state and one commit
+14: original-57 normal exact banner count and transient cleanup
+15: original-57 normal input unlocks
+16: original-57 normal trigger source retained
+17: original-59 normal outcome committed while death performance plays
+18: original-59 normal death benefit remains concealed during windup
+19: original-59 normal actual ID motif and rule description
+20: original-59 normal dead attacker leaves the contact point before its death benefit
+21: original-59 normal complete formal state and one commit
+22: original-59 normal exact banner count and transient cleanup
+23: original-59 normal input unlocks
+24: original-59 normal trigger source retained
+25: original-62 normal outcome committed while death performance plays
+26: original-62 normal death benefit remains concealed during windup
+27: original-62 normal actual ID motif and rule description
+28: original-62 normal dead attacker leaves the contact point before its death benefit
+29: original-62 normal complete formal state and one commit
+30: original-62 normal exact banner count and transient cleanup
+31: original-62 normal input unlocks
+32: original-62 normal trigger source retained
+33: manual-1518 normal outcome committed while death performance plays
+34: manual-1518 normal death benefit remains concealed during windup
+35: manual-1518 normal actual ID motif and rule description
+36: manual-1518 normal dead attacker leaves the contact point before its death benefit
+37: manual-1518 normal complete formal state and one commit
+38: manual-1518 normal exact banner count and transient cleanup
+39: manual-1518 normal input unlocks
+40: manual-1518 normal trigger source retained
+41: cbdb-28093 fast outcome committed while death performance plays
+42: cbdb-28093 fast death benefit remains concealed during windup
+43: cbdb-28093 fast actual ID motif and rule description
+44: cbdb-28093 fast dead attacker leaves the contact point before its death benefit
+45: cbdb-28093 fast complete formal state and one commit
+46: cbdb-28093 fast exact banner count and transient cleanup
+47: cbdb-28093 fast input unlocks
+48: cbdb-28093 fast trigger source retained
+49: original-57 fast outcome committed while death performance plays
+50: original-57 fast death benefit remains concealed during windup
+51: original-57 fast actual ID motif and rule description
+52: original-57 fast dead attacker leaves the contact point before its death benefit
+53: original-57 fast complete formal state and one commit
+54: original-57 fast exact banner count and transient cleanup
+55: original-57 fast input unlocks
+56: original-57 fast trigger source retained
+57: original-59 fast outcome committed while death performance plays
+58: original-59 fast death benefit remains concealed during windup
+59: original-59 fast actual ID motif and rule description
+60: original-59 fast dead attacker leaves the contact point before its death benefit
+61: original-59 fast complete formal state and one commit
+62: original-59 fast exact banner count and transient cleanup
+63: original-59 fast input unlocks
+64: original-59 fast trigger source retained
+65: original-62 fast outcome committed while death performance plays
+66: original-62 fast death benefit remains concealed during windup
+67: original-62 fast actual ID motif and rule description
+68: original-62 fast dead attacker leaves the contact point before its death benefit
+69: original-62 fast complete formal state and one commit
+70: original-62 fast exact banner count and transient cleanup
+71: original-62 fast input unlocks
+72: original-62 fast trigger source retained
+73: manual-1518 fast outcome committed while death performance plays
+74: manual-1518 fast death benefit remains concealed during windup
+75: manual-1518 fast actual ID motif and rule description
+76: manual-1518 fast dead attacker leaves the contact point before its death benefit
+77: manual-1518 fast complete formal state and one commit
+78: manual-1518 fast exact banner count and transient cleanup
+79: manual-1518 fast input unlocks
+80: manual-1518 fast trigger source retained
+81: cbdb-28093 reduced complete formal state and one commit
+82: cbdb-28093 reduced exact banner count and transient cleanup
+83: cbdb-28093 reduced input unlocks
+84: cbdb-28093 reduced trigger source retained
+85: original-57 reduced complete formal state and one commit
+86: original-57 reduced exact banner count and transient cleanup
+87: original-57 reduced input unlocks
+88: original-57 reduced trigger source retained
+89: original-59 reduced complete formal state and one commit
+90: original-59 reduced exact banner count and transient cleanup
+91: original-59 reduced input unlocks
+92: original-59 reduced trigger source retained
+93: original-62 reduced complete formal state and one commit
+94: original-62 reduced exact banner count and transient cleanup
+95: original-62 reduced input unlocks
+96: original-62 reduced trigger source retained
+97: manual-1518 reduced complete formal state and one commit
+98: manual-1518 reduced exact banner count and transient cleanup
+99: manual-1518 reduced input unlocks
+100: manual-1518 reduced trigger source retained
+101: cbdb-28093 silence complete formal state and one commit
+102: cbdb-28093 silence exact banner count and transient cleanup
+103: cbdb-28093 silence input unlocks
+104: original-57 silence complete formal state and one commit
+105: original-57 silence exact banner count and transient cleanup
+106: original-57 silence input unlocks
+107: original-59 silence complete formal state and one commit
+108: original-59 silence exact banner count and transient cleanup
+109: original-59 silence input unlocks
+110: original-62 silence complete formal state and one commit
+111: original-62 silence exact banner count and transient cleanup
+112: original-62 silence input unlocks
+113: manual-1518 silence complete formal state and one commit
+114: manual-1518 silence exact banner count and transient cleanup
+115: manual-1518 silence input unlocks
+116: simultaneous sides complete formal state and one commit
+117: simultaneous sides exact banner count and transient cleanup
+118: simultaneous sides input unlocks
+119: simultaneous original sources and benefits
+120: fatigue complete formal state and one commit
+121: fatigue exact banner count and transient cleanup
+122: fatigue input unlocks
+123: hand burn complete formal state and one commit
+124: hand burn exact banner count and transient cleanup
+125: hand burn input unlocks
+126: capped heal complete formal state and one commit
+127: capped heal exact banner count and transient cleanup
+128: capped heal input unlocks
+129: disposing during death performance cleans visual work without resubmitting
+Death UI passed 129 checks in 47.854s

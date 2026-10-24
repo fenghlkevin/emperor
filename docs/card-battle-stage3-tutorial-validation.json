@@ -1,0 +1,87 @@
+{
+  "date": "2026-10-23T01:32:51.948661+00:00",
+  "scope": "Stage 3 isolated interactive tutorial, same production engine; no formal state or saves are committed",
+  "version": 1,
+  "playerSteps": 14,
+  "recordedActions": 19,
+  "sources": {
+    "src/card-battle-tutorial.mjs": "f116a741b01e909663e904e192abd490ade5f7daf9d4c3497c57e9ba8ab8872d",
+    "src/card-battle-tutorial-ui.mjs": "24ced375a645ef804624283343eff6387f8a4a83b6fcd0e1106f1a14e720c98a",
+    "src/card-battle-tutorial.css": "0b9e29faa41a139d0ad8cafbda9a59090254bea9eacbcde169f643589803c5f5",
+    "src/card-battle-ui.mjs": "d116e389418f92029f1e580805784da475cad39228c826693f578b343024889b",
+    "src/court-campaign-ui.mjs": "66c6b4ffe4b3b0a96d394b236a72820ad442abf882d986a5f30d6f9f207bf6c9",
+    "src/military-register-ui.mjs": "464dd2e761a7b88ddd17a24fb45b13776a231febb00f7ea33a064d52ad8ff357",
+    "index.html": "432e8613f722d86a912ddb3350f8d9c1e378e156eca3ff4874669c1285688aca",
+    "tests/card-battle-tutorial.test.mjs": "9b2e50a1aa4f0e49ede491a23bf56f7c79b4377c7b9fb7e9b6f522a72d14e8a5",
+    "tests/card-battle-tutorial-desktop.cjs": "9aabf601d586d2140b8d67a0875deb6642d7041f6df328581bb7444be3d806f5",
+    "package.json": "ad4bff09f0c83b26961f39a56cd1f568570b641dbe4d3db06c3278623afa3713"
+  },
+  "model": {
+    "tests": 6,
+    "pass": 6,
+    "elapsedSeconds": 3.409493167,
+    "log": "/private/tmp/card-tutorial-model.log"
+  },
+  "regression": {
+    "command": "npm test",
+    "tests": 893,
+    "pass": 893,
+    "fail": 0,
+    "elapsedSeconds": 78.095875708,
+    "types": "36 runtime snapshots and negative type checks passed",
+    "log": "/private/tmp/card-tutorial-full-regression.log",
+    "note": "The subsequent native Escape-cancel fix was verified by the final desktop tutorial and normal recovery tests; it does not change engine/model logic."
+  },
+  "desktop": {
+    "date": "2026-10-23T01:27:10.821Z",
+    "elapsedSeconds": 15.493,
+    "checks": [
+      "campaign offers isolated tutorial with explicit presets, scripted opponent and resource explanation",
+      "skip returns to the unchanged real campaign draft without a save or military order",
+      "confirmation without the required real swap does not advance or mutate the tutorial",
+      "native deployment spends one command and preserves the normal summon restriction",
+      "clicking a newly summoned unit explains the actual engine restriction",
+      "1440px tutorial preserves 5:7 cards and coach stays outside combat hit areas",
+      "1000px tutorial preserves 5:7 cards and coach stays outside combat hit areas",
+      "800px tutorial preserves 5:7 cards and coach stays outside combat hit areas",
+      "rules dialog pauses the scripted opponent without advancing a teaching step",
+      "native 5-attack strike leaves target at 5 health and receives simultaneous 3 retaliation",
+      "native hero ability pays its real two-command cost",
+      "rush cannot bypass a guard to attack a hero on entry",
+      "invalid spell target spends no command and does not advance the lesson",
+      "targeted temporary spell gives the real displayed +3 attack",
+      "end turn expires temporary attack through the shared engine and records the reason",
+      "fourteen native player actions complete a real victory with nineteen unique records and no formal settlement",
+      "completed tutorial exposes the same read-only detailed battle history",
+      "restart reproduces identical people, source ledger and presets without rerolling",
+      "restart during deployment cancels old animation and prevents late actions or duplicate dialogs",
+      "skipping and animation cleanup leave formal resources, military records and real save keys untouched",
+      "military register also offers the isolated teaching entry"
+    ],
+    "errors": []
+  },
+  "recovery": {
+    "pass": 7,
+    "elapsedSeconds": 9.467
+  },
+  "plans": {
+    "pass": 15,
+    "elapsedSeconds": 6.129,
+    "log": "/private/tmp/card-tutorial-plans.log"
+  },
+  "presets": [
+    "Fixed home opening hand and replacement draw",
+    "Front visibly preset to 5 attack/10 health; guard visibly preset to 10 health",
+    "Target hero visibly preset to 5 health and no armor",
+    "Opponent explicitly follows end-turn-only teaching script"
+  ],
+  "wallClock": {
+    "startUtc": "2026-10-23T01:06:35Z",
+    "endUtc": "2026-10-23T01:32:51.948661+00:00",
+    "elapsedSeconds": 1576.948661
+  },
+  "limits": [
+    "Tutorial is ephemeral; reload returns to normal app without resuming lesson.",
+    "Phase 1 independent balance and long-run acceptance remain deferred."
+  ]
+}

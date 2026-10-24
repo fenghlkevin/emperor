@@ -1,0 +1,217 @@
+{
+  "date": "2026-10-22T19:59:02.033761+08:00",
+  "source": "card-battle-release-results.json",
+  "engineChanged": false,
+  "cases": 72,
+  "withinTarget": 55,
+  "target": [
+    0.47,
+    0.53
+  ],
+  "unmetCases": [
+    {
+      "id": "ranged_1800-90-intelligence",
+      "firstScore": {
+        "mean": 0.5585,
+        "ci95": [
+          0.5378093067010989,
+          0.579190693298901
+        ]
+      },
+      "pairs": 1000,
+      "medianRounds": 14
+    },
+    {
+      "id": "mixed_600-20-command",
+      "firstScore": {
+        "mean": 0.444,
+        "ci95": [
+          0.4228010817130559,
+          0.4651989182869441
+        ]
+      },
+      "pairs": 1000,
+      "medianRounds": 13
+    },
+    {
+      "id": "ranged_1800-20-intelligence",
+      "firstScore": {
+        "mean": 0.5535,
+        "ci95": [
+          0.5323443212554372,
+          0.5746556787445628
+        ]
+      },
+      "pairs": 1000,
+      "medianRounds": 14
+    },
+    {
+      "id": "exotic_1800-90-intelligence",
+      "firstScore": {
+        "mean": 0.551,
+        "ci95": [
+          0.5293048697381861,
+          0.572695130261814
+        ]
+      },
+      "pairs": 1000,
+      "medianRounds": 15
+    },
+    {
+      "id": "exotic_1800-90-command",
+      "firstScore": {
+        "mean": 0.5445,
+        "ci95": [
+          0.5229051809961783,
+          0.5660948190038216
+        ]
+      },
+      "pairs": 1000,
+      "medianRounds": 13
+    },
+    {
+      "id": "mixed_600-60-command",
+      "firstScore": {
+        "mean": 0.4555,
+        "ci95": [
+          0.43408399390836555,
+          0.4769160060916345
+        ]
+      },
+      "pairs": 1000,
+      "medianRounds": 13
+    },
+    {
+      "id": "cavalry_1800-90-intelligence",
+      "firstScore": {
+        "mean": 0.537,
+        "ci95": [
+          0.5149329974350344,
+          0.5590670025649657
+        ]
+      },
+      "pairs": 1000,
+      "medianRounds": 17
+    },
+    {
+      "id": "exotic_1800-60-intelligence",
+      "firstScore": {
+        "mean": 0.537,
+        "ci95": [
+          0.5151519110998563,
+          0.5588480889001438
+        ]
+      },
+      "pairs": 1000,
+      "medianRounds": 15
+    },
+    {
+      "id": "mixed_600-60-martial",
+      "firstScore": {
+        "mean": 0.464,
+        "ci95": [
+          0.4424556121681993,
+          0.48554438783180076
+        ]
+      },
+      "pairs": 1000,
+      "medianRounds": 14
+    },
+    {
+      "id": "infantry_1800-90-martial",
+      "firstScore": {
+        "mean": 0.5355,
+        "ci95": [
+          0.5145175290376064,
+          0.5564824709623936
+        ]
+      },
+      "pairs": 1000,
+      "medianRounds": 15
+    },
+    {
+      "id": "reserve_3600-20-command",
+      "firstScore": {
+        "mean": 0.466,
+        "ci95": [
+          0.44426546756195806,
+          0.487734532438042
+        ]
+      },
+      "pairs": 1000,
+      "medianRounds": 13
+    },
+    {
+      "id": "mixed_1800-90-intelligence",
+      "firstScore": {
+        "mean": 0.5335,
+        "ci95": [
+          0.5119624181526377,
+          0.5550375818473623
+        ]
+      },
+      "pairs": 1000,
+      "medianRounds": 15
+    },
+    {
+      "id": "heavy_1800-20-intelligence",
+      "firstScore": {
+        "mean": 0.533,
+        "ci95": [
+          0.5109958212722794,
+          0.5550041787277207
+        ]
+      },
+      "pairs": 1000,
+      "medianRounds": 17
+    },
+    {
+      "id": "reserve_3600-90-intelligence",
+      "firstScore": {
+        "mean": 0.5325,
+        "ci95": [
+          0.511135769605709,
+          0.553864230394291
+        ]
+      },
+      "pairs": 1000,
+      "medianRounds": 15
+    },
+    {
+      "id": "ranged_1800-60-intelligence",
+      "firstScore": {
+        "mean": 0.5315,
+        "ci95": [
+          0.5097288963680443,
+          0.5532711036319556
+        ]
+      },
+      "pairs": 1000,
+      "medianRounds": 15
+    },
+    {
+      "id": "reserve_3600-60-intelligence",
+      "firstScore": {
+        "mean": 0.5315,
+        "ci95": [
+          0.5098173915797036,
+          0.5531826084202963
+        ]
+      },
+      "pairs": 1000,
+      "medianRounds": 15
+    },
+    {
+      "id": "mixed_600-20-martial",
+      "firstScore": {
+        "mean": 0.469,
+        "ci95": [
+          0.44747034258171886,
+          0.4905296574182811
+        ]
+      },
+      "pairs": 1000,
+      "medianRounds": 13
+    }
+  ]
+}

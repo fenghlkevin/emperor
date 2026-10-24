@@ -32,7 +32,7 @@ test('all shipped non-beauty artwork has a runtime consumer, including dynamic p
  const used=new Set();
  for(const file of runtimeFiles()){
   const source=fs.readFileSync(new URL(file,root),'utf8');
-  for(const asset of source.matchAll(/assets\/[^\s'"`<>?()]+\.(?:png|ttf)/g)){
+  for(const asset of source.matchAll(/assets\/[^\s'"`<>?()]+\.(?:png|svg|ttf)/g)){
    if(!/[${}]/.test(asset[0]))used.add(asset[0]);
   }
  }
