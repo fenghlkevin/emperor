@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-23T19:51:33.965Z",
+  "elapsedSeconds": 14.462,
+  "checks": [
+    "original-16 concise face copy retains complete accessible rules",
+    "original-16 deployment card identity motif keeps native hit rectangle",
+    "original-16 entry skill shows its personal subtitle before old health is released",
+    "original-16 holds a readable personal motif and original subtitle during windup",
+    "original-16 entry uses the full formal engine result once and cleans transient effects",
+    "original-16 deployed character retains the same ID-bound card face",
+    "original-16 commander identity motif keeps native hit rectangle",
+    "original-16 power shows its personal subtitle before old health is released",
+    "original-16 power uses the full formal engine result once and cleans transient effects",
+    "original-16 deployment fast preserves complete formal effects once and releases motion lock",
+    "original-16 power fast preserves complete formal effects once and releases motion lock",
+    "original-16 deployment reduced preserves complete formal effects once and releases motion lock",
+    "original-16 reduced persistent motifs have no CSS animation",
+    "original-16 power reduced preserves complete formal effects once and releases motion lock",
+    "original-16 reduced persistent motifs have no CSS animation"
+  ],
+  "errors": [],
+  "selectedIds": [
+    "original-16"
+  ],
+  "scope": "Selected historical-ID normal/fast/reduced deployment and commander fixtures only; excludes all100 artwork, gallery and viewport regression."
+}

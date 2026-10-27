@@ -1,0 +1,4 @@
+export const national=(d,id=d.playerCountryId)=>d.countries.find(c=>c.id===id);
+export function famine(d,id=d.playerCountryId){const c=national(d,id);delete c.grainAccounting;c.fiscal.grain=0;for(const p of d.provinces.filter(p=>p.countryId===id)){p.population.professions.farmers=0;p.population.professions.herders=0;p.economy.agriculture.productivity=0;}return c;}
+// Build a genuine pre-consolidation fixture, retaining the current total stocks.
+export function legacyResources(d){delete d.nationalResourcesVersion;for(const c of d.countries){const ps=d.provinces.filter(p=>p.countryId===c.id),grain=c.fiscal.grain;delete c.fiscal.grain;delete c.grainAccounting;delete c.foodSettledTurn;delete c.foodSettlement;for(const [i,p] of ps.entries()){p.status.cash=0;p.welfare.grainReserve=i===0?grain:0;}}return d;}

@@ -51,11 +51,11 @@ test('all existing cash commands and automatic payments share the same ledger',(
  const snapshot=JSON.stringify(s);settleJustice(s.domestic,2);settleDomestic(s.domestic,2);settlePersonnel(s.domestic,2);assert.equal(JSON.stringify(s),snapshot);reconciles(s);saved(s);
 });
 
-test('subsidies and levies conserve domestic cash and replayed commands are rejected after reload',()=>{
- let s=newGame('账帝');const total=x=>home(x).fiscal.treasury+x.domestic.provinces.filter(p=>p.countryId==='sheng').reduce((n,p)=>n+p.status.cash,0),before=total(s);
+test('citizen subsidies spend national cash and replayed commands are rejected after reload',()=>{
+ let s=newGame('账帝');const total=x=>home(x).fiscal.treasury,before=total(s);
  const command={id:1,kind:'subsidy',amounts:{hebei:300,henan:100}};s=executeRevenue(s,command).state;
- assert.equal(total(s),before);s=saved(s);assert.throws(()=>executeRevenue(s,command),/已执行/);
- s=act(s,{kind:'levy'});assert.equal(total(s),before);assert.ok(home(s).ledger[0].categories.transfer.income>0);reconciles(s);
+ assert.equal(total(s),before-400);s=saved(s);assert.throws(()=>executeRevenue(s,command),/已执行/);
+ assert.throws(()=>act(s,{kind:'levy'}),/取消/);assert.equal(total(s),before-400);assert.equal(home(s).ledger[0].categories.oneOff.expenditure,400);reconciles(s);
 });
 
 test('regular deficits and unpaid tribute record actual cash separately from debt',()=>{

@@ -1,0 +1,20 @@
+const {app,BrowserWindow}=require('electron');
+const fs=require('node:fs'),path=require('node:path');
+const {waitForSelector}=require('./helpers/wait-for-selector.cjs');
+app.setPath('userData',`/private/tmp/emperor-court-play-${process.pid}`);
+app.whenReady().then(async()=>{
+ const timer=setTimeout(()=>{console.error('朝堂体验验收超时');app.exit(1);},120000),w=new BrowserWindow({show:false,width:1440,height:1000,webPreferences:{sandbox:true,contextIsolation:true,nodeIntegration:false,backgroundThrottling:false}});
+ const run=c=>w.webContents.executeJavaScript(`(async()=>{const waitForSelector=${waitForSelector.toString()};${c}})()`);
+ const shot=async n=>{await run('await Promise.all([...document.querySelectorAll(".court-play-dialog img")].map(i=>i.decode()));await new Promise(r=>requestAnimationFrame(()=>requestAnimationFrame(r)));');fs.writeFileSync(`/private/tmp/emperor-court-play-${n}.png`,(await w.webContents.capturePage()).toPNG());};
+ w.webContents.on('render-process-gone',(_e,d)=>{console.error('renderer',d);app.exit(1);});
+ try{
+  await w.loadFile(path.join(__dirname,'../index.html'));
+  await run(`document.querySelector('#new-dynasty').click();document.querySelector('#name').value='御案试玩';document.querySelector('#country-name').value='大明';if(document.querySelector('#era-name'))document.querySelector('#era-name').value='承平';document.querySelector('#create').requestSubmit();document.querySelector('[data-scene=court]').click();await waitForSelector('.scene.court[data-court-ready=true],.scene.court[data-court-ready=fallback]');if(document.querySelectorAll('[data-court-petition]').length>3)throw Error('御案呈奏缺失');window.before=localStorage.getItem('emperor.save.v1');`);await shot('court');
+  await run(`const s=JSON.parse(localStorage.getItem('emperor.save.v1'));const {requestLocalConstruction}=await import('./src/local-petitions.mjs');const {initializeResourceEconomy}=await import('./src/province-resources.mjs');initializeResourceEconomy(s.domestic);for(const p of s.domestic.provinces.filter(p=>p.countryId===s.domestic.playerCountryId).slice(0,3))requestLocalConstruction(s.domestic,p,s.turn,'yamen','治安设施请旨');localStorage.setItem('emperor.save.v1',JSON.stringify(s));`);
+  await w.reload();await run(`document.querySelector('#continue').click();await waitForSelector('.scene.court[data-court-ready=true],.scene.court[data-court-ready=fallback]');if(document.querySelectorAll('[data-court-petition]').length!==3)throw Error('未形成三本奏章');window.originalSave=localStorage.getItem('emperor.save.v1');`);
+  for(const [width,height,name] of [[1440,1000,'desk-final-wide'],[900,680,'desk-final-small'],[390,760,'desk-final-mobile']]){w.setSize(width,height);await new Promise(r=>setTimeout(r,180));await shot(name);await run(`for(const t of document.querySelectorAll('.memorial-title>span'))if(t.scrollWidth>t.clientWidth+2)throw Error('奏章标题溢出 '+t.textContent);const title=document.querySelector('.court-atlas-object strong'),r=title.getBoundingClientRect(),a=document.querySelector('[data-court-atlas]').getBoundingClientRect();if(r.right>a.right||r.left<a.left||a.bottom>innerHeight)throw Error('山河图标题溢出');`);}
+  w.setSize(1440,1000);await run(`document.querySelector('#next').click();if(!document.querySelector('.court-dismiss-confirm[open]')||localStorage.getItem('emperor.save.v1')!==window.originalSave)throw Error('退朝预览修改存档');`);await shot('dismiss-confirm');
+  await run(`document.querySelector('[data-cancel-dismiss]').click();await new Promise(r=>setTimeout(r,80));if(!document.querySelector('.scene.court')||localStorage.getItem('emperor.save.v1')!==window.originalSave)throw Error('取消退朝异常');document.querySelector('#next').click();document.querySelector('[data-confirm-dismiss]').click();await new Promise(r=>setTimeout(r,80));if(!document.querySelector('.scene.palace'))throw Error('确认退朝未返回');const n=JSON.parse(localStorage.getItem('emperor.save.v1')),b=JSON.parse(window.originalSave);if(n.phase!==b.phase+1)throw Error('退朝阶段异常');`);
+  console.log('三奏章两行标题、山河图可读、三窗口、退朝取消不写档和确认回宫通过');clearTimeout(timer);app.exit(0);
+ }catch(e){console.error(e);clearTimeout(timer);app.exit(1);}
+});

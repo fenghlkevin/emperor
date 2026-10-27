@@ -1,0 +1,45 @@
+/* Map-only theme. Geometry and ownership come from campaign-map/territory-atlas;
+   every consumer uses atlas-base for the paper, water, relief and borders. */
+:root svg:is(.civil-map,.court-atlas-map,.garrison-map,.special-map,.diplomatic-map,.war-target-map){
+ --atlas-home:#efd18d;--atlas-selected:#c18466;--atlas-foreign:#b9aa8f;
+ background:#789e9b;
+}
+:root svg:is(.civil-map,.court-atlas-map,.garrison-map,.special-map,.diplomatic-map,.war-target-map) .atlas-base-land{
+ fill:#f9f7f0;stroke:#756249;stroke-width:1px;vector-effect:non-scaling-stroke;pointer-events:none;
+}
+:root svg:is(.civil-map,.court-atlas-map,.garrison-map,.special-map,.diplomatic-map,.war-target-map) :is(path.realm,path.diplomatic-territory,path.war-territory,path.grain-trade-region){
+ fill:#b8ae93;fill-opacity:1;opacity:1;stroke:#705c3e;stroke-width:1px;stroke-dasharray:none;vector-effect:non-scaling-stroke;
+}
+:root svg:is(.civil-map,.diplomatic-map,.war-target-map,.grain-trade-map) :is(path.realm,path.diplomatic-territory,path.war-territory,path.grain-trade-region)[data-atlas-tone]{fill:currentColor}
+:root svg:is(.civil-map,.court-atlas-map,.garrison-map,.special-map,.diplomatic-map,.war-target-map) :is(path.province,path.atlas-province,path.special-state,path[data-garrison-depot],path.realm.home,path.is-home,path.war-territory.home,path.grain-trade-region.is-home){
+ fill:var(--atlas-home);fill-opacity:1;stroke:#705c3e;stroke-width:1px;stroke-dasharray:none;vector-effect:non-scaling-stroke;
+}
+/* At world scale the home realm is still the complete set of original states. */
+.domestic-atlas[data-level=world] svg.civil-map path.province{fill:var(--atlas-home)}
+:root svg:is(.civil-map,.court-atlas-map,.garrison-map,.special-map) :is(path.province.is-foreign,path.atlas-province.is-foreign,path.special-state.is-foreign,path[data-garrison-depot].is-foreign){fill:currentColor}
+:root svg:is(.civil-map,.court-atlas-map,.garrison-map,.special-map,.diplomatic-map,.war-target-map) :is(path.province.selected,path.atlas-province.is-target,path.special-state.is-selected,path[data-garrison-depot].is-target,path.realm.selected,path.diplomatic-territory.is-selected,path.war-territory.chosen,path.grain-trade-region.is-selected){
+ fill:var(--atlas-selected);fill-opacity:1;stroke:#8d4934;stroke-width:1.6px;
+}
+.domestic-atlas[data-level=world] svg.civil-map path.province.selected{fill:var(--atlas-selected)}
+:root svg:is(.court-atlas-map,.garrison-map) :is(path.atlas-province.is-source,path[data-garrison-depot].is-source){fill:#9baa83}
+:root svg.war-target-map path.war-territory.available:not(.chosen){stroke:#755133;stroke-width:1.6px}
+:root svg:is(.civil-map,.court-atlas-map,.garrison-map,.special-map,.diplomatic-map,.war-target-map) :is(path[tabindex="0"]:hover,path[tabindex="0"]:focus-visible){
+ stroke:#8d4934;stroke-width:2px;vector-effect:non-scaling-stroke;filter:brightness(1.035);
+}
+:root svg:is(.civil-map,.court-atlas-map,.garrison-map,.special-map,.diplomatic-map,.war-target-map) .atlas-state-border{
+ fill:none;stroke:#705c3e;stroke-width:1px;vector-effect:non-scaling-stroke;pointer-events:none;
+}
+:root svg:is(.civil-map,.court-atlas-map,.garrison-map,.special-map,.diplomatic-map,.war-target-map) .atlas-country-border{
+ fill:none;stroke:#a2762b;stroke-width:2px;vector-effect:non-scaling-stroke;pointer-events:none;
+}
+:root svg:is(.civil-map,.court-atlas-map,.garrison-map,.special-map,.diplomatic-map,.war-target-map) .home-boundary{fill:none;stroke:#a38242;stroke-width:1px;vector-effect:non-scaling-stroke}
+:root svg:is(.civil-map,.court-atlas-map,.garrison-map,.special-map,.diplomatic-map,.war-target-map) .atlas-relief{pointer-events:none;mix-blend-mode:multiply}
+:root svg:is(.civil-map,.court-atlas-map,.garrison-map,.special-map,.diplomatic-map,.war-target-map) .atlas-paper-texture{opacity:.54}
+:root svg:is(.civil-map,.court-atlas-map,.garrison-map,.special-map,.diplomatic-map,.war-target-map) .atlas-mountains{opacity:.68}
+
+/* This complete country layer is shared by local and world cameras. White land
+   outside the campaign clip has no hit area, state label or ownership color. */
+:root svg:is(.civil-map,.court-atlas-map,.garrison-map,.special-map,.diplomatic-map,.war-target-map) .atlas-context-territory{fill:currentColor;stroke:#705c3e;stroke-width:1px;stroke-linejoin:round;vector-effect:non-scaling-stroke;pointer-events:none}
+:root svg:is(.civil-map,.court-atlas-map,.garrison-map,.special-map,.diplomatic-map,.war-target-map) .atlas-context-territory.is-owned{fill:var(--atlas-home)}
+.domestic-atlas svg.civil-map .realm-name[data-country=sheng]{display:none}
+.domestic-atlas[data-level=province] svg.civil-map .realm-name{opacity:1}

@@ -1,0 +1,60 @@
+/* Compact province ledger: retain the original ink meters and right-aligned values. */
+.domestic-atlas.province-overview-mode .ink-map-frame,.domestic-atlas.province-overview-mode .ink-fold,.domestic-atlas.province-overview-mode .civil-info>.works-pages{display:none}
+.domestic-atlas.province-overview-mode .civil-info{position:relative;inset:auto;width:100%;max-width:none;flex:1;min-height:0;overflow:hidden;padding:10px 24px 16px;box-sizing:border-box;border:0}
+.domestic-atlas.province-overview-mode .civil-header{padding:9px 22px;min-height:0}
+.domestic-atlas.province-overview-mode .civil-header h1{font-size:19px;margin:0}
+.domestic-atlas.province-overview-mode .civil-header h1 span,.domestic-atlas.province-overview-mode .domestic-map-tools{display:none}
+.province-sheet{height:100%;display:flex;flex-direction:column;color:#453923;font-family:'Songti SC',serif}
+.province-sheet button{font-family:inherit;color:inherit;background:transparent;border:0;border-radius:0;box-shadow:none;cursor:pointer}
+.province-sheet button:hover{background:#88734a12;color:#903e2e}
+.province-sheet button:focus-visible{outline:2px solid #946c3b;outline-offset:2px}
+.province-sheet-title{display:flex;align-items:center;justify-content:space-between;gap:16px;border-bottom:1px solid #b5a582;padding:0 0 8px;flex-shrink:0}
+.province-sheet .civil-detail-title{display:flex;align-items:center;gap:16px;border:0;padding:0;margin:0}
+.province-sheet .civil-detail-title h2{font-size:34px;margin:0;letter-spacing:6px}.province-sheet .civil-detail-title small{font-size:13px;letter-spacing:1px}
+.province-situation{font-size:13px;border:1px solid #7a8060;padding:2px 8px;color:#52634a}
+.province-summary{display:grid;grid-template-columns:repeat(4,1fr);padding:12px 0;border-bottom:1px solid #b5a582;flex-shrink:0}
+.province-summary>div{text-align:center;border-right:1px solid #c7b998}.province-summary>div:last-child{border:0}
+.province-summary strong{display:block;font-size:27px;font-weight:500;line-height:1.35}.province-summary strong small{font-size:13px;margin-left:5px}
+.province-explain{font-size:inherit;padding:0!important}.explain-mark{font-size:10px;border:1px solid #b4a384;border-radius:50%;padding:0 3px;margin-left:6px;color:#8a7859}
+.province-columns{display:grid;grid-template-columns:1.12fr 1fr .9fr;gap:22px;flex:1;min-height:0;padding-top:10px}
+.province-columns>section{min-width:0;min-height:0;border-right:1px solid #c7b998;padding-right:20px}.province-columns>section:last-child{border:0;padding:0}
+.province-sheet h3{font-size:19px;letter-spacing:2px;border-bottom:1px solid #b5a582;margin:0 0 9px;padding-bottom:7px}.province-sheet h3 small{font-size:10px;font-weight:400;letter-spacing:0;color:#8b785b}
+.province-indicators{display:grid;grid-template-rows:repeat(6,1fr);height:calc(100% - 36px)}
+.province-indicator{display:grid;grid-template-columns:68px 1fr 30px;align-content:center;align-items:center;gap:3px 12px;width:100%;padding:6px 0!important;text-align:left;border-bottom:1px solid #c7b99875!important}
+.province-indicator b{font-size:17px;font-weight:400;white-space:nowrap}.province-indicator strong{text-align:right;font-size:17px;font-weight:400}.province-indicator>small{grid-column:2/4;font-size:11px;color:#867457}.province-indicator>small span{float:right}
+.province-bar{height:10px;background:#dbcfb3;overflow:hidden;display:block}.province-bar i{height:100%;display:block;background:#7a6b4e}
+.province-job-table>div,.province-buildings>div{display:flex;justify-content:space-between;gap:8px;border-bottom:1px solid #c7b99890;padding:7px 10px;font-size:15px}.province-job-table>div:nth-child(odd){background:#b4a17a0b}.province-job-table b,.province-buildings b{font-weight:400}
+.province-unassigned{color:#934b35;background:#b4a17a15!important}.province-capacity{font-size:11px;color:#897455;line-height:1.6;margin:9px 0}
+.province-army{display:flex;justify-content:space-between;gap:10px;font-size:14px}.province-food{line-height:1.7;margin-bottom:16px}.province-food small,.province-food span{font-size:12px;color:#867457}.province-food p{font-size:19px;margin:5px 0}.province-food b{color:#576446}.province-buildings{display:grid;grid-template-columns:1fr 1fr;gap:0 12px}.province-project{font-size:12px;color:#867457}
+.province-sheet-footer{border-top:1px solid #b5a582;margin-top:10px;padding-top:9px;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-shrink:0}.province-sheet-footer p{font-size:12px;line-height:1.7;margin:0}.province-sheet-footer p small{color:#867457}.province-sheet-footer>div{display:flex;gap:8px;flex-shrink:0}.province-sheet-footer button{border:1px solid #a7926a;padding:8px 12px;background:#897653;color:#fff7e6;font-size:13px}.province-sheet-footer button:first-child{background:#974f39}
+.province-help{width:min(580px,88vw);max-height:85vh;overflow:auto;background:#f2e8d2;color:#453923;border:1px solid #a7926a;padding:24px 30px;font-family:'Songti SC',serif;box-shadow:0 16px 60px #241d1745}.province-help::backdrop{background:#211c1860}.province-help header{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #b5a582}.province-help h2{margin:0 0 12px}.province-help header button{background:none;border:0;font-size:25px}.province-help h3{font-size:16px;margin-top:22px}.province-help p{font-size:15px;line-height:1.9}.province-help-done{display:block;margin:22px 0 0 auto}
+@media(max-height:760px){.province-summary{padding:7px 0}.province-sheet .civil-detail-title h2{font-size:28px}.province-summary strong{font-size:24px}.province-job-table>div{padding:5px 8px}.province-food{margin-bottom:8px}.province-sheet h3{font-size:17px;margin-bottom:6px;padding-bottom:5px}.province-columns{padding-top:8px}.province-capacity{margin:6px 0}.province-sheet-footer{margin-top:6px;padding-top:6px}.province-indicator{padding:3px 0!important}}
+@media(max-width:1100px){.domestic-atlas.province-overview-mode .civil-info{padding:8px 16px 12px}.province-columns{gap:14px;grid-template-columns:1.05fr 1fr .85fr}.province-columns>section{padding-right:12px}.province-sheet h3 small{display:block;margin-top:3px}.province-sheet-footer{align-items:flex-start}.province-sheet-footer p{font-size:11px}.province-sheet-footer button{padding:7px 8px;font-size:12px}.province-sheet .civil-detail-title{gap:10px}.province-indicator{grid-template-columns:60px 1fr 25px;gap:3px 8px}.province-indicator b{font-size:15px}}
+.domestic-atlas.province-overview-mode[open]{grid-template-columns:minmax(0,1fr);grid-template-rows:auto minmax(0,1fr)}
+.domestic-atlas.province-overview-mode>.civil-info{grid-column:1/-1;grid-row:2;overflow:hidden;padding:10px 24px 16px!important;box-shadow:none}
+.domestic-atlas.province-overview-mode>.civil-header{min-height:56px;padding:8px 22px}
+.domestic-atlas.province-overview-mode .domestic-map-tools{display:none!important}
+.domestic-atlas .province-sheet h3{font-size:19px;letter-spacing:1px;border-left:0;padding-left:0}
+.domestic-atlas .province-sheet-footer{position:static;inset:auto;background:transparent;color:#453923;letter-spacing:0;z-index:auto}
+.domestic-atlas .province-sheet-footer p{font-size:12px!important}
+.domestic-atlas .province-sheet .province-capacity,.domestic-atlas .province-sheet .province-project{font-size:11px!important}
+.domestic-atlas .province-sheet .civil-detail-title h2{font-size:32px;margin:0}
+@media(max-height:760px){.domestic-atlas .province-sheet h3{font-size:17px}.domestic-atlas.province-overview-mode>.civil-info{padding:8px 16px 12px!important}.domestic-atlas.province-overview-mode>.civil-header{min-height:48px;padding:5px 18px}.domestic-atlas .province-sheet-footer p{font-size:11px!important}}
+.province-columns>section:first-child{display:flex;flex-direction:column}
+.province-indicators{height:auto;flex:1;min-height:0}
+meter.province-bar{appearance:none;width:100%;border:0;border-radius:0;height:10px;background:#dbcfb3}
+meter.province-bar::-webkit-meter-bar{background:#dbcfb3;border:0;border-radius:0;height:10px}
+meter.province-bar::-webkit-meter-optimum-value{background:#7a6b4e;border-radius:0}
+.province-sheet h3 .explain-mark{display:inline;margin:0 0 0 6px;font-size:10px}
+.province-project{margin:8px 0 0}
+@media(max-height:760px){.province-buildings>div{padding:5px 8px}.province-food{line-height:1.5}.province-food p{margin:4px 0}.province-sheet-title button{padding:6px 8px}.province-sheet-title{padding-bottom:6px}.province-summary{padding:6px 0}.province-sheet .civil-detail-title h2{font-size:27px}}
+@media(max-height:700px){.province-job-table>div{padding:4px 8px;font-size:14px}.province-capacity{line-height:1.4;margin:5px 0}.province-army{font-size:12px}.province-sheet-title{gap:6px}.province-sheet-title button{font-size:12px}.province-sheet h3{margin-bottom:5px}.province-indicator>small{font-size:10px}}
+.province-job-head,.province-job-table>div{display:grid;grid-template-columns:45px minmax(0,1fr) minmax(0,1fr);align-items:center;gap:6px}
+.province-job-head{font-size:10px;color:#8a7859;padding:0 10px 4px}
+.province-job-head>span:not(:first-child),.province-job-table>div>b,.province-job-table>div>small{text-align:right;white-space:nowrap}
+.province-job-table>div>small{font-size:11px;color:#8a7859}
+.province-food{margin-bottom:10px}.province-food span .province-explain{font-size:11px}
+@media(max-height:760px){.province-job-table>div{padding:4px 8px}.province-job-head{padding-bottom:3px}.province-food{margin-bottom:6px}.province-food span{font-size:11px;line-height:1.4;display:block}}
+@media(max-height:700px){.province-job-table>div{padding:3px 8px}.province-food{margin-bottom:4px}.province-buildings>div{padding:4px 8px}}
+@media(max-height:850px){.province-job-table>div{padding:4px 8px}.province-food{line-height:1.5;margin-bottom:6px}.province-food p{margin:3px 0}.province-project{margin-top:6px}.province-buildings>div{padding:5px 8px}}
+.province-prosperity-detail{border-block:1px solid #b5a582;padding:5px 0}.province-prosperity-detail p{display:flex;justify-content:space-between;gap:10px;margin:6px 0;font-size:13px}.province-prosperity-detail span{color:#867457}

@@ -1,0 +1,48 @@
+{
+  "status": "interim-not-acceptance",
+  "completedUiGames": 17,
+  "foregroundSeconds": 179.661,
+  "wallSeconds": 1950.322,
+  "sampleCount": 65,
+  "focusedSampleCount": 8,
+  "rendererErrors": [],
+  "lastRendererSample": {
+    "visibility": "visible",
+    "frames": 3560,
+    "p50": 8.300000000046566,
+    "p95": 9.199999999953434,
+    "max": 33.5999999998603,
+    "transientNodes": 1
+  },
+  "lastProcessMemory": [
+    {
+      "type": "Browser",
+      "memory": {
+        "workingSetSize": 166288,
+        "peakWorkingSetSize": 170848
+      }
+    },
+    {
+      "type": "GPU",
+      "memory": {
+        "workingSetSize": 256112,
+        "peakWorkingSetSize": 294960
+      }
+    },
+    {
+      "type": "Utility",
+      "memory": {
+        "workingSetSize": 48016,
+        "peakWorkingSetSize": 48064
+      }
+    },
+    {
+      "type": "Tab",
+      "memory": {
+        "workingSetSize": 527488,
+        "peakWorkingSetSize": 584128
+      }
+    }
+  ],
+  "limitation": "未满3600前台秒，不能以失焦墙钟或rAF推称完成前台性能验收。"
+}

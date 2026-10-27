@@ -1,0 +1,5290 @@
+{
+  "date": "2026-10-21",
+  "branch": "develop",
+  "sourceFingerprint": "85eb6e16b1cc92193bb06f523ca617f9c3c48fdd31613f8dfb9af4d75651da83",
+  "sourceSnapshot": "/Users/fengheliang/workbench/source/g20/games/outputs/balance-fixes-2026-10-21/release-source",
+  "sourceChangesAfterSnapshot": [
+    "src/random-beauties-data.mjs",
+    "src/tour-cameos.mjs",
+    "tests/tour-events.test.mjs"
+  ],
+  "businessTests": 869,
+  "typeSnapshots": 38,
+  "desktopChecks": 14,
+  "scenarioCount": 55,
+  "turnAdvances": 39960,
+  "runtimeErrors": [],
+  "edgeProbeGroups": 13,
+  "designProbeGroups": 15,
+  "focusedRegressionTests": 13,
+  "findingsAddressed": [
+    "R01",
+    "R02",
+    "R03",
+    "R04",
+    "R05",
+    "R06",
+    "R07",
+    "R08"
+  ],
+  "world": [
+    {
+      "seed": 1,
+      "debtorCountries10": 2,
+      "foreignDebt10": 2051,
+      "debtorCountries20": 4,
+      "foreignDebt20": 25616,
+      "playerDebt20": 0,
+      "playerProvinces20": 9,
+      "battles": 2
+    },
+    {
+      "seed": 7,
+      "debtorCountries10": 5,
+      "foreignDebt10": 7498,
+      "debtorCountries20": 6,
+      "foreignDebt20": 22678,
+      "playerDebt20": 0,
+      "playerProvinces20": 8,
+      "battles": 3
+    },
+    {
+      "seed": 41,
+      "debtorCountries10": 3,
+      "foreignDebt10": 2521,
+      "debtorCountries20": 2,
+      "foreignDebt20": 20411,
+      "playerDebt20": 0,
+      "playerProvinces20": 9,
+      "battles": 1
+    }
+  ],
+  "policyRoutes": [
+    {
+      "seed": 1,
+      "mode": "amnesty20",
+      "firstUnrest": 192,
+      "shortfall": 0,
+      "final": {
+        "turn": 721,
+        "cash": 21266,
+        "debt": 0,
+        "regularNet": -47,
+        "grain": 11706,
+        "foodTax": 355,
+        "foodNeed": 240,
+        "provinces": 10,
+        "population": 3283148,
+        "living": 66,
+        "welfare": {
+          "stability": 77,
+          "security": 72,
+          "activity": 56,
+          "fitness": 57,
+          "defense": 50,
+          "loyalty": 56
+        },
+        "unrest": 0,
+        "idle": 18600,
+        "fiscalHealth": {
+          "observedTurns": 108,
+          "annual": [
+            {
+              "turns": 36,
+              "fromTurn": 686,
+              "toTurn": 721,
+              "net": 27196
+            },
+            {
+              "turns": 36,
+              "fromTurn": 650,
+              "toTurn": 685,
+              "net": 28661
+            },
+            {
+              "turns": 36,
+              "fromTurn": 614,
+              "toTurn": 649,
+              "net": 30705
+            }
+          ],
+          "operations": 67.53285476212733,
+          "liquidity": 22.54083446099925,
+          "credit": 100,
+          "employment": 99.20061168581876,
+          "living": 66.36194025518536,
+          "net": 755.4444444444445,
+          "score": 68
+        }
+      },
+      "demobilized": [],
+      "pacificationCount": 0,
+      "pacificationCost": 0,
+      "finalManualRepayment": 0
+    },
+    {
+      "seed": 1,
+      "mode": "amnesty27",
+      "firstUnrest": 103,
+      "shortfall": 0,
+      "final": {
+        "turn": 721,
+        "cash": 0,
+        "debt": 2870783,
+        "regularNet": -6525,
+        "grain": 12864,
+        "foodTax": 465,
+        "foodNeed": 240,
+        "provinces": 10,
+        "population": 2933388,
+        "living": 26,
+        "welfare": {
+          "stability": 17,
+          "security": 3,
+          "activity": 53,
+          "fitness": 54,
+          "defense": 50,
+          "loyalty": 0
+        },
+        "unrest": 5,
+        "idle": 311,
+        "fiscalHealth": {
+          "observedTurns": 108,
+          "annual": [
+            {
+              "turns": 36,
+              "fromTurn": 686,
+              "toTurn": 721,
+              "net": -230615
+            },
+            {
+              "turns": 36,
+              "fromTurn": 650,
+              "toTurn": 685,
+              "net": -225617
+            },
+            {
+              "turns": 36,
+              "fromTurn": 614,
+              "toTurn": 649,
+              "net": -213482
+            }
+          ],
+          "operations": 0,
+          "liquidity": 0,
+          "credit": 0,
+          "employment": 100,
+          "living": 26.22336535579065,
+          "net": -6405.972222222223,
+          "score": 13
+        }
+      },
+      "demobilized": [],
+      "pacificationCount": 0,
+      "pacificationCost": 0,
+      "finalManualRepayment": 0
+    },
+    {
+      "seed": 1,
+      "mode": "amnesty29",
+      "firstUnrest": 63,
+      "shortfall": 0,
+      "final": {
+        "turn": 721,
+        "cash": 0,
+        "debt": 3359955,
+        "regularNet": -7144,
+        "grain": 13216,
+        "foodTax": 496,
+        "foodNeed": 240,
+        "provinces": 10,
+        "population": 2924517,
+        "living": 23,
+        "welfare": {
+          "stability": 13,
+          "security": 3,
+          "activity": 53,
+          "fitness": 54,
+          "defense": 50,
+          "loyalty": 0
+        },
+        "unrest": 5,
+        "idle": 311,
+        "fiscalHealth": {
+          "observedTurns": 108,
+          "annual": [
+            {
+              "turns": 36,
+              "fromTurn": 686,
+              "toTurn": 721,
+              "net": -252939
+            },
+            {
+              "turns": 36,
+              "fromTurn": 650,
+              "toTurn": 685,
+              "net": -247035
+            },
+            {
+              "turns": 36,
+              "fromTurn": 614,
+              "toTurn": 649,
+              "net": -234422
+            }
+          ],
+          "operations": 0,
+          "liquidity": 0,
+          "credit": 0,
+          "employment": 100,
+          "living": 23.03690049400401,
+          "net": -7026.083333333333,
+          "score": 12
+        }
+      },
+      "demobilized": [],
+      "pacificationCount": 0,
+      "pacificationCost": 0,
+      "finalManualRepayment": 0
+    },
+    {
+      "seed": 1,
+      "mode": "recovery50to20",
+      "firstUnrest": 9,
+      "shortfall": 1464,
+      "final": {
+        "turn": 721,
+        "cash": 1119,
+        "debt": 1497030,
+        "regularNet": -1851,
+        "grain": 5702,
+        "foodTax": 336,
+        "foodNeed": 240,
+        "provinces": 10,
+        "population": 2953090,
+        "living": 51,
+        "welfare": {
+          "stability": 33,
+          "security": 55,
+          "activity": 53,
+          "fitness": 53,
+          "defense": 50,
+          "loyalty": 32
+        },
+        "unrest": 2,
+        "idle": 19952,
+        "fiscalHealth": {
+          "observedTurns": 108,
+          "annual": [
+            {
+              "turns": 36,
+              "fromTurn": 686,
+              "toTurn": 721,
+              "net": -58675
+            },
+            {
+              "turns": 36,
+              "fromTurn": 650,
+              "toTurn": 685,
+              "net": -50332
+            },
+            {
+              "turns": 36,
+              "fromTurn": 614,
+              "toTurn": 649,
+              "net": -47282
+            }
+          ],
+          "operations": 0,
+          "liquidity": 1.1916425285397851,
+          "credit": 0,
+          "employment": 100,
+          "living": 50.88352263137841,
+          "net": -1629.861111111111,
+          "score": 15
+        }
+      },
+      "demobilized": [],
+      "pacificationCount": 0,
+      "pacificationCost": 0,
+      "finalManualRepayment": 0
+    },
+    {
+      "seed": 1,
+      "mode": "recovery50to20reform",
+      "firstUnrest": 9,
+      "shortfall": 0,
+      "final": {
+        "turn": 721,
+        "cash": 95660,
+        "debt": 0,
+        "regularNet": 2034,
+        "grain": 10920,
+        "foodTax": 328,
+        "foodNeed": 134,
+        "provinces": 10,
+        "population": 3209234,
+        "living": 57,
+        "welfare": {
+          "stability": 55,
+          "security": 61,
+          "activity": 53,
+          "fitness": 53,
+          "defense": 50,
+          "loyalty": 40
+        },
+        "unrest": 0,
+        "idle": 99210,
+        "fiscalHealth": {
+          "observedTurns": 108,
+          "annual": [
+            {
+              "turns": 36,
+              "fromTurn": 686,
+              "toTurn": 721,
+              "net": 80425
+            },
+            {
+              "turns": 36,
+              "fromTurn": 650,
+              "toTurn": 685,
+              "net": 71812
+            },
+            {
+              "turns": 36,
+              "fromTurn": 614,
+              "toTurn": 649,
+              "net": 66399
+            }
+          ],
+          "operations": 100,
+          "liquidity": 100,
+          "credit": 100,
+          "employment": 95.52344934936978,
+          "living": 56.57697465748678,
+          "net": 2234.027777777778,
+          "score": 95
+        }
+      },
+      "demobilized": [
+        "central",
+        "hebei",
+        "henan",
+        "huainan",
+        "jiangnan",
+        "lingnan",
+        "hedong",
+        "guannei",
+        "shannan",
+        "jiannan",
+        "longyou"
+      ],
+      "pacificationCount": 90,
+      "pacificationCost": 45000,
+      "finalManualRepayment": 0
+    },
+    {
+      "seed": 7,
+      "mode": "amnesty20",
+      "firstUnrest": 210,
+      "shortfall": 0,
+      "final": {
+        "turn": 721,
+        "cash": 5155,
+        "debt": 0,
+        "regularNet": 769,
+        "grain": 11926,
+        "foodTax": 378,
+        "foodNeed": 240,
+        "provinces": 10,
+        "population": 3293317,
+        "living": 65,
+        "welfare": {
+          "stability": 75,
+          "security": 72,
+          "activity": 56,
+          "fitness": 57,
+          "defense": 50,
+          "loyalty": 56
+        },
+        "unrest": 0,
+        "idle": 28030,
+        "fiscalHealth": {
+          "observedTurns": 108,
+          "annual": [
+            {
+              "turns": 36,
+              "fromTurn": 686,
+              "toTurn": 721,
+              "net": 20243
+            },
+            {
+              "turns": 36,
+              "fromTurn": 650,
+              "toTurn": 685,
+              "net": 20553
+            },
+            {
+              "turns": 36,
+              "fromTurn": 614,
+              "toTurn": 649,
+              "net": 15214
+            }
+          ],
+          "operations": 63.02866192213804,
+          "liquidity": 5.464007857713208,
+          "credit": 100,
+          "employment": 98.8568095917286,
+          "living": 65.23451370313796,
+          "net": 562.3055555555555,
+          "score": 63
+        }
+      },
+      "demobilized": [],
+      "pacificationCount": 0,
+      "pacificationCost": 0,
+      "finalManualRepayment": 0
+    },
+    {
+      "seed": 7,
+      "mode": "amnesty27",
+      "firstUnrest": 103,
+      "shortfall": 0,
+      "final": {
+        "turn": 721,
+        "cash": 0,
+        "debt": 2907377,
+        "regularNet": -6756,
+        "grain": 12780,
+        "foodTax": 491,
+        "foodNeed": 240,
+        "provinces": 10,
+        "population": 2951114,
+        "living": 26,
+        "welfare": {
+          "stability": 18,
+          "security": 2,
+          "activity": 53,
+          "fitness": 54,
+          "defense": 50,
+          "loyalty": 0
+        },
+        "unrest": 9,
+        "idle": 6727,
+        "fiscalHealth": {
+          "observedTurns": 108,
+          "annual": [
+            {
+              "turns": 36,
+              "fromTurn": 686,
+              "toTurn": 721,
+              "net": -233439
+            },
+            {
+              "turns": 36,
+              "fromTurn": 650,
+              "toTurn": 685,
+              "net": -227120
+            },
+            {
+              "turns": 36,
+              "fromTurn": 614,
+              "toTurn": 649,
+              "net": -216004
+            }
+          ],
+          "operations": 0,
+          "liquidity": 0,
+          "credit": 0,
+          "employment": 100,
+          "living": 26.27164881932126,
+          "net": -6484.416666666667,
+          "score": 13
+        }
+      },
+      "demobilized": [],
+      "pacificationCount": 0,
+      "pacificationCost": 0,
+      "finalManualRepayment": 0
+    },
+    {
+      "seed": 7,
+      "mode": "amnesty29",
+      "firstUnrest": 63,
+      "shortfall": 0,
+      "final": {
+        "turn": 721,
+        "cash": 0,
+        "debt": 3408178,
+        "regularNet": -7369,
+        "grain": 13173,
+        "foodTax": 529,
+        "foodNeed": 240,
+        "provinces": 10,
+        "population": 2929767,
+        "living": 24,
+        "welfare": {
+          "stability": 17,
+          "security": 2,
+          "activity": 53,
+          "fitness": 54,
+          "defense": 50,
+          "loyalty": 0
+        },
+        "unrest": 9,
+        "idle": 311,
+        "fiscalHealth": {
+          "observedTurns": 108,
+          "annual": [
+            {
+              "turns": 36,
+              "fromTurn": 686,
+              "toTurn": 721,
+              "net": -255190
+            },
+            {
+              "turns": 36,
+              "fromTurn": 650,
+              "toTurn": 685,
+              "net": -249072
+            },
+            {
+              "turns": 36,
+              "fromTurn": 614,
+              "toTurn": 649,
+              "net": -237210
+            }
+          ],
+          "operations": 0,
+          "liquidity": 0,
+          "credit": 0,
+          "employment": 100,
+          "living": 23.584849951701315,
+          "net": -7088.611111111111,
+          "score": 12
+        }
+      },
+      "demobilized": [],
+      "pacificationCount": 0,
+      "pacificationCost": 0,
+      "finalManualRepayment": 0
+    },
+    {
+      "seed": 7,
+      "mode": "recovery50to20",
+      "firstUnrest": 9,
+      "shortfall": 73,
+      "final": {
+        "turn": 721,
+        "cash": 1000,
+        "debt": 1303847,
+        "regularNet": -1308,
+        "grain": 5740,
+        "foodTax": 353,
+        "foodNeed": 240,
+        "provinces": 10,
+        "population": 2957214,
+        "living": 52,
+        "welfare": {
+          "stability": 37,
+          "security": 56,
+          "activity": 53,
+          "fitness": 54,
+          "defense": 50,
+          "loyalty": 38
+        },
+        "unrest": 3,
+        "idle": 22559,
+        "fiscalHealth": {
+          "observedTurns": 108,
+          "annual": [
+            {
+              "turns": 36,
+              "fromTurn": 686,
+              "toTurn": 721,
+              "net": -53003
+            },
+            {
+              "turns": 36,
+              "fromTurn": 650,
+              "toTurn": 685,
+              "net": -49375
+            },
+            {
+              "turns": 36,
+              "fromTurn": 614,
+              "toTurn": 649,
+              "net": -45870
+            }
+          ],
+          "operations": 2.254926247044253,
+          "liquidity": 1.0907980278371656,
+          "credit": 0,
+          "employment": 100,
+          "living": 52.21658201440504,
+          "net": -1472.3055555555557,
+          "score": 16
+        }
+      },
+      "demobilized": [],
+      "pacificationCount": 0,
+      "pacificationCost": 0,
+      "finalManualRepayment": 0
+    },
+    {
+      "seed": 7,
+      "mode": "recovery50to20reform",
+      "firstUnrest": 9,
+      "shortfall": 0,
+      "final": {
+        "turn": 721,
+        "cash": 64635,
+        "debt": 0,
+        "regularNet": 2251,
+        "grain": 10618,
+        "foodTax": 343,
+        "foodNeed": 134,
+        "provinces": 10,
+        "population": 3187855,
+        "living": 56,
+        "welfare": {
+          "stability": 54,
+          "security": 66,
+          "activity": 53,
+          "fitness": 53,
+          "defense": 50,
+          "loyalty": 40
+        },
+        "unrest": 0,
+        "idle": 119210,
+        "fiscalHealth": {
+          "observedTurns": 108,
+          "annual": [
+            {
+              "turns": 36,
+              "fromTurn": 686,
+              "toTurn": 721,
+              "net": 65386
+            },
+            {
+              "turns": 36,
+              "fromTurn": 650,
+              "toTurn": 685,
+              "net": 67848
+            },
+            {
+              "turns": 36,
+              "fromTurn": 614,
+              "toTurn": 649,
+              "net": 68007
+            }
+          ],
+          "operations": 99.4159880590247,
+          "liquidity": 97.31792882272936,
+          "credit": 100,
+          "employment": 94.58020236632241,
+          "living": 56.38638812380135,
+          "net": 1816.2777777777778,
+          "score": 94
+        }
+      },
+      "demobilized": [
+        "central",
+        "hebei",
+        "henan",
+        "huainan",
+        "jiangnan",
+        "lingnan",
+        "hedong",
+        "guannei",
+        "shannan",
+        "jiannan",
+        "longyou"
+      ],
+      "pacificationCount": 97,
+      "pacificationCost": 48500,
+      "finalManualRepayment": 0
+    },
+    {
+      "seed": 41,
+      "mode": "amnesty20",
+      "firstUnrest": null,
+      "shortfall": 0,
+      "final": {
+        "turn": 721,
+        "cash": 5574,
+        "debt": 0,
+        "regularNet": 1027,
+        "grain": 13546,
+        "foodTax": 348,
+        "foodNeed": 404,
+        "provinces": 10,
+        "population": 3294363,
+        "living": 65,
+        "welfare": {
+          "stability": 70,
+          "security": 73,
+          "activity": 56,
+          "fitness": 56,
+          "defense": 50,
+          "loyalty": 56
+        },
+        "unrest": 0,
+        "idle": 6558,
+        "fiscalHealth": {
+          "observedTurns": 108,
+          "annual": [
+            {
+              "turns": 36,
+              "fromTurn": 686,
+              "toTurn": 721,
+              "net": 29175
+            },
+            {
+              "turns": 36,
+              "fromTurn": 650,
+              "toTurn": 685,
+              "net": 28684
+            },
+            {
+              "turns": 36,
+              "fromTurn": 614,
+              "toTurn": 649,
+              "net": 19711
+            }
+          ],
+          "operations": 68.04749555580827,
+          "liquidity": 5.911674868488037,
+          "credit": 100,
+          "employment": 99.79273026708641,
+          "living": 65.44619091333136,
+          "net": 810.4166666666666,
+          "score": 65
+        }
+      },
+      "demobilized": [],
+      "pacificationCount": 0,
+      "pacificationCost": 0,
+      "finalManualRepayment": 0
+    },
+    {
+      "seed": 41,
+      "mode": "amnesty27",
+      "firstUnrest": 103,
+      "shortfall": 0,
+      "final": {
+        "turn": 721,
+        "cash": 0,
+        "debt": 2898211,
+        "regularNet": -6576,
+        "grain": 13464,
+        "foodTax": 420,
+        "foodNeed": 318,
+        "provinces": 10,
+        "population": 2953656,
+        "living": 27,
+        "welfare": {
+          "stability": 18,
+          "security": 2,
+          "activity": 53,
+          "fitness": 54,
+          "defense": 50,
+          "loyalty": 0
+        },
+        "unrest": 6,
+        "idle": 10545,
+        "fiscalHealth": {
+          "observedTurns": 108,
+          "annual": [
+            {
+              "turns": 36,
+              "fromTurn": 686,
+              "toTurn": 721,
+              "net": -233330
+            },
+            {
+              "turns": 36,
+              "fromTurn": 650,
+              "toTurn": 685,
+              "net": -226544
+            },
+            {
+              "turns": 36,
+              "fromTurn": 614,
+              "toTurn": 649,
+              "net": -215274
+            }
+          ],
+          "operations": 0,
+          "liquidity": 0,
+          "credit": 0,
+          "employment": 100,
+          "living": 26.71222064285175,
+          "net": -6481.388888888889,
+          "score": 13
+        }
+      },
+      "demobilized": [],
+      "pacificationCount": 0,
+      "pacificationCost": 0,
+      "finalManualRepayment": 0
+    },
+    {
+      "seed": 41,
+      "mode": "amnesty29",
+      "firstUnrest": 63,
+      "shortfall": 0,
+      "final": {
+        "turn": 721,
+        "cash": 0,
+        "debt": 3378363,
+        "regularNet": -7182,
+        "grain": 13877,
+        "foodTax": 452,
+        "foodNeed": 318,
+        "provinces": 10,
+        "population": 2939783,
+        "living": 24,
+        "welfare": {
+          "stability": 17,
+          "security": 2,
+          "activity": 53,
+          "fitness": 54,
+          "defense": 50,
+          "loyalty": 0
+        },
+        "unrest": 6,
+        "idle": 3170,
+        "fiscalHealth": {
+          "observedTurns": 108,
+          "annual": [
+            {
+              "turns": 36,
+              "fromTurn": 686,
+              "toTurn": 721,
+              "net": -254572
+            },
+            {
+              "turns": 36,
+              "fromTurn": 650,
+              "toTurn": 685,
+              "net": -247087
+            },
+            {
+              "turns": 36,
+              "fromTurn": 614,
+              "toTurn": 649,
+              "net": -235277
+            }
+          ],
+          "operations": 0,
+          "liquidity": 0,
+          "credit": 0,
+          "employment": 100,
+          "living": 23.975675605198195,
+          "net": -7071.444444444444,
+          "score": 12
+        }
+      },
+      "demobilized": [],
+      "pacificationCount": 0,
+      "pacificationCost": 0,
+      "finalManualRepayment": 0
+    },
+    {
+      "seed": 41,
+      "mode": "recovery50to20",
+      "firstUnrest": 9,
+      "shortfall": 495,
+      "final": {
+        "turn": 721,
+        "cash": 1688,
+        "debt": 1315319,
+        "regularNet": -1251,
+        "grain": 6547,
+        "foodTax": 327,
+        "foodNeed": 388,
+        "provinces": 10,
+        "population": 2956585,
+        "living": 51,
+        "welfare": {
+          "stability": 33,
+          "security": 56,
+          "activity": 53,
+          "fitness": 54,
+          "defense": 50,
+          "loyalty": 33
+        },
+        "unrest": 3,
+        "idle": 20830,
+        "fiscalHealth": {
+          "observedTurns": 108,
+          "annual": [
+            {
+              "turns": 36,
+              "fromTurn": 686,
+              "toTurn": 721,
+              "net": -50458
+            },
+            {
+              "turns": 36,
+              "fromTurn": 650,
+              "toTurn": 685,
+              "net": -54009
+            },
+            {
+              "turns": 36,
+              "fromTurn": 614,
+              "toTurn": 649,
+              "net": -43591
+            }
+          ],
+          "operations": 5.078366696490974,
+          "liquidity": 1.8407383309039755,
+          "credit": 0,
+          "employment": 100,
+          "living": 51.079312963803154,
+          "net": -1401.611111111111,
+          "score": 18
+        }
+      },
+      "demobilized": [],
+      "pacificationCount": 0,
+      "pacificationCost": 0,
+      "finalManualRepayment": 0
+    },
+    {
+      "seed": 41,
+      "mode": "recovery50to20reform",
+      "firstUnrest": 9,
+      "shortfall": 0,
+      "final": {
+        "turn": 721,
+        "cash": 96986,
+        "debt": 0,
+        "regularNet": 2605,
+        "grain": 10890,
+        "foodTax": 319,
+        "foodNeed": 390,
+        "provinces": 10,
+        "population": 3234081,
+        "living": 57,
+        "welfare": {
+          "stability": 56,
+          "security": 64,
+          "activity": 53,
+          "fitness": 53,
+          "defense": 50,
+          "loyalty": 39
+        },
+        "unrest": 0,
+        "idle": 114496,
+        "fiscalHealth": {
+          "observedTurns": 108,
+          "annual": [
+            {
+              "turns": 36,
+              "fromTurn": 686,
+              "toTurn": 721,
+              "net": 79748
+            },
+            {
+              "turns": 36,
+              "fromTurn": 650,
+              "toTurn": 685,
+              "net": 72670
+            },
+            {
+              "turns": 36,
+              "fromTurn": 614,
+              "toTurn": 649,
+              "net": 64174
+            }
+          ],
+          "operations": 100,
+          "liquidity": 100,
+          "credit": 100,
+          "employment": 94.86891890337378,
+          "living": 56.55604179508585,
+          "net": 2215.222222222222,
+          "score": 95
+        }
+      },
+      "demobilized": [
+        "central",
+        "hebei",
+        "henan",
+        "huainan",
+        "jiangnan",
+        "lingnan",
+        "hedong",
+        "guannei",
+        "shannan",
+        "jiannan",
+        "longyou"
+      ],
+      "pacificationCount": 87,
+      "pacificationCost": 43500,
+      "finalManualRepayment": 0
+    }
+  ],
+  "extraRoutes": [
+    {
+      "mode": "delegated18",
+      "seed": 1,
+      "steps": 720,
+      "shortfall": 5476,
+      "rows": [
+        {
+          "turn": 1,
+          "cash": 18000,
+          "debt": 0,
+          "net": 848,
+          "grain": 9648,
+          "living": 56,
+          "loyalty": 58,
+          "unrest": 0
+        },
+        {
+          "turn": 37,
+          "cash": 2955,
+          "debt": 0,
+          "net": 283,
+          "grain": 9063,
+          "living": 56,
+          "loyalty": 54,
+          "unrest": 0
+        },
+        {
+          "turn": 73,
+          "cash": 6263,
+          "debt": 0,
+          "net": 83,
+          "grain": 7385,
+          "living": 56,
+          "loyalty": 52,
+          "unrest": 0
+        },
+        {
+          "turn": 109,
+          "cash": 3615,
+          "debt": 0,
+          "net": -212,
+          "grain": 328,
+          "living": 56,
+          "loyalty": 51,
+          "unrest": 0
+        },
+        {
+          "turn": 145,
+          "cash": 551,
+          "debt": 460,
+          "net": -39,
+          "grain": 1533,
+          "living": 54,
+          "loyalty": 48,
+          "unrest": 1
+        },
+        {
+          "turn": 181,
+          "cash": 1162,
+          "debt": 5266,
+          "net": -729,
+          "grain": 2297,
+          "living": 54,
+          "loyalty": 49,
+          "unrest": 1
+        },
+        {
+          "turn": 217,
+          "cash": 3230,
+          "debt": 5302,
+          "net": 131,
+          "grain": 1440,
+          "living": 54,
+          "loyalty": 49,
+          "unrest": 1
+        },
+        {
+          "turn": 253,
+          "cash": 3626,
+          "debt": 5302,
+          "net": 172,
+          "grain": 1820,
+          "living": 54,
+          "loyalty": 50,
+          "unrest": 2
+        },
+        {
+          "turn": 289,
+          "cash": 3912,
+          "debt": 5560,
+          "net": 448,
+          "grain": 3047,
+          "living": 54,
+          "loyalty": 50,
+          "unrest": 1
+        },
+        {
+          "turn": 325,
+          "cash": 6608,
+          "debt": 2398,
+          "net": -1,
+          "grain": 1711,
+          "living": 54,
+          "loyalty": 50,
+          "unrest": 2
+        },
+        {
+          "turn": 361,
+          "cash": 0,
+          "debt": 22926,
+          "net": -1715,
+          "grain": 649,
+          "living": 51,
+          "loyalty": 34,
+          "unrest": 6
+        },
+        {
+          "turn": 397,
+          "cash": 1044,
+          "debt": 82436,
+          "net": -1652,
+          "grain": 1034,
+          "living": 49,
+          "loyalty": 35,
+          "unrest": 7
+        },
+        {
+          "turn": 433,
+          "cash": 1889,
+          "debt": 126043,
+          "net": -1239,
+          "grain": 1466,
+          "living": 48,
+          "loyalty": 36,
+          "unrest": 7
+        },
+        {
+          "turn": 469,
+          "cash": 1263,
+          "debt": 163399,
+          "net": -1353,
+          "grain": 1696,
+          "living": 48,
+          "loyalty": 38,
+          "unrest": 4
+        },
+        {
+          "turn": 505,
+          "cash": 2404,
+          "debt": 193287,
+          "net": -1069,
+          "grain": 1832,
+          "living": 49,
+          "loyalty": 39,
+          "unrest": 5
+        },
+        {
+          "turn": 541,
+          "cash": 3936,
+          "debt": 225407,
+          "net": -709,
+          "grain": 3774,
+          "living": 49,
+          "loyalty": 41,
+          "unrest": 4
+        },
+        {
+          "turn": 577,
+          "cash": 2982,
+          "debt": 259205,
+          "net": -958,
+          "grain": 2646,
+          "living": 50,
+          "loyalty": 42,
+          "unrest": 3
+        },
+        {
+          "turn": 613,
+          "cash": 1904,
+          "debt": 284071,
+          "net": -949,
+          "grain": 3177,
+          "living": 50,
+          "loyalty": 43,
+          "unrest": 6
+        },
+        {
+          "turn": 649,
+          "cash": 3704,
+          "debt": 307249,
+          "net": -687,
+          "grain": 68,
+          "living": 51,
+          "loyalty": 44,
+          "unrest": 5
+        },
+        {
+          "turn": 685,
+          "cash": 2488,
+          "debt": 326483,
+          "net": -703,
+          "grain": 1440,
+          "living": 52,
+          "loyalty": 45,
+          "unrest": 3
+        },
+        {
+          "turn": 721,
+          "cash": 1238,
+          "debt": 351552,
+          "net": -1073,
+          "grain": 2846,
+          "living": 52,
+          "loyalty": 46,
+          "unrest": 3
+        }
+      ],
+      "final": {
+        "turn": 721,
+        "cash": 1238,
+        "debt": 351552,
+        "net": -1073,
+        "grain": 2846,
+        "living": 52,
+        "loyalty": 46,
+        "unrest": 3
+      }
+    },
+    {
+      "mode": "delegated18",
+      "seed": 7,
+      "steps": 720,
+      "shortfall": 3927,
+      "rows": [
+        {
+          "turn": 1,
+          "cash": 18000,
+          "debt": 0,
+          "net": 848,
+          "grain": 9648,
+          "living": 56,
+          "loyalty": 58,
+          "unrest": 0
+        },
+        {
+          "turn": 37,
+          "cash": 6037,
+          "debt": 0,
+          "net": 285,
+          "grain": 8178,
+          "living": 56,
+          "loyalty": 54,
+          "unrest": 0
+        },
+        {
+          "turn": 73,
+          "cash": 5585,
+          "debt": 0,
+          "net": -79,
+          "grain": 6148,
+          "living": 57,
+          "loyalty": 52,
+          "unrest": 0
+        },
+        {
+          "turn": 109,
+          "cash": 5271,
+          "debt": 0,
+          "net": -199,
+          "grain": 469,
+          "living": 56,
+          "loyalty": 51,
+          "unrest": 0
+        },
+        {
+          "turn": 145,
+          "cash": 5092,
+          "debt": 0,
+          "net": 141,
+          "grain": 1837,
+          "living": 55,
+          "loyalty": 50,
+          "unrest": 0
+        },
+        {
+          "turn": 181,
+          "cash": 4661,
+          "debt": 0,
+          "net": -730,
+          "grain": 1670,
+          "living": 55,
+          "loyalty": 50,
+          "unrest": 0
+        },
+        {
+          "turn": 217,
+          "cash": 5499,
+          "debt": 0,
+          "net": -68,
+          "grain": 1440,
+          "living": 55,
+          "loyalty": 50,
+          "unrest": 1
+        },
+        {
+          "turn": 253,
+          "cash": 3632,
+          "debt": 0,
+          "net": -157,
+          "grain": 1979,
+          "living": 55,
+          "loyalty": 50,
+          "unrest": 1
+        },
+        {
+          "turn": 289,
+          "cash": 5121,
+          "debt": 581,
+          "net": -19,
+          "grain": 1800,
+          "living": 55,
+          "loyalty": 51,
+          "unrest": 1
+        },
+        {
+          "turn": 325,
+          "cash": 2129,
+          "debt": 87,
+          "net": -18,
+          "grain": 2052,
+          "living": 55,
+          "loyalty": 51,
+          "unrest": 2
+        },
+        {
+          "turn": 361,
+          "cash": 691,
+          "debt": 14226,
+          "net": -1127,
+          "grain": 853,
+          "living": 53,
+          "loyalty": 43,
+          "unrest": 6
+        },
+        {
+          "turn": 397,
+          "cash": 1035,
+          "debt": 42841,
+          "net": -796,
+          "grain": 1563,
+          "living": 53,
+          "loyalty": 44,
+          "unrest": 5
+        },
+        {
+          "turn": 433,
+          "cash": 1955,
+          "debt": 66658,
+          "net": -753,
+          "grain": 1440,
+          "living": 52,
+          "loyalty": 45,
+          "unrest": 4
+        },
+        {
+          "turn": 469,
+          "cash": 360,
+          "debt": 93123,
+          "net": -1063,
+          "grain": 1755,
+          "living": 53,
+          "loyalty": 47,
+          "unrest": 3
+        },
+        {
+          "turn": 505,
+          "cash": 1275,
+          "debt": 124616,
+          "net": -967,
+          "grain": 2156,
+          "living": 53,
+          "loyalty": 48,
+          "unrest": 4
+        },
+        {
+          "turn": 541,
+          "cash": 1096,
+          "debt": 153460,
+          "net": -540,
+          "grain": 1081,
+          "living": 53,
+          "loyalty": 46,
+          "unrest": 4
+        },
+        {
+          "turn": 577,
+          "cash": 1493,
+          "debt": 179845,
+          "net": -655,
+          "grain": 2063,
+          "living": 53,
+          "loyalty": 47,
+          "unrest": 3
+        },
+        {
+          "turn": 613,
+          "cash": 3191,
+          "debt": 192663,
+          "net": -563,
+          "grain": 3587,
+          "living": 53,
+          "loyalty": 48,
+          "unrest": 3
+        },
+        {
+          "turn": 649,
+          "cash": 1537,
+          "debt": 209902,
+          "net": -717,
+          "grain": 3553,
+          "living": 53,
+          "loyalty": 49,
+          "unrest": 4
+        },
+        {
+          "turn": 685,
+          "cash": 2683,
+          "debt": 228873,
+          "net": -588,
+          "grain": 2286,
+          "living": 53,
+          "loyalty": 50,
+          "unrest": 2
+        },
+        {
+          "turn": 721,
+          "cash": 2399,
+          "debt": 248028,
+          "net": -806,
+          "grain": 3028,
+          "living": 53,
+          "loyalty": 50,
+          "unrest": 4
+        }
+      ],
+      "final": {
+        "turn": 721,
+        "cash": 2399,
+        "debt": 248028,
+        "net": -806,
+        "grain": 3028,
+        "living": 53,
+        "loyalty": 50,
+        "unrest": 4
+      }
+    },
+    {
+      "mode": "delegated18",
+      "seed": 41,
+      "steps": 720,
+      "shortfall": 7133,
+      "rows": [
+        {
+          "turn": 1,
+          "cash": 18000,
+          "debt": 0,
+          "net": 848,
+          "grain": 9648,
+          "living": 56,
+          "loyalty": 58,
+          "unrest": 0
+        },
+        {
+          "turn": 37,
+          "cash": 5229,
+          "debt": 0,
+          "net": -27,
+          "grain": 5801,
+          "living": 57,
+          "loyalty": 54,
+          "unrest": 0
+        },
+        {
+          "turn": 73,
+          "cash": 5370,
+          "debt": 0,
+          "net": -56,
+          "grain": 5928,
+          "living": 56,
+          "loyalty": 52,
+          "unrest": 0
+        },
+        {
+          "turn": 109,
+          "cash": 6664,
+          "debt": 0,
+          "net": 221,
+          "grain": 3663,
+          "living": 56,
+          "loyalty": 51,
+          "unrest": 0
+        },
+        {
+          "turn": 145,
+          "cash": 2744,
+          "debt": 0,
+          "net": -207,
+          "grain": 922,
+          "living": 55,
+          "loyalty": 49,
+          "unrest": 0
+        },
+        {
+          "turn": 181,
+          "cash": 5161,
+          "debt": 0,
+          "net": 221,
+          "grain": 2244,
+          "living": 55,
+          "loyalty": 50,
+          "unrest": 0
+        },
+        {
+          "turn": 217,
+          "cash": 4374,
+          "debt": 0,
+          "net": -550,
+          "grain": 1828,
+          "living": 55,
+          "loyalty": 50,
+          "unrest": 0
+        },
+        {
+          "turn": 253,
+          "cash": 1000,
+          "debt": 1870,
+          "net": -395,
+          "grain": 2429,
+          "living": 54,
+          "loyalty": 50,
+          "unrest": 2
+        },
+        {
+          "turn": 289,
+          "cash": 2828,
+          "debt": 1870,
+          "net": -306,
+          "grain": 1835,
+          "living": 55,
+          "loyalty": 50,
+          "unrest": 2
+        },
+        {
+          "turn": 325,
+          "cash": 5058,
+          "debt": 0,
+          "net": 168,
+          "grain": 1517,
+          "living": 55,
+          "loyalty": 50,
+          "unrest": 0
+        },
+        {
+          "turn": 361,
+          "cash": 5000,
+          "debt": 0,
+          "net": 46,
+          "grain": 0,
+          "living": 55,
+          "loyalty": 47,
+          "unrest": 2
+        },
+        {
+          "turn": 397,
+          "cash": 0,
+          "debt": 48317,
+          "net": -1484,
+          "grain": 1406,
+          "living": 51,
+          "loyalty": 36,
+          "unrest": 6
+        },
+        {
+          "turn": 433,
+          "cash": 1000,
+          "debt": 91770,
+          "net": -1004,
+          "grain": 2224,
+          "living": 50,
+          "loyalty": 38,
+          "unrest": 3
+        },
+        {
+          "turn": 469,
+          "cash": 1203,
+          "debt": 111675,
+          "net": -852,
+          "grain": 784,
+          "living": 50,
+          "loyalty": 39,
+          "unrest": 5
+        },
+        {
+          "turn": 505,
+          "cash": 0,
+          "debt": 164808,
+          "net": -1574,
+          "grain": 2120,
+          "living": 47,
+          "loyalty": 32,
+          "unrest": 7
+        },
+        {
+          "turn": 541,
+          "cash": 2113,
+          "debt": 206871,
+          "net": -1155,
+          "grain": 2296,
+          "living": 47,
+          "loyalty": 33,
+          "unrest": 4
+        },
+        {
+          "turn": 577,
+          "cash": 3180,
+          "debt": 232856,
+          "net": -1053,
+          "grain": 2581,
+          "living": 48,
+          "loyalty": 34,
+          "unrest": 5
+        },
+        {
+          "turn": 613,
+          "cash": 4252,
+          "debt": 256340,
+          "net": -781,
+          "grain": 3641,
+          "living": 49,
+          "loyalty": 36,
+          "unrest": 5
+        },
+        {
+          "turn": 649,
+          "cash": 2283,
+          "debt": 274468,
+          "net": -830,
+          "grain": 3927,
+          "living": 49,
+          "loyalty": 37,
+          "unrest": 3
+        },
+        {
+          "turn": 685,
+          "cash": 2968,
+          "debt": 303878,
+          "net": -1331,
+          "grain": 4303,
+          "living": 50,
+          "loyalty": 38,
+          "unrest": 4
+        },
+        {
+          "turn": 721,
+          "cash": 2942,
+          "debt": 335869,
+          "net": -950,
+          "grain": 5117,
+          "living": 51,
+          "loyalty": 40,
+          "unrest": 5
+        }
+      ],
+      "final": {
+        "turn": 721,
+        "cash": 2942,
+        "debt": 335869,
+        "net": -950,
+        "grain": 5117,
+        "living": 51,
+        "loyalty": 40,
+        "unrest": 5
+      }
+    },
+    {
+      "mode": "delegated22",
+      "seed": 1,
+      "steps": 720,
+      "shortfall": 0,
+      "rows": [
+        {
+          "turn": 1,
+          "cash": 18000,
+          "debt": 0,
+          "net": 848,
+          "grain": 9648,
+          "living": 56,
+          "loyalty": 58,
+          "unrest": 0
+        },
+        {
+          "turn": 37,
+          "cash": 6014,
+          "debt": 0,
+          "net": 877,
+          "grain": 10716,
+          "living": 56,
+          "loyalty": 54,
+          "unrest": 0
+        },
+        {
+          "turn": 73,
+          "cash": 6035,
+          "debt": 0,
+          "net": 678,
+          "grain": 10590,
+          "living": 55,
+          "loyalty": 50,
+          "unrest": 0
+        },
+        {
+          "turn": 109,
+          "cash": 5000,
+          "debt": 0,
+          "net": 378,
+          "grain": 4507,
+          "living": 54,
+          "loyalty": 49,
+          "unrest": 0
+        },
+        {
+          "turn": 145,
+          "cash": 5000,
+          "debt": 0,
+          "net": 645,
+          "grain": 7428,
+          "living": 53,
+          "loyalty": 47,
+          "unrest": 0
+        },
+        {
+          "turn": 181,
+          "cash": 6110,
+          "debt": 0,
+          "net": -180,
+          "grain": 10153,
+          "living": 53,
+          "loyalty": 47,
+          "unrest": 0
+        },
+        {
+          "turn": 217,
+          "cash": 7288,
+          "debt": 0,
+          "net": 790,
+          "grain": 10210,
+          "living": 53,
+          "loyalty": 46,
+          "unrest": 0
+        },
+        {
+          "turn": 253,
+          "cash": 9686,
+          "debt": 0,
+          "net": 1074,
+          "grain": 11771,
+          "living": 54,
+          "loyalty": 46,
+          "unrest": 0
+        },
+        {
+          "turn": 289,
+          "cash": 8739,
+          "debt": 0,
+          "net": 1029,
+          "grain": 11969,
+          "living": 56,
+          "loyalty": 46,
+          "unrest": 0
+        },
+        {
+          "turn": 325,
+          "cash": 9586,
+          "debt": 0,
+          "net": 824,
+          "grain": 11110,
+          "living": 57,
+          "loyalty": 45,
+          "unrest": 0
+        },
+        {
+          "turn": 361,
+          "cash": 10138,
+          "debt": 0,
+          "net": 567,
+          "grain": 5424,
+          "living": 59,
+          "loyalty": 45,
+          "unrest": 0
+        },
+        {
+          "turn": 397,
+          "cash": 12242,
+          "debt": 0,
+          "net": 765,
+          "grain": 8176,
+          "living": 61,
+          "loyalty": 45,
+          "unrest": 0
+        },
+        {
+          "turn": 433,
+          "cash": 12090,
+          "debt": 0,
+          "net": 1338,
+          "grain": 10062,
+          "living": 62,
+          "loyalty": 45,
+          "unrest": 0
+        },
+        {
+          "turn": 469,
+          "cash": 21672,
+          "debt": 0,
+          "net": 1165,
+          "grain": 12728,
+          "living": 63,
+          "loyalty": 44,
+          "unrest": 0
+        },
+        {
+          "turn": 505,
+          "cash": 32281,
+          "debt": 0,
+          "net": 834,
+          "grain": 14017,
+          "living": 64,
+          "loyalty": 44,
+          "unrest": 0
+        },
+        {
+          "turn": 541,
+          "cash": 47880,
+          "debt": 0,
+          "net": 1022,
+          "grain": 14680,
+          "living": 64,
+          "loyalty": 44,
+          "unrest": 0
+        },
+        {
+          "turn": 577,
+          "cash": 56972,
+          "debt": 0,
+          "net": 1279,
+          "grain": 13422,
+          "living": 65,
+          "loyalty": 43,
+          "unrest": 0
+        },
+        {
+          "turn": 613,
+          "cash": 83252,
+          "debt": 0,
+          "net": 1929,
+          "grain": 14106,
+          "living": 65,
+          "loyalty": 43,
+          "unrest": 0
+        },
+        {
+          "turn": 649,
+          "cash": 119076,
+          "debt": 0,
+          "net": 1884,
+          "grain": 10233,
+          "living": 64,
+          "loyalty": 42,
+          "unrest": 0
+        },
+        {
+          "turn": 685,
+          "cash": 154392,
+          "debt": 0,
+          "net": 1274,
+          "grain": 12636,
+          "living": 64,
+          "loyalty": 42,
+          "unrest": 0
+        },
+        {
+          "turn": 721,
+          "cash": 180529,
+          "debt": 0,
+          "net": 416,
+          "grain": 14738,
+          "living": 64,
+          "loyalty": 42,
+          "unrest": 0
+        }
+      ],
+      "final": {
+        "turn": 721,
+        "cash": 180529,
+        "debt": 0,
+        "net": 416,
+        "grain": 14738,
+        "living": 64,
+        "loyalty": 42,
+        "unrest": 0
+      }
+    },
+    {
+      "mode": "delegated22",
+      "seed": 7,
+      "steps": 720,
+      "shortfall": 0,
+      "rows": [
+        {
+          "turn": 1,
+          "cash": 18000,
+          "debt": 0,
+          "net": 848,
+          "grain": 9648,
+          "living": 56,
+          "loyalty": 58,
+          "unrest": 0
+        },
+        {
+          "turn": 37,
+          "cash": 6066,
+          "debt": 0,
+          "net": 863,
+          "grain": 9832,
+          "living": 56,
+          "loyalty": 54,
+          "unrest": 0
+        },
+        {
+          "turn": 73,
+          "cash": 5685,
+          "debt": 0,
+          "net": 455,
+          "grain": 9691,
+          "living": 55,
+          "loyalty": 50,
+          "unrest": 0
+        },
+        {
+          "turn": 109,
+          "cash": 5120,
+          "debt": 0,
+          "net": 357,
+          "grain": 4387,
+          "living": 55,
+          "loyalty": 49,
+          "unrest": 0
+        },
+        {
+          "turn": 145,
+          "cash": 5743,
+          "debt": 0,
+          "net": 782,
+          "grain": 7432,
+          "living": 54,
+          "loyalty": 47,
+          "unrest": 0
+        },
+        {
+          "turn": 181,
+          "cash": 6465,
+          "debt": 0,
+          "net": -322,
+          "grain": 9065,
+          "living": 54,
+          "loyalty": 47,
+          "unrest": 0
+        },
+        {
+          "turn": 217,
+          "cash": 6907,
+          "debt": 0,
+          "net": 738,
+          "grain": 10218,
+          "living": 54,
+          "loyalty": 46,
+          "unrest": 0
+        },
+        {
+          "turn": 253,
+          "cash": 8012,
+          "debt": 0,
+          "net": 616,
+          "grain": 12043,
+          "living": 55,
+          "loyalty": 46,
+          "unrest": 0
+        },
+        {
+          "turn": 289,
+          "cash": 7948,
+          "debt": 0,
+          "net": 530,
+          "grain": 11952,
+          "living": 56,
+          "loyalty": 46,
+          "unrest": 0
+        },
+        {
+          "turn": 325,
+          "cash": 8689,
+          "debt": 0,
+          "net": 947,
+          "grain": 11471,
+          "living": 58,
+          "loyalty": 46,
+          "unrest": 0
+        },
+        {
+          "turn": 361,
+          "cash": 13504,
+          "debt": 0,
+          "net": 808,
+          "grain": 6510,
+          "living": 60,
+          "loyalty": 45,
+          "unrest": 0
+        },
+        {
+          "turn": 397,
+          "cash": 11363,
+          "debt": 0,
+          "net": 1332,
+          "grain": 8506,
+          "living": 61,
+          "loyalty": 45,
+          "unrest": 0
+        },
+        {
+          "turn": 433,
+          "cash": 9316,
+          "debt": 0,
+          "net": 900,
+          "grain": 9648,
+          "living": 62,
+          "loyalty": 45,
+          "unrest": 0
+        },
+        {
+          "turn": 469,
+          "cash": 19166,
+          "debt": 0,
+          "net": 356,
+          "grain": 12417,
+          "living": 63,
+          "loyalty": 44,
+          "unrest": 0
+        },
+        {
+          "turn": 505,
+          "cash": 32538,
+          "debt": 0,
+          "net": 593,
+          "grain": 14142,
+          "living": 64,
+          "loyalty": 44,
+          "unrest": 0
+        },
+        {
+          "turn": 541,
+          "cash": 51194,
+          "debt": 0,
+          "net": 1632,
+          "grain": 12315,
+          "living": 64,
+          "loyalty": 44,
+          "unrest": 0
+        },
+        {
+          "turn": 577,
+          "cash": 65532,
+          "debt": 0,
+          "net": 804,
+          "grain": 13655,
+          "living": 64,
+          "loyalty": 44,
+          "unrest": 0
+        },
+        {
+          "turn": 613,
+          "cash": 85436,
+          "debt": 0,
+          "net": 1174,
+          "grain": 14878,
+          "living": 64,
+          "loyalty": 43,
+          "unrest": 0
+        },
+        {
+          "turn": 649,
+          "cash": 111541,
+          "debt": 0,
+          "net": 1375,
+          "grain": 13901,
+          "living": 64,
+          "loyalty": 43,
+          "unrest": 0
+        },
+        {
+          "turn": 685,
+          "cash": 148484,
+          "debt": 0,
+          "net": 1152,
+          "grain": 12848,
+          "living": 64,
+          "loyalty": 42,
+          "unrest": 0
+        },
+        {
+          "turn": 721,
+          "cash": 171229,
+          "debt": 0,
+          "net": 1182,
+          "grain": 14706,
+          "living": 64,
+          "loyalty": 42,
+          "unrest": 0
+        }
+      ],
+      "final": {
+        "turn": 721,
+        "cash": 171229,
+        "debt": 0,
+        "net": 1182,
+        "grain": 14706,
+        "living": 64,
+        "loyalty": 42,
+        "unrest": 0
+      }
+    },
+    {
+      "mode": "delegated22",
+      "seed": 41,
+      "steps": 720,
+      "shortfall": 0,
+      "rows": [
+        {
+          "turn": 1,
+          "cash": 18000,
+          "debt": 0,
+          "net": 848,
+          "grain": 9648,
+          "living": 56,
+          "loyalty": 58,
+          "unrest": 0
+        },
+        {
+          "turn": 37,
+          "cash": 7057,
+          "debt": 0,
+          "net": 476,
+          "grain": 7621,
+          "living": 56,
+          "loyalty": 54,
+          "unrest": 0
+        },
+        {
+          "turn": 73,
+          "cash": 5315,
+          "debt": 0,
+          "net": 498,
+          "grain": 9616,
+          "living": 55,
+          "loyalty": 50,
+          "unrest": 0
+        },
+        {
+          "turn": 109,
+          "cash": 6823,
+          "debt": 0,
+          "net": 819,
+          "grain": 9501,
+          "living": 55,
+          "loyalty": 49,
+          "unrest": 0
+        },
+        {
+          "turn": 145,
+          "cash": 6746,
+          "debt": 0,
+          "net": 286,
+          "grain": 6045,
+          "living": 54,
+          "loyalty": 47,
+          "unrest": 0
+        },
+        {
+          "turn": 181,
+          "cash": 6584,
+          "debt": 0,
+          "net": 851,
+          "grain": 7657,
+          "living": 54,
+          "loyalty": 47,
+          "unrest": 0
+        },
+        {
+          "turn": 217,
+          "cash": 5001,
+          "debt": 0,
+          "net": 189,
+          "grain": 9250,
+          "living": 54,
+          "loyalty": 46,
+          "unrest": 0
+        },
+        {
+          "turn": 253,
+          "cash": 8046,
+          "debt": 0,
+          "net": 399,
+          "grain": 11833,
+          "living": 55,
+          "loyalty": 46,
+          "unrest": 0
+        },
+        {
+          "turn": 289,
+          "cash": 8910,
+          "debt": 0,
+          "net": 516,
+          "grain": 11330,
+          "living": 57,
+          "loyalty": 46,
+          "unrest": 0
+        },
+        {
+          "turn": 325,
+          "cash": 8316,
+          "debt": 0,
+          "net": 630,
+          "grain": 11779,
+          "living": 58,
+          "loyalty": 45,
+          "unrest": 0
+        },
+        {
+          "turn": 361,
+          "cash": 10366,
+          "debt": 0,
+          "net": 1235,
+          "grain": 10229,
+          "living": 60,
+          "loyalty": 45,
+          "unrest": 0
+        },
+        {
+          "turn": 397,
+          "cash": 14369,
+          "debt": 0,
+          "net": 907,
+          "grain": 9050,
+          "living": 62,
+          "loyalty": 45,
+          "unrest": 0
+        },
+        {
+          "turn": 433,
+          "cash": 16102,
+          "debt": 0,
+          "net": 662,
+          "grain": 12633,
+          "living": 63,
+          "loyalty": 45,
+          "unrest": 0
+        },
+        {
+          "turn": 469,
+          "cash": 20351,
+          "debt": 0,
+          "net": 978,
+          "grain": 11940,
+          "living": 63,
+          "loyalty": 45,
+          "unrest": 0
+        },
+        {
+          "turn": 505,
+          "cash": 35019,
+          "debt": 0,
+          "net": 1252,
+          "grain": 13145,
+          "living": 64,
+          "loyalty": 44,
+          "unrest": 0
+        },
+        {
+          "turn": 541,
+          "cash": 52326,
+          "debt": 0,
+          "net": 703,
+          "grain": 14152,
+          "living": 64,
+          "loyalty": 44,
+          "unrest": 0
+        },
+        {
+          "turn": 577,
+          "cash": 74170,
+          "debt": 0,
+          "net": 1431,
+          "grain": 15118,
+          "living": 64,
+          "loyalty": 44,
+          "unrest": 0
+        },
+        {
+          "turn": 613,
+          "cash": 102524,
+          "debt": 0,
+          "net": 1751,
+          "grain": 15323,
+          "living": 64,
+          "loyalty": 43,
+          "unrest": 0
+        },
+        {
+          "turn": 649,
+          "cash": 124525,
+          "debt": 0,
+          "net": 1326,
+          "grain": 14734,
+          "living": 64,
+          "loyalty": 43,
+          "unrest": 0
+        },
+        {
+          "turn": 685,
+          "cash": 163324,
+          "debt": 0,
+          "net": 1239,
+          "grain": 14949,
+          "living": 64,
+          "loyalty": 42,
+          "unrest": 0
+        },
+        {
+          "turn": 721,
+          "cash": 189429,
+          "debt": 0,
+          "net": 1430,
+          "grain": 15093,
+          "living": 64,
+          "loyalty": 42,
+          "unrest": 0
+        }
+      ],
+      "final": {
+        "turn": 721,
+        "cash": 189429,
+        "debt": 0,
+        "net": 1430,
+        "grain": 15093,
+        "living": 64,
+        "loyalty": 42,
+        "unrest": 0
+      }
+    },
+    {
+      "mode": "delegated18-half-army",
+      "seed": 1,
+      "steps": 720,
+      "shortfall": 0,
+      "rows": [
+        {
+          "turn": 1,
+          "cash": 18000,
+          "debt": 0,
+          "net": 848,
+          "grain": 9648,
+          "living": 56,
+          "loyalty": 58,
+          "unrest": 0
+        },
+        {
+          "turn": 37,
+          "cash": 10107,
+          "debt": 0,
+          "net": 1840,
+          "grain": 9316,
+          "living": 56,
+          "loyalty": 54,
+          "unrest": 0
+        },
+        {
+          "turn": 73,
+          "cash": 21140,
+          "debt": 0,
+          "net": 1681,
+          "grain": 9350,
+          "living": 56,
+          "loyalty": 52,
+          "unrest": 0
+        },
+        {
+          "turn": 109,
+          "cash": 28079,
+          "debt": 0,
+          "net": 1404,
+          "grain": 4103,
+          "living": 56,
+          "loyalty": 51,
+          "unrest": 0
+        },
+        {
+          "turn": 145,
+          "cash": 34955,
+          "debt": 0,
+          "net": 1494,
+          "grain": 8761,
+          "living": 56,
+          "loyalty": 51,
+          "unrest": 0
+        },
+        {
+          "turn": 181,
+          "cash": 43821,
+          "debt": 0,
+          "net": 1047,
+          "grain": 10677,
+          "living": 57,
+          "loyalty": 51,
+          "unrest": 0
+        },
+        {
+          "turn": 217,
+          "cash": 68144,
+          "debt": 0,
+          "net": 1721,
+          "grain": 10127,
+          "living": 59,
+          "loyalty": 51,
+          "unrest": 0
+        },
+        {
+          "turn": 253,
+          "cash": 87450,
+          "debt": 0,
+          "net": 2155,
+          "grain": 10717,
+          "living": 60,
+          "loyalty": 51,
+          "unrest": 0
+        },
+        {
+          "turn": 289,
+          "cash": 118923,
+          "debt": 0,
+          "net": 2193,
+          "grain": 11071,
+          "living": 62,
+          "loyalty": 51,
+          "unrest": 0
+        },
+        {
+          "turn": 325,
+          "cash": 149253,
+          "debt": 0,
+          "net": 2023,
+          "grain": 10391,
+          "living": 64,
+          "loyalty": 51,
+          "unrest": 0
+        },
+        {
+          "turn": 361,
+          "cash": 184114,
+          "debt": 0,
+          "net": 1722,
+          "grain": 4999,
+          "living": 66,
+          "loyalty": 51,
+          "unrest": 0
+        },
+        {
+          "turn": 397,
+          "cash": 216306,
+          "debt": 0,
+          "net": 1934,
+          "grain": 8724,
+          "living": 67,
+          "loyalty": 51,
+          "unrest": 0
+        },
+        {
+          "turn": 433,
+          "cash": 236542,
+          "debt": 0,
+          "net": 2517,
+          "grain": 11649,
+          "living": 68,
+          "loyalty": 51,
+          "unrest": 0
+        },
+        {
+          "turn": 469,
+          "cash": 276116,
+          "debt": 0,
+          "net": 2317,
+          "grain": 12107,
+          "living": 69,
+          "loyalty": 51,
+          "unrest": 0
+        },
+        {
+          "turn": 505,
+          "cash": 300125,
+          "debt": 0,
+          "net": 2009,
+          "grain": 12865,
+          "living": 69,
+          "loyalty": 51,
+          "unrest": 0
+        },
+        {
+          "turn": 541,
+          "cash": 332629,
+          "debt": 0,
+          "net": 1833,
+          "grain": 13284,
+          "living": 70,
+          "loyalty": 51,
+          "unrest": 0
+        },
+        {
+          "turn": 577,
+          "cash": 370389,
+          "debt": 0,
+          "net": 2313,
+          "grain": 11947,
+          "living": 70,
+          "loyalty": 51,
+          "unrest": 0
+        },
+        {
+          "turn": 613,
+          "cash": 414211,
+          "debt": 0,
+          "net": 2818,
+          "grain": 12347,
+          "living": 70,
+          "loyalty": 51,
+          "unrest": 0
+        },
+        {
+          "turn": 649,
+          "cash": 470766,
+          "debt": 0,
+          "net": 2745,
+          "grain": 8498,
+          "living": 70,
+          "loyalty": 51,
+          "unrest": 0
+        },
+        {
+          "turn": 685,
+          "cash": 507615,
+          "debt": 0,
+          "net": 2175,
+          "grain": 11703,
+          "living": 70,
+          "loyalty": 51,
+          "unrest": 0
+        },
+        {
+          "turn": 721,
+          "cash": 524567,
+          "debt": 0,
+          "net": 1144,
+          "grain": 12756,
+          "living": 70,
+          "loyalty": 51,
+          "unrest": 0
+        }
+      ],
+      "demobilized": [
+        "central",
+        "hebei",
+        "henan",
+        "huainan",
+        "jiangnan",
+        "lingnan",
+        "hedong",
+        "guannei",
+        "shannan",
+        "jiannan",
+        "longyou"
+      ],
+      "final": {
+        "turn": 721,
+        "cash": 524567,
+        "debt": 0,
+        "net": 1144,
+        "grain": 12756,
+        "living": 70,
+        "loyalty": 51,
+        "unrest": 0
+      }
+    },
+    {
+      "mode": "delegated18-half-army",
+      "seed": 7,
+      "steps": 720,
+      "shortfall": 0,
+      "rows": [
+        {
+          "turn": 1,
+          "cash": 18000,
+          "debt": 0,
+          "net": 848,
+          "grain": 9648,
+          "living": 56,
+          "loyalty": 58,
+          "unrest": 0
+        },
+        {
+          "turn": 37,
+          "cash": 15171,
+          "debt": 0,
+          "net": 1785,
+          "grain": 8954,
+          "living": 56,
+          "loyalty": 54,
+          "unrest": 0
+        },
+        {
+          "turn": 73,
+          "cash": 22084,
+          "debt": 0,
+          "net": 1426,
+          "grain": 9735,
+          "living": 57,
+          "loyalty": 52,
+          "unrest": 0
+        },
+        {
+          "turn": 109,
+          "cash": 33306,
+          "debt": 0,
+          "net": 1346,
+          "grain": 4286,
+          "living": 57,
+          "loyalty": 51,
+          "unrest": 0
+        },
+        {
+          "turn": 145,
+          "cash": 39794,
+          "debt": 0,
+          "net": 1617,
+          "grain": 8795,
+          "living": 57,
+          "loyalty": 51,
+          "unrest": 0
+        },
+        {
+          "turn": 181,
+          "cash": 45775,
+          "debt": 0,
+          "net": 863,
+          "grain": 10391,
+          "living": 58,
+          "loyalty": 51,
+          "unrest": 0
+        },
+        {
+          "turn": 217,
+          "cash": 70607,
+          "debt": 0,
+          "net": 1634,
+          "grain": 10168,
+          "living": 60,
+          "loyalty": 51,
+          "unrest": 0
+        },
+        {
+          "turn": 253,
+          "cash": 84932,
+          "debt": 0,
+          "net": 1924,
+          "grain": 10913,
+          "living": 61,
+          "loyalty": 51,
+          "unrest": 0
+        },
+        {
+          "turn": 289,
+          "cash": 115588,
+          "debt": 0,
+          "net": 1961,
+          "grain": 11027,
+          "living": 63,
+          "loyalty": 51,
+          "unrest": 0
+        },
+        {
+          "turn": 325,
+          "cash": 140603,
+          "debt": 0,
+          "net": 2015,
+          "grain": 10466,
+          "living": 65,
+          "loyalty": 51,
+          "unrest": 0
+        },
+        {
+          "turn": 361,
+          "cash": 184841,
+          "debt": 0,
+          "net": 1831,
+          "grain": 6262,
+          "living": 66,
+          "loyalty": 51,
+          "unrest": 0
+        },
+        {
+          "turn": 397,
+          "cash": 210091,
+          "debt": 0,
+          "net": 2271,
+          "grain": 9265,
+          "living": 67,
+          "loyalty": 51,
+          "unrest": 0
+        },
+        {
+          "turn": 433,
+          "cash": 220843,
+          "debt": 0,
+          "net": 1880,
+          "grain": 11209,
+          "living": 68,
+          "loyalty": 51,
+          "unrest": 0
+        },
+        {
+          "turn": 469,
+          "cash": 257824,
+          "debt": 0,
+          "net": 2231,
+          "grain": 12314,
+          "living": 69,
+          "loyalty": 51,
+          "unrest": 0
+        },
+        {
+          "turn": 505,
+          "cash": 288026,
+          "debt": 0,
+          "net": 1950,
+          "grain": 12878,
+          "living": 70,
+          "loyalty": 51,
+          "unrest": 0
+        },
+        {
+          "turn": 541,
+          "cash": 322066,
+          "debt": 0,
+          "net": 2143,
+          "grain": 11641,
+          "living": 70,
+          "loyalty": 51,
+          "unrest": 0
+        },
+        {
+          "turn": 577,
+          "cash": 353343,
+          "debt": 0,
+          "net": 1784,
+          "grain": 12407,
+          "living": 71,
+          "loyalty": 51,
+          "unrest": 0
+        },
+        {
+          "turn": 613,
+          "cash": 382433,
+          "debt": 0,
+          "net": 2093,
+          "grain": 12975,
+          "living": 71,
+          "loyalty": 51,
+          "unrest": 0
+        },
+        {
+          "turn": 649,
+          "cash": 422989,
+          "debt": 0,
+          "net": 2256,
+          "grain": 11677,
+          "living": 70,
+          "loyalty": 51,
+          "unrest": 0
+        },
+        {
+          "turn": 685,
+          "cash": 465385,
+          "debt": 0,
+          "net": 2021,
+          "grain": 11042,
+          "living": 70,
+          "loyalty": 51,
+          "unrest": 0
+        },
+        {
+          "turn": 721,
+          "cash": 484604,
+          "debt": 0,
+          "net": 2142,
+          "grain": 12627,
+          "living": 70,
+          "loyalty": 51,
+          "unrest": 0
+        }
+      ],
+      "demobilized": [
+        "central",
+        "hebei",
+        "henan",
+        "huainan",
+        "jiangnan",
+        "lingnan",
+        "hedong",
+        "guannei",
+        "shannan",
+        "jiannan",
+        "longyou"
+      ],
+      "final": {
+        "turn": 721,
+        "cash": 484604,
+        "debt": 0,
+        "net": 2142,
+        "grain": 12627,
+        "living": 70,
+        "loyalty": 51,
+        "unrest": 0
+      }
+    },
+    {
+      "mode": "delegated18-half-army",
+      "seed": 41,
+      "steps": 720,
+      "shortfall": 0,
+      "rows": [
+        {
+          "turn": 1,
+          "cash": 18000,
+          "debt": 0,
+          "net": 848,
+          "grain": 9648,
+          "living": 56,
+          "loyalty": 58,
+          "unrest": 0
+        },
+        {
+          "turn": 37,
+          "cash": 11194,
+          "debt": 0,
+          "net": 1394,
+          "grain": 7879,
+          "living": 57,
+          "loyalty": 54,
+          "unrest": 0
+        },
+        {
+          "turn": 73,
+          "cash": 12978,
+          "debt": 0,
+          "net": 1444,
+          "grain": 9779,
+          "living": 56,
+          "loyalty": 52,
+          "unrest": 0
+        },
+        {
+          "turn": 109,
+          "cash": 23757,
+          "debt": 0,
+          "net": 1765,
+          "grain": 10491,
+          "living": 57,
+          "loyalty": 51,
+          "unrest": 0
+        },
+        {
+          "turn": 145,
+          "cash": 31576,
+          "debt": 0,
+          "net": 1548,
+          "grain": 8492,
+          "living": 57,
+          "loyalty": 51,
+          "unrest": 0
+        },
+        {
+          "turn": 181,
+          "cash": 36894,
+          "debt": 0,
+          "net": 1698,
+          "grain": 10528,
+          "living": 58,
+          "loyalty": 51,
+          "unrest": 0
+        },
+        {
+          "turn": 217,
+          "cash": 54349,
+          "debt": 0,
+          "net": 1517,
+          "grain": 10420,
+          "living": 59,
+          "loyalty": 51,
+          "unrest": 0
+        },
+        {
+          "turn": 253,
+          "cash": 80104,
+          "debt": 0,
+          "net": 1954,
+          "grain": 11133,
+          "living": 61,
+          "loyalty": 51,
+          "unrest": 0
+        },
+        {
+          "turn": 289,
+          "cash": 113972,
+          "debt": 0,
+          "net": 1711,
+          "grain": 10719,
+          "living": 63,
+          "loyalty": 51,
+          "unrest": 0
+        },
+        {
+          "turn": 325,
+          "cash": 138402,
+          "debt": 0,
+          "net": 1854,
+          "grain": 11075,
+          "living": 64,
+          "loyalty": 51,
+          "unrest": 0
+        },
+        {
+          "turn": 361,
+          "cash": 179448,
+          "debt": 0,
+          "net": 2395,
+          "grain": 10120,
+          "living": 65,
+          "loyalty": 51,
+          "unrest": 0
+        },
+        {
+          "turn": 397,
+          "cash": 221542,
+          "debt": 0,
+          "net": 1959,
+          "grain": 9434,
+          "living": 67,
+          "loyalty": 51,
+          "unrest": 0
+        },
+        {
+          "turn": 433,
+          "cash": 245492,
+          "debt": 0,
+          "net": 1764,
+          "grain": 12417,
+          "living": 68,
+          "loyalty": 51,
+          "unrest": 0
+        },
+        {
+          "turn": 469,
+          "cash": 262455,
+          "debt": 0,
+          "net": 2065,
+          "grain": 10790,
+          "living": 68,
+          "loyalty": 51,
+          "unrest": 0
+        },
+        {
+          "turn": 505,
+          "cash": 296624,
+          "debt": 0,
+          "net": 2306,
+          "grain": 12602,
+          "living": 69,
+          "loyalty": 51,
+          "unrest": 0
+        },
+        {
+          "turn": 541,
+          "cash": 341795,
+          "debt": 0,
+          "net": 2206,
+          "grain": 12809,
+          "living": 69,
+          "loyalty": 51,
+          "unrest": 0
+        },
+        {
+          "turn": 577,
+          "cash": 387173,
+          "debt": 0,
+          "net": 2278,
+          "grain": 13146,
+          "living": 69,
+          "loyalty": 51,
+          "unrest": 0
+        },
+        {
+          "turn": 613,
+          "cash": 427631,
+          "debt": 0,
+          "net": 2643,
+          "grain": 13218,
+          "living": 70,
+          "loyalty": 51,
+          "unrest": 0
+        },
+        {
+          "turn": 649,
+          "cash": 446218,
+          "debt": 0,
+          "net": 2155,
+          "grain": 12689,
+          "living": 69,
+          "loyalty": 51,
+          "unrest": 0
+        },
+        {
+          "turn": 685,
+          "cash": 492849,
+          "debt": 0,
+          "net": 2330,
+          "grain": 12796,
+          "living": 70,
+          "loyalty": 51,
+          "unrest": 0
+        },
+        {
+          "turn": 721,
+          "cash": 523406,
+          "debt": 0,
+          "net": 2252,
+          "grain": 13006,
+          "living": 70,
+          "loyalty": 51,
+          "unrest": 0
+        }
+      ],
+      "demobilized": [
+        "central",
+        "hebei",
+        "henan",
+        "huainan",
+        "jiangnan",
+        "lingnan",
+        "hedong",
+        "guannei",
+        "shannan",
+        "jiannan",
+        "longyou"
+      ],
+      "final": {
+        "turn": 721,
+        "cash": 523406,
+        "debt": 0,
+        "net": 2252,
+        "grain": 13006,
+        "living": 70,
+        "loyalty": 51,
+        "unrest": 0
+      }
+    }
+  ],
+  "opening": {
+    "turn": 1,
+    "treasury": 18000,
+    "debt": 0,
+    "income": 7601,
+    "expense": 6753,
+    "net": 848,
+    "grain": 9648,
+    "foodTax": 331,
+    "publicFoodNeed": 240,
+    "protectedStock": 11180,
+    "foodShortfall": 0,
+    "provinces": [
+      {
+        "id": "hebei",
+        "name": "河北",
+        "terrain": "平原型",
+        "population": 160000,
+        "capacity": {
+          "normal": 176000,
+          "limit": 211200,
+          "total": 160000,
+          "available": 51200,
+          "overload": 0,
+          "pressure": 0
+        },
+        "land": {
+          "total": 138600,
+          "used": 70540,
+          "reserved": 0,
+          "available": 68060
+        },
+        "labor": {
+          "ratio": 0.69,
+          "total": 160000,
+          "capacity": 110399,
+          "nonLabor": 49601,
+          "assigned": 109400,
+          "available": 999,
+          "overCapacity": 0
+        },
+        "living": 38,
+        "welfare": {
+          "stability": 65,
+          "security": 49,
+          "activity": 42,
+          "fitness": 52,
+          "defense": 30,
+          "loyalty": 40
+        },
+        "buildings": {
+          "temples": 2,
+          "markets": 2,
+          "yamen": 3,
+          "granaries": 2,
+          "trainingGrounds": 2,
+          "walls": 3,
+          "palaces": 0
+        },
+        "economy": {
+          "agriculture": {
+            "developedArea": 11400,
+            "capacityArea": 30000,
+            "productivity": 58
+          },
+          "pastoral": {
+            "developedArea": 15226,
+            "capacityArea": 33100,
+            "productivity": 69
+          },
+          "commerce": {
+            "developedArea": 19548,
+            "capacityArea": 36200,
+            "productivity": 80
+          },
+          "industry": {
+            "developedArea": 24366,
+            "capacityArea": 39300,
+            "productivity": 91
+          }
+        },
+        "industries": [
+          {
+            "key": "agriculture",
+            "name": "农业",
+            "unit": "石",
+            "workers": 60800,
+            "required": 60800,
+            "vacant": 0,
+            "ratio": 1,
+            "area": 11400,
+            "output": 1293,
+            "terrainRoom": 85620
+          },
+          {
+            "key": "pastoral",
+            "name": "牧业",
+            "unit": "石",
+            "workers": 10400,
+            "required": 10400,
+            "vacant": 0,
+            "ratio": 1,
+            "area": 15226,
+            "output": 255,
+            "terrainRoom": 33284
+          },
+          {
+            "key": "commerce",
+            "name": "商业",
+            "unit": "两",
+            "workers": 14400,
+            "required": 14400,
+            "vacant": 0,
+            "ratio": 1,
+            "area": 19548,
+            "output": 983,
+            "terrainRoom": 28962
+          },
+          {
+            "key": "industry",
+            "name": "工业",
+            "unit": "两",
+            "workers": 20800,
+            "required": 20800,
+            "vacant": 0,
+            "ratio": 1,
+            "area": 24366,
+            "output": 835,
+            "terrainRoom": 24144
+          }
+        ],
+        "risk": 0.06109714285714286
+      },
+      {
+        "id": "henan",
+        "name": "河南",
+        "terrain": "平原型",
+        "population": 191000,
+        "capacity": {
+          "normal": 210101,
+          "limit": 252121,
+          "total": 191000,
+          "available": 61121,
+          "overload": 0,
+          "pressure": 0
+        },
+        "land": {
+          "total": 147000,
+          "used": 86500,
+          "reserved": 0,
+          "available": 60500
+        },
+        "labor": {
+          "ratio": 0.69,
+          "total": 191000,
+          "capacity": 131790,
+          "nonLabor": 59210,
+          "assigned": 130355,
+          "available": 1435,
+          "overCapacity": 0
+        },
+        "living": 46,
+        "welfare": {
+          "stability": 70,
+          "security": 56,
+          "activity": 50,
+          "fitness": 59,
+          "defense": 38,
+          "loyalty": 48
+        },
+        "buildings": {
+          "temples": 2,
+          "markets": 2,
+          "yamen": 3,
+          "granaries": 2,
+          "trainingGrounds": 2,
+          "walls": 3,
+          "palaces": 0
+        },
+        "economy": {
+          "agriculture": {
+            "developedArea": 14766,
+            "capacityArea": 32100,
+            "productivity": 65
+          },
+          "pastoral": {
+            "developedArea": 19008,
+            "capacityArea": 35200,
+            "productivity": 76
+          },
+          "commerce": {
+            "developedArea": 23746,
+            "capacityArea": 38300,
+            "productivity": 87
+          },
+          "industry": {
+            "developedArea": 28980,
+            "capacityArea": 41400,
+            "productivity": 63
+          }
+        },
+        "industries": [
+          {
+            "key": "agriculture",
+            "name": "农业",
+            "unit": "石",
+            "workers": 72580,
+            "required": 72580,
+            "vacant": 0,
+            "ratio": 1,
+            "area": 14766,
+            "output": 1842,
+            "terrainRoom": 88134
+          },
+          {
+            "key": "pastoral",
+            "name": "牧业",
+            "unit": "石",
+            "workers": 12415,
+            "required": 12415,
+            "vacant": 0,
+            "ratio": 1,
+            "area": 19008,
+            "output": 335,
+            "terrainRoom": 32442
+          },
+          {
+            "key": "commerce",
+            "name": "商业",
+            "unit": "两",
+            "workers": 17190,
+            "required": 17190,
+            "vacant": 0,
+            "ratio": 1,
+            "area": 23746,
+            "output": 1463,
+            "terrainRoom": 27704
+          },
+          {
+            "key": "industry",
+            "name": "工业",
+            "unit": "两",
+            "workers": 24830,
+            "required": 24830,
+            "vacant": 0,
+            "ratio": 1,
+            "area": 28980,
+            "output": 778,
+            "terrainRoom": 22470
+          }
+        ],
+        "risk": 0.05650535117056856
+      },
+      {
+        "id": "huainan",
+        "name": "淮南",
+        "terrain": "河海型",
+        "population": 222000,
+        "capacity": {
+          "normal": 244201,
+          "limit": 293041,
+          "total": 222000,
+          "available": 71041,
+          "overload": 0,
+          "pressure": 0
+        },
+        "land": {
+          "total": 147630,
+          "used": 86404,
+          "reserved": 0,
+          "available": 61226
+        },
+        "labor": {
+          "ratio": 0.69,
+          "total": 222000,
+          "capacity": 153180,
+          "nonLabor": 68820,
+          "assigned": 151354,
+          "available": 1826,
+          "overCapacity": 0
+        },
+        "living": 54,
+        "welfare": {
+          "stability": 75,
+          "security": 63,
+          "activity": 58,
+          "fitness": 66,
+          "defense": 46,
+          "loyalty": 56
+        },
+        "buildings": {
+          "temples": 2,
+          "markets": 2,
+          "yamen": 3,
+          "granaries": 2,
+          "trainingGrounds": 2,
+          "walls": 3,
+          "palaces": 0
+        },
+        "economy": {
+          "agriculture": {
+            "developedArea": 18468,
+            "capacityArea": 34200,
+            "productivity": 72
+          },
+          "pastoral": {
+            "developedArea": 23126,
+            "capacityArea": 37300,
+            "productivity": 83
+          },
+          "commerce": {
+            "developedArea": 28280,
+            "capacityArea": 40400,
+            "productivity": 59
+          },
+          "industry": {
+            "developedArea": 16530,
+            "capacityArea": 43500,
+            "productivity": 70
+          }
+        },
+        "industries": [
+          {
+            "key": "agriculture",
+            "name": "农业",
+            "unit": "石",
+            "workers": 84360,
+            "required": 84360,
+            "vacant": 0,
+            "ratio": 1,
+            "area": 18468,
+            "output": 2235,
+            "terrainRoom": 62728
+          },
+          {
+            "key": "pastoral",
+            "name": "牧业",
+            "unit": "石",
+            "workers": 14430,
+            "required": 14430,
+            "vacant": 0,
+            "ratio": 1,
+            "area": 23126,
+            "output": 440,
+            "terrainRoom": 13781
+          },
+          {
+            "key": "commerce",
+            "name": "商业",
+            "unit": "两",
+            "workers": 19980,
+            "required": 19980,
+            "vacant": 0,
+            "ratio": 1,
+            "area": 28280,
+            "output": 1551,
+            "terrainRoom": 60298
+          },
+          {
+            "key": "industry",
+            "name": "工业",
+            "unit": "两",
+            "workers": 28860,
+            "required": 28860,
+            "vacant": 0,
+            "ratio": 1,
+            "area": 16530,
+            "output": 565,
+            "terrainRoom": 42522
+          }
+        ],
+        "risk": 0.05789584905660377
+      },
+      {
+        "id": "jiangnan",
+        "name": "江南",
+        "terrain": "丘陵型",
+        "population": 253000,
+        "capacity": {
+          "normal": 278300,
+          "limit": 333960,
+          "total": 253000,
+          "available": 80960,
+          "overload": 0,
+          "pressure": 0
+        },
+        "land": {
+          "total": 131040,
+          "used": 87212,
+          "reserved": 0,
+          "available": 43828
+        },
+        "labor": {
+          "ratio": 0.69,
+          "total": 253000,
+          "capacity": 174570,
+          "nonLabor": 78430,
+          "assigned": 172371,
+          "available": 2199,
+          "overCapacity": 0
+        },
+        "living": 62,
+        "welfare": {
+          "stability": 80,
+          "security": 70,
+          "activity": 66,
+          "fitness": 73,
+          "defense": 54,
+          "loyalty": 64
+        },
+        "buildings": {
+          "temples": 1,
+          "markets": 1,
+          "yamen": 2,
+          "granaries": 1,
+          "trainingGrounds": 1,
+          "walls": 2,
+          "palaces": 0
+        },
+        "economy": {
+          "agriculture": {
+            "developedArea": 22506,
+            "capacityArea": 36300,
+            "productivity": 79
+          },
+          "pastoral": {
+            "developedArea": 27580,
+            "capacityArea": 39400,
+            "productivity": 90
+          },
+          "commerce": {
+            "developedArea": 16150,
+            "capacityArea": 42500,
+            "productivity": 66
+          },
+          "industry": {
+            "developedArea": 20976,
+            "capacityArea": 45600,
+            "productivity": 77
+          }
+        },
+        "industries": [
+          {
+            "key": "agriculture",
+            "name": "农业",
+            "unit": "石",
+            "workers": 96140,
+            "required": 96140,
+            "vacant": 0,
+            "ratio": 1,
+            "area": 22506,
+            "output": 2663,
+            "terrainRoom": 29910
+          },
+          {
+            "key": "pastoral",
+            "name": "牧业",
+            "unit": "石",
+            "workers": 16445,
+            "required": 16445,
+            "vacant": 0,
+            "ratio": 1,
+            "area": 27580,
+            "output": 597,
+            "terrainRoom": 51044
+          },
+          {
+            "key": "commerce",
+            "name": "商业",
+            "unit": "两",
+            "workers": 22770,
+            "required": 22770,
+            "vacant": 0,
+            "ratio": 1,
+            "area": 16150,
+            "output": 890,
+            "terrainRoom": 29714
+          },
+          {
+            "key": "industry",
+            "name": "工业",
+            "unit": "两",
+            "workers": 32890,
+            "required": 32890,
+            "vacant": 0,
+            "ratio": 1,
+            "area": 20976,
+            "output": 816,
+            "terrainRoom": 44544
+          }
+        ],
+        "risk": 0.04627163204747775
+      },
+      {
+        "id": "lingnan",
+        "name": "岭南",
+        "terrain": "丘陵型",
+        "population": 284000,
+        "capacity": {
+          "normal": 312400,
+          "limit": 374880,
+          "total": 284000,
+          "available": 90880,
+          "overload": 0,
+          "pressure": 0
+        },
+        "land": {
+          "total": 137760,
+          "used": 88924,
+          "reserved": 0,
+          "available": 48836
+        },
+        "labor": {
+          "ratio": 0.69,
+          "total": 284000,
+          "capacity": 195959,
+          "nonLabor": 88041,
+          "assigned": 193388,
+          "available": 2571,
+          "overCapacity": 0
+        },
+        "living": 70,
+        "welfare": {
+          "stability": 85,
+          "security": 77,
+          "activity": 74,
+          "fitness": 80,
+          "defense": 62,
+          "loyalty": 72
+        },
+        "buildings": {
+          "temples": 1,
+          "markets": 1,
+          "yamen": 2,
+          "granaries": 1,
+          "trainingGrounds": 1,
+          "walls": 2,
+          "palaces": 0
+        },
+        "economy": {
+          "agriculture": {
+            "developedArea": 26880,
+            "capacityArea": 38400,
+            "productivity": 86
+          },
+          "pastoral": {
+            "developedArea": 15770,
+            "capacityArea": 41500,
+            "productivity": 62
+          },
+          "commerce": {
+            "developedArea": 20516,
+            "capacityArea": 44600,
+            "productivity": 73
+          },
+          "industry": {
+            "developedArea": 25758,
+            "capacityArea": 47700,
+            "productivity": 84
+          }
+        },
+        "industries": [
+          {
+            "key": "agriculture",
+            "name": "农业",
+            "unit": "石",
+            "workers": 107920,
+            "required": 107920,
+            "vacant": 0,
+            "ratio": 1,
+            "area": 26880,
+            "output": 3267,
+            "terrainRoom": 28224
+          },
+          {
+            "key": "pastoral",
+            "name": "牧业",
+            "unit": "石",
+            "workers": 18460,
+            "required": 18460,
+            "vacant": 0,
+            "ratio": 1,
+            "area": 15770,
+            "output": 464,
+            "terrainRoom": 66886
+          },
+          {
+            "key": "commerce",
+            "name": "商业",
+            "unit": "两",
+            "workers": 25560,
+            "required": 25560,
+            "vacant": 0,
+            "ratio": 1,
+            "area": 20516,
+            "output": 1343,
+            "terrainRoom": 27700
+          },
+          {
+            "key": "industry",
+            "name": "工业",
+            "unit": "两",
+            "workers": 36920,
+            "required": 36920,
+            "vacant": 0,
+            "ratio": 1,
+            "area": 25758,
+            "output": 1179,
+            "terrainRoom": 43122
+          }
+        ],
+        "risk": 0.04163505617977528
+      },
+      {
+        "id": "hedong",
+        "name": "河东",
+        "terrain": "高山型",
+        "population": 315000,
+        "capacity": {
+          "normal": 346500,
+          "limit": 415800,
+          "total": 315000,
+          "available": 100800,
+          "overload": 0,
+          "pressure": 0
+        },
+        "land": {
+          "total": 117390,
+          "used": 91540,
+          "reserved": 0,
+          "available": 25850
+        },
+        "labor": {
+          "ratio": 0.69,
+          "total": 315000,
+          "capacity": 217349,
+          "nonLabor": 97651,
+          "assigned": 214405,
+          "available": 2944,
+          "overCapacity": 0
+        },
+        "living": 78,
+        "welfare": {
+          "stability": 65,
+          "security": 84,
+          "activity": 82,
+          "fitness": 52,
+          "defense": 70,
+          "loyalty": 80
+        },
+        "buildings": {
+          "temples": 1,
+          "markets": 1,
+          "yamen": 2,
+          "granaries": 1,
+          "trainingGrounds": 1,
+          "walls": 2,
+          "palaces": 0
+        },
+        "economy": {
+          "agriculture": {
+            "developedArea": 15390,
+            "capacityArea": 40500,
+            "productivity": 58
+          },
+          "pastoral": {
+            "developedArea": 20056,
+            "capacityArea": 43600,
+            "productivity": 69
+          },
+          "commerce": {
+            "developedArea": 25218,
+            "capacityArea": 46700,
+            "productivity": 80
+          },
+          "industry": {
+            "developedArea": 30876,
+            "capacityArea": 49800,
+            "productivity": 91
+          }
+        },
+        "industries": [
+          {
+            "key": "agriculture",
+            "name": "农业",
+            "unit": "石",
+            "workers": 119700,
+            "required": 119700,
+            "vacant": 0,
+            "ratio": 1,
+            "area": 15390,
+            "output": 1610,
+            "terrainRoom": 8088
+          },
+          {
+            "key": "pastoral",
+            "name": "牧业",
+            "unit": "石",
+            "workers": 20475,
+            "required": 20475,
+            "vacant": 0,
+            "ratio": 1,
+            "area": 20056,
+            "output": 510,
+            "terrainRoom": 38639
+          },
+          {
+            "key": "commerce",
+            "name": "商业",
+            "unit": "两",
+            "workers": 28350,
+            "required": 28350,
+            "vacant": 0,
+            "ratio": 1,
+            "area": 25218,
+            "output": 1964,
+            "terrainRoom": 15868
+          },
+          {
+            "key": "industry",
+            "name": "工业",
+            "unit": "两",
+            "workers": 40950,
+            "required": 40950,
+            "vacant": 0,
+            "ratio": 1,
+            "area": 30876,
+            "output": 2000,
+            "terrainRoom": 45427
+          }
+        ],
+        "risk": 0.05028799999999999
+      },
+      {
+        "id": "guannei",
+        "name": "关内",
+        "terrain": "丘陵型",
+        "population": 346000,
+        "capacity": {
+          "normal": 380601,
+          "limit": 456721,
+          "total": 346000,
+          "available": 110721,
+          "overload": 0,
+          "pressure": 0
+        },
+        "land": {
+          "total": 151200,
+          "used": 110860,
+          "reserved": 0,
+          "available": 40340
+        },
+        "labor": {
+          "ratio": 0.69,
+          "total": 346000,
+          "capacity": 238739,
+          "nonLabor": 107261,
+          "assigned": 235422,
+          "available": 3317,
+          "overCapacity": 0
+        },
+        "living": 38,
+        "welfare": {
+          "stability": 70,
+          "security": 49,
+          "activity": 42,
+          "fitness": 59,
+          "defense": 78,
+          "loyalty": 40
+        },
+        "buildings": {
+          "temples": 3,
+          "markets": 3,
+          "yamen": 4,
+          "granaries": 3,
+          "trainingGrounds": 3,
+          "walls": 4,
+          "palaces": 1
+        },
+        "economy": {
+          "agriculture": {
+            "developedArea": 19596,
+            "capacityArea": 42600,
+            "productivity": 65
+          },
+          "pastoral": {
+            "developedArea": 24678,
+            "capacityArea": 45700,
+            "productivity": 76
+          },
+          "commerce": {
+            "developedArea": 30256,
+            "capacityArea": 48800,
+            "productivity": 87
+          },
+          "industry": {
+            "developedArea": 36330,
+            "capacityArea": 51900,
+            "productivity": 63
+          }
+        },
+        "industries": [
+          {
+            "key": "agriculture",
+            "name": "农业",
+            "unit": "石",
+            "workers": 131480,
+            "required": 131480,
+            "vacant": 0,
+            "ratio": 1,
+            "area": 19596,
+            "output": 2316,
+            "terrainRoom": 40884
+          },
+          {
+            "key": "pastoral",
+            "name": "牧业",
+            "unit": "石",
+            "workers": 22490,
+            "required": 22490,
+            "vacant": 0,
+            "ratio": 1,
+            "area": 24678,
+            "output": 715,
+            "terrainRoom": 66042
+          },
+          {
+            "key": "commerce",
+            "name": "商业",
+            "unit": "两",
+            "workers": 31140,
+            "required": 31140,
+            "vacant": 0,
+            "ratio": 1,
+            "area": 30256,
+            "output": 2715,
+            "terrainRoom": 22664
+          },
+          {
+            "key": "industry",
+            "name": "工业",
+            "unit": "两",
+            "workers": 44980,
+            "required": 44980,
+            "vacant": 0,
+            "ratio": 1,
+            "area": 36330,
+            "output": 1442,
+            "terrainRoom": 39270
+          }
+        ],
+        "risk": 0.05931197969543148
+      },
+      {
+        "id": "shannan",
+        "name": "山南",
+        "terrain": "高山型",
+        "population": 377000,
+        "capacity": {
+          "normal": 414701,
+          "limit": 497641,
+          "total": 377000,
+          "available": 120641,
+          "overload": 0,
+          "pressure": 0
+        },
+        "land": {
+          "total": 128310,
+          "used": 109924,
+          "reserved": 0,
+          "available": 18386
+        },
+        "labor": {
+          "ratio": 0.69,
+          "total": 377000,
+          "capacity": 260129,
+          "nonLabor": 116871,
+          "assigned": 256439,
+          "available": 3690,
+          "overCapacity": 0
+        },
+        "living": 46,
+        "welfare": {
+          "stability": 75,
+          "security": 56,
+          "activity": 50,
+          "fitness": 66,
+          "defense": 30,
+          "loyalty": 48
+        },
+        "buildings": {
+          "temples": 1,
+          "markets": 1,
+          "yamen": 2,
+          "granaries": 1,
+          "trainingGrounds": 1,
+          "walls": 2,
+          "palaces": 0
+        },
+        "economy": {
+          "agriculture": {
+            "developedArea": 24138,
+            "capacityArea": 44700,
+            "productivity": 72
+          },
+          "pastoral": {
+            "developedArea": 29636,
+            "capacityArea": 47800,
+            "productivity": 83
+          },
+          "commerce": {
+            "developedArea": 35630,
+            "capacityArea": 50900,
+            "productivity": 59
+          },
+          "industry": {
+            "developedArea": 20520,
+            "capacityArea": 54000,
+            "productivity": 70
+          }
+        },
+        "industries": [
+          {
+            "key": "agriculture",
+            "name": "农业",
+            "unit": "石",
+            "workers": 143260,
+            "required": 143260,
+            "vacant": 0,
+            "ratio": 1,
+            "area": 24138,
+            "output": 3122,
+            "terrainRoom": 1524
+          },
+          {
+            "key": "pastoral",
+            "name": "牧业",
+            "unit": "石",
+            "workers": 24505,
+            "required": 24505,
+            "vacant": 0,
+            "ratio": 1,
+            "area": 29636,
+            "output": 731,
+            "terrainRoom": 34519
+          },
+          {
+            "key": "commerce",
+            "name": "商业",
+            "unit": "两",
+            "workers": 33930,
+            "required": 33930,
+            "vacant": 0,
+            "ratio": 1,
+            "area": 35630,
+            "output": 2238,
+            "terrainRoom": 9278
+          },
+          {
+            "key": "industry",
+            "name": "工业",
+            "unit": "两",
+            "workers": 49010,
+            "required": 49010,
+            "vacant": 0,
+            "ratio": 1,
+            "area": 20520,
+            "output": 1124,
+            "terrainRoom": 62881
+          }
+        ],
+        "risk": 0.06064823244552058
+      },
+      {
+        "id": "jiannan",
+        "name": "剑南",
+        "terrain": "高山型",
+        "population": 408000,
+        "capacity": {
+          "normal": 448801,
+          "limit": 538561,
+          "total": 408000,
+          "available": 130561,
+          "overload": 0,
+          "pressure": 0
+        },
+        "land": {
+          "total": 133770,
+          "used": 107630,
+          "reserved": 0,
+          "available": 26140
+        },
+        "labor": {
+          "ratio": 0.69,
+          "total": 408000,
+          "capacity": 281520,
+          "nonLabor": 126480,
+          "assigned": 277456,
+          "available": 4064,
+          "overCapacity": 0
+        },
+        "living": 54,
+        "welfare": {
+          "stability": 80,
+          "security": 63,
+          "activity": 58,
+          "fitness": 73,
+          "defense": 38,
+          "loyalty": 56
+        },
+        "buildings": {
+          "temples": 1,
+          "markets": 1,
+          "yamen": 2,
+          "granaries": 1,
+          "trainingGrounds": 1,
+          "walls": 2,
+          "palaces": 0
+        },
+        "economy": {
+          "agriculture": {
+            "developedArea": 26754,
+            "capacityArea": 46800,
+            "productivity": 79
+          },
+          "pastoral": {
+            "developedArea": 34930,
+            "capacityArea": 49900,
+            "productivity": 90
+          },
+          "commerce": {
+            "developedArea": 20140,
+            "capacityArea": 53000,
+            "productivity": 66
+          },
+          "industry": {
+            "developedArea": 25806,
+            "capacityArea": 56100,
+            "productivity": 77
+          }
+        },
+        "industries": [
+          {
+            "key": "agriculture",
+            "name": "农业",
+            "unit": "石",
+            "workers": 155040,
+            "required": 155040,
+            "vacant": 0,
+            "ratio": 1,
+            "area": 26754,
+            "output": 3918,
+            "terrainRoom": 0
+          },
+          {
+            "key": "pastoral",
+            "name": "牧业",
+            "unit": "石",
+            "workers": 26520,
+            "required": 26520,
+            "vacant": 0,
+            "ratio": 1,
+            "area": 34930,
+            "output": 885,
+            "terrainRoom": 31955
+          },
+          {
+            "key": "commerce",
+            "name": "商业",
+            "unit": "两",
+            "workers": 36720,
+            "required": 36720,
+            "vacant": 0,
+            "ratio": 1,
+            "area": 20140,
+            "output": 1518,
+            "terrainRoom": 26679
+          },
+          {
+            "key": "industry",
+            "name": "工业",
+            "unit": "两",
+            "workers": 53040,
+            "required": 53040,
+            "vacant": 0,
+            "ratio": 1,
+            "area": 25806,
+            "output": 1672,
+            "terrainRoom": 61144
+          }
+        ],
+        "risk": 0.05597777777777777
+      },
+      {
+        "id": "longyou",
+        "name": "陇右",
+        "terrain": "高山型",
+        "population": 439000,
+        "capacity": {
+          "normal": 482901,
+          "limit": 579481,
+          "total": 439000,
+          "available": 140481,
+          "overload": 0,
+          "pressure": 0
+        },
+        "land": {
+          "total": 139230,
+          "used": 104380,
+          "reserved": 0,
+          "available": 34850
+        },
+        "labor": {
+          "ratio": 0.69,
+          "total": 439000,
+          "capacity": 302910,
+          "nonLabor": 136090,
+          "assigned": 298473,
+          "available": 4437,
+          "overCapacity": 0
+        },
+        "living": 62,
+        "welfare": {
+          "stability": 85,
+          "security": 70,
+          "activity": 66,
+          "fitness": 80,
+          "defense": 46,
+          "loyalty": 64
+        },
+        "buildings": {
+          "temples": 1,
+          "markets": 1,
+          "yamen": 2,
+          "granaries": 1,
+          "trainingGrounds": 1,
+          "walls": 2,
+          "palaces": 0
+        },
+        "economy": {
+          "agriculture": {
+            "developedArea": 27846,
+            "capacityArea": 48900,
+            "productivity": 86
+          },
+          "pastoral": {
+            "developedArea": 19760,
+            "capacityArea": 52000,
+            "productivity": 62
+          },
+          "commerce": {
+            "developedArea": 25346,
+            "capacityArea": 55100,
+            "productivity": 73
+          },
+          "industry": {
+            "developedArea": 31428,
+            "capacityArea": 58200,
+            "productivity": 84
+          }
+        },
+        "industries": [
+          {
+            "key": "agriculture",
+            "name": "农业",
+            "unit": "石",
+            "workers": 166820,
+            "required": 166820,
+            "vacant": 0,
+            "ratio": 1,
+            "area": 27846,
+            "output": 4268,
+            "terrainRoom": 0
+          },
+          {
+            "key": "pastoral",
+            "name": "牧业",
+            "unit": "石",
+            "workers": 28535,
+            "required": 28535,
+            "vacant": 0,
+            "ratio": 1,
+            "area": 19760,
+            "output": 631,
+            "terrainRoom": 49855
+          },
+          {
+            "key": "commerce",
+            "name": "商业",
+            "unit": "两",
+            "workers": 39510,
+            "required": 39510,
+            "vacant": 0,
+            "ratio": 1,
+            "area": 25346,
+            "output": 2102,
+            "terrainRoom": 23384
+          },
+          {
+            "key": "industry",
+            "name": "工业",
+            "unit": "两",
+            "workers": 57070,
+            "required": 57070,
+            "vacant": 0,
+            "ratio": 1,
+            "area": 31428,
+            "output": 2215,
+            "terrainRoom": 59071
+          }
+        ],
+        "risk": 0.051301463414634145
+      }
+    ],
+    "population": 2995000,
+    "living": 56,
+    "welfare": {
+      "stability": 76,
+      "security": 64,
+      "activity": 60,
+      "fitness": 67,
+      "defense": 50,
+      "loyalty": 58
+    },
+    "buildings": 111,
+    "landUsed": 943914,
+    "workers": 2039063,
+    "idle": 27482,
+    "serving": 34,
+    "health": 100,
+    "happiness": 75,
+    "life": 2160,
+    "expenses": {
+      "administration": 1853,
+      "officialSalaries": 1173,
+      "soldierSalaries": 1460,
+      "militiaSalaries": 91,
+      "nobleStipends": 260,
+      "weapons": 1183,
+      "construction": 0,
+      "maintenance": 583,
+      "other": 150
+    },
+    "buildingsByType": {
+      "temples": 15,
+      "markets": 15,
+      "palaces": 1,
+      "yamen": 25,
+      "granaries": 15,
+      "walls": 25,
+      "trainingGrounds": 15
+    },
+    "stats": {
+      "treasury": 18000,
+      "health": 100,
+      "prestige": 50,
+      "age": 20,
+      "maxEnergy": 200,
+      "energy": 200,
+      "happiness": 75,
+      "charm": 250,
+      "talent": 250,
+      "wisdom": 250,
+      "martial": 250,
+      "trainingSpecialty": null,
+      "life": 2160,
+      "lifeLimit": 3600
+    },
+    "food": {
+      "totalProduction": 32097,
+      "civilianSurplus": 17031,
+      "totalRation": 14975,
+      "tax": 331,
+      "publicNeed": 240,
+      "stock": 9648,
+      "stockOverPublicNeed": 40.2
+    },
+    "officials": [
+      {
+        "id": "central-general",
+        "name": "沈文远",
+        "loyalty": 45,
+        "age": 27,
+        "intelligence": 36,
+        "politics": 82,
+        "experience": 14,
+        "potential": {
+          "version": 1,
+          "base": {
+            "intelligence": 36,
+            "martial": 36,
+            "leadership": 37,
+            "politics": 82,
+            "integrity": 38
+          },
+          "caps": {
+            "intelligence": 50,
+            "martial": 45,
+            "leadership": 50,
+            "politics": 98,
+            "integrity": 46
+          }
+        }
+      },
+      {
+        "id": "works-deputy",
+        "name": "陆怀安",
+        "loyalty": 47,
+        "age": 33,
+        "intelligence": 32,
+        "politics": 86,
+        "experience": 46,
+        "potential": {
+          "version": 1,
+          "base": {
+            "intelligence": 32,
+            "martial": 65,
+            "leadership": 30,
+            "politics": 86,
+            "integrity": 84
+          },
+          "caps": {
+            "intelligence": 40,
+            "martial": 80,
+            "leadership": 44,
+            "politics": 96,
+            "integrity": 98
+          }
+        }
+      },
+      {
+        "id": "works-minister",
+        "name": "顾守正",
+        "loyalty": 64,
+        "age": 44,
+        "intelligence": 30,
+        "politics": 78,
+        "experience": 11,
+        "potential": {
+          "version": 1,
+          "base": {
+            "intelligence": 30,
+            "martial": 61,
+            "leadership": 68,
+            "politics": 78,
+            "integrity": 80
+          },
+          "caps": {
+            "intelligence": 44,
+            "martial": 70,
+            "leadership": 80,
+            "politics": 94,
+            "integrity": 88
+          }
+        }
+      },
+      {
+        "id": "justice-minister",
+        "name": "韩明德",
+        "loyalty": 81,
+        "age": 52,
+        "intelligence": 53,
+        "politics": 75,
+        "experience": 0,
+        "potential": {
+          "version": 1,
+          "base": {
+            "intelligence": 53,
+            "martial": 76,
+            "leadership": 44,
+            "politics": 75,
+            "integrity": 64
+          },
+          "caps": {
+            "intelligence": 64,
+            "martial": 88,
+            "leadership": 61,
+            "politics": 88,
+            "integrity": 75
+          }
+        }
+      },
+      {
+        "id": "war-deputy",
+        "name": "许景行",
+        "loyalty": 45,
+        "age": 30,
+        "intelligence": 64,
+        "politics": 44,
+        "experience": 23,
+        "potential": {
+          "version": 1,
+          "base": {
+            "intelligence": 64,
+            "martial": 32,
+            "leadership": 65,
+            "politics": 44,
+            "integrity": 37
+          },
+          "caps": {
+            "intelligence": 78,
+            "martial": 41,
+            "leadership": 80,
+            "politics": 60,
+            "integrity": 45
+          }
+        }
+      },
+      {
+        "id": "war-minister",
+        "name": "张文远",
+        "loyalty": 49,
+        "age": 34,
+        "intelligence": 84,
+        "politics": 86,
+        "experience": 44,
+        "potential": {
+          "version": 1,
+          "base": {
+            "intelligence": 84,
+            "martial": 56,
+            "leadership": 48,
+            "politics": 86,
+            "integrity": 41
+          },
+          "caps": {
+            "intelligence": 100,
+            "martial": 75,
+            "leadership": 58,
+            "politics": 92,
+            "integrity": 59
+          }
+        }
+      },
+      {
+        "id": "rites-deputy",
+        "name": "李怀安",
+        "loyalty": 66,
+        "age": 54,
+        "intelligence": 48,
+        "politics": 65,
+        "experience": 6,
+        "potential": {
+          "version": 1,
+          "base": {
+            "intelligence": 48,
+            "martial": 48,
+            "leadership": 63,
+            "politics": 65,
+            "integrity": 69
+          },
+          "caps": {
+            "intelligence": 65,
+            "martial": 54,
+            "leadership": 70,
+            "politics": 80,
+            "integrity": 74
+          }
+        }
+      },
+      {
+        "id": "rites-minister",
+        "name": "沈守正",
+        "loyalty": 83,
+        "age": 41,
+        "intelligence": 55,
+        "politics": 56,
+        "experience": 21,
+        "potential": {
+          "version": 1,
+          "base": {
+            "intelligence": 55,
+            "martial": 38,
+            "leadership": 75,
+            "politics": 56,
+            "integrity": 45
+          },
+          "caps": {
+            "intelligence": 62,
+            "martial": 50,
+            "leadership": 88,
+            "politics": 65,
+            "integrity": 60
+          }
+        }
+      },
+      {
+        "id": "revenue-deputy",
+        "name": "陆明德",
+        "loyalty": 45,
+        "age": 51,
+        "intelligence": 35,
+        "politics": 64,
+        "experience": 26,
+        "potential": {
+          "version": 1,
+          "base": {
+            "intelligence": 35,
+            "martial": 70,
+            "leadership": 87,
+            "politics": 64,
+            "integrity": 76
+          },
+          "caps": {
+            "intelligence": 50,
+            "martial": 75,
+            "leadership": 95,
+            "politics": 80,
+            "integrity": 96
+          }
+        }
+      },
+      {
+        "id": "revenue-minister",
+        "name": "顾景行",
+        "loyalty": 51,
+        "age": 41,
+        "intelligence": 79,
+        "politics": 40,
+        "experience": 29,
+        "potential": {
+          "version": 1,
+          "base": {
+            "intelligence": 79,
+            "martial": 82,
+            "leadership": 61,
+            "politics": 40,
+            "integrity": 55
+          },
+          "caps": {
+            "intelligence": 87,
+            "martial": 97,
+            "leadership": 75,
+            "politics": 50,
+            "integrity": 69
+          }
+        }
+      },
+      {
+        "id": "personnel-deputy",
+        "name": "韩文远",
+        "loyalty": 68,
+        "age": 49,
+        "intelligence": 89,
+        "politics": 42,
+        "experience": 43,
+        "potential": {
+          "version": 1,
+          "base": {
+            "intelligence": 89,
+            "martial": 50,
+            "leadership": 64,
+            "politics": 42,
+            "integrity": 41
+          },
+          "caps": {
+            "intelligence": 95,
+            "martial": 67,
+            "leadership": 76,
+            "politics": 50,
+            "integrity": 57
+          }
+        }
+      },
+      {
+        "id": "personnel-minister",
+        "name": "许怀安",
+        "loyalty": 85,
+        "age": 44,
+        "intelligence": 60,
+        "politics": 30,
+        "experience": 35,
+        "potential": {
+          "version": 1,
+          "base": {
+            "intelligence": 60,
+            "martial": 62,
+            "leadership": 58,
+            "politics": 30,
+            "integrity": 54
+          },
+          "caps": {
+            "intelligence": 72,
+            "martial": 73,
+            "leadership": 76,
+            "politics": 44,
+            "integrity": 64
+          }
+        }
+      },
+      {
+        "id": "prime-minister",
+        "name": "张守正",
+        "loyalty": 45,
+        "age": 47,
+        "intelligence": 48,
+        "politics": 56,
+        "experience": 17,
+        "potential": {
+          "version": 1,
+          "base": {
+            "intelligence": 48,
+            "martial": 63,
+            "leadership": 48,
+            "politics": 56,
+            "integrity": 65
+          },
+          "caps": {
+            "intelligence": 59,
+            "martial": 75,
+            "leadership": 65,
+            "politics": 69,
+            "integrity": 76
+          }
+        }
+      },
+      {
+        "id": "justice-deputy",
+        "name": "周慎言",
+        "loyalty": 65,
+        "age": 25,
+        "intelligence": 36,
+        "politics": 65,
+        "experience": 14,
+        "potential": {
+          "version": 1,
+          "base": {
+            "intelligence": 36,
+            "martial": 40,
+            "leadership": 41,
+            "politics": 65,
+            "integrity": 74
+          },
+          "caps": {
+            "intelligence": 41,
+            "martial": 58,
+            "leadership": 52,
+            "politics": 72,
+            "integrity": 91
+          }
+        }
+      },
+      {
+        "id": "hebei-governor",
+        "name": "沈景行",
+        "loyalty": 70,
+        "age": 25,
+        "intelligence": 33,
+        "politics": 84,
+        "experience": 16,
+        "potential": {
+          "version": 1,
+          "base": {
+            "intelligence": 33,
+            "martial": 56,
+            "leadership": 90,
+            "politics": 84,
+            "integrity": 30
+          },
+          "caps": {
+            "intelligence": 50,
+            "martial": 75,
+            "leadership": 100,
+            "politics": 90,
+            "integrity": 48
+          }
+        }
+      },
+      {
+        "id": "hebei-general",
+        "name": "陆文远",
+        "loyalty": 87,
+        "age": 49,
+        "intelligence": 46,
+        "politics": 70,
+        "experience": 8,
+        "potential": {
+          "version": 1,
+          "base": {
+            "intelligence": 46,
+            "martial": 49,
+            "leadership": 35,
+            "politics": 70,
+            "integrity": 58
+          },
+          "caps": {
+            "intelligence": 56,
+            "martial": 62,
+            "leadership": 50,
+            "politics": 82,
+            "integrity": 70
+          }
+        }
+      },
+      {
+        "id": "henan-governor",
+        "name": "顾怀安",
+        "loyalty": 45,
+        "age": 54,
+        "intelligence": 39,
+        "politics": 90,
+        "experience": 0,
+        "potential": {
+          "version": 1,
+          "base": {
+            "intelligence": 39,
+            "martial": 88,
+            "leadership": 64,
+            "politics": 90,
+            "integrity": 60
+          },
+          "caps": {
+            "intelligence": 48,
+            "martial": 100,
+            "leadership": 79,
+            "politics": 100,
+            "integrity": 73
+          }
+        }
+      },
+      {
+        "id": "henan-general",
+        "name": "韩守正",
+        "loyalty": 55,
+        "age": 47,
+        "intelligence": 42,
+        "politics": 74,
+        "experience": 36,
+        "potential": {
+          "version": 1,
+          "base": {
+            "intelligence": 42,
+            "martial": 76,
+            "leadership": 40,
+            "politics": 74,
+            "integrity": 71
+          },
+          "caps": {
+            "intelligence": 47,
+            "martial": 94,
+            "leadership": 51,
+            "politics": 81,
+            "integrity": 88
+          }
+        }
+      },
+      {
+        "id": "huainan-governor",
+        "name": "许明德",
+        "loyalty": 72,
+        "age": 51,
+        "intelligence": 87,
+        "politics": 74,
+        "experience": 21,
+        "potential": {
+          "version": 1,
+          "base": {
+            "intelligence": 87,
+            "martial": 33,
+            "leadership": 75,
+            "politics": 74,
+            "integrity": 65
+          },
+          "caps": {
+            "intelligence": 100,
+            "martial": 39,
+            "leadership": 82,
+            "politics": 93,
+            "integrity": 70
+          }
+        }
+      },
+      {
+        "id": "huainan-general",
+        "name": "张景行",
+        "loyalty": 89,
+        "age": 35,
+        "intelligence": 40,
+        "politics": 71,
+        "experience": 15,
+        "potential": {
+          "version": 1,
+          "base": {
+            "intelligence": 40,
+            "martial": 65,
+            "leadership": 35,
+            "politics": 71,
+            "integrity": 49
+          },
+          "caps": {
+            "intelligence": 53,
+            "martial": 75,
+            "leadership": 50,
+            "politics": 86,
+            "integrity": 58
+          }
+        }
+      },
+      {
+        "id": "jiangnan-governor",
+        "name": "李文远",
+        "loyalty": 45,
+        "age": 52,
+        "intelligence": 44,
+        "politics": 39,
+        "experience": 29,
+        "potential": {
+          "version": 1,
+          "base": {
+            "intelligence": 44,
+            "martial": 50,
+            "leadership": 74,
+            "politics": 39,
+            "integrity": 83
+          },
+          "caps": {
+            "intelligence": 55,
+            "martial": 62,
+            "leadership": 91,
+            "politics": 50,
+            "integrity": 94
+          }
+        }
+      },
+      {
+        "id": "jiangnan-general",
+        "name": "沈怀安",
+        "loyalty": 57,
+        "age": 50,
+        "intelligence": 66,
+        "politics": 34,
+        "experience": 46,
+        "potential": {
+          "version": 1,
+          "base": {
+            "intelligence": 66,
+            "martial": 62,
+            "leadership": 59,
+            "politics": 34,
+            "integrity": 75
+          },
+          "caps": {
+            "intelligence": 80,
+            "martial": 80,
+            "leadership": 68,
+            "politics": 39,
+            "integrity": 94
+          }
+        }
+      },
+      {
+        "id": "lingnan-governor",
+        "name": "陆守正",
+        "loyalty": 74,
+        "age": 37,
+        "intelligence": 54,
+        "politics": 42,
+        "experience": 22,
+        "potential": {
+          "version": 1,
+          "base": {
+            "intelligence": 54,
+            "martial": 70,
+            "leadership": 36,
+            "politics": 42,
+            "integrity": 68
+          },
+          "caps": {
+            "intelligence": 70,
+            "martial": 77,
+            "leadership": 42,
+            "politics": 60,
+            "integrity": 74
+          }
+        }
+      },
+      {
+        "id": "lingnan-general",
+        "name": "顾明德",
+        "loyalty": 91,
+        "age": 46,
+        "intelligence": 72,
+        "politics": 33,
+        "experience": 14,
+        "potential": {
+          "version": 1,
+          "base": {
+            "intelligence": 72,
+            "martial": 69,
+            "leadership": 76,
+            "politics": 33,
+            "integrity": 40
+          },
+          "caps": {
+            "intelligence": 86,
+            "martial": 78,
+            "leadership": 96,
+            "politics": 49,
+            "integrity": 48
+          }
+        }
+      },
+      {
+        "id": "hedong-governor",
+        "name": "韩景行",
+        "loyalty": 45,
+        "age": 52,
+        "intelligence": 71,
+        "politics": 56,
+        "experience": 27,
+        "potential": {
+          "version": 1,
+          "base": {
+            "intelligence": 71,
+            "martial": 39,
+            "leadership": 60,
+            "politics": 56,
+            "integrity": 31
+          },
+          "caps": {
+            "intelligence": 83,
+            "martial": 50,
+            "leadership": 78,
+            "politics": 70,
+            "integrity": 41
+          }
+        }
+      },
+      {
+        "id": "hedong-general",
+        "name": "许文远",
+        "loyalty": 59,
+        "age": 49,
+        "intelligence": 69,
+        "politics": 80,
+        "experience": 30,
+        "potential": {
+          "version": 1,
+          "base": {
+            "intelligence": 69,
+            "martial": 50,
+            "leadership": 74,
+            "politics": 80,
+            "integrity": 63
+          },
+          "caps": {
+            "intelligence": 80,
+            "martial": 55,
+            "leadership": 82,
+            "politics": 100,
+            "integrity": 80
+          }
+        }
+      },
+      {
+        "id": "guannei-governor",
+        "name": "张怀安",
+        "loyalty": 76,
+        "age": 31,
+        "intelligence": 52,
+        "politics": 63,
+        "experience": 49,
+        "potential": {
+          "version": 1,
+          "base": {
+            "intelligence": 52,
+            "martial": 41,
+            "leadership": 82,
+            "politics": 63,
+            "integrity": 86
+          },
+          "caps": {
+            "intelligence": 70,
+            "martial": 46,
+            "leadership": 90,
+            "politics": 80,
+            "integrity": 100
+          }
+        }
+      },
+      {
+        "id": "guannei-general",
+        "name": "李守正",
+        "loyalty": 93,
+        "age": 53,
+        "intelligence": 77,
+        "politics": 54,
+        "experience": 32,
+        "potential": {
+          "version": 1,
+          "base": {
+            "intelligence": 77,
+            "martial": 35,
+            "leadership": 80,
+            "politics": 54,
+            "integrity": 35
+          },
+          "caps": {
+            "intelligence": 89,
+            "martial": 46,
+            "leadership": 98,
+            "politics": 68,
+            "integrity": 45
+          }
+        }
+      },
+      {
+        "id": "shannan-governor",
+        "name": "沈明德",
+        "loyalty": 45,
+        "age": 49,
+        "intelligence": 75,
+        "politics": 68,
+        "experience": 3,
+        "potential": {
+          "version": 1,
+          "base": {
+            "intelligence": 75,
+            "martial": 71,
+            "leadership": 35,
+            "politics": 68,
+            "integrity": 84
+          },
+          "caps": {
+            "intelligence": 95,
+            "martial": 90,
+            "leadership": 45,
+            "politics": 74,
+            "integrity": 100
+          }
+        }
+      },
+      {
+        "id": "shannan-general",
+        "name": "陆景行",
+        "loyalty": 61,
+        "age": 29,
+        "intelligence": 32,
+        "politics": 59,
+        "experience": 8,
+        "potential": {
+          "version": 1,
+          "base": {
+            "intelligence": 32,
+            "martial": 89,
+            "leadership": 81,
+            "politics": 59,
+            "integrity": 31
+          },
+          "caps": {
+            "intelligence": 42,
+            "martial": 100,
+            "leadership": 97,
+            "politics": 71,
+            "integrity": 43
+          }
+        }
+      },
+      {
+        "id": "jiannan-governor",
+        "name": "顾文远",
+        "loyalty": 78,
+        "age": 40,
+        "intelligence": 86,
+        "politics": 83,
+        "experience": 25,
+        "potential": {
+          "version": 1,
+          "base": {
+            "intelligence": 86,
+            "martial": 88,
+            "leadership": 60,
+            "politics": 83,
+            "integrity": 67
+          },
+          "caps": {
+            "intelligence": 96,
+            "martial": 100,
+            "leadership": 76,
+            "politics": 95,
+            "integrity": 79
+          }
+        }
+      },
+      {
+        "id": "jiannan-general",
+        "name": "韩怀安",
+        "loyalty": 95,
+        "age": 46,
+        "intelligence": 72,
+        "politics": 55,
+        "experience": 45,
+        "potential": {
+          "version": 1,
+          "base": {
+            "intelligence": 72,
+            "martial": 50,
+            "leadership": 63,
+            "politics": 55,
+            "integrity": 89
+          },
+          "caps": {
+            "intelligence": 92,
+            "martial": 69,
+            "leadership": 73,
+            "politics": 61,
+            "integrity": 100
+          }
+        }
+      },
+      {
+        "id": "longyou-governor",
+        "name": "许守正",
+        "loyalty": 46,
+        "age": 30,
+        "intelligence": 36,
+        "politics": 58,
+        "experience": 40,
+        "potential": {
+          "version": 1,
+          "base": {
+            "intelligence": 36,
+            "martial": 70,
+            "leadership": 64,
+            "politics": 58,
+            "integrity": 55
+          },
+          "caps": {
+            "intelligence": 50,
+            "martial": 79,
+            "leadership": 80,
+            "politics": 74,
+            "integrity": 63
+          }
+        }
+      },
+      {
+        "id": "longyou-general",
+        "name": "张明德",
+        "loyalty": 63,
+        "age": 40,
+        "intelligence": 84,
+        "politics": 47,
+        "experience": 42,
+        "potential": {
+          "version": 1,
+          "base": {
+            "intelligence": 84,
+            "martial": 66,
+            "leadership": 35,
+            "politics": 47,
+            "integrity": 38
+          },
+          "caps": {
+            "intelligence": 100,
+            "martial": 73,
+            "leadership": 41,
+            "politics": 65,
+            "integrity": 44
+          }
+        }
+      }
+    ]
+  },
+  "rawResultsDirectory": "/Users/fengheliang/workbench/source/g20/games/outputs/balance-fixes-2026-10-21/release",
+  "liveWorkspaceTests": 870,
+  "liveIntegrationLog": "/Users/fengheliang/workbench/source/g20/games/outputs/balance-fixes-2026-10-21/release/live-final-tests.log"
+}

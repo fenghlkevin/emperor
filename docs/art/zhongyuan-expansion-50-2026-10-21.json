@@ -1,0 +1,2125 @@
+{
+  "createdAt": "2026-10-21T09:17:31.978139+00:00",
+  "total": 100,
+  "completed": 1,
+  "intervalMinutes": 5,
+  "items": [
+    {
+      "order": 1,
+      "id": "zhongyuan-expansion-20261021-01",
+      "referenceCelebrity": "文咏珊",
+      "region": "香港",
+      "status": "completed",
+      "referencePhoto": {
+        "path": "assets/beauties/references/wen-yongshan/face-reference-20230418.jpg",
+        "sourcePage": "https://k.sina.cn/article_7514666708_p1bfe8b6d40010192g5.html",
+        "imageUrl": "https://n.sinaimg.cn/sinakd10015/278/w640h1238/20230418/1eb5-a72c1ec077ae9f21e6b563b9bd62926c.jpg",
+        "width": 640,
+        "height": 1238,
+        "inspection": "成年公开写真，眉眼鼻唇无遮挡，图像压缩且脸部细节有限，不称超高清；年轻成年造型参考。"
+      },
+      "prompt": "参考文咏珊成年写真容貌和自然纤细比例，25岁成年女性，真人古装写真风格，浅青玉色梅纹汉服、米白领、玉簪半挽发，一手低持合拢绢扇另一手放松垂下，自然错步双鞋着地，全身发饰手指衣摆双脚完整四周留白，真实透明背景，无文字水印。",
+      "targetAsset": "assets/beauties/random/女明星/文咏珊-青玉梅影.png",
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a15db7-68a5-7dc3-8581-85d43d5bacff/exec-b74eeed9-3f9a-420c-93e3-5288f433941a.png",
+      "completedAt": "2026-10-21T09:18:31.643807+00:00",
+      "reviewPass1": "对照640x1238成年写真与面部放大图：弧眉、杏眼眼距、直鼻、唇形与收窄下颌基本保留；参考本身压缩，不能声称精细身份完全一致。生成妆容更柔和，身材自然纤细，古装遮挡下未虚称精确身体尺寸。",
+      "reviewPass2": "重新对照写真及白底深灰底全身合成图：头颈自然，双手和扇子完整，双鞋错步可见且着地，衣摆发饰完整。alpha真实透明，原始预览光晕为隐藏RGB，合成图无背景残留。顶底留白偏少但人物未裁切。",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentPixels": 917697,
+        "moduleLoaded": true,
+        "targetExists": true,
+        "legacyMappingsPassed": true
+      },
+      "countedInQuota": false
+    },
+    {
+      "order": 2,
+      "id": "zhongyuan-expansion-20261021-02",
+      "referenceCelebrity": "王祖贤",
+      "prompt": "Generate ONE photorealistic full-body ancient Chinese Central Plains game character portrait, vertical 2:3, genuine transparent background. Reference 1 is face likeness of adult actress Joey Wong 王祖贤, reference 2 verifies her adult 1986 film appearance but contains playful drawn moustache: DO NOT copy moustache or drawn marks. Preserve her distinctive thick straight dark eyebrows, large long almond eyes, straight nose, defined red lips, elongated oval face, natural adult appearance aged 24, tall naturally proportioned slender physique. Entire figure head hair ornaments fingers flowing hem and BOTH embroidered flat shoes visible, with generous transparent margins on all edges. Elegant ivory-white hanfu with muted mist-lavender outer gauze and subtle silver orchid embroidery, modest fully clothed, natural high waist, realistic legs, black hair half-up with single silver orchid hairpin, restrained earrings. Relaxed standing three-quarter torso with face looking toward viewer, weight on back foot, both feet firmly grounded and slightly separated, hold a small closed book low at hip with one hand, other hand resting lightly on book edge; natural fingers and wrists. Realistic costume photography, fine silk weave and natural skin, no plastic smoothness, no illustration doll look. Isolated single figure only; no scenery floor shadow halo text watermark or facial markings.",
+      "region": "台湾（香港影坛成名）",
+      "quotaGroup": "港台",
+      "countedInQuota": false,
+      "status": "deleted_by_user",
+      "referencePhotos": [
+        {
+          "path": "assets/beauties/references/wang-zuxian/face-reference.jpg",
+          "sourcePage": "https://www.duitang.com/blog/?id=1273544432",
+          "imageUrl": "https://a-ho-img.dtstatic.com/uploads/blog/202008/07/20200807221442_duott.jpeg",
+          "size": [
+            700,
+            700
+          ],
+          "inspection": "正面侧视眉眼鼻唇无遮挡，700像素不称高清；年代未单独核定，仅作面容补充。"
+        },
+        {
+          "path": "assets/beauties/references/wang-zuxian/adult-1986.jpg",
+          "sourcePage": "https://m-2.duitang.com/blog/?id=1054744087",
+          "imageUrl": "https://a-ho-img.dtstatic.com/uploads/item/201902/05/20190205153658_QPvtS.jpeg",
+          "size": [
+            1600,
+            858
+          ],
+          "inspection": "明确标注1986义盖云天港生，王祖贤1967年生，当年19岁；电影帧有噪点及玩笑胡须，提示词明确排除胡须，不称高清细节写真。"
+        }
+      ],
+      "targetAsset": "assets/beauties/random/女明星/王祖贤-月白兰书-比例修正-v2.png",
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a15db7-68a5-7dc3-8581-85d43d5bacff/exec-b96efa36-a801-4ffa-b997-04ca25560323.png",
+      "completedAt": "2026-10-21T09:25:17.433124+00:00",
+      "reviewPass1": "对照700x700面部参考及1600x858成年电影帧和生成放大图，粗直眉、长杏眼、直鼻、红唇与椭圆下颌有参考特征，生成视线表情不同，脸型略窄；无参考帧中的玩笑胡须。未取得清晰全身照，不声称精确还原真人身材，使用自然协调成年比例。",
+      "reviewPass2": "再次对照参考及白底深灰底合成图：头颈肩衔接自然，两手持书完整，双鞋错步可见，裙摆银簪无裁切。顶底边距较少但完整，alpha实际透明且无背景光晕。",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentPixels": 956984,
+        "solidBounds": [
+          161,
+          11,
+          881,
+          1515
+        ],
+        "moduleLoaded": true,
+        "targetExists": true,
+        "legacyMappingsPassed": true
+      },
+      "proportionRevisionHistory": [
+        {
+          "name": "王祖贤-月白兰书",
+          "source": "/Users/fengheliang/.codex/generated_images/01a15db7-68a5-7dc3-8581-85d43d5bacff/exec-b96efa36-a801-4ffa-b997-04ca25560323.png",
+          "original": "assets/beauties/random/女明星/王祖贤-月白兰书.png",
+          "size": [
+            1024,
+            1536
+          ],
+          "alphaRange": [
+            0,
+            254
+          ],
+          "transparentPixels": 960057,
+          "finalAsset": "assets/beauties/random/女明星/王祖贤-月白兰书-比例修正-v2.png",
+          "appliedAt": "2026-10-21T14:42:47.395384+00:00",
+          "status": "applied",
+          "tool": "built-in image_gen",
+          "promptSummary": "整体头颅面容发量相对身体收小约18–25%的编辑意图；保持身份衣装道具、身体腰线四肢鞋，自然重接颈肩，真实透明。百分比为提示目标非实测值。",
+          "reviewPass1": "头面相对身高减小，肩颈仍为侧身，未声称正面肩宽测量。等高对照原图及陈瑶基准，面容和表情延续。",
+          "reviewPass2": "两手扶书接触合理，双鞋露出，踝局部裙遮。白深底合成及全身、面部、手脚局部复看，无明显残底光晕；长裙遮膝骨盆，不核验隐藏骨长。"
+        }
+      ],
+      "proportionComparisonReview": "头面相对身高减小，肩颈仍为侧身，未声称正面肩宽测量。等高对照原图及陈瑶基准，面容和表情延续。",
+      "deletedAt": "2026-10-21T15:58:11.164775+00:00",
+      "deletionReason": "用户截图明确指定删除四个文件，撤出对应随机池条目，不自动回退其他版本。"
+    },
+    {
+      "order": 3,
+      "id": "zhongyuan-expansion-20261021-03",
+      "referenceCelebrity": "陈瑶",
+      "prompt": "陈瑶2022成年写真实际输入，25岁成年女性，真人古装摄影，浅杏色桂花绣汉服、朱砂腰带、金桂簪，正常约7.5头身、自然高腰及修长双腿，不缩头不拉长躯干。一手承托小香囊，另一手自然垂下，手指腕肘连接正确、物品真实接触受力，双鞋完整着地。全身四周留白、真实透明PNG、无背景文字水印。",
+      "region": "内地",
+      "quotaGroup": "内地",
+      "countedInQuota": true,
+      "status": "completed",
+      "referencePhotos": [
+        {
+          "path": "assets/beauties/references/chen-yao/face-reference-20221228.jpg",
+          "imageUrl": "https://n.sinaimg.cn/sinakd10010/100/w1080h1420/20221228/a6aa-ec3fd634c0f4b0bab99a5ddaf557b3ca.jpg",
+          "sourcePage": "https://cj.sina.com.cn/articles/view/7494112252/p1beaf13fc001017kqu",
+          "size": [
+            1080,
+            1420
+          ]
+        },
+        {
+          "path": "assets/beauties/references/chen-yao/face-reference-2.jpg",
+          "imageUrl": "https://n.sinaimg.cn/sinakd10010/82/w1080h1402/20221228/fc7b-2afbe643173ff679fc7a750a0486cbf4.jpg",
+          "sourcePage": "https://cj.sina.com.cn/articles/view/7494112252/p1beaf13fc001017kqu",
+          "size": [
+            1080,
+            1402
+          ]
+        }
+      ],
+      "referenceInspection": "2022公开成年写真，1994年生，28岁；第一张低头眼睑垂下但鼻唇脸型清晰，第二张睁眼侧脸补充眼型，帽子遮部分眉额，互相补充。脸部在原图占比有限，不声称精细无损高清。",
+      "targetAsset": "assets/beauties/random/女明星/陈瑶-杏绡桂囊.png",
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a15db7-68a5-7dc3-8581-85d43d5bacff/exec-a6664900-6069-4233-a9cd-0e9a2503c8ea.png",
+      "completedAt": "2026-10-21T09:31:00.420732+00:00",
+      "reviewPass1": "对照两张成年写真和面部放大图，细弧眉、长杏眼、小直鼻、红唇及下颌有参考特征，视角和妆容不同，参考面部细节有限不称精确复刻。",
+      "reviewPass2": "再次对照写真及白底深灰底全身合成图，头发金簪双手衣摆鞋完整。真实透明alpha，合成图无背景光晕。顶部留白偏少但发髻完整。",
+      "physicalLogicReview": {
+        "hands": "两手已放大检查，持囊手托住底侧面，拇指与屈曲手指形成握持，部分手指被物品遮挡；下垂手指自然弯曲，腕臂衔接合理，无明显额外手指断裂。",
+        "feet": "双鞋已放大，左鞋斜外右鞋近正前，双踝入鞋合理，鞋底落在合理隐含平面，重心可信。",
+        "object": "囊体与手掌真实接触承托、贴近腰侧，封口绳及流苏自然下垂，无穿模悬空。",
+        "headBody": "头颈肩衔接自然、头身大小协调，无明显缩头及拉长躯干。",
+        "legs": "高腰剪裁呈修长下半身，双踝落点合理；长裙遮住骨盆膝盖大腿，无法逐关节检查，不虚报可见。"
+      },
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentPixels": 950959,
+        "solidBounds": [
+          253,
+          7,
+          822,
+          1522
+        ],
+        "moduleLoaded": true,
+        "targetExists": true,
+        "legacyMappingsPassed": true
+      }
+    },
+    {
+      "order": 4,
+      "id": "zhongyuan-expansion-20261021-04",
+      "referenceCelebrity": "邱淑贞",
+      "region": "香港",
+      "quotaGroup": "港台",
+      "countedInQuota": false,
+      "status": "deleted_by_user",
+      "referencePhotos": [
+        {
+          "path": "assets/beauties/references/qiu-shuzhen/face-reference.jpg",
+          "sourcePage": "https://www.duitang.com/blog/?id=1239785937",
+          "imageUrl": "https://a-ho-img.dtstatic.com/uploads/item/202005/10/20200510070846_d3zaZ.jpeg",
+          "size": [
+            1600,
+            1600
+          ],
+          "inspection": "五官无遮挡，电影帧偏暗有压缩，不称无损高清；成年形象与1993角色参考互补。"
+        },
+        {
+          "path": "assets/beauties/references/qiu-shuzhen/adult-1993.jpg",
+          "sourcePage": "https://www.duitang.com/blog/?id=955467806",
+          "imageUrl": "https://a-ho-img.dtstatic.com/uploads/item/201807/12/20180712211854_mngrm.jpg",
+          "size": [
+            750,
+            1522
+          ],
+          "inspection": "明确1993超级学校霸王，1968年生当年25岁；三帧拼图，镜框遮部分眼眉，补充无镜框面部照，不将拼图尺寸等同单帧细节。"
+        }
+      ],
+      "prompt": "邱淑贞成年面容实际照片参考、25岁成年女性，真人古装写真，孔雀青云纹汉服米白内层、自然高腰，正常约7.5头身与修长自然双腿。低盘发雕木梳、珊瑚珠小耳坠、玉镯。一手握小型米白陶瓷执壶环柄，一手承托壶底，壶嘴向上、真实接触受力，无悬空穿模。自然错步双鞋踝可见，全身四周留白，真实透明PNG，无文字水印。",
+      "propDesign": "小型米白陶瓷执壶，短曲壶嘴及环柄，双手握柄加托底。",
+      "accessoryDesign": "低盘发雕刻深木发梳、珊瑚珠小耳坠、单玉镯。",
+      "diversityReview": "已查看目前全部3张：扇、书、香囊各一；本轮首次用陶瓷执壶，改为双手握柄托底动作。配饰由玉簪银兰簪金桂簪改为木梳与珊瑚珠玉镯组合。",
+      "targetAsset": "assets/beauties/random/女明星/邱淑贞-青绫瓷韵.png",
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a15db7-68a5-7dc3-8581-85d43d5bacff/exec-3aa40f4c-40a3-4ded-8736-6c5a0d21fe87.png",
+      "completedAt": "2026-10-21T09:36:07.350068+00:00",
+      "reviewPass1": "对照1600x1600无镜面部照和1993成年角色拼图及生成面部放大图：圆杏眼、弧眉、小鼻、丰润唇形和脸颊有参考特征；生成笑容、头部角度及妆容不同，下颌更纤细，不声称精确复刻。",
+      "reviewPass2": "再次对照两参考与白底深灰底合成图：发梳、耳坠、衣摆、双手双鞋完整，真实alpha透明，两底无预览光晕。头顶及脚底留白少于提示词5%目标但未裁切。",
+      "physicalLogicReview": {
+        "hands": "已放大握柄与托底手：上手屈指包住环柄，拇指在对侧，腕臂连续；下手掌托底、拇指贴壶侧，部分指尖被壶遮挡，未见明显多指断指。",
+        "feet": "已放大双鞋及踝，前鞋斜向外、后鞋略向外，脚部入鞋自然，鞋底与同一隐含平面接触，未见抬脚漂浮。",
+        "object": "执壶环柄两端接壶体、壶嘴连通方向合理，双手分别握柄和承底，重心处于支撑之间，无明显穿模悬空。",
+        "headBody": "头颈肩自然连接，头身比例协调，无缩小头部拉长躯干；腰线偏高。",
+        "legs": "裙装呈修长下半身，双踝位置与站姿协调；骨盆膝大腿被衣裙遮挡，无法逐关节核验。",
+        "accessories": "木梳插在盘发，珊瑚珠通过链和耳钩固定并向下垂，玉镯套在腕部，未见悬空。"
+      },
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentPixels": 973764,
+        "solidBounds": [
+          189,
+          14,
+          836,
+          1513
+        ],
+        "moduleLoaded": true,
+        "targetExists": true,
+        "legacyMappingsPassed": true
+      },
+      "deletedAt": "2026-10-21T15:58:11.164775+00:00",
+      "deletionReason": "用户截图明确指定删除四个文件，撤出对应随机池条目，不自动回退其他版本。"
+    },
+    {
+      "order": 5,
+      "id": "zhongyuan-expansion-20261021-05",
+      "referenceCelebrity": "唐嫣",
+      "region": "内地",
+      "quotaGroup": "内地",
+      "countedInQuota": false,
+      "status": "deleted_by_user",
+      "referencePhoto": {
+        "path": "assets/beauties/references/tang-yan/face-reference-20220616.jpg",
+        "sourcePage": "https://k.sina.cn/article_6178972579_p1704ba3a3027015ubx.html",
+        "imageUrl": "https://n.sinaimg.cn/sinakd20100/600/w1080h1920/20220616/7353-53bdbc31023aaaeeef63e43ac1743000.jpg",
+        "size": [
+          1080,
+          1920
+        ],
+        "inspection": "2022公开成年写真，眉眼鼻唇清晰无遮挡，额前碎发未遮眼；半身图不能作为精确腿部尺寸依据。"
+      },
+      "prompt": "唐嫣成年写真实际输入，28岁成年女性真人古装摄影立绘，藕玫瑰色汉服配灰梅紫长背心、米白袖口、梅绣，辫冠双朵紫绢花、珍珠耳钉、细编腰绳。双手低持小圆木绣绷，绷紧米白布上红梅纹，一手握框一手扶下缘，无针具。正常约7.5头身、自然高腰修长双腿，双鞋完整着地、合理重心与手指接触，四边5%留白，真实透明PNG，无背景文字水印。",
+      "propDesign": "小型圆木绣绷，米白绷布及红梅绣纹，无针具；双手握框扶下缘。",
+      "accessoryDesign": "辫冠双朵紫绢花、珍珠耳钉、细编腰绳，减少金属饰品。",
+      "diversityReview": "检查现有4张全部记录，已用扇书香囊瓷壶，本轮首次刺绣绷道具；新增辫冠绢花和耳钉组合，配长背心改变衣装轮廓与持握姿势。",
+      "targetAsset": "assets/beauties/random/女明星/唐嫣-绛梅绣绷-比例修正-v2.png",
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a15db7-68a5-7dc3-8581-85d43d5bacff/exec-2759fe0f-f945-418b-a60e-0b8afb5885c4.png",
+      "completedAt": "2026-10-21T09:39:53.688198+00:00",
+      "reviewPass1": "对照1080x1920成年写真及面部放大图，杏眼眼距、细眉、鼻尖、唇峰和下唇及收窄下颌有参考特征，生成妆容较柔和、视角不同，不声称精确复刻。",
+      "reviewPass2": "再次对照照片与白底深灰底全身合成图，辫冠绢花双手绣绷衣摆双鞋完整，无背景残留；原图透明alpha。顶底留白低于5%目标但未裁切。",
+      "physicalLogicReview": {
+        "hands": "双手放大检查，上手拇指与曲指夹住木框上缘，下手手掌及手指托下缘；部分指段被木框遮住，未见多指断裂，手腕与袖中前臂方向连贯。",
+        "feet": "双鞋放大检查，前鞋向外后鞋朝前，两踝进入鞋口自然，鞋底着地且重心可由双脚支撑。",
+        "object": "绣绷圆框连贯、上缘调节螺钉结构可辨，绷布拉平，双手与上下框接触承重，无悬空穿模。",
+        "headBody": "头颈肩衔接自然，头与肩躯干大小协调，腰线合理，无明显缩头和拉长躯干。",
+        "legs": "长背心和裙装体现修长腿部，前后脚落点自然；骨盆膝大腿被衣物遮挡不能逐关节核验。",
+        "accessories": "绢花固定在辫冠两侧，珍珠耳钉贴耳，编绳腰带围腰固定，宫绦向下垂，无飘浮。"
+      },
+      "validation": {
+        "size": [
+          941,
+          1672
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          255
+        ],
+        "transparentPixels": 900325,
+        "solidBounds": [
+          174,
+          16,
+          885,
+          1654
+        ],
+        "moduleLoaded": true,
+        "targetExists": true,
+        "legacyMappingsPassed": true
+      },
+      "proportionRevisionHistory": [
+        {
+          "name": "唐嫣-绛梅绣绷",
+          "original": "assets/beauties/random/女明星/唐嫣-绛梅绣绷.png",
+          "source": "/Users/fengheliang/.codex/generated_images/01a15db7-68a5-7dc3-8581-85d43d5bacff/exec-2759fe0f-f945-418b-a60e-0b8afb5885c4.png",
+          "size": [
+            941,
+            1671
+          ],
+          "alphaRange": [
+            0,
+            255
+          ],
+          "transparentPixels": 928352,
+          "finalAsset": "assets/beauties/random/女明星/唐嫣-绛梅绣绷-比例修正-v2.png",
+          "status": "applied",
+          "appliedAt": "2026-10-21T15:01:56.521515+00:00",
+          "tool": "built-in image_gen",
+          "promptSummary": "整体头颅脸耳发量轻收约10–12%，保留身体衣装道具面容，重接自然颈肩；张曼玉v2头部略小回调约8%。均为提示意图，非实测百分比。",
+          "reviewPass1": "盘髻和脸一起收小，仍保持合理成人头大小，深底未显示工具预览中的隐藏边缘RGB杂色。已等高对照前版和陈瑶。",
+          "reviewPass2": "两手扶托绣绷，圆框绷布接触合理，两鞋完整。面部手脚及白深底全身复看，表情视线连贯、姿态协调、透明边缘无明显底色残留。裙遮骨盆膝部，未测隐藏腿长。"
+        }
+      ],
+      "proportionComparisonReview": "盘髻和脸一起收小，仍保持合理成人头大小，深底未显示工具预览中的隐藏边缘RGB杂色。已等高对照前版和陈瑶。",
+      "smallHeadReview": "盘髻和脸一起收小，仍保持合理成人头大小，深底未显示工具预览中的隐藏边缘RGB杂色。",
+      "deletedAt": "2026-10-21T15:58:11.164775+00:00",
+      "deletionReason": "用户截图明确指定删除四个文件，撤出对应随机池条目，不自动回退其他版本。"
+    },
+    {
+      "order": 6,
+      "id": "zhongyuan-expansion-20261021-06",
+      "referenceCelebrity": "林青霞",
+      "region": "台湾（香港影坛成名）",
+      "quotaGroup": "港台",
+      "countedInQuota": false,
+      "status": "deleted_by_user",
+      "referencePhoto": {
+        "path": "assets/beauties/references/lin-qingxia/face-reference.jpg",
+        "sourcePage": "https://www.duitang.com/blog/?id=21690804",
+        "imageUrl": "https://a-ho-img.dtstatic.com/uploads/item/201203/15/20120315231735_FTRET.jpeg",
+        "size": [
+          600,
+          858
+        ],
+        "inspection": "成年军装造型，眉眼鼻唇清楚无遮挡，有老胶片颗粒，仅600x858，未达到优先1200目标，不称高清。另下载482x725旧照因唇部被叶遮挡未用作输入。",
+        "ageEvidence": "1954年生；军装青年时期面容，年代未精确确定，不声称照片拍摄日期。1981中国女兵成年军装角色有国家文化记忆库记录可辅助核对。",
+        "ageEvidencePage": "https://tcmb.culture.tw/zh-tw/detail?id=11000016496&indexCode=MOCCOLLECTIONS"
+      },
+      "prompt": "林青霞年轻成年参考实际输入，28岁成年女性，保留直眉杏眼挺鼻、自然微笑及下颌下巴特征，真人古装摄影。赭红墨灰修身骑装、米白领、窄袖、高腰束带、开衩外袍及宽松长裤、双布靴完整。半挽黑发用织纹暗红抹额系带，小玉盘耳钉、青铜腰扣。空手、一手轻触腰绳另一手自然垂落，正常7.5头身与修长自然腿部、合理重心双靴着地，全身四边5%留白，真实透明PNG，无背景文字水印。",
+      "propDesign": "空手，无道具，一手轻触腰绳另一手自然放松。",
+      "accessoryDesign": "实际为红丝带半束发及垂带、小玉盘耳钉、青铜腰扣，未生成额前抹额。",
+      "diversityReview": "已查看全部5张：扇书香囊瓷壶绣绷，本轮首次空手；抹额与窄袖骑装长裤布靴改变轮廓，避开反复长裙单簪持物。",
+      "targetAsset": "assets/beauties/random/女明星/林青霞-赭衣行旅.png",
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a15db7-68a5-7dc3-8581-85d43d5bacff/exec-eac51ff7-6fd4-4e60-bc63-1b94fc159879.png",
+      "completedAt": "2026-10-21T09:45:20.839470+00:00",
+      "reviewPass1": "对照600x858成年军装参考及面部放大图，直眉、长杏眼、鼻梁、微笑唇形、方圆下颌和下巴凹点有参考特征。生成眼线更明显、角度不同，未声称高清细节精确复刻。",
+      "reviewPass2": "再次对照参考及白底深灰底全身图，束发系带、双手、袍摆及布靴完整。真实透明alpha，两底无原始预览光晕，顶部底部留白偏少但主体完整。原设计抹额生成成束发带，已记录实际差异。",
+      "physicalLogicReview": {
+        "hands": "双手已放大，下垂手侧视自然屈曲，部分指段重叠遮挡；腰侧手自然半握贴衣，未见额外手指断裂，手腕朝向与前臂连贯。",
+        "feet": "双靴放大，前靴近正前，另一靴外转，两鞋底着地，脚踝腿部连接自然，无悬空扭转。",
+        "object": "空手，无持物受力需要核验；腰侧手贴衣而未穿入腰带。",
+        "headBody": "头颈肩自然，头身协调，躯干长度正常。",
+        "legs": "长裤与窄袖骑装呈自然修长腿部，膝区通过裤褶外轮廓可估，靴口踝位合理，骨盆和精确膝关节被布料遮挡不虚称可见。",
+        "accessories": "红丝带扎在头顶半束发，结与垂带连接，非额前抹额；玉盘耳钉贴耳，铜腰扣固定腰带，垂绳自然向下。"
+      },
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentPixels": 993071,
+        "solidBounds": [
+          205,
+          13,
+          914,
+          1515
+        ],
+        "moduleLoaded": true,
+        "targetExists": true,
+        "legacyMappingsPassed": true
+      },
+      "previousStatusBeforeDeletion": "completed",
+      "deletedAt": "2026-10-21T15:55:44.459174+00:00",
+      "deletionReason": "用户要求从林青霞-赭衣行旅.png起含本张及后续本批全部删除，效果差；不得自动恢复。"
+    },
+    {
+      "order": 7,
+      "id": "zhongyuan-expansion-20261021-07",
+      "referenceCelebrity": "张雪迎",
+      "region": "内地",
+      "quotaGroup": "内地",
+      "countedInQuota": false,
+      "status": "deleted_by_user",
+      "referencePhotos": [
+        {
+          "path": "assets/beauties/references/zhang-xueying/adult-20221009.jpg",
+          "imageUrl": "https://n.sinaimg.cn/sinakd20101/720/w720h1600/20221009/8f13-9d3c2a411749d8cd8ab83b35e2f18059.jpg",
+          "size": [
+            720,
+            1600
+          ],
+          "inspection": "2022明确25岁成年写真，侧脸眉眼鼻唇清楚，照片有压缩。"
+        },
+        {
+          "path": "assets/beauties/references/zhang-xueying/face-reference-2.jpg",
+          "imageUrl": "https://n.sinaimg.cn/sinakd20101/190/w720h1070/20221009/ab4a-8f2ace4a1f94185ccff6cfd464ad2eb1.jpg",
+          "size": [
+            720,
+            1070
+          ],
+          "inspection": "同组成年写真，抬头正侧角度补充，额前发丝不遮鼻唇，眼型受抬头眯眼影响，不单独作为眼型依据。"
+        }
+      ],
+      "referenceSourcePage": "https://k.sina.com.cn/article_1455987560_56c89b680270228vs.html",
+      "prompt": "张雪迎2022年25岁成年写真实际输入，真人古装摄影，靛蓝竹叶纹汉服银灰裙米白领、自然高腰，侧辫银发扣淡蓝丝带、小银圈耳饰。一手握竹笛中央向下斜持，不吹奏，另一手自然垂下，笛孔合理、红流苏向下、无穿模；正常7.5头身、自然修长腿与重心，双鞋及踝完整着地，四边5%留白真实透明PNG无背景文字水印。",
+      "propDesign": "本色竹横笛，合理笛孔及红色尾穗，单手握中央向下斜持、不吹奏。",
+      "accessoryDesign": "松侧辫、雕银发扣及淡蓝绢带、小银圈耳环。",
+      "diversityReview": "已查看全部6张的扇书香囊瓷壶绣绷及空手，本轮首次竹笛，采用单手低位斜握与侧辫银扣组合，区别于双手持器和单簪长发。",
+      "targetAsset": "assets/beauties/random/女明星/张雪迎-竹韵银辫-比例修正-v2.png",
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a15db7-68a5-7dc3-8581-85d43d5bacff/exec-567c120d-c1c6-41a2-a028-4ebfcbd853c9.png",
+      "completedAt": "2026-10-21T09:50:32.674796+00:00",
+      "reviewPass1": "对照720x1600侧脸成年写真和720x1070补充照及生成脸部放大图，眉眼、鼻尖、红唇、柔和下颌有参考特征，视角接近主参考、妆容不同；不称精确复刻。",
+      "reviewPass2": "再次对照照片和白底深灰底全身合成，侧辫银扣、竹笛尾穗、双手衣摆双鞋完整。真实透明alpha，合成图无背景光晕。顶底留白少于5%目标但未裁切。",
+      "physicalLogicReview": {
+        "hands": "已放大持笛手及下垂手，握笛手曲指包住竹管，拇指位于管后遮挡，手腕方向连贯；另一手位于笛后自然垂指，遮挡关系合理，未见额外手指断裂。",
+        "feet": "双鞋踝已放大，前鞋略外斜、后鞋朝前，脚部入鞋自然，两底可落在同一隐含平面，重心可支持。",
+        "object": "竹管连续笔直，端头与尾绳相连，流苏向下；握持有接触，无穿模悬空。笛孔排布有孔径变化，不作乐器制式或演奏指法准确性保证，当前为非演奏持握。",
+        "headBody": "头颈肩连接自然，头身体积协调、腰线正常。",
+        "legs": "长裙表现修长下半身，双鞋和前踝可见，骨盆膝大腿被裙装遮挡，不能逐关节核验。",
+        "accessories": "银扣与丝带固定在辫发上，耳环接耳垂，腰绳结及下垂方向自然。"
+      },
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentPixels": 924524,
+        "solidBounds": [
+          146,
+          15,
+          825,
+          1518
+        ],
+        "moduleLoaded": true,
+        "targetExists": true,
+        "legacyMappingsPassed": true
+      },
+      "proportionRevisionHistory": [
+        {
+          "name": "张雪迎-竹韵银辫",
+          "original": "assets/beauties/random/女明星/张雪迎-竹韵银辫.png",
+          "source": "/Users/fengheliang/.codex/generated_images/01a15db7-68a5-7dc3-8581-85d43d5bacff/exec-567c120d-c1c6-41a2-a028-4ebfcbd853c9.png",
+          "size": [
+            1024,
+            1536
+          ],
+          "alphaRange": [
+            0,
+            254
+          ],
+          "transparentPixels": 952015,
+          "finalAsset": "assets/beauties/random/女明星/张雪迎-竹韵银辫-比例修正-v2.png",
+          "status": "applied",
+          "appliedAt": "2026-10-21T15:01:56.521515+00:00",
+          "tool": "built-in image_gen",
+          "promptSummary": "整体头颅脸耳发量轻收约10–12%，保留身体衣装道具面容，重接自然颈肩；张曼玉v2头部略小回调约8%。均为提示意图，非实测百分比。",
+          "reviewPass1": "侧身头面适度收小，颈肩连接顺畅，未见小头细颈。已等高对照前版和陈瑶。",
+          "reviewPass2": "一手握笛中段、另一手近笛末端，笛孔穗及双鞋完整。面部手脚及白深底全身复看，表情视线连贯、姿态协调、透明边缘无明显底色残留。裙遮骨盆膝部，未测隐藏腿长。"
+        }
+      ],
+      "proportionComparisonReview": "侧身头面适度收小，颈肩连接顺畅，未见小头细颈。已等高对照前版和陈瑶。",
+      "smallHeadReview": "侧身头面适度收小，颈肩连接顺畅，未见小头细颈。",
+      "previousStatusBeforeDeletion": "completed",
+      "deletedAt": "2026-10-21T15:55:44.459174+00:00",
+      "deletionReason": "用户要求从林青霞-赭衣行旅.png起含本张及后续本批全部删除，效果差；不得自动恢复。"
+    },
+    {
+      "order": 8,
+      "id": "zhongyuan-expansion-20261021-08",
+      "referenceCelebrity": "张曼玉",
+      "region": "香港",
+      "quotaGroup": "港台",
+      "countedInQuota": false,
+      "status": "deleted_by_user",
+      "referencePhoto": {
+        "path": "assets/beauties/references/zhang-manyu/adult-ruan-lingyu.jpg",
+        "sourcePage": "https://www.duitang.com/blog/?id=1043763818",
+        "imageUrl": "https://a-ho-img.dtstatic.com/uploads/item/201901/15/20190115123115_iotvp.jpg",
+        "size": [
+          750,
+          1201
+        ],
+        "inspection": "阮玲玉成年角色三帧拼图，1964年生，影片1991-1992时期约27-28岁；眉眼鼻唇无遮挡，压缩和调色明显，拼图总高1201不等于单帧高清，不称高清原始写真。"
+      },
+      "prompt": "张曼玉阮玲玉成年角色三帧参考作实际输入，只生成一人非拼图，28岁成年女性真人古装摄影，米白汉服橄榄绿短褙子菊绣、赭色腰绳，低偏盘发双青铜叶钗、琥珀滴耳坠、小铜戒。小浅竹花篮装淡黄菊花，一手握拱柄顶部一手托篮底，篮柄接两侧篮沿、花茎在篮内、受力重力自然。正常7.5头身自然修长双腿双鞋踝完整着地，四边5%留白，真实透明PNG无背景文字水印，不复制参考水印。",
+      "propDesign": "浅编竹花篮及淡黄菊花，一手握拱柄承重，另一手扶侧沿稳定（实际非托底）。",
+      "accessoryDesign": "低偏盘发双青铜叶形钗、琥珀滴耳坠及小铜戒。",
+      "diversityReview": "检查全部7张，未用花篮或菊花，本轮采用小型编竹花篮；米白绿短外套轮廓、双叶钗与琥珀滴坠区别此前银扣侧辫、绢花辫冠及束发骑装。",
+      "targetAsset": "assets/beauties/random/女明星/张曼玉-秋菊竹篮-比例修正-v3.png",
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a15db7-68a5-7dc3-8581-85d43d5bacff/exec-523a64bf-b569-4875-952b-e8902eb2ff50.png",
+      "completedAt": "2026-10-21T10:00:52.267498+00:00",
+      "reviewPass1": "对照阮玲玉成年角色三帧及面部放大图，细弧眉、长杏眼、直鼻、唇形和椭圆下颌保留参考特征，生成妆容光线不同；参考压缩调色明显，不称精确复刻。",
+      "reviewPass2": "再次对照参考与白底深灰底全身图，双叶钗、耳坠、花篮、双手衣摆双鞋完整，无参考水印；真实透明alpha、两底无预览光晕。顶底边距少于目标但未裁切。实际为较长外搭及低卷盘发，非提示词的短外套。",
+      "physicalLogicReview": {
+        "hands": "放大两手，握柄手曲指包住顶弧、拇指与手指形成夹持；另一手实际贴篮侧沿稳定而非托篮底。手腕前臂连接自然，未见额外手指断裂。",
+        "feet": "放大双鞋踝，左鞋外转右鞋略外，双脚入鞋自然，两底落于合理隐含平面，重心可支持。",
+        "object": "小篮由上手握柄承重，下手扶侧沿稳定；拱柄连接篮身两侧，篮体竖直，花茎插入篮内，无浮花或穿模。",
+        "headBody": "头颈肩协调，头身大小自然、腰线正常。",
+        "legs": "衣裙呈修长下半身，双鞋踝可见；骨盆膝大腿被衣料遮挡不能逐关节核验。",
+        "accessories": "两叶形钗插入后发，琥珀耳坠接耳垂并向下垂，铜戒环绕手指，腰绳围腰固定。"
+      },
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentPixels": 1028034,
+        "solidBounds": [
+          208,
+          15,
+          821,
+          1519
+        ],
+        "moduleLoaded": true,
+        "targetExists": true,
+        "legacyMappingsPassed": true
+      },
+      "proportionRevisionHistory": [
+        {
+          "name": "张曼玉-秋菊竹篮",
+          "source": "/Users/fengheliang/.codex/generated_images/01a15db7-68a5-7dc3-8581-85d43d5bacff/exec-0fa6d4ae-4771-418f-ab5b-252cae5f891e.png",
+          "original": "assets/beauties/random/女明星/张曼玉-秋菊竹篮.png",
+          "size": [
+            1024,
+            1536
+          ],
+          "alphaRange": [
+            0,
+            254
+          ],
+          "transparentPixels": 1056487,
+          "finalAsset": "assets/beauties/random/女明星/张曼玉-秋菊竹篮-比例修正-v2.png",
+          "appliedAt": "2026-10-21T14:42:47.395384+00:00",
+          "status": "applied",
+          "tool": "built-in image_gen",
+          "promptSummary": "整体头颅面容发量相对身体收小约18–25%的编辑意图；保持身份衣装道具、身体腰线四肢鞋，自然重接颈肩，真实透明。百分比为提示目标非实测值。",
+          "reviewPass1": "头面连发髻相对全身明显减小，颈部衔接自然，肩宽未缩窄；不把提示词25%称实测值。等高对照原图及陈瑶基准，面容和表情延续。",
+          "reviewPass2": "一手曲指握篮柄顶，一手扶侧，接触承重合理；双鞋完整。白深底合成及全身、面部、手脚局部复看，无明显残底光晕；长裙遮膝骨盆，不核验隐藏骨长。"
+        },
+        {
+          "name": "张曼玉-秋菊竹篮",
+          "original": "assets/beauties/random/女明星/张曼玉-秋菊竹篮-比例修正-v2.png",
+          "source": "/Users/fengheliang/.codex/generated_images/01a15db7-68a5-7dc3-8581-85d43d5bacff/exec-523a64bf-b569-4875-952b-e8902eb2ff50.png",
+          "size": [
+            1024,
+            1536
+          ],
+          "alphaRange": [
+            0,
+            254
+          ],
+          "transparentPixels": 1050353,
+          "finalAsset": "assets/beauties/random/女明星/张曼玉-秋菊竹篮-比例修正-v3.png",
+          "status": "applied",
+          "appliedAt": "2026-10-21T15:01:56.521515+00:00",
+          "tool": "built-in image_gen",
+          "promptSummary": "整体头颅脸耳发量轻收约10–12%，保留身体衣装道具面容，重接自然颈肩；张曼玉v2头部略小回调约8%。均为提示意图，非实测百分比。",
+          "reviewPass1": "v2略小的头部已回调，头面较v2大且仍较最初版轻巧，不再继续缩头。已等高对照前版和陈瑶。",
+          "reviewPass2": "一手握篮柄另手扶侧，篮花承重关系合理，双鞋完整。面部手脚及白深底全身复看，表情视线连贯、姿态协调、透明边缘无明显底色残留。裙遮骨盆膝部，未测隐藏腿长。"
+        }
+      ],
+      "proportionComparisonReview": "v2略小的头部已回调，头面较v2大且仍较最初版轻巧，不再继续缩头。已等高对照前版和陈瑶。",
+      "smallHeadReview": "v2略小的头部已回调，头面较v2大且仍较最初版轻巧，不再继续缩头。",
+      "previousStatusBeforeDeletion": "completed",
+      "deletedAt": "2026-10-21T15:55:44.459174+00:00",
+      "deletionReason": "用户要求从林青霞-赭衣行旅.png起含本张及后续本批全部删除，效果差；不得自动恢复。"
+    },
+    {
+      "order": 9,
+      "id": "zhongyuan-expansion-20261021-09",
+      "referenceCelebrity": "章子怡",
+      "region": "内地",
+      "quotaGroup": "内地",
+      "countedInQuota": false,
+      "status": "deleted_by_user",
+      "referencePhoto": {
+        "path": "assets/beauties/references/zhang-ziyi/face-reference.jpg",
+        "sourcePage": "https://www.duitang.com/blog/?id=966954968",
+        "imageUrl": "https://a-ho-img.dtstatic.com/uploads/item/201807/30/20180730192623_J3fhr.jpeg",
+        "size": [
+          1600,
+          2133
+        ],
+        "inspection": "成年时期玉娇龙造型面容，五官无遮挡，原图1600x2133但细节有压缩，不称无损原片；1979年生、卧虎藏龙2000年角色时期约20-21岁。"
+      },
+      "prompt": "章子怡年轻成年实际参考输入，25岁成年女性真人古装摄影。柔和专注眼神看左、眉眼放松闭唇浅笑，表情与放松头颈肩胯及自然错步重心协调。暗金黄石榴绣汉服褐领米白裙，高腰正常7.5头身自然修长腿。低辫髻象牙色月梳、短玉珠耳饰、腰系浅玉佩。单手握小八角纸灯笼竹拱柄顶端，灯笼竖直向下、短穗垂落、不发光，另一手自然垂下，物品真实受力接触无穿模。双鞋踝完整着地、四边5%留白，真实透明PNG无背景文字水印。",
+      "propDesign": "小型未点亮八角米白纸灯，红褐木骨及竹拱提柄、短穗，单手低位握顶柄。",
+      "accessoryDesign": "实际为高辫盘髻象牙色月形梳、绿玉珠短耳坠、腰系玉佩。",
+      "diversityReview": "已查看全部8张，尚无纸灯道具。改用小八角灯低位单手提拿、暖暗金褐配色及月梳玉饰，区别前作花篮双手扶持和银扣竹笛。",
+      "selectionReview": "章子怡以我的父亲母亲、卧虎藏龙、英雄等代表作具有广泛大众知名度，符合最新内地选人要求。",
+      "targetAsset": "assets/beauties/random/女明星/章子怡-金榴纸灯.png",
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a15db7-68a5-7dc3-8581-85d43d5bacff/exec-5757b063-f9b7-4a5e-b869-ea72e3d13c61.png",
+      "completedAt": "2026-10-21T10:22:50.746488+00:00",
+      "revision": "初图后脚被裙完全遮挡，未入池；经image_gen编辑缩短衣摆并分开双脚后复验。",
+      "editPrompt": "保留成年面容、柔和表情、黄色石榴衣装、月梳玉耳饰、腰佩与灯笼，缩短裙摆至双踝上方，双脚横向自然分开，双鞋完整清晰着地，修长正常腿部，保留透明并全身四周留白。",
+      "reviewPass1": "对照1600x2133成年参考及修正版面部放大图，眉眼鼻唇、脸颊痣及收窄下颌有参考特征，生成视线妆容不同，不称精确复刻。",
+      "reviewPass2": "再次对照成年参考及修正版白底深灰底全身图，发梳双手灯笼穗衣摆与双鞋完整；真实透明alpha，合成无背景光晕。上边距少于5%目标但发髻完整。",
+      "expressionReview": "面部放大检查双眼一致看向画面左方，眼睑眉毛放松，闭唇浅笑与眉眼情绪一致，无瞪眼歪嘴假笑；回看全身与平静提灯姿态相配。",
+      "poseCoordinationReview": "全身及关节放大后回看，头微转而肩颈未过度扭转，双肩放松，持灯侧肘腕顺接，另一臂自然下垂；双脚分开支撑身体，躯干腰胯不拧折。骨盆膝被裙遮挡，不能逐关节核验。",
+      "physicalLogicReview": {
+        "hands": "放大持柄手，曲指围提柄，拇指在对侧接触；下垂手自然屈指，部分指段遮挡，无明显多指断裂，腕臂连续。",
+        "feet": "修正版双鞋双踝均清楚可见，左右分开，一鞋朝前另一鞋外转，双底落在合理同一隐含平面；未见反踝悬浮。",
+        "object": "灯笼拱柄两端连接顶圈，握持与悬挂承重连贯，木骨与纸面结构完整，穗向下，无穿模悬空。",
+        "headBody": "头颈肩大小比例自然，躯干长度协调。",
+        "legs": "缩短衣摆后双小腿下端踝鞋可见，修长下半身与腰线自然；大腿膝骨盆被衣裙遮挡不能精确核验。",
+        "accessories": "月梳实际在高盘髻而非低髻，固定在发中；玉耳坠连接耳垂、玉佩系腰向下垂。"
+      },
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentPixels": 968114,
+        "solidBounds": [
+          188,
+          15,
+          919,
+          1503
+        ],
+        "moduleLoaded": true,
+        "targetExists": true,
+        "legacyMappingsPassed": true
+      },
+      "previousStatusBeforeDeletion": "completed",
+      "deletedAt": "2026-10-21T15:55:44.459174+00:00",
+      "deletionReason": "用户要求从林青霞-赭衣行旅.png起含本张及后续本批全部删除，效果差；不得自动恢复。"
+    },
+    {
+      "order": 10,
+      "id": "zhongyuan-expansion-20261021-10",
+      "referenceCelebrity": "钟楚红",
+      "region": "香港",
+      "quotaGroup": "港台",
+      "countedInQuota": false,
+      "status": "deleted_by_user",
+      "referencePhoto": {
+        "path": "assets/beauties/references/zhong-chuhong/face-reference.jpg",
+        "sourcePage": "https://www.duitang.com/blog/?id=937680233",
+        "imageUrl": "https://a-ho-img.dtstatic.com/uploads/item/201806/08/20180608234903_XyGnx.jpeg",
+        "size": [
+          1600,
+          2267
+        ],
+        "inspection": "成年时期公开时尚旧照，五官无遮挡；1600x2267但原始细节模糊有颗粒，不称无损高清，具体拍摄年份未确定。"
+      },
+      "proportionReferenceAsset": "assets/beauties/random/女明星/陈瑶-杏绡桂囊.png",
+      "prompt": "实际输入1钟楚红成年旧照供面容参考，输入2陈瑶仅供正常头肩躯干关系、自然高腰、修长下半身比例，不复制脸衣物姿势道具。28岁成年女性真人古装摄影，葡萄酒紫银杏绣汉服暖灰内裙，半挽卷发酒红编带金银杏梳、金耳钉红绳。单手低持合拢赭黄油纸伞竹杆，纸伞扎带闭合向外斜下、尖端在画布内，另一手自然垂下。温暖闭唇微笑、眼神眉眼放松一致，头颈肩胯四肢与重心协调。正常自然修长腿，双鞋踝可见着地，四边5%留白真实透明PNG无背景文字水印。",
+      "propDesign": "扎带收拢的浅赭油纸伞，竹杆折纸伞骨，单手低位斜向外持。",
+      "accessoryDesign": "半挽卷发酒红编带、小金银杏发梳、金耳钉、细红绳手链。",
+      "diversityReview": "已检查现有全部9张，未使用收拢纸伞；首次用闭伞斜下单手持，与先前竹笛、灯笼、花篮有形制和握法差异。酒紫灰配色配卷发银杏梳和红绳不同于单簪长裙。",
+      "targetAsset": "assets/beauties/random/女明星/钟楚红-绛杏收伞.png",
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a15db7-68a5-7dc3-8581-85d43d5bacff/exec-59d822f1-dfff-41f5-b594-d8e7efa328ff.png",
+      "completedAt": "2026-10-21T12:13:44.900558+00:00",
+      "reviewPass1": "对照1600x2267成年旧照及生成脸部放大图，弧眉、杏眼、直鼻、丰满唇形与柔和脸颊有参考特征；下颌更纤细、妆容和光线不同，旧照细节较糊，不声称精确复刻。",
+      "reviewPass2": "再次对照写真及白底深灰底全身图，发梳系带、双手闭伞尖端、衣摆及双鞋完整。真实透明alpha，两底无预览光晕。上下留白少于5%目标但未裁切。",
+      "expressionReview": "脸部放大后回看全身：双眼视线一致近镜头，眼睑眉形放松，闭唇浅笑与柔和脸颊协调，无明显假笑歪嘴瞪眼；与放松收伞姿势一致。",
+      "poseCoordinationReview": "头轻转、颈肩自然相接，双肩放松，持伞侧肘腕顺接下垂，另一臂自然垂下，肩胯与错步方向无明显拧转，重心可支持；裙遮骨盆膝部，未声称逐关节可见。",
+      "proportionComparisonReview": "生成前已查看陈瑶全身并作为实际第二输入；验收依次对照陈瑶和最终白深底图，头相对肩躯干大小、自然高腰和修长下半身视觉接近。新图肩较舒展、两臂垂下，裙线不同但未见明显大头短腿或缩头拉躯干。参考裙装遮住骨盆膝，不推断精确骨骼腿长。",
+      "physicalLogicReview": {
+        "hands": "持伞和下垂手均已放大，握手拇指与弯指夹竹杆、部分指尖在杆后遮挡，另一手自然屈曲，腕臂连续，无明显多指断指。",
+        "feet": "双鞋踝已放大，前鞋向外后鞋朝前，鞋口脚踝自然，双底接触合理同一隐含平面。",
+        "object": "伞杆笔直，折纸伞面与收拢伞骨、扎带结构连贯，握持有接触、伞尖在画内不穿衣，穗子受重力向下。",
+        "headBody": "头颈肩衔接自然，头身关系与陈瑶参考接近。",
+        "legs": "高腰长裙下半身修长，双踝鞋可见；大腿骨盆膝被裙遮住不能精确核验。",
+        "accessories": "金银杏梳及红带固定半束发，金耳饰贴耳、红绳绕腕，腰穗下垂。"
+      },
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentPixels": 939998,
+        "solidBounds": [
+          150,
+          24,
+          848,
+          1511
+        ],
+        "moduleLoaded": true,
+        "targetExists": true,
+        "legacyMappingsPassed": true
+      },
+      "previousStatusBeforeDeletion": "completed",
+      "deletedAt": "2026-10-21T15:55:44.459174+00:00",
+      "deletionReason": "用户要求从林青霞-赭衣行旅.png起含本张及后续本批全部删除，效果差；不得自动恢复。"
+    },
+    {
+      "order": 11,
+      "id": "zhongyuan-expansion-20261021-11",
+      "referenceCelebrity": "周迅",
+      "region": "内地",
+      "quotaGroup": "内地",
+      "countedInQuota": false,
+      "status": "deleted_by_user",
+      "referencePhotos": [
+        {
+          "path": "assets/beauties/references/zhou-xun/face-reference.jpg",
+          "sourcePage": "https://www.duitang.com/blog/?id=1154471701",
+          "imageUrl": "https://a-ho-img.dtstatic.com/uploads/item/201911/15/20191115124819_lltrf.jpg",
+          "size": [
+            1440,
+            960
+          ],
+          "inspection": "成年面容清楚无遮挡但暖光偏暗，具体拍摄年份未确定，不称年轻时期照片，供五官细节补充。"
+        },
+        {
+          "path": "assets/beauties/references/zhou-xun/adult-orange-red.jpg",
+          "sourcePage": "https://www.duitang.com/blog/?id=29979934",
+          "imageUrl": "https://a-ho-img.dtstatic.com/uploads/item/201205/30/20120530175304_WRWVH.jpeg",
+          "size": [
+            287,
+            399
+          ],
+          "inspection": "明确橘子红了角色时期约27岁成年造型，低清仅供年轻成年气质补充，不称高清。"
+        }
+      ],
+      "proportionReferenceAsset": "assets/beauties/random/女明星/陈瑶-杏绡桂囊.png",
+      "prompt": "周迅成年面容实际输入1、橘子红了约27岁成年造型补充输入2，陈瑶仅比例输入3不复制脸衣装道具。27岁成年女性真人古装摄影，暖灰褐鼠尾草灰蕨纹汉服米白裙，自然高腰修长下半身与正常头肩躯干比例；低绞髻浅绿丝带小木珠、珍珠滴耳饰。双手低位托扶掌心大小梨形陶埙，有顶吹口指孔，不吹奏、受力接触合理，无悬浮穿模。平静思考表情、眼神眉眼闭唇协调，头颈肩胯四肢重心放松连贯，双鞋踝清楚着地，全身四周5%留白透明PNG无背景文字水印。",
+      "propDesign": "掌心大小哑光赤陶梨形埙，顶吹口及圆指孔，非演奏状态低位一掌托底另一手扶侧。",
+      "accessoryDesign": "低绞髻、淡鼠尾草丝带与两小木珠、珍珠滴耳饰。",
+      "diversityReview": "已查看最近10张全部记录，竹笛曾用但陶埙首次，改变乐器形制和托扶姿态，鼠尾草灰褐服装与木珠丝带低髻避免此前长发单簪重复。",
+      "selectionReview": "周迅以苏州河、如果爱、画皮等代表作品具有广泛大众知名度，符合内地选人要求。",
+      "targetAsset": "assets/beauties/random/女明星/周迅-灰蕨陶埙-比例修正-v2.png",
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a15db7-68a5-7dc3-8581-85d43d5bacff/exec-c00ab252-4e48-4bed-be34-f5087921afea.png",
+      "completedAt": "2026-10-21T12:21:54.004795+00:00",
+      "reviewPass1": "对照1440x960成年面容及287x399年轻角色补充照片，生成面部放大可见大杏眼、小鼻、唇峰及柔和下颌等特征，视角妆容不同。生成气质较成熟，不能仅凭外观证明精确27岁；年轻角色参考低清，未声称年轻面容精细复刻。",
+      "reviewPass2": "再次对照参考和白底深灰底全身合成，木珠丝带、双手陶埙、衣摆及双鞋完整。真实透明alpha，合成无原始预览光晕。上下边距少于5%目标但未裁切。",
+      "expressionReview": "面部放大后回看全身：双眼一致望向画面左方，眉眼和闭唇呈平静思考情绪，口角自然无明显歪嘴瞪眼假笑，与安静托埙姿态一致。",
+      "poseCoordinationReview": "头轻转、颈肩放松，双臂低位弯曲靠近身体，腕与前臂方向连贯，双手承托姿态和肩胯重心协调；错步双鞋支撑身体，未见过度扭转，骨盆膝被裙遮挡不能逐关节核验。",
+      "proportionComparisonReview": "头面发髻均比旧版收小，头肩关系更舒展，颈部未过长。等高对照原图及陈瑶基准，面容和表情延续。",
+      "physicalLogicReview": {
+        "hands": "双手已放大，一掌托住陶埙底侧另一手稳侧，拇指与指尖接触物面，部分指段被埙遮住，未见明显多指断指，腕臂连续。",
+        "feet": "双鞋踝已放大，前鞋外斜后鞋朝前，鞋口入踝自然，两鞋底落于合理同一隐含平面。",
+        "object": "梨形陶埙大小可双手自然承托，顶部吹口及指孔可见，表面完整，未演奏不检查指法；无浮空穿模。",
+        "headBody": "头颈肩比例自然，头身体积与陈瑶参考接近。",
+        "legs": "高腰裙下半身修长，双踝鞋可见，骨盆膝大腿被裙遮挡不能精确核验。",
+        "accessories": "丝带绕低髻固定木珠，珠无悬浮，珍珠坠接耳垂，腰绦垂坠自然。"
+      },
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentPixels": 885600,
+        "solidBounds": [
+          193,
+          9,
+          910,
+          1520
+        ],
+        "moduleLoaded": true,
+        "targetExists": true,
+        "legacyMappingsPassed": true
+      },
+      "proportionRevisionHistory": [
+        {
+          "name": "周迅-灰蕨陶埙",
+          "source": "/Users/fengheliang/.codex/generated_images/01a15db7-68a5-7dc3-8581-85d43d5bacff/exec-c00ab252-4e48-4bed-be34-f5087921afea.png",
+          "original": "assets/beauties/random/女明星/周迅-灰蕨陶埙.png",
+          "size": [
+            1024,
+            1536
+          ],
+          "alphaRange": [
+            0,
+            254
+          ],
+          "transparentPixels": 897169,
+          "finalAsset": "assets/beauties/random/女明星/周迅-灰蕨陶埙-比例修正-v2.png",
+          "appliedAt": "2026-10-21T14:42:47.395384+00:00",
+          "status": "applied",
+          "tool": "built-in image_gen",
+          "promptSummary": "整体头颅面容发量相对身体收小约18–25%的编辑意图；保持身份衣装道具、身体腰线四肢鞋，自然重接颈肩，真实透明。百分比为提示目标非实测值。",
+          "reviewPass1": "头面发髻均比旧版收小，头肩关系更舒展，颈部未过长。等高对照原图及陈瑶基准，面容和表情延续。",
+          "reviewPass2": "双手扶托陶埙，指与器身接触自然，双鞋完整。白深底合成及全身、面部、手脚局部复看，无明显残底光晕；长裙遮膝骨盆，不核验隐藏骨长。"
+        }
+      ],
+      "previousStatusBeforeDeletion": "completed",
+      "deletedAt": "2026-10-21T15:55:44.459174+00:00",
+      "deletionReason": "用户要求从林青霞-赭衣行旅.png起含本张及后续本批全部删除，效果差；不得自动恢复。"
+    },
+    {
+      "order": 12,
+      "id": "zhongyuan-expansion-20261021-12",
+      "referenceCelebrity": "关之琳",
+      "region": "香港",
+      "quotaGroup": "港台",
+      "countedInQuota": false,
+      "status": "deleted_by_user",
+      "referencePhotos": [
+        {
+          "path": "assets/beauties/references/guan-zhilin/adult-thirteenth-aunt.jpg",
+          "sourcePage": "https://www.duitang.com/blog/?id=956351921",
+          "imageUrl": "https://a-ho-img.dtstatic.com/uploads/item/201807/14/20180714102816_uckco.jpg",
+          "size": [
+            1024,
+            885
+          ],
+          "inspection": "黄飞鸿十三姨成年角色双帧拼图，1962年生、1991角色约29岁，眉眼鼻唇可辨，脸侧发丝与额头少量交叠，非无损高清。"
+        },
+        {
+          "path": "assets/beauties/references/guan-zhilin/face-reference.jpg",
+          "sourcePage": "https://www.duitang.com/blog/?id=1174004671",
+          "imageUrl": "https://a-ho-img.dtstatic.com/uploads/item/202001/13/20200113133748_qlnam.jpg",
+          "size": [
+            640,
+            960
+          ],
+          "inspection": "成年旧照合影，只参考女性五官无遮挡面容，不生成男性；面部占比较小，非高清。"
+        },
+        {
+          "path": "assets/beauties/references/guan-zhilin/face-reference-3.jpg",
+          "sourcePage": "https://k.sina.cn/article_6539202154_p185c44e6a00100isbj.html",
+          "imageUrl": "https://n.sinaimg.cn/sinacn10116/319/w1010h909/20190318/77aa-hukwxnv2172299.jpg",
+          "size": [
+            1010,
+            909
+          ],
+          "inspection": "年轻成年时期回眸旧照，眉眼鼻唇无遮挡，比前次惊讶双帧更适合，具体拍摄年未确定；长边1010未达到优先1200目标，不称高清。"
+        }
+      ],
+      "proportionReferenceAsset": "assets/beauties/random/女明星/陈瑶-杏绡桂囊.png",
+      "prompt": "关之琳黄飞鸿成年双帧及旧照合影女性为实际面容输入，陈瑶仅比例输入，单人28岁成年女性不含男性。粉蓝珍珠白银浪绣汉服，低髻珍珠发网、蓝宝石滴坠银窄镯。双手低位持小闭合深酒红描金角漆盒，一掌托底另一手扶上侧角，受力接触自然。温柔闭唇浅笑视线一致眉眼放松，肩颈脊柱胯手脚动作协调，正常头身自然高腰修长腿效果对照陈瑶，双鞋踝清楚着地，全身四边5%留白真实透明PNG无背景文字水印。",
+      "propDesign": "小型闭合长方酒红漆盒，金色包角无文字，双手一托底一扶侧角。",
+      "accessoryDesign": "实际低盘髻花形银珠发钗及短垂珠链、蓝水滴耳坠、窄银镯，未生成完整珍珠网。",
+      "diversityReview": "已查看最近10张及全批道具，未使用方形漆盒与发网。双手托闭盒改变此前花篮拱柄、圆绣绷或单手持杆，珍珠网与蓝色耳坠区别此前梳簪丝带。",
+      "draftAsset": "outputs/random-beauties/review-pending/关之琳-蓝绡漆盒-v2.png",
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a15db7-68a5-7dc3-8581-85d43d5bacff/exec-4a81ac55-c386-480d-a853-7fe671188313.png",
+      "lastAttemptAt": "2026-10-21T12:41:24.862679+00:00",
+      "attempts": 3,
+      "reviewPass1": "换用1010x909回眸成年面容为主输入重新生成。对照原照及面部放大图：大圆杏眼及眼睑、鼻梁鼻尖、丰润红唇、椭圆脸颊与下巴更接近关之琳原照；保留回眸角度，妆容与光线不同，不称精确复刻。前两稿未计数。",
+      "reviewPass2": "再次对照新原照及白底深灰底全身图，发饰、漆盒、衣摆及双鞋完整，透明alpha真实，两底无原始预览光晕。顶底留白少于5%目标但主体完整。另一手被盒体及远侧袖遮挡，未声称远手所有指段可见。",
+      "expressionReview": "放大面部后回看全身，两眼方向一致近镜头，眉眼专注、唇微张自然，无明显歪嘴假笑；回眸神态与转身托盒动作相配，不像前稿泛化面容。",
+      "poseCoordinationReview": "躯干三分之二侧身、头回望，转动幅度在正常颈肩范围，双臂靠近身前托盒，肩腰胯方向连贯，双脚同向略错位支撑身体，无明显反折过度拧身。裙遮骨盆膝，不精确核验隐藏关节。",
+      "proportionComparisonReview": "头发髻外轮廓减小，侧身仍压缩肩宽，头颈衔接比旧版轻巧。等高对照原图及陈瑶基准，面容和表情延续。",
+      "physicalLogicReview": {
+        "hands": "放大近手，掌托盒底、拇指贴侧，曲指与盒底有承托接触，腕与前臂自然衔接。远手受盒体与袖遮挡，仅远侧腕掌局部可见，无法核验全部五指，不虚报。小盒可由近手独立承托。",
+        "feet": "双鞋踝已放大，前后错位同向落脚，脚踝进入鞋口自然，双底落同一合理隐含平面，无浮空扭转。",
+        "object": "闭合方漆盒边角与描金连贯，近掌支撑重心、远侧稳扶局部遮挡，未见悬空穿模。",
+        "headBody": "头颈肩衔接自然，头身与陈瑶比例基准接近。",
+        "legs": "裙装呈修长下半身、双鞋踝可见，骨盆膝大腿遮挡不能逐关节核验。",
+        "accessories": "实际为低盘髻花形银珠钗及短珠链，非完整珍珠发网；固定在发髻，蓝滴耳饰接耳垂、窄银镯绕腕。"
+      },
+      "latestPrompt": "面容仅用新参考关之琳成年回眸旧照，严格保留大圆杏眼眼睑眼距高鼻梁丰唇脸颊及下巴，不泛化汉服模特。陈瑶实际第二输入仅颈以下身体轮廓比例、自然腰线与修长下半身，忽略其脸。粉蓝珍珠白银浪汉服低髻珍珠网蓝耳坠银镯，双手低托小酒红描金角漆盒，接触受力自然，温和专注表情，肩颈胯手脚协调重心放松，双鞋踝清楚着地、全身四边5%留白，真实透明无背景水印。",
+      "targetAsset": "assets/beauties/random/女明星/关之琳-蓝绡漆盒-比例修正-v2.png",
+      "completedAt": "2026-10-21T12:45:02.339948+00:00",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentPixels": 961701,
+        "solidBounds": [
+          146,
+          13,
+          880,
+          1526
+        ],
+        "moduleLoaded": true,
+        "targetExists": true,
+        "legacyMappingsPassed": true
+      },
+      "proportionRevisionHistory": [
+        {
+          "name": "关之琳-蓝绡漆盒",
+          "source": "/Users/fengheliang/.codex/generated_images/01a15db7-68a5-7dc3-8581-85d43d5bacff/exec-4a81ac55-c386-480d-a853-7fe671188313.png",
+          "original": "assets/beauties/random/女明星/关之琳-蓝绡漆盒.png",
+          "size": [
+            1024,
+            1536
+          ],
+          "alphaRange": [
+            0,
+            254
+          ],
+          "transparentPixels": 970048,
+          "finalAsset": "assets/beauties/random/女明星/关之琳-蓝绡漆盒-比例修正-v2.png",
+          "appliedAt": "2026-10-21T14:42:47.395384+00:00",
+          "status": "applied",
+          "tool": "built-in image_gen",
+          "promptSummary": "整体头颅面容发量相对身体收小约18–25%的编辑意图；保持身份衣装道具、身体腰线四肢鞋，自然重接颈肩，真实透明。百分比为提示目标非实测值。",
+          "reviewPass1": "头发髻外轮廓减小，侧身仍压缩肩宽，头颈衔接比旧版轻巧。等高对照原图及陈瑶基准，面容和表情延续。",
+          "reviewPass2": "双手托漆盒接触自然，背侧手指遮挡，双鞋完整。白深底合成及全身、面部、手脚局部复看，无明显残底光晕；长裙遮膝骨盆，不核验隐藏骨长。"
+        }
+      ],
+      "previousStatusBeforeDeletion": "completed",
+      "deletedAt": "2026-10-21T15:55:44.459174+00:00",
+      "deletionReason": "用户要求从林青霞-赭衣行旅.png起含本张及后续本批全部删除，效果差；不得自动恢复。"
+    },
+    {
+      "order": 13,
+      "id": "zhongyuan-expansion-20261021-13",
+      "referenceCelebrity": "巩俐",
+      "region": "内地",
+      "quotaGroup": "内地",
+      "countedInQuota": false,
+      "status": "deleted_by_user",
+      "referencePhoto": {
+        "path": "assets/beauties/references/gong-li/face-reference.jpg",
+        "sourcePage": "https://www.duitang.com/blog/?id=1369223106",
+        "imageUrl": "https://a-ho-img.dtstatic.com/uploads/blog/202110/07/20211007151345_4732e.jpeg",
+        "size": [
+          1002,
+          1580
+        ],
+        "inspection": "成年时期公开近正面旧照，眉眼鼻唇无遮挡、脸部痣可见；具体拍摄年未确定，不声称精确年代，图像有旧片颗粒。"
+      },
+      "proportionReferenceAsset": "assets/beauties/random/女明星/陈瑶-杏绡桂囊.png",
+      "prompt": "实际输入1巩俐年轻成年近正面旧照仅供面容，保留眉眼鼻宽唇与方圆下颌脸颊痣，28岁成年自然浅笑略露齿。实际输入2陈瑶仅颈以下整体比例、正常头肩躯干自然高腰修长下半身，不复制脸衣物道具。松绿麦穗绣汉服暖米色裙、低辫髻小青铜麦穗双股钗、琥珀耳钉编腰带圆铜佩。一手低托单枚小熟桃短梗单叶，拇指稳侧曲指承底，另一手自然下垂，接触受力合理。温暖自然表情、协调头颈肩胯四肢重心，双鞋踝完整着地，四边5%留白真实透明PNG无背景文字水印。",
+      "propDesign": "一枚自然大小熟桃带短梗单叶，单掌低位承托、拇指稳侧。",
+      "accessoryDesign": "低辫髻麦穗双股钗、琥珀短滴耳坠、编腰带及圆铜佩。",
+      "diversityReview": "检查最近10张及全批，无单桃水果主道具；单手小物承托区别瓷壶、绣绷、笛、篮、灯、伞、埙、漆盒。松绿麦穗纹搭铜钗耳钉和朴素腰带。",
+      "selectionReview": "巩俐以红高粱、大红灯笼高高挂、霸王别姬等代表作具有广泛大众知名度，符合内地选人要求。",
+      "targetAsset": "assets/beauties/random/女明星/巩俐-松麦托桃-比例修正-v2.png",
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a15db7-68a5-7dc3-8581-85d43d5bacff/exec-78ecf274-f980-4af8-80cd-7b690e93fc95.png",
+      "completedAt": "2026-10-21T12:53:47.776713+00:00",
+      "reviewPass1": "对照1002x1580成年近正面参考与生成面部放大图，宽弧眉、长杏眼眼距、鼻尖、宽唇微露上齿、方圆下颌及脸颊痣有参考特征，生成妆容及光线不同，不称精确复刻。",
+      "reviewPass2": "再次对照写真与白底深灰底全身图，发饰双手桃叶衣摆及双鞋完整，真实透明alpha，两底无原始预览光晕。上下留白少于5%目标但未裁切。",
+      "expressionReview": "放大面部再回看全身，双眼视线一致近镜头、眉眼放松，略露上齿的浅笑与嘴角脸颊联动自然，未见歪嘴瞪眼假笑，和轻托果实的放松状态一致。",
+      "poseCoordinationReview": "头微转、颈肩自然、双肩放松，托桃侧肘腕顺接，另一手自然下垂，肩腰胯与错步重心连贯，无明显过度扭转反关节；裙遮膝骨盆不精确核验隐藏关节。",
+      "proportionComparisonReview": "头面厚重感减轻，颈肩正常，表情仍自然露少量齿。已等高对照前版和陈瑶。",
+      "physicalLogicReview": {
+        "hands": "托桃及下垂手已放大，掌曲指承底、拇指稳侧，部分指段遮住；另一手自然弯曲，腕前臂连贯，未见明显多指断指。",
+        "feet": "双鞋踝放大，前鞋外斜后鞋近前，鞋口脚踝自然、鞋底落在合理隐含平面。",
+        "object": "桃大小可单手托，短梗和单叶连于顶部，曲指与掌承托，无浮空穿模。",
+        "headBody": "头颈肩自然、头身体积协调，与陈瑶比例接近。",
+        "legs": "高腰长裙呈修长下半身，双踝鞋可见，骨盆膝大腿被衣料遮挡不能逐关节核验。",
+        "accessories": "麦穗钗固定低髻、琥珀耳坠连接耳垂、圆铜佩系腰向下垂；耳饰实际为短滴坠而非耳钉。"
+      },
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentPixels": 911935,
+        "solidBounds": [
+          190,
+          12,
+          890,
+          1514
+        ],
+        "moduleLoaded": true,
+        "targetExists": true,
+        "legacyMappingsPassed": true
+      },
+      "proportionRevisionHistory": [
+        {
+          "name": "巩俐-松麦托桃",
+          "original": "assets/beauties/random/女明星/巩俐-松麦托桃.png",
+          "source": "/Users/fengheliang/.codex/generated_images/01a15db7-68a5-7dc3-8581-85d43d5bacff/exec-78ecf274-f980-4af8-80cd-7b690e93fc95.png",
+          "size": [
+            1024,
+            1536
+          ],
+          "alphaRange": [
+            0,
+            254
+          ],
+          "transparentPixels": 920958,
+          "finalAsset": "assets/beauties/random/女明星/巩俐-松麦托桃-比例修正-v2.png",
+          "status": "applied",
+          "appliedAt": "2026-10-21T15:01:56.521515+00:00",
+          "tool": "built-in image_gen",
+          "promptSummary": "整体头颅脸耳发量轻收约10–12%，保留身体衣装道具面容，重接自然颈肩；张曼玉v2头部略小回调约8%。均为提示意图，非实测百分比。",
+          "reviewPass1": "头面厚重感减轻，颈肩正常，表情仍自然露少量齿。已等高对照前版和陈瑶。",
+          "reviewPass2": "掌托桃子与侧拇指稳定、另一手垂放，双鞋完整。面部手脚及白深底全身复看，表情视线连贯、姿态协调、透明边缘无明显底色残留。裙遮骨盆膝部，未测隐藏腿长。"
+        }
+      ],
+      "smallHeadReview": "头面厚重感减轻，颈肩正常，表情仍自然露少量齿。",
+      "previousStatusBeforeDeletion": "completed",
+      "deletedAt": "2026-10-21T15:55:44.459174+00:00",
+      "deletionReason": "用户要求从林青霞-赭衣行旅.png起含本张及后续本批全部删除，效果差；不得自动恢复。"
+    },
+    {
+      "order": 14,
+      "id": "zhongyuan-expansion-20261021-14",
+      "referenceCelebrity": "张敏",
+      "region": "香港",
+      "quotaGroup": "港台",
+      "countedInQuota": false,
+      "status": "deleted_by_user",
+      "referencePhoto": {
+        "path": "assets/beauties/references/zhang-min/adult-zhaomin.jpg",
+        "sourcePage": "https://www.duitang.com/blog/?id=957177232",
+        "imageUrl": "https://a-ho-img.dtstatic.com/uploads/item/201807/15/20180715165552_kwbvw.jpg",
+        "size": [
+          1080,
+          1823
+        ],
+        "inspection": "1993赵敏成年角色三帧，1968年生当年25岁，眉眼鼻唇清楚无遮挡；图有压缩拼接，整体1823高不等于单帧高清，无损原始写真未取得。"
+      },
+      "proportionReferenceAsset": "assets/beauties/random/女明星/陈瑶-杏绡桂囊.png",
+      "prompt": "张敏1993赵敏成年三帧面容实际输入1，25岁成年，长挑眉上扬杏眼高鼻珊瑚唇脸颊痣、单人非拼图。陈瑶实际输入2仅颈下头肩躯干自然腰线与修长腿比例，不复制脸衣装。暗午夜蓝窄袖骑袍米白领灰长裤布靴、棕皮护腕，半高马尾银圆发筒蓝绳玉珠小耳坠皮扣编带。单手低握掌大棕皮行旅水囊木塞固定小皮环，拇指曲指接触受力自然，另一手轻搭腰带。平静自信闭唇浅笑眼神一致，头颈肩胯肘腕重心协调，双靴完整着地，四边5%留白真实透明PNG无背景文字水印。",
+      "propDesign": "掌大棕皮旅行水囊，短木塞和固定皮环，单手低位直立握囊身。",
+      "accessoryDesign": "实际高马尾银圆发筒、蓝绳、玉珠长链小滴耳坠、棕皮护腕及皮扣腰带；靴为低块跟。",
+      "diversityReview": "检查最近10张及全部道具，首次皮革水囊、发筒与护腕组合；骑袍长裤布靴不同于多数宽袖长裙，林青霞红灰空手骑装之后本次改蓝灰皮具持物与半高马尾。",
+      "targetAsset": "assets/beauties/random/女明星/张敏-靛衣行囊-比例修正-v2.png",
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a15db7-68a5-7dc3-8581-85d43d5bacff/exec-1d6bcd8b-f314-4fb2-8535-cae482f5cf4e.png",
+      "completedAt": "2026-10-21T13:02:05.440071+00:00",
+      "reviewPass1": "对照1080x1823成年赵敏三帧及生成脸部放大图，长挑眉、上扬杏眼、鼻梁鼻尖、珊瑚唇、脸颊痣及椭圆下颌有参考特征，头部角度妆容不同，不称精确复刻。",
+      "reviewPass2": "再次对照参考与白底深灰底全身图，发筒系带、水囊木塞皮环、双手衣摆及双靴完整；实际alpha透明，两底无预览光晕。上下留白极少但未裁切；靴跟为低块跟而非全平底，已记录。",
+      "expressionReview": "放大面部后回看全身，两眼视线一致近镜头，挑眉眼睑与闭唇浅笑表现平静自信，无明显歪嘴瞪眼假笑，与便装站姿一致。",
+      "poseCoordinationReview": "头轻转、颈肩放松、肩腰胯方向连贯，握囊侧手腕肘臂自然下垂，另一手轻靠腰带，双腿错步支撑，未见过度拧转反折；袍裤遮住骨盆与部分膝，无法逐关节精确核验。",
+      "proportionComparisonReview": "排除马尾后头颅适度减小，颈肩仍正常，高发筒不能当颅顶计量。已等高对照前版和陈瑶。",
+      "physicalLogicReview": {
+        "hands": "双手放大，握囊手曲指围住皮囊、拇指在对侧局部遮挡，掌与囊有接触，另一手自然半握贴腰带，腕前臂连续，无明显多指断指。",
+        "feet": "双靴放大，前靴外斜后靴朝前，踝腿进入靴筒自然，鞋底与低块跟构成合理支撑，无浮空反踝；并非提示词全平底。",
+        "object": "皮囊缝线连续、木塞在短颈口、皮环固定囊颈，单手可握承重，无穿模悬空。",
+        "headBody": "头颈肩比例自然，与陈瑶基准接近。",
+        "legs": "长裤外袍呈自然修长下半身，靴口和下腿连接合理，骨盆与部分膝被衣料遮挡不精确核验。",
+        "accessories": "银筒固定高马尾、蓝绳向下垂，玉滴坠接耳垂，皮护腕缠绕前臂、皮带腰扣固定。"
+      },
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentPixels": 1004028,
+        "solidBounds": [
+          175,
+          4,
+          931,
+          1529
+        ],
+        "moduleLoaded": true,
+        "targetExists": true,
+        "legacyMappingsPassed": true
+      },
+      "proportionRevisionHistory": [
+        {
+          "name": "张敏-靛衣行囊",
+          "original": "assets/beauties/random/女明星/张敏-靛衣行囊.png",
+          "source": "/Users/fengheliang/.codex/generated_images/01a15db7-68a5-7dc3-8581-85d43d5bacff/exec-1d6bcd8b-f314-4fb2-8535-cae482f5cf4e.png",
+          "size": [
+            1024,
+            1536
+          ],
+          "alphaRange": [
+            0,
+            254
+          ],
+          "transparentPixels": 1030300,
+          "finalAsset": "assets/beauties/random/女明星/张敏-靛衣行囊-比例修正-v2.png",
+          "status": "applied",
+          "appliedAt": "2026-10-21T15:01:56.521515+00:00",
+          "tool": "built-in image_gen",
+          "promptSummary": "整体头颅脸耳发量轻收约10–12%，保留身体衣装道具面容，重接自然颈肩；张曼玉v2头部略小回调约8%。均为提示意图，非实测百分比。",
+          "reviewPass1": "排除马尾后头颅适度减小，颈肩仍正常，高发筒不能当颅顶计量。已等高对照前版和陈瑶。",
+          "reviewPass2": "一手握皮囊另手近腰，木塞皮环合理，双靴鞋底完整。面部手脚及白深底全身复看，表情视线连贯、姿态协调、透明边缘无明显底色残留。裙遮骨盆膝部，未测隐藏腿长。"
+        }
+      ],
+      "smallHeadReview": "排除马尾后头颅适度减小，颈肩仍正常，高发筒不能当颅顶计量。",
+      "previousStatusBeforeDeletion": "completed",
+      "deletedAt": "2026-10-21T15:55:44.459174+00:00",
+      "deletionReason": "用户要求从林青霞-赭衣行旅.png起含本张及后续本批全部删除，效果差；不得自动恢复。"
+    },
+    {
+      "order": 15,
+      "id": "zhongyuan-expansion-20261021-15",
+      "referenceCelebrity": "刘亦菲",
+      "region": "内地",
+      "quotaGroup": "内地",
+      "countedInQuota": false,
+      "status": "deleted_by_user",
+      "referencePhoto": {
+        "path": "assets/beauties/references/liu-yifei/face-reference.jpg",
+        "sourcePage": "https://www.duitang.com/blog/?id=1354072934",
+        "imageUrl": "https://c-ssl.duitang.com/uploads/item/202107/20/20210720094609_3JTCy.jpeg",
+        "size": [
+          1600,
+          2133
+        ],
+        "inspection": "沿用项目已下载成年正面写真并重新view_image核验，眉眼鼻唇无遮挡；具体拍摄年份未确定，不声称精确年代。原图有水印，明确生成不得复制。本轮原页面网页读取超时，来源及原图URL沿用既有记录。"
+      },
+      "proportionReferenceAsset": "assets/beauties/random/女明星/陈瑶-杏绡桂囊.png",
+      "prompt": "输入1刘亦菲成年正面写真仅供面容，保留椭圆脸平缓眉长杏眼细鼻小丰唇圆颊下巴，26岁成年。输入2陈瑶仅颈下头肩躯干自然高腰修长下半身比例，不复制脸衣装。珊瑚藕粉短汉服上衣、深玉青褶裙米白领莲绣，低双辫盘髻双浅玉莲钗珍珠耳钉细银链。低位一掌托青瓷浅茶碟另一手稳小无柄杯，杯正立接触受力合理。柔和闭唇浅笑视线一致，头颈肩肘腕胯重心协调，双鞋踝完整着地，全身四边5%留白透明PNG无背景文字水印。",
+      "propDesign": "小青瓷无柄茶杯与浅碟，一掌托碟另一手稳杯侧，低位平端不饮用。",
+      "accessoryDesign": "低双辫盘髻双浅玉莲钗、珍珠耳钉、细银链手饰。",
+      "diversityReview": "检查最近10张及全批，仅先前瓷执壶属于茶具近类，本轮首次杯碟组合，托碟稳杯区别握壶柄。短上衣深青褶裙与低双盘髻、莲钗耳钉形成新轮廓，不重复本批多数同色长外袍。",
+      "selectionReview": "刘亦菲以金粉世家、仙剑奇侠传、神雕侠侣等代表作具有广泛大众知名度，符合内地选人要求。",
+      "draftAsset": "outputs/random-beauties/review-pending/刘亦菲-莲衣青瓷-v3.png",
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a15db7-68a5-7dc3-8581-85d43d5bacff/exec-5cc1b952-cfd2-4f47-900e-f65bf2ce8340.png",
+      "attempts": 3,
+      "lastAttemptAt": "2026-10-21T13:24:42.113290+00:00",
+      "reviewPass1": "第三稿使用主正面写真、2014补充照及陈瑶比例实际输入重新生成，面容仍偏泛化，五官身份辨识不足，未通过。",
+      "reviewPass2": "第三稿全身预览发现只清楚露出前鞋，后鞋被裙遮住，双脚完整性要求未通过；未虚报最终alpha双底验收。",
+      "expressionReview": "整体预览表情平静闭唇、视线一致，但身份参考未通过，未最终验收。",
+      "poseCoordinationReview": "端茶肩颈双臂姿态总体放松，后脚隐藏导致无法完成落脚与重心检查，未通过。",
+      "proportionComparisonReview": "生成前查看陈瑶并作为实际第三支持输入，头肩躯干与修长下半身相近，但后鞋被裙遮挡影响完整比例验收。",
+      "nextAction": "本条未完成不能计数或入池。后续先处理面容泛化和隐藏后鞋：优先找明确定年成年清晰正面照片；先固定仅刘亦菲身份，不沿用旧泛化面孔。身体以陈瑶为比例参照时须防止脸部污染；缩短裙摆、双脚横向分开，需双鞋完整清楚。可继续其他合格内地明星条目避免反复同一草稿占用全部运行。",
+      "editPrompt": "保留身体构图衣装端杯双鞋透明背景，仅用刘亦菲原照片替换面容并转近正面，柔和宽椭圆脸平眉长杏眼小鼻丰唇圆下巴，避免陈瑶脸，正常颈肩连接。",
+      "referencePhotosAdditional": [
+        {
+          "path": "assets/beauties/references/liu-yifei/face-reference-20141108.jpg",
+          "sourcePage": "https://www.duitang.com/blog/?id=240166232",
+          "imageUrl": "https://a-ho-img.dtstatic.com/uploads/blog/201411/08/20141108212258_sCvwi.jpeg",
+          "size": [
+            440,
+            573
+          ],
+          "inspection": "2014发布的成年写真，供年轻时期面容补充，低清不称高清。另下载2014露水红颜海报因闭眼遮鼻未使用。"
+        }
+      ],
+      "latestPrompt": "重新单独生成，输入1刘亦菲1600x2133正面写真作为唯一主身份，输入2刘亦菲2014成年写真加强身份，输入3陈瑶仅头肩躯干和高腰长下半身测量式轮廓、不取脸。近正面自然窄长杏眼平眉小鼻小丰唇宽软椭圆颊圆下巴，27岁成年闭唇平静。珊瑚藕粉短上衣深青褶裙莲绣、低辫双髻双玉莲钗珍珠耳钉，低位一掌托青瓷碟另一手稳茶杯，动作重心自然、双鞋踝完整着地、全身5%留白透明PNG无背景水印。",
+      "previousStatusBeforeDuplicateReview": "needs_revision",
+      "duplicateOfOriginalId": "expansion-20261019-01",
+      "duplicateOfOriginalAsset": "assets/beauties/random/女明星/刘亦菲.png",
+      "replacementReason": "用户最新规则：已有真实人物不得换装重复，改选其他未出现过的知名人物。",
+      "withdrawnAsset": null,
+      "excludedAt": "2026-10-21T14:25:17.288842+00:00",
+      "previousStatusBeforeDeletion": "replacement_required",
+      "deletedAt": "2026-10-21T15:55:44.459174+00:00",
+      "deletionReason": "用户要求从林青霞-赭衣行旅.png起含本张及后续本批全部删除，效果差；不得自动恢复。"
+    },
+    {
+      "order": 16,
+      "id": "zhongyuan-expansion-20261021-16",
+      "referenceCelebrity": "李冰冰",
+      "region": "内地",
+      "quotaGroup": "内地",
+      "countedInQuota": false,
+      "status": "deleted_by_user",
+      "referencePhotos": [
+        {
+          "path": "assets/beauties/references/li-bingbing/face-reference.jpg",
+          "sourcePage": "https://www.duitang.com/blog/?id=33996711",
+          "imageUrl": "https://a-ho-img.dtstatic.com/uploads/item/201206/30/20120630223804_8yLdE.jpeg",
+          "size": [
+            612,
+            726
+          ],
+          "inspection": "2012已发布成年时尚照，眉眼鼻唇无遮挡，妆容浓且尺寸小不称高清。"
+        },
+        {
+          "path": "assets/beauties/references/li-bingbing/face-reference-2.jpg",
+          "sourcePage": "https://www.duitang.com/blog/?id=944042168",
+          "imageUrl": "https://a-ho-img.dtstatic.com/uploads/item/201806/22/20180622072041_eohwi.jpg",
+          "size": [
+            922,
+            1383
+          ],
+          "inspection": "成年公开写真，淡光脸部眉眼鼻唇可见，手在下颌边缘非遮五官，具体拍摄年份未确认，不虚称年轻照片精确定年。"
+        }
+      ],
+      "proportionReferenceAsset": "assets/beauties/random/女明星/陈瑶-杏绡桂囊.png",
+      "prompt": "李冰冰成年写真两张实际身份输入，保留长挑弧眉长杏眼高窄鼻小丰唇颧骨椭圆下颌，30岁成年平静闭唇专注，陈瑶实际第三输入仅颈下头肩躯干自然腰线与修长下半身、不取脸衣装。沙褐短汉服上衣深靛褶裙米白领蓝梅枝绣，低辫髻琥珀珠发扣蓝绢带细金圈耳饰编腰绳。一手握小圆铜镜短实柄在身侧低胸处，雕花背朝镜头不反射人脸不挡脸，另一手轻近腰，握持重心及关节自然。双鞋踝清楚着地、全身四边5%留白真实透明无背景文字水印，不复制参考帽手套水印。",
+      "propDesign": "小型圆铜手镜短实柄，雕花背面朝镜头不含反射，一手持柄身侧低胸位。",
+      "accessoryDesign": "低辫髻琥珀珠发扣和靛蓝绢带、细金圈耳饰、编腰绳。",
+      "diversityReview": "已查看最近10张及全批，首次圆铜镜主道具，区别初期扇子和其他容器，举镜位置较高但不遮脸；沙褐短上衣深靛褶裙、珠扣金圈增加衣装配饰差异。",
+      "selectionReview": "李冰冰以少年包青天、天下无贼、风声等代表作具有广泛大众知名度，符合内地选人要求。",
+      "targetAsset": "assets/beauties/random/女明星/李冰冰-褐梅铜镜-比例修正-v2.png",
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a15db7-68a5-7dc3-8581-85d43d5bacff/exec-bdf46105-32df-4f5f-93eb-4febfee0cdd8.png",
+      "completedAt": "2026-10-21T13:37:54.618908+00:00",
+      "reviewPass1": "对照两张成年照片复看长挑眉、长杏眼、高鼻梁、小唇和收窄下颌，保留相应轮廓；古装淡妆有所柔化，不宣称逐像素复刻。面部清楚无道具遮挡。",
+      "reviewPass2": "重新查看全身、面部、握镜手、垂手及双鞋放大图，白底深底均检查；发髻裙摆双鞋完整，无背景矩形或明显白边。上沿留白较窄但发髻完整。",
+      "physicalLogicReview": {
+        "hands": "持镜手可见四指叠握柄，拇指在背侧遮挡，未将不可见拇指细节称完全核验；另一手指列自然弯曲，腕臂连接顺畅。",
+        "feet": "双鞋均完整，鞋尖分向两侧，踝与鞋口连接自然，支持平面可信。",
+        "object": "铜镜背面雕花，镜盘连实柄，握指遮挡关系合理，无悬浮穿模；小镜重量可由单手支持。",
+        "headBody": "头颈肩衔接自然，头部与肩宽躯干大小协调。",
+        "legs": "自然腰线以下裙长修长，双踝鞋位置可信；裙遮骨盆膝盖，不能核验隐藏关节或精确腿长。",
+        "accessories": "珠扣贴髻，耳圈由耳垂下挂，腰绦向下垂，无明显漂浮。"
+      },
+      "expressionReview": "放大面部：双眼同向偏侧看，眼睑放松，闭唇平静，眉唇情绪连贯，无明显瞪眼假笑歪嘴。",
+      "poseCoordinationReview": "整体再看：转头幅度与颈肩相容，肩臂松弛，握镜肘腕有连续支撑，另一手自然近腰；肩胯与双鞋分布协调，未见过度拧身或反折。裙下腿部受遮挡。",
+      "proportionComparisonReview": "头面发量适度减小，肩颈关系更自然，未见明显头过小。已等高对照前版和陈瑶。",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentPixels": 965469,
+        "solidBounds": [
+          172,
+          11,
+          845,
+          1521
+        ],
+        "moduleLoaded": true,
+        "targetExists": true,
+        "legacyMappingsPassed": true
+      },
+      "proportionRevisionHistory": [
+        {
+          "name": "李冰冰-褐梅铜镜",
+          "original": "assets/beauties/random/女明星/李冰冰-褐梅铜镜.png",
+          "source": "/Users/fengheliang/.codex/generated_images/01a15db7-68a5-7dc3-8581-85d43d5bacff/exec-bdf46105-32df-4f5f-93eb-4febfee0cdd8.png",
+          "size": [
+            1024,
+            1536
+          ],
+          "alphaRange": [
+            0,
+            254
+          ],
+          "transparentPixels": 978014,
+          "finalAsset": "assets/beauties/random/女明星/李冰冰-褐梅铜镜-比例修正-v2.png",
+          "status": "applied",
+          "appliedAt": "2026-10-21T15:01:56.521515+00:00",
+          "tool": "built-in image_gen",
+          "promptSummary": "整体头颅脸耳发量轻收约10–12%，保留身体衣装道具面容，重接自然颈肩；张曼玉v2头部略小回调约8%。均为提示意图，非实测百分比。",
+          "reviewPass1": "头面发量适度减小，肩颈关系更自然，未见明显头过小。已等高对照前版和陈瑶。",
+          "reviewPass2": "持铜镜柄曲指对夹、空手近腰，双鞋完整。面部手脚及白深底全身复看，表情视线连贯、姿态协调、透明边缘无明显底色残留。裙遮骨盆膝部，未测隐藏腿长。"
+        }
+      ],
+      "smallHeadReview": "头面发量适度减小，肩颈关系更自然，未见明显头过小。",
+      "previousStatusBeforeDeletion": "completed",
+      "deletedAt": "2026-10-21T15:55:44.459174+00:00",
+      "deletionReason": "用户要求从林青霞-赭衣行旅.png起含本张及后续本批全部删除，效果差；不得自动恢复。"
+    },
+    {
+      "order": 17,
+      "id": "zhongyuan-expansion-20261021-17",
+      "referenceCelebrity": "周慧敏",
+      "region": "香港",
+      "quotaGroup": "港台",
+      "countedInQuota": false,
+      "status": "deleted_by_user",
+      "referencePhotos": [
+        {
+          "path": "assets/beauties/references/zhou-huimin/face-reference.jpg",
+          "sourcePage": "https://www.duitang.com/blog/?id=249860338",
+          "imageUrl": "https://c-ssl.duitang.com/uploads/item/201411/24/20141124121313_R8feU.jpeg",
+          "size": [
+            1200,
+            1848
+          ],
+          "inspection": "年轻成年写真，五官清楚无手部遮挡；照片具体拍摄年未确认，非凭上传时间推算年龄。"
+        }
+      ],
+      "proportionReferenceAsset": "assets/beauties/random/女明星/陈瑶-杏绡桂囊.png",
+      "propDesign": "自然空手，双手放松身侧。",
+      "accessoryDesign": "淡紫绢花和浅木雕梳、玉耳钉、素玉镯。",
+      "diversityReview": "查看最近10张及全批；近期多为单手双手持物，本张空手，淡青窄袖配暖白兰纹裙，绢花木梳组合区别上张铜镜琥珀珠扣。",
+      "targetAsset": "assets/beauties/random/女明星/周慧敏-青兰素袖-比例修正-v2.png",
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a15db7-68a5-7dc3-8581-85d43d5bacff/exec-a0dd56e6-f08a-4f93-b632-d6bafe6b46a0.png",
+      "completedAt": "2026-10-21T13:41:58.046433+00:00",
+      "prompt": "成年周慧敏照片作为唯一面容输入，保留柔椭圆脸、宽杏眼、弧眉、细直鼻、唇峰及饱满下唇，自然闭唇浅笑；陈瑶实际输入只参考颈下头肩腰及修长下半身，不能复制其脸衣服姿态。淡青交领丝汉服、暖白淡紫兰绣裙、浅紫腰带；半挽长发薄刘海、紫绢花浅木梳玉耳钉素玉镯；本张空手双臂身侧轻弯，手指放松，协调重心，正常头身自然长腿，不缩头拉躯干；双鞋踝完整露出，真实透明无景物文字水印，摄影质感。",
+      "reviewPass1": "重新对照原写真：宽杏眼、细直鼻、清晰唇峰与下唇、柔和椭圆下颌保留；微笑比原图更浅，古装妆面柔化，非精确复制。原图分辨率1200×1848但扫描质感偏软。",
+      "reviewPass2": "全身及面手鞋局部再看，白底深底合成无矩形底或明显白晕，头发发饰裙摆两鞋均完整；顶部留白较窄，未裁切。",
+      "physicalLogicReview": {
+        "hands": "两手垂放，指列和拇指方向自然，可见指节弯曲无多指或反折，腕臂连接顺畅。",
+        "feet": "左右鞋均完整、鞋内脚踝衔接清楚，脚尖不同方向，着地高度合理。",
+        "object": "空手，无持物受力需要验收。",
+        "headBody": "头颈肩连接自然，头相对肩身大小正常。",
+        "legs": "腰线以下长裙形成修长轮廓，双踝鞋可见；骨盆膝盖被遮，未声称验证真实骨长。",
+        "accessories": "发梳绢花贴发髻、玉钉贴耳垂、手镯绕腕，有可信固定点。"
+      },
+      "expressionReview": "放大看双眼视线一致、眼睑正常，闭唇轻笑与柔眉协调，无僵硬露齿或局部情绪冲突。",
+      "poseCoordinationReview": "先全身后局部再回看：头轻转、肩颈放松，双臂沿身侧轻弯，躯干与双鞋朝向协调，无明显拧身或关节反折；裙下关节受遮挡。",
+      "proportionComparisonReview": "头面和发量均减小，头肩关系改善；长发仍自然沿肩背垂落。等高对照原图及陈瑶基准，面容和表情延续。",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentPixels": 979576,
+        "solidBounds": [
+          192,
+          7,
+          848,
+          1519
+        ],
+        "moduleLoaded": true,
+        "targetExists": true,
+        "legacyMappingsPassed": true
+      },
+      "proportionRevisionHistory": [
+        {
+          "name": "周慧敏-青兰素袖",
+          "source": "/Users/fengheliang/.codex/generated_images/01a15db7-68a5-7dc3-8581-85d43d5bacff/exec-a0dd56e6-f08a-4f93-b632-d6bafe6b46a0.png",
+          "original": "assets/beauties/random/女明星/周慧敏-青兰素袖.png",
+          "size": [
+            1024,
+            1536
+          ],
+          "alphaRange": [
+            0,
+            254
+          ],
+          "transparentPixels": 1016420,
+          "finalAsset": "assets/beauties/random/女明星/周慧敏-青兰素袖-比例修正-v2.png",
+          "appliedAt": "2026-10-21T14:42:47.395384+00:00",
+          "status": "applied",
+          "tool": "built-in image_gen",
+          "promptSummary": "整体头颅面容发量相对身体收小约18–25%的编辑意图；保持身份衣装道具、身体腰线四肢鞋，自然重接颈肩，真实透明。百分比为提示目标非实测值。",
+          "reviewPass1": "头面和发量均减小，头肩关系改善；长发仍自然沿肩背垂落。等高对照原图及陈瑶基准，面容和表情延续。",
+          "reviewPass2": "空手双腕指列自然，无持物；两鞋完整。白深底合成及全身、面部、手脚局部复看，无明显残底光晕；长裙遮膝骨盆，不核验隐藏骨长。"
+        }
+      ],
+      "previousStatusBeforeDeletion": "completed",
+      "deletedAt": "2026-10-21T15:55:44.459174+00:00",
+      "deletionReason": "用户要求从林青霞-赭衣行旅.png起含本张及后续本批全部删除，效果差；不得自动恢复。"
+    },
+    {
+      "order": 18,
+      "id": "zhongyuan-expansion-20261021-18",
+      "referenceCelebrity": "杨幂",
+      "region": "内地",
+      "quotaGroup": "内地",
+      "countedInQuota": false,
+      "status": "deleted_by_user",
+      "referencePhotos": [
+        {
+          "path": "assets/beauties/references/yang-mi/face-reference.jpg",
+          "sourcePage": "https://www.jishi3.com/star/40497.html",
+          "imageUrl": "https://n.sinaimg.cn/sinakd20220415ac/119/w1080h1439/20220415/c188-c1ccde528aa897f08d120e750a46e3a9.jpg",
+          "size": [
+            1080,
+            1439
+          ],
+          "inspection": "本轮重新上网核对来源并view_image查看现存公开成年写真，五官清晰无遮挡，手指只在脸侧；具体拍摄年份未确认，不将2022转载时间当拍摄年。"
+        }
+      ],
+      "proportionReferenceAsset": "assets/beauties/random/女明星/陈瑶-杏绡桂囊.png",
+      "propDesign": "小椭圆木绣绷，绷紧米白布及半绣绿叶；不持针，无散线，一手扶框另一手托底。",
+      "accessoryDesign": "实际双辫披前兼低盘髻，深木几何钗、小金圆垂耳饰、红串结腕饰、金属腰佩。",
+      "diversityReview": "复核最近10张及全批，首次刺绣绷道具；区别空手与铜镜，桑葚红短衫浅沙裙深青腰带，木叉钗金圆片耳饰不同于近期绢花珠扣。",
+      "selectionReview": "杨幂具有仙剑奇侠传三、宫等广为人知代表作品，符合内地知名度要求；本张新衣装道具保留旧图。",
+      "targetAsset": "assets/beauties/random/女明星/杨幂-绛衫叶绣.png",
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a15db7-68a5-7dc3-8581-85d43d5bacff/exec-dbcc1e16-f042-4074-bbf0-c971d92b9a06.png",
+      "completedAt": "2026-10-21T13:47:12.991720+00:00",
+      "prompt": "杨幂成年写真为面容唯一输入，大杏眼浓眉高直鼻小弓唇收窄椭圆下颌，平静浅笑；陈瑶实际第二参考仅颈下头肩躯干腰线自然长下半身，不复制脸衣装发型姿态。桑葚红交领衫浅沙裙深青腰带金云边、双辫低髻深木几何叉钗小金圆耳饰红腕绳；小木绣绷米白绷布半绣绿叶无针散线，一手扶边另一手托底接触合理；自然站姿正常头身修长腿不缩头，双鞋踝完整清楚，透明摄影质感无文字背景。",
+      "reviewPass1": "再次对照成年写真与面部放大，浓眉大杏眼、窄高鼻、小弓唇与收窄下颌延续，角度和妆面更淡，不能称完全一致；照片五官无遮挡。",
+      "reviewPass2": "全身再看并放大面手绣绷鞋，白底深底均无明显残底白晕；完整发饰双手裙摆两鞋，上沿余量较窄但未裁发髻。",
+      "physicalLogicReview": {
+        "hands": "扶框手拇指压前缘，其余指绕木框外缘，托底手拇指在上、弯指在底侧，遮挡符合抓扶；不可见指尖未虚称全部展开核验。",
+        "feet": "两鞋完整分开，踝入鞋口自然，鞋尖朝向不同但着地平面相容。",
+        "object": "木框内绷布平整，双手接触上下边，重量由托底掌支承，未见悬空或穿模；无针线风险点。",
+        "headBody": "头颈肩连接自然，头与肩躯干大小协调。",
+        "legs": "腰线以下长裙修长，双踝可见；裙下骨盆膝盖不见，未测真实骨长。",
+        "accessories": "木钗穿髻耳坠挂耳、腕绳绕腕、腰佩下垂有可信固定点。"
+      },
+      "expressionReview": "双眼同向，轻闭唇浅笑与眉眼连贯，未见歪嘴异常瞪眼；面部柔和与持绣绷姿态相配。",
+      "poseCoordinationReview": "整体到局部再整体：头轻偏与颈肩关系自然，双肘舒适弯曲扶托道具，肩胯和双脚支持协调，无明显反折过扭；裙遮腿关节。",
+      "proportionComparisonReview": "与已查看陈瑶参考依次对照：头肩大小相近自然，腰线明确，下半身视觉修长；衣裙姿态不同，不将裙遮骨盆膝盖处推断为精确腿骨长度。",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentPixels": 996882,
+        "solidBounds": [
+          248,
+          11,
+          822,
+          1510
+        ],
+        "moduleLoaded": true,
+        "targetExists": true,
+        "legacyMappingsPassed": true
+      },
+      "previousStatusBeforeDuplicateReview": "completed",
+      "duplicateOfOriginalId": "v1-sheng-00",
+      "duplicateOfOriginalAsset": "assets/beauties/random/女明星/杨幂.png",
+      "replacementReason": "用户最新规则：已有真实人物不得换装重复，改选其他未出现过的知名人物。",
+      "withdrawnAsset": "assets/beauties/random/女明星/杨幂-绛衫叶绣.png",
+      "excludedAt": "2026-10-21T14:25:17.288842+00:00",
+      "previousStatusBeforeDeletion": "replacement_required",
+      "deletedAt": "2026-10-21T15:55:44.459174+00:00",
+      "deletionReason": "用户要求从林青霞-赭衣行旅.png起含本张及后续本批全部删除，效果差；不得自动恢复。"
+    },
+    {
+      "order": 19,
+      "id": "zhongyuan-expansion-20261021-19",
+      "referenceCelebrity": "朱茵",
+      "region": "香港",
+      "quotaGroup": "港台",
+      "countedInQuota": false,
+      "status": "deleted_by_user",
+      "referencePhotos": [
+        {
+          "path": "assets/beauties/references/zhu-yin/face-reference.jpg",
+          "sourcePage": "https://api.duitang.com/blog/?id=95932878",
+          "imageUrl": "https://a-ho-img.dtstatic.com/uploads/item/201309/15/20130915154335_iYTvH.jpeg",
+          "size": [
+            1072,
+            1500
+          ],
+          "inspection": "年轻成年职业写真拼图，四幅脸部清楚，单幅分辨率较低且旧照偏软；不将拼图长边冒称每张脸高清，具体拍摄年份未确认。"
+        }
+      ],
+      "proportionReferenceAsset": "assets/beauties/random/女明星/陈瑶-杏绡桂囊.png",
+      "propDesign": "实际短石榴枝一果多叶，握果上方木枝，果梗向下承重。",
+      "accessoryDesign": "高绞髻黑漆月梳双珊瑚珠、短银叶耳饰、窄铜腕环。",
+      "diversityReview": "已复核最近10张和全批，首次石榴枝，区别桃子掌托及绣绷双手扶；赭黄窄袖深橄榄裙与黑漆梳银叶组合增加差异。",
+      "selectionReview": "朱茵1990年代因逃学威龙2、大话西游等广为人知，成年职业时期照片符合港台选人方向。",
+      "targetAsset": "assets/beauties/random/女明星/朱茵-赭衣榴枝.png",
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a15db7-68a5-7dc3-8581-85d43d5bacff/exec-a2c718ee-c6dd-4226-a969-c9c44f223c7e.png",
+      "completedAt": "2026-10-21T13:52:44.057183+00:00",
+      "prompt": "朱茵年轻成年职业写真拼图实际输入面容，保留浓弧眉活泼杏眼紧凑直鼻圆鼻尖宽唇柔角椭圆脸，自然露少量上齿轻笑。陈瑶实际第二输入仅颈下正常头肩躯干自然腰线修长下半身，不复制脸造型。赭黄交领窄袖深橄榄裙棕腰带几何纹边；高髻黑漆月梳珊瑚珠银叶耳饰窄铜腕环。一手低位握带一石榴三叶短枝、在果实上方握枝、另一手身侧放松，真实指部接触果枝连接重力合理，正常协调站姿双鞋踝完整自然修长腿，透明写实古装摄影无背景文字水印。",
+      "reviewPass1": "复对原拼图脸型眉眼鼻唇：浓眉杏眼、圆鼻尖、较宽笑唇及柔角下颌可见延续，露齿笑与原图相容；原拼图单脸分辨率偏低，未称精确复刻。",
+      "reviewPass2": "全身和放大面部双手果枝双鞋重新检查，白深底合成无明显底色矩形白晕；发饰裙摆双鞋完整，但上下留白较窄未裁切。",
+      "physicalLogicReview": {
+        "hands": "握枝拇指与弯曲指对夹木枝，部分指被枝和掌遮；空手可见指列自然弯曲，腕臂连接无反折。",
+        "feet": "双鞋完整分开，鞋口与踝连接自然，一脚侧出，支持高度相容；右侧踝较多被裙遮。",
+        "object": "果实以短梗连木枝，握点在果上方较近处，果向下垂，叶片实际多于三片但结构自然，无悬浮穿模。",
+        "headBody": "头大小与肩躯干协调，颈肩衔接放松。",
+        "legs": "腰线以下裙形修长，双鞋位置合理；骨盆膝部被遮，未核验真实骨长。",
+        "accessories": "黑梳固定髻，珠有支杆、银叶由耳垂垂下，铜环绕腕，无明显浮饰。"
+      },
+      "expressionReview": "放大看双眼同向、眼睑自然，露少量上齿笑容与眉眼一致，唇齿边界清楚，无假笑歪嘴异常瞪眼。",
+      "poseCoordinationReview": "全身到面手脚再全身：轻侧头与松肩相连，双臂自然下垂握枝，肩胯轻倾与一侧外展脚匹配，动作连贯未见过度扭身；裙下关节不可见。",
+      "proportionComparisonReview": "与本轮查看陈瑶基准依次对照，头肩关系自然、腰线明确、下半身裙廓修长相近，无明显缩头长躯干；裙遮骨盆膝盖，不推算精确腿长。",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentPixels": 972716,
+        "solidBounds": [
+          203,
+          5,
+          877,
+          1531
+        ],
+        "moduleLoaded": true,
+        "targetExists": true,
+        "legacyMappingsPassed": true
+      },
+      "previousStatusBeforeDeletion": "completed",
+      "deletedAt": "2026-10-21T15:55:44.459174+00:00",
+      "deletionReason": "用户要求从林青霞-赭衣行旅.png起含本张及后续本批全部删除，效果差；不得自动恢复。"
+    },
+    {
+      "order": 20,
+      "id": "zhongyuan-expansion-20261021-20",
+      "referenceCelebrity": "范冰冰",
+      "region": "内地",
+      "quotaGroup": "内地",
+      "countedInQuota": false,
+      "status": "deleted_by_user",
+      "referencePhotos": [
+        {
+          "path": "assets/beauties/references/fan-bingbing/face-reference.jpg",
+          "sourcePage": "https://ecywang.com/pic/范冰冰正脸照片/",
+          "imageUrl": "https://5b0988e595225.cdn.sohucs.com/images/20191024/ad6ab30e5e244b15af7d6c4c553133e8.jpeg",
+          "size": [
+            4561,
+            3420
+          ],
+          "inspection": "view_image已看，公开成年写真五官清晰无挡，妆面淡，原图有柔光；具体拍摄年不明，不将转载日期当拍摄年。"
+        }
+      ],
+      "proportionReferenceAsset": "assets/beauties/random/女明星/陈瑶-杏绡桂囊.png",
+      "propDesign": "两掌宽靛染折叠绢料束，米色布带系，前臂承底另一手扶侧。",
+      "accessoryDesign": "实际偏盘髻圆银蓝石步摇垂链、小红耳钉、银红珠腰佩。",
+      "diversityReview": "复核最近10张全批，首次布匹束，双臂承布区别绣绷木框与果枝；灰蓝短衫银灰裙酒红带，银月钗红耳钉组合不沿用近期木梳。",
+      "selectionReview": "范冰冰以还珠格格等作品具有广泛知名度，符合内地要求；新造型保留旧资产。",
+      "targetAsset": "assets/beauties/random/女明星/范冰冰-蓝衫绢束.png",
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a15db7-68a5-7dc3-8581-85d43d5bacff/exec-cd9fb3f2-d732-4059-8459-cf4efaf9374f.png",
+      "completedAt": "2026-10-21T13:57:57.204875+00:00",
+      "prompt": "范冰冰成年写真实际输入仅面容，保留细长弧眉宽杏眼外眼角高细鼻小丰唇长椭圆收窄下颌，30岁成年平静闭唇偏侧视线。陈瑶实际第二参考仅正常头肩躯干腰线自然修长下半身，不复制其脸衣装发型道具姿态。灰蓝交领衫银灰裙酒红腰带银浪绣、偏低盘髻银月钗蓝石红耳钉；两掌宽靛绢折束米色布带，一臂承底一手扶侧，真实压褶及接触受力；协调舒适站姿双鞋踝完整露出正常头身自然长腿不缩头拉躯干；透明摄影质感无景物文字水印。",
+      "reviewPass1": "重新对照高清成年写真和生成面部放大：宽杏眼、细鼻梁、小丰唇、长椭圆收尖下颌延续；视角偏转和古装妆容导致轮廓差别，不称像素一致。",
+      "reviewPass2": "第二遍全身及面手布束鞋局部，白深底alpha合成未见明显残底白边，发饰手裙摆双鞋完整，顶部余量较窄未裁切。",
+      "physicalLogicReview": {
+        "hands": "承布手掌及前臂在布底，指弯扶前侧；另一手可见指列贴上侧，拇指局部遮挡不虚称全可见；腕肘方向自然。",
+        "feet": "双鞋完整分开，鞋口踝连接自然，右踝部分裙遮，左右脚着地平面相容。",
+        "object": "布束有层叠柔软褶皱，带子绕束打结，底掌承重上手稳侧，未见悬浮穿模。",
+        "headBody": "头与肩躯干大小自然，头颈肩顺畅连接。",
+        "legs": "腰线下裙廓修长，双鞋位置合理；膝骨盆不可见，不量真实骨长。",
+        "accessories": "实际圆银蓝石步摇贴髻带垂链，红钉贴耳，腰佩下垂固定，无明显浮饰。"
+      },
+      "expressionReview": "放大面部双眼视线同向偏侧，眼睑放松，眉唇平静连贯，闭唇无歪嘴假笑瞪眼。",
+      "poseCoordinationReview": "全身后面手脚再全身，头侧转与颈肩匹配，双臂轻弯承布，肩胯支持和双脚姿态连贯，未见过拧或反折；裙下关节受遮挡。",
+      "proportionComparisonReview": "与本轮已查看陈瑶参考依次复看：头部相对肩身自然、腰线清楚，下半身视觉修长相近；宽袖和长裙影响精确比例判断，不推算膝骨盆隐藏骨长。",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentPixels": 950440,
+        "solidBounds": [
+          216,
+          7,
+          845,
+          1524
+        ],
+        "moduleLoaded": true,
+        "targetExists": true,
+        "legacyMappingsPassed": true
+      },
+      "previousStatusBeforeDuplicateReview": "completed",
+      "duplicateOfOriginalId": "peony-red",
+      "duplicateOfOriginalAsset": "assets/beauties/random/女明星/范冰冰.png",
+      "replacementReason": "用户最新规则：已有真实人物不得换装重复，改选其他未出现过的知名人物。",
+      "withdrawnAsset": "assets/beauties/random/女明星/范冰冰-蓝衫绢束.png",
+      "excludedAt": "2026-10-21T14:25:17.288842+00:00",
+      "previousStatusBeforeDeletion": "replacement_required",
+      "deletedAt": "2026-10-21T15:55:44.459174+00:00",
+      "deletionReason": "用户要求从林青霞-赭衣行旅.png起含本张及后续本批全部删除，效果差；不得自动恢复。"
+    },
+    {
+      "order": 21,
+      "id": "zhongyuan-expansion-20261021-21",
+      "referenceCelebrity": "李嘉欣",
+      "region": "香港",
+      "quotaGroup": "港台",
+      "countedInQuota": false,
+      "status": "deleted_by_user",
+      "referencePhotos": [
+        {
+          "path": "assets/beauties/references/li-jiaxin/face-reference.jpg",
+          "sourcePage": "https://www.duitang.com/blog/?id=1175793452",
+          "imageUrl": "https://a-ho-img.dtstatic.com/uploads/item/202001/18/20200118083540_pchdb.jpg",
+          "size": [
+            1400,
+            878
+          ],
+          "inspection": "年轻成年职业时期影像，五官无遮挡清楚，旧影像有颗粒和柔化；实际拍摄年份未确认，不将2020上传当拍摄时间。"
+        }
+      ],
+      "proportionReferenceAsset": "assets/beauties/random/女明星/陈瑶-杏绡桂囊.png",
+      "propDesign": "实际掌大白瓷竹纹细颈瓶一枝粉花多叶，一手扶颈一掌托底。",
+      "accessoryDesign": "半挽长发辫冠素浅玉蝶扣、黑绢带、珍珠耳钉，无垂项饰。",
+      "diversityReview": "对照最近10张及全批，首次瓷花瓶，区别茶杯碟、竹花篮、果枝；象牙白短衫墨裙粉带与素玉蝶扣形成不同配色材质动作组合。",
+      "selectionReview": "李嘉欣1988年成年参选香港小姐后成名，1990年代多部知名电影，符合港台年代与知名度要求。",
+      "targetAsset": "assets/beauties/random/女明星/李嘉欣-墨竹瓷花-比例修正-v2.png",
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a15db7-68a5-7dc3-8581-85d43d5bacff/exec-ca71c228-36ce-46dc-b001-953f42967510.png",
+      "completedAt": "2026-10-21T14:02:22.969736+00:00",
+      "prompt": "李嘉欣年轻成年影像实际面容输入，长眉宽杏眼长高鼻颧骨柔丰唇长椭圆收窄下颌、25岁平静闭唇浅笑。陈瑶实际第二输入仅正常头肩腰躯干自然修长下半身比例，不复制脸衣饰姿态。象牙白交领衫墨黑褶裙浅粉腰带墨竹绣，辫冠半挽长发浅玉蝶扣黑绢带珍珠耳钉；小白瓷细颈瓶短茎一朵粉山茶，一手扶颈一掌托底真实接触受力，肩颈肘腕自然重心合理，正常头身自然长腿不缩头，双鞋踝完整，真实透明摄影质感无背景文字水印。",
+      "reviewPass1": "复看照片与生成面部：长眉、宽杏眼、高长鼻梁、柔丰唇和长椭圆下颌保留，原图颗粒柔化与新图妆容角度不同，未宣称精确复刻。",
+      "reviewPass2": "再看全身面手花瓶鞋局部，白深底alpha合成未见明显残底白边，发饰双手裙摆双鞋完整；上沿余量较窄但未裁切。",
+      "physicalLogicReview": {
+        "hands": "扶颈手四指叠在瓶前侧、拇指在背侧遮挡；托底手掌指承瓶底，指节方向与腕臂连接自然，不将不可见拇指细节称核验。",
+        "feet": "两鞋完整分开，踝入鞋口自然，左右鞋尖方向与站姿相容，支持面可信。",
+        "object": "小瓶底贴承托手，另一手稳颈，花茎由瓶口出，叶花接茎，未见悬浮或穿模；瓶面实际有竹纹。",
+        "headBody": "头颈肩大小及衔接自然。",
+        "legs": "腰线下裙廓修长，双踝鞋可见；裙遮骨盆膝盖，不测隐藏骨长。",
+        "accessories": "蝶扣贴发、耳钉贴耳、发带垂落方向自然，无明显浮饰。"
+      },
+      "expressionReview": "放大看双眼视线一致，眼睑放松，闭唇浅笑与眉眼情绪连贯，未见歪嘴异常瞪眼。",
+      "poseCoordinationReview": "全身后局部再全身：头轻转与颈肩协调，肘腕舒适承瓶，肩胯与双鞋支持连贯，无明显关节反折或过拧；裙下腿关节受遮挡。",
+      "proportionComparisonReview": "头面适度收小、肩宽保留，视线闭唇自然，未见小头。已等高对照前版和陈瑶。",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentPixels": 962954,
+        "solidBounds": [
+          174,
+          17,
+          917,
+          1517
+        ],
+        "moduleLoaded": true,
+        "targetExists": true,
+        "legacyMappingsPassed": true
+      },
+      "proportionRevisionHistory": [
+        {
+          "name": "李嘉欣-墨竹瓷花",
+          "original": "assets/beauties/random/女明星/李嘉欣-墨竹瓷花.png",
+          "source": "/Users/fengheliang/.codex/generated_images/01a15db7-68a5-7dc3-8581-85d43d5bacff/exec-ca71c228-36ce-46dc-b001-953f42967510.png",
+          "size": [
+            1024,
+            1536
+          ],
+          "alphaRange": [
+            0,
+            254
+          ],
+          "transparentPixels": 975956,
+          "finalAsset": "assets/beauties/random/女明星/李嘉欣-墨竹瓷花-比例修正-v2.png",
+          "status": "applied",
+          "appliedAt": "2026-10-21T15:01:56.521515+00:00",
+          "tool": "built-in image_gen",
+          "promptSummary": "整体头颅脸耳发量轻收约10–12%，保留身体衣装道具面容，重接自然颈肩；张曼玉v2头部略小回调约8%。均为提示意图，非实测百分比。",
+          "reviewPass1": "头面适度收小、肩宽保留，视线闭唇自然，未见小头。已等高对照前版和陈瑶。",
+          "reviewPass2": "一手扶瓶颈一掌托底，花茎由瓶口出，两鞋完整。面部手脚及白深底全身复看，表情视线连贯、姿态协调、透明边缘无明显底色残留。裙遮骨盆膝部，未测隐藏腿长。"
+        }
+      ],
+      "smallHeadReview": "头面适度收小、肩宽保留，视线闭唇自然，未见小头。",
+      "previousStatusBeforeDeletion": "completed",
+      "deletedAt": "2026-10-21T15:55:44.459174+00:00",
+      "deletionReason": "用户要求从林青霞-赭衣行旅.png起含本张及后续本批全部删除，效果差；不得自动恢复。"
+    },
+    {
+      "order": 22,
+      "id": "zhongyuan-expansion-20261021-22",
+      "referenceCelebrity": "刘诗诗",
+      "region": "内地",
+      "quotaGroup": "内地",
+      "countedInQuota": false,
+      "status": "deleted_by_user",
+      "referencePhotos": [
+        {
+          "path": "assets/beauties/references/liu-shishi/face-reference-hd.jpg",
+          "sourcePage": "https://k.sina.cn/article_7014901667_p1a21ee7a300100o4yq.html",
+          "imageUrl": "https://n.sinaimg.cn/sinakd10117/365/w1076h1689/20200624/6f6e-ivmqpci4534616.jpg",
+          "size": [
+            1076,
+            1689
+          ],
+          "inspection": "本轮view_image查看，成年公开写真，脸侧双手未挡眉眼鼻唇，头略倾；具体拍摄年未确认，不将2020转载日期当拍摄年。"
+        }
+      ],
+      "proportionReferenceAsset": "assets/beauties/random/女明星/陈瑶-杏绡桂囊.png",
+      "propDesign": "闭合短竹简卷，深绳系，单手低位竖握中下段，不展示文字。",
+      "accessoryDesign": "实际高环盘髻双竹簪赭绢细带、铜耳钉，无项饰手饰。",
+      "diversityReview": "查看最近10张及全批，近期无竹简卷，区别瓷瓶绢束绣绷的双手托物，本张单手竖握；深林绿衫麦金裙铁锈腰带与双竹簪简饰增加不同组合。",
+      "selectionReview": "刘诗诗因仙剑奇侠传三、步步惊心等作品广为人知，符合内地选择要求，保留旧资产另做新装。",
+      "targetAsset": "assets/beauties/random/女明星/刘诗诗-绿绡竹简.png",
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a15db7-68a5-7dc3-8581-85d43d5bacff/exec-640bc80e-0939-4c71-8a66-26b6a385f4b8.png",
+      "completedAt": "2026-10-21T14:08:03.144659+00:00",
+      "prompt": "刘诗诗成年写真实际输入面容，长缓眉柔杏眼细直鼻小唇柔椭圆圆下巴，28岁成年平静闭唇侧视；陈瑶实际第二输入仅正常头肩躯干自然腰线修长下半身，不复制其脸衣装发型姿态道具。深林绿汉服麦金裙锈红腰带奶油蕨绣，低环髻双交竹簪赭细带铜耳钉；短闭合竹简卷系深绳，单手低位竖握中下段真实拇指对夹，另一手身侧放松，自然关节重心正常头身自然长腿不缩头拉躯干，双鞋踝完整，透明摄影质感无背景文字水印。",
+      "reviewPass1": "复看写真及面部放大：长缓眉、柔杏眼、细直鼻、小唇和圆收下巴延续；新图偏侧视、眼妆较深，非照片精确复制。",
+      "reviewPass2": "第二遍全身及面手竹简鞋放大、白深底alpha合成，未见明显残底白晕；发簪双手竹简裙摆双鞋完整。",
+      "physicalLogicReview": {
+        "hands": "握简拇指压前上侧、其余弯指环绕下方，指节方向自然；空手垂指自然，腕臂连接无反折。",
+        "feet": "双鞋完整分开，鞋口踝连接自然，右踝裙遮较多；鞋尖与站姿支持面相容。",
+        "object": "竹片平行成闭合卷、绳索围束，握指接触竹面无悬空；背侧竹片细节不可见。",
+        "headBody": "头与肩躯干协调，颈肩衔接放松。",
+        "legs": "腰线下长裙修长，双鞋位置合理；骨盆膝部不可见，不核验隐藏骨长。",
+        "accessories": "竹簪插髻、发带绕发下垂、耳钉贴垂，无明显浮饰。"
+      },
+      "expressionReview": "双眼同向偏侧，眼睑自然，闭唇平静与眉眼连贯，无歪嘴假笑异常瞪眼。",
+      "poseCoordinationReview": "整体后面手脚再整体，侧头与颈肩幅度自然，握简手肘舒适弯曲，空手放松，肩胯双脚支持连贯，无明显过拧反折；裙下关节遮挡。",
+      "proportionComparisonReview": "与本轮查看陈瑶依次对照，头肩正常、自然腰线明确，下半身裙廓修长接近基准；本张实际衣装为开襟长外衣而非短交领，不改变可见整体比例判断，裙遮骨盆膝盖不测真实腿长。",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentPixels": 941665,
+        "solidBounds": [
+          199,
+          25,
+          885,
+          1514
+        ],
+        "moduleLoaded": true,
+        "targetExists": true,
+        "legacyMappingsPassed": true
+      },
+      "previousStatusBeforeDuplicateReview": "completed",
+      "duplicateOfOriginalId": "zhongyuan",
+      "duplicateOfOriginalAsset": "assets/beauties/random/女明星/刘诗诗.png",
+      "replacementReason": "用户最新规则：已有真实人物不得换装重复，改选其他未出现过的知名人物。",
+      "withdrawnAsset": "assets/beauties/random/女明星/刘诗诗-绿绡竹简.png",
+      "excludedAt": "2026-10-21T14:25:17.288842+00:00",
+      "previousStatusBeforeDeletion": "replacement_required",
+      "deletedAt": "2026-10-21T15:55:44.459174+00:00",
+      "deletionReason": "用户要求从林青霞-赭衣行旅.png起含本张及后续本批全部删除，效果差；不得自动恢复。"
+    },
+    {
+      "order": 23,
+      "id": "zhongyuan-expansion-20261021-23",
+      "referenceCelebrity": "贾静雯",
+      "region": "台湾",
+      "quotaGroup": "港台",
+      "countedInQuota": false,
+      "status": "deleted_by_user",
+      "referencePhotos": [
+        {
+          "path": "assets/beauties/references/jia-jingwen/face-reference.jpg",
+          "sourcePage": "https://www.duitang.com/blog/?id=1373120193",
+          "imageUrl": "https://a-ho-img.dtstatic.com/uploads/blog/202111/07/20211107112813_8e938.jpg",
+          "size": [
+            642,
+            1440
+          ],
+          "inspection": "成年赵敏时期三帧拼图，约29岁，五官清楚无遮挡；每帧642宽，并非单脸1440高清。只取上帧平静表情，不复制下帧惊讶眼神和水印。"
+        }
+      ],
+      "proportionReferenceAsset": "assets/beauties/random/女明星/陈瑶-杏绡桂囊.png",
+      "propDesign": "掌大红木框米白鼓面拨浪鼓，短木柄，两侧短绳小丸静止下垂，单手低位握柄。",
+      "accessoryDesign": "双低辫环髻奶油绢绳、小珊瑚花扣、短铜圈耳饰。",
+      "diversityReview": "复核最近10张全批，首次拨浪鼓与静止双侧小丸结构；陶玫瑰短衫深青褶裙亚麻腰带，双低辫绢绳花扣区别近期高髻竹簪与蝶扣。",
+      "selectionReview": "贾静雯1990年代已在台湾演艺圈成名，飞龙在天、倚天屠龙记等广为人知，用户示例人选；参考用其成年时期。",
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a15db7-68a5-7dc3-8581-85d43d5bacff/exec-fea09c63-4215-4e0d-9657-2bc088479b3d.png",
+      "pauseNote": "此前暂停时未计数；用户恢复后本轮完成最终版及复核。",
+      "targetAsset": "assets/beauties/random/女明星/贾静雯-绛衫绢辫拨浪鼓.png",
+      "prompt": "Use case: identity-preserve. Finalize this existing Jia Jingwen adult fullbody costume portrait as a photoreal transparent PNG. First image is edit target: preserve face identity, soft expression, coral embroidered cross-collar top, teal full skirt, cream woven sash, low braided loops with cream ties/coral flower, short hoop earrings, both shoes, pose and wooden pellet drum. Second image is adult Jia face reference: maintain recognizable oval face, almond eyes, shaped brows and soft lips, not surprised eyes. Third image Chen Yao is ONLY body proportion guide, never face/clothing: normal head relative shoulders, natural waist, harmonious torso and graceful lower-body silhouette. Neither oversized nor tiny head, exclude hair from skull; do not elongate torso/skirt. Keep believable relaxed posture and coherent head-neck-shoulder alignment, both hands and full shoes visible, realistic joints, grip and weight. Drum red wood rim, cream skin, two bead strings hanging from opposite rim attachments; hand fully wraps handle with correct visible digits and wrist. Preserve complete hair/ornaments/hem/feet with at least a small transparent margin all around. Remove any stray nearly-transparent background pixels and halo; true alpha transparency, no scenery. Real skin and cloth texture, no plastic smoothing, no text or watermark. One single fullbody adult female.",
+      "completedAt": "2026-10-21T15:30:29.356470+00:00",
+      "generator": "built-in image_gen",
+      "physicalLogicReview": {
+        "hands": "握柄手指绕柄，拇指对向承压；部分指端被木柄遮挡，未宣称遮挡指端可见。垂手拇指与弯曲四指层叠合理，双腕无反折。",
+        "feet": "双鞋鞋尖向外，左右鞋与踝部衔接连续，鞋底处同一支撑面；鞋内足趾不可见。",
+        "propContact": "掌大木鼓通过短柄承重，两绳从鼓缘两侧下垂并连小丸，无悬空主体或穿手。",
+        "headBody": "排除辫环花扣，颅顶至下巴与肩宽躯干协调，未见明显大头或微小头。",
+        "legs": "可见双踝与鞋，长裙遮住骨盆膝部，不能核验真实股骨小腿长度；腰线下裙轮廓与足位自然。"
+      },
+      "expressionReview": "放大检查双眼眼睑及视线一致，眉眼和闭唇浅笑连贯，无歪嘴瞪眼；比参考上帧笑意略多。",
+      "poseCoordinationReview": "头微侧、颈肩连接顺畅，肩放松，握鼓臂与垂臂动作连贯；裙内髋膝遮挡，只能从躯干和足位判断稳定支撑。",
+      "proportionComparisonReview": "与陈瑶全身对照，候选正脸宽于侧脸属视角差异；颅顶至下巴约占可见全高七分之一，未将发饰计入。头肩腰线及下半身修长效果相近，未见明显大头或头过小。长裙遮挡膝骨盆，未实测腿骨长度。",
+      "reviews": [
+        {
+          "pass": 1,
+          "result": "passed",
+          "observation": "对照成年赵敏参考上帧，杏眼、眉形、鼻梁与软唇保留，脸侧略收；完整全身衣裙头肩比例自然，现代摄影光影有变化。"
+        },
+        {
+          "pass": 2,
+          "result": "passed",
+          "observation": "重新检查最终白底深底、面部双手鼓鞋放大图，再回看全身；双鞋完整，鼓柄接触和表情姿态无明显结构异常。"
+        }
+      ],
+      "alphaReview": {
+        "mode": "RGBA",
+        "size": [
+          1024,
+          1536
+        ],
+        "extrema": [
+          0,
+          254
+        ],
+        "fullyTransparentPixels": 960843,
+        "visibleBoundsAlpha128": [
+          182,
+          12,
+          873,
+          1527
+        ],
+        "whiteDarkComposites": "outputs/random-beauties/jia-review-20261021",
+        "result": "白底深底未见背景矩形或显著晕边；保留工具原生alpha，未后处理最终图。"
+      },
+      "validation": {
+        "moduleLoaded": true,
+        "targetExists": true,
+        "legacyMappingsPassed": true
+      },
+      "previousStatusBeforeDeletion": "completed",
+      "deletedAt": "2026-10-21T15:55:44.459174+00:00",
+      "deletionReason": "用户要求从林青霞-赭衣行旅.png起含本张及后续本批全部删除，效果差；不得自动恢复。"
+    },
+    {
+      "order": 24,
+      "id": "zhongyuan-expansion-20261021-24",
+      "referenceCelebrity": "徐静蕾",
+      "region": "内地",
+      "quotaGroup": "内地",
+      "countedInQuota": false,
+      "status": "deleted_by_user",
+      "referencePhotos": [
+        {
+          "path": "assets/beauties/references/xu-jinglei/portrait-reference.jpeg",
+          "sourcePage": "https://www.duitang.com/blog/?id=299081038",
+          "imageUrl": "https://a-ho-img.dtstatic.com/uploads/item/201502/09/20150209175020_TsFft.jpeg",
+          "size": [
+            800,
+            1199
+          ],
+          "inspection": "面容清晰无遮挡，成年婚纱宣传照片；拍摄年份和年轻成年时期资格尚未核实，不能作为已满足年轻时期要求的参考。"
+        }
+      ],
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a15db7-68a5-7dc3-8581-85d43d5bacff/exec-7b46f4e9-e2dc-4c64-a5e4-11684366bc51.png",
+      "proportionReferenceAsset": "assets/beauties/random/女明星/陈瑶-杏绡桂囊.png",
+      "propDesign": "空手，低位弯臂与自然垂臂。",
+      "accessoryDesign": "低盘辫髻、木梳、小银耳钉，蓝灰交领衫配赭色褶裙。",
+      "diversityReview": "已检查最近10项，空手素雅低髻区别近期瓷瓶、花枝、拨浪鼓；没有连续复用主道具。",
+      "reviewNote": "已生成草图但参考年轻时期资格未核实，未进行完整两遍验收，不接入随机池不计配额。下次先更换可验证年轻成年照片再处理。",
+      "attemptedAt": "2026-10-21T15:27:01.791503+00:00",
+      "referenceSearchAttempts": [
+        {
+          "at": "2026-10-21T15:34:49.239312+00:00",
+          "result": "no_acceptable_reference",
+          "sources": [
+            {
+              "sourcePage": "https://photo.sina.cn/album_4_704_158599.htm?ch=4&hd=1&vt=4",
+              "imageUrl": "https://k.sinaimg.cn/www/dy/slidenews/4_img/2016_50/704_2089484_835965.jpg/w640slw.jpg",
+              "path": "assets/beauties/references/xu-jinglei/1998-reference.jpg",
+              "pixels": [
+                640,
+                865
+              ],
+              "review": "1998年剧照约24岁，面部小且模糊，不作为生成输入。"
+            },
+            {
+              "sourcePage": "https://ent.sina.com.cn/s/m/2006-04-30/12171070326.html",
+              "imageUrl": "https://image2.sina.com.cn/ent/s/p/2006-04-30/U1326P28T3D1070314F326DT20060430120940.jpg",
+              "path": "assets/beauties/references/xu-jinglei/2006-reference.jpg",
+              "pixels": [
+                483,
+                600
+              ],
+              "review": "成年32岁写真但仅483x600，阴影与面部尺寸不适合高清身份参考。"
+            },
+            {
+              "sourcePage": "https://ent.sina.com.cn/s/m/2006-04-30/12171070326.html",
+              "imageUrl": "https://image2.sina.com.cn/ent/s/p/2006-04-30/U1326P28T3D1070320F326DT20060430121138.jpg",
+              "path": "assets/beauties/references/xu-jinglei/2006-face.jpg",
+              "pixels": [
+                457,
+                600
+              ],
+              "review": "全身构图可见但面部太小，拒绝作为主要容貌参考。"
+            }
+          ],
+          "note": "本轮未调用生成、未入库、计数不变；后续可换符合去重及知名度要求的内地人选，不反复消耗在同一低清来源。"
+        }
+      ],
+      "previousStatusBeforeDeletion": "reference_recheck_required",
+      "deletedAt": "2026-10-21T15:55:44.459174+00:00",
+      "deletionReason": "用户要求从林青霞-赭衣行旅.png起含本张及后续本批全部删除，效果差；不得自动恢复。"
+    },
+    {
+      "order": 25,
+      "id": "zhongyuan-expansion-20261021-25",
+      "referenceCelebrity": "赵薇",
+      "region": "内地",
+      "quotaGroup": "内地",
+      "countedInQuota": false,
+      "status": "deleted_by_user",
+      "attemptedAt": "2026-10-21T15:43:13.336837+00:00",
+      "selectionReview": "原数据和身份审计中未出现赵薇；赵丽颖、汤唯虽然不在原有姓名列表，但旧映射已有同名人物资产，保守跳过。赵薇为用户列举广泛知名人选。",
+      "referencePhotos": [
+        {
+          "sourcePage": "https://ent.sina.com.cn/s/m/p/2006-02-11/0856982621.html",
+          "imageUrl": "https://image2.sina.com.cn/ent/s/m/p/2006-02-11/U1513P28T3D982621F326DT20060211085653.JPG",
+          "path": "assets/beauties/references/zhao-wei/2006-face.jpg",
+          "size": [
+            500,
+            574
+          ],
+          "inspection": "约29岁公开写真，单侧眼被斜刘海遮挡，不通过主参考要求。"
+        },
+        {
+          "sourcePage": "https://yule.sohu.com/68/12/article213051268.shtml",
+          "imageUrl": "https://photo.sohu.com/70/12/Img213051270.jpg",
+          "path": "assets/beauties/references/zhao-wei/2003-portrait.jpg",
+          "size": [
+            400,
+            536
+          ],
+          "inspection": "2003年发布的成年近景写真，头发横穿眉眼鼻部且分辨率低，不通过无遮挡高清参考要求。"
+        }
+      ],
+      "proportionReferenceAsset": "assets/beauties/references/user-proportion-standard-20261021.png",
+      "reviewNote": "本轮已查看用户新比例基准及最近10条造型；候选照片未满足面部无遮挡清晰条件，未调用image_gen、未入库、未计数。",
+      "previousStatusBeforeDeletion": "reference_recheck_required",
+      "deletedAt": "2026-10-21T15:55:44.459174+00:00",
+      "deletionReason": "用户要求从林青霞-赭衣行旅.png起含本张及后续本批全部删除，效果差；不得自动恢复。"
+    },
+    {
+      "order": 26,
+      "id": "zhongyuan-expansion-20261021-26",
+      "referenceCelebrity": "蒋勤勤",
+      "region": "内地",
+      "quotaGroup": "内地",
+      "countedInQuota": false,
+      "status": "deleted_by_user",
+      "selectionReview": "完整数据和原有身份审计无蒋勤勤。西施、苍天有泪、风云等代表作品具有广泛知名度；参考为1996年杂志所载西施剧照，拍摄期约19至20岁，成年。",
+      "referencePhotos": [
+        {
+          "path": "assets/beauties/references/jiang-qinqin/1996-xishi.jpg",
+          "sourcePage": "https://www.dienanh.net/tuong-can-can-va-nhung-nang-tay-thi-tren-man-anh-hoa-ngu-29830.html",
+          "imageUrl": "https://static1.dienanh.net/upload/202107/76feb0dd-e0d9-4426-aa68-ecc9e0cb7266.jpg",
+          "size": [
+            750,
+            1112
+          ],
+          "inspection": "实际查看杂志扫描，96·6及西施剧照署名可见；眉眼鼻唇清楚无遮挡，纸本扫描柔化，不是1200以上现代原生照片。手在脸侧但不遮五官。"
+        }
+      ],
+      "generator": "built-in image_gen",
+      "prompt": "undefined",
+      "targetAsset": "assets/beauties/random/女明星/蒋勤勤-紫褙素绳.png",
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a15db7-68a5-7dc3-8581-85d43d5bacff/exec-6749ee6c-9aef-4872-9287-5b5e9e618de2.png",
+      "proportionReferenceAsset": "assets/beauties/references/user-proportion-standard-20261021.png",
+      "propDesign": "空手，垂臂手放松，另一手低腰侧轻弯，不强行持物。",
+      "accessoryDesign": "低横盘辫髻、小银月梳和石榴红耳钉，赭编绳束腰，无垂链项饰。",
+      "diversityReview": "检查最近10项及本批：无持物与上一完成拨浪鼓有别；紫长褙子、窄袖象牙衫、靛裙、几何织边区别近期交领短衫花绣。空手类别复用但造型姿态和材质不同；没有连续同主道具。",
+      "physicalLogicReview": {
+        "hands": "双腕朝向与前臂连续；垂手拇指与弯曲指端分开，部分指端互相遮挡，不能声称五指全部展开可见；腰侧手四指层叠与拇指分离，无明显多指或反折。",
+        "feet": "双踝连接连续、鞋口包住脚部，双鞋完整，鞋尖自然分开，鞋底支撑与站姿相容；足趾在鞋内不可见。",
+        "propContact": "空手无持物受力；银梳插在盘髻侧，耳钉贴耳，编绳腰结下垂可信。",
+        "headBody": "排除盘髻与梳，颅顶下巴和肩宽关系自然，颈肩无断接，无明显大头或微小头。",
+        "legs": "双踝可见，长裙遮髋膝，不能直接核验腿骨长；由自然腰线、裙体轮廓和两鞋足位检查整体修长与支撑。"
+      },
+      "expressionReview": "放大双眼视线均朝镜头附近，眼睑松弛，眉眼闭唇共同表达安静，唇线不歪，无异常瞪眼；比扫描参考更平静且摄影光影不同。",
+      "poseCoordinationReview": "头微倾与颈肩同向连接，肩放松，躯干少量转向，双臂舒展，脚微分形成支撑；髋膝被裙遮挡，仅从可见上身足位判断，无虚报隐藏关节。",
+      "proportionComparisonReview": "comparison.jpg按可见颅顶近似标记至鞋底统一1040高，基准y62至1500，候选y48至1506，发髻梳不作为测量头高。候选头颈肩和自然腰线与基准接近，下半身修长但无躯干拉长或小头感；侧向角度及长褙子改变肩线，髋膝遮挡，不宣称精确腿骨比例。",
+      "reviews": [
+        {
+          "pass": 1,
+          "result": "passed",
+          "observation": "对照成年扫描参考，保留细弓眉、大杏眼、直鼻和丰润唇，脸部较参考略窄且更平静；全身完整，肩颈自然。"
+        },
+        {
+          "pass": 2,
+          "result": "passed",
+          "observation": "重看统一人物高度比较、面部双手双鞋放大、白底深底，再回看全身；头身双向检查、衣缘和鞋底接触无明显异常。"
+        }
+      ],
+      "alphaReview": {
+        "mode": "RGBA",
+        "size": [
+          1024,
+          1536
+        ],
+        "extrema": [
+          0,
+          254
+        ],
+        "fullyTransparentPixels": 1029142,
+        "visibleBoundsAlpha128": [
+          223,
+          45,
+          875,
+          1503
+        ],
+        "qaDirectory": "outputs/random-beauties/jiang-review-20261021",
+        "result": "实际alpha存在，白底深底未见矩形背景与明显晕边，最终图未做后处理。"
+      },
+      "completedAt": "2026-10-21T15:48:51.466097+00:00",
+      "validation": {
+        "moduleLoaded": true,
+        "targetExists": true,
+        "legacyMappingsPassed": true
+      },
+      "previousStatusBeforeDeletion": "completed",
+      "deletedAt": "2026-10-21T15:55:44.459174+00:00",
+      "deletionReason": "用户要求从林青霞-赭衣行旅.png起含本张及后续本批全部删除，效果差；不得自动恢复。"
+    }
+  ],
+  "selectionPolicyUpdate": "用户最新选人要求：港台女明星只选在20世纪80—90年代成名、非常著名的女明星（不是指出生于80—90年代）。例如香港林青霞、王祖贤、张曼玉、钟楚红、关之琳、邱淑贞、张敏、李嘉欣、周慧敏、朱茵、黎姿、袁咏仪；台湾林凤娇、胡因梦、萧蔷、贾静雯等，按实际公开成年时期照片可用性选择，不强制全选。采用年轻成年时期（18岁以上）清晰照片，避免误用未成年照；后续不再选文咏珊等不符此年代条件的人物。已完成文咏珊保留但不计入本次100张配额；内地部分维持年轻成年女明星参考要求。",
+  "quotas": {
+    "港台": 50,
+    "内地": 50
+  },
+  "completedByGroup": {
+    "港台": 0,
+    "内地": 1
+  },
+  "physicalLogicPolicy": "用户新增的生成与验收硬性要求：每张提示词明确正常协调头身比例，腿部适当修长，利用自然腰线、合理股骨小腿比例与服饰剪裁表现长腿，不能通过缩小头部、拉长躯干或关节畸形实现。生成后必须查看全身图，并放大检查双手、双脚和所有物品：手指数量与关节、手腕朝向、手臂连接合理；双脚左右方向、踝部连接、鞋内脚部和着地接触自然；姿势有可信重心与支撑，不悬浮不扭曲。持物必须有真实握持或承托接触、合理受力、正确遮挡与透视，道具尺寸和结构合理，不穿模、不粘连、不悬空；书本、扇子、篮子、乐器等按用途检查拿法。检查头颈肩衔接、头与身体大小比例、骨盆与腿部连接、膝踝位置、双腿长度和整体透视；衣裙遮挡时不把看不见的解剖结构虚报已核验，必要时要求清楚露出双鞋并重新生成。发现不合理之处，修正并重新检查后才能计入完成数和加入游戏。每张进度记录增加physicalLogicReview，明确写手部、脚部、持物接触受力、头身比例、腿部比例的实际检查结果。",
+  "propAccessoryDiversityPolicy": "用户新增道具与配饰多样性要求：不能来回重复那几样。每张生成前查看本批已有条目，记录并比较道具类型、造型、材质、配饰样式和持握动作；至少检查最近10张并兼顾全批频次，优先未用或低频组合，不连续使用相同主道具及同款配饰。候选按人物气质和古装语境选择：不同形制的团扇折扇羽扇、竹简卷轴书册画卷、花枝花篮果盘、瓷杯茶壶茶盘、香盒药包药篮、针线绣绷布匹、竹笛箫埙等便携乐器、纸伞、灯笼、小弓及箭囊等；可自然空手，不强行人人持物。上述仅为灵感池，不机械轮换，不限定只用这些。配饰变化涵盖发簪步摇发钗发梳花钿绢花抹额、耳坠耳钉、玉佩璎珞项饰、腰带宫绦荷包、手镯等，在金银玉木竹丝绢瓷等材质、纹样、色彩、数量和简繁程度之间变化，保留素雅少饰造型，不堆砌首饰。每幅形成有区别且协调的服装、道具、配饰与动作组合，不只是换颜色。道具大小重量和持握用途合理，配饰有可信佩戴固定点、垂坠方向与遮挡关系，无悬浮穿模粘连。继续遵守手脚物理逻辑、正常头身比例和自然修长腿部要求。每个新条目记录propDesign、accessoryDesign和diversityReview，说明与近期作品的区别；相同大类复用时必须改变有意义的形制或用途组合，避免书本扇子香囊或单发簪长期占据多数。",
+  "mainlandCelebritySelectionPolicy": "用户最新补充的内地选人要求（优先于此前仅要求年轻成年或未使用过的宽泛条件）：内地50张只选特别出名、具有广泛大众知名度及代表作品的女明星，不选二线三线、仅小圈子知名或只有短期话题热度的人物。不把主观线级当作权威事实，按长期国民知名度与代表作判断；候选可优先巩俐、章子怡、周迅、徐静蕾、赵薇、范冰冰、李冰冰、刘亦菲、杨幂、赵丽颖、刘诗诗、唐嫣、孙俪、刘涛、杨紫、迪丽热巴、高圆圆、汤唯、倪妮等广为人知的人选，名单仅为示例不是强制全选。优先级为大众知名度、清晰年轻成年照片与质量、人物多样性；不得为了凑50或追求从未用过而降到二三线。原项目有过该明星也可以制作不同服饰道具动作的新立绘，保留旧图；若特别出名且照片可用的不同人物不足50，允许同一知名明星做有明显区别的新造型以完成50张，不拿低知名度人物凑数。仍使用18岁以上年轻成年时期照片。既有已验收图暂保留，不擅自删除或追溯改动已完成计数；从本次说明起新选人严格执行，未完成候选若不符则换人。",
+  "expressionAndPosePolicy": "用户最新新增表情与全身动作验收要求：每张生成后必须放大查看面部并结合全身图检查表情自然、整体身体动作协调。面部检查眼神与视线方向一致、双眼及眼睑状态合理、眉眼鼻唇共同表达连贯情绪，嘴角唇齿及笑容自然，无僵硬假笑、歪嘴、异常瞪眼、表情局部冲突；允许符合人物气质的平静、浅笑、专注等多样表情，不强求人人微笑或正视镜头。全身检查头部转向和颈肩关系、肩胯倾斜、脊柱与躯干扭转、双臂手腕、骨盆腿脚的动作联动及受力重心，动作应放松连贯、舒适可实现，不摆出僵硬立正、关节反折、过度拧身、肩颈紧绷或四肢各自朝向不协调的姿势。表情应与姿态、持物用途和人物气质相配，避免脸部情绪与身体动作割裂。先看整体，再放大面部及关键关节，最后回看全身确认；发现问题须修正并再次检查通过后才计数和加入游戏。每个新条目增加expressionReview与poseCoordinationReview，记录实际观察和遮挡限制，不以套话代替验收。此要求与原手脚物理逻辑、正常头身及自然修长腿、多样道具配饰规则共同执行。",
+  "proportionReferenceAsset": "assets/beauties/references/user-proportion-standard-20261021.png",
+  "proportionReferencePolicy": "用户2026-10-21最新上传提篮草药图为后续首要比例基准，陈瑶仅辅助。生成前查看并作为实际image_gen输入，仅参考头肩颈腰及修长下半身关系，不复制脸、衣服和道具。生成后按颅顶至鞋底实际人物高度统一缩放并排检查，排除发髻发饰，双向检查大头与过小头，不缩头拉躯干或拉裙摆；长裙遮挡髋膝，不虚报真实腿骨长度。逐项记录实际观察和遮挡限制。不自动返工历史图片。",
+  "celebrityUniquenessPolicy": "原有数据与本批均按真实人物去重，不允许同明星换装复用；重复项撤回不计数并换人，优先于旧宽松规则。",
+  "executionHold": "用户批量删除后暂停；自动化工具报告任务不存在，未经明确恢复不得继续生成。",
+  "deletionAudit": {
+    "at": "2026-10-21T15:55:44.459174+00:00",
+    "scope": "本批order>=6，含林青霞-赭衣行旅",
+    "removedRuntimeEntries": 15,
+    "deletedImageFiles": [
+      "/Users/fengheliang/.codex/generated_images/01a15db7-68a5-7dc3-8581-85d43d5bacff/exec-0fa6d4ae-4771-418f-ab5b-252cae5f891e.png",
+      "/Users/fengheliang/.codex/generated_images/01a15db7-68a5-7dc3-8581-85d43d5bacff/exec-1d6bcd8b-f314-4fb2-8535-cae482f5cf4e.png",
+      "/Users/fengheliang/.codex/generated_images/01a15db7-68a5-7dc3-8581-85d43d5bacff/exec-4a81ac55-c386-480d-a853-7fe671188313.png",
+      "/Users/fengheliang/.codex/generated_images/01a15db7-68a5-7dc3-8581-85d43d5bacff/exec-523a64bf-b569-4875-952b-e8902eb2ff50.png",
+      "/Users/fengheliang/.codex/generated_images/01a15db7-68a5-7dc3-8581-85d43d5bacff/exec-567c120d-c1c6-41a2-a028-4ebfcbd853c9.png",
+      "/Users/fengheliang/.codex/generated_images/01a15db7-68a5-7dc3-8581-85d43d5bacff/exec-5757b063-f9b7-4a5e-b869-ea72e3d13c61.png",
+      "/Users/fengheliang/.codex/generated_images/01a15db7-68a5-7dc3-8581-85d43d5bacff/exec-59d822f1-dfff-41f5-b594-d8e7efa328ff.png",
+      "/Users/fengheliang/.codex/generated_images/01a15db7-68a5-7dc3-8581-85d43d5bacff/exec-5cc1b952-cfd2-4f47-900e-f65bf2ce8340.png",
+      "/Users/fengheliang/.codex/generated_images/01a15db7-68a5-7dc3-8581-85d43d5bacff/exec-640bc80e-0939-4c71-8a66-26b6a385f4b8.png",
+      "/Users/fengheliang/.codex/generated_images/01a15db7-68a5-7dc3-8581-85d43d5bacff/exec-6749ee6c-9aef-4872-9287-5b5e9e618de2.png",
+      "/Users/fengheliang/.codex/generated_images/01a15db7-68a5-7dc3-8581-85d43d5bacff/exec-78ecf274-f980-4af8-80cd-7b690e93fc95.png",
+      "/Users/fengheliang/.codex/generated_images/01a15db7-68a5-7dc3-8581-85d43d5bacff/exec-7b46f4e9-e2dc-4c64-a5e4-11684366bc51.png",
+      "/Users/fengheliang/.codex/generated_images/01a15db7-68a5-7dc3-8581-85d43d5bacff/exec-98568394-26e8-4703-a73b-7137899cc52a.png",
+      "/Users/fengheliang/.codex/generated_images/01a15db7-68a5-7dc3-8581-85d43d5bacff/exec-a0dd56e6-f08a-4f93-b632-d6bafe6b46a0.png",
+      "/Users/fengheliang/.codex/generated_images/01a15db7-68a5-7dc3-8581-85d43d5bacff/exec-a2c718ee-c6dd-4226-a969-c9c44f223c7e.png",
+      "/Users/fengheliang/.codex/generated_images/01a15db7-68a5-7dc3-8581-85d43d5bacff/exec-bdf46105-32df-4f5f-93eb-4febfee0cdd8.png",
+      "/Users/fengheliang/.codex/generated_images/01a15db7-68a5-7dc3-8581-85d43d5bacff/exec-c00ab252-4e48-4bed-be34-f5087921afea.png",
+      "/Users/fengheliang/.codex/generated_images/01a15db7-68a5-7dc3-8581-85d43d5bacff/exec-ca71c228-36ce-46dc-b001-953f42967510.png",
+      "/Users/fengheliang/.codex/generated_images/01a15db7-68a5-7dc3-8581-85d43d5bacff/exec-cd9fb3f2-d732-4059-8459-cf4efaf9374f.png",
+      "/Users/fengheliang/.codex/generated_images/01a15db7-68a5-7dc3-8581-85d43d5bacff/exec-dbcc1e16-f042-4074-bbf0-c971d92b9a06.png",
+      "/Users/fengheliang/.codex/generated_images/01a15db7-68a5-7dc3-8581-85d43d5bacff/exec-eac51ff7-6fd4-4e60-bc63-1b94fc159879.png",
+      "/Users/fengheliang/.codex/generated_images/01a15db7-68a5-7dc3-8581-85d43d5bacff/exec-fea09c63-4215-4e0d-9657-2bc088479b3d.png",
+      "/Users/fengheliang/workbench/source/g20/games/assets/beauties/random/女明星/关之琳-蓝绡漆盒-比例修正-v2.png",
+      "/Users/fengheliang/workbench/source/g20/games/assets/beauties/random/女明星/关之琳-蓝绡漆盒.png",
+      "/Users/fengheliang/workbench/source/g20/games/assets/beauties/random/女明星/刘诗诗-绿绡竹简.png",
+      "/Users/fengheliang/workbench/source/g20/games/assets/beauties/random/女明星/周慧敏-青兰素袖-比例修正-v2.png",
+      "/Users/fengheliang/workbench/source/g20/games/assets/beauties/random/女明星/周慧敏-青兰素袖.png",
+      "/Users/fengheliang/workbench/source/g20/games/assets/beauties/random/女明星/周迅-灰蕨陶埙-比例修正-v2.png",
+      "/Users/fengheliang/workbench/source/g20/games/assets/beauties/random/女明星/周迅-灰蕨陶埙.png",
+      "/Users/fengheliang/workbench/source/g20/games/assets/beauties/random/女明星/巩俐-松麦托桃-比例修正-v2.png",
+      "/Users/fengheliang/workbench/source/g20/games/assets/beauties/random/女明星/巩俐-松麦托桃.png",
+      "/Users/fengheliang/workbench/source/g20/games/assets/beauties/random/女明星/张敏-靛衣行囊-比例修正-v2.png",
+      "/Users/fengheliang/workbench/source/g20/games/assets/beauties/random/女明星/张敏-靛衣行囊.png",
+      "/Users/fengheliang/workbench/source/g20/games/assets/beauties/random/女明星/张曼玉-秋菊竹篮-比例修正-v2.png",
+      "/Users/fengheliang/workbench/source/g20/games/assets/beauties/random/女明星/张曼玉-秋菊竹篮-比例修正-v3.png",
+      "/Users/fengheliang/workbench/source/g20/games/assets/beauties/random/女明星/张曼玉-秋菊竹篮.png",
+      "/Users/fengheliang/workbench/source/g20/games/assets/beauties/random/女明星/张雪迎-竹韵银辫-比例修正-v2.png",
+      "/Users/fengheliang/workbench/source/g20/games/assets/beauties/random/女明星/张雪迎-竹韵银辫.png",
+      "/Users/fengheliang/workbench/source/g20/games/assets/beauties/random/女明星/朱茵-赭衣榴枝.png",
+      "/Users/fengheliang/workbench/source/g20/games/assets/beauties/random/女明星/李冰冰-褐梅铜镜-比例修正-v2.png",
+      "/Users/fengheliang/workbench/source/g20/games/assets/beauties/random/女明星/李冰冰-褐梅铜镜.png",
+      "/Users/fengheliang/workbench/source/g20/games/assets/beauties/random/女明星/李嘉欣-墨竹瓷花-比例修正-v2.png",
+      "/Users/fengheliang/workbench/source/g20/games/assets/beauties/random/女明星/李嘉欣-墨竹瓷花.png",
+      "/Users/fengheliang/workbench/source/g20/games/assets/beauties/random/女明星/杨幂-绛衫叶绣.png",
+      "/Users/fengheliang/workbench/source/g20/games/assets/beauties/random/女明星/林青霞-赭衣行旅.png",
+      "/Users/fengheliang/workbench/source/g20/games/assets/beauties/random/女明星/章子怡-金榴纸灯.png",
+      "/Users/fengheliang/workbench/source/g20/games/assets/beauties/random/女明星/范冰冰-蓝衫绢束.png",
+      "/Users/fengheliang/workbench/source/g20/games/assets/beauties/random/女明星/蒋勤勤-紫褙素绳.png",
+      "/Users/fengheliang/workbench/source/g20/games/assets/beauties/random/女明星/贾静雯-绛衫绢辫拨浪鼓.png",
+      "/Users/fengheliang/workbench/source/g20/games/assets/beauties/random/女明星/钟楚红-绛杏收伞.png"
+    ],
+    "alreadyMissing": [],
+    "retainedOrders": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  "additionalDeletionAudits": [
+    {
+      "at": "2026-10-21T15:58:11.164775+00:00",
+      "files": [
+        "assets/beauties/random/女明星/唐嫣-绛梅绣绷-比例修正-v2.png",
+        "assets/beauties/random/女明星/唐嫣-绛梅绣绷.png",
+        "assets/beauties/random/女明星/王祖贤-月白兰书-比例修正-v2.png",
+        "assets/beauties/random/女明星/邱淑贞-青绫瓷韵.png"
+      ],
+      "removedRuntimeIds": [
+        "zhongyuan-expansion-20261021-05",
+        "zhongyuan-expansion-20261021-04",
+        "zhongyuan-expansion-20261021-02"
+      ]
+    }
+  ]
+}

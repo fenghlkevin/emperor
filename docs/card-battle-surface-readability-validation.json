@@ -1,0 +1,556 @@
+{
+  "date": "2026-10-25T14:10:24.353Z",
+  "cases": 90,
+  "effects": 15,
+  "results": [
+    {
+      "id": "attack",
+      "width": 80,
+      "ratio": 1,
+      "minInk": 130.1
+    },
+    {
+      "id": "temp",
+      "width": 80,
+      "ratio": 1,
+      "minInk": 54
+    },
+    {
+      "id": "health",
+      "width": 80,
+      "ratio": 1,
+      "minInk": 120.4
+    },
+    {
+      "id": "shield",
+      "width": 80,
+      "ratio": 1,
+      "minInk": 85.7
+    },
+    {
+      "id": "guard",
+      "width": 80,
+      "ratio": 1,
+      "minInk": 76.9
+    },
+    {
+      "id": "rush",
+      "width": 80,
+      "ratio": 1,
+      "minInk": 35
+    },
+    {
+      "id": "stealth",
+      "width": 80,
+      "ratio": 1,
+      "minInk": 62.9
+    },
+    {
+      "id": "anti",
+      "width": 80,
+      "ratio": 1,
+      "minInk": 61
+    },
+    {
+      "id": "freeze",
+      "width": 80,
+      "ratio": 1,
+      "minInk": 106
+    },
+    {
+      "id": "silence",
+      "width": 80,
+      "ratio": 1,
+      "minInk": 79.6
+    },
+    {
+      "id": "weak",
+      "width": 80,
+      "ratio": 1,
+      "minInk": 51.8
+    },
+    {
+      "id": "frail",
+      "width": 80,
+      "ratio": 1,
+      "minInk": 37.5
+    },
+    {
+      "id": "horse",
+      "width": 80,
+      "ratio": 1,
+      "minInk": 47
+    },
+    {
+      "id": "pierce",
+      "width": 80,
+      "ratio": 1,
+      "minInk": 57.7
+    },
+    {
+      "id": "temp-weak",
+      "width": 80,
+      "ratio": 1,
+      "minInk": 45.6
+    },
+    {
+      "id": "attack",
+      "width": 80,
+      "ratio": 2,
+      "minInk": 134.9
+    },
+    {
+      "id": "temp",
+      "width": 80,
+      "ratio": 2,
+      "minInk": 54.2
+    },
+    {
+      "id": "health",
+      "width": 80,
+      "ratio": 2,
+      "minInk": 131.3
+    },
+    {
+      "id": "shield",
+      "width": 80,
+      "ratio": 2,
+      "minInk": 91
+    },
+    {
+      "id": "guard",
+      "width": 80,
+      "ratio": 2,
+      "minInk": 81.9
+    },
+    {
+      "id": "rush",
+      "width": 80,
+      "ratio": 2,
+      "minInk": 36.3
+    },
+    {
+      "id": "stealth",
+      "width": 80,
+      "ratio": 2,
+      "minInk": 65.2
+    },
+    {
+      "id": "anti",
+      "width": 80,
+      "ratio": 2,
+      "minInk": 67.2
+    },
+    {
+      "id": "freeze",
+      "width": 80,
+      "ratio": 2,
+      "minInk": 104.8
+    },
+    {
+      "id": "silence",
+      "width": 80,
+      "ratio": 2,
+      "minInk": 82.6
+    },
+    {
+      "id": "weak",
+      "width": 80,
+      "ratio": 2,
+      "minInk": 57.2
+    },
+    {
+      "id": "frail",
+      "width": 80,
+      "ratio": 2,
+      "minInk": 39.7
+    },
+    {
+      "id": "horse",
+      "width": 80,
+      "ratio": 2,
+      "minInk": 51.8
+    },
+    {
+      "id": "pierce",
+      "width": 80,
+      "ratio": 2,
+      "minInk": 63.3
+    },
+    {
+      "id": "temp-weak",
+      "width": 80,
+      "ratio": 2,
+      "minInk": 49.3
+    },
+    {
+      "id": "attack",
+      "width": 96,
+      "ratio": 1,
+      "minInk": 158.2
+    },
+    {
+      "id": "temp",
+      "width": 96,
+      "ratio": 1,
+      "minInk": 68.3
+    },
+    {
+      "id": "health",
+      "width": 96,
+      "ratio": 1,
+      "minInk": 148.1
+    },
+    {
+      "id": "shield",
+      "width": 96,
+      "ratio": 1,
+      "minInk": 106.4
+    },
+    {
+      "id": "guard",
+      "width": 96,
+      "ratio": 1,
+      "minInk": 92.3
+    },
+    {
+      "id": "rush",
+      "width": 96,
+      "ratio": 1,
+      "minInk": 42.7
+    },
+    {
+      "id": "stealth",
+      "width": 96,
+      "ratio": 1,
+      "minInk": 84.8
+    },
+    {
+      "id": "anti",
+      "width": 96,
+      "ratio": 1,
+      "minInk": 73.7
+    },
+    {
+      "id": "freeze",
+      "width": 96,
+      "ratio": 1,
+      "minInk": 132.4
+    },
+    {
+      "id": "silence",
+      "width": 96,
+      "ratio": 1,
+      "minInk": 98.5
+    },
+    {
+      "id": "weak",
+      "width": 96,
+      "ratio": 1,
+      "minInk": 60.5
+    },
+    {
+      "id": "frail",
+      "width": 96,
+      "ratio": 1,
+      "minInk": 44.6
+    },
+    {
+      "id": "horse",
+      "width": 96,
+      "ratio": 1,
+      "minInk": 56.9
+    },
+    {
+      "id": "pierce",
+      "width": 96,
+      "ratio": 1,
+      "minInk": 70.1
+    },
+    {
+      "id": "temp-weak",
+      "width": 96,
+      "ratio": 1,
+      "minInk": 54.9
+    },
+    {
+      "id": "attack",
+      "width": 96,
+      "ratio": 2,
+      "minInk": 166.9
+    },
+    {
+      "id": "temp",
+      "width": 96,
+      "ratio": 2,
+      "minInk": 71.3
+    },
+    {
+      "id": "health",
+      "width": 96,
+      "ratio": 2,
+      "minInk": 159.4
+    },
+    {
+      "id": "shield",
+      "width": 96,
+      "ratio": 2,
+      "minInk": 111.6
+    },
+    {
+      "id": "guard",
+      "width": 96,
+      "ratio": 2,
+      "minInk": 100.2
+    },
+    {
+      "id": "rush",
+      "width": 96,
+      "ratio": 2,
+      "minInk": 46.4
+    },
+    {
+      "id": "stealth",
+      "width": 96,
+      "ratio": 2,
+      "minInk": 87.9
+    },
+    {
+      "id": "anti",
+      "width": 96,
+      "ratio": 2,
+      "minInk": 82.6
+    },
+    {
+      "id": "freeze",
+      "width": 96,
+      "ratio": 2,
+      "minInk": 130.5
+    },
+    {
+      "id": "silence",
+      "width": 96,
+      "ratio": 2,
+      "minInk": 104.4
+    },
+    {
+      "id": "weak",
+      "width": 96,
+      "ratio": 2,
+      "minInk": 71
+    },
+    {
+      "id": "frail",
+      "width": 96,
+      "ratio": 2,
+      "minInk": 48.6
+    },
+    {
+      "id": "horse",
+      "width": 96,
+      "ratio": 2,
+      "minInk": 65.5
+    },
+    {
+      "id": "pierce",
+      "width": 96,
+      "ratio": 2,
+      "minInk": 79.6
+    },
+    {
+      "id": "temp-weak",
+      "width": 96,
+      "ratio": 2,
+      "minInk": 62.1
+    },
+    {
+      "id": "attack",
+      "width": 144,
+      "ratio": 1,
+      "minInk": 284.5
+    },
+    {
+      "id": "temp",
+      "width": 144,
+      "ratio": 1,
+      "minInk": 115.1
+    },
+    {
+      "id": "health",
+      "width": 144,
+      "ratio": 1,
+      "minInk": 247.9
+    },
+    {
+      "id": "shield",
+      "width": 144,
+      "ratio": 1,
+      "minInk": 160.5
+    },
+    {
+      "id": "guard",
+      "width": 144,
+      "ratio": 1,
+      "minInk": 160.4
+    },
+    {
+      "id": "rush",
+      "width": 144,
+      "ratio": 1,
+      "minInk": 67.7
+    },
+    {
+      "id": "stealth",
+      "width": 144,
+      "ratio": 1,
+      "minInk": 155.5
+    },
+    {
+      "id": "anti",
+      "width": 144,
+      "ratio": 1,
+      "minInk": 139.5
+    },
+    {
+      "id": "freeze",
+      "width": 144,
+      "ratio": 1,
+      "minInk": 226.3
+    },
+    {
+      "id": "silence",
+      "width": 144,
+      "ratio": 1,
+      "minInk": 171.1
+    },
+    {
+      "id": "weak",
+      "width": 144,
+      "ratio": 1,
+      "minInk": 107.9
+    },
+    {
+      "id": "frail",
+      "width": 144,
+      "ratio": 1,
+      "minInk": 71.1
+    },
+    {
+      "id": "horse",
+      "width": 144,
+      "ratio": 1,
+      "minInk": 85.6
+    },
+    {
+      "id": "pierce",
+      "width": 144,
+      "ratio": 1,
+      "minInk": 107.2
+    },
+    {
+      "id": "temp-weak",
+      "width": 144,
+      "ratio": 1,
+      "minInk": 81.9
+    },
+    {
+      "id": "attack",
+      "width": 144,
+      "ratio": 2,
+      "minInk": 281.9
+    },
+    {
+      "id": "temp",
+      "width": 144,
+      "ratio": 2,
+      "minInk": 120.5
+    },
+    {
+      "id": "health",
+      "width": 144,
+      "ratio": 2,
+      "minInk": 258.6
+    },
+    {
+      "id": "shield",
+      "width": 144,
+      "ratio": 2,
+      "minInk": 170.8
+    },
+    {
+      "id": "guard",
+      "width": 144,
+      "ratio": 2,
+      "minInk": 165.4
+    },
+    {
+      "id": "rush",
+      "width": 144,
+      "ratio": 2,
+      "minInk": 68
+    },
+    {
+      "id": "stealth",
+      "width": 144,
+      "ratio": 2,
+      "minInk": 163
+    },
+    {
+      "id": "anti",
+      "width": 144,
+      "ratio": 2,
+      "minInk": 138.6
+    },
+    {
+      "id": "freeze",
+      "width": 144,
+      "ratio": 2,
+      "minInk": 223.9
+    },
+    {
+      "id": "silence",
+      "width": 144,
+      "ratio": 2,
+      "minInk": 178
+    },
+    {
+      "id": "weak",
+      "width": 144,
+      "ratio": 2,
+      "minInk": 109.1
+    },
+    {
+      "id": "frail",
+      "width": 144,
+      "ratio": 2,
+      "minInk": 70.6
+    },
+    {
+      "id": "horse",
+      "width": 144,
+      "ratio": 2,
+      "minInk": 96.7
+    },
+    {
+      "id": "pierce",
+      "width": 144,
+      "ratio": 2,
+      "minInk": 124.9
+    },
+    {
+      "id": "temp-weak",
+      "width": 144,
+      "ratio": 2,
+      "minInk": 93.2
+    }
+  ],
+  "combined": {
+    "ink": 1123.077777777754,
+    "centerInk": 0
+  },
+  "renderMs": {
+    "median": 3.3,
+    "max": 6.7
+  },
+  "errors": []
+}

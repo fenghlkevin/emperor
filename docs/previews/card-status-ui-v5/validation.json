@@ -1,0 +1,25 @@
+{
+  "checks": [
+    "mixed eight states all visible",
+    "opposite and temporary modifiers remain separate",
+    "all twelve states visible",
+    "badge opens its expiry and source",
+    "remove only one state",
+    "add state preserves all existing states",
+    "turn expiry removes only temporary attack and freeze",
+    "replay cleans up while preserving all statuses",
+    "fourteen units with eight states each",
+    "edits affect only selected unit",
+    "single fits 1440px with all twelve selected effects",
+    "stress fits 1440px with all twelve selected effects",
+    "single fits 1024px with all twelve selected effects",
+    "stress fits 1024px with all twelve selected effects",
+    "single fits 736px with all twelve selected effects",
+    "stress fits 736px with all twelve selected effects",
+    "single fits 375px with all twelve selected effects",
+    "stress fits 375px with all twelve selected effects",
+    "single fits 320px with all twelve selected effects",
+    "stress fits 320px with all twelve selected effects"
+  ],
+  "errors": []
+}

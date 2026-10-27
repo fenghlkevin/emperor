@@ -1,15 +1,15 @@
 import {CENTRAL_OFFICES} from './personnel.mjs';
 import {officialArt,officialPortraitKey} from './official-art.mjs';
-// Percentage of the approved background: center x, foot y and complete body height.
+// Formation coordinates: horizontal center and foot depth, in scene percentages.
+// Paired ranks follow the floor perspective towards the doorway.
 export const COURT_ACTOR_SLOTS={
- 'prime-minister':[23,88,47],
- 'revenue-deputy':[16.5,77,44],'revenue-minister':[28.8,78,43],
- 'war-deputy':[23.2,61,34],'war-minister':[33.3,64,35],
- 'works-deputy':[27.5,49,26],'works-minister':[36.9,51,26],
- 'central-general':[77,88,48],
- 'personnel-minister':[71.2,77,43.5],'personnel-deputy':[83.6,75,42.5],
- 'rites-minister':[67,63,35.5],'rites-deputy':[77.4,62,35],
- 'justice-minister':[72.2,49.5,26]
+ 'works-deputy':[28,46],'works-minister':[36,46],
+ 'justice-minister':[64,46],'justice-deputy':[72,46],
+ 'war-deputy':[22,59],'war-minister':[32,59],
+ 'rites-minister':[68,59],'rites-deputy':[78,59],
+ 'revenue-deputy':[14,72],'revenue-minister':[28,72],
+ 'personnel-minister':[72,72],'personnel-deputy':[86,72],
+ 'prime-minister':[22,84],'central-general':[78,84]
 };
 export function courtOccupant(domestic,officeId){return domestic.justice.officials.find(p=>p.status==='serving'&&(p.positionId===undefined?p.id:p.positionId)===officeId)??null;}
 export function courtActorRecords(domestic){return CENTRAL_OFFICES.map(office=>{
@@ -19,6 +19,15 @@ export function courtActorRecords(domestic){return CENTRAL_OFFICES.map(office=>{
  const art=baseArt;
  return {office,person,slot:COURT_ACTOR_SLOTS[office.id],art,portraitKey};
 });}
+// Background-space calibration (1448 × 1086): floor lines converge near y=200;
+// a doorway guard stands at y=360, with hat-to-sole height about 111 px.
+// Equal-height people on a level floor obey h / (footY - horizonY) = constant.
+export function courtPerspective(width,height,imageWidth=1448,imageHeight=1086){
+ const scale=Math.max(width/imageWidth,height/imageHeight);
+ const cropY=(height-imageHeight*scale)*.42; // Matches object-position: center 42%.
+ const horizon=200/1086*imageHeight*scale+cropY;
+ return {horizon,bodyHeight:foot=>(foot-horizon)*111/160};
+}
 const cache=new Map();
 function loadArt(src){if(!cache.has(src))cache.set(src,(async()=>{
  const img=new Image();img.src=src;await img.decode();
@@ -32,11 +41,11 @@ function loadArt(src){if(!cache.has(src))cache.set(src,(async()=>{
 })().catch(error=>{cache.delete(src);throw error;}));return cache.get(src);}
 export function alphaHit(mask,x,y){if(!mask||x<0||y<0||x>=mask.width||y>=mask.height)return false;return mask.data[(Math.floor(y)*mask.width+Math.floor(x))*4+3]>64;}
 export function mountCourtActors(scene,domestic){
- const controller=new AbortController(),actors=[],records=courtActorRecords(domestic);let disposed=false,frame=0;
- if(records.some(r=>r.person&&!r.art?.court)){scene.querySelector(':scope>img').src='assets/sketch-court-emperor-pov-v7.png';scene.dataset.courtReady='fallback';return ()=>{};}
+ const controller=new AbortController(),actors=[],records=courtActorRecords(domestic);let disposed=false,loaded=false,frame=0;
+ if(records.some(r=>r.person&&!r.art?.court)){scene.querySelector(':scope>img').src='assets/scenes/court/sketch-court-emperor-pov-v7.png';scene.dataset.courtReady='fallback';return ()=>{};}
  scene.classList.add('has-court-actors');scene.dataset.courtReady='loading';
  const caption=document.createElement('span');caption.className='court-person-caption';caption.hidden=true;caption.setAttribute('aria-hidden','true');scene.append(caption);
- function syncCaption(){const actor=actors.find(a=>a.button.matches('.is-actor-hover,.is-focused,:focus-visible'))??actors.find(a=>a.button.classList.contains('selected'));caption.hidden=!actor;if(!actor)return;caption.textContent=actor.button.getAttribute('aria-label');const [center,foot,height]=actor.slot;caption.style.top=`${foot-height*.05}%`;const half=caption.offsetWidth/2;const x=scene.clientWidth*center/100;caption.style.left=`${Math.max(half+8,Math.min(scene.clientWidth-half-8,x))}px`;}
+ function syncCaption(){const actor=actors.find(a=>a.button.matches('.is-actor-hover,.is-focused,:focus-visible'))??actors.find(a=>a.button.classList.contains('selected'));caption.hidden=!actor;if(!actor)return;const [office,name]=actor.button.getAttribute('aria-label').split(' · ');caption.replaceChildren();const role=document.createElement('small'),person=document.createElement('strong');role.textContent=office;person.textContent=name;caption.append(role,person);const [center,foot,height]=actor.displaySlot??actor.slot;caption.style.top=`${foot-height*.05}%`;const half=caption.offsetWidth/2;const x=scene.clientWidth*center/100;caption.style.left=`${Math.max(half+8,Math.min(scene.clientWidth-half-8,x))}px`;}
  const captionObserver=new MutationObserver(syncCaption);
  scene.addEventListener('focusin',syncCaption,{signal:controller.signal});scene.addEventListener('focusout',()=>queueMicrotask(syncCaption),{signal:controller.signal});
  const originalButtons=records.map(({office})=>{const button=scene.querySelector(`[data-entry="${office.id}"]`);return {button,html:button.innerHTML,style:button.getAttribute('style'),label:button.getAttribute('aria-label'),title:button.title};});
@@ -55,8 +64,19 @@ export function mountCourtActors(scene,domestic){
   captionObserver.observe(button,{attributes:true,attributeFilter:['class']});
   actors.push({button,canvas,source,slot,mask:null});
  }));
- function paint(){if(disposed)return;const bounds=scene.getBoundingClientRect();if(!bounds.width||!bounds.height)return;
-  for(const actor of actors){const {button,canvas,source,slot}=actor;const [center,foot,height]=slot;
+ function paint(){if(disposed||!loaded)return;const bounds=scene.getBoundingClientRect();if(!bounds.width||!bounds.height)return;
+  // Anchor the back row to the doorway floor and fit the formation before the desk.
+  // The desk's rear edge is below its transparent upper margin.
+  const desk=scene.parentElement.querySelector('.court-desk')?.getBoundingClientRect();
+  const rear=desk?desk.top+(desk.height>=260?43:23):bounds.bottom;
+  const background=scene.querySelector(':scope>img');
+  const perspective=courtPerspective(bounds.width,bounds.height,background.naturalWidth||1448,background.naturalHeight||1086);
+  const frontFoot=Math.max(...actors.map(a=>a.slot[1]));
+  const originalBack=Math.min(...actors.map(a=>a.slot[1])),backFoot=46;
+  const visibleFront=Math.min(frontFoot,(rear-bounds.top-14)/bounds.height*100);
+  const depth=frontFoot-originalBack;
+  const depthScale=depth>0?Math.max(0,(visibleFront-backFoot)/depth):0;
+  for(const actor of actors){const {button,canvas,source,slot}=actor;const [center,originalFoot]=slot;const foot=backFoot+(originalFoot-originalBack)*depthScale;const height=perspective.bodyHeight(bounds.height*foot/100)/bounds.height*100;actor.displaySlot=[center,foot,height];
    const cssHeight=bounds.height*height/100,cssWidth=cssHeight*source.width/source.height;
    Object.assign(button.style,{left:`${center}%`,top:`${foot-height}%`,width:`${cssWidth}px`,height:`${cssHeight}px`,transform:'translateX(-50%)',zIndex:String(Math.round(foot))});
    const scale=Math.min(devicePixelRatio||1,2);canvas.width=Math.max(1,Math.round(cssWidth*scale));canvas.height=Math.max(1,Math.round(cssHeight*scale));
@@ -73,10 +93,10 @@ export function mountCourtActors(scene,domestic){
   if(event.detail===0||event.target.closest('.scene-heading,footer,#next'))return;
   event.preventDefault();event.stopImmediatePropagation();pick(event)?.button.click();
  },{capture:true,signal:controller.signal});
- ready.then(()=>{if(disposed)return;paint();scene.dataset.courtReady='true';}).catch(error=>{if(disposed)return;
+ ready.then(()=>{if(disposed)return;loaded=true;paint();scene.dataset.courtReady='true';}).catch(error=>{if(disposed)return;
   disposed=true;controller.abort();observer.disconnect();captionObserver.disconnect();caption.remove();cancelAnimationFrame(frame);
   scene.classList.remove('has-court-actors');scene.style.cursor='';
-  scene.querySelector(':scope>img').src='assets/sketch-court-emperor-pov-v7.png';
+  scene.querySelector(':scope>img').src='assets/scenes/court/sketch-court-emperor-pov-v7.png';
   for(const {button,html,style,label,title} of originalButtons){button.replaceChildren();button.innerHTML=html;button.setAttribute('style',style??'');button.setAttribute('aria-label',label);button.title=title;button.classList.remove('court-person','is-vacant','is-actor-hover');delete button.dataset.personId;delete button.dataset.portraitKey;}
   scene.dataset.courtReady='fallback';console.error('朝堂立绘加载失败，已恢复群臣场景',error);
  });

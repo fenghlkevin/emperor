@@ -3,12 +3,12 @@
 2026-10-16 数值更新：采用普通版DOS修习规则，消耗40体力，能力最高500，基础随机1～4并受年龄及皇帝特长影响。武道场不附赠健康、百戏园不附赠快乐。旧数值说明以 [皇帝属性规则](emperor-harem.md) 为准。
 2026-10-16 更新：取消进入后的三秒等待与进度提示，素材加载后立即结算一次，直接显示实际属性增加及体力减少；属性封顶按实际增量显示。以下旧动画说明以本条为准。
 
-使用内置 image_gen 生成，皇城春季图 assets/sketch-palace-spring.png 为戏园背景的画风参考。
+使用内置 image_gen 生成，皇城春季图 assets/scenes/palace/sketch-palace-spring.png 为戏园背景的画风参考。
 
 项目素材：
-- assets/sketch-theatre-garden-v2.png：彩绘皇家戏园背景，含两侧乐师。
-- assets/sketch-theatre-dan-v2.png：透明底旦角。
-- assets/sketch-theatre-sheng-v2.png：透明底生角。
+- assets/scenes/theatre/sketch-theatre-garden-v2.png：彩绘皇家戏园背景，含两侧乐师。
+- assets/scenes/theatre/sketch-theatre-dan-v2.png：透明底旦角。
+- assets/scenes/theatre/sketch-theatre-sheng-v2.png：透明底生角。
 
 最终生成提示词要点：
 
@@ -18,13 +18,13 @@
 
 生角：One full-body adult Chinese opera sheng-role male scholar cutout, transparent background, facing left, ivory folding fan near chest, extended hand and draping water sleeve, deep teal blue brocade robe with gold clouds and flowers, scholar hat and restrained makeup, detailed painterly colored ink illustration, realistic anatomy. No extra people, backdrop, lettering or watermark.
 
-运行时人物独立叠加，轻微移步和转身，3 秒后停在谢幕姿态。全部图片解码完成后才开始计时；提前关闭取消结算。打包规则 assets/sketch-*.png 已包含三张素材。
+运行时人物独立叠加，轻微移步和转身，3 秒后停在谢幕姿态。全部图片解码完成后才开始计时；提前关闭取消结算。打包规则 assets/**/* 已包含三张素材。
 
 ## 观戏席侍从
 
 通过内置 image_gen 生成透明底人物组，各组两人，固定放在左右前景：
-- assets/sketch-theatre-eunuchs-v1.png：左侧两名内侍。
-- assets/sketch-theatre-maids-v1.png：右侧两名成年侍女，短上衣搭配裙装。
+- assets/scenes/theatre/sketch-theatre-eunuchs-v1.png：左侧两名内侍。
+- assets/scenes/theatre/sketch-theatre-maids-v1.png：右侧两名成年侍女，短上衣搭配裙装。
 
 生成提示词：
 

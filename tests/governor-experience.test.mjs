@@ -1,0 +1,19 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {newGame as baseNewGame} from '../src/game.mjs';
+import {initializeResourceEconomy} from '../src/province-resources.mjs';
+import {startConstruction,settleConstruction} from '../src/construction.mjs';
+import {executeIndustry,settleIndustry} from '../src/industry.mjs';
+import {executeRelief} from '../src/food-relief.mjs';
+import {rewardGovernorExperience} from '../src/official-effects.mjs';
+import {famine} from './helpers/national.mjs';
+function fixture(){const s=newGame('刺史历练');initializeResourceEconomy(s.domestic);const d=s.domestic,p=d.provinces[0];d.justice.officials=d.justice.officials.filter(o=>(o.positionId??o.id)!==`${p.id}-governor`);d.justice.officials.push({id:'test-governor',positionId:`${p.id}-governor`,provinceId:p.id,status:'serving',name:'历练刺史',experience:20});return s;}
+const governor=s=>s.domestic.justice.officials.find(o=>o.id==='test-governor');
+test('construction rewards only completion, once, to the governor serving at completion',()=>{let s=startConstruction(fixture(),'hebei','temples').state;settleConstruction(s.domestic,2);assert.equal(governor(s).experience,20);s.domestic.provinces[0].construction.project.progress=3;settleConstruction(s.domestic,3);assert.equal(governor(s).experience,21);settleConstruction(s.domestic,3);settleConstruction(s.domestic,4);assert.equal(governor(s).experience,21);});
+test('land development rewards completion, never starting or repeating settlement',()=>{let s=fixture();s=executeIndustry(s,{id:s.domestic.industryActions.nextId,kind:'develop',provinceId:'hebei',industry:'agriculture',area:10}).state;assert.equal(governor(s).experience,20);settleIndustry(s.domestic,2);assert.equal(governor(s).experience,21);settleIndustry(s.domestic,2);settleIndustry(s.domestic,3);assert.equal(governor(s).experience,21);});
+test('actual famine purchases reward once per turn; normal stockpiling and replay do not',()=>{let s=fixture();const buy=s=>executeRelief(s,{id:s.domestic.foodRelief.nextId,kind:'purchase',targetId:'hebei',amount:1}).state;assert.equal(governor(buy(s)).experience,20);famine(s.domestic);s=buy(s);assert.equal(governor(s).experience,21);s=buy(s);assert.equal(governor(s).experience,21);assert.throws(()=>executeRelief(s,{id:1,kind:'purchase',targetId:'hebei',amount:1}));});
+test('vacant, imprisoned and foreign governors get no task experience; experience caps at 100',()=>{const s=fixture(),d=s.domestic,p=d.provinces[0],o=governor(s);o.experience=100;rewardGovernorExperience(d,p);assert.equal(o.experience,100);o.experience=20;for(const status of ['imprisoned','released','retired']){o.status=status;rewardGovernorExperience(d,p);assert.equal(o.experience,20);}o.status='serving';o.positionId=null;rewardGovernorExperience(d,p);assert.equal(o.experience,20);o.positionId='hebei-governor';p.countryId='foreign';rewardGovernorExperience(d,p);assert.equal(o.experience,20);});
+test('special construction awards once on full completion',async()=>{const {initializeSpecialWorks,settleSpecialWorks,SPECIAL_PLANS}=await import('../src/special-buildings.mjs');const s=fixture(),d=s.domestic,p=d.provinces[0];initializeSpecialWorks(d,1);p.population.professions.militia=2000;d.specialWorks.project={id:1,provinceId:p.id,building:'shigu',ownerId:p.countryId,progress:SPECIAL_PLANS.shigu.turns-1,startedTurn:1};settleSpecialWorks(d,2);assert.equal(governor(s).experience,21);assert.equal(d.specialWorks.project,null);settleSpecialWorks(d,2);settleSpecialWorks(d,3);assert.equal(governor(s).experience,21);});
+
+// Food purchases in these scenarios explicitly open a neighboring mutual market.
+function newGame(...args){const s=baseNewGame(...args);s.domestic.diplomacy.find(r=>r.countryIds.includes('sheng')&&r.countryIds.includes('nanzhao')).agreement.imports=1000000;return s;}

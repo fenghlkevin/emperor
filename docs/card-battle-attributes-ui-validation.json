@@ -1,0 +1,10 @@
+{
+  "date": "2026-10-26",
+  "checks": [
+    "1440px prebattle deck expands attribute calculation without overflow or state changes",
+    "1000px prebattle deck expands attribute calculation without overflow or state changes",
+    "800px prebattle deck expands attribute calculation without overflow or state changes",
+    "live battle deck uses the same read-only attribute explanation"
+  ],
+  "errors": []
+}

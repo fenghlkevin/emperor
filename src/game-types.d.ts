@@ -1,3 +1,22 @@
+export type DifficultyId = 'novice'|'standard'|'veteran';
+export interface DifficultyState {version:1;id:DifficultyId;legacy:boolean;openingApplied:boolean;seed:number;random:Partial<Record<'personnel'|'tactics',number>>;examMisses:number;aid:{used:number;lastTurn:number;records:Array<{turn:number;grain:number;silver:number}>};provoked:string[]}
+export interface ArmyRecoveryTarget {turn:number;soldiers:number;training:number;kits:KitStock;ongoing:boolean}
+export interface CentralOfficeSource {id: string|null; name: string; ability: number; integrity: number}
+export interface CentralCostEffect {source: CentralOfficeSource; discountRate: number; lossRate: number}
+export interface CentralLaborEffect {source: CentralOfficeSource; baseWorkers: number; rate: number; workers: number}
+export interface GrainAccounting {
+        version: 1;
+        periods: Array<{
+            turn: number; opening: number; income: number; expense: number;
+            net: number; closing: number; keys: string[];
+            carried: {income: number; expense: number};
+            entries: Array<{
+                key: string;
+                category: 'tax' | 'production' | 'consumption' | 'storage' | 'purchase' | 'transfer' | 'disaster' | 'event';
+                reason: string; income: number; expense: number; before: number; after: number;
+            }>;
+        }>;
+}
 /** 当前存档经 validateSave 归一化后的结构；输入兼容范围见 docs/save-compatibility.md。
  * 数值范围、引用一致性和记账守恒仍由运行时校验；TS number 不代表安全整数。
  */
@@ -18,12 +37,15 @@ export type WelfareKey = 'stability' | 'security' | 'activity' | 'fitness' | 'de
 export type Terrain = '平原型' | '河海型' | '高山型' | '丘陵型';
 export interface Industry {
     developedArea: number;
+    /** 保留原产出公式的基准面积；实际占地同时受 cityCapacity.land 共池与地形产业上限约束。 */
     capacityArea: number;
     productivity: number;
 }
 export interface DevelopmentProject {
+    workOrder?: {mode: number; untilTurn: number; comfort?: boolean};
     id: number;
     industry: IndustryKey;
+    fromIndustry?: IndustryKey;
     area: number;
     cost: number;
     progress: 0;
@@ -31,11 +53,13 @@ export interface DevelopmentProject {
     ownerId: string;
 }
 export interface DevelopmentState {
+    plan?: {industry:IndustryKey;remaining:number;budget:number;startedTurn:number;ownerId:string};
     lastTurn: number;
     lastAllocationTurn: number | null;
     project: DevelopmentProject | null;
     activation: {
         industry: IndustryKey;
+        fromIndustry?: IndustryKey;
         area: number;
         completedTurn: number;
         effectiveTurn: number;
@@ -59,11 +83,14 @@ export interface BuildingEffectState {
         disaster: boolean;
         before: Record<string, number>;
         gains: Record<string, number>;
+        baseGains?: Record<string, number>;
+        facilityGains?: Record<string, number>;
         counts: Record<BuildingKey, number>;
         defense: number;
     } | null;
 }
 export interface FoodSupplyRecord {
+    national?: boolean;
     /** 超周转储备的开仓陈粮耗损；旧供粮快照缺省为0。 */
     storageLoss?: number;
     turn: number;
@@ -75,6 +102,27 @@ export interface FoodSupplyRecord {
     closing: number;
 }
 export interface Province {
+    difficultyId?: DifficultyId;
+    difficultyPlayerCountryId?: string;
+    developmentBalanceVersion?: 2;
+    specialWorkSegments?: Partial<Record<"canal"|"greatWall",{count:number;effectiveTurn:number}>>;
+    specialServiceBonus?: Partial<Record<BuildingKey,number>>;
+    industryLabor?: {version:1; base:Record<IndustryKey,{area:number;workers:number}>; pending:Array<{industry:IndustryKey;fromIndustry?:IndustryKey;effectiveTurn:number}>};
+    terrainCapacity: {version:1;kind:Terrain;landLimit:number;legacyLand:number;legacySectors:Record<IndustryKey,number>};
+    cityCapacity: {version: 1; land: number; population: number; expansion?: {id:number;startedTurn:number;ownerId:string;progress:number;land:number;workOrder?:{mode:number;untilTurn:number;comfort?:boolean}}};
+    resourceRulesVersion?: 1;
+    resourceSettlement?: {
+        developmentBalanceVersion?: 2;
+        version: 1; turn: number; provinceId: string;
+        production: {developed: number; cultivated: number; produced: number; foodSources?: {agriculture: {base:number;produced:number};pastoral: {base:number;produced:number}}};
+        officers?: OfficialProduction;
+        officialImpact?: {baseProduction:number;productionDelta:number;grainAssessed:number;grainLoss:number;cashBase:number;cashAssessed:number;cashLoss:number};
+        civilian: {need: number; available: number; shortfall: number; surplus: number};
+        grain: {opening: number; tax: number; officialNeed: number; reliefNeed: number;
+            need: number; consumed: number; storageLoss: number; shortfall: number; closing: number; nationalIn?: number; nationalOut?: number};
+        cash: {tax: number; expense: number; net: number};
+        rates: {grain: number; cash: number};
+    };
     foodRelief: {
         purchase: {
             turn: number;
@@ -90,11 +138,19 @@ export interface Province {
         kind: string;
         startTurn: number;
         endTurn: number;
+        reliefTurns?: number;
+        lastReliefTurn?: number;
     } | null;
+    officialProduction?: OfficialProduction;
+    localPolicy?: {version: 1; civil: boolean; military: boolean; budget: number; priority: string; locks: string[]; lastLaborTurn?: number};
+    projectLaborPressure?: {turn: number; streak: number; loss: number};
+    projectLabor?: {turn: number; capacity: number; allocations: {kind: string; key: string; startedTurn: number; workers: number; granted: number; speed?: number; expense?: number; mode?: number; reason?: string; comfort?: boolean; laborEffect?: CentralLaborEffect; officerEffect?: {id:string|null;name:string;ability:number;bonus:number;remaining:number;baseSpeed:number;applied:number}}[]};
     construction: {
         lastTurn: number;
         project: {
+            workOrder?: {mode: number; untilTurn: number; comfort?: boolean};
             building: string;
+            requiredTurns?: number;
             progress: number;
             startedTurn: number;
         } | null;
@@ -109,13 +165,10 @@ export interface Province {
         professions: Record<ProfessionKey, number>;
     };
     economy: Record<IndustryKey, Industry>;
-    welfare: Record<WelfareKey, number> & {
-        grainReserve: number;
-    };
+    welfare: Record<WelfareKey, number>;
     status: {
         situation: 'stable' | 'unrest' | 'disaster' | 'war';
         livingStandard: number;
-        cash: number;
     };
     military: {
         training: number;
@@ -143,15 +196,17 @@ export interface Province {
         settled: boolean;
     };
     civic: CivicState;
-    specialCommerceBonus?: 0 | 10;
+    specialCommerceBonus?: number;
 }
 export type CashCategory = 'regular' | 'oneOff' | 'transfer';
 export interface CashTotals {
     income: number;
     expenditure: number;
     debtAdded: number;
+    debtRepaid?: number;
 }
 export interface CashPosting extends CashTotals {
+    recurring?: true;
     id: number;
     key: string;
     category: CashCategory;
@@ -174,12 +229,22 @@ export interface LedgerEntry {
     openingTreasury?: number;
     openingDebt?: number;
     debtAdded?: number;
+    debtRepaid?: number;
     categories?: Partial<Record<CashCategory, CashTotals>>;
     entries?: CashPosting[];
     keys?: string[];
     carried?: CashTotals;
+    recurring?: {income: number; expense: number};
+    recurringCarried?: {income: number; expense: number};
+}
+export interface NationalFoodForecast {
+ turn:number; opening:number; grain:number; protectedStock:number; storageLoss:number; produced:number; need:number; consumed:number; shortfall:number; closing:number;
+ provinces:Array<{id:string;name:string;resource:Province["resourceSettlement"]|null;produced:number;need:number;consumed:number;shortfall:number}>;
 }
 export interface Country {
+    grainAccounting?: GrainAccounting;
+    foodSettledTurn?: number;
+    foodSettlement?: NationalFoodForecast;
     id: string;
     name: string;
     capital: string;
@@ -187,6 +252,7 @@ export interface Country {
     relations: 'self' | 'neutral' | 'ally' | 'hostile';
     provinceIds: string[];
     fiscal: {
+        grain: number;
         treasury: number;
         debt: number;
         taxRate: number;
@@ -196,24 +262,38 @@ export interface Country {
             version: 1;
             lastSettledTurn: number;
             nextId: number;
+            history?: Array<{turn: number; income: number; expense: number}>;
         };
     };
     ledger: LedgerEntry[];
 }
 export interface DomesticState {
+    difficulty?: DifficultyState;
+    cardBattlePlans?: {version:1;nextId:number;plans:Array<{id:number;name:string;kind:'campaign'|'defense';formation:{kitVersion?:1;generalId:string;commander?:DeploymentSquad;commanderSquad?:KitSquad;squads:Array<KitSquad & {sourceId?:string;generalId:string}>;cardTactics?:CardTacticSelection;cardWeapons?:WeaponSelection;cardSecrets?:SecretSelection;cardLandmarks?:LandmarkSelection}}>};
+    cardPeople?: CardPersonRegistry;
+    developmentBalanceVersion?: 2;
+    industryLaborVersion?: 1;
+    manpowerVersion: 1;
+    manpower: {version:1;drafts:Array<{originId:string;stationId:string;role:'soldiers'|'militia';job:'farmers'|'herders'|'merchants'|'workers';count:number}>};
+    nationalResourcesVersion: 1;
+    geographyVersion: 1;
+    terrainEconomyVersion: 1;
+    capacityRulesVersion: 1;
+    resourceRulesVersion?: 1;
     industryActions: {
         version: 1;
         nextId: number;
         history: {
             id: number;
             turn: number;
-            kind: 'develop' | 'allocate' | 'complete';
+            kind: 'develop' | 'convert' | 'expand' | 'levy-militia' | 'release-militia' | 'allocate' | 'complete' | 'plan' | 'stop-plan';
             provinceId: string;
             cost: number;
             message: string;
         }[];
     };
     schemaVersion: 8;
+    worldExpansionVersion: 1;
     disasters: {
         seed: number;
         lastTurn: number;
@@ -234,9 +314,17 @@ export interface DomesticState {
     general: {
         nextId: number;
         lastTrainingTurn: number;
+        manualTrainingTurn?: number;
+        trainingEffect?: {turn:number;before:number;after:number;floor:number;delta:number;mode:"manual"|"ongoing";source:{id:string|null;name:string;ability:number};baseGain:number;gainCap:number;gain:number};
         ongoing: boolean;
         trainingFloor: number;
         capitalProvinceId: string;
+    };
+    armyRecovery?: {
+        version: 1; nextId: number; lastTurn: number;
+        battleTarget: ArmyRecoveryTarget|null; offer: ArmyRecoveryTarget|null;
+        plan: null|{active:boolean; target:ArmyRecoveryTarget; startTurn:number; cap:number; spent:number; train:boolean; draft:boolean; debtRecovery?:boolean; reserve:number; status:string; completedTurn?:number; waitingCap?:boolean};
+        history: Array<{turn:number;message:string}>;
     };
     fiscalActions: {
         nextId: number;
@@ -254,9 +342,17 @@ export interface DomesticState {
     justice: JusticeState;
     war: WarState;
     foodRelief: {
+        purchase?: {turn:number;ration:number;limit:number;bought:number}|null;
         version: 1;
         nextId: number;
         history: {
+            sellerCountryId?: string;
+            sellerGrainBefore?: number;
+            sellerGrainAfter?: number;
+            sellerTreasuryBefore?: number;
+            sellerTreasuryAfter?: number;
+            procurement?: CentralCostEffect;
+            national?: boolean;
             id: number;
             turn: number;
             kind: 'purchase' | 'transfer';
@@ -272,7 +368,10 @@ export interface DomesticState {
             treasuryAfter: number;
         }[];
     };
+    officialEffectsVersion?: 1;
     governance: {
+        coordination?: {turn:number;budget:number;source:CentralOfficeSource;transfers:{fromId:string;toId:string;amount:number}[]};
+        reliefTurn?: number;
         version: 1;
         reserve: number;
         budget: number;
@@ -280,6 +379,9 @@ export interface DomesticState {
         lastTurn: number;
         spent: number;
         records: GovernanceRecord[];
+        obstructions?: {provinceId:string;building:string;lastTurn:number;streak:number}[];
+        militaryPetitions?: {nextId:number;items:{id:number;provinceId:string;turn:number;status:"pending"|"deferred"|"rejected"|"cancelled"|"executed";cost:number;reason:string;decidedTurn?:number;command:{kind:"recruit";sourceId:string;amount:number}|{kind:"transfer";sourceId:string;targetId:string;soldiers:number;quantities:Record<string,number>}}[]};
+        petitions?: {nextId:number;items:{id:number;provinceId:string;building:string;cost:number;turn:number;status:"pending"|"deferred"|"rejected"|"cancelled"|"executed";reason:string;decidedTurn?:number}[]};
     };
     stateDevelopment: {
         version: 1;
@@ -296,7 +398,10 @@ export interface DomesticState {
         nextId: number;
         lastTurn: number;
         project: {
+            balanceVersion?: 2;
+            difficultyId?: DifficultyId;
             id: number;
+            workOrder?: {mode: number; untilTurn: number; comfort?: boolean};
             building: string;
             provinceId: string;
             ownerId: string;
@@ -344,6 +449,7 @@ export interface GameSave {
         requestedTurn: number;
         arrivalTurn: number;
         notified: boolean;
+        rulesVersion?: 2;
     } | null;
     phase: Phase;
     version: 2;
@@ -351,6 +457,8 @@ export interface GameSave {
     balanceRulesVersion: 1;
     saveRevision: number;
     name: string;
+    /** 旧存档缺省时沿用原名号纪年。 */
+    eraName?: string;
     turn: number;
     scene: 'palace' | 'court';
     createdAt: string;
@@ -373,13 +481,24 @@ export interface GameSave {
     harem: {
         royalNotices: {
             id: number;
-            kind: 'pregnancy' | 'miscarriage' | 'birth' | 'death';
+            kind: 'pregnancy' | 'miscarriage' | 'birth' | 'death' | 'beauty-tribute' | 'harem-bond';
             message: string;
             turn: number;
             availableTurn: number;
         }[];
         royalNoticeSequence: number;
         royalLastTurn?: number;
+        bonds?: {
+            version: 1;
+            reignStartTurn: number;
+            lastAttemptTurn: number;
+            lastEventTurn: number;
+            lifeGranted: number;
+            harmony: {personId: string; startedTurn: number; untilTurn: number} | null;
+            history: {turn: number; personId: string; personName: string;
+                kind: 'longevity' | 'care' | 'harmony' | 'education' | 'advice'; message: string}[];
+        };
+        beautyTributeLastTurn?: number;
         members: Beauty[];
         encounter: Beauty | null;
         hiddenEncounter?: Beauty;
@@ -457,7 +576,6 @@ export interface CountrySummary {
     buildings: Record<BuildingKey, number>;
     grainReserve: number;
     grainSecurity: number;
-    localCash: number;
     income: number;
     expenditure: number;
     net: number;
@@ -533,7 +651,7 @@ export interface OfficeAttributes {
 export interface FiscalAction {
     id: number;
     turn: number;
-    kind: 'census' | 'purchase' | 'subsidy' | 'tax' | 'levy';
+    kind: 'census' | 'purchase' | 'subsidy' | 'tax' | 'levy' | 'repay';
     title: string;
     cost: number;
     income: number;
@@ -552,6 +670,7 @@ export interface PrisonRecord {
     lastReason: string;
 }
 export interface JusticeOfficial extends PersonProfile {
+    lastAppointmentRewardTurn?: number;
     id: string;
     name: string;
     office: string;
@@ -577,14 +696,19 @@ export interface JusticeOfficial extends PersonProfile {
     nobilityLevel?: number;
 }
 export interface JusticeState {
+    justiceDeputyVersion?: 1;
     nextId: number;
     funding: number;
     lastTurn: number;
     lastAmnesty: number;
+    amnestyUses?: {year: number; count: number};
     history: string[];
     officials: JusticeOfficial[];
 }
 export interface Beauty {
+    hiddenTraits?: {version: 1; source: 'historical' | 'random' | 'event';
+        kinds: ('longevity' | 'care' | 'harmony' | 'education' | 'advice')[]};
+    bond?: {visits: number; lastVisitTurn: number; lastEventTurn: number; lifeGranted: number};
     id: string;
     name: string;
     origin: string;
@@ -604,6 +728,8 @@ export interface Beauty {
     legacyCode?: string;
     pregnancy?: {
         conceivedTurn: number;
+        /** Already pregnant on arrival; special tour birth is due the following turn. */
+        arrivalDueTurn?: number;
     };
     inColdPalace?: boolean;
     personality: string;
@@ -613,6 +739,9 @@ export interface Beauty {
     foreignRoyal?: boolean;
     royalId?: string;
     royalCountryId?: string;
+    baseAbility?: number;
+    regionalPortrait?: boolean;
+    tributeOrigin?: {kind: 'annual' | 'foreign'; turn: number; provinceId: string; countryId: string};
     randomBeauty?: boolean;
     randomPortraitAsset?: string;
     travelOrigin?: {
@@ -620,7 +749,7 @@ export interface Beauty {
         turn: number;
         provinceId: string;
         consented: boolean;
-        easterEgg?: 'xia-yuhe';
+        easterEgg?: string;
     };
 }
 export interface PortraitRecipe {
@@ -646,7 +775,34 @@ export interface GovernanceRecord {
     cost: number;
     reason: string;
 }
+export interface EndingAssessment {
+    version: 1;
+    id: string;
+    title: string;
+    verdict: string;
+    analogy: string | null;
+    text: string;
+    facts: {
+        reason: EndReason;
+        years: number;
+        domestic: number;
+        living: number;
+        order: number;
+        control: number;
+        wisdom: number;
+        martial: number;
+        victories: number;
+        battles: number;
+        homeDead: number;
+        total: number;
+        executions: number;
+        filial: number;
+        parenting: number;
+        priorDomestic: number | null;
+    };
+}
 export interface ReignResultBase {
+    assessment?: EndingAssessment;
     name: string;
     turn: number;
     age: number;
@@ -693,6 +849,8 @@ export interface RoyalPerson {
     deathTurn?: number;
 }
 export interface CivicState {
+    taxPressure?: number;
+    taxGrievance?: number;
     version: 1;
     baselineSoldiers: number;
     baselineMilitia: number;
@@ -708,6 +866,12 @@ export interface CivicState {
     } | null;
 }
 export interface DynastyState {
+    endingRecord?: {
+        version: 1;
+        executions: number;
+        coverage: 'complete' | 'partial';
+        sinceTurn: number;
+    };
     version: 1;
     lastTurn: number;
     reignStartTurn: number;
@@ -743,11 +907,14 @@ export interface KitSquad {
 export type KitReservation = {
     status: 'active';
     squads: KitSquad[];
+    /** 单独占用完整套装；不额外占用士兵。当前v3战斗禁止接入。 */
+    extraKits?: KitStock;
+    extraKitLoss?: never;
 } | {
     status: 'settled';
     squads: KitSquad[];
     survivors: number[];
-};
+} & ({ extraKits?: never; extraKitLoss?: never } | { extraKits: KitStock; extraKitLoss: KitStock });
 export interface KitDepotRecord {
     stock: KitStock;
     reservations: Record<string, KitReservation>;
@@ -771,6 +938,13 @@ export interface TroopKitState {
     depots: Record<string, KitDepotRecord>;
 }
 export interface PersonProfile {
+    region?: string;
+    sources?: string[];
+    identityStatus?: string;
+    identityBasis?: string;
+    replacesOriginalId?: string;
+    potential?: {version:1|2|3;base:Record<'intelligence'|'martial'|'leadership'|'politics'|'integrity',number>;caps:Record<'intelligence'|'martial'|'leadership'|'politics'|'integrity',number>};
+    studyProgress?: {experience:number;abilities:Record<'intelligence'|'martial'|'leadership'|'politics'|'integrity',number>;lastTurn:number};
     dynasty?: string;
     role?: string;
     generated?: boolean;
@@ -814,6 +988,7 @@ export interface ExamCandidate extends PersonProfile {
     personality: OfficialPersonality;
 }
 export interface PersonnelState {
+    hanlin?: {version:1;lastTurn:number;students:{officialId:string;attribute:string;admittedTurn:number}[];history:{turn:number;message:string}[]};
     nextId: number;
     lastTurn: number;
     examTurn: number | null;
@@ -851,6 +1026,8 @@ export interface StrategyState {
     nations: Record<string, {
         lastWar: number;
         lastPeace: number;
+        profile?: "expansionist" | "regional" | "cautious";
+        initiative?: number;
     }>;
 }
 export interface CollapseState {
@@ -889,13 +1066,32 @@ export interface DeploymentSquad extends KitSquad {
     sourceId: string;
     generalId?: string;
 }
+export interface CardTacticSelection {version:1; counts:Record<string,number>;}
 export interface DefensePlan {
+    cardLandmarks?: LandmarkSelection;
+    cardSecrets?: SecretSelection;
+    cardWeapons?: WeaponSelection;
+    cardTactics?: CardTacticSelection;
+    battleMode?: 'cards';
     kitVersion: 1;
     generalId: string;
     commander: DeploymentSquad;
     squads: DeploymentSquad[];
 }
+export interface WeaponSelection {version:1;counts:Record<string,number>;}
+export interface WeaponAllocation {version:1;home:{sourceId:string;selection:WeaponSelection};enemy:{sourceId:string;selection:WeaponSelection};}
+export interface SecretSelection {version:1;counts:Record<string,number>;}
+export interface SecretAllocation {version:1;home:{sourceId:string;selection:SecretSelection};enemy:{sourceId:string;selection:SecretSelection};}
+export interface LandmarkSelection {version:1;counts:Record<string,number>;}
+export interface LandmarkAllocation {version:1;home:{sourceId:string;selection:LandmarkSelection};enemy:{sourceId:string;selection:LandmarkSelection};}
 export interface OffensiveCommand {
+    cardLandmarks?:LandmarkSelection;landmarkAllocation?:LandmarkAllocation;
+    cardSecrets?: SecretSelection;
+    secretAllocation?: SecretAllocation;
+    cardWeapons?: WeaponSelection;
+    weaponAllocation?: WeaponAllocation;
+    cardTactics?: CardTacticSelection;
+    battleMode?: 'cards';
     id: number;
     kind: 'war';
     kitVersion: 1;
@@ -905,17 +1101,28 @@ export interface OffensiveCommand {
     squads: (KitSquad & {
         generalId: string;
     })[];
+    supply?: {version: 1 | 2 | 3; logistics?: number; mounted?: number; count: number; silver: number; grain: number; sourceProvinceId: string; officer?: CentralCostEffect};
     kitSupport: number;
     kitBattleId: string;
+    squadLimitVersion?: 1;
     provinceId: string;
     alliedForces: Force[];
     defensive?: false;
 }
 export interface DefensiveCommand {
+    cardLandmarks?: LandmarkSelection;
+    landmarkAllocation?: LandmarkAllocation;
+    cardSecrets?: SecretSelection;
+    secretAllocation?: SecretAllocation;
+    cardWeapons?: WeaponSelection;
+    weaponAllocation?: WeaponAllocation;
+    cardTactics?: CardTacticSelection;
+    battleMode?: 'cards';
     id: number;
     kind: 'war';
     kitVersion: 1;
     kitBattleId: string;
+    squadLimitVersion?: 1;
     defensive: true;
     campaignId: number;
     deploymentVersion: 2;
@@ -927,6 +1134,9 @@ export interface DefensiveCommand {
     attack: Force;
 }
 export interface BattleUnit extends KitSquad {
+    artCulture?: string;
+    artRegion?: string;
+    cardPersonId?: string;
     id: string;
     side: 'home' | 'enemy';
     name: string;
@@ -947,6 +1157,8 @@ export interface BattleUnit extends KitSquad {
     commander?: boolean;
     allyIndex?: number;
     forceIndex?: number;
+    moveSpent?: number;
+    attacked?: boolean;
     chargeRun?: number;
     chargeFacing?: number;
     bonus: {
@@ -956,7 +1168,74 @@ export interface BattleUnit extends KitSquad {
         aura: number;
     };
 }
+/** 身份与随机生成结果持久化，战斗动作不重新生成。 */
+export interface CardEffect {
+    op: 'draw'|'armor'|'heal'|'selfdamage'|'refund'|'discount'|'aoe'|'damage'|'destroy'|'freeze'|'setattack'|'silence'|'buff'|'group';
+    n?: number; target?: 'friend'|'enemy'|'enemy_character'; a?: number; h?: number;
+    temp?: boolean; give?: string; mask?: string; limit?: number; filter?: string; injured?: boolean;
+}
+export interface CardDefinition {
+    uses?:number;cooldown?:number;ability?:{op:string;amount:number};
+    trigger?:string;effect?:string;amount?:number;text?:string;
+    id: string; name: string; type: 'troop'|'general'|'spell'|'weapon'|'secret'|'landmark'; cost: number;
+    attack?: number|null; health?: number|null; tags: string[]; enter: CardEffect[]; death: CardEffect[];
+    [metadata: string]: unknown;
+}
+export interface CardPersonProfile {
+    version: 1; personId: string; historicalDefinitionId: string|null; name: string; portraitId: string;
+    definitionId?: string; abilities: {martial: number; intelligence: number; leadership: number;politics?:number;integrity?:number;experience?:number};
+    potential?: unknown; role?: 'martial'|'intelligence'|'command'; tier?: number; poolId?: string;
+    templateId?: string; revision?:number;lastGrowthTurn?:number;generationSeed?: number; culture: string; definition?: CardDefinition;
+}
+export interface CardPersonRegistry {
+    version: 1; rng: number; worldSeed?:number; people: Record<string,CardPersonProfile>;
+    garrisons: Record<string,{id:string;name:string;martial:number;intelligence:number;leadership:number;role:'武将'|'文职';generated:true;culture:string;artRegion?:string;politics:number;integrity:number;experience:number;potential?:unknown}>;
+}
+export interface CombatCard {
+    landmarkSource?:{unitId:string;sourceId:string;personId:string};uses?:number;landmarkUsed?:number;landmarkReadyTurn?:number;landmarkDeployedTurn?:number;landmarkLastUsedTurn?:number;landmarkRemoved?:string;
+    secretSource?:{unitId:string;sourceId:string;personId:string};secretRevealed?:boolean;armedOrder?:number;secretSeal?:string;
+    id: string; definitionId: string; type: 'troop'|'general'|'tactic'|'weapon'|'secret'|'landmark'; side: 'home'|'enemy'; name:string;
+    durability?:number;
+    cost:number; definition:CardDefinition; unitId?:string; kind?:TroopKind; count?:number; training?:number;
+    general?:string; personId?:string;personInstanceId?:string;historicalDefinitionId?:string|null; attack?:number; hp?:number; maxHp?:number; printedAttack?:number;
+    printedHp?:number; ready?:boolean; rushing?:boolean; tags?:string[]; buffAttack?:number;
+    buffHealth?:number; tempAttack?:number; lossPeak?:number; played?:number; frozen?:boolean;
+    silenced?:boolean; front?:boolean; attackedPly?:number; enteredPly?:number;
+}
+export interface CardPlayer {
+    landmarks?:string[];
+    secrets?:string[];
+    weapon?:string|null;heroAttackUsed?:boolean;
+    hero:number; armor:number; mana:number; maxMana:number; hand:string[]; deck:string[];
+    board:string[]; grave:string[]; reserve:Record<string,number>; gaps:string[]; fatigue:number;
+    ownTurn:number; powerUsed:boolean; heroDamage:number; discount:number; rng:number;
+    skill:{kind:'martial'|'intelligence'|'command';name:string;text:string};
+}
+export interface CardBattleState {
+    history?: {version:1;nextId:number;checksum:number;startedPly:number;partial:boolean;entries:Array<Record<string,unknown>>};
+    deckConfiguration?: {version:1; tactics:CardTacticSelection};
+    deckConfigurationHash?: number;
+    version:2; rulesVersion:3|4|5|6; seed:number;
+    landmarkAiVersion?:1;
+    secretAiVersion?:1;secretSequence?:number;
+    weaponAiVersion?:1;
+    weaponSupplies?:Record<string,{sourceId:string;kind:TroopKind;quantity:1;lost:boolean;reason?:'exhausted'|'replaced'|'leader-defeated'}>;
+    catalogVersion:string;definitionHash:number;definitionCatalog:Record<string,CardDefinition>;personCatalog:Record<string,CardDefinition>;rulesSnapshot:{attributeRules?:{version:1;trainingAttack:number;trainingHealth:number;officerAttack:number;officerHealth:number;commander:number};version:number;unitSize:number;compactArmy:boolean;compactPenalty:boolean;penaltyTiersOnly?:boolean;reserveDeckGrowth?:number;lowTrainingPenalty?:'general'|'elite'|'none';scoutVariants?:Record<string,Record<string,string>>;troopCap:number;boardLimit:number;handLimit:number;deckSize:number;spellPackages:Record<string,string[]>}; first:'home'|'enemy'; turn:'home'|'enemy';
+    phase:'mulligan'|'play'|'ended'; ply:number; nextId:number; sequence:number;
+    players:Record<'home'|'enemy',CardPlayer>; catalog:Record<string,CombatCard>;
+    events:Array<{type:string;[detail:string]:string|number|boolean|undefined}>; retreated?:'home'|'enemy';
+}
+export interface LegacyCardBattleState {
+    version:1; rulesVersion?:1|2; seed:number; turn:'home'|'enemy'; phase:'mulligan'|'play'|'ended';
+    ply:number; selected:string[]; players:Record<string,unknown>; catalog:Record<string,unknown>;retreated?:'home'|'enemy';
+}
+
 export interface BattleState {
+    difficultyId?: DifficultyId;
+    cards?: CardBattleState | LegacyCardBattleState;
+    cardPeople?: Record<string,CardPersonProfile>;
+    cardSeed?: number;
+    tiles?: ('plain' | 'road' | 'hill' | 'forest' | 'sand' | 'water')[];
     version: 2;
     command: OffensiveCommand | DefensiveCommand;
     targetName: string;
@@ -971,7 +1250,7 @@ export interface BattleState {
     cursor: number;
     order: string[];
     log: string[];
-    result: 'victory' | 'defeat' | null;
+    result: 'victory' | 'defeat' | 'draw' | null;
 }
 export interface OccupationReceipt {
     provinceId: string;
@@ -985,6 +1264,7 @@ export interface ArmyReport {
     survived: number;
     commander: {
         name: string;
+        personId?: string;
         count: number;
         initial: number;
         status: string;
@@ -997,10 +1277,13 @@ export interface ArmyReport {
         dead: number;
         survived: number;
         generalName: string;
+        generalId?: string;
         sourceId: string;
     }[];
 }
+export interface CardHistoryArchive {version:1;data:{values:Array<string|number|boolean|null>;nodes:string;bytes:number;root:number};}
 export interface WarReceipt {
+    cardHistory?: CardHistoryArchive;
     id: number;
     turn: number;
     kind: 'war' | 'recruit' | 'dismiss';
@@ -1010,7 +1293,7 @@ export interface WarReceipt {
     report?: {
         kitVersion: 1;
         occupation: OccupationReceipt | null;
-        result: 'victory' | 'defeat';
+        result: 'victory' | 'defeat' | 'draw';
         targetName: string;
         rounds: number;
         reason: string;
@@ -1027,6 +1310,7 @@ export interface WarReceipt {
             sourceId: string;
             kind: TroopKind;
             generalName: string;
+        generalId?: string;
             initial: number;
             dead: number;
             survived: number;
@@ -1115,6 +1399,7 @@ export interface TourEncounter {
     personId?: string;
 }
 export interface TravelRecord {
+    rulesVersion?: 1 | 2;
     id: number;
     kind: 'tour' | 'incognito';
     provinceId: string;
@@ -1153,6 +1438,7 @@ export interface TravelState {
     })[];
     easterEggs: {
         xiaYuheSeen: boolean;
+        cameosSeen?: string[];
     };
 }
 export interface AuspicesState {
@@ -1163,6 +1449,7 @@ export interface AuspicesState {
         provinceId: string | null;
         amount: number;
         notified: boolean;
+        rulesVersion?: 2;
     }[];
 }
 export interface SaveSlot {
@@ -1172,3 +1459,5 @@ export interface SaveSlot {
     data: GameSave;
     label?: string;
 }
+
+export interface OfficialProduction {version:1;turn:number;productionRate:number;collectionRate:number;lossRate:number;sources:{id:string|null;name:string;office:string;provinceId:string|null;role:string;ability:number;integrity:number;efficiency:number;lossRate:number;active:boolean}[];}

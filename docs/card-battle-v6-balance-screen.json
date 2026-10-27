@@ -1,0 +1,2438 @@
+{
+  "version": "phase6-yanying-v6",
+  "date": "2026-10-24T09:09:48.199Z",
+  "section": "matrix",
+  "domain": "final-v6-development-screen-20261024-A",
+  "pairsPerCase": 100,
+  "sources": {
+    "src/card-battle.mjs": "463685db86c49de5b42811c01b7d5c8eac8232526f92204523b18988f8df7b43",
+    "src/card-battle-data.mjs": "bb83bbb6f92ea028c5373b7eafff97d29ddc4743668596f74bd8d9e1ec216162",
+    "src/card-battle-weapons.mjs": "2a9ec7ee720fbf9c71113a0d93852321a3af7fdbd130ff26a1d7977de331ac2c",
+    "src/card-battle-secrets.mjs": "249901403e59e76456a275e1e2d9832bbba47f8886b45ee9ce17d14c6993722c",
+    "src/card-battle-landmarks.mjs": "f24a9a0f1c5ac51bb5b7135cc604746ee2cd132a9c0e5a8aa05a7c9e13da62bf",
+    "scripts/card-battle-balance-fixture.mjs": "ee91f3149db232402821b94fdd3db56c9aebf21f4ed697a61b5423318212b656",
+    "scripts/card-battle-audit-telemetry.mjs": "0d753fae04dbb1c4338e18901235ded8aafddec4e1ba667945a0722916721a10",
+    "scripts/audit-card-battle-release.mjs": "3da2796b8bebd0495376ff41d143687010a6c96db8f83c22dd84b53622efce4b"
+  },
+  "rules": {
+    "version": 3,
+    "unitSize": 100,
+    "compactArmy": true,
+    "compactPenalty": true,
+    "troopCap": 18,
+    "boardLimit": 7,
+    "handLimit": 10,
+    "deckSize": 30,
+    "spellPackages": {
+      "martial": [
+        "precision",
+        "fire",
+        "fortify",
+        "assault",
+        "supply",
+        "pin",
+        "precision",
+        "fire",
+        "fortify",
+        "supply",
+        "dispel",
+        "heal"
+      ],
+      "intelligence": [
+        "precision",
+        "fire",
+        "arrows",
+        "barrage",
+        "pin",
+        "supply",
+        "precision",
+        "execute",
+        "arrows",
+        "barrage",
+        "pin",
+        "dispel"
+      ],
+      "command": [
+        "precision",
+        "fire",
+        "fortify",
+        "assault",
+        "supply",
+        "brace",
+        "fire",
+        "fortify",
+        "assault",
+        "supply",
+        "heal",
+        "dispel"
+      ]
+    },
+    "penaltyTiersOnly": true,
+    "reserveDeckGrowth": 2,
+    "lowTrainingPenalty": "general",
+    "scoutVariants": {
+      "intelligence": {
+        "cavalry": "cavalry_patrol_scout"
+      },
+      "command": {
+        "cavalry": "cavalry_patrol_scout"
+      }
+    }
+  },
+  "method": "Production cardAI + actCardsMutable; paired fixed A/B random streams, swapped first player. Each independent pair also varies equal ability-gated fixed person profiles. CI is paired normal 95%; draws score 0.5. Controller is heuristic, not a human or optimal policy.",
+  "acceptance": {
+    "target": [
+      0.47,
+      0.53
+    ],
+    "passed": false,
+    "failedCases": [
+      "cavalry_1800-20-intelligence",
+      "cavalry_1800-60-command",
+      "cavalry_1800-90-command",
+      "cavalry_1800-90-intelligence",
+      "cavalry_1800-90-martial",
+      "exotic_1800-20-martial",
+      "exotic_1800-60-intelligence",
+      "exotic_1800-60-martial",
+      "exotic_1800-90-command",
+      "exotic_1800-90-intelligence",
+      "exotic_1800-90-martial",
+      "heavy_1800-20-intelligence",
+      "heavy_1800-60-command",
+      "heavy_1800-60-martial",
+      "heavy_1800-90-intelligence",
+      "infantry_1800-20-command",
+      "infantry_1800-20-martial",
+      "infantry_1800-90-intelligence",
+      "mixed_1800-20-command",
+      "mixed_1800-60-command",
+      "mixed_1800-60-martial",
+      "mixed_1800-90-intelligence",
+      "mixed_600-20-command",
+      "mixed_600-20-intelligence",
+      "mixed_600-20-martial",
+      "mixed_600-60-martial",
+      "mixed_600-90-martial",
+      "ranged_1800-20-intelligence",
+      "ranged_1800-60-intelligence",
+      "ranged_1800-60-martial",
+      "ranged_1800-90-command",
+      "ranged_1800-90-intelligence",
+      "reserve_3600-20-intelligence",
+      "reserve_3600-20-martial",
+      "reserve_3600-60-command",
+      "reserve_3600-90-command",
+      "reserve_3600-90-intelligence"
+    ],
+    "note": "Point-estimate gate only; inspect per-case confidence intervals. Base matrix does not establish configured decks/weapons/secrets/landmarks coverage."
+  },
+  "games": 14400,
+  "elapsedSeconds": 68.834,
+  "rows": [
+    {
+      "id": "cavalry_1800-20-command",
+      "roster": "cavalry_1800",
+      "training": 20,
+      "hero": "command",
+      "pairs": 100,
+      "seedDomain": "final-v6-development-screen-20261024-A",
+      "games": 200,
+      "first": {
+        "mean": 0.505,
+        "ci95": [
+          0.4434985866960454,
+          0.5665014133039545
+        ]
+      },
+      "home": {
+        "mean": 0.465,
+        "ci95": [
+          0.38838354476927817,
+          0.5416164552307219
+        ]
+      },
+      "draws": 0,
+      "rounds": {
+        "median": 15,
+        "p90": 28,
+        "max": 31
+      },
+      "actions": 24271,
+      "validatedFinalStates": 4,
+      "deployed": []
+    },
+    {
+      "id": "cavalry_1800-20-intelligence",
+      "roster": "cavalry_1800",
+      "training": 20,
+      "hero": "intelligence",
+      "pairs": 100,
+      "seedDomain": "final-v6-development-screen-20261024-A",
+      "games": 200,
+      "first": {
+        "mean": 0.465,
+        "ci95": [
+          0.4007824058848404,
+          0.5292175941151597
+        ]
+      },
+      "home": {
+        "mean": 0.475,
+        "ci95": [
+          0.4008021345837818,
+          0.5491978654162182
+        ]
+      },
+      "draws": 0,
+      "rounds": {
+        "median": 18,
+        "p90": 20,
+        "max": 22
+      },
+      "actions": 23642,
+      "validatedFinalStates": 4,
+      "deployed": []
+    },
+    {
+      "id": "cavalry_1800-20-martial",
+      "roster": "cavalry_1800",
+      "training": 20,
+      "hero": "martial",
+      "pairs": 100,
+      "seedDomain": "final-v6-development-screen-20261024-A",
+      "games": 200,
+      "first": {
+        "mean": 0.49,
+        "ci95": [
+          0.41900250111106135,
+          0.5609974988889386
+        ]
+      },
+      "home": {
+        "mean": 0.54,
+        "ci95": [
+          0.472218008410505,
+          0.6077819915894951
+        ]
+      },
+      "draws": 0,
+      "rounds": {
+        "median": 15,
+        "p90": 23,
+        "max": 26
+      },
+      "actions": 22913,
+      "validatedFinalStates": 4,
+      "deployed": []
+    },
+    {
+      "id": "cavalry_1800-60-command",
+      "roster": "cavalry_1800",
+      "training": 60,
+      "hero": "command",
+      "pairs": 100,
+      "seedDomain": "final-v6-development-screen-20261024-A",
+      "games": 200,
+      "first": {
+        "mean": 0.43,
+        "ci95": [
+          0.36032657999964796,
+          0.49967342000035203
+        ]
+      },
+      "home": {
+        "mean": 0.46,
+        "ci95": [
+          0.3922180084105049,
+          0.5277819915894951
+        ]
+      },
+      "draws": 0,
+      "rounds": {
+        "median": 14,
+        "p90": 28,
+        "max": 31
+      },
+      "actions": 23590,
+      "validatedFinalStates": 4,
+      "deployed": []
+    },
+    {
+      "id": "cavalry_1800-60-intelligence",
+      "roster": "cavalry_1800",
+      "training": 60,
+      "hero": "intelligence",
+      "pairs": 100,
+      "seedDomain": "final-v6-development-screen-20261024-A",
+      "games": 200,
+      "first": {
+        "mean": 0.515,
+        "ci95": [
+          0.4461177523566192,
+          0.5838822476433808
+        ]
+      },
+      "home": {
+        "mean": 0.495,
+        "ci95": [
+          0.42466832114541087,
+          0.5653316788545891
+        ]
+      },
+      "draws": 0,
+      "rounds": {
+        "median": 18,
+        "p90": 20,
+        "max": 21
+      },
+      "actions": 24216,
+      "validatedFinalStates": 4,
+      "deployed": []
+    },
+    {
+      "id": "cavalry_1800-60-martial",
+      "roster": "cavalry_1800",
+      "training": 60,
+      "hero": "martial",
+      "pairs": 100,
+      "seedDomain": "final-v6-development-screen-20261024-A",
+      "games": 200,
+      "first": {
+        "mean": 0.475,
+        "ci95": [
+          0.41368816252842017,
+          0.5363118374715797
+        ]
+      },
+      "home": {
+        "mean": 0.475,
+        "ci95": [
+          0.39823175372353725,
+          0.5517682462764627
+        ]
+      },
+      "draws": 0,
+      "rounds": {
+        "median": 16,
+        "p90": 23,
+        "max": 27
+      },
+      "actions": 22877,
+      "validatedFinalStates": 4,
+      "deployed": []
+    },
+    {
+      "id": "cavalry_1800-90-command",
+      "roster": "cavalry_1800",
+      "training": 90,
+      "hero": "command",
+      "pairs": 100,
+      "seedDomain": "final-v6-development-screen-20261024-A",
+      "games": 200,
+      "first": {
+        "mean": 0.535,
+        "ci95": [
+          0.4678290256287748,
+          0.6021709743712252
+        ]
+      },
+      "home": {
+        "mean": 0.535,
+        "ci95": [
+          0.4636277336492641,
+          0.606372266350736
+        ]
+      },
+      "draws": 0,
+      "rounds": {
+        "median": 15,
+        "p90": 28,
+        "max": 31
+      },
+      "actions": 24419,
+      "validatedFinalStates": 4,
+      "deployed": []
+    },
+    {
+      "id": "cavalry_1800-90-intelligence",
+      "roster": "cavalry_1800",
+      "training": 90,
+      "hero": "intelligence",
+      "pairs": 100,
+      "seedDomain": "final-v6-development-screen-20261024-A",
+      "games": 200,
+      "first": {
+        "mean": 0.565,
+        "ci95": [
+          0.4944479746369511,
+          0.6355520253630488
+        ]
+      },
+      "home": {
+        "mean": 0.455,
+        "ci95": [
+          0.38806050070655923,
+          0.5219394992934407
+        ]
+      },
+      "draws": 0,
+      "rounds": {
+        "median": 17,
+        "p90": 20,
+        "max": 21
+      },
+      "actions": 23864,
+      "validatedFinalStates": 4,
+      "deployed": []
+    },
+    {
+      "id": "cavalry_1800-90-martial",
+      "roster": "cavalry_1800",
+      "training": 90,
+      "hero": "martial",
+      "pairs": 100,
+      "seedDomain": "final-v6-development-screen-20261024-A",
+      "games": 200,
+      "first": {
+        "mean": 0.585,
+        "ci95": [
+          0.5166834137299297,
+          0.6533165862700703
+        ]
+      },
+      "home": {
+        "mean": 0.535,
+        "ci95": [
+          0.4664000000000001,
+          0.6036
+        ]
+      },
+      "draws": 0,
+      "rounds": {
+        "median": 15,
+        "p90": 23,
+        "max": 25
+      },
+      "actions": 22915,
+      "validatedFinalStates": 4,
+      "deployed": []
+    },
+    {
+      "id": "exotic_1800-20-command",
+      "roster": "exotic_1800",
+      "training": 20,
+      "hero": "command",
+      "pairs": 100,
+      "seedDomain": "final-v6-development-screen-20261024-A",
+      "games": 200,
+      "first": {
+        "mean": 0.505,
+        "ci95": [
+          0.43893575517388816,
+          0.5710642448261118
+        ]
+      },
+      "home": {
+        "mean": 0.495,
+        "ci95": [
+          0.4219617534811695,
+          0.5680382465188305
+        ]
+      },
+      "draws": 0,
+      "rounds": {
+        "median": 13,
+        "p90": 21,
+        "max": 28
+      },
+      "actions": 20307,
+      "validatedFinalStates": 4,
+      "deployed": []
+    },
+    {
+      "id": "exotic_1800-20-intelligence",
+      "roster": "exotic_1800",
+      "training": 20,
+      "hero": "intelligence",
+      "pairs": 100,
+      "seedDomain": "final-v6-development-screen-20261024-A",
+      "games": 200,
+      "first": {
+        "mean": 0.515,
+        "ci95": [
+          0.4433564068150931,
+          0.586643593184907
+        ]
+      },
+      "home": {
+        "mean": 0.495,
+        "ci95": [
+          0.4274833009806859,
+          0.5625166990193141
+        ]
+      },
+      "draws": 0,
+      "rounds": {
+        "median": 15,
+        "p90": 19,
+        "max": 21
+      },
+      "actions": 20238,
+      "validatedFinalStates": 4,
+      "deployed": []
+    },
+    {
+      "id": "exotic_1800-20-martial",
+      "roster": "exotic_1800",
+      "training": 20,
+      "hero": "martial",
+      "pairs": 100,
+      "seedDomain": "final-v6-development-screen-20261024-A",
+      "games": 200,
+      "first": {
+        "mean": 0.545,
+        "ci95": [
+          0.48102456595210824,
+          0.6089754340478919
+        ]
+      },
+      "home": {
+        "mean": 0.405,
+        "ci95": [
+          0.33303216487256765,
+          0.4769678351274324
+        ]
+      },
+      "draws": 0,
+      "rounds": {
+        "median": 14,
+        "p90": 18,
+        "max": 25
+      },
+      "actions": 19731,
+      "validatedFinalStates": 4,
+      "deployed": []
+    },
+    {
+      "id": "exotic_1800-60-command",
+      "roster": "exotic_1800",
+      "training": 60,
+      "hero": "command",
+      "pairs": 100,
+      "seedDomain": "final-v6-development-screen-20261024-A",
+      "games": 200,
+      "first": {
+        "mean": 0.515,
+        "ci95": [
+          0.44754079871223024,
+          0.5824592012877698
+        ]
+      },
+      "home": {
+        "mean": 0.615,
+        "ci95": [
+          0.5469680081197682,
+          0.6830319918802318
+        ]
+      },
+      "draws": 0,
+      "rounds": {
+        "median": 13,
+        "p90": 21,
+        "max": 31
+      },
+      "actions": 21186,
+      "validatedFinalStates": 4,
+      "deployed": []
+    },
+    {
+      "id": "exotic_1800-60-intelligence",
+      "roster": "exotic_1800",
+      "training": 60,
+      "hero": "intelligence",
+      "pairs": 100,
+      "seedDomain": "final-v6-development-screen-20261024-A",
+      "games": 200,
+      "first": {
+        "mean": 0.535,
+        "ci95": [
+          0.47231125147269903,
+          0.597688748527301
+        ]
+      },
+      "home": {
+        "mean": 0.465,
+        "ci95": [
+          0.3896603622911485,
+          0.5403396377088515
+        ]
+      },
+      "draws": 0,
+      "rounds": {
+        "median": 15,
+        "p90": 19,
+        "max": 22
+      },
+      "actions": 20268,
+      "validatedFinalStates": 4,
+      "deployed": []
+    },
+    {
+      "id": "exotic_1800-60-martial",
+      "roster": "exotic_1800",
+      "training": 60,
+      "hero": "martial",
+      "pairs": 100,
+      "seedDomain": "final-v6-development-screen-20261024-A",
+      "games": 200,
+      "first": {
+        "mean": 0.565,
+        "ci95": [
+          0.4944479746369511,
+          0.6355520253630488
+        ]
+      },
+      "home": {
+        "mean": 0.445,
+        "ci95": [
+          0.37835097506150206,
+          0.511649024938498
+        ]
+      },
+      "draws": 0,
+      "rounds": {
+        "median": 14,
+        "p90": 19,
+        "max": 24
+      },
+      "actions": 20733,
+      "validatedFinalStates": 4,
+      "deployed": []
+    },
+    {
+      "id": "exotic_1800-90-command",
+      "roster": "exotic_1800",
+      "training": 90,
+      "hero": "command",
+      "pairs": 100,
+      "seedDomain": "final-v6-development-screen-20261024-A",
+      "games": 200,
+      "first": {
+        "mean": 0.55,
+        "ci95": [
+          0.4824761172067635,
+          0.6175238827932366
+        ]
+      },
+      "home": {
+        "mean": 0.51,
+        "ci95": [
+          0.43900250111106137,
+          0.5809974988889387
+        ]
+      },
+      "draws": 0,
+      "rounds": {
+        "median": 13,
+        "p90": 21,
+        "max": 28
+      },
+      "actions": 20789,
+      "validatedFinalStates": 4,
+      "deployed": []
+    },
+    {
+      "id": "exotic_1800-90-intelligence",
+      "roster": "exotic_1800",
+      "training": 90,
+      "hero": "intelligence",
+      "pairs": 100,
+      "seedDomain": "final-v6-development-screen-20261024-A",
+      "games": 200,
+      "first": {
+        "mean": 0.655,
+        "ci95": [
+          0.5901211260668908,
+          0.7198788739331092
+        ]
+      },
+      "home": {
+        "mean": 0.505,
+        "ci95": [
+          0.4374833009806859,
+          0.5725166990193141
+        ]
+      },
+      "draws": 0,
+      "rounds": {
+        "median": 15,
+        "p90": 19,
+        "max": 21
+      },
+      "actions": 20621,
+      "validatedFinalStates": 4,
+      "deployed": []
+    },
+    {
+      "id": "exotic_1800-90-martial",
+      "roster": "exotic_1800",
+      "training": 90,
+      "hero": "martial",
+      "pairs": 100,
+      "seedDomain": "final-v6-development-screen-20261024-A",
+      "games": 200,
+      "first": {
+        "mean": 0.45,
+        "ci95": [
+          0.3782954997678991,
+          0.5217045002321009
+        ]
+      },
+      "home": {
+        "mean": 0.53,
+        "ci95": [
+          0.46346022986137536,
+          0.5965397701386247
+        ]
+      },
+      "draws": 0,
+      "rounds": {
+        "median": 13,
+        "p90": 18,
+        "max": 23
+      },
+      "actions": 19824,
+      "validatedFinalStates": 4,
+      "deployed": []
+    },
+    {
+      "id": "heavy_1800-20-command",
+      "roster": "heavy_1800",
+      "training": 20,
+      "hero": "command",
+      "pairs": 100,
+      "seedDomain": "final-v6-development-screen-20261024-A",
+      "games": 200,
+      "first": {
+        "mean": 0.475,
+        "ci95": [
+          0.4048340351291124,
+          0.5451659648708875
+        ]
+      },
+      "home": {
+        "mean": 0.455,
+        "ci95": [
+          0.3866266370018502,
+          0.5233733629981498
+        ]
+      },
+      "draws": 0,
+      "rounds": {
+        "median": 13,
+        "p90": 26,
+        "max": 30
+      },
+      "actions": 22171,
+      "validatedFinalStates": 4,
+      "deployed": []
+    },
+    {
+      "id": "heavy_1800-20-intelligence",
+      "roster": "heavy_1800",
+      "training": 20,
+      "hero": "intelligence",
+      "pairs": 100,
+      "seedDomain": "final-v6-development-screen-20261024-A",
+      "games": 200,
+      "first": {
+        "mean": 0.565,
+        "ci95": [
+          0.4944479746369511,
+          0.6355520253630488
+        ]
+      },
+      "home": {
+        "mean": 0.505,
+        "ci95": [
+          0.4374833009806859,
+          0.5725166990193141
+        ]
+      },
+      "draws": 0,
+      "rounds": {
+        "median": 18,
+        "p90": 20,
+        "max": 22
+      },
+      "actions": 23389,
+      "validatedFinalStates": 4,
+      "deployed": []
+    },
+    {
+      "id": "heavy_1800-20-martial",
+      "roster": "heavy_1800",
+      "training": 20,
+      "hero": "martial",
+      "pairs": 100,
+      "seedDomain": "final-v6-development-screen-20261024-A",
+      "games": 200,
+      "first": {
+        "mean": 0.49,
+        "ci95": [
+          0.4246963703887446,
+          0.5553036296112555
+        ]
+      },
+      "home": {
+        "mean": 0.51,
+        "ci95": [
+          0.4363203878096169,
+          0.5836796121903831
+        ]
+      },
+      "draws": 0,
+      "rounds": {
+        "median": 13,
+        "p90": 18,
+        "max": 25
+      },
+      "actions": 19794,
+      "validatedFinalStates": 4,
+      "deployed": []
+    },
+    {
+      "id": "heavy_1800-60-command",
+      "roster": "heavy_1800",
+      "training": 60,
+      "hero": "command",
+      "pairs": 100,
+      "seedDomain": "final-v6-development-screen-20261024-A",
+      "games": 200,
+      "first": {
+        "mean": 0.465,
+        "ci95": [
+          0.3992891211749562,
+          0.5307108788250439
+        ]
+      },
+      "home": {
+        "mean": 0.475,
+        "ci95": [
+          0.4021213129213826,
+          0.5478786870786173
+        ]
+      },
+      "draws": 0,
+      "rounds": {
+        "median": 14,
+        "p90": 26,
+        "max": 30
+      },
+      "actions": 23347,
+      "validatedFinalStates": 4,
+      "deployed": []
+    },
+    {
+      "id": "heavy_1800-60-intelligence",
+      "roster": "heavy_1800",
+      "training": 60,
+      "hero": "intelligence",
+      "pairs": 100,
+      "seedDomain": "final-v6-development-screen-20261024-A",
+      "games": 200,
+      "first": {
+        "mean": 0.49,
+        "ci95": [
+          0.42322736906168634,
+          0.5567726309383136
+        ]
+      },
+      "home": {
+        "mean": 0.52,
+        "ci95": [
+          0.4477295092144529,
+          0.5922704907855472
+        ]
+      },
+      "draws": 0,
+      "rounds": {
+        "median": 18,
+        "p90": 20,
+        "max": 21
+      },
+      "actions": 23827,
+      "validatedFinalStates": 4,
+      "deployed": []
+    },
+    {
+      "id": "heavy_1800-60-martial",
+      "roster": "heavy_1800",
+      "training": 60,
+      "hero": "martial",
+      "pairs": 100,
+      "seedDomain": "final-v6-development-screen-20261024-A",
+      "games": 200,
+      "first": {
+        "mean": 0.535,
+        "ci95": [
+          0.46928912117495625,
+          0.6007108788250438
+        ]
+      },
+      "home": {
+        "mean": 0.575,
+        "ci95": [
+          0.5034648140543212,
+          0.6465351859456787
+        ]
+      },
+      "draws": 0,
+      "rounds": {
+        "median": 13,
+        "p90": 18,
+        "max": 24
+      },
+      "actions": 19938,
+      "validatedFinalStates": 4,
+      "deployed": []
+    },
+    {
+      "id": "heavy_1800-90-command",
+      "roster": "heavy_1800",
+      "training": 90,
+      "hero": "command",
+      "pairs": 100,
+      "seedDomain": "final-v6-development-screen-20261024-A",
+      "games": 200,
+      "first": {
+        "mean": 0.52,
+        "ci95": [
+          0.45783182144985723,
+          0.5821681785501428
+        ]
+      },
+      "home": {
+        "mean": 0.52,
+        "ci95": [
+          0.44380889524068806,
+          0.596191104759312
+        ]
+      },
+      "draws": 0,
+      "rounds": {
+        "median": 13,
+        "p90": 24,
+        "max": 31
+      },
+      "actions": 22329,
+      "validatedFinalStates": 4,
+      "deployed": []
+    },
+    {
+      "id": "heavy_1800-90-intelligence",
+      "roster": "heavy_1800",
+      "training": 90,
+      "hero": "intelligence",
+      "pairs": 100,
+      "seedDomain": "final-v6-development-screen-20261024-A",
+      "games": 200,
+      "first": {
+        "mean": 0.555,
+        "ci95": [
+          0.4883509750615021,
+          0.6216490249384979
+        ]
+      },
+      "home": {
+        "mean": 0.535,
+        "ci95": [
+          0.4636277336492641,
+          0.606372266350736
+        ]
+      },
+      "draws": 0,
+      "rounds": {
+        "median": 17,
+        "p90": 20,
+        "max": 21
+      },
+      "actions": 22966,
+      "validatedFinalStates": 4,
+      "deployed": []
+    },
+    {
+      "id": "heavy_1800-90-martial",
+      "roster": "heavy_1800",
+      "training": 90,
+      "hero": "martial",
+      "pairs": 100,
+      "seedDomain": "final-v6-development-screen-20261024-A",
+      "games": 200,
+      "first": {
+        "mean": 0.485,
+        "ci95": [
+          0.4161177523566192,
+          0.5538822476433808
+        ]
+      },
+      "home": {
+        "mean": 0.515,
+        "ci95": [
+          0.4447235157223681,
+          0.5852764842776319
+        ]
+      },
+      "draws": 0,
+      "rounds": {
+        "median": 13,
+        "p90": 19,
+        "max": 25
+      },
+      "actions": 20134,
+      "validatedFinalStates": 4,
+      "deployed": []
+    },
+    {
+      "id": "infantry_1800-20-command",
+      "roster": "infantry_1800",
+      "training": 20,
+      "hero": "command",
+      "pairs": 100,
+      "seedDomain": "final-v6-development-screen-20261024-A",
+      "games": 200,
+      "first": {
+        "mean": 0.465,
+        "ci95": [
+          0.40231125147269897,
+          0.5276887485273011
+        ]
+      },
+      "home": {
+        "mean": 0.495,
+        "ci95": [
+          0.4193519606428173,
+          0.5706480393571827
+        ]
+      },
+      "draws": 0,
+      "rounds": {
+        "median": 14,
+        "p90": 26,
+        "max": 30
+      },
+      "actions": 23871,
+      "validatedFinalStates": 4,
+      "deployed": []
+    },
+    {
+      "id": "infantry_1800-20-intelligence",
+      "roster": "infantry_1800",
+      "training": 20,
+      "hero": "intelligence",
+      "pairs": 100,
+      "seedDomain": "final-v6-development-screen-20261024-A",
+      "games": 200,
+      "first": {
+        "mean": 0.53,
+        "ci95": [
+          0.4679880624069817,
+          0.5920119375930184
+        ]
+      },
+      "home": {
+        "mean": 0.55,
+        "ci95": [
+          0.47434554897697057,
+          0.6256544510230295
+        ]
+      },
+      "draws": 0,
+      "rounds": {
+        "median": 16,
+        "p90": 19,
+        "max": 20
+      },
+      "actions": 21987,
+      "validatedFinalStates": 4,
+      "deployed": []
+    },
+    {
+      "id": "infantry_1800-20-martial",
+      "roster": "infantry_1800",
+      "training": 20,
+      "hero": "martial",
+      "pairs": 100,
+      "seedDomain": "final-v6-development-screen-20261024-A",
+      "games": 200,
+      "first": {
+        "mean": 0.535,
+        "ci95": [
+          0.46928912117495625,
+          0.6007108788250438
+        ]
+      },
+      "home": {
+        "mean": 0.475,
+        "ci95": [
+          0.40212131292138265,
+          0.5478786870786173
+        ]
+      },
+      "draws": 0,
+      "rounds": {
+        "median": 15,
+        "p90": 22,
+        "max": 25
+      },
+      "actions": 23078,
+      "validatedFinalStates": 4,
+      "deployed": []
+    },
+    {
+      "id": "infantry_1800-60-command",
+      "roster": "infantry_1800",
+      "training": 60,
+      "hero": "command",
+      "pairs": 100,
+      "seedDomain": "final-v6-development-screen-20261024-A",
+      "games": 200,
+      "first": {
+        "mean": 0.53,
+        "ci95": [
+          0.4578638660712828,
+          0.6021361339287172
+        ]
+      },
+      "home": {
+        "mean": 0.55,
+        "ci95": [
+          0.48392841347860227,
+          0.6160715865213978
+        ]
+      },
+      "draws": 0,
+      "rounds": {
+        "median": 14,
+        "p90": 24,
+        "max": 30
+      },
+      "actions": 23666,
+      "validatedFinalStates": 4,
+      "deployed": []
+    },
+    {
+      "id": "infantry_1800-60-intelligence",
+      "roster": "infantry_1800",
+      "training": 60,
+      "hero": "intelligence",
+      "pairs": 100,
+      "seedDomain": "final-v6-development-screen-20261024-A",
+      "games": 200,
+      "first": {
+        "mean": 0.48,
+        "ci95": [
+          0.4090845317553099,
+          0.5509154682446901
+        ]
+      },
+      "home": {
+        "mean": 0.49,
+        "ci95": [
+          0.42178999747511775,
+          0.5582100025248822
+        ]
+      },
+      "draws": 0,
+      "rounds": {
+        "median": 15,
+        "p90": 19,
+        "max": 21
+      },
+      "actions": 21976,
+      "validatedFinalStates": 4,
+      "deployed": []
+    },
+    {
+      "id": "infantry_1800-60-martial",
+      "roster": "infantry_1800",
+      "training": 60,
+      "hero": "martial",
+      "pairs": 100,
+      "seedDomain": "final-v6-development-screen-20261024-A",
+      "games": 200,
+      "first": {
+        "mean": 0.495,
+        "ci95": [
+          0.4274833009806859,
+          0.5625166990193141
+        ]
+      },
+      "home": {
+        "mean": 0.515,
+        "ci95": [
+          0.4433564068150931,
+          0.586643593184907
+        ]
+      },
+      "draws": 0,
+      "rounds": {
+        "median": 15,
+        "p90": 22,
+        "max": 25
+      },
+      "actions": 23265,
+      "validatedFinalStates": 4,
+      "deployed": []
+    },
+    {
+      "id": "infantry_1800-90-command",
+      "roster": "infantry_1800",
+      "training": 90,
+      "hero": "command",
+      "pairs": 100,
+      "seedDomain": "final-v6-development-screen-20261024-A",
+      "games": 200,
+      "first": {
+        "mean": 0.48,
+        "ci95": [
+          0.41478556273122613,
+          0.5452144372687738
+        ]
+      },
+      "home": {
+        "mean": 0.5,
+        "ci95": [
+          0.4262940595571452,
+          0.5737059404428548
+        ]
+      },
+      "draws": 0,
+      "rounds": {
+        "median": 15,
+        "p90": 24,
+        "max": 31
+      },
+      "actions": 24333,
+      "validatedFinalStates": 4,
+      "deployed": []
+    },
+    {
+      "id": "infantry_1800-90-intelligence",
+      "roster": "infantry_1800",
+      "training": 90,
+      "hero": "intelligence",
+      "pairs": 100,
+      "seedDomain": "final-v6-development-screen-20261024-A",
+      "games": 200,
+      "first": {
+        "mean": 0.54,
+        "ci95": [
+          0.4667164466478379,
+          0.6132835533521621
+        ]
+      },
+      "home": {
+        "mean": 0.56,
+        "ci95": [
+          0.4957446508141937,
+          0.6242553491858064
+        ]
+      },
+      "draws": 0,
+      "rounds": {
+        "median": 15,
+        "p90": 19,
+        "max": 20
+      },
+      "actions": 21669,
+      "validatedFinalStates": 4,
+      "deployed": []
+    },
+    {
+      "id": "infantry_1800-90-martial",
+      "roster": "infantry_1800",
+      "training": 90,
+      "hero": "martial",
+      "pairs": 100,
+      "seedDomain": "final-v6-development-screen-20261024-A",
+      "games": 200,
+      "first": {
+        "mean": 0.52,
+        "ci95": [
+          0.45046595485416197,
+          0.5895340451458381
+        ]
+      },
+      "home": {
+        "mean": 0.52,
+        "ci95": [
+          0.45046595485416197,
+          0.5895340451458381
+        ]
+      },
+      "draws": 0,
+      "rounds": {
+        "median": 14,
+        "p90": 21,
+        "max": 24
+      },
+      "actions": 22708,
+      "validatedFinalStates": 4,
+      "deployed": []
+    },
+    {
+      "id": "mixed_1800-20-command",
+      "roster": "mixed_1800",
+      "training": 20,
+      "hero": "command",
+      "pairs": 100,
+      "seedDomain": "final-v6-development-screen-20261024-A",
+      "games": 200,
+      "first": {
+        "mean": 0.55,
+        "ci95": [
+          0.47829549976789915,
+          0.6217045002321009
+        ]
+      },
+      "home": {
+        "mean": 0.56,
+        "ci95": [
+          0.4942522236040633,
+          0.6257477763959368
+        ]
+      },
+      "draws": 0,
+      "rounds": {
+        "median": 13,
+        "p90": 25,
+        "max": 31
+      },
+      "actions": 21791,
+      "validatedFinalStates": 4,
+      "deployed": []
+    },
+    {
+      "id": "mixed_1800-20-intelligence",
+      "roster": "mixed_1800",
+      "training": 20,
+      "hero": "intelligence",
+      "pairs": 100,
+      "seedDomain": "final-v6-development-screen-20261024-A",
+      "games": 200,
+      "first": {
+        "mean": 0.48,
+        "ci95": [
+          0.41331459657239045,
+          0.5466854034276095
+        ]
+      },
+      "home": {
+        "mean": 0.45,
+        "ci95": [
+          0.3782954997678991,
+          0.5217045002321009
+        ]
+      },
+      "draws": 0,
+      "rounds": {
+        "median": 16,
+        "p90": 19,
+        "max": 21
+      },
+      "actions": 21922,
+      "validatedFinalStates": 4,
+      "deployed": []
+    },
+    {
+      "id": "mixed_1800-20-martial",
+      "roster": "mixed_1800",
+      "training": 20,
+      "hero": "martial",
+      "pairs": 100,
+      "seedDomain": "final-v6-development-screen-20261024-A",
+      "games": 200,
+      "first": {
+        "mean": 0.51,
+        "ci95": [
+          0.4403822964579796,
+          0.5796177035420205
+        ]
+      },
+      "home": {
+        "mean": 0.48,
+        "ci95": [
+          0.41046595485416193,
+          0.549534045145838
+        ]
+      },
+      "draws": 0,
+      "rounds": {
+        "median": 14,
+        "p90": 20,
+        "max": 24
+      },
+      "actions": 20645,
+      "validatedFinalStates": 4,
+      "deployed": []
+    },
+    {
+      "id": "mixed_1800-60-command",
+      "roster": "mixed_1800",
+      "training": 60,
+      "hero": "command",
+      "pairs": 100,
+      "seedDomain": "final-v6-development-screen-20261024-A",
+      "games": 200,
+      "first": {
+        "mean": 0.445,
+        "ci95": [
+          0.37550084224040614,
+          0.5144991577595939
+        ]
+      },
+      "home": {
+        "mean": 0.515,
+        "ci95": [
+          0.4461177523566192,
+          0.5838822476433808
+        ]
+      },
+      "draws": 0,
+      "rounds": {
+        "median": 12,
+        "p90": 22,
+        "max": 30
+      },
+      "actions": 20749,
+      "validatedFinalStates": 4,
+      "deployed": []
+    },
+    {
+      "id": "mixed_1800-60-intelligence",
+      "roster": "mixed_1800",
+      "training": 60,
+      "hero": "intelligence",
+      "pairs": 100,
+      "seedDomain": "final-v6-development-screen-20261024-A",
+      "games": 200,
+      "first": {
+        "mean": 0.505,
+        "ci95": [
+          0.4346683211454109,
+          0.5753316788545891
+        ]
+      },
+      "home": {
+        "mean": 0.475,
+        "ci95": [
+          0.40623051240381075,
+          0.5437694875961891
+        ]
+      },
+      "draws": 0,
+      "rounds": {
+        "median": 15,
+        "p90": 19,
+        "max": 21
+      },
+      "actions": 21313,
+      "validatedFinalStates": 4,
+      "deployed": []
+    },
+    {
+      "id": "mixed_1800-60-martial",
+      "roster": "mixed_1800",
+      "training": 60,
+      "hero": "martial",
+      "pairs": 100,
+      "seedDomain": "final-v6-development-screen-20261024-A",
+      "games": 200,
+      "first": {
+        "mean": 0.455,
+        "ci95": [
+          0.37986666666666674,
+          0.5301333333333333
+        ]
+      },
+      "home": {
+        "mean": 0.465,
+        "ci95": [
+          0.40231125147269897,
+          0.5276887485273011
+        ]
+      },
+      "draws": 0,
+      "rounds": {
+        "median": 14,
+        "p90": 19,
+        "max": 23
+      },
+      "actions": 21008,
+      "validatedFinalStates": 4,
+      "deployed": []
+    },
+    {
+      "id": "mixed_1800-90-command",
+      "roster": "mixed_1800",
+      "training": 90,
+      "hero": "command",
+      "pairs": 100,
+      "seedDomain": "final-v6-development-screen-20261024-A",
+      "games": 200,
+      "first": {
+        "mean": 0.51,
+        "ci95": [
+          0.44178999747511777,
+          0.5782100025248822
+        ]
+      },
+      "home": {
+        "mean": 0.46,
+        "ci95": [
+          0.38941360762952404,
+          0.530586392370476
+        ]
+      },
+      "draws": 0,
+      "rounds": {
+        "median": 13,
+        "p90": 23,
+        "max": 31
+      },
+      "actions": 22052,
+      "validatedFinalStates": 4,
+      "deployed": []
+    },
+    {
+      "id": "mixed_1800-90-intelligence",
+      "roster": "mixed_1800",
+      "training": 90,
+      "hero": "intelligence",
+      "pairs": 100,
+      "seedDomain": "final-v6-development-screen-20261024-A",
+      "games": 200,
+      "first": {
+        "mean": 0.465,
+        "ci95": [
+          0.3978290256287748,
+          0.5321709743712252
+        ]
+      },
+      "home": {
+        "mean": 0.505,
+        "ci95": [
+          0.43330226466250654,
+          0.5766977353374935
+        ]
+      },
+      "draws": 0,
+      "rounds": {
+        "median": 16,
+        "p90": 19,
+        "max": 21
+      },
+      "actions": 22161,
+      "validatedFinalStates": 4,
+      "deployed": []
+    },
+    {
+      "id": "mixed_1800-90-martial",
+      "roster": "mixed_1800",
+      "training": 90,
+      "hero": "martial",
+      "pairs": 100,
+      "seedDomain": "final-v6-development-screen-20261024-A",
+      "games": 200,
+      "first": {
+        "mean": 0.49,
+        "ci95": [
+          0.4163203878096169,
+          0.5636796121903831
+        ]
+      },
+      "home": {
+        "mean": 0.48,
+        "ci95": [
+          0.41478556273122613,
+          0.5452144372687738
+        ]
+      },
+      "draws": 0,
+      "rounds": {
+        "median": 13,
+        "p90": 19,
+        "max": 24
+      },
+      "actions": 20095,
+      "validatedFinalStates": 4,
+      "deployed": []
+    },
+    {
+      "id": "mixed_600-20-command",
+      "roster": "mixed_600",
+      "training": 20,
+      "hero": "command",
+      "pairs": 100,
+      "seedDomain": "final-v6-development-screen-20261024-A",
+      "games": 200,
+      "first": {
+        "mean": 0.425,
+        "ci95": [
+          0.3548340351291125,
+          0.4951659648708875
+        ]
+      },
+      "home": {
+        "mean": 0.555,
+        "ci95": [
+          0.4883509750615021,
+          0.621649024938498
+        ]
+      },
+      "draws": 0,
+      "rounds": {
+        "median": 13,
+        "p90": 25,
+        "max": 31
+      },
+      "actions": 22166,
+      "validatedFinalStates": 4,
+      "deployed": []
+    },
+    {
+      "id": "mixed_600-20-intelligence",
+      "roster": "mixed_600",
+      "training": 20,
+      "hero": "intelligence",
+      "pairs": 100,
+      "seedDomain": "final-v6-development-screen-20261024-A",
+      "games": 200,
+      "first": {
+        "mean": 0.54,
+        "ci95": [
+          0.4766569831964267,
+          0.6033430168035734
+        ]
+      },
+      "home": {
+        "mean": 0.51,
+        "ci95": [
+          0.43501529852999715,
+          0.5849847014700028
+        ]
+      },
+      "draws": 0,
+      "rounds": {
+        "median": 15,
+        "p90": 18,
+        "max": 19
+      },
+      "actions": 20935,
+      "validatedFinalStates": 4,
+      "deployed": []
+    },
+    {
+      "id": "mixed_600-20-martial",
+      "roster": "mixed_600",
+      "training": 20,
+      "hero": "martial",
+      "pairs": 100,
+      "seedDomain": "final-v6-development-screen-20261024-A",
+      "games": 200,
+      "first": {
+        "mean": 0.545,
+        "ci95": [
+          0.47662663700185026,
+          0.6133733629981498
+        ]
+      },
+      "home": {
+        "mean": 0.505,
+        "ci95": [
+          0.4346683211454109,
+          0.5753316788545891
+        ]
+      },
+      "draws": 0,
+      "rounds": {
+        "median": 14,
+        "p90": 18,
+        "max": 24
+      },
+      "actions": 19934,
+      "validatedFinalStates": 4,
+      "deployed": []
+    },
+    {
+      "id": "mixed_600-60-command",
+      "roster": "mixed_600",
+      "training": 60,
+      "hero": "command",
+      "pairs": 100,
+      "seedDomain": "final-v6-development-screen-20261024-A",
+      "games": 200,
+      "first": {
+        "mean": 0.485,
+        "ci95": [
+          0.4175407987122302,
+          0.5524592012877698
+        ]
+      },
+      "home": {
+        "mean": 0.575,
+        "ci95": [
+          0.5048340351291124,
+          0.6451659648708875
+        ]
+      },
+      "draws": 0,
+      "rounds": {
+        "median": 14,
+        "p90": 26,
+        "max": 30
+      },
+      "actions": 22443,
+      "validatedFinalStates": 4,
+      "deployed": []
+    },
+    {
+      "id": "mixed_600-60-intelligence",
+      "roster": "mixed_600",
+      "training": 60,
+      "hero": "intelligence",
+      "pairs": 100,
+      "seedDomain": "final-v6-development-screen-20261024-A",
+      "games": 200,
+      "first": {
+        "mean": 0.48,
+        "ci95": [
+          0.41046595485416193,
+          0.549534045145838
+        ]
+      },
+      "home": {
+        "mean": 0.47,
+        "ci95": [
+          0.40060560963491776,
+          0.5393943903650822
+        ]
+      },
+      "draws": 0,
+      "rounds": {
+        "median": 15,
+        "p90": 18,
+        "max": 20
+      },
+      "actions": 21023,
+      "validatedFinalStates": 4,
+      "deployed": []
+    },
+    {
+      "id": "mixed_600-60-martial",
+      "roster": "mixed_600",
+      "training": 60,
+      "hero": "martial",
+      "pairs": 100,
+      "seedDomain": "final-v6-development-screen-20261024-A",
+      "games": 200,
+      "first": {
+        "mean": 0.46,
+        "ci95": [
+          0.3922180084105049,
+          0.5277819915894951
+        ]
+      },
+      "home": {
+        "mean": 0.49,
+        "ci95": [
+          0.41900250111106135,
+          0.5609974988889386
+        ]
+      },
+      "draws": 0,
+      "rounds": {
+        "median": 14,
+        "p90": 19,
+        "max": 25
+      },
+      "actions": 20887,
+      "validatedFinalStates": 4,
+      "deployed": []
+    },
+    {
+      "id": "mixed_600-90-command",
+      "roster": "mixed_600",
+      "training": 90,
+      "hero": "command",
+      "pairs": 100,
+      "seedDomain": "final-v6-development-screen-20261024-A",
+      "games": 200,
+      "first": {
+        "mean": 0.505,
+        "ci95": [
+          0.4374833009806859,
+          0.5725166990193141
+        ]
+      },
+      "home": {
+        "mean": 0.475,
+        "ci95": [
+          0.4034648140543213,
+          0.5465351859456786
+        ]
+      },
+      "draws": 0,
+      "rounds": {
+        "median": 12,
+        "p90": 23,
+        "max": 32
+      },
+      "actions": 21182,
+      "validatedFinalStates": 4,
+      "deployed": []
+    },
+    {
+      "id": "mixed_600-90-intelligence",
+      "roster": "mixed_600",
+      "training": 90,
+      "hero": "intelligence",
+      "pairs": 100,
+      "seedDomain": "final-v6-development-screen-20261024-A",
+      "games": 200,
+      "first": {
+        "mean": 0.53,
+        "ci95": [
+          0.4592214607655568,
+          0.6007785392344432
+        ]
+      },
+      "home": {
+        "mean": 0.49,
+        "ci95": [
+          0.42178999747511775,
+          0.5582100025248822
+        ]
+      },
+      "draws": 0,
+      "rounds": {
+        "median": 15,
+        "p90": 18,
+        "max": 21
+      },
+      "actions": 21014,
+      "validatedFinalStates": 4,
+      "deployed": []
+    },
+    {
+      "id": "mixed_600-90-martial",
+      "roster": "mixed_600",
+      "training": 90,
+      "hero": "martial",
+      "pairs": 100,
+      "seedDomain": "final-v6-development-screen-20261024-A",
+      "games": 200,
+      "first": {
+        "mean": 0.435,
+        "ci95": [
+          0.3716952823817429,
+          0.4983047176182571
+        ]
+      },
+      "home": {
+        "mean": 0.545,
+        "ci95": [
+          0.4711691285724084,
+          0.6188308714275916
+        ]
+      },
+      "draws": 0,
+      "rounds": {
+        "median": 14,
+        "p90": 19,
+        "max": 23
+      },
+      "actions": 20748,
+      "validatedFinalStates": 4,
+      "deployed": []
+    },
+    {
+      "id": "ranged_1800-20-command",
+      "roster": "ranged_1800",
+      "training": 20,
+      "hero": "command",
+      "pairs": 100,
+      "seedDomain": "final-v6-development-screen-20261024-A",
+      "games": 200,
+      "first": {
+        "mean": 0.495,
+        "ci95": [
+          0.4260614414969035,
+          0.5639385585030965
+        ]
+      },
+      "home": {
+        "mean": 0.475,
+        "ci95": [
+          0.4048340351291124,
+          0.5451659648708875
+        ]
+      },
+      "draws": 0,
+      "rounds": {
+        "median": 12,
+        "p90": 20,
+        "max": 26
+      },
+      "actions": 19685,
+      "validatedFinalStates": 4,
+      "deployed": []
+    },
+    {
+      "id": "ranged_1800-20-intelligence",
+      "roster": "ranged_1800",
+      "training": 20,
+      "hero": "intelligence",
+      "pairs": 100,
+      "seedDomain": "final-v6-development-screen-20261024-A",
+      "games": 200,
+      "first": {
+        "mean": 0.55,
+        "ci95": [
+          0.48105440587321807,
+          0.618945594126782
+        ]
+      },
+      "home": {
+        "mean": 0.46,
+        "ci95": [
+          0.39080159983165375,
+          0.5291984001683463
+        ]
+      },
+      "draws": 0,
+      "rounds": {
+        "median": 15,
+        "p90": 18,
+        "max": 20
+      },
+      "actions": 20241,
+      "validatedFinalStates": 4,
+      "deployed": []
+    },
+    {
+      "id": "ranged_1800-20-martial",
+      "roster": "ranged_1800",
+      "training": 20,
+      "hero": "martial",
+      "pairs": 100,
+      "seedDomain": "final-v6-development-screen-20261024-A",
+      "games": 200,
+      "first": {
+        "mean": 0.495,
+        "ci95": [
+          0.4260614414969035,
+          0.5639385585030965
+        ]
+      },
+      "home": {
+        "mean": 0.505,
+        "ci95": [
+          0.43466832114541093,
+          0.5753316788545891
+        ]
+      },
+      "draws": 0,
+      "rounds": {
+        "median": 13,
+        "p90": 18,
+        "max": 23
+      },
+      "actions": 19259,
+      "validatedFinalStates": 4,
+      "deployed": []
+    },
+    {
+      "id": "ranged_1800-60-command",
+      "roster": "ranged_1800",
+      "training": 60,
+      "hero": "command",
+      "pairs": 100,
+      "seedDomain": "final-v6-development-screen-20261024-A",
+      "games": 200,
+      "first": {
+        "mean": 0.5,
+        "ci95": [
+          0.4331983185356488,
+          0.5668016814643513
+        ]
+      },
+      "home": {
+        "mean": 0.55,
+        "ci95": [
+          0.4782954997678992,
+          0.6217045002321009
+        ]
+      },
+      "draws": 0,
+      "rounds": {
+        "median": 13,
+        "p90": 19,
+        "max": 26
+      },
+      "actions": 20309,
+      "validatedFinalStates": 4,
+      "deployed": []
+    },
+    {
+      "id": "ranged_1800-60-intelligence",
+      "roster": "ranged_1800",
+      "training": 60,
+      "hero": "intelligence",
+      "pairs": 100,
+      "seedDomain": "final-v6-development-screen-20261024-A",
+      "games": 200,
+      "first": {
+        "mean": 0.535,
+        "ci95": [
+          0.4664000000000001,
+          0.6036
+        ]
+      },
+      "home": {
+        "mean": 0.465,
+        "ci95": [
+          0.3950001414142843,
+          0.5349998585857157
+        ]
+      },
+      "draws": 0,
+      "rounds": {
+        "median": 15,
+        "p90": 18,
+        "max": 20
+      },
+      "actions": 20667,
+      "validatedFinalStates": 4,
+      "deployed": []
+    },
+    {
+      "id": "ranged_1800-60-martial",
+      "roster": "ranged_1800",
+      "training": 60,
+      "hero": "martial",
+      "pairs": 100,
+      "seedDomain": "final-v6-development-screen-20261024-A",
+      "games": 200,
+      "first": {
+        "mean": 0.465,
+        "ci95": [
+          0.40231125147269897,
+          0.5276887485273011
+        ]
+      },
+      "home": {
+        "mean": 0.575,
+        "ci95": [
+          0.5008021345837818,
+          0.6491978654162182
+        ]
+      },
+      "draws": 0,
+      "rounds": {
+        "median": 13,
+        "p90": 18,
+        "max": 24
+      },
+      "actions": 19600,
+      "validatedFinalStates": 4,
+      "deployed": []
+    },
+    {
+      "id": "ranged_1800-90-command",
+      "roster": "ranged_1800",
+      "training": 90,
+      "hero": "command",
+      "pairs": 100,
+      "seedDomain": "final-v6-development-screen-20261024-A",
+      "games": 200,
+      "first": {
+        "mean": 0.465,
+        "ci95": [
+          0.3978290256287748,
+          0.5321709743712252
+        ]
+      },
+      "home": {
+        "mean": 0.505,
+        "ci95": [
+          0.43330226466250654,
+          0.5766977353374935
+        ]
+      },
+      "draws": 0,
+      "rounds": {
+        "median": 13,
+        "p90": 22,
+        "max": 29
+      },
+      "actions": 21979,
+      "validatedFinalStates": 4,
+      "deployed": []
+    },
+    {
+      "id": "ranged_1800-90-intelligence",
+      "roster": "ranged_1800",
+      "training": 90,
+      "hero": "intelligence",
+      "pairs": 100,
+      "seedDomain": "final-v6-development-screen-20261024-A",
+      "games": 200,
+      "first": {
+        "mean": 0.585,
+        "ci95": [
+          0.5139000958957302,
+          0.6560999041042698
+        ]
+      },
+      "home": {
+        "mean": 0.535,
+        "ci95": [
+          0.46928912117495625,
+          0.6007108788250438
+        ]
+      },
+      "draws": 0,
+      "rounds": {
+        "median": 14,
+        "p90": 17,
+        "max": 21
+      },
+      "actions": 19880,
+      "validatedFinalStates": 4,
+      "deployed": []
+    },
+    {
+      "id": "ranged_1800-90-martial",
+      "roster": "ranged_1800",
+      "training": 90,
+      "hero": "martial",
+      "pairs": 100,
+      "seedDomain": "final-v6-development-screen-20261024-A",
+      "games": 200,
+      "first": {
+        "mean": 0.505,
+        "ci95": [
+          0.43606144149690357,
+          0.5739385585030965
+        ]
+      },
+      "home": {
+        "mean": 0.495,
+        "ci95": [
+          0.42466832114541087,
+          0.5653316788545891
+        ]
+      },
+      "draws": 0,
+      "rounds": {
+        "median": 13,
+        "p90": 18,
+        "max": 22
+      },
+      "actions": 20534,
+      "validatedFinalStates": 4,
+      "deployed": []
+    },
+    {
+      "id": "reserve_3600-20-command",
+      "roster": "reserve_3600",
+      "training": 20,
+      "hero": "command",
+      "pairs": 100,
+      "seedDomain": "final-v6-development-screen-20261024-A",
+      "games": 200,
+      "first": {
+        "mean": 0.475,
+        "ci95": [
+          0.4062305124038108,
+          0.5437694875961891
+        ]
+      },
+      "home": {
+        "mean": 0.455,
+        "ci95": [
+          0.3852222315511813,
+          0.5247777684488187
+        ]
+      },
+      "draws": 0,
+      "rounds": {
+        "median": 13,
+        "p90": 27,
+        "max": 46
+      },
+      "actions": 22891,
+      "validatedFinalStates": 4,
+      "deployed": []
+    },
+    {
+      "id": "reserve_3600-20-intelligence",
+      "roster": "reserve_3600",
+      "training": 20,
+      "hero": "intelligence",
+      "pairs": 100,
+      "seedDomain": "final-v6-development-screen-20261024-A",
+      "games": 200,
+      "first": {
+        "mean": 0.58,
+        "ci95": [
+          0.5121607842622042,
+          0.6478392157377957
+        ]
+      },
+      "home": {
+        "mean": 0.52,
+        "ci95": [
+          0.45046595485416197,
+          0.5895340451458381
+        ]
+      },
+      "draws": 0,
+      "rounds": {
+        "median": 15,
+        "p90": 19,
+        "max": 30
+      },
+      "actions": 22146,
+      "validatedFinalStates": 4,
+      "deployed": []
+    },
+    {
+      "id": "reserve_3600-20-martial",
+      "roster": "reserve_3600",
+      "training": 20,
+      "hero": "martial",
+      "pairs": 100,
+      "seedDomain": "final-v6-development-screen-20261024-A",
+      "games": 200,
+      "first": {
+        "mean": 0.545,
+        "ci95": [
+          0.47806050070655925,
+          0.6119394992934408
+        ]
+      },
+      "home": {
+        "mean": 0.485,
+        "ci95": [
+          0.41335640681509306,
+          0.556643593184907
+        ]
+      },
+      "draws": 0,
+      "rounds": {
+        "median": 14,
+        "p90": 19,
+        "max": 31
+      },
+      "actions": 20493,
+      "validatedFinalStates": 4,
+      "deployed": []
+    },
+    {
+      "id": "reserve_3600-60-command",
+      "roster": "reserve_3600",
+      "training": 60,
+      "hero": "command",
+      "pairs": 100,
+      "seedDomain": "final-v6-development-screen-20261024-A",
+      "games": 200,
+      "first": {
+        "mean": 0.385,
+        "ci95": [
+          0.3141735054994791,
+          0.45582649450052093
+        ]
+      },
+      "home": {
+        "mean": 0.445,
+        "ci95": [
+          0.3813285611815461,
+          0.5086714388184539
+        ]
+      },
+      "draws": 0,
+      "rounds": {
+        "median": 14,
+        "p90": 27,
+        "max": 45
+      },
+      "actions": 25536,
+      "validatedFinalStates": 4,
+      "deployed": []
+    },
+    {
+      "id": "reserve_3600-60-intelligence",
+      "roster": "reserve_3600",
+      "training": 60,
+      "hero": "intelligence",
+      "pairs": 100,
+      "seedDomain": "final-v6-development-screen-20261024-A",
+      "games": 200,
+      "first": {
+        "mean": 0.53,
+        "ci95": [
+          0.46493448833613304,
+          0.595065511663867
+        ]
+      },
+      "home": {
+        "mean": 0.48,
+        "ci95": [
+          0.40639942907555643,
+          0.5536005709244436
+        ]
+      },
+      "draws": 0,
+      "rounds": {
+        "median": 15,
+        "p90": 21,
+        "max": 26
+      },
+      "actions": 22688,
+      "validatedFinalStates": 4,
+      "deployed": []
+    },
+    {
+      "id": "reserve_3600-60-martial",
+      "roster": "reserve_3600",
+      "training": 60,
+      "hero": "martial",
+      "pairs": 100,
+      "seedDomain": "final-v6-development-screen-20261024-A",
+      "games": 200,
+      "first": {
+        "mean": 0.515,
+        "ci95": [
+          0.4433564068150931,
+          0.586643593184907
+        ]
+      },
+      "home": {
+        "mean": 0.505,
+        "ci95": [
+          0.4374833009806859,
+          0.5725166990193141
+        ]
+      },
+      "draws": 0,
+      "rounds": {
+        "median": 14,
+        "p90": 19,
+        "max": 30
+      },
+      "actions": 21504,
+      "validatedFinalStates": 4,
+      "deployed": []
+    },
+    {
+      "id": "reserve_3600-90-command",
+      "roster": "reserve_3600",
+      "training": 90,
+      "hero": "command",
+      "pairs": 100,
+      "seedDomain": "final-v6-development-screen-20261024-A",
+      "games": 200,
+      "first": {
+        "mean": 0.56,
+        "ci95": [
+          0.4957446508141937,
+          0.6242553491858064
+        ]
+      },
+      "home": {
+        "mean": 0.5,
+        "ci95": [
+          0.4262940595571452,
+          0.5737059404428548
+        ]
+      },
+      "draws": 0,
+      "rounds": {
+        "median": 13,
+        "p90": 23,
+        "max": 46
+      },
+      "actions": 22057,
+      "validatedFinalStates": 4,
+      "deployed": []
+    },
+    {
+      "id": "reserve_3600-90-intelligence",
+      "roster": "reserve_3600",
+      "training": 90,
+      "hero": "intelligence",
+      "pairs": 100,
+      "seedDomain": "final-v6-development-screen-20261024-A",
+      "games": 200,
+      "first": {
+        "mean": 0.58,
+        "ci95": [
+          0.5150837555932354,
+          0.6449162444067645
+        ]
+      },
+      "home": {
+        "mean": 0.47,
+        "ci95": [
+          0.3978638660712828,
+          0.5421361339287172
+        ]
+      },
+      "draws": 0,
+      "rounds": {
+        "median": 15,
+        "p90": 20,
+        "max": 28
+      },
+      "actions": 22987,
+      "validatedFinalStates": 4,
+      "deployed": []
+    },
+    {
+      "id": "reserve_3600-90-martial",
+      "roster": "reserve_3600",
+      "training": 90,
+      "hero": "martial",
+      "pairs": 100,
+      "seedDomain": "final-v6-development-screen-20261024-A",
+      "games": 200,
+      "first": {
+        "mean": 0.495,
+        "ci95": [
+          0.4274833009806859,
+          0.5625166990193141
+        ]
+      },
+      "home": {
+        "mean": 0.505,
+        "ci95": [
+          0.43330226466250654,
+          0.5766977353374935
+        ]
+      },
+      "draws": 0,
+      "rounds": {
+        "median": 14,
+        "p90": 19,
+        "max": 31
+      },
+      "actions": 20656,
+      "validatedFinalStates": 4,
+      "deployed": []
+    }
+  ]
+}

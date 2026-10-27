@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-23T21:22:15.110Z",
+  "elapsedSeconds": 14.452,
+  "checks": [
+    "cbdb-630 concise face copy retains complete accessible rules",
+    "cbdb-630 deployment card identity motif keeps native hit rectangle",
+    "cbdb-630 entry skill shows its personal subtitle before old health is released",
+    "cbdb-630 holds a readable personal motif and original subtitle during windup",
+    "cbdb-630 entry uses the full formal engine result once and cleans transient effects",
+    "cbdb-630 deployed character retains the same ID-bound card face",
+    "cbdb-630 commander identity motif keeps native hit rectangle",
+    "cbdb-630 power shows its personal subtitle before old health is released",
+    "cbdb-630 power uses the full formal engine result once and cleans transient effects",
+    "cbdb-630 deployment fast preserves complete formal effects once and releases motion lock",
+    "cbdb-630 power fast preserves complete formal effects once and releases motion lock",
+    "cbdb-630 deployment reduced preserves complete formal effects once and releases motion lock",
+    "cbdb-630 reduced persistent motifs have no CSS animation",
+    "cbdb-630 power reduced preserves complete formal effects once and releases motion lock",
+    "cbdb-630 reduced persistent motifs have no CSS animation"
+  ],
+  "errors": [],
+  "selectedIds": [
+    "cbdb-630"
+  ],
+  "scope": "Selected historical-ID normal/fast/reduced deployment and commander fixtures only; excludes all100 artwork, gallery and viewport regression."
+}

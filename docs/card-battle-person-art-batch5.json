@@ -1,0 +1,78 @@
+{
+  "mode": "built-in imagegen; separate historical ID references; exact prompts; original portraits retained",
+  "date": "2026-10-23T09:58:40.602Z",
+  "jobs": [
+    {
+      "id": "general-874-55746",
+      "name": "施琅",
+      "role": "武将",
+      "direction": "Shi Lang: mature weathered admiral with gray mustache, broad face, dark round late-imperial hat with gold badge and red tassel, brown-gold armor and deep blue cape with wave trim, exactly as identity. Upper body on wooden naval command deck, one hand near rolled sea-route chart, other near sheathed saber hilt. Distant historical wooden sailing warships with furled ochre sails, timber masts, harbor ramparts and warm sea haze. Preserve face and late-imperial outfit, no modern vessel or weapons, no gigantic ship dominating portrait.",
+      "prompt": "Use case: identity-preserve. ONE fullbleed vertical5:7 production illustration for a historical strategy battle card, art only. Image1 is existing identity reference; image2 approved UI style, match its Zhang Fei card's warm painterly battlefield illustration. Preserve image1 recognizable face, age, hair/beard, hat, costume silhouette and colors. Chest/waist-up CLOSE-UP with dominant large head and shoulders, face upper third; give the entire hat/ornament visible breathing space above. Rich warm camp scenery secondary to character, golden daylight, earth palette, textured illustrated brushwork, believable cloth/metal. Game illustration, not archaeological reconstruction. No black/studio backdrop, tiny fullbody standing figure, magic, UI/frame, logo/watermark, text/numbers anywhere on paper or flags. Do not add armor to an unarmored reference. Shi Lang: mature weathered admiral with gray mustache, broad face, dark round late-imperial hat with gold badge and red tassel, brown-gold armor and deep blue cape with wave trim, exactly as identity. Upper body on wooden naval command deck, one hand near rolled sea-route chart, other near sheathed saber hilt. Distant historical wooden sailing warships with furled ochre sails, timber masts, harbor ramparts and warm sea haze. Preserve face and late-imperial outfit, no modern vessel or weapons, no gigantic ship dominating portrait.",
+      "origin": "/Users/fengheliang/.codex/generated_images/01a16381-85b9-71f1-8014-3769188dd4cf/exec-b3f7a156-5461-4291-9fe0-3af430d412af.png",
+      "path": "assets/battle/people/general-874-55746-battle-v1.png",
+      "references": [
+        "assets/officials/historical/general-874-55746/full.png",
+        "docs/screenshots/card-battle-original-prototype.png"
+      ],
+      "sha256": "a425da9c2f1a8c64ba87d46e740bd598ee1ad7b420eec53ff4658e9d37c24966",
+      "dimensions": [
+        1060,
+        1484
+      ]
+    },
+    {
+      "id": "manual-1519",
+      "name": "蔺相如",
+      "role": "武将",
+      "direction": "Lin Xiangru: mature composed dignitary, dark mustache and pointed beard, tall black-gold hat and burgundy brocade robes exactly as identity. Remain in official robes, no armor. Close upper body in a tense command courtyard, one hand gently holding a pale jade bi disc near lower chest while other makes calm conciliatory gesture. Warm earthen camp wall, distant guard ranks and plain burgundy standard, quiet resolute face, human diplomacy rather than magical shield.",
+      "prompt": "Use case: identity-preserve. ONE fullbleed vertical5:7 production illustration for a historical strategy battle card, art only. Image1 is existing identity reference; image2 approved UI style, match its Zhang Fei card's warm painterly battlefield illustration. Preserve image1 recognizable face, age, hair/beard, hat, costume silhouette and colors. Chest/waist-up CLOSE-UP with dominant large head and shoulders, face upper third; give the entire hat/ornament visible breathing space above. Rich warm camp scenery secondary to character, golden daylight, earth palette, textured illustrated brushwork, believable cloth/metal. Game illustration, not archaeological reconstruction. No black/studio backdrop, tiny fullbody standing figure, magic, UI/frame, logo/watermark, text/numbers anywhere on paper or flags. Do not add armor to an unarmored reference. Lin Xiangru: mature composed dignitary, dark mustache and pointed beard, tall black-gold hat and burgundy brocade robes exactly as identity. Remain in official robes, no armor. Close upper body in a tense command courtyard, one hand gently holding a pale jade bi disc near lower chest while other makes calm conciliatory gesture. Warm earthen camp wall, distant guard ranks and plain burgundy standard, quiet resolute face, human diplomacy rather than magical shield.",
+      "origin": "/Users/fengheliang/.codex/generated_images/01a16381-85b9-71f1-8014-3769188dd4cf/exec-d7fafbc4-8ef6-4ff3-bf09-d0ba43b460d7.png",
+      "path": "assets/battle/people/manual-1519-battle-v1.png",
+      "references": [
+        "assets/officials/historical/manual-1519/full.png",
+        "docs/screenshots/card-battle-original-prototype.png"
+      ],
+      "sha256": "32a4076abfecdb3efbca1bda970c574c118cbeead5880d76459320f19500b2b9",
+      "dimensions": [
+        1060,
+        1484
+      ]
+    },
+    {
+      "id": "manual-1579",
+      "name": "房玄龄",
+      "role": "文职",
+      "direction": "Fang Xuanling: older statesman with gray mustache and long gray beard, tall black soft official hat with gold pin, purple patterned robe and blue-gold trim as identity. Upper body considering folded unlettered military ledger low in frame and plain ivory command tablet in other hand. Organized command tent with rolled dispatches, distant provision road and small troops, purple-brown awning, warm early light. Keep thoughtful civilian posture without weapons or armor.",
+      "prompt": "Use case: identity-preserve. ONE fullbleed vertical5:7 production illustration for a historical strategy battle card, art only. Image1 is existing identity reference; image2 approved UI style, match its Zhang Fei card's warm painterly battlefield illustration. Preserve image1 recognizable face, age, hair/beard, hat, costume silhouette and colors. Chest/waist-up CLOSE-UP with dominant large head and shoulders, face upper third; give the entire hat/ornament visible breathing space above. Rich warm camp scenery secondary to character, golden daylight, earth palette, textured illustrated brushwork, believable cloth/metal. Game illustration, not archaeological reconstruction. No black/studio backdrop, tiny fullbody standing figure, magic, UI/frame, logo/watermark, text/numbers anywhere on paper or flags. Do not add armor to an unarmored reference. Fang Xuanling: older statesman with gray mustache and long gray beard, tall black soft official hat with gold pin, purple patterned robe and blue-gold trim as identity. Upper body considering folded unlettered military ledger low in frame and plain ivory command tablet in other hand. Organized command tent with rolled dispatches, distant provision road and small troops, purple-brown awning, warm early light. Keep thoughtful civilian posture without weapons or armor.",
+      "origin": "/Users/fengheliang/.codex/generated_images/01a16381-85b9-71f1-8014-3769188dd4cf/exec-e1ebf314-1cca-4ee1-9ad6-c0924df772d0.png",
+      "path": "assets/battle/people/manual-1579-battle-v1.png",
+      "references": [
+        "assets/officials/historical/manual-1579/full.png",
+        "docs/screenshots/card-battle-original-prototype.png"
+      ],
+      "sha256": "1138596293c05fb3d0c46df5aeb112cf16816d1770a275686a3828ab2fc4af1d",
+      "dimensions": [
+        1060,
+        1484
+      ]
+    },
+    {
+      "id": "manual-1509",
+      "name": "晏婴",
+      "role": "文职",
+      "direction": "Yan Ying: lean mature adviser with gray-black mustache and pointed goatee, tall black-gold hat and modest brown robes with dark geometric trim as reference. Close upper body beside compact supply desk, holding plain bamboo roll while free hand measures a small allocation of grain. Restrained camp granary and a few provision carts behind, warm ochre morning, simple materials and modest dignity, no added armor or weapons.",
+      "prompt": "Use case: identity-preserve. ONE fullbleed vertical5:7 production illustration for a historical strategy battle card, art only. Image1 is existing identity reference; image2 approved UI style, match its Zhang Fei card's warm painterly battlefield illustration. Preserve image1 recognizable face, age, hair/beard, hat, costume silhouette and colors. Chest/waist-up CLOSE-UP with dominant large head and shoulders, face upper third; give the entire hat/ornament visible breathing space above. Rich warm camp scenery secondary to character, golden daylight, earth palette, textured illustrated brushwork, believable cloth/metal. Game illustration, not archaeological reconstruction. No black/studio backdrop, tiny fullbody standing figure, magic, UI/frame, logo/watermark, text/numbers anywhere on paper or flags. Do not add armor to an unarmored reference. Yan Ying: lean mature adviser with gray-black mustache and pointed goatee, tall black-gold hat and modest brown robes with dark geometric trim as reference. Close upper body beside compact supply desk, holding plain bamboo roll while free hand measures a small allocation of grain. Restrained camp granary and a few provision carts behind, warm ochre morning, simple materials and modest dignity, no added armor or weapons.",
+      "origin": "/Users/fengheliang/.codex/generated_images/01a16381-85b9-71f1-8014-3769188dd4cf/exec-51628c56-746a-4a43-9734-97c4a10647c3.png",
+      "path": "assets/battle/people/manual-1509-battle-v1.png",
+      "references": [
+        "assets/officials/historical/manual-1509/full.png",
+        "docs/screenshots/card-battle-original-prototype.png"
+      ],
+      "sha256": "7b2c4386fa619d70f2ef9d6fad1fbfb4d6bbe7b1e5be651bb6a546c60c0fbda8",
+      "dimensions": [
+        1060,
+        1484
+      ]
+    }
+  ]
+}

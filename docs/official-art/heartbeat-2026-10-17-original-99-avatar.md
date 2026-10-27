@@ -2,7 +2,7 @@
 
 人物：original-99 沈昌平
 类型：avatar
-路径：assets/officials/original-99-avatar.png
+路径：docs/art/retired-assets/officials/historical/original-99/avatar.png
 
 以内置 ImageGen 根据 full 主参考生成，保留脸部、黑帽与绿色衣领；已目视验收。1254×1254 RGBA，alpha 范围 0–255，透明像素超过15%。
 

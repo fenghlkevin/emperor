@@ -1,0 +1,10 @@
+/* Rejections stay on the current sheet. No ellipsis, scroll box or extra page. */
+:is(.court-atlas,.personnel-office-scroll,.works-minister-dialog,.justice-scroll) :is([data-garrison-error],[data-campaign-error],[data-personnel-error],[data-case-error],[data-atlas-error],[data-food-status],[data-error],.rites-decision [role=status],.military-spy [role=status]){max-height:none!important;overflow:visible!important;white-space:normal;overflow-wrap:anywhere;text-overflow:clip;line-height:1.45!important;font-size:clamp(11px,1cqw,15px)!important;box-sizing:border-box}
+:is(.court-atlas,.personnel-office-scroll,.works-minister-dialog,.justice-scroll) :is([data-garrison-error],[data-campaign-error],[data-personnel-error],[data-case-error],[data-atlas-error],[data-food-status],[data-error]):not(:empty){margin:6px 0!important;padding:6px 8px;border-left:2px solid #9d4430;background:#b85c3020;color:#873c29}
+.military-single-page .personnel-decision{display:flex!important;flex-direction:column;gap:4px}
+.military-single-page .personnel-decision :is([data-garrison-error],[data-campaign-error]):not(:empty){order:-1}
+.court-atlas.atlas-stable-fiscal .atlas-order{grid-template-rows:2.5em 50px auto!important}
+.court-atlas.atlas-stable-fiscal .atlas-order [data-atlas-error]{height:auto!important;min-height:0!important}
+.court-atlas.atlas-stable-fiscal .atlas-order [data-atlas-quote]{overflow:visible!important}
+/* The old compact-window footer rule hid non-empty messages below 1100px. */
+:is(.court-atlas,.personnel-office-scroll,.works-minister-dialog,.justice-scroll) [role=status]:not(:empty){display:block!important;max-height:none!important;overflow:visible!important}

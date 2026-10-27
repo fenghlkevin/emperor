@@ -1,0 +1,457 @@
+{
+  "referencePolicy": "每位明星必须先自行上网寻找高清写真，下载原图、核对实际像素并view_image确认五官清晰无遮挡，优先长边至少1200px；作为image_gen实际输入，不只用姓名。保存来源网址和尺寸，不把低清图宣称高清。",
+  "qualityPolicy": "每张使用五官清晰无遮挡的高清成年写真，至少两遍对照验收：第一遍逐项对照脸型眉眼鼻唇及比例，不一致必须调整；第二遍重新核对写真与最终图，同时检查头颈衔接、全身比例、自然重心、双腿双脚与透明背景。检查发现差异不得虚报通过。最新要求风格接近真人古装写真，减少插画塑料感。",
+  "proportionPolicy": "各条目使用自然协调的头身比例、高腰线和合理腿长，站姿放松、不立正、不悬空；不再使用已移除角色的比例参考图。",
+  "alphaValidationPolicy": "PNG预览可能显示透明像素隐藏RGB。必须检查实际alpha，并制作临时白底/深色底合成验收；不要仅凭原始PNG预览判定背景残留。QA合成图不替代最终透明PNG。",
+  "createdAt": "2026-10-21T02:12:17.556864+00:00",
+  "total": 10,
+  "completed": 10,
+  "intervalMinutes": 5,
+  "items": [
+    {
+      "order": 1,
+      "id": "moon-silk",
+      "sourceId": "moon-silk",
+      "previousCelebrity": "杜鹃",
+      "referenceCelebrity": "刘浩存",
+      "originalAsset": "assets/beauties/random/杜鹃.png",
+      "targetAsset": "assets/beauties/random/刘浩存-重做-v2.png",
+      "status": "completed",
+      "operation": "replace",
+      "userRevision": "换人，整体重新生成",
+      "deleteSupersededAfterValidation": true,
+      "startedAt": "2026-10-21T02:27:31.590118+00:00",
+      "referencePhoto": {
+        "path": "assets/beauties/references/liu-haocun/face-reference.jpg",
+        "sourcePage": "https://www.duitang.com/blog/?id=1369984298",
+        "imageUrl": "https://c-ssl.dtstatic.com/uploads/blog/202110/13/20211013203908_efa0e.jpeg",
+        "width": 1066,
+        "height": 1599,
+        "inspection": "2021成年公开写真，五官清晰，发丝掠过脸侧不遮眼鼻唇。"
+      },
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a1584f-ca2e-7950-85ed-5fefa09b6a9d/exec-7c5eb5b2-2b8a-427c-9bf6-b9339cb496eb.png",
+      "completedAt": "2026-10-21T02:35:19.336853+00:00",
+      "reviewPass1": "对照1066x1599写真及并排放大图检查直眉、杏眼眼距、鼻尖、自然粉唇与脸型，保留刘浩存面容及脸部痣；整体重新生成，未使用杜鹃旧图作生成输入。",
+      "reviewPass2": "再次对照写真面容，白底和深灰底全身检查：头颈自然，双手持团扇完整，双鞋错步着地、裙摆未裁切，紫色花绣身份保留，无背景光晕。",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentPixels": 962153,
+        "moduleLoaded": true,
+        "targetExists": true,
+        "allLegacyMappingsPassed": true,
+        "supersededDeleted": true
+      }
+    },
+    {
+      "order": 2,
+      "id": "blue-dancer",
+      "sourceId": "blue-dancer",
+      "previousCelebrity": "蒋梦婕",
+      "referenceCelebrity": "章若楠",
+      "originalAsset": "assets/beauties/random/蒋梦婕.png",
+      "targetAsset": "assets/beauties/random/章若楠-重做-v2.png",
+      "status": "completed",
+      "operation": "replace",
+      "userRevision": "换人，整体重新生成",
+      "deleteSupersededAfterValidation": true,
+      "startedAt": "2026-10-21T02:55:29.702382+00:00",
+      "referencePhoto": {
+        "path": "assets/beauties/references/zhang-ruonan/face-reference.jpg",
+        "sourcePage": "https://cj.sina.com.cn/articles/view/7513322744/p1bfd434f8001016niu",
+        "imageUrl": "https://n.sinaimg.cn/sinakd10016/276/w1470h2006/20230404/fa91-cfa3af6f3c27ab61d0dad6379acacdae.jpg",
+        "width": 1470,
+        "height": 2006,
+        "inspection": "2023成年公开写真，眉眼鼻唇清晰无遮挡，手在下颌边缘。"
+      },
+      "completedAt": "2026-10-21T03:40:34.040304+00:00",
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a15c84-042e-7053-bd28-4dd3f9362bd9/exec-05ad893e-cf16-42ef-984b-65972c43cf2e.png",
+      "reviewPass1": "对照1470x2006章若楠成年写真与生成面部放大图：圆润杏眼、眉形、鼻尖、自然粉唇和柔和脸型可辨；生成图为略侧头角度，表情与参考不同。整体重新生成蓝白汉服、发饰与放松舞姿。",
+      "reviewPass2": "再次对照参考照片及白底/深灰底合成图：眉眼鼻唇形态协调，头颈衔接自然；双手、袖摆、裙摆、双鞋完整，错步重心自然，鞋下留白较少但未裁切。背景实际alpha透明，预览灰色光晕为隐藏RGB，白深合成均无光晕。",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentPixels": 710299,
+        "opaqueBorderPixels": 0,
+        "moduleLoaded": true,
+        "targetExists": true,
+        "allLegacyMappingsPassed": true,
+        "supersededDeleted": true
+      }
+    },
+    {
+      "order": 3,
+      "id": "lotus-picker",
+      "sourceId": "lotus-picker",
+      "previousCelebrity": "李沁",
+      "referenceCelebrity": "李沁",
+      "originalAsset": "assets/beauties/random/李沁.png",
+      "targetAsset": "assets/beauties/random/李沁-重做-v2.png",
+      "status": "completed",
+      "operation": "replace",
+      "userRevision": "整体重新设计构图、服饰垂坠与自然站姿，不沿用不好看的整体",
+      "deleteSupersededAfterValidation": true,
+      "startedAt": "2026-10-21T03:43:44.526113+00:00",
+      "referencePhoto": {
+        "path": "assets/beauties/references/li-qin/face-reference-2.jpg",
+        "sourcePage": "https://www.duitang.com/blog/?id=1521702613",
+        "imageUrl": "https://c-ssl.duitang.com/uploads/blog/202404/21/V2S91L6XcmGxgnY.jpg",
+        "width": 1080,
+        "height": 1418,
+        "inspection": "已有成年公开写真，眉眼鼻唇清晰，白花在下唇以下。"
+      },
+      "completedAt": "2026-10-21T03:45:13.411240+00:00",
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a15c84-042e-7053-bd28-4dd3f9362bd9/exec-df214ce9-8161-42c6-b8a0-168e483399d2.png",
+      "reviewPass1": "对照1080x1418成年写真与生成面部放大图：李沁眉形、杏眼眼距、直鼻、唇峰及较有棱角的下颌可辨，生成图为轻微侧身角度，表情略异。未使用旧立绘输入，整体重做玉绿藕粉汉服与采莲造型。",
+      "reviewPass2": "再次对照参考照及白底、深灰底全身图：头颈衔接与腰线协调，双手持单枝莲花和小花篮，双鞋不同方向错步、脚部完整；裙摆自然垂坠，未裁切。顶部留白偏少但发饰完整。真实alpha透明，白深背景合成无原始预览光晕，篮把空隙透明。",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentPixels": 915913,
+        "opaqueBorderPixels": 0,
+        "moduleLoaded": true,
+        "targetExists": true,
+        "allLegacyMappingsPassed": true,
+        "supersededDeleted": true
+      }
+    },
+    {
+      "order": 4,
+      "id": "expansion-20261019-20",
+      "sourceId": "expansion-20261019-20",
+      "previousCelebrity": "马思纯",
+      "referenceCelebrity": "张婧仪",
+      "originalAsset": "assets/beauties/random/马思纯.png",
+      "targetAsset": "assets/beauties/random/张婧仪-重做-v2.png",
+      "status": "completed",
+      "operation": "replace",
+      "userRevision": "换脸参考明星，整体重新生成",
+      "deleteSupersededAfterValidation": true,
+      "startedAt": "2026-10-21T03:50:38.840684+00:00",
+      "referencePhotos": [
+        {
+          "path": "assets/beauties/references/zhang-jingyi/face-reference.jpg",
+          "sourcePage": "https://www.duitang.com/blog/?id=1436758434",
+          "imageUrl": "https://a-ho-img.dtstatic.com/uploads/blog/202211/19/20221119072012_c8593.jpg",
+          "size": [
+            1600,
+            1600
+          ],
+          "inspection": "2022成年写真，眉鼻唇清楚，目光下垂，补充睁眼照核对。"
+        },
+        {
+          "path": "assets/beauties/references/zhang-jingyi/face-reference-3.jpg",
+          "sourcePage": "https://www.duitang.com/blog/?id=1451428388",
+          "imageUrl": "https://a-ho-img.dtstatic.com/uploads/blog/202301/28/20230128180245_3f916.jpeg",
+          "size": [
+            828,
+            822
+          ],
+          "inspection": "828x822正面俯拍，眉眼鼻唇无遮挡；作为补充，不称高清。"
+        }
+      ],
+      "completedAt": "2026-10-21T03:52:13.750763+00:00",
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a15c84-042e-7053-bd28-4dd3f9362bd9/exec-56144cb4-dc36-496b-aa5b-a9a761800a21.png",
+      "reviewPass1": "使用1600x1600成年写真及828x822睁眼补充照作为实际输入；对照面部放大图，张婧仪直眉、长杏眼、鼻尖、较丰润唇形与柔和下颌可辨。生成角度、妆容与表情不同；未使用马思纯旧立绘作输入。重新生成杏金外袍、橙色长裙及低位持麦穗姿态。",
+      "reviewPass2": "再次对照两张照片与白底/深灰底全身图：头颈比例协调，腰线自然，双手和麦穗完整；前鞋斜放、后鞋露出，双鞋未裁切，裙摆自然。真实alpha透明，白深底合成无原始PNG隐藏RGB光晕。顶部及鞋下留白少于提示词目标，但人物完整。",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentPixels": 878033,
+        "opaqueBorderPixels": 0,
+        "moduleLoaded": true,
+        "targetExists": true,
+        "allLegacyMappingsPassed": true,
+        "supersededDeleted": true
+      }
+    },
+    {
+      "order": 5,
+      "id": "butterfly-sleeves",
+      "sourceId": "butterfly-sleeves",
+      "previousCelebrity": "宋茜",
+      "referenceCelebrity": "宋茜",
+      "originalAsset": "assets/beauties/random/宋茜.png",
+      "targetAsset": "assets/beauties/random/宋茜-重做-v2.png",
+      "status": "completed",
+      "operation": "replace",
+      "userRevision": "重新设计好看的放松动作和重心，整体重新生成",
+      "deleteSupersededAfterValidation": true,
+      "startedAt": "2026-10-21T03:53:57.956187+00:00",
+      "referencePhoto": {
+        "path": "assets/beauties/references/song-qian/face-reference.jpg",
+        "sourcePage": "https://www.duitang.com/blog/?id=1443162990",
+        "imageUrl": "https://c-ssl.duitang.com/uploads/blog/202212/20/20221220081953_e6c8a.jpg",
+        "width": 1080,
+        "height": 1440,
+        "inspection": "已有2022成年写真，眉眼鼻唇无遮挡，手位于下颌下方。"
+      },
+      "completedAt": "2026-10-21T03:55:36.897941+00:00",
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a15c84-042e-7053-bd28-4dd3f9362bd9/exec-b8384063-1de0-4c96-8ed8-9e5f54817d34.png",
+      "reviewPass1": "1080x1440宋茜成年写真实际输入，未输入旧舞姿图。对照面部放大图检查眉形、眼距与上扬眼尾、直鼻、饱满红唇及收窄下颌，辨识特征保留；轻侧脸与妆容存在正常差异。",
+      "reviewPass2": "再次对照写真、白底与深灰底全身图：原高举手臂改为肩下低位舒展、另一手收于腰侧，手腕无原先明显下折，双手完整；头颈肩协调，双鞋错步、无交叉抬脚，裙摆和袖带完整。透明alpha验收通过，白深合成无预览隐藏RGB光晕。顶部、鞋下及右袖带留白少于提示词要求，但主体未裁切。",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentPixels": 769624,
+        "opaqueBorderPixels": 0,
+        "moduleLoaded": true,
+        "targetExists": true,
+        "allLegacyMappingsPassed": true,
+        "supersededDeleted": true
+      }
+    },
+    {
+      "order": 6,
+      "id": "autumn-flute",
+      "sourceId": "autumn-flute",
+      "previousCelebrity": "谭卓",
+      "referenceCelebrity": "李一桐",
+      "originalAsset": "assets/beauties/random/谭卓.png",
+      "targetAsset": "assets/beauties/random/李一桐-重做-v2.png",
+      "status": "completed",
+      "operation": "replace",
+      "userRevision": "换人，整体重新生成",
+      "deleteSupersededAfterValidation": true,
+      "startedAt": "2026-10-21T03:59:12.435329+00:00",
+      "referencePhoto": {
+        "path": "assets/beauties/references/li-yitong/face-reference.jpg",
+        "sourcePage": "https://www.duitang.com/blog/?id=1368798819",
+        "imageUrl": "https://a-ho-img.dtstatic.com/uploads/blog/202110/04/20211004230309_47cf7.jpeg",
+        "width": 2000,
+        "height": 3000,
+        "inspection": "2021成年写真，微侧脸露齿笑，眉眼鼻唇清楚，脸侧少量发丝不遮眼鼻唇。"
+      },
+      "completedAt": "2026-10-21T04:00:44.230226+00:00",
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a15c84-042e-7053-bd28-4dd3f9362bd9/exec-b154b78c-14c6-4049-84cc-21a8439f3397.png",
+      "reviewPass1": "2000x3000李一桐成年写真实际输入，未输入谭卓旧图。对照面部放大图核对弧形眉、笑眼眼型、鼻尖、露齿笑唇形及柔和小下颌，特征可辨；生成视角更接近正面，衣发与整体造型重新生成。",
+      "reviewPass2": "再次对照参考写真及白底/深灰底全身图：头颈肩比例自然，双手斜持木笛，手腕放松、道具不遮脸；裙摆、发饰、双鞋完整，错步重心无悬空。青灰、米白、灰紫衣裙垂坠协调，白深底合成无隐藏RGB光晕，真实alpha透明。",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentPixels": 993945,
+        "opaqueBorderPixels": 0,
+        "moduleLoaded": true,
+        "targetExists": true,
+        "allLegacyMappingsPassed": true,
+        "supersededDeleted": true
+      }
+    },
+    {
+      "order": 7,
+      "id": "expansion-20261019-07",
+      "sourceId": "expansion-20261019-07",
+      "previousCelebrity": "汤唯",
+      "referenceCelebrity": "金晨",
+      "originalAsset": "assets/beauties/random/汤唯.png",
+      "targetAsset": "assets/beauties/random/金晨-重做-v2.png",
+      "status": "completed",
+      "operation": "replace",
+      "userRevision": "换人，整体重新生成",
+      "deleteSupersededAfterValidation": true,
+      "startedAt": "2026-10-21T04:04:14.357081+00:00",
+      "referencePhoto": {
+        "path": "assets/beauties/references/jin-chen/face-reference.jpg",
+        "sourcePage": "https://www.duitang.com/blog/?id=1303299480",
+        "imageUrl": "https://a-ho-img.dtstatic.com/uploads/blog/202010/27/20201027012957_92017.jpg",
+        "width": 1267,
+        "height": 1900,
+        "inspection": "2020成年公开写真，略侧脸，眉眼鼻唇清晰无遮挡，手在脸外侧。"
+      },
+      "completedAt": "2026-10-21T04:06:27.438155+00:00",
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a15c84-042e-7053-bd28-4dd3f9362bd9/exec-dbb3e4d7-ab5e-47f4-a3aa-76f0c9abe546.png",
+      "reviewPass1": "1267x1900金晨成年公开写真实际输入，未使用汤唯旧立绘；对照面部放大图检查眉眼、眼距、直鼻、唇峰和收窄下颌，特征可辨，生成图妆容较柔和。衣裙和整体姿态重新生成。",
+      "reviewPass2": "再次对照写真及白底/深灰底全身图：头颈肩与腰线协调，一手低位提药篮、一手持草药，手部完整；双鞋错步未交叉，裙摆与发饰完整。茶褐浅绿配色及采药主题保留，真实透明alpha，白深合成无原始预览光晕，篮把空隙透明。",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentPixels": 1008104,
+        "opaqueBorderPixels": 0,
+        "moduleLoaded": true,
+        "targetExists": true,
+        "allLegacyMappingsPassed": true,
+        "supersededDeleted": true
+      }
+    },
+    {
+      "order": 8,
+      "id": "expansion-20261019-14",
+      "sourceId": "expansion-20261019-14",
+      "previousCelebrity": "辛芷蕾",
+      "referenceCelebrity": "孟子义",
+      "originalAsset": "assets/beauties/random/辛芷蕾.png",
+      "targetAsset": "assets/beauties/random/孟子义-重做-v2.png",
+      "status": "completed",
+      "operation": "replace",
+      "userRevision": "换人，整体重新生成",
+      "deleteSupersededAfterValidation": true,
+      "startedAt": "2026-10-21T04:09:17.771394+00:00",
+      "referencePhoto": {
+        "path": "assets/beauties/references/meng-ziyi/face-reference.jpg",
+        "sourcePage": "https://www.duitang.com/blog/?id=1411820970",
+        "imageUrl": "https://a-ho-img.dtstatic.com/uploads/blog/202207/13/20220713091542_0d61c.jpeg",
+        "width": 899,
+        "height": 1598,
+        "inspection": "2022成年古装公开写真，微侧脸，眉眼鼻唇清楚，少量发丝在额头及脸侧，未遮眼鼻唇。"
+      },
+      "completedAt": "2026-10-21T04:11:37.196085+00:00",
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a15c84-042e-7053-bd28-4dd3f9362bd9/exec-3c46a6c7-de8d-402a-86cc-890390a2344c.png",
+      "reviewPass1": "899x1598孟子义成年古装写真实际输入，未使用辛芷蕾旧图。对照面部放大图核对直眉、大杏眼眼型眼距、鼻尖、丰满圆唇及柔和下颌，辨识特征保留。整体重新生成靛青旅装、行囊与姿态。",
+      "reviewPass2": "再次对照照片及白底/深灰底全身图：头颈肩衔接与腰线协调，一手扶肩带、一手低位持巾，双手完整；双靴自然错步、裙摆及行囊完整，无截断与抬脚悬空。真实alpha透明，白深合成无原始预览隐藏RGB光晕。顶底留白少于提示词要求但主体完整。",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentPixels": 1027544,
+        "opaqueBorderPixels": 0,
+        "moduleLoaded": true,
+        "targetExists": true,
+        "allLegacyMappingsPassed": true,
+        "supersededDeleted": true
+      }
+    },
+    {
+      "order": 9,
+      "id": "hebei",
+      "sourceId": "hebei",
+      "previousCelebrity": "赵丽颖",
+      "referenceCelebrity": "王楚然",
+      "originalAsset": "assets/beauties/random/赵丽颖.png",
+      "targetAsset": "assets/beauties/random/王楚然-重做-v2.png",
+      "status": "completed",
+      "operation": "replace",
+      "userRevision": "换人，整体重新生成",
+      "deleteSupersededAfterValidation": true,
+      "startedAt": "2026-10-21T04:15:37.569025+00:00",
+      "referencePhoto": {
+        "path": "assets/beauties/references/wang-churan/face-reference-4.jpg",
+        "sourcePage": "https://www.duitang.com/blog/?id=1572837433",
+        "imageUrl": "https://a-ho-img.dtstatic.com/uploads/blog/202605/29/P5SyJeB3UbYQXqL.jpeg",
+        "width": 2000,
+        "height": 3001,
+        "inspection": "2026成年公开写真，低头睁眼，眉眼鼻唇清楚无遮挡；采用此张，未使用此前拼图与低头闭眼侧脸。"
+      },
+      "completedAt": "2026-10-21T04:17:12.698031+00:00",
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a15c84-042e-7053-bd28-4dd3f9362bd9/exec-3ea5c1e5-3a5e-4bc6-ac08-186bbb84df19.png",
+      "reviewPass1": "2000x3001王楚然成年公开写真实际输入，未使用赵丽颖旧图。对照面部放大图核对长眉、长杏眼眼距、直鼻、唇峰与柔和下颌，保留辨识特征；生成图头抬起，妆容与表情存在正常差异。整体重新生成红白骑装、木弓和站姿。",
+      "reviewPass2": "再次对照写真及白底/深灰底全身图：头颈肩与腰线协调，双手完整，一手持弓中央握柄、另一手放松；弓身两端完整，弓弦在深底对比偏低。双靴错步、无抬脚悬空，衣摆与发饰完整。真实alpha透明，白深合成无原始PNG预览光晕，顶底留白少于提示词目标但主体完整。",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentPixels": 935959,
+        "opaqueBorderPixels": 0,
+        "moduleLoaded": true,
+        "targetExists": true,
+        "allLegacyMappingsPassed": true,
+        "supersededDeleted": true
+      }
+    },
+    {
+      "order": 10,
+      "id": "expansion-20261019-16-plain",
+      "sourceId": "expansion-20261019-16",
+      "previousCelebrity": "钟楚曦",
+      "referenceCelebrity": "钟楚曦",
+      "originalAsset": "assets/beauties/random/钟楚曦.png",
+      "targetAsset": "assets/beauties/random/钟楚曦-素雅-v2.png",
+      "status": "completed",
+      "operation": "add_variant",
+      "userRevision": "新增素雅版本：少首饰、淡妆、简洁配色与衣饰，保留原版并新增游戏可用立绘",
+      "deleteSupersededAfterValidation": false,
+      "startedAt": "2026-10-21T04:18:55.769681+00:00",
+      "referencePhoto": {
+        "path": "assets/beauties/references/zhong-chuxi/face-reference.jpg",
+        "sourcePage": "https://k.sina.cn/article_7514427166_p1bfe50f1e001010v8l.html?from=ent&subch=oent",
+        "imageUrl": "https://n.sinaimg.cn/sinakd10010/319/w1555h1964/20230210/5b2f-a2c51f743b9f788829a4a66c41f5b2ce.jpg",
+        "width": 1555,
+        "height": 1964,
+        "inspection": "已有成年公开写真，眉眼鼻唇清晰无遮挡，轻微侧脸微笑。"
+      },
+      "completedAt": "2026-10-21T04:27:08.180927+00:00",
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a15c84-042e-7053-bd28-4dd3f9362bd9/exec-7c365e5f-fbc2-4a2f-814e-c0526d42492e.png",
+      "reviewPass1": "1555x1964钟楚曦成年公开写真实际输入。对照面部放大图核对眉眼眼距、鼻尖、较宽唇形、脸颊痣与下颌，辨识特征保留，按用户要求改为淡妆、柔和唇色；未输入华丽原立绘。",
+      "reviewPass2": "再次对照写真及白底/深灰底全身图：头颈肩比例与腰线协调，双手自然托青瓷葡萄碗，双鞋错位可见，发簪袖摆裙摆完整；米白配色、少量袖口绣纹、单发簪及小耳钉符合素雅要求，无原版繁复金饰。真实alpha透明，白深合成无光晕。",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentPixels": 1024604,
+        "opaqueBorderPixels": 0,
+        "moduleLoaded": true,
+        "targetExists": true,
+        "addedIndependentGameEntry": true,
+        "originalPreserved": true,
+        "allTenAssetMappingsPassed": true
+      }
+    }
+  ],
+  "completedAt": "2026-10-21T04:27:08.184741+00:00"
+}

@@ -1,0 +1,1775 @@
+{
+  "date": "2026-10-26",
+  "sourceHash": "55ad99a43e8cc634bd7dca6e5008d6804031967f4e4f37050d4e6f9f75dfefcf",
+  "method": "Temporary copies of real engine with explicit proposal parameters. Economy excludes foreign AI only; politics, disaster, food, fiscal, labor and aging remain. AI observation is separate and stops at first player attack. Tactical probe is isolated equal-force cards, not whole-campaign survival.",
+  "config": {
+    "version": 1,
+    "status": "proposal-only",
+    "names": [
+      "新帝登基",
+      "励精图治",
+      "力挽狂澜"
+    ],
+    "tiers": [
+      {
+        "id": "novice",
+        "name": "新帝登基",
+        "silver": 45000,
+        "foodTurns": 30,
+        "estateIncome": 800,
+        "reserve": 9000,
+        "developmentCost": 1.8,
+        "recruitCost": 3,
+        "kitPriceFactor": 0.9,
+        "startingKits": 1.15,
+        "campaignSilver": 0.15,
+        "campaignGrain": 0.065,
+        "examMin": 7,
+        "examMax": 15,
+        "historicalFactor": 1.25,
+        "talentFactor": 1.2,
+        "examCost": 400,
+        "aiCadence": 9,
+        "playerGrace": 73,
+        "playerAttackGap": 36,
+        "aggressionFactor": 0.65,
+        "battleMistakeChance": 0.2
+      },
+      {
+        "id": "standard",
+        "name": "励精图治",
+        "silver": 30000,
+        "foodTurns": 22,
+        "estateIncome": 600,
+        "reserve": 7000,
+        "developmentCost": 2,
+        "recruitCost": 4,
+        "kitPriceFactor": 1,
+        "startingKits": 1,
+        "campaignSilver": 0.18,
+        "campaignGrain": 0.08,
+        "examMin": 5,
+        "examMax": 15,
+        "historicalFactor": 1,
+        "talentFactor": 1,
+        "examCost": 500,
+        "aiCadence": 6,
+        "playerGrace": 37,
+        "playerAttackGap": 18,
+        "aggressionFactor": 1,
+        "battleMistakeChance": 0
+      },
+      {
+        "id": "veteran",
+        "name": "力挽狂澜",
+        "silver": 22000,
+        "foodTurns": 16,
+        "estateIncome": 400,
+        "reserve": 6000,
+        "developmentCost": 2.2,
+        "recruitCost": 5,
+        "kitPriceFactor": 1.1,
+        "startingKits": 0.85,
+        "campaignSilver": 0.21,
+        "campaignGrain": 0.095,
+        "examMin": 4,
+        "examMax": 12,
+        "historicalFactor": 0.85,
+        "talentFactor": 0.85,
+        "examCost": 600,
+        "aiCadence": 4,
+        "playerGrace": 19,
+        "playerAttackGap": 12,
+        "aggressionFactor": 1.2,
+        "battleMistakeChance": 0
+      }
+    ],
+    "invariants": [
+      "同兵种同装备同训练同伤害",
+      "不读取玩家隐藏手牌",
+      "AI不得凭空获得钱粮兵装",
+      "名臣本身能力不随难度降低",
+      "结局和史评条件不降低",
+      "同seed随机域分流以保持可比",
+      "只对新建游戏选择难度 旧档归入标准版"
+    ],
+    "deferred": [
+      "高难战术AI多步搜索尚未实现 不宣称本轮已验证",
+      "难度选择UI与正式游戏参数接线不在本轮实施",
+      "长期千旬统一升仙可达性另设验收"
+    ]
+  },
+  "seeds": [
+    1,
+    7,
+    41
+  ],
+  "horizon": 108,
+  "tiers": [
+    {
+      "id": "novice",
+      "name": "新帝登基",
+      "economy": [
+        {
+          "policy": "default",
+          "seed": 1,
+          "firstDebt": null,
+          "firstShortfall": null,
+          "totalShortfall": 0,
+          "developmentOrders": 0,
+          "developmentSpent": 0,
+          "rows": [
+            {
+              "turn": 1,
+              "cash": 45000,
+              "debt": 0,
+              "net": 1648,
+              "grain": 16080,
+              "foodTurns": 67,
+              "foodShortfall": 0,
+              "living": 56,
+              "stability": 76,
+              "provinces": 10,
+              "life": 2160
+            },
+            {
+              "turn": 37,
+              "cash": 39751,
+              "debt": 0,
+              "net": 1661,
+              "grain": 11564,
+              "foodTurns": 48.2,
+              "foodShortfall": 0,
+              "living": 56,
+              "stability": 60,
+              "provinces": 10,
+              "life": 2124
+            },
+            {
+              "turn": 73,
+              "cash": 42559,
+              "debt": 0,
+              "net": 1443,
+              "grain": 11835,
+              "foodTurns": 49.3,
+              "foodShortfall": 0,
+              "living": 56,
+              "stability": 53,
+              "provinces": 10,
+              "life": 2088
+            },
+            {
+              "turn": 109,
+              "cash": 38201,
+              "debt": 0,
+              "net": 1087,
+              "grain": 8882,
+              "foodTurns": 37,
+              "foodShortfall": 0,
+              "living": 56,
+              "stability": 51,
+              "provinces": 10,
+              "life": 2052
+            }
+          ],
+          "final": {
+            "turn": 109,
+            "cash": 38201,
+            "debt": 0,
+            "net": 1087,
+            "grain": 8882,
+            "foodTurns": 37,
+            "foodShortfall": 0,
+            "living": 56,
+            "stability": 51,
+            "provinces": 10,
+            "life": 2052
+          }
+        },
+        {
+          "policy": "default",
+          "seed": 7,
+          "firstDebt": null,
+          "firstShortfall": null,
+          "totalShortfall": 0,
+          "developmentOrders": 0,
+          "developmentSpent": 0,
+          "rows": [
+            {
+              "turn": 1,
+              "cash": 45000,
+              "debt": 0,
+              "net": 1648,
+              "grain": 16080,
+              "foodTurns": 67,
+              "foodShortfall": 0,
+              "living": 56,
+              "stability": 76,
+              "provinces": 10,
+              "life": 2160
+            },
+            {
+              "turn": 37,
+              "cash": 45129,
+              "debt": 0,
+              "net": 1610,
+              "grain": 11558,
+              "foodTurns": 48.2,
+              "foodShortfall": 0,
+              "living": 56,
+              "stability": 61,
+              "provinces": 10,
+              "life": 2124
+            },
+            {
+              "turn": 73,
+              "cash": 46946,
+              "debt": 0,
+              "net": 1303,
+              "grain": 12037,
+              "foodTurns": 50.2,
+              "foodShortfall": 0,
+              "living": 56,
+              "stability": 53,
+              "provinces": 10,
+              "life": 2088
+            },
+            {
+              "turn": 109,
+              "cash": 48567,
+              "debt": 0,
+              "net": 1173,
+              "grain": 9526,
+              "foodTurns": 17.3,
+              "foodShortfall": 0,
+              "living": 56,
+              "stability": 51,
+              "provinces": 10,
+              "life": 2052
+            }
+          ],
+          "final": {
+            "turn": 109,
+            "cash": 48567,
+            "debt": 0,
+            "net": 1173,
+            "grain": 9526,
+            "foodTurns": 17.3,
+            "foodShortfall": 0,
+            "living": 56,
+            "stability": 51,
+            "provinces": 10,
+            "life": 2052
+          }
+        },
+        {
+          "policy": "default",
+          "seed": 41,
+          "firstDebt": null,
+          "firstShortfall": null,
+          "totalShortfall": 0,
+          "developmentOrders": 0,
+          "developmentSpent": 0,
+          "rows": [
+            {
+              "turn": 1,
+              "cash": 45000,
+              "debt": 0,
+              "net": 1648,
+              "grain": 16080,
+              "foodTurns": 67,
+              "foodShortfall": 0,
+              "living": 56,
+              "stability": 76,
+              "provinces": 10,
+              "life": 2160
+            },
+            {
+              "turn": 37,
+              "cash": 42256,
+              "debt": 0,
+              "net": 1237,
+              "grain": 10919,
+              "foodTurns": 45.5,
+              "foodShortfall": 0,
+              "living": 56,
+              "stability": 62,
+              "provinces": 10,
+              "life": 2124
+            },
+            {
+              "turn": 73,
+              "cash": 37566,
+              "debt": 0,
+              "net": 1282,
+              "grain": 11559,
+              "foodTurns": 20.7,
+              "foodShortfall": 0,
+              "living": 56,
+              "stability": 53,
+              "provinces": 10,
+              "life": 2088
+            },
+            {
+              "turn": 109,
+              "cash": 39068,
+              "debt": 0,
+              "net": 1525,
+              "grain": 12246,
+              "foodTurns": 51,
+              "foodShortfall": 0,
+              "living": 56,
+              "stability": 55,
+              "provinces": 10,
+              "life": 2052
+            }
+          ],
+          "final": {
+            "turn": 109,
+            "cash": 39068,
+            "debt": 0,
+            "net": 1525,
+            "grain": 12246,
+            "foodTurns": 51,
+            "foodShortfall": 0,
+            "living": 56,
+            "stability": 55,
+            "provinces": 10,
+            "life": 2052
+          }
+        },
+        {
+          "policy": "steward",
+          "seed": 1,
+          "firstDebt": null,
+          "firstShortfall": null,
+          "totalShortfall": 0,
+          "developmentOrders": 18,
+          "developmentSpent": 16200,
+          "rows": [
+            {
+              "turn": 1,
+              "cash": 45000,
+              "debt": 0,
+              "net": 3117,
+              "grain": 16080,
+              "foodTurns": 67,
+              "foodShortfall": 0,
+              "living": 56,
+              "stability": 76,
+              "provinces": 10,
+              "life": 2160
+            },
+            {
+              "turn": 37,
+              "cash": 111949,
+              "debt": 0,
+              "net": 2623,
+              "grain": 12335,
+              "foodTurns": 51.4,
+              "foodShortfall": 0,
+              "living": 56,
+              "stability": 60,
+              "provinces": 10,
+              "life": 2124
+            },
+            {
+              "turn": 73,
+              "cash": 175519,
+              "debt": 0,
+              "net": 2343,
+              "grain": 12380,
+              "foodTurns": 51.6,
+              "foodShortfall": 0,
+              "living": 55,
+              "stability": 52,
+              "provinces": 10,
+              "life": 2088
+            },
+            {
+              "turn": 109,
+              "cash": 215665,
+              "debt": 0,
+              "net": 1956,
+              "grain": 9636,
+              "foodTurns": 40.2,
+              "foodShortfall": 0,
+              "living": 54,
+              "stability": 45,
+              "provinces": 10,
+              "life": 2052
+            }
+          ],
+          "final": {
+            "turn": 109,
+            "cash": 215665,
+            "debt": 0,
+            "net": 1956,
+            "grain": 9636,
+            "foodTurns": 40.2,
+            "foodShortfall": 0,
+            "living": 54,
+            "stability": 45,
+            "provinces": 10,
+            "life": 2052
+          }
+        },
+        {
+          "policy": "steward",
+          "seed": 7,
+          "firstDebt": null,
+          "firstShortfall": null,
+          "totalShortfall": 0,
+          "developmentOrders": 18,
+          "developmentSpent": 16200,
+          "rows": [
+            {
+              "turn": 1,
+              "cash": 45000,
+              "debt": 0,
+              "net": 3117,
+              "grain": 16080,
+              "foodTurns": 67,
+              "foodShortfall": 0,
+              "living": 56,
+              "stability": 76,
+              "provinces": 10,
+              "life": 2160
+            },
+            {
+              "turn": 37,
+              "cash": 119703,
+              "debt": 0,
+              "net": 2621,
+              "grain": 12243,
+              "foodTurns": 51,
+              "foodShortfall": 0,
+              "living": 56,
+              "stability": 61,
+              "provinces": 10,
+              "life": 2124
+            },
+            {
+              "turn": 73,
+              "cash": 180516,
+              "debt": 0,
+              "net": 2126,
+              "grain": 12747,
+              "foodTurns": 53.1,
+              "foodShortfall": 0,
+              "living": 55,
+              "stability": 52,
+              "provinces": 10,
+              "life": 2088
+            },
+            {
+              "turn": 109,
+              "cash": 227855,
+              "debt": 0,
+              "net": 1956,
+              "grain": 10242,
+              "foodTurns": 18.4,
+              "foodShortfall": 0,
+              "living": 54,
+              "stability": 46,
+              "provinces": 10,
+              "life": 2052
+            }
+          ],
+          "final": {
+            "turn": 109,
+            "cash": 227855,
+            "debt": 0,
+            "net": 1956,
+            "grain": 10242,
+            "foodTurns": 18.4,
+            "foodShortfall": 0,
+            "living": 54,
+            "stability": 46,
+            "provinces": 10,
+            "life": 2052
+          }
+        },
+        {
+          "policy": "steward",
+          "seed": 41,
+          "firstDebt": null,
+          "firstShortfall": null,
+          "totalShortfall": 0,
+          "developmentOrders": 18,
+          "developmentSpent": 16200,
+          "rows": [
+            {
+              "turn": 1,
+              "cash": 45000,
+              "debt": 0,
+              "net": 3117,
+              "grain": 16080,
+              "foodTurns": 67,
+              "foodShortfall": 0,
+              "living": 56,
+              "stability": 76,
+              "provinces": 10,
+              "life": 2160
+            },
+            {
+              "turn": 37,
+              "cash": 117301,
+              "debt": 0,
+              "net": 2202,
+              "grain": 11935,
+              "foodTurns": 49.7,
+              "foodShortfall": 0,
+              "living": 56,
+              "stability": 61,
+              "provinces": 10,
+              "life": 2124
+            },
+            {
+              "turn": 73,
+              "cash": 169339,
+              "debt": 0,
+              "net": 2130,
+              "grain": 12183,
+              "foodTurns": 21.8,
+              "foodShortfall": 0,
+              "living": 55,
+              "stability": 50,
+              "provinces": 10,
+              "life": 2088
+            },
+            {
+              "turn": 109,
+              "cash": 222942,
+              "debt": 0,
+              "net": 2490,
+              "grain": 12969,
+              "foodTurns": 54,
+              "foodShortfall": 0,
+              "living": 54,
+              "stability": 47,
+              "provinces": 10,
+              "life": 2052
+            }
+          ],
+          "final": {
+            "turn": 109,
+            "cash": 222942,
+            "debt": 0,
+            "net": 2490,
+            "grain": 12969,
+            "foodTurns": 54,
+            "foodShortfall": 0,
+            "living": 54,
+            "stability": 47,
+            "provinces": 10,
+            "life": 2052
+          }
+        }
+      ],
+      "exams": {
+        "trials": 300,
+        "meanCount": 12.016666666666667,
+        "meanHistorical": 3.86,
+        "meanExperts": 3.71,
+        "emptyExpertShare": 0.01,
+        "proposedExamCost": 400,
+        "examFeeSimulated": false
+      },
+      "war": {
+        "recruit1000": 3000,
+        "spears1000": 8495,
+        "total1000": 11495,
+        "openingAffordability": 3,
+        "campaign1600": {
+          "version": 3,
+          "count": 1600,
+          "silver": 212,
+          "grain": 104,
+          "sourceProvinceId": "guannei",
+          "officer": {
+            "source": {
+              "id": "war-minister",
+              "name": "张文远",
+              "ability": 49,
+              "integrity": 41
+            },
+            "discountRate": 0.0392,
+            "lossRate": 0.009
+          },
+          "logistics": 0.09287145242070118,
+          "mounted": 0
+        },
+        "startingStocks": 47495
+      },
+      "ai": [
+        {
+          "seed": 1,
+          "firstThreat": null,
+          "managementCycles": 12,
+          "worldBattles": 6,
+          "final": {
+            "turn": 109,
+            "cash": 223702,
+            "debt": 0,
+            "net": 1852,
+            "grain": 9621,
+            "foodTurns": 40.1,
+            "foodShortfall": 0,
+            "living": 54,
+            "stability": 45,
+            "provinces": 10,
+            "life": 2052
+          },
+          "foreignCash": 928977
+        },
+        {
+          "seed": 7,
+          "firstThreat": null,
+          "managementCycles": 12,
+          "worldBattles": 6,
+          "final": {
+            "turn": 109,
+            "cash": 236215,
+            "debt": 0,
+            "net": 1848,
+            "grain": 10241,
+            "foodTurns": 18.4,
+            "foodShortfall": 0,
+            "living": 54,
+            "stability": 46,
+            "provinces": 10,
+            "life": 2052
+          },
+          "foreignCash": 935634
+        }
+      ],
+      "opening": {
+        "turn": 1,
+        "cash": 45000,
+        "debt": 0,
+        "net": 1648,
+        "grain": 16080,
+        "foodTurns": 67,
+        "foodShortfall": 0,
+        "living": 56,
+        "stability": 76,
+        "provinces": 10,
+        "life": 2160
+      }
+    },
+    {
+      "id": "standard",
+      "name": "励精图治",
+      "economy": [
+        {
+          "policy": "default",
+          "seed": 1,
+          "firstDebt": null,
+          "firstShortfall": null,
+          "totalShortfall": 0,
+          "developmentOrders": 0,
+          "developmentSpent": 0,
+          "rows": [
+            {
+              "turn": 1,
+              "cash": 30000,
+              "debt": 0,
+              "net": 1448,
+              "grain": 11792,
+              "foodTurns": 49.1,
+              "foodShortfall": 0,
+              "living": 56,
+              "stability": 76,
+              "provinces": 10,
+              "life": 2160
+            },
+            {
+              "turn": 37,
+              "cash": 16957,
+              "debt": 0,
+              "net": 1461,
+              "grain": 11368,
+              "foodTurns": 47.4,
+              "foodShortfall": 0,
+              "living": 56,
+              "stability": 60,
+              "provinces": 10,
+              "life": 2124
+            },
+            {
+              "turn": 73,
+              "cash": 12709,
+              "debt": 0,
+              "net": 1243,
+              "grain": 11825,
+              "foodTurns": 49.3,
+              "foodShortfall": 0,
+              "living": 56,
+              "stability": 53,
+              "provinces": 10,
+              "life": 2088
+            },
+            {
+              "turn": 109,
+              "cash": 7350,
+              "debt": 0,
+              "net": 903,
+              "grain": 8873,
+              "foodTurns": 37,
+              "foodShortfall": 0,
+              "living": 56,
+              "stability": 51,
+              "provinces": 10,
+              "life": 2052
+            }
+          ],
+          "final": {
+            "turn": 109,
+            "cash": 7350,
+            "debt": 0,
+            "net": 903,
+            "grain": 8873,
+            "foodTurns": 37,
+            "foodShortfall": 0,
+            "living": 56,
+            "stability": 51,
+            "provinces": 10,
+            "life": 2052
+          }
+        },
+        {
+          "policy": "default",
+          "seed": 7,
+          "firstDebt": null,
+          "firstShortfall": null,
+          "totalShortfall": 0,
+          "developmentOrders": 0,
+          "developmentSpent": 0,
+          "rows": [
+            {
+              "turn": 1,
+              "cash": 30000,
+              "debt": 0,
+              "net": 1448,
+              "grain": 11792,
+              "foodTurns": 49.1,
+              "foodShortfall": 0,
+              "living": 56,
+              "stability": 76,
+              "provinces": 10,
+              "life": 2160
+            },
+            {
+              "turn": 37,
+              "cash": 22046,
+              "debt": 0,
+              "net": 1410,
+              "grain": 11339,
+              "foodTurns": 47.2,
+              "foodShortfall": 0,
+              "living": 56,
+              "stability": 61,
+              "provinces": 10,
+              "life": 2124
+            },
+            {
+              "turn": 73,
+              "cash": 16546,
+              "debt": 0,
+              "net": 1103,
+              "grain": 12015,
+              "foodTurns": 50.1,
+              "foodShortfall": 0,
+              "living": 56,
+              "stability": 53,
+              "provinces": 10,
+              "life": 2088
+            },
+            {
+              "turn": 109,
+              "cash": 12279,
+              "debt": 0,
+              "net": 973,
+              "grain": 9522,
+              "foodTurns": 17.3,
+              "foodShortfall": 0,
+              "living": 56,
+              "stability": 51,
+              "provinces": 10,
+              "life": 2052
+            }
+          ],
+          "final": {
+            "turn": 109,
+            "cash": 12279,
+            "debt": 0,
+            "net": 973,
+            "grain": 9522,
+            "foodTurns": 17.3,
+            "foodShortfall": 0,
+            "living": 56,
+            "stability": 51,
+            "provinces": 10,
+            "life": 2052
+          }
+        },
+        {
+          "policy": "default",
+          "seed": 41,
+          "firstDebt": null,
+          "firstShortfall": null,
+          "totalShortfall": 0,
+          "developmentOrders": 0,
+          "developmentSpent": 0,
+          "rows": [
+            {
+              "turn": 1,
+              "cash": 30000,
+              "debt": 0,
+              "net": 1448,
+              "grain": 11792,
+              "foodTurns": 49.1,
+              "foodShortfall": 0,
+              "living": 56,
+              "stability": 76,
+              "provinces": 10,
+              "life": 2160
+            },
+            {
+              "turn": 37,
+              "cash": 19007,
+              "debt": 0,
+              "net": 1037,
+              "grain": 10355,
+              "foodTurns": 43.1,
+              "foodShortfall": 0,
+              "living": 56,
+              "stability": 62,
+              "provinces": 10,
+              "life": 2124
+            },
+            {
+              "turn": 73,
+              "cash": 8126,
+              "debt": 0,
+              "net": 1082,
+              "grain": 11438,
+              "foodTurns": 20.5,
+              "foodShortfall": 0,
+              "living": 56,
+              "stability": 53,
+              "provinces": 10,
+              "life": 2088
+            },
+            {
+              "turn": 109,
+              "cash": 9577,
+              "debt": 0,
+              "net": 1322,
+              "grain": 12215,
+              "foodTurns": 50.9,
+              "foodShortfall": 0,
+              "living": 56,
+              "stability": 55,
+              "provinces": 10,
+              "life": 2052
+            }
+          ],
+          "final": {
+            "turn": 109,
+            "cash": 9577,
+            "debt": 0,
+            "net": 1322,
+            "grain": 12215,
+            "foodTurns": 50.9,
+            "foodShortfall": 0,
+            "living": 56,
+            "stability": 55,
+            "provinces": 10,
+            "life": 2052
+          }
+        },
+        {
+          "policy": "steward",
+          "seed": 1,
+          "firstDebt": null,
+          "firstShortfall": null,
+          "totalShortfall": 0,
+          "developmentOrders": 18,
+          "developmentSpent": 18000,
+          "rows": [
+            {
+              "turn": 1,
+              "cash": 30000,
+              "debt": 0,
+              "net": 2917,
+              "grain": 11792,
+              "foodTurns": 49.1,
+              "foodShortfall": 0,
+              "living": 56,
+              "stability": 76,
+              "provinces": 10,
+              "life": 2160
+            },
+            {
+              "turn": 37,
+              "cash": 91710,
+              "debt": 0,
+              "net": 2423,
+              "grain": 12141,
+              "foodTurns": 50.6,
+              "foodShortfall": 0,
+              "living": 56,
+              "stability": 60,
+              "provinces": 10,
+              "life": 2124
+            },
+            {
+              "turn": 73,
+              "cash": 149844,
+              "debt": 0,
+              "net": 2143,
+              "grain": 12371,
+              "foodTurns": 51.5,
+              "foodShortfall": 0,
+              "living": 55,
+              "stability": 52,
+              "provinces": 10,
+              "life": 2088
+            },
+            {
+              "turn": 109,
+              "cash": 186453,
+              "debt": 0,
+              "net": 1756,
+              "grain": 9635,
+              "foodTurns": 40.1,
+              "foodShortfall": 0,
+              "living": 54,
+              "stability": 45,
+              "provinces": 10,
+              "life": 2052
+            }
+          ],
+          "final": {
+            "turn": 109,
+            "cash": 186453,
+            "debt": 0,
+            "net": 1756,
+            "grain": 9635,
+            "foodTurns": 40.1,
+            "foodShortfall": 0,
+            "living": 54,
+            "stability": 45,
+            "provinces": 10,
+            "life": 2052
+          }
+        },
+        {
+          "policy": "steward",
+          "seed": 7,
+          "firstDebt": null,
+          "firstShortfall": null,
+          "totalShortfall": 0,
+          "developmentOrders": 18,
+          "developmentSpent": 18000,
+          "rows": [
+            {
+              "turn": 1,
+              "cash": 30000,
+              "debt": 0,
+              "net": 2917,
+              "grain": 11792,
+              "foodTurns": 49.1,
+              "foodShortfall": 0,
+              "living": 56,
+              "stability": 76,
+              "provinces": 10,
+              "life": 2160
+            },
+            {
+              "turn": 37,
+              "cash": 99057,
+              "debt": 0,
+              "net": 2421,
+              "grain": 12050,
+              "foodTurns": 50.2,
+              "foodShortfall": 0,
+              "living": 56,
+              "stability": 61,
+              "provinces": 10,
+              "life": 2124
+            },
+            {
+              "turn": 73,
+              "cash": 154788,
+              "debt": 0,
+              "net": 1926,
+              "grain": 12739,
+              "foodTurns": 53.1,
+              "foodShortfall": 0,
+              "living": 55,
+              "stability": 52,
+              "provinces": 10,
+              "life": 2088
+            },
+            {
+              "turn": 109,
+              "cash": 197988,
+              "debt": 0,
+              "net": 1756,
+              "grain": 10241,
+              "foodTurns": 18.4,
+              "foodShortfall": 0,
+              "living": 54,
+              "stability": 46,
+              "provinces": 10,
+              "life": 2052
+            }
+          ],
+          "final": {
+            "turn": 109,
+            "cash": 197988,
+            "debt": 0,
+            "net": 1756,
+            "grain": 10241,
+            "foodTurns": 18.4,
+            "foodShortfall": 0,
+            "living": 54,
+            "stability": 46,
+            "provinces": 10,
+            "life": 2052
+          }
+        },
+        {
+          "policy": "steward",
+          "seed": 41,
+          "firstDebt": null,
+          "firstShortfall": null,
+          "totalShortfall": 0,
+          "developmentOrders": 18,
+          "developmentSpent": 18000,
+          "rows": [
+            {
+              "turn": 1,
+              "cash": 30000,
+              "debt": 0,
+              "net": 2917,
+              "grain": 11792,
+              "foodTurns": 49.1,
+              "foodShortfall": 0,
+              "living": 56,
+              "stability": 76,
+              "provinces": 10,
+              "life": 2160
+            },
+            {
+              "turn": 37,
+              "cash": 96423,
+              "debt": 0,
+              "net": 2002,
+              "grain": 11733,
+              "foodTurns": 48.9,
+              "foodShortfall": 0,
+              "living": 56,
+              "stability": 61,
+              "provinces": 10,
+              "life": 2124
+            },
+            {
+              "turn": 73,
+              "cash": 144324,
+              "debt": 0,
+              "net": 1930,
+              "grain": 12175,
+              "foodTurns": 21.8,
+              "foodShortfall": 0,
+              "living": 55,
+              "stability": 50,
+              "provinces": 10,
+              "life": 2088
+            },
+            {
+              "turn": 109,
+              "cash": 193620,
+              "debt": 0,
+              "net": 2290,
+              "grain": 12968,
+              "foodTurns": 54,
+              "foodShortfall": 0,
+              "living": 54,
+              "stability": 47,
+              "provinces": 10,
+              "life": 2052
+            }
+          ],
+          "final": {
+            "turn": 109,
+            "cash": 193620,
+            "debt": 0,
+            "net": 2290,
+            "grain": 12968,
+            "foodTurns": 54,
+            "foodShortfall": 0,
+            "living": 54,
+            "stability": 47,
+            "provinces": 10,
+            "life": 2052
+          }
+        }
+      ],
+      "exams": {
+        "trials": 300,
+        "meanCount": 11.016666666666667,
+        "meanHistorical": 2.84,
+        "meanExperts": 2.7266666666666666,
+        "emptyExpertShare": 0.05,
+        "proposedExamCost": 500,
+        "examFeeSimulated": false
+      },
+      "war": {
+        "recruit1000": 4000,
+        "spears1000": 9438,
+        "total1000": 13438,
+        "openingAffordability": 2,
+        "campaign1600": {
+          "version": 3,
+          "count": 1600,
+          "silver": 255,
+          "grain": 128,
+          "sourceProvinceId": "guannei",
+          "officer": {
+            "source": {
+              "id": "war-minister",
+              "name": "张文远",
+              "ability": 49,
+              "integrity": 41
+            },
+            "discountRate": 0.0392,
+            "lossRate": 0.009
+          },
+          "logistics": 0.09287145242070118,
+          "mounted": 0
+        },
+        "startingStocks": 41300
+      },
+      "ai": [
+        {
+          "seed": 1,
+          "firstThreat": null,
+          "managementCycles": 18,
+          "worldBattles": 10,
+          "final": {
+            "turn": 109,
+            "cash": 195974,
+            "debt": 0,
+            "net": 1652,
+            "grain": 9621,
+            "foodTurns": 40.1,
+            "foodShortfall": 0,
+            "living": 54,
+            "stability": 45,
+            "provinces": 10,
+            "life": 2052
+          },
+          "foreignCash": 881371
+        },
+        {
+          "seed": 7,
+          "firstThreat": null,
+          "managementCycles": 18,
+          "worldBattles": 10,
+          "final": {
+            "turn": 109,
+            "cash": 207859,
+            "debt": 0,
+            "net": 1648,
+            "grain": 10240,
+            "foodTurns": 18.4,
+            "foodShortfall": 0,
+            "living": 54,
+            "stability": 46,
+            "provinces": 10,
+            "life": 2052
+          },
+          "foreignCash": 880586
+        }
+      ],
+      "opening": {
+        "turn": 1,
+        "cash": 30000,
+        "debt": 0,
+        "net": 1448,
+        "grain": 11792,
+        "foodTurns": 49.1,
+        "foodShortfall": 0,
+        "living": 56,
+        "stability": 76,
+        "provinces": 10,
+        "life": 2160
+      }
+    },
+    {
+      "id": "veteran",
+      "name": "力挽狂澜",
+      "economy": [
+        {
+          "policy": "default",
+          "seed": 1,
+          "firstDebt": null,
+          "firstShortfall": null,
+          "totalShortfall": 0,
+          "developmentOrders": 0,
+          "developmentSpent": 0,
+          "rows": [
+            {
+              "turn": 1,
+              "cash": 22000,
+              "debt": 0,
+              "net": 1248,
+              "grain": 8576,
+              "foodTurns": 35.7,
+              "foodShortfall": 0,
+              "living": 56,
+              "stability": 76,
+              "provinces": 10,
+              "life": 2160
+            },
+            {
+              "turn": 37,
+              "cash": 7271,
+              "debt": 0,
+              "net": 1229,
+              "grain": 9786,
+              "foodTurns": 40.8,
+              "foodShortfall": 0,
+              "living": 56,
+              "stability": 60,
+              "provinces": 10,
+              "life": 2124
+            },
+            {
+              "turn": 73,
+              "cash": 8621,
+              "debt": 0,
+              "net": 1015,
+              "grain": 10863,
+              "foodTurns": 45.3,
+              "foodShortfall": 0,
+              "living": 56,
+              "stability": 53,
+              "provinces": 10,
+              "life": 2088
+            },
+            {
+              "turn": 109,
+              "cash": 5986,
+              "debt": 0,
+              "net": 714,
+              "grain": 8012,
+              "foodTurns": 33.4,
+              "foodShortfall": 0,
+              "living": 56,
+              "stability": 47,
+              "provinces": 10,
+              "life": 2052
+            }
+          ],
+          "final": {
+            "turn": 109,
+            "cash": 5986,
+            "debt": 0,
+            "net": 714,
+            "grain": 8012,
+            "foodTurns": 33.4,
+            "foodShortfall": 0,
+            "living": 56,
+            "stability": 47,
+            "provinces": 10,
+            "life": 2052
+          }
+        },
+        {
+          "policy": "default",
+          "seed": 7,
+          "firstDebt": null,
+          "firstShortfall": null,
+          "totalShortfall": 0,
+          "developmentOrders": 0,
+          "developmentSpent": 0,
+          "rows": [
+            {
+              "turn": 1,
+              "cash": 22000,
+              "debt": 0,
+              "net": 1248,
+              "grain": 8576,
+              "foodTurns": 35.7,
+              "foodShortfall": 0,
+              "living": 56,
+              "stability": 76,
+              "provinces": 10,
+              "life": 2160
+            },
+            {
+              "turn": 37,
+              "cash": 7993,
+              "debt": 0,
+              "net": 1189,
+              "grain": 9659,
+              "foodTurns": 40.2,
+              "foodShortfall": 0,
+              "living": 56,
+              "stability": 61,
+              "provinces": 10,
+              "life": 2124
+            },
+            {
+              "turn": 73,
+              "cash": 7070,
+              "debt": 0,
+              "net": 803,
+              "grain": 10977,
+              "foodTurns": 45.7,
+              "foodShortfall": 0,
+              "living": 56,
+              "stability": 53,
+              "provinces": 10,
+              "life": 2088
+            },
+            {
+              "turn": 109,
+              "cash": 5956,
+              "debt": 0,
+              "net": 673,
+              "grain": 9323,
+              "foodTurns": 17.2,
+              "foodShortfall": 0,
+              "living": 56,
+              "stability": 50,
+              "provinces": 10,
+              "life": 2052
+            }
+          ],
+          "final": {
+            "turn": 109,
+            "cash": 5956,
+            "debt": 0,
+            "net": 673,
+            "grain": 9323,
+            "foodTurns": 17.2,
+            "foodShortfall": 0,
+            "living": 56,
+            "stability": 50,
+            "provinces": 10,
+            "life": 2052
+          }
+        },
+        {
+          "policy": "default",
+          "seed": 41,
+          "firstDebt": null,
+          "firstShortfall": null,
+          "totalShortfall": 0,
+          "developmentOrders": 0,
+          "developmentSpent": 0,
+          "rows": [
+            {
+              "turn": 1,
+              "cash": 22000,
+              "debt": 0,
+              "net": 1248,
+              "grain": 8576,
+              "foodTurns": 35.7,
+              "foodShortfall": 0,
+              "living": 56,
+              "stability": 76,
+              "provinces": 10,
+              "life": 2160
+            },
+            {
+              "turn": 37,
+              "cash": 8305,
+              "debt": 0,
+              "net": 818,
+              "grain": 8140,
+              "foodTurns": 33.9,
+              "foodShortfall": 0,
+              "living": 56,
+              "stability": 62,
+              "provinces": 10,
+              "life": 2124
+            },
+            {
+              "turn": 73,
+              "cash": 6813,
+              "debt": 0,
+              "net": 815,
+              "grain": 9682,
+              "foodTurns": 17.1,
+              "foodShortfall": 0,
+              "living": 56,
+              "stability": 52,
+              "provinces": 10,
+              "life": 2088
+            },
+            {
+              "turn": 109,
+              "cash": 8161,
+              "debt": 0,
+              "net": 1085,
+              "grain": 10783,
+              "foodTurns": 44.9,
+              "foodShortfall": 0,
+              "living": 56,
+              "stability": 51,
+              "provinces": 10,
+              "life": 2052
+            }
+          ],
+          "final": {
+            "turn": 109,
+            "cash": 8161,
+            "debt": 0,
+            "net": 1085,
+            "grain": 10783,
+            "foodTurns": 44.9,
+            "foodShortfall": 0,
+            "living": 56,
+            "stability": 51,
+            "provinces": 10,
+            "life": 2052
+          }
+        },
+        {
+          "policy": "steward",
+          "seed": 1,
+          "firstDebt": null,
+          "firstShortfall": null,
+          "totalShortfall": 0,
+          "developmentOrders": 18,
+          "developmentSpent": 19800,
+          "rows": [
+            {
+              "turn": 1,
+              "cash": 22000,
+              "debt": 0,
+              "net": 2717,
+              "grain": 8576,
+              "foodTurns": 35.7,
+              "foodShortfall": 0,
+              "living": 56,
+              "stability": 76,
+              "provinces": 10,
+              "life": 2160
+            },
+            {
+              "turn": 37,
+              "cash": 77543,
+              "debt": 0,
+              "net": 2223,
+              "grain": 11828,
+              "foodTurns": 49.3,
+              "foodShortfall": 0,
+              "living": 56,
+              "stability": 60,
+              "provinces": 10,
+              "life": 2124
+            },
+            {
+              "turn": 73,
+              "cash": 129643,
+              "debt": 0,
+              "net": 1943,
+              "grain": 12357,
+              "foodTurns": 51.5,
+              "foodShortfall": 0,
+              "living": 55,
+              "stability": 52,
+              "provinces": 10,
+              "life": 2088
+            },
+            {
+              "turn": 109,
+              "cash": 161925,
+              "debt": 0,
+              "net": 1556,
+              "grain": 9633,
+              "foodTurns": 40.1,
+              "foodShortfall": 0,
+              "living": 54,
+              "stability": 45,
+              "provinces": 10,
+              "life": 2052
+            }
+          ],
+          "final": {
+            "turn": 109,
+            "cash": 161925,
+            "debt": 0,
+            "net": 1556,
+            "grain": 9633,
+            "foodTurns": 40.1,
+            "foodShortfall": 0,
+            "living": 54,
+            "stability": 45,
+            "provinces": 10,
+            "life": 2052
+          }
+        },
+        {
+          "policy": "steward",
+          "seed": 7,
+          "firstDebt": null,
+          "firstShortfall": null,
+          "totalShortfall": 0,
+          "developmentOrders": 18,
+          "developmentSpent": 19800,
+          "rows": [
+            {
+              "turn": 1,
+              "cash": 22000,
+              "debt": 0,
+              "net": 2717,
+              "grain": 8576,
+              "foodTurns": 35.7,
+              "foodShortfall": 0,
+              "living": 56,
+              "stability": 76,
+              "provinces": 10,
+              "life": 2160
+            },
+            {
+              "turn": 37,
+              "cash": 84609,
+              "debt": 0,
+              "net": 2221,
+              "grain": 11739,
+              "foodTurns": 48.9,
+              "foodShortfall": 0,
+              "living": 56,
+              "stability": 61,
+              "provinces": 10,
+              "life": 2124
+            },
+            {
+              "turn": 73,
+              "cash": 134578,
+              "debt": 0,
+              "net": 1726,
+              "grain": 12723,
+              "foodTurns": 53,
+              "foodShortfall": 0,
+              "living": 55,
+              "stability": 52,
+              "provinces": 10,
+              "life": 2088
+            },
+            {
+              "turn": 109,
+              "cash": 172958,
+              "debt": 0,
+              "net": 1556,
+              "grain": 10239,
+              "foodTurns": 18.4,
+              "foodShortfall": 0,
+              "living": 54,
+              "stability": 46,
+              "provinces": 10,
+              "life": 2052
+            }
+          ],
+          "final": {
+            "turn": 109,
+            "cash": 172958,
+            "debt": 0,
+            "net": 1556,
+            "grain": 10239,
+            "foodTurns": 18.4,
+            "foodShortfall": 0,
+            "living": 54,
+            "stability": 46,
+            "provinces": 10,
+            "life": 2052
+          }
+        },
+        {
+          "policy": "steward",
+          "seed": 41,
+          "firstDebt": null,
+          "firstShortfall": null,
+          "totalShortfall": 0,
+          "developmentOrders": 18,
+          "developmentSpent": 19800,
+          "rows": [
+            {
+              "turn": 1,
+              "cash": 22000,
+              "debt": 0,
+              "net": 2717,
+              "grain": 8576,
+              "foodTurns": 35.7,
+              "foodShortfall": 0,
+              "living": 56,
+              "stability": 76,
+              "provinces": 10,
+              "life": 2160
+            },
+            {
+              "turn": 37,
+              "cash": 81811,
+              "debt": 0,
+              "net": 1802,
+              "grain": 10707,
+              "foodTurns": 44.6,
+              "foodShortfall": 0,
+              "living": 56,
+              "stability": 61,
+              "provinces": 10,
+              "life": 2124
+            },
+            {
+              "turn": 73,
+              "cash": 124638,
+              "debt": 0,
+              "net": 1730,
+              "grain": 12122,
+              "foodTurns": 21.7,
+              "foodShortfall": 0,
+              "living": 55,
+              "stability": 50,
+              "provinces": 10,
+              "life": 2088
+            },
+            {
+              "turn": 109,
+              "cash": 168983,
+              "debt": 0,
+              "net": 2090,
+              "grain": 12964,
+              "foodTurns": 54,
+              "foodShortfall": 0,
+              "living": 54,
+              "stability": 47,
+              "provinces": 10,
+              "life": 2052
+            }
+          ],
+          "final": {
+            "turn": 109,
+            "cash": 168983,
+            "debt": 0,
+            "net": 2090,
+            "grain": 12964,
+            "foodTurns": 54,
+            "foodShortfall": 0,
+            "living": 54,
+            "stability": 47,
+            "provinces": 10,
+            "life": 2052
+          }
+        }
+      ],
+      "exams": {
+        "trials": 300,
+        "meanCount": 9.016666666666667,
+        "meanHistorical": 1.96,
+        "meanExperts": 1.88,
+        "emptyExpertShare": 0.13666666666666666,
+        "proposedExamCost": 600,
+        "examFeeSimulated": false
+      },
+      "war": {
+        "recruit1000": 5000,
+        "spears1000": 10382,
+        "total1000": 15382,
+        "openingAffordability": 1,
+        "campaign1600": {
+          "version": 3,
+          "count": 1600,
+          "silver": 297,
+          "grain": 152,
+          "sourceProvinceId": "guannei",
+          "officer": {
+            "source": {
+              "id": "war-minister",
+              "name": "张文远",
+              "ability": 49,
+              "integrity": 41
+            },
+            "discountRate": 0.0392,
+            "lossRate": 0.009
+          },
+          "logistics": 0.09287145242070118,
+          "mounted": 0
+        },
+        "startingStocks": 35108
+      },
+      "ai": [
+        {
+          "seed": 1,
+          "firstThreat": 67,
+          "managementCycles": 17,
+          "worldBattles": 7,
+          "final": {
+            "turn": 68,
+            "cash": 129760,
+            "debt": 0,
+            "net": 1979,
+            "grain": 11793,
+            "foodTurns": 49.1,
+            "foodShortfall": 0,
+            "living": 55,
+            "stability": 53,
+            "provinces": 10,
+            "life": 2093
+          },
+          "foreignCash": 688592
+        },
+        {
+          "seed": 7,
+          "firstThreat": 67,
+          "managementCycles": 17,
+          "worldBattles": 7,
+          "final": {
+            "turn": 68,
+            "cash": 138637,
+            "debt": 0,
+            "net": 2159,
+            "grain": 12421,
+            "foodTurns": 51.8,
+            "foodShortfall": 0,
+            "living": 55,
+            "stability": 53,
+            "provinces": 10,
+            "life": 2093
+          },
+          "foreignCash": 676519
+        }
+      ],
+      "opening": {
+        "turn": 1,
+        "cash": 22000,
+        "debt": 0,
+        "net": 1248,
+        "grain": 8576,
+        "foodTurns": 35.7,
+        "foodShortfall": 0,
+        "living": 56,
+        "stability": 76,
+        "provinces": 10,
+        "life": 2160
+      }
+    }
+  ],
+  "errors": [],
+  "productionUnchanged": true,
+  "limitations": [
+    "Exam fee is proposal-only; no exam action is executed in the economy run.",
+    "foodTurns is an opening provision parameter, not the measured coverage of next-turn consumption.",
+    "Paired seeds do not isolate random domains; AI cadence can shift subsequent random draws.",
+    "Steward uses 25 percent tax and disables delegation; cash accumulation comes with lower welfare.",
+    "Economy, natural AI observation and tactical probes are separate experiments; no full conquest or ascension reachability claim."
+  ]
+}

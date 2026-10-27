@@ -1,0 +1,6 @@
+/* Keep the return action in the same place across painted palace activities. */
+.palace-action-scene .palace-scene-exit{position:absolute;bottom:4%;left:50%;transform:translateX(-50%);z-index:4;min-width:140px;max-width:86%;box-sizing:border-box;margin:0;padding:13px 28px;font:inherit;font-size:14px;letter-spacing:3px;white-space:nowrap;background:#243b34eb;border:1px solid #b99b67;border-radius:3px;color:#f5e3b9;box-shadow:0 6px 24px #16282040;cursor:pointer}
+.palace-action-scene .palace-scene-exit:hover{background:#405647}
+.palace-action-scene .palace-scene-exit:focus-visible{outline:2px solid #fff0cb;outline-offset:4px}
+.palace-action-scene [role="status"]{bottom:calc(4% + 64px);z-index:3;white-space:normal}
+@media(max-width:700px){.palace-action-scene .palace-scene-exit{min-width:112px;padding:9px 18px;font-size:12px;letter-spacing:1px}.palace-action-scene [role="status"]{bottom:calc(4% + 48px)}}

@@ -1,0 +1,1448 @@
+{
+  "tool": "built-in image_gen",
+  "status": "completed",
+  "scope": "截图全部未入池人物29位，加新有菜三套，新增32张；另重做上一批13张体态",
+  "bodyReference": "assets/beauties/references/he-sui-calves-20261022/runway-shape-reference.jpg",
+  "referenceImage": "assets/beauties/references/japan-screenshot-20261023/user-roster.png",
+  "items": [
+    {
+      "id": "japan-screenshot-20261023-01",
+      "name": "篠田优",
+      "english": "Yu Shinoda",
+      "label": "篠田ゆう",
+      "row": 1,
+      "column": 3,
+      "title": "靛夏弓韵",
+      "asset": "assets/beauties/random/番邦女子/日本女子-篠田优-靛夏弓韵.png",
+      "design": "natural walking step, carrying a small Japanese shortbow vertically in one hand and a decorative tassel in the other; indigo sleeveless summer kosode wrap dress with opaque lining, slim cream obi, bare feet",
+      "refs": [
+        "/Users/fengheliang/workbench/source/g20/games/assets/beauties/references/japan-screenshot-20261023/user-roster.png",
+        "/Users/fengheliang/workbench/source/g20/games/assets/beauties/references/he-sui-calves-20261022/runway-shape-reference.jpg"
+      ],
+      "prompt": "Use case: photorealistic-natural. Make ONE new full-body adult female Japanese summer costume game portrait. IMAGE 1 is a labeled roster of adult performers: use ONLY the specified labeled tile for facial identity, NOT any other tile. IMAGE 2 is the PRIMARY BODY PROPORTION TEMPLATE: He Sui adult runway photo. Match her tall lean elegant grown-adult skeleton: small head relative to full-size natural shoulders/ribcage/pelvis, long neck and torso, long lean legs and slim calves, approximately 8 head lengths standing-equivalent. Do not copy IMAGE 2 face, modern jacket, shoes or background. Do not make a large head with toy-sized torso. Rebuild anatomically coherent body for the requested pose, no digital stretching. Distant level 85mm full-body camera. Natural skin, individual recognizable eyes/nose/lips/jaw from the specified tile. Exactly two arms, five fingers per hand, two legs with coherent knees and ankles, two feet with natural toes and believable weight/contact. Fully clothed nonsexual fashion image, clearly adult age25+. Japanese breathable lightweight opaque summer clothing, delicate kanzashi, earrings, necklace, bangles, obi jewelry. NO socks. Entire subject, hair accessories, garments, prop/furniture and toes completely inside portrait 2:3 canvas with 6% clear margins. GENUINE transparent alpha, NO backdrop, floor, shadow, glow, gradient, text or watermark. IMAGE 1 selected tile: row 1, column 3, printed label \"篠田ゆう\", Yu Shinoda. Preserve this adult facial identity. Outfit and pose: natural walking step, carrying a small Japanese shortbow vertically in one hand and a decorative tassel in the other; indigo sleeveless summer kosode wrap dress with opaque lining, slim cream obi, bare feet.",
+      "faceReferencePolicy": "以用户截图中对应姓名的成年头像为面部参考，保留其年轻成年外观；不推断截图拍摄日期。",
+      "generatedPath": "/Users/fengheliang/.codex/generated_images/01a16615-cc42-7e81-aa4f-b849b888d820/exec-fe1a9087-6e75-4a23-8454-85f0636a8425.png",
+      "finalPrompt": "Use case: photorealistic-natural. Make ONE new full-body adult female Japanese summer costume game portrait. IMAGE 1 is a labeled roster of adult performers: use ONLY the specified labeled tile for facial identity, NOT any other tile. IMAGE 2 is the PRIMARY BODY PROPORTION TEMPLATE: He Sui adult runway photo. Match her tall lean elegant grown-adult skeleton: small head relative to full-size natural shoulders/ribcage/pelvis, long neck and torso, long lean legs and slim calves, approximately 8 head lengths standing-equivalent. Do not copy IMAGE 2 face, modern jacket, shoes or background. Do not make a large head with toy-sized torso. Rebuild anatomically coherent body for the requested pose, no digital stretching. Distant level 85mm full-body camera. Natural skin, individual recognizable eyes/nose/lips/jaw from the specified tile. Exactly two arms, five fingers per hand, two legs with coherent knees and ankles, two feet with natural toes and believable weight/contact. Fully clothed nonsexual fashion image, clearly adult age25+. Japanese breathable lightweight opaque summer clothing, delicate kanzashi, earrings, necklace, bangles, obi jewelry. NO socks. Entire subject, hair accessories, garments, prop/furniture and toes completely inside portrait 2:3 canvas with 6% clear margins. GENUINE transparent alpha, NO backdrop, floor, shadow, glow, gradient, text or watermark. IMAGE 1 selected tile: row 1, column 3, printed label \"篠田ゆう\", Yu Shinoda. Preserve this adult facial identity. Outfit and pose: natural walking step, carrying a small Japanese shortbow vertically in one hand and a decorative tassel in the other; indigo sleeveless summer kosode wrap dress with opaque lining, slim cream obi, bare feet. COSTUME REVISION: entirely modest ordinary summer festival clothes, fully closed high wrap neckline, elbow-length sleeves, opaque calf-length skirt or loose ankle-length trousers. No cleavage, cutouts, slits, exposed abdomen, underwear, swimwear, sheer fabric or pinup posing. Calm cultural fashion catalogue photograph.",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentFraction": 0.7395,
+        "borderPixelsAbove20": 0
+      },
+      "assetSha256": "e34e097b5502560fb018ebd095f44f6f6ca08ffa71ae0f9698ef5087e72cf985"
+    },
+    {
+      "id": "japan-screenshot-20261023-02",
+      "name": "水卜樱",
+      "english": "Sakura Miura",
+      "label": "水卜さくら",
+      "row": 2,
+      "column": 1,
+      "title": "水蓝捧珠",
+      "asset": "assets/beauties/random/番邦女子/日本女子-水卜樱-水蓝捧珠.png",
+      "design": "side-seated on a low wooden bench, knees together and long shins visible at a relaxed diagonal, holding a small mother-of-pearl ornament in an open palm; sky-blue summer jinbei wrap top with loose matching knee-length shorts, bare feet",
+      "refs": [
+        "/Users/fengheliang/workbench/source/g20/games/assets/beauties/references/japan-screenshot-20261023/user-roster.png",
+        "/Users/fengheliang/workbench/source/g20/games/assets/beauties/references/he-sui-calves-20261022/runway-shape-reference.jpg"
+      ],
+      "prompt": "Use case: photorealistic-natural. Make ONE new full-body adult female Japanese summer costume game portrait. IMAGE 1 is a labeled roster of adult performers: use ONLY the specified labeled tile for facial identity, NOT any other tile. IMAGE 2 is the PRIMARY BODY PROPORTION TEMPLATE: He Sui adult runway photo. Match her tall lean elegant grown-adult skeleton: small head relative to full-size natural shoulders/ribcage/pelvis, long neck and torso, long lean legs and slim calves, approximately 8 head lengths standing-equivalent. Do not copy IMAGE 2 face, modern jacket, shoes or background. Do not make a large head with toy-sized torso. Rebuild anatomically coherent body for the requested pose, no digital stretching. Distant level 85mm full-body camera. Natural skin, individual recognizable eyes/nose/lips/jaw from the specified tile. Exactly two arms, five fingers per hand, two legs with coherent knees and ankles, two feet with natural toes and believable weight/contact. Fully clothed nonsexual fashion image, clearly adult age25+. Japanese breathable lightweight opaque summer clothing, delicate kanzashi, earrings, necklace, bangles, obi jewelry. NO socks. Entire subject, hair accessories, garments, prop/furniture and toes completely inside portrait 2:3 canvas with 6% clear margins. GENUINE transparent alpha, NO backdrop, floor, shadow, glow, gradient, text or watermark. IMAGE 1 selected tile: row 2, column 1, printed label \"水卜さくら\", Sakura Miura. Preserve this adult facial identity. Outfit and pose: side-seated on a low wooden bench, knees together and long shins visible at a relaxed diagonal, holding a small mother-of-pearl ornament in an open palm; sky-blue summer jinbei wrap top with loose matching knee-length shorts, bare feet.",
+      "faceReferencePolicy": "以用户截图中对应姓名的成年头像为面部参考，保留其年轻成年外观；不推断截图拍摄日期。",
+      "generatedPath": "/Users/fengheliang/.codex/generated_images/01a16615-cc42-7e81-aa4f-b849b888d820/exec-6d316e6e-6128-41fc-9fec-e9c454f4b8a3.png",
+      "finalPrompt": "Use case: photorealistic-natural. Make ONE new full-body adult female Japanese summer costume game portrait. IMAGE 1 is a labeled roster of adult performers: use ONLY the specified labeled tile for facial identity, NOT any other tile. IMAGE 2 is the PRIMARY BODY PROPORTION TEMPLATE: He Sui adult runway photo. Match her tall lean elegant grown-adult skeleton: small head relative to full-size natural shoulders/ribcage/pelvis, long neck and torso, long lean legs and slim calves, approximately 8 head lengths standing-equivalent. Do not copy IMAGE 2 face, modern jacket, shoes or background. Do not make a large head with toy-sized torso. Rebuild anatomically coherent body for the requested pose, no digital stretching. Distant level 85mm full-body camera. Natural skin, individual recognizable eyes/nose/lips/jaw from the specified tile. Exactly two arms, five fingers per hand, two legs with coherent knees and ankles, two feet with natural toes and believable weight/contact. Fully clothed nonsexual fashion image, clearly adult age25+. Japanese breathable lightweight opaque summer clothing, delicate kanzashi, earrings, necklace, bangles, obi jewelry. NO socks. Entire subject, hair accessories, garments, prop/furniture and toes completely inside portrait 2:3 canvas with 6% clear margins. GENUINE transparent alpha, NO backdrop, floor, shadow, glow, gradient, text or watermark. IMAGE 1 selected tile: row 2, column 1, printed label \"水卜さくら\", Sakura Miura. Preserve this adult facial identity. Outfit and pose: side-seated on a low wooden bench, knees together and long shins visible at a relaxed diagonal, holding a small mother-of-pearl ornament in an open palm; sky-blue summer jinbei wrap top with loose matching knee-length shorts, bare feet. COSTUME REVISION: entirely modest ordinary summer festival clothes, fully closed high wrap neckline, elbow-length sleeves, opaque calf-length skirt or loose ankle-length trousers. No cleavage, cutouts, slits, exposed abdomen, underwear, swimwear, sheer fabric or pinup posing. Calm cultural fashion catalogue photograph.",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentFraction": 0.5628,
+        "borderPixelsAbove20": 0
+      },
+      "assetSha256": "55db03444f86895e2f9a784f7acd8397566cfd0b431c12b0bed8c2c0da9f46d0"
+    },
+    {
+      "id": "japan-screenshot-20261023-03",
+      "name": "君岛美绪",
+      "english": "Mio Kimijima",
+      "label": "君島みお",
+      "row": 2,
+      "column": 3,
+      "title": "墨夏展卷",
+      "asset": "assets/beauties/random/番邦女子/日本女子-君岛美绪-墨夏展卷.png",
+      "design": "upright half-kneeling with one knee resting and the opposite foot planted naturally, holding an open washi scroll in both hands at chest level; black and ivory lightweight summer kosode and ivory divided hakama, bare feet",
+      "refs": [
+        "/Users/fengheliang/workbench/source/g20/games/assets/beauties/references/japan-screenshot-20261023/user-roster.png",
+        "/Users/fengheliang/workbench/source/g20/games/assets/beauties/references/he-sui-calves-20261022/runway-shape-reference.jpg"
+      ],
+      "prompt": "Use case: photorealistic-natural. Make ONE new full-body adult female Japanese summer costume game portrait. IMAGE 1 is a labeled roster of adult performers: use ONLY the specified labeled tile for facial identity, NOT any other tile. IMAGE 2 is the PRIMARY BODY PROPORTION TEMPLATE: He Sui adult runway photo. Match her tall lean elegant grown-adult skeleton: small head relative to full-size natural shoulders/ribcage/pelvis, long neck and torso, long lean legs and slim calves, approximately 8 head lengths standing-equivalent. Do not copy IMAGE 2 face, modern jacket, shoes or background. Do not make a large head with toy-sized torso. Rebuild anatomically coherent body for the requested pose, no digital stretching. Distant level 85mm full-body camera. Natural skin, individual recognizable eyes/nose/lips/jaw from the specified tile. Exactly two arms, five fingers per hand, two legs with coherent knees and ankles, two feet with natural toes and believable weight/contact. Fully clothed nonsexual fashion image, clearly adult age25+. Japanese breathable lightweight opaque summer clothing, delicate kanzashi, earrings, necklace, bangles, obi jewelry. NO socks. Entire subject, hair accessories, garments, prop/furniture and toes completely inside portrait 2:3 canvas with 6% clear margins. GENUINE transparent alpha, NO backdrop, floor, shadow, glow, gradient, text or watermark. IMAGE 1 selected tile: row 2, column 3, printed label \"君島みお\", Mio Kimijima. Preserve this adult facial identity. Outfit and pose: upright half-kneeling with one knee resting and the opposite foot planted naturally, holding an open washi scroll in both hands at chest level; black and ivory lightweight summer kosode and ivory divided hakama, bare feet.",
+      "faceReferencePolicy": "以用户截图中对应姓名的成年头像为面部参考，保留其年轻成年外观；不推断截图拍摄日期。",
+      "generatedPath": "/Users/fengheliang/.codex/generated_images/01a16615-cc42-7e81-aa4f-b849b888d820/exec-7675c0f4-3986-459f-9915-749a629191cf.png",
+      "finalPrompt": "Use case: photorealistic-natural. Make ONE new full-body adult female Japanese summer costume game portrait. IMAGE 1 is a labeled roster of adult performers: use ONLY the specified labeled tile for facial identity, NOT any other tile. IMAGE 2 is the PRIMARY BODY PROPORTION TEMPLATE: He Sui adult runway photo. Match her tall lean elegant grown-adult skeleton: small head relative to full-size natural shoulders/ribcage/pelvis, long neck and torso, long lean legs and slim calves, approximately 8 head lengths standing-equivalent. Do not copy IMAGE 2 face, modern jacket, shoes or background. Do not make a large head with toy-sized torso. Rebuild anatomically coherent body for the requested pose, no digital stretching. Distant level 85mm full-body camera. Natural skin, individual recognizable eyes/nose/lips/jaw from the specified tile. Exactly two arms, five fingers per hand, two legs with coherent knees and ankles, two feet with natural toes and believable weight/contact. Fully clothed nonsexual fashion image, clearly adult age25+. Japanese breathable lightweight opaque summer clothing, delicate kanzashi, earrings, necklace, bangles, obi jewelry. NO socks. Entire subject, hair accessories, garments, prop/furniture and toes completely inside portrait 2:3 canvas with 6% clear margins. GENUINE transparent alpha, NO backdrop, floor, shadow, glow, gradient, text or watermark. IMAGE 1 selected tile: row 2, column 3, printed label \"君島みお\", Mio Kimijima. Preserve this adult facial identity. Outfit and pose: upright half-kneeling with one knee resting and the opposite foot planted naturally, holding an open washi scroll in both hands at chest level; black and ivory lightweight summer kosode and ivory divided hakama, bare feet. COSTUME REVISION: entirely modest ordinary summer festival clothes, fully closed high wrap neckline, elbow-length sleeves, opaque calf-length skirt or loose ankle-length trousers. No cleavage, cutouts, slits, exposed abdomen, underwear, swimwear, sheer fabric or pinup posing. Calm cultural fashion catalogue photograph.",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentFraction": 0.5993,
+        "borderPixelsAbove20": 0
+      },
+      "assetSha256": "00b689889dfdc37c50778580ac4bba7588f9ab4a8ddc58ecfd92fd6d391ae8a6"
+    },
+    {
+      "id": "japan-screenshot-20261023-04",
+      "name": "园田美樱",
+      "english": "Mion Sonoda",
+      "label": "園田みおん",
+      "row": 2,
+      "column": 4,
+      "title": "绯绡铃舞",
+      "asset": "assets/beauties/random/番邦女子/日本女子-园田美樱-绯绡铃舞.png",
+      "design": "grounded Japanese dance pose, one foot forward and both knees gently bent, one hand raises small kagura bells, other arm curves to side; coral summer yukata with elbow-length sleeves, cream obi, bare feet",
+      "refs": [
+        "/Users/fengheliang/workbench/source/g20/games/assets/beauties/references/japan-screenshot-20261023/user-roster.png",
+        "/Users/fengheliang/workbench/source/g20/games/assets/beauties/references/he-sui-calves-20261022/runway-shape-reference.jpg"
+      ],
+      "prompt": "Use case: photorealistic-natural. Make ONE new full-body adult female Japanese summer costume game portrait. IMAGE 1 is a labeled roster of adult performers: use ONLY the specified labeled tile for facial identity, NOT any other tile. IMAGE 2 is the PRIMARY BODY PROPORTION TEMPLATE: He Sui adult runway photo. Match her tall lean elegant grown-adult skeleton: small head relative to full-size natural shoulders/ribcage/pelvis, long neck and torso, long lean legs and slim calves, approximately 8 head lengths standing-equivalent. Do not copy IMAGE 2 face, modern jacket, shoes or background. Do not make a large head with toy-sized torso. Rebuild anatomically coherent body for the requested pose, no digital stretching. Distant level 85mm full-body camera. Natural skin, individual recognizable eyes/nose/lips/jaw from the specified tile. Exactly two arms, five fingers per hand, two legs with coherent knees and ankles, two feet with natural toes and believable weight/contact. Fully clothed nonsexual fashion image, clearly adult age25+. Japanese breathable lightweight opaque summer clothing, delicate kanzashi, earrings, necklace, bangles, obi jewelry. NO socks. Entire subject, hair accessories, garments, prop/furniture and toes completely inside portrait 2:3 canvas with 6% clear margins. GENUINE transparent alpha, NO backdrop, floor, shadow, glow, gradient, text or watermark. IMAGE 1 selected tile: row 2, column 4, printed label \"園田みおん\", Mion Sonoda. Preserve this adult facial identity. Outfit and pose: grounded Japanese dance pose, one foot forward and both knees gently bent, one hand raises small kagura bells, other arm curves to side; coral summer yukata with elbow-length sleeves, cream obi, bare feet.",
+      "faceReferencePolicy": "以用户截图中对应姓名的成年头像为面部参考，保留其年轻成年外观；不推断截图拍摄日期。",
+      "generatedPath": "/Users/fengheliang/.codex/generated_images/01a16615-cc42-7e81-aa4f-b849b888d820/exec-b43b18fc-a952-4270-9368-08dca3ad6521.png",
+      "finalPrompt": "Use case: photorealistic-natural. Make ONE new full-body adult female Japanese summer costume game portrait. IMAGE 1 is a labeled roster of adult performers: use ONLY the specified labeled tile for facial identity, NOT any other tile. IMAGE 2 is the PRIMARY BODY PROPORTION TEMPLATE: He Sui adult runway photo. Match her tall lean elegant grown-adult skeleton: small head relative to full-size natural shoulders/ribcage/pelvis, long neck and torso, long lean legs and slim calves, approximately 8 head lengths standing-equivalent. Do not copy IMAGE 2 face, modern jacket, shoes or background. Do not make a large head with toy-sized torso. Rebuild anatomically coherent body for the requested pose, no digital stretching. Distant level 85mm full-body camera. Natural skin, individual recognizable eyes/nose/lips/jaw from the specified tile. Exactly two arms, five fingers per hand, two legs with coherent knees and ankles, two feet with natural toes and believable weight/contact. Fully clothed nonsexual fashion image, clearly adult age25+. Japanese breathable lightweight opaque summer clothing, delicate kanzashi, earrings, necklace, bangles, obi jewelry. NO socks. Entire subject, hair accessories, garments, prop/furniture and toes completely inside portrait 2:3 canvas with 6% clear margins. GENUINE transparent alpha, NO backdrop, floor, shadow, glow, gradient, text or watermark. IMAGE 1 selected tile: row 2, column 4, printed label \"園田みおん\", Mion Sonoda. Preserve this adult facial identity. Outfit and pose: grounded Japanese dance pose, one foot forward and both knees gently bent, one hand raises small kagura bells, other arm curves to side; coral summer yukata with elbow-length sleeves, cream obi, bare feet. COSTUME REVISION: entirely modest ordinary summer festival clothes, fully closed high wrap neckline, elbow-length sleeves, opaque calf-length skirt or loose ankle-length trousers. No cleavage, cutouts, slits, exposed abdomen, underwear, swimwear, sheer fabric or pinup posing. Calm cultural fashion catalogue photograph.",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentFraction": 0.7139,
+        "borderPixelsAbove20": 0
+      },
+      "assetSha256": "3e9f3af94cbe48e9cf0bf8b2f446e73cd325618f5f88f1ca7ddbca9de2290613"
+    },
+    {
+      "id": "japan-screenshot-20261023-05",
+      "name": "佐佐木明希",
+      "english": "Aki Sasaki",
+      "label": "佐々木あき",
+      "row": 2,
+      "column": 5,
+      "title": "杏夏茶韵",
+      "asset": "assets/beauties/random/番邦女子/日本女子-佐佐木明希-杏夏茶韵.png",
+      "design": "side-seated on a low stool, shoulders upright, feet resting naturally side by side, pouring tea from a small ceramic teapot into a cup held securely in the other hand; apricot short-sleeved cotton summer kosode and pale gold long wrap skirt, bare feet",
+      "refs": [
+        "/Users/fengheliang/workbench/source/g20/games/assets/beauties/references/japan-screenshot-20261023/user-roster.png",
+        "/Users/fengheliang/workbench/source/g20/games/assets/beauties/references/he-sui-calves-20261022/runway-shape-reference.jpg"
+      ],
+      "prompt": "Use case: photorealistic-natural. Make ONE new full-body adult female Japanese summer costume game portrait. IMAGE 1 is a labeled roster of adult performers: use ONLY the specified labeled tile for facial identity, NOT any other tile. IMAGE 2 is the PRIMARY BODY PROPORTION TEMPLATE: He Sui adult runway photo. Match her tall lean elegant grown-adult skeleton: small head relative to full-size natural shoulders/ribcage/pelvis, long neck and torso, long lean legs and slim calves, approximately 8 head lengths standing-equivalent. Do not copy IMAGE 2 face, modern jacket, shoes or background. Do not make a large head with toy-sized torso. Rebuild anatomically coherent body for the requested pose, no digital stretching. Distant level 85mm full-body camera. Natural skin, individual recognizable eyes/nose/lips/jaw from the specified tile. Exactly two arms, five fingers per hand, two legs with coherent knees and ankles, two feet with natural toes and believable weight/contact. Fully clothed nonsexual fashion image, clearly adult age25+. Japanese breathable lightweight opaque summer clothing, delicate kanzashi, earrings, necklace, bangles, obi jewelry. NO socks. Entire subject, hair accessories, garments, prop/furniture and toes completely inside portrait 2:3 canvas with 6% clear margins. GENUINE transparent alpha, NO backdrop, floor, shadow, glow, gradient, text or watermark. IMAGE 1 selected tile: row 2, column 5, printed label \"佐々木あき\", Aki Sasaki. Preserve this adult facial identity. Outfit and pose: side-seated on a low stool, shoulders upright, feet resting naturally side by side, pouring tea from a small ceramic teapot into a cup held securely in the other hand; apricot short-sleeved cotton summer kosode and pale gold long wrap skirt, bare feet.",
+      "youngerAdultReference": "用户截图中对应人物的早期成年头像；生成25岁以上成年外观，不推断截图拍摄年份。",
+      "faceReferencePolicy": "以用户截图中对应姓名的成年头像为面部参考，保留其年轻成年外观；不推断截图拍摄日期。",
+      "generatedPath": "/Users/fengheliang/.codex/generated_images/01a16615-cc42-7e81-aa4f-b849b888d820/exec-f6b8db7a-3b49-47dc-8d8e-88d2bfadbc2c.png",
+      "finalPrompt": "Use case: photorealistic-natural. Make ONE new full-body adult female Japanese summer costume game portrait. IMAGE 1 is a labeled roster of adult performers: use ONLY the specified labeled tile for facial identity, NOT any other tile. IMAGE 2 is the PRIMARY BODY PROPORTION TEMPLATE: He Sui adult runway photo. Match her tall lean elegant grown-adult skeleton: small head relative to full-size natural shoulders/ribcage/pelvis, long neck and torso, long lean legs and slim calves, approximately 8 head lengths standing-equivalent. Do not copy IMAGE 2 face, modern jacket, shoes or background. Do not make a large head with toy-sized torso. Rebuild anatomically coherent body for the requested pose, no digital stretching. Distant level 85mm full-body camera. Natural skin, individual recognizable eyes/nose/lips/jaw from the specified tile. Exactly two arms, five fingers per hand, two legs with coherent knees and ankles, two feet with natural toes and believable weight/contact. Fully clothed nonsexual fashion image, clearly adult age25+. Japanese breathable lightweight opaque summer clothing, delicate kanzashi, earrings, necklace, bangles, obi jewelry. NO socks. Entire subject, hair accessories, garments, prop/furniture and toes completely inside portrait 2:3 canvas with 6% clear margins. GENUINE transparent alpha, NO backdrop, floor, shadow, glow, gradient, text or watermark. IMAGE 1 selected tile: row 2, column 5, printed label \"佐々木あき\", Aki Sasaki. Preserve this adult facial identity. Outfit and pose: side-seated on a low stool, shoulders upright, feet resting naturally side by side, pouring tea from a small ceramic teapot into a cup held securely in the other hand; apricot short-sleeved cotton summer kosode and pale gold long wrap skirt, bare feet. COSTUME REVISION: entirely modest ordinary summer festival clothes, fully closed high wrap neckline, elbow-length sleeves, opaque calf-length skirt or loose ankle-length trousers. No cleavage, cutouts, slits, exposed abdomen, underwear, swimwear, sheer fabric or pinup posing. Calm cultural fashion catalogue photograph.",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentFraction": 0.5937,
+        "borderPixelsAbove20": 0
+      },
+      "assetSha256": "1318aad697daa89f375df12a03c5473bc413c538d04ec0e3b8514addf66398af"
+    },
+    {
+      "id": "japan-screenshot-20261023-06",
+      "name": "有坂深雪",
+      "english": "Miyuki Arisaka",
+      "label": "有坂深雪",
+      "row": 2,
+      "column": 7,
+      "title": "藤紫花剪",
+      "asset": "assets/beauties/random/番邦女子/日本女子-有坂深雪-藤紫花剪.png",
+      "design": "gentle forward step, head turned toward viewer, holding a slender bamboo vase with a single iris in both hands; pale lavender ro summer yukata with rectangular short sleeves, silver obi, wooden geta on bare feet",
+      "refs": [
+        "/Users/fengheliang/workbench/source/g20/games/assets/beauties/references/japan-screenshot-20261023/user-roster.png",
+        "/Users/fengheliang/workbench/source/g20/games/assets/beauties/references/he-sui-calves-20261022/runway-shape-reference.jpg"
+      ],
+      "prompt": "Use case: photorealistic-natural. Make ONE new full-body adult female Japanese summer costume game portrait. IMAGE 1 is a labeled roster of adult performers: use ONLY the specified labeled tile for facial identity, NOT any other tile. IMAGE 2 is the PRIMARY BODY PROPORTION TEMPLATE: He Sui adult runway photo. Match her tall lean elegant grown-adult skeleton: small head relative to full-size natural shoulders/ribcage/pelvis, long neck and torso, long lean legs and slim calves, approximately 8 head lengths standing-equivalent. Do not copy IMAGE 2 face, modern jacket, shoes or background. Do not make a large head with toy-sized torso. Rebuild anatomically coherent body for the requested pose, no digital stretching. Distant level 85mm full-body camera. Natural skin, individual recognizable eyes/nose/lips/jaw from the specified tile. Exactly two arms, five fingers per hand, two legs with coherent knees and ankles, two feet with natural toes and believable weight/contact. Fully clothed nonsexual fashion image, clearly adult age25+. Japanese breathable lightweight opaque summer clothing, delicate kanzashi, earrings, necklace, bangles, obi jewelry. NO socks. Entire subject, hair accessories, garments, prop/furniture and toes completely inside portrait 2:3 canvas with 6% clear margins. GENUINE transparent alpha, NO backdrop, floor, shadow, glow, gradient, text or watermark. IMAGE 1 selected tile: row 2, column 7, printed label \"有坂深雪\", Miyuki Arisaka. Preserve this adult facial identity. Outfit and pose: gentle forward step, head turned toward viewer, holding a slender bamboo vase with a single iris in both hands; pale lavender ro summer yukata with rectangular short sleeves, silver obi, wooden geta on bare feet.",
+      "faceReferencePolicy": "以用户截图中对应姓名的成年头像为面部参考，保留其年轻成年外观；不推断截图拍摄日期。",
+      "generatedPath": "/Users/fengheliang/.codex/generated_images/01a16615-cc42-7e81-aa4f-b849b888d820/exec-d7627ba6-cd33-43cf-95b9-a6e7b7238f53.png",
+      "finalPrompt": "Use case: photorealistic-natural. Make ONE new full-body adult female Japanese summer costume game portrait. IMAGE 1 is a labeled roster of adult performers: use ONLY the specified labeled tile for facial identity, NOT any other tile. IMAGE 2 is the PRIMARY BODY PROPORTION TEMPLATE: He Sui adult runway photo. Match her tall lean elegant grown-adult skeleton: small head relative to full-size natural shoulders/ribcage/pelvis, long neck and torso, long lean legs and slim calves, approximately 8 head lengths standing-equivalent. Do not copy IMAGE 2 face, modern jacket, shoes or background. Do not make a large head with toy-sized torso. Rebuild anatomically coherent body for the requested pose, no digital stretching. Distant level 85mm full-body camera. Natural skin, individual recognizable eyes/nose/lips/jaw from the specified tile. Exactly two arms, five fingers per hand, two legs with coherent knees and ankles, two feet with natural toes and believable weight/contact. Fully clothed nonsexual fashion image, clearly adult age25+. Japanese breathable lightweight opaque summer clothing, delicate kanzashi, earrings, necklace, bangles, obi jewelry. NO socks. Entire subject, hair accessories, garments, prop/furniture and toes completely inside portrait 2:3 canvas with 6% clear margins. GENUINE transparent alpha, NO backdrop, floor, shadow, glow, gradient, text or watermark. IMAGE 1 selected tile: row 2, column 7, printed label \"有坂深雪\", Miyuki Arisaka. Preserve this adult facial identity. Outfit and pose: gentle forward step, head turned toward viewer, holding a slender bamboo vase with a single iris in both hands; pale lavender ro summer yukata with rectangular short sleeves, silver obi, wooden geta on bare feet. COSTUME REVISION: entirely modest ordinary summer festival clothes, fully closed high wrap neckline, elbow-length sleeves, opaque calf-length skirt or loose ankle-length trousers. No cleavage, cutouts, slits, exposed abdomen, underwear, swimwear, sheer fabric or pinup posing. Calm cultural fashion catalogue photograph.",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentFraction": 0.7663,
+        "borderPixelsAbove20": 0
+      },
+      "assetSha256": "852cce89e811d8e9583012540e278980a4ed0071bce741dc1b30a5b8d7b59942"
+    },
+    {
+      "id": "japan-screenshot-20261023-07",
+      "name": "岬奈奈美",
+      "english": "Nanami Misaki",
+      "label": "岬ななみ",
+      "row": 2,
+      "column": 8,
+      "title": "碧绡莲盏",
+      "asset": "assets/beauties/random/番邦女子/日本女子-岬奈奈美-碧绡莲盏.png",
+      "design": "graceful yoga tree pose with one bare foot stable and the other sole resting against the INSIDE OF LOWER CALF BELOW THE KNEE, no foot pressing knee; holding a small lotus bowl securely at waist in both hands; sage-green sleeveless Japanese linen wrap top and loose cream tapered trousers, bare feet",
+      "refs": [
+        "/Users/fengheliang/workbench/source/g20/games/assets/beauties/references/japan-screenshot-20261023/user-roster.png",
+        "/Users/fengheliang/workbench/source/g20/games/assets/beauties/references/he-sui-calves-20261022/runway-shape-reference.jpg"
+      ],
+      "prompt": "Use case: photorealistic-natural. Make ONE new full-body adult female Japanese summer costume game portrait. IMAGE 1 is a labeled roster of adult performers: use ONLY the specified labeled tile for facial identity, NOT any other tile. IMAGE 2 is the PRIMARY BODY PROPORTION TEMPLATE: He Sui adult runway photo. Match her tall lean elegant grown-adult skeleton: small head relative to full-size natural shoulders/ribcage/pelvis, long neck and torso, long lean legs and slim calves, approximately 8 head lengths standing-equivalent. Do not copy IMAGE 2 face, modern jacket, shoes or background. Do not make a large head with toy-sized torso. Rebuild anatomically coherent body for the requested pose, no digital stretching. Distant level 85mm full-body camera. Natural skin, individual recognizable eyes/nose/lips/jaw from the specified tile. Exactly two arms, five fingers per hand, two legs with coherent knees and ankles, two feet with natural toes and believable weight/contact. Fully clothed nonsexual fashion image, clearly adult age25+. Japanese breathable lightweight opaque summer clothing, delicate kanzashi, earrings, necklace, bangles, obi jewelry. NO socks. Entire subject, hair accessories, garments, prop/furniture and toes completely inside portrait 2:3 canvas with 6% clear margins. GENUINE transparent alpha, NO backdrop, floor, shadow, glow, gradient, text or watermark. IMAGE 1 selected tile: row 2, column 8, printed label \"岬ななみ\", Nanami Misaki. Preserve this adult facial identity. Outfit and pose: graceful yoga tree pose with one bare foot stable and the other sole resting against the INSIDE OF LOWER CALF BELOW THE KNEE, no foot pressing knee; holding a small lotus bowl securely at waist in both hands; sage-green sleeveless Japanese linen wrap top and loose cream tapered trousers, bare feet.",
+      "faceReferencePolicy": "以用户截图中对应姓名的成年头像为面部参考，保留其年轻成年外观；不推断截图拍摄日期。",
+      "generatedPath": "/Users/fengheliang/.codex/generated_images/01a16615-cc42-7e81-aa4f-b849b888d820/exec-89d75527-0555-4dc8-bb2a-f40bdc35c4d4.png",
+      "finalPrompt": "Use case: photorealistic-natural. Make ONE new full-body adult female Japanese summer costume game portrait. IMAGE 1 is a labeled roster of adult performers: use ONLY the specified labeled tile for facial identity, NOT any other tile. IMAGE 2 is the PRIMARY BODY PROPORTION TEMPLATE: He Sui adult runway photo. Match her tall lean elegant grown-adult skeleton: small head relative to full-size natural shoulders/ribcage/pelvis, long neck and torso, long lean legs and slim calves, approximately 8 head lengths standing-equivalent. Do not copy IMAGE 2 face, modern jacket, shoes or background. Do not make a large head with toy-sized torso. Rebuild anatomically coherent body for the requested pose, no digital stretching. Distant level 85mm full-body camera. Natural skin, individual recognizable eyes/nose/lips/jaw from the specified tile. Exactly two arms, five fingers per hand, two legs with coherent knees and ankles, two feet with natural toes and believable weight/contact. Fully clothed nonsexual fashion image, clearly adult age25+. Japanese breathable lightweight opaque summer clothing, delicate kanzashi, earrings, necklace, bangles, obi jewelry. NO socks. Entire subject, hair accessories, garments, prop/furniture and toes completely inside portrait 2:3 canvas with 6% clear margins. GENUINE transparent alpha, NO backdrop, floor, shadow, glow, gradient, text or watermark. IMAGE 1 selected tile: row 2, column 8, printed label \"岬ななみ\", Nanami Misaki. Preserve this adult facial identity. Outfit and pose: graceful yoga tree pose with one bare foot stable and the other sole resting against the INSIDE OF LOWER CALF BELOW THE KNEE, no foot pressing knee; holding a small lotus bowl securely at waist in both hands; sage-green sleeveless Japanese linen wrap top and loose cream tapered trousers, bare feet. COSTUME REVISION: entirely modest ordinary summer festival clothes, fully closed high wrap neckline, elbow-length sleeves, opaque calf-length skirt or loose ankle-length trousers. No cleavage, cutouts, slits, exposed abdomen, underwear, swimwear, sheer fabric or pinup posing. Calm cultural fashion catalogue photograph.",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentFraction": 0.7576,
+        "borderPixelsAbove20": 0
+      },
+      "assetSha256": "3146e235f7e3344ce1148508910327bd68ef870aa11efa70cdc5750039806054"
+    },
+    {
+      "id": "japan-screenshot-20261023-08",
+      "name": "水野朝阳",
+      "english": "Asahi Mizuno",
+      "label": "水野朝陽",
+      "row": 2,
+      "column": 9,
+      "title": "浅绛剑舞",
+      "asset": "assets/beauties/random/番邦女子/日本女子-水野朝阳-浅绛剑舞.png",
+      "design": "balanced gentle sword-dance stance, one foot advanced, holding one sheathed short Japanese ceremonial sword diagonally at waist in both hands, no weapon pointed at viewer; muted crimson light summer kosode and cream knee-length pleated hakama, bare feet",
+      "refs": [
+        "/Users/fengheliang/workbench/source/g20/games/assets/beauties/references/japan-screenshot-20261023/user-roster.png",
+        "/Users/fengheliang/workbench/source/g20/games/assets/beauties/references/he-sui-calves-20261022/runway-shape-reference.jpg"
+      ],
+      "prompt": "Use case: photorealistic-natural. Make ONE new full-body adult female Japanese summer costume game portrait. IMAGE 1 is a labeled roster of adult performers: use ONLY the specified labeled tile for facial identity, NOT any other tile. IMAGE 2 is the PRIMARY BODY PROPORTION TEMPLATE: He Sui adult runway photo. Match her tall lean elegant grown-adult skeleton: small head relative to full-size natural shoulders/ribcage/pelvis, long neck and torso, long lean legs and slim calves, approximately 8 head lengths standing-equivalent. Do not copy IMAGE 2 face, modern jacket, shoes or background. Do not make a large head with toy-sized torso. Rebuild anatomically coherent body for the requested pose, no digital stretching. Distant level 85mm full-body camera. Natural skin, individual recognizable eyes/nose/lips/jaw from the specified tile. Exactly two arms, five fingers per hand, two legs with coherent knees and ankles, two feet with natural toes and believable weight/contact. Fully clothed nonsexual fashion image, clearly adult age25+. Japanese breathable lightweight opaque summer clothing, delicate kanzashi, earrings, necklace, bangles, obi jewelry. NO socks. Entire subject, hair accessories, garments, prop/furniture and toes completely inside portrait 2:3 canvas with 6% clear margins. GENUINE transparent alpha, NO backdrop, floor, shadow, glow, gradient, text or watermark. IMAGE 1 selected tile: row 2, column 9, printed label \"水野朝陽\", Asahi Mizuno. Preserve this adult facial identity. Outfit and pose: balanced gentle sword-dance stance, one foot advanced, holding one sheathed short Japanese ceremonial sword diagonally at waist in both hands, no weapon pointed at viewer; muted crimson light summer kosode and cream knee-length pleated hakama, bare feet.",
+      "faceReferencePolicy": "以用户截图中对应姓名的成年头像为面部参考，保留其年轻成年外观；不推断截图拍摄日期。",
+      "generatedPath": "/Users/fengheliang/.codex/generated_images/01a16615-cc42-7e81-aa4f-b849b888d820/exec-0b43a738-d45c-4623-a921-25c51e8f449f.png",
+      "finalPrompt": "Use case: photorealistic-natural. Make ONE new full-body adult female Japanese summer costume game portrait. IMAGE 1 is a labeled roster of adult performers: use ONLY the specified labeled tile for facial identity, NOT any other tile. IMAGE 2 is the PRIMARY BODY PROPORTION TEMPLATE: He Sui adult runway photo. Match her tall lean elegant grown-adult skeleton: small head relative to full-size natural shoulders/ribcage/pelvis, long neck and torso, long lean legs and slim calves, approximately 8 head lengths standing-equivalent. Do not copy IMAGE 2 face, modern jacket, shoes or background. Do not make a large head with toy-sized torso. Rebuild anatomically coherent body for the requested pose, no digital stretching. Distant level 85mm full-body camera. Natural skin, individual recognizable eyes/nose/lips/jaw from the specified tile. Exactly two arms, five fingers per hand, two legs with coherent knees and ankles, two feet with natural toes and believable weight/contact. Fully clothed nonsexual fashion image, clearly adult age25+. Japanese breathable lightweight opaque summer clothing, delicate kanzashi, earrings, necklace, bangles, obi jewelry. NO socks. Entire subject, hair accessories, garments, prop/furniture and toes completely inside portrait 2:3 canvas with 6% clear margins. GENUINE transparent alpha, NO backdrop, floor, shadow, glow, gradient, text or watermark. IMAGE 1 selected tile: row 2, column 9, printed label \"水野朝陽\", Asahi Mizuno. Preserve this adult facial identity. Outfit and pose: balanced gentle sword-dance stance, one foot advanced, holding one sheathed short Japanese ceremonial sword diagonally at waist in both hands, no weapon pointed at viewer; muted crimson light summer kosode and cream knee-length pleated hakama, bare feet. COSTUME REVISION: entirely modest ordinary summer festival clothes, fully closed high wrap neckline, elbow-length sleeves, opaque calf-length skirt or loose ankle-length trousers. No cleavage, cutouts, slits, exposed abdomen, underwear, swimwear, sheer fabric or pinup posing. Calm cultural fashion catalogue photograph.",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentFraction": 0.692,
+        "borderPixelsAbove20": 0
+      },
+      "assetSha256": "bdc24cff3de742f08af84f3f32b1c70390e5e912a2c2bd425bc1b4f433f85373"
+    },
+    {
+      "id": "japan-screenshot-20261023-09",
+      "name": "梦乃爱华",
+      "english": "Aika Yumeno",
+      "label": "夢乃あいか",
+      "row": 2,
+      "column": 10,
+      "title": "桃夏风车",
+      "asset": "assets/beauties/random/番邦女子/日本女子-梦乃爱华-桃夏风车.png",
+      "design": "seated on a plain low bench with knees relaxed and legs extended diagonally but no foreshortening, holding a small bamboo pinwheel by a short handle; peach summer jinbei top and loose shorts, bare feet",
+      "refs": [
+        "/Users/fengheliang/workbench/source/g20/games/assets/beauties/references/japan-screenshot-20261023/user-roster.png",
+        "/Users/fengheliang/workbench/source/g20/games/assets/beauties/references/he-sui-calves-20261022/runway-shape-reference.jpg"
+      ],
+      "prompt": "Use case: photorealistic-natural. Make ONE new full-body adult female Japanese summer costume game portrait. IMAGE 1 is a labeled roster of adult performers: use ONLY the specified labeled tile for facial identity, NOT any other tile. IMAGE 2 is the PRIMARY BODY PROPORTION TEMPLATE: He Sui adult runway photo. Match her tall lean elegant grown-adult skeleton: small head relative to full-size natural shoulders/ribcage/pelvis, long neck and torso, long lean legs and slim calves, approximately 8 head lengths standing-equivalent. Do not copy IMAGE 2 face, modern jacket, shoes or background. Do not make a large head with toy-sized torso. Rebuild anatomically coherent body for the requested pose, no digital stretching. Distant level 85mm full-body camera. Natural skin, individual recognizable eyes/nose/lips/jaw from the specified tile. Exactly two arms, five fingers per hand, two legs with coherent knees and ankles, two feet with natural toes and believable weight/contact. Fully clothed nonsexual fashion image, clearly adult age25+. Japanese breathable lightweight opaque summer clothing, delicate kanzashi, earrings, necklace, bangles, obi jewelry. NO socks. Entire subject, hair accessories, garments, prop/furniture and toes completely inside portrait 2:3 canvas with 6% clear margins. GENUINE transparent alpha, NO backdrop, floor, shadow, glow, gradient, text or watermark. IMAGE 1 selected tile: row 2, column 10, printed label \"夢乃あいか\", Aika Yumeno. Preserve this adult facial identity. Outfit and pose: seated on a plain low bench with knees relaxed and legs extended diagonally but no foreshortening, holding a small bamboo pinwheel by a short handle; peach summer jinbei top and loose shorts, bare feet.",
+      "faceReferencePolicy": "以用户截图中对应姓名的成年头像为面部参考，保留其年轻成年外观；不推断截图拍摄日期。",
+      "generatedPath": "/Users/fengheliang/.codex/generated_images/01a16615-cc42-7e81-aa4f-b849b888d820/exec-dd449ca8-61c6-421d-a03c-8eb06bb3e1e8.png",
+      "finalPrompt": "Use case: photorealistic-natural. Make ONE new full-body adult female Japanese summer costume game portrait. IMAGE 1 is a labeled roster of adult performers: use ONLY the specified labeled tile for facial identity, NOT any other tile. IMAGE 2 is the PRIMARY BODY PROPORTION TEMPLATE: He Sui adult runway photo. Match her tall lean elegant grown-adult skeleton: small head relative to full-size natural shoulders/ribcage/pelvis, long neck and torso, long lean legs and slim calves, approximately 8 head lengths standing-equivalent. Do not copy IMAGE 2 face, modern jacket, shoes or background. Do not make a large head with toy-sized torso. Rebuild anatomically coherent body for the requested pose, no digital stretching. Distant level 85mm full-body camera. Natural skin, individual recognizable eyes/nose/lips/jaw from the specified tile. Exactly two arms, five fingers per hand, two legs with coherent knees and ankles, two feet with natural toes and believable weight/contact. Fully clothed nonsexual fashion image, clearly adult age25+. Japanese breathable lightweight opaque summer clothing, delicate kanzashi, earrings, necklace, bangles, obi jewelry. NO socks. Entire subject, hair accessories, garments, prop/furniture and toes completely inside portrait 2:3 canvas with 6% clear margins. GENUINE transparent alpha, NO backdrop, floor, shadow, glow, gradient, text or watermark. IMAGE 1 selected tile: row 2, column 10, printed label \"夢乃あいか\", Aika Yumeno. Preserve this adult facial identity. Outfit and pose: seated on a plain low bench with knees relaxed and legs extended diagonally but no foreshortening, holding a small bamboo pinwheel by a short handle; peach summer jinbei top and loose shorts, bare feet.",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentFraction": 0.6204,
+        "borderPixelsAbove20": 0
+      },
+      "assetSha256": "343c007b43d190e178bd002d6b846c762d4e5d7e992df93f6a4f697552e00b9e"
+    },
+    {
+      "id": "japan-screenshot-20261023-10",
+      "name": "莲实克蕾儿",
+      "english": "Kurea Hasumi",
+      "label": "蓮実クレア",
+      "row": 3,
+      "column": 1,
+      "title": "青枫果篮",
+      "asset": "assets/beauties/random/番邦女子/日本女子-莲实克蕾儿-青枫果篮.png",
+      "design": "walking naturally with a small woven basket of peaches at one hip in left hand, right hand lifting one peach gently; teal short-sleeved summer yukata with pale maple motifs, slim white obi, wooden geta on bare feet",
+      "refs": [
+        "/Users/fengheliang/workbench/source/g20/games/assets/beauties/references/japan-screenshot-20261023/user-roster.png",
+        "/Users/fengheliang/workbench/source/g20/games/assets/beauties/references/he-sui-calves-20261022/runway-shape-reference.jpg"
+      ],
+      "prompt": "Use case: photorealistic-natural. Make ONE new full-body adult female Japanese summer costume game portrait. IMAGE 1 is a labeled roster of adult performers: use ONLY the specified labeled tile for facial identity, NOT any other tile. IMAGE 2 is the PRIMARY BODY PROPORTION TEMPLATE: He Sui adult runway photo. Match her tall lean elegant grown-adult skeleton: small head relative to full-size natural shoulders/ribcage/pelvis, long neck and torso, long lean legs and slim calves, approximately 8 head lengths standing-equivalent. Do not copy IMAGE 2 face, modern jacket, shoes or background. Do not make a large head with toy-sized torso. Rebuild anatomically coherent body for the requested pose, no digital stretching. Distant level 85mm full-body camera. Natural skin, individual recognizable eyes/nose/lips/jaw from the specified tile. Exactly two arms, five fingers per hand, two legs with coherent knees and ankles, two feet with natural toes and believable weight/contact. Fully clothed nonsexual fashion image, clearly adult age25+. Japanese breathable lightweight opaque summer clothing, delicate kanzashi, earrings, necklace, bangles, obi jewelry. NO socks. Entire subject, hair accessories, garments, prop/furniture and toes completely inside portrait 2:3 canvas with 6% clear margins. GENUINE transparent alpha, NO backdrop, floor, shadow, glow, gradient, text or watermark. IMAGE 1 selected tile: row 3, column 1, printed label \"蓮実クレア\", Kurea Hasumi. Preserve this adult facial identity. Outfit and pose: walking naturally with a small woven basket of peaches at one hip in left hand, right hand lifting one peach gently; teal short-sleeved summer yukata with pale maple motifs, slim white obi, wooden geta on bare feet.",
+      "faceReferencePolicy": "以用户截图中对应姓名的成年头像为面部参考，保留其年轻成年外观；不推断截图拍摄日期。",
+      "generatedPath": "/Users/fengheliang/.codex/generated_images/01a16615-cc42-7e81-aa4f-b849b888d820/exec-1fbfaf6c-2be7-4ffc-a4c3-5c3726d5af2c.png",
+      "finalPrompt": "Use case: photorealistic-natural. Make ONE new full-body adult female Japanese summer costume game portrait. IMAGE 1 is a labeled roster of adult performers: use ONLY the specified labeled tile for facial identity, NOT any other tile. IMAGE 2 is the PRIMARY BODY PROPORTION TEMPLATE: He Sui adult runway photo. Match her tall lean elegant grown-adult skeleton: small head relative to full-size natural shoulders/ribcage/pelvis, long neck and torso, long lean legs and slim calves, approximately 8 head lengths standing-equivalent. Do not copy IMAGE 2 face, modern jacket, shoes or background. Do not make a large head with toy-sized torso. Rebuild anatomically coherent body for the requested pose, no digital stretching. Distant level 85mm full-body camera. Natural skin, individual recognizable eyes/nose/lips/jaw from the specified tile. Exactly two arms, five fingers per hand, two legs with coherent knees and ankles, two feet with natural toes and believable weight/contact. Fully clothed nonsexual fashion image, clearly adult age25+. Japanese breathable lightweight opaque summer clothing, delicate kanzashi, earrings, necklace, bangles, obi jewelry. NO socks. Entire subject, hair accessories, garments, prop/furniture and toes completely inside portrait 2:3 canvas with 6% clear margins. GENUINE transparent alpha, NO backdrop, floor, shadow, glow, gradient, text or watermark. IMAGE 1 selected tile: row 3, column 1, printed label \"蓮実クレア\", Kurea Hasumi. Preserve this adult facial identity. Outfit and pose: walking naturally with a small woven basket of peaches at one hip in left hand, right hand lifting one peach gently; teal short-sleeved summer yukata with pale maple motifs, slim white obi, wooden geta on bare feet. COSTUME REVISION: entirely modest ordinary summer festival clothes, fully closed high wrap neckline, elbow-length sleeves, opaque calf-length skirt or loose ankle-length trousers. No cleavage, cutouts, slits, exposed abdomen, underwear, swimwear, sheer fabric or pinup posing. Calm cultural fashion catalogue photograph.",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentFraction": 0.7351,
+        "borderPixelsAbove20": 0
+      },
+      "assetSha256": "fc5faecc64b2102963e16ef80c2130ddce4bd1361207213462bd710ab2d462f0"
+    },
+    {
+      "id": "japan-screenshot-20261023-11",
+      "name": "爱音麻里亚",
+      "english": "Maria Aine",
+      "label": "愛音まりあ",
+      "row": 3,
+      "column": 2,
+      "title": "月白团扇",
+      "asset": "assets/beauties/random/番邦女子/日本女子-爱音麻里亚-月白团扇.png",
+      "design": "upright kneeling seiza, correctly folded feet beneath her and visible coherent toes, holding a round silk uchiwa fan diagonally near shoulder; ivory summer kosode and pale blue long light wrap skirt, gold obi, bare feet",
+      "refs": [
+        "/Users/fengheliang/workbench/source/g20/games/assets/beauties/references/japan-screenshot-20261023/user-roster.png",
+        "/Users/fengheliang/workbench/source/g20/games/assets/beauties/references/he-sui-calves-20261022/runway-shape-reference.jpg"
+      ],
+      "prompt": "Use case: photorealistic-natural. Make ONE new full-body adult female Japanese summer costume game portrait. IMAGE 1 is a labeled roster of adult performers: use ONLY the specified labeled tile for facial identity, NOT any other tile. IMAGE 2 is the PRIMARY BODY PROPORTION TEMPLATE: He Sui adult runway photo. Match her tall lean elegant grown-adult skeleton: small head relative to full-size natural shoulders/ribcage/pelvis, long neck and torso, long lean legs and slim calves, approximately 8 head lengths standing-equivalent. Do not copy IMAGE 2 face, modern jacket, shoes or background. Do not make a large head with toy-sized torso. Rebuild anatomically coherent body for the requested pose, no digital stretching. Distant level 85mm full-body camera. Natural skin, individual recognizable eyes/nose/lips/jaw from the specified tile. Exactly two arms, five fingers per hand, two legs with coherent knees and ankles, two feet with natural toes and believable weight/contact. Fully clothed nonsexual fashion image, clearly adult age25+. Japanese breathable lightweight opaque summer clothing, delicate kanzashi, earrings, necklace, bangles, obi jewelry. NO socks. Entire subject, hair accessories, garments, prop/furniture and toes completely inside portrait 2:3 canvas with 6% clear margins. GENUINE transparent alpha, NO backdrop, floor, shadow, glow, gradient, text or watermark. IMAGE 1 selected tile: row 3, column 2, printed label \"愛音まりあ\", Maria Aine. Preserve this adult facial identity. Outfit and pose: upright kneeling seiza, correctly folded feet beneath her and visible coherent toes, holding a round silk uchiwa fan diagonally near shoulder; ivory summer kosode and pale blue long light wrap skirt, gold obi, bare feet.",
+      "faceReferencePolicy": "以用户截图中对应姓名的成年头像为面部参考，保留其年轻成年外观；不推断截图拍摄日期。",
+      "generatedPath": "/Users/fengheliang/.codex/generated_images/01a16615-cc42-7e81-aa4f-b849b888d820/exec-cddff65a-abb3-45a9-b071-37174e8338ad.png",
+      "finalPrompt": "Use case: photorealistic-natural. Make ONE new full-body adult female Japanese summer costume game portrait. IMAGE 1 is a labeled roster of adult performers: use ONLY the specified labeled tile for facial identity, NOT any other tile. IMAGE 2 is the PRIMARY BODY PROPORTION TEMPLATE: He Sui adult runway photo. Match her tall lean elegant grown-adult skeleton: small head relative to full-size natural shoulders/ribcage/pelvis, long neck and torso, long lean legs and slim calves, approximately 8 head lengths standing-equivalent. Do not copy IMAGE 2 face, modern jacket, shoes or background. Do not make a large head with toy-sized torso. Rebuild anatomically coherent body for the requested pose, no digital stretching. Distant level 85mm full-body camera. Natural skin, individual recognizable eyes/nose/lips/jaw from the specified tile. Exactly two arms, five fingers per hand, two legs with coherent knees and ankles, two feet with natural toes and believable weight/contact. Fully clothed nonsexual fashion image, clearly adult age25+. Japanese breathable lightweight opaque summer clothing, delicate kanzashi, earrings, necklace, bangles, obi jewelry. NO socks. Entire subject, hair accessories, garments, prop/furniture and toes completely inside portrait 2:3 canvas with 6% clear margins. GENUINE transparent alpha, NO backdrop, floor, shadow, glow, gradient, text or watermark. IMAGE 1 selected tile: row 3, column 2, printed label \"愛音まりあ\", Maria Aine. Preserve this adult facial identity. Outfit and pose: upright kneeling seiza, correctly folded feet beneath her and visible coherent toes, holding a round silk uchiwa fan diagonally near shoulder; ivory summer kosode and pale blue long light wrap skirt, gold obi, bare feet. COSTUME REVISION: entirely modest ordinary summer festival clothes, fully closed high wrap neckline, elbow-length sleeves, opaque calf-length skirt or loose ankle-length trousers. No cleavage, cutouts, slits, exposed abdomen, underwear, swimwear, sheer fabric or pinup posing. Calm cultural fashion catalogue photograph.",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentFraction": 0.5195,
+        "borderPixelsAbove20": 0
+      },
+      "assetSha256": "67b405efff1401fa2f2c07db92ea60f58beebd153c6ccd600b148e25efb45745"
+    },
+    {
+      "id": "japan-screenshot-20261023-12",
+      "name": "凛音桃花",
+      "english": "Touka Rinne",
+      "label": "凛音とうか",
+      "row": 3,
+      "column": 4,
+      "title": "樱绡香囊",
+      "asset": "assets/beauties/random/番邦女子/日本女子-凛音桃花-樱绡香囊.png",
+      "design": "standing turned three-quarter over one shoulder, torso and pelvis aligned naturally, holding a small embroidered scent pouch from a short cord with one hand, other resting lightly at waist; blush-pink sleeveless Japanese summer wrap dress with cream obi, bare feet",
+      "refs": [
+        "/Users/fengheliang/workbench/source/g20/games/assets/beauties/references/japan-screenshot-20261023/user-roster.png",
+        "/Users/fengheliang/workbench/source/g20/games/assets/beauties/references/he-sui-calves-20261022/runway-shape-reference.jpg"
+      ],
+      "prompt": "Use case: photorealistic-natural. Make ONE new full-body adult female Japanese summer costume game portrait. IMAGE 1 is a labeled roster of adult performers: use ONLY the specified labeled tile for facial identity, NOT any other tile. IMAGE 2 is the PRIMARY BODY PROPORTION TEMPLATE: He Sui adult runway photo. Match her tall lean elegant grown-adult skeleton: small head relative to full-size natural shoulders/ribcage/pelvis, long neck and torso, long lean legs and slim calves, approximately 8 head lengths standing-equivalent. Do not copy IMAGE 2 face, modern jacket, shoes or background. Do not make a large head with toy-sized torso. Rebuild anatomically coherent body for the requested pose, no digital stretching. Distant level 85mm full-body camera. Natural skin, individual recognizable eyes/nose/lips/jaw from the specified tile. Exactly two arms, five fingers per hand, two legs with coherent knees and ankles, two feet with natural toes and believable weight/contact. Fully clothed nonsexual fashion image, clearly adult age25+. Japanese breathable lightweight opaque summer clothing, delicate kanzashi, earrings, necklace, bangles, obi jewelry. NO socks. Entire subject, hair accessories, garments, prop/furniture and toes completely inside portrait 2:3 canvas with 6% clear margins. GENUINE transparent alpha, NO backdrop, floor, shadow, glow, gradient, text or watermark. IMAGE 1 selected tile: row 3, column 4, printed label \"凛音とうか\", Touka Rinne. Preserve this adult facial identity. Outfit and pose: standing turned three-quarter over one shoulder, torso and pelvis aligned naturally, holding a small embroidered scent pouch from a short cord with one hand, other resting lightly at waist; blush-pink sleeveless Japanese summer wrap dress with cream obi, bare feet.",
+      "faceReferencePolicy": "以用户截图中对应姓名的成年头像为面部参考，保留其年轻成年外观；不推断截图拍摄日期。",
+      "generatedPath": "/Users/fengheliang/.codex/generated_images/01a16615-cc42-7e81-aa4f-b849b888d820/exec-c9008e05-1c84-4cdb-81eb-6ce872746f75.png",
+      "finalPrompt": "Use case: photorealistic-natural. Make ONE new full-body adult female Japanese summer costume game portrait. IMAGE 1 is a labeled roster of adult performers: use ONLY the specified labeled tile for facial identity, NOT any other tile. IMAGE 2 is the PRIMARY BODY PROPORTION TEMPLATE: He Sui adult runway photo. Match her tall lean elegant grown-adult skeleton: small head relative to full-size natural shoulders/ribcage/pelvis, long neck and torso, long lean legs and slim calves, approximately 8 head lengths standing-equivalent. Do not copy IMAGE 2 face, modern jacket, shoes or background. Do not make a large head with toy-sized torso. Rebuild anatomically coherent body for the requested pose, no digital stretching. Distant level 85mm full-body camera. Natural skin, individual recognizable eyes/nose/lips/jaw from the specified tile. Exactly two arms, five fingers per hand, two legs with coherent knees and ankles, two feet with natural toes and believable weight/contact. Fully clothed nonsexual fashion image, clearly adult age25+. Japanese breathable lightweight opaque summer clothing, delicate kanzashi, earrings, necklace, bangles, obi jewelry. NO socks. Entire subject, hair accessories, garments, prop/furniture and toes completely inside portrait 2:3 canvas with 6% clear margins. GENUINE transparent alpha, NO backdrop, floor, shadow, glow, gradient, text or watermark. IMAGE 1 selected tile: row 3, column 4, printed label \"凛音とうか\", Touka Rinne. Preserve this adult facial identity. Outfit and pose: standing turned three-quarter over one shoulder, torso and pelvis aligned naturally, holding a small embroidered scent pouch from a short cord with one hand, other resting lightly at waist; blush-pink sleeveless Japanese summer wrap dress with cream obi, bare feet. COSTUME REVISION: entirely modest ordinary summer festival clothes, fully closed high wrap neckline, elbow-length sleeves, opaque calf-length skirt or loose ankle-length trousers. No cleavage, cutouts, slits, exposed abdomen, underwear, swimwear, sheer fabric or pinup posing. Calm cultural fashion catalogue photograph.",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentFraction": 0.7521,
+        "borderPixelsAbove20": 0
+      },
+      "assetSha256": "63786b63d392b4cc65513014c1eff20943efabc6c1572c25e18d2c63e7a8c417"
+    },
+    {
+      "id": "japan-screenshot-20261023-13",
+      "name": "铃村爱里",
+      "english": "Airi Suzumura",
+      "label": "鈴村あいり",
+      "row": 3,
+      "column": 5,
+      "title": "柳夏琉璃",
+      "asset": "assets/beauties/random/番邦女子/日本女子-铃村爱里-柳夏琉璃.png",
+      "design": "simple relaxed side lunge with both feet flat, shallow knee bend and upright long torso, holding a small glass wind chime from its wooden grip; willow-green summer happi over opaque ivory wrap top and loose cropped trousers, bare feet",
+      "refs": [
+        "/Users/fengheliang/workbench/source/g20/games/assets/beauties/references/japan-screenshot-20261023/user-roster.png",
+        "/Users/fengheliang/workbench/source/g20/games/assets/beauties/references/he-sui-calves-20261022/runway-shape-reference.jpg"
+      ],
+      "prompt": "Use case: photorealistic-natural. Make ONE new full-body adult female Japanese summer costume game portrait. IMAGE 1 is a labeled roster of adult performers: use ONLY the specified labeled tile for facial identity, NOT any other tile. IMAGE 2 is the PRIMARY BODY PROPORTION TEMPLATE: He Sui adult runway photo. Match her tall lean elegant grown-adult skeleton: small head relative to full-size natural shoulders/ribcage/pelvis, long neck and torso, long lean legs and slim calves, approximately 8 head lengths standing-equivalent. Do not copy IMAGE 2 face, modern jacket, shoes or background. Do not make a large head with toy-sized torso. Rebuild anatomically coherent body for the requested pose, no digital stretching. Distant level 85mm full-body camera. Natural skin, individual recognizable eyes/nose/lips/jaw from the specified tile. Exactly two arms, five fingers per hand, two legs with coherent knees and ankles, two feet with natural toes and believable weight/contact. Fully clothed nonsexual fashion image, clearly adult age25+. Japanese breathable lightweight opaque summer clothing, delicate kanzashi, earrings, necklace, bangles, obi jewelry. NO socks. Entire subject, hair accessories, garments, prop/furniture and toes completely inside portrait 2:3 canvas with 6% clear margins. GENUINE transparent alpha, NO backdrop, floor, shadow, glow, gradient, text or watermark. IMAGE 1 selected tile: row 3, column 5, printed label \"鈴村あいり\", Airi Suzumura. Preserve this adult facial identity. Outfit and pose: simple relaxed side lunge with both feet flat, shallow knee bend and upright long torso, holding a small glass wind chime from its wooden grip; willow-green summer happi over opaque ivory wrap top and loose cropped trousers, bare feet.",
+      "faceReferencePolicy": "以用户截图中对应姓名的成年头像为面部参考，保留其年轻成年外观；不推断截图拍摄日期。",
+      "generatedPath": "/Users/fengheliang/.codex/generated_images/01a16615-cc42-7e81-aa4f-b849b888d820/exec-9f43d024-cf38-44ce-a5b0-91828da700d3.png",
+      "finalPrompt": "Use case: photorealistic-natural. Make ONE new full-body adult female Japanese summer costume game portrait. IMAGE 1 is a labeled roster of adult performers: use ONLY the specified labeled tile for facial identity, NOT any other tile. IMAGE 2 is the PRIMARY BODY PROPORTION TEMPLATE: He Sui adult runway photo. Match her tall lean elegant grown-adult skeleton: small head relative to full-size natural shoulders/ribcage/pelvis, long neck and torso, long lean legs and slim calves, approximately 8 head lengths standing-equivalent. Do not copy IMAGE 2 face, modern jacket, shoes or background. Do not make a large head with toy-sized torso. Rebuild anatomically coherent body for the requested pose, no digital stretching. Distant level 85mm full-body camera. Natural skin, individual recognizable eyes/nose/lips/jaw from the specified tile. Exactly two arms, five fingers per hand, two legs with coherent knees and ankles, two feet with natural toes and believable weight/contact. Fully clothed nonsexual fashion image, clearly adult age25+. Japanese breathable lightweight opaque summer clothing, delicate kanzashi, earrings, necklace, bangles, obi jewelry. NO socks. Entire subject, hair accessories, garments, prop/furniture and toes completely inside portrait 2:3 canvas with 6% clear margins. GENUINE transparent alpha, NO backdrop, floor, shadow, glow, gradient, text or watermark. IMAGE 1 selected tile: row 3, column 5, printed label \"鈴村あいり\", Airi Suzumura. Preserve this adult facial identity. Outfit and pose: simple relaxed side lunge with both feet flat, shallow knee bend and upright long torso, holding a small glass wind chime from its wooden grip; willow-green summer happi over opaque ivory wrap top and loose cropped trousers, bare feet. COSTUME REVISION: entirely modest ordinary summer festival clothes, fully closed high wrap neckline, elbow-length sleeves, opaque calf-length skirt or loose ankle-length trousers. No cleavage, cutouts, slits, exposed abdomen, underwear, swimwear, sheer fabric or pinup posing. Calm cultural fashion catalogue photograph.",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentFraction": 0.6815,
+        "borderPixelsAbove20": 0
+      },
+      "assetSha256": "4b2c64c47526f8eba9ed3cdb974644fa00e5f80ad1717ba0631a504d8e3b751c"
+    },
+    {
+      "id": "japan-screenshot-20261023-14",
+      "name": "彩美旬果",
+      "english": "Shunka Ayami",
+      "label": "あやみ旬果",
+      "row": 3,
+      "column": 7,
+      "title": "绯夏三味",
+      "asset": "assets/beauties/random/番邦女子/日本女子-彩美旬果-绯夏三味.png",
+      "design": "seated upright on a low stool playing a shamisen resting securely across thighs, one hand on neck and the other holding a plectrum; pale red lightweight elbow-sleeve summer kosode and ivory divided hakama, bare feet",
+      "refs": [
+        "/Users/fengheliang/workbench/source/g20/games/assets/beauties/references/japan-screenshot-20261023/user-roster.png",
+        "/Users/fengheliang/workbench/source/g20/games/assets/beauties/references/he-sui-calves-20261022/runway-shape-reference.jpg"
+      ],
+      "prompt": "Use case: photorealistic-natural. Make ONE new full-body adult female Japanese summer costume game portrait. IMAGE 1 is a labeled roster of adult performers: use ONLY the specified labeled tile for facial identity, NOT any other tile. IMAGE 2 is the PRIMARY BODY PROPORTION TEMPLATE: He Sui adult runway photo. Match her tall lean elegant grown-adult skeleton: small head relative to full-size natural shoulders/ribcage/pelvis, long neck and torso, long lean legs and slim calves, approximately 8 head lengths standing-equivalent. Do not copy IMAGE 2 face, modern jacket, shoes or background. Do not make a large head with toy-sized torso. Rebuild anatomically coherent body for the requested pose, no digital stretching. Distant level 85mm full-body camera. Natural skin, individual recognizable eyes/nose/lips/jaw from the specified tile. Exactly two arms, five fingers per hand, two legs with coherent knees and ankles, two feet with natural toes and believable weight/contact. Fully clothed nonsexual fashion image, clearly adult age25+. Japanese breathable lightweight opaque summer clothing, delicate kanzashi, earrings, necklace, bangles, obi jewelry. NO socks. Entire subject, hair accessories, garments, prop/furniture and toes completely inside portrait 2:3 canvas with 6% clear margins. GENUINE transparent alpha, NO backdrop, floor, shadow, glow, gradient, text or watermark. IMAGE 1 selected tile: row 3, column 7, printed label \"あやみ旬果\", Shunka Ayami. Preserve this adult facial identity. Outfit and pose: seated upright on a low stool playing a shamisen resting securely across thighs, one hand on neck and the other holding a plectrum; pale red lightweight elbow-sleeve summer kosode and ivory divided hakama, bare feet.",
+      "faceReferencePolicy": "以用户截图中对应姓名的成年头像为面部参考，保留其年轻成年外观；不推断截图拍摄日期。",
+      "generatedPath": "/Users/fengheliang/.codex/generated_images/01a16615-cc42-7e81-aa4f-b849b888d820/exec-f4d03ba7-667b-4e23-9a98-798d8866b644.png",
+      "finalPrompt": "Use case: photorealistic-natural. Make ONE new full-body adult female Japanese summer costume game portrait. IMAGE 1 is a labeled roster of adult performers: use ONLY the specified labeled tile for facial identity, NOT any other tile. IMAGE 2 is the PRIMARY BODY PROPORTION TEMPLATE: He Sui adult runway photo. Match her tall lean elegant grown-adult skeleton: small head relative to full-size natural shoulders/ribcage/pelvis, long neck and torso, long lean legs and slim calves, approximately 8 head lengths standing-equivalent. Do not copy IMAGE 2 face, modern jacket, shoes or background. Do not make a large head with toy-sized torso. Rebuild anatomically coherent body for the requested pose, no digital stretching. Distant level 85mm full-body camera. Natural skin, individual recognizable eyes/nose/lips/jaw from the specified tile. Exactly two arms, five fingers per hand, two legs with coherent knees and ankles, two feet with natural toes and believable weight/contact. Fully clothed nonsexual fashion image, clearly adult age25+. Japanese breathable lightweight opaque summer clothing, delicate kanzashi, earrings, necklace, bangles, obi jewelry. NO socks. Entire subject, hair accessories, garments, prop/furniture and toes completely inside portrait 2:3 canvas with 6% clear margins. GENUINE transparent alpha, NO backdrop, floor, shadow, glow, gradient, text or watermark. IMAGE 1 selected tile: row 3, column 7, printed label \"あやみ旬果\", Shunka Ayami. Preserve this adult facial identity. Outfit and pose: seated upright on a low stool playing a shamisen resting securely across thighs, one hand on neck and the other holding a plectrum; pale red lightweight elbow-sleeve summer kosode and ivory divided hakama, bare feet. COSTUME REVISION: entirely modest ordinary summer festival clothes, fully closed high wrap neckline, elbow-length sleeves, opaque calf-length skirt or loose ankle-length trousers. No cleavage, cutouts, slits, exposed abdomen, underwear, swimwear, sheer fabric or pinup posing. Calm cultural fashion catalogue photograph.",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentFraction": 0.5654,
+        "borderPixelsAbove20": 0
+      },
+      "assetSha256": "18c660eb84047e6c327891376d35f7352a307318acc4735c96fda69d266123fb"
+    },
+    {
+      "id": "japan-screenshot-20261023-15",
+      "name": "永濑唯",
+      "english": "Yui Nagase",
+      "label": "永瀬ゆい",
+      "row": 3,
+      "column": 8,
+      "title": "紫苑花笺",
+      "asset": "assets/beauties/random/番邦女子/日本女子-永濑唯-紫苑花笺.png",
+      "design": "standing leaning lightly against a small low wooden stool with one hand, holding a small stack of floral washi cards in the other; pale violet cotton summer yukata with tiny iris motifs, turquoise obi, wooden geta on bare feet",
+      "refs": [
+        "/Users/fengheliang/workbench/source/g20/games/assets/beauties/references/japan-screenshot-20261023/user-roster.png",
+        "/Users/fengheliang/workbench/source/g20/games/assets/beauties/references/he-sui-calves-20261022/runway-shape-reference.jpg"
+      ],
+      "prompt": "Use case: photorealistic-natural. Make ONE new full-body adult female Japanese summer costume game portrait. IMAGE 1 is a labeled roster of adult performers: use ONLY the specified labeled tile for facial identity, NOT any other tile. IMAGE 2 is the PRIMARY BODY PROPORTION TEMPLATE: He Sui adult runway photo. Match her tall lean elegant grown-adult skeleton: small head relative to full-size natural shoulders/ribcage/pelvis, long neck and torso, long lean legs and slim calves, approximately 8 head lengths standing-equivalent. Do not copy IMAGE 2 face, modern jacket, shoes or background. Do not make a large head with toy-sized torso. Rebuild anatomically coherent body for the requested pose, no digital stretching. Distant level 85mm full-body camera. Natural skin, individual recognizable eyes/nose/lips/jaw from the specified tile. Exactly two arms, five fingers per hand, two legs with coherent knees and ankles, two feet with natural toes and believable weight/contact. Fully clothed nonsexual fashion image, clearly adult age25+. Japanese breathable lightweight opaque summer clothing, delicate kanzashi, earrings, necklace, bangles, obi jewelry. NO socks. Entire subject, hair accessories, garments, prop/furniture and toes completely inside portrait 2:3 canvas with 6% clear margins. GENUINE transparent alpha, NO backdrop, floor, shadow, glow, gradient, text or watermark. IMAGE 1 selected tile: row 3, column 8, printed label \"永瀬ゆい\", Yui Nagase. Preserve this adult facial identity. Outfit and pose: standing leaning lightly against a small low wooden stool with one hand, holding a small stack of floral washi cards in the other; pale violet cotton summer yukata with tiny iris motifs, turquoise obi, wooden geta on bare feet.",
+      "faceReferencePolicy": "以用户截图中对应姓名的成年头像为面部参考，保留其年轻成年外观；不推断截图拍摄日期。",
+      "generatedPath": "/Users/fengheliang/.codex/generated_images/01a16615-cc42-7e81-aa4f-b849b888d820/exec-6f4e262b-2c6f-4531-9053-624e5398f72b.png",
+      "finalPrompt": "Use case: photorealistic-natural. Make ONE new full-body adult female Japanese summer costume game portrait. IMAGE 1 is a labeled roster of adult performers: use ONLY the specified labeled tile for facial identity, NOT any other tile. IMAGE 2 is the PRIMARY BODY PROPORTION TEMPLATE: He Sui adult runway photo. Match her tall lean elegant grown-adult skeleton: small head relative to full-size natural shoulders/ribcage/pelvis, long neck and torso, long lean legs and slim calves, approximately 8 head lengths standing-equivalent. Do not copy IMAGE 2 face, modern jacket, shoes or background. Do not make a large head with toy-sized torso. Rebuild anatomically coherent body for the requested pose, no digital stretching. Distant level 85mm full-body camera. Natural skin, individual recognizable eyes/nose/lips/jaw from the specified tile. Exactly two arms, five fingers per hand, two legs with coherent knees and ankles, two feet with natural toes and believable weight/contact. Fully clothed nonsexual fashion image, clearly adult age25+. Japanese breathable lightweight opaque summer clothing, delicate kanzashi, earrings, necklace, bangles, obi jewelry. NO socks. Entire subject, hair accessories, garments, prop/furniture and toes completely inside portrait 2:3 canvas with 6% clear margins. GENUINE transparent alpha, NO backdrop, floor, shadow, glow, gradient, text or watermark. IMAGE 1 selected tile: row 3, column 8, printed label \"永瀬ゆい\", Yui Nagase. Preserve this adult facial identity. Outfit and pose: standing leaning lightly against a small low wooden stool with one hand, holding a small stack of floral washi cards in the other; pale violet cotton summer yukata with tiny iris motifs, turquoise obi, wooden geta on bare feet. COSTUME REVISION: entirely modest ordinary summer festival clothes, fully closed high wrap neckline, elbow-length sleeves, opaque calf-length skirt or loose ankle-length trousers. No cleavage, cutouts, slits, exposed abdomen, underwear, swimwear, sheer fabric or pinup posing. Calm cultural fashion catalogue photograph.",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentFraction": 0.68,
+        "borderPixelsAbove20": 0
+      },
+      "assetSha256": "a81fb6fabe69ed66e3171b9d8904652eb5d547fc4ddc2ca44d27d4ac9fc9e975"
+    },
+    {
+      "id": "japan-screenshot-20261023-16",
+      "name": "里美尤利娅",
+      "english": "Yuria Satomi",
+      "label": "里美ゆりあ",
+      "row": 3,
+      "column": 10,
+      "title": "浅金香盒",
+      "asset": "assets/beauties/random/番邦女子/日本女子-里美尤利娅-浅金香盒.png",
+      "design": "reclining modestly on one hip on a low plain wooden bench, supported by one forearm, long legs together with knees gently bent and both feet visible, holding a small closed gold incense box in the free hand; pale gold fully opaque sleeveless summer kosode wrap dress ankle-length with cream obi, bare feet",
+      "refs": [
+        "/Users/fengheliang/workbench/source/g20/games/assets/beauties/references/japan-screenshot-20261023/user-roster.png",
+        "/Users/fengheliang/workbench/source/g20/games/assets/beauties/references/he-sui-calves-20261022/runway-shape-reference.jpg"
+      ],
+      "prompt": "Use case: photorealistic-natural. Make ONE new full-body adult female Japanese summer costume game portrait. IMAGE 1 is a labeled roster of adult performers: use ONLY the specified labeled tile for facial identity, NOT any other tile. IMAGE 2 is the PRIMARY BODY PROPORTION TEMPLATE: He Sui adult runway photo. Match her tall lean elegant grown-adult skeleton: small head relative to full-size natural shoulders/ribcage/pelvis, long neck and torso, long lean legs and slim calves, approximately 8 head lengths standing-equivalent. Do not copy IMAGE 2 face, modern jacket, shoes or background. Do not make a large head with toy-sized torso. Rebuild anatomically coherent body for the requested pose, no digital stretching. Distant level 85mm full-body camera. Natural skin, individual recognizable eyes/nose/lips/jaw from the specified tile. Exactly two arms, five fingers per hand, two legs with coherent knees and ankles, two feet with natural toes and believable weight/contact. Fully clothed nonsexual fashion image, clearly adult age25+. Japanese breathable lightweight opaque summer clothing, delicate kanzashi, earrings, necklace, bangles, obi jewelry. NO socks. Entire subject, hair accessories, garments, prop/furniture and toes completely inside portrait 2:3 canvas with 6% clear margins. GENUINE transparent alpha, NO backdrop, floor, shadow, glow, gradient, text or watermark. IMAGE 1 selected tile: row 3, column 10, printed label \"里美ゆりあ\", Yuria Satomi. Preserve this adult facial identity. Outfit and pose: reclining modestly on one hip on a low plain wooden bench, supported by one forearm, long legs together with knees gently bent and both feet visible, holding a small closed gold incense box in the free hand; pale gold fully opaque sleeveless summer kosode wrap dress ankle-length with cream obi, bare feet.",
+      "youngerAdultReference": "用户截图中对应人物的早期成年头像；生成25岁以上成年外观，不推断截图拍摄年份。",
+      "faceReferencePolicy": "以用户截图中对应姓名的成年头像为面部参考，保留其年轻成年外观；不推断截图拍摄日期。",
+      "generatedPath": "/Users/fengheliang/.codex/generated_images/01a16615-cc42-7e81-aa4f-b849b888d820/exec-b5641b8d-c31b-4de6-a8ce-fd5f8713d9a7.png",
+      "finalPrompt": "Use case: photorealistic-natural. Make ONE new full-body adult female Japanese summer costume game portrait. IMAGE 1 is a labeled roster of adult performers: use ONLY the specified labeled tile for facial identity, NOT any other tile. IMAGE 2 is the PRIMARY BODY PROPORTION TEMPLATE: He Sui adult runway photo. Match her tall lean elegant grown-adult skeleton: small head relative to full-size natural shoulders/ribcage/pelvis, long neck and torso, long lean legs and slim calves, approximately 8 head lengths standing-equivalent. Do not copy IMAGE 2 face, modern jacket, shoes or background. Do not make a large head with toy-sized torso. Rebuild anatomically coherent body for the requested pose, no digital stretching. Distant level 85mm full-body camera. Natural skin, individual recognizable eyes/nose/lips/jaw from the specified tile. Exactly two arms, five fingers per hand, two legs with coherent knees and ankles, two feet with natural toes and believable weight/contact. Fully clothed nonsexual fashion image, clearly adult age25+. Japanese breathable lightweight opaque summer clothing, delicate kanzashi, earrings, necklace, bangles, obi jewelry. NO socks. Entire subject, hair accessories, garments, prop/furniture and toes completely inside portrait 2:3 canvas with 6% clear margins. GENUINE transparent alpha, NO backdrop, floor, shadow, glow, gradient, text or watermark. IMAGE 1 selected tile: row 3, column 10, printed label \"里美ゆりあ\", Yuria Satomi. Preserve this adult facial identity. Outfit and pose: reclining modestly on one hip on a low plain wooden bench, supported by one forearm, long legs together with knees gently bent and both feet visible, holding a small closed gold incense box in the free hand; pale gold fully opaque sleeveless summer kosode wrap dress ankle-length with cream obi, bare feet. COSTUME REVISION: entirely modest ordinary summer festival clothes, fully closed high wrap neckline, elbow-length sleeves, opaque calf-length skirt or loose ankle-length trousers. No cleavage, cutouts, slits, exposed abdomen, underwear, swimwear, sheer fabric or pinup posing. Calm cultural fashion catalogue photograph.",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentFraction": 0.5532,
+        "borderPixelsAbove20": 0
+      },
+      "assetSha256": "0375fd31bc3338b694ad4ef90bbd42e8958cfc253e10e024add9053af0ec6dde"
+    },
+    {
+      "id": "japan-screenshot-20261023-17",
+      "name": "森泽佳奈",
+      "english": "Kana Morisawa",
+      "label": "森沢かな（飯岡かなこ）",
+      "row": 4,
+      "column": 2,
+      "title": "碧夏玉壶",
+      "asset": "assets/beauties/random/番邦女子/日本女子-森泽佳奈-碧夏玉壶.png",
+      "design": "standing in a relaxed full-profile body with face gently turned toward viewer, holding a celadon water pitcher in both hands at waist; jade-green lightweight summer kosode and cream ankle-length pleated hakama, bare feet",
+      "refs": [
+        "/Users/fengheliang/workbench/source/g20/games/assets/beauties/references/japan-screenshot-20261023/user-roster.png",
+        "/Users/fengheliang/workbench/source/g20/games/assets/beauties/references/he-sui-calves-20261022/runway-shape-reference.jpg"
+      ],
+      "prompt": "Use case: photorealistic-natural. Make ONE new full-body adult female Japanese summer costume game portrait. IMAGE 1 is a labeled roster of adult performers: use ONLY the specified labeled tile for facial identity, NOT any other tile. IMAGE 2 is the PRIMARY BODY PROPORTION TEMPLATE: He Sui adult runway photo. Match her tall lean elegant grown-adult skeleton: small head relative to full-size natural shoulders/ribcage/pelvis, long neck and torso, long lean legs and slim calves, approximately 8 head lengths standing-equivalent. Do not copy IMAGE 2 face, modern jacket, shoes or background. Do not make a large head with toy-sized torso. Rebuild anatomically coherent body for the requested pose, no digital stretching. Distant level 85mm full-body camera. Natural skin, individual recognizable eyes/nose/lips/jaw from the specified tile. Exactly two arms, five fingers per hand, two legs with coherent knees and ankles, two feet with natural toes and believable weight/contact. Fully clothed nonsexual fashion image, clearly adult age25+. Japanese breathable lightweight opaque summer clothing, delicate kanzashi, earrings, necklace, bangles, obi jewelry. NO socks. Entire subject, hair accessories, garments, prop/furniture and toes completely inside portrait 2:3 canvas with 6% clear margins. GENUINE transparent alpha, NO backdrop, floor, shadow, glow, gradient, text or watermark. IMAGE 1 selected tile: row 4, column 2, printed label \"森沢かな（飯岡かなこ）\", Kana Morisawa. Preserve this adult facial identity. Outfit and pose: standing in a relaxed full-profile body with face gently turned toward viewer, holding a celadon water pitcher in both hands at waist; jade-green lightweight summer kosode and cream ankle-length pleated hakama, bare feet.",
+      "faceReferencePolicy": "以用户截图中对应姓名的成年头像为面部参考，保留其年轻成年外观；不推断截图拍摄日期。",
+      "generatedPath": "/Users/fengheliang/.codex/generated_images/01a16615-cc42-7e81-aa4f-b849b888d820/exec-8452e7c3-5a6d-496d-a495-3118bc42e922.png",
+      "finalPrompt": "Use case: photorealistic-natural. Make ONE new full-body adult female Japanese summer costume game portrait. IMAGE 1 is a labeled roster of adult performers: use ONLY the specified labeled tile for facial identity, NOT any other tile. IMAGE 2 is the PRIMARY BODY PROPORTION TEMPLATE: He Sui adult runway photo. Match her tall lean elegant grown-adult skeleton: small head relative to full-size natural shoulders/ribcage/pelvis, long neck and torso, long lean legs and slim calves, approximately 8 head lengths standing-equivalent. Do not copy IMAGE 2 face, modern jacket, shoes or background. Do not make a large head with toy-sized torso. Rebuild anatomically coherent body for the requested pose, no digital stretching. Distant level 85mm full-body camera. Natural skin, individual recognizable eyes/nose/lips/jaw from the specified tile. Exactly two arms, five fingers per hand, two legs with coherent knees and ankles, two feet with natural toes and believable weight/contact. Fully clothed nonsexual fashion image, clearly adult age25+. Japanese breathable lightweight opaque summer clothing, delicate kanzashi, earrings, necklace, bangles, obi jewelry. NO socks. Entire subject, hair accessories, garments, prop/furniture and toes completely inside portrait 2:3 canvas with 6% clear margins. GENUINE transparent alpha, NO backdrop, floor, shadow, glow, gradient, text or watermark. IMAGE 1 selected tile: row 4, column 2, printed label \"森沢かな（飯岡かなこ）\", Kana Morisawa. Preserve this adult facial identity. Outfit and pose: standing in a relaxed full-profile body with face gently turned toward viewer, holding a celadon water pitcher in both hands at waist; jade-green lightweight summer kosode and cream ankle-length pleated hakama, bare feet.",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentFraction": 0.7177,
+        "borderPixelsAbove20": 0
+      },
+      "assetSha256": "73dd411ece0efa7add9443b1b15e8301d1eaa1f11d7c6e70e6904c6534bc1d3a"
+    },
+    {
+      "id": "japan-screenshot-20261023-18",
+      "name": "葵",
+      "english": "Aoi (the specific adult pictured under 葵)",
+      "label": "葵",
+      "row": 4,
+      "column": 5,
+      "title": "月白桧扇",
+      "asset": "assets/beauties/random/番邦女子/日本女子-葵-月白桧扇.png",
+      "design": "upright side-sitting with legs folded naturally to one side, holding a folded cypress fan in both hands at lap; white and blue light summer yukata with silver obi, bare feet",
+      "refs": [
+        "/Users/fengheliang/workbench/source/g20/games/assets/beauties/references/japan-screenshot-20261023/user-roster.png",
+        "/Users/fengheliang/workbench/source/g20/games/assets/beauties/references/he-sui-calves-20261022/runway-shape-reference.jpg"
+      ],
+      "prompt": "Use case: photorealistic-natural. Make ONE new full-body adult female Japanese summer costume game portrait. IMAGE 1 is a labeled roster of adult performers: use ONLY the specified labeled tile for facial identity, NOT any other tile. IMAGE 2 is the PRIMARY BODY PROPORTION TEMPLATE: He Sui adult runway photo. Match her tall lean elegant grown-adult skeleton: small head relative to full-size natural shoulders/ribcage/pelvis, long neck and torso, long lean legs and slim calves, approximately 8 head lengths standing-equivalent. Do not copy IMAGE 2 face, modern jacket, shoes or background. Do not make a large head with toy-sized torso. Rebuild anatomically coherent body for the requested pose, no digital stretching. Distant level 85mm full-body camera. Natural skin, individual recognizable eyes/nose/lips/jaw from the specified tile. Exactly two arms, five fingers per hand, two legs with coherent knees and ankles, two feet with natural toes and believable weight/contact. Fully clothed nonsexual fashion image, clearly adult age25+. Japanese breathable lightweight opaque summer clothing, delicate kanzashi, earrings, necklace, bangles, obi jewelry. NO socks. Entire subject, hair accessories, garments, prop/furniture and toes completely inside portrait 2:3 canvas with 6% clear margins. GENUINE transparent alpha, NO backdrop, floor, shadow, glow, gradient, text or watermark. IMAGE 1 selected tile: row 4, column 5, printed label \"葵\", Aoi (the specific adult pictured under 葵). Preserve this adult facial identity. Outfit and pose: upright side-sitting with legs folded naturally to one side, holding a folded cypress fan in both hands at lap; white and blue light summer yukata with silver obi, bare feet.",
+      "faceReferencePolicy": "以用户截图中对应姓名的成年头像为面部参考，保留其年轻成年外观；不推断截图拍摄日期。",
+      "generatedPath": "/Users/fengheliang/.codex/generated_images/01a16615-cc42-7e81-aa4f-b849b888d820/exec-6b6040a5-ab7a-49cd-bac5-910f637e4184.png",
+      "finalPrompt": "Use case: photorealistic-natural. Make ONE new full-body adult female Japanese summer costume game portrait. IMAGE 1 is a labeled roster of adult performers: use ONLY the specified labeled tile for facial identity, NOT any other tile. IMAGE 2 is the PRIMARY BODY PROPORTION TEMPLATE: He Sui adult runway photo. Match her tall lean elegant grown-adult skeleton: small head relative to full-size natural shoulders/ribcage/pelvis, long neck and torso, long lean legs and slim calves, approximately 8 head lengths standing-equivalent. Do not copy IMAGE 2 face, modern jacket, shoes or background. Do not make a large head with toy-sized torso. Rebuild anatomically coherent body for the requested pose, no digital stretching. Distant level 85mm full-body camera. Natural skin, individual recognizable eyes/nose/lips/jaw from the specified tile. Exactly two arms, five fingers per hand, two legs with coherent knees and ankles, two feet with natural toes and believable weight/contact. Fully clothed nonsexual fashion image, clearly adult age25+. Japanese breathable lightweight opaque summer clothing, delicate kanzashi, earrings, necklace, bangles, obi jewelry. NO socks. Entire subject, hair accessories, garments, prop/furniture and toes completely inside portrait 2:3 canvas with 6% clear margins. GENUINE transparent alpha, NO backdrop, floor, shadow, glow, gradient, text or watermark. IMAGE 1 selected tile: row 4, column 5, printed label \"葵\", Aoi (the specific adult pictured under 葵). Preserve this adult facial identity. Outfit and pose: upright side-sitting with legs folded naturally to one side, holding a folded cypress fan in both hands at lap; white and blue light summer yukata with silver obi, bare feet.",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentFraction": 0.5608,
+        "borderPixelsAbove20": 0
+      },
+      "assetSha256": "79d0aafa29587fe4bb0e1cae04b47373524927cfb99d13cf81d9e1bff7008086"
+    },
+    {
+      "id": "japan-screenshot-20261023-19",
+      "name": "星奈爱",
+      "english": "Ai Hoshina",
+      "label": "星奈あい",
+      "row": 4,
+      "column": 6,
+      "title": "桃霞铃鼓",
+      "asset": "assets/beauties/random/番邦女子/日本女子-星奈爱-桃霞铃鼓.png",
+      "design": "gentle turning dance pose with both feet grounded, holding a small hand tambourine at one shoulder, other hand extended open; coral summer happi wrap top and ivory flowing opaque summer hakama, bare feet",
+      "refs": [
+        "/Users/fengheliang/workbench/source/g20/games/assets/beauties/references/japan-screenshot-20261023/user-roster.png",
+        "/Users/fengheliang/workbench/source/g20/games/assets/beauties/references/he-sui-calves-20261022/runway-shape-reference.jpg"
+      ],
+      "prompt": "Use case: photorealistic-natural. Make ONE new full-body adult female Japanese summer costume game portrait. IMAGE 1 is a labeled roster of adult performers: use ONLY the specified labeled tile for facial identity, NOT any other tile. IMAGE 2 is the PRIMARY BODY PROPORTION TEMPLATE: He Sui adult runway photo. Match her tall lean elegant grown-adult skeleton: small head relative to full-size natural shoulders/ribcage/pelvis, long neck and torso, long lean legs and slim calves, approximately 8 head lengths standing-equivalent. Do not copy IMAGE 2 face, modern jacket, shoes or background. Do not make a large head with toy-sized torso. Rebuild anatomically coherent body for the requested pose, no digital stretching. Distant level 85mm full-body camera. Natural skin, individual recognizable eyes/nose/lips/jaw from the specified tile. Exactly two arms, five fingers per hand, two legs with coherent knees and ankles, two feet with natural toes and believable weight/contact. Fully clothed nonsexual fashion image, clearly adult age25+. Japanese breathable lightweight opaque summer clothing, delicate kanzashi, earrings, necklace, bangles, obi jewelry. NO socks. Entire subject, hair accessories, garments, prop/furniture and toes completely inside portrait 2:3 canvas with 6% clear margins. GENUINE transparent alpha, NO backdrop, floor, shadow, glow, gradient, text or watermark. IMAGE 1 selected tile: row 4, column 6, printed label \"星奈あい\", Ai Hoshina. Preserve this adult facial identity. Outfit and pose: gentle turning dance pose with both feet grounded, holding a small hand tambourine at one shoulder, other hand extended open; coral summer happi wrap top and ivory flowing opaque summer hakama, bare feet.",
+      "faceReferencePolicy": "以用户截图中对应姓名的成年头像为面部参考，保留其年轻成年外观；不推断截图拍摄日期。",
+      "generatedPath": "/Users/fengheliang/.codex/generated_images/01a16615-cc42-7e81-aa4f-b849b888d820/exec-7e98f0f0-c075-4189-9a2d-21e147fdfb26.png",
+      "finalPrompt": "Use case: photorealistic-natural. Make ONE new full-body adult female Japanese summer costume game portrait. IMAGE 1 is a labeled roster of adult performers: use ONLY the specified labeled tile for facial identity, NOT any other tile. IMAGE 2 is the PRIMARY BODY PROPORTION TEMPLATE: He Sui adult runway photo. Match her tall lean elegant grown-adult skeleton: small head relative to full-size natural shoulders/ribcage/pelvis, long neck and torso, long lean legs and slim calves, approximately 8 head lengths standing-equivalent. Do not copy IMAGE 2 face, modern jacket, shoes or background. Do not make a large head with toy-sized torso. Rebuild anatomically coherent body for the requested pose, no digital stretching. Distant level 85mm full-body camera. Natural skin, individual recognizable eyes/nose/lips/jaw from the specified tile. Exactly two arms, five fingers per hand, two legs with coherent knees and ankles, two feet with natural toes and believable weight/contact. Fully clothed nonsexual fashion image, clearly adult age25+. Japanese breathable lightweight opaque summer clothing, delicate kanzashi, earrings, necklace, bangles, obi jewelry. NO socks. Entire subject, hair accessories, garments, prop/furniture and toes completely inside portrait 2:3 canvas with 6% clear margins. GENUINE transparent alpha, NO backdrop, floor, shadow, glow, gradient, text or watermark. IMAGE 1 selected tile: row 4, column 6, printed label \"星奈あい\", Ai Hoshina. Preserve this adult facial identity. Outfit and pose: gentle turning dance pose with both feet grounded, holding a small hand tambourine at one shoulder, other hand extended open; coral summer happi wrap top and ivory flowing opaque summer hakama, bare feet.",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentFraction": 0.5669,
+        "borderPixelsAbove20": 0
+      },
+      "assetSha256": "3924a46aa8b4afe99bcb00b3c6e5bd801f476f30ef49ba23f81b257956efb4e8"
+    },
+    {
+      "id": "japan-screenshot-20261023-20",
+      "name": "小岛南",
+      "english": "Minami Kojima",
+      "label": "小島みなみ",
+      "row": 4,
+      "column": 8,
+      "title": "蓝绡静修",
+      "asset": "assets/beauties/random/番邦女子/日本女子-小岛南-蓝绡静修.png",
+      "design": "easy yoga staff pose seated upright with long legs extended diagonally forward and knees slightly relaxed, hands resting naturally beside hips; powder-blue sleeveless Japanese linen wrap top, loose ivory ankle-length trousers, bare feet",
+      "refs": [
+        "/Users/fengheliang/workbench/source/g20/games/assets/beauties/references/japan-screenshot-20261023/user-roster.png",
+        "/Users/fengheliang/workbench/source/g20/games/assets/beauties/references/he-sui-calves-20261022/runway-shape-reference.jpg"
+      ],
+      "prompt": "Use case: photorealistic-natural. Make ONE new full-body adult female Japanese summer costume game portrait. IMAGE 1 is a labeled roster of adult performers: use ONLY the specified labeled tile for facial identity, NOT any other tile. IMAGE 2 is the PRIMARY BODY PROPORTION TEMPLATE: He Sui adult runway photo. Match her tall lean elegant grown-adult skeleton: small head relative to full-size natural shoulders/ribcage/pelvis, long neck and torso, long lean legs and slim calves, approximately 8 head lengths standing-equivalent. Do not copy IMAGE 2 face, modern jacket, shoes or background. Do not make a large head with toy-sized torso. Rebuild anatomically coherent body for the requested pose, no digital stretching. Distant level 85mm full-body camera. Natural skin, individual recognizable eyes/nose/lips/jaw from the specified tile. Exactly two arms, five fingers per hand, two legs with coherent knees and ankles, two feet with natural toes and believable weight/contact. Fully clothed nonsexual fashion image, clearly adult age25+. Japanese breathable lightweight opaque summer clothing, delicate kanzashi, earrings, necklace, bangles, obi jewelry. NO socks. Entire subject, hair accessories, garments, prop/furniture and toes completely inside portrait 2:3 canvas with 6% clear margins. GENUINE transparent alpha, NO backdrop, floor, shadow, glow, gradient, text or watermark. IMAGE 1 selected tile: row 4, column 8, printed label \"小島みなみ\", Minami Kojima. Preserve this adult facial identity. Outfit and pose: easy yoga staff pose seated upright with long legs extended diagonally forward and knees slightly relaxed, hands resting naturally beside hips; powder-blue sleeveless Japanese linen wrap top, loose ivory ankle-length trousers, bare feet.",
+      "faceReferencePolicy": "以用户截图中对应姓名的成年头像为面部参考，保留其年轻成年外观；不推断截图拍摄日期。",
+      "generatedPath": "/Users/fengheliang/.codex/generated_images/01a16615-cc42-7e81-aa4f-b849b888d820/exec-67a8d3f2-ab38-4b9f-8421-26f936b00059.png",
+      "finalPrompt": "Use case: photorealistic-natural. Make ONE new full-body adult female Japanese summer costume game portrait. IMAGE 1 is a labeled roster of adult performers: use ONLY the specified labeled tile for facial identity, NOT any other tile. IMAGE 2 is the PRIMARY BODY PROPORTION TEMPLATE: He Sui adult runway photo. Match her tall lean elegant grown-adult skeleton: small head relative to full-size natural shoulders/ribcage/pelvis, long neck and torso, long lean legs and slim calves, approximately 8 head lengths standing-equivalent. Do not copy IMAGE 2 face, modern jacket, shoes or background. Do not make a large head with toy-sized torso. Rebuild anatomically coherent body for the requested pose, no digital stretching. Distant level 85mm full-body camera. Natural skin, individual recognizable eyes/nose/lips/jaw from the specified tile. Exactly two arms, five fingers per hand, two legs with coherent knees and ankles, two feet with natural toes and believable weight/contact. Fully clothed nonsexual fashion image, clearly adult age25+. Japanese breathable lightweight opaque summer clothing, delicate kanzashi, earrings, necklace, bangles, obi jewelry. NO socks. Entire subject, hair accessories, garments, prop/furniture and toes completely inside portrait 2:3 canvas with 6% clear margins. GENUINE transparent alpha, NO backdrop, floor, shadow, glow, gradient, text or watermark. IMAGE 1 selected tile: row 4, column 8, printed label \"小島みなみ\", Minami Kojima. Preserve this adult facial identity. Outfit and pose: easy yoga staff pose seated upright with long legs extended diagonally forward and knees slightly relaxed, hands resting naturally beside hips; powder-blue sleeveless Japanese linen wrap top, loose ivory ankle-length trousers, bare feet. COSTUME REVISION: entirely modest ordinary summer festival clothes, fully closed high wrap neckline, elbow-length sleeves, opaque calf-length skirt or loose ankle-length trousers. No cleavage, cutouts, slits, exposed abdomen, underwear, swimwear, sheer fabric or pinup posing. Calm cultural fashion catalogue photograph.",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentFraction": 0.6575,
+        "borderPixelsAbove20": 0
+      },
+      "assetSha256": "55ce2ae0b7019b6914d8398be0d07ab79534330451a335ba5677ba7a807eaa7d",
+      "supersededGeneratedPath": "/Users/fengheliang/.codex/generated_images/01a16615-cc42-7e81-aa4f-b849b888d820/exec-a86e4e7f-9af5-42a8-8d72-b5a630d0b7ae.png",
+      "compositionFixPrompt": "Edit only composition of this fully clothed adult Japanese summer fashion portrait. The fingertips on the RIGHT EDGE are cropped. Restore the complete right hand with five natural fingers. Keep the tall torso and long relaxed legs anatomically coherent. Preserve adult face identity, hairstyle, opaque modest costume, accessories, action and tall lean model body proportions. Zoom out by 25% and center the ENTIRE composition in the canvas with at least 10% clear margin on every side, keeping all hair ornaments, props, hands and bare feet fully inside frame. No enlarged head, no shrinking torso. True transparent alpha PNG. No background, floor, glow, shadow, gradient or text."
+    },
+    {
+      "id": "japan-screenshot-20261023-21",
+      "name": "滨崎真绪",
+      "english": "Mao Hamasaki",
+      "label": "浜崎真緒",
+      "row": 4,
+      "column": 9,
+      "title": "绛绡长绸",
+      "asset": "assets/beauties/random/番邦女子/日本女子-滨崎真绪-绛绡长绸.png",
+      "design": "graceful dance step, one heel raised but toes contacting ground, one hand holding the end of a short red silk dance ribbon and the other arm gently curved; burgundy short-sleeved light summer kosode and ivory knee-length pleated hakama, bare feet",
+      "refs": [
+        "/Users/fengheliang/workbench/source/g20/games/assets/beauties/references/japan-screenshot-20261023/user-roster.png",
+        "/Users/fengheliang/workbench/source/g20/games/assets/beauties/references/he-sui-calves-20261022/runway-shape-reference.jpg"
+      ],
+      "prompt": "Use case: photorealistic-natural. Make ONE new full-body adult female Japanese summer costume game portrait. IMAGE 1 is a labeled roster of adult performers: use ONLY the specified labeled tile for facial identity, NOT any other tile. IMAGE 2 is the PRIMARY BODY PROPORTION TEMPLATE: He Sui adult runway photo. Match her tall lean elegant grown-adult skeleton: small head relative to full-size natural shoulders/ribcage/pelvis, long neck and torso, long lean legs and slim calves, approximately 8 head lengths standing-equivalent. Do not copy IMAGE 2 face, modern jacket, shoes or background. Do not make a large head with toy-sized torso. Rebuild anatomically coherent body for the requested pose, no digital stretching. Distant level 85mm full-body camera. Natural skin, individual recognizable eyes/nose/lips/jaw from the specified tile. Exactly two arms, five fingers per hand, two legs with coherent knees and ankles, two feet with natural toes and believable weight/contact. Fully clothed nonsexual fashion image, clearly adult age25+. Japanese breathable lightweight opaque summer clothing, delicate kanzashi, earrings, necklace, bangles, obi jewelry. NO socks. Entire subject, hair accessories, garments, prop/furniture and toes completely inside portrait 2:3 canvas with 6% clear margins. GENUINE transparent alpha, NO backdrop, floor, shadow, glow, gradient, text or watermark. IMAGE 1 selected tile: row 4, column 9, printed label \"浜崎真緒\", Mao Hamasaki. Preserve this adult facial identity. Outfit and pose: graceful dance step, one heel raised but toes contacting ground, one hand holding the end of a short red silk dance ribbon and the other arm gently curved; burgundy short-sleeved light summer kosode and ivory knee-length pleated hakama, bare feet.",
+      "faceReferencePolicy": "以用户截图中对应姓名的成年头像为面部参考，保留其年轻成年外观；不推断截图拍摄日期。",
+      "generatedPath": "/Users/fengheliang/.codex/generated_images/01a16615-cc42-7e81-aa4f-b849b888d820/exec-cb123fac-5d46-4d5c-ad22-4dafb4edf7d9.png",
+      "finalPrompt": "Use case: photorealistic-natural. Make ONE new full-body adult female Japanese summer costume game portrait. IMAGE 1 is a labeled roster of adult performers: use ONLY the specified labeled tile for facial identity, NOT any other tile. IMAGE 2 is the PRIMARY BODY PROPORTION TEMPLATE: He Sui adult runway photo. Match her tall lean elegant grown-adult skeleton: small head relative to full-size natural shoulders/ribcage/pelvis, long neck and torso, long lean legs and slim calves, approximately 8 head lengths standing-equivalent. Do not copy IMAGE 2 face, modern jacket, shoes or background. Do not make a large head with toy-sized torso. Rebuild anatomically coherent body for the requested pose, no digital stretching. Distant level 85mm full-body camera. Natural skin, individual recognizable eyes/nose/lips/jaw from the specified tile. Exactly two arms, five fingers per hand, two legs with coherent knees and ankles, two feet with natural toes and believable weight/contact. Fully clothed nonsexual fashion image, clearly adult age25+. Japanese breathable lightweight opaque summer clothing, delicate kanzashi, earrings, necklace, bangles, obi jewelry. NO socks. Entire subject, hair accessories, garments, prop/furniture and toes completely inside portrait 2:3 canvas with 6% clear margins. GENUINE transparent alpha, NO backdrop, floor, shadow, glow, gradient, text or watermark. IMAGE 1 selected tile: row 4, column 9, printed label \"浜崎真緒\", Mao Hamasaki. Preserve this adult facial identity. Outfit and pose: graceful dance step, one heel raised but toes contacting ground, one hand holding the end of a short red silk dance ribbon and the other arm gently curved; burgundy short-sleeved light summer kosode and ivory knee-length pleated hakama, bare feet. COSTUME REVISION: entirely modest ordinary summer festival clothes, fully closed high wrap neckline, elbow-length sleeves, opaque calf-length skirt or loose ankle-length trousers. No cleavage, cutouts, slits, exposed abdomen, underwear, swimwear, sheer fabric or pinup posing. Calm cultural fashion catalogue photograph.",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentFraction": 0.7041,
+        "borderPixelsAbove20": 0
+      },
+      "assetSha256": "7c01e472b0d251a65904a5372de0cd317034437b8710086f2e8914c6a66a4e46"
+    },
+    {
+      "id": "japan-screenshot-20261023-22",
+      "name": "椎名空",
+      "english": "Sora Shiina",
+      "label": "椎名そら",
+      "row": 4,
+      "column": 10,
+      "title": "墨竹清笛",
+      "asset": "assets/beauties/random/番邦女子/日本女子-椎名空-墨竹清笛.png",
+      "design": "seated upright on a low stool with both feet planted, holding a bamboo flute horizontally with natural hand positions near waist; ink-black and pale green summer jinbei top and loose knee-length shorts, bare feet",
+      "refs": [
+        "/Users/fengheliang/workbench/source/g20/games/assets/beauties/references/japan-screenshot-20261023/user-roster.png",
+        "/Users/fengheliang/workbench/source/g20/games/assets/beauties/references/he-sui-calves-20261022/runway-shape-reference.jpg"
+      ],
+      "prompt": "Use case: photorealistic-natural. Make ONE new full-body adult female Japanese summer costume game portrait. IMAGE 1 is a labeled roster of adult performers: use ONLY the specified labeled tile for facial identity, NOT any other tile. IMAGE 2 is the PRIMARY BODY PROPORTION TEMPLATE: He Sui adult runway photo. Match her tall lean elegant grown-adult skeleton: small head relative to full-size natural shoulders/ribcage/pelvis, long neck and torso, long lean legs and slim calves, approximately 8 head lengths standing-equivalent. Do not copy IMAGE 2 face, modern jacket, shoes or background. Do not make a large head with toy-sized torso. Rebuild anatomically coherent body for the requested pose, no digital stretching. Distant level 85mm full-body camera. Natural skin, individual recognizable eyes/nose/lips/jaw from the specified tile. Exactly two arms, five fingers per hand, two legs with coherent knees and ankles, two feet with natural toes and believable weight/contact. Fully clothed nonsexual fashion image, clearly adult age25+. Japanese breathable lightweight opaque summer clothing, delicate kanzashi, earrings, necklace, bangles, obi jewelry. NO socks. Entire subject, hair accessories, garments, prop/furniture and toes completely inside portrait 2:3 canvas with 6% clear margins. GENUINE transparent alpha, NO backdrop, floor, shadow, glow, gradient, text or watermark. IMAGE 1 selected tile: row 4, column 10, printed label \"椎名そら\", Sora Shiina. Preserve this adult facial identity. Outfit and pose: seated upright on a low stool with both feet planted, holding a bamboo flute horizontally with natural hand positions near waist; ink-black and pale green summer jinbei top and loose knee-length shorts, bare feet.",
+      "faceReferencePolicy": "以用户截图中对应姓名的成年头像为面部参考，保留其年轻成年外观；不推断截图拍摄日期。",
+      "generatedPath": "/Users/fengheliang/.codex/generated_images/01a16615-cc42-7e81-aa4f-b849b888d820/exec-59f4d0f3-b1cd-4e91-94e7-9fa1ffb1c9e6.png",
+      "finalPrompt": "Use case: photorealistic-natural. Make ONE new full-body adult female Japanese summer costume game portrait. IMAGE 1 is a labeled roster of adult performers: use ONLY the specified labeled tile for facial identity, NOT any other tile. IMAGE 2 is the PRIMARY BODY PROPORTION TEMPLATE: He Sui adult runway photo. Match her tall lean elegant grown-adult skeleton: small head relative to full-size natural shoulders/ribcage/pelvis, long neck and torso, long lean legs and slim calves, approximately 8 head lengths standing-equivalent. Do not copy IMAGE 2 face, modern jacket, shoes or background. Do not make a large head with toy-sized torso. Rebuild anatomically coherent body for the requested pose, no digital stretching. Distant level 85mm full-body camera. Natural skin, individual recognizable eyes/nose/lips/jaw from the specified tile. Exactly two arms, five fingers per hand, two legs with coherent knees and ankles, two feet with natural toes and believable weight/contact. Fully clothed nonsexual fashion image, clearly adult age25+. Japanese breathable lightweight opaque summer clothing, delicate kanzashi, earrings, necklace, bangles, obi jewelry. NO socks. Entire subject, hair accessories, garments, prop/furniture and toes completely inside portrait 2:3 canvas with 6% clear margins. GENUINE transparent alpha, NO backdrop, floor, shadow, glow, gradient, text or watermark. IMAGE 1 selected tile: row 4, column 10, printed label \"椎名そら\", Sora Shiina. Preserve this adult facial identity. Outfit and pose: seated upright on a low stool with both feet planted, holding a bamboo flute horizontally with natural hand positions near waist; ink-black and pale green summer jinbei top and loose knee-length shorts, bare feet. COSTUME REVISION: entirely modest ordinary summer festival clothes, fully closed high wrap neckline, elbow-length sleeves, opaque calf-length skirt or loose ankle-length trousers. No cleavage, cutouts, slits, exposed abdomen, underwear, swimwear, sheer fabric or pinup posing. Calm cultural fashion catalogue photograph.",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentFraction": 0.6922,
+        "borderPixelsAbove20": 0
+      },
+      "assetSha256": "e3ef9c25df49f7936f0b1663352ff39213e4286bcd599cd3c74c25eda7c9ff43"
+    },
+    {
+      "id": "japan-screenshot-20261023-23",
+      "name": "铃木心春",
+      "english": "Koharu Suzuki",
+      "label": "鈴木心春",
+      "row": 4,
+      "column": 11,
+      "title": "浅杏贝香",
+      "asset": "assets/beauties/random/番邦女子/日本女子-铃木心春-浅杏贝香.png",
+      "design": "balanced shallow kneeling lunge, one knee down and other foot flat, holding a large decorative seashell in open palms; apricot sleeveless summer wrap top and loose ivory cropped trousers, bare feet",
+      "refs": [
+        "/Users/fengheliang/workbench/source/g20/games/assets/beauties/references/japan-screenshot-20261023/user-roster.png",
+        "/Users/fengheliang/workbench/source/g20/games/assets/beauties/references/he-sui-calves-20261022/runway-shape-reference.jpg"
+      ],
+      "prompt": "Use case: photorealistic-natural. Make ONE new full-body adult female Japanese summer costume game portrait. IMAGE 1 is a labeled roster of adult performers: use ONLY the specified labeled tile for facial identity, NOT any other tile. IMAGE 2 is the PRIMARY BODY PROPORTION TEMPLATE: He Sui adult runway photo. Match her tall lean elegant grown-adult skeleton: small head relative to full-size natural shoulders/ribcage/pelvis, long neck and torso, long lean legs and slim calves, approximately 8 head lengths standing-equivalent. Do not copy IMAGE 2 face, modern jacket, shoes or background. Do not make a large head with toy-sized torso. Rebuild anatomically coherent body for the requested pose, no digital stretching. Distant level 85mm full-body camera. Natural skin, individual recognizable eyes/nose/lips/jaw from the specified tile. Exactly two arms, five fingers per hand, two legs with coherent knees and ankles, two feet with natural toes and believable weight/contact. Fully clothed nonsexual fashion image, clearly adult age25+. Japanese breathable lightweight opaque summer clothing, delicate kanzashi, earrings, necklace, bangles, obi jewelry. NO socks. Entire subject, hair accessories, garments, prop/furniture and toes completely inside portrait 2:3 canvas with 6% clear margins. GENUINE transparent alpha, NO backdrop, floor, shadow, glow, gradient, text or watermark. IMAGE 1 selected tile: row 4, column 11, printed label \"鈴木心春\", Koharu Suzuki. Preserve this adult facial identity. Outfit and pose: balanced shallow kneeling lunge, one knee down and other foot flat, holding a large decorative seashell in open palms; apricot sleeveless summer wrap top and loose ivory cropped trousers, bare feet.",
+      "faceReferencePolicy": "以用户截图中对应姓名的成年头像为面部参考，保留其年轻成年外观；不推断截图拍摄日期。",
+      "generatedPath": "/Users/fengheliang/.codex/generated_images/01a16615-cc42-7e81-aa4f-b849b888d820/exec-c28f532b-9d88-447f-96f8-4b44182c9ca3.png",
+      "finalPrompt": "Use case: photorealistic-natural. Make ONE new full-body adult female Japanese summer costume game portrait. IMAGE 1 is a labeled roster of adult performers: use ONLY the specified labeled tile for facial identity, NOT any other tile. IMAGE 2 is the PRIMARY BODY PROPORTION TEMPLATE: He Sui adult runway photo. Match her tall lean elegant grown-adult skeleton: small head relative to full-size natural shoulders/ribcage/pelvis, long neck and torso, long lean legs and slim calves, approximately 8 head lengths standing-equivalent. Do not copy IMAGE 2 face, modern jacket, shoes or background. Do not make a large head with toy-sized torso. Rebuild anatomically coherent body for the requested pose, no digital stretching. Distant level 85mm full-body camera. Natural skin, individual recognizable eyes/nose/lips/jaw from the specified tile. Exactly two arms, five fingers per hand, two legs with coherent knees and ankles, two feet with natural toes and believable weight/contact. Fully clothed nonsexual fashion image, clearly adult age25+. Japanese breathable lightweight opaque summer clothing, delicate kanzashi, earrings, necklace, bangles, obi jewelry. NO socks. Entire subject, hair accessories, garments, prop/furniture and toes completely inside portrait 2:3 canvas with 6% clear margins. GENUINE transparent alpha, NO backdrop, floor, shadow, glow, gradient, text or watermark. IMAGE 1 selected tile: row 4, column 11, printed label \"鈴木心春\", Koharu Suzuki. Preserve this adult facial identity. Outfit and pose: balanced shallow kneeling lunge, one knee down and other foot flat, holding a large decorative seashell in open palms; apricot sleeveless summer wrap top and loose ivory cropped trousers, bare feet. COSTUME REVISION: entirely modest ordinary summer festival clothes, fully closed high wrap neckline, elbow-length sleeves, opaque calf-length skirt or loose ankle-length trousers. No cleavage, cutouts, slits, exposed abdomen, underwear, swimwear, sheer fabric or pinup posing. Calm cultural fashion catalogue photograph.",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentFraction": 0.6463,
+        "borderPixelsAbove20": 0
+      },
+      "assetSha256": "4e3a73701aea1f37006a49cc0741675dd265d0fcd41419625e5e540e42898cb6"
+    },
+    {
+      "id": "japan-screenshot-20261023-24",
+      "name": "天海翼",
+      "english": "Tsubasa Amami",
+      "label": "天海つばさ",
+      "row": 5,
+      "column": 1,
+      "title": "青荷扇舞",
+      "asset": "assets/beauties/random/番邦女子/日本女子-天海翼-青荷扇舞.png",
+      "design": "grounded Japanese dance stance, arms at different heights holding one open gold folding fan and one folded fan; sea-green lightweight short-sleeved summer yukata with cream obi, bare feet",
+      "refs": [
+        "/Users/fengheliang/workbench/source/g20/games/assets/beauties/references/japan-screenshot-20261023/user-roster.png",
+        "/Users/fengheliang/workbench/source/g20/games/assets/beauties/references/he-sui-calves-20261022/runway-shape-reference.jpg"
+      ],
+      "prompt": "Use case: photorealistic-natural. Make ONE new full-body adult female Japanese summer costume game portrait. IMAGE 1 is a labeled roster of adult performers: use ONLY the specified labeled tile for facial identity, NOT any other tile. IMAGE 2 is the PRIMARY BODY PROPORTION TEMPLATE: He Sui adult runway photo. Match her tall lean elegant grown-adult skeleton: small head relative to full-size natural shoulders/ribcage/pelvis, long neck and torso, long lean legs and slim calves, approximately 8 head lengths standing-equivalent. Do not copy IMAGE 2 face, modern jacket, shoes or background. Do not make a large head with toy-sized torso. Rebuild anatomically coherent body for the requested pose, no digital stretching. Distant level 85mm full-body camera. Natural skin, individual recognizable eyes/nose/lips/jaw from the specified tile. Exactly two arms, five fingers per hand, two legs with coherent knees and ankles, two feet with natural toes and believable weight/contact. Fully clothed nonsexual fashion image, clearly adult age25+. Japanese breathable lightweight opaque summer clothing, delicate kanzashi, earrings, necklace, bangles, obi jewelry. NO socks. Entire subject, hair accessories, garments, prop/furniture and toes completely inside portrait 2:3 canvas with 6% clear margins. GENUINE transparent alpha, NO backdrop, floor, shadow, glow, gradient, text or watermark. IMAGE 1 selected tile: row 5, column 1, printed label \"天海つばさ\", Tsubasa Amami. Preserve this adult facial identity. Outfit and pose: grounded Japanese dance stance, arms at different heights holding one open gold folding fan and one folded fan; sea-green lightweight short-sleeved summer yukata with cream obi, bare feet.",
+      "faceReferencePolicy": "以用户截图中对应姓名的成年头像为面部参考，保留其年轻成年外观；不推断截图拍摄日期。",
+      "generatedPath": "/Users/fengheliang/.codex/generated_images/01a16615-cc42-7e81-aa4f-b849b888d820/exec-f8a60b44-4359-405f-a089-ac069904f471.png",
+      "finalPrompt": "Use case: photorealistic-natural. Make ONE new full-body adult female Japanese summer costume game portrait. IMAGE 1 is a labeled roster of adult performers: use ONLY the specified labeled tile for facial identity, NOT any other tile. IMAGE 2 is the PRIMARY BODY PROPORTION TEMPLATE: He Sui adult runway photo. Match her tall lean elegant grown-adult skeleton: small head relative to full-size natural shoulders/ribcage/pelvis, long neck and torso, long lean legs and slim calves, approximately 8 head lengths standing-equivalent. Do not copy IMAGE 2 face, modern jacket, shoes or background. Do not make a large head with toy-sized torso. Rebuild anatomically coherent body for the requested pose, no digital stretching. Distant level 85mm full-body camera. Natural skin, individual recognizable eyes/nose/lips/jaw from the specified tile. Exactly two arms, five fingers per hand, two legs with coherent knees and ankles, two feet with natural toes and believable weight/contact. Fully clothed nonsexual fashion image, clearly adult age25+. Japanese breathable lightweight opaque summer clothing, delicate kanzashi, earrings, necklace, bangles, obi jewelry. NO socks. Entire subject, hair accessories, garments, prop/furniture and toes completely inside portrait 2:3 canvas with 6% clear margins. GENUINE transparent alpha, NO backdrop, floor, shadow, glow, gradient, text or watermark. IMAGE 1 selected tile: row 5, column 1, printed label \"天海つばさ\", Tsubasa Amami. Preserve this adult facial identity. Outfit and pose: grounded Japanese dance stance, arms at different heights holding one open gold folding fan and one folded fan; sea-green lightweight short-sleeved summer yukata with cream obi, bare feet. COSTUME REVISION: entirely modest ordinary summer festival clothes, fully closed high wrap neckline, elbow-length sleeves, opaque calf-length skirt or loose ankle-length trousers. No cleavage, cutouts, slits, exposed abdomen, underwear, swimwear, sheer fabric or pinup posing. Calm cultural fashion catalogue photograph.",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentFraction": 0.7039,
+        "borderPixelsAbove20": 0
+      },
+      "assetSha256": "b927010f65b189b4b9a35f7e9da45bf0e7e8e286cbba86531c7120ed52f8607f"
+    },
+    {
+      "id": "japan-screenshot-20261023-25",
+      "name": "奥田咲",
+      "english": "Saki Okuda",
+      "label": "奥田咲",
+      "row": 5,
+      "column": 3,
+      "title": "绯夏毬戏",
+      "asset": "assets/beauties/random/番邦女子/日本女子-奥田咲-绯夏毬戏.png",
+      "design": "small walking step, holding an embroidered Japanese temari ball in both hands at hip; coral sleeveless summer kosode wrap dress with opaque ivory lining and narrow gold obi, bare feet",
+      "refs": [
+        "/Users/fengheliang/workbench/source/g20/games/assets/beauties/references/japan-screenshot-20261023/user-roster.png",
+        "/Users/fengheliang/workbench/source/g20/games/assets/beauties/references/he-sui-calves-20261022/runway-shape-reference.jpg"
+      ],
+      "prompt": "Use case: photorealistic-natural. Make ONE new full-body adult female Japanese summer costume game portrait. IMAGE 1 is a labeled roster of adult performers: use ONLY the specified labeled tile for facial identity, NOT any other tile. IMAGE 2 is the PRIMARY BODY PROPORTION TEMPLATE: He Sui adult runway photo. Match her tall lean elegant grown-adult skeleton: small head relative to full-size natural shoulders/ribcage/pelvis, long neck and torso, long lean legs and slim calves, approximately 8 head lengths standing-equivalent. Do not copy IMAGE 2 face, modern jacket, shoes or background. Do not make a large head with toy-sized torso. Rebuild anatomically coherent body for the requested pose, no digital stretching. Distant level 85mm full-body camera. Natural skin, individual recognizable eyes/nose/lips/jaw from the specified tile. Exactly two arms, five fingers per hand, two legs with coherent knees and ankles, two feet with natural toes and believable weight/contact. Fully clothed nonsexual fashion image, clearly adult age25+. Japanese breathable lightweight opaque summer clothing, delicate kanzashi, earrings, necklace, bangles, obi jewelry. NO socks. Entire subject, hair accessories, garments, prop/furniture and toes completely inside portrait 2:3 canvas with 6% clear margins. GENUINE transparent alpha, NO backdrop, floor, shadow, glow, gradient, text or watermark. IMAGE 1 selected tile: row 5, column 3, printed label \"奥田咲\", Saki Okuda. Preserve this adult facial identity. Outfit and pose: small walking step, holding an embroidered Japanese temari ball in both hands at hip; coral sleeveless summer kosode wrap dress with opaque ivory lining and narrow gold obi, bare feet.",
+      "faceReferencePolicy": "以用户截图中对应姓名的成年头像为面部参考，保留其年轻成年外观；不推断截图拍摄日期。",
+      "generatedPath": "/Users/fengheliang/.codex/generated_images/01a16615-cc42-7e81-aa4f-b849b888d820/exec-6cfa96a0-cf18-4413-ae87-082df7b33f16.png",
+      "finalPrompt": "Use case: photorealistic-natural. Make ONE new full-body adult female Japanese summer costume game portrait. IMAGE 1 is a labeled roster of adult performers: use ONLY the specified labeled tile for facial identity, NOT any other tile. IMAGE 2 is the PRIMARY BODY PROPORTION TEMPLATE: He Sui adult runway photo. Match her tall lean elegant grown-adult skeleton: small head relative to full-size natural shoulders/ribcage/pelvis, long neck and torso, long lean legs and slim calves, approximately 8 head lengths standing-equivalent. Do not copy IMAGE 2 face, modern jacket, shoes or background. Do not make a large head with toy-sized torso. Rebuild anatomically coherent body for the requested pose, no digital stretching. Distant level 85mm full-body camera. Natural skin, individual recognizable eyes/nose/lips/jaw from the specified tile. Exactly two arms, five fingers per hand, two legs with coherent knees and ankles, two feet with natural toes and believable weight/contact. Fully clothed nonsexual fashion image, clearly adult age25+. Japanese breathable lightweight opaque summer clothing, delicate kanzashi, earrings, necklace, bangles, obi jewelry. NO socks. Entire subject, hair accessories, garments, prop/furniture and toes completely inside portrait 2:3 canvas with 6% clear margins. GENUINE transparent alpha, NO backdrop, floor, shadow, glow, gradient, text or watermark. IMAGE 1 selected tile: row 5, column 3, printed label \"奥田咲\", Saki Okuda. Preserve this adult facial identity. Outfit and pose: small walking step, holding an embroidered Japanese temari ball in both hands at hip; coral sleeveless summer kosode wrap dress with opaque ivory lining and narrow gold obi, bare feet. COSTUME REVISION: entirely modest ordinary summer festival clothes, fully closed high wrap neckline, elbow-length sleeves, opaque calf-length skirt or loose ankle-length trousers. No cleavage, cutouts, slits, exposed abdomen, underwear, swimwear, sheer fabric or pinup posing. Calm cultural fashion catalogue photograph.",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentFraction": 0.7499,
+        "borderPixelsAbove20": 0
+      },
+      "assetSha256": "2e01692f562833f18fa49cd65be9217c69de311f1f3e129f3dc98c30da2ec2e9"
+    },
+    {
+      "id": "japan-screenshot-20261023-26",
+      "name": "坂道美琉",
+      "english": "Miru Sakamichi",
+      "label": "坂道みる",
+      "row": 5,
+      "column": 4,
+      "title": "桃绡绢伞",
+      "asset": "assets/beauties/random/番邦女子/日本女子-坂道美琉-桃绡绢伞.png",
+      "design": "standing three-quarter with one foot forward holding a small open Japanese wagasa parasol over one shoulder with other hand relaxed; peach cotton summer yukata with pale blue morning-glories, ivory obi, wooden geta on bare feet",
+      "refs": [
+        "/Users/fengheliang/workbench/source/g20/games/assets/beauties/references/japan-screenshot-20261023/user-roster.png",
+        "/Users/fengheliang/workbench/source/g20/games/assets/beauties/references/he-sui-calves-20261022/runway-shape-reference.jpg"
+      ],
+      "prompt": "Use case: photorealistic-natural. Make ONE new full-body adult female Japanese summer costume game portrait. IMAGE 1 is a labeled roster of adult performers: use ONLY the specified labeled tile for facial identity, NOT any other tile. IMAGE 2 is the PRIMARY BODY PROPORTION TEMPLATE: He Sui adult runway photo. Match her tall lean elegant grown-adult skeleton: small head relative to full-size natural shoulders/ribcage/pelvis, long neck and torso, long lean legs and slim calves, approximately 8 head lengths standing-equivalent. Do not copy IMAGE 2 face, modern jacket, shoes or background. Do not make a large head with toy-sized torso. Rebuild anatomically coherent body for the requested pose, no digital stretching. Distant level 85mm full-body camera. Natural skin, individual recognizable eyes/nose/lips/jaw from the specified tile. Exactly two arms, five fingers per hand, two legs with coherent knees and ankles, two feet with natural toes and believable weight/contact. Fully clothed nonsexual fashion image, clearly adult age25+. Japanese breathable lightweight opaque summer clothing, delicate kanzashi, earrings, necklace, bangles, obi jewelry. NO socks. Entire subject, hair accessories, garments, prop/furniture and toes completely inside portrait 2:3 canvas with 6% clear margins. GENUINE transparent alpha, NO backdrop, floor, shadow, glow, gradient, text or watermark. IMAGE 1 selected tile: row 5, column 4, printed label \"坂道みる\", Miru Sakamichi. Preserve this adult facial identity. Outfit and pose: standing three-quarter with one foot forward holding a small open Japanese wagasa parasol over one shoulder with other hand relaxed; peach cotton summer yukata with pale blue morning-glories, ivory obi, wooden geta on bare feet.",
+      "faceReferencePolicy": "以用户截图中对应姓名的成年头像为面部参考，保留其年轻成年外观；不推断截图拍摄日期。",
+      "generatedPath": "/Users/fengheliang/.codex/generated_images/01a16615-cc42-7e81-aa4f-b849b888d820/exec-f74ae22e-2bc1-434f-982b-ea3b686a33f2.png",
+      "finalPrompt": "Use case: photorealistic-natural. Make ONE new full-body adult female Japanese summer costume game portrait. IMAGE 1 is a labeled roster of adult performers: use ONLY the specified labeled tile for facial identity, NOT any other tile. IMAGE 2 is the PRIMARY BODY PROPORTION TEMPLATE: He Sui adult runway photo. Match her tall lean elegant grown-adult skeleton: small head relative to full-size natural shoulders/ribcage/pelvis, long neck and torso, long lean legs and slim calves, approximately 8 head lengths standing-equivalent. Do not copy IMAGE 2 face, modern jacket, shoes or background. Do not make a large head with toy-sized torso. Rebuild anatomically coherent body for the requested pose, no digital stretching. Distant level 85mm full-body camera. Natural skin, individual recognizable eyes/nose/lips/jaw from the specified tile. Exactly two arms, five fingers per hand, two legs with coherent knees and ankles, two feet with natural toes and believable weight/contact. Fully clothed nonsexual fashion image, clearly adult age25+. Japanese breathable lightweight opaque summer clothing, delicate kanzashi, earrings, necklace, bangles, obi jewelry. NO socks. Entire subject, hair accessories, garments, prop/furniture and toes completely inside portrait 2:3 canvas with 6% clear margins. GENUINE transparent alpha, NO backdrop, floor, shadow, glow, gradient, text or watermark. IMAGE 1 selected tile: row 5, column 4, printed label \"坂道みる\", Miru Sakamichi. Preserve this adult facial identity. Outfit and pose: standing three-quarter with one foot forward holding a small open Japanese wagasa parasol over one shoulder with other hand relaxed; peach cotton summer yukata with pale blue morning-glories, ivory obi, wooden geta on bare feet. COSTUME REVISION: entirely modest ordinary summer festival clothes, fully closed high wrap neckline, elbow-length sleeves, opaque calf-length skirt or loose ankle-length trousers. No cleavage, cutouts, slits, exposed abdomen, underwear, swimwear, sheer fabric or pinup posing. Calm cultural fashion catalogue photograph.",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentFraction": 0.7229,
+        "borderPixelsAbove20": 0
+      },
+      "assetSha256": "af4e348321626f56c09c76b5fc86fc27b8b01a231285d919e6f1b9e6b8c641fa"
+    },
+    {
+      "id": "japan-screenshot-20261023-27",
+      "name": "佐山爱",
+      "english": "Ai Sayama",
+      "label": "佐山愛",
+      "row": 5,
+      "column": 5,
+      "title": "玉瓷清茗",
+      "asset": "assets/beauties/random/番邦女子/日本女子-佐山爱-玉瓷清茗.png",
+      "design": "seated gracefully on a low bench with ankles side by side, holding a shallow ceramic tea bowl in both hands near waist; ivory-and-celadon striped lightweight summer kosode and ivory pleated hakama, bare feet",
+      "refs": [
+        "/Users/fengheliang/workbench/source/g20/games/assets/beauties/references/japan-screenshot-20261023/user-roster.png",
+        "/Users/fengheliang/workbench/source/g20/games/assets/beauties/references/he-sui-calves-20261022/runway-shape-reference.jpg"
+      ],
+      "prompt": "Use case: photorealistic-natural. Make ONE new full-body adult female Japanese summer costume game portrait. IMAGE 1 is a labeled roster of adult performers: use ONLY the specified labeled tile for facial identity, NOT any other tile. IMAGE 2 is the PRIMARY BODY PROPORTION TEMPLATE: He Sui adult runway photo. Match her tall lean elegant grown-adult skeleton: small head relative to full-size natural shoulders/ribcage/pelvis, long neck and torso, long lean legs and slim calves, approximately 8 head lengths standing-equivalent. Do not copy IMAGE 2 face, modern jacket, shoes or background. Do not make a large head with toy-sized torso. Rebuild anatomically coherent body for the requested pose, no digital stretching. Distant level 85mm full-body camera. Natural skin, individual recognizable eyes/nose/lips/jaw from the specified tile. Exactly two arms, five fingers per hand, two legs with coherent knees and ankles, two feet with natural toes and believable weight/contact. Fully clothed nonsexual fashion image, clearly adult age25+. Japanese breathable lightweight opaque summer clothing, delicate kanzashi, earrings, necklace, bangles, obi jewelry. NO socks. Entire subject, hair accessories, garments, prop/furniture and toes completely inside portrait 2:3 canvas with 6% clear margins. GENUINE transparent alpha, NO backdrop, floor, shadow, glow, gradient, text or watermark. IMAGE 1 selected tile: row 5, column 5, printed label \"佐山愛\", Ai Sayama. Preserve this adult facial identity. Outfit and pose: seated gracefully on a low bench with ankles side by side, holding a shallow ceramic tea bowl in both hands near waist; ivory-and-celadon striped lightweight summer kosode and ivory pleated hakama, bare feet.",
+      "faceReferencePolicy": "以用户截图中对应姓名的成年头像为面部参考，保留其年轻成年外观；不推断截图拍摄日期。",
+      "generatedPath": "/Users/fengheliang/.codex/generated_images/01a16615-cc42-7e81-aa4f-b849b888d820/exec-f1e0f8e0-0b35-4d13-bcd2-be0ddb66c516.png",
+      "finalPrompt": "Use case: photorealistic-natural. Make ONE new full-body adult female Japanese summer costume game portrait. IMAGE 1 is a labeled roster of adult performers: use ONLY the specified labeled tile for facial identity, NOT any other tile. IMAGE 2 is the PRIMARY BODY PROPORTION TEMPLATE: He Sui adult runway photo. Match her tall lean elegant grown-adult skeleton: small head relative to full-size natural shoulders/ribcage/pelvis, long neck and torso, long lean legs and slim calves, approximately 8 head lengths standing-equivalent. Do not copy IMAGE 2 face, modern jacket, shoes or background. Do not make a large head with toy-sized torso. Rebuild anatomically coherent body for the requested pose, no digital stretching. Distant level 85mm full-body camera. Natural skin, individual recognizable eyes/nose/lips/jaw from the specified tile. Exactly two arms, five fingers per hand, two legs with coherent knees and ankles, two feet with natural toes and believable weight/contact. Fully clothed nonsexual fashion image, clearly adult age25+. Japanese breathable lightweight opaque summer clothing, delicate kanzashi, earrings, necklace, bangles, obi jewelry. NO socks. Entire subject, hair accessories, garments, prop/furniture and toes completely inside portrait 2:3 canvas with 6% clear margins. GENUINE transparent alpha, NO backdrop, floor, shadow, glow, gradient, text or watermark. IMAGE 1 selected tile: row 5, column 5, printed label \"佐山愛\", Ai Sayama. Preserve this adult facial identity. Outfit and pose: seated gracefully on a low bench with ankles side by side, holding a shallow ceramic tea bowl in both hands near waist; ivory-and-celadon striped lightweight summer kosode and ivory pleated hakama, bare feet. COSTUME REVISION: entirely modest ordinary summer festival clothes, fully closed high wrap neckline, elbow-length sleeves, opaque calf-length skirt or loose ankle-length trousers. No cleavage, cutouts, slits, exposed abdomen, underwear, swimwear, sheer fabric or pinup posing. Calm cultural fashion catalogue photograph.",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentFraction": 0.5659,
+        "borderPixelsAbove20": 0
+      },
+      "assetSha256": "324ab72845992eb1bc2bfe1f6e4cb8928edab86e3ed29798fe2aa574389f62dc"
+    },
+    {
+      "id": "japan-screenshot-20261023-28",
+      "name": "希崎杰西卡",
+      "english": "Jessica Kizaki",
+      "label": "希崎ジェシカ",
+      "row": 5,
+      "column": 6,
+      "title": "柳绡珠匣",
+      "asset": "assets/beauties/random/番邦女子/日本女子-希崎杰西卡-柳绡珠匣.png",
+      "design": "walking naturally while holding a closed small mother-of-pearl jewelry casket at waist in both hands; willow green short-sleeved ro summer yukata with narrow lavender obi, wooden geta on bare feet",
+      "refs": [
+        "/Users/fengheliang/workbench/source/g20/games/assets/beauties/references/japan-screenshot-20261023/user-roster.png",
+        "/Users/fengheliang/workbench/source/g20/games/assets/beauties/references/he-sui-calves-20261022/runway-shape-reference.jpg"
+      ],
+      "prompt": "Use case: photorealistic-natural. Make ONE new full-body adult female Japanese summer costume game portrait. IMAGE 1 is a labeled roster of adult performers: use ONLY the specified labeled tile for facial identity, NOT any other tile. IMAGE 2 is the PRIMARY BODY PROPORTION TEMPLATE: He Sui adult runway photo. Match her tall lean elegant grown-adult skeleton: small head relative to full-size natural shoulders/ribcage/pelvis, long neck and torso, long lean legs and slim calves, approximately 8 head lengths standing-equivalent. Do not copy IMAGE 2 face, modern jacket, shoes or background. Do not make a large head with toy-sized torso. Rebuild anatomically coherent body for the requested pose, no digital stretching. Distant level 85mm full-body camera. Natural skin, individual recognizable eyes/nose/lips/jaw from the specified tile. Exactly two arms, five fingers per hand, two legs with coherent knees and ankles, two feet with natural toes and believable weight/contact. Fully clothed nonsexual fashion image, clearly adult age25+. Japanese breathable lightweight opaque summer clothing, delicate kanzashi, earrings, necklace, bangles, obi jewelry. NO socks. Entire subject, hair accessories, garments, prop/furniture and toes completely inside portrait 2:3 canvas with 6% clear margins. GENUINE transparent alpha, NO backdrop, floor, shadow, glow, gradient, text or watermark. IMAGE 1 selected tile: row 5, column 6, printed label \"希崎ジェシカ\", Jessica Kizaki. Preserve this adult facial identity. Outfit and pose: walking naturally while holding a closed small mother-of-pearl jewelry casket at waist in both hands; willow green short-sleeved ro summer yukata with narrow lavender obi, wooden geta on bare feet.",
+      "faceReferencePolicy": "以用户截图中对应姓名的成年头像为面部参考，保留其年轻成年外观；不推断截图拍摄日期。",
+      "generatedPath": "/Users/fengheliang/.codex/generated_images/01a16615-cc42-7e81-aa4f-b849b888d820/exec-3b075f5a-d604-468a-98cb-a11da21d57dd.png",
+      "finalPrompt": "Use case: photorealistic-natural. Make ONE new full-body adult female Japanese summer costume game portrait. IMAGE 1 is a labeled roster of adult performers: use ONLY the specified labeled tile for facial identity, NOT any other tile. IMAGE 2 is the PRIMARY BODY PROPORTION TEMPLATE: He Sui adult runway photo. Match her tall lean elegant grown-adult skeleton: small head relative to full-size natural shoulders/ribcage/pelvis, long neck and torso, long lean legs and slim calves, approximately 8 head lengths standing-equivalent. Do not copy IMAGE 2 face, modern jacket, shoes or background. Do not make a large head with toy-sized torso. Rebuild anatomically coherent body for the requested pose, no digital stretching. Distant level 85mm full-body camera. Natural skin, individual recognizable eyes/nose/lips/jaw from the specified tile. Exactly two arms, five fingers per hand, two legs with coherent knees and ankles, two feet with natural toes and believable weight/contact. Fully clothed nonsexual fashion image, clearly adult age25+. Japanese breathable lightweight opaque summer clothing, delicate kanzashi, earrings, necklace, bangles, obi jewelry. NO socks. Entire subject, hair accessories, garments, prop/furniture and toes completely inside portrait 2:3 canvas with 6% clear margins. GENUINE transparent alpha, NO backdrop, floor, shadow, glow, gradient, text or watermark. IMAGE 1 selected tile: row 5, column 6, printed label \"希崎ジェシカ\", Jessica Kizaki. Preserve this adult facial identity. Outfit and pose: walking naturally while holding a closed small mother-of-pearl jewelry casket at waist in both hands; willow green short-sleeved ro summer yukata with narrow lavender obi, wooden geta on bare feet. COSTUME REVISION: entirely modest ordinary summer festival clothes, fully closed high wrap neckline, elbow-length sleeves, opaque calf-length skirt or loose ankle-length trousers. No cleavage, cutouts, slits, exposed abdomen, underwear, swimwear, sheer fabric or pinup posing. Calm cultural fashion catalogue photograph.",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentFraction": 0.7652,
+        "borderPixelsAbove20": 0
+      },
+      "assetSha256": "121f36751e4125ccc0b17cb81e70ecc665a07ede6913f757a158a2d60475361d"
+    },
+    {
+      "id": "japan-screenshot-20261023-29",
+      "name": "古川伊织",
+      "english": "Iori Kogawa",
+      "label": "古川いおり",
+      "row": 5,
+      "column": 7,
+      "title": "藤夏花篮",
+      "asset": "assets/beauties/random/番邦女子/日本女子-古川伊织-藤夏花篮.png",
+      "design": "side-sitting on a low plain stool with one long leg relaxed forward and other foot planted, holding a small woven basket with two wisteria flower stems; pale lavender short-sleeved summer kosode and cream opaque wrap skirt, bare feet",
+      "refs": [
+        "/Users/fengheliang/workbench/source/g20/games/assets/beauties/references/japan-screenshot-20261023/user-roster.png",
+        "/Users/fengheliang/workbench/source/g20/games/assets/beauties/references/he-sui-calves-20261022/runway-shape-reference.jpg"
+      ],
+      "prompt": "Use case: photorealistic-natural. Make ONE new full-body adult female Japanese summer costume game portrait. IMAGE 1 is a labeled roster of adult performers: use ONLY the specified labeled tile for facial identity, NOT any other tile. IMAGE 2 is the PRIMARY BODY PROPORTION TEMPLATE: He Sui adult runway photo. Match her tall lean elegant grown-adult skeleton: small head relative to full-size natural shoulders/ribcage/pelvis, long neck and torso, long lean legs and slim calves, approximately 8 head lengths standing-equivalent. Do not copy IMAGE 2 face, modern jacket, shoes or background. Do not make a large head with toy-sized torso. Rebuild anatomically coherent body for the requested pose, no digital stretching. Distant level 85mm full-body camera. Natural skin, individual recognizable eyes/nose/lips/jaw from the specified tile. Exactly two arms, five fingers per hand, two legs with coherent knees and ankles, two feet with natural toes and believable weight/contact. Fully clothed nonsexual fashion image, clearly adult age25+. Japanese breathable lightweight opaque summer clothing, delicate kanzashi, earrings, necklace, bangles, obi jewelry. NO socks. Entire subject, hair accessories, garments, prop/furniture and toes completely inside portrait 2:3 canvas with 6% clear margins. GENUINE transparent alpha, NO backdrop, floor, shadow, glow, gradient, text or watermark. IMAGE 1 selected tile: row 5, column 7, printed label \"古川いおり\", Iori Kogawa. Preserve this adult facial identity. Outfit and pose: side-sitting on a low plain stool with one long leg relaxed forward and other foot planted, holding a small woven basket with two wisteria flower stems; pale lavender short-sleeved summer kosode and cream opaque wrap skirt, bare feet.",
+      "faceReferencePolicy": "以用户截图中对应姓名的成年头像为面部参考，保留其年轻成年外观；不推断截图拍摄日期。",
+      "generatedPath": "/Users/fengheliang/.codex/generated_images/01a16615-cc42-7e81-aa4f-b849b888d820/exec-c36e928e-0acf-40b1-a499-8cec3c4dbc2b.png",
+      "finalPrompt": "Use case: photorealistic-natural. Make ONE new full-body adult female Japanese summer costume game portrait. IMAGE 1 is a labeled roster of adult performers: use ONLY the specified labeled tile for facial identity, NOT any other tile. IMAGE 2 is the PRIMARY BODY PROPORTION TEMPLATE: He Sui adult runway photo. Match her tall lean elegant grown-adult skeleton: small head relative to full-size natural shoulders/ribcage/pelvis, long neck and torso, long lean legs and slim calves, approximately 8 head lengths standing-equivalent. Do not copy IMAGE 2 face, modern jacket, shoes or background. Do not make a large head with toy-sized torso. Rebuild anatomically coherent body for the requested pose, no digital stretching. Distant level 85mm full-body camera. Natural skin, individual recognizable eyes/nose/lips/jaw from the specified tile. Exactly two arms, five fingers per hand, two legs with coherent knees and ankles, two feet with natural toes and believable weight/contact. Fully clothed nonsexual fashion image, clearly adult age25+. Japanese breathable lightweight opaque summer clothing, delicate kanzashi, earrings, necklace, bangles, obi jewelry. NO socks. Entire subject, hair accessories, garments, prop/furniture and toes completely inside portrait 2:3 canvas with 6% clear margins. GENUINE transparent alpha, NO backdrop, floor, shadow, glow, gradient, text or watermark. IMAGE 1 selected tile: row 5, column 7, printed label \"古川いおり\", Iori Kogawa. Preserve this adult facial identity. Outfit and pose: side-sitting on a low plain stool with one long leg relaxed forward and other foot planted, holding a small woven basket with two wisteria flower stems; pale lavender short-sleeved summer kosode and cream opaque wrap skirt, bare feet. COSTUME REVISION: entirely modest ordinary summer festival clothes, fully closed high wrap neckline, elbow-length sleeves, opaque calf-length skirt or loose ankle-length trousers. No cleavage, cutouts, slits, exposed abdomen, underwear, swimwear, sheer fabric or pinup posing. Calm cultural fashion catalogue photograph.",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentFraction": 0.6325,
+        "borderPixelsAbove20": 0
+      },
+      "assetSha256": "d93cf837559cafe1e89a288ebaba53aed3083ca9b389165abcfb010790557f95"
+    },
+    {
+      "id": "japan-screenshot-20261023-30",
+      "name": "新有菜",
+      "english": "Arina Arata / Arina Hashimoto",
+      "label": "橋本ありな",
+      "row": 1,
+      "column": 4,
+      "title": "灯夏漫步",
+      "asset": "assets/beauties/random/番邦女子/日本女子-新有菜-灯夏漫步.png",
+      "design": "natural walking step with long torso upright, one foot stepping forward and the other toe naturally touching ground, carrying a small unlit Japanese bamboo lantern by a rigid handle at one hip; pale turquoise sleeveless Japanese summer kosode wrap dress with opaque ivory lining, white obi, jade kanzashi, bare feet",
+      "refs": [
+        "/Users/fengheliang/workbench/source/g20/games/assets/beauties/references/japan-screenshot-20261023/user-roster.png",
+        "/Users/fengheliang/workbench/source/g20/games/assets/beauties/references/he-sui-calves-20261022/runway-shape-reference.jpg"
+      ],
+      "prompt": "Use case: photorealistic-natural. Make ONE new full-body adult female Japanese summer costume game portrait. IMAGE 1 is a labeled roster of adult performers: use ONLY the specified labeled tile for facial identity, NOT any other tile. IMAGE 2 is the PRIMARY BODY PROPORTION TEMPLATE: He Sui adult runway photo. Match her tall lean elegant grown-adult skeleton: small head relative to full-size natural shoulders/ribcage/pelvis, long neck and torso, long lean legs and slim calves, approximately 8 head lengths standing-equivalent. Do not copy IMAGE 2 face, modern jacket, shoes or background. Do not make a large head with toy-sized torso. Rebuild anatomically coherent body for the requested pose, no digital stretching. Distant level 85mm full-body camera. Natural skin, individual recognizable eyes/nose/lips/jaw from the specified tile. Exactly two arms, five fingers per hand, two legs with coherent knees and ankles, two feet with natural toes and believable weight/contact. Fully clothed nonsexual fashion image, clearly adult age25+. Japanese breathable lightweight opaque summer clothing, delicate kanzashi, earrings, necklace, bangles, obi jewelry. NO socks. Entire subject, hair accessories, garments, prop/furniture and toes completely inside portrait 2:3 canvas with 6% clear margins. GENUINE transparent alpha, NO backdrop, floor, shadow, glow, gradient, text or watermark. IMAGE 1 selected tile: row 1 column 4, printed label \"橋本ありな\"; this is adult Arina Hashimoto, also known as Arina Arata / 新有菜. Keep face identity consistent. Outfit and pose: natural walking step with long torso upright, one foot stepping forward and the other toe naturally touching ground, carrying a small unlit Japanese bamboo lantern by a rigid handle at one hip; pale turquoise sleeveless Japanese summer kosode wrap dress with opaque ivory lining, white obi, jade kanzashi, bare feet.",
+      "faceReferencePolicy": "以用户截图中对应姓名的成年头像为面部参考，保留其年轻成年外观；不推断截图拍摄日期。",
+      "generatedPath": "/Users/fengheliang/.codex/generated_images/01a16615-cc42-7e81-aa4f-b849b888d820/exec-41d6c622-0ac4-4326-b33d-5e224387b1ab.png",
+      "finalPrompt": "Use case: photorealistic-natural. Make ONE new full-body adult female Japanese summer costume game portrait. IMAGE 1 is a labeled roster of adult performers: use ONLY the specified labeled tile for facial identity, NOT any other tile. IMAGE 2 is the PRIMARY BODY PROPORTION TEMPLATE: He Sui adult runway photo. Match her tall lean elegant grown-adult skeleton: small head relative to full-size natural shoulders/ribcage/pelvis, long neck and torso, long lean legs and slim calves, approximately 8 head lengths standing-equivalent. Do not copy IMAGE 2 face, modern jacket, shoes or background. Do not make a large head with toy-sized torso. Rebuild anatomically coherent body for the requested pose, no digital stretching. Distant level 85mm full-body camera. Natural skin, individual recognizable eyes/nose/lips/jaw from the specified tile. Exactly two arms, five fingers per hand, two legs with coherent knees and ankles, two feet with natural toes and believable weight/contact. Fully clothed nonsexual fashion image, clearly adult age25+. Japanese breathable lightweight opaque summer clothing, delicate kanzashi, earrings, necklace, bangles, obi jewelry. NO socks. Entire subject, hair accessories, garments, prop/furniture and toes completely inside portrait 2:3 canvas with 6% clear margins. GENUINE transparent alpha, NO backdrop, floor, shadow, glow, gradient, text or watermark. IMAGE 1 selected tile: row 1 column 4, printed label \"橋本ありな\"; this is adult Arina Hashimoto, also known as Arina Arata / 新有菜. Keep face identity consistent. Outfit and pose: natural walking step with long torso upright, one foot stepping forward and the other toe naturally touching ground, carrying a small unlit Japanese bamboo lantern by a rigid handle at one hip; pale turquoise sleeveless Japanese summer kosode wrap dress with opaque ivory lining, white obi, jade kanzashi, bare feet. COSTUME REVISION: entirely modest ordinary summer festival clothes, fully closed high wrap neckline, elbow-length sleeves, opaque calf-length skirt or loose ankle-length trousers. No cleavage, cutouts, slits, exposed abdomen, underwear, swimwear, sheer fabric or pinup posing. Calm cultural fashion catalogue photograph.",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentFraction": 0.7391,
+        "borderPixelsAbove20": 0
+      },
+      "assetSha256": "19ab3f47c7e75fb372204ca8ce7eab9e8fcd2bc8826beecaa8fa1f07aae4e1d5"
+    },
+    {
+      "id": "japan-screenshot-20261023-31",
+      "name": "新有菜",
+      "english": "Arina Arata / Arina Hashimoto",
+      "label": "橋本ありな",
+      "row": 1,
+      "column": 4,
+      "title": "樱绡伞舞",
+      "asset": "assets/beauties/random/番邦女子/日本女子-新有菜-樱绡伞舞.png",
+      "design": "Japanese parasol dance stance, both feet grounded and one knee gently bent, a small open wagasa parasol held at shoulder level in one hand, other arm gracefully extended; blush pink short-sleeved light cotton summer yukata with ivory obi and pearl hair comb, bare feet",
+      "refs": [
+        "/Users/fengheliang/workbench/source/g20/games/assets/beauties/references/japan-screenshot-20261023/user-roster.png",
+        "/Users/fengheliang/workbench/source/g20/games/assets/beauties/references/he-sui-calves-20261022/runway-shape-reference.jpg"
+      ],
+      "prompt": "Use case: photorealistic-natural. Make ONE new full-body adult female Japanese summer costume game portrait. IMAGE 1 is a labeled roster of adult performers: use ONLY the specified labeled tile for facial identity, NOT any other tile. IMAGE 2 is the PRIMARY BODY PROPORTION TEMPLATE: He Sui adult runway photo. Match her tall lean elegant grown-adult skeleton: small head relative to full-size natural shoulders/ribcage/pelvis, long neck and torso, long lean legs and slim calves, approximately 8 head lengths standing-equivalent. Do not copy IMAGE 2 face, modern jacket, shoes or background. Do not make a large head with toy-sized torso. Rebuild anatomically coherent body for the requested pose, no digital stretching. Distant level 85mm full-body camera. Natural skin, individual recognizable eyes/nose/lips/jaw from the specified tile. Exactly two arms, five fingers per hand, two legs with coherent knees and ankles, two feet with natural toes and believable weight/contact. Fully clothed nonsexual fashion image, clearly adult age25+. Japanese breathable lightweight opaque summer clothing, delicate kanzashi, earrings, necklace, bangles, obi jewelry. NO socks. Entire subject, hair accessories, garments, prop/furniture and toes completely inside portrait 2:3 canvas with 6% clear margins. GENUINE transparent alpha, NO backdrop, floor, shadow, glow, gradient, text or watermark. IMAGE 1 selected tile: row 1 column 4, printed label \"橋本ありな\"; this is adult Arina Hashimoto, also known as Arina Arata / 新有菜. Keep face identity consistent. Outfit and pose: Japanese parasol dance stance, both feet grounded and one knee gently bent, a small open wagasa parasol held at shoulder level in one hand, other arm gracefully extended; blush pink short-sleeved light cotton summer yukata with ivory obi and pearl hair comb, bare feet.",
+      "faceReferencePolicy": "以用户截图中对应姓名的成年头像为面部参考，保留其年轻成年外观；不推断截图拍摄日期。",
+      "generatedPath": "/Users/fengheliang/.codex/generated_images/01a16615-cc42-7e81-aa4f-b849b888d820/exec-362c5292-fa9e-4e6b-ad49-cbeb3b6d10c2.png",
+      "finalPrompt": "Use case: photorealistic-natural. Make ONE new full-body adult female Japanese summer costume game portrait. IMAGE 1 is a labeled roster of adult performers: use ONLY the specified labeled tile for facial identity, NOT any other tile. IMAGE 2 is the PRIMARY BODY PROPORTION TEMPLATE: He Sui adult runway photo. Match her tall lean elegant grown-adult skeleton: small head relative to full-size natural shoulders/ribcage/pelvis, long neck and torso, long lean legs and slim calves, approximately 8 head lengths standing-equivalent. Do not copy IMAGE 2 face, modern jacket, shoes or background. Do not make a large head with toy-sized torso. Rebuild anatomically coherent body for the requested pose, no digital stretching. Distant level 85mm full-body camera. Natural skin, individual recognizable eyes/nose/lips/jaw from the specified tile. Exactly two arms, five fingers per hand, two legs with coherent knees and ankles, two feet with natural toes and believable weight/contact. Fully clothed nonsexual fashion image, clearly adult age25+. Japanese breathable lightweight opaque summer clothing, delicate kanzashi, earrings, necklace, bangles, obi jewelry. NO socks. Entire subject, hair accessories, garments, prop/furniture and toes completely inside portrait 2:3 canvas with 6% clear margins. GENUINE transparent alpha, NO backdrop, floor, shadow, glow, gradient, text or watermark. IMAGE 1 selected tile: row 1 column 4, printed label \"橋本ありな\"; this is adult Arina Hashimoto, also known as Arina Arata / 新有菜. Keep face identity consistent. Outfit and pose: Japanese parasol dance stance, both feet grounded and one knee gently bent, a small open wagasa parasol held at shoulder level in one hand, other arm gracefully extended; blush pink short-sleeved light cotton summer yukata with ivory obi and pearl hair comb, bare feet. COSTUME REVISION: entirely modest ordinary summer festival clothes, fully closed high wrap neckline, elbow-length sleeves, opaque calf-length skirt or loose ankle-length trousers. No cleavage, cutouts, slits, exposed abdomen, underwear, swimwear, sheer fabric or pinup posing. Calm cultural fashion catalogue photograph.",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentFraction": 0.7134,
+        "borderPixelsAbove20": 0
+      },
+      "assetSha256": "66986e992f21b12897c08b785158702f287259013b31ee301c4866710fedfbad",
+      "supersededGeneratedPath": "/Users/fengheliang/.codex/generated_images/01a16615-cc42-7e81-aa4f-b849b888d820/exec-f469a377-37c2-44a0-b169-d01c0389a5f5.png",
+      "compositionFixPrompt": "Edit only composition of this fully clothed adult Japanese summer fashion portrait. The TOP of the pink parasol is cropped. Show the COMPLETE circular parasol including all outer ribs and its entire rim. Preserve adult face identity, hairstyle, opaque modest costume, accessories, action and tall lean model body proportions. Zoom out by 25% and center the ENTIRE composition in the canvas with at least 10% clear margin on every side, keeping all hair ornaments, props, hands and bare feet fully inside frame. No enlarged head, no shrinking torso. True transparent alpha PNG. No background, floor, glow, shadow, gradient or text."
+    },
+    {
+      "id": "japan-screenshot-20261023-32",
+      "name": "新有菜",
+      "english": "Arina Arata / Arina Hashimoto",
+      "label": "橋本ありな",
+      "row": 1,
+      "column": 4,
+      "title": "浅金侧憩",
+      "asset": "assets/beauties/random/番邦女子/日本女子-新有菜-浅金侧憩.png",
+      "design": "seated sideways on a small low wooden bench, upright graceful long torso, one leg extended diagonally and other foot planted naturally with both feet visible, holding a folded gold fan in both hands resting near knee; apricot short-sleeved lightweight summer kosode and ivory opaque knee-length pleated hakama, gold kanzashi, bare feet",
+      "refs": [
+        "/Users/fengheliang/workbench/source/g20/games/assets/beauties/references/japan-screenshot-20261023/user-roster.png",
+        "/Users/fengheliang/workbench/source/g20/games/assets/beauties/references/he-sui-calves-20261022/runway-shape-reference.jpg"
+      ],
+      "prompt": "Use case: photorealistic-natural. Make ONE new full-body adult female Japanese summer costume game portrait. IMAGE 1 is a labeled roster of adult performers: use ONLY the specified labeled tile for facial identity, NOT any other tile. IMAGE 2 is the PRIMARY BODY PROPORTION TEMPLATE: He Sui adult runway photo. Match her tall lean elegant grown-adult skeleton: small head relative to full-size natural shoulders/ribcage/pelvis, long neck and torso, long lean legs and slim calves, approximately 8 head lengths standing-equivalent. Do not copy IMAGE 2 face, modern jacket, shoes or background. Do not make a large head with toy-sized torso. Rebuild anatomically coherent body for the requested pose, no digital stretching. Distant level 85mm full-body camera. Natural skin, individual recognizable eyes/nose/lips/jaw from the specified tile. Exactly two arms, five fingers per hand, two legs with coherent knees and ankles, two feet with natural toes and believable weight/contact. Fully clothed nonsexual fashion image, clearly adult age25+. Japanese breathable lightweight opaque summer clothing, delicate kanzashi, earrings, necklace, bangles, obi jewelry. NO socks. Entire subject, hair accessories, garments, prop/furniture and toes completely inside portrait 2:3 canvas with 6% clear margins. GENUINE transparent alpha, NO backdrop, floor, shadow, glow, gradient, text or watermark. IMAGE 1 selected tile: row 1 column 4, printed label \"橋本ありな\"; this is adult Arina Hashimoto, also known as Arina Arata / 新有菜. Keep face identity consistent. Outfit and pose: seated sideways on a small low wooden bench, upright graceful long torso, one leg extended diagonally and other foot planted naturally with both feet visible, holding a folded gold fan in both hands resting near knee; apricot short-sleeved lightweight summer kosode and ivory opaque knee-length pleated hakama, gold kanzashi, bare feet.",
+      "faceReferencePolicy": "以用户截图中对应姓名的成年头像为面部参考，保留其年轻成年外观；不推断截图拍摄日期。",
+      "generatedPath": "/Users/fengheliang/.codex/generated_images/01a16615-cc42-7e81-aa4f-b849b888d820/exec-a1f20e2c-e80f-4585-be2e-0620399ae83f.png",
+      "finalPrompt": "Use case: photorealistic-natural. Make ONE new full-body adult female Japanese summer costume game portrait. IMAGE 1 is a labeled roster of adult performers: use ONLY the specified labeled tile for facial identity, NOT any other tile. IMAGE 2 is the PRIMARY BODY PROPORTION TEMPLATE: He Sui adult runway photo. Match her tall lean elegant grown-adult skeleton: small head relative to full-size natural shoulders/ribcage/pelvis, long neck and torso, long lean legs and slim calves, approximately 8 head lengths standing-equivalent. Do not copy IMAGE 2 face, modern jacket, shoes or background. Do not make a large head with toy-sized torso. Rebuild anatomically coherent body for the requested pose, no digital stretching. Distant level 85mm full-body camera. Natural skin, individual recognizable eyes/nose/lips/jaw from the specified tile. Exactly two arms, five fingers per hand, two legs with coherent knees and ankles, two feet with natural toes and believable weight/contact. Fully clothed nonsexual fashion image, clearly adult age25+. Japanese breathable lightweight opaque summer clothing, delicate kanzashi, earrings, necklace, bangles, obi jewelry. NO socks. Entire subject, hair accessories, garments, prop/furniture and toes completely inside portrait 2:3 canvas with 6% clear margins. GENUINE transparent alpha, NO backdrop, floor, shadow, glow, gradient, text or watermark. IMAGE 1 selected tile: row 1 column 4, printed label \"橋本ありな\"; this is adult Arina Hashimoto, also known as Arina Arata / 新有菜. Keep face identity consistent. Outfit and pose: seated sideways on a small low wooden bench, upright graceful long torso, one leg extended diagonally and other foot planted naturally with both feet visible, holding a folded gold fan in both hands resting near knee; apricot short-sleeved lightweight summer kosode and ivory opaque knee-length pleated hakama, gold kanzashi, bare feet. COSTUME REVISION: entirely modest ordinary summer festival clothes, fully closed high wrap neckline, elbow-length sleeves, opaque calf-length skirt or loose ankle-length trousers. No cleavage, cutouts, slits, exposed abdomen, underwear, swimwear, sheer fabric or pinup posing. Calm cultural fashion catalogue photograph.",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentFraction": 0.6244,
+        "borderPixelsAbove20": 0
+      },
+      "assetSha256": "0f3eb2987200a3bc48553c0701025d17b993efdc49ed5eb68007ec423e19f628"
+    }
+  ],
+  "roster": [
+    {
+      "label": "三上悠亜",
+      "identity": "三上悠亚",
+      "row": 1,
+      "column": 1,
+      "status": "already-in-pool",
+      "reason": "人物已入池"
+    },
+    {
+      "label": "深田えいみ",
+      "identity": "深田咏美",
+      "row": 1,
+      "column": 2,
+      "status": "already-in-pool",
+      "reason": "人物已入池"
+    },
+    {
+      "label": "篠田ゆう",
+      "identity": "篠田优",
+      "row": 1,
+      "column": 3,
+      "status": "new"
+    },
+    {
+      "label": "橋本ありな",
+      "identity": "桥本有菜",
+      "row": 1,
+      "column": 4,
+      "status": "already-in-pool",
+      "reason": "新有菜曾用名，另按用户要求增加3套造型"
+    },
+    {
+      "label": "桃乃木かな",
+      "identity": "桃乃木香奈",
+      "row": 1,
+      "column": 5,
+      "status": "already-in-pool",
+      "reason": "人物已入池"
+    },
+    {
+      "label": "明里つむぎ",
+      "identity": "明里紬",
+      "row": 1,
+      "column": 6,
+      "status": "already-in-pool",
+      "reason": "人物已入池"
+    },
+    {
+      "label": "葵つかさ",
+      "identity": "葵司",
+      "row": 1,
+      "column": 7,
+      "status": "already-in-pool",
+      "reason": "人物已入池"
+    },
+    {
+      "label": "相沢みなみ",
+      "identity": "相泽南",
+      "row": 1,
+      "column": 8,
+      "status": "already-in-pool",
+      "reason": "人物已入池"
+    },
+    {
+      "label": "波多野結衣",
+      "identity": "波多野结衣",
+      "row": 1,
+      "column": 9,
+      "status": "already-in-pool",
+      "reason": "人物已入池"
+    },
+    {
+      "label": "JULIA",
+      "identity": "JULIA",
+      "row": 1,
+      "column": 10,
+      "status": "already-in-pool",
+      "reason": "人物已入池"
+    },
+    {
+      "label": "桜空もも",
+      "identity": "樱空桃",
+      "row": 1,
+      "column": 11,
+      "status": "already-in-pool",
+      "reason": "人物已入池"
+    },
+    {
+      "label": "水卜さくら",
+      "identity": "水卜樱",
+      "row": 2,
+      "column": 1,
+      "status": "new"
+    },
+    {
+      "label": "天使もえ",
+      "identity": "天使萌",
+      "row": 2,
+      "column": 2,
+      "status": "already-in-pool",
+      "reason": "人物已入池"
+    },
+    {
+      "label": "君島みお",
+      "identity": "君岛美绪",
+      "row": 2,
+      "column": 3,
+      "status": "new"
+    },
+    {
+      "label": "園田みおん",
+      "identity": "园田美樱",
+      "row": 2,
+      "column": 4,
+      "status": "new"
+    },
+    {
+      "label": "佐々木あき",
+      "identity": "佐佐木明希",
+      "row": 2,
+      "column": 5,
+      "status": "new"
+    },
+    {
+      "label": "高橋しょう子",
+      "identity": "高桥圣子",
+      "row": 2,
+      "column": 6,
+      "status": "already-in-pool",
+      "reason": "人物已入池"
+    },
+    {
+      "label": "有坂深雪",
+      "identity": "有坂深雪",
+      "row": 2,
+      "column": 7,
+      "status": "new"
+    },
+    {
+      "label": "岬ななみ",
+      "identity": "岬奈奈美",
+      "row": 2,
+      "column": 8,
+      "status": "new"
+    },
+    {
+      "label": "水野朝陽",
+      "identity": "水野朝阳",
+      "row": 2,
+      "column": 9,
+      "status": "new"
+    },
+    {
+      "label": "夢乃あいか",
+      "identity": "梦乃爱华",
+      "row": 2,
+      "column": 10,
+      "status": "new"
+    },
+    {
+      "label": "楓カレン",
+      "identity": "枫可怜",
+      "row": 2,
+      "column": 11,
+      "status": "already-in-pool",
+      "reason": "人物已入池"
+    },
+    {
+      "label": "蓮実クレア",
+      "identity": "莲实克蕾儿",
+      "row": 3,
+      "column": 1,
+      "status": "new"
+    },
+    {
+      "label": "愛音まりあ",
+      "identity": "爱音麻里亚",
+      "row": 3,
+      "column": 2,
+      "status": "new"
+    },
+    {
+      "label": "山岸逢花",
+      "identity": "山岸逢花",
+      "row": 3,
+      "column": 3,
+      "status": "already-in-pool",
+      "reason": "人物已入池"
+    },
+    {
+      "label": "凛音とうか",
+      "identity": "凛音桃花",
+      "row": 3,
+      "column": 4,
+      "status": "new"
+    },
+    {
+      "label": "鈴村あいり",
+      "identity": "铃村爱里",
+      "row": 3,
+      "column": 5,
+      "status": "new"
+    },
+    {
+      "label": "美谷朱里",
+      "identity": "美谷朱里",
+      "row": 3,
+      "column": 6,
+      "status": "already-in-pool",
+      "reason": "人物已入池"
+    },
+    {
+      "label": "あやみ旬果",
+      "identity": "彩美旬果",
+      "row": 3,
+      "column": 7,
+      "status": "new"
+    },
+    {
+      "label": "永瀬ゆい",
+      "identity": "永濑唯",
+      "row": 3,
+      "column": 8,
+      "status": "new"
+    },
+    {
+      "label": "松下紗栄子",
+      "identity": "松下纱荣子",
+      "row": 3,
+      "column": 9,
+      "status": "already-in-pool",
+      "reason": "人物已入池"
+    },
+    {
+      "label": "里美ゆりあ",
+      "identity": "里美尤利娅",
+      "row": 3,
+      "column": 10,
+      "status": "new"
+    },
+    {
+      "label": "明日花キララ",
+      "identity": "明日花绮罗",
+      "row": 3,
+      "column": 11,
+      "status": "already-in-pool",
+      "reason": "人物已入池"
+    },
+    {
+      "label": "涼森れむ",
+      "identity": "凉森玲梦",
+      "row": 4,
+      "column": 1,
+      "status": "already-in-pool",
+      "reason": "人物已入池"
+    },
+    {
+      "label": "森沢かな（飯岡かなこ）",
+      "identity": "森泽佳奈",
+      "row": 4,
+      "column": 2,
+      "status": "new"
+    },
+    {
+      "label": "希島あいり",
+      "identity": "希岛爱理",
+      "row": 4,
+      "column": 3,
+      "status": "already-in-pool",
+      "reason": "人物已入池"
+    },
+    {
+      "label": "RION",
+      "identity": "安斋拉拉",
+      "row": 4,
+      "column": 4,
+      "status": "already-in-pool",
+      "reason": "安斋拉拉曾用名"
+    },
+    {
+      "label": "葵",
+      "identity": "葵",
+      "row": 4,
+      "column": 5,
+      "status": "new"
+    },
+    {
+      "label": "星奈あい",
+      "identity": "星奈爱",
+      "row": 4,
+      "column": 6,
+      "status": "new"
+    },
+    {
+      "label": "神宮寺ナオ",
+      "identity": "神宫寺奈绪",
+      "row": 4,
+      "column": 7,
+      "status": "already-in-pool",
+      "reason": "人物已入池"
+    },
+    {
+      "label": "小島みなみ",
+      "identity": "小岛南",
+      "row": 4,
+      "column": 8,
+      "status": "new"
+    },
+    {
+      "label": "浜崎真緒",
+      "identity": "滨崎真绪",
+      "row": 4,
+      "column": 9,
+      "status": "new"
+    },
+    {
+      "label": "椎名そら",
+      "identity": "椎名空",
+      "row": 4,
+      "column": 10,
+      "status": "new"
+    },
+    {
+      "label": "鈴木心春",
+      "identity": "铃木心春",
+      "row": 4,
+      "column": 11,
+      "status": "new"
+    },
+    {
+      "label": "天海つばさ",
+      "identity": "天海翼",
+      "row": 5,
+      "column": 1,
+      "status": "new"
+    },
+    {
+      "label": "奥田咲",
+      "identity": "奥田咲",
+      "row": 5,
+      "column": 3,
+      "status": "new"
+    },
+    {
+      "label": "坂道みる",
+      "identity": "坂道美琉",
+      "row": 5,
+      "column": 4,
+      "status": "new"
+    },
+    {
+      "label": "佐山愛",
+      "identity": "佐山爱",
+      "row": 5,
+      "column": 5,
+      "status": "new"
+    },
+    {
+      "label": "希崎ジェシカ",
+      "identity": "希崎杰西卡",
+      "row": 5,
+      "column": 6,
+      "status": "new"
+    },
+    {
+      "label": "古川いおり",
+      "identity": "古川伊织",
+      "row": 5,
+      "column": 7,
+      "status": "new"
+    }
+  ],
+  "counts": {
+    "screenshotIdentities": 50,
+    "alreadyInPool": 21,
+    "newIdentities": 29,
+    "arinaVariants": 3,
+    "newAssets": 32,
+    "previousBatchBodyRework": 13
+  },
+  "identityNotes": {
+    "葵": "小野夕子曾用名，1994年生，与葵司不同；https://zh.wikipedia.org/wiki/小野夕子",
+    "RION": "安斋拉拉曾用名，本次跳过",
+    "新有菜": "桥本有菜新艺名，按用户要求额外3套",
+    "森沢かな": "飯岡かなこ曾用名，同一人"
+  },
+  "olderAdultProfiles": {
+    "佐佐木明希": {
+      "birthYear": 1979,
+      "reference": "截图第二排第5位成年肖像，生成约30岁的成年外观",
+      "profileSource": "https://xcity.jp/enta/idol/detail/8152/"
+    },
+    "里美尤利娅": {
+      "birthYear": 1984,
+      "profileSource": "https://beauty.beaute.tokyo.jp/archives/model-cat/yuriasatomi",
+      "reference": "截图第三排第10位成年肖像，生成约30岁的成年外观"
+    }
+  },
+  "completed": 32,
+  "verification": {
+    "relatedTestsPassed": 23,
+    "alphaAndBorderChecksPassed": 32,
+    "nativeCanvasDecoded": 195,
+    "realHaremRosterPassed": 94,
+    "thisBatchRenderedInRoster": 32,
+    "desktopResults": "outputs/japan-screenshot-complete-20261023/desktop/results.json"
+  },
+  "visualReview": "已检查浅色/深色换底总览、手脚局部、自然肩颈躯干与腿部比例及实际游戏截图；无袜；对手部及伞顶裁切重新生成修正，45张均为真实RGBA透明背景。"
+}

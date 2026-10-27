@@ -1,0 +1,7 @@
+.card-battle-dialog .cb-hand [data-card],.card-battle-dialog .cb-row.home [data-card],.card-battle-dialog [data-power]{touch-action:none;-webkit-user-drag:none;user-select:none}
+.card-battle-dialog .cb-drag-preview{position:absolute;z-index:1000;pointer-events:none;opacity:.8;filter:drop-shadow(0 5px 8px #0009);transform:scale(.72);transform-origin:top left;overflow:hidden}
+.card-battle-dialog .cb-drag-preview *{pointer-events:none!important;animation:none!important}
+.card-battle-dialog .cb-drag-preview>.cb-card{width:100%!important;height:100%!important;margin:0!important;transform:none!important}
+.card-battle-dialog .cb-drop-zone{outline:2px dashed #c3df9d;outline-offset:-4px;background:#89b76c12}
+.card-battle-dialog .cb-drag-over{outline:3px solid #e4c777!important;outline-offset:2px;filter:brightness(1.12)}
+.card-battle-dialog[data-dragging] .cb-inspect{display:none}

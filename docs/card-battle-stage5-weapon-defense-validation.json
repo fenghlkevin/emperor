@@ -1,0 +1,157 @@
+{
+  "date": "2026-10-23T03:41:56.108837+00:00",
+  "scope": "Multi-source defense weapon configuration, real central/local/allied stock, native preview/seal/retreat, source-specific one-time settlement.",
+  "rulesVersion": 4,
+  "weaponAllocationVersion": 1,
+  "weaponCatalogVersion": 1,
+  "weaponAiVersion": 1,
+  "changeVersionNote": "Existing rule4, two weapon definitions and AI values unchanged. New defense composition now uses the same allocation1 real-spare-kit algorithm as campaign. No inherited balance conclusion.",
+  "sourceSha256": {
+    "src/kit-defense.mjs": "3210a8842832b37afc8a371d2f9f41d8a077e2dc7ee3ec4a5b2a511364daa967",
+    "src/kit-war.mjs": "668df2ac484874137e272c66e59e91598133136ad1fc45c9e9ac2b5221cc4801",
+    "src/kit-defense-ui.mjs": "551ea831a0070cc175a122af2037ad256e106196bbefe4bd7d6b776e48568f1c",
+    "src/court-defense-ui.mjs": "4d7da372c005a31d6ec3d2e47983773e01b99c2439966b5a66075dc2b52ebf8a",
+    "src/court-defense.css": "75225cecc0bc3f2063ccf2254f8683c54fcb2007b45f5ae877f5efb172ef434a",
+    "src/card-battle-weapon-draft-ui.mjs": "6b30234b8ae449a457b3de356142df246b2b6f3d11cfa339671d4420885063d2",
+    "src/card-battle-plan-data.mjs": "c66e56e801b1712b177a50664c4aee87e75c7d52adbeb7b4f3829260b8819d99",
+    "src/card-battle-plans.mjs": "0afd5e9fb19de64bcd0a06fdea9c62a68c6f3a4b9f6a2cb202ed9a6a92f8130b",
+    "src/game-types.d.ts": "1529a7575a1e6c9b1bbf550ff25f1b3c8c147890e35e692ba639e14b3dd3faf4",
+    "scripts/validate-data-contract.mjs": "35c7dc4d46eb22c7e21e6b68f89646cbbfc33eab838ac9397d7c277076f8a751",
+    "tests/card-battle-defense-weapons.test.mjs": "3a766cdb95c961645434e4c33ac3e6536f939670bc70e4afe9704c8beb457877",
+    "tests/card-battle-defense-weapons-desktop.cjs": "7d2f6c2d9d299e33e8b86d6fae5dd75a3ceb3bb1795a6dab52e6ba42b38430db",
+    "package.json": "8285a96ed8ea4e7169c23732adb662e5fb8c40d4708bc1c4438d615b8552d33a",
+    "src/card-battle.mjs": "28ab64e4d9e4cc67b53f881e612ced076eaf330d711af466b52e4334174de7b8",
+    "src/card-battle-weapons.mjs": "0bcb4e0714d26975a5b4135af8042de6677ba2c2f205d3260203ab8518b45466"
+  },
+  "defenseNative": {
+    "date": "2026-10-23T03:38:33.115Z",
+    "elapsedSeconds": 14.934,
+    "checks": [
+      "hebei weapon draft names the actual commander depot without reserving it",
+      "hebei applying weapon draft preserves all real resources",
+      "hebei tactic budget can be previewed alongside actual allied army and weapons",
+      "hebei review quotes two spare kits and no extra soldiers",
+      "1440px keeps seal visible and natively reachable with weapon controls",
+      "1000px keeps seal visible and natively reachable with weapon controls",
+      "800px keeps seal visible and natively reachable with weapon controls",
+      "hebei full deck contains both actual spare-kit weapon cards",
+      "hebei native seal allocates each spare kit once at its own depot",
+      "hebei real retreat settles and releases the defense",
+      "central weapon draft names the actual commander depot without reserving it",
+      "central applying weapon draft preserves all real resources",
+      "central tactic budget can be previewed alongside actual allied army and weapons",
+      "central review quotes two spare kits and no extra soldiers",
+      "central full deck contains both actual spare-kit weapon cards",
+      "central native seal allocates each spare kit once at its own depot",
+      "central real retreat settles and releases the defense",
+      "tubo-core weapon draft names the actual commander depot without reserving it",
+      "tubo-core applying weapon draft preserves all real resources",
+      "tubo-core tactic budget can be previewed alongside actual allied army and weapons",
+      "tubo-core review quotes two spare kits and no extra soldiers",
+      "tubo-core full deck contains both actual spare-kit weapon cards",
+      "tubo-core native seal allocates each spare kit once at its own depot",
+      "tubo-core real retreat settles and releases the defense",
+      "missing local spare gear cannot borrow abundant central kits or charge the world",
+      "cancelling shortage draft commits nothing",
+      "backup defense entry opens one shared source-aware weapon draft"
+    ],
+    "errors": [],
+    "scope": "Native Apply/Review/Seal and cancel; select/input events configure real draft. Hidden isolated world, no forced combat draws and no save-recovery acceptance."
+  },
+  "campaignNativeRegression": {
+    "date": "2026-10-23T03:36:17.904Z",
+    "elapsedSeconds": 16.632,
+    "checks": [
+      "weapon hand cards have their own steel/gold SVG, true attack/durability and 5:7 geometry",
+      "equipment is committed once but its slot waits for the visible landing boundary",
+      "native weapon click equips into a separate fixed slot with exact formal state",
+      "equipment details identify actual spare kit source without inventing soldiers",
+      "native hero selection highlights the actual guard and blocks the enemy hero",
+      "hero attack preview explains real retaliation before choosing the target",
+      "hero windup preserves pre-contact life and durability",
+      "contact reveals damage, retaliation and one durability together",
+      "native hero attack equals formal damage, real casualties, identity and one record",
+      "replacement consumes its real kit and never refreshes the used hero attack",
+      "weapon dropped on a troop slot cancels without a card or mana use",
+      "native weapon drag onto own equipment slot uses the same formal play",
+      "Escape cancels a hero drag without spending attack, durability or closing the battle",
+      "guard-blocked hero drag leaves all combat and resource state unchanged",
+      "dragging the hero banner to a guard performs one legal formal weapon attack",
+      "1440px keeps equipment 5:7, natively reachable and outside unchanged hero/power click rectangles",
+      "1000px keeps equipment 5:7, natively reachable and outside unchanged hero/power click rectangles",
+      "800px keeps equipment 5:7, natively reachable and outside unchanged hero/power click rectangles",
+      "complete deck weapon filter retains both physical sources, attack/durability and thirty-card composition",
+      "campaign exposes a real spare-equipment draft before any charge or reservation",
+      "applying two weapon cards changes only the draft and updates the shared card budget",
+      "tactics draft reserves ten spells beside eighteen army cards and two weapons",
+      "campaign review quotes actual extra kits before the seal",
+      "pre-seal full deck matches the selected weapon copies",
+      "native seal starts a real weapon battle and reserves each spare kit once",
+      "backup military office opens exactly one weapon draft with the same real stock boundary"
+    ],
+    "errors": [],
+    "fixture": "Explicit isolated opening and guard for UI timing; all moves use formal advanceWar. Configuration input events followed by native Apply/Review/Seal; battle clicks and drags are native Chromium events."
+  },
+  "newModels": {
+    "command": "CARD_DEFENSE_WEAPON_EVIDENCE=/private/tmp/card-defense-weapons-seeds.json node --test tests/card-battle-defense-weapons.test.mjs",
+    "passed": 9,
+    "failed": 0,
+    "durationSeconds": 4.225379083,
+    "log": "/private/tmp/card-weapon-defense-model-final.log"
+  },
+  "relatedRegression": {
+    "command": "node --test tests/card-battle-defense-weapons.test.mjs tests/card-battle-plans.test.mjs tests/card-battle-deck.test.mjs",
+    "passed": 19,
+    "failed": 0,
+    "durationSeconds": 4.552108333
+  },
+  "initialRelatedRegression": {
+    "command": "node --test tests/kit-defense.test.mjs tests/card-battle-weapons.test.mjs tests/card-battle-weapon-ledger.test.mjs",
+    "passed": 32,
+    "failed": 0,
+    "durationSeconds": 5.497542417
+  },
+  "fullRegression": {
+    "command": "npm test",
+    "passed": 925,
+    "failed": 0,
+    "durationSeconds": 64.46219675,
+    "runtimeSnapshots": 40,
+    "negativeTypeChecks": "passed",
+    "log": "/private/tmp/card-weapon-defense-full.log",
+    "timing": "After core implementation and model corrections; later changes only desktop visual layout/labels, test evidence output/title and npm alias. Final desktop rerun covers final visual changes; no duplicate full run."
+  },
+  "seedFunctionalSmoke": "docs/card-battle-stage5-weapon-defense-smoke.json",
+  "screenshots": [
+    "docs/screenshots/card-battle-defense-weapons-1440.png",
+    "docs/screenshots/card-battle-defense-weapons-1000.png",
+    "docs/screenshots/card-battle-defense-weapons-800.png"
+  ],
+  "manualVisualReview": "1440/1000/800 checked; fixed low-contrast configuration text and stacked controls; spare-kit summary visible above scrollable deployment details and seal stays reachable.",
+  "corrections": [
+    "Initial null-vs-undefined model fixture assertion corrected.",
+    "Enemy tamper test initially wrote its already-empty selection; changed to an actually different two-blade allocation.",
+    "Initial desktop fixture selected37 where the real dropdown offers50; changed to actual50-person UI choice. Model37-person remnant checks retained.",
+    "Screenshot review led to three-column controls, explicit secondary status lines, brown text and moving source/kit summary before force details."
+  ],
+  "wallClock": {
+    "start": "2026-10-23T03:27:23.728000+00:00",
+    "end": "2026-10-23T03:41:56.108837+00:00",
+    "seconds": 872.4
+  },
+  "constraints": {
+    "hiddenIsolatedDesktop": true,
+    "desktopSerial": true,
+    "visibleProcessesStopped": false,
+    "subagentsUsed": false,
+    "originalRepositoryModified": false,
+    "newAudio": false,
+    "newSaveCompatibilityOrRecoveryAcceptance": false
+  },
+  "remaining": [
+    "Weapon-specific teaching and combination/boundary acceptance, then secrets and locations.",
+    "Hero replacement proposal only, implementation optional.",
+    "Stage6 mandatory content remains.",
+    "Final stage1 independent-seed47–53% per-group balance and20 games plus1h foreground;17 historical failing groups retained."
+  ]
+}

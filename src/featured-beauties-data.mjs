@@ -306,7 +306,7 @@ export const FEATURED_BEAUTY_DATA=[
     "era": "《聊斋志异》文学形象；成年改编",
     "kind": "文学人物",
     "specialty": "诗书",
-    "portraitAsset": "assets/beauties/featured/nie-xiaoqian-v4.png",
+    "portraitAsset": "assets/beauties/featured/nie-xiaoqian-v7.png",
     "age": 18,
     "appearance": 97,
     "ability": 76,

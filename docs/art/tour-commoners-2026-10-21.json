@@ -1,0 +1,49 @@
+{
+  "date": "2026-10-21",
+  "generator": "built-in image_gen",
+  "references": [
+    "outputs/tour-beauty-preview/tour-beauty-ui-v1.png",
+    "assets/beauties/special/sketch-beauty-xia-yuhe-transparent-v6.png"
+  ],
+  "portraits": [
+    {
+      "character": "帆帆",
+      "asset": "assets/beauties/special/fanfan-v1.png",
+      "prompt": "ONE separate game character portrait PNG, genuine transparent background, full-length head to toes, portrait 2:3. Upper-panel woman 帆帆 in the approved UI is identity and wardrobe reference; Xia Yuhe is art style, body scale and cutout format reference only. Adult woman with dark hair and airy wispy bangs, peach apricot embroidered hanfu with jade green loose outer robe, delicate gold hair ornaments, small round silk fan at waist. Happy warm natural smile, directly looking at viewer, both eyes visible, frontal face. Fine ink lines, refined opaque watercolor/gouache, detailed painted silk, natural anatomy. Complete long skirt hem and embroidered shoes visible, centered with margin. No scene, glow, UI, text, name labels, borders or watermark."
+    },
+    {
+      "character": "邵雨琪",
+      "asset": "assets/beauties/special/shao-yuqi-v1.png",
+      "prompt": "ONE separate game character portrait PNG, genuine transparent background, full-length head to toes, portrait 2:3. Lower-panel blue-dressed adult woman in approved UI is identity reference; Xia Yuhe is art style, body scale and cutout reference only. Tall athletic adult Chinese woman, dark long hair half gathered with blue ribbon and traditional hairpin, muted blue and ivory ancient hanfu, long sleeves covering shoulders and arms, embroidered sash, floor length ivory blue skirt and embroidered shoes. Face front-facing, both eyes and both cheeks visible, central nose, no profile or face obstruction. Happy warm cheerful smile and friendly bright eyes. Folded silk fan at waist. Fine ink linework and opaque watercolor/gouache, detailed painted silk and natural human faces and anatomy. Complete hem and shoes visible, margin around silhouette. No scene, glow, fog, UI, text, borders or watermark."
+    }
+  ],
+  "rules": {
+    "chancePerCharacterPerTour": 0.01,
+    "oncePerGame": true,
+    "refusalAlsoMarksSeen": true,
+    "admission": "immediate",
+    "effects": {
+      "localLoyalty": -8,
+      "prestige": -3,
+      "emperorHappiness": 10
+    }
+  },
+  "verification": [
+    "32 tour/travel tests passed",
+    "38 runtime data-contract snapshots and negative type checks passed",
+    "Electron: both encounters, admission, return, reload, harem portraits and 700px layout passed"
+  ],
+  "note": "Happy palace portraits and serious encounter variants are separate assets. Event UI uses close framing, pale parchment grain, gold ornamental borders and red main choice, matching the initial approved composition; no rarity badge.",
+  "encounterRevision": {
+    "generator": "built-in image_gen",
+    "assets": [
+      "assets/beauties/special/fanfan-encounter-v1.png",
+      "assets/beauties/special/shao-yuqi-encounter-v1.png"
+    ],
+    "prompts": [
+      "Edit Fanfan full-body transparent portrait. Preserve adult identity, hairstyle, peach jade hanfu, fan, full-body framing and painted silk art style. Wary uneasy expression, lips closed with no smile, eyebrows gently drawn together, eyes glancing sideways, slightly tense shoulders, fan close to chest. Serious apprehension, no exaggerated crying, both eyes visible. No guards, restraint, violence, sexual content, text, UI or scene. Genuine transparent PNG.",
+      "Edit Shao Yuqi full-body transparent portrait. Preserve adult identity, hairstyle, blue ivory hanfu, fan, full-body framing and painted silk art style. Guarded unhappy expression, closed lips with no smile, slightly furrowed eyebrows, determined wary gaze, tense shoulders, hands holding folded fan protectively at waist. Front-facing or slight turn with both eyes and cheeks fully visible, never profile. No guards, restraint, violence, sexual content, text, UI or scene. Genuine transparent PNG."
+    ],
+    "displayRules": "Travel encounter and immediate abduction result use serious variant. Palace roster and companion views use the happy full-face original. Pending reload retains serious variant."
+  }
+}

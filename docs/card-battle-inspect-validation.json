@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-26T14:22:14.777Z",
+  "checks": [
+    "new battle shows manpower, training, officers, commander and rounding sources",
+    "expanded calculation stays readable within the details panel",
+    "negative inspection has actual card art, combat values and separate freeze/silence icons",
+    "mixed inspection keeps every real state, expiry and army provenance",
+    "title and source stay in their own columns without inherited dialog header/footer overlap",
+    "pointer can enter the panel and open the exact stat calculation",
+    "Escape dismisses details and keeps battle open",
+    "1440px panel stays inside battle beside the card without horizontal text overflow",
+    "1000px panel stays inside battle beside the card without horizontal text overflow",
+    "800px panel stays inside battle beside the card without horizontal text overflow",
+    "inspection and disclosure controls never change battle state",
+    "close control dismisses card details",
+    "full status combination remains individually visible and scrollable within the bounded panel",
+    "weapon details retain their real illustration and source without changing state",
+    "secret details retain their real illustration and source without changing state",
+    "landmark details retain their real illustration and source without changing state"
+  ],
+  "errors": []
+}

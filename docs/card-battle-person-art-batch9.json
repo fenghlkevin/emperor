@@ -1,0 +1,1110 @@
+{
+  "scope": "74 centrally integrated assets; all100 identity card/deployment desktop checks passed, exclusive performances still pending",
+  "assets": [
+    {
+      "id": "general-298-58873",
+      "path": "assets/battle/people/general-298-58873-battle-v1.png",
+      "origin": "/Users/fengheliang/.codex/generated_images/01a16381-85b9-71f1-8014-3769188dd4cf/exec-6f39bd6f-d65e-4a61-87e3-29815caddcc9.png",
+      "prompt": "Identity-preserving game art. One fullbleed vertical5:7 warm painterly historical battle-card illustration matching image2 Zhang Fei card. Preserve image1 Tao Kan's mature face, short dark mustache, gray side hair, small topknot crown, dark blue lamellar armor and blue cape. Waist-up commanding close view, large head upper third, complete crown visible, holding unlettered bamboo record low. Golden sunlight, organized military camp, timber storehouse and distant ranks with plain blue standards. No magic, lettering, UI/frame, studio backdrop, watermark. Keep original identity and clothing, game illustration not archaeological reconstruction.",
+      "sha256": "fc90370b8e001f969daf1b08547cd68494c248fe5f947a6ef04a56e93705b754",
+      "dimensions": [
+        1060,
+        1484
+      ],
+      "status": "integrated-card-ui-validated"
+    },
+    {
+      "id": "manual-1582",
+      "path": "assets/battle/people/manual-1582-battle-v1.png",
+      "origin": "/Users/fengheliang/.codex/generated_images/01a16381-85b9-71f1-8014-3769188dd4cf/exec-ae6fe2f7-7d99-4210-a1d4-716341d01883.png",
+      "prompt": "Identity-preserving game illustration. One vertical5:7 fullbleed historical battle-card art matching image2 Zhang Fei's warm painterly battlefield. Preserve image1 Li Jing's mature recognizable face, narrow gray beard and mustache, bronze-black armor, green cape, ornate bronze helmet with white plume. Waist-up close composition, large head upper third with whole helmet in frame; rolled unlettered military map low, sword sheathed. Golden morning light, distant ordered mounted ranks and plain green standards, frontier hills and field camp. No lettering, UI/frame, logo/watermark, magic, fullbody tiny catalog figure or studio backdrop. Game illustration, not archaeological reconstruction.",
+      "sha256": "de673df981d006854c1c7a99cc40d53a79bd71ed286fe22654c2a2c7ba660539",
+      "dimensions": [
+        1060,
+        1484
+      ],
+      "status": "integrated-card-ui-validated"
+    },
+    {
+      "id": "original-4",
+      "name": "张巡",
+      "role": "武将",
+      "art": "assets/officials/historical/original-4/full.png",
+      "prompt": "Identity-preserving single character game art for 张巡, exact existing ID original-4. One vertical5:7 fullbleed warm painterly battlefield card illustration matching image2 Zhang Fei style. Preserve image1 exact recognizable face, age, hair/beard, headwear, garment colors, silhouette and accessories; no changing civilian robes into armor, preserve original era outfit. Waist-up close composition, dominant head and shoulders with complete headwear inside frame. Golden daylight, historically inspired command camp, distant troops and blank standards; for unarmored officials use a command pavilion, for martial figures use camp courtyard; keep weapons/accessories only as appropriate to reference. No lettering/numbers, UI/frame, logo, watermark, magic or studio backdrop. Game art, not verified archaeological reconstruction; do not invent new historical claims.",
+      "origin": "/Users/fengheliang/.codex/generated_images/01a16381-85b9-71f1-8014-3769188dd4cf/exec-8670fcd7-6818-4652-ad1e-9db655b59d6f.png",
+      "path": "assets/battle/people/original-4-battle-v1.png",
+      "sha256": "a5c9d90afef09cc56e3d72e624fd3aa144c2c0694dd6d9a73f515fb52aaa5d27",
+      "dimensions": [
+        1060,
+        1484
+      ],
+      "status": "integrated-card-ui-validated"
+    },
+    {
+      "id": "original-8",
+      "name": "魏徵",
+      "role": "文职",
+      "art": "assets/officials/historical/original-8/full.png",
+      "prompt": "Identity-preserving single character game art for 魏徵, exact existing ID original-8. One vertical5:7 fullbleed warm painterly battlefield card illustration matching image2 Zhang Fei style. Preserve image1 exact recognizable face, age, hair/beard, headwear, garment colors, silhouette and accessories; no changing civilian robes into armor, preserve original era outfit. Waist-up close composition, dominant head and shoulders with complete headwear inside frame. Golden daylight, historically inspired command camp, distant troops and blank standards; for unarmored officials use a command pavilion, for martial figures use camp courtyard; keep weapons/accessories only as appropriate to reference. No lettering/numbers, UI/frame, logo, watermark, magic or studio backdrop. Game art, not verified archaeological reconstruction; do not invent new historical claims.",
+      "origin": "/Users/fengheliang/.codex/generated_images/01a16381-85b9-71f1-8014-3769188dd4cf/exec-fd4d24ee-66b3-4465-bdaf-fd6549293663.png",
+      "path": "assets/battle/people/original-8-battle-v1.png",
+      "sha256": "b52f0cb648ac298572df8e506d3fe873d0b2883f95a5f58517d01a8286fa02e0",
+      "dimensions": [
+        1060,
+        1484
+      ],
+      "status": "integrated-card-ui-validated"
+    },
+    {
+      "id": "original-14",
+      "name": "朱庆国",
+      "role": "文职",
+      "art": "assets/officials/historical/original-14/full.png",
+      "prompt": "Identity-preserving single character game art for 朱庆国, exact existing ID original-14. One vertical5:7 fullbleed warm painterly battlefield card illustration matching image2 Zhang Fei style. Preserve image1 exact recognizable face, age, hair/beard, headwear, garment colors, silhouette and accessories; no changing civilian robes into armor, preserve original era outfit. Waist-up close composition, dominant head and shoulders with complete headwear inside frame. Golden daylight, historically inspired command camp, distant troops and blank standards; for unarmored officials use a command pavilion, for martial figures use camp courtyard; keep weapons/accessories only as appropriate to reference. No lettering/numbers, UI/frame, logo, watermark, magic or studio backdrop. Game art, not verified archaeological reconstruction; do not invent new historical claims.",
+      "origin": "/Users/fengheliang/.codex/generated_images/01a16381-85b9-71f1-8014-3769188dd4cf/exec-03bc9e72-b506-46f9-a51d-f00483c70d4c.png",
+      "path": "assets/battle/people/original-14-battle-v1.png",
+      "sha256": "3fdba29013c461af8009e50f022662bb31a5685e1cb35fb665a83fdca7338003",
+      "dimensions": [
+        1060,
+        1484
+      ],
+      "status": "integrated-card-ui-validated"
+    },
+    {
+      "id": "original-16",
+      "name": "公孙侨",
+      "role": "文职",
+      "art": "assets/officials/historical/original-16/full.png",
+      "prompt": "Identity-preserving single character game art for 公孙侨, exact existing ID original-16. One vertical5:7 fullbleed warm painterly battlefield card illustration matching image2 Zhang Fei style. Preserve image1 exact recognizable face, age, hair/beard, headwear, garment colors, silhouette and accessories; no changing civilian robes into armor, preserve original era outfit. Waist-up close composition, dominant head and shoulders with complete headwear inside frame. Golden daylight, historically inspired command camp, distant troops and blank standards; for unarmored officials use a command pavilion, for martial figures use camp courtyard; keep weapons/accessories only as appropriate to reference. No lettering/numbers, UI/frame, logo, watermark, magic or studio backdrop. Game art, not verified archaeological reconstruction; do not invent new historical claims.",
+      "origin": "/Users/fengheliang/.codex/generated_images/01a16381-85b9-71f1-8014-3769188dd4cf/exec-a9d96d27-b958-40b3-a5f0-63cc13b35c1e.png",
+      "path": "assets/battle/people/original-16-battle-v1.png",
+      "sha256": "b9dda6f7e5a250f02c0c2f141441347079162e81114ae2cf627564353a2572a0",
+      "dimensions": [
+        1060,
+        1484
+      ],
+      "status": "integrated-card-ui-validated"
+    },
+    {
+      "id": "original-29",
+      "name": "谢安",
+      "role": "文职",
+      "art": "assets/officials/historical/original-29/full.png",
+      "prompt": "Identity-preserving single character game art for 谢安, exact existing ID original-29. One vertical5:7 fullbleed warm painterly battlefield card illustration matching image2 Zhang Fei style. Preserve image1 exact recognizable face, age, hair/beard, headwear, garment colors, silhouette and accessories; no changing civilian robes into armor, preserve original era outfit. Waist-up close composition, dominant head and shoulders with complete headwear inside frame. Golden daylight, historically inspired command camp, distant troops and blank standards; for unarmored officials use a command pavilion, for martial figures use camp courtyard; keep weapons/accessories only as appropriate to reference. No lettering/numbers, UI/frame, logo, watermark, magic or studio backdrop. Game art, not verified archaeological reconstruction; do not invent new historical claims.",
+      "origin": "/Users/fengheliang/.codex/generated_images/01a16381-85b9-71f1-8014-3769188dd4cf/exec-9372fd53-87cf-4999-806a-b321dff5655b.png",
+      "path": "assets/battle/people/original-29-battle-v1.png",
+      "sha256": "8cb04a545e6bf65dd1035eaa71892759a1ea2f98f27097b470b3524710ea4676",
+      "dimensions": [
+        1060,
+        1484
+      ],
+      "status": "integrated-card-ui-validated"
+    },
+    {
+      "id": "general-403-90513",
+      "name": "薛仁贵",
+      "role": "武将",
+      "art": "assets/officials/historical/general-403-90513/full.png",
+      "prompt": "Identity-preserving single character game art for 薛仁贵, exact existing ID general-403-90513. One vertical5:7 fullbleed warm painterly battlefield card illustration matching image2 Zhang Fei style. Preserve image1 exact recognizable face, age, hair/beard, headwear, garment colors, silhouette and accessories; no changing civilian robes into armor, preserve original era outfit. Waist-up close composition, dominant head and shoulders with complete headwear inside frame. Golden daylight, historically inspired command camp, distant troops and blank standards; for unarmored officials use a command pavilion, for martial figures use camp courtyard; keep weapons/accessories only as appropriate to reference. No lettering/numbers, UI/frame, logo, watermark, magic or studio backdrop. Game art, not verified archaeological reconstruction; do not invent new historical claims.",
+      "origin": "/Users/fengheliang/.codex/generated_images/01a16381-85b9-71f1-8014-3769188dd4cf/exec-35c344b4-5bcb-4778-9dde-a1ae31f03df0.png",
+      "path": "assets/battle/people/general-403-90513-battle-v1.png",
+      "sha256": "5161e3eedd24f2cd6596c2277c94f640e23fe10cd0a61076c3cf1074754f26c0",
+      "dimensions": [
+        1060,
+        1484
+      ],
+      "status": "integrated-card-ui-validated"
+    },
+    {
+      "id": "cbdb-630",
+      "name": "韩琦",
+      "role": "武将",
+      "art": "assets/officials/historical/cbdb-630/full.png",
+      "prompt": "Identity-preserving single character game art for 韩琦, exact existing ID cbdb-630. One vertical5:7 fullbleed warm painterly battlefield card illustration matching image2 Zhang Fei style. Preserve image1 exact recognizable face, age, hair/beard, headwear, garment colors, silhouette and accessories; no changing civilian robes into armor, preserve original era outfit. Waist-up close composition, dominant head and shoulders with complete headwear inside frame. Golden daylight, historically inspired command camp, distant troops and blank standards; for unarmored officials use a command pavilion, for martial figures use camp courtyard; keep weapons/accessories only as appropriate to reference. No lettering/numbers, UI/frame, logo, watermark, magic or studio backdrop. Game art, not verified archaeological reconstruction; do not invent new historical claims.",
+      "origin": "/Users/fengheliang/.codex/generated_images/01a16381-85b9-71f1-8014-3769188dd4cf/exec-951b0549-c060-4900-a0ca-a39a5f092a85.png",
+      "path": "assets/battle/people/cbdb-630-battle-v1.png",
+      "sha256": "b685fc2916c7edcf03f5860012a6e3731b640ebde55cdbcfcb99e05bb8c10ccc",
+      "dimensions": [
+        1060,
+        1484
+      ],
+      "status": "integrated-card-ui-validated"
+    },
+    {
+      "id": "original-33",
+      "name": "黄飞鸿",
+      "role": "武将",
+      "art": "assets/officials/historical/original-33/full.png",
+      "prompt": "Identity-preserving single character game art for 黄飞鸿, exact existing ID original-33. One vertical5:7 fullbleed warm painterly battlefield card illustration matching image2 Zhang Fei style. Preserve image1 exact recognizable face, age, hair/beard, headwear, garment colors, silhouette and accessories; no changing civilian robes into armor, preserve original era outfit. Waist-up close composition, dominant head and shoulders with complete headwear inside frame. Golden daylight, historically inspired command camp, distant troops and blank standards; for unarmored officials use a command pavilion, for martial figures use camp courtyard; keep weapons/accessories only as appropriate to reference. No lettering/numbers, UI/frame, logo, watermark, magic or studio backdrop. Game art, not verified archaeological reconstruction; do not invent new historical claims.",
+      "origin": "/Users/fengheliang/.codex/generated_images/01a16381-85b9-71f1-8014-3769188dd4cf/exec-1e1ddf3b-904b-4b3a-859f-6fa0caa111a6.png",
+      "path": "assets/battle/people/original-33-battle-v1.png",
+      "sha256": "a368f0352385f923c2e5f195c514898d941f96504efb0bb0f3cd7fe563a198bf",
+      "dimensions": [
+        1060,
+        1484
+      ],
+      "status": "integrated-card-ui-validated"
+    },
+    {
+      "id": "manual-1590",
+      "name": "李林甫",
+      "role": "文职",
+      "art": "assets/officials/historical/manual-1590/full.png",
+      "prompt": "Identity-preserving single character game art for 李林甫, exact existing ID manual-1590. One vertical5:7 fullbleed warm painterly battlefield card illustration matching image2 Zhang Fei style. Preserve image1 exact recognizable face, age, hair/beard, headwear, garment colors, silhouette and accessories; no changing civilian robes into armor, preserve original era outfit. Waist-up close composition, dominant head and shoulders with complete headwear inside frame. Golden daylight, historically inspired command camp, distant troops and blank standards; for unarmored officials use a command pavilion, for martial figures use camp courtyard; keep weapons/accessories only as appropriate to reference. No lettering/numbers, UI/frame, logo, watermark, magic or studio backdrop. Game art, not verified archaeological reconstruction; do not invent new historical claims.",
+      "origin": "/Users/fengheliang/.codex/generated_images/01a16381-85b9-71f1-8014-3769188dd4cf/exec-96c64cbc-5621-4ef8-8674-200e04fda785.png",
+      "path": "assets/battle/people/manual-1590-battle-v1.png",
+      "sha256": "9ca95fba126548da58e141a408cda0707f4e071cafcd2d2da66bcbc245face1d",
+      "dimensions": [
+        1060,
+        1484
+      ],
+      "status": "integrated-card-ui-validated"
+    },
+    {
+      "id": "manual-1591",
+      "name": "杨国忠",
+      "role": "文职",
+      "art": "assets/officials/historical/manual-1591/full.png",
+      "prompt": "Identity-preserving single character game art for 杨国忠, exact existing ID manual-1591. One vertical5:7 fullbleed warm painterly battlefield card illustration matching image2 Zhang Fei style. Preserve image1 exact recognizable face, age, hair/beard, headwear, garment colors, silhouette and accessories; no changing civilian robes into armor, preserve original era outfit. Waist-up close composition, dominant head and shoulders with complete headwear inside frame. Golden daylight, historically inspired command camp, distant troops and blank standards; for unarmored officials use a command pavilion, for martial figures use camp courtyard; keep weapons/accessories only as appropriate to reference. No lettering/numbers, UI/frame, logo, watermark, magic or studio backdrop. Game art, not verified archaeological reconstruction; do not invent new historical claims.",
+      "origin": "/Users/fengheliang/.codex/generated_images/01a16381-85b9-71f1-8014-3769188dd4cf/exec-2e97fe28-e3be-4dde-92f9-b7d86f6a3457.png",
+      "path": "assets/battle/people/manual-1591-battle-v1.png",
+      "sha256": "956efe6ec399fc60f8a6cc85dc052c6e1cf4cf8c9718390da9fc2be3cd2d690a",
+      "dimensions": [
+        1060,
+        1484
+      ],
+      "status": "integrated-card-ui-validated"
+    },
+    {
+      "id": "general-468-78206",
+      "name": "安禄山",
+      "role": "武将",
+      "art": "assets/officials/historical/general-468-78206/full.png",
+      "prompt": "One identity-preserving vertical5:7 historical battle card illustration of existing character 安禄山, ID general-468-78206. Image1 provides exact face, age, hair, beard, body build, headwear, clothing colors and accessories; preserve all recognizable identity, never turn unarmored civilian into armored warrior. Image2 approved Zhang Fei card provides warm painterly battlefield style. Waist/chest-up close composition, dominant large head/shoulders, complete headwear visible. Golden daylight, distant ordered troops and blank standards, command pavilion or field camp fitting reference attire. Preserve original weapons only, no magical powers. No text/numbers on paper or flags, UI/frame, watermark, logo or studio backdrop. Game art, not historical verification.",
+      "origin": "/Users/fengheliang/.codex/generated_images/01a16381-85b9-71f1-8014-3769188dd4cf/exec-b45ce920-f0ac-4336-85a3-4ca20f496fe0.png",
+      "path": "assets/battle/people/general-468-78206-battle-v1.png",
+      "sha256": "e024ad2de911c16c514c71eb5f2385c8e7d692970e62f8e966f00800b7ac4a63",
+      "dimensions": [
+        1060,
+        1484
+      ],
+      "status": "integrated-card-ui-validated"
+    },
+    {
+      "id": "original-37",
+      "name": "屈原",
+      "role": "文职",
+      "art": "assets/officials/historical/original-37/full.png",
+      "prompt": "One identity-preserving vertical5:7 historical battle card illustration of existing character 屈原, ID original-37. Image1 provides exact face, age, hair, beard, body build, headwear, clothing colors and accessories; preserve all recognizable identity, never turn unarmored civilian into armored warrior. Image2 approved Zhang Fei card provides warm painterly battlefield style. Waist/chest-up close composition, dominant large head/shoulders, complete headwear visible. Golden daylight, distant ordered troops and blank standards, command pavilion or field camp fitting reference attire. Preserve original weapons only, no magical powers. No text/numbers on paper or flags, UI/frame, watermark, logo or studio backdrop. Game art, not historical verification.",
+      "origin": "/Users/fengheliang/.codex/generated_images/01a16381-85b9-71f1-8014-3769188dd4cf/exec-934701ac-f0d7-4c8d-b14f-c80caea58901.png",
+      "path": "assets/battle/people/original-37-battle-v1.png",
+      "sha256": "406f6c2e74dcdb5ae32d10365be3b20f3032ebe39409d1ca998178ff037816cf",
+      "dimensions": [
+        1060,
+        1484
+      ],
+      "status": "integrated-card-ui-validated"
+    },
+    {
+      "id": "manual-1537",
+      "name": "卫青",
+      "role": "武将",
+      "art": "assets/officials/historical/manual-1537/full.png",
+      "prompt": "One identity-preserving vertical5:7 historical battle card illustration of existing character 卫青, ID manual-1537. Image1 provides exact face, age, hair, beard, body build, headwear, clothing colors and accessories; preserve all recognizable identity, never turn unarmored civilian into armored warrior. Image2 approved Zhang Fei card provides warm painterly battlefield style. Waist/chest-up close composition, dominant large head/shoulders, complete headwear visible. Golden daylight, distant ordered troops and blank standards, command pavilion or field camp fitting reference attire. Preserve original weapons only, no magical powers. No text/numbers on paper or flags, UI/frame, watermark, logo or studio backdrop. Game art, not historical verification.",
+      "origin": "/Users/fengheliang/.codex/generated_images/01a16381-85b9-71f1-8014-3769188dd4cf/exec-35f8e1d1-1b6a-4cfb-83f1-d634ee125289.png",
+      "path": "assets/battle/people/manual-1537-battle-v1.png",
+      "sha256": "2a650192dd7bb8a9b7ac0c003e39529f99dfbf76de161201b8c21c562ee8b8c1",
+      "dimensions": [
+        1060,
+        1484
+      ],
+      "status": "integrated-card-ui-validated"
+    },
+    {
+      "id": "manual-1536",
+      "name": "霍去病",
+      "role": "武将",
+      "art": "assets/officials/historical/manual-1536/full.png",
+      "prompt": "One identity-preserving vertical5:7 historical battle card illustration of existing character 霍去病, ID manual-1536. Image1 provides exact face, age, hair, beard, body build, headwear, clothing colors and accessories; preserve all recognizable identity, never turn unarmored civilian into armored warrior. Image2 approved Zhang Fei card provides warm painterly battlefield style. Waist/chest-up close composition, dominant large head/shoulders, complete headwear visible. Golden daylight, distant ordered troops and blank standards, command pavilion or field camp fitting reference attire. Preserve original weapons only, no magical powers. No text/numbers on paper or flags, UI/frame, watermark, logo or studio backdrop. Game art, not historical verification.",
+      "origin": "/Users/fengheliang/.codex/generated_images/01a16381-85b9-71f1-8014-3769188dd4cf/exec-fa503bdc-8a6b-4ecf-b52d-8f2dcbc852f0.png",
+      "path": "assets/battle/people/manual-1536-battle-v1.png",
+      "sha256": "1bce8bca7ec8e99f734efabafbf41014d4bd739d5d90eabbcf5c557e727e20fc",
+      "dimensions": [
+        1060,
+        1484
+      ],
+      "status": "integrated-card-ui-validated"
+    },
+    {
+      "id": "manual-1513",
+      "name": "孙膑",
+      "role": "武将",
+      "art": "assets/officials/historical/manual-1513/full.png",
+      "prompt": "One identity-preserving vertical5:7 historical battle card illustration of existing character 孙膑, ID manual-1513. Image1 provides exact face, age, hair, beard, body build, headwear, clothing colors and accessories; preserve all recognizable identity, never turn unarmored civilian into armored warrior. Image2 approved Zhang Fei card provides warm painterly battlefield style. Waist/chest-up close composition, dominant large head/shoulders, complete headwear visible. Golden daylight, distant ordered troops and blank standards, command pavilion or field camp fitting reference attire. Preserve original weapons only, no magical powers. No text/numbers on paper or flags, UI/frame, watermark, logo or studio backdrop. Game art, not historical verification.",
+      "origin": "/Users/fengheliang/.codex/generated_images/01a16381-85b9-71f1-8014-3769188dd4cf/exec-8f23e068-277d-4bc7-b74d-9282ade815c2.png",
+      "path": "assets/battle/people/manual-1513-battle-v1.png",
+      "sha256": "04cba9aed60fbf9e0617d33cf3beda685140e7b9fb5563deaa900fbac6fde411",
+      "dimensions": [
+        1060,
+        1484
+      ],
+      "status": "integrated-card-ui-validated"
+    },
+    {
+      "id": "original-41",
+      "name": "庞涓",
+      "role": "文职",
+      "art": "assets/officials/historical/original-41/full.png",
+      "prompt": "One identity-preserving vertical5:7 historical battle card illustration of existing character 庞涓, ID original-41. Image1 provides exact face, age, hair, beard, body build, headwear, clothing colors and accessories; preserve all recognizable identity, never turn unarmored civilian into armored warrior. Image2 approved Zhang Fei card provides warm painterly battlefield style. Waist/chest-up close composition, dominant large head/shoulders, complete headwear visible. Golden daylight, distant ordered troops and blank standards, command pavilion or field camp fitting reference attire. Preserve original weapons only, no magical powers. No text/numbers on paper or flags, UI/frame, watermark, logo or studio backdrop. Game art, not historical verification.",
+      "origin": "/Users/fengheliang/.codex/generated_images/01a16381-85b9-71f1-8014-3769188dd4cf/exec-41fcc198-2bf9-4389-bb5a-b34093054ccf.png",
+      "path": "assets/battle/people/original-41-battle-v1.png",
+      "sha256": "d93c1f0643f14007b97c5da7bbdc56f432223b3cd529b8cce98f5d7418737927",
+      "dimensions": [
+        1060,
+        1484
+      ],
+      "status": "integrated-card-ui-validated"
+    },
+    {
+      "id": "cbdb-25403",
+      "name": "诸葛亮",
+      "role": "武将",
+      "art": "assets/officials/historical/cbdb-25403/full.png",
+      "prompt": "One identity-preserving vertical5:7 historical battle card illustration of existing character 诸葛亮, ID cbdb-25403. Image1 provides exact face, age, hair, beard, body build, headwear, clothing colors and accessories; preserve all recognizable identity, never turn unarmored civilian into armored warrior. Image2 approved Zhang Fei card provides warm painterly battlefield style. Waist/chest-up close composition, dominant large head/shoulders, complete headwear visible. Golden daylight, distant ordered troops and blank standards, command pavilion or field camp fitting reference attire. Preserve original weapons only, no magical powers. No text/numbers on paper or flags, UI/frame, watermark, logo or studio backdrop. Game art, not historical verification.",
+      "origin": "/Users/fengheliang/.codex/generated_images/01a16381-85b9-71f1-8014-3769188dd4cf/exec-9150dfd0-e8bd-4e06-955b-bdf68e9e5cf2.png",
+      "path": "assets/battle/people/cbdb-25403-battle-v1.png",
+      "sha256": "ad66ae2b3610e95a96c691e928bd864b426b0bad7c692648d7bd25bbbddb88a7",
+      "dimensions": [
+        1060,
+        1484
+      ],
+      "status": "integrated-card-ui-validated"
+    },
+    {
+      "id": "original-43",
+      "name": "王玄策",
+      "role": "武将",
+      "art": "assets/officials/historical/original-43/full.png",
+      "prompt": "One identity-preserving vertical5:7 historical battle card illustration of existing character 王玄策, ID original-43. Image1 provides exact face, age, hair, beard, body build, headwear, clothing colors and accessories; preserve all recognizable identity, never turn unarmored civilian into armored warrior. Image2 approved Zhang Fei card provides warm painterly battlefield style. Waist/chest-up close composition, dominant large head/shoulders, complete headwear visible. Golden daylight, distant ordered troops and blank standards, command pavilion or field camp fitting reference attire. Preserve original weapons only, no magical powers. No text/numbers on paper or flags, UI/frame, watermark, logo or studio backdrop. Game art, not historical verification.",
+      "origin": "/Users/fengheliang/.codex/generated_images/01a16381-85b9-71f1-8014-3769188dd4cf/exec-9da31fd8-7358-403c-8e9c-e341b3a02002.png",
+      "path": "assets/battle/people/original-43-battle-v1.png",
+      "sha256": "3e4c5ef45f03ca35528e82a2e41becb944c773c76ee28803d1161b42da44795c",
+      "dimensions": [
+        1060,
+        1484
+      ],
+      "status": "integrated-card-ui-validated"
+    },
+    {
+      "id": "original-44",
+      "name": "刘仁轨",
+      "role": "武将",
+      "art": "assets/officials/historical/original-44/full.png",
+      "prompt": "One identity-preserving vertical5:7 historical battle card illustration of existing character 刘仁轨, ID original-44. Image1 provides exact face, age, hair, beard, body build, headwear, clothing colors and accessories; preserve all recognizable identity, never turn unarmored civilian into armored warrior. Image2 approved Zhang Fei card provides warm painterly battlefield style. Waist/chest-up close composition, dominant large head/shoulders, complete headwear visible. Golden daylight, distant ordered troops and blank standards, command pavilion or field camp fitting reference attire. Preserve original weapons only, no magical powers. No text/numbers on paper or flags, UI/frame, watermark, logo or studio backdrop. Game art, not historical verification.",
+      "origin": "/Users/fengheliang/.codex/generated_images/01a16381-85b9-71f1-8014-3769188dd4cf/exec-393c8956-4f0d-4b32-93ae-a73faffffc5d.png",
+      "path": "assets/battle/people/original-44-battle-v1.png",
+      "sha256": "da8302216964676e946dd99061635a64c582fc745bfccb00b36014af542f4f73",
+      "dimensions": [
+        1060,
+        1484
+      ],
+      "status": "integrated-card-ui-validated"
+    },
+    {
+      "id": "general-422-82978",
+      "name": "苏定方",
+      "role": "武将",
+      "art": "assets/officials/historical/general-422-82978/full.png",
+      "prompt": "One identity-preserving vertical5:7 historical battle card illustration of existing character 苏定方, ID general-422-82978. Image1 provides exact face, age, hair, beard, body build, headwear, clothing colors and accessories; preserve all recognizable identity, never turn unarmored civilian into armored warrior. Image2 approved Zhang Fei card provides warm painterly battlefield style. Waist/chest-up close composition, dominant large head/shoulders, complete headwear visible. Golden daylight, distant ordered troops and blank standards, command pavilion or field camp fitting reference attire. Preserve original weapons only, no magical powers. No text/numbers on paper or flags, UI/frame, watermark, logo or studio backdrop. Game art, not historical verification.",
+      "origin": "/Users/fengheliang/.codex/generated_images/01a16381-85b9-71f1-8014-3769188dd4cf/exec-bdd99771-580e-4711-9e7e-c23402c23dcb.png",
+      "path": "assets/battle/people/general-422-82978-battle-v1.png",
+      "sha256": "3982ebeef96e4edec4b9c6b006934c8526058eeceb83ea054c61ff74edb0e6cd",
+      "dimensions": [
+        1060,
+        1484
+      ],
+      "status": "integrated-card-ui-validated"
+    },
+    {
+      "id": "general-523-68118",
+      "name": "狄青",
+      "role": "武将",
+      "art": "assets/officials/historical/general-523-68118/full.png",
+      "prompt": "Create one identity-preserving vertical 5:7 historical battle card illustration of 狄青, ID general-523-68118. Reference 1 defines the exact face, age, hair, beard, build, headwear, clothing colors and accessories: preserve the recognizable person and outfit, including unarmored official robes where present. Do not change a civil-robed figure into an armored warrior regardless of their military reputation. Reference 2 defines the approved warm painterly Zhang Fei battlefield style. Waist-up close composition with dominant head and shoulders and complete headwear visible, golden daylight, ordered distant troops and blank standards, command pavilion or field camp appropriate to the existing attire. Keep original weapons only. No readable text on paper or flags, no numbers, UI, card frame, watermark, logo, magic or studio backdrop. Detailed game illustration.",
+      "origin": "/Users/fengheliang/.codex/generated_images/01a16381-85b9-71f1-8014-3769188dd4cf/exec-afa1a8c7-21ac-47c2-98c9-987570268a3d.png",
+      "path": "assets/battle/people/general-523-68118-battle-v1.png",
+      "sha256": "0b27737da15d464e7d998ed9cc89f81e5ac5e40a3a695e7ecb5cadb88d168e5d",
+      "dimensions": [
+        1060,
+        1484
+      ],
+      "status": "integrated-card-ui-validated"
+    },
+    {
+      "id": "cbdb-1488",
+      "name": "司马光",
+      "role": "文职",
+      "art": "assets/officials/historical/cbdb-1488/full.png",
+      "prompt": "Create one identity-preserving vertical 5:7 historical battle card illustration of 司马光, ID cbdb-1488. Reference 1 defines the exact face, age, hair, beard, build, headwear, clothing colors and accessories: preserve the recognizable person and outfit, including unarmored official robes where present. Do not change a civil-robed figure into an armored warrior regardless of their military reputation. Reference 2 defines the approved warm painterly Zhang Fei battlefield style. Waist-up close composition with dominant head and shoulders and complete headwear visible, golden daylight, ordered distant troops and blank standards, command pavilion or field camp appropriate to the existing attire. Keep original weapons only. No readable text on paper or flags, no numbers, UI, card frame, watermark, logo, magic or studio backdrop. Detailed game illustration.",
+      "origin": "/Users/fengheliang/.codex/generated_images/01a16381-85b9-71f1-8014-3769188dd4cf/exec-ce695b80-0550-4ca8-8e3d-6d4cc57ecda9.png",
+      "path": "assets/battle/people/cbdb-1488-battle-v1.png",
+      "sha256": "d95a02b476efaedf3e36c5c39605d03773967c6186aac673de25adee5c15eade",
+      "dimensions": [
+        1060,
+        1484
+      ],
+      "status": "integrated-card-ui-validated"
+    },
+    {
+      "id": "cbdb-19123",
+      "name": "文天祥",
+      "role": "武将",
+      "art": "assets/officials/historical/cbdb-19123/full.png",
+      "prompt": "Create one identity-preserving vertical 5:7 historical battle card illustration of 文天祥, ID cbdb-19123. Reference 1 defines the exact face, age, hair, beard, build, headwear, clothing colors and accessories: preserve the recognizable person and outfit, including unarmored official robes where present. Do not change a civil-robed figure into an armored warrior regardless of their military reputation. Reference 2 defines the approved warm painterly Zhang Fei battlefield style. Waist-up close composition with dominant head and shoulders and complete headwear visible, golden daylight, ordered distant troops and blank standards, command pavilion or field camp appropriate to the existing attire. Keep original weapons only. No readable text on paper or flags, no numbers, UI, card frame, watermark, logo, magic or studio backdrop. Detailed game illustration.",
+      "origin": "/Users/fengheliang/.codex/generated_images/01a16381-85b9-71f1-8014-3769188dd4cf/exec-4a920b0f-b53b-4d30-b0ee-08cd969b345c.png",
+      "path": "assets/battle/people/cbdb-19123-battle-v1.png",
+      "sha256": "328728bfade37018c5f7576d49ce8ba0d53b34f396127025afbe6bcbd3e1c482",
+      "dimensions": [
+        1060,
+        1484
+      ],
+      "status": "integrated-card-ui-validated"
+    },
+    {
+      "id": "manual-1608",
+      "name": "徐达",
+      "role": "武将",
+      "art": "assets/officials/historical/manual-1608/full.png",
+      "prompt": "Create one identity-preserving vertical 5:7 historical battle card illustration of 徐达, ID manual-1608. Reference 1 defines the exact face, age, hair, beard, build, headwear, clothing colors and accessories: preserve the recognizable person and outfit, including unarmored official robes where present. Do not change a civil-robed figure into an armored warrior regardless of their military reputation. Reference 2 defines the approved warm painterly Zhang Fei battlefield style. Waist-up close composition with dominant head and shoulders and complete headwear visible, golden daylight, ordered distant troops and blank standards, command pavilion or field camp appropriate to the existing attire. Keep original weapons only. No readable text on paper or flags, no numbers, UI, card frame, watermark, logo, magic or studio backdrop. Detailed game illustration.",
+      "origin": "/Users/fengheliang/.codex/generated_images/01a16381-85b9-71f1-8014-3769188dd4cf/exec-b31e7395-1efc-46b6-9b8d-0d612a40e883.png",
+      "path": "assets/battle/people/manual-1608-battle-v1.png",
+      "sha256": "3b630078b5e21d45a207f040a3d9724ae953d2f0282d4a1fd59c936123ac270e",
+      "dimensions": [
+        1060,
+        1484
+      ],
+      "status": "integrated-card-ui-validated"
+    },
+    {
+      "id": "manual-1609",
+      "name": "常遇春",
+      "role": "武将",
+      "art": "assets/officials/historical/manual-1609/full.png",
+      "prompt": "Create one identity-preserving vertical 5:7 historical battle card illustration of 常遇春, ID manual-1609. Reference 1 defines the exact face, age, hair, beard, build, headwear, clothing colors and accessories: preserve the recognizable person and outfit, including unarmored official robes where present. Do not change a civil-robed figure into an armored warrior regardless of their military reputation. Reference 2 defines the approved warm painterly Zhang Fei battlefield style. Waist-up close composition with dominant head and shoulders and complete headwear visible, golden daylight, ordered distant troops and blank standards, command pavilion or field camp appropriate to the existing attire. Keep original weapons only. No readable text on paper or flags, no numbers, UI, card frame, watermark, logo, magic or studio backdrop. Detailed game illustration.",
+      "origin": "/Users/fengheliang/.codex/generated_images/01a16381-85b9-71f1-8014-3769188dd4cf/exec-14ff84ba-a2f7-4e07-b619-fac533a83929.png",
+      "path": "assets/battle/people/manual-1609-battle-v1.png",
+      "sha256": "5c3d3a44d8d9872321f1c4dc1cd7e6d9f04ae74508c107683b71cccda16e8861",
+      "dimensions": [
+        1060,
+        1484
+      ],
+      "status": "integrated-card-ui-validated"
+    },
+    {
+      "id": "cbdb-54819",
+      "name": "林则徐",
+      "role": "文职",
+      "art": "assets/officials/historical/cbdb-54819/full.png",
+      "prompt": "Create one identity-preserving vertical 5:7 historical battle card illustration of 林则徐, ID cbdb-54819. Reference 1 defines the exact face, age, hair, beard, build, headwear, clothing colors and accessories: preserve the recognizable person and outfit, including unarmored official robes where present. Do not change a civil-robed figure into an armored warrior regardless of their military reputation. Reference 2 defines the approved warm painterly Zhang Fei battlefield style. Waist-up close composition with dominant head and shoulders and complete headwear visible, golden daylight, ordered distant troops and blank standards, command pavilion or field camp appropriate to the existing attire. Keep original weapons only. No readable text on paper or flags, no numbers, UI, card frame, watermark, logo, magic or studio backdrop. Detailed game illustration.",
+      "origin": "/Users/fengheliang/.codex/generated_images/01a16381-85b9-71f1-8014-3769188dd4cf/exec-603a3658-0f1c-4414-9a2e-8821441d64d4.png",
+      "path": "assets/battle/people/cbdb-54819-battle-v1.png",
+      "sha256": "9ee0d3af4b6a23c8f76612384990b167815154b9f8df493dc2224a1467280a72",
+      "dimensions": [
+        1060,
+        1484
+      ],
+      "status": "integrated-card-ui-validated"
+    },
+    {
+      "id": "cbdb-28093",
+      "name": "方孝孺",
+      "role": "文职",
+      "art": "assets/officials/historical/cbdb-28093/full.png",
+      "prompt": "Create one identity-preserving vertical 5:7 historical battle card illustration of 方孝孺, ID cbdb-28093. Reference 1 defines the exact face, age, hair, beard, build, headwear, clothing colors and accessories: preserve the recognizable person and outfit, including unarmored official robes where present. Do not change a civil-robed figure into an armored warrior regardless of their military reputation. Reference 2 defines the approved warm painterly Zhang Fei battlefield style. Waist-up close composition with dominant head and shoulders and complete headwear visible, golden daylight, ordered distant troops and blank standards, command pavilion or field camp appropriate to the existing attire. Keep original weapons only. No readable text on paper or flags, no numbers, UI, card frame, watermark, logo, magic or studio backdrop. Detailed game illustration.",
+      "origin": "/Users/fengheliang/.codex/generated_images/01a16381-85b9-71f1-8014-3769188dd4cf/exec-cc0cb833-ea8c-45c7-ac33-6f5c883f4b2f.png",
+      "path": "assets/battle/people/cbdb-28093-battle-v1.png",
+      "sha256": "3ad169cd13a11148da7c957f4dd4a3a55aebe87340cc90255501d72c4b1a5e08",
+      "dimensions": [
+        1060,
+        1484
+      ],
+      "status": "integrated-card-ui-validated"
+    },
+    {
+      "id": "manual-1614",
+      "name": "戚继光",
+      "role": "武将",
+      "art": "assets/officials/historical/manual-1614/full.png",
+      "prompt": "Create one identity-preserving vertical 5:7 historical battle card illustration of 戚继光, ID manual-1614. Reference 1 defines the exact face, age, hair, beard, build, headwear, clothing colors and accessories: preserve the recognizable person and outfit, including unarmored official robes where present. Do not change a civil-robed figure into an armored warrior regardless of their military reputation. Reference 2 defines the approved warm painterly Zhang Fei battlefield style. Waist-up close composition with dominant head and shoulders and complete headwear visible, golden daylight, ordered distant troops and blank standards, command pavilion or field camp appropriate to the existing attire. Keep original weapons only. No readable text on paper or flags, no numbers, UI, card frame, watermark, logo, magic or studio backdrop. Detailed game illustration.",
+      "origin": "/Users/fengheliang/.codex/generated_images/01a16381-85b9-71f1-8014-3769188dd4cf/exec-2ef2263c-be03-48fa-8e02-32b8ca65929b.png",
+      "path": "assets/battle/people/manual-1614-battle-v1.png",
+      "sha256": "afe7fcf200a941f3bee17119e962a16d68f119b167271c80bc01d54388a727af",
+      "dimensions": [
+        1060,
+        1484
+      ],
+      "status": "integrated-card-ui-validated"
+    },
+    {
+      "id": "manual-1611",
+      "name": "于谦",
+      "role": "武将",
+      "art": "assets/officials/historical/manual-1611/full.png",
+      "prompt": "Create one identity-preserving vertical 5:7 historical battle card illustration of 于谦, ID manual-1611. Reference 1 defines the exact face, age, hair, beard, build, headwear, clothing colors and accessories: preserve the recognizable person and outfit, including unarmored official robes where present. Do not change a civil-robed figure into an armored warrior regardless of their military reputation. Reference 2 defines the approved warm painterly Zhang Fei battlefield style. Waist-up close composition with dominant head and shoulders and complete headwear visible, golden daylight, ordered distant troops and blank standards, command pavilion or field camp appropriate to the existing attire. Keep original weapons only. No readable text on paper or flags, no numbers, UI, card frame, watermark, logo, magic or studio backdrop. Detailed game illustration.",
+      "origin": "/Users/fengheliang/.codex/generated_images/01a16381-85b9-71f1-8014-3769188dd4cf/exec-5bb9ead3-9bec-4d96-9ae0-c17955975f38.png",
+      "path": "assets/battle/people/manual-1611-battle-v1.png",
+      "sha256": "b74a9de1500a771bc895ec495f8fd35b94f11d2a89e3d0429edd75cbf1863978",
+      "dimensions": [
+        1060,
+        1484
+      ],
+      "status": "integrated-card-ui-validated"
+    },
+    {
+      "id": "cbdb-30374",
+      "name": "王守仁",
+      "role": "武将",
+      "art": "assets/officials/historical/cbdb-30374/full.png",
+      "prompt": "Create one identity-preserving vertical 5:7 historical battle card illustration of 王守仁, ID cbdb-30374. Reference 1 defines the exact face, age, hair, beard, build, headwear, clothing colors and accessories: preserve the recognizable person and outfit, including unarmored official robes where present. Do not change a civil-robed figure into an armored warrior regardless of their military reputation. Reference 2 defines the approved warm painterly Zhang Fei battlefield style. Waist-up close composition with dominant head and shoulders and complete headwear visible, golden daylight, ordered distant troops and blank standards, command pavilion or field camp appropriate to the existing attire. Keep original weapons only. No readable text on paper or flags, no numbers, UI, card frame, watermark, logo, magic or studio backdrop. Detailed game illustration.",
+      "origin": "/Users/fengheliang/.codex/generated_images/01a16381-85b9-71f1-8014-3769188dd4cf/exec-73da100e-b633-4504-9b4b-fb2cb3f9b7bc.png",
+      "path": "assets/battle/people/cbdb-30374-battle-v1.png",
+      "sha256": "f6d709d30ade989252dea7e94d00b4aecf755bacafb409863f3f88f21dcc5e44",
+      "dimensions": [
+        1060,
+        1484
+      ],
+      "status": "integrated-card-ui-validated"
+    },
+    {
+      "id": "original-57",
+      "name": "程咬金",
+      "art": "assets/officials/historical/original-57/full.png",
+      "prompt": "Use case: identity-preserve game illustration. Create one vertical 5:7 battle portrait of 程咬金, existing ID original-57. Image 1 is the exact identity and outfit reference: preserve face, age, build, hair, beard, headwear, garment colors, and existing accessories. Image 2 supplies approved Zhang Fei warm painterly battlefield style only. Large waist-up close portrait with complete headwear visible, golden daylight, a field command pavilion with distant ordered troops and blank banners. Preserve civil robes for scholars and officials; never add armor to unarmored people. Keep only existing weapons or staff. Natural human, no magical effects. No letters, writing, numbers, UI frame, watermark or studio background. Paper/book covers blank. Historically inspired game art retaining the original character design.",
+      "origin": "/Users/fengheliang/.codex/generated_images/01a16381-85b9-71f1-8014-3769188dd4cf/exec-83f44b71-6cf4-4f87-b80f-f0fec7598240.png",
+      "path": "assets/battle/people/original-57-battle-v1.png",
+      "dimensions": [
+        1060,
+        1484
+      ],
+      "needsRatioNormalization": false,
+      "sha256": "e23c69753e5bb9e87367b8bfaf6d7c6af9a1f89d87ae3437885d230da5c47c09",
+      "status": "integrated-card-ui-validated"
+    },
+    {
+      "id": "cbdb-8008",
+      "name": "秦桧",
+      "art": "assets/officials/historical/cbdb-8008/full.png",
+      "prompt": "Use case: identity-preserve game illustration. Create one vertical 5:7 battle portrait of 秦桧, existing ID cbdb-8008. Image 1 is the exact identity and outfit reference: preserve face, age, build, hair, beard, headwear, garment colors, and existing accessories. Image 2 supplies approved Zhang Fei warm painterly battlefield style only. Large waist-up close portrait with complete headwear visible, golden daylight, a field command pavilion with distant ordered troops and blank banners. Preserve civil robes for scholars and officials; never add armor to unarmored people. Keep only existing weapons or staff. Natural human, no magical effects. No letters, writing, numbers, UI frame, watermark or studio background. Paper/book covers blank. Historically inspired game art retaining the original character design.",
+      "origin": "/Users/fengheliang/.codex/generated_images/01a16381-85b9-71f1-8014-3769188dd4cf/exec-fb21fbec-4198-4b3a-9c42-cd5411f43648.png",
+      "path": "assets/battle/people/cbdb-8008-battle-v1.png",
+      "dimensions": [
+        1060,
+        1484
+      ],
+      "needsRatioNormalization": false,
+      "sha256": "6a6c62d730d09d1536a78780307b9eecf87ea3467525fc344c41b44e23dbeb79",
+      "status": "integrated-card-ui-validated"
+    },
+    {
+      "id": "original-59",
+      "name": "史可法",
+      "art": "assets/officials/historical/original-59/full.png",
+      "prompt": "Use case: identity-preserve game illustration. Create one vertical 5:7 battle portrait of 史可法, existing ID original-59. Image 1 is the exact identity and outfit reference: preserve face, age, build, hair, beard, headwear, garment colors, and existing accessories. Image 2 supplies approved Zhang Fei warm painterly battlefield style only. Large waist-up close portrait with complete headwear visible, golden daylight, a field command pavilion with distant ordered troops and blank banners. Preserve civil robes for scholars and officials; never add armor to unarmored people. Keep only existing weapons or staff. Natural human, no magical effects. No letters, writing, numbers, UI frame, watermark or studio background. Paper/book covers blank. Historically inspired game art retaining the original character design.",
+      "origin": "/Users/fengheliang/.codex/generated_images/01a16381-85b9-71f1-8014-3769188dd4cf/exec-f0851743-b41f-456f-a0c3-c380851c7813.png",
+      "path": "assets/battle/people/original-59-battle-v1.png",
+      "dimensions": [
+        1060,
+        1484
+      ],
+      "needsRatioNormalization": false,
+      "sha256": "5023e22d078508b2a0c24070dc9b504d94eb963c0dd1b2518776e9bd021c093e",
+      "status": "integrated-card-ui-validated"
+    },
+    {
+      "id": "manual-1592",
+      "name": "包拯",
+      "art": "assets/officials/historical/manual-1592/full.png",
+      "prompt": "Use case: identity-preserve game illustration. Create one vertical 5:7 battle portrait of 包拯, existing ID manual-1592. Image 1 is the exact identity and outfit reference: preserve face, age, build, hair, beard, headwear, garment colors, and existing accessories. Image 2 supplies approved Zhang Fei warm painterly battlefield style only. Large waist-up close portrait with complete headwear visible, golden daylight, a field command pavilion with distant ordered troops and blank banners. Preserve civil robes for scholars and officials; never add armor to unarmored people. Keep only existing weapons or staff. Natural human, no magical effects. No letters, writing, numbers, UI frame, watermark or studio background. Paper/book covers blank. Historically inspired game art retaining the original character design.",
+      "origin": "/Users/fengheliang/.codex/generated_images/01a16381-85b9-71f1-8014-3769188dd4cf/exec-689fc278-487b-47cd-bf95-171f39d363fa.png",
+      "path": "assets/battle/people/manual-1592-battle-v1.png",
+      "dimensions": [
+        1060,
+        1484
+      ],
+      "needsRatioNormalization": false,
+      "sha256": "e393f4ea4ce1d1f840fad0d8902186a96750f846bf0f398107dfc7fbb7291862",
+      "status": "integrated-card-ui-validated"
+    },
+    {
+      "id": "manual-1507",
+      "name": "姜子牙",
+      "art": "assets/officials/historical/manual-1507/full.png",
+      "prompt": "Use case: identity-preserve game illustration. Create one vertical 5:7 battle portrait of 姜子牙, existing ID manual-1507. Image 1 is the exact identity and outfit reference: preserve face, age, build, hair, beard, headwear, garment colors, and existing accessories. Image 2 supplies approved Zhang Fei warm painterly battlefield style only. Large waist-up close portrait with complete headwear visible, golden daylight, a field command pavilion with distant ordered troops and blank banners. Preserve civil robes for scholars and officials; never add armor to unarmored people. Keep only existing weapons or staff. Natural human, no magical effects. No letters, writing, numbers, UI frame, watermark or studio background. Paper/book covers blank. Historically inspired game art retaining the original character design.",
+      "origin": "/Users/fengheliang/.codex/generated_images/01a16381-85b9-71f1-8014-3769188dd4cf/exec-a0eb3bc6-065c-4a02-b390-f5f06c1f0bb7.png",
+      "path": "assets/battle/people/manual-1507-battle-v1.png",
+      "dimensions": [
+        1060,
+        1484
+      ],
+      "needsRatioNormalization": false,
+      "sha256": "1893fdd7ae87248dde4d4f3a2509271ab796780d291740bade77192f03ae8073",
+      "status": "integrated-card-ui-validated"
+    },
+    {
+      "id": "original-62",
+      "name": "比干",
+      "art": "assets/officials/historical/original-62/full.png",
+      "prompt": "Use case: identity-preserve game illustration. Create one vertical 5:7 battle portrait of 比干, existing ID original-62. Image 1 is the exact identity and outfit reference: preserve face, age, build, hair, beard, headwear, garment colors, and existing accessories. Image 2 supplies approved Zhang Fei warm painterly battlefield style only. Large waist-up close portrait with complete headwear visible, golden daylight, a field command pavilion with distant ordered troops and blank banners. Preserve civil robes for scholars and officials; never add armor to unarmored people. Keep only existing weapons or staff. Natural human, no magical effects. No letters, writing, numbers, UI frame, watermark or studio background. Paper/book covers blank. Historically inspired game art retaining the original character design.",
+      "origin": "/Users/fengheliang/.codex/generated_images/01a16381-85b9-71f1-8014-3769188dd4cf/exec-70026261-4eaf-4227-989e-c228f2fbcd3e.png",
+      "path": "assets/battle/people/original-62-battle-v1.png",
+      "dimensions": [
+        1060,
+        1484
+      ],
+      "needsRatioNormalization": false,
+      "sha256": "89c64d75c5956a8deff65879da5b422ba5ffb8a902871fd4cc2bdecd277445bf",
+      "status": "integrated-card-ui-validated"
+    },
+    {
+      "id": "original-63",
+      "name": "周公",
+      "art": "assets/officials/historical/original-63/full.png",
+      "prompt": "Use case: identity-preserve game illustration. Create one vertical 5:7 battle portrait of 周公, existing ID original-63. Image 1 is the exact identity and outfit reference: preserve face, age, build, hair, beard, headwear, garment colors, and existing accessories. Image 2 supplies approved Zhang Fei warm painterly battlefield style only. Large waist-up close portrait with complete headwear visible, golden daylight, a field command pavilion with distant ordered troops and blank banners. Preserve civil robes for scholars and officials; never add armor to unarmored people. Keep only existing weapons or staff. Natural human, no magical effects. No letters, writing, numbers, UI frame, watermark or studio background. Paper/book covers blank. Historically inspired game art retaining the original character design.",
+      "origin": "/Users/fengheliang/.codex/generated_images/01a16381-85b9-71f1-8014-3769188dd4cf/exec-2c5b4de6-3328-415a-b95c-dfa593ddb7a9.png",
+      "path": "assets/battle/people/original-63-battle-v1.png",
+      "dimensions": [
+        1059,
+        1485
+      ],
+      "needsRatioNormalization": true,
+      "sha256": "a45d565b62b816183d203167cdfacabb121f1271bd0c121d76fb3640ae8e28b4",
+      "status": "integrated-card-ui-validated",
+      "ratioTreatment": "CSS cover in fixed 5:7 art window; preserve source pixels, no stretching"
+    },
+    {
+      "id": "original-64",
+      "name": "孔子",
+      "art": "assets/officials/historical/original-64/full.png",
+      "prompt": "Use case: identity-preserve game illustration. Create one vertical 5:7 battle portrait of 孔子, existing ID original-64. Image 1 is the exact identity and outfit reference: preserve face, age, build, hair, beard, headwear, garment colors, and existing accessories. Image 2 supplies approved Zhang Fei warm painterly battlefield style only. Large waist-up close portrait with complete headwear visible, golden daylight, a field command pavilion with distant ordered troops and blank banners. Preserve civil robes for scholars and officials; never add armor to unarmored people. Keep only existing weapons or staff. Natural human, no magical effects. No letters, writing, numbers, UI frame, watermark or studio background. Paper/book covers blank. Historically inspired game art retaining the original character design.",
+      "origin": "/Users/fengheliang/.codex/generated_images/01a16381-85b9-71f1-8014-3769188dd4cf/exec-d68acfaf-c93f-486f-b566-cc74e18f47ab.png",
+      "path": "assets/battle/people/original-64-battle-v1.png",
+      "dimensions": [
+        1060,
+        1484
+      ],
+      "needsRatioNormalization": false,
+      "sha256": "00e33dc968d35195ef9cf1fd485277c91f3f0dbd4328a05d5cc5bd9e7311a379",
+      "status": "integrated-card-ui-validated"
+    },
+    {
+      "id": "original-65",
+      "name": "康有为",
+      "art": "assets/officials/historical/original-65/full.png",
+      "prompt": "Use case: identity-preserve game illustration. Create one vertical 5:7 battle portrait of 康有为, existing ID original-65. Image 1 is the exact identity and outfit reference: preserve face, age, build, hair, beard, headwear, garment colors, and existing accessories. Image 2 supplies approved Zhang Fei warm painterly battlefield style only. Large waist-up close portrait with complete headwear visible, golden daylight, a field command pavilion with distant ordered troops and blank banners. Preserve civil robes for scholars and officials; never add armor to unarmored people. Keep only existing weapons or staff. Natural human, no magical effects. No letters, writing, numbers, UI frame, watermark or studio background. Paper/book covers blank. Historically inspired game art retaining the original character design.",
+      "origin": "/Users/fengheliang/.codex/generated_images/01a16381-85b9-71f1-8014-3769188dd4cf/exec-7b0d600b-b151-41b6-8df5-6acc9c7b58cb.png",
+      "path": "assets/battle/people/original-65-battle-v1.png",
+      "dimensions": [
+        1060,
+        1484
+      ],
+      "needsRatioNormalization": false,
+      "sha256": "d101ac3010b22892b6ab2a444815478f434247972ae6f9676c927d409e9a0543",
+      "status": "integrated-card-ui-validated"
+    },
+    {
+      "id": "original-66",
+      "name": "老子",
+      "art": "assets/officials/historical/original-66/full.png",
+      "prompt": "Use case: identity-preserve game illustration. Create one vertical 5:7 battle portrait of 老子, existing ID original-66. Image 1 is the exact identity and outfit reference: preserve face, age, build, hair, beard, headwear, garment colors, and existing accessories. Image 2 supplies approved Zhang Fei warm painterly battlefield style only. Large waist-up close portrait with complete headwear visible, golden daylight, a field command pavilion with distant ordered troops and blank banners. Preserve civil robes for scholars and officials; never add armor to unarmored people. Keep only existing weapons or staff. Natural human, no magical effects. No letters, writing, numbers, UI frame, watermark or studio background. Paper/book covers blank. Historically inspired game art retaining the original character design.",
+      "origin": "/Users/fengheliang/.codex/generated_images/01a16381-85b9-71f1-8014-3769188dd4cf/exec-c0e231cb-1212-42cb-a738-3c0832231ef9.png",
+      "path": "assets/battle/people/original-66-battle-v1.png",
+      "dimensions": [
+        1060,
+        1484
+      ],
+      "needsRatioNormalization": false,
+      "sha256": "9139fe197f96b2522b48f8a936d660505f20f6a647692843798c403d36d9e942",
+      "status": "integrated-card-ui-validated"
+    },
+    {
+      "id": "manual-1512",
+      "name": "孙武",
+      "art": "assets/officials/historical/manual-1512/full.png",
+      "prompt": "Use case: identity-preserve game illustration. One vertical 5:7 battle portrait of 孙武, ID manual-1512. Reference 1 defines exact face, age, build, beard, hair, headwear, clothing colors, armor or civil robes and accessories; preserve recognizable identity. Reference 2 gives approved warm painterly Zhang Fei battlefield illustration style only. Waist-up close composition, large head and shoulders, entire headwear visible. Golden daylight, field command pavilion, distant ordered troops and blank standards. Keep existing weapons or writing tools only; civil figures remain unarmored. No magic, no UI/card frame, no readable text, letters or numbers on books/flags, no watermark or studio backdrop. Detailed historical game art, preserving original character design.",
+      "origin": "/Users/fengheliang/.codex/generated_images/01a16381-85b9-71f1-8014-3769188dd4cf/exec-7fc11122-76af-4639-bca9-0ec90d6beae8.png",
+      "path": "assets/battle/people/manual-1512-battle-v1.png",
+      "dimensions": [
+        1060,
+        1484
+      ],
+      "needsRatioNormalization": false,
+      "sha256": "1ca78df01e958f47139fa596eff0d4e5c7d9ea4772d3bd0c9b4117b0c202a68c",
+      "status": "integrated-card-ui-validated"
+    },
+    {
+      "id": "original-68",
+      "name": "韩非",
+      "art": "assets/officials/historical/original-68/full.png",
+      "prompt": "Use case: identity-preserve game illustration. One vertical 5:7 battle portrait of 韩非, ID original-68. Reference 1 defines exact face, age, build, beard, hair, headwear, clothing colors, armor or civil robes and accessories; preserve recognizable identity. Reference 2 gives approved warm painterly Zhang Fei battlefield illustration style only. Waist-up close composition, large head and shoulders, entire headwear visible. Golden daylight, field command pavilion, distant ordered troops and blank standards. Keep existing weapons or writing tools only; civil figures remain unarmored. No magic, no UI/card frame, no readable text, letters or numbers on books/flags, no watermark or studio backdrop. Detailed historical game art, preserving original character design.",
+      "origin": "/Users/fengheliang/.codex/generated_images/01a16381-85b9-71f1-8014-3769188dd4cf/exec-a7c7d95c-0adf-407b-936c-4226fabbfc63.png",
+      "path": "assets/battle/people/original-68-battle-v1.png",
+      "dimensions": [
+        1060,
+        1484
+      ],
+      "needsRatioNormalization": false,
+      "sha256": "e760d80265bea1de8b55f7cb45167933021ba055df54a5918b15ea3bd06b85cf",
+      "status": "integrated-card-ui-validated"
+    },
+    {
+      "id": "original-69",
+      "name": "墨子",
+      "art": "assets/officials/historical/original-69/full.png",
+      "prompt": "Use case: identity-preserve game illustration. One vertical 5:7 battle portrait of 墨子, ID original-69. Reference 1 defines exact face, age, build, beard, hair, headwear, clothing colors, armor or civil robes and accessories; preserve recognizable identity. Reference 2 gives approved warm painterly Zhang Fei battlefield illustration style only. Waist-up close composition, large head and shoulders, entire headwear visible. Golden daylight, field command pavilion, distant ordered troops and blank standards. Keep existing weapons or writing tools only; civil figures remain unarmored. No magic, no UI/card frame, no readable text, letters or numbers on books/flags, no watermark or studio backdrop. Detailed historical game art, preserving original character design.",
+      "origin": "/Users/fengheliang/.codex/generated_images/01a16381-85b9-71f1-8014-3769188dd4cf/exec-82f8417f-d80f-4fa9-af62-5337b4aba4b9.png",
+      "path": "assets/battle/people/original-69-battle-v1.png",
+      "dimensions": [
+        1060,
+        1484
+      ],
+      "needsRatioNormalization": false,
+      "sha256": "b0510c7ce75dfd0fc7f87b8e3d543972f14f7967ea1b3fa69560e9746eb0d28d",
+      "status": "integrated-card-ui-validated"
+    },
+    {
+      "id": "manual-1520",
+      "name": "白起",
+      "art": "assets/officials/historical/manual-1520/full.png",
+      "prompt": "Use case: identity-preserve game illustration. One vertical 5:7 battle portrait of 白起, ID manual-1520. Reference 1 defines exact face, age, build, beard, hair, headwear, clothing colors, armor or civil robes and accessories; preserve recognizable identity. Reference 2 gives approved warm painterly Zhang Fei battlefield illustration style only. Waist-up close composition, large head and shoulders, entire headwear visible. Golden daylight, field command pavilion, distant ordered troops and blank standards. Keep existing weapons or writing tools only; civil figures remain unarmored. No magic, no UI/card frame, no readable text, letters or numbers on books/flags, no watermark or studio backdrop. Detailed historical game art, preserving original character design.",
+      "origin": "/Users/fengheliang/.codex/generated_images/01a16381-85b9-71f1-8014-3769188dd4cf/exec-20645377-4e66-4378-9e4a-8a28f63e4d99.png",
+      "path": "assets/battle/people/manual-1520-battle-v1.png",
+      "dimensions": [
+        1060,
+        1484
+      ],
+      "needsRatioNormalization": false,
+      "sha256": "df11bb35883ecfbf5aa2b43032deef983f77fe65c65f86bfc8e610bedf99c2cb",
+      "status": "integrated-card-ui-validated"
+    },
+    {
+      "id": "manual-1521",
+      "name": "王翦",
+      "art": "assets/officials/historical/manual-1521/full.png",
+      "prompt": "Use case: identity-preserve game illustration. One vertical 5:7 battle portrait of 王翦, ID manual-1521. Reference 1 defines exact face, age, build, beard, hair, headwear, clothing colors, armor or civil robes and accessories; preserve recognizable identity. Reference 2 gives approved warm painterly Zhang Fei battlefield illustration style only. Waist-up close composition, large head and shoulders, entire headwear visible. Golden daylight, field command pavilion, distant ordered troops and blank standards. Keep existing weapons or writing tools only; civil figures remain unarmored. No magic, no UI/card frame, no readable text, letters or numbers on books/flags, no watermark or studio backdrop. Detailed historical game art, preserving original character design.",
+      "origin": "/Users/fengheliang/.codex/generated_images/01a16381-85b9-71f1-8014-3769188dd4cf/exec-a3c527ae-797b-4901-9e77-87dd7300529c.png",
+      "path": "assets/battle/people/manual-1521-battle-v1.png",
+      "dimensions": [
+        1060,
+        1484
+      ],
+      "needsRatioNormalization": false,
+      "sha256": "a54ba66ecb798a49f261fecae28ed7013d847ed77062aef64321d4ae5b255514",
+      "status": "integrated-card-ui-validated"
+    },
+    {
+      "id": "manual-1518",
+      "name": "廉颇",
+      "art": "assets/officials/historical/manual-1518/full.png",
+      "prompt": "Use case: identity-preserve game illustration. One vertical 5:7 battle portrait of 廉颇, ID manual-1518. Reference 1 defines exact face, age, build, beard, hair, headwear, clothing colors, armor or civil robes and accessories; preserve recognizable identity. Reference 2 gives approved warm painterly Zhang Fei battlefield illustration style only. Waist-up close composition, large head and shoulders, entire headwear visible. Golden daylight, field command pavilion, distant ordered troops and blank standards. Keep existing weapons or writing tools only; civil figures remain unarmored. No magic, no UI/card frame, no readable text, letters or numbers on books/flags, no watermark or studio backdrop. Detailed historical game art, preserving original character design.",
+      "origin": "/Users/fengheliang/.codex/generated_images/01a16381-85b9-71f1-8014-3769188dd4cf/exec-5b8a323e-fcc8-43b1-b14a-617bf39741ed.png",
+      "path": "assets/battle/people/manual-1518-battle-v1.png",
+      "dimensions": [
+        1060,
+        1484
+      ],
+      "needsRatioNormalization": false,
+      "sha256": "865500ac328297d825fd5ab359ce74b5a131659fd6c403d35fcaaadf60f74773",
+      "status": "integrated-card-ui-validated"
+    },
+    {
+      "id": "manual-1522",
+      "name": "李牧",
+      "art": "assets/officials/historical/manual-1522/full.png",
+      "prompt": "Use case: identity-preserve game illustration. One vertical 5:7 battle portrait of 李牧, ID manual-1522. Reference 1 defines exact face, age, build, beard, hair, headwear, clothing colors, armor or civil robes and accessories; preserve recognizable identity. Reference 2 gives approved warm painterly Zhang Fei battlefield illustration style only. Waist-up close composition, large head and shoulders, entire headwear visible. Golden daylight, field command pavilion, distant ordered troops and blank standards. Keep existing weapons or writing tools only; civil figures remain unarmored. No magic, no UI/card frame, no readable text, letters or numbers on books/flags, no watermark or studio backdrop. Detailed historical game art, preserving original character design.",
+      "origin": "/Users/fengheliang/.codex/generated_images/01a16381-85b9-71f1-8014-3769188dd4cf/exec-991b1d93-a875-4e93-8fa9-26fef5798e7f.png",
+      "path": "assets/battle/people/manual-1522-battle-v1.png",
+      "dimensions": [
+        1060,
+        1484
+      ],
+      "needsRatioNormalization": false,
+      "sha256": "ea31f70c15bdcb4887426ee8bb3f3f8d64e6d0cff836ac2ba3328464e2e37a35",
+      "status": "integrated-card-ui-validated"
+    },
+    {
+      "id": "manual-1524",
+      "name": "吕不韦",
+      "art": "assets/officials/historical/manual-1524/full.png",
+      "prompt": "Use case: identity-preserve game illustration. One vertical 5:7 battle portrait of 吕不韦, ID manual-1524. Reference 1 defines exact face, age, build, beard, hair, headwear, clothing colors, armor or civil robes and accessories; preserve recognizable identity. Reference 2 gives approved warm painterly Zhang Fei battlefield illustration style only. Waist-up close composition, large head and shoulders, entire headwear visible. Golden daylight, field command pavilion, distant ordered troops and blank standards. Keep existing weapons or writing tools only; civil figures remain unarmored. No magic, no UI/card frame, no readable text, letters or numbers on books/flags, no watermark or studio backdrop. Detailed historical game art, preserving original character design.",
+      "origin": "/Users/fengheliang/.codex/generated_images/01a16381-85b9-71f1-8014-3769188dd4cf/exec-fa7f9bbe-2e0b-4394-b107-3a5ad19437fa.png",
+      "path": "assets/battle/people/manual-1524-battle-v1.png",
+      "dimensions": [
+        1060,
+        1484
+      ],
+      "needsRatioNormalization": false,
+      "sha256": "fa5cc2fa8ae3fe4c55b6192e1ca072d42c0c443ad5fb8094048a3ac06abb32d4",
+      "status": "integrated-card-ui-validated"
+    },
+    {
+      "id": "general-56-58629",
+      "name": "蒙恬",
+      "art": "assets/officials/historical/general-56-58629/full.png",
+      "prompt": "Use case: identity-preserve game illustration. One vertical 5:7 battle portrait of 蒙恬, ID general-56-58629. Reference 1 defines exact face, age, build, beard, hair, headwear, clothing colors, armor or civil robes and accessories; preserve recognizable identity. Reference 2 gives approved warm painterly Zhang Fei battlefield illustration style only. Waist-up close composition, large head and shoulders, entire headwear visible. Golden daylight, field command pavilion, distant ordered troops and blank standards. Keep existing weapons or writing tools only; civil figures remain unarmored. No magic, no UI/card frame, no readable text, letters or numbers on books/flags, no watermark or studio backdrop. Detailed historical game art, preserving original character design.",
+      "origin": "/Users/fengheliang/.codex/generated_images/01a16381-85b9-71f1-8014-3769188dd4cf/exec-88220c2f-18f3-4663-aae5-cb7a66d6261f.png",
+      "path": "assets/battle/people/general-56-58629-battle-v1.png",
+      "dimensions": [
+        1060,
+        1484
+      ],
+      "needsRatioNormalization": false,
+      "sha256": "9f17b52d603da4d72f6adbc976c43346a49d63e9ce1d6c9ae7877c8cf055d6c7",
+      "status": "integrated-card-ui-validated"
+    },
+    {
+      "id": "general-103-50637",
+      "name": "李广",
+      "art": "assets/officials/historical/general-103-50637/full.png",
+      "prompt": "Use case: identity-preserve game illustration. One vertical 5:7 battle portrait of 李广, ID general-103-50637. Reference 1 defines exact face, age, build, beard, hair, headwear, clothing colors, armor or civil robes and accessories; preserve recognizable identity. Reference 2 gives approved warm painterly Zhang Fei battlefield illustration style only. Waist-up close composition, large head and shoulders, entire headwear visible. Golden daylight, field command pavilion, distant ordered troops and blank standards. Keep existing weapons or writing tools only; civil figures remain unarmored. No magic, no UI/card frame, no readable text, letters or numbers on books/flags, no watermark or studio backdrop. Detailed historical game art, preserving original character design.",
+      "origin": "/Users/fengheliang/.codex/generated_images/01a16381-85b9-71f1-8014-3769188dd4cf/exec-ba52c7e3-4319-4752-ae86-3314eabd1059.png",
+      "path": "assets/battle/people/general-103-50637-battle-v1.png",
+      "dimensions": [
+        1060,
+        1484
+      ],
+      "needsRatioNormalization": false,
+      "sha256": "c0fec586fc89a5301c920e8829eafe47b8c964d76e851cff7ddf6368cdda84c8",
+      "status": "integrated-card-ui-validated"
+    },
+    {
+      "id": "original-77",
+      "name": "荆轲",
+      "art": "assets/officials/historical/original-77/full.png",
+      "prompt": "Create one vertical 5:7 identity-preserving battle portrait of 荆轲, existing character ID original-77. Reference 1 defines exact recognizable face, age, hair, beard, build, headwear, clothing colors and accessories; preserve all identity details and existing weapons. Reference 2 supplies warm painterly Zhang Fei battlefield style only. Waist-up close composition, large head and shoulders, whole headdress and plumes visible. Golden daylight, field command pavilion and distant ordered troops with blank standards. Civil robes stay unarmored; no added magic. No card frame, UI, readable writing, numbers, watermark or studio backdrop. Paper and scrolls blank. Detailed historical game illustration preserving original character design.",
+      "origin": "/Users/fengheliang/.codex/generated_images/01a16381-85b9-71f1-8014-3769188dd4cf/exec-f31a8b30-117f-4b34-9e1a-090f451b6d73.png",
+      "path": "assets/battle/people/original-77-battle-v1.png",
+      "dimensions": [
+        1060,
+        1484
+      ],
+      "needsRatioNormalization": false,
+      "sha256": "6907e7eab31905b4723a8ac9318417092ddc29ed79985a7afe39bdb204f478cf",
+      "status": "integrated-card-ui-validated"
+    },
+    {
+      "id": "general-38-51333",
+      "name": "田单",
+      "art": "assets/officials/historical/general-38-51333/full.png",
+      "prompt": "Create one vertical 5:7 identity-preserving battle portrait of 田单, existing character ID general-38-51333. Reference 1 defines exact recognizable face, age, hair, beard, build, headwear, clothing colors and accessories; preserve all identity details and existing weapons. Reference 2 supplies warm painterly Zhang Fei battlefield style only. Waist-up close composition, large head and shoulders, whole headdress and plumes visible. Golden daylight, field command pavilion and distant ordered troops with blank standards. Civil robes stay unarmored; no added magic. No card frame, UI, readable writing, numbers, watermark or studio backdrop. Paper and scrolls blank. Detailed historical game illustration preserving original character design.",
+      "origin": "/Users/fengheliang/.codex/generated_images/01a16381-85b9-71f1-8014-3769188dd4cf/exec-3cb2a8ac-c014-4a42-b2dd-07cf9fa304a7.png",
+      "path": "assets/battle/people/general-38-51333-battle-v1.png",
+      "dimensions": [
+        1060,
+        1484
+      ],
+      "needsRatioNormalization": false,
+      "sha256": "e53741b8bd76fdd891700a7a44a686460964fb32531cfb1bb9cb90daf89113dd",
+      "status": "integrated-card-ui-validated"
+    },
+    {
+      "id": "original-79",
+      "name": "司马迁",
+      "art": "assets/officials/historical/original-79/full.png",
+      "prompt": "Create one vertical 5:7 identity-preserving battle portrait of 司马迁, existing character ID original-79. Reference 1 defines exact recognizable face, age, hair, beard, build, headwear, clothing colors and accessories; preserve all identity details and existing weapons. Reference 2 supplies warm painterly Zhang Fei battlefield style only. Waist-up close composition, large head and shoulders, whole headdress and plumes visible. Golden daylight, field command pavilion and distant ordered troops with blank standards. Civil robes stay unarmored; no added magic. No card frame, UI, readable writing, numbers, watermark or studio backdrop. Paper and scrolls blank. Detailed historical game illustration preserving original character design.",
+      "origin": "/Users/fengheliang/.codex/generated_images/01a16381-85b9-71f1-8014-3769188dd4cf/exec-bdd53df4-b707-417a-a29e-f54a020ec1b3.png",
+      "path": "assets/battle/people/original-79-battle-v1.png",
+      "dimensions": [
+        1060,
+        1484
+      ],
+      "needsRatioNormalization": false,
+      "sha256": "605b1a37ad356f7c1fda15777eebaac988b41b80ef613233c20438902c5a6110",
+      "status": "integrated-card-ui-validated"
+    },
+    {
+      "id": "cbdb-30257",
+      "name": "曹操",
+      "art": "assets/officials/historical/cbdb-30257/full.png",
+      "prompt": "Create one vertical 5:7 identity-preserving battle portrait of 曹操, existing character ID cbdb-30257. Reference 1 defines exact recognizable face, age, hair, beard, build, headwear, clothing colors and accessories; preserve all identity details and existing weapons. Reference 2 supplies warm painterly Zhang Fei battlefield style only. Waist-up close composition, large head and shoulders, whole headdress and plumes visible. Golden daylight, field command pavilion and distant ordered troops with blank standards. Civil robes stay unarmored; no added magic. No card frame, UI, readable writing, numbers, watermark or studio backdrop. Paper and scrolls blank. Detailed historical game illustration preserving original character design.",
+      "origin": "/Users/fengheliang/.codex/generated_images/01a16381-85b9-71f1-8014-3769188dd4cf/exec-2b6e5943-d8d1-448b-8a2b-4cd164aa201a.png",
+      "path": "assets/battle/people/cbdb-30257-battle-v1.png",
+      "dimensions": [
+        1060,
+        1484
+      ],
+      "needsRatioNormalization": false,
+      "sha256": "b039b7f2814d4394028993b042c9837327d4fe2cdbda3dce5d7a8ba1b9a7d7a6",
+      "status": "integrated-card-ui-validated"
+    },
+    {
+      "id": "manual-1555",
+      "name": "赵云",
+      "art": "assets/officials/historical/manual-1555/full.png",
+      "prompt": "Create one vertical 5:7 identity-preserving battle portrait of 赵云, existing character ID manual-1555. Reference 1 defines exact recognizable face, age, hair, beard, build, headwear, clothing colors and accessories; preserve all identity details and existing weapons. Reference 2 supplies warm painterly Zhang Fei battlefield style only. Waist-up close composition, large head and shoulders, whole headdress and plumes visible. Golden daylight, field command pavilion and distant ordered troops with blank standards. Civil robes stay unarmored; no added magic. No card frame, UI, readable writing, numbers, watermark or studio backdrop. Paper and scrolls blank. Detailed historical game illustration preserving original character design.",
+      "origin": "/Users/fengheliang/.codex/generated_images/01a16381-85b9-71f1-8014-3769188dd4cf/exec-7029feb9-c7a1-4dd1-843c-942a0cafea4f.png",
+      "path": "assets/battle/people/manual-1555-battle-v1.png",
+      "dimensions": [
+        1060,
+        1484
+      ],
+      "needsRatioNormalization": false,
+      "sha256": "70ca82801669cb8ba10a9d4079ae65a2bfea4146684a30977c88b25357c32dea",
+      "status": "integrated-card-ui-validated"
+    },
+    {
+      "id": "manual-1565",
+      "name": "司马懿",
+      "art": "assets/officials/historical/manual-1565/full.png",
+      "prompt": "Create one vertical 5:7 identity-preserving battle portrait of 司马懿, existing character ID manual-1565. Reference 1 defines exact recognizable face, age, hair, beard, build, headwear, clothing colors and accessories; preserve all identity details and existing weapons. Reference 2 supplies warm painterly Zhang Fei battlefield style only. Waist-up close composition, large head and shoulders, whole headdress and plumes visible. Golden daylight, field command pavilion and distant ordered troops with blank standards. Civil robes stay unarmored; no added magic. No card frame, UI, readable writing, numbers, watermark or studio backdrop. Paper and scrolls blank. Detailed historical game illustration preserving original character design.",
+      "origin": "/Users/fengheliang/.codex/generated_images/01a16381-85b9-71f1-8014-3769188dd4cf/exec-e96db2ab-0222-410e-b8f8-b73333c2c893.png",
+      "path": "assets/battle/people/manual-1565-battle-v1.png",
+      "dimensions": [
+        1060,
+        1484
+      ],
+      "needsRatioNormalization": false,
+      "sha256": "1dad9e79e9bfffde1a09c5fce48c115d555028b756c61880136a082465e6162d",
+      "status": "integrated-card-ui-validated"
+    },
+    {
+      "id": "general-285-45592",
+      "name": "吕布",
+      "art": "assets/officials/historical/general-285-45592/full.png",
+      "prompt": "Create one vertical 5:7 identity-preserving battle portrait of 吕布, existing character ID general-285-45592. Reference 1 defines exact recognizable face, age, hair, beard, build, headwear, clothing colors and accessories; preserve all identity details and existing weapons. Reference 2 supplies warm painterly Zhang Fei battlefield style only. Waist-up close composition, large head and shoulders, whole headdress and plumes visible. Golden daylight, field command pavilion and distant ordered troops with blank standards. Civil robes stay unarmored; no added magic. No card frame, UI, readable writing, numbers, watermark or studio backdrop. Paper and scrolls blank. Detailed historical game illustration preserving original character design.",
+      "origin": "/Users/fengheliang/.codex/generated_images/01a16381-85b9-71f1-8014-3769188dd4cf/exec-55f8390e-9d81-468f-a680-874da34e1882.png",
+      "path": "assets/battle/people/general-285-45592-battle-v1.png",
+      "dimensions": [
+        1060,
+        1484
+      ],
+      "needsRatioNormalization": false,
+      "sha256": "af8b7bd9fa3da5cb92a3691bfd88722e83cb7e90d4a056cad7a949e2c9927699",
+      "status": "integrated-card-ui-validated"
+    },
+    {
+      "id": "manual-1553",
+      "name": "关羽",
+      "art": "assets/officials/historical/manual-1553/full.png",
+      "prompt": "Create one vertical 5:7 identity-preserving battle portrait of 关羽, existing character ID manual-1553. Reference 1 defines exact recognizable face, age, hair, beard, build, headwear, clothing colors and accessories; preserve all identity details and existing weapons. Reference 2 supplies warm painterly Zhang Fei battlefield style only. Waist-up close composition, large head and shoulders, whole headdress and plumes visible. Golden daylight, field command pavilion and distant ordered troops with blank standards. Civil robes stay unarmored; no added magic. No card frame, UI, readable writing, numbers, watermark or studio backdrop. Paper and scrolls blank. Detailed historical game illustration preserving original character design.",
+      "origin": "/Users/fengheliang/.codex/generated_images/01a16381-85b9-71f1-8014-3769188dd4cf/exec-077bd598-e3cc-48d1-8a4f-c521d616093e.png",
+      "path": "assets/battle/people/manual-1553-battle-v1.png",
+      "dimensions": [
+        1060,
+        1484
+      ],
+      "needsRatioNormalization": false,
+      "sha256": "e4f9d628ee904c90709c7adb6c296348ec5892281b0f906e73f54971dda766d3",
+      "status": "integrated-card-ui-validated"
+    },
+    {
+      "id": "manual-1569",
+      "name": "周瑜",
+      "art": "assets/officials/historical/manual-1569/full.png",
+      "prompt": "Create one vertical 5:7 identity-preserving battle portrait of 周瑜, existing character ID manual-1569. Reference 1 defines exact recognizable face, age, hair, beard, build, headwear, clothing colors and accessories; preserve all identity details and existing weapons. Reference 2 supplies warm painterly Zhang Fei battlefield style only. Waist-up close composition, large head and shoulders, whole headdress and plumes visible. Golden daylight, field command pavilion and distant ordered troops with blank standards. Civil robes stay unarmored; no added magic. No card frame, UI, readable writing, numbers, watermark or studio backdrop. Paper and scrolls blank. Detailed historical game illustration preserving original character design.",
+      "origin": "/Users/fengheliang/.codex/generated_images/01a16381-85b9-71f1-8014-3769188dd4cf/exec-c4a40855-4509-48a5-a57f-882efb14a49d.png",
+      "path": "assets/battle/people/manual-1569-battle-v1.png",
+      "dimensions": [
+        1060,
+        1484
+      ],
+      "needsRatioNormalization": false,
+      "sha256": "d72a73385769935f7bf6f1856cb490b1087113acb38bb7c670c08f5f355ddfdf",
+      "status": "integrated-card-ui-validated"
+    },
+    {
+      "id": "general-398-60962",
+      "name": "秦琼",
+      "art": "assets/officials/historical/general-398-60962/full.png",
+      "prompt": "Create one vertical 5:7 identity-preserving battle portrait of 秦琼, existing character ID general-398-60962. Reference 1 defines exact recognizable face, age, hair, beard, build, headwear, clothing colors and accessories; preserve all identity details and existing weapons. Reference 2 supplies warm painterly Zhang Fei battlefield style only. Waist-up close composition, large head and shoulders, whole headdress and plumes visible. Golden daylight, field command pavilion and distant ordered troops with blank standards. Civil robes stay unarmored; no added magic. No card frame, UI, readable writing, numbers, watermark or studio backdrop. Paper and scrolls blank. Detailed historical game illustration preserving original character design.",
+      "origin": "/Users/fengheliang/.codex/generated_images/01a16381-85b9-71f1-8014-3769188dd4cf/exec-dc15f7ea-8548-4602-b700-121c89832704.png",
+      "path": "assets/battle/people/general-398-60962-battle-v1.png",
+      "dimensions": [
+        1060,
+        1484
+      ],
+      "needsRatioNormalization": false,
+      "sha256": "fb4f4f188e9a1226d0cdf234fdc94b01fde624d90b89de7f1b7bf4619bafdb09",
+      "status": "integrated-card-ui-validated"
+    },
+    {
+      "id": "original-88",
+      "name": "尉迟恭",
+      "art": "assets/officials/historical/original-88/full.png",
+      "prompt": "One vertical 5:7 identity-preserving battle portrait for 尉迟恭, existing character ID original-88. Image 1 supplies exact identity: preserve face, age, body build, hair/beard, headwear, original clothing colors and all recognizable accessories. Image 2 supplies approved warm painterly Zhang Fei battlefield style only. Waist-up close view with large head and shoulders, full headdress visible, golden daylight, field command pavilion with distant organized troops and blank banners. Preserve original armor or civilian robes exactly in type, no armor on civilian figures; keep existing weapons or writing tools only. No magic, text, numbers, UI/card frame, watermark or studio backdrop. Books and papers blank. Detailed historical game art, no new claims about historical authenticity.",
+      "origin": "/Users/fengheliang/.codex/generated_images/01a16381-85b9-71f1-8014-3769188dd4cf/exec-f89340b3-6cee-4a69-818f-13d09cb65b31.png",
+      "path": "assets/battle/people/original-88-battle-v1.png",
+      "dimensions": [
+        1060,
+        1484
+      ],
+      "needsRatioNormalization": false,
+      "sha256": "80c965febf52eca1a3e76070d1a332d72c6d6e91932eb294bed9372602aa2f9d",
+      "status": "integrated-card-ui-validated"
+    },
+    {
+      "id": "original-89",
+      "name": "李密",
+      "art": "assets/officials/historical/original-89/full.png",
+      "prompt": "One vertical 5:7 identity-preserving battle portrait for 李密, existing character ID original-89. Image 1 supplies exact identity: preserve face, age, body build, hair/beard, headwear, original clothing colors and all recognizable accessories. Image 2 supplies approved warm painterly Zhang Fei battlefield style only. Waist-up close view with large head and shoulders, full headdress visible, golden daylight, field command pavilion with distant organized troops and blank banners. Preserve original armor or civilian robes exactly in type, no armor on civilian figures; keep existing weapons or writing tools only. No magic, text, numbers, UI/card frame, watermark or studio backdrop. Books and papers blank. Detailed historical game art, no new claims about historical authenticity.",
+      "origin": "/Users/fengheliang/.codex/generated_images/01a16381-85b9-71f1-8014-3769188dd4cf/exec-706c8032-0d43-42d1-bae5-0354421a2e18.png",
+      "path": "assets/battle/people/original-89-battle-v1.png",
+      "dimensions": [
+        1060,
+        1484
+      ],
+      "needsRatioNormalization": false,
+      "sha256": "3fb9cded175e7f12527fd63b634a0fcac60b5ed1a8f5ccb84fdcdd844684a8d3",
+      "status": "integrated-card-ui-validated"
+    },
+    {
+      "id": "cbdb-3332",
+      "name": "韩愈",
+      "art": "assets/officials/historical/cbdb-3332/full.png",
+      "prompt": "One vertical 5:7 identity-preserving battle portrait for 韩愈, existing character ID cbdb-3332. Image 1 supplies exact identity: preserve face, age, body build, hair/beard, headwear, original clothing colors and all recognizable accessories. Image 2 supplies approved warm painterly Zhang Fei battlefield style only. Waist-up close view with large head and shoulders, full headdress visible, golden daylight, field command pavilion with distant organized troops and blank banners. Preserve original armor or civilian robes exactly in type, no armor on civilian figures; keep existing weapons or writing tools only. No magic, text, numbers, UI/card frame, watermark or studio backdrop. Books and papers blank. Detailed historical game art, no new claims about historical authenticity.",
+      "origin": "/Users/fengheliang/.codex/generated_images/01a16381-85b9-71f1-8014-3769188dd4cf/exec-00a25fe5-b096-4098-b94f-d744493a726d.png",
+      "path": "assets/battle/people/cbdb-3332-battle-v1.png",
+      "dimensions": [
+        1060,
+        1484
+      ],
+      "needsRatioNormalization": false,
+      "sha256": "d59269e1fef14d1330f9f6ee1140f164fa0bf58318b7c9669e42f61dd0546bf9",
+      "status": "integrated-card-ui-validated"
+    },
+    {
+      "id": "general-638-62417",
+      "name": "拔都",
+      "art": "assets/officials/historical/general-638-62417/full.png",
+      "prompt": "One vertical 5:7 identity-preserving battle portrait for 拔都, existing character ID general-638-62417. Image 1 supplies exact identity: preserve face, age, body build, hair/beard, headwear, original clothing colors and all recognizable accessories. Image 2 supplies approved warm painterly Zhang Fei battlefield style only. Waist-up close view with large head and shoulders, full headdress visible, golden daylight, field command pavilion with distant organized troops and blank banners. Preserve original armor or civilian robes exactly in type, no armor on civilian figures; keep existing weapons or writing tools only. No magic, text, numbers, UI/card frame, watermark or studio backdrop. Books and papers blank. Detailed historical game art, no new claims about historical authenticity.",
+      "origin": "/Users/fengheliang/.codex/generated_images/01a16381-85b9-71f1-8014-3769188dd4cf/exec-fbce8b0c-f866-46a7-b2ca-cdbaac259521.png",
+      "path": "assets/battle/people/general-638-62417-battle-v1.png",
+      "dimensions": [
+        1060,
+        1484
+      ],
+      "needsRatioNormalization": false,
+      "sha256": "0668d10a9ba7719ada16861b25c0b8b59863a52ed5dee399033fad88eaf42fe6",
+      "status": "integrated-card-ui-validated"
+    },
+    {
+      "id": "general-795-83328",
+      "name": "郑成功",
+      "art": "assets/officials/historical/general-795-83328/full.png",
+      "prompt": "One vertical 5:7 identity-preserving battle portrait for 郑成功, existing character ID general-795-83328. Image 1 supplies exact identity: preserve face, age, body build, hair/beard, headwear, original clothing colors and all recognizable accessories. Image 2 supplies approved warm painterly Zhang Fei battlefield style only. Waist-up close view with large head and shoulders, full headdress visible, golden daylight, field command pavilion with distant organized troops and blank banners. Preserve original armor or civilian robes exactly in type, no armor on civilian figures; keep existing weapons or writing tools only. No magic, text, numbers, UI/card frame, watermark or studio backdrop. Books and papers blank. Detailed historical game art, no new claims about historical authenticity.",
+      "origin": "/Users/fengheliang/.codex/generated_images/01a16381-85b9-71f1-8014-3769188dd4cf/exec-dedab21b-1b76-438e-936d-edf5db041b8a.png",
+      "path": "assets/battle/people/general-795-83328-battle-v1.png",
+      "dimensions": [
+        1060,
+        1484
+      ],
+      "needsRatioNormalization": false,
+      "sha256": "34ff79c8b389e37d0ab4b3323bef296c92f6e19e9dfa81889cb2be9ddcdfe5bd",
+      "status": "integrated-card-ui-validated"
+    },
+    {
+      "id": "manual-1616",
+      "name": "袁崇焕",
+      "art": "assets/officials/historical/manual-1616/full.png",
+      "prompt": "One vertical 5:7 identity-preserving battle portrait for 袁崇焕, existing character ID manual-1616. Image 1 supplies exact identity: preserve face, age, body build, hair/beard, headwear, original clothing colors and all recognizable accessories. Image 2 supplies approved warm painterly Zhang Fei battlefield style only. Waist-up close view with large head and shoulders, full headdress visible, golden daylight, field command pavilion with distant organized troops and blank banners. Preserve original armor or civilian robes exactly in type, no armor on civilian figures; keep existing weapons or writing tools only. No magic, text, numbers, UI/card frame, watermark or studio backdrop. Books and papers blank. Detailed historical game art, no new claims about historical authenticity.",
+      "origin": "/Users/fengheliang/.codex/generated_images/01a16381-85b9-71f1-8014-3769188dd4cf/exec-d8399eb0-d424-418d-85e8-8b87eda67a90.png",
+      "path": "assets/battle/people/manual-1616-battle-v1.png",
+      "dimensions": [
+        1060,
+        1484
+      ],
+      "needsRatioNormalization": false,
+      "sha256": "920e3b0f01d7d864a09eefecbad5be24c8d16967323823a89dfaef8189541974",
+      "status": "integrated-card-ui-validated"
+    },
+    {
+      "id": "manual-1625",
+      "name": "刘墉",
+      "art": "assets/officials/historical/manual-1625/full.png",
+      "prompt": "One vertical 5:7 identity-preserving battle portrait for 刘墉, existing character ID manual-1625. Image 1 supplies exact identity: preserve face, age, body build, hair/beard, headwear, original clothing colors and all recognizable accessories. Image 2 supplies approved warm painterly Zhang Fei battlefield style only. Waist-up close view with large head and shoulders, full headdress visible, golden daylight, field command pavilion with distant organized troops and blank banners. Preserve original armor or civilian robes exactly in type, no armor on civilian figures; keep existing weapons or writing tools only. No magic, text, numbers, UI/card frame, watermark or studio backdrop. Books and papers blank. Detailed historical game art, no new claims about historical authenticity.",
+      "origin": "/Users/fengheliang/.codex/generated_images/01a16381-85b9-71f1-8014-3769188dd4cf/exec-2b6659ca-0bf7-4f39-a1ea-97185d86dc0a.png",
+      "path": "assets/battle/people/manual-1625-battle-v1.png",
+      "dimensions": [
+        1060,
+        1484
+      ],
+      "needsRatioNormalization": false,
+      "sha256": "210f907c8956b1d516d8ef403d9ca26b6f99aa65a42d84c4927b99c62e52ae21",
+      "status": "integrated-card-ui-validated"
+    },
+    {
+      "id": "manual-1618",
+      "name": "魏忠贤",
+      "art": "assets/officials/historical/manual-1618/full.png",
+      "prompt": "One vertical 5:7 identity-preserving battle portrait for 魏忠贤, existing character ID manual-1618. Image 1 supplies exact identity: preserve face, age, body build, hair/beard, headwear, original clothing colors and all recognizable accessories. Image 2 supplies approved warm painterly Zhang Fei battlefield style only. Waist-up close view with large head and shoulders, full headdress visible, golden daylight, field command pavilion with distant organized troops and blank banners. Preserve original armor or civilian robes exactly in type, no armor on civilian figures; keep existing weapons or writing tools only. No magic, text, numbers, UI/card frame, watermark or studio backdrop. Books and papers blank. Detailed historical game art, no new claims about historical authenticity.",
+      "origin": "/Users/fengheliang/.codex/generated_images/01a16381-85b9-71f1-8014-3769188dd4cf/exec-109c140b-e0f7-432a-b8eb-e28395046e3e.png",
+      "path": "assets/battle/people/manual-1618-battle-v1.png",
+      "dimensions": [
+        1060,
+        1484
+      ],
+      "needsRatioNormalization": false,
+      "sha256": "6fa65a15554a5ce2d1a259307373cf4c7fb349fcdcff523d4cf626b2225c8488",
+      "status": "integrated-card-ui-validated"
+    },
+    {
+      "id": "manual-1624",
+      "name": "和珅",
+      "art": "assets/officials/historical/manual-1624/full.png",
+      "prompt": "One vertical 5:7 identity-preserving battle portrait for 和珅, existing character ID manual-1624. Image 1 supplies exact identity: preserve face, age, body build, hair/beard, headwear, original clothing colors and all recognizable accessories. Image 2 supplies approved warm painterly Zhang Fei battlefield style only. Waist-up close view with large head and shoulders, full headdress visible, golden daylight, field command pavilion with distant organized troops and blank banners. Preserve original armor or civilian robes exactly in type, no armor on civilian figures; keep existing weapons or writing tools only. No magic, text, numbers, UI/card frame, watermark or studio backdrop. Books and papers blank. Detailed historical game art, no new claims about historical authenticity.",
+      "origin": "/Users/fengheliang/.codex/generated_images/01a16381-85b9-71f1-8014-3769188dd4cf/exec-2dea70e2-afdf-421f-8ffb-8c38e2a2c82c.png",
+      "path": "assets/battle/people/manual-1624-battle-v1.png",
+      "dimensions": [
+        1060,
+        1484
+      ],
+      "needsRatioNormalization": false,
+      "sha256": "a1176bb84ad9a7111f840fc8d4e458351f87f03042a5f5a55528a16c5d9c121d",
+      "status": "integrated-card-ui-validated"
+    },
+    {
+      "id": "original-97",
+      "name": "刘耀伦",
+      "art": "assets/officials/historical/original-97/full.png",
+      "prompt": "One vertical 5:7 identity-preserving battle portrait for 刘耀伦, existing character ID original-97. Image 1 supplies exact identity: preserve face, age, body build, hair/beard, headwear, original clothing colors and all recognizable accessories. Image 2 supplies approved warm painterly Zhang Fei battlefield style only. Waist-up close view with large head and shoulders, full headdress visible, golden daylight, field command pavilion with distant organized troops and blank banners. Preserve original armor or civilian robes exactly in type, no armor on civilian figures; keep existing weapons or writing tools only. No magic, text, numbers, UI/card frame, watermark or studio backdrop. Books and papers blank. Detailed historical game art, no new claims about historical authenticity.",
+      "origin": "/Users/fengheliang/.codex/generated_images/01a16381-85b9-71f1-8014-3769188dd4cf/exec-f07c3d18-d732-49af-83da-e200c34b663f.png",
+      "path": "assets/battle/people/original-97-battle-v1.png",
+      "dimensions": [
+        1060,
+        1484
+      ],
+      "needsRatioNormalization": false,
+      "sha256": "08e13fe2fa2d59281d4c53cc7dafdaed5438ac71a791cf1c858690f7b310a9ac",
+      "status": "integrated-card-ui-validated"
+    },
+    {
+      "id": "original-98",
+      "name": "邹鹏",
+      "art": "assets/officials/historical/original-98/full.png",
+      "prompt": "One vertical 5:7 identity-preserving battle card illustration of existing character 邹鹏, ID original-98. Image 1 defines exact face, age, hair, facial hair, slim build, scholar hat, civilian robe colors and scroll accessories. Preserve recognizable original identity, keep unarmored scholar robes. Image 2 supplies approved warm painterly Zhang Fei battlefield style only. Waist-up close composition with dominant head and shoulders, complete headwear visible, golden daylight, command pavilion and distant organized troops with blank standards. No additional weapons or magic, no card frame, UI, readable text, numbers, watermark or studio backdrop. Papers blank. Historically inspired game art, not a historical authenticity claim.",
+      "origin": "/Users/fengheliang/.codex/generated_images/01a16381-85b9-71f1-8014-3769188dd4cf/exec-652099d0-da63-4c8f-a6e2-026ddcee166a.png",
+      "path": "assets/battle/people/original-98-battle-v1.png",
+      "dimensions": [
+        1060,
+        1484
+      ],
+      "needsRatioNormalization": false,
+      "sha256": "10f1c002d58ddd9ea60a073351bea404eabfcc9a760b5450a8c33311e68f3dde",
+      "status": "integrated-card-ui-validated"
+    },
+    {
+      "id": "original-99",
+      "name": "沈昌平",
+      "art": "assets/officials/historical/original-99/full.png",
+      "prompt": "One vertical 5:7 identity-preserving battle card illustration of existing character 沈昌平, ID original-99. Image 1 defines exact face, age, hair, facial hair, slim build, scholar hat, civilian robe colors and scroll accessories. Preserve recognizable original identity, keep unarmored scholar robes. Image 2 supplies approved warm painterly Zhang Fei battlefield style only. Waist-up close composition with dominant head and shoulders, complete headwear visible, golden daylight, command pavilion and distant organized troops with blank standards. No additional weapons or magic, no card frame, UI, readable text, numbers, watermark or studio backdrop. Papers blank. Historically inspired game art, not a historical authenticity claim.",
+      "origin": "/Users/fengheliang/.codex/generated_images/01a16381-85b9-71f1-8014-3769188dd4cf/exec-3c8a85ec-5e3d-4c95-acdb-13cc09403038.png",
+      "path": "assets/battle/people/original-99-battle-v1.png",
+      "dimensions": [
+        1060,
+        1484
+      ],
+      "needsRatioNormalization": false,
+      "sha256": "3ad3b26392771f2c4eeee2f47dedaa98ca3a5d087073eecade101872613c2157",
+      "status": "integrated-card-ui-validated"
+    }
+  ]
+}

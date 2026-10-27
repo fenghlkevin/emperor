@@ -1,6 +1,6 @@
 # 阶段三图集提示词
 
-均使用 imagegen 内置工具，保留透明通道。已接受副本：assets/war-camel-v1.png、assets/war-elephant-v2.png。象鼻绑刃为用户追加要求，所有卷鼻帧需外侧可见。
+均使用 imagegen 内置工具，保留透明通道。已接受副本：assets/battle/units/war-camel-v1.png、assets/battle/units/war-elephant-v2.png。象鼻绑刃为用户追加要求，所有卷鼻帧需外侧可见。
 
 ## camelEightPrompt
 

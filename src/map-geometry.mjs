@@ -68,3 +68,59 @@ export function exteriorPath(regions){
  }
  return [...edges.values()].map(([a,b])=>`M${a[0].toFixed(6)},${(-a[1]).toFixed(6)}L${b[0].toFixed(6)},${(-b[1]).toFixed(6)}`).join('');
 }
+
+// Round authored coastline corners without overshooting narrow straits. Open
+// chains retain their endpoints, so the shared eastern coast remains exact.
+export function softenCoast(points,closed=false,passes=2){
+ let ring=points;
+ for(let pass=0;pass<passes;pass++){
+  const out=closed?[]:[ring[0]],n=closed?ring.length:ring.length-1;
+  for(let i=0;i<n;i++){
+   const a=ring[i],b=ring[(i+1)%ring.length];
+   out.push(a.map((v,k)=>v*.75+b[k]*.25),a.map((v,k)=>v*.25+b[k]*.75));
+  }
+  if(!closed)out.push(ring.at(-1));ring=out;
+ }
+ return ring;
+}
+
+export function clipToBounds(ring,[west,east,south,north]){
+ let result=ring;
+ for(const [axis,edge,sign]of [[0,west,1],[0,east,-1],[1,south,1],[1,north,-1]]){
+  const out=[];
+  for(let i=0;i<result.length;i++){
+   const a=result[i],b=result[(i+1)%result.length],da=(a[axis]-edge)*sign,db=(b[axis]-edge)*sign;
+   if(da>=0)out.push(a);
+   if(da*db<0){const t=da/(da-db);out.push(a.map((v,k)=>v+(b[k]-v)*t));}
+  }
+  result=out;
+ }
+ return result;
+}
+
+// Deterministic shared inland chain for un-authored state edges. Canonical
+// direction ensures adjacent polygons receive the exact reversed samples.
+export function naturalBorder(a,b){
+ const forward=key(a)<key(b),start=forward?a:b,end=forward?b:a;
+ const dx=end[0]-start[0],dy=end[1]-start[1],length=Math.hypot(dx,dy);
+ let hash=0;for(const c of key(start)+'/'+key(end))hash=(hash*31+c.charCodeAt(0))>>>0;
+ const count=Math.max(8,Math.ceil(length/.12));
+ const points=Array.from({length:count+1},(_,i)=>{
+  if(!i)return start;if(i===count)return end;
+  const t=i/count,wave=Math.sin(Math.PI*t)*Math.min(.22,length*.055)*(Math.sin(t*Math.PI*2+(hash%17))*.7+Math.sin(t*Math.PI*5+(hash%11))*.3);
+  return [start[0]+dx*t-dy/length*wave,start[1]+dy*t+dx/length*wave];
+ });
+ return forward?points:points.reverse();
+}
+
+// Local cartographic correction for the far northeastern mainland. Two gentle
+// shears move every shared country/coast sample together; the home provinces
+// and Japanese archipelago remain outside the affected window.
+export function northeastPoint([x,y]){
+ const smooth=t=>{t=Math.max(0,Math.min(1,t));return t*t*(3-2*t);};
+ const east=smooth((x-130)/18)*smooth((185-x)/12),north=smooth((y-48)/10);
+ const u=x+east*north*(1.05*Math.sin((y-48)*.48)+.38*Math.sin((y-48)*1.1));
+ const south=smooth((u-150)/14)*smooth((185-u)/10);
+ const v=y-2*south*Math.exp(-(((y-60)/5)**2));
+ return [u,v];
+}

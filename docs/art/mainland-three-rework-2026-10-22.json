@@ -1,0 +1,137 @@
+{
+  "tool": "built-in image_gen",
+  "status": "completed",
+  "userRevision": "张雨霏更纤细、站立；刘璇重做为纤瘦体操运动员体态并改善面容；潘晓婷移除所有现代物品；均光脚、夏装、透明背景。",
+  "items": [
+    {
+      "key": "zhang-yufei",
+      "name": "张雨霏",
+      "title": "碧水捧贝",
+      "ref": "assets/beauties/references/mainland-eight-20261022/zhang-yufei.jpg",
+      "asset": "assets/beauties/random/女明星/张雨霏-碧水捧贝-v2.png",
+      "prompt": "Use case: photorealistic-natural. Asset: one realistic Chinese historical summer costume full-body character for game random beauty library. Actual supplied photo is FACE IDENTITY REFERENCE ONLY, preserve person's recognisable face/brows/eyes/nose/lips/jaw, but newly generate entire body, costume, pose and props. Adult woman with graceful slender healthy build, slim arms, narrow natural shoulders, light waist and long proportionate legs, subtle tone rather than bulky muscles. Natural approximately 7.5-head standing proportions, appropriately small head on full-size body, normal 70mm perspective. Elegant flattering refined natural makeup, detailed real skin, no cartoon or doll. Light silk and gauze summer historical Chinese clothing with opaque lined coverage. All poses BAREFOOT, no shoes/socks/footwear. Exactly two coherent arms, two hands with five natural fingers each, two legs and two natural bare feet with five toes each. Stable balanced posture, feet/ankles naturally oriented, credible hand contact with props. Full hair ornaments to toes, all props and hems within 2:3 portrait canvas, at least 5% transparent margins, no cropping. GENUINE transparent alpha background, isolated figure and named props only, no scene, floor, cast shadow, glow, text, watermark or modern items. Subject: Zhang Yufei 张雨霏, adult age 26, retain own face from actual medal ceremony photo, thick dark eyebrows and friendly eyes, gentle CLOSED-MOUTH smile. User requests specifically a SLENDER STANDING reinterpretation: slim feminine arms and shoulders, lean long limbs, avoid broad muscular swimmer silhouette and heavy torso. Relaxed upright contrapposto with both bare feet grounded and visible side by side, one slightly forward, no sitting, no stool. Turquoise sleeveless high-waist summer ruqun with pale ivory lined flowing skirt and a very thin aqua stole loosely falling behind arms. Both hands hold a modest pearly seashell bowl low at waist with relaxed elbows. High partial updo with silver wave hairpin, pearl earrings, slender necklace, jade bracelet and waist tassels. Do not copy sports jacket, medals or logos.",
+      "id": "mainland-photo-eight-20261022-03",
+      "previousAsset": "assets/beauties/random/女明星/张雨霏-碧水捧贝.png",
+      "previousTitle": "碧水捧贝",
+      "referenceSha256": "7beadad130c69918a3505e714f5893314079358cc1cbda9d52d58f35406f421d",
+      "sourcePage": "https://www.peopleapp.com/column/30046032917-500005625120",
+      "referenceImageUrl": "https://cdnjdphoto.aikan.pdnews.cn/zhbj-20240729/image/content/8e13439a43594122b27cb497e9ebbbc1.jpeg",
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a16133-240f-7033-bf18-3e8342b820ca/exec-b4a1dd55-5829-485d-bcc4-d1846ff6c905.png",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentFraction": 0.5354,
+        "nontransparentBorderPixels": 0,
+        "boundsAbove20": [
+          64,
+          10,
+          964,
+          1524
+        ]
+      },
+      "assetSha256": "25a4a69a869cc8ed5a6b61ce8aa85353a434dc232dd9f77ab741efcce2229f56",
+      "referenceDimensions": [
+        2515,
+        3706
+      ],
+      "status": "completed",
+      "visualReview": "已对照照片与完整成图，复核浅色/深蓝换底：张雨霏为纤细站姿，刘璇为纤瘦轻盈站姿并更换面部参考，潘晓婷只持古风团扇；均光脚，手脚与头身比例自然，透明边缘完整。"
+    },
+    {
+      "key": "liu-xuan",
+      "name": "刘璇",
+      "title": "绯练轻舞",
+      "ref": "assets/beauties/references/mainland-eight-20261022/liu-xuan-2018.jpg",
+      "asset": "assets/beauties/random/女明星/刘璇-绯练轻舞-v2.png",
+      "prompt": "Use case: photorealistic-natural. Asset: one realistic Chinese historical summer costume full-body character for game random beauty library. Actual supplied photo is FACE IDENTITY REFERENCE ONLY, preserve person's recognisable face/brows/eyes/nose/lips/jaw, but newly generate entire body, costume, pose and props. Adult woman with graceful slender healthy build, slim arms, narrow natural shoulders, light waist and long proportionate legs, subtle tone rather than bulky muscles. Natural approximately 7.5-head standing proportions, appropriately small head on full-size body, normal 70mm perspective. Elegant flattering refined natural makeup, detailed real skin, no cartoon or doll. Light silk and gauze summer historical Chinese clothing with opaque lined coverage. All poses BAREFOOT, no shoes/socks/footwear. Exactly two coherent arms, two hands with five natural fingers each, two legs and two natural bare feet with five toes each. Stable balanced posture, feet/ankles naturally oriented, credible hand contact with props. Full hair ornaments to toes, all props and hems within 2:3 portrait canvas, at least 5% transparent margins, no cropping. GENUINE transparent alpha background, isolated figure and named props only, no scene, floor, cast shadow, glow, text, watermark or modern items. Subject: Liu Xuan 刘璇, the adult Chinese Olympic gymnast, adult age 39 as in 2018 reference. Use THIS newly supplied elegant portrait for refined facial likeness: softly arched brows, clear bright eyes, delicate nose, soft pink lips and gentle CLOSED-MOUTH smile, no wide open-mouth laugh, no heavy facial shadows. Entirely new graceful SLIM LIGHT petite gymnast body with slender arms, fine neck, slim waist, lightly toned long legs; no bulky deltoids, no stocky torso or heavy thighs. Grounded paused elegant classical dance pose with upright long spine, relaxed shoulders, both bare feet on ground one lightly turned out, no balancing on a beam or acrobatics. One hand holds a short coral silk dance ribbon low beside hip, other arm curved softly low at waist, natural hands/wrists. Light coral sleeveless fitted silk top and opaque ivory ankle-length divided dance skirt, peach gauze stole falling naturally. Neat braided half-up hair with pearl flower hairpin, jade earrings, thin pearl necklace, small gold bracelet and waist jade tassel. No sports equipment or modern objects.",
+      "id": "mainland-photo-eight-20261022-02",
+      "previousAsset": "assets/beauties/random/女明星/刘璇-绯练轻舞.png",
+      "previousTitle": "绯练轻舞",
+      "referenceSha256": "975312bf7cb6fda56f8630861422f326697cfe06dbf592ffc36d2d146a4cf4d9",
+      "sourcePage": "https://astro.sina.com.cn/v/ss/2018-08-10/doc-ihhnunsq6044129.shtml",
+      "referenceImageUrl": "https://n.sinaimg.cn/astro/transform/575/w550h825/20180810/LA6S-hhnunsq6010277.jpg",
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a16133-240f-7033-bf18-3e8342b820ca/exec-97422589-227e-4f8f-bbd8-46ee851cff34.png",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentFraction": 0.5272,
+        "nontransparentBorderPixels": 0,
+        "boundsAbove20": [
+          62,
+          32,
+          1001,
+          1518
+        ]
+      },
+      "assetSha256": "1cc4a28e643807661d603fecf8bb28def7ff6b308d7c4a7d920c58722a4ef6cb",
+      "referenceDimensions": [
+        550,
+        825
+      ],
+      "status": "completed",
+      "visualReview": "已对照照片与完整成图，复核浅色/深蓝换底：张雨霏为纤细站姿，刘璇为纤瘦轻盈站姿并更换面部参考，潘晓婷只持古风团扇；均光脚，手脚与头身比例自然，透明边缘完整。"
+    },
+    {
+      "key": "pan-xiaoting",
+      "name": "潘晓婷",
+      "title": "墨绡团扇",
+      "ref": "assets/beauties/references/mainland-eight-20261022/pan-xiaoting.jpg",
+      "asset": "assets/beauties/random/女明星/潘晓婷-墨绡团扇-v2.png",
+      "prompt": "Use case: photorealistic-natural. Asset: one realistic Chinese historical summer costume full-body character for game random beauty library. Actual supplied photo is FACE IDENTITY REFERENCE ONLY, preserve person's recognisable face/brows/eyes/nose/lips/jaw, but newly generate entire body, costume, pose and props. Adult woman with graceful slender healthy build, slim arms, narrow natural shoulders, light waist and long proportionate legs, subtle tone rather than bulky muscles. Natural approximately 7.5-head standing proportions, appropriately small head on full-size body, normal 70mm perspective. Elegant flattering refined natural makeup, detailed real skin, no cartoon or doll. Light silk and gauze summer historical Chinese clothing with opaque lined coverage. All poses BAREFOOT, no shoes/socks/footwear. Exactly two coherent arms, two hands with five natural fingers each, two legs and two natural bare feet with five toes each. Stable balanced posture, feet/ankles naturally oriented, credible hand contact with props. Full hair ornaments to toes, all props and hems within 2:3 portrait canvas, at least 5% transparent margins, no cropping. GENUINE transparent alpha background, isolated figure and named props only, no scene, floor, cast shadow, glow, text, watermark or modern items. Subject: Pan Xiaoting 潘晓婷 adult age 35, preserve her specific refined face from supplied portrait, calm natural slight smile. Reference contains a billiards cue: IGNORE THAT OBJECT, use photo ONLY for face. Completely new ancient Chinese noblewoman styling, NO cue, NO billiard ball, NO billiard table, NO modern sporting objects, no modern cheongsam silhouette. Standing relaxed three-quarter on two visible bare feet. Wearing black lightweight open gauze short-sleeve jacket over opaque ivory fitted historical bodice, flowing muted burgundy lined silk ruqun long skirt ending just above toes. One hand holds a classical ROUND SILK HAND FAN with a short carved wooden handle and plum blossom embroidery at waist, other hand gently resting beside skirt, no other handheld item. Elegant traditional updo with gold plum hairpins, garnet drop earrings, fine gold necklace, jade bangle and silk waist tassels. Full historical Chinese summer clothing and accessories only.",
+      "id": "mainland-photo-eight-20261022-06",
+      "previousAsset": "assets/beauties/random/女明星/潘晓婷-墨绡执杆.png",
+      "previousTitle": "墨绡执杆",
+      "referenceSha256": "e1a370e042465d3f8f4c4e6137fc69c4fac5d53096408fb6aa525c044b7c63a4",
+      "sourcePage": "https://www.xykuu.com/star/71.html",
+      "referenceImageUrl": "https://qny.xykuu.com/1ca/image/20221114/4164c6f3db2c4a46a006ef3b67974985.jpg",
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a16133-240f-7033-bf18-3e8342b820ca/exec-265f195f-9c6e-46fc-911f-fdfaec8e26fe.png",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentFraction": 0.5316,
+        "nontransparentBorderPixels": 0,
+        "boundsAbove20": [
+          123,
+          6,
+          948,
+          1529
+        ]
+      },
+      "assetSha256": "9494d9b1d08cc61271f81cf0229b90ba763b398377244fa26e3c6ceea938f777",
+      "referenceDimensions": [
+        1680,
+        2520
+      ],
+      "status": "completed",
+      "visualReview": "已对照照片与完整成图，复核浅色/深蓝换底：张雨霏为纤细站姿，刘璇为纤瘦轻盈站姿并更换面部参考，潘晓婷只持古风团扇；均光脚，手脚与头身比例自然，透明边缘完整。"
+    }
+  ],
+  "completed": 3,
+  "verification": {
+    "relatedTestsPassed": 12,
+    "transparentBackgroundPassed": true,
+    "oldSavePathMigrationPassed": true,
+    "preview": "outputs/mainland-three-rework-20261022/review-light.jpg"
+  }
+}

@@ -1,0 +1,38 @@
+body{margin:0;display:block!important;overflow:auto!important;background:#241b15!important;color:#ead7b3}.person-card-review{container-type:inline-size;width:1100px!important;max-width:1100px!important;height:auto!important;aspect-ratio:auto!important;margin:40px auto;padding:32px 28px 45px;background:radial-gradient(ellipse at center,#58432c,#2f241b);border:2px solid #8a7049;box-sizing:border-box}.person-card-review header{position:static;text-align:center;margin-bottom:28px}.person-card-review h1{margin:8px;font:32px serif;letter-spacing:.14em}.person-card-review header small,.person-card-review header p{font:14px serif;color:#c6b18c}.person-card-review main{display:grid;grid-template-columns:repeat(4,240px);gap:24px;justify-content:center}.person-card-review .cb-card-surface{transform:none!important}.person-card-review article{padding:0}
+.person-card-review .cb-card{position:relative!important;display:block!important;width:240px!important;height:336px!important;min-height:0!important;margin:0!important;transform:none!important;pointer-events:none}
+.person-card-review [data-battle-person-art="manual-1554"]{background-image:url("../assets/battle/people/manual-1554-battle-v1.png")!important}
+.person-card-review [data-battle-person-art="cbdb-27948"]{background-image:url("../assets/battle/people/cbdb-27948-battle-v1.png")!important}
+.person-card-review [data-battle-person-art="cbdb-3767"]{background-image:url("../assets/battle/people/cbdb-3767-battle-v1.png")!important}
+.person-card-review [data-battle-person-art="cbdb-8175"]{background-image:url("../assets/battle/people/cbdb-8175-battle-v1.png")!important}
+
+section.person-card-review.cb-prototype.cb-v3{background:radial-gradient(ellipse at center,#58432c,#2f241b)!important;background-image:radial-gradient(ellipse at center,#58432c,#2f241b)!important;max-height:none!important;overflow:visible!important;box-shadow:0 20px 70px #100b08}
+.person-card-review header{display:block!important;position:static!important;width:auto!important;height:auto!important;min-height:0!important;max-height:none!important;color:#ead7b3!important}
+.person-card-review .cb-card.person>.cb-card-surface{background:#dbc18f url("../assets/battle/person-card-frame-v1.svg") center/100% 100%!important}
+
+.person-card-review .cb-card{min-width:240px!important;max-width:240px!important;max-height:336px!important;box-sizing:border-box!important}
+.person-card-review .cb-card-copy small{font-size:13px!important;line-height:1.25!important}.person-card-review .cb-card-copy b{font-size:15px!important}.person-card-review .cb-card-surface>strong{font-size:20px!important}
+
+.person-card-review [data-battle-person-art="cbdb-1384"]{background-image:url("../assets/battle/people/cbdb-1384-battle-v1.png")!important}
+.person-card-review [data-battle-person-art="manual-1523"]{background-image:url("../assets/battle/people/manual-1523-battle-v1.png")!important}
+.person-card-review [data-battle-person-art="cbdb-17364"]{background-image:url("../assets/battle/people/cbdb-17364-battle-v1.png")!important}
+.person-card-review [data-battle-person-art="manual-1527"]{background-image:url("../assets/battle/people/manual-1527-battle-v1.png")!important}
+
+.person-card-review [data-battle-person-art="manual-1529"]{background-image:url("../assets/battle/people/manual-1529-battle-v1.png")!important}
+.person-card-review [data-battle-person-art="cbdb-8043"]{background-image:url("../assets/battle/people/cbdb-8043-battle-v1.png")!important}
+.person-card-review [data-battle-person-art="cbdb-34344"]{background-image:url("../assets/battle/people/cbdb-34344-battle-v1.png")!important}
+.person-card-review [data-battle-person-art="cbdb-1762"]{background-image:url("../assets/battle/people/cbdb-1762-battle-v1.png")!important}
+
+.person-card-review [data-battle-person-art="manual-1510"]{background-image:url("../assets/battle/people/manual-1510-battle-v1.png")!important}
+.person-card-review [data-battle-person-art="manual-1629"]{background-image:url("../assets/battle/people/manual-1629-battle-v1.png")!important}
+.person-card-review [data-battle-person-art="manual-1543"]{background-image:url("../assets/battle/people/manual-1543-battle-v1.png")!important}
+.person-card-review [data-battle-person-art="manual-1530"]{background-image:url("../assets/battle/people/manual-1530-battle-v1.png")!important}
+
+.person-card-review [data-battle-person-art="general-874-55746"]{background-image:url("../assets/battle/people/general-874-55746-battle-v1.png")!important}
+.person-card-review [data-battle-person-art="manual-1519"]{background-image:url("../assets/battle/people/manual-1519-battle-v1.png")!important}
+.person-card-review [data-battle-person-art="manual-1579"]{background-image:url("../assets/battle/people/manual-1579-battle-v1.png")!important}
+.person-card-review [data-battle-person-art="manual-1509"]{background-image:url("../assets/battle/people/manual-1509-battle-v1.png")!important}
+
+.person-card-review [data-battle-person-art="general-113-60981"]{background-image:url("../assets/battle/people/general-113-60981-battle-v1.png")!important}
+.person-card-review [data-battle-person-art="cbdb-898"]{background-image:url("../assets/battle/people/cbdb-898-battle-v1.png")!important}
+.person-card-review [data-battle-person-art="manual-1544"]{background-image:url("../assets/battle/people/manual-1544-battle-v1.png")!important}
+.person-card-review [data-battle-person-art="general-296-67948"]{background-image:url("../assets/battle/people/general-296-67948-battle-v1.png")!important}

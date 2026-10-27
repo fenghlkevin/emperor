@@ -1,0 +1,62 @@
+{
+  "date": "2026-10-20",
+  "tool": "内置 image_gen",
+  "character": "黄蓉",
+  "actor": "翁美玲",
+  "source": "1983版《射雕英雄传》",
+  "gameAge": 22,
+  "fiction": "跨作品巡游彩蛋；入宫结局为游戏改编。",
+  "location": {
+    "encounterCity": "张家口",
+    "gameProvince": "hebei",
+    "gameProvinceName": "河北",
+    "homeCityId": "jiangnan",
+    "note": "相遇地点与籍贯区分：河北张家口初遇；人物籍贯沿用桃花岛所在江南。",
+    "chancePerEligibleTrip": 0.01,
+    "maxPerSave": 1,
+    "reference": "https://luckynet.uzai.ca/hero/jinyong/shediao/007.htm"
+  },
+  "referencePhotos": [
+    {
+      "file": "outputs/references/tour-cameos/barbara-yung-portrait.jpg",
+      "url": "https://cdn.hk01.com/di/media/images/dw/20200824/374608975674609664.jpeg/FyM8MHM3mOEtg7ie-5mYXmp2ln_muYMyw6AfmsOgH5o?v=w1920",
+      "purpose": "年轻成年时期面容、发际线、五官、耳颈轮廓"
+    },
+    {
+      "file": "outputs/references/tour-cameos/barbara-yung-beggar.jpg",
+      "url": "https://k.sinaimg.cn/n/sinakd20201122ac/168/w1496h1072/20201122/06d4-kefmphc5216145.jpg/w700d1q75cms.jpg",
+      "page": "https://k.sina.cn/article_1223495752_48ed1048001010tkx.html",
+      "purpose": "小乞丐破布帽、褐灰色补丁服及脸上灰尘"
+    },
+    {
+      "file": "outputs/references/tour-cameos/barbara-yung-pink-full.jpg",
+      "url": "https://img.miyanlife.com/mnt/timg/180125/1Z1054I8-2.jpg",
+      "page": "https://www.miyanlife.com/news/29020",
+      "purpose": "粉色花纹罩衫、白内衫、白袖金边、宽金腰带的服装结构"
+    },
+    {
+      "file": "outputs/references/tour-cameos/barbara-yung-pink-hair.jpg",
+      "url": "https://c-ssl.dtstatic.com/uploads/item/201204/12/20120412014442_scM4Q.thumb.700_0.jpeg",
+      "page": "https://m-2.duitang.com/blog/?id=24507540",
+      "purpose": "碎刘海、双环髻、金蝶与粉花发饰及侧发"
+    }
+  ],
+  "assets": [
+    {
+      "file": "assets/scenes/tour/huang-rong-beggar-v1.png",
+      "stage": "相遇及未入宫的结算画面",
+      "prompt": "Create the BEGGAR DISGUISE version of the SAME adult Huang Rong shown in IMAGE 1. IMAGE 1 is the approved character and identity: keep her recognizable Barbara Yung face, eye/nose/mouth shapes, face proportions, petite adult body proportions and realistic colored-pencil/watercolor game illustration style. IMAGE 2 is the actual 1983 television beggar disguise costume reference, not a different identity. She is a 22-year-old ADULT woman pretending to be a scruffy young street beggar, not a child. Replace all fine clothing and jewelry with faded gray-brown patched coarse-cloth layered tunic, dark loose trousers, worn cloth shoes, and a ragged gray cloth headwrap cap like IMAGE 2. Hide long hair inside cap except wispy fringe and loose strands. No earrings, no hair ornaments, no blue floral vest, no flute visible. Add light believable dirt smudges on cheeks, maintain bright mischievous intelligent eyes and a cheeky half-smile. One hand loosely holds a plain bamboo walking stick, the other a small steamed bun, no begging bowl with writing. Slightly relaxed scruffy posture but plausible skeleton, head/torso/legs balanced around seven anatomical heads, feet under hips in naturally aligned mild three-quarter standing stance. Full adult figure head-to-both-shoe-soles centered with padding. True transparent ALPHA background; ONLY disguised character, stick and bun. No street scenery, ground plane, glow, background shadow, text or watermark. Crucial: clearly the SAME PERSON as IMAGE 1 under dirty clothes, not a new face or little boy."
+    },
+    {
+      "file": "assets/beauties/special/huang-rong-v2.png",
+      "stage": "入宫后的事件结算及后宫立绘",
+      "prompt": "Correct Huang Rong's revealed appearance to the PINK COSTUME actually worn by Barbara Yung in the 1983 TV series, based on provided reference photos, not a color swap of the previous blue vest. IMAGE 1 is the identity reference of adult Barbara Yung: preserve her distinctive face, round-oval cheeks, large lively eyes, small nose, smile, chin and ears. IMAGE 2 is the exact garment construction reference: ivory-white high standing-collar inner blouse with loose white sleeves and GOLD CUFF BANDS; light rosy-pink semi-sheer short-sleeved/open-front over-tunic printed with delicate darker-pink flowers, a BROAD FLAT GOLD WAIST BELT, ivory lower skirt with pink outer panels ending above the ankles, small white embroidered shoes. No blue daisy vest, no blue sash, no ornate generic palace gown. IMAGE 3 is the exact HAIRSTYLE reference: short wispy straight FRINGE across forehead, TWO SMALL ROUND LOOPED BUNS on top/back, tiny pink flowers and gold butterfly ornaments, narrow ribbons and shoulder/chest-length side locks. Do NOT use the single high swept-back crown or blue floral pins from the old blue outfit. IMAGE 4 is ONLY game art style and full-body pose reference, preserve consistent realistic delicate colored-pencil/watercolor appearance and petite ADULT proportions around seven heads tall, no stretched body, normal shoulders/neck/hands. She is 22 in this game, a clever playful adult martial heroine. Standing naturally with one hand loosely holding a green bamboo flute at waist, other hand relaxed; both feet under hips and aligned with body in mild three-quarter stance, both shoes visible, no train. Full figure hair to soles, centered with modest padding. Genuine transparent ALPHA background, no scenery, ground plane, glow, shadow backdrop, lettering or watermark. Highest priorities are Barbara Yung likeness plus screen-accurate PINK garment structure and TWO looped buns with fringe."
+    }
+  ],
+  "behavior": {
+    "beforeAdmission": "只显示小乞丐，隐藏真名与真实外表等数值，重载保持",
+    "admission": "揭示黄蓉姓名，换回粉白服装并切换正式立绘",
+    "refusal": "作别或资助均不揭面，但仍记为已遇见",
+    "persistence": "由已入宫成员的travelOrigin.easterEgg确认恢复本貌，避免临时UI变量导致重载丢失"
+  }
+}

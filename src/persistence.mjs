@@ -1,3 +1,4 @@
+import {refreshOfficialProduction} from './official-production.mjs';
 import {writeProgress} from './save-slots.mjs';
 import {validateSave} from './game.mjs';
 
@@ -10,6 +11,7 @@ export function persistCandidate(current, candidate, storage, prepare = () => {}
     throw Error('状态已更新或本次提交已执行，请重新打开后再试');
   const draft=structuredClone(candidate);
   prepare(draft);
+  refreshOfficialProduction(draft.domestic,draft.turn);
   draft.saveRevision=revision+1;
   const next=validateSave(draft);
   try { writeProgress(storage,next); }

@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-24T03:02:59.469622+00:00",
+  "scope": "Five historical death-source event segmentation and public visual snapshot model tests. Desktop presentation timing, normal/fast/reduced, native input and screenshot acceptance remain pending.",
+  "tests": 19,
+  "passed": 19,
+  "errors": [],
+  "elapsedSeconds": 3.101212,
+  "command": "node --test tests/card-battle-person-death-presentation.test.mjs tests/card-battle-person-presentations.test.mjs tests/card-battle-history.test.mjs tests/card-battle-status.test.mjs",
+  "sources": {
+    "src/card-battle-person-death-presentation.mjs": "c84f8adbee2190980b7f9884c9fde0f083841a380ffb1eaea8f472b6453b8ba9",
+    "src/card-battle-skill-effects.mjs": "7b6b709b19e72737f4060b57ec84eb547067304b341bd34cfe6697872fb7045e",
+    "src/card-battle-ui.mjs": "81e874897564ca8fb6b375ecfbe069f7ab5c3548c217e455d7be1ec0d94d9ba0",
+    "tests/card-battle-person-death-presentation.test.mjs": "28d969e54847ae9bde50e68eaf8e88c749576bbc7a4796e8cd29b2af5a83b7ec",
+    "tests/card-battle-person-presentations.test.mjs": "3cd4427048568b86c483c0cc9e1804c7b459d616587fc2e99b78ad3ff5eee80a",
+    "tests/card-battle-history.test.mjs": "b5014621c8e50146780cfcd997524431aeb50462c9ff883dc441f4cae76353a5",
+    "tests/card-battle-status.test.mjs": "b3b32c6b12db317fe6f76fae813882d7e56d2c76afdca4ee5084f5aff4caf2ef"
+  },
+  "desktopAccepted": false
+}

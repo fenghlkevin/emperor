@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-22T12:26:48.526Z",
+  "checks": [
+    "all 30 locked cards rendered during mulligan",
+    "shuffle privacy is explicit",
+    "1440px layout retains 5:7 cards without horizontal overflow",
+    "1000px layout retains 5:7 cards without horizontal overflow",
+    "800px layout retains 5:7 cards without horizontal overflow",
+    "empty search preserves keyboard focus",
+    "person filter matches the actual three officers",
+    "remaining view counts exact own deck",
+    "open/filter/close preserves complete battle and resource state",
+    "campaign review opens exact 30-card preview without a resource commit",
+    "closing campaign preview returns to unsealed draft",
+    "defense review opens exact 30-card preview without deploying soldiers or gear",
+    "closing defense preview retains unsealed deployment",
+    "opponent timer pauses while the read-only deck dialog is open",
+    "opponent resumes after closing the deck dialog",
+    "isolated UI never writes real save key"
+  ],
+  "errors": []
+}

@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-22",
+  "checks": [
+    "1440 stationary cursor at old lower edge never oscillates",
+    "1440 raised card title stays above hero and remains clickable",
+    "1440 hint never crosses raised hand card",
+    "1440 power icon, name and round cost badge do not overlap",
+    "1280 stationary cursor at old lower edge never oscillates",
+    "1280 raised card title stays above hero and remains clickable",
+    "1280 hint never crosses raised hand card",
+    "1280 power icon, name and round cost badge do not overlap",
+    "1000 stationary cursor at old lower edge never oscillates",
+    "1000 raised card title stays above hero and remains clickable",
+    "1000 hint never crosses raised hand card",
+    "1000 power icon, name and round cost badge do not overlap",
+    "detail panel stays beside the inspected card"
+  ],
+  "consoleErrors": []
+}

@@ -1,0 +1,130 @@
+{
+  "date": "2026-10-20",
+  "tool": "内置 image_gen（非 CLI）",
+  "scope": [
+    "夏盈盈",
+    "程淮秀",
+    "金无箴",
+    "黄杏儿",
+    "沈芳"
+  ],
+  "probability": {
+    "perUnseenCharacter": 0.01,
+    "maxCameosPerTrip": 1,
+    "eligible": "与夏雨荷相同的中原十州巡游",
+    "selection": "六个固定且互斥的1%区间，已见角色的区间不重新分配；全部未见时合计6%。",
+    "seen": "首次生成遭遇即标记，无论入宫、拒绝或资助都不再出现；旧版xiaYuheSeen保留。"
+  },
+  "sources": [
+    {
+      "work": "戏说乾隆",
+      "cast": "赵雅芝饰程淮秀、金无箴、沈芳",
+      "url": "https://zh.wikipedia.org/wiki/%E6%88%B2%E8%AA%AA%E4%B9%BE%E9%9A%86_%28%E4%B8%AD%E8%A6%96%29"
+    },
+    {
+      "work": "还珠格格Ⅲ",
+      "cast": "蒋勤勤饰夏盈盈",
+      "url": "https://ent.sina.com.cn/v/f/hzgg3/"
+    },
+    {
+      "work": "乾隆王朝",
+      "cast": "张澜澜饰黄杏儿",
+      "url": "https://bkso.baidu.com/item/%E9%BB%84%E6%9D%8F%E5%84%BF/62070287"
+    }
+  ],
+  "references": [
+    {
+      "actor": "赵雅芝",
+      "photos": [
+        {
+          "file": "outputs/references/tour-cameos/zhao-yazhi-1980s.jpg",
+          "url": "https://i.ebayimg.com/images/g/1owAAOSwnQ5jWkdO/s-l1600.jpg",
+          "page": "https://www.ebay.com/itm/354361037730",
+          "note": "1980年代成年时期贴画写真，扫描图1600像素；可见五官、发际线、头发、耳部、颈部。扫描文字不用于游戏素材。"
+        },
+        {
+          "file": "outputs/references/tour-cameos/zhao-yazhi-vintage.jpg",
+          "url": "https://p6.itc.cn/images01/20220302/d3a384f9161d4733a500bb9f0689a70a.jpeg",
+          "page": "https://www.sohu.com/a/526634405_121070567",
+          "note": "早期照片合集，辅助核对不同角度五官、发型和耳颈。"
+        }
+      ]
+    },
+    {
+      "actor": "蒋勤勤",
+      "photos": [
+        {
+          "file": "outputs/references/tour-cameos/jiang-qinqin-early.jpg",
+          "url": "https://img.tvzn.com/yanyuanpic/937.jpg",
+          "page": "https://www.tvzn.com/person/photo/937.html",
+          "note": "早期写真590×804，五官、头发、耳朵和脖子可见。"
+        },
+        {
+          "file": "outputs/references/tour-cameos/jiang-qinqin-2007.jpg",
+          "url": "https://assets.recordchina.co.jp/newRc/m1200/200703/cfp382293617.jpg",
+          "page": "https://www.recordchina.co.jp/pics.php?id=6247",
+          "note": "2007年刊载近景750×566，用于脸型和侧面耳部细节补充。"
+        }
+      ]
+    },
+    {
+      "actor": "张澜澜",
+      "photos": [
+        {
+          "file": "outputs/references/tour-cameos/zhang-lanlan-2005.jpg",
+          "url": "https://image2.sina.com.cn/ent/d/2005-06-20/U102P28T3D757049F326DT20050620153139.jpg",
+          "page": "https://ent.sina.com.cn/d/2005-06-20/1531757049.html",
+          "note": "2005年写真590×885，主要五官与脸部轮廓清楚。"
+        },
+        {
+          "file": "outputs/references/tour-cameos/zhang-lanlan-front.jpg",
+          "url": "https://img.tvzn.com/yanyuanpic/6233.jpg",
+          "page": "https://www.tvzn.com/person/photo/6233.html",
+          "note": "500×666补充照片，显示发型、颈部与头肩比例。"
+        }
+      ]
+    }
+  ],
+  "art": {
+    "format": "1024×1536 RGBA PNG，真实透明通道",
+    "styleReference": "assets/beauties/special/sketch-beauty-xia-yuhe-transparent-v6.png",
+    "eventRendering": "新增事件复用 assets/scenes/tour/ 的对应场景作为背景，叠加同一张透明人物立绘；不重复生成另一张脸。",
+    "characters": [
+      {
+        "id": "xia-yingying",
+        "actor": "蒋勤勤",
+        "file": "assets/beauties/special/xia-yingying-v1.png",
+        "generated": "exec-dbb8390d-eb3f-439c-83ce-b186e79112d6.png",
+        "prompt": "Create full-body game character Xia Yingying 夏盈盈, an adult Jiangnan pipa performer. FIRST TWO PHOTOS are face identity references of young adult actress Jiang Qinqin: closely preserve distinctive facial bone structure, eyes and eye spacing, brows, nose, lips, ears, hairline and elegant long neck, avoid generic doll face. THIRD IMAGE is ONLY rendering/style reference, NOT face identity or costume. Match delicate realistic hand-painted colored-pencil/watercolor Chinese historical game illustration. She wears elegant crimson red and warm ivory silk Hanfu with restrained gold embroidery, period half-up long black hair and tasteful gold/floral ornaments, both ears partly visible, holds a finely detailed pipa naturally with two hands resting rather than playing. Composed gentle expression. Slim anatomically plausible adult proportions, about 7.5 heads tall, natural weight bearing, feet and pelvis aligned in relaxed mild three-quarter standing pose; embroidered closed shoes visible modestly under ankle-length hem, no giant train, no twisted feet, no extra fingers. Full figure including hair ornaments and both shoe soles, centered with small padding. Real transparent alpha background, ONLY woman and handheld pipa, no scene, ground, shadow, glow, text or watermark. Maintain facial likeness to PHOTO references while adapting hairstyle to period."
+      },
+      {
+        "id": "cheng-huaixiu",
+        "actor": "赵雅芝",
+        "file": "assets/beauties/special/cheng-huaixiu-v1.png",
+        "generated": "exec-2986d9d9-d4bc-4783-8a1c-d8d15c5e2f8b.png",
+        "prompt": "Create Cheng Huaixiu 程淮秀, adult female salt-guild leader inspired by Zhao Yazhi in 戏说乾隆. First TWO PHOTOS are young-adult Zhao Yazhi identity references: accurately retain her distinctive oval face, high cheekbones, softly angular jaw, long almond eyes, elegant slightly arched brows, slim defined nose, mouth shape, visible ears and graceful neck. The THIRD IMAGE is only game illustration STYLE reference; do not borrow its face. Full-body exquisite realistic colored-pencil/watercolor Chinese period character painting, softly shaded lifelike face, detailed textiles. Costume: dignified deep teal and ivory period cross-collar silk robes, subtle gold wave embroidery, structured waist belt, practical ankle-length draped skirt with no train. Hair in period half-up swept high bun with jade hairpin, ears visible. Confident poised expression, one hand holding a closed bamboo folding fan and other hand holding a rolled salt-account ledger at waist, natural hands. Balanced standing posture, body and knees and shoes aligned, mild three-quarter angle, complete embroidered low shoes modestly visible under hem. About 7.5 heads tall, slim natural adult proportions, no twisted ankles, no extra limbs. Full hair-to-shoes centered with padding. GENUINE TRANSPARENT ALPHA BACKGROUND, no scenery, backdrop, glow, ground or text. Preserve young Zhao Yazhi recognizable likeness, not generic fantasy beauty; accessories must distinguish this leader from a gentle embroiderer or swordswoman."
+      },
+      {
+        "id": "jin-wuzhen",
+        "actor": "赵雅芝",
+        "file": "assets/beauties/special/jin-wuzhen-v1.png",
+        "generated": "exec-62c6dcd0-853b-493f-8d29-f046787235df.png",
+        "prompt": "Create Jin Wuzhen 金无箴, an adult Jiangnan embroiderer inspired by young Zhao Yazhi in 戏说乾隆. First TWO PHOTOS are identity references of young-adult Zhao Yazhi: retain her distinctive oval face and cheekbones, long almond eyes and eye spacing, subtly arched brows, slim nose, recognizable lips and jaw, ears and long neck. THIRD IMAGE is only painterly game illustration style reference, not face. Full-body realistic delicate Chinese colored-pencil/watercolor character illustration. She wears soft lilac and pearl-ivory silk Hanfu with exquisitely stitched tiny plum blossoms, practical graceful ankle-length skirt, no sprawling train. Period half-up black hair in a simple low coiled bun, small silver and lavender floral hairpin, both ears partly visible. Gentle self-possessed expression. Hold an embroidery hoop showing an unfinished plum branch at waist with both hands, needle secured in the cloth rather than dangling, natural hands. Relaxed anatomically coherent adult stance with torso, hips, knees and embroidered shoes facing the same mild three-quarter direction, no twisted feet. About 7.5 heads tall, full head ornaments to shoe soles, modest padding, fine clean edges. Genuine transparent alpha background, woman and embroidery hoop only, no scene, ground, cast shadow, glow, text, logos or watermark. Preserve recognizable Zhao Yazhi facial identity; distinct from teal-clothed guild leader and indigo swordswoman through this lilac embroiderer outfit."
+      },
+      {
+        "id": "huang-xinger",
+        "actor": "张澜澜",
+        "file": "assets/beauties/special/huang-xinger-v1.png",
+        "generated": "exec-613a20d3-c153-450c-907d-f23f69c2ed0c.png",
+        "prompt": "Create Huang Xing'er 黄杏儿, adult scholarly Jiangnan woman from 乾隆王朝. First TWO photographs are identity references of actress Zhang Lanlan as a young adult: closely retain her distinctive softly angular oval face, bright almond eyes and spacing, delicate straight nose, full smiling lips, jawline, hairline and ears/neck proportions. THIRD IMAGE is ONLY painterly game art STYLE reference, NOT facial identity. A full-body elegant realistic colored-pencil/watercolor Chinese historical character illustration with softly shaded lifelike face and detailed silk embroidery. Costume: pale apricot and warm ivory Hanfu with muted sage trim, tiny orchid embroidery, a modest scholarly style rather than imperial robes. Period black hair pulled partly back with a small silver comb and apricot blossom, ears partly visible, long neck. She holds a plain closed poetry book and a rolled petition at waist with natural two hands; no readable writing on either prop. Calm determined expression with a soft smile. Slim anatomically plausible adult figure about 7.5 heads tall, natural standing stance with pelvis, knees, ankles and embroidered flat shoes in matching mild three-quarter direction. Ankle-length skirt with restrained folds, no giant trailing train, complete shoes modestly visible. Full figure from hair ornament through soles centered with small padding. Genuine TRANSPARENT alpha background, only woman and props, no background scenery, ground, shadow, glow, text, signature or watermark. Faithful face likeness to supplied PHOTOS, distinct from Zhao Yazhi and Jiang Qinqin."
+      },
+      {
+        "id": "shen-fang",
+        "actor": "赵雅芝",
+        "file": "assets/beauties/special/shen-fang-v1.png",
+        "generated": "exec-fee71456-64d2-475a-a08b-acf2148e4abd.png",
+        "prompt": "Create Shen Fang 沈芳, adult female martial-arts traveler inspired by young Zhao Yazhi in 戏说乾隆. First TWO PHOTOS are young-adult Zhao Yazhi face identity references: closely match her oval face and cheekbone shape, long almond eyes/eye spacing, eyebrows, slender defined nose, recognizable lips, jawline, ears and graceful neck. THIRD image is only the realistic delicate colored-pencil/watercolor historical game illustration STYLE reference, never the face. Full-body standing swordswoman in dark indigo and moon-white practical cross-collar robes with muted silver edging, narrow functional sleeves, soft leather belt, ankle-length layered skirt with no trailing train. Hair in a high half-up ponytail with a simple silver hairpin, some long hair behind, both ears partly visible. Calm resolute expression with a hint of warmth. One hand naturally rests on a SHEATHED sword held at her side pointing down, the other carries a small rolled travel document at waist. No drawn blade, no combat, no blood. Adult natural proportions around 7.5 heads tall, stable relaxed mild three-quarter standing stance, pelvis knees and both boots all face same direction, closed dark flat boots visible beneath hem, no twisted feet or crossed legs. Full head to soles with margin. High-fidelity face identity, finely shaded silk texture and hair. Genuine transparent alpha background, only woman and carried props; no scene, ground plane, glow, background shadow, text or watermark. Outfit distinguishes her from teal guild leader and lilac embroiderer."
+      }
+    ]
+  }
+}

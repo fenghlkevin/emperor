@@ -1,0 +1,8 @@
+import {readCardHistoryArchive} from './card-battle-history-archive.mjs';
+import {openArchivedCardHistory} from './card-battle-history-ui.mjs';
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+export function openCardArchives(state){
+ const rows=state.domestic.war.history.filter(r=>r.kind==='war'),d=document.createElement('dialog');d.className='cb-deck-dialog cb-archive-dialog';d.setAttribute('aria-label','历次交战记录');
+ d.innerHTML=`<header><div><small>军阵 · 战史</small><h2>历次交战记录</h2><p>随最近100条军令保留完整动作；超出军令册范围的战报按原规则移出。旧战报不补造未记录的交战。</p></div><button data-archive-close>关闭 ×</button></header><main class="cb-plan-list">${rows.map(r=>{const a=r.cardHistory?readCardHistoryArchive(r.cardHistory):null;return `<article class="cb-tactic-option"><h3>军令 ${r.id} · 第 ${r.turn} 旬</h3><strong>${esc(a?.targetName??r.title)}</strong><p>${a?`${{victory:'获胜',defeat:'战败',draw:'双方收兵'}[a.result]} · ${a.history.entries.length}条动作${a.history.partial?' · 部分记录':''}`:'本战无可查阅动作：旧战报、非卡牌战或未实际交战。'}</p><button data-archive-id="${r.id}" ${a?'':'disabled'}>查看交战记录</button></article>`;}).join('')||'<p data-archive-empty>暂无已结算的交战记录。</p>'}</main><footer>查阅不重复结算战果、不消费兵装与军粮。</footer>`;
+ document.body.append(d);d.querySelector('[data-archive-close]').onclick=()=>d.close();for(const button of d.querySelectorAll('[data-archive-id]:not(:disabled)'))button.onclick=()=>{const row=rows.find(r=>r.id===Number(button.dataset.archiveId));const viewer=openArchivedCardHistory(row.cardHistory);viewer.addEventListener('close',()=>button.focus(),{once:true});};d.addEventListener('close',()=>d.remove(),{once:true});d.showModal();return d;
+}

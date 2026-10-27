@@ -1,0 +1,1128 @@
+{
+  "status": "failed",
+  "catalogVersion": "phase6-yanying-v6",
+  "seedDomain": "final-nonaudio-20261024-v6-heldout-A",
+  "completedGroups": 81,
+  "expectedGroups": 81,
+  "games": 162000,
+  "missing": [],
+  "invalid": [],
+  "failedGroups": [
+    "cavalry_1800-20-command",
+    "cavalry_1800-60-intelligence",
+    "cavalry_1800-90-intelligence",
+    "exotic_1800-20-intelligence",
+    "exotic_1800-60-command",
+    "exotic_1800-60-intelligence",
+    "exotic_1800-60-martial",
+    "exotic_1800-90-martial",
+    "heavy_1800-60-martial",
+    "infantry_1800-90-martial",
+    "mixed_600-60-command",
+    "mixed_600-60-martial",
+    "mixed_600-90-command",
+    "mixed_600-90-martial",
+    "ranged_1800-20-intelligence",
+    "ranged_1800-60-command",
+    "ranged_1800-60-intelligence",
+    "ranged_1800-90-intelligence",
+    "reserve_3600-20-command",
+    "reserve_3600-20-intelligence",
+    "reserve_3600-60-command",
+    "reserve_3600-60-intelligence",
+    "reserve_3600-90-intelligence",
+    "reserve_3600-90-martial",
+    "configured-combined-0",
+    "configured-combined-5",
+    "configured-landmarks-0",
+    "configured-landmarks-5",
+    "configured-secrets-0",
+    "configured-secrets-5",
+    "configured-weapons-5"
+  ],
+  "rows": [
+    {
+      "id": "cavalry_1800-20-command",
+      "games": 2000,
+      "pairs": 1000,
+      "score": 0.4685,
+      "ci95": [
+        0.4468173915797036,
+        0.49018260842029643
+      ],
+      "pass": false,
+      "sourceReport": "docs/card-battle-final-matrix.json",
+      "seedDomain": "final-nonaudio-20261024-v6-heldout-A"
+    },
+    {
+      "id": "cavalry_1800-20-intelligence",
+      "games": 2000,
+      "pairs": 1000,
+      "score": 0.5275,
+      "ci95": [
+        0.5060638926878807,
+        0.5489361073121193
+      ],
+      "pass": true,
+      "sourceReport": "docs/card-battle-final-matrix.json",
+      "seedDomain": "final-nonaudio-20261024-v6-heldout-A"
+    },
+    {
+      "id": "cavalry_1800-20-martial",
+      "games": 2000,
+      "pairs": 1000,
+      "score": 0.4815,
+      "ci95": [
+        0.460206624968779,
+        0.502793375031221
+      ],
+      "pass": true,
+      "sourceReport": "docs/card-battle-final-matrix.json",
+      "seedDomain": "final-nonaudio-20261024-v6-heldout-A"
+    },
+    {
+      "id": "cavalry_1800-60-command",
+      "games": 2000,
+      "pairs": 1000,
+      "score": 0.4805,
+      "ci95": [
+        0.4583253264342459,
+        0.502674673565754
+      ],
+      "pass": true,
+      "sourceReport": "docs/card-battle-final-matrix.json",
+      "seedDomain": "final-nonaudio-20261024-v6-heldout-A"
+    },
+    {
+      "id": "cavalry_1800-60-intelligence",
+      "games": 2000,
+      "pairs": 1000,
+      "score": 0.5345,
+      "ci95": [
+        0.5122655783725976,
+        0.5567344216274024
+      ],
+      "pass": false,
+      "sourceReport": "docs/card-battle-final-matrix.json",
+      "seedDomain": "final-nonaudio-20261024-v6-heldout-A"
+    },
+    {
+      "id": "cavalry_1800-60-martial",
+      "games": 2000,
+      "pairs": 1000,
+      "score": 0.471,
+      "ci95": [
+        0.4495043055641536,
+        0.49249569443584634
+      ],
+      "pass": true,
+      "sourceReport": "docs/card-battle-final-matrix.json",
+      "seedDomain": "final-nonaudio-20261024-v6-heldout-A"
+    },
+    {
+      "id": "cavalry_1800-90-command",
+      "games": 2000,
+      "pairs": 1000,
+      "score": 0.4945,
+      "ci95": [
+        0.47308848336421166,
+        0.5159115166357884
+      ],
+      "pass": true,
+      "sourceReport": "docs/card-battle-final-matrix.json",
+      "seedDomain": "final-nonaudio-20261024-v6-heldout-A"
+    },
+    {
+      "id": "cavalry_1800-90-intelligence",
+      "games": 2000,
+      "pairs": 1000,
+      "score": 0.5425,
+      "ci95": [
+        0.5205805024151013,
+        0.5644194975848986
+      ],
+      "pass": false,
+      "sourceReport": "docs/card-battle-final-matrix.json",
+      "seedDomain": "final-nonaudio-20261024-v6-heldout-A"
+    },
+    {
+      "id": "cavalry_1800-90-martial",
+      "games": 2000,
+      "pairs": 1000,
+      "score": 0.495,
+      "ci95": [
+        0.4735655745447985,
+        0.5164344254552015
+      ],
+      "pass": true,
+      "sourceReport": "docs/card-battle-final-matrix.json",
+      "seedDomain": "final-nonaudio-20261024-v6-heldout-A"
+    },
+    {
+      "id": "exotic_1800-20-command",
+      "games": 2000,
+      "pairs": 1000,
+      "score": 0.5005,
+      "ci95": [
+        0.4789069617955486,
+        0.5220930382044513
+      ],
+      "pass": true,
+      "sourceReport": "docs/card-battle-final-matrix.json",
+      "seedDomain": "final-nonaudio-20261024-v6-heldout-A"
+    },
+    {
+      "id": "exotic_1800-20-intelligence",
+      "games": 2000,
+      "pairs": 1000,
+      "score": 0.5365,
+      "ci95": [
+        0.5144515859762893,
+        0.5585484140237107
+      ],
+      "pass": false,
+      "sourceReport": "docs/card-battle-final-matrix.json",
+      "seedDomain": "final-nonaudio-20261024-v6-heldout-A"
+    },
+    {
+      "id": "exotic_1800-20-martial",
+      "games": 2000,
+      "pairs": 1000,
+      "score": 0.516,
+      "ci95": [
+        0.49387965053937316,
+        0.5381203494606268
+      ],
+      "pass": true,
+      "sourceReport": "docs/card-battle-final-matrix.json",
+      "seedDomain": "final-nonaudio-20261024-v6-heldout-A"
+    },
+    {
+      "id": "exotic_1800-60-command",
+      "games": 2000,
+      "pairs": 1000,
+      "score": 0.539,
+      "ci95": [
+        0.5172093653566917,
+        0.5607906346433084
+      ],
+      "pass": false,
+      "sourceReport": "docs/card-battle-final-matrix.json",
+      "seedDomain": "final-nonaudio-20261024-v6-heldout-A"
+    },
+    {
+      "id": "exotic_1800-60-intelligence",
+      "games": 2000,
+      "pairs": 1000,
+      "score": 0.536,
+      "ci95": [
+        0.514189521248185,
+        0.5578104787518151
+      ],
+      "pass": false,
+      "sourceReport": "docs/card-battle-final-matrix.json",
+      "seedDomain": "final-nonaudio-20261024-v6-heldout-A"
+    },
+    {
+      "id": "exotic_1800-60-martial",
+      "games": 2000,
+      "pairs": 1000,
+      "score": 0.5325,
+      "ci95": [
+        0.5111808157375188,
+        0.5538191842624811
+      ],
+      "pass": false,
+      "sourceReport": "docs/card-battle-final-matrix.json",
+      "seedDomain": "final-nonaudio-20261024-v6-heldout-A"
+    },
+    {
+      "id": "exotic_1800-90-command",
+      "games": 2000,
+      "pairs": 1000,
+      "score": 0.529,
+      "ci95": [
+        0.5070178520333153,
+        0.5509821479666848
+      ],
+      "pass": true,
+      "sourceReport": "docs/card-battle-final-matrix.json",
+      "seedDomain": "final-nonaudio-20261024-v6-heldout-A"
+    },
+    {
+      "id": "exotic_1800-90-intelligence",
+      "games": 2000,
+      "pairs": 1000,
+      "score": 0.522,
+      "ci95": [
+        0.5003388395631381,
+        0.543661160436862
+      ],
+      "pass": true,
+      "sourceReport": "docs/card-battle-final-matrix.json",
+      "seedDomain": "final-nonaudio-20261024-v6-heldout-A"
+    },
+    {
+      "id": "exotic_1800-90-martial",
+      "games": 2000,
+      "pairs": 1000,
+      "score": 0.532,
+      "ci95": [
+        0.5112491542533997,
+        0.5527508457466004
+      ],
+      "pass": false,
+      "sourceReport": "docs/card-battle-final-matrix.json",
+      "seedDomain": "final-nonaudio-20261024-v6-heldout-A"
+    },
+    {
+      "id": "heavy_1800-20-command",
+      "games": 2000,
+      "pairs": 1000,
+      "score": 0.5025,
+      "ci95": [
+        0.4805104404152623,
+        0.5244895595847376
+      ],
+      "pass": true,
+      "sourceReport": "docs/card-battle-final-matrix.json",
+      "seedDomain": "final-nonaudio-20261024-v6-heldout-A"
+    },
+    {
+      "id": "heavy_1800-20-intelligence",
+      "games": 2000,
+      "pairs": 1000,
+      "score": 0.526,
+      "ci95": [
+        0.5050786237932975,
+        0.5469213762067026
+      ],
+      "pass": true,
+      "sourceReport": "docs/card-battle-final-matrix.json",
+      "seedDomain": "final-nonaudio-20261024-v6-heldout-A"
+    },
+    {
+      "id": "heavy_1800-20-martial",
+      "games": 2000,
+      "pairs": 1000,
+      "score": 0.483,
+      "ci95": [
+        0.46101330419566433,
+        0.5049866958043356
+      ],
+      "pass": true,
+      "sourceReport": "docs/card-battle-final-matrix.json",
+      "seedDomain": "final-nonaudio-20261024-v6-heldout-A"
+    },
+    {
+      "id": "heavy_1800-60-command",
+      "games": 2000,
+      "pairs": 1000,
+      "score": 0.488,
+      "ci95": [
+        0.4664420512396294,
+        0.5095579487603705
+      ],
+      "pass": true,
+      "sourceReport": "docs/card-battle-final-matrix.json",
+      "seedDomain": "final-nonaudio-20261024-v6-heldout-A"
+    },
+    {
+      "id": "heavy_1800-60-intelligence",
+      "games": 2000,
+      "pairs": 1000,
+      "score": 0.523,
+      "ci95": [
+        0.5013428342937857,
+        0.5446571657062144
+      ],
+      "pass": true,
+      "sourceReport": "docs/card-battle-final-matrix.json",
+      "seedDomain": "final-nonaudio-20261024-v6-heldout-A"
+    },
+    {
+      "id": "heavy_1800-60-martial",
+      "games": 2000,
+      "pairs": 1000,
+      "score": 0.4575,
+      "ci95": [
+        0.4359342263622982,
+        0.4790657736377018
+      ],
+      "pass": false,
+      "sourceReport": "docs/card-battle-final-matrix.json",
+      "seedDomain": "final-nonaudio-20261024-v6-heldout-A"
+    },
+    {
+      "id": "heavy_1800-90-command",
+      "games": 2000,
+      "pairs": 1000,
+      "score": 0.481,
+      "ci95": [
+        0.45901960145219556,
+        0.5029803985478044
+      ],
+      "pass": true,
+      "sourceReport": "docs/card-battle-final-matrix.json",
+      "seedDomain": "final-nonaudio-20261024-v6-heldout-A"
+    },
+    {
+      "id": "heavy_1800-90-intelligence",
+      "games": 2000,
+      "pairs": 1000,
+      "score": 0.526,
+      "ci95": [
+        0.5041789451025659,
+        0.5478210548974342
+      ],
+      "pass": true,
+      "sourceReport": "docs/card-battle-final-matrix.json",
+      "seedDomain": "final-nonaudio-20261024-v6-heldout-A"
+    },
+    {
+      "id": "heavy_1800-90-martial",
+      "games": 2000,
+      "pairs": 1000,
+      "score": 0.479,
+      "ci95": [
+        0.4567224475369547,
+        0.5012775524630453
+      ],
+      "pass": true,
+      "sourceReport": "docs/card-battle-final-matrix.json",
+      "seedDomain": "final-nonaudio-20261024-v6-heldout-A"
+    },
+    {
+      "id": "infantry_1800-20-command",
+      "games": 2000,
+      "pairs": 1000,
+      "score": 0.49,
+      "ci95": [
+        0.4687978167970236,
+        0.5112021832029764
+      ],
+      "pass": true,
+      "sourceReport": "docs/card-battle-final-matrix.json",
+      "seedDomain": "final-nonaudio-20261024-v6-heldout-A"
+    },
+    {
+      "id": "infantry_1800-20-intelligence",
+      "games": 2000,
+      "pairs": 1000,
+      "score": 0.512,
+      "ci95": [
+        0.4904420512396294,
+        0.5335579487603705
+      ],
+      "pass": true,
+      "sourceReport": "docs/card-battle-final-matrix.json",
+      "seedDomain": "final-nonaudio-20261024-v6-heldout-A"
+    },
+    {
+      "id": "infantry_1800-20-martial",
+      "games": 2000,
+      "pairs": 1000,
+      "score": 0.479,
+      "ci95": [
+        0.45733502306427215,
+        0.5006649769357278
+      ],
+      "pass": true,
+      "sourceReport": "docs/card-battle-final-matrix.json",
+      "seedDomain": "final-nonaudio-20261024-v6-heldout-A"
+    },
+    {
+      "id": "infantry_1800-60-command",
+      "games": 2000,
+      "pairs": 1000,
+      "score": 0.4995,
+      "ci95": [
+        0.4780409429207449,
+        0.520959057079255
+      ],
+      "pass": true,
+      "sourceReport": "docs/card-battle-final-matrix.json",
+      "seedDomain": "final-nonaudio-20261024-v6-heldout-A"
+    },
+    {
+      "id": "infantry_1800-60-intelligence",
+      "games": 2000,
+      "pairs": 1000,
+      "score": 0.503,
+      "ci95": [
+        0.4816540243540783,
+        0.5243459756459218
+      ],
+      "pass": true,
+      "sourceReport": "docs/card-battle-final-matrix.json",
+      "seedDomain": "final-nonaudio-20261024-v6-heldout-A"
+    },
+    {
+      "id": "infantry_1800-60-martial",
+      "games": 2000,
+      "pairs": 1000,
+      "score": 0.507,
+      "ci95": [
+        0.48525600397896096,
+        0.528743996021039
+      ],
+      "pass": true,
+      "sourceReport": "docs/card-battle-final-matrix.json",
+      "seedDomain": "final-nonaudio-20261024-v6-heldout-A"
+    },
+    {
+      "id": "infantry_1800-90-command",
+      "games": 2000,
+      "pairs": 1000,
+      "score": 0.4745,
+      "ci95": [
+        0.45327971017397956,
+        0.4957202898260204
+      ],
+      "pass": true,
+      "sourceReport": "docs/card-battle-final-matrix.json",
+      "seedDomain": "final-nonaudio-20261024-v6-heldout-A"
+    },
+    {
+      "id": "infantry_1800-90-intelligence",
+      "games": 2000,
+      "pairs": 1000,
+      "score": 0.5235,
+      "ci95": [
+        0.5016020915429169,
+        0.545397908457083
+      ],
+      "pass": true,
+      "sourceReport": "docs/card-battle-final-matrix.json",
+      "seedDomain": "final-nonaudio-20261024-v6-heldout-A"
+    },
+    {
+      "id": "infantry_1800-90-martial",
+      "games": 2000,
+      "pairs": 1000,
+      "score": 0.5365,
+      "ci95": [
+        0.5156620767002216,
+        0.5573379232997784
+      ],
+      "pass": false,
+      "sourceReport": "docs/card-battle-final-matrix.json",
+      "seedDomain": "final-nonaudio-20261024-v6-heldout-A"
+    },
+    {
+      "id": "mixed_1800-20-command",
+      "games": 2000,
+      "pairs": 1000,
+      "score": 0.484,
+      "ci95": [
+        0.4624074738025496,
+        0.5055925261974504
+      ],
+      "pass": true,
+      "sourceReport": "docs/card-battle-final-matrix.json",
+      "seedDomain": "final-nonaudio-20261024-v6-heldout-A"
+    },
+    {
+      "id": "mixed_1800-20-intelligence",
+      "games": 2000,
+      "pairs": 1000,
+      "score": 0.495,
+      "ci95": [
+        0.4733424791767801,
+        0.5166575208232199
+      ],
+      "pass": true,
+      "sourceReport": "docs/card-battle-final-matrix.json",
+      "seedDomain": "final-nonaudio-20261024-v6-heldout-A"
+    },
+    {
+      "id": "mixed_1800-20-martial",
+      "games": 2000,
+      "pairs": 1000,
+      "score": 0.4975,
+      "ci95": [
+        0.4759074960639989,
+        0.5190925039360011
+      ],
+      "pass": true,
+      "sourceReport": "docs/card-battle-final-matrix.json",
+      "seedDomain": "final-nonaudio-20261024-v6-heldout-A"
+    },
+    {
+      "id": "mixed_1800-60-command",
+      "games": 2000,
+      "pairs": 1000,
+      "score": 0.478,
+      "ci95": [
+        0.4562061008619467,
+        0.4997938991380533
+      ],
+      "pass": true,
+      "sourceReport": "docs/card-battle-final-matrix.json",
+      "seedDomain": "final-nonaudio-20261024-v6-heldout-A"
+    },
+    {
+      "id": "mixed_1800-60-intelligence",
+      "games": 2000,
+      "pairs": 1000,
+      "score": 0.501,
+      "ci95": [
+        0.47890095644318226,
+        0.5230990435568178
+      ],
+      "pass": true,
+      "sourceReport": "docs/card-battle-final-matrix.json",
+      "seedDomain": "final-nonaudio-20261024-v6-heldout-A"
+    },
+    {
+      "id": "mixed_1800-60-martial",
+      "games": 2000,
+      "pairs": 1000,
+      "score": 0.515,
+      "ci95": [
+        0.4938091554700646,
+        0.5361908445299354
+      ],
+      "pass": true,
+      "sourceReport": "docs/card-battle-final-matrix.json",
+      "seedDomain": "final-nonaudio-20261024-v6-heldout-A"
+    },
+    {
+      "id": "mixed_1800-90-command",
+      "games": 2000,
+      "pairs": 1000,
+      "score": 0.476,
+      "ci95": [
+        0.455023554885309,
+        0.49697644511469097
+      ],
+      "pass": true,
+      "sourceReport": "docs/card-battle-final-matrix.json",
+      "seedDomain": "final-nonaudio-20261024-v6-heldout-A"
+    },
+    {
+      "id": "mixed_1800-90-intelligence",
+      "games": 2000,
+      "pairs": 1000,
+      "score": 0.5255,
+      "ci95": [
+        0.5036987134394388,
+        0.5473012865605611
+      ],
+      "pass": true,
+      "sourceReport": "docs/card-battle-final-matrix.json",
+      "seedDomain": "final-nonaudio-20261024-v6-heldout-A"
+    },
+    {
+      "id": "mixed_1800-90-martial",
+      "games": 2000,
+      "pairs": 1000,
+      "score": 0.5135,
+      "ci95": [
+        0.4919231738240345,
+        0.5350768261759654
+      ],
+      "pass": true,
+      "sourceReport": "docs/card-battle-final-matrix.json",
+      "seedDomain": "final-nonaudio-20261024-v6-heldout-A"
+    },
+    {
+      "id": "mixed_600-20-command",
+      "games": 2000,
+      "pairs": 1000,
+      "score": 0.4725,
+      "ci95": [
+        0.4515171625019525,
+        0.49348283749804744
+      ],
+      "pass": true,
+      "sourceReport": "docs/card-battle-final-matrix.json",
+      "seedDomain": "final-nonaudio-20261024-v6-heldout-A"
+    },
+    {
+      "id": "mixed_600-20-intelligence",
+      "games": 2000,
+      "pairs": 1000,
+      "score": 0.499,
+      "ci95": [
+        0.47774356581186783,
+        0.5202564341881322
+      ],
+      "pass": true,
+      "sourceReport": "docs/card-battle-final-matrix.json",
+      "seedDomain": "final-nonaudio-20261024-v6-heldout-A"
+    },
+    {
+      "id": "mixed_600-20-martial",
+      "games": 2000,
+      "pairs": 1000,
+      "score": 0.477,
+      "ci95": [
+        0.45538726986927136,
+        0.4986127301307286
+      ],
+      "pass": true,
+      "sourceReport": "docs/card-battle-final-matrix.json",
+      "seedDomain": "final-nonaudio-20261024-v6-heldout-A"
+    },
+    {
+      "id": "mixed_600-60-command",
+      "games": 2000,
+      "pairs": 1000,
+      "score": 0.459,
+      "ci95": [
+        0.4374453514695026,
+        0.48055464853049745
+      ],
+      "pass": false,
+      "sourceReport": "docs/card-battle-final-matrix.json",
+      "seedDomain": "final-nonaudio-20261024-v6-heldout-A"
+    },
+    {
+      "id": "mixed_600-60-intelligence",
+      "games": 2000,
+      "pairs": 1000,
+      "score": 0.5045,
+      "ci95": [
+        0.4826432224166889,
+        0.526356777583311
+      ],
+      "pass": true,
+      "sourceReport": "docs/card-battle-final-matrix.json",
+      "seedDomain": "final-nonaudio-20261024-v6-heldout-A"
+    },
+    {
+      "id": "mixed_600-60-martial",
+      "games": 2000,
+      "pairs": 1000,
+      "score": 0.4555,
+      "ci95": [
+        0.43408399390836555,
+        0.4769160060916345
+      ],
+      "pass": false,
+      "sourceReport": "docs/card-battle-final-matrix.json",
+      "seedDomain": "final-nonaudio-20261024-v6-heldout-A"
+    },
+    {
+      "id": "mixed_600-90-command",
+      "games": 2000,
+      "pairs": 1000,
+      "score": 0.466,
+      "ci95": [
+        0.445494479114473,
+        0.48650552088552707
+      ],
+      "pass": false,
+      "sourceReport": "docs/card-battle-final-matrix.json",
+      "seedDomain": "final-nonaudio-20261024-v6-heldout-A"
+    },
+    {
+      "id": "mixed_600-90-intelligence",
+      "games": 2000,
+      "pairs": 1000,
+      "score": 0.5135,
+      "ci95": [
+        0.49210213709416434,
+        0.5348978629058356
+      ],
+      "pass": true,
+      "sourceReport": "docs/card-battle-final-matrix.json",
+      "seedDomain": "final-nonaudio-20261024-v6-heldout-A"
+    },
+    {
+      "id": "mixed_600-90-martial",
+      "games": 2000,
+      "pairs": 1000,
+      "score": 0.4625,
+      "ci95": [
+        0.4408097668012487,
+        0.4841902331987513
+      ],
+      "pass": false,
+      "sourceReport": "docs/card-battle-final-matrix.json",
+      "seedDomain": "final-nonaudio-20261024-v6-heldout-A"
+    },
+    {
+      "id": "ranged_1800-20-command",
+      "games": 2000,
+      "pairs": 1000,
+      "score": 0.4775,
+      "ci95": [
+        0.4559074960639987,
+        0.49909250393600124
+      ],
+      "pass": true,
+      "sourceReport": "docs/card-battle-final-matrix.json",
+      "seedDomain": "final-nonaudio-20261024-v6-heldout-A"
+    },
+    {
+      "id": "ranged_1800-20-intelligence",
+      "games": 2000,
+      "pairs": 1000,
+      "score": 0.5395,
+      "ci95": [
+        0.518362324041065,
+        0.560637675958935
+      ],
+      "pass": false,
+      "sourceReport": "docs/card-battle-final-matrix.json",
+      "seedDomain": "final-nonaudio-20261024-v6-heldout-A"
+    },
+    {
+      "id": "ranged_1800-20-martial",
+      "games": 2000,
+      "pairs": 1000,
+      "score": 0.4785,
+      "ci95": [
+        0.4575360474216405,
+        0.49946395257835946
+      ],
+      "pass": true,
+      "sourceReport": "docs/card-battle-final-matrix.json",
+      "seedDomain": "final-nonaudio-20261024-v6-heldout-A"
+    },
+    {
+      "id": "ranged_1800-60-command",
+      "games": 2000,
+      "pairs": 1000,
+      "score": 0.462,
+      "ci95": [
+        0.4402025722284151,
+        0.48379742777158496
+      ],
+      "pass": false,
+      "sourceReport": "docs/card-battle-final-matrix.json",
+      "seedDomain": "final-nonaudio-20261024-v6-heldout-A"
+    },
+    {
+      "id": "ranged_1800-60-intelligence",
+      "games": 2000,
+      "pairs": 1000,
+      "score": 0.543,
+      "ci95": [
+        0.5214603426573577,
+        0.5645396573426423
+      ],
+      "pass": false,
+      "sourceReport": "docs/card-battle-final-matrix.json",
+      "seedDomain": "final-nonaudio-20261024-v6-heldout-A"
+    },
+    {
+      "id": "ranged_1800-60-martial",
+      "games": 2000,
+      "pairs": 1000,
+      "score": 0.4905,
+      "ci95": [
+        0.4689149772108342,
+        0.5120850227891658
+      ],
+      "pass": true,
+      "sourceReport": "docs/card-battle-final-matrix.json",
+      "seedDomain": "final-nonaudio-20261024-v6-heldout-A"
+    },
+    {
+      "id": "ranged_1800-90-command",
+      "games": 2000,
+      "pairs": 1000,
+      "score": 0.4905,
+      "ci95": [
+        0.46918388233114505,
+        0.5118161176688549
+      ],
+      "pass": true,
+      "sourceReport": "docs/card-battle-final-matrix.json",
+      "seedDomain": "final-nonaudio-20261024-v6-heldout-A"
+    },
+    {
+      "id": "ranged_1800-90-intelligence",
+      "games": 2000,
+      "pairs": 1000,
+      "score": 0.545,
+      "ci95": [
+        0.5235655745447982,
+        0.5664344254552018
+      ],
+      "pass": false,
+      "sourceReport": "docs/card-battle-final-matrix.json",
+      "seedDomain": "final-nonaudio-20261024-v6-heldout-A"
+    },
+    {
+      "id": "ranged_1800-90-martial",
+      "games": 2000,
+      "pairs": 1000,
+      "score": 0.511,
+      "ci95": [
+        0.4897997212702707,
+        0.5322002787297293
+      ],
+      "pass": true,
+      "sourceReport": "docs/card-battle-final-matrix.json",
+      "seedDomain": "final-nonaudio-20261024-v6-heldout-A"
+    },
+    {
+      "id": "reserve_3600-20-command",
+      "games": 2000,
+      "pairs": 1000,
+      "score": 0.464,
+      "ci95": [
+        0.4427702664174045,
+        0.4852297335825955
+      ],
+      "pass": false,
+      "sourceReport": "docs/card-battle-final-matrix.json",
+      "seedDomain": "final-nonaudio-20261024-v6-heldout-A"
+    },
+    {
+      "id": "reserve_3600-20-intelligence",
+      "games": 2000,
+      "pairs": 1000,
+      "score": 0.532,
+      "ci95": [
+        0.5103423903984384,
+        0.5536576096015616
+      ],
+      "pass": false,
+      "sourceReport": "docs/card-battle-final-matrix.json",
+      "seedDomain": "final-nonaudio-20261024-v6-heldout-A"
+    },
+    {
+      "id": "reserve_3600-20-martial",
+      "games": 2000,
+      "pairs": 1000,
+      "score": 0.4955,
+      "ci95": [
+        0.4738642630651804,
+        0.5171357369348195
+      ],
+      "pass": true,
+      "sourceReport": "docs/card-battle-final-matrix.json",
+      "seedDomain": "final-nonaudio-20261024-v6-heldout-A"
+    },
+    {
+      "id": "reserve_3600-60-command",
+      "games": 2000,
+      "pairs": 1000,
+      "score": 0.4655,
+      "ci95": [
+        0.44374638983627895,
+        0.4872536101637211
+      ],
+      "pass": false,
+      "sourceReport": "docs/card-battle-final-matrix.json",
+      "seedDomain": "final-nonaudio-20261024-v6-heldout-A"
+    },
+    {
+      "id": "reserve_3600-60-intelligence",
+      "games": 2000,
+      "pairs": 1000,
+      "score": 0.532,
+      "ci95": [
+        0.5100338644110368,
+        0.5539661355889632
+      ],
+      "pass": false,
+      "sourceReport": "docs/card-battle-final-matrix.json",
+      "seedDomain": "final-nonaudio-20261024-v6-heldout-A"
+    },
+    {
+      "id": "reserve_3600-60-martial",
+      "games": 2000,
+      "pairs": 1000,
+      "score": 0.5045,
+      "ci95": [
+        0.48322270386231053,
+        0.5257772961376894
+      ],
+      "pass": true,
+      "sourceReport": "docs/card-battle-final-matrix.json",
+      "seedDomain": "final-nonaudio-20261024-v6-heldout-A"
+    },
+    {
+      "id": "reserve_3600-90-command",
+      "games": 2000,
+      "pairs": 1000,
+      "score": 0.492,
+      "ci95": [
+        0.4706589790127845,
+        0.5133410209872155
+      ],
+      "pass": true,
+      "sourceReport": "docs/card-battle-final-matrix.json",
+      "seedDomain": "final-nonaudio-20261024-v6-heldout-A"
+    },
+    {
+      "id": "reserve_3600-90-intelligence",
+      "games": 2000,
+      "pairs": 1000,
+      "score": 0.549,
+      "ci95": [
+        0.527825130614488,
+        0.5701748693855121
+      ],
+      "pass": false,
+      "sourceReport": "docs/card-battle-final-matrix.json",
+      "seedDomain": "final-nonaudio-20261024-v6-heldout-A"
+    },
+    {
+      "id": "reserve_3600-90-martial",
+      "games": 2000,
+      "pairs": 1000,
+      "score": 0.535,
+      "ci95": [
+        0.5137638371023714,
+        0.5562361628976287
+      ],
+      "pass": false,
+      "sourceReport": "docs/card-battle-final-matrix.json",
+      "seedDomain": "final-nonaudio-20261024-v6-heldout-A"
+    },
+    {
+      "id": "configured-combined-0",
+      "games": 2000,
+      "pairs": 1000,
+      "score": 0.463,
+      "ci95": [
+        0.44605923735367753,
+        0.4799407626463225
+      ],
+      "pass": false,
+      "sourceReport": "docs/card-battle-final-configured.json",
+      "seedDomain": "final-nonaudio-20261024-v6-heldout-A"
+    },
+    {
+      "id": "configured-combined-5",
+      "games": 2000,
+      "pairs": 1000,
+      "score": 0.466,
+      "ci95": [
+        0.4477255953786652,
+        0.48427440462133486
+      ],
+      "pass": false,
+      "sourceReport": "docs/card-battle-final-configured.json",
+      "seedDomain": "final-nonaudio-20261024-v6-heldout-A"
+    },
+    {
+      "id": "configured-landmarks-0",
+      "games": 2000,
+      "pairs": 1000,
+      "score": 0.431,
+      "ci95": [
+        0.4097670967934533,
+        0.4522329032065467
+      ],
+      "pass": false,
+      "sourceReport": "docs/card-battle-final-configured.json",
+      "seedDomain": "final-nonaudio-20261024-v6-heldout-A"
+    },
+    {
+      "id": "configured-landmarks-5",
+      "games": 2000,
+      "pairs": 1000,
+      "score": 0.4685,
+      "ci95": [
+        0.44981835188276004,
+        0.48718164811724
+      ],
+      "pass": false,
+      "sourceReport": "docs/card-battle-final-configured.json",
+      "seedDomain": "final-nonaudio-20261024-v6-heldout-A"
+    },
+    {
+      "id": "configured-secrets-0",
+      "games": 2000,
+      "pairs": 1000,
+      "score": 0.462,
+      "ci95": [
+        0.44199645853176805,
+        0.482003541468232
+      ],
+      "pass": false,
+      "sourceReport": "docs/card-battle-final-configured.json",
+      "seedDomain": "final-nonaudio-20261024-v6-heldout-A"
+    },
+    {
+      "id": "configured-secrets-5",
+      "games": 2000,
+      "pairs": 1000,
+      "score": 0.4645,
+      "ci95": [
+        0.44407473586425333,
+        0.4849252641357467
+      ],
+      "pass": false,
+      "sourceReport": "docs/card-battle-final-configured.json",
+      "seedDomain": "final-nonaudio-20261024-v6-heldout-A"
+    },
+    {
+      "id": "configured-weapons-0",
+      "games": 2000,
+      "pairs": 1000,
+      "score": 0.4705,
+      "ci95": [
+        0.4528098505097048,
+        0.48819014949029516
+      ],
+      "pass": true,
+      "sourceReport": "docs/card-battle-final-configured.json",
+      "seedDomain": "final-nonaudio-20261024-v6-heldout-A"
+    },
+    {
+      "id": "configured-weapons-5",
+      "games": 2000,
+      "pairs": 1000,
+      "score": 0.4455,
+      "ci95": [
+        0.42733791452093267,
+        0.46366208547906734
+      ],
+      "pass": false,
+      "sourceReport": "docs/card-battle-final-configured.json",
+      "seedDomain": "final-nonaudio-20261024-v6-heldout-A"
+    },
+    {
+      "id": "manual-1509-final-mirror",
+      "games": 2000,
+      "pairs": 1000,
+      "score": 0.5055,
+      "ci95": [
+        0.483251746666842,
+        0.5277482533331579
+      ],
+      "pass": true,
+      "sourceReport": "docs/card-battle-final-yanying.json",
+      "seedDomain": "final-nonaudio-20261024-v6-heldout-A"
+    }
+  ],
+  "limitations": [
+    "AI paired first-order score only; does not certify all human deck choices",
+    "20 actual UI games and foreground hour are separate acceptance gates"
+  ],
+  "userAcceptance": {
+    "scope": "72基础矩阵，不扩展新牌型配置",
+    "userDecision": "用户明确表示72组中24组未达47%至53%、45.55%至54.90%差异可以接受",
+    "report": "docs/card-battle-final-matrix.json",
+    "status": "accepted-by-user-with-original-target-exceptions",
+    "originalTarget": [
+      0.47,
+      0.53
+    ],
+    "actualRange": [
+      0.4555,
+      0.549
+    ],
+    "originalTargetFailedGroups": 24,
+    "doNotTuneSolelyForOriginalTarget": true,
+    "additionalAcceptance": {
+      "scope": "8新牌型配置",
+      "actualRange": [
+        0.431,
+        0.4705
+      ],
+      "userDecision": "接受新牌型结果，继续实机验收",
+      "report": "docs/card-battle-final-configured.json"
+    }
+  },
+  "deliveryBalanceStatus": "accepted-by-user-with-recorded-target-exceptions"
+}

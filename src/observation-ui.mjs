@@ -20,10 +20,10 @@ export function paintCrowd(canvas,sprite,report){
 export function openObservation(initial,root,onCommit,onClose){
  const report=observationReport(initial),d=document.createElement('dialog');
  d.className='martial-dialog observation-dialog';d.setAttribute('aria-label','观景台');
- d.innerHTML=`<section class="royal-martial royal-observation"><img class="martial-scenery" src="assets/sketch-observation-v1.png" alt="皇帝登临南门城台，御街沿城楼向远方延伸" draggable="false"><canvas class="observation-crowd" role="img"></canvas><header><div><small>南门登临 · 万民瞻仰</small><h1>观景台</h1></div><button data-exit>离台 ×</button></header><aside class="observation-report"><small>御街朝仪</small><h2>${report.tier}</h2><p><b>${report.count.toLocaleString('zh-CN')}</b> 人朝拜</p><span>国势 ${report.score} / 100</span><details><summary>国势详情</summary>${report.factors.map(f=>`<div>${f.name}<b>${f.value}</b><small>占 ${Math.round(f.weight*100)}%</small></div>`).join('')}<p>本旬人数固定，人群按比例呈现。</p></details></aside><p class="martial-result" role="status">正在展开御街画卷…</p></section>`;
+ d.innerHTML=`<section class="royal-martial royal-observation palace-action-scene"><img class="martial-scenery" src="assets/scenes/observation/sketch-observation-v1.png" alt="皇帝登临南门城台，御街沿城楼向远方延伸" draggable="false"><canvas class="observation-crowd" role="img"></canvas><header><div><small>南门登临 · 万民瞻仰</small><h1>观景台</h1></div></header><aside class="observation-report"><small>御街朝仪</small><h2>${report.tier}</h2><p><b>${report.count.toLocaleString('zh-CN')}</b> 人朝拜</p><span>国势 ${report.score} / 100</span><details><summary>国势详情</summary>${report.factors.map(f=>`<div>${f.name}<b>${f.value}</b><small>占 ${Math.round(f.weight*100)}%</small></div>`).join('')}<p>本旬人数固定，人群按比例呈现。</p></details></aside><p class="martial-result" role="status">正在展开御街画卷…</p><button class="palace-scene-exit" data-exit>离台 ×</button></section>`;
  root.append(d);let cancelled=false;
  d.onclose=()=>{cancelled=true;d.remove();onClose?.();};d.querySelector('[data-exit]').onclick=()=>d.close();d.showModal();
- const sprite=new Image();sprite.src='assets/sketch-observation-commoner-v1.png';
+ const sprite=new Image();sprite.src='assets/scenes/observation/sketch-observation-commoner-v1.png';
  Promise.all([d.querySelector('img').decode(),sprite.decode()]).then(()=>{
   if(cancelled||!d.open)return;
   paintCrowd(d.querySelector('canvas'),sprite,report);

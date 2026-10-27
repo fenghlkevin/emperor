@@ -30,9 +30,10 @@
 | 国库与债务 | `country.fiscal.treasury/debt`，两 | 非负安全整数，唯一国家现金与欠款余额；运行中通过财政记账函数变更 |
 | 威望 | `country.prestige` | 0–500；`stats.prestige` 在载入、保存与跨旬时同步 |
 | 地方人口 | `province.population.total/professions`，人 | 六职业合计不大于总人口；未从业人口由差额计算 |
-| 地方产业 | 四业 `developedArea/capacityArea/productivity` | 面积单位为等效经营用地亩数，开发不超容量；生产力 0–100 |
-| 地方民生 | `welfare` 六项指标与 grainReserve | 民生整数部分 0–100；部分指标的小数以 buildingEffects.carry 的百分之一存储，查询用 welfareValue；粮食为石 |
-| 地方现金与生活 | `status.cash/livingStandard/situation` | 现金单位两，可为负，与国库分账；生活 0–100；情势 stable/unrest/disaster/war |
+| 地方产业 | 四业 `developedArea/capacityArea/productivity` | 面积单位为等效经营用地亩数；四业共用 `cityCapacity.land`，`capacityArea` 保留为产出基准；生产力 0–100 |
+| 地方民生 | `welfare` 六项指标 | 民生整数部分 0–100；部分指标的小数以 buildingEffects.carry 的百分之一存储，查询用 welfareValue |
+| 全国官粮 | `country.fiscal.grain`、`country.grainAccounting` | 唯一国家存粮，单位石；各州不再持有库存，统一收税和供粮 |
+| 地方生活 | `status.livingStandard/situation` | 生活 0–100，可保留两位小数；中央补助直接改善生活；情势 stable/unrest/disaster/war |
 | 普通与特殊建物 | `buildings / specialBuildings` | 普通七类数量；特殊建物记录规则版本、完工旬和生效旬，不能仅凭名称发效果 |
 | 地方预算 | `budget.taxRate/otherIncome/expenses` | 州税率独立保存；国税率不是覆盖所有州的即时查询值；费用需叠加动态调整 |
 | 军籍与训练 | `population.professions.soldiers`、`military.training` | 士兵是实际人口的一部分；训练 0–100 |
@@ -52,7 +53,7 @@
 | `disasters` | 种子、最近结算旬、祭祀期限、最多 200 条灾情 | 持续灾害阻止叠灾、冻结施工；不直接把地方损失当作国库损失 |
 | `justice / personnel` | 官员身份与状态、制举名单、任职、委任、退职与隐藏人物 | 官职定义由 personnel.mjs 生成；在职人的数据以 justice.officials 为准 |
 | `governance` | 全国治理预算、保留线、当旬实际支出与原因 | 自动委任在常规内政之后结算，须保留国库底线 |
-| `stateDevelopment / province.civic` | 动态费用基线、年度人口与生活、民变、地方投资启用 | 基线不是当前库存；不存在散件军备基线字段 |
+| `stateDevelopment / province.civic` | 动态费用基线、年度人口、每三旬生活、民变、地方投资启用 | 基线不是当前库存；不存在散件军备基线字段 |
 | `diplomacy / treatyObligations` | 无向国家对协议、贸易履约、贡银、军援请求 | 国家对 ID 排序；protector/protected 的方向依排序解释，不能交换后照搬 |
 | `war / strategy / troopKits` | 战场、累计战绩、外国战役、真实兵装占用 | 出战占用不立刻扣库存；战后按来源核销伤亡与对应套装，禁止重复核销 |
 | `collapse / province.occupation` | 京城存亡与普通州占领治理 | 京城需单独处理迁都/亡国，不能走普通州占领 |
@@ -80,3 +81,23 @@
 `countrySummary.publicServiceCost`为繁荣公共服务费（两/旬），已计入`administration`，不能再叠加一次。`round(Σ各州 人口×0.0013×max(0,生活−50)/100)`。商业营业修正为`1+min(0.1,max(0,营业−基准)/600)`。新局本国`fiscal.otherIncome=400`，旧档保留原值。
 
 供粮快照可选`storageLoss`为实际陈粮损耗（石），缺失视为0；当前预估的`protectedStock/protectedTurns/storageLoss`是查询结果，不反写历史。普通独寝与安寝至明不额外扣寿元；自然跨旬减1，过劳仍额外减30。
+
+## 城州承载与共用土地（2026-10-19）
+
+`domestic.capacityRulesVersion:1` 标识容量规则已初始化。`province.cityCapacity` 保存 `{version:1,land,population}`，分别为共用可开发亩数与正常人口容量。超载上限从正常容量×120%派生，不另存一份。四业已开发面积与新增开发预留共用 `land`；原行业 `capacityArea` 保留作生产公式基准。产业工程与完工启用记录可带 `fromIndustry`，表示等量转出土地，双方产出在同一启用旬切换。规则与兼容见[城州容量](city-capacity.md)。
+
+## 产业用工与抽调来源
+
+`industryLaborVersion:1` 与州级 `industryLabor:{version:1,base,pending}` 保存各业固定用工密度和启用旬招工任务。`manpowerVersion:1`、`manpower:{version:1,drafts}` 保存累计在役抽调来源，记录原籍州、当前驻地、原职业、soldiers/militia角色及人数。它们不是第二份兵籍，人数不得超过真实在役记录；调兵随营迁移，遣散/阵亡释放来源约束。见[产业用工与军役抽调](industry-manpower.md)。
+
+## 地形经济（2026-10-19）
+
+采用现有四类 `terrain`。新增 `domestic.terrainEconomyVersion:1`、各州 `terrainCapacity:{version:1,kind,landLimit,legacyLand,legacySectors}`。新局按地形设置土地共池和四业上限，保留初始化人口与75%劳动力比例。旧档既有用地、在建项目和人口均保留，迁移基线只登记一次；部分字段缺失或记录篡改不得重置上限。特色加成进入统一生产函数，不改税率及钱粮开支。详见[地形经济规则](terrain-economy.md)。
+
+## 州县地理归类（2026-10-19）
+
+新增 `domestic.geographyVersion:1`，43个现有州县与外国腹地集中配置。旧档先校验地形容量快照，再迁移 `terrain`；保留既有用地、在建项目、人口、职业、钱粮及实际流水，地形容量记录只更新未来上限及必要保留值。相同版本不重复迁移。详情见[州县地理归类](province-geography.md)。
+
+### 当前四业资源单位
+
+农业、牧业产出单位均为石，工业、商业均为两。资源新制粮食快照 `resourceSettlement.production.foodSources` 可包含 `agriculture`、`pastoral` 两项，各有 `base` 和 `produced`，分项最终产粮之和必须等于 `production.produced`。未含该字段的旧快照按当时单一农业产粮记录校验，不重算历史。

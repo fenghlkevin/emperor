@@ -1,0 +1,282 @@
+[
+  {
+    "id": "zhongyuan",
+    "celebrity": "刘诗诗",
+    "from": "assets/beauties/random/zhongyuan-clean-v1-celebrity-v1.png",
+    "to": "assets/beauties/random/刘诗诗.png",
+    "delete": "assets/beauties/random/zhongyuan-clean-v1.png"
+  },
+  {
+    "id": "henan",
+    "celebrity": "刘涛",
+    "from": "assets/beauties/random/henan-clean-v1-celebrity-v1.png",
+    "to": "assets/beauties/random/刘涛.png",
+    "delete": "assets/beauties/random/henan-clean-v1.png"
+  },
+  {
+    "id": "v1-sheng-00",
+    "celebrity": "杨幂",
+    "from": "assets/beauties/random/v1-sheng-00-clean-v1-celebrity-v1.png",
+    "to": "assets/beauties/random/杨幂.png",
+    "delete": "assets/beauties/random/v1-sheng-00-clean-v1.png"
+  },
+  {
+    "id": "v1-sheng-02",
+    "celebrity": "倪妮",
+    "from": "assets/beauties/random/v1-sheng-02-clean-v1-celebrity-v1.png",
+    "to": "assets/beauties/random/倪妮.png",
+    "delete": "assets/beauties/random/v1-sheng-02-clean-v1.png"
+  },
+  {
+    "id": "v1-sheng-03",
+    "celebrity": "孙俪",
+    "from": "assets/beauties/random/v1-sheng-03-clean-v1-celebrity-v1.png",
+    "to": "assets/beauties/random/孙俪.png",
+    "delete": "assets/beauties/random/v1-sheng-03-clean-v1.png"
+  },
+  {
+    "id": "peony-red",
+    "celebrity": "范冰冰",
+    "from": "assets/beauties/random/peony-red-clean-v1-celebrity-v1.png",
+    "to": "assets/beauties/random/范冰冰.png",
+    "delete": "assets/beauties/random/peony-red-clean-v1.png"
+  },
+  {
+    "id": "pine-silk",
+    "celebrity": "景甜",
+    "from": "assets/beauties/random/pine-silk-clean-v1-celebrity-v1.png",
+    "to": "assets/beauties/random/景甜.png",
+    "delete": "assets/beauties/random/pine-silk-clean-v1.png"
+  },
+  {
+    "id": "candle-curtain",
+    "celebrity": "江疏影",
+    "from": "assets/beauties/random/candle-curtain-clean-v1-celebrity-v1.png",
+    "to": "assets/beauties/random/江疏影.png",
+    "delete": "assets/beauties/random/candle-curtain-clean-v1.png"
+  },
+  {
+    "id": "lotus-picker",
+    "celebrity": "李沁",
+    "from": "assets/beauties/random/lotus-picker-clean-v1-celebrity-v1.png",
+    "to": "assets/beauties/random/李沁.png",
+    "delete": "assets/beauties/random/lotus-picker-clean-v1.png"
+  },
+  {
+    "id": "railing-coral",
+    "celebrity": "张梓琳",
+    "from": "assets/beauties/random/railing-coral-clean-v1-celebrity-v1.png",
+    "to": "assets/beauties/random/张梓琳.png",
+    "delete": "assets/beauties/random/railing-coral-clean-v1.png"
+  },
+  {
+    "id": "spring-rider",
+    "celebrity": "关晓彤",
+    "from": "assets/beauties/random/spring-rider-clean-v1-celebrity-v1.png",
+    "to": "assets/beauties/random/关晓彤.png",
+    "delete": "assets/beauties/random/spring-rider-clean-v1.png"
+  },
+  {
+    "id": "autumn-flute",
+    "celebrity": "谭卓",
+    "from": "assets/beauties/random/autumn-flute-redesign-v2-celebrity-v1.png",
+    "to": "assets/beauties/random/谭卓.png",
+    "delete": "assets/beauties/random/autumn-flute-redesign-v2.png"
+  },
+  {
+    "id": "red-twin-buns",
+    "celebrity": "赵今麦",
+    "from": "assets/beauties/random/red-twin-buns-redesign-v2-celebrity-v1.png",
+    "to": "assets/beauties/random/赵今麦.png",
+    "delete": "assets/beauties/random/red-twin-buns-redesign-v2.png"
+  },
+  {
+    "id": "butterfly-sleeves",
+    "celebrity": "宋茜",
+    "from": "assets/beauties/random/butterfly-sleeves-redesign-v2-celebrity-v1.png",
+    "to": "assets/beauties/random/宋茜.png",
+    "delete": "assets/beauties/random/butterfly-sleeves-redesign-v2.png"
+  },
+  {
+    "id": "green-fan",
+    "celebrity": "王丽坤",
+    "from": "assets/beauties/random/green-fan-clean-v1-celebrity-v1.png",
+    "to": "assets/beauties/random/王丽坤.png",
+    "delete": "assets/beauties/random/green-fan-clean-v1.png"
+  },
+  {
+    "id": "blue-dancer",
+    "celebrity": "蒋梦婕",
+    "from": "assets/beauties/random/blue-dancer-redesign-v2-celebrity-v1.png",
+    "to": "assets/beauties/random/蒋梦婕.png",
+    "delete": "assets/beauties/random/blue-dancer-redesign-v2.png"
+  },
+  {
+    "id": "moon-silk",
+    "celebrity": "杜鹃",
+    "from": "assets/beauties/random/moon-silk-clean-v1-celebrity-v1.png",
+    "to": "assets/beauties/random/杜鹃.png",
+    "delete": "assets/beauties/random/moon-silk-clean-v1.png"
+  },
+  {
+    "id": "rabbit-play",
+    "celebrity": "张佳宁",
+    "from": "assets/beauties/random/rabbit-play-redesign-v2-celebrity-v1.png",
+    "to": "assets/beauties/random/张佳宁.png",
+    "delete": "assets/beauties/random/rabbit-play-redesign-v2.png"
+  },
+  {
+    "id": "oasis-dance",
+    "celebrity": "迪丽热巴",
+    "from": "assets/beauties/random/oasis-dance-redesign-v2-celebrity-v1.png",
+    "to": "assets/beauties/random/迪丽热巴.png",
+    "delete": "assets/beauties/random/oasis-dance-redesign-v2.png"
+  },
+  {
+    "id": "expansion-20261019-01",
+    "celebrity": "刘亦菲",
+    "from": "assets/beauties/random/expansion-20261019-01-v1-celebrity-v1.png",
+    "to": "assets/beauties/random/刘亦菲.png",
+    "delete": "assets/beauties/random/expansion-20261019-01-v1.png"
+  },
+  {
+    "id": "expansion-20261019-02",
+    "celebrity": "田曦薇",
+    "from": "assets/beauties/random/expansion-20261019-02-v1-celebrity-v1.png",
+    "to": "assets/beauties/random/田曦薇.png",
+    "delete": "assets/beauties/random/expansion-20261019-02-v1.png"
+  },
+  {
+    "id": "expansion-20261019-03",
+    "celebrity": "宋轶",
+    "from": "assets/beauties/random/expansion-20261019-03-v1-celebrity-v1.png",
+    "to": "assets/beauties/random/宋轶.png",
+    "delete": "assets/beauties/random/expansion-20261019-03-v1.png"
+  },
+  {
+    "id": "expansion-20261019-04",
+    "celebrity": "周也",
+    "from": "assets/beauties/random/expansion-20261019-04-v1-celebrity-v1.png",
+    "to": "assets/beauties/random/周也.png",
+    "delete": "assets/beauties/random/expansion-20261019-04-v1.png"
+  },
+  {
+    "id": "expansion-20261019-05",
+    "celebrity": "杨紫",
+    "from": "assets/beauties/random/expansion-20261019-05-v1-celebrity-v1.png",
+    "to": "assets/beauties/random/杨紫.png",
+    "delete": "assets/beauties/random/expansion-20261019-05-v1.png"
+  },
+  {
+    "id": "expansion-20261019-06",
+    "celebrity": "虞书欣",
+    "from": "assets/beauties/random/expansion-20261019-06-v1-celebrity-v1.png",
+    "to": "assets/beauties/random/虞书欣.png",
+    "delete": "assets/beauties/random/expansion-20261019-06-v1.png"
+  },
+  {
+    "id": "expansion-20261019-07",
+    "celebrity": "汤唯",
+    "from": "assets/beauties/random/expansion-20261019-07-v1-celebrity-v1.png",
+    "to": "assets/beauties/random/汤唯.png",
+    "delete": "assets/beauties/random/expansion-20261019-07-v1.png"
+  },
+  {
+    "id": "expansion-20261019-08",
+    "celebrity": "陈都灵",
+    "from": "assets/beauties/random/expansion-20261019-08-v1-celebrity-v1.png",
+    "to": "assets/beauties/random/陈都灵.png",
+    "delete": "assets/beauties/random/expansion-20261019-08-v1.png"
+  },
+  {
+    "id": "expansion-20261019-09",
+    "celebrity": "高圆圆",
+    "from": "assets/beauties/random/expansion-20261019-09-v1-celebrity-v1.png",
+    "to": "assets/beauties/random/高圆圆.png",
+    "delete": "assets/beauties/random/expansion-20261019-09-v1.png"
+  },
+  {
+    "id": "expansion-20261019-10",
+    "celebrity": "袁泉",
+    "from": "assets/beauties/random/expansion-20261019-10-v1-celebrity-v1.png",
+    "to": "assets/beauties/random/袁泉.png",
+    "delete": "assets/beauties/random/expansion-20261019-10-v1.png"
+  },
+  {
+    "id": "expansion-20261019-11",
+    "celebrity": "张雨绮",
+    "from": "assets/beauties/random/expansion-20261019-11-v1-celebrity-v1.png",
+    "to": "assets/beauties/random/张雨绮.png",
+    "delete": "assets/beauties/random/expansion-20261019-11-v1.png"
+  },
+  {
+    "id": "expansion-20261019-12",
+    "celebrity": "白鹿",
+    "from": "assets/beauties/random/expansion-20261019-12-v1-celebrity-v1.png",
+    "to": "assets/beauties/random/白鹿.png",
+    "delete": "assets/beauties/random/expansion-20261019-12-v1.png"
+  },
+  {
+    "id": "expansion-20261019-13",
+    "celebrity": "戚薇",
+    "from": "assets/beauties/random/expansion-20261019-13-v1-celebrity-v1.png",
+    "to": "assets/beauties/random/戚薇.png",
+    "delete": "assets/beauties/random/expansion-20261019-13-v1.png"
+  },
+  {
+    "id": "expansion-20261019-14",
+    "celebrity": "辛芷蕾",
+    "from": "assets/beauties/random/expansion-20261019-14-v1-celebrity-v1.png",
+    "to": "assets/beauties/random/辛芷蕾.png",
+    "delete": "assets/beauties/random/expansion-20261019-14-v1.png"
+  },
+  {
+    "id": "expansion-20261019-15",
+    "celebrity": "董洁",
+    "from": "assets/beauties/random/expansion-20261019-15-v1-celebrity-v1.png",
+    "to": "assets/beauties/random/董洁.png",
+    "delete": "assets/beauties/random/expansion-20261019-15-v1.png"
+  },
+  {
+    "id": "expansion-20261019-16",
+    "celebrity": "钟楚曦",
+    "from": "assets/beauties/random/expansion-20261019-16-v1-celebrity-v1.png",
+    "to": "assets/beauties/random/钟楚曦.png",
+    "delete": "assets/beauties/random/expansion-20261019-16-v1.png"
+  },
+  {
+    "id": "expansion-20261019-17",
+    "celebrity": "张天爱",
+    "from": "assets/beauties/random/expansion-20261019-17-v1-celebrity-v1.png",
+    "to": "assets/beauties/random/张天爱.png",
+    "delete": "assets/beauties/random/expansion-20261019-17-v1.png"
+  },
+  {
+    "id": "expansion-20261019-18",
+    "celebrity": "毛晓彤",
+    "from": "assets/beauties/random/expansion-20261019-18-v1-celebrity-v1.png",
+    "to": "assets/beauties/random/毛晓彤.png",
+    "delete": "assets/beauties/random/expansion-20261019-18-v1.png"
+  },
+  {
+    "id": "expansion-20261019-19",
+    "celebrity": "古力娜扎",
+    "from": "assets/beauties/random/expansion-20261019-19-v1-celebrity-v1.png",
+    "to": "assets/beauties/random/古力娜扎.png",
+    "delete": "assets/beauties/random/expansion-20261019-19-v1.png"
+  },
+  {
+    "id": "expansion-20261019-20",
+    "celebrity": "马思纯",
+    "from": "assets/beauties/random/expansion-20261019-20-v1-celebrity-v1.png",
+    "to": "assets/beauties/random/马思纯.png",
+    "delete": "assets/beauties/random/expansion-20261019-20-v1.png"
+  },
+  {
+    "id": "hebei",
+    "celebrity": "赵丽颖",
+    "from": "assets/beauties/random/hebei-redesign-v2-celebrity-v1.png",
+    "to": "assets/beauties/random/赵丽颖.png",
+    "delete": "assets/beauties/random/hebei-redesign-v2.png"
+  }
+]

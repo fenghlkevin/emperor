@@ -1,0 +1,46 @@
+{
+  "date": "2026-10-21",
+  "character": "宋欣",
+  "generator": "built-in image_gen",
+  "references": [
+    "assets/beauties/references/song-xin/face-reference-1.jpg",
+    "assets/beauties/references/song-xin/face-reference-2.jpg"
+  ],
+  "styleReference": "assets/beauties/special/sketch-beauty-xia-yuhe-transparent-v6.png",
+  "assets": [
+    {
+      "path": "assets/beauties/special/song-xin-v1.png",
+      "state": "palace, happy complete face",
+      "prompt": "Generate ONE standalone transparent full-body ancient Chinese game portrait of fictional ADULT woman Song Xin (宋欣), age 24. References 1 and 2 define her distinctive facial likeness and dancer bearing: preserve actual face geometry, natural almond eyes, straight dark brows, nose and mouth proportions, softly tapered oval face, long dark hair, graceful upright dancer posture and slender natural build. Do not copy the modern clothing, phone, balloons or room. Reference 3 defines ONLY the existing game's refined painted full-body cutout art style, not its character face or pink lotus dress. PALACE version: happy natural warm smile, face nearly frontal, both eyes and both cheeks fully visible, no profile or hair obscuring face. Wear fully clothed elegant ancient Chinese classical dance hanfu with fitted layered ink-black and deep jade-green bodice, closed modest collar and covered shoulders, full silk sleeves, flowing long black-jade skirt with subtle silver cloud embroidery, teal sash and embroidered flat dance shoes. Long hair partly gathered into a refined dance bun with a simple jade hairpin, rest flowing. Hold a folded jade silk dance ribbon loosely at waist, safe relaxed standing pose. Clothing opaque and modest, no leotard, high heels, bare midriff or modern accessories. Fine ink lines with realistic opaque watercolor/gouache silk texture, consistent with Xia Yuhe painted game portraits, not photo and not anime. Full head-to-shoes, all hair and sleeves inside frame with clear margins, 1024x1536 portrait. GENUINE transparent background, no scene, halo, fog, ground, text, UI, logos or watermark. One adult woman only."
+    },
+    {
+      "path": "assets/beauties/special/song-xin-encounter-v1.png",
+      "state": "first encounter and immediate result, frightened/angry",
+      "prompt": "Edit this adult Song Xin game character portrait into a separate FIRST ENCOUNTER variant. Preserve EXACT same identity and facial proportions, hair and jade hairpin, black/deep jade full-sleeved dance hanfu, silk ribbon, embroidery, full-body framing and painted game style. Change expression and body language to clearly visible FEAR mixed with ANGER: widened eyes, raised inner brows with a tense furrow, slightly parted lips with tense corners, tight jaw, shoulders recoiling, both hands gripping the silk dance ribbon protectively close to chest, weight shifting back. No smile, not calm or merely shy, not a confident fashion pose. Realistic expressive adult face with both eyes and cheeks fully visible, nearly frontal. Keep full modest opaque clothing and complete skirt/shoes visible. Genuine transparent PNG, no scenery, background halo, fog, UI, text or watermark. No other people, physical contact, restraint, violence, injuries or sexual content."
+    }
+  ],
+  "rules": {
+    "id": "song-xin",
+    "displayName": "宋欣",
+    "city": "杭州",
+    "tourRegion": "江南",
+    "provinceId": "jiangnan",
+    "chancePerEligibleTour": 0.01,
+    "oncePerGame": true,
+    "refusalAlsoMarksSeen": true,
+    "choices": [
+      "强行带回宫中",
+      "放弃"
+    ],
+    "immediateAdmission": true,
+    "penalties": {
+      "localLoyalty": -8,
+      "prestige": -3
+    }
+  },
+  "verification": [
+    "37 tour/travel tests passed, including location, seen markers, two actions, refusal, immediate admission and reload",
+    "38 runtime data-contract snapshots and negative type checks passed"
+  ],
+  "note": "Face and dancer bearing inspired by user-provided photos. Ancient clothing, fictional age and game story are artistic adaptations."
+}

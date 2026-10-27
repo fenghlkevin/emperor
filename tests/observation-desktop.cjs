@@ -12,7 +12,7 @@ app.whenReady().then(async()=>{const w=new BrowserWindow({show:false,width:1440,
  if(!dialog.querySelector('[role=status]').textContent.includes('朝拜'))throw Error('missing result');
  dialog.querySelector('details').open=true;
  const {observationReport}=await import('./src/observation.mjs');
- const {paintCrowd}=await import('./src/observation-ui.mjs');const sprite=new Image();sprite.src='assets/sketch-observation-commoner-v1.png';await sprite.decode();
+ const {paintCrowd}=await import('./src/observation-ui.mjs');const sprite=new Image();sprite.src='assets/scenes/observation/sketch-observation-commoner-v1.png';await sprite.decode();
  const canvas=dialog.querySelector('canvas');paintCrowd(canvas,sprite,{count:20});const sparse=Number(canvas.dataset.figures);paintCrowd(canvas,sprite,{count:6000});if(Number(canvas.dataset.figures)<=sparse)throw Error('density unchanged');paintCrowd(canvas,sprite,observationReport(state));
  return 'gate hotspot, asset loading, crowd density, activity commit verified';})()`);
  console.log(result);fs.mkdirSync(path.join(__dirname,'../outputs/observation'),{recursive:true});await new Promise(r=>setTimeout(r,1300));fs.writeFileSync(path.join(__dirname,'../outputs/observation/scene.png'),(await w.webContents.capturePage()).toPNG());app.exit(0);

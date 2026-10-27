@@ -1,0 +1,311 @@
+{
+  "date": "2026-10-27",
+  "branch": "feature-1.0.1",
+  "remote": "https://github.com/fenghlkevin/emperor.git",
+  "pushStatus": "verified-large-object-transfer-and-snapshot-delivery",
+  "changes": [
+    {
+      "path": "assets/battle/card-regional-archers-v1.png",
+      "bytes": 3324836,
+      "action": "archive",
+      "destination": "docs/art/retired-assets/battle/card-regional-archers-v1.png"
+    },
+    {
+      "path": "assets/battle/card-regional-civil-v1.png",
+      "bytes": 3207681,
+      "action": "archive",
+      "destination": "docs/art/retired-assets/battle/card-regional-civil-v1.png"
+    },
+    {
+      "path": "assets/battle/card-regional-infantry-v1.png",
+      "bytes": 3391900,
+      "action": "archive",
+      "destination": "docs/art/retired-assets/battle/card-regional-infantry-v1.png"
+    },
+    {
+      "path": "assets/battle/card-regional-military-v1.png",
+      "bytes": 3459546,
+      "action": "archive",
+      "destination": "docs/art/retired-assets/battle/card-regional-military-v1.png"
+    },
+    {
+      "path": "assets/battle/card-regional-spears-v1.png",
+      "bytes": 3178226,
+      "action": "archive",
+      "destination": "docs/art/retired-assets/battle/card-regional-spears-v1.png"
+    },
+    {
+      "path": "assets/battle/people/manual-1591-battle-v1.png",
+      "bytes": 2668172,
+      "action": "archive",
+      "destination": "docs/art/retired-assets/battle/people/manual-1591-battle-v1.png"
+    },
+    {
+      "path": "assets/battle/people/original-14-battle-v1.png",
+      "bytes": 2653407,
+      "action": "archive",
+      "destination": "docs/art/retired-assets/battle/people/original-14-battle-v1.png"
+    },
+    {
+      "path": "assets/battle/people/original-57-battle-v1.png",
+      "bytes": 2853183,
+      "action": "archive",
+      "destination": "docs/art/retired-assets/battle/people/original-57-battle-v1.png"
+    },
+    {
+      "path": "assets/battle/people/original-89-battle-v1.png",
+      "bytes": 2853386,
+      "action": "archive",
+      "destination": "docs/art/retired-assets/battle/people/original-89-battle-v1.png"
+    },
+    {
+      "path": "assets/battle/people/original-97-battle-v1.png",
+      "bytes": 2923499,
+      "action": "archive",
+      "destination": "docs/art/retired-assets/battle/people/original-97-battle-v1.png"
+    },
+    {
+      "path": "assets/battle/people/original-98-battle-v1.png",
+      "bytes": 2742991,
+      "action": "archive",
+      "destination": "docs/art/retired-assets/battle/people/original-98-battle-v1.png"
+    },
+    {
+      "path": "assets/battle/people/original-99-battle-v1.png",
+      "bytes": 2741655,
+      "action": "archive",
+      "destination": "docs/art/retired-assets/battle/people/original-99-battle-v1.png"
+    },
+    {
+      "path": "assets/cinematics/general-cavalry-first-frame-v1.png",
+      "bytes": 2675300,
+      "action": "delete"
+    },
+    {
+      "path": "assets/officials/historical/cbdb-33662/avatar-before-correction-20261025.png",
+      "bytes": 2051118,
+      "action": "delete"
+    },
+    {
+      "path": "assets/officials/historical/original-14/avatar.png",
+      "bytes": 2045789,
+      "action": "archive",
+      "destination": "docs/art/retired-assets/officials/historical/original-14/avatar.png"
+    },
+    {
+      "path": "assets/officials/historical/original-14/court.png",
+      "bytes": 1981970,
+      "action": "archive",
+      "destination": "docs/art/retired-assets/officials/historical/original-14/court.png"
+    },
+    {
+      "path": "assets/officials/historical/original-14/full.png",
+      "bytes": 2064998,
+      "action": "archive",
+      "destination": "docs/art/retired-assets/officials/historical/original-14/full.png"
+    },
+    {
+      "path": "assets/officials/historical/original-57/full-before-correction-20261025.png",
+      "bytes": 2467429,
+      "action": "delete"
+    },
+    {
+      "path": "assets/officials/historical/original-89/avatar-before-identity-20261025.png",
+      "bytes": 2179767,
+      "action": "delete"
+    },
+    {
+      "path": "assets/officials/historical/original-89/court-before-identity-20261025.png",
+      "bytes": 1932888,
+      "action": "delete"
+    },
+    {
+      "path": "assets/officials/historical/original-89/full-before-identity-20261025.png",
+      "bytes": 2133899,
+      "action": "delete"
+    },
+    {
+      "path": "assets/officials/historical/original-97/avatar.png",
+      "bytes": 2292707,
+      "action": "archive",
+      "destination": "docs/art/retired-assets/officials/historical/original-97/avatar.png"
+    },
+    {
+      "path": "assets/officials/historical/original-97/court.png",
+      "bytes": 1949794,
+      "action": "archive",
+      "destination": "docs/art/retired-assets/officials/historical/original-97/court.png"
+    },
+    {
+      "path": "assets/officials/historical/original-97/full.png",
+      "bytes": 2191229,
+      "action": "archive",
+      "destination": "docs/art/retired-assets/officials/historical/original-97/full.png"
+    },
+    {
+      "path": "assets/officials/historical/original-98/avatar.png",
+      "bytes": 1880118,
+      "action": "archive",
+      "destination": "docs/art/retired-assets/officials/historical/original-98/avatar.png"
+    },
+    {
+      "path": "assets/officials/historical/original-98/court.png",
+      "bytes": 1844061,
+      "action": "archive",
+      "destination": "docs/art/retired-assets/officials/historical/original-98/court.png"
+    },
+    {
+      "path": "assets/officials/historical/original-98/full.png",
+      "bytes": 1773603,
+      "action": "archive",
+      "destination": "docs/art/retired-assets/officials/historical/original-98/full.png"
+    },
+    {
+      "path": "assets/officials/historical/original-99/avatar.png",
+      "bytes": 1914654,
+      "action": "archive",
+      "destination": "docs/art/retired-assets/officials/historical/original-99/avatar.png"
+    },
+    {
+      "path": "assets/officials/historical/original-99/court.png",
+      "bytes": 1970425,
+      "action": "archive",
+      "destination": "docs/art/retired-assets/officials/historical/original-99/court.png"
+    },
+    {
+      "path": "assets/officials/historical/original-99/full.png",
+      "bytes": 1922765,
+      "action": "archive",
+      "destination": "docs/art/retired-assets/officials/historical/original-99/full.png"
+    },
+    {
+      "path": "assets/beauties/random/女明星/乐基儿-古绡模特.png",
+      "bytes": 1775312,
+      "action": "delete"
+    },
+    {
+      "path": "assets/beauties/random/女明星/张天爱.png",
+      "bytes": 2132624,
+      "action": "delete"
+    },
+    {
+      "path": "assets/beauties/random/女明星/李若彤-小龙女.png",
+      "bytes": 1731170,
+      "action": "delete"
+    },
+    {
+      "path": "assets/beauties/random/女明星/李若彤-王语嫣.png",
+      "bytes": 1709333,
+      "action": "delete"
+    },
+    {
+      "path": "assets/beauties/random/女明星/熊黛林-古绡模特.png",
+      "bytes": 1854748,
+      "action": "delete"
+    },
+    {
+      "path": "assets/beauties/random/女明星/王李丹妮-古绡模特.png",
+      "bytes": 1900805,
+      "action": "delete"
+    },
+    {
+      "path": "src/world-land.mjs",
+      "action": "delete",
+      "bytes": 120148
+    },
+    {
+      "path": "src/personnel-minister-ui.mjs",
+      "action": "delete",
+      "bytes": 23988
+    },
+    {
+      "path": "src/court-ui.mjs",
+      "action": "delete",
+      "bytes": 976
+    },
+    {
+      "path": "src/scenes.mjs",
+      "action": "delete",
+      "bytes": 6568
+    },
+    {
+      "path": "docs/card-battle-v6-balance-confirm.json.checkpoint.json",
+      "action": "delete",
+      "bytes": 84095
+    },
+    {
+      "path": "docs/card-battle-configured-audit-smoke.json.checkpoint.json",
+      "action": "delete",
+      "bytes": 4870
+    },
+    {
+      "path": "docs/card-battle-v6-balance-screen.json.checkpoint.json",
+      "action": "delete",
+      "bytes": 49660
+    },
+    {
+      "path": "docs/card-battle-final-matrix.json.checkpoint.json",
+      "action": "delete",
+      "bytes": 49931
+    },
+    {
+      "path": "docs/card-battle-final-configured.json.checkpoint.json",
+      "action": "delete",
+      "bytes": 8929786
+    },
+    {
+      "path": "docs/card-battle-final-yanying.json.checkpoint.json",
+      "action": "delete",
+      "bytes": 933
+    }
+  ],
+  "packagingExcluded": [
+    "assets/beauties/references/**/*"
+  ],
+  "validation": {
+    "unit": {
+      "command": "npm test",
+      "tests": 1217,
+      "passed": 1217,
+      "failed": 0,
+      "durationMs": 97604.364917
+    },
+    "desktopSmoke": "passed, including rapid navigation, reload, 900x680 layout, and a single occupied court row",
+    "diffCheck": "passed",
+    "desktopScreenshot": "/private/tmp/emperor-court.png"
+  },
+  "summary": {
+    "deletedFiles": 22,
+    "archivedImages": 24,
+    "runtimeImagesRemoved": 36,
+    "unusedModulesRemoved": 4,
+    "checkpointFilesRemoved": 6,
+    "runtimeInputBytesRemoved": 172673186
+  },
+  "notes": [
+    "Old artwork required by provenance tests is archived outside runtime assets.",
+    "Model portrait and wuxia cameo tests now use committed source checksums instead of ignored outputs.",
+    "Court actors wait for all portraits before painting and avoid division by zero when occupied slots share a row.",
+    "User explicitly authorized all code, image and document changes, including deletions, as two commits to fenghlkevin/emperor feature-1.0.1."
+  ],
+  "delivery": {
+    "authorized": true,
+    "targetBranch": "feature-1.0.1",
+    "beforeCleanupCommit": "541501f5ef1eb236f79cc314c6a96e5993f95c36",
+    "formalCommitCount": 2,
+    "beforeCleanupServerConfirmed": true,
+    "largeObjectsShaVerified": 892,
+    "method": "Direct GitHub object API with persistent connections and credential refresh; standard Git smart HTTP pack with explicit exclusions for already verified objects",
+    "finalRemoteVerification": "Remote branch must match the final local commit; temporary transfer reference must be removed"
+  },
+  "networkRecovery": {
+    "initialFailures": [
+      "Proxy Git upload stalled at tens of KiB/s",
+      "Direct Git upload did not receive server confirmation",
+      "HTTP/1.1 batch upload returned HTTP 408",
+      "Buffered batch uploads did not complete",
+      "GitHub object API upload timed out while writing request body"
+    ],
+    "resolution": "All large objects uploaded and SHA-verified; 13.49 MiB missing-object pack received with unpack ok and reference update confirmation."
+  }
+}

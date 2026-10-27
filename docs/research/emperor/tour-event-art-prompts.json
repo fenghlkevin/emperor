@@ -5,91 +5,91 @@
     {
       "id": "flood",
       "title": "河堤险情",
-      "path": "assets/sketch-tour-flood.png",
+      "path": "assets/scenes/tour/sketch-tour-flood.png",
       "prompt": "Use case: historical-scene. Asset: a unique landscape 16:9 full scene event illustration for an ancient Chinese emperor simulation game. Match the existing series: finely detailed colored-pencil and ink drawing with soft painted shading, warm parchment grain, natural realistic human proportions, muted jade greens, earthy linen, restrained vermilion and antique gold. Rich, coherent environmental storytelling; clear medium-wide focal subjects, not tiny or cropped off. Keep critical faces, hands and action in the central 65% so the game may crop top and bottom. No UI, labels, text, legible writing, watermark or collage. Historical Chinese architecture and period clothing; no modern objects. Scene: A swollen river has damaged a traditional earth and stone levee beside rice fields. Adult villagers in plain ancient Chinese clothes work together placing woven sandbags at a breach. A village elder points out the endangered fields to a visiting red-robed imperial official, with an imperial guard in the middle distance. Water, timber and sandbags readable, urgent but organized, overcast daylight, no people drowning."
     },
     {
       "id": "corruption",
       "title": "账册疑云",
-      "path": "assets/sketch-tour-corruption.png",
+      "path": "assets/scenes/tour/sketch-tour-corruption.png",
       "prompt": "Use case: historical-scene. Asset: a unique landscape 16:9 full scene event illustration for an ancient Chinese emperor simulation game. Match the existing series: finely detailed colored-pencil and ink drawing with soft painted shading, warm parchment grain, natural realistic human proportions, muted jade greens, earthy linen, restrained vermilion and antique gold. Rich, coherent environmental storytelling; clear medium-wide focal subjects, not tiny or cropped off. Keep critical faces, hands and action in the central 65% so the game may crop top and bottom. No UI, labels, text, legible writing, watermark or collage. Historical Chinese architecture and period clothing; no modern objects. Scene: Inside an ancient Chinese courier station, a modest junior clerk discreetly presents two conflicting paper account ledgers to a stern but thoughtful imperial investigator. An abacus, inkstone, sealed silver chests and bundled receipts on a wooden desk. Nervous local clerks in the background, timber windows casting daylight, a judicial investigation rather than punishment."
     },
     {
       "id": "recluse",
       "title": "山亭问道",
-      "path": "assets/sketch-tour-recluse.png",
+      "path": "assets/scenes/tour/sketch-tour-recluse.png",
       "prompt": "Use case: historical-scene. Asset: a unique landscape 16:9 full scene event illustration for an ancient Chinese emperor simulation game. Match the existing series: finely detailed colored-pencil and ink drawing with soft painted shading, warm parchment grain, natural realistic human proportions, muted jade greens, earthy linen, restrained vermilion and antique gold. Rich, coherent environmental storytelling; clear medium-wide focal subjects, not tiny or cropped off. Keep critical faces, hands and action in the central 65% so the game may crop top and bottom. No UI, labels, text, legible writing, watermark or collage. Historical Chinese architecture and period clothing; no modern objects. Scene: An elderly Chinese scholar with a gentle white beard explains farming seasons and water management to a visiting imperial official and a few adult villagers in a quiet open mountain pavilion. Bamboo, misty green mountains, a winding stream and rice terraces visible beyond. Tea set and rolled manuscripts on a stone table, calm intellectual conversation."
     },
     {
       "id": "healer",
       "title": "乡野名医",
-      "path": "assets/sketch-tour-healer.png",
+      "path": "assets/scenes/tour/sketch-tour-healer.png",
       "prompt": "Use case: historical-scene. Asset: a unique landscape 16:9 full scene event illustration for an ancient Chinese emperor simulation game. Match the existing series: finely detailed colored-pencil and ink drawing with soft painted shading, warm parchment grain, natural realistic human proportions, muted jade greens, earthy linen, restrained vermilion and antique gold. Rich, coherent environmental storytelling; clear medium-wide focal subjects, not tiny or cropped off. Keep critical faces, hands and action in the central 65% so the game may crop top and bottom. No UI, labels, text, legible writing, watermark or collage. Historical Chinese architecture and period clothing; no modern objects. Scene: An experienced adult female physician in modest ancient Chinese robes conducts a charitable clinic under a village awning. She gently feels the wrist pulse of a seated elderly man with one hand, anatomically natural hands and fingers. Wooden herb drawers, ceramic medicine jars, dried roots and cloth medicine packets on the table. A grateful family and an imperial attendant observe. Compassionate, peaceful daylight, traditional courtyard, no needles, no modern medical equipment."
     },
     {
       "id": "bandits",
       "title": "商道遇匪",
-      "path": "assets/sketch-tour-bandits.png",
+      "path": "assets/scenes/tour/sketch-tour-bandits.png",
       "prompt": "Use case: historical-scene. Asset: a unique landscape 16:9 full scene event illustration for an ancient Chinese emperor simulation game. Match the existing series: finely detailed colored-pencil and ink drawing with soft painted shading, warm parchment grain, natural realistic human proportions, muted jade greens, earthy linen, restrained vermilion and antique gold. Rich, coherent environmental storytelling; clear medium-wide focal subjects, not tiny or cropped off. Keep critical faces, hands and action in the central 65% so the game may crop top and bottom. No UI, labels, text, legible writing, watermark or collage. Historical Chinese architecture and period clothing; no modern objects. Scene: On a narrow forested mountain trade road, two ancient Chinese merchants shelter beside a stopped wooden cargo cart and a pack mule while a red-armored imperial escort surveys the pass. Three rough-clothed bandits are visible at a distance on rocky high ground, threatening the route without an active fight. Dramatic winding path, pine trees, misty cliff, grain sacks and rope bundles, tense readable faces, no blood or injury."
     },
     {
       "id": "grain",
       "title": "粮价腾贵",
-      "path": "assets/sketch-tour-grain.png",
+      "path": "assets/scenes/tour/sketch-tour-grain.png",
       "prompt": "Use case: historical-scene. Asset: a unique landscape 16:9 full scene event illustration for an ancient Chinese emperor simulation game. Match the existing series: finely detailed colored-pencil and ink drawing with soft painted shading, warm parchment grain, natural realistic human proportions, muted jade greens, earthy linen, restrained vermilion and antique gold. Rich, coherent environmental storytelling; clear medium-wide focal subjects, not tiny or cropped off. Keep critical faces, hands and action in the central 65% so the game may crop top and bottom. No UI, labels, text, legible writing, watermark or collage. Historical Chinese architecture and period clothing; no modern objects. Scene: At a busy ancient Chinese grain shop, ordinary townspeople wait anxiously with cloth bags and small bowls while a wealthy grain merchant guards sacks of rice behind a wooden counter. A visiting imperial investigator questions the merchant, one open grain sack and a wooden measuring scoop prominent in foreground. Traditional shop shutters, stacked sacks, respectful anxious crowd, daytime, communicate inflated grain prices without any readable signs."
     },
     {
       "id": "canal",
       "title": "渡口阻舟",
-      "path": "assets/sketch-tour-canal.png",
+      "path": "assets/scenes/tour/sketch-tour-canal.png",
       "prompt": "Use case: historical-scene. Asset: a unique landscape 16:9 full scene event illustration for an ancient Chinese emperor simulation game. Match the existing series: finely detailed colored-pencil and ink drawing with soft painted shading, warm parchment grain, natural realistic human proportions, muted jade greens, earthy linen, restrained vermilion and antique gold. Rich, coherent environmental storytelling; clear medium-wide focal subjects, not tiny or cropped off. Keep critical faces, hands and action in the central 65% so the game may crop top and bottom. No UI, labels, text, legible writing, watermark or collage. Historical Chinese architecture and period clothing; no modern objects. Scene: At an ancient Chinese river ferry landing, wooden grain barges are stuck beside a shallow muddy channel and a worn timber jetty. Adult boatmen and porters with cargo baskets debate with a village elder and a visiting imperial official pointing at the silted waterway. Rope coils, mooring posts, a simple wooden gangplank and sacks of grain in foreground; calm river, distant bridge, willow trees and tiled warehouses. Bright daylight, construction and transport problem clearly readable."
     },
     {
       "id": "craftsmen",
       "title": "巧匠献艺",
-      "path": "assets/sketch-tour-craftsmen.png",
+      "path": "assets/scenes/tour/sketch-tour-craftsmen.png",
       "prompt": "Use case: historical-scene. Asset: a unique landscape 16:9 full scene event illustration for an ancient Chinese emperor simulation game. Match the existing series: finely detailed colored-pencil and ink drawing with soft painted shading, warm parchment grain, natural realistic human proportions, muted jade greens, earthy linen, restrained vermilion and antique gold. Rich, coherent environmental storytelling; clear medium-wide focal subjects, not tiny or cropped off. Keep critical faces, hands and action in the central 65% so the game may crop top and bottom. No UI, labels, text, legible writing, watermark or collage. Historical Chinese architecture and period clothing; no modern objects. Scene: In a rustic ancient Chinese workshop beside a stream, an elderly master craftsman proudly demonstrates a small wooden waterwheel and a model weaving loom to a visiting imperial official and two attentive adult apprentices. Visible wooden gears, water trough, hand tools, shavings and timber workbench; a full-size waterwheel turning outside in background. Focus on clever engineering and craftsman's expressive hands, natural anatomy, warm afternoon light."
     },
     {
       "id": "harvest",
       "title": "丰年迎驾",
-      "path": "assets/sketch-tour-harvest.png",
+      "path": "assets/scenes/tour/sketch-tour-harvest.png",
       "prompt": "Use case: historical-scene. Asset: a unique landscape 16:9 full scene event illustration for an ancient Chinese emperor simulation game. Match the existing series: finely detailed colored-pencil and ink drawing with soft painted shading, warm parchment grain, natural realistic human proportions, muted jade greens, earthy linen, restrained vermilion and antique gold. Rich, coherent environmental storytelling; clear medium-wide focal subjects, not tiny or cropped off. Keep critical faces, hands and action in the central 65% so the game may crop top and bottom. No UI, labels, text, legible writing, watermark or collage. Historical Chinese architecture and period clothing; no modern objects. Scene: An abundant harvest celebration in an ancient Chinese rural village. Smiling farmers and women present baskets of newly harvested rice, vegetables and fruit to a visiting imperial official in a red robe. Golden rice sheaves, full grain baskets and a humble outdoor feast table prominent; rustic houses, fields and a modest imperial escort beyond. Cheerful but respectful gathering, warm golden daylight, no written banners."
     },
     {
       "id": "school",
       "title": "破庙书声",
-      "path": "assets/sketch-tour-school.png",
+      "path": "assets/scenes/tour/sketch-tour-school.png",
       "prompt": "Use case: historical-scene. Asset: a unique landscape 16:9 full scene event illustration for an ancient Chinese emperor simulation game. Match the existing series: finely detailed colored-pencil and ink drawing with soft painted shading, warm parchment grain, natural realistic human proportions, muted jade greens, earthy linen, restrained vermilion and antique gold. Rich, coherent environmental storytelling; clear medium-wide focal subjects, not tiny or cropped off. Keep critical faces, hands and action in the central 65% so the game may crop top and bottom. No UI, labels, text, legible writing, watermark or collage. Historical Chinese architecture and period clothing; no modern objects. Scene: A humble village school using an old weathered temple as a classroom in ancient China. A kindly adult teacher uses a small stick to draw simple non-letter shapes in a shallow sand tray while several fully clothed young students sit attentively at rough benches. Leaking tiled roof with patched rafters, a few worn books and ink brushes, folded straw mats. A visiting imperial official respectfully observes from the doorway. Moving but hopeful, soft daylight, readable teacher and students in center, no readable text."
     },
     {
       "id": "lostchild",
       "title": "街头寻亲",
-      "path": "assets/sketch-tour-lostchild.png",
+      "path": "assets/scenes/tour/sketch-tour-lostchild.png",
       "prompt": "Use case: historical-scene. Asset: a unique landscape 16:9 full scene event illustration for an ancient Chinese emperor simulation game. Match the existing series: finely detailed colored-pencil and ink drawing with soft painted shading, warm parchment grain, natural realistic human proportions, muted jade greens, earthy linen, restrained vermilion and antique gold. Rich, coherent environmental storytelling; clear medium-wide focal subjects, not tiny or cropped off. Keep critical faces, hands and action in the central 65% so the game may crop top and bottom. No UI, labels, text, legible writing, watermark or collage. Historical Chinese architecture and period clothing; no modern objects. Scene: In an ancient Chinese marketplace, a kindly elderly bread seller kneels to comfort a fully clothed lost young child beside a simple stall of round baked buns. A courteous local constable and an imperial attendant ask nearby adult shoppers for help, looking concerned but calm. Baskets, timber stalls and tiled roofs form a coherent warm daytime street scene. The child is safe, supported and not in danger, faces and hands natural, no text."
     },
     {
       "id": "veterans",
       "title": "老卒诉饷",
-      "path": "assets/sketch-tour-veterans.png",
+      "path": "assets/scenes/tour/sketch-tour-veterans.png",
       "prompt": "Use case: historical-scene. Asset: a unique landscape 16:9 full scene event illustration for an ancient Chinese emperor simulation game. Match the existing series: finely detailed colored-pencil and ink drawing with soft painted shading, warm parchment grain, natural realistic human proportions, muted jade greens, earthy linen, restrained vermilion and antique gold. Rich, coherent environmental storytelling; clear medium-wide focal subjects, not tiny or cropped off. Keep critical faces, hands and action in the central 65% so the game may crop top and bottom. No UI, labels, text, legible writing, watermark or collage. Historical Chinese architecture and period clothing; no modern objects. Scene: Outside a traditional ancient Chinese courier lodge, three dignified elderly retired soldiers in faded plain robes respectfully present an old tied cloth bundle and a folded petition to a visiting imperial military official. One retired soldier uses a wooden walking stick; an attentive young officer listens beside a low table with abacus and small silver ingots. Their worn boots and modest belongings convey unpaid pensions, not combat. Soft daylight, tiled lodge gate and quiet imperial escort beyond, no blood or injuries."
     },
     {
       "id": "gift",
       "title": "巨贾献珍",
-      "path": "assets/sketch-tour-gift.png",
+      "path": "assets/scenes/tour/sketch-tour-gift.png",
       "prompt": "Use case: historical-scene. Asset: a unique landscape 16:9 full scene event illustration for an ancient Chinese emperor simulation game. Match the existing series: finely detailed colored-pencil and ink drawing with soft painted shading, warm parchment grain, natural realistic human proportions, muted jade greens, earthy linen, restrained vermilion and antique gold. Rich, coherent environmental storytelling; clear medium-wide focal subjects, not tiny or cropped off. Keep critical faces, hands and action in the central 65% so the game may crop top and bottom. No UI, labels, text, legible writing, watermark or collage. Historical Chinese architecture and period clothing; no modern objects. Scene: In a beautiful courtyard of an ancient Chinese provincial residence, a richly dressed middle-aged merchant respectfully presents an open lacquer chest containing a jade ornament, a pearl necklace and silver ingots to a discerning visiting imperial official. The official holds up a calm restrained hand as though weighing whether to accept or refuse. Modestly dressed townspeople observe beyond the courtyard gate, an attendant holds an inventory scroll. Show moral choice and luxurious gifts, natural hands, refined architectural details, daylight."
     },
     {
       "id": "refugees",
       "title": "流民求安",
-      "path": "assets/sketch-tour-refugees.png",
+      "path": "assets/scenes/tour/sketch-tour-refugees.png",
       "prompt": "Use case: historical-scene. Asset: a unique landscape 16:9 full scene event illustration for an ancient Chinese emperor simulation game. Match the existing series: finely detailed colored-pencil and ink drawing with soft painted shading, warm parchment grain, natural realistic human proportions, muted jade greens, earthy linen, restrained vermilion and antique gold. Rich, coherent environmental storytelling; clear medium-wide focal subjects, not tiny or cropped off. Keep critical faces, hands and action in the central 65% so the game may crop top and bottom. No UI, labels, text, legible writing, watermark or collage. Historical Chinese architecture and period clothing; no modern objects. Scene: Outside an ancient Chinese city gate, a weary but dignified group of displaced families in plain patched period clothes waits beside bundled possessions, a small handcart and woven baskets. A mother holds her fully clothed young child, an elderly man rests on a walking stick. A compassionate imperial official and a local clerk meet the families near an outdoor grain-distribution table, debating settlement. Open farmland beyond the walls, morning light, hopeful humane tone, no corpses or graphic suffering, no modern objects."
     },
     {
       "id": "performers",
       "title": "乡间百戏",
-      "path": "assets/sketch-tour-performers.png",
+      "path": "assets/scenes/tour/sketch-tour-performers.png",
       "prompt": "Use case: historical-scene. Asset: a unique landscape 16:9 full scene event illustration for an ancient Chinese emperor simulation game. Match the existing series: finely detailed colored-pencil and ink drawing with soft painted shading, warm parchment grain, natural realistic human proportions, muted jade greens, earthy linen, restrained vermilion and antique gold. Rich, coherent environmental storytelling; clear medium-wide focal subjects, not tiny or cropped off. Keep critical faces, hands and action in the central 65% so the game may crop top and bottom. No UI, labels, text, legible writing, watermark or collage. Historical Chinese architecture and period clothing; no modern objects. Scene: A joyful ancient Chinese village market festival with a small wooden puppet-theatre booth and two adult folk performers demonstrating colorful traditional string puppets before smiling villagers. A visiting imperial official watches appreciatively with a modest guard escort. An adult acrobat balances a short stack of bowls safely on a low platform; cloth costumes, small drum, lanterns and timber market stalls, warm afternoon sunlight. Detailed puppets and expressive audience, coherent lively composition, no readable signs, no circus modernity."
     }
   ]

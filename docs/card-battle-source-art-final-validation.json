@@ -1,0 +1,228 @@
+{
+  "scope": "剩余三具名来源与八虚构边疆：九格图像来源；虚构不冒充历史族属",
+  "status": "remaining-source-representative-design-integrated-and-native-verified",
+  "regions": [
+    "cham",
+    "mohe",
+    "yenisei",
+    "borealwest",
+    "borealeast",
+    "tropicalwest",
+    "tropicalinterior",
+    "tropicalcoast",
+    "southerncape"
+  ],
+  "fictionalGrouping": "north-sea/frostland为虚构西北寒地，forestland/far-east为虚构东北林海，其余四南部地区分别设计；坐标地理启发非真实族属确认",
+  "kinds": [
+    "infantry",
+    "spears",
+    "archers",
+    "cavalry",
+    "heavy-cavalry",
+    "crossbows",
+    "camel",
+    "elephant",
+    "horse-archers",
+    "civil",
+    "military"
+  ],
+  "next": "停止扩大区域补图，历史人物服饰实际审视与晏婴实际技能增强，再完整视觉性能和平衡/20局/1小时前台",
+  "assets": [
+    {
+      "role": "infantry",
+      "path": "assets/battle/card-source-final-infantry-v1.png",
+      "sourceOutput": "exec-aa38673f-102a-45f5-8b2c-71f8bd2146e7.png",
+      "generator": "builtin imagegen",
+      "sha256": "a582704f38c7fdafef3de11b9bc8689bd702e5c30ac3b942025aa4cdde567917",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "visualReview": "九格完整查看，人群/装束/气候和正确武器坐骑；虚构设计非历史考古复原",
+      "native": {
+        "checks": 27,
+        "elapsedSeconds": 33.399,
+        "timestamp": "2026-10-24T07:26:25.553Z"
+      }
+    },
+    {
+      "role": "spears",
+      "path": "assets/battle/card-source-final-spears-v1.png",
+      "sourceOutput": "exec-ee357742-494a-4623-8e2a-efc3e9f0ab1f.png",
+      "generator": "builtin imagegen",
+      "sha256": "733378ea12650ffcfe9f7de48a5f454bddce9a8597b100c6de5d7a43803bb815",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "visualReview": "九格完整查看，人群/装束/气候和正确武器坐骑；虚构设计非历史考古复原",
+      "native": {
+        "checks": 27,
+        "elapsedSeconds": 33.354,
+        "timestamp": "2026-10-24T07:26:59.243Z"
+      }
+    },
+    {
+      "role": "archers",
+      "path": "assets/battle/card-source-final-archers-v1.png",
+      "sourceOutput": "exec-c86faf11-1385-4812-86e0-51f63b11b37e.png",
+      "generator": "builtin imagegen",
+      "sha256": "38f74c8e03eb2612a4acf2c1ead677a7d1bad5a7ce4f939d99ae269d0c7e65b0",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "visualReview": "九格完整查看，人群/装束/气候和正确武器坐骑；虚构设计非历史考古复原",
+      "native": {
+        "checks": 27,
+        "elapsedSeconds": 54.046,
+        "timestamp": "2026-10-24T07:27:53.668Z"
+      }
+    },
+    {
+      "role": "cavalry",
+      "path": "assets/battle/card-source-final-cavalry-v1.png",
+      "sourceOutput": "exec-fca28483-9c65-4dfb-8eab-aba7e17b59a4.png",
+      "generator": "builtin imagegen",
+      "sha256": "31bc8598df3d00fd7e3a3590965085b92c4066179ec2550b90268c426f878588",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "visualReview": "九格完整查看，人群/装束/气候和正确武器坐骑；虚构设计非历史考古复原",
+      "native": {
+        "checks": 27,
+        "elapsedSeconds": 33.309,
+        "timestamp": "2026-10-24T07:28:27.292Z"
+      }
+    },
+    {
+      "role": "heavy-cavalry",
+      "path": "assets/battle/card-source-final-heavy-cavalry-v1.png",
+      "sourceOutput": "exec-3124425b-6793-47af-8f2e-4c2a6a8bd6eb.png",
+      "generator": "builtin imagegen",
+      "sha256": "39a9fcdcf4f36fa686cf69f1028bcfeffe9f8638dc70123f20c28aad85891ea1",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "visualReview": "九格完整查看，人群/装束/气候和正确武器坐骑；虚构设计非历史考古复原",
+      "native": {
+        "checks": 27,
+        "elapsedSeconds": 33.438,
+        "timestamp": "2026-10-24T07:29:01.038Z"
+      }
+    },
+    {
+      "role": "crossbows",
+      "path": "assets/battle/card-source-final-crossbows-v1.png",
+      "sourceOutput": "exec-2dd2753f-1d8a-44ef-ad06-a3195735fab3.png",
+      "generator": "builtin imagegen",
+      "sha256": "20eed44784dc14a04111b851f76dc7eaac95219df7d60055d2a8e28acb26e0b4",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "visualReview": "九格完整查看，人群/装束/气候和正确武器坐骑；虚构设计非历史考古复原",
+      "native": {
+        "checks": 27,
+        "elapsedSeconds": 33.614,
+        "timestamp": "2026-10-24T07:29:34.976Z"
+      }
+    },
+    {
+      "role": "camel",
+      "path": "assets/battle/card-source-final-camel-v1.png",
+      "sourceOutput": "exec-eeff332f-88f9-41f6-93fe-6a24a37aa9c3.png",
+      "generator": "builtin imagegen",
+      "sha256": "1ddc4f1632f9b690f7e6f4397f4792a6ce92adace906ca35a8db9c57893557f4",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "visualReview": "九格完整查看，人群/装束/气候和正确武器坐骑；虚构设计非历史考古复原",
+      "native": {
+        "checks": 27,
+        "elapsedSeconds": 33.375,
+        "timestamp": "2026-10-24T07:30:08.642Z"
+      }
+    },
+    {
+      "role": "elephant",
+      "path": "assets/battle/card-source-final-elephant-v1.png",
+      "sourceOutput": "exec-b2c4c1d9-c5df-437a-8f0e-a3f710f0405a.png",
+      "generator": "builtin imagegen",
+      "sha256": "628cc89f0d6c6c0091c4c57973aaffbbaff8673b63bbc977477dd220a057bd36",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "visualReview": "九格完整查看，人群/装束/气候和正确武器坐骑；虚构设计非历史考古复原",
+      "native": {
+        "checks": 27,
+        "elapsedSeconds": 33.302,
+        "timestamp": "2026-10-24T07:30:42.243Z"
+      }
+    },
+    {
+      "role": "horse-archers",
+      "path": "assets/battle/card-source-final-horse-archers-v1.png",
+      "sourceOutput": "exec-b8ebf37f-e446-4ab3-82a5-6670777712b4.png",
+      "generator": "builtin imagegen",
+      "sha256": "00f0dda5f4cef409152070adc6ecd5455d221064d71e575ea9e200c85d7753bb",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "visualReview": "九格完整查看，人群/装束/气候和正确武器坐骑；虚构设计非历史考古复原",
+      "native": {
+        "checks": 27,
+        "elapsedSeconds": 33.295,
+        "timestamp": "2026-10-24T07:31:15.858Z"
+      }
+    },
+    {
+      "role": "civil",
+      "path": "assets/battle/card-source-final-civil-v1.png",
+      "sourceOutput": "exec-3a87d999-f453-4a8e-a61a-ae4d5a21c276.png",
+      "generator": "builtin imagegen",
+      "sha256": "fd70a2a5b98c55b46826b44d8c097f6bb0472f8270811e35e52a74db17f5e5aa",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "visualReview": "九格完整查看，人群/装束/气候和正确武器坐骑；虚构设计非历史考古复原"
+    },
+    {
+      "role": "military",
+      "path": "assets/battle/card-source-final-military-v1.png",
+      "sourceOutput": "exec-e1a81709-d209-4711-86fa-256302d27269.png",
+      "generator": "builtin imagegen",
+      "sha256": "e234d573139fb661aa806fc6750585db6ddea7016f28e8db27cd49e315300a90",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "visualReview": "九格完整查看，人群/装束/气候和正确武器坐骑；虚构设计非历史考古复原"
+    }
+  ],
+  "model": {
+    "passed": 27,
+    "failed": 0,
+    "durationMs": 4307.668875
+  },
+  "limitations": [
+    "边疆明确虚构，不声称真实族属",
+    "历史具名来源也为年代启发游戏美术，不宣称考古整套复原",
+    "源人物文武每角色单变体",
+    "场景特殊异地兵种为游戏征募设定",
+    "19个原宽池为已制作代表图，不继续无限扩张为每个村落独立图"
+  ],
+  "native": {
+    "troopChecks": 243,
+    "peopleChecks": 54,
+    "total": 297,
+    "errors": []
+  },
+  "coverage": "42场景势力均有明确来源图映射：中央1、原宽池代表19、细分具名14、虚构边疆8；不宣称精确史实核定"
+}

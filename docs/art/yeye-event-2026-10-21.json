@@ -1,0 +1,46 @@
+{
+  "date": "2026-10-21",
+  "character": "椰椰",
+  "generator": "built-in image_gen",
+  "references": [
+    "assets/beauties/references/yeye/face-reference-1.jpg",
+    "assets/beauties/references/yeye/face-reference-2.jpg"
+  ],
+  "styleReference": "assets/beauties/special/sketch-beauty-xia-yuhe-transparent-v6.png",
+  "assets": [
+    {
+      "path": "assets/beauties/special/yeye-v1.png",
+      "state": "palace; happy, complete face",
+      "prompt": "Create ONE standalone transparent full-body character portrait for an ancient Chinese emperor strategy game, adult fictional woman named Yeye (椰椰), age 24. Reference photos 1 and 2 define her recognizable facial likeness: softly rounded oval face, natural almond eyes, her exact nose and lip proportions, long straight dark hair and distinctive thin silver wire-rim oval glasses. Preserve this identity; no generic doll face, no anime, no exaggerated beauty filter. Photo references are face/hair/glasses inspiration only. Reference 3 defines only the game's painted full-body art style and scale, do not copy its face or pink lotus dress. PALACE version: happy warm natural smile, upright comfortable pose, nearly frontal full face with both eyes and both cheeks clearly visible through clear glasses, no glare hiding eyes. Full modest ancient Chinese clothing: moon-white and soft gray-blue embroidered hanfu with long sleeves, covered shoulders, simple blue-gray silk sash, flowing skirt and embroidered cloth shoes, subtle bamboo leaf or cloud embroidery, understated silver hairpin. Long hair partly gathered, most flowing naturally down back. Hold a small closed stitched book at waist. Fine ink linework and refined realistic opaque watercolor/gouache on painted silk, same style as existing game character portraits, not a photograph. Entire head, sleeves, skirt hem and shoes in frame with margin, portrait 1024x1536. Genuine transparent background without scenery, halo, fog or floor. One adult only. No UI, text, logos, modern clothes, sofa or watermark."
+    },
+    {
+      "path": "assets/beauties/special/yeye-encounter-v1.png",
+      "state": "first encounter and immediate abduction result; frightened/angry",
+      "prompt": "Edit the supplied adult Yeye game portrait into a separate FIRST ENCOUNTER variant. Preserve EXACT same recognizable woman, thin silver-rim glasses, eye and nose proportions, long hair and hairpin, moon-white gray-blue bamboo embroidered full-sleeved hanfu, stitched book and full-body painted art style. Change expression and gesture to unmistakable FEAR mixed with anger at being blocked: widened eyes clearly visible through non-reflective glasses, raised inner brows with a tense furrow, slightly open lips with tense corners, shoulders recoiling, both hands tightly clutching book protectively near chest, leaning back a little. No smile, not calm or merely shy, not a fashion pose. Natural realistic human emotion, no exaggerated cartoon crying. Face near frontal with both eyes and both cheeks visible. Entire hair, sleeves, skirt hem and shoes remain visible inside margins. Genuine transparent PNG with no scenery, halo, fog, text, UI or watermark. No other people, physical contact, restraint, violence, injuries or sexual content."
+    }
+  ],
+  "rules": {
+    "id": "yeye",
+    "displayName": "椰椰",
+    "city": "成都",
+    "tourRegion": "剑南",
+    "provinceId": "jiannan",
+    "chancePerEligibleTour": 0.01,
+    "oncePerGame": true,
+    "refusalAlsoMarksSeen": true,
+    "choices": [
+      "强行带回宫中",
+      "放弃"
+    ],
+    "immediateAdmission": true,
+    "penalties": {
+      "localLoyalty": -8,
+      "prestige": -3
+    }
+  },
+  "verification": [
+    "37 tour/travel tests passed, including city restrictions, seen markers, refusal and admission/reload",
+    "38 runtime data-contract snapshots and negative type checks passed"
+  ],
+  "note": "Face, hair and thin silver-rim glasses inspired by user-provided photographs. Character, ancient clothing, age and game event are artistic fiction."
+}

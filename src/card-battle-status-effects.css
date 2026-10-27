@@ -1,0 +1,15 @@
+/* Approved V7 surface effects: rectangular, independent, persistent; no external status dock. */
+.cb-prototype .cb-card-state{position:absolute;inset:0;z-index:4;pointer-events:none;border-radius:4px;overflow:visible}
+.cb-prototype .cb-card-state *{pointer-events:none!important}
+.cb-prototype .cb-state-visual{position:absolute;inset:0;display:block;pointer-events:none}
+.cb-prototype .cb-state-canvas{position:absolute;inset:-6%;width:112%;height:112%;display:block;pointer-events:none}
+.cb-prototype .cb-card-state .cb-statuses{position:absolute;left:8%;top:18%;right:auto;width:1px;height:1px;max-height:1px;padding:0;margin:0;overflow:hidden;clip-path:inset(50%);white-space:nowrap;display:block}
+.cb-prototype .cb-state-border{position:absolute;inset:1px;border:1px solid #b8d7a1;border-radius:3px;pointer-events:none;box-shadow:inset 0 0 3px #a0cd9855;display:block;z-index:1}
+.cb-prototype .cb-state-negative{border-color:#c1a3d0;box-shadow:inset 0 0 3px #a181bd55}
+.cb-prototype .cb-state-visual:has(.cb-state-positive) .cb-state-negative{inset:4px}
+.cb-prototype .cb-card.has-shield::after,.cb-prototype .cb-card.frozen::after{display:none}
+.cb-prototype .cb-card.frozen .cb-art,.cb-prototype .cb-card.silenced .cb-art{filter:saturate(.96) contrast(1.02)}
+.cb-prototype .cb-card.stealthed:has(.cb-state-canvas[data-state-effects~="stealth"]) .cb-art{opacity:1;filter:saturate(.96) contrast(1.02)}
+/* Keep all readable ink and attack/target indicators above the effect drawing. */
+.cb-prototype .cb-card-surface>strong,.cb-prototype .cb-card-surface>.cb-attack,.cb-prototype .cb-card-surface>.cb-health,.cb-prototype .cb-card-surface>.cb-cost,.cb-prototype .cb-card-surface>.cb-card-copy{z-index:6}
+.cb-prototype .cb-card-surface>.cb-rest{z-index:7}

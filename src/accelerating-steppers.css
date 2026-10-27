@@ -1,0 +1,2 @@
+/* Holding a numeric control should never select its glyph or pan the page. */
+.atlas-amount button,.military-amount button{user-select:none;-webkit-user-select:none;touch-action:none}

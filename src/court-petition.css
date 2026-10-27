@@ -1,0 +1,121 @@
+/* 奏折统一外观。仅作用于单份奏折，簿册与办理面板保持各自布局。 */
+/* 御前奏本：封脊、正文、朱批区共用一套阅读层级。 */
+.court-petition.petition-redesign{width:min(880px,94vw);border:1px solid #a48b5b;background:#f3ecd9;box-shadow:0 32px 110px #0009,0 0 0 5px #242f2a55;border-radius:3px;isolation:isolate}
+.petition-redesign::backdrop{background:#0b1514c9;backdrop-filter:blur(8px)}
+.petition-redesign .petition-binding{position:absolute;inset:0 auto 0 0;width:76px;opacity:1;border:0;border-right:3px double #b49a6266;background:linear-gradient(90deg,#1b2c29,#293b34 70%,#172822);display:flex;align-items:center;flex-direction:column;color:#c9b784;padding:36px 0;gap:30px}
+.petition-redesign .petition-binding>span{writing-mode:vertical-rl;font-size:15px;letter-spacing:8px}
+.petition-redesign .petition-binding b{font-size:30px;font-weight:400;border:1px solid #b3a06b99;padding:10px 5px;box-shadow:inset 0 0 0 3px #26392f,inset 0 0 0 4px #b3a06b55}
+.petition-redesign .petition-binding>small{writing-mode:vertical-rl;letter-spacing:5px;font-size:10px;opacity:.6;margin-top:auto}
+.court-petition.petition-redesign>section{margin-left:76px;padding:0;background:radial-gradient(ellipse at 20% 0,#fff9e880,transparent 70%),repeating-linear-gradient(90deg,#99865b04 0 1px,transparent 1px 4px)}
+.petition-redesign .court-dialog-close{top:20px;right:23px;letter-spacing:1px;font-size:12px;background:transparent;color:#7b7059;display:flex;gap:12px;align-items:center}
+.petition-redesign .court-dialog-close span{font-size:23px;font-family:serif;font-weight:300}
+.petition-heading{padding:37px 46px 25px;border-bottom:1px solid #a88c5033;margin:0 0 0}
+.petition-meta{display:flex;align-items:center;gap:20px;padding-right:60px;color:#8d8065;font-size:11px}
+.petition-redesign .court-kicker{font-size:10px;letter-spacing:2px;color:#927748}
+.petition-meta>span{border-left:1px solid #ae986c66;padding-left:18px;white-space:nowrap}
+.petition-redesign h1{font-family:"Songti SC","STSong",serif;font-size:38px;letter-spacing:5px;line-height:1.4;margin:20px 0 17px;color:#2f3930}
+.petition-office{display:flex;align-items:center;gap:12px;color:#73664e;font-size:12px;letter-spacing:2px}
+.petition-office i{width:24px;height:1px;background:#af9666}
+.petition-office small{font-size:10px;color:#9a8c70;letter-spacing:1px}
+.petition-document{padding:26px 46px 30px;min-height:235px}
+.petition-redesign .petition-salute{font-size:14px!important;letter-spacing:2px;color:#8a795b;margin:0 0 18px}
+.petition-redesign .petition-fact{font-size:20px!important;line-height:2!important;color:#463f31!important;margin:0;text-align:justify;overflow-wrap:anywhere}
+.petition-redesign .petition-signature{font-size:11px!important;color:#978567;margin:25px 0 0;letter-spacing:1px}
+.petition-review{background:#e7dcc266;border-top:1px solid #a88c5040;padding:22px 46px 24px;position:relative}
+.petition-review-label{display:flex;gap:12px;align-items:center}
+.petition-review-label>span{font-size:13px;color:#9b4637;border-left:2px solid #9b4637;padding-left:9px}
+.petition-review-label>small{font-size:10px;color:#99896b;letter-spacing:1px}
+.petition-redesign .petition-decisions{gap:12px;flex-wrap:wrap;margin:16px 0 13px}
+.petition-redesign .petition-decisions>button{font-family:inherit;font-size:13px;letter-spacing:1px;padding:11px 16px;border:1px solid #b6a17b;background:transparent;color:#655a43;min-height:42px}
+.petition-redesign .petition-decisions>.court-vermilion{background:#843e32;color:#fff1d7;border-color:#733126;box-shadow:inset 0 0 0 3px #d4b37d22,0 3px 8px #68332515}
+.petition-redesign .petition-decisions>[data-court-archive]{margin-left:auto;border:0;padding:11px 0;color:#8b7754;font-size:11px}
+.petition-redesign .petition-decisions>button:hover{background:#d9c9a7}
+.petition-redesign .petition-decisions>.court-vermilion:hover{background:#a04d3d}
+.petition-redesign .court-reading-note{display:block;font-family:"Songti SC",serif;font-size:10px!important;color:#918165!important;line-height:1.8}
+.petition-redesign [role=status]:not(:empty){display:block;color:#9b3d2f!important;margin-top:8px}
+.petition-redesign[data-urgent=true] .court-kicker{color:#a24634}
+@media(max-width:700px){.petition-redesign .petition-binding{width:44px;padding:26px 0;gap:24px}.petition-redesign .petition-binding>span{font-size:12px;letter-spacing:6px}.petition-redesign .petition-binding b{font-size:22px;padding:7px 3px}.petition-redesign .petition-binding>small{font-size:9px}.court-petition.petition-redesign>section{margin-left:44px;padding:0}.petition-heading{padding:52px 22px 22px}.petition-redesign .court-dialog-close{top:10px;right:15px}.petition-meta{gap:10px;padding:0;flex-wrap:wrap}.petition-redesign .court-kicker{font-size:9px;letter-spacing:1px}.petition-meta>span{font-size:10px;padding-left:10px}.petition-redesign h1{font-size:29px;margin:18px 0 14px;letter-spacing:3px}.petition-office{gap:8px;flex-wrap:wrap;font-size:11px;letter-spacing:1px}.petition-office small{font-size:9px}.petition-document{padding:23px 22px;min-height:200px}.petition-redesign .petition-fact{font-size:18px!important;line-height:1.95!important}.petition-redesign .petition-signature{font-size:10px!important;line-height:1.8}.petition-review{padding:20px 22px}.petition-redesign .petition-decisions{gap:8px}.petition-redesign .petition-decisions>button{font-size:12px;padding:10px 12px}.petition-redesign .petition-decisions>[data-court-archive]{margin-left:0}.petition-redesign .petition-decisions>.court-vermilion{flex-basis:100%}}
+.petition-redesign .petition-heading,.petition-redesign .petition-review{display:block;width:auto;height:auto;align-items:normal;justify-content:normal;flex:none}
+
+/* 经折装：右起竖书，折面以明暗呈现，批阅操作置于纸本下方。 */
+.court-petition.petition-folded{width:min(1020px,94vw);background:#d8c59d;border:1px solid #ae9666;border-radius:0;box-shadow:0 30px 90px #000a,3px 3px 0 #b7a17b,6px 6px 0 #68583d;overflow:auto}
+.petition-folded .petition-binding{display:none}
+.court-petition.petition-folded>section{margin:0;padding:0;display:grid;grid-template-columns:minmax(0,1fr) 170px;position:relative;background:repeating-linear-gradient(90deg,#a88d5833 0,#f4e8cb 2px,#f2e6c9 40px,#eadebf 120px,#d6c39c 156px,#a38a5e55 159px,#fff5db 160px);}
+.petition-folded .petition-heading{grid-column:2;grid-row:1;margin:0;padding:64px 22px 30px;border:0;border-left:1px solid #b19a6a55;min-height:410px;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;gap:18px}
+.petition-folded .petition-meta{display:flex;flex-direction:column;gap:8px;padding:0;order:3}
+.petition-folded .petition-meta>span{border:0;padding:0;letter-spacing:2px}
+.petition-folded .court-kicker{font-size:9px;letter-spacing:1px}
+.petition-folded h1{writing-mode:vertical-rl;font-family:"Kaiti SC","STKaiti",serif;font-size:32px;letter-spacing:8px;line-height:1.5;margin:0;max-height:265px;order:1;color:#28291f}
+.petition-folded .petition-office{order:2;display:block;text-align:center;font-size:11px;line-height:1.8}
+.petition-folded .petition-office i,.petition-folded .petition-office small{display:none}
+.petition-folded .petition-document{grid-column:1;grid-row:1;writing-mode:vertical-rl;text-orientation:mixed;min-height:0;height:410px;padding:62px 32px 30px;overflow:auto;display:block;box-sizing:border-box;scrollbar-width:thin;scrollbar-color:#ae9666 transparent}
+.petition-folded .petition-salute{font-size:19px!important;line-height:2;letter-spacing:3px;margin:0 0 0 26px;color:#383529}
+.petition-folded .petition-fact{font-size:22px!important;line-height:2.5!important;letter-spacing:3px;margin:20px 0 0 28px;color:#302e24!important;text-align:start;max-height:none;overflow-wrap:anywhere}
+.petition-folded .petition-signature{font-size:17px!important;line-height:2.5;letter-spacing:3px;margin:42px 0 0 18px;text-align:start;color:#49402c}
+.petition-folded .petition-signature span{font-size:12px;color:#86734f}
+.petition-folded .petition-review{grid-column:1/-1;grid-row:2;background:#ece0c4ed;border-top:1px solid #ac926244;padding:20px 32px 22px;box-shadow:0 -8px 24px #74603a0a}
+.petition-folded .petition-review-label>span{font-size:18px;border:0;padding:0;letter-spacing:5px;color:#9e3528}
+.petition-folded .petition-review-label>small{letter-spacing:2px}
+.petition-folded .petition-decisions{margin:12px 0}
+.petition-folded .petition-decisions>.court-vermilion{background:transparent;border:1px solid #9c4837;color:#923d2e;box-shadow:inset 0 0 0 3px #a8463010}
+.petition-folded .petition-decisions>.court-vermilion:hover{background:#9c4837;color:#fff0d2}
+.petition-folded .court-dialog-close{top:12px;right:16px}
+@media(max-width:700px){.court-petition.petition-folded>section{grid-template-columns:minmax(0,1fr) 76px}.petition-folded .petition-heading{padding:54px 9px 18px;min-height:370px;gap:12px}.petition-folded h1{font-size:25px;letter-spacing:5px;max-height:220px}.petition-folded .petition-meta{gap:7px;text-align:center}.petition-folded .court-kicker{font-size:8px;letter-spacing:0}.petition-folded .petition-meta>span{font-size:9px;letter-spacing:0}.petition-folded .petition-office{font-size:10px}.petition-folded .petition-document{height:430px;padding:55px 16px 25px}.petition-folded .petition-salute{font-size:17px!important;margin-left:16px;letter-spacing:2px}.petition-folded .petition-fact{font-size:19px!important;line-height:2.2!important;letter-spacing:2px;margin-left:20px}.petition-folded .petition-signature{font-size:15px!important;margin-left:12px}.petition-folded .petition-review{padding:18px 20px}.petition-folded .court-dialog-close{font-size:10px;gap:5px;right:10px}.petition-folded .court-dialog-close span{font-size:20px}}
+
+/* 旧折纸：折口积色、纤维斑驳与不均匀的氧化纸色。 */
+.court-petition.petition-folded{border-color:#80643c;background:#aa8c56;box-shadow:0 28px 85px #000b,2px 3px 0 #a0885e,5px 5px 0 #675237;filter:drop-shadow(0 2px 2px #2c211b88)}
+.court-petition.petition-folded>section{background:radial-gradient(ellipse at 2% 8%,#74451740,transparent 24%),radial-gradient(ellipse at 97% 95%,#75482145,transparent 30%),radial-gradient(ellipse at 35% 60%,#f2dfad55,transparent 38%),repeating-linear-gradient(90deg,#69502e60 0,#ac8d5750 2px,#d5bf8d 7px,#ddc999 35px,#d6c08d 115px,#bea370 149px,#80643b80 157px,#e5d1a1 160px);box-shadow:inset 0 0 22px #70481b55,inset 0 0 3px 2px #674a2c66}
+.petition-folded>section::before{content:"";position:absolute;inset:0;pointer-events:none;z-index:2;opacity:.5;background:radial-gradient(ellipse at 14% 23%,#70452226 0 1px,transparent 3px),radial-gradient(ellipse at 67% 46%,#62411b25 0 1px,transparent 2px),radial-gradient(ellipse at 43% 72%,#7b53292a 0 2px,transparent 4px),radial-gradient(ellipse at 80% 18%,#fff1c42b 0 2px,transparent 5px),repeating-linear-gradient(2deg,transparent 0 7px,#72532b0c 8px,transparent 9px 13px);background-size:73px 91px,113px 67px,157px 137px,97px 107px,100% 100%;mix-blend-mode:multiply}
+.petition-folded>section::after{content:"";position:absolute;inset:3px;pointer-events:none;border:1px solid #80613a30;box-shadow:inset 0 0 35px #78502320;z-index:2}
+.petition-folded .petition-review{background:#cbbb94ad;border-top-color:#92734455;box-shadow:0 -3px 13px #77552a12}
+.petition-folded .petition-heading{border-left-color:#81653833}
+.petition-folded h1{color:#393426;text-shadow:.4px .6px 1px #54432430}
+.petition-folded .petition-fact{color:#49402e!important;text-shadow:.25px .3px .6px #5b462d38}
+.petition-folded .petition-salute,.petition-folded .petition-signature{color:#5e4e35}
+.petition-folded .petition-review-label>span,.petition-folded .petition-decisions>.court-vermilion{color:#8d4834;border-color:#95553d}
+.petition-folded .petition-decisions>button{border-color:#937c54}
+.petition-folded .court-reading-note{color:#776447!important}
+
+/* 操作区独立于奏折纸本，纸面只承载奏文。 */
+.court-petition.petition-folded{background:transparent;border:0;box-shadow:none;filter:none;overflow:auto;padding:0 6px 6px}
+.court-petition.petition-folded>section{border:1px solid #80643c;box-shadow:0 16px 35px #0005,2px 3px 0 #a0885e,5px 5px 0 #675237;margin:0 5px 0 0}
+.petition-folded .petition-review{display:block;position:relative;margin:22px 5px 0 0;padding:20px 26px;background:#192721f2;border:1px solid #a28b5855;box-shadow:0 12px 32px #0004;color:#d3c6a4}
+.petition-folded .petition-review-label>span{color:#cd8d72}
+.petition-folded .petition-review-label>small{color:#aa9c7d}
+.petition-folded .petition-decisions>button{color:#d3c6a4;border-color:#9b8b6755;background:#c9b68508}
+.petition-folded .petition-decisions>.court-vermilion{background:#803f30;color:#f3dfb9;border-color:#ad7454;box-shadow:inset 0 0 0 3px #e1c4980c}
+.petition-folded .petition-decisions>button:hover{background:#c9b68522}
+.petition-folded .petition-decisions>.court-vermilion:hover{background:#99513c}
+.petition-folded .petition-decisions>[data-court-archive]{color:#c1ad83}
+.petition-folded .court-reading-note{color:#a99c7f!important}
+.petition-folded .petition-review [role=status]:not(:empty){color:#edaa91!important}
+@media(max-width:700px){.petition-folded .petition-review{padding:18px 20px;margin-top:18px}}
+
+/* 拉长纸本比例，短窗口保留底部批阅空间。 */
+.petition-folded .petition-document{height:clamp(410px,55dvh,580px);padding-top:58px;padding-bottom:38px}
+.petition-folded .petition-heading{min-height:0;padding-top:60px;padding-bottom:32px}
+.petition-folded h1{max-height:340px}
+@media(max-width:700px){.petition-folded .petition-document{height:clamp(430px,60dvh,560px);padding:55px 16px 28px}.petition-folded .petition-heading{padding:54px 9px 22px}.petition-folded h1{max-height:290px}}
+/* 清除通用 footer 的定位偏移，与纸本共用左右边界。 */
+.court-petition.petition-folded>.petition-review{inset:auto;transform:none;width:auto;margin-inline:0 5px}
+.petition-archive-entry{display:block;width:100%;text-align:left;padding:16px 0;border:0;border-bottom:1px solid #b49c6d55}
+.petition-archive-entry strong{display:block;font-size:20px;font-weight:400;margin-bottom:8px}
+.petition-archive-entry span{display:block;font-size:13px;line-height:1.8;color:#837252}
+
+/* 暖色透景遮罩与浅色批阅区，避免大片黑底。 */
+.court-petition.petition-folded::backdrop{background:#65543b45;backdrop-filter:blur(5px)}
+.court-petition.petition-folded>.petition-review{background:linear-gradient(110deg,#ece0c7f5,#ded0b1f5);color:#65533a;border-color:#a58b5c80;box-shadow:0 8px 24px #4a382526}
+.petition-folded .petition-review-label>span{color:#974d38}
+.petition-folded .petition-review-label>small{color:#8d795a}
+.petition-folded .petition-decisions>button{color:#675337;background:#f6ecd229;border-color:#a68c6266}
+.petition-folded .petition-decisions>.court-vermilion{color:#fff0d0;background:#944d39;border-color:#914930}
+.petition-folded .petition-decisions>[data-court-archive]{color:#816b49}
+.petition-folded .petition-decisions>button:hover{background:#c8b18a55}
+.petition-folded .petition-decisions>.court-vermilion:hover{background:#a55b44}
+.petition-folded .court-reading-note{color:#857050!important}
+.petition-folded .petition-review [role=status]:not(:empty){color:#a23e2c!important}
+.petition-folded .petition-value{color:#a13b2e;font-weight:400;text-shadow:.2px .3px .7px #91302330}
+.petition-folded .petition-seal{order:2;display:block;flex:none;writing-mode:vertical-rl;border:3px double #a24433;color:#a24433;padding:7px 5px;font-size:21px;line-height:1.2;letter-spacing:4px;transform:rotate(-7deg);opacity:.85;box-shadow:inset 0 0 0 1px #a244332b;text-shadow:1px 0 #c26a4933;mask-image:repeating-linear-gradient(9deg,#000 0 6px,#000b 7px,#000 8px 13px)}
+.petition-folded[data-urgent=true] .petition-seal{border-width:4px;font-weight:600;color:#a52e22;border-color:#a52e22}
+@media(max-width:700px){.petition-folded .petition-seal{font-size:17px;padding:5px 3px;letter-spacing:3px}.petition-folded .petition-heading{gap:12px}}
+.court-petition.petition-folded>section{background-color:#d3bc8b}

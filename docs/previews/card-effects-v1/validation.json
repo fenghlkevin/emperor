@@ -1,0 +1,77 @@
+{
+  "checks": [
+    {
+      "id": "buff",
+      "phase": "增益完成 · 护甲盾持续",
+      "status": "攻击 +2生命上限 +3护甲盾",
+      "source": "",
+      "images": true
+    },
+    {
+      "id": "debuff",
+      "phase": "冰壳冻结 · 攻击削弱 · 沉默封印",
+      "status": "冻结攻击 −2沉默",
+      "source": "",
+      "images": true
+    },
+    {
+      "id": "watch",
+      "phase": "奥秘结算完成 · 原攻击继续（本例攻击者存活）",
+      "status": "护甲 +3",
+      "source": "已触发",
+      "images": true
+    },
+    {
+      "id": "ambush",
+      "phase": "奥秘结算完成 · 原攻击继续（本例攻击者存活）",
+      "status": "受到 3 点伤害",
+      "source": "已触发",
+      "images": true
+    },
+    {
+      "id": "blade",
+      "phase": "武器耗尽 · 退场",
+      "status": "第二次攻击 · 目标阵亡",
+      "source": "耐久耗尽",
+      "images": true
+    },
+    {
+      "id": "spear",
+      "phase": "武器耗尽 · 退场",
+      "status": "第二次攻击 · 目标阵亡",
+      "source": "耐久耗尽",
+      "images": true
+    },
+    {
+      "id": "camp",
+      "phase": "次数耗尽 · 收帐 / 降旗",
+      "status": "恢复 3 生命",
+      "source": "剩余 0 次 · 耗尽",
+      "images": true
+    },
+    {
+      "id": "rally",
+      "phase": "次数耗尽 · 收帐 / 降旗",
+      "status": "攻击 +2 · 本回合",
+      "source": "剩余 0 次 · 耗尽",
+      "images": true
+    },
+    {
+      "width": 1024,
+      "overflow": false
+    },
+    {
+      "width": 736,
+      "overflow": false
+    },
+    {
+      "width": 375,
+      "overflow": false
+    },
+    {
+      "width": 320,
+      "overflow": false
+    }
+  ],
+  "errors": []
+}

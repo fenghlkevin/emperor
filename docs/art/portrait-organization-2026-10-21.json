@@ -1,0 +1,480 @@
+{
+  "counts": {
+    "女明星": 42,
+    "番邦女子": 42
+  },
+  "changes": [
+    {
+      "from": "assets/beauties/random/刘诗诗.png",
+      "to": "assets/beauties/random/女明星/刘诗诗.png",
+      "id": "zhongyuan"
+    },
+    {
+      "from": "assets/beauties/random/王楚然-重做-v2.png",
+      "to": "assets/beauties/random/女明星/王楚然.png",
+      "id": "hebei"
+    },
+    {
+      "from": "assets/beauties/random/刘涛.png",
+      "to": "assets/beauties/random/女明星/刘涛.png",
+      "id": "henan"
+    },
+    {
+      "from": "assets/beauties/random/杨幂.png",
+      "to": "assets/beauties/random/女明星/杨幂.png",
+      "id": "v1-sheng-00"
+    },
+    {
+      "from": "assets/beauties/random/倪妮.png",
+      "to": "assets/beauties/random/女明星/倪妮.png",
+      "id": "v1-sheng-02"
+    },
+    {
+      "from": "assets/beauties/random/孙俪.png",
+      "to": "assets/beauties/random/女明星/孙俪.png",
+      "id": "v1-sheng-03"
+    },
+    {
+      "from": "assets/beauties/random/范冰冰.png",
+      "to": "assets/beauties/random/女明星/范冰冰.png",
+      "id": "peony-red"
+    },
+    {
+      "from": "assets/beauties/random/景甜.png",
+      "to": "assets/beauties/random/女明星/景甜.png",
+      "id": "pine-silk"
+    },
+    {
+      "from": "assets/beauties/random/江疏影.png",
+      "to": "assets/beauties/random/女明星/江疏影.png",
+      "id": "candle-curtain"
+    },
+    {
+      "from": "assets/beauties/random/李沁-重做-v2.png",
+      "to": "assets/beauties/random/女明星/李沁.png",
+      "id": "lotus-picker"
+    },
+    {
+      "from": "assets/beauties/random/张梓琳.png",
+      "to": "assets/beauties/random/女明星/张梓琳.png",
+      "id": "railing-coral"
+    },
+    {
+      "from": "assets/beauties/random/关晓彤.png",
+      "to": "assets/beauties/random/女明星/关晓彤.png",
+      "id": "spring-rider"
+    },
+    {
+      "from": "assets/beauties/random/李一桐-重做-v2.png",
+      "to": "assets/beauties/random/女明星/李一桐.png",
+      "id": "autumn-flute"
+    },
+    {
+      "from": "assets/beauties/random/赵今麦.png",
+      "to": "assets/beauties/random/女明星/赵今麦.png",
+      "id": "red-twin-buns"
+    },
+    {
+      "from": "assets/beauties/random/宋茜-重做-v2.png",
+      "to": "assets/beauties/random/女明星/宋茜.png",
+      "id": "butterfly-sleeves"
+    },
+    {
+      "from": "assets/beauties/random/王丽坤.png",
+      "to": "assets/beauties/random/女明星/王丽坤.png",
+      "id": "green-fan"
+    },
+    {
+      "from": "assets/beauties/random/章若楠-重做-v2.png",
+      "to": "assets/beauties/random/女明星/章若楠.png",
+      "id": "blue-dancer"
+    },
+    {
+      "from": "assets/beauties/random/刘浩存-重做-v2.png",
+      "to": "assets/beauties/random/女明星/刘浩存.png",
+      "id": "moon-silk"
+    },
+    {
+      "from": "assets/beauties/random/张佳宁.png",
+      "to": "assets/beauties/random/女明星/张佳宁.png",
+      "id": "rabbit-play"
+    },
+    {
+      "from": "assets/beauties/random/迪丽热巴.png",
+      "to": "assets/beauties/random/女明星/迪丽热巴.png",
+      "id": "oasis-dance"
+    },
+    {
+      "from": "assets/beauties/random/刘亦菲.png",
+      "to": "assets/beauties/random/女明星/刘亦菲.png",
+      "id": "expansion-20261019-01"
+    },
+    {
+      "from": "assets/beauties/random/田曦薇.png",
+      "to": "assets/beauties/random/女明星/田曦薇.png",
+      "id": "expansion-20261019-02"
+    },
+    {
+      "from": "assets/beauties/random/宋轶.png",
+      "to": "assets/beauties/random/女明星/宋轶.png",
+      "id": "expansion-20261019-03"
+    },
+    {
+      "from": "assets/beauties/random/周也.png",
+      "to": "assets/beauties/random/女明星/周也.png",
+      "id": "expansion-20261019-04"
+    },
+    {
+      "from": "assets/beauties/random/杨紫.png",
+      "to": "assets/beauties/random/女明星/杨紫.png",
+      "id": "expansion-20261019-05"
+    },
+    {
+      "from": "assets/beauties/random/虞书欣.png",
+      "to": "assets/beauties/random/女明星/虞书欣.png",
+      "id": "expansion-20261019-06"
+    },
+    {
+      "from": "assets/beauties/random/金晨-重做-v2.png",
+      "to": "assets/beauties/random/女明星/金晨.png",
+      "id": "expansion-20261019-07"
+    },
+    {
+      "from": "assets/beauties/random/陈都灵.png",
+      "to": "assets/beauties/random/女明星/陈都灵.png",
+      "id": "expansion-20261019-08"
+    },
+    {
+      "from": "assets/beauties/random/高圆圆.png",
+      "to": "assets/beauties/random/女明星/高圆圆.png",
+      "id": "expansion-20261019-09"
+    },
+    {
+      "from": "assets/beauties/random/袁泉.png",
+      "to": "assets/beauties/random/女明星/袁泉.png",
+      "id": "expansion-20261019-10"
+    },
+    {
+      "from": "assets/beauties/random/张雨绮.png",
+      "to": "assets/beauties/random/女明星/张雨绮.png",
+      "id": "expansion-20261019-11"
+    },
+    {
+      "from": "assets/beauties/random/白鹿.png",
+      "to": "assets/beauties/random/女明星/白鹿.png",
+      "id": "expansion-20261019-12"
+    },
+    {
+      "from": "assets/beauties/random/戚薇.png",
+      "to": "assets/beauties/random/女明星/戚薇.png",
+      "id": "expansion-20261019-13"
+    },
+    {
+      "from": "assets/beauties/random/孟子义-重做-v2.png",
+      "to": "assets/beauties/random/女明星/孟子义.png",
+      "id": "expansion-20261019-14"
+    },
+    {
+      "from": "assets/beauties/random/孟子义-公主-v1.png",
+      "to": "assets/beauties/random/女明星/孟子义-公主.png",
+      "id": "expansion-20261019-14-princess"
+    },
+    {
+      "from": "assets/beauties/random/董洁.png",
+      "to": "assets/beauties/random/女明星/董洁.png",
+      "id": "expansion-20261019-15"
+    },
+    {
+      "from": "assets/beauties/random/钟楚曦.png",
+      "to": "assets/beauties/random/女明星/钟楚曦.png",
+      "id": "expansion-20261019-16"
+    },
+    {
+      "from": "assets/beauties/random/钟楚曦-素雅-v2.png",
+      "to": "assets/beauties/random/女明星/钟楚曦-素雅.png",
+      "id": "expansion-20261019-16-plain"
+    },
+    {
+      "from": "assets/beauties/random/张天爱.png",
+      "to": "assets/beauties/random/女明星/张天爱.png",
+      "id": "expansion-20261019-17"
+    },
+    {
+      "from": "assets/beauties/random/毛晓彤.png",
+      "to": "assets/beauties/random/女明星/毛晓彤.png",
+      "id": "expansion-20261019-18"
+    },
+    {
+      "from": "assets/beauties/random/古力娜扎.png",
+      "to": "assets/beauties/random/女明星/古力娜扎.png",
+      "id": "expansion-20261019-19"
+    },
+    {
+      "from": "assets/beauties/random/张婧仪-重做-v2.png",
+      "to": "assets/beauties/random/女明星/张婧仪.png",
+      "id": "expansion-20261019-20"
+    },
+    {
+      "from": "assets/beauties/random/foreign-expansion-20261019-01-summer-transparent-v2.png",
+      "to": "assets/beauties/random/番邦女子/波斯女子-1.png",
+      "id": "foreign-expansion-20261019-01"
+    },
+    {
+      "from": "assets/beauties/random/foreign-expansion-20261019-02-summer-transparent-v2.png",
+      "to": "assets/beauties/random/番邦女子/波斯女子-2.png",
+      "id": "foreign-expansion-20261019-02"
+    },
+    {
+      "from": "assets/beauties/random/foreign-expansion-20261019-03-summer-transparent-v2.png",
+      "to": "assets/beauties/random/番邦女子/大漠-阿拉伯女子-1.png",
+      "id": "foreign-expansion-20261019-03"
+    },
+    {
+      "from": "assets/beauties/random/foreign-expansion-20261019-04-summer-transparent-v2.png",
+      "to": "assets/beauties/random/番邦女子/大漠-阿拉伯女子-2.png",
+      "id": "foreign-expansion-20261019-04"
+    },
+    {
+      "from": "assets/beauties/random/xinjiang-dilraba-summer-v4.png",
+      "to": "assets/beauties/random/番邦女子/西域女子-迪丽热巴.png",
+      "id": "foreign-expansion-20261019-05"
+    },
+    {
+      "from": "assets/beauties/random/xinjiang-hankiz-summer-v4.png",
+      "to": "assets/beauties/random/番邦女子/西域女子-哈妮克孜.png",
+      "id": "foreign-expansion-20261019-06"
+    },
+    {
+      "from": "assets/beauties/random/foreign-expansion-20261019-07-summer-transparent-v2.png",
+      "to": "assets/beauties/random/番邦女子/西藏-藏地女子-1.png",
+      "id": "foreign-expansion-20261019-07"
+    },
+    {
+      "from": "assets/beauties/random/foreign-expansion-20261019-08-summer-transparent-v2.png",
+      "to": "assets/beauties/random/番邦女子/西藏-藏地女子-2.png",
+      "id": "foreign-expansion-20261019-08"
+    },
+    {
+      "from": "assets/beauties/random/foreign-expansion-20261019-09-summer-transparent-v2.png",
+      "to": "assets/beauties/random/番邦女子/蒙古草原女子-1.png",
+      "id": "foreign-expansion-20261019-09"
+    },
+    {
+      "from": "assets/beauties/random/foreign-expansion-20261019-10-transparent-v2.png",
+      "to": "assets/beauties/random/番邦女子/蒙古草原女子-2.png",
+      "id": "foreign-expansion-20261019-10"
+    },
+    {
+      "from": "assets/beauties/random/foreign-expansion-20261019-11-transparent-v2.png",
+      "to": "assets/beauties/random/番邦女子/中亚-粟特女子-1.png",
+      "id": "foreign-expansion-20261019-11"
+    },
+    {
+      "from": "assets/beauties/random/foreign-expansion-20261019-12-transparent-v2.png",
+      "to": "assets/beauties/random/番邦女子/中亚-粟特女子-2.png",
+      "id": "foreign-expansion-20261019-12"
+    },
+    {
+      "from": "assets/beauties/random/foreign-expansion-20261019-13-transparent-v2.png",
+      "to": "assets/beauties/random/番邦女子/南亚-印度女子-1.png",
+      "id": "foreign-expansion-20261019-13"
+    },
+    {
+      "from": "assets/beauties/random/foreign-expansion-20261019-14-transparent-v2.png",
+      "to": "assets/beauties/random/番邦女子/南亚-印度女子-2.png",
+      "id": "foreign-expansion-20261019-14"
+    },
+    {
+      "from": "assets/beauties/random/foreign-expansion-20261019-15-transparent-v2.png",
+      "to": "assets/beauties/random/番邦女子/南亚-斯里兰卡女子-1.png",
+      "id": "foreign-expansion-20261019-15"
+    },
+    {
+      "from": "assets/beauties/random/foreign-expansion-20261019-16-transparent-v2.png",
+      "to": "assets/beauties/random/番邦女子/南亚-斯里兰卡女子-2.png",
+      "id": "foreign-expansion-20261019-16"
+    },
+    {
+      "from": "assets/beauties/random/foreign-expansion-20261019-17-transparent-v2.png",
+      "to": "assets/beauties/random/番邦女子/东南亚大陆女子-1.png",
+      "id": "foreign-expansion-20261019-17"
+    },
+    {
+      "from": "assets/beauties/random/foreign-expansion-20261019-18-transparent-v2.png",
+      "to": "assets/beauties/random/番邦女子/东南亚大陆女子-2.png",
+      "id": "foreign-expansion-20261019-18"
+    },
+    {
+      "from": "assets/beauties/random/foreign-expansion-20261019-19-transparent-v2.png",
+      "to": "assets/beauties/random/番邦女子/东南亚海岛女子-1.png",
+      "id": "foreign-expansion-20261019-19"
+    },
+    {
+      "from": "assets/beauties/random/foreign-expansion-20261019-20-transparent-v2.png",
+      "to": "assets/beauties/random/番邦女子/东南亚海岛女子-2.png",
+      "id": "foreign-expansion-20261019-20"
+    },
+    {
+      "from": "assets/beauties/random/foreign-expansion-20261019-21-transparent-v2.png",
+      "to": "assets/beauties/random/番邦女子/云南-南诏女子-1.png",
+      "id": "foreign-expansion-20261019-21"
+    },
+    {
+      "from": "assets/beauties/random/foreign-expansion-20261019-22-transparent-v2.png",
+      "to": "assets/beauties/random/番邦女子/云南-南诏女子-2.png",
+      "id": "foreign-expansion-20261019-22"
+    },
+    {
+      "from": "assets/beauties/random/foreign-expansion-20261019-23-transparent-v2.png",
+      "to": "assets/beauties/random/番邦女子/朝鲜半岛-高丽女子-1.png",
+      "id": "foreign-expansion-20261019-23"
+    },
+    {
+      "from": "assets/beauties/random/foreign-expansion-20261019-24-transparent-v2.png",
+      "to": "assets/beauties/random/番邦女子/朝鲜半岛-高丽女子-2.png",
+      "id": "foreign-expansion-20261019-24"
+    },
+    {
+      "from": "assets/beauties/random/japan-aoi-tsukasa-transparent-v4.png",
+      "to": "assets/beauties/random/番邦女子/日本女子-葵司.png",
+      "id": "foreign-expansion-20261019-25"
+    },
+    {
+      "from": "assets/beauties/random/japan-hashimoto-arina-transparent-v3.png",
+      "to": "assets/beauties/random/番邦女子/日本女子-桥本有菜.png",
+      "id": "foreign-expansion-20261019-26"
+    },
+    {
+      "from": "assets/beauties/random/japan-julia-transparent-v1.png",
+      "to": "assets/beauties/random/番邦女子/日本女子-JULIA.png",
+      "id": "japan-julia-20261020"
+    },
+    {
+      "from": "assets/beauties/random/foreign-expansion-20261019-27-transparent-v2.png",
+      "to": "assets/beauties/random/番邦女子/东南欧-拜占庭女子-1.png",
+      "id": "foreign-expansion-20261019-27"
+    },
+    {
+      "from": "assets/beauties/random/foreign-expansion-20261019-28-transparent-v2.png",
+      "to": "assets/beauties/random/番邦女子/东南欧-拜占庭女子-2.png",
+      "id": "foreign-expansion-20261019-28"
+    },
+    {
+      "from": "assets/beauties/random/foreign-expansion-20261019-29-transparent-v2.png",
+      "to": "assets/beauties/random/番邦女子/东欧-斯拉夫女子-1.png",
+      "id": "foreign-expansion-20261019-29"
+    },
+    {
+      "from": "assets/beauties/random/foreign-expansion-20261019-30-transparent-v2.png",
+      "to": "assets/beauties/random/番邦女子/东欧-斯拉夫女子-2.png",
+      "id": "foreign-expansion-20261019-30"
+    },
+    {
+      "from": "assets/beauties/random/foreign-expansion-20261019-31-transparent-v2.png",
+      "to": "assets/beauties/random/番邦女子/西欧-法兰西女子-1.png",
+      "id": "foreign-expansion-20261019-31"
+    },
+    {
+      "from": "assets/beauties/random/foreign-expansion-20261019-32-transparent-v2.png",
+      "to": "assets/beauties/random/番邦女子/西欧-法兰西女子-2.png",
+      "id": "foreign-expansion-20261019-32"
+    },
+    {
+      "from": "assets/beauties/random/foreign-expansion-20261019-33-transparent-v2.png",
+      "to": "assets/beauties/random/番邦女子/中欧-日耳曼女子-1.png",
+      "id": "foreign-expansion-20261019-33"
+    },
+    {
+      "from": "assets/beauties/random/foreign-expansion-20261019-34-transparent-v2.png",
+      "to": "assets/beauties/random/番邦女子/中欧-日耳曼女子-2.png",
+      "id": "foreign-expansion-20261019-34"
+    },
+    {
+      "from": "assets/beauties/random/foreign-expansion-20261019-35-transparent-v2.png",
+      "to": "assets/beauties/random/番邦女子/北欧-斯堪的纳维亚女子-1.png",
+      "id": "foreign-expansion-20261019-35"
+    },
+    {
+      "from": "assets/beauties/random/foreign-expansion-20261019-36-transparent-v2.png",
+      "to": "assets/beauties/random/番邦女子/北欧-斯堪的纳维亚女子-2.png",
+      "id": "foreign-expansion-20261019-36"
+    },
+    {
+      "from": "assets/beauties/random/foreign-expansion-20261019-37-transparent-v2.png",
+      "to": "assets/beauties/random/番邦女子/南欧-伊比利亚女子-1.png",
+      "id": "foreign-expansion-20261019-37"
+    },
+    {
+      "from": "assets/beauties/random/foreign-expansion-20261019-38-transparent-v2.png",
+      "to": "assets/beauties/random/番邦女子/南欧-伊比利亚女子-2.png",
+      "id": "foreign-expansion-20261019-38"
+    },
+    {
+      "from": "assets/beauties/random/foreign-expansion-20261019-39-transparent-v2.png",
+      "to": "assets/beauties/random/番邦女子/南欧-意大利女子-1.png",
+      "id": "foreign-expansion-20261019-39"
+    },
+    {
+      "from": "assets/beauties/random/foreign-expansion-20261019-40-transparent-v2.png",
+      "to": "assets/beauties/random/番邦女子/南欧-意大利女子-2.png",
+      "id": "foreign-expansion-20261019-40"
+    },
+    {
+      "from": "assets/beauties/random/xinjiang-tongliya-summer-v3.png",
+      "to": "assets/beauties/random/番邦女子/西域女子-佟丽娅.png",
+      "id": "xinjiang-tongliya-20261020"
+    }
+  ],
+  "drafts": [
+    {
+      "from": "assets/beauties/random/candle-curtain-jiangshuying-preview-v1.png",
+      "to": "docs/art/portrait-drafts-2026-10-21/candle-curtain-jiangshuying-preview-v1.png",
+      "action": "archive-unused-preview"
+    },
+    {
+      "from": "assets/beauties/random/henan-liutao-background-preview-v4.png",
+      "to": "docs/art/portrait-drafts-2026-10-21/henan-liutao-background-preview-v4.png",
+      "action": "archive-unused-preview"
+    },
+    {
+      "from": "assets/beauties/random/henan-liutao-photo-preview-v1.png",
+      "to": "docs/art/portrait-drafts-2026-10-21/henan-liutao-photo-preview-v1.png",
+      "action": "archive-unused-preview"
+    },
+    {
+      "from": "assets/beauties/random/henan-liutao-photo-preview-v2.png",
+      "to": "docs/art/portrait-drafts-2026-10-21/henan-liutao-photo-preview-v2.png",
+      "action": "archive-unused-preview"
+    },
+    {
+      "from": "assets/beauties/random/henan-liutao-photo-preview-v3.png",
+      "duplicateOf": "assets/beauties/random/女明星/刘涛.png",
+      "action": "remove-pixel-identical-copy"
+    },
+    {
+      "from": "assets/beauties/random/henan-liutao-photo-preview-v5.png",
+      "to": "docs/art/portrait-drafts-2026-10-21/henan-liutao-photo-preview-v5.png",
+      "action": "archive-unused-preview"
+    },
+    {
+      "from": "assets/beauties/random/peony-red-fanbingbing-preview-v1.png",
+      "to": "docs/art/portrait-drafts-2026-10-21/peony-red-fanbingbing-preview-v1.png",
+      "action": "archive-unused-preview"
+    },
+    {
+      "from": "assets/beauties/random/pine-silk-jingtian-preview-v1.png",
+      "to": "docs/art/portrait-drafts-2026-10-21/pine-silk-jingtian-preview-v1.png",
+      "action": "archive-unused-preview"
+    },
+    {
+      "from": "assets/beauties/random/v1-sheng-00-yangmi-preview-v1.png",
+      "to": "docs/art/portrait-drafts-2026-10-21/v1-sheng-00-yangmi-preview-v1.png",
+      "action": "archive-unused-preview"
+    },
+    {
+      "from": "assets/beauties/random/v1-sheng-00-yangmi-preview-v2.png",
+      "to": "docs/art/portrait-drafts-2026-10-21/v1-sheng-00-yangmi-preview-v2.png",
+      "action": "archive-unused-preview"
+    }
+  ]
+}

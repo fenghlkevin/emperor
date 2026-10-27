@@ -1,3 +1,5 @@
+import {national,famine} from './helpers/national.mjs';
+import {LABOR_RATIO} from '../src/labor.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {newGame,validateSave,advance} from '../src/game.mjs';
@@ -35,14 +37,14 @@ test('B03 market applies once to commerce and tax, preserves other industries, a
  assert.equal(welfareValue(p,'activity'),60);assert.equal(commerceMultiplier(p),1+10/600);
  assert.equal(outputFor(p,'commerce'),Math.round(original.commerce*(1+10/600)));
  for(const k of ['agriculture','pastoral','industry'])assert.equal(outputFor(p,k),original[k]);
- const taxable=original.agriculture*.7+original.pastoral*4+outputFor(p,'commerce')+original.industry*.8;assert.equal(provinceBudget(p,s.domestic.countries[0]).tax,Math.round(taxable*p.budget.taxRate));assert.ok(provinceBudget(p,s.domestic.countries[0]).tax>baseTax);
+ const taxable=outputFor(p,'commerce')+original.industry;assert.equal(provinceBudget(p,s.domestic.countries[0]).tax,Math.round(taxable*p.budget.taxRate));assert.ok(provinceBudget(p,s.domestic.countries[0]).tax>baseTax);
  assert.equal(commerceMultiplier(p,6),1+8/600);assert.equal(commerceMultiplier(p,7),1+10/600);
 });
 
 test('B04 central and delegated recruitment share fitness-based training and do not retrain old troops',()=>{
  let s=fixture();const d=s.domestic,source=d.provinces.find(p=>p.id===d.centralArmy.sourceProvinceId);
- for(const p of d.provinces.filter(p=>p.countryId==='sheng'))p.population.total=Object.values(p.population.professions).reduce((a,b)=>a+b,0);
- source.population.total+=100;source.welfare.fitness=80;source.buildingEffects.carry.fitness=0;d.centralArmy.soldiers=100;d.centralArmy.training=60;
+ for(const p of d.provinces.filter(p=>p.countryId==='sheng'))p.population.total=Math.ceil(Object.values(p.population.professions).reduce((a,b)=>a+b,0)/LABOR_RATIO);
+ source.population.total=Math.ceil((Object.values(source.population.professions).reduce((a,b)=>a+b,0)+100)/LABOR_RATIO);source.welfare.fitness=80;source.buildingEffects.carry.fitness=0;d.centralArmy.soldiers=100;d.centralArmy.training=60;
  assert.equal(newRecruitTraining(source),16);s=executeKitCommand(s,{id:s.domestic.troopKits.nextId,kind:'recruit',sourceId:'central',amount:100}).state;assert.equal(s.domestic.centralArmy.training,38);
  const q=fixture(),p=city(q);p.welfare.fitness=80;for(const k of ['stability','security','loyalty'])p.welfare[k]=70;p.population.professions.soldiers=100;p.military.training=80;q.domestic.personnel.delegations=[p.id];p.construction.project={building:'markets',progress:0,startedTurn:1};
  settlePersonnel(q.domestic,2,()=>.9,q.stats);assert.equal(p.population.professions.soldiers,200);assert.equal(p.military.training,48);
@@ -80,7 +82,7 @@ test('B08 palace loyalty accumulates tenths only when fed and disaster-free',()=
 });
 
 test('settlement recovers after food penalties, risk uses pre-recovery values in the same turn, and repeated settlement is inert',()=>{
- const s=fixture(),p=city(s);p.buildings.temples=8;p.buildings.yamen=8;p.buildings.palaces=1;p.welfare.grainReserve=0;p.economy.agriculture.productivity=0;s.domestic.disasters.lastTurn=100;
+ const s=fixture(),p=city(s);p.buildings.temples=8;p.buildings.yamen=8;p.buildings.palaces=1;famine(s.domestic);s.domestic.disasters.lastTurn=100;
  const old=p.welfare.stability;settleDomestic(s.domestic,2);assert.equal(welfareValue(p,'stability'),old-2);assert.equal(p.buildingEffects.last.fed,false);assert.equal(p.buildingEffects.last.gains.loyalty,0);
  const risk=disasterRisk(s.domestic,p,2).human;assert.ok(disasterRisk(s.domestic,p,3).human<risk);
  const snapshot=JSON.stringify(s);settleDomestic(s.domestic,2);assert.equal(JSON.stringify(s),snapshot);
@@ -109,7 +111,7 @@ test('failed save of a full turn publishes no recovery, and retry does not doubl
  const next=persistCandidate(initial,candidate,{setItem(){}});assert.equal(welfareValue(city(next),'stability'),50.25);const restored=save(next),snapshot=JSON.stringify(restored);settleDomestic(restored.domestic,2);assert.equal(JSON.stringify(restored),snapshot);
 });
 
-test('effect report displays fractional gains, caps, delayed activation and combat limitation',()=>{
+test('effect report displays fractional gains, caps, delayed activation and combat defense',()=>{
  const s=fixture(),p=city(s);p.buildings.temples=8;p.buildings.palaces=1;settleBuildingEffects(p,2,true,false);
- const html=buildingEffectsReport(p,2);assert.match(html,/当前收益已封顶/);assert.match(html,/0.1/);assert.match(html,/尚不影响战棋伤害/);assert.match(html,/缺粮暂停/);
+ const html=buildingEffectsReport(p,2);assert.match(html,/当前收益已封顶/);assert.match(html,/0.1/);assert.match(html,/守方战场防御系数/);assert.match(html,/缺粮暂停/);
 });

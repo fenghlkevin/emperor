@@ -1,0 +1,628 @@
+{
+  "date": "2026-10-26",
+  "mode": "108-turn",
+  "method": "Production candidate engine, foreign economy/disasters/war active. Rest each turn. Default policy leaves delegation enabled. Leisure policy builds/develops every 18 turns and holds an exam every 36. Actions spend court energy; no free wins, treasury injections or disabled strategy. Real defense AI used for threats. Paired seed with separate exam/disaster domains; remaining ambient randomness seeded per run.",
+  "runs": [
+    {
+      "tier": "novice",
+      "seed": 1,
+      "policy": "default",
+      "opening": {
+        "turn": 1,
+        "cash": 80000,
+        "debt": 0,
+        "net": 1432,
+        "grain": 42840,
+        "foodNeed": 357,
+        "foodShortfall": 0,
+        "living": 63,
+        "stability": 79,
+        "provinces": 10,
+        "life": 2160,
+        "central": 8000
+      },
+      "samples": [
+        {
+          "turn": 37,
+          "cash": 88129,
+          "debt": 0,
+          "net": 1156,
+          "grain": 14978,
+          "foodNeed": 357,
+          "foodShortfall": 0,
+          "living": 64,
+          "stability": 67,
+          "provinces": 10,
+          "life": 2124,
+          "central": 8000
+        },
+        {
+          "turn": 73,
+          "cash": 109562,
+          "debt": 0,
+          "net": 1224,
+          "grain": 14804,
+          "foodNeed": 357,
+          "foodShortfall": 0,
+          "living": 64,
+          "stability": 60,
+          "provinces": 10,
+          "life": 2088,
+          "central": 8000
+        },
+        {
+          "turn": 109,
+          "cash": 106885,
+          "debt": 0,
+          "net": 837,
+          "grain": 14988,
+          "foodNeed": 357,
+          "foodShortfall": 0,
+          "living": 63,
+          "stability": 58,
+          "provinces": 10,
+          "life": 2052,
+          "central": 8000
+        }
+      ],
+      "orders": [],
+      "blocked": [],
+      "firstDebt": null,
+      "firstFoodShortfall": null,
+      "defenses": [],
+      "ended": null,
+      "final": {
+        "turn": 109,
+        "cash": 106885,
+        "debt": 0,
+        "net": 837,
+        "grain": 14988,
+        "foodNeed": 357,
+        "foodShortfall": 0,
+        "living": 63,
+        "stability": 58,
+        "provinces": 10,
+        "life": 2052,
+        "central": 8000
+      }
+    },
+    {
+      "tier": "novice",
+      "seed": 1,
+      "policy": "leisure",
+      "opening": {
+        "turn": 1,
+        "cash": 80000,
+        "debt": 0,
+        "net": 1432,
+        "grain": 42840,
+        "foodNeed": 357,
+        "foodShortfall": 0,
+        "living": 63,
+        "stability": 79,
+        "provinces": 10,
+        "life": 2160,
+        "central": 8000
+      },
+      "samples": [
+        {
+          "turn": 37,
+          "cash": 86480,
+          "debt": 0,
+          "net": 1153,
+          "grain": 14978,
+          "foodNeed": 357,
+          "foodShortfall": 0,
+          "living": 64,
+          "stability": 67,
+          "provinces": 10,
+          "life": 2124,
+          "central": 8000
+        },
+        {
+          "turn": 73,
+          "cash": 106548,
+          "debt": 0,
+          "net": 1223,
+          "grain": 15015,
+          "foodNeed": 357,
+          "foodShortfall": 0,
+          "living": 64,
+          "stability": 60,
+          "provinces": 10,
+          "life": 2088,
+          "central": 8000
+        },
+        {
+          "turn": 109,
+          "cash": 102106,
+          "debt": 0,
+          "net": 841,
+          "grain": 15774,
+          "foodNeed": 357,
+          "foodShortfall": 0,
+          "living": 63,
+          "stability": 58,
+          "provinces": 10,
+          "life": 2052,
+          "central": 8000
+        }
+      ],
+      "orders": [
+        {
+          "turn": 1,
+          "kind": "exam",
+          "cash": 79800
+        },
+        {
+          "turn": 18,
+          "kind": "develop",
+          "cash": 77036
+        },
+        {
+          "turn": 18,
+          "kind": "build",
+          "cash": 76686
+        },
+        {
+          "turn": 36,
+          "kind": "develop",
+          "cash": 86621
+        },
+        {
+          "turn": 36,
+          "kind": "build",
+          "cash": 86201
+        },
+        {
+          "turn": 37,
+          "kind": "hire",
+          "cash": 86480
+        },
+        {
+          "turn": 37,
+          "kind": "clear",
+          "cash": 86480
+        },
+        {
+          "turn": 37,
+          "kind": "exam",
+          "cash": 86280
+        },
+        {
+          "turn": 54,
+          "kind": "develop",
+          "cash": 93150
+        },
+        {
+          "turn": 54,
+          "kind": "build",
+          "cash": 92800
+        },
+        {
+          "turn": 72,
+          "kind": "develop",
+          "cash": 107142
+        },
+        {
+          "turn": 72,
+          "kind": "build",
+          "cash": 106722
+        },
+        {
+          "turn": 73,
+          "kind": "hire",
+          "cash": 106548
+        },
+        {
+          "turn": 73,
+          "kind": "clear",
+          "cash": 106548
+        },
+        {
+          "turn": 73,
+          "kind": "exam",
+          "cash": 106348
+        },
+        {
+          "turn": 90,
+          "kind": "develop",
+          "cash": 101021
+        },
+        {
+          "turn": 90,
+          "kind": "build",
+          "cash": 100671
+        },
+        {
+          "turn": 108,
+          "kind": "develop",
+          "cash": 103077
+        },
+        {
+          "turn": 108,
+          "kind": "build",
+          "cash": 102657
+        }
+      ],
+      "blocked": [],
+      "firstDebt": null,
+      "firstFoodShortfall": null,
+      "defenses": [],
+      "ended": null,
+      "final": {
+        "turn": 109,
+        "cash": 102106,
+        "debt": 0,
+        "net": 841,
+        "grain": 15774,
+        "foodNeed": 357,
+        "foodShortfall": 0,
+        "living": 63,
+        "stability": 58,
+        "provinces": 10,
+        "life": 2052,
+        "central": 8000
+      }
+    },
+    {
+      "tier": "standard",
+      "seed": 1,
+      "policy": "default",
+      "opening": {
+        "turn": 1,
+        "cash": 30000,
+        "debt": 0,
+        "net": 426,
+        "grain": 13860,
+        "foodNeed": 308,
+        "foodShortfall": 0,
+        "living": 56,
+        "stability": 76,
+        "provinces": 10,
+        "life": 2160,
+        "central": 6000
+      },
+      "samples": [
+        {
+          "turn": 37,
+          "cash": 6328,
+          "debt": 0,
+          "net": 324,
+          "grain": 12083,
+          "foodNeed": 308,
+          "foodShortfall": 0,
+          "living": 56,
+          "stability": 60,
+          "provinces": 10,
+          "life": 2124,
+          "central": 6000
+        },
+        {
+          "turn": 73,
+          "cash": 7154,
+          "debt": 0,
+          "net": 114,
+          "grain": 10394,
+          "foodNeed": 308,
+          "foodShortfall": 0,
+          "living": 56,
+          "stability": 53,
+          "provinces": 10,
+          "life": 2088,
+          "central": 6000
+        },
+        {
+          "turn": 109,
+          "cash": 2533,
+          "debt": 0,
+          "net": -222,
+          "grain": 5841,
+          "foodNeed": 308,
+          "foodShortfall": 0,
+          "living": 55,
+          "stability": 46,
+          "provinces": 10,
+          "life": 2052,
+          "central": 6000
+        }
+      ],
+      "orders": [],
+      "blocked": [],
+      "firstDebt": null,
+      "firstFoodShortfall": null,
+      "defenses": [],
+      "ended": null,
+      "final": {
+        "turn": 109,
+        "cash": 2533,
+        "debt": 0,
+        "net": -222,
+        "grain": 5841,
+        "foodNeed": 308,
+        "foodShortfall": 0,
+        "living": 55,
+        "stability": 46,
+        "provinces": 10,
+        "life": 2052,
+        "central": 6000
+      }
+    },
+    {
+      "tier": "standard",
+      "seed": 1,
+      "policy": "leisure",
+      "opening": {
+        "turn": 1,
+        "cash": 30000,
+        "debt": 0,
+        "net": 426,
+        "grain": 13860,
+        "foodNeed": 308,
+        "foodShortfall": 0,
+        "living": 56,
+        "stability": 76,
+        "provinces": 10,
+        "life": 2160,
+        "central": 6000
+      },
+      "samples": [
+        {
+          "turn": 37,
+          "cash": 6296,
+          "debt": 0,
+          "net": 329,
+          "grain": 11739,
+          "foodNeed": 308,
+          "foodShortfall": 0,
+          "living": 56,
+          "stability": 60,
+          "provinces": 10,
+          "life": 2124,
+          "central": 6000
+        },
+        {
+          "turn": 73,
+          "cash": 7532,
+          "debt": 0,
+          "net": 121,
+          "grain": 10651,
+          "foodNeed": 308,
+          "foodShortfall": 0,
+          "living": 56,
+          "stability": 53,
+          "provinces": 10,
+          "life": 2088,
+          "central": 6000
+        },
+        {
+          "turn": 109,
+          "cash": 2350,
+          "debt": 0,
+          "net": -213,
+          "grain": 6068,
+          "foodNeed": 308,
+          "foodShortfall": 0,
+          "living": 55,
+          "stability": 46,
+          "provinces": 10,
+          "life": 2052,
+          "central": 6000
+        }
+      ],
+      "orders": [
+        {
+          "turn": 1,
+          "kind": "exam",
+          "cash": 29500
+        }
+      ],
+      "blocked": [],
+      "firstDebt": null,
+      "firstFoodShortfall": null,
+      "defenses": [],
+      "ended": null,
+      "final": {
+        "turn": 109,
+        "cash": 2350,
+        "debt": 0,
+        "net": -213,
+        "grain": 6068,
+        "foodNeed": 308,
+        "foodShortfall": 0,
+        "living": 55,
+        "stability": 46,
+        "provinces": 10,
+        "life": 2052,
+        "central": 6000
+      }
+    },
+    {
+      "tier": "veteran",
+      "seed": 1,
+      "policy": "default",
+      "opening": {
+        "turn": 1,
+        "cash": 22000,
+        "debt": 0,
+        "net": 293,
+        "grain": 10908,
+        "foodNeed": 303,
+        "foodShortfall": 0,
+        "living": 56,
+        "stability": 76,
+        "provinces": 10,
+        "life": 2160,
+        "central": 5000
+      },
+      "samples": [
+        {
+          "turn": 37,
+          "cash": 2728,
+          "debt": 355,
+          "net": 395,
+          "grain": 9918,
+          "foodNeed": 303,
+          "foodShortfall": 0,
+          "living": 56,
+          "stability": 60,
+          "provinces": 10,
+          "life": 2124,
+          "central": 5000
+        },
+        {
+          "turn": 73,
+          "cash": 6907,
+          "debt": 0,
+          "net": 99,
+          "grain": 8741,
+          "foodNeed": 295,
+          "foodShortfall": 0,
+          "living": 56,
+          "stability": 53,
+          "provinces": 10,
+          "life": 2088,
+          "central": 3746
+        },
+        {
+          "turn": 109,
+          "cash": 3034,
+          "debt": 84,
+          "net": -41,
+          "grain": 5170,
+          "foodNeed": 295,
+          "foodShortfall": 0,
+          "living": 55,
+          "stability": 46,
+          "provinces": 10,
+          "life": 2052,
+          "central": 3746
+        }
+      ],
+      "orders": [],
+      "blocked": [],
+      "firstDebt": 34,
+      "firstFoodShortfall": null,
+      "defenses": [
+        {
+          "turn": 68,
+          "before": 5000,
+          "after": 3746,
+          "title": "边境战报"
+        }
+      ],
+      "ended": null,
+      "final": {
+        "turn": 109,
+        "cash": 3034,
+        "debt": 84,
+        "net": -41,
+        "grain": 5170,
+        "foodNeed": 295,
+        "foodShortfall": 0,
+        "living": 55,
+        "stability": 46,
+        "provinces": 10,
+        "life": 2052,
+        "central": 3746
+      }
+    },
+    {
+      "tier": "veteran",
+      "seed": 1,
+      "policy": "leisure",
+      "opening": {
+        "turn": 1,
+        "cash": 22000,
+        "debt": 0,
+        "net": 293,
+        "grain": 10908,
+        "foodNeed": 303,
+        "foodShortfall": 0,
+        "living": 56,
+        "stability": 76,
+        "provinces": 10,
+        "life": 2160,
+        "central": 5000
+      },
+      "samples": [
+        {
+          "turn": 37,
+          "cash": 1962,
+          "debt": 0,
+          "net": 200,
+          "grain": 10500,
+          "foodNeed": 303,
+          "foodShortfall": 0,
+          "living": 56,
+          "stability": 60,
+          "provinces": 10,
+          "life": 2124,
+          "central": 5000
+        },
+        {
+          "turn": 73,
+          "cash": 5097,
+          "debt": 407,
+          "net": 298,
+          "grain": 9311,
+          "foodNeed": 295,
+          "foodShortfall": 0,
+          "living": 56,
+          "stability": 53,
+          "provinces": 10,
+          "life": 2088,
+          "central": 3687
+        },
+        {
+          "turn": 109,
+          "cash": 3111,
+          "debt": 13,
+          "net": -32,
+          "grain": 6021,
+          "foodNeed": 295,
+          "foodShortfall": 0,
+          "living": 55,
+          "stability": 46,
+          "provinces": 10,
+          "life": 2052,
+          "central": 3687
+        }
+      ],
+      "orders": [
+        {
+          "turn": 1,
+          "kind": "exam",
+          "cash": 21400
+        }
+      ],
+      "blocked": [],
+      "firstDebt": 64,
+      "firstFoodShortfall": null,
+      "defenses": [
+        {
+          "turn": 68,
+          "before": 5000,
+          "after": 3687,
+          "title": "边境战报"
+        }
+      ],
+      "ended": null,
+      "final": {
+        "turn": 109,
+        "cash": 3111,
+        "debt": 13,
+        "net": -32,
+        "grain": 6021,
+        "foodNeed": 295,
+        "foodShortfall": 0,
+        "living": 55,
+        "stability": 46,
+        "provinces": 10,
+        "life": 2052,
+        "central": 3687
+      }
+    }
+  ],
+  "errors": []
+}

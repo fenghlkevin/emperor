@@ -1,0 +1,171 @@
+{
+  "tool": "built-in image_gen",
+  "date": "2026-10-20",
+  "items": [
+    {
+      "id": "foreign-expansion-20261019-05",
+      "likeness": "迪丽热巴",
+      "asset": "assets/beauties/random/xinjiang-dilraba-summer-v4.png",
+      "prompt": "Edit target image, localized anatomical correction of LOWER BODY ONLY. Preserve the exact face, actress likeness, head, hair, hands, upper body, props, muted painterly style, jewelry and costume colors. The current feet look pasted on, both toe directions too lateral and awkwardly offset. Reconstruct a believable relaxed standing posture from hips through knees, calves, ankles and feet beneath the skirt. Both feet support the body on the SAME implied level ground plane; heels and forefeet naturally planted, ankles aligned with shins. Feet comfortably spaced about half a foot-width apart, uncrossed, one only slightly ahead (at most 5 cm), toes pointing mostly toward viewer with only subtle 5-15 degree natural turnout. Correct perspective and adult foot proportions. No extreme outward pointing feet, no twisted ankles, no pigeon toes, no crossing legs, no tiptoe, no dangling or floating feet. Let the hem fall naturally to ankle length; lower calves mostly covered, both complete low flat sandals clearly visible below hem, natural subtle asymmetry and stable center of gravity. Keep entire head and both soles visible with comfortable margin. True transparent alpha background, no backdrop/ground/glow/text/watermark. Retain existing soft restrained hand-painted historical game art finish; do not change face or introduce photorealistic feet. Character: Dilraba, blue dress and frame drum.",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "transparentFraction": 0.509,
+        "opaqueBorderPixels": 0,
+        "visualReview": "Lower body redrawn: uncrossed legs, feet beneath torso, reduced step depth, mostly forward toes, aligned shins and ankles; both sandals fully visible. Face, costume and painterly styling reviewed."
+      },
+      "previousVersions": [
+        {
+          "id": "foreign-expansion-20261019-05",
+          "likeness": "迪丽热巴",
+          "asset": "assets/beauties/random/xinjiang-dilraba-summer-v2.png",
+          "prompt": "Use case: stylized-concept. Create one full-body imperial historical fantasy game character portrait of adult Chinese actress Dilraba Dilmurat (迪丽热巴), recognizably her facial likeness, elegant natural face. Match reference's polished realistic painterly illustration, blue and ivory lightweight Xinjiang regional embroidered summer dress, embroidered small cap, long dark braided hair, delicate gold jewelry, holding a small frame drum with anatomically correct hands. Single woman only, entire head through both sandals visible with generous margin, vertical 2:3 composition. Truly transparent background, no scenery, no glow or painted backdrop, no text, no watermark. Tasteful fully clothed summer costume. Reference is style/costume only; replace face with Dilraba's distinct likeness.",
+          "validation": {
+            "size": [
+              1024,
+              1536
+            ],
+            "transparentFraction": 0.653,
+            "opaqueBorderPixels": 0,
+            "visualReview": "Full figure, hands, both sandals and regional summer costume checked."
+          }
+        },
+        {
+          "id": "foreign-expansion-20261019-05",
+          "likeness": "迪丽热巴",
+          "asset": "assets/beauties/random/xinjiang-dilraba-summer-v3.png",
+          "prompt": "Use case: style-transfer. Redraw game character portrait to match reference 2 (Nie Xiaoqian) closely in painterly rendering, soft facial modeling, delicate natural skin, subtle restrained makeup, muted colors, soft diffuse illumination and graceful character presence. Reference 1 is edit target; preserve adult actress facial identity, regional Xinjiang summer costume concept, prop and complete full body. Reference 2 is rendering style only; do not copy her white dress, hairstyle, supernatural elements or pose. Reference 3 (Xia Yuhe) is subdued harmonious color and gentle expression reference only; do not copy scenery. Reduce glossy skin highlights, harsh makeup, oversharpening, bright saturation, gold jewelry density and busy embroidery. Natural flowing fabric, selective detailed embroidery, calm elegant expression, painterly edges. Not fashion photography or glossy 3D render. Single adult woman, both hands anatomically correct, both feet visible, generous head and foot margins. True transparent alpha background, no glow/halo, scenery, text, watermark. Target: Dilraba Dilmurat 迪丽热巴, recognizable facial likeness, blue and ivory lightweight regional summer dress and small embroidered cap, holding frame drum. Muted dusty blue, soft ivory, antique gold accents.",
+          "validation": {
+            "size": [
+              1024,
+              1536
+            ],
+            "transparentFraction": 0.508,
+            "opaqueBorderPixels": 0,
+            "visualReview": "Full figure, hands, both feet; softer painterly skin, muted color and fabric checked against Nie Xiaoqian and Xia Yuhe."
+          },
+          "styleReferences": [
+            "assets/beauties/featured/nie-xiaoqian-v7.png",
+            "assets/scenes/tour/sketch-beauty-xia-yuhe-v3.png"
+          ]
+        }
+      ],
+      "styleReferences": [
+        "assets/beauties/featured/nie-xiaoqian-v7.png",
+        "assets/scenes/tour/sketch-beauty-xia-yuhe-v3.png"
+      ]
+    },
+    {
+      "id": "foreign-expansion-20261019-06",
+      "likeness": "哈妮克孜",
+      "asset": "assets/beauties/random/xinjiang-hankiz-summer-v4.png",
+      "prompt": "Edit target image, localized anatomical correction of LOWER BODY ONLY. Preserve the exact face, actress likeness, head, hair, hands, upper body, props, muted painterly style, jewelry and costume colors. The current feet look pasted on, both toe directions too lateral and awkwardly offset. Reconstruct a believable relaxed standing posture from hips through knees, calves, ankles and feet beneath the skirt. Both feet support the body on the SAME implied level ground plane; heels and forefeet naturally planted, ankles aligned with shins. Feet comfortably spaced about half a foot-width apart, uncrossed, one only slightly ahead (at most 5 cm), toes pointing mostly toward viewer with only subtle 5-15 degree natural turnout. Correct perspective and adult foot proportions. No extreme outward pointing feet, no twisted ankles, no pigeon toes, no crossing legs, no tiptoe, no dangling or floating feet. Let the hem fall naturally to ankle length; lower calves mostly covered, both complete low flat sandals clearly visible below hem, natural subtle asymmetry and stable center of gravity. Keep entire head and both soles visible with comfortable margin. True transparent alpha background, no backdrop/ground/glow/text/watermark. Retain existing soft restrained hand-painted historical game art finish; do not change face or introduce photorealistic feet. Character: Hankiz, purple grape basket dress. In particular REMOVE the crossed-leg runway stance: legs descend naturally from separate hips, do not cross; no isolated long shin projecting diagonally across the other leg. Lengthen front skirt hem modestly to ankle level while keeping grape embroidery and lightweight layers. Both feet are under the torso, one on each side of its center line.",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "transparentFraction": 0.486,
+        "opaqueBorderPixels": 0,
+        "visualReview": "Lower body redrawn: uncrossed legs, feet beneath torso, reduced step depth, mostly forward toes, aligned shins and ankles; both sandals fully visible. Face, costume and painterly styling reviewed."
+      },
+      "previousVersions": [
+        {
+          "id": "foreign-expansion-20261019-06",
+          "likeness": "哈妮克孜",
+          "asset": "assets/beauties/random/xinjiang-hankiz-summer-v2.png",
+          "prompt": "Use case: stylized-concept. Create one full-body imperial historical fantasy game character portrait of adult Chinese actress Hankiz Omar (哈妮克孜), recognizably her facial likeness, delicate oval face and expressive dark eyes. Reference image is style/costume only, replace its face with Hankiz's likeness. Polished realistic painterly illustration, lightweight grape purple and ivory Xinjiang embroidered summer dress, delicate golden jewelry, two long black braids and small light veil, holding a basket of grapes with natural correct hands. Single woman only, full figure from head to both sandals visible with comfortable margins, portrait 2:3. Truly transparent background with no gradient, glow, scenery or floor. Fully clothed tasteful summer clothing. No text or watermark.",
+          "validation": {
+            "size": [
+              1024,
+              1536
+            ],
+            "transparentFraction": 0.581,
+            "opaqueBorderPixels": 0,
+            "visualReview": "Full figure, hands, both sandals and regional summer costume checked."
+          }
+        },
+        {
+          "id": "foreign-expansion-20261019-06",
+          "likeness": "哈妮克孜",
+          "asset": "assets/beauties/random/xinjiang-hankiz-summer-v3.png",
+          "prompt": "Use case: style-transfer. Redraw game character portrait to match reference 2 (Nie Xiaoqian) closely in painterly rendering, soft facial modeling, delicate natural skin, subtle restrained makeup, muted colors, soft diffuse illumination and graceful character presence. Reference 1 is edit target; preserve adult actress facial identity, regional Xinjiang summer costume concept, prop and complete full body. Reference 2 is rendering style only; do not copy her white dress, hairstyle, supernatural elements or pose. Reference 3 (Xia Yuhe) is subdued harmonious color and gentle expression reference only; do not copy scenery. Reduce glossy skin highlights, harsh makeup, oversharpening, bright saturation, gold jewelry density and busy embroidery. Natural flowing fabric, selective detailed embroidery, calm elegant expression, painterly edges. Not fashion photography or glossy 3D render. Single adult woman, both hands anatomically correct, both feet visible, generous head and foot margins. True transparent alpha background, no glow/halo, scenery, text, watermark. Target: Hankiz Omar 哈妮克孜, recognizable facial likeness, purple and ivory lightweight Xinjiang regional summer dress, dark double braids, holding grape basket. Muted dusty plum purple, soft ivory, sparse antique gold accents.",
+          "validation": {
+            "size": [
+              1024,
+              1536
+            ],
+            "transparentFraction": 0.494,
+            "opaqueBorderPixels": 0,
+            "visualReview": "Full figure, hands, both feet; softer painterly skin, muted color and fabric checked against Nie Xiaoqian and Xia Yuhe."
+          },
+          "styleReferences": [
+            "assets/beauties/featured/nie-xiaoqian-v7.png",
+            "assets/scenes/tour/sketch-beauty-xia-yuhe-v3.png"
+          ]
+        }
+      ],
+      "styleReferences": [
+        "assets/beauties/featured/nie-xiaoqian-v7.png",
+        "assets/scenes/tour/sketch-beauty-xia-yuhe-v3.png"
+      ]
+    },
+    {
+      "id": "xinjiang-tongliya-20261020",
+      "likeness": "佟丽娅",
+      "asset": "assets/beauties/random/xinjiang-tongliya-summer-v3.png",
+      "prompt": "Edit target image, localized anatomical correction of LOWER BODY ONLY. Preserve the exact face, actress likeness, head, hair, hands, upper body, props, muted painterly style, jewelry and costume colors. The current feet look pasted on, both toe directions too lateral and awkwardly offset. Reconstruct a believable relaxed standing posture from hips through knees, calves, ankles and feet beneath the skirt. Both feet support the body on the SAME implied level ground plane; heels and forefeet naturally planted, ankles aligned with shins. Feet comfortably spaced about half a foot-width apart, uncrossed, one only slightly ahead (at most 5 cm), toes pointing mostly toward viewer with only subtle 5-15 degree natural turnout. Correct perspective and adult foot proportions. No extreme outward pointing feet, no twisted ankles, no pigeon toes, no crossing legs, no tiptoe, no dangling or floating feet. Let the hem fall naturally to ankle length; lower calves mostly covered, both complete low flat sandals clearly visible below hem, natural subtle asymmetry and stable center of gravity. Keep entire head and both soles visible with comfortable margin. True transparent alpha background, no backdrop/ground/glow/text/watermark. Retain existing soft restrained hand-painted historical game art finish; do not change face or introduce photorealistic feet. Character: Tong Liya, muted teal and ivory dress, hand gently holding skirt. Preserve skirt gesture but make the body a comfortable grounded standing pose, not an unstable dance pose. Straighten ankle-to-shin axes, reduce step depth and align feet naturally beneath hips.",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "transparentFraction": 0.519,
+        "opaqueBorderPixels": 0,
+        "visualReview": "Lower body redrawn: uncrossed legs, feet beneath torso, reduced step depth, mostly forward toes, aligned shins and ankles; both sandals fully visible. Face, costume and painterly styling reviewed."
+      },
+      "previousVersions": [
+        {
+          "id": "xinjiang-tongliya-20261020",
+          "likeness": "佟丽娅",
+          "asset": "assets/beauties/random/xinjiang-tongliya-summer-v1.png",
+          "prompt": "Use case: stylized-concept. Asset type: imperial historical fantasy game full-body transparent character portrait. Adult Chinese actress Tong Liya (佟丽娅), recognizably her facial likeness, graceful oval face, almond dark eyes, gentle smile with dimples. Same polished realistic painterly illustration as reference (reference is art style only). A distinct third Xinjiang regional character: lightweight turquoise and warm ivory embroidered summer dress, short flowing sleeves, fine gold embroidery, small embroidered cap and delicate gold earrings, long dark hair partly braided, elegant relaxed standing dance pose, one hand gently lifting the outer skirt edge, other arm relaxed. Fully clothed tasteful historical regional attire, no modern items. Single woman only, entire figure including top of head and both sandals visible with comfortable margins, portrait 2:3. True transparent alpha background, no scenery, gradient, halo, floor shadow, text, watermark. Anatomically correct two arms and two feet.",
+          "validation": {
+            "size": [
+              1024,
+              1536
+            ],
+            "transparentFraction": 0.551,
+            "opaqueBorderPixels": 0,
+            "visualReview": "Full figure, hands, both sandals and regional summer costume checked."
+          }
+        },
+        {
+          "id": "xinjiang-tongliya-20261020",
+          "likeness": "佟丽娅",
+          "asset": "assets/beauties/random/xinjiang-tongliya-summer-v2.png",
+          "prompt": "Use case: style-transfer. Redraw game character portrait to match reference 2 (Nie Xiaoqian) closely in painterly rendering, soft facial modeling, delicate natural skin, subtle restrained makeup, muted colors, soft diffuse illumination and graceful character presence. Reference 1 is edit target; preserve adult actress facial identity, regional Xinjiang summer costume concept, prop and complete full body. Reference 2 is rendering style only; do not copy her white dress, hairstyle, supernatural elements or pose. Reference 3 (Xia Yuhe) is subdued harmonious color and gentle expression reference only; do not copy scenery. Reduce glossy skin highlights, harsh makeup, oversharpening, bright saturation, gold jewelry density and busy embroidery. Natural flowing fabric, selective detailed embroidery, calm elegant expression, painterly edges. Not fashion photography or glossy 3D render. Single adult woman, both hands anatomically correct, both feet visible, generous head and foot margins. True transparent alpha background, no glow/halo, scenery, text, watermark. Target: Tong Liya 佟丽娅, recognizable facial likeness and gentle subtle smile, turquoise and ivory lightweight Xinjiang regional summer dress, long dark partly braided hair, small embroidered cap, graceful relaxed standing dance pose gently holding skirt edge with one hand. Muted soft teal, warm ivory, sparse antique gold accents.",
+          "validation": {
+            "size": [
+              1024,
+              1536
+            ],
+            "transparentFraction": 0.519,
+            "opaqueBorderPixels": 0,
+            "visualReview": "Full figure, hands, both feet; softer painterly skin, muted color and fabric checked against Nie Xiaoqian and Xia Yuhe."
+          },
+          "styleReferences": [
+            "assets/beauties/featured/nie-xiaoqian-v7.png",
+            "assets/scenes/tour/sketch-beauty-xia-yuhe-v3.png"
+          ]
+        }
+      ],
+      "styleReferences": [
+        "assets/beauties/featured/nie-xiaoqian-v7.png",
+        "assets/scenes/tour/sketch-beauty-xia-yuhe-v3.png"
+      ]
+    }
+  ]
+}

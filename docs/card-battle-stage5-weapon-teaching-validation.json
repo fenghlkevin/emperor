@@ -1,0 +1,135 @@
+{
+  "date": "2026-10-23T04:00:53.259139+00:00",
+  "scope": "Weapon lesson1:11 actual player actions,4 scripted opponent turns,15 formal records. Weapon combinations and presentation boundaries.",
+  "rulesVersion": 4,
+  "weaponCatalogVersion": 1,
+  "weaponAiVersion": 1,
+  "formalEngineCatalogAiChanged": false,
+  "sourceSha256": {
+    "src/card-battle-weapon-tutorial.mjs": "dc177f6d85854eb595e9a1d40ab930d8be999331c127579da9feaa7735a879f5",
+    "src/card-battle-tutorial.mjs": "297a481276c2cb9aa29d2c10222ecfb9a98888528b7a16162564dbbed1c10be5",
+    "src/card-battle-tutorial-ui.mjs": "fbe68feb0dac144e4eb1175ac62c79f46208be234241069d819f61a2c1903165",
+    "tests/card-battle-weapon-tutorial.test.mjs": "0dadf764156b1a61cbf7fa0cf31667d3ead983b5e43adb7467cdc9a01329e097",
+    "tests/card-battle-weapon-combinations.test.mjs": "74cd6e35458b41fcd42dcdc7cc3a7c39712dc2a63bc71bdad7608a23d81aeba9",
+    "tests/card-battle-weapon-tutorial-desktop.cjs": "94b5cd18f884c4ce60e87c27ed8678a881eadd83465f01fbba12e597a3c0eacb",
+    "package.json": "cfd2d74c11ec61946a8ee8160fe83c0de2f9e6f39e1d7f679e6b4db4b2a991fb",
+    "src/card-battle.mjs": "28ab64e4d9e4cc67b53f881e612ced076eaf330d711af466b52e4334174de7b8",
+    "src/card-battle-weapons.mjs": "0bcb4e0714d26975a5b4135af8042de6677ba2c2f205d3260203ab8518b45466",
+    "src/card-battle-ui.mjs": "200aec638c6d88c570e5b32264fc957d370193e58a8f13c2b5b06e7c5ca00a59"
+  },
+  "weaponTeachingDesktop": {
+    "date": "2026-10-23T03:56:46.296Z",
+    "elapsedSeconds": 27.357,
+    "checks": [
+      "basic teaching entry switches to explicitly isolated weapon lesson with fixed presets",
+      "fast mode preserves the real keep-hand opening",
+      "fast native equip uses a real two-durability slot",
+      "fast actual guard strike applies simultaneous retaliation and one durability",
+      "fast same-turn replacement never refreshes a spent hero attack",
+      "fast healing restores life without reviving real escort casualties",
+      "fast eleven native operations yield a true victory with fifteen unique records and no formal settlement",
+      "fast completed course exposes actual weapon/equipment/wear history",
+      "reduced mode preserves the real keep-hand opening",
+      "reduced native equip uses a real two-durability slot",
+      "reduced actual guard strike applies simultaneous retaliation and one durability",
+      "reduced same-turn replacement never refreshes a spent hero attack",
+      "reduced healing restores life without reviving real escort casualties",
+      "reduced eleven native operations yield a true victory with fifteen unique records and no formal settlement",
+      "reduced completed course exposes actual weapon/equipment/wear history",
+      "weapon restart restores the same people and real stock bindings",
+      "1440px keeps weapon cards5:7 and teaching coach outside fixed equipment/hero hit areas",
+      "1000px keeps weapon cards5:7 and teaching coach outside fixed equipment/hero hit areas",
+      "800px keeps weapon cards5:7 and teaching coach outside fixed equipment/hero hit areas",
+      "rapid duplicate equip click commits one action while animation is busy",
+      "weapon rules can switch back to the unchanged basic lesson",
+      "lesson switching, replay and skip never touch formal resources or save keys"
+    ],
+    "errors": []
+  },
+  "existingBasicTeachingRegression": {
+    "date": "2026-10-23T03:57:28.173Z",
+    "elapsedSeconds": 15.408,
+    "checks": [
+      "campaign offers isolated tutorial with explicit presets, scripted opponent and resource explanation",
+      "skip returns to the unchanged real campaign draft without a save or military order",
+      "confirmation without the required real swap does not advance or mutate the tutorial",
+      "native deployment spends one command and preserves the normal summon restriction",
+      "clicking a newly summoned unit explains the actual engine restriction",
+      "1440px tutorial preserves 5:7 cards and coach stays outside combat hit areas",
+      "1000px tutorial preserves 5:7 cards and coach stays outside combat hit areas",
+      "800px tutorial preserves 5:7 cards and coach stays outside combat hit areas",
+      "rules dialog pauses the scripted opponent without advancing a teaching step",
+      "native 5-attack strike leaves target at 5 health and receives simultaneous 3 retaliation",
+      "native hero ability pays its real two-command cost",
+      "rush cannot bypass a guard to attack a hero on entry",
+      "invalid spell target spends no command and does not advance the lesson",
+      "targeted temporary spell gives the real displayed +3 attack",
+      "end turn expires temporary attack through the shared engine and records the reason",
+      "fourteen native player actions complete a real victory with nineteen unique records and no formal settlement",
+      "completed tutorial exposes the same read-only detailed battle history",
+      "restart reproduces identical people, source ledger and presets without rerolling",
+      "restart during deployment cancels old animation and prevents late actions or duplicate dialogs",
+      "skipping and animation cleanup leave formal resources, military records and real save keys untouched",
+      "military register also offers the isolated teaching entry"
+    ],
+    "errors": []
+  },
+  "newModels": [
+    {
+      "command": "node --test tests/card-battle-weapon-tutorial.test.mjs",
+      "passed": 5,
+      "failed": 0,
+      "durationSeconds": 3.21331675,
+      "log": "/private/tmp/card-weapon-tutorial-model.log"
+    },
+    {
+      "command": "node --test tests/card-battle-weapon-combinations.test.mjs",
+      "passed": 5,
+      "failed": 0,
+      "durationSeconds": 2.74230325,
+      "log": "/private/tmp/card-weapon-combinations.log"
+    }
+  ],
+  "fullRegression": {
+    "command": "npm test",
+    "passed": 935,
+    "failed": 0,
+    "durationSeconds": 68.106452417,
+    "runtimeSnapshots": 40,
+    "negativeTypeChecks": "passed",
+    "log": "/private/tmp/card-weapon-teaching-full.log",
+    "timing": "All production logic and10 new models included. Subsequently changed only weapon opening explanatory copy, desktop fixture corrections, docs and npm alias. Final22 native weapon checks and21 basic checks use final UI copy."
+  },
+  "screenshots": [
+    "docs/screenshots/card-battle-weapon-tutorial-1440.png",
+    "docs/screenshots/card-battle-weapon-tutorial-1000.png",
+    "docs/screenshots/card-battle-weapon-tutorial-800.png"
+  ],
+  "review": "All three widths visually inspected. Coach scrolls when necessary and does not cover battlefield, hero or weapon slot; cards stay5:7. Existing normal weapon animation timing remains separately covered by weapon UI acceptance.",
+  "teachingIsolation": "Fresh real-source world with reserved kits. Explicit fixed hand,2HP/3ATK guard and6HP/0armor enemy hero; scripted opponent only ends. No production draw guarantee added; no formal world commit or settlement.",
+  "combinationFixtures": "Real-world weapon tutorial fixture used for burn/unused/freeze/silence/buff checks and settlement. Mutual hero death uses isolated engine fixture with actual historical death-draw definition plus counterattack/fatigue, not economy or balance evidence.",
+  "corrections": [
+    "Weapon opening now explains fixed hand instead of inherited vanguard guarantee text.",
+    "Desktop fixture initially tried record before the existing Complete Teaching action; corrected to wait idle then click completion.",
+    "Overlap assertion initially incorrectly required vertical separation although rectangles were horizontally separate; corrected actual rectangle relation.",
+    "Duplicate-click fixture initially searched for a now-flying hand node; corrected second native click to the original coordinates during busy animation."
+  ],
+  "remaining": [
+    "Secret design and implementation next, followed by locations, optional hero-replacement proposal and stage6.",
+    "Full final-version grouped47–53% across formations/people/training/army sizes/first side remains deferred to stage1;20 real games and1h foreground pending.",
+    "Audio explicitly deferred; no new save compatibility/migration/recovery tests."
+  ],
+  "wallClock": {
+    "start": "2026-10-23T03:42:23.782000+00:00",
+    "end": "2026-10-23T04:00:53.259139+00:00",
+    "seconds": 1109.5
+  },
+  "constraints": {
+    "hiddenIsolatedDesktop": true,
+    "desktopSerial": true,
+    "subagentsUsed": false,
+    "visibleProcessesStopped": false,
+    "originalRepositoryModified": false,
+    "newAudioOrProductionImages": false
+  }
+}

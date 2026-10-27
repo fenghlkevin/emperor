@@ -1,0 +1,611 @@
+{
+  "tool": "built-in image_gen",
+  "status": "completed",
+  "footwearRule": "所有姿势均光脚，包括本次前六张；保留随机池既有造型。",
+  "likenessNote": "公开成年照片直接作为输入；可见身体按照片与运动体型参考，其余按自然成人结构补全，非精确三维扫描。",
+  "items": [
+    {
+      "key": "wang-ziwen",
+      "name": "王子文",
+      "page": "https://www.sohu.com/a/865231033_122256742",
+      "imageUrl": "https://q8.itc.cn/images01/20250228/34af9bc513fc435fa4a5eea12de66db4.jpeg",
+      "ref": "assets/beauties/references/wang-ziwen-rework-20261022/birthday-2.jpg",
+      "title": "杏绡桃香",
+      "detail": "Use case: photorealistic-natural. Asset: ONE adult full-body Wang Ziwen 王子文 historical Chinese summer character cutout for game random portrait library. Supplied photo is her genuine 2025 adult age 38 birthday photo; use ONLY for facial identity and cheerful expression. Precisely reference her clear smiling eyes, distinctive narrow oval face, delicate small nose and natural lips. PRIMARY REQUEST: completely remake this character to feel BEAUTIFUL, WARM, APPROACHABLE, BRIGHT and gently playful. Give her the genuine radiant friendly smile from photo, softly lifted cheeks and smiling eyes with a small natural glimpse of upper teeth, inviting eye contact, relaxed brows. No cold stare, stern blank expression, heavily made-up angular face, intimidating glare or rigid posture. Natural detailed skin, flattering light peach makeup, realistic costume photography not doll/anime/illustration. Adult petite SLENDER healthy build, naturally balanced approximately 7.5 heads tall, head proportionate to full adult body, slim arms and waist, natural leg length, ordinary 70mm perspective, no big head/shrunken body. New graceful relaxed STANDING contrapposto, face near-front and head upright, shoulders relaxed, body slightly angled toward camera, one bare foot half-step forward, both bare feet grounded and visible. Warm pale-apricot and peach-pink lightweight SHORT-SLEEVE silk cross-collar jacket over opaque ivory fitted bodice and airy lined ivory long pleated summer skirt with delicate peach-blossom embroidery. Narrow peach silk waist sash; light soft drape rather than voluminous formal robes. Long dark hair loose half-up with small gold peach-blossom hairpins and pearl pins, soft natural face-framing wisps, delicate pearl drop earrings, thin jade-and-gold necklace, jade bracelet and embroidered waist sachet. One hand carries a small traditional woven bamboo basket with a few ripe peaches low beside hip, other hand gently holds one whole peach near waist; correctly grasped fruit/handle, five natural fingers each hand. Exactly two coherent arms/hands, two legs and two BARE FEET each with five toes, normal ankle connections, stable gravity, no shoes or socks. Entire hair ornaments, body, hems, hands, prop and all toes inside vertical 2:3 frame with generous clear margins, no clipping. GENUINELY TRANSPARENT alpha background, isolate character and basket/peach only. No room, table, cake, birthday crown, cats, modern objects, scenery, floor, shadow, glow, text/logos or watermark from reference. Soft warm-neutral light on skin/costume, NOT a colored background.",
+      "prompt": "Use case: photorealistic-natural. Asset: ONE adult full-body Wang Ziwen 王子文 historical Chinese summer character cutout for game random portrait library. Supplied photo is her genuine 2025 adult age 38 birthday photo; use ONLY for facial identity and cheerful expression. Precisely reference her clear smiling eyes, distinctive narrow oval face, delicate small nose and natural lips. PRIMARY REQUEST: completely remake this character to feel BEAUTIFUL, WARM, APPROACHABLE, BRIGHT and gently playful. Give her the genuine radiant friendly smile from photo, softly lifted cheeks and smiling eyes with a small natural glimpse of upper teeth, inviting eye contact, relaxed brows. No cold stare, stern blank expression, heavily made-up angular face, intimidating glare or rigid posture. Natural detailed skin, flattering light peach makeup, realistic costume photography not doll/anime/illustration. Adult petite SLENDER healthy build, naturally balanced approximately 7.5 heads tall, head proportionate to full adult body, slim arms and waist, natural leg length, ordinary 70mm perspective, no big head/shrunken body. New graceful relaxed STANDING contrapposto, face near-front and head upright, shoulders relaxed, body slightly angled toward camera, one bare foot half-step forward, both bare feet grounded and visible. Warm pale-apricot and peach-pink lightweight SHORT-SLEEVE silk cross-collar jacket over opaque ivory fitted bodice and airy lined ivory long pleated summer skirt with delicate peach-blossom embroidery. Narrow peach silk waist sash; light soft drape rather than voluminous formal robes. Long dark hair loose half-up with small gold peach-blossom hairpins and pearl pins, soft natural face-framing wisps, delicate pearl drop earrings, thin jade-and-gold necklace, jade bracelet and embroidered waist sachet. One hand carries a small traditional woven bamboo basket with a few ripe peaches low beside hip, other hand gently holds one whole peach near waist; correctly grasped fruit/handle, five natural fingers each hand. Exactly two coherent arms/hands, two legs and two BARE FEET each with five toes, normal ankle connections, stable gravity, no shoes or socks. Entire hair ornaments, body, hems, hands, prop and all toes inside vertical 2:3 frame with generous clear margins, no clipping. GENUINELY TRANSPARENT alpha background, isolate character and basket/peach only. No room, table, cake, birthday crown, cats, modern objects, scenery, floor, shadow, glow, text/logos or watermark from reference. Soft warm-neutral light on skin/costume, NOT a colored background.",
+      "id": "mainland-photo-eight-20261022-01",
+      "asset": "assets/beauties/random/女明星/王子文-杏绡桃香-v2.png",
+      "status": "completed",
+      "footwear": "barefoot",
+      "referenceDimensions": [
+        690,
+        1066
+      ],
+      "referenceSha256": "fdd7afe0996388be62cc711010a247ded001ae14a65a12395d87b536b4464d6b",
+      "poolScope": "mainland",
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a16133-240f-7033-bf18-3e8342b820ca/exec-a05e5b48-86b5-419c-8dab-107551e96274.png",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentFraction": 0.6232,
+        "nontransparentBorderPixels": 0,
+        "boundsAbove20": [
+          179,
+          25,
+          939,
+          1520
+        ]
+      },
+      "assetSha256": "20f5fd83a02a8d3b30afc036ed4b03dc26e6f7ad60274c015d867eeb19b0ca2f",
+      "visualReview": "对照2025年成年生日笑容照复核，重做为明朗微笑、暖杏桃色夏装和持桃篮的自然站姿。已查看原图及浅色/深蓝换底，头身协调、手脚接触自然、无鞋袜，alpha真实透明，边界完整。",
+      "history": [
+        {
+          "key": "wang-ziwen",
+          "name": "王子文",
+          "page": "https://www.ellechina.com/beauty/mingxingbangyang/a43395065/wangziwen-chunzhuang-2023/",
+          "imageUrl": "https://hips.hearstchina.com/hmg-prod/images/7-641bfcba36137.jpeg",
+          "ref": "assets/beauties/references/mainland-eight-20261022/wang-ziwen.jpg",
+          "title": "烟紫香篆",
+          "detail": "Wang Ziwen 王子文 adult age 36, petite lean adult figure, small narrow face and elegant sharp chin from photo, dark short hair styled into neat partial updo. Sitting comfortably cross-legged, spine upright, both bare feet visibly and naturally folded, holding small closed bronze incense burner securely between both hands at lap, NO smoke. Lavender short sleeved wrap blouse, opaque ivory camisole and loose pale purple silk trousers. Silver orchid hairpin, pearl drop earrings, thin gold necklace, jade bracelet and waist sachet.",
+          "prompt": "Use case: photorealistic-natural. Asset type: Chinese imperial game character, single adult full-body cutout. Actual input photo is FACE/IDENTITY and VISIBLE BUILD reference, preserve specific real person's distinctive face, brow/eye shapes, nose, mouth and jaw, individual likeness not generic model. New elegant historical Chinese summer silk/gauze clothing, airy light fabrics but opaque lined coverage. Realistic high quality costume photography, natural skin not illustration/plastic doll. Adult natural head/body proportions around 7.5 heads standing, normal 70mm perspective, natural shoulders/torso/legs. Exactly two arms, two anatomically natural hands with five fingers, two legs and two BARE FEET, five toes per foot, normal ankles, no shoes/socks/footwear under any circumstances. Natural stable pose, credible gravity and object contact, all limbs and props fully inside 2:3 portrait canvas with 7% clear margin, no cropping. True transparent alpha background, no environment, no floor, no shadows/glow, no background colors, no text/logo/watermark. Nonsexual ordinary portrait. Wang Ziwen 王子文 adult age 36, petite lean adult figure, small narrow face and elegant sharp chin from photo, dark short hair styled into neat partial updo. Sitting comfortably cross-legged, spine upright, both bare feet visibly and naturally folded, holding small closed bronze incense burner securely between both hands at lap, NO smoke. Lavender short sleeved wrap blouse, opaque ivory camisole and loose pale purple silk trousers. Silver orchid hairpin, pearl drop earrings, thin gold necklace, jade bracelet and waist sachet.",
+          "id": "mainland-photo-eight-20261022-01",
+          "asset": "assets/beauties/random/女明星/王子文-烟紫香篆.png",
+          "status": "completed",
+          "footwear": "barefoot",
+          "referenceDimensions": [
+            1080,
+            1418
+          ],
+          "referenceSha256": "3b18165ffb848b1c8466aa5ae8a7bfb0b457a2c22a650ce20d7cb86ca42a7f04",
+          "poolScope": "mainland",
+          "sourcePath": "/Users/fengheliang/.codex/generated_images/01a16133-240f-7033-bf18-3e8342b820ca/exec-0c821dd2-1563-48f8-8327-2e207208a3cd.png",
+          "footVisibilityEdit": "保留面部、上半身和香炉，仅调整盘坐下摆，使两只光脚分别露出、方向自然。",
+          "validation": {
+            "size": [
+              1024,
+              1536
+            ],
+            "mode": "RGBA",
+            "alphaRange": [
+              0,
+              254
+            ],
+            "transparentFraction": 0.4203,
+            "nontransparentBorderPixels": 0,
+            "boundsAbove20": [
+              22,
+              20,
+              1016,
+              1509
+            ]
+          },
+          "assetSha256": "ad5c7eec9aa244210d42daee87335f873445bbd5f9bfa09ee76326b09b56a24a",
+          "visualReview": "已对照输入照片查看成图；浅色、深蓝色换底及脚部放大图复核：无鞋袜、人物道具完整，未见明显多余肢体，头身与关节衔接自然。遮挡处不宣称逐指逐趾均可见。"
+        }
+      ],
+      "references": [
+        {
+          "path": "assets/beauties/references/wang-ziwen-rework-20261022/birthday-2.jpg",
+          "imageUrl": "https://q8.itc.cn/images01/20250228/34af9bc513fc435fa4a5eea12de66db4.jpeg",
+          "role": "Adult smiling face/identity reference, 2025 birthday photo",
+          "size": [
+            690,
+            1066
+          ],
+          "sha256": "fdd7afe0996388be62cc711010a247ded001ae14a65a12395d87b536b4464d6b"
+        }
+      ],
+      "revisionManifest": "docs/art/wang-ziwen-warm-rework-2026-10-22.json"
+    },
+    {
+      "key": "liu-xuan",
+      "name": "刘璇",
+      "page": "https://astro.sina.com.cn/v/ss/2018-08-10/doc-ihhnunsq6044129.shtml",
+      "imageUrl": "https://n.sinaimg.cn/astro/transform/575/w550h825/20180810/LA6S-hhnunsq6010277.jpg",
+      "ref": "assets/beauties/references/mainland-eight-20261022/liu-xuan-2018.jpg",
+      "title": "绯练轻舞",
+      "detail": "Liu Xuan 刘璇, the adult Chinese Olympic gymnast, adult age 39 as in 2018 reference. Use THIS newly supplied elegant portrait for refined facial likeness: softly arched brows, clear bright eyes, delicate nose, soft pink lips and gentle CLOSED-MOUTH smile, no wide open-mouth laugh, no heavy facial shadows. Entirely new graceful SLIM LIGHT petite gymnast body with slender arms, fine neck, slim waist, lightly toned long legs; no bulky deltoids, no stocky torso or heavy thighs. Grounded paused elegant classical dance pose with upright long spine, relaxed shoulders, both bare feet on ground one lightly turned out, no balancing on a beam or acrobatics. One hand holds a short coral silk dance ribbon low beside hip, other arm curved softly low at waist, natural hands/wrists. Light coral sleeveless fitted silk top and opaque ivory ankle-length divided dance skirt, peach gauze stole falling naturally. Neat braided half-up hair with pearl flower hairpin, jade earrings, thin pearl necklace, small gold bracelet and waist jade tassel. No sports equipment or modern objects.",
+      "prompt": "Use case: photorealistic-natural. Asset: one realistic Chinese historical summer costume full-body character for game random beauty library. Actual supplied photo is FACE IDENTITY REFERENCE ONLY, preserve person's recognisable face/brows/eyes/nose/lips/jaw, but newly generate entire body, costume, pose and props. Adult woman with graceful slender healthy build, slim arms, narrow natural shoulders, light waist and long proportionate legs, subtle tone rather than bulky muscles. Natural approximately 7.5-head standing proportions, appropriately small head on full-size body, normal 70mm perspective. Elegant flattering refined natural makeup, detailed real skin, no cartoon or doll. Light silk and gauze summer historical Chinese clothing with opaque lined coverage. All poses BAREFOOT, no shoes/socks/footwear. Exactly two coherent arms, two hands with five natural fingers each, two legs and two natural bare feet with five toes each. Stable balanced posture, feet/ankles naturally oriented, credible hand contact with props. Full hair ornaments to toes, all props and hems within 2:3 portrait canvas, at least 5% transparent margins, no cropping. GENUINE transparent alpha background, isolated figure and named props only, no scene, floor, cast shadow, glow, text, watermark or modern items. Subject: Liu Xuan 刘璇, the adult Chinese Olympic gymnast, adult age 39 as in 2018 reference. Use THIS newly supplied elegant portrait for refined facial likeness: softly arched brows, clear bright eyes, delicate nose, soft pink lips and gentle CLOSED-MOUTH smile, no wide open-mouth laugh, no heavy facial shadows. Entirely new graceful SLIM LIGHT petite gymnast body with slender arms, fine neck, slim waist, lightly toned long legs; no bulky deltoids, no stocky torso or heavy thighs. Grounded paused elegant classical dance pose with upright long spine, relaxed shoulders, both bare feet on ground one lightly turned out, no balancing on a beam or acrobatics. One hand holds a short coral silk dance ribbon low beside hip, other arm curved softly low at waist, natural hands/wrists. Light coral sleeveless fitted silk top and opaque ivory ankle-length divided dance skirt, peach gauze stole falling naturally. Neat braided half-up hair with pearl flower hairpin, jade earrings, thin pearl necklace, small gold bracelet and waist jade tassel. No sports equipment or modern objects.",
+      "id": "mainland-photo-eight-20261022-02",
+      "asset": "assets/beauties/random/女明星/刘璇-绯练轻舞-v2.png",
+      "status": "completed",
+      "footwear": "barefoot",
+      "referenceDimensions": [
+        550,
+        825
+      ],
+      "referenceSha256": "975312bf7cb6fda56f8630861422f326697cfe06dbf592ffc36d2d146a4cf4d9",
+      "poolScope": "mainland",
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a16133-240f-7033-bf18-3e8342b820ca/exec-97422589-227e-4f8f-bbd8-46ee851cff34.png",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentFraction": 0.5272,
+        "nontransparentBorderPixels": 0,
+        "boundsAbove20": [
+          62,
+          32,
+          1001,
+          1518
+        ]
+      },
+      "assetSha256": "1cc4a28e643807661d603fecf8bb28def7ff6b308d7c4a7d920c58722a4ef6cb",
+      "visualReview": "已对照照片与完整成图，复核浅色/深蓝换底：张雨霏为纤细站姿，刘璇为纤瘦轻盈站姿并更换面部参考，潘晓婷只持古风团扇；均光脚，手脚与头身比例自然，透明边缘完整。",
+      "history": [
+        {
+          "key": "liu-xuan",
+          "name": "刘璇",
+          "page": "https://m.mp.oeeee.com/a/BAAFRD000020230322775263.html",
+          "imageUrl": "https://p1-mp.oeeee.com/202303/22/1663x2500_641ad91cda114.jpg",
+          "ref": "assets/beauties/references/mainland-eight-20261022/liu-xuan.jpg",
+          "title": "绯练轻舞",
+          "detail": "Liu Xuan 刘璇 Olympic gymnast adult age 40, compact strong athletic body, defined shoulders and legs, preserve actual face from photo. Paused gentle dance pose on two bare feet: one foot flat bearing weight, other foot beside it resting on toes, one arm curved outward at shoulder level, other low holding short red silk dance ribbon. No acrobatics, no jumping. Coral short sleeved silk dance top and opaque light peach divided skirt with natural summer drape. Neat braided bun, gold leaf hairpin, small gold earrings, jade pendant and wrist bangles.",
+          "prompt": "Use case: photorealistic-natural. Asset type: Chinese imperial game character, single adult full-body cutout. Actual input photo is FACE/IDENTITY and VISIBLE BUILD reference, preserve specific real person's distinctive face, brow/eye shapes, nose, mouth and jaw, individual likeness not generic model. New elegant historical Chinese summer silk/gauze clothing, airy light fabrics but opaque lined coverage. Realistic high quality costume photography, natural skin not illustration/plastic doll. Adult natural head/body proportions around 7.5 heads standing, normal 70mm perspective, natural shoulders/torso/legs. Exactly two arms, two anatomically natural hands with five fingers, two legs and two BARE FEET, five toes per foot, normal ankles, no shoes/socks/footwear under any circumstances. Natural stable pose, credible gravity and object contact, all limbs and props fully inside 2:3 portrait canvas with 7% clear margin, no cropping. True transparent alpha background, no environment, no floor, no shadows/glow, no background colors, no text/logo/watermark. Nonsexual ordinary portrait. Liu Xuan 刘璇 Olympic gymnast adult age 40, compact strong athletic body, defined shoulders and legs, preserve actual face from photo. Paused gentle dance pose on two bare feet: one foot flat bearing weight, other foot beside it resting on toes, one arm curved outward at shoulder level, other low holding short red silk dance ribbon. No acrobatics, no jumping. Coral short sleeved silk dance top and opaque light peach divided skirt with natural summer drape. Neat braided bun, gold leaf hairpin, small gold earrings, jade pendant and wrist bangles.",
+          "id": "mainland-photo-eight-20261022-02",
+          "asset": "assets/beauties/random/女明星/刘璇-绯练轻舞.png",
+          "status": "completed",
+          "footwear": "barefoot",
+          "referenceDimensions": [
+            1663,
+            2500
+          ],
+          "referenceSha256": "8badf4171fa95ac71d11195c6deef02789c996618713258aae1ff688187643d5",
+          "poolScope": "mainland",
+          "sourcePath": "/Users/fengheliang/.codex/generated_images/01a16133-240f-7033-bf18-3e8342b820ca/exec-9cee9b1a-3d46-4067-99fb-22b11f4d0334.png",
+          "validation": {
+            "size": [
+              1024,
+              1536
+            ],
+            "mode": "RGBA",
+            "alphaRange": [
+              0,
+              254
+            ],
+            "transparentFraction": 0.5737,
+            "nontransparentBorderPixels": 0,
+            "boundsAbove20": [
+              18,
+              31,
+              1009,
+              1471
+            ]
+          },
+          "assetSha256": "51ff05284693626698920d814b3462a313bf030a4528c2d5bb0cc65be1a59daa",
+          "visualReview": "已对照输入照片查看成图；浅色、深蓝色换底及脚部放大图复核：无鞋袜、人物道具完整，未见明显多余肢体，头身与关节衔接自然。遮挡处不宣称逐指逐趾均可见。"
+        }
+      ],
+      "revisionManifest": "docs/art/mainland-three-rework-2026-10-22.json"
+    },
+    {
+      "key": "zhang-yufei",
+      "name": "张雨霏",
+      "page": "https://www.sohu.com/a/805939818_121948404",
+      "imageUrl": "https://q3.itc.cn/images03/20240903/25168ca7eb794a2ca65601aeaab9e4cb.jpeg",
+      "ref": "assets/beauties/references/mainland-eight-20261022/zhang-yufei-editorial-1.jpg",
+      "title": "碧水捧贝",
+      "detail": "Use case: photorealistic-natural. Asset: one full-body adult Zhang Yufei 张雨霏 Chinese historical summer costume portrait for game random beauty library. Input image 1: actual Zhang Yufei October 2024 SuperELLE fashion close-up, PRIMARY facial identity and flattering editorial makeup reference; image 2: same adult woman's fashion editorial side angle, supporting facial contour reference. Use ONLY these off-pool FASHION PHOTOS, do not reproduce swimming competition appearance or medal ceremony. Keep her recognizable brow/eye/nose/lip/jaw structure from new fashion photos; refined makeup, natural softly composed closed lips as in reference 1, no toothy sports-victory grin. Remove all cover typography, garments and accessories from photos. New elegant historical Chinese styling: graceful SLENDER healthy adult build, slim natural shoulders/arms/waist and long proportional legs, no bulky athlete muscles, realistic approximately 7.5 heads tall, normal 70mm perspective, appropriately sized head, natural neck. Upright relaxed STANDING three-quarter contrapposto with face toward viewer, stable gravity and two natural bare feet grounded and fully visible. Pale turquoise sleeveless summer silk ruqun bodice with opaque ivory lined long skirt, lightweight thin aqua gauze stole behind arms, delicate silver wave embroidery. Both hands hold modest pearly seashell bowl low at waist with relaxed elbows and correct finger contact. Half-up black hair with silver and pearl floral hairpins, pearl drop earrings, slender jade necklace, jade bracelet and small waist tassels. Exactly two anatomically coherent arms, two hands each with five fingers, two legs and two BARE FEET each with five toes, no shoes/socks. Entire hair ornaments, body, hands, flowing hem, bare feet and prop within portrait 2:3 frame with clear margins, no cropping. GENUINE transparent alpha background; isolated person and shell bowl ONLY, no scenery, no floor, shadow, halo, border, text, modern object or watermark. Realistic costume photography, natural detailed skin and fabric, no illustration/doll/airbrushed plastic.",
+      "prompt": "Use case: photorealistic-natural. Asset: one full-body adult Zhang Yufei 张雨霏 Chinese historical summer costume portrait for game random beauty library. Input image 1: actual Zhang Yufei October 2024 SuperELLE fashion close-up, PRIMARY facial identity and flattering editorial makeup reference; image 2: same adult woman's fashion editorial side angle, supporting facial contour reference. Use ONLY these off-pool FASHION PHOTOS, do not reproduce swimming competition appearance or medal ceremony. Keep her recognizable brow/eye/nose/lip/jaw structure from new fashion photos; refined makeup, natural softly composed closed lips as in reference 1, no toothy sports-victory grin. Remove all cover typography, garments and accessories from photos. New elegant historical Chinese styling: graceful SLENDER healthy adult build, slim natural shoulders/arms/waist and long proportional legs, no bulky athlete muscles, realistic approximately 7.5 heads tall, normal 70mm perspective, appropriately sized head, natural neck. Upright relaxed STANDING three-quarter contrapposto with face toward viewer, stable gravity and two natural bare feet grounded and fully visible. Pale turquoise sleeveless summer silk ruqun bodice with opaque ivory lined long skirt, lightweight thin aqua gauze stole behind arms, delicate silver wave embroidery. Both hands hold modest pearly seashell bowl low at waist with relaxed elbows and correct finger contact. Half-up black hair with silver and pearl floral hairpins, pearl drop earrings, slender jade necklace, jade bracelet and small waist tassels. Exactly two anatomically coherent arms, two hands each with five fingers, two legs and two BARE FEET each with five toes, no shoes/socks. Entire hair ornaments, body, hands, flowing hem, bare feet and prop within portrait 2:3 frame with clear margins, no cropping. GENUINE transparent alpha background; isolated person and shell bowl ONLY, no scenery, no floor, shadow, halo, border, text, modern object or watermark. Realistic costume photography, natural detailed skin and fabric, no illustration/doll/airbrushed plastic.",
+      "id": "mainland-photo-eight-20261022-03",
+      "asset": "assets/beauties/random/女明星/张雨霏-碧水捧贝-v3.png",
+      "status": "completed",
+      "footwear": "barefoot",
+      "referenceDimensions": [
+        1080,
+        1388
+      ],
+      "referenceSha256": "80d7489b3b9239ade701c58fa6c376009b7c6ab79771d6dd4949512a5878b3eb",
+      "poolScope": "mainland",
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a16133-240f-7033-bf18-3e8342b820ca/exec-8389befd-3682-4394-8528-0ee0ecb0f171.png",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentFraction": 0.494,
+        "nontransparentBorderPixels": 0,
+        "boundsAbove20": [
+          32,
+          16,
+          1005,
+          1527
+        ]
+      },
+      "assetSha256": "1ce7be0e16578e4a4338c199d8e7f02d64bb26dba8f7f44df55f7de28b4c1dde",
+      "visualReview": "对照非泳池SuperELLE近照及侧面照复核五官与妆容；成图为纤细站姿，手持贝盏，光脚，手脚和头身比例自然。浅色和深蓝底检查无背景残留，边界无不透明像素。",
+      "history": [
+        {
+          "key": "zhang-yufei",
+          "name": "张雨霏",
+          "page": "https://www.peopleapp.com/column/30046032917-500005625120",
+          "imageUrl": "https://cdnjdphoto.aikan.pdnews.cn/zhbj-20240729/image/content/8e13439a43594122b27cb497e9ebbbc1.jpeg",
+          "ref": "assets/beauties/references/mainland-eight-20261022/zhang-yufei.jpg",
+          "title": "碧水捧贝",
+          "detail": "Zhang Yufei 张雨霏 adult age 26, Chinese swimmer, reference shows her OWN face with strong dark brows and recognizable smile. Preserve swimmer athletic physique with broad shoulders, strong upper arms and natural strong thighs, do not make runway model skinny. Sitting upright on low simple wooden stool, both bare feet naturally flat and visible, knees aligned. Both hands cradle a large pearly seashell bowl at lap. Turquoise sleeveless cross-collar silk top, opaque ivory loose silk trousers and a pale aqua gauze sash. High bun, silver wave hairpins, pearl earrings, shell pendant necklace and silver bracelet. Isolate stool with her.",
+          "prompt": "Use case: photorealistic-natural. Asset type: Chinese imperial game character, single adult full-body cutout. Actual input photo is FACE/IDENTITY and VISIBLE BUILD reference, preserve specific real person's distinctive face, brow/eye shapes, nose, mouth and jaw, individual likeness not generic model. New elegant historical Chinese summer silk/gauze clothing, airy light fabrics but opaque lined coverage. Realistic high quality costume photography, natural skin not illustration/plastic doll. Adult natural head/body proportions around 7.5 heads standing, normal 70mm perspective, natural shoulders/torso/legs. Exactly two arms, two anatomically natural hands with five fingers, two legs and two BARE FEET, five toes per foot, normal ankles, no shoes/socks/footwear under any circumstances. Natural stable pose, credible gravity and object contact, all limbs and props fully inside 2:3 portrait canvas with 7% clear margin, no cropping. True transparent alpha background, no environment, no floor, no shadows/glow, no background colors, no text/logo/watermark. Nonsexual ordinary portrait. Zhang Yufei 张雨霏 adult age 26, Chinese swimmer, reference shows her OWN face with strong dark brows and recognizable smile. Preserve swimmer athletic physique with broad shoulders, strong upper arms and natural strong thighs, do not make runway model skinny. Sitting upright on low simple wooden stool, both bare feet naturally flat and visible, knees aligned. Both hands cradle a large pearly seashell bowl at lap. Turquoise sleeveless cross-collar silk top, opaque ivory loose silk trousers and a pale aqua gauze sash. High bun, silver wave hairpins, pearl earrings, shell pendant necklace and silver bracelet. Isolate stool with her.",
+          "id": "mainland-photo-eight-20261022-03",
+          "asset": "assets/beauties/random/女明星/张雨霏-碧水捧贝.png",
+          "status": "completed",
+          "footwear": "barefoot",
+          "referenceDimensions": [
+            2515,
+            3706
+          ],
+          "referenceSha256": "7beadad130c69918a3505e714f5893314079358cc1cbda9d52d58f35406f421d",
+          "poolScope": "mainland",
+          "sourcePath": "/Users/fengheliang/.codex/generated_images/01a16133-240f-7033-bf18-3e8342b820ca/exec-1476327a-9bda-4adc-a15e-ad14685423d2.png",
+          "validation": {
+            "size": [
+              1024,
+              1536
+            ],
+            "mode": "RGBA",
+            "alphaRange": [
+              0,
+              254
+            ],
+            "transparentFraction": 0.5612,
+            "nontransparentBorderPixels": 0,
+            "boundsAbove20": [
+              90,
+              14,
+              937,
+              1506
+            ]
+          },
+          "assetSha256": "4f8481b0955fceb958f379bbc82d93d70b5b600826a5089a17a20c2146c89052",
+          "visualReview": "已对照输入照片查看成图；浅色、深蓝色换底及脚部放大图复核：无鞋袜、人物道具完整，未见明显多余肢体，头身与关节衔接自然。遮挡处不宣称逐指逐趾均可见。"
+        },
+        {
+          "key": "zhang-yufei",
+          "name": "张雨霏",
+          "page": "https://www.peopleapp.com/column/30046032917-500005625120",
+          "imageUrl": "https://cdnjdphoto.aikan.pdnews.cn/zhbj-20240729/image/content/8e13439a43594122b27cb497e9ebbbc1.jpeg",
+          "ref": "assets/beauties/references/mainland-eight-20261022/zhang-yufei.jpg",
+          "title": "碧水捧贝",
+          "detail": "Zhang Yufei 张雨霏, adult age 26, retain own face from actual medal ceremony photo, thick dark eyebrows and friendly eyes, gentle CLOSED-MOUTH smile. User requests specifically a SLENDER STANDING reinterpretation: slim feminine arms and shoulders, lean long limbs, avoid broad muscular swimmer silhouette and heavy torso. Relaxed upright contrapposto with both bare feet grounded and visible side by side, one slightly forward, no sitting, no stool. Turquoise sleeveless high-waist summer ruqun with pale ivory lined flowing skirt and a very thin aqua stole loosely falling behind arms. Both hands hold a modest pearly seashell bowl low at waist with relaxed elbows. High partial updo with silver wave hairpin, pearl earrings, slender necklace, jade bracelet and waist tassels. Do not copy sports jacket, medals or logos.",
+          "prompt": "Use case: photorealistic-natural. Asset: one realistic Chinese historical summer costume full-body character for game random beauty library. Actual supplied photo is FACE IDENTITY REFERENCE ONLY, preserve person's recognisable face/brows/eyes/nose/lips/jaw, but newly generate entire body, costume, pose and props. Adult woman with graceful slender healthy build, slim arms, narrow natural shoulders, light waist and long proportionate legs, subtle tone rather than bulky muscles. Natural approximately 7.5-head standing proportions, appropriately small head on full-size body, normal 70mm perspective. Elegant flattering refined natural makeup, detailed real skin, no cartoon or doll. Light silk and gauze summer historical Chinese clothing with opaque lined coverage. All poses BAREFOOT, no shoes/socks/footwear. Exactly two coherent arms, two hands with five natural fingers each, two legs and two natural bare feet with five toes each. Stable balanced posture, feet/ankles naturally oriented, credible hand contact with props. Full hair ornaments to toes, all props and hems within 2:3 portrait canvas, at least 5% transparent margins, no cropping. GENUINE transparent alpha background, isolated figure and named props only, no scene, floor, cast shadow, glow, text, watermark or modern items. Subject: Zhang Yufei 张雨霏, adult age 26, retain own face from actual medal ceremony photo, thick dark eyebrows and friendly eyes, gentle CLOSED-MOUTH smile. User requests specifically a SLENDER STANDING reinterpretation: slim feminine arms and shoulders, lean long limbs, avoid broad muscular swimmer silhouette and heavy torso. Relaxed upright contrapposto with both bare feet grounded and visible side by side, one slightly forward, no sitting, no stool. Turquoise sleeveless high-waist summer ruqun with pale ivory lined flowing skirt and a very thin aqua stole loosely falling behind arms. Both hands hold a modest pearly seashell bowl low at waist with relaxed elbows. High partial updo with silver wave hairpin, pearl earrings, slender necklace, jade bracelet and waist tassels. Do not copy sports jacket, medals or logos.",
+          "id": "mainland-photo-eight-20261022-03",
+          "asset": "assets/beauties/random/女明星/张雨霏-碧水捧贝-v2.png",
+          "status": "completed",
+          "footwear": "barefoot",
+          "referenceDimensions": [
+            2515,
+            3706
+          ],
+          "referenceSha256": "7beadad130c69918a3505e714f5893314079358cc1cbda9d52d58f35406f421d",
+          "poolScope": "mainland",
+          "sourcePath": "/Users/fengheliang/.codex/generated_images/01a16133-240f-7033-bf18-3e8342b820ca/exec-b4a1dd55-5829-485d-bcc4-d1846ff6c905.png",
+          "validation": {
+            "size": [
+              1024,
+              1536
+            ],
+            "mode": "RGBA",
+            "alphaRange": [
+              0,
+              254
+            ],
+            "transparentFraction": 0.5354,
+            "nontransparentBorderPixels": 0,
+            "boundsAbove20": [
+              64,
+              10,
+              964,
+              1524
+            ]
+          },
+          "assetSha256": "25a4a69a869cc8ed5a6b61ce8aa85353a434dc232dd9f77ab741efcce2229f56",
+          "visualReview": "已对照照片与完整成图，复核浅色/深蓝换底：张雨霏为纤细站姿，刘璇为纤瘦轻盈站姿并更换面部参考，潘晓婷只持古风团扇；均光脚，手脚与头身比例自然，透明边缘完整。",
+          "revisionManifest": "docs/art/mainland-three-rework-2026-10-22.json"
+        }
+      ],
+      "revisionManifest": "docs/art/zhang-yufei-editorial-rework-2026-10-22.json",
+      "references": [
+        {
+          "path": "assets/beauties/references/mainland-eight-20261022/zhang-yufei-editorial-1.jpg",
+          "imageUrl": "https://q3.itc.cn/images03/20240903/25168ca7eb794a2ca65601aeaab9e4cb.jpeg",
+          "role": "Primary face and editorial makeup reference",
+          "size": [
+            1080,
+            1388
+          ],
+          "sha256": "80d7489b3b9239ade701c58fa6c376009b7c6ab79771d6dd4949512a5878b3eb"
+        },
+        {
+          "path": "assets/beauties/references/mainland-eight-20261022/zhang-yufei-editorial-2.jpg",
+          "imageUrl": "https://q3.itc.cn/images03/20240903/2e4af2daf87346d7ab55faeb9656c400.jpeg",
+          "role": "Supporting facial contour reference",
+          "size": [
+            1080,
+            1388
+          ],
+          "sha256": "1c2124c85e07adfd064f09eb0429cf91de24237dabbd8ead1618687cbc20f24f"
+        }
+      ]
+    },
+    {
+      "key": "hui-ruoqi",
+      "name": "惠若琪",
+      "page": "https://www.sohu.com/a/352677996_351928",
+      "imageUrl": "https://5b0988e595225.cdn.sohucs.com/images/20191109/ca159cb92dca4e39908a809142f0e15d.jpeg",
+      "ref": "assets/beauties/references/mainland-eight-20261022/hui-ruoqi.jpg",
+      "title": "青绡绣球",
+      "detail": "Hui Ruoqi 惠若琪 adult age 28, tall strong volleyball athlete build, broad natural shoulders and very long legs, her own facial features as in photo. Relaxed standing contrapposto on both bare feet spaced naturally, hold a small traditional embroidered silk ball at waist in both hands, no modern logos. Jade green sleeveless long silk tunic with side openings over opaque ivory wide-leg silk trousers, light gauze stole and soft waist belt. Braided partial updo, jade comb, pearl drop earrings, fine necklace, silver bracelet and embroidered waist tassel. Entire head-to-bare-toe composition.",
+      "prompt": "Use case: photorealistic-natural. Asset type: Chinese imperial game character, single adult full-body cutout. Actual input photo is FACE/IDENTITY and VISIBLE BUILD reference, preserve specific real person's distinctive face, brow/eye shapes, nose, mouth and jaw, individual likeness not generic model. New elegant historical Chinese summer silk/gauze clothing, airy light fabrics but opaque lined coverage. Realistic high quality costume photography, natural skin not illustration/plastic doll. Adult natural head/body proportions around 7.5 heads standing, normal 70mm perspective, natural shoulders/torso/legs. Exactly two arms, two anatomically natural hands with five fingers, two legs and two BARE FEET, five toes per foot, normal ankles, no shoes/socks/footwear under any circumstances. Natural stable pose, credible gravity and object contact, all limbs and props fully inside 2:3 portrait canvas with 7% clear margin, no cropping. True transparent alpha background, no environment, no floor, no shadows/glow, no background colors, no text/logo/watermark. Nonsexual ordinary portrait. Hui Ruoqi 惠若琪 adult age 28, tall strong volleyball athlete build, broad natural shoulders and very long legs, her own facial features as in photo. Relaxed standing contrapposto on both bare feet spaced naturally, hold a small traditional embroidered silk ball at waist in both hands, no modern logos. Jade green sleeveless long silk tunic with side openings over opaque ivory wide-leg silk trousers, light gauze stole and soft waist belt. Braided partial updo, jade comb, pearl drop earrings, fine necklace, silver bracelet and embroidered waist tassel. Entire head-to-bare-toe composition.",
+      "id": "mainland-photo-eight-20261022-04",
+      "asset": "assets/beauties/random/女明星/惠若琪-青绡绣球.png",
+      "status": "completed",
+      "footwear": "barefoot",
+      "referenceDimensions": [
+        640,
+        949
+      ],
+      "referenceSha256": "e6644f8ba6ce18a3c298f3bdb1f460513cb6fea6798ff0a86cf765d426638eca",
+      "poolScope": "mainland",
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a16133-240f-7033-bf18-3e8342b820ca/exec-18ffd236-db8b-406f-acc4-167d0893fdf2.png",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentFraction": 0.6613,
+        "nontransparentBorderPixels": 0,
+        "boundsAbove20": [
+          215,
+          29,
+          894,
+          1511
+        ]
+      },
+      "assetSha256": "2dd2a1a86fda889e17d623d1d366a9b439a7a45869bc06fe9508a95cf300baa4",
+      "visualReview": "已对照输入照片查看成图；浅色、深蓝色换底及脚部放大图复核：无鞋袜、人物道具完整，未见明显多余肢体，头身与关节衔接自然。遮挡处不宣称逐指逐趾均可见。"
+    },
+    {
+      "key": "xia-sining",
+      "name": "夏思凝",
+      "page": "https://www.chooseauto.com.cn/news/121897.shtml",
+      "imageUrl": "https://image.chooseauto.com.cn/2023/09/11/660dba93aad447f6bb103754d7c18e23.jpg%40webp",
+      "ref": "assets/beauties/references/mainland-eight-20261022/xia-sining.jpg",
+      "title": "杏绡展卷",
+      "detail": "Xia Sining 夏思凝 adult age 22, Chinese hurdler, preserve facial features and athletic toned long-legged build, natural muscle not ultra skinny. Standing relaxed with one knee slightly bent and bare foot advanced, both bare feet fully visible, holding partly unrolled paper scroll horizontally at waist in both hands, blank unlettered scroll. Warm apricot sleeveless silk jacket over opaque ivory short-sleeved underblouse and flowing pale gold ankle-length pleated skirt ending above feet. High ponytail with gold leaf comb, subtle jade drop earrings, fine gold necklace, jade bracelet, waist pendant.",
+      "prompt": "Use case: photorealistic-natural. Asset type: Chinese imperial game character, single adult full-body cutout. Actual input photo is FACE/IDENTITY and VISIBLE BUILD reference, preserve specific real person's distinctive face, brow/eye shapes, nose, mouth and jaw, individual likeness not generic model. New elegant historical Chinese summer silk/gauze clothing, airy light fabrics but opaque lined coverage. Realistic high quality costume photography, natural skin not illustration/plastic doll. Adult natural head/body proportions around 7.5 heads standing, normal 70mm perspective, natural shoulders/torso/legs. Exactly two arms, two anatomically natural hands with five fingers, two legs and two BARE FEET, five toes per foot, normal ankles, no shoes/socks/footwear under any circumstances. Natural stable pose, credible gravity and object contact, all limbs and props fully inside 2:3 portrait canvas with 7% clear margin, no cropping. True transparent alpha background, no environment, no floor, no shadows/glow, no background colors, no text/logo/watermark. Nonsexual ordinary portrait. Xia Sining 夏思凝 adult age 22, Chinese hurdler, preserve facial features and athletic toned long-legged build, natural muscle not ultra skinny. Standing relaxed with one knee slightly bent and bare foot advanced, both bare feet fully visible, holding partly unrolled paper scroll horizontally at waist in both hands, blank unlettered scroll. Warm apricot sleeveless silk jacket over opaque ivory short-sleeved underblouse and flowing pale gold ankle-length pleated skirt ending above feet. High ponytail with gold leaf comb, subtle jade drop earrings, fine gold necklace, jade bracelet, waist pendant.",
+      "id": "mainland-photo-eight-20261022-05",
+      "asset": "assets/beauties/random/女明星/夏思凝-杏绡展卷.png",
+      "status": "completed",
+      "footwear": "barefoot",
+      "referenceDimensions": [
+        866,
+        578
+      ],
+      "referenceSha256": "e688c03d32834cc31feb856c98ce9a80b8f42133ebece5025acbe38e742a3f4b",
+      "poolScope": "mainland",
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a16133-240f-7033-bf18-3e8342b820ca/exec-3236e7db-12db-4d3f-b222-d3efc17630de.png",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentFraction": 0.6058,
+        "nontransparentBorderPixels": 0,
+        "boundsAbove20": [
+          174,
+          11,
+          906,
+          1512
+        ]
+      },
+      "assetSha256": "238ad4331e4dd5d8ea11509d6e3fc4044fc52388dc3af257b35ca045270b2678",
+      "visualReview": "已对照输入照片查看成图；浅色、深蓝色换底及脚部放大图复核：无鞋袜、人物道具完整，未见明显多余肢体，头身与关节衔接自然。遮挡处不宣称逐指逐趾均可见。"
+    },
+    {
+      "key": "pan-xiaoting",
+      "name": "潘晓婷",
+      "page": "https://www.xykuu.com/star/71.html",
+      "imageUrl": "https://qny.xykuu.com/1ca/image/20221114/4164c6f3db2c4a46a006ef3b67974985.jpg",
+      "ref": "assets/beauties/references/mainland-eight-20261022/pan-xiaoting.jpg",
+      "title": "墨绡团扇",
+      "detail": "Pan Xiaoting 潘晓婷 adult age 35, preserve her specific refined face from supplied portrait, calm natural slight smile. Reference contains a billiards cue: IGNORE THAT OBJECT, use photo ONLY for face. Completely new ancient Chinese noblewoman styling, NO cue, NO billiard ball, NO billiard table, NO modern sporting objects, no modern cheongsam silhouette. Standing relaxed three-quarter on two visible bare feet. Wearing black lightweight open gauze short-sleeve jacket over opaque ivory fitted historical bodice, flowing muted burgundy lined silk ruqun long skirt ending just above toes. One hand holds a classical ROUND SILK HAND FAN with a short carved wooden handle and plum blossom embroidery at waist, other hand gently resting beside skirt, no other handheld item. Elegant traditional updo with gold plum hairpins, garnet drop earrings, fine gold necklace, jade bangle and silk waist tassels. Full historical Chinese summer clothing and accessories only.",
+      "prompt": "Use case: photorealistic-natural. Asset: one realistic Chinese historical summer costume full-body character for game random beauty library. Actual supplied photo is FACE IDENTITY REFERENCE ONLY, preserve person's recognisable face/brows/eyes/nose/lips/jaw, but newly generate entire body, costume, pose and props. Adult woman with graceful slender healthy build, slim arms, narrow natural shoulders, light waist and long proportionate legs, subtle tone rather than bulky muscles. Natural approximately 7.5-head standing proportions, appropriately small head on full-size body, normal 70mm perspective. Elegant flattering refined natural makeup, detailed real skin, no cartoon or doll. Light silk and gauze summer historical Chinese clothing with opaque lined coverage. All poses BAREFOOT, no shoes/socks/footwear. Exactly two coherent arms, two hands with five natural fingers each, two legs and two natural bare feet with five toes each. Stable balanced posture, feet/ankles naturally oriented, credible hand contact with props. Full hair ornaments to toes, all props and hems within 2:3 portrait canvas, at least 5% transparent margins, no cropping. GENUINE transparent alpha background, isolated figure and named props only, no scene, floor, cast shadow, glow, text, watermark or modern items. Subject: Pan Xiaoting 潘晓婷 adult age 35, preserve her specific refined face from supplied portrait, calm natural slight smile. Reference contains a billiards cue: IGNORE THAT OBJECT, use photo ONLY for face. Completely new ancient Chinese noblewoman styling, NO cue, NO billiard ball, NO billiard table, NO modern sporting objects, no modern cheongsam silhouette. Standing relaxed three-quarter on two visible bare feet. Wearing black lightweight open gauze short-sleeve jacket over opaque ivory fitted historical bodice, flowing muted burgundy lined silk ruqun long skirt ending just above toes. One hand holds a classical ROUND SILK HAND FAN with a short carved wooden handle and plum blossom embroidery at waist, other hand gently resting beside skirt, no other handheld item. Elegant traditional updo with gold plum hairpins, garnet drop earrings, fine gold necklace, jade bangle and silk waist tassels. Full historical Chinese summer clothing and accessories only.",
+      "id": "mainland-photo-eight-20261022-06",
+      "asset": "assets/beauties/random/女明星/潘晓婷-墨绡团扇-v2.png",
+      "status": "completed",
+      "footwear": "barefoot",
+      "referenceDimensions": [
+        1680,
+        2520
+      ],
+      "referenceSha256": "e1a370e042465d3f8f4c4e6137fc69c4fac5d53096408fb6aa525c044b7c63a4",
+      "poolScope": "mainland",
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a16133-240f-7033-bf18-3e8342b820ca/exec-265f195f-9c6e-46fc-911f-fdfaec8e26fe.png",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentFraction": 0.5316,
+        "nontransparentBorderPixels": 0,
+        "boundsAbove20": [
+          123,
+          6,
+          948,
+          1529
+        ]
+      },
+      "assetSha256": "9494d9b1d08cc61271f81cf0229b90ba763b398377244fa26e3c6ceea938f777",
+      "visualReview": "已对照照片与完整成图，复核浅色/深蓝换底：张雨霏为纤细站姿，刘璇为纤瘦轻盈站姿并更换面部参考，潘晓婷只持古风团扇；均光脚，手脚与头身比例自然，透明边缘完整。",
+      "history": [
+        {
+          "key": "pan-xiaoting",
+          "name": "潘晓婷",
+          "page": "https://www.xykuu.com/star/71.html",
+          "imageUrl": "https://qny.xykuu.com/1ca/image/20221114/4164c6f3db2c4a46a006ef3b67974985.jpg",
+          "ref": "assets/beauties/references/mainland-eight-20261022/pan-xiaoting.jpg",
+          "title": "墨绡执杆",
+          "detail": "Pan Xiaoting 潘晓婷 adult age 35, preserve recognizable refined oval face and natural fit adult physique from reference. Relaxed standing three-quarter contrapposto on both bare feet, one hand holds a polished plain wooden billiards cue nearly vertical beside body and other holds small plain white billiards ball at waist; no table. Black sleeveless silk qipao-inspired Chinese long tunic with burgundy plum embroidery, opaque burgundy wide-leg silk trousers beneath for summer. Elegant updo, gold plum blossom hairpins, garnet earrings, fine gold necklace, gold bangle and burgundy waist tassel. Entire cue inside frame.",
+          "prompt": "Use case: photorealistic-natural. Asset type: Chinese imperial game character, single adult full-body cutout. Actual input photo is FACE/IDENTITY and VISIBLE BUILD reference, preserve specific real person's distinctive face, brow/eye shapes, nose, mouth and jaw, individual likeness not generic model. New elegant historical Chinese summer silk/gauze clothing, airy light fabrics but opaque lined coverage. Realistic high quality costume photography, natural skin not illustration/plastic doll. Adult natural head/body proportions around 7.5 heads standing, normal 70mm perspective, natural shoulders/torso/legs. Exactly two arms, two anatomically natural hands with five fingers, two legs and two BARE FEET, five toes per foot, normal ankles, no shoes/socks/footwear under any circumstances. Natural stable pose, credible gravity and object contact, all limbs and props fully inside 2:3 portrait canvas with 7% clear margin, no cropping. True transparent alpha background, no environment, no floor, no shadows/glow, no background colors, no text/logo/watermark. Nonsexual ordinary portrait. Pan Xiaoting 潘晓婷 adult age 35, preserve recognizable refined oval face and natural fit adult physique from reference. Relaxed standing three-quarter contrapposto on both bare feet, one hand holds a polished plain wooden billiards cue nearly vertical beside body and other holds small plain white billiards ball at waist; no table. Black sleeveless silk qipao-inspired Chinese long tunic with burgundy plum embroidery, opaque burgundy wide-leg silk trousers beneath for summer. Elegant updo, gold plum blossom hairpins, garnet earrings, fine gold necklace, gold bangle and burgundy waist tassel. Entire cue inside frame.",
+          "id": "mainland-photo-eight-20261022-06",
+          "asset": "assets/beauties/random/女明星/潘晓婷-墨绡执杆.png",
+          "status": "completed",
+          "footwear": "barefoot",
+          "referenceDimensions": [
+            1680,
+            2520
+          ],
+          "referenceSha256": "e1a370e042465d3f8f4c4e6137fc69c4fac5d53096408fb6aa525c044b7c63a4",
+          "poolScope": "mainland",
+          "sourcePath": "/Users/fengheliang/.codex/generated_images/01a16133-240f-7033-bf18-3e8342b820ca/exec-03384eb8-4d82-46e8-b5f9-38c4e332cbba.png",
+          "validation": {
+            "size": [
+              1024,
+              1536
+            ],
+            "mode": "RGBA",
+            "alphaRange": [
+              0,
+              254
+            ],
+            "transparentFraction": 0.6758,
+            "nontransparentBorderPixels": 0,
+            "boundsAbove20": [
+              279,
+              5,
+              836,
+              1492
+            ]
+          },
+          "assetSha256": "981a6116264c561a65022eb4a1dea1785570e0e6f90c6dba43d4c9474c652c58",
+          "visualReview": "已对照输入照片查看成图；浅色、深蓝色换底及脚部放大图复核：无鞋袜、人物道具完整，未见明显多余肢体，头身与关节衔接自然。遮挡处不宣称逐指逐趾均可见。"
+        }
+      ],
+      "revisionManifest": "docs/art/mainland-three-rework-2026-10-22.json"
+    },
+    {
+      "key": "zhao-lina",
+      "name": "赵丽娜",
+      "page": "https://www.sohu.com/picture/712921920",
+      "imageUrl": "https://p7.itc.cn/images01/20230818/be1d6f1d5e954e5a9e3336e74370abfb.jpeg",
+      "ref": "assets/beauties/references/mainland-eight-20261022/zhao-lina.jpg",
+      "title": "素绡蹴鞠",
+      "detail": "Zhao Lina 赵丽娜 adult age 32, very tall athletic football goalkeeper body, strong long legs and defined shoulders, preserve her own long face and facial features. Seated sideways on a compact simple wooden daybed, gently leaning one elbow on its armrest with head upright, one leg bent naturally on seat and the other lowered with bare foot resting down, both bare feet anatomically clear and visible. Other hand rests on a small antique stitched leather cuju football beside her hip. Ivory sleeveless lined silk ruqun with light ochre sash and airy gauze shoulder wrap, skirt draped naturally without hiding both feet. Dark hair loose updo with amber comb, amber drop earrings, necklace, bronze bangle and waist jade pendant. Include only compact daybed as support, no scene.",
+      "prompt": "Use case: photorealistic-natural. Asset type: Chinese imperial game character, single adult full-body cutout. Actual input photo is FACE/IDENTITY and VISIBLE BUILD reference, preserve specific real person's distinctive face, brow/eye shapes, nose, mouth and jaw, individual likeness not generic model. New elegant historical Chinese summer silk/gauze clothing, airy light fabrics but opaque lined coverage. Realistic high quality costume photography, natural skin not illustration/plastic doll. Adult natural head/body proportions around 7.5 heads standing, normal 70mm perspective, natural shoulders/torso/legs. Exactly two arms, two anatomically natural hands with five fingers, two legs and two BARE FEET, five toes per foot, normal ankles, no shoes/socks/footwear under any circumstances. Natural stable pose, credible gravity and object contact, all limbs and props fully inside 2:3 portrait canvas with 7% clear margin, no cropping. True transparent alpha background, no environment, no floor, no shadows/glow, no background colors, no text/logo/watermark. Nonsexual ordinary portrait. Zhao Lina 赵丽娜 adult age 32, very tall athletic football goalkeeper body, strong long legs and defined shoulders, preserve her own long face and facial features. Seated sideways on a compact simple wooden daybed, gently leaning one elbow on its armrest with head upright, one leg bent naturally on seat and the other lowered with bare foot resting down, both bare feet anatomically clear and visible. Other hand rests on a small antique stitched leather cuju football beside her hip. Ivory sleeveless lined silk ruqun with light ochre sash and airy gauze shoulder wrap, skirt draped naturally without hiding both feet. Dark hair loose updo with amber comb, amber drop earrings, necklace, bronze bangle and waist jade pendant. Include only compact daybed as support, no scene.",
+      "id": "mainland-photo-eight-20261022-07",
+      "asset": "assets/beauties/random/女明星/赵丽娜-素绡蹴鞠.png",
+      "status": "completed",
+      "footwear": "barefoot",
+      "referenceDimensions": [
+        690,
+        483
+      ],
+      "referenceSha256": "468dbdddbde3f5adeee9ef20dfc8671b4c5a8d7294a7f525a5f4ab1661fd5624",
+      "poolScope": "mainland",
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a16133-240f-7033-bf18-3e8342b820ca/exec-a9425520-0acb-4a17-a8e4-4c522e7c7eb0.png",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentFraction": 0.4597,
+        "nontransparentBorderPixels": 0,
+        "boundsAbove20": [
+          31,
+          14,
+          1003,
+          1441
+        ]
+      },
+      "assetSha256": "bf6f0ad4c1efdb34dbffbab8e00736bec8a19d19dd0a1dceeb7666ada64967b7",
+      "visualReview": "已对照输入照片查看成图；浅色、深蓝色换底及脚部放大图复核：无鞋袜、人物道具完整，未见明显多余肢体，头身与关节衔接自然。遮挡处不宣称逐指逐趾均可见。"
+    },
+    {
+      "key": "song-yuqi",
+      "name": "宋雨琦",
+      "page": "https://www.dcard.tw/f/entertainer/p/231736594",
+      "imageUrl": "https://megapx-assets.dcard.tw/images/53f620f5-535f-4666-b70e-697f72db7978/1280.jpeg",
+      "ref": "assets/beauties/references/mainland-eight-20261022/song-yuqi.jpg",
+      "title": "桃绡铃鼓",
+      "detail": "Song Yuqi 宋雨琦 adult age 24, preserve specific face from reference including expressive eyes and rounder cheeks, natural adult fit dancer body. Paused classical dance pose: both bare feet contacting imaginary ground, one heel lightly raised, knees loose and weight balanced, torso upright, holding small round frame tambourine at one hip with one hand, other relaxed arm curved low. Peach-pink sleeveless silk top with opaque ivory lining, flowing light rose ankle-length pleated dance skirt and narrow translucent silk stole behind arms. Honey-brown wavy hair partial updo with gold butterfly pins, pearl drop earrings, layered delicate gold necklace, jade wrist bracelet and waist tassels. No modern microphone or logos.",
+      "prompt": "Use case: photorealistic-natural. Asset type: Chinese imperial game character, single adult full-body cutout. Actual input photo is FACE/IDENTITY and VISIBLE BUILD reference, preserve specific real person's distinctive face, brow/eye shapes, nose, mouth and jaw, individual likeness not generic model. New elegant historical Chinese summer silk/gauze clothing, airy light fabrics but opaque lined coverage. Realistic high quality costume photography, natural skin not illustration/plastic doll. Adult natural head/body proportions around 7.5 heads standing, normal 70mm perspective, natural shoulders/torso/legs. Exactly two arms, two anatomically natural hands with five fingers, two legs and two BARE FEET, five toes per foot, normal ankles, no shoes/socks/footwear under any circumstances. Natural stable pose, credible gravity and object contact, all limbs and props fully inside 2:3 portrait canvas with 7% clear margin, no cropping. True transparent alpha background, no environment, no floor, no shadows/glow, no background colors, no text/logo/watermark. Nonsexual ordinary portrait. Song Yuqi 宋雨琦 adult age 24, preserve specific face from reference including expressive eyes and rounder cheeks, natural adult fit dancer body. Paused classical dance pose: both bare feet contacting imaginary ground, one heel lightly raised, knees loose and weight balanced, torso upright, holding small round frame tambourine at one hip with one hand, other relaxed arm curved low. Peach-pink sleeveless silk top with opaque ivory lining, flowing light rose ankle-length pleated dance skirt and narrow translucent silk stole behind arms. Honey-brown wavy hair partial updo with gold butterfly pins, pearl drop earrings, layered delicate gold necklace, jade wrist bracelet and waist tassels. No modern microphone or logos.",
+      "id": "mainland-photo-eight-20261022-08",
+      "asset": "assets/beauties/random/女明星/宋雨琦-桃绡铃鼓.png",
+      "status": "completed",
+      "footwear": "barefoot",
+      "referenceDimensions": [
+        750,
+        1126
+      ],
+      "referenceSha256": "6693155bc27b348a57bba6401d8c34fa004e28a0d79dbcf220c4395d0cd5a779",
+      "poolScope": "mainland",
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a16133-240f-7033-bf18-3e8342b820ca/exec-3569fe57-2eb9-488c-96af-2a27218753c8.png",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentFraction": 0.4731,
+        "nontransparentBorderPixels": 0,
+        "boundsAbove20": [
+          37,
+          18,
+          1007,
+          1511
+        ]
+      },
+      "assetSha256": "bc388b2a2feed76d8e4aaaebf9a57c25bd17620ba006953b152e8f7150b3dc41",
+      "visualReview": "已对照输入照片查看成图；浅色、深蓝色换底及脚部放大图复核：无鞋袜、人物道具完整，未见明显多余肢体，头身与关节衔接自然。遮挡处不宣称逐指逐趾均可见。"
+    }
+  ],
+  "poolScope": "mainland",
+  "completed": 8,
+  "verification": {
+    "relatedTestsPassed": 22,
+    "alphaPassed": true,
+    "sharedVariantsReachableInEveryMainlandCity": true,
+    "saveReloadPassed": true,
+    "reviewPreview": "outputs/mainland-fourteen-20261022/all-light.jpg"
+  }
+}

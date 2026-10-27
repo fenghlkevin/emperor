@@ -1,3 +1,4 @@
+import {postTreasury} from '../src/finance.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {newGame,advance,leaveRoom} from '../src/game.mjs';
@@ -30,6 +31,8 @@ test('体力不足与夜晚保留候选，不能录用或推进阶段',()=>{
 
 test('完成后后续回合不再提示，再次颁诏才开启新一届',()=>{
  let s=newGame('制举验收');
+ // This case tests exam scheduling independently of the four-sector budget.
+ postTreasury(s.domestic,s.domestic.playerCountryId,{turn:s.turn,income:50000,reason:'考试流程测试资金',key:'test:exam-funds'});
  s=executePersonnel(s,{kind:'exam',id:s.domestic.personnel.nextId}).state;
  advance(s);leaveRoom(s);s=finishExam(s,s.domestic.personnel.candidates[0].id);
  for(let i=0;i<2;i++){advance(s);leaveRoom(s);assert.equal(examReady(s),false);assert.equal(s.domestic.personnel.examTurn,null);}

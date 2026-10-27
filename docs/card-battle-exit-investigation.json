@@ -1,0 +1,24 @@
+{
+  "date": "2026-10-22",
+  "previousPreviewExit": {
+    "signal": "SIGINT",
+    "source": "agent stopped its owned preview session for UI verification",
+    "evidence": "card-battle-preview-motion-final.log",
+    "recoveryLimitation": "Old preview was memory-only; its pre-change progress cannot be recovered. Persistent snapshots apply to subsequent preview sessions."
+  },
+  "systemDiagnosticReports": {
+    "electronReportsNamed2026_10_22": 0
+  },
+  "actualRuntimeLog": {
+    "lastVisibleWindowStart": "2026-10-21T07:50:46.282Z",
+    "limitation": "Prior console listener signature could miss renderer errors; absence of error entries does not establish absence of faults."
+  },
+  "changes": [
+    "Persistent isolated preview snapshot before each action animation",
+    "Bootstrap on reload and renderer recovery",
+    "Correct modern console error listener",
+    "Log preview process stops, unresponsive/responsive events and child process exits"
+  ],
+  "tests": "card-battle-recovery-validation.json",
+  "scope": "No real player save was read, replaced or migrated. Renderer loss in acceptance was a simulated event in a test profile."
+}

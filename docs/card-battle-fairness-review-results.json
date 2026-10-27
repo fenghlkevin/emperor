@@ -1,0 +1,3435 @@
+{
+  "date": "2026-10-22",
+  "verdict": "FAIL_OPENING_FAIRNESS",
+  "scope": "独立设计对战模型，不是实际游戏胜率，不覆盖真实多来源结算、外国人物生成、UI或最优人类策略",
+  "model_sha256": "99104662e81395e440a319a8e97240ee44aa29f9c4f2470aca777e9b29ef5ca4",
+  "main_matrix": {
+    "date": "2026-10-22",
+    "model": "isolated-design-greedy-v4",
+    "scope": "design-level combat simulation; excludes campaign resources, portraits, source packing and user skill; one unique 75-primary leader per troop kind, hero HP32, no ordinary 80-attribute bonus or city",
+    "method": "paired faction A/B seats; per-faction deck seed held constant; paired-score normal 95% interval; no opponent hand/order inspection",
+    "results": [
+      {
+        "case": "mixed_1800",
+        "training": 20,
+        "hero": "martial",
+        "variant": "coin",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 691,
+        "second_wins": 285,
+        "draws": 24,
+        "first_score": 0.703,
+        "paired_95ci": [
+          0.68054,
+          0.72546
+        ],
+        "A_score": 0.493,
+        "median_rounds": 13.0,
+        "fatigue_rate": 0.401,
+        "opening_no_deployment": 20
+      },
+      {
+        "case": "mixed_1800",
+        "training": 20,
+        "hero": "intelligence",
+        "variant": "coin",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 677,
+        "second_wins": 308,
+        "draws": 15,
+        "first_score": 0.6845,
+        "paired_95ci": [
+          0.65769,
+          0.71131
+        ],
+        "A_score": 0.5075,
+        "median_rounds": 12.0,
+        "fatigue_rate": 0.274,
+        "opening_no_deployment": 20
+      },
+      {
+        "case": "mixed_1800",
+        "training": 20,
+        "hero": "command",
+        "variant": "coin",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 609,
+        "second_wins": 376,
+        "draws": 15,
+        "first_score": 0.6165,
+        "paired_95ci": [
+          0.59187,
+          0.64113
+        ],
+        "A_score": 0.5035,
+        "median_rounds": 15.0,
+        "fatigue_rate": 0.493,
+        "opening_no_deployment": 20
+      },
+      {
+        "case": "mixed_1800",
+        "training": 60,
+        "hero": "martial",
+        "variant": "coin",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 705,
+        "second_wins": 285,
+        "draws": 10,
+        "first_score": 0.71,
+        "paired_95ci": [
+          0.68726,
+          0.73274
+        ],
+        "A_score": 0.49,
+        "median_rounds": 11.0,
+        "fatigue_rate": 0.247,
+        "opening_no_deployment": 0
+      },
+      {
+        "case": "mixed_1800",
+        "training": 60,
+        "hero": "intelligence",
+        "variant": "coin",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 699,
+        "second_wins": 292,
+        "draws": 9,
+        "first_score": 0.7035,
+        "paired_95ci": [
+          0.67881,
+          0.72819
+        ],
+        "A_score": 0.5135,
+        "median_rounds": 10.0,
+        "fatigue_rate": 0.142,
+        "opening_no_deployment": 0
+      },
+      {
+        "case": "mixed_1800",
+        "training": 60,
+        "hero": "command",
+        "variant": "coin",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 646,
+        "second_wins": 346,
+        "draws": 8,
+        "first_score": 0.65,
+        "paired_95ci": [
+          0.62629,
+          0.67371
+        ],
+        "A_score": 0.507,
+        "median_rounds": 12.0,
+        "fatigue_rate": 0.338,
+        "opening_no_deployment": 0
+      },
+      {
+        "case": "mixed_1800",
+        "training": 90,
+        "hero": "martial",
+        "variant": "coin",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 720,
+        "second_wins": 277,
+        "draws": 3,
+        "first_score": 0.7215,
+        "paired_95ci": [
+          0.69908,
+          0.74392
+        ],
+        "A_score": 0.4965,
+        "median_rounds": 9.0,
+        "fatigue_rate": 0.107,
+        "opening_no_deployment": 0
+      },
+      {
+        "case": "mixed_1800",
+        "training": 90,
+        "hero": "intelligence",
+        "variant": "coin",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 762,
+        "second_wins": 236,
+        "draws": 2,
+        "first_score": 0.763,
+        "paired_95ci": [
+          0.73944,
+          0.78656
+        ],
+        "A_score": 0.505,
+        "median_rounds": 9.0,
+        "fatigue_rate": 0.06,
+        "opening_no_deployment": 0
+      },
+      {
+        "case": "mixed_1800",
+        "training": 90,
+        "hero": "command",
+        "variant": "coin",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 661,
+        "second_wins": 332,
+        "draws": 7,
+        "first_score": 0.6645,
+        "paired_95ci": [
+          0.64199,
+          0.68701
+        ],
+        "A_score": 0.5185,
+        "median_rounds": 10.0,
+        "fatigue_rate": 0.208,
+        "opening_no_deployment": 0
+      },
+      {
+        "case": "infantry_1800",
+        "training": 20,
+        "hero": "martial",
+        "variant": "coin",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 198,
+        "second_wins": 262,
+        "draws": 540,
+        "first_score": 0.468,
+        "paired_95ci": [
+          0.45153,
+          0.48447
+        ],
+        "A_score": 0.482,
+        "median_rounds": 22.0,
+        "fatigue_rate": 0.995,
+        "opening_no_deployment": 4
+      },
+      {
+        "case": "infantry_1800",
+        "training": 20,
+        "hero": "intelligence",
+        "variant": "coin",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 198,
+        "second_wins": 625,
+        "draws": 177,
+        "first_score": 0.2865,
+        "paired_95ci": [
+          0.26596,
+          0.30704
+        ],
+        "A_score": 0.5015,
+        "median_rounds": 21.0,
+        "fatigue_rate": 1.0,
+        "opening_no_deployment": 4
+      },
+      {
+        "case": "infantry_1800",
+        "training": 20,
+        "hero": "command",
+        "variant": "coin",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 271,
+        "second_wins": 588,
+        "draws": 141,
+        "first_score": 0.3415,
+        "paired_95ci": [
+          0.32341,
+          0.35959
+        ],
+        "A_score": 0.4805,
+        "median_rounds": 25.0,
+        "fatigue_rate": 1.0,
+        "opening_no_deployment": 4
+      },
+      {
+        "case": "infantry_1800",
+        "training": 60,
+        "hero": "martial",
+        "variant": "coin",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 269,
+        "second_wins": 269,
+        "draws": 462,
+        "first_score": 0.5,
+        "paired_95ci": [
+          0.47873,
+          0.52127
+        ],
+        "A_score": 0.498,
+        "median_rounds": 22.0,
+        "fatigue_rate": 0.971,
+        "opening_no_deployment": 0
+      },
+      {
+        "case": "infantry_1800",
+        "training": 60,
+        "hero": "intelligence",
+        "variant": "coin",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 292,
+        "second_wins": 486,
+        "draws": 222,
+        "first_score": 0.403,
+        "paired_95ci": [
+          0.38473,
+          0.42127
+        ],
+        "A_score": 0.488,
+        "median_rounds": 20.0,
+        "fatigue_rate": 0.981,
+        "opening_no_deployment": 0
+      },
+      {
+        "case": "infantry_1800",
+        "training": 60,
+        "hero": "command",
+        "variant": "coin",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 358,
+        "second_wins": 408,
+        "draws": 234,
+        "first_score": 0.475,
+        "paired_95ci": [
+          0.45616,
+          0.49384
+        ],
+        "A_score": 0.476,
+        "median_rounds": 24.0,
+        "fatigue_rate": 0.961,
+        "opening_no_deployment": 0
+      },
+      {
+        "case": "infantry_1800",
+        "training": 90,
+        "hero": "martial",
+        "variant": "coin",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 353,
+        "second_wins": 369,
+        "draws": 278,
+        "first_score": 0.492,
+        "paired_95ci": [
+          0.46747,
+          0.51653
+        ],
+        "A_score": 0.508,
+        "median_rounds": 22.0,
+        "fatigue_rate": 0.924,
+        "opening_no_deployment": 0
+      },
+      {
+        "case": "infantry_1800",
+        "training": 90,
+        "hero": "intelligence",
+        "variant": "coin",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 282,
+        "second_wins": 453,
+        "draws": 265,
+        "first_score": 0.4145,
+        "paired_95ci": [
+          0.39562,
+          0.43338
+        ],
+        "A_score": 0.4955,
+        "median_rounds": 20.0,
+        "fatigue_rate": 0.91,
+        "opening_no_deployment": 0
+      },
+      {
+        "case": "infantry_1800",
+        "training": 90,
+        "hero": "command",
+        "variant": "coin",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 387,
+        "second_wins": 328,
+        "draws": 285,
+        "first_score": 0.5295,
+        "paired_95ci": [
+          0.51038,
+          0.54862
+        ],
+        "A_score": 0.4995,
+        "median_rounds": 24.0,
+        "fatigue_rate": 0.901,
+        "opening_no_deployment": 0
+      },
+      {
+        "case": "cavalry_1800",
+        "training": 20,
+        "hero": "martial",
+        "variant": "coin",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 776,
+        "second_wins": 219,
+        "draws": 5,
+        "first_score": 0.7785,
+        "paired_95ci": [
+          0.75595,
+          0.80105
+        ],
+        "A_score": 0.5145,
+        "median_rounds": 8.0,
+        "fatigue_rate": 0.038,
+        "opening_no_deployment": 103
+      },
+      {
+        "case": "cavalry_1800",
+        "training": 20,
+        "hero": "intelligence",
+        "variant": "coin",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 798,
+        "second_wins": 200,
+        "draws": 2,
+        "first_score": 0.799,
+        "paired_95ci": [
+          0.77657,
+          0.82143
+        ],
+        "A_score": 0.518,
+        "median_rounds": 8.0,
+        "fatigue_rate": 0.016,
+        "opening_no_deployment": 103
+      },
+      {
+        "case": "cavalry_1800",
+        "training": 20,
+        "hero": "command",
+        "variant": "coin",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 739,
+        "second_wins": 255,
+        "draws": 6,
+        "first_score": 0.742,
+        "paired_95ci": [
+          0.71802,
+          0.76598
+        ],
+        "A_score": 0.514,
+        "median_rounds": 9.0,
+        "fatigue_rate": 0.143,
+        "opening_no_deployment": 103
+      },
+      {
+        "case": "cavalry_1800",
+        "training": 60,
+        "hero": "martial",
+        "variant": "coin",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 816,
+        "second_wins": 182,
+        "draws": 2,
+        "first_score": 0.817,
+        "paired_95ci": [
+          0.79573,
+          0.83827
+        ],
+        "A_score": 0.528,
+        "median_rounds": 9.0,
+        "fatigue_rate": 0.112,
+        "opening_no_deployment": 0
+      },
+      {
+        "case": "cavalry_1800",
+        "training": 60,
+        "hero": "intelligence",
+        "variant": "coin",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 863,
+        "second_wins": 134,
+        "draws": 3,
+        "first_score": 0.8645,
+        "paired_95ci": [
+          0.84449,
+          0.88451
+        ],
+        "A_score": 0.5175,
+        "median_rounds": 8.0,
+        "fatigue_rate": 0.04,
+        "opening_no_deployment": 0
+      },
+      {
+        "case": "cavalry_1800",
+        "training": 60,
+        "hero": "command",
+        "variant": "coin",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 744,
+        "second_wins": 248,
+        "draws": 8,
+        "first_score": 0.748,
+        "paired_95ci": [
+          0.72438,
+          0.77162
+        ],
+        "A_score": 0.523,
+        "median_rounds": 10.0,
+        "fatigue_rate": 0.212,
+        "opening_no_deployment": 0
+      },
+      {
+        "case": "cavalry_1800",
+        "training": 90,
+        "hero": "martial",
+        "variant": "coin",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 827,
+        "second_wins": 172,
+        "draws": 1,
+        "first_score": 0.8275,
+        "paired_95ci": [
+          0.80612,
+          0.84888
+        ],
+        "A_score": 0.5225,
+        "median_rounds": 7.0,
+        "fatigue_rate": 0.049,
+        "opening_no_deployment": 0
+      },
+      {
+        "case": "cavalry_1800",
+        "training": 90,
+        "hero": "intelligence",
+        "variant": "coin",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 865,
+        "second_wins": 134,
+        "draws": 1,
+        "first_score": 0.8655,
+        "paired_95ci": [
+          0.8451,
+          0.8859
+        ],
+        "A_score": 0.5135,
+        "median_rounds": 7.0,
+        "fatigue_rate": 0.018,
+        "opening_no_deployment": 0
+      },
+      {
+        "case": "cavalry_1800",
+        "training": 90,
+        "hero": "command",
+        "variant": "coin",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 790,
+        "second_wins": 207,
+        "draws": 3,
+        "first_score": 0.7915,
+        "paired_95ci": [
+          0.76855,
+          0.81445
+        ],
+        "A_score": 0.5075,
+        "median_rounds": 8.0,
+        "fatigue_rate": 0.097,
+        "opening_no_deployment": 0
+      },
+      {
+        "case": "ranged_1800",
+        "training": 20,
+        "hero": "martial",
+        "variant": "coin",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 757,
+        "second_wins": 243,
+        "draws": 0,
+        "first_score": 0.757,
+        "paired_95ci": [
+          0.73371,
+          0.78029
+        ],
+        "A_score": 0.491,
+        "median_rounds": 7.0,
+        "fatigue_rate": 0.001,
+        "opening_no_deployment": 88
+      },
+      {
+        "case": "ranged_1800",
+        "training": 20,
+        "hero": "intelligence",
+        "variant": "coin",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 788,
+        "second_wins": 212,
+        "draws": 0,
+        "first_score": 0.788,
+        "paired_95ci": [
+          0.76494,
+          0.81106
+        ],
+        "A_score": 0.51,
+        "median_rounds": 7.0,
+        "fatigue_rate": 0.001,
+        "opening_no_deployment": 88
+      },
+      {
+        "case": "ranged_1800",
+        "training": 20,
+        "hero": "command",
+        "variant": "coin",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 726,
+        "second_wins": 271,
+        "draws": 3,
+        "first_score": 0.7275,
+        "paired_95ci": [
+          0.70274,
+          0.75226
+        ],
+        "A_score": 0.4985,
+        "median_rounds": 8.0,
+        "fatigue_rate": 0.106,
+        "opening_no_deployment": 88
+      },
+      {
+        "case": "ranged_1800",
+        "training": 60,
+        "hero": "martial",
+        "variant": "coin",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 798,
+        "second_wins": 202,
+        "draws": 0,
+        "first_score": 0.798,
+        "paired_95ci": [
+          0.77492,
+          0.82108
+        ],
+        "A_score": 0.508,
+        "median_rounds": 6.0,
+        "fatigue_rate": 0.0,
+        "opening_no_deployment": 0
+      },
+      {
+        "case": "ranged_1800",
+        "training": 60,
+        "hero": "intelligence",
+        "variant": "coin",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 783,
+        "second_wins": 217,
+        "draws": 0,
+        "first_score": 0.783,
+        "paired_95ci": [
+          0.75972,
+          0.80628
+        ],
+        "A_score": 0.497,
+        "median_rounds": 6.0,
+        "fatigue_rate": 0.0,
+        "opening_no_deployment": 0
+      },
+      {
+        "case": "ranged_1800",
+        "training": 60,
+        "hero": "command",
+        "variant": "coin",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 745,
+        "second_wins": 255,
+        "draws": 0,
+        "first_score": 0.745,
+        "paired_95ci": [
+          0.72171,
+          0.76829
+        ],
+        "A_score": 0.513,
+        "median_rounds": 7.0,
+        "fatigue_rate": 0.02,
+        "opening_no_deployment": 0
+      },
+      {
+        "case": "ranged_1800",
+        "training": 90,
+        "hero": "martial",
+        "variant": "coin",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 781,
+        "second_wins": 219,
+        "draws": 0,
+        "first_score": 0.781,
+        "paired_95ci": [
+          0.7577,
+          0.8043
+        ],
+        "A_score": 0.489,
+        "median_rounds": 5.0,
+        "fatigue_rate": 0.0,
+        "opening_no_deployment": 0
+      },
+      {
+        "case": "ranged_1800",
+        "training": 90,
+        "hero": "intelligence",
+        "variant": "coin",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 812,
+        "second_wins": 188,
+        "draws": 0,
+        "first_score": 0.812,
+        "paired_95ci": [
+          0.78918,
+          0.83482
+        ],
+        "A_score": 0.48,
+        "median_rounds": 6.0,
+        "fatigue_rate": 0.001,
+        "opening_no_deployment": 0
+      },
+      {
+        "case": "ranged_1800",
+        "training": 90,
+        "hero": "command",
+        "variant": "coin",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 761,
+        "second_wins": 239,
+        "draws": 0,
+        "first_score": 0.761,
+        "paired_95ci": [
+          0.73675,
+          0.78525
+        ],
+        "A_score": 0.515,
+        "median_rounds": 6.0,
+        "fatigue_rate": 0.007,
+        "opening_no_deployment": 0
+      },
+      {
+        "case": "heavy_1800",
+        "training": 20,
+        "hero": "martial",
+        "variant": "coin",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 618,
+        "second_wins": 370,
+        "draws": 12,
+        "first_score": 0.624,
+        "paired_95ci": [
+          0.5981,
+          0.6499
+        ],
+        "A_score": 0.51,
+        "median_rounds": 12.0,
+        "fatigue_rate": 0.234,
+        "opening_no_deployment": 692
+      },
+      {
+        "case": "heavy_1800",
+        "training": 20,
+        "hero": "intelligence",
+        "variant": "coin",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 186,
+        "second_wins": 810,
+        "draws": 4,
+        "first_score": 0.188,
+        "paired_95ci": [
+          0.16535,
+          0.21065
+        ],
+        "A_score": 0.51,
+        "median_rounds": 14.0,
+        "fatigue_rate": 0.415,
+        "opening_no_deployment": 692
+      },
+      {
+        "case": "heavy_1800",
+        "training": 20,
+        "hero": "command",
+        "variant": "coin",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 493,
+        "second_wins": 501,
+        "draws": 6,
+        "first_score": 0.496,
+        "paired_95ci": [
+          0.47614,
+          0.51586
+        ],
+        "A_score": 0.488,
+        "median_rounds": 14.0,
+        "fatigue_rate": 0.391,
+        "opening_no_deployment": 692
+      },
+      {
+        "case": "heavy_1800",
+        "training": 60,
+        "hero": "martial",
+        "variant": "coin",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 324,
+        "second_wins": 676,
+        "draws": 0,
+        "first_score": 0.324,
+        "paired_95ci": [
+          0.29516,
+          0.35284
+        ],
+        "A_score": 0.502,
+        "median_rounds": 7.0,
+        "fatigue_rate": 0.042,
+        "opening_no_deployment": 0
+      },
+      {
+        "case": "heavy_1800",
+        "training": 60,
+        "hero": "intelligence",
+        "variant": "coin",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 40,
+        "second_wins": 959,
+        "draws": 1,
+        "first_score": 0.0405,
+        "paired_95ci": [
+          0.02794,
+          0.05306
+        ],
+        "A_score": 0.5015,
+        "median_rounds": 5.0,
+        "fatigue_rate": 0.007,
+        "opening_no_deployment": 0
+      },
+      {
+        "case": "heavy_1800",
+        "training": 60,
+        "hero": "command",
+        "variant": "coin",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 219,
+        "second_wins": 781,
+        "draws": 0,
+        "first_score": 0.219,
+        "paired_95ci": [
+          0.1926,
+          0.2454
+        ],
+        "A_score": 0.521,
+        "median_rounds": 6.0,
+        "fatigue_rate": 0.042,
+        "opening_no_deployment": 0
+      },
+      {
+        "case": "heavy_1800",
+        "training": 90,
+        "hero": "martial",
+        "variant": "coin",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 145,
+        "second_wins": 855,
+        "draws": 0,
+        "first_score": 0.145,
+        "paired_95ci": [
+          0.12154,
+          0.16846
+        ],
+        "A_score": 0.515,
+        "median_rounds": 5.0,
+        "fatigue_rate": 0.009,
+        "opening_no_deployment": 0
+      },
+      {
+        "case": "heavy_1800",
+        "training": 90,
+        "hero": "intelligence",
+        "variant": "coin",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 22,
+        "second_wins": 978,
+        "draws": 0,
+        "first_score": 0.022,
+        "paired_95ci": [
+          0.013,
+          0.031
+        ],
+        "A_score": 0.5,
+        "median_rounds": 4.0,
+        "fatigue_rate": 0.001,
+        "opening_no_deployment": 0
+      },
+      {
+        "case": "heavy_1800",
+        "training": 90,
+        "hero": "command",
+        "variant": "coin",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 29,
+        "second_wins": 971,
+        "draws": 0,
+        "first_score": 0.029,
+        "paired_95ci": [
+          0.01838,
+          0.03962
+        ],
+        "A_score": 0.501,
+        "median_rounds": 4.0,
+        "fatigue_rate": 0.004,
+        "opening_no_deployment": 0
+      },
+      {
+        "case": "exotic_1800",
+        "training": 20,
+        "hero": "martial",
+        "variant": "coin",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 750,
+        "second_wins": 246,
+        "draws": 4,
+        "first_score": 0.752,
+        "paired_95ci": [
+          0.73015,
+          0.77385
+        ],
+        "A_score": 0.516,
+        "median_rounds": 11.0,
+        "fatigue_rate": 0.139,
+        "opening_no_deployment": 545
+      },
+      {
+        "case": "exotic_1800",
+        "training": 20,
+        "hero": "intelligence",
+        "variant": "coin",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 612,
+        "second_wins": 385,
+        "draws": 3,
+        "first_score": 0.6135,
+        "paired_95ci": [
+          0.58639,
+          0.64061
+        ],
+        "A_score": 0.5195,
+        "median_rounds": 13.0,
+        "fatigue_rate": 0.219,
+        "opening_no_deployment": 545
+      },
+      {
+        "case": "exotic_1800",
+        "training": 20,
+        "hero": "command",
+        "variant": "coin",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 594,
+        "second_wins": 403,
+        "draws": 3,
+        "first_score": 0.5955,
+        "paired_95ci": [
+          0.57275,
+          0.61825
+        ],
+        "A_score": 0.4925,
+        "median_rounds": 13.0,
+        "fatigue_rate": 0.292,
+        "opening_no_deployment": 545
+      },
+      {
+        "case": "exotic_1800",
+        "training": 60,
+        "hero": "martial",
+        "variant": "coin",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 749,
+        "second_wins": 246,
+        "draws": 5,
+        "first_score": 0.7515,
+        "paired_95ci": [
+          0.72907,
+          0.77393
+        ],
+        "A_score": 0.5385,
+        "median_rounds": 11.0,
+        "fatigue_rate": 0.12,
+        "opening_no_deployment": 0
+      },
+      {
+        "case": "exotic_1800",
+        "training": 60,
+        "hero": "intelligence",
+        "variant": "coin",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 676,
+        "second_wins": 322,
+        "draws": 2,
+        "first_score": 0.677,
+        "paired_95ci": [
+          0.65136,
+          0.70264
+        ],
+        "A_score": 0.506,
+        "median_rounds": 13.0,
+        "fatigue_rate": 0.183,
+        "opening_no_deployment": 0
+      },
+      {
+        "case": "exotic_1800",
+        "training": 60,
+        "hero": "command",
+        "variant": "coin",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 639,
+        "second_wins": 359,
+        "draws": 2,
+        "first_score": 0.64,
+        "paired_95ci": [
+          0.61539,
+          0.66461
+        ],
+        "A_score": 0.492,
+        "median_rounds": 12.0,
+        "fatigue_rate": 0.251,
+        "opening_no_deployment": 0
+      },
+      {
+        "case": "exotic_1800",
+        "training": 90,
+        "hero": "martial",
+        "variant": "coin",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 779,
+        "second_wins": 221,
+        "draws": 0,
+        "first_score": 0.779,
+        "paired_95ci": [
+          0.75652,
+          0.80148
+        ],
+        "A_score": 0.521,
+        "median_rounds": 10.0,
+        "fatigue_rate": 0.051,
+        "opening_no_deployment": 0
+      },
+      {
+        "case": "exotic_1800",
+        "training": 90,
+        "hero": "intelligence",
+        "variant": "coin",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 667,
+        "second_wins": 333,
+        "draws": 0,
+        "first_score": 0.667,
+        "paired_95ci": [
+          0.64044,
+          0.69356
+        ],
+        "A_score": 0.511,
+        "median_rounds": 11.0,
+        "fatigue_rate": 0.09,
+        "opening_no_deployment": 0
+      },
+      {
+        "case": "exotic_1800",
+        "training": 90,
+        "hero": "command",
+        "variant": "coin",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 659,
+        "second_wins": 337,
+        "draws": 4,
+        "first_score": 0.661,
+        "paired_95ci": [
+          0.63633,
+          0.68567
+        ],
+        "A_score": 0.488,
+        "median_rounds": 12.0,
+        "fatigue_rate": 0.192,
+        "opening_no_deployment": 0
+      },
+      {
+        "case": "mixed_600",
+        "training": 20,
+        "hero": "martial",
+        "variant": "coin",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 350,
+        "second_wins": 156,
+        "draws": 494,
+        "first_score": 0.597,
+        "paired_95ci": [
+          0.57756,
+          0.61644
+        ],
+        "A_score": 0.518,
+        "median_rounds": 22.0,
+        "fatigue_rate": 1.0,
+        "opening_no_deployment": 96
+      },
+      {
+        "case": "mixed_600",
+        "training": 20,
+        "hero": "intelligence",
+        "variant": "coin",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 401,
+        "second_wins": 409,
+        "draws": 190,
+        "first_score": 0.496,
+        "paired_95ci": [
+          0.47038,
+          0.52162
+        ],
+        "A_score": 0.472,
+        "median_rounds": 18.0,
+        "fatigue_rate": 0.74,
+        "opening_no_deployment": 96
+      },
+      {
+        "case": "mixed_600",
+        "training": 20,
+        "hero": "command",
+        "variant": "coin",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 295,
+        "second_wins": 508,
+        "draws": 197,
+        "first_score": 0.3935,
+        "paired_95ci": [
+          0.36911,
+          0.41789
+        ],
+        "A_score": 0.5085,
+        "median_rounds": 23.0,
+        "fatigue_rate": 0.979,
+        "opening_no_deployment": 96
+      },
+      {
+        "case": "mixed_600",
+        "training": 60,
+        "hero": "martial",
+        "variant": "coin",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 464,
+        "second_wins": 237,
+        "draws": 299,
+        "first_score": 0.6135,
+        "paired_95ci": [
+          0.59058,
+          0.63642
+        ],
+        "A_score": 0.4935,
+        "median_rounds": 22.0,
+        "fatigue_rate": 0.987,
+        "opening_no_deployment": 0
+      },
+      {
+        "case": "mixed_600",
+        "training": 60,
+        "hero": "intelligence",
+        "variant": "coin",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 371,
+        "second_wins": 443,
+        "draws": 186,
+        "first_score": 0.464,
+        "paired_95ci": [
+          0.43654,
+          0.49146
+        ],
+        "A_score": 0.488,
+        "median_rounds": 17.0,
+        "fatigue_rate": 0.613,
+        "opening_no_deployment": 0
+      },
+      {
+        "case": "mixed_600",
+        "training": 60,
+        "hero": "command",
+        "variant": "coin",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 293,
+        "second_wins": 435,
+        "draws": 272,
+        "first_score": 0.429,
+        "paired_95ci": [
+          0.40604,
+          0.45196
+        ],
+        "A_score": 0.478,
+        "median_rounds": 21.0,
+        "fatigue_rate": 0.89,
+        "opening_no_deployment": 0
+      },
+      {
+        "case": "mixed_600",
+        "training": 90,
+        "hero": "martial",
+        "variant": "coin",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 524,
+        "second_wins": 305,
+        "draws": 171,
+        "first_score": 0.6095,
+        "paired_95ci": [
+          0.58482,
+          0.63418
+        ],
+        "A_score": 0.5115,
+        "median_rounds": 21.0,
+        "fatigue_rate": 0.904,
+        "opening_no_deployment": 0
+      },
+      {
+        "case": "mixed_600",
+        "training": 90,
+        "hero": "intelligence",
+        "variant": "coin",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 447,
+        "second_wins": 437,
+        "draws": 116,
+        "first_score": 0.505,
+        "paired_95ci": [
+          0.47567,
+          0.53433
+        ],
+        "A_score": 0.5,
+        "median_rounds": 14.0,
+        "fatigue_rate": 0.383,
+        "opening_no_deployment": 0
+      },
+      {
+        "case": "mixed_600",
+        "training": 90,
+        "hero": "command",
+        "variant": "coin",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 342,
+        "second_wins": 405,
+        "draws": 253,
+        "first_score": 0.4685,
+        "paired_95ci": [
+          0.44409,
+          0.49291
+        ],
+        "A_score": 0.5085,
+        "median_rounds": 19.0,
+        "fatigue_rate": 0.814,
+        "opening_no_deployment": 0
+      },
+      {
+        "case": "reserve_3600",
+        "training": 20,
+        "hero": "martial",
+        "variant": "coin",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 644,
+        "second_wins": 349,
+        "draws": 7,
+        "first_score": 0.6475,
+        "paired_95ci": [
+          0.62681,
+          0.66819
+        ],
+        "A_score": 0.4875,
+        "median_rounds": 12.0,
+        "fatigue_rate": 0.29,
+        "opening_no_deployment": 20
+      },
+      {
+        "case": "reserve_3600",
+        "training": 20,
+        "hero": "intelligence",
+        "variant": "coin",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 713,
+        "second_wins": 282,
+        "draws": 5,
+        "first_score": 0.7155,
+        "paired_95ci": [
+          0.69293,
+          0.73807
+        ],
+        "A_score": 0.5215,
+        "median_rounds": 12.0,
+        "fatigue_rate": 0.259,
+        "opening_no_deployment": 20
+      },
+      {
+        "case": "reserve_3600",
+        "training": 20,
+        "hero": "command",
+        "variant": "coin",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 640,
+        "second_wins": 354,
+        "draws": 6,
+        "first_score": 0.643,
+        "paired_95ci": [
+          0.62209,
+          0.66391
+        ],
+        "A_score": 0.494,
+        "median_rounds": 12.0,
+        "fatigue_rate": 0.34,
+        "opening_no_deployment": 20
+      },
+      {
+        "case": "reserve_3600",
+        "training": 60,
+        "hero": "martial",
+        "variant": "coin",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 657,
+        "second_wins": 337,
+        "draws": 6,
+        "first_score": 0.66,
+        "paired_95ci": [
+          0.63889,
+          0.68111
+        ],
+        "A_score": 0.512,
+        "median_rounds": 11.0,
+        "fatigue_rate": 0.256,
+        "opening_no_deployment": 0
+      },
+      {
+        "case": "reserve_3600",
+        "training": 60,
+        "hero": "intelligence",
+        "variant": "coin",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 736,
+        "second_wins": 264,
+        "draws": 0,
+        "first_score": 0.736,
+        "paired_95ci": [
+          0.71274,
+          0.75926
+        ],
+        "A_score": 0.498,
+        "median_rounds": 11.0,
+        "fatigue_rate": 0.166,
+        "opening_no_deployment": 0
+      },
+      {
+        "case": "reserve_3600",
+        "training": 60,
+        "hero": "command",
+        "variant": "coin",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 622,
+        "second_wins": 376,
+        "draws": 2,
+        "first_score": 0.623,
+        "paired_95ci": [
+          0.60231,
+          0.64369
+        ],
+        "A_score": 0.5,
+        "median_rounds": 11.0,
+        "fatigue_rate": 0.288,
+        "opening_no_deployment": 0
+      },
+      {
+        "case": "reserve_3600",
+        "training": 90,
+        "hero": "martial",
+        "variant": "coin",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 671,
+        "second_wins": 326,
+        "draws": 3,
+        "first_score": 0.6725,
+        "paired_95ci": [
+          0.65063,
+          0.69437
+        ],
+        "A_score": 0.5025,
+        "median_rounds": 10.0,
+        "fatigue_rate": 0.202,
+        "opening_no_deployment": 0
+      },
+      {
+        "case": "reserve_3600",
+        "training": 90,
+        "hero": "intelligence",
+        "variant": "coin",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 762,
+        "second_wins": 237,
+        "draws": 1,
+        "first_score": 0.7625,
+        "paired_95ci": [
+          0.73975,
+          0.78525
+        ],
+        "A_score": 0.5055,
+        "median_rounds": 10.0,
+        "fatigue_rate": 0.116,
+        "opening_no_deployment": 0
+      },
+      {
+        "case": "reserve_3600",
+        "training": 90,
+        "hero": "command",
+        "variant": "coin",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 656,
+        "second_wins": 341,
+        "draws": 3,
+        "first_score": 0.6575,
+        "paired_95ci": [
+          0.63591,
+          0.67909
+        ],
+        "A_score": 0.5005,
+        "median_rounds": 10.0,
+        "fatigue_rate": 0.236,
+        "opening_no_deployment": 0
+      },
+      {
+        "case": "mixed_1800",
+        "training": 20,
+        "hero": "martial",
+        "variant": "coin_extra",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 434,
+        "second_wins": 530,
+        "draws": 36,
+        "first_score": 0.452,
+        "paired_95ci": [
+          0.42228,
+          0.48172
+        ],
+        "A_score": 0.494,
+        "median_rounds": 14.0,
+        "fatigue_rate": 0.458,
+        "opening_no_deployment": 11
+      },
+      {
+        "case": "mixed_1800",
+        "training": 20,
+        "hero": "intelligence",
+        "variant": "coin_extra",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 557,
+        "second_wins": 432,
+        "draws": 11,
+        "first_score": 0.5625,
+        "paired_95ci": [
+          0.53173,
+          0.59327
+        ],
+        "A_score": 0.5225,
+        "median_rounds": 13.0,
+        "fatigue_rate": 0.322,
+        "opening_no_deployment": 11
+      },
+      {
+        "case": "mixed_1800",
+        "training": 20,
+        "hero": "command",
+        "variant": "coin_extra",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 391,
+        "second_wins": 590,
+        "draws": 19,
+        "first_score": 0.4005,
+        "paired_95ci": [
+          0.3714,
+          0.4296
+        ],
+        "A_score": 0.5175,
+        "median_rounds": 16.0,
+        "fatigue_rate": 0.501,
+        "opening_no_deployment": 11
+      },
+      {
+        "case": "mixed_1800",
+        "training": 60,
+        "hero": "martial",
+        "variant": "coin_extra",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 435,
+        "second_wins": 546,
+        "draws": 19,
+        "first_score": 0.4445,
+        "paired_95ci": [
+          0.41503,
+          0.47397
+        ],
+        "A_score": 0.5035,
+        "median_rounds": 12.0,
+        "fatigue_rate": 0.293,
+        "opening_no_deployment": 0
+      },
+      {
+        "case": "mixed_1800",
+        "training": 60,
+        "hero": "intelligence",
+        "variant": "coin_extra",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 565,
+        "second_wins": 428,
+        "draws": 7,
+        "first_score": 0.5685,
+        "paired_95ci": [
+          0.53815,
+          0.59885
+        ],
+        "A_score": 0.5215,
+        "median_rounds": 11.0,
+        "fatigue_rate": 0.207,
+        "opening_no_deployment": 0
+      },
+      {
+        "case": "mixed_1800",
+        "training": 60,
+        "hero": "command",
+        "variant": "coin_extra",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 407,
+        "second_wins": 584,
+        "draws": 9,
+        "first_score": 0.4115,
+        "paired_95ci": [
+          0.38263,
+          0.44037
+        ],
+        "A_score": 0.5085,
+        "median_rounds": 12.0,
+        "fatigue_rate": 0.351,
+        "opening_no_deployment": 0
+      },
+      {
+        "case": "mixed_1800",
+        "training": 90,
+        "hero": "martial",
+        "variant": "coin_extra",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 457,
+        "second_wins": 537,
+        "draws": 6,
+        "first_score": 0.46,
+        "paired_95ci": [
+          0.42997,
+          0.49003
+        ],
+        "A_score": 0.522,
+        "median_rounds": 10.0,
+        "fatigue_rate": 0.135,
+        "opening_no_deployment": 0
+      },
+      {
+        "case": "mixed_1800",
+        "training": 90,
+        "hero": "intelligence",
+        "variant": "coin_extra",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 622,
+        "second_wins": 376,
+        "draws": 2,
+        "first_score": 0.623,
+        "paired_95ci": [
+          0.59272,
+          0.65328
+        ],
+        "A_score": 0.508,
+        "median_rounds": 10.0,
+        "fatigue_rate": 0.091,
+        "opening_no_deployment": 0
+      },
+      {
+        "case": "mixed_1800",
+        "training": 90,
+        "hero": "command",
+        "variant": "coin_extra",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 415,
+        "second_wins": 582,
+        "draws": 3,
+        "first_score": 0.4165,
+        "paired_95ci": [
+          0.38761,
+          0.44539
+        ],
+        "A_score": 0.5295,
+        "median_rounds": 10.0,
+        "fatigue_rate": 0.219,
+        "opening_no_deployment": 0
+      },
+      {
+        "case": "infantry_1800",
+        "training": 20,
+        "hero": "martial",
+        "variant": "coin_extra",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 240,
+        "second_wins": 206,
+        "draws": 554,
+        "first_score": 0.517,
+        "paired_95ci": [
+          0.49657,
+          0.53743
+        ],
+        "A_score": 0.499,
+        "median_rounds": 23.0,
+        "fatigue_rate": 0.997,
+        "opening_no_deployment": 2
+      },
+      {
+        "case": "infantry_1800",
+        "training": 20,
+        "hero": "intelligence",
+        "variant": "coin_extra",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 367,
+        "second_wins": 455,
+        "draws": 178,
+        "first_score": 0.456,
+        "paired_95ci": [
+          0.42831,
+          0.48369
+        ],
+        "A_score": 0.481,
+        "median_rounds": 21.0,
+        "fatigue_rate": 1.0,
+        "opening_no_deployment": 2
+      },
+      {
+        "case": "infantry_1800",
+        "training": 20,
+        "hero": "command",
+        "variant": "coin_extra",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 572,
+        "second_wins": 302,
+        "draws": 126,
+        "first_score": 0.635,
+        "paired_95ci": [
+          0.60864,
+          0.66136
+        ],
+        "A_score": 0.491,
+        "median_rounds": 25.0,
+        "fatigue_rate": 1.0,
+        "opening_no_deployment": 2
+      },
+      {
+        "case": "infantry_1800",
+        "training": 60,
+        "hero": "martial",
+        "variant": "coin_extra",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 302,
+        "second_wins": 197,
+        "draws": 501,
+        "first_score": 0.5525,
+        "paired_95ci": [
+          0.53011,
+          0.57489
+        ],
+        "A_score": 0.4975,
+        "median_rounds": 22.0,
+        "fatigue_rate": 0.985,
+        "opening_no_deployment": 0
+      },
+      {
+        "case": "infantry_1800",
+        "training": 60,
+        "hero": "intelligence",
+        "variant": "coin_extra",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 355,
+        "second_wins": 399,
+        "draws": 246,
+        "first_score": 0.478,
+        "paired_95ci": [
+          0.45117,
+          0.50483
+        ],
+        "A_score": 0.493,
+        "median_rounds": 20.0,
+        "fatigue_rate": 0.981,
+        "opening_no_deployment": 0
+      },
+      {
+        "case": "infantry_1800",
+        "training": 60,
+        "hero": "command",
+        "variant": "coin_extra",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 398,
+        "second_wins": 361,
+        "draws": 241,
+        "first_score": 0.5185,
+        "paired_95ci": [
+          0.49203,
+          0.54497
+        ],
+        "A_score": 0.5025,
+        "median_rounds": 24.0,
+        "fatigue_rate": 0.967,
+        "opening_no_deployment": 0
+      },
+      {
+        "case": "infantry_1800",
+        "training": 90,
+        "hero": "martial",
+        "variant": "coin_extra",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 377,
+        "second_wins": 295,
+        "draws": 328,
+        "first_score": 0.541,
+        "paired_95ci": [
+          0.51621,
+          0.56579
+        ],
+        "A_score": 0.497,
+        "median_rounds": 22.0,
+        "fatigue_rate": 0.944,
+        "opening_no_deployment": 0
+      },
+      {
+        "case": "infantry_1800",
+        "training": 90,
+        "hero": "intelligence",
+        "variant": "coin_extra",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 370,
+        "second_wins": 383,
+        "draws": 247,
+        "first_score": 0.4935,
+        "paired_95ci": [
+          0.46623,
+          0.52077
+        ],
+        "A_score": 0.5015,
+        "median_rounds": 20.0,
+        "fatigue_rate": 0.904,
+        "opening_no_deployment": 0
+      },
+      {
+        "case": "infantry_1800",
+        "training": 90,
+        "hero": "command",
+        "variant": "coin_extra",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 353,
+        "second_wins": 373,
+        "draws": 274,
+        "first_score": 0.49,
+        "paired_95ci": [
+          0.46369,
+          0.51631
+        ],
+        "A_score": 0.51,
+        "median_rounds": 24.0,
+        "fatigue_rate": 0.898,
+        "opening_no_deployment": 0
+      },
+      {
+        "case": "cavalry_1800",
+        "training": 20,
+        "hero": "martial",
+        "variant": "coin_extra",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 631,
+        "second_wins": 368,
+        "draws": 1,
+        "first_score": 0.6315,
+        "paired_95ci": [
+          0.60229,
+          0.66071
+        ],
+        "A_score": 0.5115,
+        "median_rounds": 8.0,
+        "fatigue_rate": 0.032,
+        "opening_no_deployment": 74
+      },
+      {
+        "case": "cavalry_1800",
+        "training": 20,
+        "hero": "intelligence",
+        "variant": "coin_extra",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 685,
+        "second_wins": 314,
+        "draws": 1,
+        "first_score": 0.6855,
+        "paired_95ci": [
+          0.65697,
+          0.71403
+        ],
+        "A_score": 0.5165,
+        "median_rounds": 8.0,
+        "fatigue_rate": 0.019,
+        "opening_no_deployment": 74
+      },
+      {
+        "case": "cavalry_1800",
+        "training": 20,
+        "hero": "command",
+        "variant": "coin_extra",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 562,
+        "second_wins": 435,
+        "draws": 3,
+        "first_score": 0.5635,
+        "paired_95ci": [
+          0.53338,
+          0.59362
+        ],
+        "A_score": 0.5055,
+        "median_rounds": 9.0,
+        "fatigue_rate": 0.138,
+        "opening_no_deployment": 74
+      },
+      {
+        "case": "cavalry_1800",
+        "training": 60,
+        "hero": "martial",
+        "variant": "coin_extra",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 645,
+        "second_wins": 352,
+        "draws": 3,
+        "first_score": 0.6465,
+        "paired_95ci": [
+          0.61768,
+          0.67532
+        ],
+        "A_score": 0.4785,
+        "median_rounds": 10.0,
+        "fatigue_rate": 0.158,
+        "opening_no_deployment": 0
+      },
+      {
+        "case": "cavalry_1800",
+        "training": 60,
+        "hero": "intelligence",
+        "variant": "coin_extra",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 794,
+        "second_wins": 197,
+        "draws": 9,
+        "first_score": 0.7985,
+        "paired_95ci": [
+          0.77528,
+          0.82172
+        ],
+        "A_score": 0.4985,
+        "median_rounds": 8.0,
+        "fatigue_rate": 0.075,
+        "opening_no_deployment": 0
+      },
+      {
+        "case": "cavalry_1800",
+        "training": 60,
+        "hero": "command",
+        "variant": "coin_extra",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 578,
+        "second_wins": 415,
+        "draws": 7,
+        "first_score": 0.5815,
+        "paired_95ci": [
+          0.55204,
+          0.61096
+        ],
+        "A_score": 0.4935,
+        "median_rounds": 10.0,
+        "fatigue_rate": 0.24,
+        "opening_no_deployment": 0
+      },
+      {
+        "case": "cavalry_1800",
+        "training": 90,
+        "hero": "martial",
+        "variant": "coin_extra",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 717,
+        "second_wins": 281,
+        "draws": 2,
+        "first_score": 0.718,
+        "paired_95ci": [
+          0.69135,
+          0.74465
+        ],
+        "A_score": 0.493,
+        "median_rounds": 7.0,
+        "fatigue_rate": 0.052,
+        "opening_no_deployment": 0
+      },
+      {
+        "case": "cavalry_1800",
+        "training": 90,
+        "hero": "intelligence",
+        "variant": "coin_extra",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 824,
+        "second_wins": 174,
+        "draws": 2,
+        "first_score": 0.825,
+        "paired_95ci": [
+          0.80331,
+          0.84669
+        ],
+        "A_score": 0.494,
+        "median_rounds": 7.0,
+        "fatigue_rate": 0.027,
+        "opening_no_deployment": 0
+      },
+      {
+        "case": "cavalry_1800",
+        "training": 90,
+        "hero": "command",
+        "variant": "coin_extra",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 640,
+        "second_wins": 358,
+        "draws": 2,
+        "first_score": 0.641,
+        "paired_95ci": [
+          0.61252,
+          0.66948
+        ],
+        "A_score": 0.506,
+        "median_rounds": 8.0,
+        "fatigue_rate": 0.121,
+        "opening_no_deployment": 0
+      },
+      {
+        "case": "ranged_1800",
+        "training": 20,
+        "hero": "martial",
+        "variant": "coin_extra",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 635,
+        "second_wins": 365,
+        "draws": 0,
+        "first_score": 0.635,
+        "paired_95ci": [
+          0.60534,
+          0.66466
+        ],
+        "A_score": 0.493,
+        "median_rounds": 7.0,
+        "fatigue_rate": 0.0,
+        "opening_no_deployment": 71
+      },
+      {
+        "case": "ranged_1800",
+        "training": 20,
+        "hero": "intelligence",
+        "variant": "coin_extra",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 659,
+        "second_wins": 341,
+        "draws": 0,
+        "first_score": 0.659,
+        "paired_95ci": [
+          0.63136,
+          0.68664
+        ],
+        "A_score": 0.499,
+        "median_rounds": 7.0,
+        "fatigue_rate": 0.001,
+        "opening_no_deployment": 71
+      },
+      {
+        "case": "ranged_1800",
+        "training": 20,
+        "hero": "command",
+        "variant": "coin_extra",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 556,
+        "second_wins": 443,
+        "draws": 1,
+        "first_score": 0.5565,
+        "paired_95ci": [
+          0.52592,
+          0.58708
+        ],
+        "A_score": 0.4995,
+        "median_rounds": 8.0,
+        "fatigue_rate": 0.075,
+        "opening_no_deployment": 71
+      },
+      {
+        "case": "ranged_1800",
+        "training": 60,
+        "hero": "martial",
+        "variant": "coin_extra",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 713,
+        "second_wins": 287,
+        "draws": 0,
+        "first_score": 0.713,
+        "paired_95ci": [
+          0.6874,
+          0.7386
+        ],
+        "A_score": 0.499,
+        "median_rounds": 6.0,
+        "fatigue_rate": 0.0,
+        "opening_no_deployment": 0
+      },
+      {
+        "case": "ranged_1800",
+        "training": 60,
+        "hero": "intelligence",
+        "variant": "coin_extra",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 686,
+        "second_wins": 314,
+        "draws": 0,
+        "first_score": 0.686,
+        "paired_95ci": [
+          0.65904,
+          0.71296
+        ],
+        "A_score": 0.512,
+        "median_rounds": 6.0,
+        "fatigue_rate": 0.0,
+        "opening_no_deployment": 0
+      },
+      {
+        "case": "ranged_1800",
+        "training": 60,
+        "hero": "command",
+        "variant": "coin_extra",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 619,
+        "second_wins": 380,
+        "draws": 1,
+        "first_score": 0.6195,
+        "paired_95ci": [
+          0.59075,
+          0.64825
+        ],
+        "A_score": 0.5055,
+        "median_rounds": 7.0,
+        "fatigue_rate": 0.021,
+        "opening_no_deployment": 0
+      },
+      {
+        "case": "ranged_1800",
+        "training": 90,
+        "hero": "martial",
+        "variant": "coin_extra",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 749,
+        "second_wins": 251,
+        "draws": 0,
+        "first_score": 0.749,
+        "paired_95ci": [
+          0.7229,
+          0.7751
+        ],
+        "A_score": 0.495,
+        "median_rounds": 6.0,
+        "fatigue_rate": 0.0,
+        "opening_no_deployment": 0
+      },
+      {
+        "case": "ranged_1800",
+        "training": 90,
+        "hero": "intelligence",
+        "variant": "coin_extra",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 739,
+        "second_wins": 261,
+        "draws": 0,
+        "first_score": 0.739,
+        "paired_95ci": [
+          0.71262,
+          0.76538
+        ],
+        "A_score": 0.489,
+        "median_rounds": 6.0,
+        "fatigue_rate": 0.0,
+        "opening_no_deployment": 0
+      },
+      {
+        "case": "ranged_1800",
+        "training": 90,
+        "hero": "command",
+        "variant": "coin_extra",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 647,
+        "second_wins": 353,
+        "draws": 0,
+        "first_score": 0.647,
+        "paired_95ci": [
+          0.61927,
+          0.67473
+        ],
+        "A_score": 0.489,
+        "median_rounds": 6.0,
+        "fatigue_rate": 0.008,
+        "opening_no_deployment": 0
+      },
+      {
+        "case": "heavy_1800",
+        "training": 20,
+        "hero": "martial",
+        "variant": "coin_extra",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 385,
+        "second_wins": 602,
+        "draws": 13,
+        "first_score": 0.3915,
+        "paired_95ci": [
+          0.36157,
+          0.42143
+        ],
+        "A_score": 0.4995,
+        "median_rounds": 12.5,
+        "fatigue_rate": 0.245,
+        "opening_no_deployment": 751
+      },
+      {
+        "case": "heavy_1800",
+        "training": 20,
+        "hero": "intelligence",
+        "variant": "coin_extra",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 78,
+        "second_wins": 922,
+        "draws": 0,
+        "first_score": 0.078,
+        "paired_95ci": [
+          0.06091,
+          0.09509
+        ],
+        "A_score": 0.514,
+        "median_rounds": 11.0,
+        "fatigue_rate": 0.33,
+        "opening_no_deployment": 751
+      },
+      {
+        "case": "heavy_1800",
+        "training": 20,
+        "hero": "command",
+        "variant": "coin_extra",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 181,
+        "second_wins": 813,
+        "draws": 6,
+        "first_score": 0.184,
+        "paired_95ci": [
+          0.16122,
+          0.20678
+        ],
+        "A_score": 0.511,
+        "median_rounds": 13.0,
+        "fatigue_rate": 0.338,
+        "opening_no_deployment": 751
+      },
+      {
+        "case": "heavy_1800",
+        "training": 60,
+        "hero": "martial",
+        "variant": "coin_extra",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 228,
+        "second_wins": 772,
+        "draws": 0,
+        "first_score": 0.228,
+        "paired_95ci": [
+          0.20153,
+          0.25447
+        ],
+        "A_score": 0.52,
+        "median_rounds": 7.0,
+        "fatigue_rate": 0.028,
+        "opening_no_deployment": 0
+      },
+      {
+        "case": "heavy_1800",
+        "training": 60,
+        "hero": "intelligence",
+        "variant": "coin_extra",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 10,
+        "second_wins": 990,
+        "draws": 0,
+        "first_score": 0.01,
+        "paired_95ci": [
+          0.00386,
+          0.01614
+        ],
+        "A_score": 0.502,
+        "median_rounds": 5.0,
+        "fatigue_rate": 0.002,
+        "opening_no_deployment": 0
+      },
+      {
+        "case": "heavy_1800",
+        "training": 60,
+        "hero": "command",
+        "variant": "coin_extra",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 118,
+        "second_wins": 881,
+        "draws": 1,
+        "first_score": 0.1185,
+        "paired_95ci": [
+          0.09906,
+          0.13794
+        ],
+        "A_score": 0.5125,
+        "median_rounds": 6.0,
+        "fatigue_rate": 0.053,
+        "opening_no_deployment": 0
+      },
+      {
+        "case": "heavy_1800",
+        "training": 90,
+        "hero": "martial",
+        "variant": "coin_extra",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 105,
+        "second_wins": 895,
+        "draws": 0,
+        "first_score": 0.105,
+        "paired_95ci": [
+          0.08548,
+          0.12452
+        ],
+        "A_score": 0.521,
+        "median_rounds": 5.0,
+        "fatigue_rate": 0.007,
+        "opening_no_deployment": 0
+      },
+      {
+        "case": "heavy_1800",
+        "training": 90,
+        "hero": "intelligence",
+        "variant": "coin_extra",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 3,
+        "second_wins": 997,
+        "draws": 0,
+        "first_score": 0.003,
+        "paired_95ci": [
+          0,
+          0.00639
+        ],
+        "A_score": 0.501,
+        "median_rounds": 4.0,
+        "fatigue_rate": 0.002,
+        "opening_no_deployment": 0
+      },
+      {
+        "case": "heavy_1800",
+        "training": 90,
+        "hero": "command",
+        "variant": "coin_extra",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 4,
+        "second_wins": 996,
+        "draws": 0,
+        "first_score": 0.004,
+        "paired_95ci": [
+          9e-05,
+          0.00791
+        ],
+        "A_score": 0.5,
+        "median_rounds": 4.0,
+        "fatigue_rate": 0.0,
+        "opening_no_deployment": 0
+      },
+      {
+        "case": "exotic_1800",
+        "training": 20,
+        "hero": "martial",
+        "variant": "coin_extra",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 651,
+        "second_wins": 344,
+        "draws": 5,
+        "first_score": 0.6535,
+        "paired_95ci": [
+          0.62361,
+          0.68339
+        ],
+        "A_score": 0.5015,
+        "median_rounds": 12.0,
+        "fatigue_rate": 0.172,
+        "opening_no_deployment": 504
+      },
+      {
+        "case": "exotic_1800",
+        "training": 20,
+        "hero": "intelligence",
+        "variant": "coin_extra",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 566,
+        "second_wins": 429,
+        "draws": 5,
+        "first_score": 0.5685,
+        "paired_95ci": [
+          0.53749,
+          0.59951
+        ],
+        "A_score": 0.5095,
+        "median_rounds": 13.0,
+        "fatigue_rate": 0.212,
+        "opening_no_deployment": 504
+      },
+      {
+        "case": "exotic_1800",
+        "training": 20,
+        "hero": "command",
+        "variant": "coin_extra",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 471,
+        "second_wins": 525,
+        "draws": 4,
+        "first_score": 0.473,
+        "paired_95ci": [
+          0.44207,
+          0.50393
+        ],
+        "A_score": 0.524,
+        "median_rounds": 13.0,
+        "fatigue_rate": 0.295,
+        "opening_no_deployment": 504
+      },
+      {
+        "case": "exotic_1800",
+        "training": 60,
+        "hero": "martial",
+        "variant": "coin_extra",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 623,
+        "second_wins": 371,
+        "draws": 6,
+        "first_score": 0.626,
+        "paired_95ci": [
+          0.59562,
+          0.65638
+        ],
+        "A_score": 0.513,
+        "median_rounds": 11.0,
+        "fatigue_rate": 0.144,
+        "opening_no_deployment": 0
+      },
+      {
+        "case": "exotic_1800",
+        "training": 60,
+        "hero": "intelligence",
+        "variant": "coin_extra",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 602,
+        "second_wins": 396,
+        "draws": 2,
+        "first_score": 0.603,
+        "paired_95ci": [
+          0.57178,
+          0.63422
+        ],
+        "A_score": 0.531,
+        "median_rounds": 13.0,
+        "fatigue_rate": 0.222,
+        "opening_no_deployment": 0
+      },
+      {
+        "case": "exotic_1800",
+        "training": 60,
+        "hero": "command",
+        "variant": "coin_extra",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 473,
+        "second_wins": 523,
+        "draws": 4,
+        "first_score": 0.475,
+        "paired_95ci": [
+          0.44559,
+          0.50441
+        ],
+        "A_score": 0.512,
+        "median_rounds": 13.0,
+        "fatigue_rate": 0.279,
+        "opening_no_deployment": 0
+      },
+      {
+        "case": "exotic_1800",
+        "training": 90,
+        "hero": "martial",
+        "variant": "coin_extra",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 612,
+        "second_wins": 387,
+        "draws": 1,
+        "first_score": 0.6125,
+        "paired_95ci": [
+          0.58205,
+          0.64295
+        ],
+        "A_score": 0.5005,
+        "median_rounds": 10.0,
+        "fatigue_rate": 0.075,
+        "opening_no_deployment": 0
+      },
+      {
+        "case": "exotic_1800",
+        "training": 90,
+        "hero": "intelligence",
+        "variant": "coin_extra",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 607,
+        "second_wins": 392,
+        "draws": 1,
+        "first_score": 0.6075,
+        "paired_95ci": [
+          0.57754,
+          0.63746
+        ],
+        "A_score": 0.5225,
+        "median_rounds": 12.0,
+        "fatigue_rate": 0.089,
+        "opening_no_deployment": 0
+      },
+      {
+        "case": "exotic_1800",
+        "training": 90,
+        "hero": "command",
+        "variant": "coin_extra",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 497,
+        "second_wins": 501,
+        "draws": 2,
+        "first_score": 0.498,
+        "paired_95ci": [
+          0.46707,
+          0.52893
+        ],
+        "A_score": 0.497,
+        "median_rounds": 12.0,
+        "fatigue_rate": 0.223,
+        "opening_no_deployment": 0
+      },
+      {
+        "case": "mixed_600",
+        "training": 20,
+        "hero": "martial",
+        "variant": "coin_extra",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 248,
+        "second_wins": 192,
+        "draws": 560,
+        "first_score": 0.528,
+        "paired_95ci": [
+          0.508,
+          0.548
+        ],
+        "A_score": 0.503,
+        "median_rounds": 23.0,
+        "fatigue_rate": 0.999,
+        "opening_no_deployment": 64
+      },
+      {
+        "case": "mixed_600",
+        "training": 20,
+        "hero": "intelligence",
+        "variant": "coin_extra",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 439,
+        "second_wins": 341,
+        "draws": 220,
+        "first_score": 0.549,
+        "paired_95ci": [
+          0.5223,
+          0.5757
+        ],
+        "A_score": 0.513,
+        "median_rounds": 18.0,
+        "fatigue_rate": 0.78,
+        "opening_no_deployment": 64
+      },
+      {
+        "case": "mixed_600",
+        "training": 20,
+        "hero": "command",
+        "variant": "coin_extra",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 359,
+        "second_wins": 433,
+        "draws": 208,
+        "first_score": 0.463,
+        "paired_95ci": [
+          0.43703,
+          0.48897
+        ],
+        "A_score": 0.496,
+        "median_rounds": 23.0,
+        "fatigue_rate": 0.971,
+        "opening_no_deployment": 64
+      },
+      {
+        "case": "mixed_600",
+        "training": 60,
+        "hero": "martial",
+        "variant": "coin_extra",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 338,
+        "second_wins": 322,
+        "draws": 340,
+        "first_score": 0.508,
+        "paired_95ci": [
+          0.48247,
+          0.53353
+        ],
+        "A_score": 0.493,
+        "median_rounds": 22.0,
+        "fatigue_rate": 0.995,
+        "opening_no_deployment": 0
+      },
+      {
+        "case": "mixed_600",
+        "training": 60,
+        "hero": "intelligence",
+        "variant": "coin_extra",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 421,
+        "second_wins": 369,
+        "draws": 210,
+        "first_score": 0.526,
+        "paired_95ci": [
+          0.49712,
+          0.55488
+        ],
+        "A_score": 0.481,
+        "median_rounds": 17.0,
+        "fatigue_rate": 0.608,
+        "opening_no_deployment": 0
+      },
+      {
+        "case": "mixed_600",
+        "training": 60,
+        "hero": "command",
+        "variant": "coin_extra",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 328,
+        "second_wins": 416,
+        "draws": 256,
+        "first_score": 0.456,
+        "paired_95ci": [
+          0.42989,
+          0.48211
+        ],
+        "A_score": 0.472,
+        "median_rounds": 21.0,
+        "fatigue_rate": 0.899,
+        "opening_no_deployment": 0
+      },
+      {
+        "case": "mixed_600",
+        "training": 90,
+        "hero": "martial",
+        "variant": "coin_extra",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 384,
+        "second_wins": 396,
+        "draws": 220,
+        "first_score": 0.494,
+        "paired_95ci": [
+          0.46743,
+          0.52057
+        ],
+        "A_score": 0.494,
+        "median_rounds": 21.0,
+        "fatigue_rate": 0.938,
+        "opening_no_deployment": 0
+      },
+      {
+        "case": "mixed_600",
+        "training": 90,
+        "hero": "intelligence",
+        "variant": "coin_extra",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 480,
+        "second_wins": 387,
+        "draws": 133,
+        "first_score": 0.5465,
+        "paired_95ci": [
+          0.51669,
+          0.57631
+        ],
+        "A_score": 0.4885,
+        "median_rounds": 14.0,
+        "fatigue_rate": 0.394,
+        "opening_no_deployment": 0
+      },
+      {
+        "case": "mixed_600",
+        "training": 90,
+        "hero": "command",
+        "variant": "coin_extra",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 327,
+        "second_wins": 396,
+        "draws": 277,
+        "first_score": 0.4655,
+        "paired_95ci": [
+          0.43959,
+          0.49141
+        ],
+        "A_score": 0.5065,
+        "median_rounds": 20.0,
+        "fatigue_rate": 0.83,
+        "opening_no_deployment": 0
+      },
+      {
+        "case": "reserve_3600",
+        "training": 20,
+        "hero": "martial",
+        "variant": "coin_extra",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 459,
+        "second_wins": 531,
+        "draws": 10,
+        "first_score": 0.464,
+        "paired_95ci": [
+          0.43668,
+          0.49132
+        ],
+        "A_score": 0.498,
+        "median_rounds": 12.0,
+        "fatigue_rate": 0.314,
+        "opening_no_deployment": 11
+      },
+      {
+        "case": "reserve_3600",
+        "training": 20,
+        "hero": "intelligence",
+        "variant": "coin_extra",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 579,
+        "second_wins": 416,
+        "draws": 5,
+        "first_score": 0.5815,
+        "paired_95ci": [
+          0.5522,
+          0.6108
+        ],
+        "A_score": 0.5065,
+        "median_rounds": 13.0,
+        "fatigue_rate": 0.305,
+        "opening_no_deployment": 11
+      },
+      {
+        "case": "reserve_3600",
+        "training": 20,
+        "hero": "command",
+        "variant": "coin_extra",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 443,
+        "second_wins": 554,
+        "draws": 3,
+        "first_score": 0.4445,
+        "paired_95ci": [
+          0.41895,
+          0.47005
+        ],
+        "A_score": 0.4955,
+        "median_rounds": 13.0,
+        "fatigue_rate": 0.351,
+        "opening_no_deployment": 11
+      },
+      {
+        "case": "reserve_3600",
+        "training": 60,
+        "hero": "martial",
+        "variant": "coin_extra",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 455,
+        "second_wins": 537,
+        "draws": 8,
+        "first_score": 0.459,
+        "paired_95ci": [
+          0.43142,
+          0.48658
+        ],
+        "A_score": 0.505,
+        "median_rounds": 11.0,
+        "fatigue_rate": 0.262,
+        "opening_no_deployment": 0
+      },
+      {
+        "case": "reserve_3600",
+        "training": 60,
+        "hero": "intelligence",
+        "variant": "coin_extra",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 598,
+        "second_wins": 402,
+        "draws": 0,
+        "first_score": 0.598,
+        "paired_95ci": [
+          0.57006,
+          0.62594
+        ],
+        "A_score": 0.508,
+        "median_rounds": 12.0,
+        "fatigue_rate": 0.198,
+        "opening_no_deployment": 0
+      },
+      {
+        "case": "reserve_3600",
+        "training": 60,
+        "hero": "command",
+        "variant": "coin_extra",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 421,
+        "second_wins": 576,
+        "draws": 3,
+        "first_score": 0.4225,
+        "paired_95ci": [
+          0.39526,
+          0.44974
+        ],
+        "A_score": 0.5095,
+        "median_rounds": 12.0,
+        "fatigue_rate": 0.307,
+        "opening_no_deployment": 0
+      },
+      {
+        "case": "reserve_3600",
+        "training": 90,
+        "hero": "martial",
+        "variant": "coin_extra",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 463,
+        "second_wins": 531,
+        "draws": 6,
+        "first_score": 0.466,
+        "paired_95ci": [
+          0.43838,
+          0.49362
+        ],
+        "A_score": 0.503,
+        "median_rounds": 10.0,
+        "fatigue_rate": 0.214,
+        "opening_no_deployment": 0
+      },
+      {
+        "case": "reserve_3600",
+        "training": 90,
+        "hero": "intelligence",
+        "variant": "coin_extra",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 609,
+        "second_wins": 389,
+        "draws": 2,
+        "first_score": 0.61,
+        "paired_95ci": [
+          0.58055,
+          0.63945
+        ],
+        "A_score": 0.51,
+        "median_rounds": 11.0,
+        "fatigue_rate": 0.132,
+        "opening_no_deployment": 0
+      },
+      {
+        "case": "reserve_3600",
+        "training": 90,
+        "hero": "command",
+        "variant": "coin_extra",
+        "policy": "balanced",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 433,
+        "second_wins": 566,
+        "draws": 1,
+        "first_score": 0.4335,
+        "paired_95ci": [
+          0.40664,
+          0.46036
+        ],
+        "A_score": 0.4925,
+        "median_rounds": 11.0,
+        "fatigue_rate": 0.239,
+        "opening_no_deployment": 0
+      }
+    ],
+    "total_games": 144000,
+    "seconds": 112.29,
+    "sha256": "99104662e81395e440a319a8e97240ee44aa29f9c4f2470aca777e9b29ef5ca4"
+  },
+  "independent_holdout": {
+    "identity_pairs": 450,
+    "opening_legal_checks": 1800,
+    "terminal_resource_checks": 1800,
+    "equal_hand_mana_counterexample": [
+      {
+        "event": "部署前锋",
+        "round": 1,
+        "turn": 0,
+        "mana": [
+          1,
+          3
+        ],
+        "board": [
+          [
+            [
+              "heavy",
+              3,
+              8
+            ]
+          ],
+          []
+        ]
+      },
+      {
+        "event": "部署前锋",
+        "round": 1,
+        "turn": 1,
+        "mana": [
+          1,
+          1
+        ],
+        "board": [
+          [
+            [
+              "heavy",
+              3,
+              8
+            ]
+          ],
+          [
+            [
+              "heavy",
+              3,
+              8
+            ]
+          ]
+        ]
+      },
+      {
+        "event": "先手第二回合4军令，不能出5费重骑",
+        "round": 2,
+        "turn": 0,
+        "mana": [
+          4,
+          1
+        ],
+        "board": [
+          [
+            [
+              "heavy",
+              3,
+              8
+            ]
+          ],
+          [
+            [
+              "heavy",
+              3,
+              8
+            ]
+          ]
+        ]
+      },
+      {
+        "event": "后手第二回合用调兵令，达到5军令",
+        "round": 2,
+        "turn": 1,
+        "mana": [
+          4,
+          5
+        ],
+        "board": [
+          [
+            [
+              "heavy",
+              3,
+              8
+            ]
+          ],
+          [
+            [
+              "heavy",
+              3,
+              8
+            ]
+          ]
+        ]
+      },
+      {
+        "event": "后手提前部署5费重骑",
+        "round": 2,
+        "turn": 1,
+        "mana": [
+          4,
+          0
+        ],
+        "board": [
+          [
+            [
+              "heavy",
+              3,
+              8
+            ]
+          ],
+          [
+            [
+              "heavy",
+              3,
+              8
+            ],
+            [
+              "heavy",
+              7,
+              12
+            ]
+          ]
+        ]
+      }
+    ],
+    "heldout_results": [
+      {
+        "case": "mixed_1800",
+        "training": 60,
+        "hero": "martial",
+        "variant": "coin",
+        "policy": "balanced",
+        "seed_pairs": 1000,
+        "games": 2000,
+        "first_wins": 1386,
+        "second_wins": 577,
+        "draws": 37,
+        "first_score": 0.70225,
+        "paired_95ci": [
+          0.68627,
+          0.71823
+        ],
+        "A_score": 0.48375,
+        "median_rounds": 11.0,
+        "fatigue_rate": 0.2685,
+        "opening_no_deployment": 0
+      },
+      {
+        "case": "mixed_1800",
+        "training": 60,
+        "hero": "martial",
+        "variant": "coin_extra",
+        "policy": "balanced",
+        "seed_pairs": 1000,
+        "games": 2000,
+        "first_wins": 933,
+        "second_wins": 1027,
+        "draws": 40,
+        "first_score": 0.4765,
+        "paired_95ci": [
+          0.45552,
+          0.49748
+        ],
+        "A_score": 0.4795,
+        "median_rounds": 12.0,
+        "fatigue_rate": 0.294,
+        "opening_no_deployment": 0
+      },
+      {
+        "case": "cavalry_1800",
+        "training": 60,
+        "hero": "intelligence",
+        "variant": "coin",
+        "policy": "balanced",
+        "seed_pairs": 1000,
+        "games": 2000,
+        "first_wins": 1715,
+        "second_wins": 277,
+        "draws": 8,
+        "first_score": 0.8595,
+        "paired_95ci": [
+          0.84522,
+          0.87378
+        ],
+        "A_score": 0.4955,
+        "median_rounds": 8.0,
+        "fatigue_rate": 0.051,
+        "opening_no_deployment": 0
+      },
+      {
+        "case": "cavalry_1800",
+        "training": 60,
+        "hero": "intelligence",
+        "variant": "coin_extra",
+        "policy": "balanced",
+        "seed_pairs": 1000,
+        "games": 2000,
+        "first_wins": 1601,
+        "second_wins": 388,
+        "draws": 11,
+        "first_score": 0.80325,
+        "paired_95ci": [
+          0.78621,
+          0.82029
+        ],
+        "A_score": 0.49625,
+        "median_rounds": 8.0,
+        "fatigue_rate": 0.066,
+        "opening_no_deployment": 0
+      },
+      {
+        "case": "heavy_1800",
+        "training": 60,
+        "hero": "intelligence",
+        "variant": "coin",
+        "policy": "balanced",
+        "seed_pairs": 1000,
+        "games": 2000,
+        "first_wins": 101,
+        "second_wins": 1899,
+        "draws": 0,
+        "first_score": 0.0505,
+        "paired_95ci": [
+          0.04095,
+          0.06005
+        ],
+        "A_score": 0.4945,
+        "median_rounds": 6.0,
+        "fatigue_rate": 0.0035,
+        "opening_no_deployment": 0
+      },
+      {
+        "case": "heavy_1800",
+        "training": 60,
+        "hero": "intelligence",
+        "variant": "coin_extra",
+        "policy": "balanced",
+        "seed_pairs": 1000,
+        "games": 2000,
+        "first_wins": 24,
+        "second_wins": 1976,
+        "draws": 0,
+        "first_score": 0.012,
+        "paired_95ci": [
+          0.00725,
+          0.01675
+        ],
+        "A_score": 0.497,
+        "median_rounds": 5.0,
+        "fatigue_rate": 0.001,
+        "opening_no_deployment": 0
+      }
+    ],
+    "heldout_games": 12000
+  },
+  "policy_sensitivity": {
+    "policy": "aggressive",
+    "games": 6000,
+    "results": [
+      {
+        "case": "mixed_1800",
+        "training": 60,
+        "hero": "martial",
+        "variant": "coin",
+        "policy": "aggressive",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 729,
+        "second_wins": 262,
+        "draws": 9,
+        "first_score": 0.7335,
+        "paired_95ci": [
+          0.7106,
+          0.7564
+        ],
+        "A_score": 0.5125,
+        "median_rounds": 10.0,
+        "fatigue_rate": 0.158,
+        "opening_no_deployment": 0
+      },
+      {
+        "case": "mixed_1800",
+        "training": 60,
+        "hero": "martial",
+        "variant": "coin_extra",
+        "policy": "aggressive",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 473,
+        "second_wins": 518,
+        "draws": 9,
+        "first_score": 0.4775,
+        "paired_95ci": [
+          0.44799,
+          0.50701
+        ],
+        "A_score": 0.5335,
+        "median_rounds": 10.0,
+        "fatigue_rate": 0.163,
+        "opening_no_deployment": 0
+      },
+      {
+        "case": "cavalry_1800",
+        "training": 60,
+        "hero": "intelligence",
+        "variant": "coin",
+        "policy": "aggressive",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 874,
+        "second_wins": 125,
+        "draws": 1,
+        "first_score": 0.8745,
+        "paired_95ci": [
+          0.8553,
+          0.8937
+        ],
+        "A_score": 0.5065,
+        "median_rounds": 8.0,
+        "fatigue_rate": 0.025,
+        "opening_no_deployment": 0
+      },
+      {
+        "case": "cavalry_1800",
+        "training": 60,
+        "hero": "intelligence",
+        "variant": "coin_extra",
+        "policy": "aggressive",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 809,
+        "second_wins": 191,
+        "draws": 0,
+        "first_score": 0.809,
+        "paired_95ci": [
+          0.78545,
+          0.83255
+        ],
+        "A_score": 0.517,
+        "median_rounds": 8.0,
+        "fatigue_rate": 0.034,
+        "opening_no_deployment": 0
+      },
+      {
+        "case": "heavy_1800",
+        "training": 60,
+        "hero": "intelligence",
+        "variant": "coin",
+        "policy": "aggressive",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 37,
+        "second_wins": 963,
+        "draws": 0,
+        "first_score": 0.037,
+        "paired_95ci": [
+          0.02486,
+          0.04914
+        ],
+        "A_score": 0.499,
+        "median_rounds": 5.0,
+        "fatigue_rate": 0.0,
+        "opening_no_deployment": 0
+      },
+      {
+        "case": "heavy_1800",
+        "training": 60,
+        "hero": "intelligence",
+        "variant": "coin_extra",
+        "policy": "aggressive",
+        "seed_pairs": 500,
+        "games": 1000,
+        "first_wins": 12,
+        "second_wins": 988,
+        "draws": 0,
+        "first_score": 0.012,
+        "paired_95ci": [
+          0.00529,
+          0.01871
+        ],
+        "A_score": 0.502,
+        "median_rounds": 5.0,
+        "fatigue_rate": 0.0,
+        "opening_no_deployment": 0
+      }
+    ]
+  },
+  "statistical_games": 162000,
+  "identity_replay_games": 900
+}

@@ -10,6 +10,6 @@ export function financeHistory(country,turn){
   if(latest.legacy)return `<h3>国库实际流水</h3>${history}<p class="civil-note">旧版记录仅包含当时的常规收支；迁移保留实际余额，新交易从该余额开始完整记账。</p>`;
   const labels={regular:'常规财政',oneOff:'政令与事件',transfer:'转账与履约'};
   const categories=table(['本期分类','实际收入','实际支出','新增应付未付'],Object.entries(latest.categories).map(([key,v])=>[labels[key],fmt(v.income),fmt(v.expenditure),fmt(v.debtAdded)]));
-  const entries=table(['交易号','事项','实际收入','实际支出','新增债务','交易后国库'],latest.entries.slice(-20).reverse().map(e=>[e.id,esc(e.reason),fmt(e.income),fmt(e.expenditure),fmt(e.debtAdded),fmt(e.treasuryAfter)]));
-  return `<h3>国库实际流水</h3><p class="civil-note">上方为常规预算预测；下方记录实际收付，含政令、外交和祥瑞。内部转账不代表全国新增财富。</p>${history}<h3>最新一期分类</h3>${categories}<p class="civil-note">余额核对：${fmt(latest.openingTreasury)} + ${fmt(latest.income)} − ${fmt(latest.expenditure)} = ${fmt(latest.closingTreasury)} 两；国债 ${fmt(latest.closingDebt)} 两。</p><h3>最新一期最近20笔交易</h3>${entries}<p class="civil-note">每旬保留最近100笔明细，更早明细并入结转汇总；完整旬汇总保留36旬。</p>`;
+  const entries=table(['交易号','事项','实际收入','实际支出','新增债务','偿还本金','交易后国库'],latest.entries.slice(-20).reverse().map(e=>[e.id,esc(e.reason),fmt(e.income),fmt(e.expenditure),fmt(e.debtAdded),fmt(e.debtRepaid??0),fmt(e.treasuryAfter)]));
+  return `<h3>国库实际流水</h3><p class="civil-note">上方为常规预算预测；下方记录实际收付，含政令、外交和祥瑞。内部转账不代表全国新增财富。</p>${history}<h3>最新一期分类</h3>${categories}<p class="civil-note">余额核对：${fmt(latest.openingTreasury)} + ${fmt(latest.income)} − ${fmt(latest.expenditure)} = ${fmt(latest.closingTreasury)} 两；国债 ${fmt(latest.closingDebt)} 两。</p><h3>最新一期最近20笔交易</h3>${entries}<p class="civil-note">每旬保留最近100笔明细，更早明细并入结转汇总；完整旬流水保留36旬，另存72旬经营收支摘要；经营收支包含持续训练、密查等经常支出，工程、救灾与偿还本金另列。</p>`;
 }

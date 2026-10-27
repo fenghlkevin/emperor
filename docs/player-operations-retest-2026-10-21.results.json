@@ -1,0 +1,5966 @@
+{
+  "date": "2026-10-21",
+  "branch": "develop",
+  "scope": "Audit only; no gameplay rules or numeric parameters changed",
+  "routeCount": 48,
+  "advances": 8640,
+  "seeds": [
+    1,
+    7,
+    41
+  ],
+  "methodology": {
+    "resources": "Unmodified createPlayableGame; no treasury, army, population or disaster injection. Disaster seed and fixed createdAt are reproducibility parameters.",
+    "world": "Full foreign strategy enabled, actual defense and relocation if required. All court actions charge energy, happiness and health, including outgoing battle result.",
+    "actions": "Public production commands, actual prices and battle simulation using AI tactical actions. Three paid-free garden visits and sleep each turn maintain emperor wellbeing; no direct stat refill.",
+    "save": "Validate and reload every 36 turns. 180 turns per scenario. All rows retained, not only final outcomes."
+  },
+  "frozenSource": "outputs/player-operations-retest-2026-10-21/source",
+  "inputs": [
+    {
+      "path": "/Users/fengheliang/workbench/source/g20/games/outputs/player-operations-retest-2026-10-21/player-operations-1.json",
+      "sha256": "7fd313941e4ebf0dae9cec77bacab9ec6ca54f1aa99896d4d5cd113c258d5d05",
+      "sourceFingerprint": "dde27d219d04536a2fe2f54703d077bc3a9b0c5967df814fbc22daf1e69fe02d"
+    },
+    {
+      "path": "/Users/fengheliang/workbench/source/g20/games/outputs/player-operations-retest-2026-10-21/player-operations-1-focused.json",
+      "sha256": "0e71393d30b38484843380d37b3b7de29ac39b4d3ea5c8972b9765d694b16ce2",
+      "sourceFingerprint": "dde27d219d04536a2fe2f54703d077bc3a9b0c5967df814fbc22daf1e69fe02d"
+    },
+    {
+      "path": "/Users/fengheliang/workbench/source/g20/games/outputs/player-operations-retest-2026-10-21/heavy/player-operations-1-focused.json",
+      "sha256": "4d7fc5247b516012fa6e50f1f92d03b0d97285d71e5a357dafb463c339c381c3",
+      "sourceFingerprint": "dde27d219d04536a2fe2f54703d077bc3a9b0c5967df814fbc22daf1e69fe02d"
+    },
+    {
+      "path": "/Users/fengheliang/workbench/source/g20/games/outputs/player-operations-retest-2026-10-21/depot/player-operations-1-focused.json",
+      "sha256": "7b47320b4655bfaf33ebd0a6d377ca9c82856613574fa9eec53a8a99c603ac32",
+      "sourceFingerprint": "dde27d219d04536a2fe2f54703d077bc3a9b0c5967df814fbc22daf1e69fe02d"
+    },
+    {
+      "path": "/Users/fengheliang/workbench/source/g20/games/outputs/player-operations-retest-2026-10-21/manual/player-operations-1-debt-manual-minimum.json",
+      "sha256": "b4d6bf701a359e083b28264401e41cdc46343aa10a528a0a40e64151aed302f3",
+      "sourceFingerprint": "dde27d219d04536a2fe2f54703d077bc3a9b0c5967df814fbc22daf1e69fe02d"
+    },
+    {
+      "path": "/Users/fengheliang/workbench/source/g20/games/outputs/player-operations-retest-2026-10-21/player-operations-7.json",
+      "sha256": "0446f8f4264e6fe5bd206080fa4d23e8257056d62ce79518375f01f4ba1c0b93",
+      "sourceFingerprint": "dde27d219d04536a2fe2f54703d077bc3a9b0c5967df814fbc22daf1e69fe02d"
+    },
+    {
+      "path": "/Users/fengheliang/workbench/source/g20/games/outputs/player-operations-retest-2026-10-21/player-operations-7-focused.json",
+      "sha256": "6b694890cc17dbe96596a67fa22f036fda5d48bb14c70895dfb3bd5f09107d0a",
+      "sourceFingerprint": "dde27d219d04536a2fe2f54703d077bc3a9b0c5967df814fbc22daf1e69fe02d"
+    },
+    {
+      "path": "/Users/fengheliang/workbench/source/g20/games/outputs/player-operations-retest-2026-10-21/heavy/player-operations-7-focused.json",
+      "sha256": "365b0789757e7ba82cebfb9a36295c77d99e0fb9579776636d2f4b62cf7622cc",
+      "sourceFingerprint": "dde27d219d04536a2fe2f54703d077bc3a9b0c5967df814fbc22daf1e69fe02d"
+    },
+    {
+      "path": "/Users/fengheliang/workbench/source/g20/games/outputs/player-operations-retest-2026-10-21/depot/player-operations-7-focused.json",
+      "sha256": "778e6f4e917250af8675a70ff7cc0217cfe72b68a8587194fc38e0e99becfa29",
+      "sourceFingerprint": "dde27d219d04536a2fe2f54703d077bc3a9b0c5967df814fbc22daf1e69fe02d"
+    },
+    {
+      "path": "/Users/fengheliang/workbench/source/g20/games/outputs/player-operations-retest-2026-10-21/manual/player-operations-7-debt-manual-minimum.json",
+      "sha256": "56421d1fc3fc0378d5f0929b2769b6c9b5aca1cc877d1a9191418a8d28adf3e9",
+      "sourceFingerprint": "dde27d219d04536a2fe2f54703d077bc3a9b0c5967df814fbc22daf1e69fe02d"
+    },
+    {
+      "path": "/Users/fengheliang/workbench/source/g20/games/outputs/player-operations-retest-2026-10-21/player-operations-41.json",
+      "sha256": "ad310fe21600cb9d355058af845abcb1758c0894502c1f21317a3d1f9d1055c8",
+      "sourceFingerprint": "dde27d219d04536a2fe2f54703d077bc3a9b0c5967df814fbc22daf1e69fe02d"
+    },
+    {
+      "path": "/Users/fengheliang/workbench/source/g20/games/outputs/player-operations-retest-2026-10-21/player-operations-41-focused.json",
+      "sha256": "19895373a79dea53140a2b4885e42340e1109090c16f97cb0136448a67b1066d",
+      "sourceFingerprint": "dde27d219d04536a2fe2f54703d077bc3a9b0c5967df814fbc22daf1e69fe02d"
+    },
+    {
+      "path": "/Users/fengheliang/workbench/source/g20/games/outputs/player-operations-retest-2026-10-21/heavy/player-operations-41-focused.json",
+      "sha256": "37c91e9fa7a814f169c724b03a9a3deca92d78d66edd9cdcfe873e6a42597d00",
+      "sourceFingerprint": "dde27d219d04536a2fe2f54703d077bc3a9b0c5967df814fbc22daf1e69fe02d"
+    },
+    {
+      "path": "/Users/fengheliang/workbench/source/g20/games/outputs/player-operations-retest-2026-10-21/depot/player-operations-41-focused.json",
+      "sha256": "9a35f9fd2664db5ddade8c983ae2d3c0873528e4b7078ad4bf451122efcf8c2a",
+      "sourceFingerprint": "dde27d219d04536a2fe2f54703d077bc3a9b0c5967df814fbc22daf1e69fe02d"
+    },
+    {
+      "path": "/Users/fengheliang/workbench/source/g20/games/outputs/player-operations-retest-2026-10-21/manual/player-operations-41-debt-manual-minimum.json",
+      "sha256": "cec9441af58f7ff80570b784aaee7e55e596e360ffd9514569d1b4ecdf3b9d1c",
+      "sourceFingerprint": "dde27d219d04536a2fe2f54703d077bc3a9b0c5967df814fbc22daf1e69fe02d"
+    }
+  ],
+  "routes": [
+    {
+      "mode": "normal",
+      "seed": 1,
+      "steps": 180,
+      "initial": {
+        "turn": 1,
+        "cash": 30000,
+        "debt": 0,
+        "net": 1448,
+        "grain": 11792,
+        "soldiers": 1600,
+        "training": 60,
+        "provinces": 10,
+        "living": 56,
+        "unrest": 0,
+        "disasters": [],
+        "foodShortfall": 0,
+        "localShortfall": 0,
+        "plan": null,
+        "offer": null,
+        "happiness": 75,
+        "life": 2160
+      },
+      "final": {
+        "turn": 181,
+        "cash": 9822,
+        "debt": 0,
+        "net": 517,
+        "grain": 12516,
+        "soldiers": 1600,
+        "training": 60,
+        "provinces": 10,
+        "living": 57,
+        "unrest": 0,
+        "disasters": [
+          {
+            "id": "henan",
+            "kind": "drought",
+            "startTurn": 180,
+            "endTurn": 189
+          },
+          {
+            "id": "jiangnan",
+            "kind": "riot",
+            "startTurn": 181,
+            "endTurn": 186
+          },
+          {
+            "id": "hedong",
+            "kind": "riot",
+            "startTurn": 178,
+            "endTurn": 183
+          },
+          {
+            "id": "longyou",
+            "kind": "riot",
+            "startTurn": 178,
+            "endTurn": 183
+          }
+        ],
+        "foodShortfall": 0,
+        "localShortfall": 0,
+        "plan": null,
+        "offer": null,
+        "happiness": 100,
+        "life": 1980
+      },
+      "minimumCash": 7000,
+      "peakDebt": 0,
+      "publicShortfallTurns": 0,
+      "localShortfallTurns": 0,
+      "peakDisasterCount": 8,
+      "naturalOverlap": null,
+      "battles": [],
+      "firstRestoredTurn": null,
+      "planCompletedTurn": null,
+      "debtPausedTurns": 0,
+      "manualActions": [],
+      "reserveMismatch": null,
+      "raw": "/Users/fengheliang/workbench/source/g20/games/outputs/player-operations-retest-2026-10-21/player-operations-1.json"
+    },
+    {
+      "mode": "large-two-wars",
+      "seed": 1,
+      "steps": 180,
+      "initial": {
+        "turn": 1,
+        "cash": 30000,
+        "debt": 0,
+        "net": 1448,
+        "grain": 11792,
+        "soldiers": 1600,
+        "training": 60,
+        "provinces": 10,
+        "living": 56,
+        "unrest": 0,
+        "disasters": [],
+        "foodShortfall": 0,
+        "localShortfall": 0,
+        "plan": null,
+        "offer": null,
+        "happiness": 75,
+        "life": 2160
+      },
+      "final": {
+        "turn": 181,
+        "cash": 8910,
+        "debt": 0,
+        "net": 181,
+        "grain": 12034,
+        "soldiers": 1600,
+        "training": 66,
+        "provinces": 10,
+        "living": 56,
+        "unrest": 0,
+        "disasters": [
+          {
+            "id": "henan",
+            "kind": "drought",
+            "startTurn": 180,
+            "endTurn": 189
+          },
+          {
+            "id": "jiangnan",
+            "kind": "riot",
+            "startTurn": 181,
+            "endTurn": 186
+          },
+          {
+            "id": "hedong",
+            "kind": "riot",
+            "startTurn": 178,
+            "endTurn": 183
+          },
+          {
+            "id": "shannan",
+            "kind": "riot",
+            "startTurn": 178,
+            "endTurn": 183
+          },
+          {
+            "id": "longyou",
+            "kind": "riot",
+            "startTurn": 178,
+            "endTurn": 183
+          }
+        ],
+        "foodShortfall": 0,
+        "localShortfall": 0,
+        "plan": {
+          "active": false,
+          "spent": 29291,
+          "cap": 35267,
+          "target": 1600,
+          "reserve": 7000,
+          "status": "兵员、兵装与训练均已恢复",
+          "completedTurn": 104
+        },
+        "offer": null,
+        "happiness": 100,
+        "life": 1980
+      },
+      "minimumCash": 7000,
+      "peakDebt": 0,
+      "publicShortfallTurns": 0,
+      "localShortfallTurns": 0,
+      "peakDisasterCount": 8,
+      "naturalOverlap": null,
+      "battles": [
+        {
+          "turn": 7,
+          "soldiersBefore": 1600,
+          "soldiersAfter": 0,
+          "offer": 1600,
+          "cashCost": 255,
+          "grainCost": 142
+        },
+        {
+          "turn": 67,
+          "soldiersBefore": 1600,
+          "soldiersAfter": 10,
+          "offer": 1600,
+          "cashCost": 255,
+          "grainCost": 142
+        }
+      ],
+      "firstRestoredTurn": 38,
+      "planCompletedTurn": 104,
+      "debtPausedTurns": 0,
+      "manualActions": [
+        {
+          "label": "authorize",
+          "turn": 7,
+          "cost": 0
+        },
+        {
+          "label": "authorize",
+          "turn": 67,
+          "cost": 0
+        }
+      ],
+      "reserveMismatch": null,
+      "raw": "/Users/fengheliang/workbench/source/g20/games/outputs/player-operations-retest-2026-10-21/player-operations-1.json"
+    },
+    {
+      "mode": "low-cash-war",
+      "seed": 1,
+      "steps": 180,
+      "initial": {
+        "turn": 1,
+        "cash": 30000,
+        "debt": 0,
+        "net": 1448,
+        "grain": 11792,
+        "soldiers": 1600,
+        "training": 60,
+        "provinces": 10,
+        "living": 56,
+        "unrest": 0,
+        "disasters": [],
+        "foodShortfall": 0,
+        "localShortfall": 0,
+        "plan": null,
+        "offer": null,
+        "happiness": 75,
+        "life": 2160
+      },
+      "final": {
+        "turn": 181,
+        "cash": 9742,
+        "debt": 0,
+        "net": 484,
+        "grain": 12202,
+        "soldiers": 1600,
+        "training": 66,
+        "provinces": 10,
+        "living": 57,
+        "unrest": 0,
+        "disasters": [
+          {
+            "id": "henan",
+            "kind": "drought",
+            "startTurn": 180,
+            "endTurn": 189
+          },
+          {
+            "id": "jiangnan",
+            "kind": "riot",
+            "startTurn": 181,
+            "endTurn": 186
+          },
+          {
+            "id": "hedong",
+            "kind": "riot",
+            "startTurn": 178,
+            "endTurn": 183
+          },
+          {
+            "id": "longyou",
+            "kind": "riot",
+            "startTurn": 178,
+            "endTurn": 183
+          }
+        ],
+        "foodShortfall": 0,
+        "localShortfall": 0,
+        "plan": {
+          "active": false,
+          "spent": 1225,
+          "cap": 2669,
+          "target": 1600,
+          "reserve": 7000,
+          "status": "兵员、兵装与训练均已恢复",
+          "completedTurn": 9
+        },
+        "offer": null,
+        "happiness": 100,
+        "life": 1980
+      },
+      "minimumCash": 1665,
+      "peakDebt": 0,
+      "publicShortfallTurns": 0,
+      "localShortfallTurns": 0,
+      "peakDisasterCount": 8,
+      "naturalOverlap": null,
+      "battles": [
+        {
+          "turn": 1,
+          "soldiersBefore": 1600,
+          "soldiersAfter": 1480,
+          "offer": 1600,
+          "cashCost": 21,
+          "grainCost": 10
+        }
+      ],
+      "firstRestoredTurn": 8,
+      "planCompletedTurn": 9,
+      "debtPausedTurns": 0,
+      "manualActions": [
+        {
+          "label": "initial surplus equipment 2500",
+          "turn": 1,
+          "cost": 28314
+        },
+        {
+          "label": "authorize",
+          "turn": 1,
+          "cost": 0
+        }
+      ],
+      "reserveMismatch": null,
+      "raw": "/Users/fengheliang/workbench/source/g20/games/outputs/player-operations-retest-2026-10-21/player-operations-1.json"
+    },
+    {
+      "mode": "consecutive-active",
+      "seed": 1,
+      "steps": 180,
+      "initial": {
+        "turn": 1,
+        "cash": 30000,
+        "debt": 0,
+        "net": 1448,
+        "grain": 11792,
+        "soldiers": 1600,
+        "training": 60,
+        "provinces": 10,
+        "living": 56,
+        "unrest": 0,
+        "disasters": [],
+        "foodShortfall": 0,
+        "localShortfall": 0,
+        "pending": null,
+        "plan": null,
+        "offer": null,
+        "happiness": 75,
+        "life": 2160
+      },
+      "final": {
+        "turn": 181,
+        "cash": 9745,
+        "debt": 0,
+        "net": 490,
+        "grain": 12509,
+        "soldiers": 1360,
+        "training": 56,
+        "provinces": 10,
+        "living": 57,
+        "unrest": 0,
+        "disasters": [
+          {
+            "id": "henan",
+            "kind": "drought",
+            "startTurn": 180,
+            "endTurn": 189
+          },
+          {
+            "id": "jiangnan",
+            "kind": "riot",
+            "startTurn": 181,
+            "endTurn": 186
+          },
+          {
+            "id": "hedong",
+            "kind": "riot",
+            "startTurn": 178,
+            "endTurn": 183
+          },
+          {
+            "id": "longyou",
+            "kind": "riot",
+            "startTurn": 178,
+            "endTurn": 183
+          }
+        ],
+        "foodShortfall": 0,
+        "localShortfall": 0,
+        "pending": null,
+        "plan": {
+          "active": true,
+          "spent": 2670,
+          "cap": 2672,
+          "target": 1600,
+          "reserve": 7000,
+          "status": "战役或京城危机期间暂停，授权与余额保留"
+        },
+        "offer": 1600,
+        "happiness": 100,
+        "life": 1980
+      },
+      "minimumCash": 7000,
+      "peakDebt": 0,
+      "publicShortfallTurns": 0,
+      "localShortfallTurns": 0,
+      "peakDisasterCount": 8,
+      "naturalOverlap": null,
+      "battles": [
+        {
+          "turn": 7,
+          "soldiersBefore": 1600,
+          "soldiersAfter": 1480,
+          "offer": 1600,
+          "cashCost": 21,
+          "grainCost": 10
+        },
+        {
+          "turn": 9,
+          "soldiersBefore": 1600,
+          "soldiersAfter": 1480,
+          "offer": 1600,
+          "cashCost": 21,
+          "grainCost": 10
+        },
+        {
+          "turn": 11,
+          "soldiersBefore": 1480,
+          "soldiersAfter": 1360,
+          "offer": 1600,
+          "cashCost": 21,
+          "grainCost": 10
+        }
+      ],
+      "firstRestoredTurn": null,
+      "planCompletedTurn": null,
+      "debtPausedTurns": 0,
+      "manualActions": [
+        {
+          "label": "authorize",
+          "turn": 7,
+          "cost": 0
+        }
+      ],
+      "reserveMismatch": null,
+      "raw": "/Users/fengheliang/workbench/source/g20/games/outputs/player-operations-retest-2026-10-21/player-operations-1-focused.json"
+    },
+    {
+      "mode": "consecutive-renewed",
+      "seed": 1,
+      "steps": 180,
+      "initial": {
+        "turn": 1,
+        "cash": 30000,
+        "debt": 0,
+        "net": 1448,
+        "grain": 11792,
+        "soldiers": 1600,
+        "training": 60,
+        "provinces": 10,
+        "living": 56,
+        "unrest": 0,
+        "disasters": [],
+        "foodShortfall": 0,
+        "localShortfall": 0,
+        "pending": null,
+        "plan": null,
+        "offer": null,
+        "happiness": 75,
+        "life": 2160
+      },
+      "final": {
+        "turn": 181,
+        "cash": 9907,
+        "debt": 0,
+        "net": 524,
+        "grain": 12329,
+        "soldiers": 1600,
+        "training": 69,
+        "provinces": 10,
+        "living": 57,
+        "unrest": 0,
+        "disasters": [
+          {
+            "id": "henan",
+            "kind": "drought",
+            "startTurn": 180,
+            "endTurn": 189
+          },
+          {
+            "id": "jiangnan",
+            "kind": "riot",
+            "startTurn": 181,
+            "endTurn": 186
+          },
+          {
+            "id": "hedong",
+            "kind": "riot",
+            "startTurn": 178,
+            "endTurn": 183
+          },
+          {
+            "id": "longyou",
+            "kind": "riot",
+            "startTurn": 178,
+            "endTurn": 183
+          }
+        ],
+        "foodShortfall": 0,
+        "localShortfall": 0,
+        "pending": null,
+        "plan": {
+          "active": false,
+          "spent": 2995,
+          "cap": 3900,
+          "target": 1600,
+          "reserve": 7000,
+          "status": "兵员、兵装与训练均已恢复",
+          "completedTurn": 18
+        },
+        "offer": null,
+        "happiness": 100,
+        "life": 1980
+      },
+      "minimumCash": 7000,
+      "peakDebt": 0,
+      "publicShortfallTurns": 0,
+      "localShortfallTurns": 0,
+      "peakDisasterCount": 8,
+      "naturalOverlap": null,
+      "battles": [
+        {
+          "turn": 7,
+          "soldiersBefore": 1600,
+          "soldiersAfter": 1480,
+          "offer": 1600,
+          "cashCost": 21,
+          "grainCost": 10
+        },
+        {
+          "turn": 9,
+          "soldiersBefore": 1600,
+          "soldiersAfter": 1480,
+          "offer": 1600,
+          "cashCost": 21,
+          "grainCost": 10
+        },
+        {
+          "turn": 11,
+          "soldiersBefore": 1480,
+          "soldiersAfter": 1360,
+          "offer": 1600,
+          "cashCost": 21,
+          "grainCost": 10
+        }
+      ],
+      "firstRestoredTurn": 17,
+      "planCompletedTurn": 18,
+      "debtPausedTurns": 0,
+      "manualActions": [
+        {
+          "label": "authorize",
+          "turn": 7,
+          "cost": 0
+        },
+        {
+          "label": "cancel",
+          "turn": 12,
+          "cost": 0
+        },
+        {
+          "label": "authorize",
+          "turn": 12,
+          "cost": 0
+        }
+      ],
+      "reserveMismatch": null,
+      "raw": "/Users/fengheliang/workbench/source/g20/games/outputs/player-operations-retest-2026-10-21/player-operations-1-focused.json"
+    },
+    {
+      "mode": "consecutive-unapproved",
+      "seed": 1,
+      "steps": 180,
+      "initial": {
+        "turn": 1,
+        "cash": 30000,
+        "debt": 0,
+        "net": 1448,
+        "grain": 11792,
+        "soldiers": 1600,
+        "training": 60,
+        "provinces": 10,
+        "living": 56,
+        "unrest": 0,
+        "disasters": [],
+        "foodShortfall": 0,
+        "localShortfall": 0,
+        "pending": null,
+        "plan": null,
+        "offer": null,
+        "happiness": 75,
+        "life": 2160
+      },
+      "final": {
+        "turn": 181,
+        "cash": 10274,
+        "debt": 0,
+        "net": 507,
+        "grain": 12399,
+        "soldiers": 1360,
+        "training": 66,
+        "provinces": 10,
+        "living": 57,
+        "unrest": 0,
+        "disasters": [
+          {
+            "id": "henan",
+            "kind": "drought",
+            "startTurn": 180,
+            "endTurn": 189
+          },
+          {
+            "id": "jiangnan",
+            "kind": "riot",
+            "startTurn": 181,
+            "endTurn": 186
+          },
+          {
+            "id": "hedong",
+            "kind": "riot",
+            "startTurn": 178,
+            "endTurn": 183
+          },
+          {
+            "id": "longyou",
+            "kind": "riot",
+            "startTurn": 178,
+            "endTurn": 183
+          }
+        ],
+        "foodShortfall": 0,
+        "localShortfall": 0,
+        "pending": null,
+        "plan": {
+          "active": false,
+          "spent": 1896,
+          "cap": 2614,
+          "target": 1360,
+          "reserve": 7000,
+          "status": "兵员、兵装与训练均已恢复",
+          "completedTurn": 15
+        },
+        "offer": null,
+        "happiness": 100,
+        "life": 1980
+      },
+      "minimumCash": 7000,
+      "peakDebt": 0,
+      "publicShortfallTurns": 0,
+      "localShortfallTurns": 0,
+      "peakDisasterCount": 8,
+      "naturalOverlap": null,
+      "battles": [
+        {
+          "turn": 7,
+          "soldiersBefore": 1600,
+          "soldiersAfter": 1480,
+          "offer": 1600,
+          "cashCost": 21,
+          "grainCost": 10
+        },
+        {
+          "turn": 9,
+          "soldiersBefore": 1480,
+          "soldiersAfter": 1360,
+          "offer": 1480,
+          "cashCost": 21,
+          "grainCost": 10
+        },
+        {
+          "turn": 11,
+          "soldiersBefore": 1360,
+          "soldiersAfter": 1240,
+          "offer": 1360,
+          "cashCost": 21,
+          "grainCost": 10
+        }
+      ],
+      "firstRestoredTurn": null,
+      "planCompletedTurn": 15,
+      "debtPausedTurns": 0,
+      "manualActions": [
+        {
+          "label": "authorize",
+          "turn": 11,
+          "cost": 0
+        }
+      ],
+      "reserveMismatch": null,
+      "raw": "/Users/fengheliang/workbench/source/g20/games/outputs/player-operations-retest-2026-10-21/player-operations-1-focused.json"
+    },
+    {
+      "mode": "consecutive-cancelled",
+      "seed": 1,
+      "steps": 180,
+      "initial": {
+        "turn": 1,
+        "cash": 30000,
+        "debt": 0,
+        "net": 1448,
+        "grain": 11792,
+        "soldiers": 1600,
+        "training": 60,
+        "provinces": 10,
+        "living": 56,
+        "unrest": 0,
+        "disasters": [],
+        "foodShortfall": 0,
+        "localShortfall": 0,
+        "pending": null,
+        "plan": null,
+        "offer": null,
+        "happiness": 75,
+        "life": 2160
+      },
+      "final": {
+        "turn": 181,
+        "cash": 9800,
+        "debt": 0,
+        "net": 473,
+        "grain": 12398,
+        "soldiers": 1600,
+        "training": 59,
+        "provinces": 10,
+        "living": 57,
+        "unrest": 0,
+        "disasters": [
+          {
+            "id": "henan",
+            "kind": "drought",
+            "startTurn": 180,
+            "endTurn": 189
+          },
+          {
+            "id": "jiangnan",
+            "kind": "riot",
+            "startTurn": 181,
+            "endTurn": 186
+          },
+          {
+            "id": "hedong",
+            "kind": "riot",
+            "startTurn": 178,
+            "endTurn": 183
+          },
+          {
+            "id": "longyou",
+            "kind": "riot",
+            "startTurn": 178,
+            "endTurn": 183
+          }
+        ],
+        "foodShortfall": 0,
+        "localShortfall": 0,
+        "pending": null,
+        "plan": {
+          "active": false,
+          "spent": 1905,
+          "cap": 2679,
+          "target": 1600,
+          "reserve": 7000,
+          "status": "兵员、兵装与训练均已恢复",
+          "completedTurn": 15
+        },
+        "offer": null,
+        "happiness": 100,
+        "life": 1980
+      },
+      "minimumCash": 7000,
+      "peakDebt": 0,
+      "publicShortfallTurns": 0,
+      "localShortfallTurns": 0,
+      "peakDisasterCount": 8,
+      "naturalOverlap": null,
+      "battles": [
+        {
+          "turn": 7,
+          "soldiersBefore": 1600,
+          "soldiersAfter": 1480,
+          "offer": 1600,
+          "cashCost": 21,
+          "grainCost": 10
+        },
+        {
+          "turn": 9,
+          "soldiersBefore": 1600,
+          "soldiersAfter": 1480,
+          "offer": 1600,
+          "cashCost": 21,
+          "grainCost": 10
+        },
+        {
+          "turn": 11,
+          "soldiersBefore": 1600,
+          "soldiersAfter": 1480,
+          "offer": 1600,
+          "cashCost": 21,
+          "grainCost": 10
+        }
+      ],
+      "firstRestoredTurn": null,
+      "planCompletedTurn": 15,
+      "debtPausedTurns": 0,
+      "manualActions": [
+        {
+          "label": "authorize",
+          "turn": 7,
+          "cost": 0
+        },
+        {
+          "label": "cancel",
+          "turn": 9,
+          "cost": 0
+        },
+        {
+          "label": "authorize",
+          "turn": 9,
+          "cost": 0
+        },
+        {
+          "label": "cancel",
+          "turn": 11,
+          "cost": 0
+        },
+        {
+          "label": "authorize",
+          "turn": 11,
+          "cost": 0
+        }
+      ],
+      "reserveMismatch": null,
+      "raw": "/Users/fengheliang/workbench/source/g20/games/outputs/player-operations-retest-2026-10-21/player-operations-1-focused.json"
+    },
+    {
+      "mode": "natural-overlap-low-cash",
+      "seed": 1,
+      "steps": 180,
+      "initial": {
+        "turn": 1,
+        "cash": 30000,
+        "debt": 0,
+        "net": 1448,
+        "grain": 11792,
+        "soldiers": 1600,
+        "training": 60,
+        "provinces": 10,
+        "living": 56,
+        "unrest": 0,
+        "disasters": [],
+        "foodShortfall": 0,
+        "localShortfall": 0,
+        "pending": null,
+        "plan": null,
+        "offer": null,
+        "happiness": 75,
+        "life": 2160
+      },
+      "final": {
+        "turn": 181,
+        "cash": 11014,
+        "debt": 0,
+        "net": 520,
+        "grain": 12195,
+        "soldiers": 1600,
+        "training": 66,
+        "provinces": 10,
+        "living": 56,
+        "unrest": 0,
+        "disasters": [
+          {
+            "id": "henan",
+            "kind": "drought",
+            "startTurn": 180,
+            "endTurn": 189
+          },
+          {
+            "id": "jiangnan",
+            "kind": "riot",
+            "startTurn": 181,
+            "endTurn": 186
+          },
+          {
+            "id": "hedong",
+            "kind": "riot",
+            "startTurn": 178,
+            "endTurn": 183
+          },
+          {
+            "id": "longyou",
+            "kind": "riot",
+            "startTurn": 178,
+            "endTurn": 183
+          }
+        ],
+        "foodShortfall": 0,
+        "localShortfall": 0,
+        "pending": null,
+        "plan": {
+          "active": false,
+          "spent": 1913,
+          "cap": 2675,
+          "target": 1600,
+          "reserve": 7000,
+          "status": "兵员、兵装与训练均已恢复",
+          "completedTurn": 38
+        },
+        "offer": null,
+        "happiness": 100,
+        "life": 1980
+      },
+      "minimumCash": 1686,
+      "peakDebt": 0,
+      "publicShortfallTurns": 0,
+      "localShortfallTurns": 0,
+      "peakDisasterCount": 8,
+      "naturalOverlap": {
+        "turn": 26,
+        "cash": 2081,
+        "debt": 0,
+        "net": 1111,
+        "grain": 11622,
+        "soldiers": 1600,
+        "training": 60,
+        "provinces": 10,
+        "living": 56,
+        "unrest": 0,
+        "disasters": [
+          {
+            "id": "henan",
+            "kind": "flood",
+            "startTurn": 26,
+            "endTurn": 32
+          },
+          {
+            "id": "lingnan",
+            "kind": "flood",
+            "startTurn": 25,
+            "endTurn": 31
+          },
+          {
+            "id": "jiannan",
+            "kind": "flood",
+            "startTurn": 24,
+            "endTurn": 30
+          }
+        ],
+        "foodShortfall": 0,
+        "localShortfall": 0,
+        "pending": null,
+        "plan": null,
+        "offer": null,
+        "happiness": 97,
+        "life": 2135
+      },
+      "battles": [
+        {
+          "turn": 26,
+          "soldiersBefore": 1600,
+          "soldiersAfter": 1480,
+          "offer": 1600,
+          "cashCost": 21,
+          "grainCost": 10
+        }
+      ],
+      "firstRestoredTurn": 37,
+      "planCompletedTurn": 38,
+      "debtPausedTurns": 0,
+      "manualActions": [
+        {
+          "label": "initial surplus equipment 2500",
+          "turn": 1,
+          "cost": 28314
+        },
+        {
+          "label": "paid surplus infantry equipment 435",
+          "turn": 26,
+          "cost": 4948
+        },
+        {
+          "label": "authorize",
+          "turn": 26,
+          "cost": 0
+        }
+      ],
+      "reserveMismatch": null,
+      "raw": "/Users/fengheliang/workbench/source/g20/games/outputs/player-operations-retest-2026-10-21/player-operations-1-focused.json"
+    },
+    {
+      "mode": "debt-recovery",
+      "seed": 1,
+      "steps": 180,
+      "initial": {
+        "turn": 1,
+        "cash": 30000,
+        "debt": 0,
+        "net": 1448,
+        "grain": 11792,
+        "soldiers": 1600,
+        "training": 60,
+        "provinces": 10,
+        "living": 56,
+        "unrest": 0,
+        "disasters": [],
+        "foodShortfall": 0,
+        "localShortfall": 0,
+        "pending": null,
+        "plan": null,
+        "offer": null,
+        "happiness": 75,
+        "life": 2160
+      },
+      "final": {
+        "turn": 181,
+        "cash": 43082,
+        "debt": 7806,
+        "net": 496,
+        "grain": 7182,
+        "soldiers": 1480,
+        "training": 60,
+        "provinces": 10,
+        "living": 54,
+        "unrest": 0,
+        "disasters": [
+          {
+            "id": "henan",
+            "kind": "drought",
+            "startTurn": 180,
+            "endTurn": 189
+          },
+          {
+            "id": "jiangnan",
+            "kind": "riot",
+            "startTurn": 181,
+            "endTurn": 186
+          },
+          {
+            "id": "hedong",
+            "kind": "riot",
+            "startTurn": 178,
+            "endTurn": 183
+          },
+          {
+            "id": "shannan",
+            "kind": "riot",
+            "startTurn": 178,
+            "endTurn": 183
+          },
+          {
+            "id": "longyou",
+            "kind": "riot",
+            "startTurn": 178,
+            "endTurn": 183
+          }
+        ],
+        "foodShortfall": 0,
+        "localShortfall": 0,
+        "pending": null,
+        "plan": {
+          "active": true,
+          "spent": 0,
+          "cap": 2669,
+          "target": 1600,
+          "reserve": 7000,
+          "status": "战役或京城危机期间暂停，授权与余额保留"
+        },
+        "offer": 1600,
+        "happiness": 100,
+        "life": 1980
+      },
+      "minimumCash": 0,
+      "peakDebt": 124581,
+      "publicShortfallTurns": 0,
+      "localShortfallTurns": 0,
+      "peakDisasterCount": 8,
+      "naturalOverlap": null,
+      "battles": [
+        {
+          "turn": 37,
+          "soldiersBefore": 1600,
+          "soldiersAfter": 1480,
+          "offer": 1600,
+          "cashCost": 21,
+          "grainCost": 10
+        }
+      ],
+      "firstRestoredTurn": null,
+      "planCompletedTurn": null,
+      "debtPausedTurns": 122,
+      "manualActions": [
+        {
+          "label": "tax 0",
+          "turn": 1,
+          "cost": 0
+        },
+        {
+          "label": "tax 20",
+          "turn": 37,
+          "cost": 0
+        },
+        {
+          "label": "authorize",
+          "turn": 37,
+          "cost": 0
+        },
+        {
+          "label": "manual debt repayment 34773",
+          "turn": 109,
+          "cost": 34773
+        }
+      ],
+      "reserveMismatch": null,
+      "raw": "/Users/fengheliang/workbench/source/g20/games/outputs/player-operations-retest-2026-10-21/player-operations-1-focused.json"
+    },
+    {
+      "mode": "debt-repay-control",
+      "seed": 1,
+      "steps": 180,
+      "initial": {
+        "turn": 1,
+        "cash": 30000,
+        "debt": 0,
+        "net": 1448,
+        "grain": 11792,
+        "soldiers": 1600,
+        "training": 60,
+        "provinces": 10,
+        "living": 56,
+        "unrest": 0,
+        "disasters": [],
+        "foodShortfall": 0,
+        "localShortfall": 0,
+        "pending": null,
+        "plan": null,
+        "offer": null,
+        "happiness": 75,
+        "life": 2160
+      },
+      "final": {
+        "turn": 181,
+        "cash": 7001,
+        "debt": 0,
+        "net": 362,
+        "grain": 7192,
+        "soldiers": 1600,
+        "training": 66,
+        "provinces": 10,
+        "living": 54,
+        "unrest": 0,
+        "disasters": [
+          {
+            "id": "henan",
+            "kind": "drought",
+            "startTurn": 180,
+            "endTurn": 189
+          },
+          {
+            "id": "jiangnan",
+            "kind": "riot",
+            "startTurn": 181,
+            "endTurn": 186
+          },
+          {
+            "id": "hedong",
+            "kind": "riot",
+            "startTurn": 178,
+            "endTurn": 183
+          },
+          {
+            "id": "shannan",
+            "kind": "riot",
+            "startTurn": 178,
+            "endTurn": 183
+          },
+          {
+            "id": "longyou",
+            "kind": "riot",
+            "startTurn": 178,
+            "endTurn": 183
+          }
+        ],
+        "foodShortfall": 0,
+        "localShortfall": 0,
+        "pending": null,
+        "plan": {
+          "active": false,
+          "spent": 1910,
+          "cap": 2669,
+          "target": 1600,
+          "reserve": 7000,
+          "status": "兵员、兵装与训练均已恢复",
+          "completedTurn": 161
+        },
+        "offer": null,
+        "happiness": 100,
+        "life": 1980
+      },
+      "minimumCash": 0,
+      "peakDebt": 124581,
+      "publicShortfallTurns": 0,
+      "localShortfallTurns": 0,
+      "peakDisasterCount": 8,
+      "naturalOverlap": null,
+      "battles": [
+        {
+          "turn": 37,
+          "soldiersBefore": 1600,
+          "soldiersAfter": 1480,
+          "offer": 1600,
+          "cashCost": 21,
+          "grainCost": 10
+        }
+      ],
+      "firstRestoredTurn": 160,
+      "planCompletedTurn": 161,
+      "debtPausedTurns": 102,
+      "manualActions": [
+        {
+          "label": "tax 0",
+          "turn": 1,
+          "cost": 0
+        },
+        {
+          "label": "tax 20",
+          "turn": 37,
+          "cost": 0
+        },
+        {
+          "label": "authorize",
+          "turn": 37,
+          "cost": 0
+        },
+        {
+          "label": "repay all real debt",
+          "turn": 156,
+          "cost": 36595
+        }
+      ],
+      "reserveMismatch": null,
+      "raw": "/Users/fengheliang/workbench/source/g20/games/outputs/player-operations-retest-2026-10-21/player-operations-1-focused.json"
+    },
+    {
+      "mode": "reserve-change",
+      "seed": 1,
+      "steps": 180,
+      "initial": {
+        "turn": 1,
+        "cash": 30000,
+        "debt": 0,
+        "net": 1448,
+        "grain": 11792,
+        "soldiers": 1600,
+        "training": 60,
+        "provinces": 10,
+        "living": 56,
+        "unrest": 0,
+        "disasters": [],
+        "foodShortfall": 0,
+        "localShortfall": 0,
+        "pending": null,
+        "plan": null,
+        "offer": null,
+        "happiness": 75,
+        "life": 2160
+      },
+      "final": {
+        "turn": 181,
+        "cash": 9728,
+        "debt": 0,
+        "net": 479,
+        "grain": 12217,
+        "soldiers": 1600,
+        "training": 65,
+        "provinces": 10,
+        "living": 57,
+        "unrest": 0,
+        "disasters": [
+          {
+            "id": "henan",
+            "kind": "drought",
+            "startTurn": 180,
+            "endTurn": 189
+          },
+          {
+            "id": "jiangnan",
+            "kind": "riot",
+            "startTurn": 181,
+            "endTurn": 186
+          },
+          {
+            "id": "hedong",
+            "kind": "riot",
+            "startTurn": 178,
+            "endTurn": 183
+          },
+          {
+            "id": "longyou",
+            "kind": "riot",
+            "startTurn": 178,
+            "endTurn": 183
+          }
+        ],
+        "foodShortfall": 0,
+        "localShortfall": 0,
+        "pending": null,
+        "plan": {
+          "active": false,
+          "spent": 29684,
+          "cap": 35597,
+          "target": 1600,
+          "reserve": 20000,
+          "status": "兵员、兵装与训练均已恢复",
+          "completedTurn": 44
+        },
+        "offer": null,
+        "happiness": 100,
+        "life": 1980
+      },
+      "minimumCash": 7000,
+      "peakDebt": 0,
+      "publicShortfallTurns": 0,
+      "localShortfallTurns": 0,
+      "peakDisasterCount": 8,
+      "naturalOverlap": null,
+      "battles": [
+        {
+          "turn": 7,
+          "soldiersBefore": 1600,
+          "soldiersAfter": 0,
+          "offer": 1600,
+          "cashCost": 255,
+          "grainCost": 142
+        }
+      ],
+      "firstRestoredTurn": 43,
+      "planCompletedTurn": 44,
+      "debtPausedTurns": 0,
+      "manualActions": [
+        {
+          "label": "reserve 20000",
+          "turn": 1,
+          "cost": 0
+        },
+        {
+          "label": "authorize",
+          "turn": 7,
+          "cost": 0
+        },
+        {
+          "label": "reserve 7000",
+          "turn": 7,
+          "cost": 0
+        }
+      ],
+      "reserveMismatch": {
+        "planReserve": 20000,
+        "displayedReserve": 7000
+      },
+      "raw": "/Users/fengheliang/workbench/source/g20/games/outputs/player-operations-retest-2026-10-21/player-operations-1-focused.json"
+    },
+    {
+      "mode": "low-cash-large-war",
+      "seed": 1,
+      "steps": 180,
+      "initial": {
+        "turn": 1,
+        "cash": 30000,
+        "debt": 0,
+        "net": 1448,
+        "grain": 11792,
+        "soldiers": 1600,
+        "training": 60,
+        "provinces": 10,
+        "living": 56,
+        "unrest": 0,
+        "disasters": [],
+        "foodShortfall": 0,
+        "localShortfall": 0,
+        "pending": null,
+        "plan": null,
+        "offer": null,
+        "happiness": 75,
+        "life": 2160
+      },
+      "final": {
+        "turn": 181,
+        "cash": 10295,
+        "debt": 0,
+        "net": 505,
+        "grain": 12179,
+        "soldiers": 1600,
+        "training": 62,
+        "provinces": 10,
+        "living": 56,
+        "unrest": 0,
+        "disasters": [
+          {
+            "id": "henan",
+            "kind": "drought",
+            "startTurn": 180,
+            "endTurn": 189
+          },
+          {
+            "id": "jiangnan",
+            "kind": "riot",
+            "startTurn": 181,
+            "endTurn": 186
+          },
+          {
+            "id": "hedong",
+            "kind": "riot",
+            "startTurn": 178,
+            "endTurn": 183
+          },
+          {
+            "id": "longyou",
+            "kind": "riot",
+            "startTurn": 178,
+            "endTurn": 183
+          }
+        ],
+        "foodShortfall": 0,
+        "localShortfall": 0,
+        "pending": null,
+        "plan": {
+          "active": false,
+          "spent": 8263,
+          "cap": 11006,
+          "target": 1600,
+          "reserve": 7000,
+          "status": "兵员、兵装与训练均已恢复",
+          "completedTurn": 18
+        },
+        "offer": null,
+        "happiness": 100,
+        "life": 1980
+      },
+      "minimumCash": 1431,
+      "peakDebt": 0,
+      "publicShortfallTurns": 0,
+      "localShortfallTurns": 0,
+      "peakDisasterCount": 8,
+      "naturalOverlap": null,
+      "battles": [
+        {
+          "turn": 1,
+          "soldiersBefore": 1600,
+          "soldiersAfter": 1003,
+          "offer": 1600,
+          "cashCost": 255,
+          "grainCost": 128
+        }
+      ],
+      "firstRestoredTurn": 17,
+      "planCompletedTurn": 18,
+      "debtPausedTurns": 0,
+      "manualActions": [
+        {
+          "label": "initial surplus equipment 2500",
+          "turn": 1,
+          "cost": 28314
+        },
+        {
+          "label": "authorize",
+          "turn": 1,
+          "cost": 0
+        }
+      ],
+      "reserveMismatch": null,
+      "raw": "/Users/fengheliang/workbench/source/g20/games/outputs/player-operations-retest-2026-10-21/heavy/player-operations-1-focused.json"
+    },
+    {
+      "mode": "natural-overlap-large-war",
+      "seed": 1,
+      "steps": 180,
+      "initial": {
+        "turn": 1,
+        "cash": 30000,
+        "debt": 0,
+        "net": 1448,
+        "grain": 11792,
+        "soldiers": 1600,
+        "training": 60,
+        "provinces": 10,
+        "living": 56,
+        "unrest": 0,
+        "disasters": [],
+        "foodShortfall": 0,
+        "localShortfall": 0,
+        "pending": null,
+        "plan": null,
+        "offer": null,
+        "happiness": 75,
+        "life": 2160
+      },
+      "final": {
+        "turn": 181,
+        "cash": 8682,
+        "debt": 0,
+        "net": 217,
+        "grain": 12007,
+        "soldiers": 1600,
+        "training": 61,
+        "provinces": 10,
+        "living": 56,
+        "unrest": 0,
+        "disasters": [
+          {
+            "id": "henan",
+            "kind": "drought",
+            "startTurn": 180,
+            "endTurn": 189
+          },
+          {
+            "id": "jiangnan",
+            "kind": "riot",
+            "startTurn": 181,
+            "endTurn": 186
+          },
+          {
+            "id": "hedong",
+            "kind": "riot",
+            "startTurn": 178,
+            "endTurn": 183
+          },
+          {
+            "id": "shannan",
+            "kind": "riot",
+            "startTurn": 178,
+            "endTurn": 183
+          },
+          {
+            "id": "longyou",
+            "kind": "riot",
+            "startTurn": 178,
+            "endTurn": 183
+          }
+        ],
+        "foodShortfall": 0,
+        "localShortfall": 0,
+        "pending": null,
+        "plan": {
+          "active": false,
+          "spent": 9164,
+          "cap": 11315,
+          "target": 1600,
+          "reserve": 7000,
+          "status": "兵员、兵装与训练均已恢复",
+          "completedTurn": 45
+        },
+        "offer": null,
+        "happiness": 100,
+        "life": 1980
+      },
+      "minimumCash": 1686,
+      "peakDebt": 0,
+      "publicShortfallTurns": 0,
+      "localShortfallTurns": 0,
+      "peakDisasterCount": 8,
+      "naturalOverlap": {
+        "turn": 26,
+        "cash": 2081,
+        "debt": 0,
+        "net": 1111,
+        "grain": 11622,
+        "soldiers": 1600,
+        "training": 60,
+        "provinces": 10,
+        "living": 56,
+        "unrest": 0,
+        "disasters": [
+          {
+            "id": "henan",
+            "kind": "flood",
+            "startTurn": 26,
+            "endTurn": 32
+          },
+          {
+            "id": "lingnan",
+            "kind": "flood",
+            "startTurn": 25,
+            "endTurn": 31
+          },
+          {
+            "id": "jiannan",
+            "kind": "flood",
+            "startTurn": 24,
+            "endTurn": 30
+          }
+        ],
+        "foodShortfall": 0,
+        "localShortfall": 0,
+        "pending": null,
+        "plan": null,
+        "offer": null,
+        "happiness": 97,
+        "life": 2135
+      },
+      "battles": [
+        {
+          "turn": 26,
+          "soldiersBefore": 1600,
+          "soldiersAfter": 988,
+          "offer": 1600,
+          "cashCost": 256,
+          "grainCost": 128
+        }
+      ],
+      "firstRestoredTurn": 44,
+      "planCompletedTurn": 45,
+      "debtPausedTurns": 0,
+      "manualActions": [
+        {
+          "label": "initial surplus equipment 2500",
+          "turn": 1,
+          "cost": 28314
+        },
+        {
+          "label": "paid surplus infantry equipment 435",
+          "turn": 26,
+          "cost": 4948
+        },
+        {
+          "label": "authorize",
+          "turn": 26,
+          "cost": 0
+        }
+      ],
+      "reserveMismatch": null,
+      "raw": "/Users/fengheliang/workbench/source/g20/games/outputs/player-operations-retest-2026-10-21/heavy/player-operations-1-focused.json"
+    },
+    {
+      "mode": "low-cash-depot-war",
+      "seed": 1,
+      "steps": 180,
+      "initial": {
+        "turn": 1,
+        "cash": 30000,
+        "debt": 0,
+        "net": 1448,
+        "grain": 11792,
+        "soldiers": 1600,
+        "training": 60,
+        "provinces": 10,
+        "living": 56,
+        "unrest": 0,
+        "disasters": [],
+        "foodShortfall": 0,
+        "localShortfall": 0,
+        "pending": null,
+        "plan": null,
+        "offer": null,
+        "happiness": 75,
+        "life": 2160
+      },
+      "final": {
+        "turn": 181,
+        "cash": 8668,
+        "debt": 0,
+        "net": 203,
+        "grain": 11997,
+        "soldiers": 1600,
+        "training": 65,
+        "provinces": 10,
+        "living": 56,
+        "unrest": 0,
+        "disasters": [
+          {
+            "id": "henan",
+            "kind": "drought",
+            "startTurn": 180,
+            "endTurn": 189
+          },
+          {
+            "id": "jiangnan",
+            "kind": "riot",
+            "startTurn": 181,
+            "endTurn": 186
+          },
+          {
+            "id": "hedong",
+            "kind": "riot",
+            "startTurn": 178,
+            "endTurn": 183
+          },
+          {
+            "id": "shannan",
+            "kind": "riot",
+            "startTurn": 178,
+            "endTurn": 183
+          },
+          {
+            "id": "longyou",
+            "kind": "riot",
+            "startTurn": 178,
+            "endTurn": 183
+          }
+        ],
+        "foodShortfall": 0,
+        "localShortfall": 0,
+        "pending": null,
+        "plan": {
+          "active": false,
+          "spent": 30241,
+          "cap": 37048,
+          "target": 1600,
+          "reserve": 7000,
+          "status": "兵员、兵装与训练均已恢复",
+          "completedTurn": 44
+        },
+        "offer": null,
+        "happiness": 100,
+        "life": 1980
+      },
+      "minimumCash": 1555,
+      "peakDebt": 0,
+      "publicShortfallTurns": 0,
+      "localShortfallTurns": 0,
+      "peakDisasterCount": 8,
+      "naturalOverlap": null,
+      "battles": [
+        {
+          "turn": 1,
+          "soldiersBefore": 1600,
+          "soldiersAfter": 18,
+          "offer": 1600,
+          "cashCost": 255,
+          "grainCost": 144
+        }
+      ],
+      "firstRestoredTurn": 43,
+      "planCompletedTurn": 44,
+      "debtPausedTurns": 0,
+      "manualActions": [
+        {
+          "label": "paid surplus infantry equipment 2489 at hebei",
+          "turn": 1,
+          "cost": 28190
+        },
+        {
+          "label": "authorize",
+          "turn": 1,
+          "cost": 0
+        }
+      ],
+      "reserveMismatch": null,
+      "raw": "/Users/fengheliang/workbench/source/g20/games/outputs/player-operations-retest-2026-10-21/depot/player-operations-1-focused.json"
+    },
+    {
+      "mode": "natural-overlap-depot-war",
+      "seed": 1,
+      "steps": 180,
+      "initial": {
+        "turn": 1,
+        "cash": 30000,
+        "debt": 0,
+        "net": 1448,
+        "grain": 11792,
+        "soldiers": 1600,
+        "training": 60,
+        "provinces": 10,
+        "living": 56,
+        "unrest": 0,
+        "disasters": [],
+        "foodShortfall": 0,
+        "localShortfall": 0,
+        "pending": null,
+        "plan": null,
+        "offer": null,
+        "happiness": 75,
+        "life": 2160
+      },
+      "final": {
+        "turn": 181,
+        "cash": 8214,
+        "debt": 0,
+        "net": 247,
+        "grain": 11989,
+        "soldiers": 1600,
+        "training": 66,
+        "provinces": 10,
+        "living": 55,
+        "unrest": 0,
+        "disasters": [
+          {
+            "id": "henan",
+            "kind": "drought",
+            "startTurn": 180,
+            "endTurn": 189
+          },
+          {
+            "id": "jiangnan",
+            "kind": "riot",
+            "startTurn": 181,
+            "endTurn": 186
+          },
+          {
+            "id": "hedong",
+            "kind": "riot",
+            "startTurn": 178,
+            "endTurn": 183
+          },
+          {
+            "id": "shannan",
+            "kind": "riot",
+            "startTurn": 178,
+            "endTurn": 183
+          },
+          {
+            "id": "longyou",
+            "kind": "riot",
+            "startTurn": 178,
+            "endTurn": 183
+          }
+        ],
+        "foodShortfall": 0,
+        "localShortfall": 0,
+        "pending": null,
+        "plan": {
+          "active": false,
+          "spent": 28997,
+          "cap": 35674,
+          "target": 1600,
+          "reserve": 7000,
+          "status": "兵员、兵装与训练均已恢复",
+          "completedTurn": 68
+        },
+        "offer": null,
+        "happiness": 100,
+        "life": 1980
+      },
+      "minimumCash": 1552,
+      "peakDebt": 0,
+      "publicShortfallTurns": 0,
+      "localShortfallTurns": 0,
+      "peakDisasterCount": 8,
+      "naturalOverlap": {
+        "turn": 26,
+        "cash": 1808,
+        "debt": 0,
+        "net": 1111,
+        "grain": 11622,
+        "soldiers": 1600,
+        "training": 60,
+        "provinces": 10,
+        "living": 56,
+        "unrest": 0,
+        "disasters": [
+          {
+            "id": "henan",
+            "kind": "flood",
+            "startTurn": 26,
+            "endTurn": 32
+          },
+          {
+            "id": "lingnan",
+            "kind": "flood",
+            "startTurn": 25,
+            "endTurn": 31
+          },
+          {
+            "id": "jiannan",
+            "kind": "flood",
+            "startTurn": 24,
+            "endTurn": 30
+          }
+        ],
+        "foodShortfall": 0,
+        "localShortfall": 0,
+        "pending": null,
+        "plan": null,
+        "offer": null,
+        "happiness": 97,
+        "life": 2135
+      },
+      "battles": [
+        {
+          "turn": 26,
+          "soldiersBefore": 1600,
+          "soldiersAfter": 0,
+          "offer": 1600,
+          "cashCost": 256,
+          "grainCost": 142
+        }
+      ],
+      "firstRestoredTurn": 66,
+      "planCompletedTurn": 68,
+      "debtPausedTurns": 0,
+      "manualActions": [
+        {
+          "label": "paid surplus infantry equipment 2489 at hebei",
+          "turn": 1,
+          "cost": 28190
+        },
+        {
+          "label": "paid surplus infantry equipment 459 at hebei",
+          "turn": 26,
+          "cost": 5221
+        },
+        {
+          "label": "authorize",
+          "turn": 26,
+          "cost": 0
+        }
+      ],
+      "reserveMismatch": null,
+      "raw": "/Users/fengheliang/workbench/source/g20/games/outputs/player-operations-retest-2026-10-21/depot/player-operations-1-focused.json"
+    },
+    {
+      "mode": "debt-manual-minimum",
+      "seed": 1,
+      "steps": 180,
+      "initial": {
+        "turn": 1,
+        "cash": 30000,
+        "debt": 0,
+        "net": 1448,
+        "grain": 11792,
+        "soldiers": 1600,
+        "training": 60,
+        "provinces": 10,
+        "living": 56,
+        "unrest": 0,
+        "disasters": [],
+        "foodShortfall": 0,
+        "localShortfall": 0,
+        "pending": null,
+        "plan": null,
+        "offer": null,
+        "happiness": 75,
+        "life": 2160
+      },
+      "final": {
+        "turn": 181,
+        "cash": 45769,
+        "debt": 19053,
+        "net": 482,
+        "grain": 7066,
+        "soldiers": 1600,
+        "training": 66,
+        "provinces": 10,
+        "living": 54,
+        "unrest": 0,
+        "disasters": [
+          {
+            "id": "henan",
+            "kind": "drought",
+            "startTurn": 180,
+            "endTurn": 189
+          },
+          {
+            "id": "jiangnan",
+            "kind": "riot",
+            "startTurn": 181,
+            "endTurn": 186
+          },
+          {
+            "id": "hedong",
+            "kind": "riot",
+            "startTurn": 178,
+            "endTurn": 183
+          },
+          {
+            "id": "shannan",
+            "kind": "riot",
+            "startTurn": 178,
+            "endTurn": 183
+          },
+          {
+            "id": "longyou",
+            "kind": "riot",
+            "startTurn": 178,
+            "endTurn": 183
+          }
+        ],
+        "foodShortfall": 0,
+        "localShortfall": 0,
+        "pending": null,
+        "plan": {
+          "active": true,
+          "spent": 0,
+          "cap": 2669,
+          "target": 1600,
+          "reserve": 7000,
+          "status": "战役或京城危机期间暂停，授权与余额保留"
+        },
+        "offer": 1600,
+        "happiness": 100,
+        "life": 1980
+      },
+      "minimumCash": 0,
+      "peakDebt": 124581,
+      "publicShortfallTurns": 0,
+      "localShortfallTurns": 0,
+      "peakDisasterCount": 8,
+      "naturalOverlap": null,
+      "battles": [
+        {
+          "turn": 37,
+          "soldiersBefore": 1600,
+          "soldiersAfter": 1480,
+          "offer": 1600,
+          "cashCost": 21,
+          "grainCost": 10
+        }
+      ],
+      "firstRestoredTurn": 46,
+      "planCompletedTurn": null,
+      "debtPausedTurns": 122,
+      "manualActions": [
+        {
+          "label": "tax 0",
+          "turn": 1,
+          "cost": 0
+        },
+        {
+          "label": "tax 20",
+          "turn": 37,
+          "cost": 0
+        },
+        {
+          "label": "authorize",
+          "turn": 37,
+          "cost": 0
+        },
+        {
+          "label": "manual paid purchase",
+          "turn": 43,
+          "cost": 1361
+        },
+        {
+          "label": "manual paid recruit",
+          "turn": 44,
+          "cost": 480
+        },
+        {
+          "label": "manual paid training",
+          "turn": 45,
+          "cost": 64
+        }
+      ],
+      "reserveMismatch": null,
+      "raw": "/Users/fengheliang/workbench/source/g20/games/outputs/player-operations-retest-2026-10-21/manual/player-operations-1-debt-manual-minimum.json"
+    },
+    {
+      "mode": "normal",
+      "seed": 7,
+      "steps": 180,
+      "initial": {
+        "turn": 1,
+        "cash": 30000,
+        "debt": 0,
+        "net": 1448,
+        "grain": 11792,
+        "soldiers": 1600,
+        "training": 60,
+        "provinces": 10,
+        "living": 56,
+        "unrest": 0,
+        "disasters": [],
+        "foodShortfall": 0,
+        "localShortfall": 0,
+        "plan": null,
+        "offer": null,
+        "happiness": 75,
+        "life": 2160
+      },
+      "final": {
+        "turn": 181,
+        "cash": 10666,
+        "debt": 0,
+        "net": 465,
+        "grain": 12352,
+        "soldiers": 1600,
+        "training": 60,
+        "provinces": 10,
+        "living": 57,
+        "unrest": 0,
+        "disasters": [
+          {
+            "id": "jiangnan",
+            "kind": "riot",
+            "startTurn": 179,
+            "endTurn": 184
+          },
+          {
+            "id": "lingnan",
+            "kind": "flood",
+            "startTurn": 176,
+            "endTurn": 182
+          },
+          {
+            "id": "hedong",
+            "kind": "riot",
+            "startTurn": 180,
+            "endTurn": 185
+          },
+          {
+            "id": "longyou",
+            "kind": "riot",
+            "startTurn": 180,
+            "endTurn": 185
+          }
+        ],
+        "foodShortfall": 0,
+        "localShortfall": 0,
+        "plan": null,
+        "offer": null,
+        "happiness": 100,
+        "life": 1980
+      },
+      "minimumCash": 7035,
+      "peakDebt": 0,
+      "publicShortfallTurns": 0,
+      "localShortfallTurns": 0,
+      "peakDisasterCount": 6,
+      "naturalOverlap": null,
+      "battles": [],
+      "firstRestoredTurn": null,
+      "planCompletedTurn": null,
+      "debtPausedTurns": 0,
+      "manualActions": [],
+      "reserveMismatch": null,
+      "raw": "/Users/fengheliang/workbench/source/g20/games/outputs/player-operations-retest-2026-10-21/player-operations-7.json"
+    },
+    {
+      "mode": "large-two-wars",
+      "seed": 7,
+      "steps": 180,
+      "initial": {
+        "turn": 1,
+        "cash": 30000,
+        "debt": 0,
+        "net": 1448,
+        "grain": 11792,
+        "soldiers": 1600,
+        "training": 60,
+        "provinces": 10,
+        "living": 56,
+        "unrest": 0,
+        "disasters": [],
+        "foodShortfall": 0,
+        "localShortfall": 0,
+        "plan": null,
+        "offer": null,
+        "happiness": 75,
+        "life": 2160
+      },
+      "final": {
+        "turn": 181,
+        "cash": 17759,
+        "debt": 0,
+        "net": 246,
+        "grain": 11937,
+        "soldiers": 1600,
+        "training": 66,
+        "provinces": 10,
+        "living": 56,
+        "unrest": 0,
+        "disasters": [
+          {
+            "id": "jiangnan",
+            "kind": "riot",
+            "startTurn": 179,
+            "endTurn": 184
+          },
+          {
+            "id": "lingnan",
+            "kind": "flood",
+            "startTurn": 176,
+            "endTurn": 182
+          },
+          {
+            "id": "hedong",
+            "kind": "riot",
+            "startTurn": 180,
+            "endTurn": 185
+          },
+          {
+            "id": "shannan",
+            "kind": "riot",
+            "startTurn": 180,
+            "endTurn": 185
+          },
+          {
+            "id": "longyou",
+            "kind": "riot",
+            "startTurn": 180,
+            "endTurn": 185
+          }
+        ],
+        "foodShortfall": 0,
+        "localShortfall": 0,
+        "plan": {
+          "active": false,
+          "spent": 29438,
+          "cap": 35447,
+          "target": 1600,
+          "reserve": 7000,
+          "status": "兵员、兵装与训练均已恢复",
+          "completedTurn": 104
+        },
+        "offer": null,
+        "happiness": 100,
+        "life": 1980
+      },
+      "minimumCash": 16186,
+      "peakDebt": 0,
+      "publicShortfallTurns": 0,
+      "localShortfallTurns": 0,
+      "peakDisasterCount": 6,
+      "naturalOverlap": null,
+      "battles": [
+        {
+          "turn": 7,
+          "soldiersBefore": 1600,
+          "soldiersAfter": 0,
+          "offer": 1600,
+          "cashCost": 256,
+          "grainCost": 142
+        },
+        {
+          "turn": 67,
+          "soldiersBefore": 1600,
+          "soldiersAfter": 0,
+          "offer": 1600,
+          "cashCost": 255,
+          "grainCost": 142
+        }
+      ],
+      "firstRestoredTurn": 38,
+      "planCompletedTurn": 104,
+      "debtPausedTurns": 0,
+      "manualActions": [
+        {
+          "label": "authorize",
+          "turn": 7,
+          "cost": 0
+        },
+        {
+          "label": "authorize",
+          "turn": 67,
+          "cost": 0
+        }
+      ],
+      "reserveMismatch": null,
+      "raw": "/Users/fengheliang/workbench/source/g20/games/outputs/player-operations-retest-2026-10-21/player-operations-7.json"
+    },
+    {
+      "mode": "low-cash-war",
+      "seed": 7,
+      "steps": 180,
+      "initial": {
+        "turn": 1,
+        "cash": 30000,
+        "debt": 0,
+        "net": 1448,
+        "grain": 11792,
+        "soldiers": 1600,
+        "training": 60,
+        "provinces": 10,
+        "living": 56,
+        "unrest": 0,
+        "disasters": [],
+        "foodShortfall": 0,
+        "localShortfall": 0,
+        "plan": null,
+        "offer": null,
+        "happiness": 75,
+        "life": 2160
+      },
+      "final": {
+        "turn": 181,
+        "cash": 9546,
+        "debt": 0,
+        "net": 434,
+        "grain": 12311,
+        "soldiers": 1600,
+        "training": 66,
+        "provinces": 10,
+        "living": 57,
+        "unrest": 0,
+        "disasters": [
+          {
+            "id": "jiangnan",
+            "kind": "riot",
+            "startTurn": 179,
+            "endTurn": 184
+          },
+          {
+            "id": "lingnan",
+            "kind": "flood",
+            "startTurn": 176,
+            "endTurn": 182
+          },
+          {
+            "id": "hedong",
+            "kind": "riot",
+            "startTurn": 180,
+            "endTurn": 185
+          },
+          {
+            "id": "longyou",
+            "kind": "riot",
+            "startTurn": 180,
+            "endTurn": 185
+          }
+        ],
+        "foodShortfall": 0,
+        "localShortfall": 0,
+        "plan": {
+          "active": false,
+          "spent": 1226,
+          "cap": 2669,
+          "target": 1600,
+          "reserve": 7000,
+          "status": "兵员、兵装与训练均已恢复",
+          "completedTurn": 10
+        },
+        "offer": null,
+        "happiness": 100,
+        "life": 1980
+      },
+      "minimumCash": 1665,
+      "peakDebt": 0,
+      "publicShortfallTurns": 0,
+      "localShortfallTurns": 0,
+      "peakDisasterCount": 6,
+      "naturalOverlap": null,
+      "battles": [
+        {
+          "turn": 1,
+          "soldiersBefore": 1600,
+          "soldiersAfter": 1480,
+          "offer": 1600,
+          "cashCost": 21,
+          "grainCost": 10
+        }
+      ],
+      "firstRestoredTurn": 9,
+      "planCompletedTurn": 10,
+      "debtPausedTurns": 0,
+      "manualActions": [
+        {
+          "label": "initial surplus equipment 2500",
+          "turn": 1,
+          "cost": 28314
+        },
+        {
+          "label": "authorize",
+          "turn": 1,
+          "cost": 0
+        }
+      ],
+      "reserveMismatch": null,
+      "raw": "/Users/fengheliang/workbench/source/g20/games/outputs/player-operations-retest-2026-10-21/player-operations-7.json"
+    },
+    {
+      "mode": "consecutive-active",
+      "seed": 7,
+      "steps": 180,
+      "initial": {
+        "turn": 1,
+        "cash": 30000,
+        "debt": 0,
+        "net": 1448,
+        "grain": 11792,
+        "soldiers": 1600,
+        "training": 60,
+        "provinces": 10,
+        "living": 56,
+        "unrest": 0,
+        "disasters": [],
+        "foodShortfall": 0,
+        "localShortfall": 0,
+        "pending": null,
+        "plan": null,
+        "offer": null,
+        "happiness": 75,
+        "life": 2160
+      },
+      "final": {
+        "turn": 181,
+        "cash": 13224,
+        "debt": 0,
+        "net": 434,
+        "grain": 12367,
+        "soldiers": 1360,
+        "training": 56,
+        "provinces": 10,
+        "living": 57,
+        "unrest": 0,
+        "disasters": [
+          {
+            "id": "jiangnan",
+            "kind": "riot",
+            "startTurn": 179,
+            "endTurn": 184
+          },
+          {
+            "id": "lingnan",
+            "kind": "flood",
+            "startTurn": 176,
+            "endTurn": 182
+          },
+          {
+            "id": "hedong",
+            "kind": "riot",
+            "startTurn": 180,
+            "endTurn": 185
+          },
+          {
+            "id": "longyou",
+            "kind": "riot",
+            "startTurn": 180,
+            "endTurn": 185
+          }
+        ],
+        "foodShortfall": 0,
+        "localShortfall": 0,
+        "pending": null,
+        "plan": {
+          "active": true,
+          "spent": 2676,
+          "cap": 2678,
+          "target": 1600,
+          "reserve": 7000,
+          "status": "战役或京城危机期间暂停，授权与余额保留"
+        },
+        "offer": 1600,
+        "happiness": 100,
+        "life": 1980
+      },
+      "minimumCash": 7000,
+      "peakDebt": 0,
+      "publicShortfallTurns": 0,
+      "localShortfallTurns": 0,
+      "peakDisasterCount": 6,
+      "naturalOverlap": null,
+      "battles": [
+        {
+          "turn": 7,
+          "soldiersBefore": 1600,
+          "soldiersAfter": 1480,
+          "offer": 1600,
+          "cashCost": 21,
+          "grainCost": 10
+        },
+        {
+          "turn": 9,
+          "soldiersBefore": 1600,
+          "soldiersAfter": 1480,
+          "offer": 1600,
+          "cashCost": 21,
+          "grainCost": 10
+        },
+        {
+          "turn": 11,
+          "soldiersBefore": 1480,
+          "soldiersAfter": 1360,
+          "offer": 1600,
+          "cashCost": 21,
+          "grainCost": 10
+        }
+      ],
+      "firstRestoredTurn": null,
+      "planCompletedTurn": null,
+      "debtPausedTurns": 0,
+      "manualActions": [
+        {
+          "label": "authorize",
+          "turn": 7,
+          "cost": 0
+        }
+      ],
+      "reserveMismatch": null,
+      "raw": "/Users/fengheliang/workbench/source/g20/games/outputs/player-operations-retest-2026-10-21/player-operations-7-focused.json"
+    },
+    {
+      "mode": "consecutive-renewed",
+      "seed": 7,
+      "steps": 180,
+      "initial": {
+        "turn": 1,
+        "cash": 30000,
+        "debt": 0,
+        "net": 1448,
+        "grain": 11792,
+        "soldiers": 1600,
+        "training": 60,
+        "provinces": 10,
+        "living": 56,
+        "unrest": 0,
+        "disasters": [],
+        "foodShortfall": 0,
+        "localShortfall": 0,
+        "pending": null,
+        "plan": null,
+        "offer": null,
+        "happiness": 75,
+        "life": 2160
+      },
+      "final": {
+        "turn": 181,
+        "cash": 14477,
+        "debt": 0,
+        "net": 357,
+        "grain": 12361,
+        "soldiers": 1600,
+        "training": 69,
+        "provinces": 10,
+        "living": 57,
+        "unrest": 0,
+        "disasters": [
+          {
+            "id": "jiangnan",
+            "kind": "riot",
+            "startTurn": 179,
+            "endTurn": 184
+          },
+          {
+            "id": "lingnan",
+            "kind": "flood",
+            "startTurn": 176,
+            "endTurn": 182
+          },
+          {
+            "id": "hedong",
+            "kind": "riot",
+            "startTurn": 180,
+            "endTurn": 185
+          },
+          {
+            "id": "longyou",
+            "kind": "riot",
+            "startTurn": 180,
+            "endTurn": 185
+          }
+        ],
+        "foodShortfall": 0,
+        "localShortfall": 0,
+        "pending": null,
+        "plan": {
+          "active": false,
+          "spent": 2985,
+          "cap": 3885,
+          "target": 1600,
+          "reserve": 7000,
+          "status": "兵员、兵装与训练均已恢复",
+          "completedTurn": 18
+        },
+        "offer": null,
+        "happiness": 100,
+        "life": 1980
+      },
+      "minimumCash": 7985,
+      "peakDebt": 0,
+      "publicShortfallTurns": 0,
+      "localShortfallTurns": 0,
+      "peakDisasterCount": 6,
+      "naturalOverlap": null,
+      "battles": [
+        {
+          "turn": 7,
+          "soldiersBefore": 1600,
+          "soldiersAfter": 1480,
+          "offer": 1600,
+          "cashCost": 21,
+          "grainCost": 10
+        },
+        {
+          "turn": 9,
+          "soldiersBefore": 1600,
+          "soldiersAfter": 1480,
+          "offer": 1600,
+          "cashCost": 21,
+          "grainCost": 10
+        },
+        {
+          "turn": 11,
+          "soldiersBefore": 1480,
+          "soldiersAfter": 1360,
+          "offer": 1600,
+          "cashCost": 21,
+          "grainCost": 10
+        }
+      ],
+      "firstRestoredTurn": 17,
+      "planCompletedTurn": 18,
+      "debtPausedTurns": 0,
+      "manualActions": [
+        {
+          "label": "authorize",
+          "turn": 7,
+          "cost": 0
+        },
+        {
+          "label": "cancel",
+          "turn": 12,
+          "cost": 0
+        },
+        {
+          "label": "authorize",
+          "turn": 12,
+          "cost": 0
+        }
+      ],
+      "reserveMismatch": null,
+      "raw": "/Users/fengheliang/workbench/source/g20/games/outputs/player-operations-retest-2026-10-21/player-operations-7-focused.json"
+    },
+    {
+      "mode": "consecutive-unapproved",
+      "seed": 7,
+      "steps": 180,
+      "initial": {
+        "turn": 1,
+        "cash": 30000,
+        "debt": 0,
+        "net": 1448,
+        "grain": 11792,
+        "soldiers": 1600,
+        "training": 60,
+        "provinces": 10,
+        "living": 56,
+        "unrest": 0,
+        "disasters": [],
+        "foodShortfall": 0,
+        "localShortfall": 0,
+        "pending": null,
+        "plan": null,
+        "offer": null,
+        "happiness": 75,
+        "life": 2160
+      },
+      "final": {
+        "turn": 181,
+        "cash": 12905,
+        "debt": 0,
+        "net": 467,
+        "grain": 12360,
+        "soldiers": 1360,
+        "training": 66,
+        "provinces": 10,
+        "living": 57,
+        "unrest": 0,
+        "disasters": [
+          {
+            "id": "jiangnan",
+            "kind": "riot",
+            "startTurn": 179,
+            "endTurn": 184
+          },
+          {
+            "id": "lingnan",
+            "kind": "flood",
+            "startTurn": 176,
+            "endTurn": 182
+          },
+          {
+            "id": "hedong",
+            "kind": "riot",
+            "startTurn": 180,
+            "endTurn": 185
+          },
+          {
+            "id": "longyou",
+            "kind": "riot",
+            "startTurn": 180,
+            "endTurn": 185
+          }
+        ],
+        "foodShortfall": 0,
+        "localShortfall": 0,
+        "pending": null,
+        "plan": {
+          "active": false,
+          "spent": 1895,
+          "cap": 2604,
+          "target": 1360,
+          "reserve": 7000,
+          "status": "兵员、兵装与训练均已恢复",
+          "completedTurn": 15
+        },
+        "offer": null,
+        "happiness": 100,
+        "life": 1980
+      },
+      "minimumCash": 8900,
+      "peakDebt": 0,
+      "publicShortfallTurns": 0,
+      "localShortfallTurns": 0,
+      "peakDisasterCount": 6,
+      "naturalOverlap": null,
+      "battles": [
+        {
+          "turn": 7,
+          "soldiersBefore": 1600,
+          "soldiersAfter": 1480,
+          "offer": 1600,
+          "cashCost": 21,
+          "grainCost": 10
+        },
+        {
+          "turn": 9,
+          "soldiersBefore": 1480,
+          "soldiersAfter": 1360,
+          "offer": 1480,
+          "cashCost": 21,
+          "grainCost": 10
+        },
+        {
+          "turn": 11,
+          "soldiersBefore": 1360,
+          "soldiersAfter": 1240,
+          "offer": 1360,
+          "cashCost": 21,
+          "grainCost": 10
+        }
+      ],
+      "firstRestoredTurn": null,
+      "planCompletedTurn": 15,
+      "debtPausedTurns": 0,
+      "manualActions": [
+        {
+          "label": "authorize",
+          "turn": 11,
+          "cost": 0
+        }
+      ],
+      "reserveMismatch": null,
+      "raw": "/Users/fengheliang/workbench/source/g20/games/outputs/player-operations-retest-2026-10-21/player-operations-7-focused.json"
+    },
+    {
+      "mode": "consecutive-cancelled",
+      "seed": 7,
+      "steps": 180,
+      "initial": {
+        "turn": 1,
+        "cash": 30000,
+        "debt": 0,
+        "net": 1448,
+        "grain": 11792,
+        "soldiers": 1600,
+        "training": 60,
+        "provinces": 10,
+        "living": 56,
+        "unrest": 0,
+        "disasters": [],
+        "foodShortfall": 0,
+        "localShortfall": 0,
+        "pending": null,
+        "plan": null,
+        "offer": null,
+        "happiness": 75,
+        "life": 2160
+      },
+      "final": {
+        "turn": 181,
+        "cash": 11829,
+        "debt": 0,
+        "net": 437,
+        "grain": 12367,
+        "soldiers": 1600,
+        "training": 59,
+        "provinces": 10,
+        "living": 57,
+        "unrest": 0,
+        "disasters": [
+          {
+            "id": "jiangnan",
+            "kind": "riot",
+            "startTurn": 179,
+            "endTurn": 184
+          },
+          {
+            "id": "lingnan",
+            "kind": "flood",
+            "startTurn": 176,
+            "endTurn": 182
+          },
+          {
+            "id": "hedong",
+            "kind": "riot",
+            "startTurn": 180,
+            "endTurn": 185
+          },
+          {
+            "id": "longyou",
+            "kind": "riot",
+            "startTurn": 180,
+            "endTurn": 185
+          }
+        ],
+        "foodShortfall": 0,
+        "localShortfall": 0,
+        "pending": null,
+        "plan": {
+          "active": false,
+          "spent": 1904,
+          "cap": 2669,
+          "target": 1600,
+          "reserve": 7000,
+          "status": "兵员、兵装与训练均已恢复",
+          "completedTurn": 15
+        },
+        "offer": null,
+        "happiness": 100,
+        "life": 1980
+      },
+      "minimumCash": 7000,
+      "peakDebt": 0,
+      "publicShortfallTurns": 0,
+      "localShortfallTurns": 0,
+      "peakDisasterCount": 6,
+      "naturalOverlap": null,
+      "battles": [
+        {
+          "turn": 7,
+          "soldiersBefore": 1600,
+          "soldiersAfter": 1480,
+          "offer": 1600,
+          "cashCost": 21,
+          "grainCost": 10
+        },
+        {
+          "turn": 9,
+          "soldiersBefore": 1600,
+          "soldiersAfter": 1480,
+          "offer": 1600,
+          "cashCost": 21,
+          "grainCost": 10
+        },
+        {
+          "turn": 11,
+          "soldiersBefore": 1600,
+          "soldiersAfter": 1480,
+          "offer": 1600,
+          "cashCost": 21,
+          "grainCost": 10
+        }
+      ],
+      "firstRestoredTurn": null,
+      "planCompletedTurn": 15,
+      "debtPausedTurns": 0,
+      "manualActions": [
+        {
+          "label": "authorize",
+          "turn": 7,
+          "cost": 0
+        },
+        {
+          "label": "cancel",
+          "turn": 9,
+          "cost": 0
+        },
+        {
+          "label": "authorize",
+          "turn": 9,
+          "cost": 0
+        },
+        {
+          "label": "cancel",
+          "turn": 11,
+          "cost": 0
+        },
+        {
+          "label": "authorize",
+          "turn": 11,
+          "cost": 0
+        }
+      ],
+      "reserveMismatch": null,
+      "raw": "/Users/fengheliang/workbench/source/g20/games/outputs/player-operations-retest-2026-10-21/player-operations-7-focused.json"
+    },
+    {
+      "mode": "natural-overlap-low-cash",
+      "seed": 7,
+      "steps": 180,
+      "initial": {
+        "turn": 1,
+        "cash": 30000,
+        "debt": 0,
+        "net": 1448,
+        "grain": 11792,
+        "soldiers": 1600,
+        "training": 60,
+        "provinces": 10,
+        "living": 56,
+        "unrest": 0,
+        "disasters": [],
+        "foodShortfall": 0,
+        "localShortfall": 0,
+        "pending": null,
+        "plan": null,
+        "offer": null,
+        "happiness": 75,
+        "life": 2160
+      },
+      "final": {
+        "turn": 181,
+        "cash": 9572,
+        "debt": 0,
+        "net": 465,
+        "grain": 12188,
+        "soldiers": 1600,
+        "training": 66,
+        "provinces": 10,
+        "living": 57,
+        "unrest": 0,
+        "disasters": [
+          {
+            "id": "jiangnan",
+            "kind": "riot",
+            "startTurn": 179,
+            "endTurn": 184
+          },
+          {
+            "id": "lingnan",
+            "kind": "flood",
+            "startTurn": 176,
+            "endTurn": 182
+          },
+          {
+            "id": "hedong",
+            "kind": "riot",
+            "startTurn": 180,
+            "endTurn": 185
+          },
+          {
+            "id": "longyou",
+            "kind": "riot",
+            "startTurn": 180,
+            "endTurn": 185
+          }
+        ],
+        "foodShortfall": 0,
+        "localShortfall": 0,
+        "pending": null,
+        "plan": {
+          "active": false,
+          "spent": 1910,
+          "cap": 2672,
+          "target": 1600,
+          "reserve": 7000,
+          "status": "兵员、兵装与训练均已恢复",
+          "completedTurn": 37
+        },
+        "offer": null,
+        "happiness": 100,
+        "life": 1980
+      },
+      "minimumCash": 1686,
+      "peakDebt": 0,
+      "publicShortfallTurns": 0,
+      "localShortfallTurns": 0,
+      "peakDisasterCount": 6,
+      "naturalOverlap": {
+        "turn": 28,
+        "cash": 2089,
+        "debt": 0,
+        "net": 1305,
+        "grain": 11538,
+        "soldiers": 1600,
+        "training": 60,
+        "provinces": 10,
+        "living": 56,
+        "unrest": 0,
+        "disasters": [
+          {
+            "id": "henan",
+            "kind": "flood",
+            "startTurn": 28,
+            "endTurn": 34
+          },
+          {
+            "id": "lingnan",
+            "kind": "drought",
+            "startTurn": 20,
+            "endTurn": 29
+          },
+          {
+            "id": "guannei",
+            "kind": "drought",
+            "startTurn": 25,
+            "endTurn": 34
+          }
+        ],
+        "foodShortfall": 0,
+        "localShortfall": 0,
+        "pending": null,
+        "plan": null,
+        "offer": null,
+        "happiness": 97,
+        "life": 2133
+      },
+      "battles": [
+        {
+          "turn": 28,
+          "soldiersBefore": 1600,
+          "soldiersAfter": 1480,
+          "offer": 1600,
+          "cashCost": 21,
+          "grainCost": 10
+        }
+      ],
+      "firstRestoredTurn": 36,
+      "planCompletedTurn": 37,
+      "debtPausedTurns": 0,
+      "manualActions": [
+        {
+          "label": "initial surplus equipment 2500",
+          "turn": 1,
+          "cost": 28314
+        },
+        {
+          "label": "paid surplus infantry equipment 433",
+          "turn": 28,
+          "cost": 4912
+        },
+        {
+          "label": "authorize",
+          "turn": 28,
+          "cost": 0
+        }
+      ],
+      "reserveMismatch": null,
+      "raw": "/Users/fengheliang/workbench/source/g20/games/outputs/player-operations-retest-2026-10-21/player-operations-7-focused.json"
+    },
+    {
+      "mode": "debt-recovery",
+      "seed": 7,
+      "steps": 180,
+      "initial": {
+        "turn": 1,
+        "cash": 30000,
+        "debt": 0,
+        "net": 1448,
+        "grain": 11792,
+        "soldiers": 1600,
+        "training": 60,
+        "provinces": 10,
+        "living": 56,
+        "unrest": 0,
+        "disasters": [],
+        "foodShortfall": 0,
+        "localShortfall": 0,
+        "pending": null,
+        "plan": null,
+        "offer": null,
+        "happiness": 75,
+        "life": 2160
+      },
+      "final": {
+        "turn": 181,
+        "cash": 44162,
+        "debt": 0,
+        "net": 191,
+        "grain": 7794,
+        "soldiers": 1600,
+        "training": 66,
+        "provinces": 10,
+        "living": 54,
+        "unrest": 0,
+        "disasters": [
+          {
+            "id": "jiangnan",
+            "kind": "riot",
+            "startTurn": 179,
+            "endTurn": 184
+          },
+          {
+            "id": "lingnan",
+            "kind": "flood",
+            "startTurn": 176,
+            "endTurn": 182
+          },
+          {
+            "id": "hedong",
+            "kind": "riot",
+            "startTurn": 180,
+            "endTurn": 185
+          },
+          {
+            "id": "shannan",
+            "kind": "riot",
+            "startTurn": 180,
+            "endTurn": 185
+          },
+          {
+            "id": "longyou",
+            "kind": "riot",
+            "startTurn": 180,
+            "endTurn": 185
+          }
+        ],
+        "foodShortfall": 0,
+        "localShortfall": 0,
+        "pending": null,
+        "plan": {
+          "active": true,
+          "spent": 1910,
+          "cap": 2669,
+          "target": 1600,
+          "reserve": 7000,
+          "status": "战役或京城危机期间暂停，授权与余额保留"
+        },
+        "offer": 1600,
+        "happiness": 100,
+        "life": 1980
+      },
+      "minimumCash": 0,
+      "peakDebt": 124777,
+      "publicShortfallTurns": 0,
+      "localShortfallTurns": 0,
+      "peakDisasterCount": 6,
+      "naturalOverlap": null,
+      "battles": [
+        {
+          "turn": 37,
+          "soldiersBefore": 1600,
+          "soldiersAfter": 1480,
+          "offer": 1600,
+          "cashCost": 21,
+          "grainCost": 10
+        }
+      ],
+      "firstRestoredTurn": 180,
+      "planCompletedTurn": null,
+      "debtPausedTurns": 119,
+      "manualActions": [
+        {
+          "label": "tax 0",
+          "turn": 1,
+          "cost": 0
+        },
+        {
+          "label": "tax 20",
+          "turn": 37,
+          "cost": 0
+        },
+        {
+          "label": "authorize",
+          "turn": 37,
+          "cost": 0
+        },
+        {
+          "label": "manual debt repayment 39546",
+          "turn": 109,
+          "cost": 39546
+        }
+      ],
+      "reserveMismatch": null,
+      "raw": "/Users/fengheliang/workbench/source/g20/games/outputs/player-operations-retest-2026-10-21/player-operations-7-focused.json"
+    },
+    {
+      "mode": "debt-repay-control",
+      "seed": 7,
+      "steps": 180,
+      "initial": {
+        "turn": 1,
+        "cash": 30000,
+        "debt": 0,
+        "net": 1448,
+        "grain": 11792,
+        "soldiers": 1600,
+        "training": 60,
+        "provinces": 10,
+        "living": 56,
+        "unrest": 0,
+        "disasters": [],
+        "foodShortfall": 0,
+        "localShortfall": 0,
+        "pending": null,
+        "plan": null,
+        "offer": null,
+        "happiness": 75,
+        "life": 2160
+      },
+      "final": {
+        "turn": 181,
+        "cash": 7258,
+        "debt": 0,
+        "net": 245,
+        "grain": 7823,
+        "soldiers": 1600,
+        "training": 66,
+        "provinces": 10,
+        "living": 54,
+        "unrest": 0,
+        "disasters": [
+          {
+            "id": "jiangnan",
+            "kind": "riot",
+            "startTurn": 179,
+            "endTurn": 184
+          },
+          {
+            "id": "lingnan",
+            "kind": "flood",
+            "startTurn": 176,
+            "endTurn": 182
+          },
+          {
+            "id": "hedong",
+            "kind": "riot",
+            "startTurn": 180,
+            "endTurn": 185
+          },
+          {
+            "id": "shannan",
+            "kind": "riot",
+            "startTurn": 180,
+            "endTurn": 185
+          },
+          {
+            "id": "longyou",
+            "kind": "riot",
+            "startTurn": 180,
+            "endTurn": 185
+          }
+        ],
+        "foodShortfall": 0,
+        "localShortfall": 0,
+        "pending": null,
+        "plan": {
+          "active": false,
+          "spent": 1911,
+          "cap": 2669,
+          "target": 1600,
+          "reserve": 7000,
+          "status": "兵员、兵装与训练均已恢复",
+          "completedTurn": 152
+        },
+        "offer": null,
+        "happiness": 100,
+        "life": 1980
+      },
+      "minimumCash": 0,
+      "peakDebt": 124777,
+      "publicShortfallTurns": 0,
+      "localShortfallTurns": 0,
+      "peakDisasterCount": 6,
+      "naturalOverlap": null,
+      "battles": [
+        {
+          "turn": 37,
+          "soldiersBefore": 1600,
+          "soldiersAfter": 1480,
+          "offer": 1600,
+          "cashCost": 21,
+          "grainCost": 10
+        }
+      ],
+      "firstRestoredTurn": 150,
+      "planCompletedTurn": 152,
+      "debtPausedTurns": 94,
+      "manualActions": [
+        {
+          "label": "tax 0",
+          "turn": 1,
+          "cost": 0
+        },
+        {
+          "label": "tax 20",
+          "turn": 37,
+          "cost": 0
+        },
+        {
+          "label": "authorize",
+          "turn": 37,
+          "cost": 0
+        },
+        {
+          "label": "repay all real debt",
+          "turn": 147,
+          "cost": 37327
+        }
+      ],
+      "reserveMismatch": null,
+      "raw": "/Users/fengheliang/workbench/source/g20/games/outputs/player-operations-retest-2026-10-21/player-operations-7-focused.json"
+    },
+    {
+      "mode": "reserve-change",
+      "seed": 7,
+      "steps": 180,
+      "initial": {
+        "turn": 1,
+        "cash": 30000,
+        "debt": 0,
+        "net": 1448,
+        "grain": 11792,
+        "soldiers": 1600,
+        "training": 60,
+        "provinces": 10,
+        "living": 56,
+        "unrest": 0,
+        "disasters": [],
+        "foodShortfall": 0,
+        "localShortfall": 0,
+        "pending": null,
+        "plan": null,
+        "offer": null,
+        "happiness": 75,
+        "life": 2160
+      },
+      "final": {
+        "turn": 181,
+        "cash": 10147,
+        "debt": 0,
+        "net": 494,
+        "grain": 12112,
+        "soldiers": 1600,
+        "training": 66,
+        "provinces": 10,
+        "living": 57,
+        "unrest": 0,
+        "disasters": [
+          {
+            "id": "jiangnan",
+            "kind": "riot",
+            "startTurn": 179,
+            "endTurn": 184
+          },
+          {
+            "id": "lingnan",
+            "kind": "flood",
+            "startTurn": 176,
+            "endTurn": 182
+          },
+          {
+            "id": "hedong",
+            "kind": "riot",
+            "startTurn": 180,
+            "endTurn": 185
+          },
+          {
+            "id": "longyou",
+            "kind": "riot",
+            "startTurn": 180,
+            "endTurn": 185
+          }
+        ],
+        "foodShortfall": 0,
+        "localShortfall": 0,
+        "pending": null,
+        "plan": {
+          "active": false,
+          "spent": 29652,
+          "cap": 35704,
+          "target": 1600,
+          "reserve": 20000,
+          "status": "兵员、兵装与训练均已恢复",
+          "completedTurn": 39
+        },
+        "offer": null,
+        "happiness": 100,
+        "life": 1980
+      },
+      "minimumCash": 7000,
+      "peakDebt": 0,
+      "publicShortfallTurns": 0,
+      "localShortfallTurns": 0,
+      "peakDisasterCount": 6,
+      "naturalOverlap": null,
+      "battles": [
+        {
+          "turn": 7,
+          "soldiersBefore": 1600,
+          "soldiersAfter": 0,
+          "offer": 1600,
+          "cashCost": 256,
+          "grainCost": 142
+        }
+      ],
+      "firstRestoredTurn": 38,
+      "planCompletedTurn": 39,
+      "debtPausedTurns": 0,
+      "manualActions": [
+        {
+          "label": "reserve 20000",
+          "turn": 1,
+          "cost": 0
+        },
+        {
+          "label": "authorize",
+          "turn": 7,
+          "cost": 0
+        },
+        {
+          "label": "reserve 7000",
+          "turn": 7,
+          "cost": 0
+        }
+      ],
+      "reserveMismatch": {
+        "planReserve": 20000,
+        "displayedReserve": 7000
+      },
+      "raw": "/Users/fengheliang/workbench/source/g20/games/outputs/player-operations-retest-2026-10-21/player-operations-7-focused.json"
+    },
+    {
+      "mode": "low-cash-large-war",
+      "seed": 7,
+      "steps": 180,
+      "initial": {
+        "turn": 1,
+        "cash": 30000,
+        "debt": 0,
+        "net": 1448,
+        "grain": 11792,
+        "soldiers": 1600,
+        "training": 60,
+        "provinces": 10,
+        "living": 56,
+        "unrest": 0,
+        "disasters": [],
+        "foodShortfall": 0,
+        "localShortfall": 0,
+        "pending": null,
+        "plan": null,
+        "offer": null,
+        "happiness": 75,
+        "life": 2160
+      },
+      "final": {
+        "turn": 181,
+        "cash": 9908,
+        "debt": 0,
+        "net": 440,
+        "grain": 12290,
+        "soldiers": 1600,
+        "training": 62,
+        "provinces": 10,
+        "living": 57,
+        "unrest": 0,
+        "disasters": [
+          {
+            "id": "jiangnan",
+            "kind": "riot",
+            "startTurn": 179,
+            "endTurn": 184
+          },
+          {
+            "id": "lingnan",
+            "kind": "flood",
+            "startTurn": 176,
+            "endTurn": 182
+          },
+          {
+            "id": "hedong",
+            "kind": "riot",
+            "startTurn": 180,
+            "endTurn": 185
+          },
+          {
+            "id": "longyou",
+            "kind": "riot",
+            "startTurn": 180,
+            "endTurn": 185
+          }
+        ],
+        "foodShortfall": 0,
+        "localShortfall": 0,
+        "pending": null,
+        "plan": {
+          "active": false,
+          "spent": 8256,
+          "cap": 11006,
+          "target": 1600,
+          "reserve": 7000,
+          "status": "兵员、兵装与训练均已恢复",
+          "completedTurn": 17
+        },
+        "offer": null,
+        "happiness": 100,
+        "life": 1980
+      },
+      "minimumCash": 1431,
+      "peakDebt": 0,
+      "publicShortfallTurns": 0,
+      "localShortfallTurns": 0,
+      "peakDisasterCount": 6,
+      "naturalOverlap": null,
+      "battles": [
+        {
+          "turn": 1,
+          "soldiersBefore": 1600,
+          "soldiersAfter": 1003,
+          "offer": 1600,
+          "cashCost": 255,
+          "grainCost": 128
+        }
+      ],
+      "firstRestoredTurn": 16,
+      "planCompletedTurn": 17,
+      "debtPausedTurns": 0,
+      "manualActions": [
+        {
+          "label": "initial surplus equipment 2500",
+          "turn": 1,
+          "cost": 28314
+        },
+        {
+          "label": "authorize",
+          "turn": 1,
+          "cost": 0
+        }
+      ],
+      "reserveMismatch": null,
+      "raw": "/Users/fengheliang/workbench/source/g20/games/outputs/player-operations-retest-2026-10-21/heavy/player-operations-7-focused.json"
+    },
+    {
+      "mode": "natural-overlap-large-war",
+      "seed": 7,
+      "steps": 180,
+      "initial": {
+        "turn": 1,
+        "cash": 30000,
+        "debt": 0,
+        "net": 1448,
+        "grain": 11792,
+        "soldiers": 1600,
+        "training": 60,
+        "provinces": 10,
+        "living": 56,
+        "unrest": 0,
+        "disasters": [],
+        "foodShortfall": 0,
+        "localShortfall": 0,
+        "pending": null,
+        "plan": null,
+        "offer": null,
+        "happiness": 75,
+        "life": 2160
+      },
+      "final": {
+        "turn": 181,
+        "cash": 9493,
+        "debt": 0,
+        "net": 391,
+        "grain": 12152,
+        "soldiers": 1600,
+        "training": 61,
+        "provinces": 10,
+        "living": 57,
+        "unrest": 0,
+        "disasters": [
+          {
+            "id": "jiangnan",
+            "kind": "riot",
+            "startTurn": 179,
+            "endTurn": 184
+          },
+          {
+            "id": "lingnan",
+            "kind": "flood",
+            "startTurn": 176,
+            "endTurn": 182
+          },
+          {
+            "id": "hedong",
+            "kind": "riot",
+            "startTurn": 180,
+            "endTurn": 185
+          },
+          {
+            "id": "longyou",
+            "kind": "riot",
+            "startTurn": 180,
+            "endTurn": 185
+          }
+        ],
+        "foodShortfall": 0,
+        "localShortfall": 0,
+        "pending": null,
+        "plan": {
+          "active": false,
+          "spent": 9180,
+          "cap": 11313,
+          "target": 1600,
+          "reserve": 7000,
+          "status": "兵员、兵装与训练均已恢复",
+          "completedTurn": 45
+        },
+        "offer": null,
+        "happiness": 100,
+        "life": 1980
+      },
+      "minimumCash": 1686,
+      "peakDebt": 0,
+      "publicShortfallTurns": 0,
+      "localShortfallTurns": 0,
+      "peakDisasterCount": 6,
+      "naturalOverlap": {
+        "turn": 28,
+        "cash": 2089,
+        "debt": 0,
+        "net": 1305,
+        "grain": 11538,
+        "soldiers": 1600,
+        "training": 60,
+        "provinces": 10,
+        "living": 56,
+        "unrest": 0,
+        "disasters": [
+          {
+            "id": "henan",
+            "kind": "flood",
+            "startTurn": 28,
+            "endTurn": 34
+          },
+          {
+            "id": "lingnan",
+            "kind": "drought",
+            "startTurn": 20,
+            "endTurn": 29
+          },
+          {
+            "id": "guannei",
+            "kind": "drought",
+            "startTurn": 25,
+            "endTurn": 34
+          }
+        ],
+        "foodShortfall": 0,
+        "localShortfall": 0,
+        "pending": null,
+        "plan": null,
+        "offer": null,
+        "happiness": 97,
+        "life": 2133
+      },
+      "battles": [
+        {
+          "turn": 28,
+          "soldiersBefore": 1600,
+          "soldiersAfter": 987,
+          "offer": 1600,
+          "cashCost": 256,
+          "grainCost": 128
+        }
+      ],
+      "firstRestoredTurn": 44,
+      "planCompletedTurn": 45,
+      "debtPausedTurns": 0,
+      "manualActions": [
+        {
+          "label": "initial surplus equipment 2500",
+          "turn": 1,
+          "cost": 28314
+        },
+        {
+          "label": "paid surplus infantry equipment 433",
+          "turn": 28,
+          "cost": 4912
+        },
+        {
+          "label": "authorize",
+          "turn": 28,
+          "cost": 0
+        }
+      ],
+      "reserveMismatch": null,
+      "raw": "/Users/fengheliang/workbench/source/g20/games/outputs/player-operations-retest-2026-10-21/heavy/player-operations-7-focused.json"
+    },
+    {
+      "mode": "low-cash-depot-war",
+      "seed": 7,
+      "steps": 180,
+      "initial": {
+        "turn": 1,
+        "cash": 30000,
+        "debt": 0,
+        "net": 1448,
+        "grain": 11792,
+        "soldiers": 1600,
+        "training": 60,
+        "provinces": 10,
+        "living": 56,
+        "unrest": 0,
+        "disasters": [],
+        "foodShortfall": 0,
+        "localShortfall": 0,
+        "pending": null,
+        "plan": null,
+        "offer": null,
+        "happiness": 75,
+        "life": 2160
+      },
+      "final": {
+        "turn": 181,
+        "cash": 9561,
+        "debt": 0,
+        "net": 462,
+        "grain": 12064,
+        "soldiers": 1600,
+        "training": 65,
+        "provinces": 10,
+        "living": 57,
+        "unrest": 0,
+        "disasters": [
+          {
+            "id": "jiangnan",
+            "kind": "riot",
+            "startTurn": 179,
+            "endTurn": 184
+          },
+          {
+            "id": "lingnan",
+            "kind": "flood",
+            "startTurn": 176,
+            "endTurn": 182
+          },
+          {
+            "id": "hedong",
+            "kind": "riot",
+            "startTurn": 180,
+            "endTurn": 185
+          },
+          {
+            "id": "longyou",
+            "kind": "riot",
+            "startTurn": 180,
+            "endTurn": 185
+          }
+        ],
+        "foodShortfall": 0,
+        "localShortfall": 0,
+        "pending": null,
+        "plan": {
+          "active": false,
+          "spent": 30205,
+          "cap": 37048,
+          "target": 1600,
+          "reserve": 7000,
+          "status": "兵员、兵装与训练均已恢复",
+          "completedTurn": 40
+        },
+        "offer": null,
+        "happiness": 100,
+        "life": 1980
+      },
+      "minimumCash": 1555,
+      "peakDebt": 0,
+      "publicShortfallTurns": 0,
+      "localShortfallTurns": 0,
+      "peakDisasterCount": 6,
+      "naturalOverlap": null,
+      "battles": [
+        {
+          "turn": 1,
+          "soldiersBefore": 1600,
+          "soldiersAfter": 18,
+          "offer": 1600,
+          "cashCost": 255,
+          "grainCost": 144
+        }
+      ],
+      "firstRestoredTurn": 39,
+      "planCompletedTurn": 40,
+      "debtPausedTurns": 0,
+      "manualActions": [
+        {
+          "label": "paid surplus infantry equipment 2489 at hebei",
+          "turn": 1,
+          "cost": 28190
+        },
+        {
+          "label": "authorize",
+          "turn": 1,
+          "cost": 0
+        }
+      ],
+      "reserveMismatch": null,
+      "raw": "/Users/fengheliang/workbench/source/g20/games/outputs/player-operations-retest-2026-10-21/depot/player-operations-7-focused.json"
+    },
+    {
+      "mode": "natural-overlap-depot-war",
+      "seed": 7,
+      "steps": 180,
+      "initial": {
+        "turn": 1,
+        "cash": 30000,
+        "debt": 0,
+        "net": 1448,
+        "grain": 11792,
+        "soldiers": 1600,
+        "training": 60,
+        "provinces": 10,
+        "living": 56,
+        "unrest": 0,
+        "disasters": [],
+        "foodShortfall": 0,
+        "localShortfall": 0,
+        "pending": null,
+        "plan": null,
+        "offer": null,
+        "happiness": 75,
+        "life": 2160
+      },
+      "final": {
+        "turn": 181,
+        "cash": 8349,
+        "debt": 0,
+        "net": 146,
+        "grain": 12044,
+        "soldiers": 1600,
+        "training": 66,
+        "provinces": 10,
+        "living": 56,
+        "unrest": 0,
+        "disasters": [
+          {
+            "id": "jiangnan",
+            "kind": "riot",
+            "startTurn": 179,
+            "endTurn": 184
+          },
+          {
+            "id": "lingnan",
+            "kind": "flood",
+            "startTurn": 176,
+            "endTurn": 182
+          },
+          {
+            "id": "hedong",
+            "kind": "riot",
+            "startTurn": 180,
+            "endTurn": 185
+          },
+          {
+            "id": "shannan",
+            "kind": "riot",
+            "startTurn": 180,
+            "endTurn": 185
+          },
+          {
+            "id": "longyou",
+            "kind": "riot",
+            "startTurn": 180,
+            "endTurn": 185
+          }
+        ],
+        "foodShortfall": 0,
+        "localShortfall": 0,
+        "pending": null,
+        "plan": {
+          "active": false,
+          "spent": 28985,
+          "cap": 35601,
+          "target": 1600,
+          "reserve": 7000,
+          "status": "兵员、兵装与训练均已恢复",
+          "completedTurn": 66
+        },
+        "offer": null,
+        "happiness": 100,
+        "life": 1980
+      },
+      "minimumCash": 1549,
+      "peakDebt": 0,
+      "publicShortfallTurns": 0,
+      "localShortfallTurns": 0,
+      "peakDisasterCount": 6,
+      "naturalOverlap": {
+        "turn": 28,
+        "cash": 1805,
+        "debt": 0,
+        "net": 1305,
+        "grain": 11538,
+        "soldiers": 1600,
+        "training": 60,
+        "provinces": 10,
+        "living": 56,
+        "unrest": 0,
+        "disasters": [
+          {
+            "id": "henan",
+            "kind": "flood",
+            "startTurn": 28,
+            "endTurn": 34
+          },
+          {
+            "id": "lingnan",
+            "kind": "drought",
+            "startTurn": 20,
+            "endTurn": 29
+          },
+          {
+            "id": "guannei",
+            "kind": "drought",
+            "startTurn": 25,
+            "endTurn": 34
+          }
+        ],
+        "foodShortfall": 0,
+        "localShortfall": 0,
+        "pending": null,
+        "plan": null,
+        "offer": null,
+        "happiness": 97,
+        "life": 2133
+      },
+      "battles": [
+        {
+          "turn": 28,
+          "soldiersBefore": 1600,
+          "soldiersAfter": 0,
+          "offer": 1600,
+          "cashCost": 256,
+          "grainCost": 142
+        }
+      ],
+      "firstRestoredTurn": 65,
+      "planCompletedTurn": 66,
+      "debtPausedTurns": 0,
+      "manualActions": [
+        {
+          "label": "paid surplus infantry equipment 2489 at hebei",
+          "turn": 1,
+          "cost": 28190
+        },
+        {
+          "label": "paid surplus infantry equipment 458 at hebei",
+          "turn": 28,
+          "cost": 5196
+        },
+        {
+          "label": "authorize",
+          "turn": 28,
+          "cost": 0
+        }
+      ],
+      "reserveMismatch": null,
+      "raw": "/Users/fengheliang/workbench/source/g20/games/outputs/player-operations-retest-2026-10-21/depot/player-operations-7-focused.json"
+    },
+    {
+      "mode": "debt-manual-minimum",
+      "seed": 7,
+      "steps": 180,
+      "initial": {
+        "turn": 1,
+        "cash": 30000,
+        "debt": 0,
+        "net": 1448,
+        "grain": 11792,
+        "soldiers": 1600,
+        "training": 60,
+        "provinces": 10,
+        "living": 56,
+        "unrest": 0,
+        "disasters": [],
+        "foodShortfall": 0,
+        "localShortfall": 0,
+        "pending": null,
+        "plan": null,
+        "offer": null,
+        "happiness": 75,
+        "life": 2160
+      },
+      "final": {
+        "turn": 181,
+        "cash": 45339,
+        "debt": 5311,
+        "net": 382,
+        "grain": 7678,
+        "soldiers": 1600,
+        "training": 66,
+        "provinces": 10,
+        "living": 54,
+        "unrest": 0,
+        "disasters": [
+          {
+            "id": "jiangnan",
+            "kind": "riot",
+            "startTurn": 179,
+            "endTurn": 184
+          },
+          {
+            "id": "lingnan",
+            "kind": "flood",
+            "startTurn": 176,
+            "endTurn": 182
+          },
+          {
+            "id": "hedong",
+            "kind": "riot",
+            "startTurn": 180,
+            "endTurn": 185
+          },
+          {
+            "id": "shannan",
+            "kind": "riot",
+            "startTurn": 180,
+            "endTurn": 185
+          },
+          {
+            "id": "longyou",
+            "kind": "riot",
+            "startTurn": 180,
+            "endTurn": 185
+          }
+        ],
+        "foodShortfall": 0,
+        "localShortfall": 0,
+        "pending": null,
+        "plan": {
+          "active": true,
+          "spent": 0,
+          "cap": 2669,
+          "target": 1600,
+          "reserve": 7000,
+          "status": "战役或京城危机期间暂停，授权与余额保留"
+        },
+        "offer": 1600,
+        "happiness": 100,
+        "life": 1980
+      },
+      "minimumCash": 0,
+      "peakDebt": 124777,
+      "publicShortfallTurns": 0,
+      "localShortfallTurns": 0,
+      "peakDisasterCount": 6,
+      "naturalOverlap": null,
+      "battles": [
+        {
+          "turn": 37,
+          "soldiersBefore": 1600,
+          "soldiersAfter": 1480,
+          "offer": 1600,
+          "cashCost": 21,
+          "grainCost": 10
+        }
+      ],
+      "firstRestoredTurn": 45,
+      "planCompletedTurn": null,
+      "debtPausedTurns": 122,
+      "manualActions": [
+        {
+          "label": "tax 0",
+          "turn": 1,
+          "cost": 0
+        },
+        {
+          "label": "tax 20",
+          "turn": 37,
+          "cost": 0
+        },
+        {
+          "label": "authorize",
+          "turn": 37,
+          "cost": 0
+        },
+        {
+          "label": "manual paid purchase",
+          "turn": 42,
+          "cost": 1361
+        },
+        {
+          "label": "manual paid recruit",
+          "turn": 43,
+          "cost": 480
+        },
+        {
+          "label": "manual paid training",
+          "turn": 44,
+          "cost": 64
+        }
+      ],
+      "reserveMismatch": null,
+      "raw": "/Users/fengheliang/workbench/source/g20/games/outputs/player-operations-retest-2026-10-21/manual/player-operations-7-debt-manual-minimum.json"
+    },
+    {
+      "mode": "normal",
+      "seed": 41,
+      "steps": 180,
+      "initial": {
+        "turn": 1,
+        "cash": 30000,
+        "debt": 0,
+        "net": 1448,
+        "grain": 11792,
+        "soldiers": 1600,
+        "training": 60,
+        "provinces": 10,
+        "living": 56,
+        "unrest": 0,
+        "disasters": [],
+        "foodShortfall": 0,
+        "localShortfall": 0,
+        "plan": null,
+        "offer": null,
+        "happiness": 75,
+        "life": 2160
+      },
+      "final": {
+        "turn": 181,
+        "cash": 10599,
+        "debt": 0,
+        "net": 1278,
+        "grain": 12324,
+        "soldiers": 1600,
+        "training": 60,
+        "provinces": 10,
+        "living": 57,
+        "unrest": 0,
+        "disasters": [
+          {
+            "id": "jiannan",
+            "kind": "fire",
+            "startTurn": 181,
+            "endTurn": 183
+          }
+        ],
+        "foodShortfall": 0,
+        "localShortfall": 0,
+        "plan": null,
+        "offer": null,
+        "happiness": 100,
+        "life": 1980
+      },
+      "minimumCash": 7000,
+      "peakDebt": 0,
+      "publicShortfallTurns": 0,
+      "localShortfallTurns": 0,
+      "peakDisasterCount": 6,
+      "naturalOverlap": null,
+      "battles": [],
+      "firstRestoredTurn": null,
+      "planCompletedTurn": null,
+      "debtPausedTurns": 0,
+      "manualActions": [],
+      "reserveMismatch": null,
+      "raw": "/Users/fengheliang/workbench/source/g20/games/outputs/player-operations-retest-2026-10-21/player-operations-41.json"
+    },
+    {
+      "mode": "large-two-wars",
+      "seed": 41,
+      "steps": 180,
+      "initial": {
+        "turn": 1,
+        "cash": 30000,
+        "debt": 0,
+        "net": 1448,
+        "grain": 11792,
+        "soldiers": 1600,
+        "training": 60,
+        "provinces": 10,
+        "living": 56,
+        "unrest": 0,
+        "disasters": [],
+        "foodShortfall": 0,
+        "localShortfall": 0,
+        "plan": null,
+        "offer": null,
+        "happiness": 75,
+        "life": 2160
+      },
+      "final": {
+        "turn": 181,
+        "cash": 17139,
+        "debt": 0,
+        "net": 1380,
+        "grain": 12093,
+        "soldiers": 1600,
+        "training": 66,
+        "provinces": 10,
+        "living": 56,
+        "unrest": 0,
+        "disasters": [
+          {
+            "id": "jiannan",
+            "kind": "fire",
+            "startTurn": 181,
+            "endTurn": 183
+          }
+        ],
+        "foodShortfall": 0,
+        "localShortfall": 0,
+        "plan": {
+          "active": false,
+          "spent": 29475,
+          "cap": 35510,
+          "target": 1600,
+          "reserve": 7000,
+          "status": "兵员、兵装与训练均已恢复",
+          "completedTurn": 104
+        },
+        "offer": null,
+        "happiness": 100,
+        "life": 1980
+      },
+      "minimumCash": 8184,
+      "peakDebt": 0,
+      "publicShortfallTurns": 0,
+      "localShortfallTurns": 0,
+      "peakDisasterCount": 6,
+      "naturalOverlap": null,
+      "battles": [
+        {
+          "turn": 7,
+          "soldiersBefore": 1600,
+          "soldiersAfter": 0,
+          "offer": 1600,
+          "cashCost": 255,
+          "grainCost": 142
+        },
+        {
+          "turn": 67,
+          "soldiersBefore": 1600,
+          "soldiersAfter": 0,
+          "offer": 1600,
+          "cashCost": 257,
+          "grainCost": 142
+        }
+      ],
+      "firstRestoredTurn": 38,
+      "planCompletedTurn": 104,
+      "debtPausedTurns": 0,
+      "manualActions": [
+        {
+          "label": "authorize",
+          "turn": 7,
+          "cost": 0
+        },
+        {
+          "label": "authorize",
+          "turn": 67,
+          "cost": 0
+        }
+      ],
+      "reserveMismatch": null,
+      "raw": "/Users/fengheliang/workbench/source/g20/games/outputs/player-operations-retest-2026-10-21/player-operations-41.json"
+    },
+    {
+      "mode": "low-cash-war",
+      "seed": 41,
+      "steps": 180,
+      "initial": {
+        "turn": 1,
+        "cash": 30000,
+        "debt": 0,
+        "net": 1448,
+        "grain": 11792,
+        "soldiers": 1600,
+        "training": 60,
+        "provinces": 10,
+        "living": 56,
+        "unrest": 0,
+        "disasters": [],
+        "foodShortfall": 0,
+        "localShortfall": 0,
+        "plan": null,
+        "offer": null,
+        "happiness": 75,
+        "life": 2160
+      },
+      "final": {
+        "turn": 181,
+        "cash": 9587,
+        "debt": 0,
+        "net": 1244,
+        "grain": 12183,
+        "soldiers": 1600,
+        "training": 66,
+        "provinces": 10,
+        "living": 57,
+        "unrest": 0,
+        "disasters": [
+          {
+            "id": "jiannan",
+            "kind": "fire",
+            "startTurn": 181,
+            "endTurn": 183
+          }
+        ],
+        "foodShortfall": 0,
+        "localShortfall": 0,
+        "plan": {
+          "active": false,
+          "spent": 1228,
+          "cap": 2669,
+          "target": 1600,
+          "reserve": 7000,
+          "status": "兵员、兵装与训练均已恢复",
+          "completedTurn": 12
+        },
+        "offer": null,
+        "happiness": 100,
+        "life": 1980
+      },
+      "minimumCash": 1665,
+      "peakDebt": 0,
+      "publicShortfallTurns": 0,
+      "localShortfallTurns": 0,
+      "peakDisasterCount": 6,
+      "naturalOverlap": null,
+      "battles": [
+        {
+          "turn": 1,
+          "soldiersBefore": 1600,
+          "soldiersAfter": 1480,
+          "offer": 1600,
+          "cashCost": 21,
+          "grainCost": 10
+        }
+      ],
+      "firstRestoredTurn": 11,
+      "planCompletedTurn": 12,
+      "debtPausedTurns": 0,
+      "manualActions": [
+        {
+          "label": "initial surplus equipment 2500",
+          "turn": 1,
+          "cost": 28314
+        },
+        {
+          "label": "authorize",
+          "turn": 1,
+          "cost": 0
+        }
+      ],
+      "reserveMismatch": null,
+      "raw": "/Users/fengheliang/workbench/source/g20/games/outputs/player-operations-retest-2026-10-21/player-operations-41.json"
+    },
+    {
+      "mode": "consecutive-active",
+      "seed": 41,
+      "steps": 180,
+      "initial": {
+        "turn": 1,
+        "cash": 30000,
+        "debt": 0,
+        "net": 1448,
+        "grain": 11792,
+        "soldiers": 1600,
+        "training": 60,
+        "provinces": 10,
+        "living": 56,
+        "unrest": 0,
+        "disasters": [],
+        "foodShortfall": 0,
+        "localShortfall": 0,
+        "pending": null,
+        "plan": null,
+        "offer": null,
+        "happiness": 75,
+        "life": 2160
+      },
+      "final": {
+        "turn": 181,
+        "cash": 10580,
+        "debt": 0,
+        "net": 1267,
+        "grain": 12316,
+        "soldiers": 1360,
+        "training": 56,
+        "provinces": 10,
+        "living": 57,
+        "unrest": 0,
+        "disasters": [
+          {
+            "id": "jiannan",
+            "kind": "fire",
+            "startTurn": 181,
+            "endTurn": 183
+          }
+        ],
+        "foodShortfall": 0,
+        "localShortfall": 0,
+        "pending": null,
+        "plan": {
+          "active": true,
+          "spent": 2676,
+          "cap": 2679,
+          "target": 1600,
+          "reserve": 7000,
+          "status": "战役或京城危机期间暂停，授权与余额保留"
+        },
+        "offer": 1600,
+        "happiness": 100,
+        "life": 1980
+      },
+      "minimumCash": 7000,
+      "peakDebt": 0,
+      "publicShortfallTurns": 0,
+      "localShortfallTurns": 0,
+      "peakDisasterCount": 6,
+      "naturalOverlap": null,
+      "battles": [
+        {
+          "turn": 7,
+          "soldiersBefore": 1600,
+          "soldiersAfter": 1480,
+          "offer": 1600,
+          "cashCost": 21,
+          "grainCost": 10
+        },
+        {
+          "turn": 9,
+          "soldiersBefore": 1600,
+          "soldiersAfter": 1480,
+          "offer": 1600,
+          "cashCost": 21,
+          "grainCost": 10
+        },
+        {
+          "turn": 11,
+          "soldiersBefore": 1480,
+          "soldiersAfter": 1360,
+          "offer": 1600,
+          "cashCost": 21,
+          "grainCost": 10
+        }
+      ],
+      "firstRestoredTurn": null,
+      "planCompletedTurn": null,
+      "debtPausedTurns": 0,
+      "manualActions": [
+        {
+          "label": "authorize",
+          "turn": 7,
+          "cost": 0
+        }
+      ],
+      "reserveMismatch": null,
+      "raw": "/Users/fengheliang/workbench/source/g20/games/outputs/player-operations-retest-2026-10-21/player-operations-41-focused.json"
+    },
+    {
+      "mode": "consecutive-renewed",
+      "seed": 41,
+      "steps": 180,
+      "initial": {
+        "turn": 1,
+        "cash": 30000,
+        "debt": 0,
+        "net": 1448,
+        "grain": 11792,
+        "soldiers": 1600,
+        "training": 60,
+        "provinces": 10,
+        "living": 56,
+        "unrest": 0,
+        "disasters": [],
+        "foodShortfall": 0,
+        "localShortfall": 0,
+        "pending": null,
+        "plan": null,
+        "offer": null,
+        "happiness": 75,
+        "life": 2160
+      },
+      "final": {
+        "turn": 181,
+        "cash": 10526,
+        "debt": 0,
+        "net": 1255,
+        "grain": 12306,
+        "soldiers": 1600,
+        "training": 69,
+        "provinces": 10,
+        "living": 57,
+        "unrest": 0,
+        "disasters": [
+          {
+            "id": "jiannan",
+            "kind": "fire",
+            "startTurn": 181,
+            "endTurn": 183
+          }
+        ],
+        "foodShortfall": 0,
+        "localShortfall": 0,
+        "pending": null,
+        "plan": {
+          "active": false,
+          "spent": 2984,
+          "cap": 3885,
+          "target": 1600,
+          "reserve": 7000,
+          "status": "兵员、兵装与训练均已恢复",
+          "completedTurn": 18
+        },
+        "offer": null,
+        "happiness": 100,
+        "life": 1980
+      },
+      "minimumCash": 7000,
+      "peakDebt": 0,
+      "publicShortfallTurns": 0,
+      "localShortfallTurns": 0,
+      "peakDisasterCount": 6,
+      "naturalOverlap": null,
+      "battles": [
+        {
+          "turn": 7,
+          "soldiersBefore": 1600,
+          "soldiersAfter": 1480,
+          "offer": 1600,
+          "cashCost": 21,
+          "grainCost": 10
+        },
+        {
+          "turn": 9,
+          "soldiersBefore": 1600,
+          "soldiersAfter": 1480,
+          "offer": 1600,
+          "cashCost": 21,
+          "grainCost": 10
+        },
+        {
+          "turn": 11,
+          "soldiersBefore": 1480,
+          "soldiersAfter": 1360,
+          "offer": 1600,
+          "cashCost": 21,
+          "grainCost": 10
+        }
+      ],
+      "firstRestoredTurn": 17,
+      "planCompletedTurn": 18,
+      "debtPausedTurns": 0,
+      "manualActions": [
+        {
+          "label": "authorize",
+          "turn": 7,
+          "cost": 0
+        },
+        {
+          "label": "cancel",
+          "turn": 12,
+          "cost": 0
+        },
+        {
+          "label": "authorize",
+          "turn": 12,
+          "cost": 0
+        }
+      ],
+      "reserveMismatch": null,
+      "raw": "/Users/fengheliang/workbench/source/g20/games/outputs/player-operations-retest-2026-10-21/player-operations-41-focused.json"
+    },
+    {
+      "mode": "consecutive-unapproved",
+      "seed": 41,
+      "steps": 180,
+      "initial": {
+        "turn": 1,
+        "cash": 30000,
+        "debt": 0,
+        "net": 1448,
+        "grain": 11792,
+        "soldiers": 1600,
+        "training": 60,
+        "provinces": 10,
+        "living": 56,
+        "unrest": 0,
+        "disasters": [],
+        "foodShortfall": 0,
+        "localShortfall": 0,
+        "pending": null,
+        "plan": null,
+        "offer": null,
+        "happiness": 75,
+        "life": 2160
+      },
+      "final": {
+        "turn": 181,
+        "cash": 10564,
+        "debt": 0,
+        "net": 1320,
+        "grain": 12198,
+        "soldiers": 1360,
+        "training": 65,
+        "provinces": 10,
+        "living": 57,
+        "unrest": 0,
+        "disasters": [
+          {
+            "id": "jiannan",
+            "kind": "fire",
+            "startTurn": 181,
+            "endTurn": 183
+          }
+        ],
+        "foodShortfall": 0,
+        "localShortfall": 0,
+        "pending": null,
+        "plan": {
+          "active": false,
+          "spent": 1895,
+          "cap": 2604,
+          "target": 1360,
+          "reserve": 7000,
+          "status": "兵员、兵装与训练均已恢复",
+          "completedTurn": 15
+        },
+        "offer": null,
+        "happiness": 100,
+        "life": 1980
+      },
+      "minimumCash": 7000,
+      "peakDebt": 0,
+      "publicShortfallTurns": 0,
+      "localShortfallTurns": 0,
+      "peakDisasterCount": 6,
+      "naturalOverlap": null,
+      "battles": [
+        {
+          "turn": 7,
+          "soldiersBefore": 1600,
+          "soldiersAfter": 1480,
+          "offer": 1600,
+          "cashCost": 21,
+          "grainCost": 10
+        },
+        {
+          "turn": 9,
+          "soldiersBefore": 1480,
+          "soldiersAfter": 1360,
+          "offer": 1480,
+          "cashCost": 21,
+          "grainCost": 10
+        },
+        {
+          "turn": 11,
+          "soldiersBefore": 1360,
+          "soldiersAfter": 1240,
+          "offer": 1360,
+          "cashCost": 21,
+          "grainCost": 10
+        }
+      ],
+      "firstRestoredTurn": null,
+      "planCompletedTurn": 15,
+      "debtPausedTurns": 0,
+      "manualActions": [
+        {
+          "label": "authorize",
+          "turn": 11,
+          "cost": 0
+        }
+      ],
+      "reserveMismatch": null,
+      "raw": "/Users/fengheliang/workbench/source/g20/games/outputs/player-operations-retest-2026-10-21/player-operations-41-focused.json"
+    },
+    {
+      "mode": "consecutive-cancelled",
+      "seed": 41,
+      "steps": 180,
+      "initial": {
+        "turn": 1,
+        "cash": 30000,
+        "debt": 0,
+        "net": 1448,
+        "grain": 11792,
+        "soldiers": 1600,
+        "training": 60,
+        "provinces": 10,
+        "living": 56,
+        "unrest": 0,
+        "disasters": [],
+        "foodShortfall": 0,
+        "localShortfall": 0,
+        "pending": null,
+        "plan": null,
+        "offer": null,
+        "happiness": 75,
+        "life": 2160
+      },
+      "final": {
+        "turn": 181,
+        "cash": 10483,
+        "debt": 0,
+        "net": 1246,
+        "grain": 12197,
+        "soldiers": 1600,
+        "training": 59,
+        "provinces": 10,
+        "living": 57,
+        "unrest": 0,
+        "disasters": [
+          {
+            "id": "jiannan",
+            "kind": "fire",
+            "startTurn": 181,
+            "endTurn": 183
+          }
+        ],
+        "foodShortfall": 0,
+        "localShortfall": 0,
+        "pending": null,
+        "plan": {
+          "active": false,
+          "spent": 1904,
+          "cap": 2669,
+          "target": 1600,
+          "reserve": 7000,
+          "status": "兵员、兵装与训练均已恢复",
+          "completedTurn": 15
+        },
+        "offer": null,
+        "happiness": 100,
+        "life": 1980
+      },
+      "minimumCash": 7000,
+      "peakDebt": 0,
+      "publicShortfallTurns": 0,
+      "localShortfallTurns": 0,
+      "peakDisasterCount": 6,
+      "naturalOverlap": null,
+      "battles": [
+        {
+          "turn": 7,
+          "soldiersBefore": 1600,
+          "soldiersAfter": 1480,
+          "offer": 1600,
+          "cashCost": 21,
+          "grainCost": 10
+        },
+        {
+          "turn": 9,
+          "soldiersBefore": 1600,
+          "soldiersAfter": 1480,
+          "offer": 1600,
+          "cashCost": 21,
+          "grainCost": 10
+        },
+        {
+          "turn": 11,
+          "soldiersBefore": 1600,
+          "soldiersAfter": 1480,
+          "offer": 1600,
+          "cashCost": 21,
+          "grainCost": 10
+        }
+      ],
+      "firstRestoredTurn": null,
+      "planCompletedTurn": 15,
+      "debtPausedTurns": 0,
+      "manualActions": [
+        {
+          "label": "authorize",
+          "turn": 7,
+          "cost": 0
+        },
+        {
+          "label": "cancel",
+          "turn": 9,
+          "cost": 0
+        },
+        {
+          "label": "authorize",
+          "turn": 9,
+          "cost": 0
+        },
+        {
+          "label": "cancel",
+          "turn": 11,
+          "cost": 0
+        },
+        {
+          "label": "authorize",
+          "turn": 11,
+          "cost": 0
+        }
+      ],
+      "reserveMismatch": null,
+      "raw": "/Users/fengheliang/workbench/source/g20/games/outputs/player-operations-retest-2026-10-21/player-operations-41-focused.json"
+    },
+    {
+      "mode": "natural-overlap-low-cash",
+      "seed": 41,
+      "steps": 180,
+      "initial": {
+        "turn": 1,
+        "cash": 30000,
+        "debt": 0,
+        "net": 1448,
+        "grain": 11792,
+        "soldiers": 1600,
+        "training": 60,
+        "provinces": 10,
+        "living": 56,
+        "unrest": 0,
+        "disasters": [],
+        "foodShortfall": 0,
+        "localShortfall": 0,
+        "pending": null,
+        "plan": null,
+        "offer": null,
+        "happiness": 75,
+        "life": 2160
+      },
+      "final": {
+        "turn": 181,
+        "cash": 10034,
+        "debt": 0,
+        "net": 1234,
+        "grain": 12160,
+        "soldiers": 1600,
+        "training": 66,
+        "provinces": 10,
+        "living": 56,
+        "unrest": 0,
+        "disasters": [
+          {
+            "id": "jiannan",
+            "kind": "fire",
+            "startTurn": 181,
+            "endTurn": 183
+          }
+        ],
+        "foodShortfall": 0,
+        "localShortfall": 0,
+        "pending": null,
+        "plan": {
+          "active": false,
+          "spent": 1907,
+          "cap": 2672,
+          "target": 1600,
+          "reserve": 7000,
+          "status": "兵员、兵装与训练均已恢复",
+          "completedTurn": 22
+        },
+        "offer": null,
+        "happiness": 100,
+        "life": 1980
+      },
+      "minimumCash": 1686,
+      "peakDebt": 0,
+      "publicShortfallTurns": 0,
+      "localShortfallTurns": 0,
+      "peakDisasterCount": 6,
+      "naturalOverlap": {
+        "turn": 13,
+        "cash": 2088,
+        "debt": 0,
+        "net": 1238,
+        "grain": 11656,
+        "soldiers": 1600,
+        "training": 60,
+        "provinces": 10,
+        "living": 56,
+        "unrest": 0,
+        "disasters": [
+          {
+            "id": "henan",
+            "kind": "drought",
+            "startTurn": 11,
+            "endTurn": 20
+          },
+          {
+            "id": "guannei",
+            "kind": "flood",
+            "startTurn": 13,
+            "endTurn": 19
+          },
+          {
+            "id": "jiannan",
+            "kind": "drought",
+            "startTurn": 13,
+            "endTurn": 22
+          }
+        ],
+        "foodShortfall": 0,
+        "localShortfall": 0,
+        "pending": null,
+        "plan": null,
+        "offer": null,
+        "happiness": 97,
+        "life": 2148
+      },
+      "battles": [
+        {
+          "turn": 13,
+          "soldiersBefore": 1600,
+          "soldiersAfter": 1480,
+          "offer": 1600,
+          "cashCost": 21,
+          "grainCost": 10
+        }
+      ],
+      "firstRestoredTurn": 21,
+      "planCompletedTurn": 22,
+      "debtPausedTurns": 0,
+      "manualActions": [
+        {
+          "label": "initial surplus equipment 2500",
+          "turn": 1,
+          "cost": 28314
+        },
+        {
+          "label": "paid surplus infantry equipment 436",
+          "turn": 13,
+          "cost": 4948
+        },
+        {
+          "label": "authorize",
+          "turn": 13,
+          "cost": 0
+        }
+      ],
+      "reserveMismatch": null,
+      "raw": "/Users/fengheliang/workbench/source/g20/games/outputs/player-operations-retest-2026-10-21/player-operations-41-focused.json"
+    },
+    {
+      "mode": "debt-recovery",
+      "seed": 41,
+      "steps": 180,
+      "initial": {
+        "turn": 1,
+        "cash": 30000,
+        "debt": 0,
+        "net": 1448,
+        "grain": 11792,
+        "soldiers": 1600,
+        "training": 60,
+        "provinces": 10,
+        "living": 56,
+        "unrest": 0,
+        "disasters": [],
+        "foodShortfall": 0,
+        "localShortfall": 0,
+        "pending": null,
+        "plan": null,
+        "offer": null,
+        "happiness": 75,
+        "life": 2160
+      },
+      "final": {
+        "turn": 181,
+        "cash": 43834,
+        "debt": 1345,
+        "net": 1439,
+        "grain": 6282,
+        "soldiers": 1480,
+        "training": 60,
+        "provinces": 10,
+        "living": 54,
+        "unrest": 0,
+        "disasters": [
+          {
+            "id": "jiannan",
+            "kind": "fire",
+            "startTurn": 181,
+            "endTurn": 183
+          }
+        ],
+        "foodShortfall": 0,
+        "localShortfall": 0,
+        "pending": null,
+        "plan": {
+          "active": true,
+          "spent": 0,
+          "cap": 2674,
+          "target": 1600,
+          "reserve": 7000,
+          "status": "战役或京城危机期间暂停，授权与余额保留"
+        },
+        "offer": 1600,
+        "happiness": 100,
+        "life": 1980
+      },
+      "minimumCash": 0,
+      "peakDebt": 125104,
+      "publicShortfallTurns": 0,
+      "localShortfallTurns": 0,
+      "peakDisasterCount": 6,
+      "naturalOverlap": null,
+      "battles": [
+        {
+          "turn": 37,
+          "soldiersBefore": 1600,
+          "soldiersAfter": 1480,
+          "offer": 1600,
+          "cashCost": 21,
+          "grainCost": 10
+        }
+      ],
+      "firstRestoredTurn": null,
+      "planCompletedTurn": null,
+      "debtPausedTurns": 122,
+      "manualActions": [
+        {
+          "label": "tax 0",
+          "turn": 1,
+          "cost": 0
+        },
+        {
+          "label": "tax 20",
+          "turn": 37,
+          "cost": 0
+        },
+        {
+          "label": "authorize",
+          "turn": 37,
+          "cost": 0
+        },
+        {
+          "label": "manual debt repayment 40126",
+          "turn": 109,
+          "cost": 40126
+        }
+      ],
+      "reserveMismatch": null,
+      "raw": "/Users/fengheliang/workbench/source/g20/games/outputs/player-operations-retest-2026-10-21/player-operations-41-focused.json"
+    },
+    {
+      "mode": "debt-repay-control",
+      "seed": 41,
+      "steps": 180,
+      "initial": {
+        "turn": 1,
+        "cash": 30000,
+        "debt": 0,
+        "net": 1448,
+        "grain": 11792,
+        "soldiers": 1600,
+        "training": 60,
+        "provinces": 10,
+        "living": 56,
+        "unrest": 0,
+        "disasters": [],
+        "foodShortfall": 0,
+        "localShortfall": 0,
+        "pending": null,
+        "plan": null,
+        "offer": null,
+        "happiness": 75,
+        "life": 2160
+      },
+      "final": {
+        "turn": 181,
+        "cash": 8810,
+        "debt": 0,
+        "net": 1273,
+        "grain": 6345,
+        "soldiers": 1600,
+        "training": 65,
+        "provinces": 10,
+        "living": 54,
+        "unrest": 0,
+        "disasters": [
+          {
+            "id": "jiannan",
+            "kind": "fire",
+            "startTurn": 181,
+            "endTurn": 183
+          }
+        ],
+        "foodShortfall": 0,
+        "localShortfall": 0,
+        "pending": null,
+        "plan": {
+          "active": false,
+          "spent": 1919,
+          "cap": 2674,
+          "target": 1600,
+          "reserve": 7000,
+          "status": "兵员、兵装与训练均已恢复",
+          "completedTurn": 161
+        },
+        "offer": null,
+        "happiness": 100,
+        "life": 1980
+      },
+      "minimumCash": 0,
+      "peakDebt": 125104,
+      "publicShortfallTurns": 0,
+      "localShortfallTurns": 0,
+      "peakDisasterCount": 6,
+      "naturalOverlap": null,
+      "battles": [
+        {
+          "turn": 37,
+          "soldiersBefore": 1600,
+          "soldiersAfter": 1480,
+          "offer": 1600,
+          "cashCost": 21,
+          "grainCost": 10
+        }
+      ],
+      "firstRestoredTurn": 160,
+      "planCompletedTurn": 161,
+      "debtPausedTurns": 99,
+      "manualActions": [
+        {
+          "label": "tax 0",
+          "turn": 1,
+          "cost": 0
+        },
+        {
+          "label": "tax 20",
+          "turn": 37,
+          "cost": 0
+        },
+        {
+          "label": "authorize",
+          "turn": 37,
+          "cost": 0
+        },
+        {
+          "label": "repay all real debt",
+          "turn": 153,
+          "cost": 37915
+        }
+      ],
+      "reserveMismatch": null,
+      "raw": "/Users/fengheliang/workbench/source/g20/games/outputs/player-operations-retest-2026-10-21/player-operations-41-focused.json"
+    },
+    {
+      "mode": "reserve-change",
+      "seed": 41,
+      "steps": 180,
+      "initial": {
+        "turn": 1,
+        "cash": 30000,
+        "debt": 0,
+        "net": 1448,
+        "grain": 11792,
+        "soldiers": 1600,
+        "training": 60,
+        "provinces": 10,
+        "living": 56,
+        "unrest": 0,
+        "disasters": [],
+        "foodShortfall": 0,
+        "localShortfall": 0,
+        "pending": null,
+        "plan": null,
+        "offer": null,
+        "happiness": 75,
+        "life": 2160
+      },
+      "final": {
+        "turn": 181,
+        "cash": 15285,
+        "debt": 0,
+        "net": 1251,
+        "grain": 12133,
+        "soldiers": 1600,
+        "training": 65,
+        "provinces": 10,
+        "living": 57,
+        "unrest": 0,
+        "disasters": [
+          {
+            "id": "jiannan",
+            "kind": "fire",
+            "startTurn": 181,
+            "endTurn": 183
+          }
+        ],
+        "foodShortfall": 0,
+        "localShortfall": 0,
+        "pending": null,
+        "plan": {
+          "active": false,
+          "spent": 29640,
+          "cap": 35728,
+          "target": 1600,
+          "reserve": 20000,
+          "status": "兵员、兵装与训练均已恢复",
+          "completedTurn": 43
+        },
+        "offer": null,
+        "happiness": 100,
+        "life": 1980
+      },
+      "minimumCash": 7000,
+      "peakDebt": 0,
+      "publicShortfallTurns": 0,
+      "localShortfallTurns": 0,
+      "peakDisasterCount": 6,
+      "naturalOverlap": null,
+      "battles": [
+        {
+          "turn": 7,
+          "soldiersBefore": 1600,
+          "soldiersAfter": 0,
+          "offer": 1600,
+          "cashCost": 255,
+          "grainCost": 142
+        }
+      ],
+      "firstRestoredTurn": 42,
+      "planCompletedTurn": 43,
+      "debtPausedTurns": 0,
+      "manualActions": [
+        {
+          "label": "reserve 20000",
+          "turn": 1,
+          "cost": 0
+        },
+        {
+          "label": "authorize",
+          "turn": 7,
+          "cost": 0
+        },
+        {
+          "label": "reserve 7000",
+          "turn": 7,
+          "cost": 0
+        }
+      ],
+      "reserveMismatch": {
+        "planReserve": 20000,
+        "displayedReserve": 7000
+      },
+      "raw": "/Users/fengheliang/workbench/source/g20/games/outputs/player-operations-retest-2026-10-21/player-operations-41-focused.json"
+    },
+    {
+      "mode": "low-cash-large-war",
+      "seed": 41,
+      "steps": 180,
+      "initial": {
+        "turn": 1,
+        "cash": 30000,
+        "debt": 0,
+        "net": 1448,
+        "grain": 11792,
+        "soldiers": 1600,
+        "training": 60,
+        "provinces": 10,
+        "living": 56,
+        "unrest": 0,
+        "disasters": [],
+        "foodShortfall": 0,
+        "localShortfall": 0,
+        "pending": null,
+        "plan": null,
+        "offer": null,
+        "happiness": 75,
+        "life": 2160
+      },
+      "final": {
+        "turn": 181,
+        "cash": 10759,
+        "debt": 0,
+        "net": 1261,
+        "grain": 12174,
+        "soldiers": 1600,
+        "training": 62,
+        "provinces": 10,
+        "living": 57,
+        "unrest": 0,
+        "disasters": [
+          {
+            "id": "jiannan",
+            "kind": "fire",
+            "startTurn": 181,
+            "endTurn": 183
+          }
+        ],
+        "foodShortfall": 0,
+        "localShortfall": 0,
+        "pending": null,
+        "plan": {
+          "active": false,
+          "spent": 8245,
+          "cap": 11006,
+          "target": 1600,
+          "reserve": 7000,
+          "status": "兵员、兵装与训练均已恢复",
+          "completedTurn": 18
+        },
+        "offer": null,
+        "happiness": 100,
+        "life": 1980
+      },
+      "minimumCash": 1431,
+      "peakDebt": 0,
+      "publicShortfallTurns": 0,
+      "localShortfallTurns": 0,
+      "peakDisasterCount": 6,
+      "naturalOverlap": null,
+      "battles": [
+        {
+          "turn": 1,
+          "soldiersBefore": 1600,
+          "soldiersAfter": 1003,
+          "offer": 1600,
+          "cashCost": 255,
+          "grainCost": 128
+        }
+      ],
+      "firstRestoredTurn": 17,
+      "planCompletedTurn": 18,
+      "debtPausedTurns": 0,
+      "manualActions": [
+        {
+          "label": "initial surplus equipment 2500",
+          "turn": 1,
+          "cost": 28314
+        },
+        {
+          "label": "authorize",
+          "turn": 1,
+          "cost": 0
+        }
+      ],
+      "reserveMismatch": null,
+      "raw": "/Users/fengheliang/workbench/source/g20/games/outputs/player-operations-retest-2026-10-21/heavy/player-operations-41-focused.json"
+    },
+    {
+      "mode": "natural-overlap-large-war",
+      "seed": 41,
+      "steps": 180,
+      "initial": {
+        "turn": 1,
+        "cash": 30000,
+        "debt": 0,
+        "net": 1448,
+        "grain": 11792,
+        "soldiers": 1600,
+        "training": 60,
+        "provinces": 10,
+        "living": 56,
+        "unrest": 0,
+        "disasters": [],
+        "foodShortfall": 0,
+        "localShortfall": 0,
+        "pending": null,
+        "plan": null,
+        "offer": null,
+        "happiness": 75,
+        "life": 2160
+      },
+      "final": {
+        "turn": 181,
+        "cash": 10153,
+        "debt": 0,
+        "net": 1283,
+        "grain": 12137,
+        "soldiers": 1600,
+        "training": 61,
+        "provinces": 10,
+        "living": 56,
+        "unrest": 0,
+        "disasters": [
+          {
+            "id": "jiannan",
+            "kind": "fire",
+            "startTurn": 181,
+            "endTurn": 183
+          }
+        ],
+        "foodShortfall": 0,
+        "localShortfall": 0,
+        "pending": null,
+        "plan": {
+          "active": false,
+          "spent": 9007,
+          "cap": 11094,
+          "target": 1600,
+          "reserve": 7000,
+          "status": "兵员、兵装与训练均已恢复",
+          "completedTurn": 31
+        },
+        "offer": null,
+        "happiness": 100,
+        "life": 1980
+      },
+      "minimumCash": 1686,
+      "peakDebt": 0,
+      "publicShortfallTurns": 0,
+      "localShortfallTurns": 0,
+      "peakDisasterCount": 6,
+      "naturalOverlap": {
+        "turn": 13,
+        "cash": 2088,
+        "debt": 0,
+        "net": 1238,
+        "grain": 11656,
+        "soldiers": 1600,
+        "training": 60,
+        "provinces": 10,
+        "living": 56,
+        "unrest": 0,
+        "disasters": [
+          {
+            "id": "henan",
+            "kind": "drought",
+            "startTurn": 11,
+            "endTurn": 20
+          },
+          {
+            "id": "guannei",
+            "kind": "flood",
+            "startTurn": 13,
+            "endTurn": 19
+          },
+          {
+            "id": "jiannan",
+            "kind": "drought",
+            "startTurn": 13,
+            "endTurn": 22
+          }
+        ],
+        "foodShortfall": 0,
+        "localShortfall": 0,
+        "pending": null,
+        "plan": null,
+        "offer": null,
+        "happiness": 97,
+        "life": 2148
+      },
+      "battles": [
+        {
+          "turn": 13,
+          "soldiersBefore": 1600,
+          "soldiersAfter": 999,
+          "offer": 1600,
+          "cashCost": 256,
+          "grainCost": 128
+        }
+      ],
+      "firstRestoredTurn": 30,
+      "planCompletedTurn": 31,
+      "debtPausedTurns": 0,
+      "manualActions": [
+        {
+          "label": "initial surplus equipment 2500",
+          "turn": 1,
+          "cost": 28314
+        },
+        {
+          "label": "paid surplus infantry equipment 436",
+          "turn": 13,
+          "cost": 4948
+        },
+        {
+          "label": "authorize",
+          "turn": 13,
+          "cost": 0
+        }
+      ],
+      "reserveMismatch": null,
+      "raw": "/Users/fengheliang/workbench/source/g20/games/outputs/player-operations-retest-2026-10-21/heavy/player-operations-41-focused.json"
+    },
+    {
+      "mode": "low-cash-depot-war",
+      "seed": 41,
+      "steps": 180,
+      "initial": {
+        "turn": 1,
+        "cash": 30000,
+        "debt": 0,
+        "net": 1448,
+        "grain": 11792,
+        "soldiers": 1600,
+        "training": 60,
+        "provinces": 10,
+        "living": 56,
+        "unrest": 0,
+        "disasters": [],
+        "foodShortfall": 0,
+        "localShortfall": 0,
+        "pending": null,
+        "plan": null,
+        "offer": null,
+        "happiness": 75,
+        "life": 2160
+      },
+      "final": {
+        "turn": 181,
+        "cash": 9868,
+        "debt": 0,
+        "net": 1198,
+        "grain": 12121,
+        "soldiers": 1600,
+        "training": 65,
+        "provinces": 10,
+        "living": 56,
+        "unrest": 0,
+        "disasters": [
+          {
+            "id": "jiannan",
+            "kind": "fire",
+            "startTurn": 181,
+            "endTurn": 183
+          }
+        ],
+        "foodShortfall": 0,
+        "localShortfall": 0,
+        "pending": null,
+        "plan": {
+          "active": false,
+          "spent": 30201,
+          "cap": 37048,
+          "target": 1600,
+          "reserve": 7000,
+          "status": "兵员、兵装与训练均已恢复",
+          "completedTurn": 43
+        },
+        "offer": null,
+        "happiness": 100,
+        "life": 1980
+      },
+      "minimumCash": 1555,
+      "peakDebt": 0,
+      "publicShortfallTurns": 0,
+      "localShortfallTurns": 0,
+      "peakDisasterCount": 6,
+      "naturalOverlap": null,
+      "battles": [
+        {
+          "turn": 1,
+          "soldiersBefore": 1600,
+          "soldiersAfter": 18,
+          "offer": 1600,
+          "cashCost": 255,
+          "grainCost": 144
+        }
+      ],
+      "firstRestoredTurn": 42,
+      "planCompletedTurn": 43,
+      "debtPausedTurns": 0,
+      "manualActions": [
+        {
+          "label": "paid surplus infantry equipment 2489 at hebei",
+          "turn": 1,
+          "cost": 28190
+        },
+        {
+          "label": "authorize",
+          "turn": 1,
+          "cost": 0
+        }
+      ],
+      "reserveMismatch": null,
+      "raw": "/Users/fengheliang/workbench/source/g20/games/outputs/player-operations-retest-2026-10-21/depot/player-operations-41-focused.json"
+    },
+    {
+      "mode": "natural-overlap-depot-war",
+      "seed": 41,
+      "steps": 180,
+      "initial": {
+        "turn": 1,
+        "cash": 30000,
+        "debt": 0,
+        "net": 1448,
+        "grain": 11792,
+        "soldiers": 1600,
+        "training": 60,
+        "provinces": 10,
+        "living": 56,
+        "unrest": 0,
+        "disasters": [],
+        "foodShortfall": 0,
+        "localShortfall": 0,
+        "pending": null,
+        "plan": null,
+        "offer": null,
+        "happiness": 75,
+        "life": 2160
+      },
+      "final": {
+        "turn": 181,
+        "cash": 11167,
+        "debt": 0,
+        "net": 1222,
+        "grain": 12095,
+        "soldiers": 1600,
+        "training": 65,
+        "provinces": 10,
+        "living": 56,
+        "unrest": 0,
+        "disasters": [
+          {
+            "id": "jiannan",
+            "kind": "fire",
+            "startTurn": 181,
+            "endTurn": 183
+          }
+        ],
+        "foodShortfall": 0,
+        "localShortfall": 0,
+        "pending": null,
+        "plan": {
+          "active": false,
+          "spent": 29035,
+          "cap": 35613,
+          "target": 1600,
+          "reserve": 7000,
+          "status": "兵员、兵装与训练均已恢复",
+          "completedTurn": 51
+        },
+        "offer": null,
+        "happiness": 100,
+        "life": 1980
+      },
+      "minimumCash": 1550,
+      "peakDebt": 0,
+      "publicShortfallTurns": 0,
+      "localShortfallTurns": 0,
+      "peakDisasterCount": 6,
+      "naturalOverlap": {
+        "turn": 13,
+        "cash": 1806,
+        "debt": 0,
+        "net": 1239,
+        "grain": 11656,
+        "soldiers": 1600,
+        "training": 60,
+        "provinces": 10,
+        "living": 56,
+        "unrest": 0,
+        "disasters": [
+          {
+            "id": "henan",
+            "kind": "drought",
+            "startTurn": 11,
+            "endTurn": 20
+          },
+          {
+            "id": "guannei",
+            "kind": "flood",
+            "startTurn": 13,
+            "endTurn": 19
+          },
+          {
+            "id": "jiannan",
+            "kind": "drought",
+            "startTurn": 13,
+            "endTurn": 22
+          }
+        ],
+        "foodShortfall": 0,
+        "localShortfall": 0,
+        "pending": null,
+        "plan": null,
+        "offer": null,
+        "happiness": 97,
+        "life": 2148
+      },
+      "battles": [
+        {
+          "turn": 13,
+          "soldiersBefore": 1600,
+          "soldiersAfter": 0,
+          "offer": 1600,
+          "cashCost": 256,
+          "grainCost": 142
+        }
+      ],
+      "firstRestoredTurn": 50,
+      "planCompletedTurn": 51,
+      "debtPausedTurns": 0,
+      "manualActions": [
+        {
+          "label": "paid surplus infantry equipment 2489 at hebei",
+          "turn": 1,
+          "cost": 28190
+        },
+        {
+          "label": "paid surplus infantry equipment 461 at hebei",
+          "turn": 13,
+          "cost": 5232
+        },
+        {
+          "label": "authorize",
+          "turn": 13,
+          "cost": 0
+        }
+      ],
+      "reserveMismatch": null,
+      "raw": "/Users/fengheliang/workbench/source/g20/games/outputs/player-operations-retest-2026-10-21/depot/player-operations-41-focused.json"
+    },
+    {
+      "mode": "debt-manual-minimum",
+      "seed": 41,
+      "steps": 180,
+      "initial": {
+        "turn": 1,
+        "cash": 30000,
+        "debt": 0,
+        "net": 1448,
+        "grain": 11792,
+        "soldiers": 1600,
+        "training": 60,
+        "provinces": 10,
+        "living": 56,
+        "unrest": 0,
+        "disasters": [],
+        "foodShortfall": 0,
+        "localShortfall": 0,
+        "pending": null,
+        "plan": null,
+        "offer": null,
+        "happiness": 75,
+        "life": 2160
+      },
+      "final": {
+        "turn": 181,
+        "cash": 46478,
+        "debt": 13541,
+        "net": 1425,
+        "grain": 6165,
+        "soldiers": 1600,
+        "training": 66,
+        "provinces": 10,
+        "living": 54,
+        "unrest": 0,
+        "disasters": [
+          {
+            "id": "jiannan",
+            "kind": "fire",
+            "startTurn": 181,
+            "endTurn": 183
+          }
+        ],
+        "foodShortfall": 0,
+        "localShortfall": 0,
+        "pending": null,
+        "plan": {
+          "active": true,
+          "spent": 0,
+          "cap": 2674,
+          "target": 1600,
+          "reserve": 7000,
+          "status": "战役或京城危机期间暂停，授权与余额保留"
+        },
+        "offer": 1600,
+        "happiness": 100,
+        "life": 1980
+      },
+      "minimumCash": 0,
+      "peakDebt": 125104,
+      "publicShortfallTurns": 0,
+      "localShortfallTurns": 0,
+      "peakDisasterCount": 6,
+      "naturalOverlap": null,
+      "battles": [
+        {
+          "turn": 37,
+          "soldiersBefore": 1600,
+          "soldiersAfter": 1480,
+          "offer": 1600,
+          "cashCost": 21,
+          "grainCost": 10
+        }
+      ],
+      "firstRestoredTurn": 47,
+      "planCompletedTurn": null,
+      "debtPausedTurns": 122,
+      "manualActions": [
+        {
+          "label": "tax 0",
+          "turn": 1,
+          "cost": 0
+        },
+        {
+          "label": "tax 20",
+          "turn": 37,
+          "cost": 0
+        },
+        {
+          "label": "authorize",
+          "turn": 37,
+          "cost": 0
+        },
+        {
+          "label": "manual paid purchase",
+          "turn": 44,
+          "cost": 1361
+        },
+        {
+          "label": "manual paid recruit",
+          "turn": 45,
+          "cost": 480
+        },
+        {
+          "label": "manual paid training",
+          "turn": 46,
+          "cost": 64
+        }
+      ],
+      "reserveMismatch": null,
+      "raw": "/Users/fengheliang/workbench/source/g20/games/outputs/player-operations-retest-2026-10-21/manual/player-operations-41-debt-manual-minimum.json"
+    }
+  ],
+  "verification": {
+    "business": {
+      "passed": 887,
+      "failed": 0,
+      "log": "/Users/fengheliang/workbench/source/g20/games/outputs/player-operations-retest-2026-10-21/business-tests-rerun.log",
+      "note": "First snapshot run lacked docs symlink: 886 pass / 1 harness path failure; dependency link repaired, complete rerun passes."
+    },
+    "desktopOperations": {
+      "passed": true,
+      "checks": [
+        "New game, paid equipment purchase, actual battle, UI authorization and cancellation, court cost and persisted reload",
+        "Both sizes, all three pages, decoded illustration, no scroll, real low-cash recovery and reload"
+      ],
+      "findings": [
+        {
+          "kind": "unapproved-consecutive-target",
+          "originalSoldiers": 1600,
+          "current": 1360,
+          "displayedTarget": 1480
+        },
+        {
+          "kind": "cancelled-consecutive-target",
+          "originalSoldiers": 1600,
+          "displayedTarget": 1360
+        },
+        {
+          "kind": "reserve-display",
+          "actualLockedReserve": 20000,
+          "quotedReserve": 7000,
+          "ui": "兵员 / 目标1,480 / 1,600兵装 / 目标1,480 / 1,600训练 / 目标60 / 60本计划支出上限 / 两训练目标恢复战前训练只补兵员与兵装劳力来源先用空闲劳力，缺额可抽调产业仅用空闲劳力，不足则等待每旬最多实付1,400两；可选治理暂限350两，应急金至少保留7,000两。口粮、常规开支和偿债优先。产业抽调每业许可10%，只取当批所缺人数；会降低生产。已核准2,669两，累计实付0两。"
+        }
+      ],
+      "lowCash": 1686,
+      "recovered": {
+        "turn": 9,
+        "soldiers": 1600,
+        "cash": 7360,
+        "plan": {
+          "active": false,
+          "target": {
+            "turn": 1,
+            "soldiers": 1600,
+            "training": 60,
+            "kits": {
+              "infantry": 2980,
+              "spears": 400,
+              "cavalry": 320,
+              "heavy-cavalry": 80,
+              "archers": 192,
+              "crossbows": 128,
+              "camel": 0,
+              "elephant": 0,
+              "horse-archers": 0
+            },
+            "ongoing": false
+          },
+          "startTurn": 1,
+          "cap": 2669,
+          "spent": 1904,
+          "train": true,
+          "draft": true,
+          "reserve": 7000,
+          "status": "兵员、兵装与训练均已恢复",
+          "waitingCap": false,
+          "completedTurn": 9
+        }
+      }
+    },
+    "desktopRecovery": {
+      "passed": true,
+      "checks": [
+        "illustrated no-scroll risk and replacement costs at both sizes",
+        "preview pure; failed persistence atomic; real battle creates recovery baseline",
+        "paginated illustrated war report and recovery entry",
+        "progress, authorization and gear pages illustrated and no-scroll at both sizes",
+        "limited authorization, rejected persistence, cancellation, real paid batches, save/reload and trained recovery",
+        "actual border-defense report pagination and read-only training guidance"
+      ]
+    },
+    "desktopDevelopment": {
+      "passed": true,
+      "checks": 14,
+      "log": "/Users/fengheliang/workbench/source/g20/games/outputs/player-operations-retest-2026-10-21/desktop-development.log"
+    },
+    "liveAssets": {
+      "passed": 7,
+      "failed": 0,
+      "log": "/Users/fengheliang/workbench/source/g20/games/outputs/player-operations-retest-2026-10-21/live-assets-tests.log"
+    }
+  }
+}

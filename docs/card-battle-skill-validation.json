@@ -1,0 +1,25 @@
+{
+  "date": "2026-10-22",
+  "checks": [
+    "persistent artwork animation changes while frame, hit target and game state remain fixed",
+    "deploy cast, travel/impact, cleanup and committed state",
+    "fire cast, travel/impact, cleanup and committed state",
+    "arrows cast, travel/impact, cleanup and committed state",
+    "fortify cast, travel/impact, cleanup and committed state",
+    "heal cast, travel/impact, cleanup and committed state",
+    "power:command cast, travel/impact, cleanup and committed state",
+    "precision cast, travel/impact, cleanup and committed state",
+    "execute cast, travel/impact, cleanup and committed state",
+    "barrage cast, travel/impact, cleanup and committed state",
+    "brace cast, travel/impact, cleanup and committed state",
+    "assault cast, travel/impact, cleanup and committed state",
+    "dispel cast, travel/impact, cleanup and committed state",
+    "pin cast, travel/impact, cleanup and committed state",
+    "supply cast, travel/impact, cleanup and committed state",
+    "power:martial cast, travel/impact, cleanup and committed state",
+    "power:intelligence cast, travel/impact, cleanup and committed state",
+    "general cast, travel/impact, cleanup and committed state"
+  ],
+  "consoleErrors": [],
+  "recording": "screenshots/card-battle-v3-skills.webm"
+}

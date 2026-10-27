@@ -1,0 +1,46 @@
+{
+  "updated": "2026-10-24T17:20:33.574Z",
+  "status": "complete-with-recorded-user-accepted-balance-exceptions",
+  "gates": [
+    {
+      "id": "existing-costume-review",
+      "done": true,
+      "evidence": "docs/card-battle-historical-regional-outfit-review.json"
+    },
+    {
+      "id": "native-person-presentations",
+      "done": true,
+      "evidence": "docs/card-battle-final-person-presentation-ui-validation.json"
+    },
+    {
+      "id": "final-balance-user-acceptance",
+      "done": true,
+      "evidence": "docs/card-battle-final-balance-summary.json",
+      "note": "Original numerical gate remains failed; user explicitly accepts recorded base and configured exceptions."
+    },
+    {
+      "id": "twenty-actual-ui-games",
+      "done": true,
+      "completed": 60,
+      "evidence": "docs/card-battle-real-games-ui-validation.json"
+    },
+    {
+      "id": "foreground-hour",
+      "done": true,
+      "focusedSeconds": 3615.541,
+      "evidence": "docs/card-battle-foreground-soak-validation.json"
+    }
+  ],
+  "historicalIdentityLimitation": {
+    "reviewedBiographies": 74,
+    "explicitlyUnresolvedOriginalLinks": 26,
+    "notPromotedToVerified": true
+  },
+  "excluded": [
+    "all voice and sound effects",
+    "optional hero replacement",
+    "old-save compatibility"
+  ],
+  "note": "This index does not replace individual evidence review or by itself stop the automation.",
+  "finalEvidenceReview": "All recorded gates and source integrity checked; see card-battle-final-delivery.md"
+}

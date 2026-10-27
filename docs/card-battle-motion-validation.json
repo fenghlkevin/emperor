@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-22",
+  "checks": [
+    "home attacks card: wind-up/travel preserve life; contact updates life with slash/ring; held impact then recovery",
+    "home attacks hero: wind-up/travel preserve life; contact updates life with slash/ring; held impact then recovery",
+    "enemy attacks hero: wind-up/travel preserve life; contact updates life with slash/ring; held impact then recovery",
+    "enemy attacks card: wind-up/travel preserve life; contact updates life with slash/ring; held impact then recovery",
+    "lethal target stays visible before impact",
+    "lethal target starts retreat at impact",
+    "reduced motion disables jade loops",
+    "reduced motion attack resolves once and cleans all effects",
+    "court default formation previews 18 unit/person cards and 12 tactics",
+    "editing troop count refreshes composition estimate",
+    "military office default formation previews the same card mix"
+  ],
+  "consoleErrors": [],
+  "recording": "screenshots/card-battle-v3-attacks.webm"
+}

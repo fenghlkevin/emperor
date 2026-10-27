@@ -1,8 +1,11 @@
+import {balanced} from './development-balance.mjs';
+import {fiscalHealth} from './fiscal-health.mjs';
+import {nationalFoodForecast} from './national-resources.mjs';
 import {specialActive} from './special-buildings.mjs';
 const TITLES={wisdom:'智慧皇帝',martial:'武术皇帝',charm:'魅力皇帝',talent:'才艺皇帝',iron:'铁人皇帝',longLife:'长寿皇帝',conqueror:'天王皇帝',protector:'天可汗皇帝',filial:'孝道之君',parent:'慈父慈母'};
 export {TITLES};
 export function initializeProgress(s){s.imperialProgress??={version:1,lastTurn:s.turn,titles:[],crowns:[],history:[],arenaRewarded:false};return s;}
-export function progressConditions(s){const d=s.domestic,home=d.playerCountryId,ps=d.provinces.filter(p=>p.countryId===home),average=key=>ps.reduce((n,p)=>n+p.welfare[key],0)/(ps.length||1);return {allLands:ps.length===d.provinces.length,prosperous:ps.length>=10&&ps.every(p=>p.status.livingStandard>=80)&&average('stability')>=80&&average('security')>=80,abilities:['wisdom','martial','charm','talent'].every(k=>s.stats[k]>=500),wall:specialActive(d,'greatWall',s.turn),mausoleum:specialActive(d,'mausoleum',s.turn),family:(s.mother?.filialPiety??0)>=80&&(s.dynasty?.parenting??0)>=80,crowns:s.imperialProgress.crowns.length>=3};}
+export function progressConditions(s){const d=s.domestic,home=d.playerCountryId,ps=d.provinces.filter(p=>p.countryId===home),average=key=>ps.reduce((n,p)=>n+p.welfare[key],0)/(ps.length||1);return {allLands:ps.length===d.provinces.length,prosperous:ps.length>=10&&ps.every(p=>p.status.livingStandard>=80)&&(!balanced(d)||(d.countries.find(c=>c.id===home).fiscal.debt===0&&fiscalHealth(d).net>=0&&d.countries.find(c=>c.id===home).fiscal.grain>=nationalFoodForecast(d,s.turn+1).need*6))&&average('stability')>=80&&average('security')>=80,abilities:['wisdom','martial','charm','talent'].every(k=>s.stats[k]>=500),wall:specialActive(d,'greatWall',s.turn),mausoleum:specialActive(d,'mausoleum',s.turn),family:(s.mother?.filialPiety??0)>=80&&(s.dynasty?.parenting??0)>=80,crowns:s.imperialProgress.crowns.length>=3};}
 export function settleProgress(s){initializeProgress(s);const p=s.imperialProgress;if(p.lastTurn>s.turn)return;
  if(!p.arenaRewarded&&specialActive(s.domestic,'arena',s.turn)){p.arenaRewarded=true;s.stats.maxEnergy=Math.min(500,s.stats.maxEnergy+100);p.history.unshift(`第${s.turn}旬：竞技场启用，体力上限永久+100`);}
  if(specialActive(s.domestic,'garden',s.turn)&&p.lastTurn<s.turn)s.stats.happiness=Math.min(100,s.stats.happiness+1);

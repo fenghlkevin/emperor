@@ -1,0 +1,45 @@
+{
+  "date": "2026-10-22T23:56:23.648Z",
+  "elapsedSeconds": 5.047,
+  "checks": [
+    "12 legal tactics and valid automatic capacity shown",
+    "1440px editor keeps inputs readable without horizontal overflow",
+    "1000px editor keeps inputs readable without horizontal overflow",
+    "800px editor keeps inputs readable without horizontal overflow",
+    "over-limit selection cannot apply",
+    "incomplete capacity cannot apply",
+    "cancel leaves draft mode, resources and real state unchanged",
+    "valid selection applies to campaign draft only",
+    "read-only preview reflects selected tactic quantities",
+    "campaign seal commits selected snapshot exactly once",
+    "defense selection reserves no soldiers or equipment before seal",
+    "automatic option clears the custom configuration",
+    "defense seal locks custom tactics with real-source deployment",
+    "isolated tests never write the actual save key"
+  ],
+  "consoleErrors": [],
+  "configurationVersion": "phase2-tactic-selection-v1",
+  "sources": {
+    "src/card-battle-tactics.mjs": "68a519eb794231105380b92bcdcbff9d0db2eec58aa5f7554bf674df7e180bba",
+    "src/card-battle-tactics-ui.mjs": "47177e88068f4e83353625c8406fca2cfa9aa4d4cbf3de5c5f46b9f97e77be58",
+    "src/card-battle.mjs": "9389dbca2ba32f66137a6ae2fbace48fce57db2ee0400482ca3e45630c00ff68",
+    "src/kit-war.mjs": "83e8fdf6a8224e2c73588ed51d6cda109857668e0a6c6178d17edbae13e85b28",
+    "src/kit-defense.mjs": "86143effd812fe82182fd005a58e0775e8a6353f3696e35cbfd0852d2b641935",
+    "src/court-campaign-ui.mjs": "c629a0805f8c7e6cede8eda7e14bc20119090c6ed172ba8c9256c8a59aa80be2",
+    "src/court-defense-ui.mjs": "325b35fef31428c63cc7d1131b44cf5d33242fa1668a12842eb1000d835e16fa",
+    "src/card-battle-deck.css": "c8e5b3bd27c66000e14e8808a9b2125f5bfabd9e9da17f673fd51be708694b59",
+    "src/game-types.d.ts": "6281216a36af654b0b0503ad22b53f5ed06c3d50738b662e3b73c737f6e2973b",
+    "tests/card-battle-tactics.test.mjs": "519c0a6895e358901a34a45a6cafe14cc893bf97dd791e267a255c627ce854bb",
+    "tests/card-battle-tactics-desktop.cjs": "a265f62273dc6b10a1260628d1dfddfe3a60c939cb1c08d9055f91c744f76749"
+  },
+  "nodeRegression": {
+    "tests": 49,
+    "pass": 49,
+    "fail": 0,
+    "elapsedSeconds": 3.716672292,
+    "log": "/private/tmp/card-stage2-tactics-regression.log"
+  },
+  "typeContract": "36 runtime snapshots and negative type checks passed",
+  "existingDeckDesktop": "16 checks passed, separate hidden window; serial after new editor checks",
+  "balanceStatus": "Pending final stage-one review after stages two through six. No old win rates apply to custom selections."
+}

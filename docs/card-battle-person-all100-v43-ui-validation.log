@@ -1,0 +1,1906 @@
+
+> emperor-foundation@0.1.0 test:card-battle-person-presentations
+> electron tests/card-battle-person-presentations-desktop.cjs
+
+1: original-99 concise face copy retains complete accessible rules
+2: original-99 deployment card identity motif keeps native hit rectangle
+3: original-99 entry skill shows its personal subtitle before old health is released
+4: original-99 holds a readable personal motif and original subtitle during windup
+5: original-99 entry uses the full formal engine result once and cleans transient effects
+6: original-99 deployed character retains the same ID-bound card face
+7: original-89 concise face copy retains complete accessible rules
+8: original-89 deployment card identity motif keeps native hit rectangle
+9: original-89 entry skill shows its personal subtitle before old health is released
+10: original-89 holds a readable personal motif and original subtitle during windup
+11: original-89 entry uses the full formal engine result once and cleans transient effects
+12: original-89 deployed character retains the same ID-bound card face
+13: cbdb-3332 concise face copy retains complete accessible rules
+14: cbdb-3332 deployment card identity motif keeps native hit rectangle
+15: cbdb-3332 entry skill shows its personal subtitle before old health is released
+16: cbdb-3332 holds a readable personal motif and original subtitle during windup
+17: cbdb-3332 entry uses the full formal engine result once and cleans transient effects
+18: cbdb-3332 deployed character retains the same ID-bound card face
+19: general-638-62417 concise face copy retains complete accessible rules
+20: general-638-62417 deployment card identity motif keeps native hit rectangle
+21: general-638-62417 entry skill shows its personal subtitle before old health is released
+22: general-638-62417 holds a readable personal motif and original subtitle during windup
+23: general-638-62417 entry uses the full formal engine result once and cleans transient effects
+24: general-638-62417 deployed character retains the same ID-bound card face
+25: general-795-83328 concise face copy retains complete accessible rules
+26: general-795-83328 deployment card identity motif keeps native hit rectangle
+27: general-795-83328 entry skill shows its personal subtitle before old health is released
+28: general-795-83328 holds a readable personal motif and original subtitle during windup
+29: general-795-83328 entry uses the full formal engine result once and cleans transient effects
+30: general-795-83328 deployed character retains the same ID-bound card face
+31: manual-1616 concise face copy retains complete accessible rules
+32: manual-1616 deployment card identity motif keeps native hit rectangle
+33: manual-1616 entry skill shows its personal subtitle before old health is released
+34: manual-1616 holds a readable personal motif and original subtitle during windup
+35: manual-1616 entry uses the full formal engine result once and cleans transient effects
+36: manual-1616 deployed character retains the same ID-bound card face
+37: manual-1625 concise face copy retains complete accessible rules
+38: manual-1625 deployment card identity motif keeps native hit rectangle
+39: manual-1625 entry skill shows its personal subtitle before old health is released
+40: manual-1625 holds a readable personal motif and original subtitle during windup
+41: manual-1625 entry uses the full formal engine result once and cleans transient effects
+42: manual-1625 deployed character retains the same ID-bound card face
+43: manual-1618 concise face copy retains complete accessible rules
+44: manual-1618 deployment card identity motif keeps native hit rectangle
+45: manual-1618 entry skill shows its personal subtitle before old health is released
+46: manual-1618 holds a readable personal motif and original subtitle during windup
+47: manual-1618 entry uses the full formal engine result once and cleans transient effects
+48: manual-1618 deployed character retains the same ID-bound card face
+49: manual-1624 concise face copy retains complete accessible rules
+50: manual-1624 deployment card identity motif keeps native hit rectangle
+51: manual-1624 entry skill shows its personal subtitle before old health is released
+52: manual-1624 holds a readable personal motif and original subtitle during windup
+53: manual-1624 entry uses the full formal engine result once and cleans transient effects
+54: manual-1624 deployed character retains the same ID-bound card face
+55: original-97 concise face copy retains complete accessible rules
+56: original-97 deployment card identity motif keeps native hit rectangle
+57: original-97 entry skill shows its personal subtitle before old health is released
+58: original-97 holds a readable personal motif and original subtitle during windup
+59: original-97 entry uses the full formal engine result once and cleans transient effects
+60: original-97 deployed character retains the same ID-bound card face
+61: original-98 concise face copy retains complete accessible rules
+62: original-98 deployment card identity motif keeps native hit rectangle
+63: original-98 entry skill shows its personal subtitle before old health is released
+64: original-98 holds a readable personal motif and original subtitle during windup
+65: original-98 entry uses the full formal engine result once and cleans transient effects
+66: original-98 deployed character retains the same ID-bound card face
+67: general-38-51333 concise face copy retains complete accessible rules
+68: general-38-51333 deployment card identity motif keeps native hit rectangle
+69: general-38-51333 entry skill shows its personal subtitle before old health is released
+70: general-38-51333 holds a readable personal motif and original subtitle during windup
+71: general-38-51333 entry uses the full formal engine result once and cleans transient effects
+72: general-38-51333 deployed character retains the same ID-bound card face
+73: original-79 concise face copy retains complete accessible rules
+74: original-79 deployment card identity motif keeps native hit rectangle
+75: original-79 entry skill shows its personal subtitle before old health is released
+76: original-79 holds a readable personal motif and original subtitle during windup
+77: original-79 entry uses the full formal engine result once and cleans transient effects
+78: original-79 deployed character retains the same ID-bound card face
+79: cbdb-30257 concise face copy retains complete accessible rules
+80: cbdb-30257 deployment card identity motif keeps native hit rectangle
+81: cbdb-30257 entry skill shows its personal subtitle before old health is released
+82: cbdb-30257 holds a readable personal motif and original subtitle during windup
+83: cbdb-30257 entry uses the full formal engine result once and cleans transient effects
+84: cbdb-30257 deployed character retains the same ID-bound card face
+85: manual-1555 concise face copy retains complete accessible rules
+86: manual-1555 deployment card identity motif keeps native hit rectangle
+87: manual-1555 entry skill shows its personal subtitle before old health is released
+88: manual-1555 holds a readable personal motif and original subtitle during windup
+89: manual-1555 entry uses the full formal engine result once and cleans transient effects
+90: manual-1555 deployed character retains the same ID-bound card face
+91: manual-1565 concise face copy retains complete accessible rules
+92: manual-1565 deployment card identity motif keeps native hit rectangle
+93: manual-1565 entry skill shows its personal subtitle before old health is released
+94: manual-1565 holds a readable personal motif and original subtitle during windup
+95: manual-1565 entry uses the full formal engine result once and cleans transient effects
+96: manual-1565 deployed character retains the same ID-bound card face
+97: general-285-45592 concise face copy retains complete accessible rules
+98: general-285-45592 deployment card identity motif keeps native hit rectangle
+99: general-285-45592 entry skill shows its personal subtitle before old health is released
+100: general-285-45592 holds a readable personal motif and original subtitle during windup
+101: general-285-45592 entry uses the full formal engine result once and cleans transient effects
+102: general-285-45592 deployed character retains the same ID-bound card face
+103: manual-1553 concise face copy retains complete accessible rules
+104: manual-1553 deployment card identity motif keeps native hit rectangle
+105: manual-1553 entry skill shows its personal subtitle before old health is released
+106: manual-1553 holds a readable personal motif and original subtitle during windup
+107: manual-1553 entry uses the full formal engine result once and cleans transient effects
+108: manual-1553 deployed character retains the same ID-bound card face
+109: manual-1569 concise face copy retains complete accessible rules
+110: manual-1569 deployment card identity motif keeps native hit rectangle
+111: manual-1569 entry skill shows its personal subtitle before old health is released
+112: manual-1569 holds a readable personal motif and original subtitle during windup
+113: manual-1569 entry uses the full formal engine result once and cleans transient effects
+114: manual-1569 deployed character retains the same ID-bound card face
+115: general-398-60962 concise face copy retains complete accessible rules
+116: general-398-60962 deployment card identity motif keeps native hit rectangle
+117: general-398-60962 entry skill shows its personal subtitle before old health is released
+118: general-398-60962 holds a readable personal motif and original subtitle during windup
+119: general-398-60962 entry uses the full formal engine result once and cleans transient effects
+120: general-398-60962 deployed character retains the same ID-bound card face
+121: original-88 concise face copy retains complete accessible rules
+122: original-88 deployment card identity motif keeps native hit rectangle
+123: original-88 entry skill shows its personal subtitle before old health is released
+124: original-88 holds a readable personal motif and original subtitle during windup
+125: original-88 entry uses the full formal engine result once and cleans transient effects
+126: original-88 deployed character retains the same ID-bound card face
+127: original-68 concise face copy retains complete accessible rules
+128: original-68 deployment card identity motif keeps native hit rectangle
+129: original-68 entry skill shows its personal subtitle before old health is released
+130: original-68 holds a readable personal motif and original subtitle during windup
+131: original-68 entry uses the full formal engine result once and cleans transient effects
+132: original-68 deployed character retains the same ID-bound card face
+133: original-69 concise face copy retains complete accessible rules
+134: original-69 deployment card identity motif keeps native hit rectangle
+135: original-69 entry skill shows its personal subtitle before old health is released
+136: original-69 holds a readable personal motif and original subtitle during windup
+137: original-69 entry uses the full formal engine result once and cleans transient effects
+138: original-69 deployed character retains the same ID-bound card face
+139: manual-1520 concise face copy retains complete accessible rules
+140: manual-1520 deployment card identity motif keeps native hit rectangle
+141: manual-1520 entry skill shows its personal subtitle before old health is released
+142: manual-1520 holds a readable personal motif and original subtitle during windup
+143: manual-1520 entry uses the full formal engine result once and cleans transient effects
+144: manual-1520 deployed character retains the same ID-bound card face
+145: manual-1521 concise face copy retains complete accessible rules
+146: manual-1521 deployment card identity motif keeps native hit rectangle
+147: manual-1521 entry skill shows its personal subtitle before old health is released
+148: manual-1521 holds a readable personal motif and original subtitle during windup
+149: manual-1521 entry uses the full formal engine result once and cleans transient effects
+150: manual-1521 deployed character retains the same ID-bound card face
+151: manual-1518 concise face copy retains complete accessible rules
+152: manual-1518 deployment card identity motif keeps native hit rectangle
+153: manual-1518 entry skill shows its personal subtitle before old health is released
+154: manual-1518 holds a readable personal motif and original subtitle during windup
+155: manual-1518 entry uses the full formal engine result once and cleans transient effects
+156: manual-1518 deployed character retains the same ID-bound card face
+157: manual-1522 concise face copy retains complete accessible rules
+158: manual-1522 deployment card identity motif keeps native hit rectangle
+159: manual-1522 entry skill shows its personal subtitle before old health is released
+160: manual-1522 holds a readable personal motif and original subtitle during windup
+161: manual-1522 entry uses the full formal engine result once and cleans transient effects
+162: manual-1522 deployed character retains the same ID-bound card face
+163: manual-1524 concise face copy retains complete accessible rules
+164: manual-1524 deployment card identity motif keeps native hit rectangle
+165: manual-1524 entry skill shows its personal subtitle before old health is released
+166: manual-1524 holds a readable personal motif and original subtitle during windup
+167: manual-1524 entry uses the full formal engine result once and cleans transient effects
+168: manual-1524 deployed character retains the same ID-bound card face
+169: general-56-58629 concise face copy retains complete accessible rules
+170: general-56-58629 deployment card identity motif keeps native hit rectangle
+171: general-56-58629 entry skill shows its personal subtitle before old health is released
+172: general-56-58629 holds a readable personal motif and original subtitle during windup
+173: general-56-58629 entry uses the full formal engine result once and cleans transient effects
+174: general-56-58629 deployed character retains the same ID-bound card face
+175: general-103-50637 concise face copy retains complete accessible rules
+176: general-103-50637 deployment card identity motif keeps native hit rectangle
+177: general-103-50637 entry skill shows its personal subtitle before old health is released
+178: general-103-50637 holds a readable personal motif and original subtitle during windup
+179: general-103-50637 entry uses the full formal engine result once and cleans transient effects
+180: general-103-50637 deployed character retains the same ID-bound card face
+181: original-77 concise face copy retains complete accessible rules
+182: original-77 deployment card identity motif keeps native hit rectangle
+183: original-77 entry skill shows its personal subtitle before old health is released
+184: original-77 holds a readable personal motif and original subtitle during windup
+185: original-77 entry uses the full formal engine result once and cleans transient effects
+186: original-77 deployed character retains the same ID-bound card face
+187: cbdb-8008 concise face copy retains complete accessible rules
+188: cbdb-8008 deployment card identity motif keeps native hit rectangle
+189: cbdb-8008 entry skill shows its personal subtitle before old health is released
+190: cbdb-8008 holds a readable personal motif and original subtitle during windup
+191: cbdb-8008 entry uses the full formal engine result once and cleans transient effects
+192: cbdb-8008 deployed character retains the same ID-bound card face
+193: original-59 concise face copy retains complete accessible rules
+194: original-59 deployment card identity motif keeps native hit rectangle
+195: original-59 entry skill shows its personal subtitle before old health is released
+196: original-59 holds a readable personal motif and original subtitle during windup
+197: original-59 entry uses the full formal engine result once and cleans transient effects
+198: original-59 deployed character retains the same ID-bound card face
+199: manual-1592 concise face copy retains complete accessible rules
+200: manual-1592 deployment card identity motif keeps native hit rectangle
+201: manual-1592 entry skill shows its personal subtitle before old health is released
+202: manual-1592 holds a readable personal motif and original subtitle during windup
+203: manual-1592 entry uses the full formal engine result once and cleans transient effects
+204: manual-1592 deployed character retains the same ID-bound card face
+205: manual-1507 concise face copy retains complete accessible rules
+206: manual-1507 deployment card identity motif keeps native hit rectangle
+207: manual-1507 entry skill shows its personal subtitle before old health is released
+208: manual-1507 holds a readable personal motif and original subtitle during windup
+209: manual-1507 entry uses the full formal engine result once and cleans transient effects
+210: manual-1507 deployed character retains the same ID-bound card face
+211: original-62 concise face copy retains complete accessible rules
+212: original-62 deployment card identity motif keeps native hit rectangle
+213: original-62 entry skill shows its personal subtitle before old health is released
+214: original-62 holds a readable personal motif and original subtitle during windup
+215: original-62 entry uses the full formal engine result once and cleans transient effects
+216: original-62 deployed character retains the same ID-bound card face
+217: original-63 concise face copy retains complete accessible rules
+218: original-63 deployment card identity motif keeps native hit rectangle
+219: original-63 entry skill shows its personal subtitle before old health is released
+220: original-63 holds a readable personal motif and original subtitle during windup
+221: original-63 entry uses the full formal engine result once and cleans transient effects
+222: original-63 deployed character retains the same ID-bound card face
+223: original-64 concise face copy retains complete accessible rules
+224: original-64 deployment card identity motif keeps native hit rectangle
+225: original-64 entry skill shows its personal subtitle before old health is released
+226: original-64 holds a readable personal motif and original subtitle during windup
+227: original-64 entry uses the full formal engine result once and cleans transient effects
+228: original-64 deployed character retains the same ID-bound card face
+229: original-65 concise face copy retains complete accessible rules
+230: original-65 deployment card identity motif keeps native hit rectangle
+231: original-65 entry skill shows its personal subtitle before old health is released
+232: original-65 holds a readable personal motif and original subtitle during windup
+233: original-65 entry uses the full formal engine result once and cleans transient effects
+234: original-65 deployed character retains the same ID-bound card face
+235: original-66 concise face copy retains complete accessible rules
+236: original-66 deployment card identity motif keeps native hit rectangle
+237: original-66 entry skill shows its personal subtitle before old health is released
+238: original-66 holds a readable personal motif and original subtitle during windup
+239: original-66 entry uses the full formal engine result once and cleans transient effects
+240: original-66 deployed character retains the same ID-bound card face
+241: manual-1512 concise face copy retains complete accessible rules
+242: manual-1512 deployment card identity motif keeps native hit rectangle
+243: manual-1512 entry skill shows its personal subtitle before old health is released
+244: manual-1512 holds a readable personal motif and original subtitle during windup
+245: manual-1512 entry uses the full formal engine result once and cleans transient effects
+246: manual-1512 deployed character retains the same ID-bound card face
+247: cbdb-1488 concise face copy retains complete accessible rules
+248: cbdb-1488 deployment card identity motif keeps native hit rectangle
+249: cbdb-1488 entry skill shows its personal subtitle before old health is released
+250: cbdb-1488 holds a readable personal motif and original subtitle during windup
+251: cbdb-1488 entry uses the full formal engine result once and cleans transient effects
+252: cbdb-1488 deployed character retains the same ID-bound card face
+253: cbdb-19123 concise face copy retains complete accessible rules
+254: cbdb-19123 deployment card identity motif keeps native hit rectangle
+255: cbdb-19123 entry skill shows its personal subtitle before old health is released
+256: cbdb-19123 holds a readable personal motif and original subtitle during windup
+257: cbdb-19123 entry uses the full formal engine result once and cleans transient effects
+258: cbdb-19123 deployed character retains the same ID-bound card face
+259: manual-1608 concise face copy retains complete accessible rules
+260: manual-1608 deployment card identity motif keeps native hit rectangle
+261: manual-1608 entry skill shows its personal subtitle before old health is released
+262: manual-1608 holds a readable personal motif and original subtitle during windup
+263: manual-1608 entry uses the full formal engine result once and cleans transient effects
+264: manual-1608 deployed character retains the same ID-bound card face
+265: manual-1609 concise face copy retains complete accessible rules
+266: manual-1609 deployment card identity motif keeps native hit rectangle
+267: manual-1609 entry skill shows its personal subtitle before old health is released
+268: manual-1609 holds a readable personal motif and original subtitle during windup
+269: manual-1609 entry uses the full formal engine result once and cleans transient effects
+270: manual-1609 deployed character retains the same ID-bound card face
+271: cbdb-54819 concise face copy retains complete accessible rules
+272: cbdb-54819 deployment card identity motif keeps native hit rectangle
+273: cbdb-54819 entry skill shows its personal subtitle before old health is released
+274: cbdb-54819 holds a readable personal motif and original subtitle during windup
+275: cbdb-54819 entry uses the full formal engine result once and cleans transient effects
+276: cbdb-54819 deployed character retains the same ID-bound card face
+277: cbdb-28093 concise face copy retains complete accessible rules
+278: cbdb-28093 deployment card identity motif keeps native hit rectangle
+279: cbdb-28093 entry skill shows its personal subtitle before old health is released
+280: cbdb-28093 holds a readable personal motif and original subtitle during windup
+281: cbdb-28093 entry uses the full formal engine result once and cleans transient effects
+282: cbdb-28093 deployed character retains the same ID-bound card face
+283: manual-1614 concise face copy retains complete accessible rules
+284: manual-1614 deployment card identity motif keeps native hit rectangle
+285: manual-1614 entry skill shows its personal subtitle before old health is released
+286: manual-1614 holds a readable personal motif and original subtitle during windup
+287: manual-1614 entry uses the full formal engine result once and cleans transient effects
+288: manual-1614 deployed character retains the same ID-bound card face
+289: manual-1611 concise face copy retains complete accessible rules
+290: manual-1611 deployment card identity motif keeps native hit rectangle
+291: manual-1611 entry skill shows its personal subtitle before old health is released
+292: manual-1611 holds a readable personal motif and original subtitle during windup
+293: manual-1611 entry uses the full formal engine result once and cleans transient effects
+294: manual-1611 deployed character retains the same ID-bound card face
+295: cbdb-30374 concise face copy retains complete accessible rules
+296: cbdb-30374 deployment card identity motif keeps native hit rectangle
+297: cbdb-30374 entry skill shows its personal subtitle before old health is released
+298: cbdb-30374 holds a readable personal motif and original subtitle during windup
+299: cbdb-30374 entry uses the full formal engine result once and cleans transient effects
+300: cbdb-30374 deployed character retains the same ID-bound card face
+301: original-57 concise face copy retains complete accessible rules
+302: original-57 deployment card identity motif keeps native hit rectangle
+303: original-57 entry skill shows its personal subtitle before old health is released
+304: original-57 holds a readable personal motif and original subtitle during windup
+305: original-57 entry uses the full formal engine result once and cleans transient effects
+306: original-57 deployed character retains the same ID-bound card face
+307: original-37 concise face copy retains complete accessible rules
+308: original-37 deployment card identity motif keeps native hit rectangle
+309: original-37 entry skill shows its personal subtitle before old health is released
+310: original-37 holds a readable personal motif and original subtitle during windup
+311: original-37 entry uses the full formal engine result once and cleans transient effects
+312: original-37 deployed character retains the same ID-bound card face
+313: manual-1537 concise face copy retains complete accessible rules
+314: manual-1537 deployment card identity motif keeps native hit rectangle
+315: manual-1537 entry skill shows its personal subtitle before old health is released
+316: manual-1537 holds a readable personal motif and original subtitle during windup
+317: manual-1537 entry uses the full formal engine result once and cleans transient effects
+318: manual-1537 deployed character retains the same ID-bound card face
+319: manual-1536 concise face copy retains complete accessible rules
+320: manual-1536 deployment card identity motif keeps native hit rectangle
+321: manual-1536 entry skill shows its personal subtitle before old health is released
+322: manual-1536 holds a readable personal motif and original subtitle during windup
+323: manual-1536 entry uses the full formal engine result once and cleans transient effects
+324: manual-1536 deployed character retains the same ID-bound card face
+325: manual-1513 concise face copy retains complete accessible rules
+326: manual-1513 deployment card identity motif keeps native hit rectangle
+327: manual-1513 entry skill shows its personal subtitle before old health is released
+328: manual-1513 holds a readable personal motif and original subtitle during windup
+329: manual-1513 entry uses the full formal engine result once and cleans transient effects
+330: manual-1513 deployed character retains the same ID-bound card face
+331: original-41 concise face copy retains complete accessible rules
+332: original-41 deployment card identity motif keeps native hit rectangle
+333: original-41 entry skill shows its personal subtitle before old health is released
+334: original-41 holds a readable personal motif and original subtitle during windup
+335: original-41 entry uses the full formal engine result once and cleans transient effects
+336: original-41 deployed character retains the same ID-bound card face
+337: cbdb-25403 concise face copy retains complete accessible rules
+338: cbdb-25403 deployment card identity motif keeps native hit rectangle
+339: cbdb-25403 entry skill shows its personal subtitle before old health is released
+340: cbdb-25403 holds a readable personal motif and original subtitle during windup
+341: cbdb-25403 entry uses the full formal engine result once and cleans transient effects
+342: cbdb-25403 deployed character retains the same ID-bound card face
+343: original-43 concise face copy retains complete accessible rules
+344: original-43 deployment card identity motif keeps native hit rectangle
+345: original-43 entry skill shows its personal subtitle before old health is released
+346: original-43 holds a readable personal motif and original subtitle during windup
+347: original-43 entry uses the full formal engine result once and cleans transient effects
+348: original-43 deployed character retains the same ID-bound card face
+349: original-44 concise face copy retains complete accessible rules
+350: original-44 deployment card identity motif keeps native hit rectangle
+351: original-44 entry skill shows its personal subtitle before old health is released
+352: original-44 holds a readable personal motif and original subtitle during windup
+353: original-44 entry uses the full formal engine result once and cleans transient effects
+354: original-44 deployed character retains the same ID-bound card face
+355: general-422-82978 concise face copy retains complete accessible rules
+356: general-422-82978 deployment card identity motif keeps native hit rectangle
+357: general-422-82978 entry skill shows its personal subtitle before old health is released
+358: general-422-82978 holds a readable personal motif and original subtitle during windup
+359: general-422-82978 entry uses the full formal engine result once and cleans transient effects
+360: general-422-82978 deployed character retains the same ID-bound card face
+361: general-523-68118 concise face copy retains complete accessible rules
+362: general-523-68118 deployment card identity motif keeps native hit rectangle
+363: general-523-68118 entry skill shows its personal subtitle before old health is released
+364: general-523-68118 holds a readable personal motif and original subtitle during windup
+365: general-523-68118 entry uses the full formal engine result once and cleans transient effects
+366: general-523-68118 deployed character retains the same ID-bound card face
+367: general-468-78206 concise face copy retains complete accessible rules
+368: general-468-78206 deployment card identity motif keeps native hit rectangle
+369: general-468-78206 entry skill shows its personal subtitle before old health is released
+370: general-468-78206 holds a readable personal motif and original subtitle during windup
+371: general-468-78206 entry uses the full formal engine result once and cleans transient effects
+372: general-468-78206 deployed character retains the same ID-bound card face
+373: manual-1591 concise face copy retains complete accessible rules
+374: manual-1591 deployment card identity motif keeps native hit rectangle
+375: manual-1591 entry skill shows its personal subtitle before old health is released
+376: manual-1591 holds a readable personal motif and original subtitle during windup
+377: manual-1591 entry uses the full formal engine result once and cleans transient effects
+378: manual-1591 deployed character retains the same ID-bound card face
+379: manual-1590 concise face copy retains complete accessible rules
+380: manual-1590 deployment card identity motif keeps native hit rectangle
+381: manual-1590 entry skill shows its personal subtitle before old health is released
+382: manual-1590 holds a readable personal motif and original subtitle during windup
+383: manual-1590 entry uses the full formal engine result once and cleans transient effects
+384: manual-1590 deployed character retains the same ID-bound card face
+385: original-33 concise face copy retains complete accessible rules
+386: original-33 deployment card identity motif keeps native hit rectangle
+387: original-33 entry skill shows its personal subtitle before old health is released
+388: original-33 holds a readable personal motif and original subtitle during windup
+389: original-33 entry uses the full formal engine result once and cleans transient effects
+390: original-33 deployed character retains the same ID-bound card face
+391: cbdb-630 concise face copy retains complete accessible rules
+392: cbdb-630 deployment card identity motif keeps native hit rectangle
+393: cbdb-630 entry skill shows its personal subtitle before old health is released
+394: cbdb-630 holds a readable personal motif and original subtitle during windup
+395: cbdb-630 entry uses the full formal engine result once and cleans transient effects
+396: cbdb-630 deployed character retains the same ID-bound card face
+397: general-403-90513 concise face copy retains complete accessible rules
+398: general-403-90513 deployment card identity motif keeps native hit rectangle
+399: general-403-90513 entry skill shows its personal subtitle before old health is released
+400: general-403-90513 holds a readable personal motif and original subtitle during windup
+401: general-403-90513 entry uses the full formal engine result once and cleans transient effects
+402: general-403-90513 deployed character retains the same ID-bound card face
+403: manual-1582 concise face copy retains complete accessible rules
+404: manual-1582 deployment card identity motif keeps native hit rectangle
+405: manual-1582 entry skill shows its personal subtitle before old health is released
+406: manual-1582 holds a readable personal motif and original subtitle during windup
+407: manual-1582 entry uses the full formal engine result once and cleans transient effects
+408: manual-1582 deployed character retains the same ID-bound card face
+409: original-29 concise face copy retains complete accessible rules
+410: original-29 deployment card identity motif keeps native hit rectangle
+411: original-29 entry skill shows its personal subtitle before old health is released
+412: original-29 holds a readable personal motif and original subtitle during windup
+413: original-29 entry uses the full formal engine result once and cleans transient effects
+414: original-29 deployed character retains the same ID-bound card face
+415: general-298-58873 concise face copy retains complete accessible rules
+416: general-298-58873 deployment card identity motif keeps native hit rectangle
+417: general-298-58873 entry skill shows its personal subtitle before old health is released
+418: general-298-58873 holds a readable personal motif and original subtitle during windup
+419: general-298-58873 entry uses the full formal engine result once and cleans transient effects
+420: general-298-58873 deployed character retains the same ID-bound card face
+421: cbdb-94373 concise face copy retains complete accessible rules
+422: cbdb-94373 deployment card identity motif keeps native hit rectangle
+423: cbdb-94373 entry skill shows its personal subtitle before old health is released
+424: cbdb-94373 holds a readable personal motif and original subtitle during windup
+425: cbdb-94373 entry uses the full formal engine result once and cleans transient effects
+426: cbdb-94373 deployed character retains the same ID-bound card face
+427: general-790-68223 concise face copy retains complete accessible rules
+428: general-790-68223 deployment card identity motif keeps native hit rectangle
+429: general-790-68223 entry skill shows its personal subtitle before old health is released
+430: general-790-68223 holds a readable personal motif and original subtitle during windup
+431: general-790-68223 entry uses the full formal engine result once and cleans transient effects
+432: general-790-68223 deployed character retains the same ID-bound card face
+433: general-296-67948 concise face copy retains complete accessible rules
+434: general-296-67948 deployment card identity motif keeps native hit rectangle
+435: general-296-67948 entry skill shows its personal subtitle before old health is released
+436: general-296-67948 holds a readable personal motif and original subtitle during windup
+437: general-296-67948 entry uses the full formal engine result once and cleans transient effects
+438: general-296-67948 deployed character retains the same ID-bound card face
+439: manual-1544 concise face copy retains complete accessible rules
+440: manual-1544 deployment card identity motif keeps native hit rectangle
+441: manual-1544 entry skill shows its personal subtitle before old health is released
+442: manual-1544 holds a readable personal motif and original subtitle during windup
+443: manual-1544 entry uses the full formal engine result once and cleans transient effects
+444: manual-1544 deployed character retains the same ID-bound card face
+445: cbdb-898 concise face copy retains complete accessible rules
+446: cbdb-898 deployment card identity motif keeps native hit rectangle
+447: cbdb-898 entry skill shows its personal subtitle before old health is released
+448: cbdb-898 holds a readable personal motif and original subtitle during windup
+449: cbdb-898 entry uses the full formal engine result once and cleans transient effects
+450: cbdb-898 deployed character retains the same ID-bound card face
+451: general-113-60981 concise face copy retains complete accessible rules
+452: general-113-60981 deployment card identity motif keeps native hit rectangle
+453: general-113-60981 entry skill shows its personal subtitle before old health is released
+454: general-113-60981 holds a readable personal motif and original subtitle during windup
+455: general-113-60981 entry uses the full formal engine result once and cleans transient effects
+456: general-113-60981 deployed character retains the same ID-bound card face
+457: manual-1509 concise face copy retains complete accessible rules
+458: manual-1509 deployment card identity motif keeps native hit rectangle
+459: manual-1509 entry skill shows its personal subtitle before old health is released
+460: manual-1509 holds a readable personal motif and original subtitle during windup
+461: manual-1509 entry uses the full formal engine result once and cleans transient effects
+462: manual-1509 deployed character retains the same ID-bound card face
+463: manual-1579 concise face copy retains complete accessible rules
+464: manual-1579 deployment card identity motif keeps native hit rectangle
+465: manual-1579 entry skill shows its personal subtitle before old health is released
+466: manual-1579 holds a readable personal motif and original subtitle during windup
+467: manual-1579 entry uses the full formal engine result once and cleans transient effects
+468: manual-1579 deployed character retains the same ID-bound card face
+469: manual-1519 concise face copy retains complete accessible rules
+470: manual-1519 deployment card identity motif keeps native hit rectangle
+471: manual-1519 entry skill shows its personal subtitle before old health is released
+472: manual-1519 holds a readable personal motif and original subtitle during windup
+473: manual-1519 entry uses the full formal engine result once and cleans transient effects
+474: manual-1519 deployed character retains the same ID-bound card face
+475: general-874-55746 concise face copy retains complete accessible rules
+476: general-874-55746 deployment card identity motif keeps native hit rectangle
+477: general-874-55746 entry skill shows its personal subtitle before old health is released
+478: general-874-55746 holds a readable personal motif and original subtitle during windup
+479: general-874-55746 entry uses the full formal engine result once and cleans transient effects
+480: general-874-55746 deployed character retains the same ID-bound card face
+481: manual-1530 concise face copy retains complete accessible rules
+482: manual-1530 deployment card identity motif keeps native hit rectangle
+483: manual-1530 entry skill shows its personal subtitle before old health is released
+484: manual-1530 holds a readable personal motif and original subtitle during windup
+485: manual-1530 entry uses the full formal engine result once and cleans transient effects
+486: manual-1530 deployed character retains the same ID-bound card face
+487: original-16 concise face copy retains complete accessible rules
+488: original-16 deployment card identity motif keeps native hit rectangle
+489: original-16 entry skill shows its personal subtitle before old health is released
+490: original-16 holds a readable personal motif and original subtitle during windup
+491: original-16 entry uses the full formal engine result once and cleans transient effects
+492: original-16 deployed character retains the same ID-bound card face
+493: manual-1543 concise face copy retains complete accessible rules
+494: manual-1543 deployment card identity motif keeps native hit rectangle
+495: manual-1543 entry skill shows its personal subtitle before old health is released
+496: manual-1543 holds a readable personal motif and original subtitle during windup
+497: manual-1543 entry uses the full formal engine result once and cleans transient effects
+498: manual-1543 deployed character retains the same ID-bound card face
+499: original-14 concise face copy retains complete accessible rules
+500: original-14 deployment card identity motif keeps native hit rectangle
+501: original-14 entry skill shows its personal subtitle before old health is released
+502: original-14 holds a readable personal motif and original subtitle during windup
+503: original-14 entry uses the full formal engine result once and cleans transient effects
+504: original-14 deployed character retains the same ID-bound card face
+505: manual-1629 concise face copy retains complete accessible rules
+506: manual-1629 deployment card identity motif keeps native hit rectangle
+507: manual-1629 entry skill shows its personal subtitle before old health is released
+508: manual-1629 holds a readable personal motif and original subtitle during windup
+509: manual-1629 entry uses the full formal engine result once and cleans transient effects
+510: manual-1629 deployed character retains the same ID-bound card face
+511: manual-1510 concise face copy retains complete accessible rules
+512: manual-1510 deployment card identity motif keeps native hit rectangle
+513: manual-1510 entry skill shows its personal subtitle before old health is released
+514: manual-1510 holds a readable personal motif and original subtitle during windup
+515: manual-1510 entry uses the full formal engine result once and cleans transient effects
+516: manual-1510 deployed character retains the same ID-bound card face
+517: cbdb-1762 concise face copy retains complete accessible rules
+518: cbdb-1762 deployment card identity motif keeps native hit rectangle
+519: cbdb-1762 entry skill shows its personal subtitle before old health is released
+520: cbdb-1762 holds a readable personal motif and original subtitle during windup
+521: cbdb-1762 entry uses the full formal engine result once and cleans transient effects
+522: cbdb-1762 deployed character retains the same ID-bound card face
+523: cbdb-34344 concise face copy retains complete accessible rules
+524: cbdb-34344 deployment card identity motif keeps native hit rectangle
+525: cbdb-34344 entry skill shows its personal subtitle before old health is released
+526: cbdb-34344 holds a readable personal motif and original subtitle during windup
+527: cbdb-34344 entry uses the full formal engine result once and cleans transient effects
+528: cbdb-34344 deployed character retains the same ID-bound card face
+529: cbdb-8043 concise face copy retains complete accessible rules
+530: cbdb-8043 deployment card identity motif keeps native hit rectangle
+531: cbdb-8043 entry skill shows its personal subtitle before old health is released
+532: cbdb-8043 holds a readable personal motif and original subtitle during windup
+533: cbdb-8043 entry uses the full formal engine result once and cleans transient effects
+534: cbdb-8043 deployed character retains the same ID-bound card face
+535: original-8 concise face copy retains complete accessible rules
+536: original-8 deployment card identity motif keeps native hit rectangle
+537: original-8 entry skill shows its personal subtitle before old health is released
+538: original-8 holds a readable personal motif and original subtitle during windup
+539: original-8 entry uses the full formal engine result once and cleans transient effects
+540: original-8 deployed character retains the same ID-bound card face
+541: manual-1529 concise face copy retains complete accessible rules
+542: manual-1529 deployment card identity motif keeps native hit rectangle
+543: manual-1529 entry skill shows its personal subtitle before old health is released
+544: manual-1529 holds a readable personal motif and original subtitle during windup
+545: manual-1529 entry uses the full formal engine result once and cleans transient effects
+546: manual-1529 deployed character retains the same ID-bound card face
+547: manual-1527 concise face copy retains complete accessible rules
+548: manual-1527 deployment card identity motif keeps native hit rectangle
+549: manual-1527 entry skill shows its personal subtitle before old health is released
+550: manual-1527 holds a readable personal motif and original subtitle during windup
+551: manual-1527 entry uses the full formal engine result once and cleans transient effects
+552: manual-1527 deployed character retains the same ID-bound card face
+553: cbdb-17364 concise face copy retains complete accessible rules
+554: cbdb-17364 deployment card identity motif keeps native hit rectangle
+555: cbdb-17364 entry skill shows its personal subtitle before old health is released
+556: cbdb-17364 holds a readable personal motif and original subtitle during windup
+557: cbdb-17364 entry uses the full formal engine result once and cleans transient effects
+558: cbdb-17364 deployed character retains the same ID-bound card face
+559: original-4 concise face copy retains complete accessible rules
+560: original-4 deployment card identity motif keeps native hit rectangle
+561: original-4 entry skill shows its personal subtitle before old health is released
+562: original-4 holds a readable personal motif and original subtitle during windup
+563: original-4 entry uses the full formal engine result once and cleans transient effects
+564: original-4 deployed character retains the same ID-bound card face
+565: manual-1523 concise face copy retains complete accessible rules
+566: manual-1523 deployment card identity motif keeps native hit rectangle
+567: manual-1523 entry skill shows its personal subtitle before old health is released
+568: manual-1523 holds a readable personal motif and original subtitle during windup
+569: manual-1523 entry uses the full formal engine result once and cleans transient effects
+570: manual-1523 deployed character retains the same ID-bound card face
+571: cbdb-1384 concise face copy retains complete accessible rules
+572: cbdb-1384 deployment card identity motif keeps native hit rectangle
+573: cbdb-1384 entry skill shows its personal subtitle before old health is released
+574: cbdb-1384 holds a readable personal motif and original subtitle during windup
+575: cbdb-1384 entry uses the full formal engine result once and cleans transient effects
+576: cbdb-1384 deployed character retains the same ID-bound card face
+577: cbdb-27948 concise face copy retains complete accessible rules
+578: cbdb-27948 deployment card identity motif keeps native hit rectangle
+579: cbdb-27948 entry skill shows its personal subtitle before old health is released
+580: cbdb-27948 holds a readable personal motif and original subtitle during windup
+581: cbdb-27948 entry uses the full formal engine result once and cleans transient effects
+582: cbdb-27948 deployed character retains the same ID-bound card face
+583: cbdb-3767 concise face copy retains complete accessible rules
+584: cbdb-3767 deployment card identity motif keeps native hit rectangle
+585: cbdb-3767 entry skill shows its personal subtitle before old health is released
+586: cbdb-3767 holds a readable personal motif and original subtitle during windup
+587: cbdb-3767 entry uses the full formal engine result once and cleans transient effects
+588: cbdb-3767 deployed character retains the same ID-bound card face
+589: cbdb-8175 concise face copy retains complete accessible rules
+590: cbdb-8175 deployment card identity motif keeps native hit rectangle
+591: cbdb-8175 entry skill shows its personal subtitle before old health is released
+592: cbdb-8175 holds a readable personal motif and original subtitle during windup
+593: cbdb-8175 entry uses the full formal engine result once and cleans transient effects
+594: cbdb-8175 deployed character retains the same ID-bound card face
+595: original-99 commander identity motif keeps native hit rectangle
+596: original-99 power shows its personal subtitle before old health is released
+597: original-99 power uses the full formal engine result once and cleans transient effects
+598: original-89 commander identity motif keeps native hit rectangle
+599: original-89 power shows its personal subtitle before old health is released
+600: original-89 power uses the full formal engine result once and cleans transient effects
+601: cbdb-3332 commander identity motif keeps native hit rectangle
+602: cbdb-3332 power shows its personal subtitle before old health is released
+603: cbdb-3332 power uses the full formal engine result once and cleans transient effects
+604: general-638-62417 commander identity motif keeps native hit rectangle
+605: general-638-62417 power shows its personal subtitle before old health is released
+606: general-638-62417 power uses the full formal engine result once and cleans transient effects
+607: general-795-83328 commander identity motif keeps native hit rectangle
+608: general-795-83328 power shows its personal subtitle before old health is released
+609: general-795-83328 power uses the full formal engine result once and cleans transient effects
+610: manual-1616 commander identity motif keeps native hit rectangle
+611: manual-1616 power shows its personal subtitle before old health is released
+612: manual-1616 power uses the full formal engine result once and cleans transient effects
+613: manual-1625 commander identity motif keeps native hit rectangle
+614: manual-1625 power shows its personal subtitle before old health is released
+615: manual-1625 power uses the full formal engine result once and cleans transient effects
+616: manual-1618 commander identity motif keeps native hit rectangle
+617: manual-1618 power shows its personal subtitle before old health is released
+618: manual-1618 power uses the full formal engine result once and cleans transient effects
+619: manual-1624 commander identity motif keeps native hit rectangle
+620: manual-1624 power shows its personal subtitle before old health is released
+621: manual-1624 power uses the full formal engine result once and cleans transient effects
+622: original-97 commander identity motif keeps native hit rectangle
+623: original-97 power shows its personal subtitle before old health is released
+624: original-97 power uses the full formal engine result once and cleans transient effects
+625: original-98 commander identity motif keeps native hit rectangle
+626: original-98 power shows its personal subtitle before old health is released
+627: original-98 power uses the full formal engine result once and cleans transient effects
+628: general-38-51333 commander identity motif keeps native hit rectangle
+629: general-38-51333 power shows its personal subtitle before old health is released
+630: general-38-51333 power uses the full formal engine result once and cleans transient effects
+631: original-79 commander identity motif keeps native hit rectangle
+632: original-79 power shows its personal subtitle before old health is released
+633: original-79 power uses the full formal engine result once and cleans transient effects
+634: cbdb-30257 commander identity motif keeps native hit rectangle
+635: cbdb-30257 power shows its personal subtitle before old health is released
+636: cbdb-30257 power uses the full formal engine result once and cleans transient effects
+637: manual-1555 commander identity motif keeps native hit rectangle
+638: manual-1555 power shows its personal subtitle before old health is released
+639: manual-1555 power uses the full formal engine result once and cleans transient effects
+640: manual-1565 commander identity motif keeps native hit rectangle
+641: manual-1565 power shows its personal subtitle before old health is released
+642: manual-1565 power uses the full formal engine result once and cleans transient effects
+643: general-285-45592 commander identity motif keeps native hit rectangle
+644: general-285-45592 power shows its personal subtitle before old health is released
+645: general-285-45592 power uses the full formal engine result once and cleans transient effects
+646: manual-1553 commander identity motif keeps native hit rectangle
+647: manual-1553 power shows its personal subtitle before old health is released
+648: manual-1553 power uses the full formal engine result once and cleans transient effects
+649: manual-1569 commander identity motif keeps native hit rectangle
+650: manual-1569 power shows its personal subtitle before old health is released
+651: manual-1569 power uses the full formal engine result once and cleans transient effects
+652: general-398-60962 commander identity motif keeps native hit rectangle
+653: general-398-60962 power shows its personal subtitle before old health is released
+654: general-398-60962 power uses the full formal engine result once and cleans transient effects
+655: original-88 commander identity motif keeps native hit rectangle
+656: original-88 power shows its personal subtitle before old health is released
+657: original-88 power uses the full formal engine result once and cleans transient effects
+658: original-68 commander identity motif keeps native hit rectangle
+659: original-68 power shows its personal subtitle before old health is released
+660: original-68 power uses the full formal engine result once and cleans transient effects
+661: original-69 commander identity motif keeps native hit rectangle
+662: original-69 power shows its personal subtitle before old health is released
+663: original-69 power uses the full formal engine result once and cleans transient effects
+664: manual-1520 commander identity motif keeps native hit rectangle
+665: manual-1520 power shows its personal subtitle before old health is released
+666: manual-1520 power uses the full formal engine result once and cleans transient effects
+667: manual-1521 commander identity motif keeps native hit rectangle
+668: manual-1521 power shows its personal subtitle before old health is released
+669: manual-1521 power uses the full formal engine result once and cleans transient effects
+670: manual-1518 commander identity motif keeps native hit rectangle
+671: manual-1518 power shows its personal subtitle before old health is released
+672: manual-1518 power uses the full formal engine result once and cleans transient effects
+673: manual-1522 commander identity motif keeps native hit rectangle
+674: manual-1522 power shows its personal subtitle before old health is released
+675: manual-1522 power uses the full formal engine result once and cleans transient effects
+676: manual-1524 commander identity motif keeps native hit rectangle
+677: manual-1524 power shows its personal subtitle before old health is released
+678: manual-1524 power uses the full formal engine result once and cleans transient effects
+679: general-56-58629 commander identity motif keeps native hit rectangle
+680: general-56-58629 power shows its personal subtitle before old health is released
+681: general-56-58629 power uses the full formal engine result once and cleans transient effects
+682: general-103-50637 commander identity motif keeps native hit rectangle
+683: general-103-50637 power shows its personal subtitle before old health is released
+684: general-103-50637 power uses the full formal engine result once and cleans transient effects
+685: original-77 commander identity motif keeps native hit rectangle
+686: original-77 power shows its personal subtitle before old health is released
+687: original-77 power uses the full formal engine result once and cleans transient effects
+688: cbdb-8008 commander identity motif keeps native hit rectangle
+689: cbdb-8008 power shows its personal subtitle before old health is released
+690: cbdb-8008 power uses the full formal engine result once and cleans transient effects
+691: original-59 commander identity motif keeps native hit rectangle
+692: original-59 power shows its personal subtitle before old health is released
+693: original-59 power uses the full formal engine result once and cleans transient effects
+694: manual-1592 commander identity motif keeps native hit rectangle
+695: manual-1592 power shows its personal subtitle before old health is released
+696: manual-1592 power uses the full formal engine result once and cleans transient effects
+697: manual-1507 commander identity motif keeps native hit rectangle
+698: manual-1507 power shows its personal subtitle before old health is released
+699: manual-1507 power uses the full formal engine result once and cleans transient effects
+700: original-62 commander identity motif keeps native hit rectangle
+701: original-62 power shows its personal subtitle before old health is released
+702: original-62 power uses the full formal engine result once and cleans transient effects
+703: original-63 commander identity motif keeps native hit rectangle
+704: original-63 power shows its personal subtitle before old health is released
+705: original-63 power uses the full formal engine result once and cleans transient effects
+706: original-64 commander identity motif keeps native hit rectangle
+707: original-64 power shows its personal subtitle before old health is released
+708: original-64 power uses the full formal engine result once and cleans transient effects
+709: original-65 commander identity motif keeps native hit rectangle
+710: original-65 power shows its personal subtitle before old health is released
+711: original-65 power uses the full formal engine result once and cleans transient effects
+712: original-66 commander identity motif keeps native hit rectangle
+713: original-66 power shows its personal subtitle before old health is released
+714: original-66 power uses the full formal engine result once and cleans transient effects
+715: manual-1512 commander identity motif keeps native hit rectangle
+716: manual-1512 power shows its personal subtitle before old health is released
+717: manual-1512 power uses the full formal engine result once and cleans transient effects
+718: cbdb-1488 commander identity motif keeps native hit rectangle
+719: cbdb-1488 power shows its personal subtitle before old health is released
+720: cbdb-1488 power uses the full formal engine result once and cleans transient effects
+721: cbdb-19123 commander identity motif keeps native hit rectangle
+722: cbdb-19123 power shows its personal subtitle before old health is released
+723: cbdb-19123 power uses the full formal engine result once and cleans transient effects
+724: manual-1608 commander identity motif keeps native hit rectangle
+725: manual-1608 power shows its personal subtitle before old health is released
+726: manual-1608 power uses the full formal engine result once and cleans transient effects
+727: manual-1609 commander identity motif keeps native hit rectangle
+728: manual-1609 power shows its personal subtitle before old health is released
+729: manual-1609 power uses the full formal engine result once and cleans transient effects
+730: cbdb-54819 commander identity motif keeps native hit rectangle
+731: cbdb-54819 power shows its personal subtitle before old health is released
+732: cbdb-54819 power uses the full formal engine result once and cleans transient effects
+733: cbdb-28093 commander identity motif keeps native hit rectangle
+734: cbdb-28093 power shows its personal subtitle before old health is released
+735: cbdb-28093 power uses the full formal engine result once and cleans transient effects
+736: manual-1614 commander identity motif keeps native hit rectangle
+737: manual-1614 power shows its personal subtitle before old health is released
+738: manual-1614 power uses the full formal engine result once and cleans transient effects
+739: manual-1611 commander identity motif keeps native hit rectangle
+740: manual-1611 power shows its personal subtitle before old health is released
+741: manual-1611 power uses the full formal engine result once and cleans transient effects
+742: cbdb-30374 commander identity motif keeps native hit rectangle
+743: cbdb-30374 power shows its personal subtitle before old health is released
+744: cbdb-30374 power uses the full formal engine result once and cleans transient effects
+745: original-57 commander identity motif keeps native hit rectangle
+746: original-57 power shows its personal subtitle before old health is released
+747: original-57 power uses the full formal engine result once and cleans transient effects
+748: original-37 commander identity motif keeps native hit rectangle
+749: original-37 power shows its personal subtitle before old health is released
+750: original-37 power uses the full formal engine result once and cleans transient effects
+751: manual-1537 commander identity motif keeps native hit rectangle
+752: manual-1537 power shows its personal subtitle before old health is released
+753: manual-1537 power uses the full formal engine result once and cleans transient effects
+754: manual-1536 commander identity motif keeps native hit rectangle
+755: manual-1536 power shows its personal subtitle before old health is released
+756: manual-1536 power uses the full formal engine result once and cleans transient effects
+757: manual-1513 commander identity motif keeps native hit rectangle
+758: manual-1513 power shows its personal subtitle before old health is released
+759: manual-1513 power uses the full formal engine result once and cleans transient effects
+760: original-41 commander identity motif keeps native hit rectangle
+761: original-41 power shows its personal subtitle before old health is released
+762: original-41 power uses the full formal engine result once and cleans transient effects
+763: cbdb-25403 commander identity motif keeps native hit rectangle
+764: cbdb-25403 power shows its personal subtitle before old health is released
+765: cbdb-25403 power uses the full formal engine result once and cleans transient effects
+766: original-43 commander identity motif keeps native hit rectangle
+767: original-43 power shows its personal subtitle before old health is released
+768: original-43 power uses the full formal engine result once and cleans transient effects
+769: original-44 commander identity motif keeps native hit rectangle
+770: original-44 power shows its personal subtitle before old health is released
+771: original-44 power uses the full formal engine result once and cleans transient effects
+772: general-422-82978 commander identity motif keeps native hit rectangle
+773: general-422-82978 power shows its personal subtitle before old health is released
+774: general-422-82978 power uses the full formal engine result once and cleans transient effects
+775: general-523-68118 commander identity motif keeps native hit rectangle
+776: general-523-68118 power shows its personal subtitle before old health is released
+777: general-523-68118 power uses the full formal engine result once and cleans transient effects
+778: general-468-78206 commander identity motif keeps native hit rectangle
+779: general-468-78206 power shows its personal subtitle before old health is released
+780: general-468-78206 power uses the full formal engine result once and cleans transient effects
+781: manual-1591 commander identity motif keeps native hit rectangle
+782: manual-1591 power shows its personal subtitle before old health is released
+783: manual-1591 power uses the full formal engine result once and cleans transient effects
+784: manual-1590 commander identity motif keeps native hit rectangle
+785: manual-1590 power shows its personal subtitle before old health is released
+786: manual-1590 power uses the full formal engine result once and cleans transient effects
+787: original-33 commander identity motif keeps native hit rectangle
+788: original-33 power shows its personal subtitle before old health is released
+789: original-33 power uses the full formal engine result once and cleans transient effects
+790: cbdb-630 commander identity motif keeps native hit rectangle
+791: cbdb-630 power shows its personal subtitle before old health is released
+792: cbdb-630 power uses the full formal engine result once and cleans transient effects
+793: general-403-90513 commander identity motif keeps native hit rectangle
+794: general-403-90513 power shows its personal subtitle before old health is released
+795: general-403-90513 power uses the full formal engine result once and cleans transient effects
+796: manual-1582 commander identity motif keeps native hit rectangle
+797: manual-1582 power shows its personal subtitle before old health is released
+798: manual-1582 power uses the full formal engine result once and cleans transient effects
+799: original-29 commander identity motif keeps native hit rectangle
+800: original-29 power shows its personal subtitle before old health is released
+801: original-29 power uses the full formal engine result once and cleans transient effects
+802: general-298-58873 commander identity motif keeps native hit rectangle
+803: general-298-58873 power shows its personal subtitle before old health is released
+804: general-298-58873 power uses the full formal engine result once and cleans transient effects
+805: cbdb-94373 commander identity motif keeps native hit rectangle
+806: cbdb-94373 power shows its personal subtitle before old health is released
+807: cbdb-94373 power uses the full formal engine result once and cleans transient effects
+808: general-790-68223 commander identity motif keeps native hit rectangle
+809: general-790-68223 power shows its personal subtitle before old health is released
+810: general-790-68223 power uses the full formal engine result once and cleans transient effects
+811: general-296-67948 commander identity motif keeps native hit rectangle
+812: general-296-67948 power shows its personal subtitle before old health is released
+813: general-296-67948 power uses the full formal engine result once and cleans transient effects
+814: manual-1544 commander identity motif keeps native hit rectangle
+815: manual-1544 power shows its personal subtitle before old health is released
+816: manual-1544 power uses the full formal engine result once and cleans transient effects
+817: cbdb-898 commander identity motif keeps native hit rectangle
+818: cbdb-898 power shows its personal subtitle before old health is released
+819: cbdb-898 power uses the full formal engine result once and cleans transient effects
+820: general-113-60981 commander identity motif keeps native hit rectangle
+821: general-113-60981 power shows its personal subtitle before old health is released
+822: general-113-60981 power uses the full formal engine result once and cleans transient effects
+823: manual-1509 commander identity motif keeps native hit rectangle
+824: manual-1509 power shows its personal subtitle before old health is released
+825: manual-1509 power uses the full formal engine result once and cleans transient effects
+826: manual-1579 commander identity motif keeps native hit rectangle
+827: manual-1579 power shows its personal subtitle before old health is released
+828: manual-1579 power uses the full formal engine result once and cleans transient effects
+829: manual-1519 commander identity motif keeps native hit rectangle
+830: manual-1519 power shows its personal subtitle before old health is released
+831: manual-1519 power uses the full formal engine result once and cleans transient effects
+832: general-874-55746 commander identity motif keeps native hit rectangle
+833: general-874-55746 power shows its personal subtitle before old health is released
+834: general-874-55746 power uses the full formal engine result once and cleans transient effects
+835: manual-1530 commander identity motif keeps native hit rectangle
+836: manual-1530 power shows its personal subtitle before old health is released
+837: manual-1530 power uses the full formal engine result once and cleans transient effects
+838: original-16 commander identity motif keeps native hit rectangle
+839: original-16 power shows its personal subtitle before old health is released
+840: original-16 power uses the full formal engine result once and cleans transient effects
+841: manual-1543 commander identity motif keeps native hit rectangle
+842: manual-1543 power shows its personal subtitle before old health is released
+843: manual-1543 power uses the full formal engine result once and cleans transient effects
+844: original-14 commander identity motif keeps native hit rectangle
+845: original-14 power shows its personal subtitle before old health is released
+846: original-14 power uses the full formal engine result once and cleans transient effects
+847: manual-1629 commander identity motif keeps native hit rectangle
+848: manual-1629 power shows its personal subtitle before old health is released
+849: manual-1629 power uses the full formal engine result once and cleans transient effects
+850: manual-1510 commander identity motif keeps native hit rectangle
+851: manual-1510 power shows its personal subtitle before old health is released
+852: manual-1510 power uses the full formal engine result once and cleans transient effects
+853: cbdb-1762 commander identity motif keeps native hit rectangle
+854: cbdb-1762 power shows its personal subtitle before old health is released
+855: cbdb-1762 power uses the full formal engine result once and cleans transient effects
+856: cbdb-34344 commander identity motif keeps native hit rectangle
+857: cbdb-34344 power shows its personal subtitle before old health is released
+858: cbdb-34344 power uses the full formal engine result once and cleans transient effects
+859: cbdb-8043 commander identity motif keeps native hit rectangle
+860: cbdb-8043 power shows its personal subtitle before old health is released
+861: cbdb-8043 power uses the full formal engine result once and cleans transient effects
+862: original-8 commander identity motif keeps native hit rectangle
+863: original-8 power shows its personal subtitle before old health is released
+864: original-8 power uses the full formal engine result once and cleans transient effects
+865: manual-1529 commander identity motif keeps native hit rectangle
+866: manual-1529 power shows its personal subtitle before old health is released
+867: manual-1529 power uses the full formal engine result once and cleans transient effects
+868: manual-1527 commander identity motif keeps native hit rectangle
+869: manual-1527 power shows its personal subtitle before old health is released
+870: manual-1527 power uses the full formal engine result once and cleans transient effects
+871: cbdb-17364 commander identity motif keeps native hit rectangle
+872: cbdb-17364 power shows its personal subtitle before old health is released
+873: cbdb-17364 power uses the full formal engine result once and cleans transient effects
+874: original-4 commander identity motif keeps native hit rectangle
+875: original-4 power shows its personal subtitle before old health is released
+876: original-4 power uses the full formal engine result once and cleans transient effects
+877: manual-1523 commander identity motif keeps native hit rectangle
+878: manual-1523 power shows its personal subtitle before old health is released
+879: manual-1523 power uses the full formal engine result once and cleans transient effects
+880: cbdb-1384 commander identity motif keeps native hit rectangle
+881: cbdb-1384 power shows its personal subtitle before old health is released
+882: cbdb-1384 power uses the full formal engine result once and cleans transient effects
+883: cbdb-27948 commander identity motif keeps native hit rectangle
+884: cbdb-27948 power shows its personal subtitle before old health is released
+885: cbdb-27948 power uses the full formal engine result once and cleans transient effects
+886: cbdb-3767 commander identity motif keeps native hit rectangle
+887: cbdb-3767 power shows its personal subtitle before old health is released
+888: cbdb-3767 power uses the full formal engine result once and cleans transient effects
+889: cbdb-8175 commander identity motif keeps native hit rectangle
+890: cbdb-8175 power shows its personal subtitle before old health is released
+891: cbdb-8175 power uses the full formal engine result once and cleans transient effects
+892: original-99 deployment fast preserves complete formal effects once and releases motion lock
+893: original-99 power fast preserves complete formal effects once and releases motion lock
+894: original-99 deployment reduced preserves complete formal effects once and releases motion lock
+895: original-99 reduced persistent motifs have no CSS animation
+896: original-99 power reduced preserves complete formal effects once and releases motion lock
+897: original-99 reduced persistent motifs have no CSS animation
+898: original-89 deployment fast preserves complete formal effects once and releases motion lock
+899: original-89 power fast preserves complete formal effects once and releases motion lock
+900: original-89 deployment reduced preserves complete formal effects once and releases motion lock
+901: original-89 reduced persistent motifs have no CSS animation
+902: original-89 power reduced preserves complete formal effects once and releases motion lock
+903: original-89 reduced persistent motifs have no CSS animation
+904: cbdb-3332 deployment fast preserves complete formal effects once and releases motion lock
+905: cbdb-3332 power fast preserves complete formal effects once and releases motion lock
+906: cbdb-3332 deployment reduced preserves complete formal effects once and releases motion lock
+907: cbdb-3332 reduced persistent motifs have no CSS animation
+908: cbdb-3332 power reduced preserves complete formal effects once and releases motion lock
+909: cbdb-3332 reduced persistent motifs have no CSS animation
+910: general-638-62417 deployment fast preserves complete formal effects once and releases motion lock
+911: general-638-62417 power fast preserves complete formal effects once and releases motion lock
+912: general-638-62417 deployment reduced preserves complete formal effects once and releases motion lock
+913: general-638-62417 reduced persistent motifs have no CSS animation
+914: general-638-62417 power reduced preserves complete formal effects once and releases motion lock
+915: general-638-62417 reduced persistent motifs have no CSS animation
+916: general-795-83328 deployment fast preserves complete formal effects once and releases motion lock
+917: general-795-83328 power fast preserves complete formal effects once and releases motion lock
+918: general-795-83328 deployment reduced preserves complete formal effects once and releases motion lock
+919: general-795-83328 reduced persistent motifs have no CSS animation
+920: general-795-83328 power reduced preserves complete formal effects once and releases motion lock
+921: general-795-83328 reduced persistent motifs have no CSS animation
+922: manual-1616 deployment fast preserves complete formal effects once and releases motion lock
+923: manual-1616 power fast preserves complete formal effects once and releases motion lock
+924: manual-1616 deployment reduced preserves complete formal effects once and releases motion lock
+925: manual-1616 reduced persistent motifs have no CSS animation
+926: manual-1616 power reduced preserves complete formal effects once and releases motion lock
+927: manual-1616 reduced persistent motifs have no CSS animation
+928: manual-1625 deployment fast preserves complete formal effects once and releases motion lock
+929: manual-1625 power fast preserves complete formal effects once and releases motion lock
+930: manual-1625 deployment reduced preserves complete formal effects once and releases motion lock
+931: manual-1625 reduced persistent motifs have no CSS animation
+932: manual-1625 power reduced preserves complete formal effects once and releases motion lock
+933: manual-1625 reduced persistent motifs have no CSS animation
+934: manual-1618 deployment fast preserves complete formal effects once and releases motion lock
+935: manual-1618 power fast preserves complete formal effects once and releases motion lock
+936: manual-1618 deployment reduced preserves complete formal effects once and releases motion lock
+937: manual-1618 reduced persistent motifs have no CSS animation
+938: manual-1618 power reduced preserves complete formal effects once and releases motion lock
+939: manual-1618 reduced persistent motifs have no CSS animation
+940: manual-1624 deployment fast preserves complete formal effects once and releases motion lock
+941: manual-1624 power fast preserves complete formal effects once and releases motion lock
+942: manual-1624 deployment reduced preserves complete formal effects once and releases motion lock
+943: manual-1624 reduced persistent motifs have no CSS animation
+944: manual-1624 power reduced preserves complete formal effects once and releases motion lock
+945: manual-1624 reduced persistent motifs have no CSS animation
+946: original-97 deployment fast preserves complete formal effects once and releases motion lock
+947: original-97 power fast preserves complete formal effects once and releases motion lock
+948: original-97 deployment reduced preserves complete formal effects once and releases motion lock
+949: original-97 reduced persistent motifs have no CSS animation
+950: original-97 power reduced preserves complete formal effects once and releases motion lock
+951: original-97 reduced persistent motifs have no CSS animation
+952: original-98 deployment fast preserves complete formal effects once and releases motion lock
+953: original-98 power fast preserves complete formal effects once and releases motion lock
+954: original-98 deployment reduced preserves complete formal effects once and releases motion lock
+955: original-98 reduced persistent motifs have no CSS animation
+956: original-98 power reduced preserves complete formal effects once and releases motion lock
+957: original-98 reduced persistent motifs have no CSS animation
+958: general-38-51333 deployment fast preserves complete formal effects once and releases motion lock
+959: general-38-51333 power fast preserves complete formal effects once and releases motion lock
+960: general-38-51333 deployment reduced preserves complete formal effects once and releases motion lock
+961: general-38-51333 reduced persistent motifs have no CSS animation
+962: general-38-51333 power reduced preserves complete formal effects once and releases motion lock
+963: general-38-51333 reduced persistent motifs have no CSS animation
+964: original-79 deployment fast preserves complete formal effects once and releases motion lock
+965: original-79 power fast preserves complete formal effects once and releases motion lock
+966: original-79 deployment reduced preserves complete formal effects once and releases motion lock
+967: original-79 reduced persistent motifs have no CSS animation
+968: original-79 power reduced preserves complete formal effects once and releases motion lock
+969: original-79 reduced persistent motifs have no CSS animation
+970: cbdb-30257 deployment fast preserves complete formal effects once and releases motion lock
+971: cbdb-30257 power fast preserves complete formal effects once and releases motion lock
+972: cbdb-30257 deployment reduced preserves complete formal effects once and releases motion lock
+973: cbdb-30257 reduced persistent motifs have no CSS animation
+974: cbdb-30257 power reduced preserves complete formal effects once and releases motion lock
+975: cbdb-30257 reduced persistent motifs have no CSS animation
+976: manual-1555 deployment fast preserves complete formal effects once and releases motion lock
+977: manual-1555 power fast preserves complete formal effects once and releases motion lock
+978: manual-1555 deployment reduced preserves complete formal effects once and releases motion lock
+979: manual-1555 reduced persistent motifs have no CSS animation
+980: manual-1555 power reduced preserves complete formal effects once and releases motion lock
+981: manual-1555 reduced persistent motifs have no CSS animation
+982: manual-1565 deployment fast preserves complete formal effects once and releases motion lock
+983: manual-1565 power fast preserves complete formal effects once and releases motion lock
+984: manual-1565 deployment reduced preserves complete formal effects once and releases motion lock
+985: manual-1565 reduced persistent motifs have no CSS animation
+986: manual-1565 power reduced preserves complete formal effects once and releases motion lock
+987: manual-1565 reduced persistent motifs have no CSS animation
+988: general-285-45592 deployment fast preserves complete formal effects once and releases motion lock
+989: general-285-45592 power fast preserves complete formal effects once and releases motion lock
+990: general-285-45592 deployment reduced preserves complete formal effects once and releases motion lock
+991: general-285-45592 reduced persistent motifs have no CSS animation
+992: general-285-45592 power reduced preserves complete formal effects once and releases motion lock
+993: general-285-45592 reduced persistent motifs have no CSS animation
+994: manual-1553 deployment fast preserves complete formal effects once and releases motion lock
+995: manual-1553 power fast preserves complete formal effects once and releases motion lock
+996: manual-1553 deployment reduced preserves complete formal effects once and releases motion lock
+997: manual-1553 reduced persistent motifs have no CSS animation
+998: manual-1553 power reduced preserves complete formal effects once and releases motion lock
+999: manual-1553 reduced persistent motifs have no CSS animation
+1000: manual-1569 deployment fast preserves complete formal effects once and releases motion lock
+1001: manual-1569 power fast preserves complete formal effects once and releases motion lock
+1002: manual-1569 deployment reduced preserves complete formal effects once and releases motion lock
+1003: manual-1569 reduced persistent motifs have no CSS animation
+1004: manual-1569 power reduced preserves complete formal effects once and releases motion lock
+1005: manual-1569 reduced persistent motifs have no CSS animation
+1006: general-398-60962 deployment fast preserves complete formal effects once and releases motion lock
+1007: general-398-60962 power fast preserves complete formal effects once and releases motion lock
+1008: general-398-60962 deployment reduced preserves complete formal effects once and releases motion lock
+1009: general-398-60962 reduced persistent motifs have no CSS animation
+1010: general-398-60962 power reduced preserves complete formal effects once and releases motion lock
+1011: general-398-60962 reduced persistent motifs have no CSS animation
+1012: original-88 deployment fast preserves complete formal effects once and releases motion lock
+1013: original-88 power fast preserves complete formal effects once and releases motion lock
+1014: original-88 deployment reduced preserves complete formal effects once and releases motion lock
+1015: original-88 reduced persistent motifs have no CSS animation
+1016: original-88 power reduced preserves complete formal effects once and releases motion lock
+1017: original-88 reduced persistent motifs have no CSS animation
+1018: original-68 deployment fast preserves complete formal effects once and releases motion lock
+1019: original-68 power fast preserves complete formal effects once and releases motion lock
+1020: original-68 deployment reduced preserves complete formal effects once and releases motion lock
+1021: original-68 reduced persistent motifs have no CSS animation
+1022: original-68 power reduced preserves complete formal effects once and releases motion lock
+1023: original-68 reduced persistent motifs have no CSS animation
+1024: original-69 deployment fast preserves complete formal effects once and releases motion lock
+1025: original-69 power fast preserves complete formal effects once and releases motion lock
+1026: original-69 deployment reduced preserves complete formal effects once and releases motion lock
+1027: original-69 reduced persistent motifs have no CSS animation
+1028: original-69 power reduced preserves complete formal effects once and releases motion lock
+1029: original-69 reduced persistent motifs have no CSS animation
+1030: manual-1520 deployment fast preserves complete formal effects once and releases motion lock
+1031: manual-1520 power fast preserves complete formal effects once and releases motion lock
+1032: manual-1520 deployment reduced preserves complete formal effects once and releases motion lock
+1033: manual-1520 reduced persistent motifs have no CSS animation
+1034: manual-1520 power reduced preserves complete formal effects once and releases motion lock
+1035: manual-1520 reduced persistent motifs have no CSS animation
+1036: manual-1521 deployment fast preserves complete formal effects once and releases motion lock
+1037: manual-1521 power fast preserves complete formal effects once and releases motion lock
+1038: manual-1521 deployment reduced preserves complete formal effects once and releases motion lock
+1039: manual-1521 reduced persistent motifs have no CSS animation
+1040: manual-1521 power reduced preserves complete formal effects once and releases motion lock
+1041: manual-1521 reduced persistent motifs have no CSS animation
+1042: manual-1518 deployment fast preserves complete formal effects once and releases motion lock
+1043: manual-1518 power fast preserves complete formal effects once and releases motion lock
+1044: manual-1518 deployment reduced preserves complete formal effects once and releases motion lock
+1045: manual-1518 reduced persistent motifs have no CSS animation
+1046: manual-1518 power reduced preserves complete formal effects once and releases motion lock
+1047: manual-1518 reduced persistent motifs have no CSS animation
+1048: manual-1522 deployment fast preserves complete formal effects once and releases motion lock
+1049: manual-1522 power fast preserves complete formal effects once and releases motion lock
+1050: manual-1522 deployment reduced preserves complete formal effects once and releases motion lock
+1051: manual-1522 reduced persistent motifs have no CSS animation
+1052: manual-1522 power reduced preserves complete formal effects once and releases motion lock
+1053: manual-1522 reduced persistent motifs have no CSS animation
+1054: manual-1524 deployment fast preserves complete formal effects once and releases motion lock
+1055: manual-1524 power fast preserves complete formal effects once and releases motion lock
+1056: manual-1524 deployment reduced preserves complete formal effects once and releases motion lock
+1057: manual-1524 reduced persistent motifs have no CSS animation
+1058: manual-1524 power reduced preserves complete formal effects once and releases motion lock
+1059: manual-1524 reduced persistent motifs have no CSS animation
+1060: general-56-58629 deployment fast preserves complete formal effects once and releases motion lock
+1061: general-56-58629 power fast preserves complete formal effects once and releases motion lock
+1062: general-56-58629 deployment reduced preserves complete formal effects once and releases motion lock
+1063: general-56-58629 reduced persistent motifs have no CSS animation
+1064: general-56-58629 power reduced preserves complete formal effects once and releases motion lock
+1065: general-56-58629 reduced persistent motifs have no CSS animation
+1066: general-103-50637 deployment fast preserves complete formal effects once and releases motion lock
+1067: general-103-50637 power fast preserves complete formal effects once and releases motion lock
+1068: general-103-50637 deployment reduced preserves complete formal effects once and releases motion lock
+1069: general-103-50637 reduced persistent motifs have no CSS animation
+1070: general-103-50637 power reduced preserves complete formal effects once and releases motion lock
+1071: general-103-50637 reduced persistent motifs have no CSS animation
+1072: original-77 deployment fast preserves complete formal effects once and releases motion lock
+1073: original-77 power fast preserves complete formal effects once and releases motion lock
+1074: original-77 deployment reduced preserves complete formal effects once and releases motion lock
+1075: original-77 reduced persistent motifs have no CSS animation
+1076: original-77 power reduced preserves complete formal effects once and releases motion lock
+1077: original-77 reduced persistent motifs have no CSS animation
+1078: cbdb-8008 deployment fast preserves complete formal effects once and releases motion lock
+1079: cbdb-8008 power fast preserves complete formal effects once and releases motion lock
+1080: cbdb-8008 deployment reduced preserves complete formal effects once and releases motion lock
+1081: cbdb-8008 reduced persistent motifs have no CSS animation
+1082: cbdb-8008 power reduced preserves complete formal effects once and releases motion lock
+1083: cbdb-8008 reduced persistent motifs have no CSS animation
+1084: original-59 deployment fast preserves complete formal effects once and releases motion lock
+1085: original-59 power fast preserves complete formal effects once and releases motion lock
+1086: original-59 deployment reduced preserves complete formal effects once and releases motion lock
+1087: original-59 reduced persistent motifs have no CSS animation
+1088: original-59 power reduced preserves complete formal effects once and releases motion lock
+1089: original-59 reduced persistent motifs have no CSS animation
+1090: manual-1592 deployment fast preserves complete formal effects once and releases motion lock
+1091: manual-1592 power fast preserves complete formal effects once and releases motion lock
+1092: manual-1592 deployment reduced preserves complete formal effects once and releases motion lock
+1093: manual-1592 reduced persistent motifs have no CSS animation
+1094: manual-1592 power reduced preserves complete formal effects once and releases motion lock
+1095: manual-1592 reduced persistent motifs have no CSS animation
+1096: manual-1507 deployment fast preserves complete formal effects once and releases motion lock
+1097: manual-1507 power fast preserves complete formal effects once and releases motion lock
+1098: manual-1507 deployment reduced preserves complete formal effects once and releases motion lock
+1099: manual-1507 reduced persistent motifs have no CSS animation
+1100: manual-1507 power reduced preserves complete formal effects once and releases motion lock
+1101: manual-1507 reduced persistent motifs have no CSS animation
+1102: original-62 deployment fast preserves complete formal effects once and releases motion lock
+1103: original-62 power fast preserves complete formal effects once and releases motion lock
+1104: original-62 deployment reduced preserves complete formal effects once and releases motion lock
+1105: original-62 reduced persistent motifs have no CSS animation
+1106: original-62 power reduced preserves complete formal effects once and releases motion lock
+1107: original-62 reduced persistent motifs have no CSS animation
+1108: original-63 deployment fast preserves complete formal effects once and releases motion lock
+1109: original-63 power fast preserves complete formal effects once and releases motion lock
+1110: original-63 deployment reduced preserves complete formal effects once and releases motion lock
+1111: original-63 reduced persistent motifs have no CSS animation
+1112: original-63 power reduced preserves complete formal effects once and releases motion lock
+1113: original-63 reduced persistent motifs have no CSS animation
+1114: original-64 deployment fast preserves complete formal effects once and releases motion lock
+1115: original-64 power fast preserves complete formal effects once and releases motion lock
+1116: original-64 deployment reduced preserves complete formal effects once and releases motion lock
+1117: original-64 reduced persistent motifs have no CSS animation
+1118: original-64 power reduced preserves complete formal effects once and releases motion lock
+1119: original-64 reduced persistent motifs have no CSS animation
+1120: original-65 deployment fast preserves complete formal effects once and releases motion lock
+1121: original-65 power fast preserves complete formal effects once and releases motion lock
+1122: original-65 deployment reduced preserves complete formal effects once and releases motion lock
+1123: original-65 reduced persistent motifs have no CSS animation
+1124: original-65 power reduced preserves complete formal effects once and releases motion lock
+1125: original-65 reduced persistent motifs have no CSS animation
+1126: original-66 deployment fast preserves complete formal effects once and releases motion lock
+1127: original-66 power fast preserves complete formal effects once and releases motion lock
+1128: original-66 deployment reduced preserves complete formal effects once and releases motion lock
+1129: original-66 reduced persistent motifs have no CSS animation
+1130: original-66 power reduced preserves complete formal effects once and releases motion lock
+1131: original-66 reduced persistent motifs have no CSS animation
+1132: manual-1512 deployment fast preserves complete formal effects once and releases motion lock
+1133: manual-1512 power fast preserves complete formal effects once and releases motion lock
+1134: manual-1512 deployment reduced preserves complete formal effects once and releases motion lock
+1135: manual-1512 reduced persistent motifs have no CSS animation
+1136: manual-1512 power reduced preserves complete formal effects once and releases motion lock
+1137: manual-1512 reduced persistent motifs have no CSS animation
+1138: cbdb-1488 deployment fast preserves complete formal effects once and releases motion lock
+1139: cbdb-1488 power fast preserves complete formal effects once and releases motion lock
+1140: cbdb-1488 deployment reduced preserves complete formal effects once and releases motion lock
+1141: cbdb-1488 reduced persistent motifs have no CSS animation
+1142: cbdb-1488 power reduced preserves complete formal effects once and releases motion lock
+1143: cbdb-1488 reduced persistent motifs have no CSS animation
+1144: cbdb-19123 deployment fast preserves complete formal effects once and releases motion lock
+1145: cbdb-19123 power fast preserves complete formal effects once and releases motion lock
+1146: cbdb-19123 deployment reduced preserves complete formal effects once and releases motion lock
+1147: cbdb-19123 reduced persistent motifs have no CSS animation
+1148: cbdb-19123 power reduced preserves complete formal effects once and releases motion lock
+1149: cbdb-19123 reduced persistent motifs have no CSS animation
+1150: manual-1608 deployment fast preserves complete formal effects once and releases motion lock
+1151: manual-1608 power fast preserves complete formal effects once and releases motion lock
+1152: manual-1608 deployment reduced preserves complete formal effects once and releases motion lock
+1153: manual-1608 reduced persistent motifs have no CSS animation
+1154: manual-1608 power reduced preserves complete formal effects once and releases motion lock
+1155: manual-1608 reduced persistent motifs have no CSS animation
+1156: manual-1609 deployment fast preserves complete formal effects once and releases motion lock
+1157: manual-1609 power fast preserves complete formal effects once and releases motion lock
+1158: manual-1609 deployment reduced preserves complete formal effects once and releases motion lock
+1159: manual-1609 reduced persistent motifs have no CSS animation
+1160: manual-1609 power reduced preserves complete formal effects once and releases motion lock
+1161: manual-1609 reduced persistent motifs have no CSS animation
+1162: cbdb-54819 deployment fast preserves complete formal effects once and releases motion lock
+1163: cbdb-54819 power fast preserves complete formal effects once and releases motion lock
+1164: cbdb-54819 deployment reduced preserves complete formal effects once and releases motion lock
+1165: cbdb-54819 reduced persistent motifs have no CSS animation
+1166: cbdb-54819 power reduced preserves complete formal effects once and releases motion lock
+1167: cbdb-54819 reduced persistent motifs have no CSS animation
+1168: cbdb-28093 deployment fast preserves complete formal effects once and releases motion lock
+1169: cbdb-28093 power fast preserves complete formal effects once and releases motion lock
+1170: cbdb-28093 deployment reduced preserves complete formal effects once and releases motion lock
+1171: cbdb-28093 reduced persistent motifs have no CSS animation
+1172: cbdb-28093 power reduced preserves complete formal effects once and releases motion lock
+1173: cbdb-28093 reduced persistent motifs have no CSS animation
+1174: manual-1614 deployment fast preserves complete formal effects once and releases motion lock
+1175: manual-1614 power fast preserves complete formal effects once and releases motion lock
+1176: manual-1614 deployment reduced preserves complete formal effects once and releases motion lock
+1177: manual-1614 reduced persistent motifs have no CSS animation
+1178: manual-1614 power reduced preserves complete formal effects once and releases motion lock
+1179: manual-1614 reduced persistent motifs have no CSS animation
+1180: manual-1611 deployment fast preserves complete formal effects once and releases motion lock
+1181: manual-1611 power fast preserves complete formal effects once and releases motion lock
+1182: manual-1611 deployment reduced preserves complete formal effects once and releases motion lock
+1183: manual-1611 reduced persistent motifs have no CSS animation
+1184: manual-1611 power reduced preserves complete formal effects once and releases motion lock
+1185: manual-1611 reduced persistent motifs have no CSS animation
+1186: cbdb-30374 deployment fast preserves complete formal effects once and releases motion lock
+1187: cbdb-30374 power fast preserves complete formal effects once and releases motion lock
+1188: cbdb-30374 deployment reduced preserves complete formal effects once and releases motion lock
+1189: cbdb-30374 reduced persistent motifs have no CSS animation
+1190: cbdb-30374 power reduced preserves complete formal effects once and releases motion lock
+1191: cbdb-30374 reduced persistent motifs have no CSS animation
+1192: original-57 deployment fast preserves complete formal effects once and releases motion lock
+1193: original-57 power fast preserves complete formal effects once and releases motion lock
+1194: original-57 deployment reduced preserves complete formal effects once and releases motion lock
+1195: original-57 reduced persistent motifs have no CSS animation
+1196: original-57 power reduced preserves complete formal effects once and releases motion lock
+1197: original-57 reduced persistent motifs have no CSS animation
+1198: original-37 deployment fast preserves complete formal effects once and releases motion lock
+1199: original-37 power fast preserves complete formal effects once and releases motion lock
+1200: original-37 deployment reduced preserves complete formal effects once and releases motion lock
+1201: original-37 reduced persistent motifs have no CSS animation
+1202: original-37 power reduced preserves complete formal effects once and releases motion lock
+1203: original-37 reduced persistent motifs have no CSS animation
+1204: manual-1537 deployment fast preserves complete formal effects once and releases motion lock
+1205: manual-1537 power fast preserves complete formal effects once and releases motion lock
+1206: manual-1537 deployment reduced preserves complete formal effects once and releases motion lock
+1207: manual-1537 reduced persistent motifs have no CSS animation
+1208: manual-1537 power reduced preserves complete formal effects once and releases motion lock
+1209: manual-1537 reduced persistent motifs have no CSS animation
+1210: manual-1536 deployment fast preserves complete formal effects once and releases motion lock
+1211: manual-1536 power fast preserves complete formal effects once and releases motion lock
+1212: manual-1536 deployment reduced preserves complete formal effects once and releases motion lock
+1213: manual-1536 reduced persistent motifs have no CSS animation
+1214: manual-1536 power reduced preserves complete formal effects once and releases motion lock
+1215: manual-1536 reduced persistent motifs have no CSS animation
+1216: manual-1513 deployment fast preserves complete formal effects once and releases motion lock
+1217: manual-1513 power fast preserves complete formal effects once and releases motion lock
+1218: manual-1513 deployment reduced preserves complete formal effects once and releases motion lock
+1219: manual-1513 reduced persistent motifs have no CSS animation
+1220: manual-1513 power reduced preserves complete formal effects once and releases motion lock
+1221: manual-1513 reduced persistent motifs have no CSS animation
+1222: original-41 deployment fast preserves complete formal effects once and releases motion lock
+1223: original-41 power fast preserves complete formal effects once and releases motion lock
+1224: original-41 deployment reduced preserves complete formal effects once and releases motion lock
+1225: original-41 reduced persistent motifs have no CSS animation
+1226: original-41 power reduced preserves complete formal effects once and releases motion lock
+1227: original-41 reduced persistent motifs have no CSS animation
+1228: cbdb-25403 deployment fast preserves complete formal effects once and releases motion lock
+1229: cbdb-25403 power fast preserves complete formal effects once and releases motion lock
+1230: cbdb-25403 deployment reduced preserves complete formal effects once and releases motion lock
+1231: cbdb-25403 reduced persistent motifs have no CSS animation
+1232: cbdb-25403 power reduced preserves complete formal effects once and releases motion lock
+1233: cbdb-25403 reduced persistent motifs have no CSS animation
+1234: original-43 deployment fast preserves complete formal effects once and releases motion lock
+1235: original-43 power fast preserves complete formal effects once and releases motion lock
+1236: original-43 deployment reduced preserves complete formal effects once and releases motion lock
+1237: original-43 reduced persistent motifs have no CSS animation
+1238: original-43 power reduced preserves complete formal effects once and releases motion lock
+1239: original-43 reduced persistent motifs have no CSS animation
+1240: original-44 deployment fast preserves complete formal effects once and releases motion lock
+1241: original-44 power fast preserves complete formal effects once and releases motion lock
+1242: original-44 deployment reduced preserves complete formal effects once and releases motion lock
+1243: original-44 reduced persistent motifs have no CSS animation
+1244: original-44 power reduced preserves complete formal effects once and releases motion lock
+1245: original-44 reduced persistent motifs have no CSS animation
+1246: general-422-82978 deployment fast preserves complete formal effects once and releases motion lock
+1247: general-422-82978 power fast preserves complete formal effects once and releases motion lock
+1248: general-422-82978 deployment reduced preserves complete formal effects once and releases motion lock
+1249: general-422-82978 reduced persistent motifs have no CSS animation
+1250: general-422-82978 power reduced preserves complete formal effects once and releases motion lock
+1251: general-422-82978 reduced persistent motifs have no CSS animation
+1252: general-523-68118 deployment fast preserves complete formal effects once and releases motion lock
+1253: general-523-68118 power fast preserves complete formal effects once and releases motion lock
+1254: general-523-68118 deployment reduced preserves complete formal effects once and releases motion lock
+1255: general-523-68118 reduced persistent motifs have no CSS animation
+1256: general-523-68118 power reduced preserves complete formal effects once and releases motion lock
+1257: general-523-68118 reduced persistent motifs have no CSS animation
+1258: general-468-78206 deployment fast preserves complete formal effects once and releases motion lock
+1259: general-468-78206 power fast preserves complete formal effects once and releases motion lock
+1260: general-468-78206 deployment reduced preserves complete formal effects once and releases motion lock
+1261: general-468-78206 reduced persistent motifs have no CSS animation
+1262: general-468-78206 power reduced preserves complete formal effects once and releases motion lock
+1263: general-468-78206 reduced persistent motifs have no CSS animation
+1264: manual-1591 deployment fast preserves complete formal effects once and releases motion lock
+1265: manual-1591 power fast preserves complete formal effects once and releases motion lock
+1266: manual-1591 deployment reduced preserves complete formal effects once and releases motion lock
+1267: manual-1591 reduced persistent motifs have no CSS animation
+1268: manual-1591 power reduced preserves complete formal effects once and releases motion lock
+1269: manual-1591 reduced persistent motifs have no CSS animation
+1270: manual-1590 deployment fast preserves complete formal effects once and releases motion lock
+1271: manual-1590 power fast preserves complete formal effects once and releases motion lock
+1272: manual-1590 deployment reduced preserves complete formal effects once and releases motion lock
+1273: manual-1590 reduced persistent motifs have no CSS animation
+1274: manual-1590 power reduced preserves complete formal effects once and releases motion lock
+1275: manual-1590 reduced persistent motifs have no CSS animation
+1276: original-33 deployment fast preserves complete formal effects once and releases motion lock
+1277: original-33 power fast preserves complete formal effects once and releases motion lock
+1278: original-33 deployment reduced preserves complete formal effects once and releases motion lock
+1279: original-33 reduced persistent motifs have no CSS animation
+1280: original-33 power reduced preserves complete formal effects once and releases motion lock
+1281: original-33 reduced persistent motifs have no CSS animation
+1282: cbdb-630 deployment fast preserves complete formal effects once and releases motion lock
+1283: cbdb-630 power fast preserves complete formal effects once and releases motion lock
+1284: cbdb-630 deployment reduced preserves complete formal effects once and releases motion lock
+1285: cbdb-630 reduced persistent motifs have no CSS animation
+1286: cbdb-630 power reduced preserves complete formal effects once and releases motion lock
+1287: cbdb-630 reduced persistent motifs have no CSS animation
+1288: general-403-90513 deployment fast preserves complete formal effects once and releases motion lock
+1289: general-403-90513 power fast preserves complete formal effects once and releases motion lock
+1290: general-403-90513 deployment reduced preserves complete formal effects once and releases motion lock
+1291: general-403-90513 reduced persistent motifs have no CSS animation
+1292: general-403-90513 power reduced preserves complete formal effects once and releases motion lock
+1293: general-403-90513 reduced persistent motifs have no CSS animation
+1294: manual-1582 deployment fast preserves complete formal effects once and releases motion lock
+1295: manual-1582 power fast preserves complete formal effects once and releases motion lock
+1296: manual-1582 deployment reduced preserves complete formal effects once and releases motion lock
+1297: manual-1582 reduced persistent motifs have no CSS animation
+1298: manual-1582 power reduced preserves complete formal effects once and releases motion lock
+1299: manual-1582 reduced persistent motifs have no CSS animation
+1300: original-29 deployment fast preserves complete formal effects once and releases motion lock
+1301: original-29 power fast preserves complete formal effects once and releases motion lock
+1302: original-29 deployment reduced preserves complete formal effects once and releases motion lock
+1303: original-29 reduced persistent motifs have no CSS animation
+1304: original-29 power reduced preserves complete formal effects once and releases motion lock
+1305: original-29 reduced persistent motifs have no CSS animation
+1306: general-298-58873 deployment fast preserves complete formal effects once and releases motion lock
+1307: general-298-58873 power fast preserves complete formal effects once and releases motion lock
+1308: general-298-58873 deployment reduced preserves complete formal effects once and releases motion lock
+1309: general-298-58873 reduced persistent motifs have no CSS animation
+1310: general-298-58873 power reduced preserves complete formal effects once and releases motion lock
+1311: general-298-58873 reduced persistent motifs have no CSS animation
+1312: cbdb-94373 deployment fast preserves complete formal effects once and releases motion lock
+1313: cbdb-94373 power fast preserves complete formal effects once and releases motion lock
+1314: cbdb-94373 deployment reduced preserves complete formal effects once and releases motion lock
+1315: cbdb-94373 reduced persistent motifs have no CSS animation
+1316: cbdb-94373 power reduced preserves complete formal effects once and releases motion lock
+1317: cbdb-94373 reduced persistent motifs have no CSS animation
+1318: general-790-68223 deployment fast preserves complete formal effects once and releases motion lock
+1319: general-790-68223 power fast preserves complete formal effects once and releases motion lock
+1320: general-790-68223 deployment reduced preserves complete formal effects once and releases motion lock
+1321: general-790-68223 reduced persistent motifs have no CSS animation
+1322: general-790-68223 power reduced preserves complete formal effects once and releases motion lock
+1323: general-790-68223 reduced persistent motifs have no CSS animation
+1324: general-296-67948 deployment fast preserves complete formal effects once and releases motion lock
+1325: general-296-67948 power fast preserves complete formal effects once and releases motion lock
+1326: general-296-67948 deployment reduced preserves complete formal effects once and releases motion lock
+1327: general-296-67948 reduced persistent motifs have no CSS animation
+1328: general-296-67948 power reduced preserves complete formal effects once and releases motion lock
+1329: general-296-67948 reduced persistent motifs have no CSS animation
+1330: manual-1544 deployment fast preserves complete formal effects once and releases motion lock
+1331: manual-1544 power fast preserves complete formal effects once and releases motion lock
+1332: manual-1544 deployment reduced preserves complete formal effects once and releases motion lock
+1333: manual-1544 reduced persistent motifs have no CSS animation
+1334: manual-1544 power reduced preserves complete formal effects once and releases motion lock
+1335: manual-1544 reduced persistent motifs have no CSS animation
+1336: cbdb-898 deployment fast preserves complete formal effects once and releases motion lock
+1337: cbdb-898 power fast preserves complete formal effects once and releases motion lock
+1338: cbdb-898 deployment reduced preserves complete formal effects once and releases motion lock
+1339: cbdb-898 reduced persistent motifs have no CSS animation
+1340: cbdb-898 power reduced preserves complete formal effects once and releases motion lock
+1341: cbdb-898 reduced persistent motifs have no CSS animation
+1342: general-113-60981 deployment fast preserves complete formal effects once and releases motion lock
+1343: general-113-60981 power fast preserves complete formal effects once and releases motion lock
+1344: general-113-60981 deployment reduced preserves complete formal effects once and releases motion lock
+1345: general-113-60981 reduced persistent motifs have no CSS animation
+1346: general-113-60981 power reduced preserves complete formal effects once and releases motion lock
+1347: general-113-60981 reduced persistent motifs have no CSS animation
+1348: manual-1509 deployment fast preserves complete formal effects once and releases motion lock
+1349: manual-1509 power fast preserves complete formal effects once and releases motion lock
+1350: manual-1509 deployment reduced preserves complete formal effects once and releases motion lock
+1351: manual-1509 reduced persistent motifs have no CSS animation
+1352: manual-1509 power reduced preserves complete formal effects once and releases motion lock
+1353: manual-1509 reduced persistent motifs have no CSS animation
+1354: manual-1579 deployment fast preserves complete formal effects once and releases motion lock
+1355: manual-1579 power fast preserves complete formal effects once and releases motion lock
+1356: manual-1579 deployment reduced preserves complete formal effects once and releases motion lock
+1357: manual-1579 reduced persistent motifs have no CSS animation
+1358: manual-1579 power reduced preserves complete formal effects once and releases motion lock
+1359: manual-1579 reduced persistent motifs have no CSS animation
+1360: manual-1519 deployment fast preserves complete formal effects once and releases motion lock
+1361: manual-1519 power fast preserves complete formal effects once and releases motion lock
+1362: manual-1519 deployment reduced preserves complete formal effects once and releases motion lock
+1363: manual-1519 reduced persistent motifs have no CSS animation
+1364: manual-1519 power reduced preserves complete formal effects once and releases motion lock
+1365: manual-1519 reduced persistent motifs have no CSS animation
+1366: general-874-55746 deployment fast preserves complete formal effects once and releases motion lock
+1367: general-874-55746 power fast preserves complete formal effects once and releases motion lock
+1368: general-874-55746 deployment reduced preserves complete formal effects once and releases motion lock
+1369: general-874-55746 reduced persistent motifs have no CSS animation
+1370: general-874-55746 power reduced preserves complete formal effects once and releases motion lock
+1371: general-874-55746 reduced persistent motifs have no CSS animation
+1372: manual-1530 deployment fast preserves complete formal effects once and releases motion lock
+1373: manual-1530 power fast preserves complete formal effects once and releases motion lock
+1374: manual-1530 deployment reduced preserves complete formal effects once and releases motion lock
+1375: manual-1530 reduced persistent motifs have no CSS animation
+1376: manual-1530 power reduced preserves complete formal effects once and releases motion lock
+1377: manual-1530 reduced persistent motifs have no CSS animation
+1378: original-16 deployment fast preserves complete formal effects once and releases motion lock
+1379: original-16 power fast preserves complete formal effects once and releases motion lock
+1380: original-16 deployment reduced preserves complete formal effects once and releases motion lock
+1381: original-16 reduced persistent motifs have no CSS animation
+1382: original-16 power reduced preserves complete formal effects once and releases motion lock
+1383: original-16 reduced persistent motifs have no CSS animation
+1384: manual-1543 deployment fast preserves complete formal effects once and releases motion lock
+1385: manual-1543 power fast preserves complete formal effects once and releases motion lock
+1386: manual-1543 deployment reduced preserves complete formal effects once and releases motion lock
+1387: manual-1543 reduced persistent motifs have no CSS animation
+1388: manual-1543 power reduced preserves complete formal effects once and releases motion lock
+1389: manual-1543 reduced persistent motifs have no CSS animation
+1390: original-14 deployment fast preserves complete formal effects once and releases motion lock
+1391: original-14 power fast preserves complete formal effects once and releases motion lock
+1392: original-14 deployment reduced preserves complete formal effects once and releases motion lock
+1393: original-14 reduced persistent motifs have no CSS animation
+1394: original-14 power reduced preserves complete formal effects once and releases motion lock
+1395: original-14 reduced persistent motifs have no CSS animation
+1396: manual-1629 deployment fast preserves complete formal effects once and releases motion lock
+1397: manual-1629 power fast preserves complete formal effects once and releases motion lock
+1398: manual-1629 deployment reduced preserves complete formal effects once and releases motion lock
+1399: manual-1629 reduced persistent motifs have no CSS animation
+1400: manual-1629 power reduced preserves complete formal effects once and releases motion lock
+1401: manual-1629 reduced persistent motifs have no CSS animation
+1402: manual-1510 deployment fast preserves complete formal effects once and releases motion lock
+1403: manual-1510 power fast preserves complete formal effects once and releases motion lock
+1404: manual-1510 deployment reduced preserves complete formal effects once and releases motion lock
+1405: manual-1510 reduced persistent motifs have no CSS animation
+1406: manual-1510 power reduced preserves complete formal effects once and releases motion lock
+1407: manual-1510 reduced persistent motifs have no CSS animation
+1408: cbdb-1762 deployment fast preserves complete formal effects once and releases motion lock
+1409: cbdb-1762 power fast preserves complete formal effects once and releases motion lock
+1410: cbdb-1762 deployment reduced preserves complete formal effects once and releases motion lock
+1411: cbdb-1762 reduced persistent motifs have no CSS animation
+1412: cbdb-1762 power reduced preserves complete formal effects once and releases motion lock
+1413: cbdb-1762 reduced persistent motifs have no CSS animation
+1414: cbdb-34344 deployment fast preserves complete formal effects once and releases motion lock
+1415: cbdb-34344 power fast preserves complete formal effects once and releases motion lock
+1416: cbdb-34344 deployment reduced preserves complete formal effects once and releases motion lock
+1417: cbdb-34344 reduced persistent motifs have no CSS animation
+1418: cbdb-34344 power reduced preserves complete formal effects once and releases motion lock
+1419: cbdb-34344 reduced persistent motifs have no CSS animation
+1420: cbdb-8043 deployment fast preserves complete formal effects once and releases motion lock
+1421: cbdb-8043 power fast preserves complete formal effects once and releases motion lock
+1422: cbdb-8043 deployment reduced preserves complete formal effects once and releases motion lock
+1423: cbdb-8043 reduced persistent motifs have no CSS animation
+1424: cbdb-8043 power reduced preserves complete formal effects once and releases motion lock
+1425: cbdb-8043 reduced persistent motifs have no CSS animation
+1426: original-8 deployment fast preserves complete formal effects once and releases motion lock
+1427: original-8 power fast preserves complete formal effects once and releases motion lock
+1428: original-8 deployment reduced preserves complete formal effects once and releases motion lock
+1429: original-8 reduced persistent motifs have no CSS animation
+1430: original-8 power reduced preserves complete formal effects once and releases motion lock
+1431: original-8 reduced persistent motifs have no CSS animation
+1432: manual-1529 deployment fast preserves complete formal effects once and releases motion lock
+1433: manual-1529 power fast preserves complete formal effects once and releases motion lock
+1434: manual-1529 deployment reduced preserves complete formal effects once and releases motion lock
+1435: manual-1529 reduced persistent motifs have no CSS animation
+1436: manual-1529 power reduced preserves complete formal effects once and releases motion lock
+1437: manual-1529 reduced persistent motifs have no CSS animation
+1438: manual-1527 deployment fast preserves complete formal effects once and releases motion lock
+1439: manual-1527 power fast preserves complete formal effects once and releases motion lock
+1440: manual-1527 deployment reduced preserves complete formal effects once and releases motion lock
+1441: manual-1527 reduced persistent motifs have no CSS animation
+1442: manual-1527 power reduced preserves complete formal effects once and releases motion lock
+1443: manual-1527 reduced persistent motifs have no CSS animation
+1444: cbdb-17364 deployment fast preserves complete formal effects once and releases motion lock
+1445: cbdb-17364 power fast preserves complete formal effects once and releases motion lock
+1446: cbdb-17364 deployment reduced preserves complete formal effects once and releases motion lock
+1447: cbdb-17364 reduced persistent motifs have no CSS animation
+1448: cbdb-17364 power reduced preserves complete formal effects once and releases motion lock
+1449: cbdb-17364 reduced persistent motifs have no CSS animation
+1450: original-4 deployment fast preserves complete formal effects once and releases motion lock
+1451: original-4 power fast preserves complete formal effects once and releases motion lock
+1452: original-4 deployment reduced preserves complete formal effects once and releases motion lock
+1453: original-4 reduced persistent motifs have no CSS animation
+1454: original-4 power reduced preserves complete formal effects once and releases motion lock
+1455: original-4 reduced persistent motifs have no CSS animation
+1456: manual-1523 deployment fast preserves complete formal effects once and releases motion lock
+1457: manual-1523 power fast preserves complete formal effects once and releases motion lock
+1458: manual-1523 deployment reduced preserves complete formal effects once and releases motion lock
+1459: manual-1523 reduced persistent motifs have no CSS animation
+1460: manual-1523 power reduced preserves complete formal effects once and releases motion lock
+1461: manual-1523 reduced persistent motifs have no CSS animation
+1462: cbdb-1384 deployment fast preserves complete formal effects once and releases motion lock
+1463: cbdb-1384 power fast preserves complete formal effects once and releases motion lock
+1464: cbdb-1384 deployment reduced preserves complete formal effects once and releases motion lock
+1465: cbdb-1384 reduced persistent motifs have no CSS animation
+1466: cbdb-1384 power reduced preserves complete formal effects once and releases motion lock
+1467: cbdb-1384 reduced persistent motifs have no CSS animation
+1468: cbdb-27948 deployment fast preserves complete formal effects once and releases motion lock
+1469: cbdb-27948 power fast preserves complete formal effects once and releases motion lock
+1470: cbdb-27948 deployment reduced preserves complete formal effects once and releases motion lock
+1471: cbdb-27948 reduced persistent motifs have no CSS animation
+1472: cbdb-27948 power reduced preserves complete formal effects once and releases motion lock
+1473: cbdb-27948 reduced persistent motifs have no CSS animation
+1474: cbdb-3767 deployment fast preserves complete formal effects once and releases motion lock
+1475: cbdb-3767 power fast preserves complete formal effects once and releases motion lock
+1476: cbdb-3767 deployment reduced preserves complete formal effects once and releases motion lock
+1477: cbdb-3767 reduced persistent motifs have no CSS animation
+1478: cbdb-3767 power reduced preserves complete formal effects once and releases motion lock
+1479: cbdb-3767 reduced persistent motifs have no CSS animation
+1480: cbdb-8175 deployment fast preserves complete formal effects once and releases motion lock
+1481: cbdb-8175 power fast preserves complete formal effects once and releases motion lock
+1482: cbdb-8175 deployment reduced preserves complete formal effects once and releases motion lock
+1483: cbdb-8175 reduced persistent motifs have no CSS animation
+1484: cbdb-8175 power reduced preserves complete formal effects once and releases motion lock
+1485: cbdb-8175 reduced persistent motifs have no CSS animation
+1486: manual-1554 deployment fast preserves complete formal effects once and releases motion lock
+1487: manual-1554 power fast preserves complete formal effects once and releases motion lock
+1488: manual-1554 deployment reduced preserves complete formal effects once and releases motion lock
+1489: manual-1554 reduced persistent motifs have no CSS animation
+1490: manual-1554 power reduced preserves complete formal effects once and releases motion lock
+1491: manual-1554 reduced persistent motifs have no CSS animation
+1492: 1440px card5:7 and fixed hero/power native hit areas remain intact
+1493: 1000px card5:7 and fixed hero/power native hit areas remain intact
+1494: 800px card5:7 and fixed hero/power native hit areas remain intact
+1495: battle character gallery links the same actual ID and labels original dialogue
+1496: complete deck shares the same actual character motif without reassigning identity
+1497: cbdb-27948 next historical battle illustration keeps identity, concise rules and5:7
+1498: cbdb-27948 actual raster decodes and cover preserves stable native hit area
+1499: cbdb-27948 actual deployment and effects exactly match formal engine once
+1500: cbdb-27948 commander uses the identical ID battle illustration
+1501: cbdb-3767 next historical battle illustration keeps identity, concise rules and5:7
+1502: cbdb-3767 actual raster decodes and cover preserves stable native hit area
+1503: cbdb-3767 actual deployment and effects exactly match formal engine once
+1504: cbdb-3767 commander uses the identical ID battle illustration
+1505: cbdb-1384 next historical battle illustration keeps identity, concise rules and5:7
+1506: cbdb-1384 actual raster decodes and cover preserves stable native hit area
+1507: cbdb-1384 actual deployment and effects exactly match formal engine once
+1508: cbdb-1384 commander uses the identical ID battle illustration
+1509: manual-1523 next historical battle illustration keeps identity, concise rules and5:7
+1510: manual-1523 actual raster decodes and cover preserves stable native hit area
+1511: manual-1523 actual deployment and effects exactly match formal engine once
+1512: manual-1523 commander uses the identical ID battle illustration
+1513: original-4 next historical battle illustration keeps identity, concise rules and5:7
+1514: original-4 actual raster decodes and cover preserves stable native hit area
+1515: original-4 actual deployment and effects exactly match formal engine once
+1516: original-4 commander uses the identical ID battle illustration
+1517: cbdb-17364 next historical battle illustration keeps identity, concise rules and5:7
+1518: cbdb-17364 actual raster decodes and cover preserves stable native hit area
+1519: cbdb-17364 actual deployment and effects exactly match formal engine once
+1520: cbdb-17364 commander uses the identical ID battle illustration
+1521: manual-1527 next historical battle illustration keeps identity, concise rules and5:7
+1522: manual-1527 actual raster decodes and cover preserves stable native hit area
+1523: manual-1527 actual deployment and effects exactly match formal engine once
+1524: manual-1527 commander uses the identical ID battle illustration
+1525: manual-1529 next historical battle illustration keeps identity, concise rules and5:7
+1526: manual-1529 actual raster decodes and cover preserves stable native hit area
+1527: manual-1529 actual deployment and effects exactly match formal engine once
+1528: manual-1529 commander uses the identical ID battle illustration
+1529: original-8 next historical battle illustration keeps identity, concise rules and5:7
+1530: original-8 actual raster decodes and cover preserves stable native hit area
+1531: original-8 actual deployment and effects exactly match formal engine once
+1532: original-8 commander uses the identical ID battle illustration
+1533: cbdb-8043 next historical battle illustration keeps identity, concise rules and5:7
+1534: cbdb-8043 actual raster decodes and cover preserves stable native hit area
+1535: cbdb-8043 actual deployment and effects exactly match formal engine once
+1536: cbdb-8043 commander uses the identical ID battle illustration
+1537: cbdb-34344 next historical battle illustration keeps identity, concise rules and5:7
+1538: cbdb-34344 actual raster decodes and cover preserves stable native hit area
+1539: cbdb-34344 actual deployment and effects exactly match formal engine once
+1540: cbdb-34344 commander uses the identical ID battle illustration
+1541: cbdb-1762 next historical battle illustration keeps identity, concise rules and5:7
+1542: cbdb-1762 actual raster decodes and cover preserves stable native hit area
+1543: cbdb-1762 actual deployment and effects exactly match formal engine once
+1544: cbdb-1762 commander uses the identical ID battle illustration
+1545: manual-1510 next historical battle illustration keeps identity, concise rules and5:7
+1546: manual-1510 actual raster decodes and cover preserves stable native hit area
+1547: manual-1510 actual deployment and effects exactly match formal engine once
+1548: manual-1510 commander uses the identical ID battle illustration
+1549: manual-1629 next historical battle illustration keeps identity, concise rules and5:7
+1550: manual-1629 actual raster decodes and cover preserves stable native hit area
+1551: manual-1629 actual deployment and effects exactly match formal engine once
+1552: manual-1629 commander uses the identical ID battle illustration
+1553: original-14 next historical battle illustration keeps identity, concise rules and5:7
+1554: original-14 actual raster decodes and cover preserves stable native hit area
+1555: original-14 actual deployment and effects exactly match formal engine once
+1556: original-14 commander uses the identical ID battle illustration
+1557: manual-1543 next historical battle illustration keeps identity, concise rules and5:7
+1558: manual-1543 actual raster decodes and cover preserves stable native hit area
+1559: manual-1543 actual deployment and effects exactly match formal engine once
+1560: manual-1543 commander uses the identical ID battle illustration
+1561: original-16 next historical battle illustration keeps identity, concise rules and5:7
+1562: original-16 actual raster decodes and cover preserves stable native hit area
+1563: original-16 actual deployment and effects exactly match formal engine once
+1564: original-16 commander uses the identical ID battle illustration
+1565: manual-1530 next historical battle illustration keeps identity, concise rules and5:7
+1566: manual-1530 actual raster decodes and cover preserves stable native hit area
+1567: manual-1530 actual deployment and effects exactly match formal engine once
+1568: manual-1530 commander uses the identical ID battle illustration
+1569: general-874-55746 next historical battle illustration keeps identity, concise rules and5:7
+1570: general-874-55746 actual raster decodes and cover preserves stable native hit area
+1571: general-874-55746 actual deployment and effects exactly match formal engine once
+1572: general-874-55746 commander uses the identical ID battle illustration
+1573: manual-1519 next historical battle illustration keeps identity, concise rules and5:7
+1574: manual-1519 actual raster decodes and cover preserves stable native hit area
+1575: manual-1519 actual deployment and effects exactly match formal engine once
+1576: manual-1519 commander uses the identical ID battle illustration
+1577: manual-1579 next historical battle illustration keeps identity, concise rules and5:7
+1578: manual-1579 actual raster decodes and cover preserves stable native hit area
+1579: manual-1579 actual deployment and effects exactly match formal engine once
+1580: manual-1579 commander uses the identical ID battle illustration
+1581: manual-1509 next historical battle illustration keeps identity, concise rules and5:7
+1582: manual-1509 actual raster decodes and cover preserves stable native hit area
+1583: manual-1509 actual deployment and effects exactly match formal engine once
+1584: manual-1509 commander uses the identical ID battle illustration
+1585: general-113-60981 next historical battle illustration keeps identity, concise rules and5:7
+1586: general-113-60981 actual raster decodes and cover preserves stable native hit area
+1587: general-113-60981 actual deployment and effects exactly match formal engine once
+1588: general-113-60981 commander uses the identical ID battle illustration
+1589: cbdb-898 next historical battle illustration keeps identity, concise rules and5:7
+1590: cbdb-898 actual raster decodes and cover preserves stable native hit area
+1591: cbdb-898 actual deployment and effects exactly match formal engine once
+1592: Kou Zhun real enemy target retains frozen state and visible status after the new portrait deployment
+1593: cbdb-898 commander uses the identical ID battle illustration
+1594: manual-1544 next historical battle illustration keeps identity, concise rules and5:7
+1595: manual-1544 actual raster decodes and cover preserves stable native hit area
+1596: manual-1544 actual deployment and effects exactly match formal engine once
+1597: manual-1544 commander uses the identical ID battle illustration
+1598: general-296-67948 next historical battle illustration keeps identity, concise rules and5:7
+1599: general-296-67948 actual raster decodes and cover preserves stable native hit area
+1600: general-296-67948 actual deployment and effects exactly match formal engine once
+1601: general-296-67948 commander uses the identical ID battle illustration
+1602: general-790-68223 next historical battle illustration keeps identity, concise rules and5:7
+1603: general-790-68223 actual raster decodes and cover preserves stable native hit area
+1604: general-790-68223 actual deployment and effects exactly match formal engine once
+1605: general-790-68223 commander uses the identical ID battle illustration
+1606: cbdb-94373 next historical battle illustration keeps identity, concise rules and5:7
+1607: cbdb-94373 actual raster decodes and cover preserves stable native hit area
+1608: cbdb-94373 actual deployment and effects exactly match formal engine once
+1609: cbdb-94373 commander uses the identical ID battle illustration
+1610: general-298-58873 next historical battle illustration keeps identity, concise rules and5:7
+1611: general-298-58873 actual raster decodes and cover preserves stable native hit area
+1612: general-298-58873 actual deployment and effects exactly match formal engine once
+1613: general-298-58873 commander uses the identical ID battle illustration
+1614: original-29 next historical battle illustration keeps identity, concise rules and5:7
+1615: original-29 actual raster decodes and cover preserves stable native hit area
+1616: original-29 actual deployment and effects exactly match formal engine once
+1617: original-29 commander uses the identical ID battle illustration
+1618: manual-1582 next historical battle illustration keeps identity, concise rules and5:7
+1619: manual-1582 actual raster decodes and cover preserves stable native hit area
+1620: manual-1582 actual deployment and effects exactly match formal engine once
+1621: manual-1582 commander uses the identical ID battle illustration
+1622: general-403-90513 next historical battle illustration keeps identity, concise rules and5:7
+1623: general-403-90513 actual raster decodes and cover preserves stable native hit area
+1624: general-403-90513 actual deployment and effects exactly match formal engine once
+1625: general-403-90513 commander uses the identical ID battle illustration
+1626: cbdb-630 next historical battle illustration keeps identity, concise rules and5:7
+1627: cbdb-630 actual raster decodes and cover preserves stable native hit area
+1628: cbdb-630 actual deployment and effects exactly match formal engine once
+1629: cbdb-630 commander uses the identical ID battle illustration
+1630: original-33 next historical battle illustration keeps identity, concise rules and5:7
+1631: original-33 actual raster decodes and cover preserves stable native hit area
+1632: original-33 actual deployment and effects exactly match formal engine once
+1633: original-33 commander uses the identical ID battle illustration
+1634: manual-1590 next historical battle illustration keeps identity, concise rules and5:7
+1635: manual-1590 actual raster decodes and cover preserves stable native hit area
+1636: manual-1590 actual deployment and effects exactly match formal engine once
+1637: manual-1590 commander uses the identical ID battle illustration
+1638: manual-1591 next historical battle illustration keeps identity, concise rules and5:7
+1639: manual-1591 actual raster decodes and cover preserves stable native hit area
+1640: manual-1591 actual deployment and effects exactly match formal engine once
+1641: manual-1591 commander uses the identical ID battle illustration
+1642: general-468-78206 next historical battle illustration keeps identity, concise rules and5:7
+1643: general-468-78206 actual raster decodes and cover preserves stable native hit area
+1644: general-468-78206 actual deployment and effects exactly match formal engine once
+1645: general-468-78206 commander uses the identical ID battle illustration
+1646: original-37 next historical battle illustration keeps identity, concise rules and5:7
+1647: original-37 actual raster decodes and cover preserves stable native hit area
+1648: original-37 actual deployment and effects exactly match formal engine once
+1649: original-37 commander uses the identical ID battle illustration
+1650: manual-1537 next historical battle illustration keeps identity, concise rules and5:7
+1651: manual-1537 actual raster decodes and cover preserves stable native hit area
+1652: manual-1537 actual deployment and effects exactly match formal engine once
+1653: manual-1537 commander uses the identical ID battle illustration
+1654: manual-1536 next historical battle illustration keeps identity, concise rules and5:7
+1655: manual-1536 actual raster decodes and cover preserves stable native hit area
+1656: manual-1536 actual deployment and effects exactly match formal engine once
+1657: manual-1536 commander uses the identical ID battle illustration
+1658: manual-1513 next historical battle illustration keeps identity, concise rules and5:7
+1659: manual-1513 actual raster decodes and cover preserves stable native hit area
+1660: manual-1513 actual deployment and effects exactly match formal engine once
+1661: manual-1513 commander uses the identical ID battle illustration
+1662: original-41 next historical battle illustration keeps identity, concise rules and5:7
+1663: original-41 actual raster decodes and cover preserves stable native hit area
+1664: original-41 actual deployment and effects exactly match formal engine once
+1665: original-41 commander uses the identical ID battle illustration
+1666: cbdb-25403 next historical battle illustration keeps identity, concise rules and5:7
+1667: cbdb-25403 actual raster decodes and cover preserves stable native hit area
+1668: cbdb-25403 actual deployment and effects exactly match formal engine once
+1669: cbdb-25403 commander uses the identical ID battle illustration
+1670: original-43 next historical battle illustration keeps identity, concise rules and5:7
+1671: original-43 actual raster decodes and cover preserves stable native hit area
+1672: original-43 actual deployment and effects exactly match formal engine once
+1673: original-43 commander uses the identical ID battle illustration
+1674: original-44 next historical battle illustration keeps identity, concise rules and5:7
+1675: original-44 actual raster decodes and cover preserves stable native hit area
+1676: original-44 actual deployment and effects exactly match formal engine once
+1677: original-44 commander uses the identical ID battle illustration
+1678: general-422-82978 next historical battle illustration keeps identity, concise rules and5:7
+1679: general-422-82978 actual raster decodes and cover preserves stable native hit area
+1680: general-422-82978 actual deployment and effects exactly match formal engine once
+1681: general-422-82978 commander uses the identical ID battle illustration
+1682: general-523-68118 next historical battle illustration keeps identity, concise rules and5:7
+1683: general-523-68118 actual raster decodes and cover preserves stable native hit area
+1684: general-523-68118 actual deployment and effects exactly match formal engine once
+1685: general-523-68118 commander uses the identical ID battle illustration
+1686: cbdb-1488 next historical battle illustration keeps identity, concise rules and5:7
+1687: cbdb-1488 actual raster decodes and cover preserves stable native hit area
+1688: cbdb-1488 actual deployment and effects exactly match formal engine once
+1689: cbdb-1488 commander uses the identical ID battle illustration
+1690: cbdb-8175 next historical battle illustration keeps identity, concise rules and5:7
+1691: cbdb-8175 actual raster decodes and cover preserves stable native hit area
+1692: cbdb-8175 actual deployment and effects exactly match formal engine once
+1693: cbdb-8175 commander uses the identical ID battle illustration
+1694: cbdb-19123 next historical battle illustration keeps identity, concise rules and5:7
+1695: cbdb-19123 actual raster decodes and cover preserves stable native hit area
+1696: cbdb-19123 actual deployment and effects exactly match formal engine once
+1697: cbdb-19123 commander uses the identical ID battle illustration
+1698: manual-1608 next historical battle illustration keeps identity, concise rules and5:7
+1699: manual-1608 actual raster decodes and cover preserves stable native hit area
+1700: manual-1608 actual deployment and effects exactly match formal engine once
+1701: manual-1608 commander uses the identical ID battle illustration
+1702: manual-1609 next historical battle illustration keeps identity, concise rules and5:7
+1703: manual-1609 actual raster decodes and cover preserves stable native hit area
+1704: manual-1609 actual deployment and effects exactly match formal engine once
+1705: manual-1609 commander uses the identical ID battle illustration
+1706: cbdb-54819 next historical battle illustration keeps identity, concise rules and5:7
+1707: cbdb-54819 actual raster decodes and cover preserves stable native hit area
+1708: cbdb-54819 actual deployment and effects exactly match formal engine once
+1709: cbdb-54819 commander uses the identical ID battle illustration
+1710: cbdb-28093 next historical battle illustration keeps identity, concise rules and5:7
+1711: cbdb-28093 actual raster decodes and cover preserves stable native hit area
+1712: cbdb-28093 actual deployment and effects exactly match formal engine once
+1713: cbdb-28093 commander uses the identical ID battle illustration
+1714: manual-1614 next historical battle illustration keeps identity, concise rules and5:7
+1715: manual-1614 actual raster decodes and cover preserves stable native hit area
+1716: manual-1614 actual deployment and effects exactly match formal engine once
+1717: manual-1614 commander uses the identical ID battle illustration
+1718: manual-1611 next historical battle illustration keeps identity, concise rules and5:7
+1719: manual-1611 actual raster decodes and cover preserves stable native hit area
+1720: manual-1611 actual deployment and effects exactly match formal engine once
+1721: manual-1611 commander uses the identical ID battle illustration
+1722: cbdb-30374 next historical battle illustration keeps identity, concise rules and5:7
+1723: cbdb-30374 actual raster decodes and cover preserves stable native hit area
+1724: cbdb-30374 actual deployment and effects exactly match formal engine once
+1725: cbdb-30374 commander uses the identical ID battle illustration
+1726: original-57 next historical battle illustration keeps identity, concise rules and5:7
+1727: original-57 actual raster decodes and cover preserves stable native hit area
+1728: original-57 actual deployment and effects exactly match formal engine once
+1729: original-57 commander uses the identical ID battle illustration
+1730: cbdb-8008 next historical battle illustration keeps identity, concise rules and5:7
+1731: cbdb-8008 actual raster decodes and cover preserves stable native hit area
+1732: cbdb-8008 actual deployment and effects exactly match formal engine once
+1733: cbdb-8008 commander uses the identical ID battle illustration
+1734: original-59 next historical battle illustration keeps identity, concise rules and5:7
+1735: original-59 actual raster decodes and cover preserves stable native hit area
+1736: original-59 actual deployment and effects exactly match formal engine once
+1737: original-59 commander uses the identical ID battle illustration
+1738: manual-1592 next historical battle illustration keeps identity, concise rules and5:7
+1739: manual-1592 actual raster decodes and cover preserves stable native hit area
+1740: manual-1592 actual deployment and effects exactly match formal engine once
+1741: manual-1592 commander uses the identical ID battle illustration
+1742: manual-1507 next historical battle illustration keeps identity, concise rules and5:7
+1743: manual-1507 actual raster decodes and cover preserves stable native hit area
+1744: manual-1507 actual deployment and effects exactly match formal engine once
+1745: manual-1507 commander uses the identical ID battle illustration
+1746: original-62 next historical battle illustration keeps identity, concise rules and5:7
+1747: original-62 actual raster decodes and cover preserves stable native hit area
+1748: original-62 actual deployment and effects exactly match formal engine once
+1749: original-62 commander uses the identical ID battle illustration
+1750: original-63 next historical battle illustration keeps identity, concise rules and5:7
+1751: original-63 actual raster decodes and cover preserves stable native hit area
+1752: original-63 actual deployment and effects exactly match formal engine once
+1753: original-63 commander uses the identical ID battle illustration
+1754: original-64 next historical battle illustration keeps identity, concise rules and5:7
+1755: original-64 actual raster decodes and cover preserves stable native hit area
+1756: original-64 actual deployment and effects exactly match formal engine once
+1757: original-64 commander uses the identical ID battle illustration
+1758: original-65 next historical battle illustration keeps identity, concise rules and5:7
+1759: original-65 actual raster decodes and cover preserves stable native hit area
+1760: original-65 actual deployment and effects exactly match formal engine once
+1761: original-65 commander uses the identical ID battle illustration
+1762: original-66 next historical battle illustration keeps identity, concise rules and5:7
+1763: original-66 actual raster decodes and cover preserves stable native hit area
+1764: original-66 actual deployment and effects exactly match formal engine once
+1765: original-66 commander uses the identical ID battle illustration
+1766: manual-1512 next historical battle illustration keeps identity, concise rules and5:7
+1767: manual-1512 actual raster decodes and cover preserves stable native hit area
+1768: manual-1512 actual deployment and effects exactly match formal engine once
+1769: manual-1512 commander uses the identical ID battle illustration
+1770: original-68 next historical battle illustration keeps identity, concise rules and5:7
+1771: original-68 actual raster decodes and cover preserves stable native hit area
+1772: original-68 actual deployment and effects exactly match formal engine once
+1773: original-68 commander uses the identical ID battle illustration
+1774: original-69 next historical battle illustration keeps identity, concise rules and5:7
+1775: original-69 actual raster decodes and cover preserves stable native hit area
+1776: original-69 actual deployment and effects exactly match formal engine once
+1777: original-69 commander uses the identical ID battle illustration
+1778: manual-1520 next historical battle illustration keeps identity, concise rules and5:7
+1779: manual-1520 actual raster decodes and cover preserves stable native hit area
+1780: manual-1520 actual deployment and effects exactly match formal engine once
+1781: manual-1520 commander uses the identical ID battle illustration
+1782: manual-1521 next historical battle illustration keeps identity, concise rules and5:7
+1783: manual-1521 actual raster decodes and cover preserves stable native hit area
+1784: manual-1521 actual deployment and effects exactly match formal engine once
+1785: manual-1521 commander uses the identical ID battle illustration
+1786: manual-1518 next historical battle illustration keeps identity, concise rules and5:7
+1787: manual-1518 actual raster decodes and cover preserves stable native hit area
+1788: manual-1518 actual deployment and effects exactly match formal engine once
+1789: manual-1518 commander uses the identical ID battle illustration
+1790: manual-1522 next historical battle illustration keeps identity, concise rules and5:7
+1791: manual-1522 actual raster decodes and cover preserves stable native hit area
+1792: manual-1522 actual deployment and effects exactly match formal engine once
+1793: manual-1522 commander uses the identical ID battle illustration
+1794: manual-1524 next historical battle illustration keeps identity, concise rules and5:7
+1795: manual-1524 actual raster decodes and cover preserves stable native hit area
+1796: manual-1524 actual deployment and effects exactly match formal engine once
+1797: manual-1524 commander uses the identical ID battle illustration
+1798: general-56-58629 next historical battle illustration keeps identity, concise rules and5:7
+1799: general-56-58629 actual raster decodes and cover preserves stable native hit area
+1800: general-56-58629 actual deployment and effects exactly match formal engine once
+1801: general-56-58629 commander uses the identical ID battle illustration
+1802: general-103-50637 next historical battle illustration keeps identity, concise rules and5:7
+1803: general-103-50637 actual raster decodes and cover preserves stable native hit area
+1804: general-103-50637 actual deployment and effects exactly match formal engine once
+1805: general-103-50637 commander uses the identical ID battle illustration
+1806: original-77 next historical battle illustration keeps identity, concise rules and5:7
+1807: original-77 actual raster decodes and cover preserves stable native hit area
+1808: original-77 actual deployment and effects exactly match formal engine once
+1809: original-77 commander uses the identical ID battle illustration
+1810: general-38-51333 next historical battle illustration keeps identity, concise rules and5:7
+1811: general-38-51333 actual raster decodes and cover preserves stable native hit area
+1812: general-38-51333 actual deployment and effects exactly match formal engine once
+1813: general-38-51333 commander uses the identical ID battle illustration
+1814: original-79 next historical battle illustration keeps identity, concise rules and5:7
+1815: original-79 actual raster decodes and cover preserves stable native hit area
+1816: original-79 actual deployment and effects exactly match formal engine once
+1817: original-79 commander uses the identical ID battle illustration
+1818: cbdb-30257 next historical battle illustration keeps identity, concise rules and5:7
+1819: cbdb-30257 actual raster decodes and cover preserves stable native hit area
+1820: cbdb-30257 actual deployment and effects exactly match formal engine once
+1821: cbdb-30257 commander uses the identical ID battle illustration
+1822: manual-1555 next historical battle illustration keeps identity, concise rules and5:7
+1823: manual-1555 actual raster decodes and cover preserves stable native hit area
+1824: manual-1555 actual deployment and effects exactly match formal engine once
+1825: manual-1555 commander uses the identical ID battle illustration
+1826: manual-1565 next historical battle illustration keeps identity, concise rules and5:7
+1827: manual-1565 actual raster decodes and cover preserves stable native hit area
+1828: manual-1565 actual deployment and effects exactly match formal engine once
+1829: manual-1565 commander uses the identical ID battle illustration
+1830: general-285-45592 next historical battle illustration keeps identity, concise rules and5:7
+1831: general-285-45592 actual raster decodes and cover preserves stable native hit area
+1832: general-285-45592 actual deployment and effects exactly match formal engine once
+1833: general-285-45592 commander uses the identical ID battle illustration
+1834: manual-1553 next historical battle illustration keeps identity, concise rules and5:7
+1835: manual-1553 actual raster decodes and cover preserves stable native hit area
+1836: manual-1553 actual deployment and effects exactly match formal engine once
+1837: manual-1553 commander uses the identical ID battle illustration
+1838: manual-1554 next historical battle illustration keeps identity, concise rules and5:7
+1839: manual-1554 actual raster decodes and cover preserves stable native hit area
+1840: manual-1554 actual deployment and effects exactly match formal engine once
+1841: manual-1554 commander uses the identical ID battle illustration
+1842: manual-1569 next historical battle illustration keeps identity, concise rules and5:7
+1843: manual-1569 actual raster decodes and cover preserves stable native hit area
+1844: manual-1569 actual deployment and effects exactly match formal engine once
+1845: manual-1569 commander uses the identical ID battle illustration
+1846: general-398-60962 next historical battle illustration keeps identity, concise rules and5:7
+1847: general-398-60962 actual raster decodes and cover preserves stable native hit area
+1848: general-398-60962 actual deployment and effects exactly match formal engine once
+1849: general-398-60962 commander uses the identical ID battle illustration
+1850: original-88 next historical battle illustration keeps identity, concise rules and5:7
+1851: original-88 actual raster decodes and cover preserves stable native hit area
+1852: original-88 actual deployment and effects exactly match formal engine once
+1853: original-88 commander uses the identical ID battle illustration
+1854: original-89 next historical battle illustration keeps identity, concise rules and5:7
+1855: original-89 actual raster decodes and cover preserves stable native hit area
+1856: original-89 actual deployment and effects exactly match formal engine once
+1857: original-89 commander uses the identical ID battle illustration
+1858: cbdb-3332 next historical battle illustration keeps identity, concise rules and5:7
+1859: cbdb-3332 actual raster decodes and cover preserves stable native hit area
+1860: cbdb-3332 actual deployment and effects exactly match formal engine once
+1861: cbdb-3332 commander uses the identical ID battle illustration
+1862: general-638-62417 next historical battle illustration keeps identity, concise rules and5:7
+1863: general-638-62417 actual raster decodes and cover preserves stable native hit area
+1864: general-638-62417 actual deployment and effects exactly match formal engine once
+1865: general-638-62417 commander uses the identical ID battle illustration
+1866: general-795-83328 next historical battle illustration keeps identity, concise rules and5:7
+1867: general-795-83328 actual raster decodes and cover preserves stable native hit area
+1868: general-795-83328 actual deployment and effects exactly match formal engine once
+1869: general-795-83328 commander uses the identical ID battle illustration
+1870: manual-1616 next historical battle illustration keeps identity, concise rules and5:7
+1871: manual-1616 actual raster decodes and cover preserves stable native hit area
+1872: manual-1616 actual deployment and effects exactly match formal engine once
+1873: manual-1616 commander uses the identical ID battle illustration
+1874: manual-1625 next historical battle illustration keeps identity, concise rules and5:7
+1875: manual-1625 actual raster decodes and cover preserves stable native hit area
+1876: manual-1625 actual deployment and effects exactly match formal engine once
+1877: manual-1625 commander uses the identical ID battle illustration
+1878: manual-1618 next historical battle illustration keeps identity, concise rules and5:7
+1879: manual-1618 actual raster decodes and cover preserves stable native hit area
+1880: manual-1618 actual deployment and effects exactly match formal engine once
+1881: manual-1618 commander uses the identical ID battle illustration
+1882: manual-1624 next historical battle illustration keeps identity, concise rules and5:7
+1883: manual-1624 actual raster decodes and cover preserves stable native hit area
+1884: manual-1624 actual deployment and effects exactly match formal engine once
+1885: manual-1624 commander uses the identical ID battle illustration
+1886: original-97 next historical battle illustration keeps identity, concise rules and5:7
+1887: original-97 actual raster decodes and cover preserves stable native hit area
+1888: original-97 actual deployment and effects exactly match formal engine once
+1889: original-97 commander uses the identical ID battle illustration
+1890: original-98 next historical battle illustration keeps identity, concise rules and5:7
+1891: original-98 actual raster decodes and cover preserves stable native hit area
+1892: original-98 actual deployment and effects exactly match formal engine once
+1893: original-98 commander uses the identical ID battle illustration
+1894: original-99 next historical battle illustration keeps identity, concise rules and5:7
+1895: original-99 actual raster decodes and cover preserves stable native hit area
+1896: original-99 actual deployment and effects exactly match formal engine once
+1897: original-99 commander uses the identical ID battle illustration
+1898: Zhang Fei uses dedicated battlefield art in the independent5:7 character card UI
+1899: Zhang Fei holds his distinct spear barricade motif and original subtitle during the visible skill windup
+1900: Zhang Fei native deployment and actual targeted skill match formal state with the new scene
+1901: four-card review sheet is rendered from the actual production character faces
+Person presentation passed 1901 checks in 1278.581s

@@ -1,0 +1,103 @@
+{
+  "status": "continued-in-foreground",
+  "started": "2026-10-24T15:00:48.249Z",
+  "elapsedSeconds": 895.909,
+  "hiddenWindow": true,
+  "foregroundHourCompleted": false,
+  "scope": "Real rendered battles, native auto/speed/settlement clicks, production advanceWar/finishWar; no direct engine stepping loop",
+  "games": [
+    {
+      "index": 1,
+      "configuration": "weapons",
+      "rotation": 0,
+      "first": "home",
+      "seed": 2147483,
+      "result": "defeat",
+      "round": 16,
+      "commits": 121,
+      "history": 121,
+      "settlementMatchesProduction": true,
+      "duplicateSettlementRejected": true
+    },
+    {
+      "index": 2,
+      "configuration": "secrets",
+      "rotation": 5,
+      "first": "enemy",
+      "seed": 2155402,
+      "result": "defeat",
+      "round": 23,
+      "commits": 161,
+      "history": 161,
+      "settlementMatchesProduction": true,
+      "duplicateSettlementRejected": true
+    },
+    {
+      "index": 3,
+      "configuration": "landmarks",
+      "rotation": 0,
+      "first": "home",
+      "seed": 2163321,
+      "result": "defeat",
+      "round": 24,
+      "commits": 176,
+      "history": 176,
+      "settlementMatchesProduction": true,
+      "duplicateSettlementRejected": true
+    },
+    {
+      "index": 4,
+      "configuration": "combined",
+      "rotation": 5,
+      "first": "enemy",
+      "seed": 2171240,
+      "result": "defeat",
+      "round": 16,
+      "commits": 127,
+      "history": 127,
+      "settlementMatchesProduction": true,
+      "duplicateSettlementRejected": true
+    },
+    {
+      "index": 5,
+      "configuration": "weapons",
+      "rotation": 0,
+      "first": "home",
+      "seed": 2179159,
+      "result": "defeat",
+      "round": 27,
+      "commits": 192,
+      "history": 192,
+      "settlementMatchesProduction": true,
+      "duplicateSettlementRejected": true
+    },
+    {
+      "index": 6,
+      "configuration": "secrets",
+      "rotation": 5,
+      "first": "enemy",
+      "seed": 2187078,
+      "result": "defeat",
+      "round": 27,
+      "commits": 181,
+      "history": 181,
+      "settlementMatchesProduction": true,
+      "duplicateSettlementRejected": true
+    },
+    {
+      "index": 7,
+      "configuration": "landmarks",
+      "rotation": 0,
+      "first": "home",
+      "seed": 2194997,
+      "result": "defeat",
+      "round": 18,
+      "commits": 133,
+      "history": 133,
+      "settlementMatchesProduction": true,
+      "duplicateSettlementRejected": true
+    }
+  ],
+  "errors": [],
+  "note": "Completed games retained; hidden batch deliberately stopped to combine remaining UI games with requested foreground hour. Any unfinished game is not counted."
+}

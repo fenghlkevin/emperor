@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-25T14:31:55.570Z",
+  "seconds": 13.924,
+  "checks": [
+    "four positive emitters and positive-only border",
+    "four negative emitters and negative-only border",
+    "mixed cards have both distinct inset rectangular borders",
+    "persistent canvas keeps moving after activation without changing saved battle state",
+    "native focus exposes exact modifiers and expiry",
+    "JSON reopen restores both borders and active effects",
+    "actual owner-turn end clears freezing and temporary attack only",
+    "moving attack copy carries the same live drawing",
+    "native attack still commits through the formal engine",
+    "1440px full formation retains every emitter, both borders and unchanged native hit areas",
+    "1000px full formation retains every emitter, both borders and unchanged native hit areas",
+    "800px full formation retains every emitter, both borders and unchanged native hit areas",
+    "every one of fourteen cards continues animating",
+    "historical person cards use both independent effect borders",
+    "reduced-motion stops movement while preserving both status borders",
+    "normal motion resumes without recasting",
+    "closing the battle disposes its animation clock without touching production saves",
+    "removing all states removes canvas and both borders"
+  ],
+  "errors": [],
+  "scope": "Production battle renderer. Isolated validated fixtures, native engine actions and native input; no production saves."
+}

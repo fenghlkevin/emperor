@@ -1,3 +1,4 @@
+import {nationalFoodForecast} from '../src/national-resources.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {newGame,validateSave,advance,leaveRoom,sleepUntilNextTurn,resolveExhaustion} from '../src/game.mjs';
@@ -23,8 +24,8 @@ test('normal companionship is free of extra age loss but repetition retains a cl
 });
 test('balance normalization preserves old resources, exhausted reigns and historical supply snapshots',()=>{
  const s=newGame('旧进度');delete s.balanceRulesVersion;s.stats.life=777;s.stats.age=45;
- const balances=s.domestic.countries.map(c=>[c.fiscal.treasury,c.fiscal.debt]),grain=s.domestic.provinces.map(p=>p.welfare.grainReserve),kits=structuredClone(s.domestic.troopKits);
- const n=validateSave(s);assert.equal(n.balanceRulesVersion,1);assert.equal(n.stats.life,777);assert.equal(n.stats.age,45);assert.deepEqual(n.domestic.countries.map(c=>[c.fiscal.treasury,c.fiscal.debt]),balances);assert.deepEqual(n.domestic.provinces.map(p=>p.welfare.grainReserve),grain);assert.deepEqual(n.domestic.troopKits,kits);
+ const balances=s.domestic.countries.map(c=>[c.fiscal.treasury,c.fiscal.debt]),grain=s.domestic.countries.map(c=>c.fiscal.grain),kits=structuredClone(s.domestic.troopKits);
+ const n=validateSave(s);assert.equal(n.balanceRulesVersion,1);assert.equal(n.stats.life,777);assert.equal(n.stats.age,45);assert.deepEqual(n.domestic.countries.map(c=>[c.fiscal.treasury,c.fiscal.debt]),balances);assert.deepEqual(n.domestic.countries.map(c=>c.fiscal.grain),grain);assert.deepEqual(n.domestic.troopKits,kits);
  assert.deepEqual(validateSave(structuredClone(n)),n);const bad=structuredClone(n);bad.balanceRulesVersion=2;assert.throws(()=>validateSave(bad),/平衡规则版本/);
  n.stats.life=0;const ended=validateSave(n);assert.equal(ended.stats.life,0);assert.ok(ended.reignResult);
 });
@@ -49,10 +50,10 @@ test('safe stock is preserved, excess grain decays once and new granaries activa
  p.buildings.granaries++;p.buildingEffects.pending={building:'granaries',completedTurn:2,effectiveTurn:3};assert.equal(grainStorage(p,2).protectedStock,safe);assert.ok(grainStorage(p,3).protectedStock>safe);
 });
 test('grain spoilage is idempotent, rejects corrupt arithmetic and rolls back with failed persistence',()=>{
- const s=newGame('陈粮'),p=s.domestic.provinces[0];p.welfare.grainReserve=grainStorage(p,2).protectedStock+1000;s.domestic.disasters.lastTurn=2;
- const next=structuredClone(s);advance(next);assert.ok(next.domestic.provinces[0].foodRelief.lastSettlement.storageLoss>0);
+ const s=newGame('陈粮'),p=s.domestic.provinces[0];s.domestic.countries[0].fiscal.grain=nationalFoodForecast(s.domestic,2).protectedStock+1000;s.domestic.disasters.lastTurn=2;
+ const next=structuredClone(s);advance(next);assert.ok(next.domestic.countries[0].foodSettlement.storageLoss>0);
  const once=JSON.stringify(next);settleDomestic(next.domestic,2);assert.equal(JSON.stringify(next),once);
- const bad=structuredClone(next);bad.domestic.provinces[0].foodRelief.lastSettlement.storageLoss++;assert.throws(()=>validateSave(bad),/粮食救济存档/);
+ const bad=structuredClone(next);bad.domestic.countries[0].foodSettlement.storageLoss++;assert.throws(()=>validateSave(bad),/全国供粮/);
  const before=JSON.stringify(s);assert.throws(()=>persistCandidate(s,next,{setItem(){throw Error('quota');}}),/保存失败/);assert.equal(JSON.stringify(s),before);
 });
 test('opening treasury can buy a meaningful basic company without eliminating premium and origin restrictions',()=>{

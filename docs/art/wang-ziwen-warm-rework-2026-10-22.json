@@ -1,0 +1,52 @@
+{
+  "tool": "built-in image_gen",
+  "status": "completed",
+  "name": "王子文",
+  "id": "mainland-photo-eight-20261022-01",
+  "title": "杏绡桃香",
+  "previousTitle": "烟紫香篆",
+  "previousAsset": "assets/beauties/random/女明星/王子文-烟紫香篆.png",
+  "asset": "assets/beauties/random/女明星/王子文-杏绡桃香-v2.png",
+  "prompt": "Use case: photorealistic-natural. Asset: ONE adult full-body Wang Ziwen 王子文 historical Chinese summer character cutout for game random portrait library. Supplied photo is her genuine 2025 adult age 38 birthday photo; use ONLY for facial identity and cheerful expression. Precisely reference her clear smiling eyes, distinctive narrow oval face, delicate small nose and natural lips. PRIMARY REQUEST: completely remake this character to feel BEAUTIFUL, WARM, APPROACHABLE, BRIGHT and gently playful. Give her the genuine radiant friendly smile from photo, softly lifted cheeks and smiling eyes with a small natural glimpse of upper teeth, inviting eye contact, relaxed brows. No cold stare, stern blank expression, heavily made-up angular face, intimidating glare or rigid posture. Natural detailed skin, flattering light peach makeup, realistic costume photography not doll/anime/illustration. Adult petite SLENDER healthy build, naturally balanced approximately 7.5 heads tall, head proportionate to full adult body, slim arms and waist, natural leg length, ordinary 70mm perspective, no big head/shrunken body. New graceful relaxed STANDING contrapposto, face near-front and head upright, shoulders relaxed, body slightly angled toward camera, one bare foot half-step forward, both bare feet grounded and visible. Warm pale-apricot and peach-pink lightweight SHORT-SLEEVE silk cross-collar jacket over opaque ivory fitted bodice and airy lined ivory long pleated summer skirt with delicate peach-blossom embroidery. Narrow peach silk waist sash; light soft drape rather than voluminous formal robes. Long dark hair loose half-up with small gold peach-blossom hairpins and pearl pins, soft natural face-framing wisps, delicate pearl drop earrings, thin jade-and-gold necklace, jade bracelet and embroidered waist sachet. One hand carries a small traditional woven bamboo basket with a few ripe peaches low beside hip, other hand gently holds one whole peach near waist; correctly grasped fruit/handle, five natural fingers each hand. Exactly two coherent arms/hands, two legs and two BARE FEET each with five toes, normal ankle connections, stable gravity, no shoes or socks. Entire hair ornaments, body, hems, hands, prop and all toes inside vertical 2:3 frame with generous clear margins, no clipping. GENUINELY TRANSPARENT alpha background, isolate character and basket/peach only. No room, table, cake, birthday crown, cats, modern objects, scenery, floor, shadow, glow, text/logos or watermark from reference. Soft warm-neutral light on skin/costume, NOT a colored background.",
+  "sourcePage": "https://www.sohu.com/a/865231033_122256742",
+  "references": [
+    {
+      "path": "assets/beauties/references/wang-ziwen-rework-20261022/birthday-2.jpg",
+      "imageUrl": "https://q8.itc.cn/images01/20250228/34af9bc513fc435fa4a5eea12de66db4.jpeg",
+      "role": "Adult smiling face/identity reference, 2025 birthday photo",
+      "size": [
+        690,
+        1066
+      ],
+      "sha256": "fdd7afe0996388be62cc711010a247ded001ae14a65a12395d87b536b4464d6b"
+    }
+  ],
+  "sourcePath": "/Users/fengheliang/.codex/generated_images/01a16133-240f-7033-bf18-3e8342b820ca/exec-a05e5b48-86b5-419c-8dab-107551e96274.png",
+  "validation": {
+    "size": [
+      1024,
+      1536
+    ],
+    "mode": "RGBA",
+    "alphaRange": [
+      0,
+      254
+    ],
+    "transparentFraction": 0.6232,
+    "nontransparentBorderPixels": 0,
+    "boundsAbove20": [
+      179,
+      25,
+      939,
+      1520
+    ]
+  },
+  "assetSha256": "20f5fd83a02a8d3b30afc036ed4b03dc26e6f7ad60274c015d867eeb19b0ca2f",
+  "visualReview": "对照2025年成年生日笑容照复核，重做为明朗微笑、暖杏桃色夏装和持桃篮的自然站姿。已查看原图及浅色/深蓝换底，头身协调、手脚接触自然、无鞋袜，alpha真实透明，边界完整。",
+  "verification": {
+    "relatedTestsPassed": 10,
+    "nativeCanvasPassed": 116,
+    "realHaremRosterPassed": 15,
+    "oldSavePathMigrationPassed": true
+  }
+}

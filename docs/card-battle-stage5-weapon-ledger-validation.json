@@ -1,0 +1,51 @@
+{
+  "date": "2026-10-23T02:31:17.615900+00:00",
+  "wallClockAnchor": "2026-10-23T02:15:53.459000+00:00",
+  "wallClockElapsedSeconds": 924.1569,
+  "sources": {
+    "src/troop-kits.mjs": "97713970fd4b77524f52d9683e5faa06e6ae9f94a3fbeb6f01eb3cc05f8476c4",
+    "src/troop-kit-world.mjs": "0027a95e5110e85b9d0657f6cdcfb11c2b585d48966e3204a0a5623d2a1f956c",
+    "src/kit-war.mjs": "a11460b579b95bae7c1c38286049d4d20b56a1b4af77f6e3ca7ece81931ba6e0",
+    "src/kit-defense.mjs": "745eff743a656e8ada7cf20023aa35bcfba46f060239d6b51590a1b52d017e86",
+    "src/game-types.d.ts": "3b95eb626aece48680ba46025f5afaf938dc64082e15b2446ae9cb4606fd413a",
+    "scripts/validate-data-contract.mjs": "b135bfdf5944daa607ea7fe17b80b059024c289aeeaceed58736b21e02f62c8d",
+    "tests/card-battle-weapon-ledger.test.mjs": "e10bb487f2f4858e6b897611cac15e9f2b1295ddded3485fd2d7f068fd94209e",
+    "src/card-battle.mjs": "e62167d930d57d4c5094e57ed3831db9f2797d892f813dba6dce4afb5e683a58",
+    "src/card-battle-data.mjs": "c2015f6ada2a6081497ff05caa2d14a02e09714478766299dd91df9032f02b5a",
+    "src/card-battle-ui.mjs": "88fcc08b7a55ed6278a8c1bbbfde536fea7002ff7cf40af62a4a0c7d0da1ff80"
+  },
+  "delivery": "仅额外完整套装的真实来源占用与独立损耗账本；武器可玩版尚未实现。",
+  "newChecks": 8,
+  "deterministicLedgerScenarios": 200,
+  "related": {
+    "command": "node --test tests/card-battle-weapon-ledger.test.mjs tests/troop-kits.test.mjs tests/troop-kit-world.test.mjs tests/kit-war.test.mjs tests/kit-defense.test.mjs",
+    "passed": 44,
+    "elapsedSeconds": 3.216313833,
+    "log": "/private/tmp/card-weapon-ledger-related.log"
+  },
+  "full": {
+    "command": "npm test",
+    "passed": 901,
+    "elapsedSeconds": 77.551435292,
+    "runtimeTypeSnapshots": 38,
+    "negativeTypeChecks": "passed, including three new active/settled extra-kit discrimination negatives",
+    "log": "/private/tmp/card-weapon-ledger-full.log"
+  },
+  "extraChecks": [
+    "参数和九兵种数量白名单、整数与安全上限",
+    "额外套装不增加兵员占用或改变训练",
+    "部队用装与额外用装在同一库存边界核对",
+    "跨战斗占用及调拨不能复用同一套装备",
+    "武器损耗与部队阵亡分开计账且不能超额",
+    "未损额外套装解除占用、没有实物凭空增长",
+    "重复结算拒绝",
+    "世界人口唯一账本、人物和国库不变",
+    "未完成武器牌型不能通过伪造占用启用"
+  ],
+  "scope": "未更改正式战斗引擎、卡表、AI或数值；无新胜率。UI与原拖拽验收哈希一致，无新增图像或音频资源，无需重复桌面验收。",
+  "latestUserRequirements": [
+    "音效暂缓，不继续实施或测试",
+    "所有存档不考虑，以新开局推进，不新增存档兼容／迁移／专门恢复验收"
+  ],
+  "remaining": "正式武器定义与牌库来源绑定、装备替换与主将攻击／耐久、AI、公开记录、装备槽及拖拽、实际结算集成；之后奥秘、地标、英雄替换兼容方案及阶段六，最后阶段一最终平衡与实机。"
+}

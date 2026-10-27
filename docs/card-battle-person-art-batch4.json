@@ -1,0 +1,78 @@
+{
+  "mode": "built-in imagegen; individual identity reference; exact prompts; original portraits retained",
+  "date": "2026-10-23T09:41:06.966Z",
+  "jobs": [
+    {
+      "id": "manual-1510",
+      "name": "商鞅",
+      "role": "文职",
+      "direction": "Shang Yang: stern mature statesman with strong arched brows, black mustache and pointed goatee, tall black-gold ceremonial hat and black robes with broad red geometric trim as reference. Upper body holding bamboo command records low while gesturing strict military organization. Qin-inspired drill ground and rammed-earth ramparts with ordered distant soldiers, blank dark-red standards, warm dusty light. Keep administrator unarmored, no weapon in hands.",
+      "prompt": "Use case: identity-preserve. ONE fullbleed vertical 5:7 production illustration for a historical strategy battle card, art only. Image1 is existing identity reference; image2 is approved UI style, match the Zhang Fei card's warm painted battlefield rendering. Preserve recognizable face, age, beard, headgear, costume silhouette and colors of image1. Waist/chest-up CLOSE-UP with a large dominant head and shoulders, face upper third, complete hat/hair ornament with breathing space above. Rich warm camp or battlefield behind, environmental details secondary. Golden daylight, earth palette, visible painterly brushwork, convincing fabrics and metal. Game illustration rather than archaeological reconstruction. No studio gradient, black backdrop, tiny fullbody catalog figure, magic, UI/border, logo/watermark or text/numbers even on documents and flags. Do not add armor to an unarmored reference. Shang Yang: stern mature statesman with strong arched brows, black mustache and pointed goatee, tall black-gold ceremonial hat and black robes with broad red geometric trim as reference. Upper body holding bamboo command records low while gesturing strict military organization. Qin-inspired drill ground and rammed-earth ramparts with ordered distant soldiers, blank dark-red standards, warm dusty light. Keep administrator unarmored, no weapon in hands.",
+      "origin": "/Users/fengheliang/.codex/generated_images/01a16381-85b9-71f1-8014-3769188dd4cf/exec-8df4cce7-8b7d-475f-94a2-c40c8a364537.png",
+      "path": "assets/battle/people/manual-1510-battle-v1.png",
+      "references": [
+        "assets/officials/historical/manual-1510/full.png",
+        "docs/screenshots/card-battle-original-prototype.png"
+      ],
+      "sha256": "51924d63991dc0d5c1a7c7e2ce45c3c462c55a5664770df5fed6e203edd96a4f",
+      "dimensions": [
+        1060,
+        1484
+      ]
+    },
+    {
+      "id": "manual-1629",
+      "name": "左宗棠",
+      "role": "武将",
+      "direction": "Zuo Zongtang: stocky elderly officer, rounded stern face, thick gray beard, black fur-brimmed red-domed gold-finial hat and dark brown embroidered late-imperial official coat exactly as reference. Close upper body considering an unlettered rolled route map, hand near existing ceremonial sword hilt. Western expedition logistics camp: dry ridges, canvas tents, distant provision caravan through an ochre pass. Preserve late-imperial Qing clothing, no ancient Han armor or helmet. Calm resolve.",
+      "prompt": "Use case: identity-preserve. ONE fullbleed vertical 5:7 production illustration for a historical strategy battle card, art only. Image1 is existing identity reference; image2 is approved UI style, match the Zhang Fei card's warm painted battlefield rendering. Preserve recognizable face, age, beard, headgear, costume silhouette and colors of image1. Waist/chest-up CLOSE-UP with a large dominant head and shoulders, face upper third, complete hat/hair ornament with breathing space above. Rich warm camp or battlefield behind, environmental details secondary. Golden daylight, earth palette, visible painterly brushwork, convincing fabrics and metal. Game illustration rather than archaeological reconstruction. No studio gradient, black backdrop, tiny fullbody catalog figure, magic, UI/border, logo/watermark or text/numbers even on documents and flags. Do not add armor to an unarmored reference. Zuo Zongtang: stocky elderly officer, rounded stern face, thick gray beard, black fur-brimmed red-domed gold-finial hat and dark brown embroidered late-imperial official coat exactly as reference. Close upper body considering an unlettered rolled route map, hand near existing ceremonial sword hilt. Western expedition logistics camp: dry ridges, canvas tents, distant provision caravan through an ochre pass. Preserve late-imperial Qing clothing, no ancient Han armor or helmet. Calm resolve.",
+      "origin": "/Users/fengheliang/.codex/generated_images/01a16381-85b9-71f1-8014-3769188dd4cf/exec-a8927d53-5479-4325-ac1e-df323089f8d2.png",
+      "path": "assets/battle/people/manual-1629-battle-v1.png",
+      "references": [
+        "assets/officials/historical/manual-1629/full.png",
+        "docs/screenshots/card-battle-original-prototype.png"
+      ],
+      "sha256": "12e4a33b93da53c8889135f126af0d24270214de816db5c2e6206b638392fefe",
+      "dimensions": [
+        1060,
+        1484
+      ]
+    },
+    {
+      "id": "manual-1543",
+      "name": "班超",
+      "role": "武将",
+      "direction": "Ban Chao: weathered mature frontier commander, deeply set brows, black mustache and short beard, tied topknot, practical brown lamellar armor and ochre weathered cape exactly reference. Three-quarter upper body in desert wind, holding a rolled unlettered route scroll low, sword sheathed at waist. Distant caravan and small frontier garrison, sand-colored fort and dry mountains, ochre sunlit dust. Practical soldier, no magic, no modern objects.",
+      "prompt": "Use case: identity-preserve. ONE fullbleed vertical 5:7 production illustration for a historical strategy battle card, art only. Image1 is existing identity reference; image2 is approved UI style, match the Zhang Fei card's warm painted battlefield rendering. Preserve recognizable face, age, beard, headgear, costume silhouette and colors of image1. Waist/chest-up CLOSE-UP with a large dominant head and shoulders, face upper third, complete hat/hair ornament with breathing space above. Rich warm camp or battlefield behind, environmental details secondary. Golden daylight, earth palette, visible painterly brushwork, convincing fabrics and metal. Game illustration rather than archaeological reconstruction. No studio gradient, black backdrop, tiny fullbody catalog figure, magic, UI/border, logo/watermark or text/numbers even on documents and flags. Do not add armor to an unarmored reference. Ban Chao: weathered mature frontier commander, deeply set brows, black mustache and short beard, tied topknot, practical brown lamellar armor and ochre weathered cape exactly reference. Three-quarter upper body in desert wind, holding a rolled unlettered route scroll low, sword sheathed at waist. Distant caravan and small frontier garrison, sand-colored fort and dry mountains, ochre sunlit dust. Practical soldier, no magic, no modern objects.",
+      "origin": "/Users/fengheliang/.codex/generated_images/01a16381-85b9-71f1-8014-3769188dd4cf/exec-93923f71-d350-4047-a2fa-6eaff53dab33.png",
+      "path": "assets/battle/people/manual-1543-battle-v1.png",
+      "references": [
+        "assets/officials/historical/manual-1543/full.png",
+        "docs/screenshots/card-battle-original-prototype.png"
+      ],
+      "sha256": "a049efeac6748d52facfb52c25c8b3b953094095151a32d861767e7b4037e0a7",
+      "dimensions": [
+        1060,
+        1484
+      ]
+    },
+    {
+      "id": "manual-1530",
+      "name": "韩信",
+      "role": "武将",
+      "direction": "Han Xin: young decisive commander with sharp brows, slim black mustache and pointed beard, raised black hair tied with small gold ornament and red ribbon, black-red lamellar armor, dark cape and red sash as reference. Heroic three-quarter upper body giving a measured order with one hand, bamboo military record low in other. Ordered distant infantry divisions, riverside camp and mountains, red blank standards in warm morning light. Strong large face, realistic command rather than magical spectacle.",
+      "prompt": "Use case: identity-preserve. ONE fullbleed vertical 5:7 production illustration for a historical strategy battle card, art only. Image1 is existing identity reference; image2 is approved UI style, match the Zhang Fei card's warm painted battlefield rendering. Preserve recognizable face, age, beard, headgear, costume silhouette and colors of image1. Waist/chest-up CLOSE-UP with a large dominant head and shoulders, face upper third, complete hat/hair ornament with breathing space above. Rich warm camp or battlefield behind, environmental details secondary. Golden daylight, earth palette, visible painterly brushwork, convincing fabrics and metal. Game illustration rather than archaeological reconstruction. No studio gradient, black backdrop, tiny fullbody catalog figure, magic, UI/border, logo/watermark or text/numbers even on documents and flags. Do not add armor to an unarmored reference. Han Xin: young decisive commander with sharp brows, slim black mustache and pointed beard, raised black hair tied with small gold ornament and red ribbon, black-red lamellar armor, dark cape and red sash as reference. Heroic three-quarter upper body giving a measured order with one hand, bamboo military record low in other. Ordered distant infantry divisions, riverside camp and mountains, red blank standards in warm morning light. Strong large face, realistic command rather than magical spectacle.",
+      "origin": "/Users/fengheliang/.codex/generated_images/01a16381-85b9-71f1-8014-3769188dd4cf/exec-211f28e1-d009-4f2a-8e3e-07ba6b24333d.png",
+      "path": "assets/battle/people/manual-1530-battle-v1.png",
+      "references": [
+        "assets/officials/historical/manual-1530/full.png",
+        "docs/screenshots/card-battle-original-prototype.png"
+      ],
+      "sha256": "2f5fd34f04e915647c53cf5e9a7ac2ff77461bf2b4623fb77d118a567bd09669",
+      "dimensions": [
+        1060,
+        1484
+      ]
+    }
+  ]
+}

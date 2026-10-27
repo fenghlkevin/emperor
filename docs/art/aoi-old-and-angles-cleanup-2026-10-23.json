@@ -1,0 +1,98 @@
+{
+  "removedAngles": [
+    45,
+    70
+  ],
+  "deleted": [
+    {
+      "path": "/Users/fengheliang/.codex/generated_images/01a1615b-c380-73a3-bb7b-58bb2f9b4009/exec-35bb1290-9ac1-4658-9b14-d124e0202f5a.png",
+      "sha256": "649cf7794bd8a8f711707e03430e5345f65de88f9f3405a39e68f0a390ef6e9c",
+      "bytes": 1911968
+    },
+    {
+      "path": "/Users/fengheliang/.codex/generated_images/01a16615-cc42-7e81-aa4f-b849b888d820/exec-05c47148-2e22-45f2-ab48-c459bd2a8529.png",
+      "sha256": "09767df52c3ca16d7f12938f75c10614b1ef774f6d4f184d5a182154ca1a6db2",
+      "bytes": 2247394
+    },
+    {
+      "path": "/Users/fengheliang/.codex/generated_images/01a16615-cc42-7e81-aa4f-b849b888d820/exec-514e258d-764a-4ead-92b6-0159f32826a2.png",
+      "sha256": "bb5f8ff67553a9d487d4742e8154c60361b5f4a3298608b1f2222f589724f1f4",
+      "bytes": 2043995
+    },
+    {
+      "path": "/Users/fengheliang/.codex/generated_images/01a16615-cc42-7e81-aa4f-b849b888d820/exec-5e4eac3d-6f2a-4b52-b00c-9ba7579544a1.png",
+      "sha256": "601635fa2aca8f61ab1977a3274d196e4b92e55cbffd6170d6af8a2926492cc3",
+      "bytes": 1989637
+    },
+    {
+      "path": "/Users/fengheliang/.codex/generated_images/01a16615-cc42-7e81-aa4f-b849b888d820/exec-891a96bb-5888-4735-9c38-52e37171512b.png",
+      "sha256": "eab2c598528d33eacc64441eb3c46072f13c0b3c0f2637258bd1ab55617f388e",
+      "bytes": 2102021
+    },
+    {
+      "path": "/Users/fengheliang/.codex/generated_images/01a16615-cc42-7e81-aa4f-b849b888d820/exec-935405ed-ada8-4642-9e06-78297cc0d689.png",
+      "sha256": "6c0ce5ce7d44eb609e4c74b94339be14092accee6305450854741222a1c7e61a",
+      "bytes": 2177515
+    },
+    {
+      "path": "/Users/fengheliang/.codex/generated_images/01a16615-cc42-7e81-aa4f-b849b888d820/exec-bbe5ecec-9bdc-448c-a39c-796954737e09.png",
+      "sha256": "f5f71e8188b0aa16891c147c610fabda7fa0eb7891562556cad66387f2c03a93",
+      "bytes": 2104461
+    },
+    {
+      "path": "/Users/fengheliang/.codex/generated_images/01a16615-cc42-7e81-aa4f-b849b888d820/exec-bc78f8dc-b5bc-4950-af3d-fc0cc75e70a0.png",
+      "sha256": "1fc2f888eed7227962e01d7c28d1ce3ab76e82776cd483bb55f76090c0f184f1",
+      "bytes": 1297901
+    },
+    {
+      "path": "/Users/fengheliang/workbench/source/g20/games/assets/beauties/random/番邦女子/日本女子-葵司-碧绡俯拍.png",
+      "sha256": "09767df52c3ca16d7f12938f75c10614b1ef774f6d4f184d5a182154ca1a6db2",
+      "bytes": 2247394
+    },
+    {
+      "path": "/Users/fengheliang/workbench/source/g20/games/outputs/aoi-reference-skill-rework-20261023/before/日本女子-葵司-水蓝静修.png",
+      "sha256": "bb5f8ff67553a9d487d4742e8154c60361b5f4a3298608b1f2222f589724f1f4",
+      "bytes": 2043995
+    },
+    {
+      "path": "/Users/fengheliang/workbench/source/g20/games/outputs/aoi-reference-skill-rework-20261023/before/日本女子-葵司-碧绡俯拍.png",
+      "sha256": "d68e2f3019ab6cec360f978a2b9a001b6497469dfa5e0588490d38f90982f038",
+      "bytes": 2006710
+    },
+    {
+      "path": "/Users/fengheliang/workbench/source/g20/games/outputs/aoi-reference-skill-rework-20261023/before/日本女子-葵司-碧绡端坐.png",
+      "sha256": "1fc2f888eed7227962e01d7c28d1ce3ab76e82776cd483bb55f76090c0f184f1",
+      "bytes": 1297901
+    },
+    {
+      "path": "/Users/fengheliang/workbench/source/g20/games/outputs/aoi-reference-skill-rework-20261023/before/日本女子-葵司-绯绡鼓舞.png",
+      "sha256": "f5f71e8188b0aa16891c147c610fabda7fa0eb7891562556cad66387f2c03a93",
+      "bytes": 2104461
+    },
+    {
+      "path": "/Users/fengheliang/workbench/source/g20/games/outputs/aoi-reference-skill-rework-20261023/before/日本女子-葵司.png",
+      "sha256": "649cf7794bd8a8f711707e03430e5345f65de88f9f3405a39e68f0a390ef6e9c",
+      "bytes": 1911968
+    },
+    {
+      "path": "/Users/fengheliang/workbench/source/g20/games/outputs/aoi-reference-skill-rework-20261023/final-five.jpg",
+      "sha256": "5cb932f8a2f1039ce2db15c6fc9e73b3445e50f3a9d6999db5beec99c8629e9d",
+      "bytes": 156814
+    },
+    {
+      "path": "/Users/fengheliang/workbench/source/g20/games/outputs/japan-request-list-20261023/aoi-final-five.jpg",
+      "sha256": "aa576294bf8f18deb56c463187f397a0f925a485734777d0bcba8f790627f407",
+      "bytes": 91642
+    },
+    {
+      "path": "/Users/fengheliang/workbench/source/g20/games/outputs/japan-request-list-20261023/aoi-short-hair/detail-1.jpg",
+      "sha256": "2a21dd83646444b85db0881b65ee2492734e499db61959f31f691b4d90dd207b",
+      "bytes": 77046
+    },
+    {
+      "path": "/Users/fengheliang/workbench/source/g20/games/outputs/japan-request-list-20261023/aoi-short-hair/overview-1.jpg",
+      "sha256": "e9bacacbfd2354723d2b00004221e858e15d1b908699ed7dfba618e8d6486675",
+      "bytes": 70274
+    }
+  ]
+}

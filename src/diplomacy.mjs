@@ -1,3 +1,4 @@
+import {settleForeignGrainPurchases,validateGrainMarkets} from './grain-market.mjs';
 import {initializeDynasty,royalMarriage,admitForeignRoyal} from './dynasty.mjs';
 import {quoteNegotiation} from './diplomatic-negotiation.mjs';
 export {quoteNegotiation} from './diplomatic-negotiation.mjs';
@@ -17,6 +18,7 @@ export function diplomaticRows(domestic,sourceId=domestic.playerCountryId){
  return domestic.countries.filter(c=>c.id!==sourceId).map(country=>({country,relationship:relationBetween(domestic,sourceId,country.id)}));
 }
 export function validateDiplomacy(domestic){
+ validateGrainMarkets(domestic);
  const ids=new Set(domestic.countries.map(c=>c.id)),seen=new Set();
  if(!Array.isArray(domestic.royalFamily)||new Set(domestic.royalFamily.map(p=>p.id)).size!==domestic.royalFamily.length)throw Error('皇室名册无效');
  for(const p of domestic.royalFamily)if(typeof p.id!=='string'||typeof p.name!=='string'||!p.name||!['male','female'].includes(p.sex)||!Number.isInteger(p.age)||p.age<0||p.age>120||!ids.has(p.countryId)||(p.spouseCountryId!==null&&!ids.has(p.spouseCountryId)))throw Error('皇室人物无效');
@@ -63,10 +65,12 @@ export function executeDiplomacy(state,command){
 }
 export function settleDiplomacy(d,turn){
  initializeRites(d);
+ settleForeignGrainPurchases(d,turn);
  const byId=id=>d.countries.find(c=>c.id===id);
  function transfer(from,to,amount,key,reason){const cash=byId(from).fiscal.treasury,paid=Math.min(cash,amount);transferTreasury(d,from,to,paid,{turn,key,reason,allowDebt:false});return paid;}
  for(const r of d.diplomacy){const a=r.agreement;if(a.lastTurn>=turn||(!a.exports&&!a.imports&&!a.tribute))continue;a.lastTurn=turn;const home=d.playerCountryId;if(!r.countryIds.includes(home))continue;const other=r.countryIds.find(id=>id!==home);
- if(r.relation!=='hostile'&&(a.exports||a.imports)){const received=transfer(other,home,a.exports,`trade:${turn}:${other}:exports`,'通商出口入账');const paidImports=transfer(home,other,a.imports,`trade:${turn}:${other}:imports`,'通商进口支出');a.lastPerformance={turn,exportsDue:a.exports,exportsPaid:received,importsDue:a.imports,importsPaid:paidImports};if(received<a.exports||paidImports<a.imports)r.friendship=Math.max(0,r.friendship-5);a.settledTurns++;r.trade.quota=a.exports+a.imports;r.trade.income+=received;r.trade.years=Math.floor(a.settledTurns/36);}
+ // Imports and exports are market allowances, not unconditional silver transfers.
+ if(r.relation!=='hostile'&&(a.exports||a.imports)){a.settledTurns++;r.trade.quota=a.exports+a.imports;r.trade.years=Math.floor(a.settledTurns/36);}
  if((turn-1)%36===0&&a.tribute&&a.payerId){const paid=transfer(a.payerId,r.countryIds.find(id=>id!==a.payerId),a.tribute,`tribute:${turn}:${other}`,'年度贡银');a.lastTribute={turn,due:a.tribute,paid};if(paid<a.tribute)r.friendship=Math.max(0,r.friendship-10);}
  }
 }

@@ -1,0 +1,63 @@
+{
+  "scope": "九文化池随机人物文武各两变体，36肖像；宽池非全来源终验",
+  "status": "36-representative-portraits-integrated-and-native-verified",
+  "generator": "builtin imagegen",
+  "assets": [
+    {
+      "path": "assets/battle/card-regional-civil-variant0-v2.png",
+      "sourceOutput": "exec-3b7b154c-0447-41b5-834d-f885336546b1.png",
+      "sha256": "fb68f722ac88e36a7bed790d5ba94aa1eba55d6ae3761d69ece48e012ac40c85",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "visualReview": "完整九格已查看，文武角色与两组人物不同，肤色发质脸型胡须年龄自然差异"
+    },
+    {
+      "path": "assets/battle/card-regional-civil-variant1-v2.png",
+      "sourceOutput": "exec-748737cb-374b-429b-aa36-843846a7164f.png",
+      "sha256": "b9d19ee2b5311c88dca868c917a0890ee0ad5070ba0403cb0a1baea6482877a6",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "visualReview": "完整九格已查看，文武角色与两组人物不同，肤色发质脸型胡须年龄自然差异"
+    },
+    {
+      "path": "assets/battle/card-regional-military-variant0-v2.png",
+      "sourceOutput": "exec-2646637e-6bf4-4dce-8270-a03b7fe568c7.png",
+      "sha256": "7c678617cad783475c5262a50a9fa86e92200568c130d52b74d07ad6a44b9fa4",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "visualReview": "完整九格已查看，文武角色与两组人物不同，肤色发质脸型胡须年龄自然差异"
+    },
+    {
+      "path": "assets/battle/card-regional-military-variant1-v2.png",
+      "sourceOutput": "exec-cc31ee57-3775-4716-a0f2-811ea2b5425b.png",
+      "sha256": "d88460e766ad2bb26010fca22ea03e2cb552930333c8c36b340fadb3c3312cc7",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "visualReview": "完整九格已查看，文武角色与两组人物不同，肤色发质脸型胡须年龄自然差异"
+    }
+  ],
+  "modelTests": {
+    "passed": 22,
+    "failed": 0,
+    "durationMs": 3731.096041
+  },
+  "identityPolicy": "选图只使用原创建seed独立派生，不额外调用RNG；已存人物不重抽，历史ID不受文化字段覆盖",
+  "limitations": [
+    "仍为九文化代表，不能代表宽池涵盖所有地区的人群",
+    "人物年龄形象是虚构美术变体，不从长相推断历史身份",
+    "中原20专用随机肖像与100历史卡面未重做"
+  ],
+  "native": {
+    "checks": 108,
+    "errors": [],
+    "elapsedSeconds": 175.951
+  }
+}

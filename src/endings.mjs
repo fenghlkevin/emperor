@@ -1,3 +1,4 @@
+import {difficultyFactor} from './difficulty.mjs';
 import {endReign,END_REASONS} from './ending-rules.mjs';
 import {summarizeHistory,RECORD_FIELDS} from './war-records.mjs';
 import {postTreasury} from './finance.mjs';
@@ -10,7 +11,7 @@ export function settleEndings(s){initializeEndings(s);const e=s.endings;if(e.las
  const year=Math.floor((s.turn-s.dynasty.reignStartTurn)/36);if(s.stats.life>0&&abdicationReady(s)&&year>e.adviceYear){e.adviceYear=year;e.advicePending=true;note(s,'群臣劝进储君，请于本朝纪事中决定禅让或留位；拒绝后下一年再议。');}
 }
 export function endingAction(state,c){const s=structuredClone(state);initializeEndings(s);if(s.stats.life<=0||s.reignResult)throw Error('本朝已终结');if(s.domestic.war?.battle||s.domestic.strategy?.pending?.defender===s.domestic.playerCountryId||s.domestic.collapse?.pending)throw Error('请先处理当前战事');
- if(c.kind==='treat'){if(s.stats.health>30)throw Error('目前无须紧急诊治');if(s.endings.lastTreatmentTurn===s.turn)throw Error('本旬已诊治');postTreasury(s.domestic,s.domestic.playerCountryId,{turn:s.turn,expense:1000,key:`imperial-treatment:${s.turn}`,reason:'太医紧急诊治'});s.stats.health=Math.min(100,s.stats.health+20);s.endings.criticalTurns=0;s.endings.lastTreatmentTurn=s.turn;note(s,'召太医诊治，支银1000两、健康+20，重置危重累计。');}
+ if(c.kind==='treat'){if(s.stats.health>30)throw Error('目前无须紧急诊治');if(s.endings.lastTreatmentTurn===s.turn)throw Error('本旬已诊治');postTreasury(s.domestic,s.domestic.playerCountryId,{turn:s.turn,expense:Math.ceil(1000*difficultyFactor(s,'medicalCostFactor')),key:`imperial-treatment:${s.turn}`,reason:'太医紧急诊治'});s.stats.health=Math.min(100,s.stats.health+20);s.endings.criticalTurns=0;s.endings.lastTreatmentTurn=s.turn;note(s,`召太医诊治，支银${Math.ceil(1000*difficultyFactor(s,'medicalCostFactor'))}两、健康+20，重置危重累计。`);}
  else if(c.kind==='advice'){if(!s.endings.advicePending)throw Error('没有待议禅让奏章');if(c.accept===true){if(!abdicationReady(s))throw Error('储位或皇陵条件已变化，不能禅让');endReign(s,'禅让','在位五十年后接受群臣劝退，传位于成年储君。');note(s,'接受禅让奏章，本朝归档，可由储君继位。');}else if(c.accept===false)note(s,'暂缓禅让，继续留位，下一年可再议。');else throw Error('请选择接受或留位');s.endings.advicePending=false;}
  else throw Error('未知本朝纪事操作');s.stats.treasury=s.domestic.countries.find(c=>c.id===s.domestic.playerCountryId).fiscal.treasury;settleReignResult(s);return s;
 }

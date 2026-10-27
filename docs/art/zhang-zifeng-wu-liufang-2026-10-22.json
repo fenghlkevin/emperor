@@ -1,0 +1,137 @@
+{
+  "tool": "built-in image_gen",
+  "status": "completed",
+  "items": [
+    {
+      "key": "zhang-zifeng",
+      "name": "张子枫",
+      "id": "mainland-photo-six-20261022-01",
+      "title": "竹青执笛",
+      "asset": "assets/beauties/random/女明星/张子枫-竹青执笛-v2.png",
+      "previousAsset": "assets/beauties/random/女明星/张子枫-竹青执笛.png",
+      "refs": [
+        "assets/beauties/references/zzf-wu-20261022/zzf-forest-4.jpg",
+        "assets/beauties/references/zzf-wu-20261022/zzf-forest-3.jpg"
+      ],
+      "page": "https://k.sina.com.cn/article_1893711543_70dfbeb704001hgdc.html",
+      "prompt": "Use case: photorealistic-natural. Asset: single adult full-body Chinese historical summer character cutout for game random portrait library. Photos are identity and visible build references ONLY; new costume, pose and composition. Realistic graceful costume photography, natural skin texture, accurate individual face over generic doll beauty. Healthy slender adult proportions about 7.5 heads tall, proportionate small head, natural neck, slim shoulders/arms/waist and long natural legs. Light silk/gauze Chinese historical summer clothing, opaque lining, tasteful elegance. All figures BAREFOOT: exactly two coherent arms, two hands each with five fingers, two legs, two correctly oriented bare feet with five toes each, natural joints and gravity. Entire hair, ornaments, hands, hems, toes and props within portrait 2:3 canvas with clear margins, no clipping. GENUINE transparent alpha, no scene/floor/shadow/halo/text/watermark or modern items. Soft neutral natural light, normal 70mm perspective. Subject: Zhang Zifeng 张子枫 adult age 21 as in 2023 forest photos. Image 1 PRIMARY face/soft beauty reference (clear eyes, brows, delicate nose, natural lips); image 2 supports facial contour and adult body build. Preserve recognizable Zhang Zifeng identity, make expression naturally tender and composed with a subtle CLOSED-LIP smile, clean natural makeup, eyes toward camera. Do not reuse old punk short-haired portrait or its stern side profile. Newly generated whole character, head upright and face near-front with very slight three-quarter turn, no dramatically tilted chin. Graceful relaxed standing contrapposto with both bare feet visible and naturally grounded slightly apart. Bamboo-green short-sleeved thin silk wrap blouse over ivory lined bodice, flowing pale ivory long skirt ending above toes with fine bamboo and jasmine embroidery, light mint gauze ribbons behind arms. Both hands gently support a bamboo flute horizontally low at waist with relaxed natural fingers. Soft black hair in loose half-updo with silver jasmine comb and pearl pins, small jade drop earrings, delicate necklace, jade bangle, embroidered waist sachet and tassels. Keep torso full adult size and slender harmonious limbs. Do not copy forest, modern knitwear, trousers or leaf covering eye.",
+      "category": "女明星",
+      "regionId": "sheng",
+      "poolScope": "mainland",
+      "references": [
+        {
+          "path": "assets/beauties/references/zzf-wu-20261022/zzf-forest-4.jpg",
+          "page": "https://k.sina.com.cn/article_1893711543_70dfbeb704001hgdc.html",
+          "imageUrl": "https://k.sinaimg.cn/n/sinakd20230726ac/159/w1024h1535/20230726/1cd0-698ed886f2fef8507e01ef5de963c120.jpg/w700d1q75cms.jpg",
+          "size": [
+            700,
+            1049
+          ],
+          "sha256": "2aa4294fe3917c86d4941b7c17082ec024086e665e383235e5b1931114c5713b"
+        },
+        {
+          "path": "assets/beauties/references/zzf-wu-20261022/zzf-forest-3.jpg",
+          "page": "https://k.sina.com.cn/article_1893711543_70dfbeb704001hgdc.html",
+          "imageUrl": "https://k.sinaimg.cn/n/sinakd20230726ac/160/w1024h1536/20230726/5879-63869af9de4909a3ffac2f2b0507c7c8.jpg/w700d1q75cms.jpg",
+          "size": [
+            700,
+            1050
+          ],
+          "sha256": "fa356216a39a44a66ade3d8224b56bc62fa677555697d4c559870cb86cda29ba"
+        }
+      ],
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a16133-240f-7033-bf18-3e8342b820ca/exec-7e1feff0-fcd4-47e0-8712-65bd99d55b36.png",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentFraction": 0.5452,
+        "nontransparentBorderPixels": 0,
+        "boundsAbove20": [
+          171,
+          6,
+          957,
+          1522
+        ]
+      },
+      "assetSha256": "406d14e9241acabf429f9d531d54a24f905ab09c8ae15b16dcb4dce3cba4bcbb",
+      "status": "completed",
+      "visualReview": "对照实际输入成年照片检查成图，已查看完整原图及浅色/深蓝换底：面部清晰、头身与四肢协调，双手接触道具自然，光脚且无明显多余肢体，饰品和衣摆未裁切，真实alpha透明。"
+    },
+    {
+      "key": "wu-liufang",
+      "name": "吴柳芳",
+      "id": "mainland-photo-wu-20261022-01",
+      "title": "藕绡如意",
+      "asset": "assets/beauties/random/女明星/吴柳芳-藕绡如意.png",
+      "refs": [
+        "assets/beauties/references/zzf-wu-20261022/wu-liufang-6.jpg",
+        "assets/beauties/references/zzf-wu-20261022/wu-liufang-2.jpg"
+      ],
+      "page": "https://www.sohu.com/a/829678779_120298495",
+      "prompt": "Use case: photorealistic-natural. Asset: single adult full-body Chinese historical summer character cutout for game random portrait library. Photos are identity and visible build references ONLY; new costume, pose and composition. Realistic graceful costume photography, natural skin texture, accurate individual face over generic doll beauty. Healthy slender adult proportions about 7.5 heads tall, proportionate small head, natural neck, slim shoulders/arms/waist and long natural legs. Light silk/gauze Chinese historical summer clothing, opaque lining, tasteful elegance. All figures BAREFOOT: exactly two coherent arms, two hands each with five fingers, two legs, two correctly oriented bare feet with five toes each, natural joints and gravity. Entire hair, ornaments, hands, hems, toes and props within portrait 2:3 canvas with clear margins, no clipping. GENUINE transparent alpha, no scene/floor/shadow/halo/text/watermark or modern items. Soft neutral natural light, normal 70mm perspective. Subject: Wu Liufang 吴柳芳, ADULT former Chinese national gymnast age 30 in 2024. Image 1 shows two screenshots of SAME ADULT woman: use the RIGHT screenshot for her face identity and natural smile; do not reproduce youthful styling or screenshots/text. Image 2 is ONLY supporting reference for slender adult gymnast build, elegant posture and facial profile. Preserve her specific oval face, eyes, nose and soft lips, natural light makeup and gentle closed-lip smile. Light petite slender gymnast physique with lightly toned long legs and slim waist/arms, no bulky shoulders or thick torso. Paused graceful historical dance pose with upright spine: one bare foot flat bearing weight and other slightly behind on toes, both bare feet completely visible, natural balance. One hand holds a SMALL pale jade RUYI scepter at low waist, other arm curved softly outward below shoulder level with relaxed wrist/fingers; no extreme acrobatics. Pale lotus-lilac lightweight sleeveless wrap tunic with opaque ivory bodice, soft opaque ivory wide-leg silk dance trousers ending at ankle, narrow lavender silk belt and thin gauze stole hanging behind arms. Hair elegant half-up twisted bun with gold orchid pins, pearl and amethyst drop earrings, fine necklace, silver bracelet and jade waist tassel. No modern costume, sneakers, socks, gym equipment, platform logos, headbands or screens.",
+      "category": "女明星",
+      "regionId": "sheng",
+      "poolScope": "mainland",
+      "references": [
+        {
+          "path": "assets/beauties/references/zzf-wu-20261022/wu-liufang-6.jpg",
+          "page": "https://www.sohu.com/a/829678779_120298495",
+          "imageUrl": "https://q5.itc.cn/images01/20241123/1ee85ca377f540679986529aed46017e.jpeg",
+          "size": [
+            880,
+            765
+          ],
+          "sha256": "3834239c5f87fef59832583f5ced155e7a6c1701bed6e5f24b6160cd4a914737"
+        },
+        {
+          "path": "assets/beauties/references/zzf-wu-20261022/wu-liufang-2.jpg",
+          "page": "https://www.sohu.com/a/829678779_120298495",
+          "imageUrl": "https://q9.itc.cn/images01/20241123/3faa08bab9dd47aeba5e2ba425117921.jpeg",
+          "size": [
+            954,
+            1368
+          ],
+          "sha256": "905941373bffa099d77faf8853f80acf2c4b3a06f5659323a03cd54e7bd80f5f"
+        }
+      ],
+      "referenceNote": "2024年成年截图为面部参考，退役后体操写真为身形参考。面部截图有压缩，非高清扫描；仅按可见五官及自然成人比例生成。",
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a16133-240f-7033-bf18-3e8342b820ca/exec-5b5b6cf1-f3a5-49f1-ba7f-0f410c44cca9.png",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentFraction": 0.5328,
+        "nontransparentBorderPixels": 0,
+        "boundsAbove20": [
+          13,
+          15,
+          1010,
+          1510
+        ]
+      },
+      "assetSha256": "f551a467f99f1c0c117c82c59128090dfa04849935f7901d32c93b1bda3b9e3a",
+      "status": "completed",
+      "visualReview": "对照实际输入成年照片检查成图，已查看完整原图及浅色/深蓝换底：面部清晰、头身与四肢协调，双手接触道具自然，光脚且无明显多余肢体，饰品和衣摆未裁切，真实alpha透明。"
+    }
+  ],
+  "completed": 2,
+  "verification": {
+    "relatedTestsPassed": 14,
+    "nativeCanvasPassed": 116,
+    "realHaremRosterPassed": 15,
+    "oldSavePathMigrationPassed": true
+  }
+}

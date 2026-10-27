@@ -1,0 +1,95 @@
+{
+  "date": "2026-10-23T00:11:36.837554+00:00",
+  "planLibraryVersion": 1,
+  "functionalStage2": "passed",
+  "finalBalance": "deferred by user until stages 2-6 are delivered; no old win rates reused",
+  "sources": {
+    "src/card-battle-plan-data.mjs": "ee3d8e96405be1399f668ef5be611432d46aedad199915b0466608346f4dce67",
+    "src/card-battle-plans.mjs": "2738bc3401bed0ed9619e2453a3c36de25dd9696c06c33e571d9b2e940f0906a",
+    "src/card-battle-plans-ui.mjs": "99f3566fcb9d02d158b4acef375a7bc96c16dfc0f5fbabb24527412cb7c9643f",
+    "src/court-campaign-ui.mjs": "d80c6fcfe56a5ff59048d850dc09ee854c771387b154aa8bf569f3d86a3c4d60",
+    "src/court-defense-ui.mjs": "32e34aee4add08f1a17c8217b6536e411ea25a61379ed1cb0fc3f7d1f4080b95",
+    "src/kit-office-ui.mjs": "b6bc7b048df4efc0fd56c5a78f3d8b0477c400b1f69ac89a965b5d3d9a9246f2",
+    "src/war-ui.mjs": "3dabd4c23d8346b6e93aaddd8ba1395e569d4cf762767825efc4203c6c7f374b",
+    "src/app.mjs": "d4cafe1cef4c20e1c61da664f90e06c37d5010c6638a33df3ffef23cd5f709b6",
+    "src/domestic.mjs": "a9d1be10481c19ae3e51633e7048ab3d3f64c4ce4766d7d50e9cd9b98934fb49",
+    "src/game-types.d.ts": "6cb3d30fba8820008234d8c5da1231ea580a6e2bb5fbe5888fbb31a3616cf5bd",
+    "src/card-battle-deck.css": "6384e9210884aee0d46910eabf6ccf70e9095ec8304bfa2f3eac82c375497b5f",
+    "tests/card-battle-plans.test.mjs": "5efc880b1ae854478d360cef3cd4ec3c436065493b2647fd686f6353253bb441",
+    "tests/card-battle-plans-desktop.cjs": "345db901ac4e7cc0828e830fb97a40400929f65aa12dcde3c763c7e8f07c2fc1"
+  },
+  "nodeRegression": {
+    "tests": 870,
+    "pass": 870,
+    "fail": 0,
+    "elapsedSeconds": 74.058650334,
+    "log": "/private/tmp/card-stage2-final-regression.log"
+  },
+  "types": "36 runtime snapshots and negative type checks passed",
+  "plansDesktop": {
+    "date": "2026-10-23T00:08:01.239Z",
+    "elapsedSeconds": 6.283,
+    "checks": [
+      "saving changes only the plan library and spends no resources",
+      "overwrite renames the selected plan without duplication",
+      "deleting removes only the selected plan and does not reuse its ID",
+      "1440px plan management has readable controls without horizontal overflow",
+      "1000px plan management has readable controls without horizontal overflow",
+      "800px plan management has readable controls without horizontal overflow",
+      "serialized plan reloads to draft without changing resources or fixed identities",
+      "sealing a loaded plan retains the saved library in the committed game",
+      "defense save and load do not reserve troops or equipment",
+      "unavailable officer is listed and invalid load is blocked",
+      "rejected persistence leaves the library and real state unchanged",
+      "alternate war office can save and load a plan before choosing a target without office cost",
+      "alternate war office exposes the same legal tactic editor",
+      "alternate war office exposes the exact read-only deck without spending resources",
+      "isolated test never writes the actual game save key"
+    ],
+    "consoleErrors": []
+  },
+  "tacticsDesktop": {
+    "date": "2026-10-23T00:08:49.914Z",
+    "elapsedSeconds": 5.321,
+    "checks": [
+      "12 legal tactics and valid automatic capacity shown",
+      "1440px editor keeps inputs readable without horizontal overflow",
+      "1000px editor keeps inputs readable without horizontal overflow",
+      "800px editor keeps inputs readable without horizontal overflow",
+      "over-limit selection cannot apply",
+      "incomplete capacity cannot apply",
+      "cancel leaves draft mode, resources and real state unchanged",
+      "valid selection applies to campaign draft only",
+      "read-only preview reflects selected tactic quantities",
+      "campaign seal commits selected snapshot exactly once",
+      "defense selection reserves no soldiers or equipment before seal",
+      "automatic option clears the custom configuration",
+      "defense seal locks custom tactics with real-source deployment",
+      "isolated tests never write the actual save key"
+    ],
+    "consoleErrors": []
+  },
+  "deckDesktop": {
+    "date": "2026-10-23T00:09:39.665Z",
+    "checks": [
+      "all 30 locked cards rendered during mulligan",
+      "shuffle privacy is explicit",
+      "1440px layout retains 5:7 cards without horizontal overflow",
+      "1000px layout retains 5:7 cards without horizontal overflow",
+      "800px layout retains 5:7 cards without horizontal overflow",
+      "empty search preserves keyboard focus",
+      "person filter matches the actual three officers",
+      "remaining view counts exact own deck",
+      "open/filter/close preserves complete battle and resource state",
+      "campaign review opens exact 30-card preview without a resource commit",
+      "closing campaign preview returns to unsealed draft",
+      "defense review opens exact 30-card preview without deploying soldiers or gear",
+      "closing defense preview retains unsealed deployment",
+      "opponent timer pauses while the read-only deck dialog is open",
+      "opponent resumes after closing the deck dialog",
+      "isolated UI never writes real save key"
+    ],
+    "errors": []
+  },
+  "desktopMethod": "Serial isolated hidden Electron windows; no actual save key written; no visible preview stopped."
+}

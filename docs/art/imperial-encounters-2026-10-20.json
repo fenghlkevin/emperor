@@ -1,0 +1,43 @@
+{
+  "date": "2026-10-20",
+  "tool": "内置 image_gen",
+  "probability": "各自在指定州巡游时拥有固定1%区间；不重新分配已见或其他州角色区间；每存档仅出现一次。",
+  "locations": {
+    "gouyi-furen": {
+      "province": "hebei",
+      "city": "河间",
+      "source": "https://zh.wikisource.org/zh-hans/漢書/卷097上"
+    },
+    "zhu-yunqiao": {
+      "province": "jiangnan",
+      "city": "苏州",
+      "source": "https://thetvdb.com/series/408651-/allseasons/official",
+      "costume": "https://www.sohu.com/a/509739056_120099894"
+    }
+  },
+  "assets": [
+    {
+      "id": "zhu-yunqiao",
+      "file": "assets/beauties/special/zhu-yunqiao-v1.png",
+      "prompt": "Use case historical-scene. Create a single full body transparent game character portrait of adult 23-year-old 朱云巧 Zhu Yunqiao, played by young Jiang Qinqin 蒋勤勤 in 康熙微服私访记 八宝粥记. Image 1 is the authoritative character costume, hair and face reference; image 2 further shows the actress facial structure, eyes nose lips ears and neck. Preserve her recognizable young adult face, no generic doll face. Image 3 guides ONLY delicate realistic hand-painted Chinese colored pencil watercolor rendering, never its face or clothing or background. Reconstruct image 1's peach pink long sleeved Qing period young Han woman's silk jacket, dark navy richly embroidered high collar and broad decorative front edging, pale ivory ankle length pleated skirt, blue hair ribbons and small blue floral pins, period side buns with airy thin forehead fringe, earrings. NOT imperial empress headdress. Warm thoughtful gentle expression, natural anatomically integrated head neck shoulders, natural adult 7.5 heads proportions. Graceful balanced standing position slight three-quarter facing viewer, both legs and feet face same direction as pelvis, two embroidered flat shoes visible below sensible ankle hem, no long train. Both hands naturally hold a small CLOSED plain poetry book at waist. Full hair to soles with modest padding. Genuine alpha TRANSPARENT background. ONLY woman and book. Absolutely no background, ground, drop shadow, aura, translucent colored halo, gradient, text, logos or watermark. Cutout clean edges.",
+      "references": [
+        "outputs/references/tour-cameos/zhu-yunqiao-costume.jpg",
+        "outputs/references/tour-cameos/jiang-qinqin-early.jpg",
+        "assets/beauties/special/sketch-beauty-xia-yuhe-transparent-v6.png"
+      ]
+    },
+    {
+      "id": "gouyi-furen",
+      "file": "assets/beauties/special/gouyi-furen-v1.png",
+      "prompt": "Use case historical-scene. A single full body game portrait of adult 22-year-old 钩弋夫人 Zhao Jieyu, the woman from Hejian encountered by Han Wudi, BEFORE court ennoblement. Reference image guides ONLY refined realistic colored-pencil watercolor Chinese historical game painting style, not face, outfit, or glow. Give this woman her own natural beautiful oval face, soft almond eyes, straight brows, small defined nose, expressive lips, delicate ears, long natural neck. Calm slightly curious expression. Authentic-inspired Western Han cross-collar ivory and pale celadon silk long robe with restrained rust-red woven edging, simple tied sash, modest curved draping, small jade pendant. Modest Han coiled black hair bun with simple jade pin, no Qing style hair, no giant crown. At waist one hand is gently loosely closed and the other supports it naturally, suggesting the ancient clasped hand legend without showing injury or deformity. Balanced relaxed standing pose in mild three-quarter orientation, anatomically coherent torso pelvis knees ankles and feet, about 7.5 heads tall. Ankle length hem with BOTH embroidered low flat shoes modestly visible, feet aligned same direction as body, no sprawling train, no crossed ankles. Full head to shoe soles with padding. Genuine alpha TRANSPARENT background, ONLY woman. No ground plane, shadows, glow, colored halo, gradient, scenery, text or watermark.",
+      "references": [
+        "assets/beauties/special/sketch-beauty-xia-yuhe-transparent-v6.png"
+      ]
+    }
+  ],
+  "cleanup": [
+    "assets/beauties/featured/li-fengjie-v5.png"
+  ],
+  "identity": "按用户要求取消李凤姐巡游事件，恢复原名册立绘li-fengjie-v4.png。",
+  "format": "1024×1536 RGBA PNG，三图已核对真实透明通道，保留生成alpha。"
+}

@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-23T20:51:14.018Z",
+  "elapsedSeconds": 14.541,
+  "checks": [
+    "cbdb-94373 concise face copy retains complete accessible rules",
+    "cbdb-94373 deployment card identity motif keeps native hit rectangle",
+    "cbdb-94373 entry skill shows its personal subtitle before old health is released",
+    "cbdb-94373 holds a readable personal motif and original subtitle during windup",
+    "cbdb-94373 entry uses the full formal engine result once and cleans transient effects",
+    "cbdb-94373 deployed character retains the same ID-bound card face",
+    "cbdb-94373 commander identity motif keeps native hit rectangle",
+    "cbdb-94373 power shows its personal subtitle before old health is released",
+    "cbdb-94373 power uses the full formal engine result once and cleans transient effects",
+    "cbdb-94373 deployment fast preserves complete formal effects once and releases motion lock",
+    "cbdb-94373 power fast preserves complete formal effects once and releases motion lock",
+    "cbdb-94373 deployment reduced preserves complete formal effects once and releases motion lock",
+    "cbdb-94373 reduced persistent motifs have no CSS animation",
+    "cbdb-94373 power reduced preserves complete formal effects once and releases motion lock",
+    "cbdb-94373 reduced persistent motifs have no CSS animation"
+  ],
+  "errors": [],
+  "selectedIds": [
+    "cbdb-94373"
+  ],
+  "scope": "Selected historical-ID normal/fast/reduced deployment and commander fixtures only; excludes all100 artwork, gallery and viewport regression."
+}

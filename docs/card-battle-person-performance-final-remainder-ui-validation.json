@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-23T23:10:39.712Z",
+  "elapsedSeconds": 14.391,
+  "checks": [
+    "original-99 concise face copy retains complete accessible rules",
+    "original-99 deployment card identity motif keeps native hit rectangle",
+    "original-99 entry skill shows its personal subtitle before old health is released",
+    "original-99 holds a readable personal motif and original subtitle during windup",
+    "original-99 entry uses the full formal engine result once and cleans transient effects",
+    "original-99 deployed character retains the same ID-bound card face",
+    "original-99 commander identity motif keeps native hit rectangle",
+    "original-99 power shows its personal subtitle before old health is released",
+    "original-99 power uses the full formal engine result once and cleans transient effects",
+    "original-99 deployment fast preserves complete formal effects once and releases motion lock",
+    "original-99 power fast preserves complete formal effects once and releases motion lock",
+    "original-99 deployment reduced preserves complete formal effects once and releases motion lock",
+    "original-99 reduced persistent motifs have no CSS animation",
+    "original-99 power reduced preserves complete formal effects once and releases motion lock",
+    "original-99 reduced persistent motifs have no CSS animation"
+  ],
+  "errors": [],
+  "selectedIds": [
+    "original-99"
+  ],
+  "scope": "Selected historical-ID normal/fast/reduced deployment and commander fixtures only; excludes all100 artwork, gallery and viewport regression."
+}

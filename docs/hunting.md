@@ -25,7 +25,7 @@
 
 ## 美术与生成提示
 
-使用内置 ImageGen，基于用户批准的UI概念图生成。运行资源均保存在 `assets/sketch-hunting-*-v1.png`，现有打包规则会包含这些文件；预览截图是实际Electron界面。
+使用内置 ImageGen，基于用户批准的UI概念图生成。运行资源均保存在 `assets/scenes/hunting/sketch-hunting-*-v1.png`，现有打包规则会包含这些文件；预览截图是实际Electron界面。
 
 背景最终提示（参考图为已批准UI）：
 
@@ -43,6 +43,6 @@
 
 野猪占候选位置的比例由4/36提高至12/36。所有动物增大显示尺寸、提升亮度与对比度，并加冷白色轮廓；名称/积分放在深青色底牌上。背景降亮度和饱和度，像素命中仍只检测动物实际图像，名称牌及描边不计命中。
 
-新增资源：`assets/sketch-hunting-eagle-bear-v1.png`。内置ImageGen最终提示：
+新增资源：`assets/scenes/hunting/sketch-hunting-eagle-bear-v1.png`。内置ImageGen最终提示：
 
 > Use case: stylized-concept. Transparent game sprite atlas with exactly TWO isolated animals side by side in separate equally wide cells, landscape 2:1. LEFT cell a complete majestic eagle in flight, wings spread wide, silver-gray and white feather highlights, dark slate wing tips, ivory head and golden beak, facing slightly left. RIGHT cell one complete large Asiatic black bear in side three-quarter view facing left, standing on four legs, black blue-charcoal fur with clearly visible pale cream crescent chest marking, cool silver rim lighting all around fur silhouette. Both whole bodies must fit their own half, generous 10% transparent padding, no overlap, no ground or scenery, no cast shadows, no labels. Detailed realistic hand-painted ancient Chinese imperial hunting game assets, match realistic forest game illustration. Strong clearly readable opaque animal silhouettes, bright neutral/cool highlights to stand out against busy warm orange autumn forest. No brown camouflage colors, no UI, no frames. Genuinely transparent background.

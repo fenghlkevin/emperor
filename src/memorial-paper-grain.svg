@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="180" viewBox="0 0 520 180">
+<defs>
+ <filter id="fiber"><feTurbulence type="fractalNoise" baseFrequency=".65 .11" numOctaves="3" seed="17" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope=".14"/></feComponentTransfer><feBlend in="SourceGraphic" mode="multiply"/></filter>
+ <radialGradient id="edge"><stop offset=".65" stop-color="#987b40" stop-opacity="0"/><stop offset="1" stop-color="#886537" stop-opacity=".24"/></radialGradient>
+ <radialGradient id="mark"><stop stop-color="#917445" stop-opacity=".12"/><stop offset="1" stop-color="#917445" stop-opacity="0"/></radialGradient>
+</defs>
+<path fill="#d9c69d" filter="url(#fiber)" d="M0 0h520v180H0z"/>
+<path fill="url(#edge)" d="M0 0h520v180H0z"/>
+<ellipse cx="34" cy="144" rx="52" ry="28" fill="url(#mark)"/><ellipse cx="470" cy="29" rx="43" ry="24" fill="url(#mark)"/>
+<g fill="none"><path d="m173 0-2 46 4 50-3 84m173-180-3 51 3 44-2 85" stroke="#8c7448" stroke-opacity=".18"/><path d="m175 0-2 46 4 50-3 84m173-180-3 51 3 44-2 85" stroke="#fff2cc" stroke-opacity=".23"/><path d="M1 4q160-4 258-1t260-1M2 177q183-3 284 0t232-2" stroke="#82633a" stroke-opacity=".25"/></g>
+</svg>

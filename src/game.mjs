@@ -1,3 +1,14 @@
+import {applyDifficultyOpening} from './difficulty-opening.mjs';
+import {initializeDifficulty,validateDifficulty,difficultyRandom} from './difficulty.mjs';
+import {refreshArmyRecoveryStatus} from './army-recovery.mjs';
+import {initializeResourceEconomy} from './province-resources.mjs';
+import {initializeNewLocalAutonomy} from './local-autonomy.mjs';
+import {enableOfficialProduction} from './official-production.mjs';
+import {enableDevelopmentBalance} from './new-dynasty-balance.mjs';
+import {settleBeautyTributes} from './beauty-tributes.mjs';
+import {settleEspionage,validateEspionage} from './espionage.mjs';
+import {PERIOD_NAMES} from './calendar.mjs';
+export {dateLabel} from './calendar.mjs';
 import {REST_LIFE_COST,EXHAUSTION_LIFE_COST} from './balance-rules.mjs';
 import {initializeEndings,settleEndings,validateEndings} from './endings.mjs';
 import {initializeAlchemy,validateAlchemy,settleAlchemy,alchemyBlock} from './alchemy.mjs';
@@ -30,10 +41,16 @@ export const buildings = [
 });
 // Court and personnel register share the same central-office definitions.
 export const officials=CENTRAL_OFFICES;
-export function newGame(name) { return initializeNewSystems(initializeEmperor({auspices:{lastTurn:1,history:[]},envoyVisit:null,emperorRulesVersion:1,version:2,saveRevision:0,domestic:initializeWar(createDomestic(10000)),name:name.trim().slice(0,16),turn:1,scene:'palace',stats:{treasury:10000,health:100,prestige:50},visits:{},createdAt:new Date().toISOString()})); }
+export function newGame(name,countryName='大晟') { if(typeof countryName!=='string'||!countryName.trim()||countryName.trim().length>16)throw Error('国号须为1至16字');const result=initializeNewSystems(initializeEmperor({auspices:{lastTurn:1,history:[]},envoyVisit:null,emperorRulesVersion:1,version:2,saveRevision:0,domestic:initializeWar(createDomestic(10000)),name:name.trim().slice(0,16),turn:1,scene:'palace',stats:{treasury:10000,health:100,prestige:50},visits:{},createdAt:new Date().toISOString()}));result.dynasty.endingRecord={version:1,executions:0,coverage:'complete',sinceTurn:1};result.domestic.countries.find(c=>c.id===result.domestic.playerCountryId).name=countryName.trim();initializeDifficulty(result.domestic);result.stats.treasury=countrySummary(result.domestic).country.fiscal.treasury;return result; }
+// UI passes an explicit difficulty. Omitted options preserve the existing factory API and opening.
+// newGame remains the explicit pre-resource compatibility fixture.
+export function createPlayableGame(name,countryName='大晟',options){
+ const s=newGame(name,countryName);initializeResourceEconomy(s.domestic);initializeNewLocalAutonomy(s.domestic);
+ enableDevelopmentBalance(s.domestic,s.turn,{fresh:true});enableOfficialProduction(s.domestic,s.turn);
+ if(options){delete s.domestic.difficulty;const {difficulty='standard',seed=184713}=options;applyDifficultyOpening(s,difficulty,seed);}else initializeDifficulty(s.domestic);s.stats.treasury=countrySummary(s.domestic).country.fiscal.treasury;return s;
+}
 /** 含兼容补值、镜像同步及终评生成；输入边界见 docs/save-compatibility.md。 */
-export function validateSave(data) { if (!data || data.version!==2 || typeof data.name!=='string' || !data.name.trim() || data.name.length>16 || !Number.isInteger(data.turn) || data.turn<1 || !['court','palace'].includes(data.scene) || !data.stats || !['treasury','health','prestige'].every(k=>Number.isFinite(data.stats[k])) || !data.visits || typeof data.visits!=='object' || Array.isArray(data.visits)) throw new Error('存档格式不正确或版本不支持');  data={...data,domestic:migrateDomestic(data.domestic,data.turn)};if(data.saveRevision===undefined)data.saveRevision=0;if(!Number.isSafeInteger(data.saveRevision)||data.saveRevision<0)throw Error('存档提交版本无效');initializeWar(data.domestic);initializeStrategy(data.domestic,data.turn);validateStrategy(data.domestic,data.turn);validateWar(data.domestic);validateDomestic(data.domestic,data.turn);initializeEnvoyVisit(data);validateEnvoyVisit(data);data.stats={...data.stats,treasury:countrySummary(data.domestic).country.fiscal.treasury,prestige:countrySummary(data.domestic).country.prestige};validateEmperor(data);validateAlchemy(data);validateHunting(data);validateTravel(data);validateAuspices(data);initializeDynasty(data);validateDynasty(data);initializeEndings(data);validateEndings(data);initializeProgress(data);validateProgress(data);settleReignResult(data);validateReignResult(data);return data; }
-export function dateLabel(turn) { const n=turn-1; return `${Math.floor(n/36)+1}年${Math.floor(n%36/3)+1}月${['上','中','下'][n%3]}旬`; }
+export function validateSave(data) { if (!data || data.version!==2 || typeof data.name!=='string' || !data.name.trim() || data.name.length>16 || !Number.isInteger(data.turn) || data.turn<1 || !['court','palace'].includes(data.scene) || !data.stats || !['treasury','health','prestige'].every(k=>Number.isFinite(data.stats[k])) || !data.visits || typeof data.visits!=='object' || Array.isArray(data.visits)) throw new Error('存档格式不正确或版本不支持');  if(data.eraName!==undefined&&(typeof data.eraName!=='string'||!data.eraName.trim()||data.eraName.length>16))throw Error('存档年号无效');  initializeDifficulty(data.domestic);validateDifficulty(data.domestic,data.turn);data={...data,domestic:migrateDomestic(data.domestic,data.turn)};if(data.saveRevision===undefined)data.saveRevision=0;if(!Number.isSafeInteger(data.saveRevision)||data.saveRevision<0)throw Error('存档提交版本无效');initializeWar(data.domestic);initializeStrategy(data.domestic,data.turn);validateStrategy(data.domestic,data.turn);validateWar(data.domestic);validateDomestic(data.domestic,data.turn);validateEspionage(data.domestic,data.turn);initializeEnvoyVisit(data);validateEnvoyVisit(data);data.stats={...data.stats,treasury:countrySummary(data.domestic).country.fiscal.treasury,prestige:countrySummary(data.domestic).country.prestige};validateEmperor(data);validateAlchemy(data);validateHunting(data);validateTravel(data);validateAuspices(data);initializeDynasty(data);validateDynasty(data);initializeEndings(data);validateEndings(data);initializeProgress(data);validateProgress(data);settleReignResult(data);validateReignResult(data);return data; }
 /** 原地结算一旬；调用方在候选副本上执行后提交。顺序见 docs/turn-settlement.md。 */
 export function advance(state) {
  initializeEmperor(state);
@@ -56,28 +73,31 @@ export function advance(state) {
  settleDynasty(state);
  settleJustice(state.domestic,state.turn);
  settleDomestic(state.domestic,state.turn);
- settlePersonnel(state.domestic,state.turn,Math.random,state.stats);
+ settlePersonnel(state.domestic,state.turn,difficultyRandom(state.domestic,'personnel'),state.stats);
  settleStrategy(state.domestic,state.turn);
+ refreshArmyRecoveryStatus(state.domestic,state.turn);
+ settleEspionage(state.domestic,state.turn);
  settleEndings(state);
  settleAlchemy(state);
  settleAuspices(state);
  state.stats.prestige=countrySummary(state.domestic).country.prestige;
  state.stats.treasury=countrySummary(state.domestic).country.fiscal.treasury;
+ settleBeautyTributes(state);
  settleProgress(state);
  settleReignResult(state);
  return state;
 }
 
-export const PHASES=['早上 · 早朝','上午工作','中午工作','下午工作','傍晚工作','夜晚'];
+export const PHASES=PERIOD_NAMES.map((time,i)=>`${time} · ${['早朝','听政','理政','理政','理政','就寝'][i]}`);
 export function phaseLabel(s){return PHASES[s.phase??0];}
 export function roomBlock(s,id){
  initializeEmperor(s);
  if(s.stats.life===0)return '寿元已尽，本朝终结';
  if(id==='alchemy'&&alchemyBlock(s))return alchemyBlock(s);
  if(s.stats.energy<=0&&id!=='dragon')return '体力耗尽，请到金龙殿独寝恢复';
- if(s.phase===5&&!['dragon','harem'].includes(id))return '夜晚只能独寝安眠或回后宫';
+ if(s.phase===5&&!['dragon','harem'].includes(id))return '亥时只能独寝安眠或回后宫';
  if(id==='court'&&(s.phase??0)!==0)return '本旬仅早朝阶段可以上朝，退朝后请待下一旬早朝';
- if(s.phase===0&&!['court','dragon','harem'].includes(id))return '早上请先到宣政殿早朝';
+ if(s.phase===0&&!['court','dragon','harem'].includes(id))return '卯时请先到宣政殿早朝';
  return id==='court'||id==='liming'?courtBlock(s):'';
 }
 export function leaveRoom(s){

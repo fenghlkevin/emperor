@@ -1,0 +1,589 @@
+{
+  "tool": "built-in image_gen",
+  "status": "completed",
+  "existingKorea": [
+    "朝鲜半岛-高丽女子-1",
+    "朝鲜半岛-高丽女子-2"
+  ],
+  "proportionPolicy": "最新用户截图确认保留宋慧乔、全智贤、韩佳人、裴秀智、林允儿原始版，其余6张用已认可宋慧乔版做全身骨架模板重做；孙艺珍改站姿持书。",
+  "agePolicy": "宋慧乔、全智贤、孙艺珍、金泰希、韩佳人使用2012—2013年明确成年照片；其余五位使用公开成年照片。 韩志敏使用2014年5月公开成年照片。",
+  "items": [
+    {
+      "key": "song-hye-kyo",
+      "name": "宋慧乔",
+      "birthYear": 1981,
+      "referenceYear": 2013,
+      "imageUrl": "https://image.xportsnews.com/contents/images/upload/article/2013/0616/1371375191675.jpg",
+      "page": "https://www.xportsnews.com/article/337720",
+      "ref": "assets/beauties/references/korea-ten-20261022/song-hye-kyo.jpg",
+      "status": "downloaded",
+      "id": "korea-photo-ten-20261022-01",
+      "title": "玉瓷清茶",
+      "asset": "assets/beauties/random/番邦女子/韩国女子-宋慧乔-玉瓷清茶.png",
+      "proportionReference": "assets/beauties/references/japan-ten-20261022/user-approved-proportions.png",
+      "referenceSha256": "f819e95e8b3e7914fa1a6d3eed5484fc281fabaa9f993aca45161140a567e39e",
+      "prompt": "Use case: photorealistic-natural. Asset type: ONE isolated full-body adult Korean celebrity historical-fantasy game character, realistic elegant costume photograph with natural skin texture, transparent PNG. IMAGE 1 is FACE IDENTITY reference ONLY: preserve distinctive recognizable eye shape, nose, mouth, cheek/jaw structure and age appearance from the dated ADULT photograph, do not copy its cropped framing, lens distortion, background, outfit or other people. IMAGE 2 is the USER-APPROVED BODY PROPORTION reference ONLY: match its harmonious relationship between head size, normal shoulder span, full-sized torso/ribcage/pelvis and natural long legs; do NOT copy its face, Chinese costume or flute. Small proportionate adult head, approximately 7.5-8 heads standing equivalent, normal neck and shoulder width, no oversized head on a shrunken narrow body. Natural waist and coherent hip/knee/ankle joints; never stretch only shins. Distant eye-level 85mm fashion camera, no wide angle or foreshortening. Light authentic KOREAN summer HANBOK: mosi ramie or light silk, clearly Korean short jeogori, white dongjeong collar and goreum tie, appropriate chima/baji/baeja variants. Thin breathable fabric with opaque lining, tasteful ordinary nonsexual clothing. No Chinese hanfu/qipao, Japanese kimono/obi, heavy royal robes or winter layers. Two coherent arms, two natural hands with five fingers each, two legs, TWO ANATOMICALLY CORRECT BARE FEET with five toes, no shoes/socks. Credible grasp and physical support, balanced center of gravity. Full figure including all hair pins, props, hands, hems and toes inside portrait 2:3 canvas, comfortable 5% transparent margins. Genuine transparent alpha, no backdrop, checkerboard, floor, cast shadow, glow, text, logo or watermark. Soft neutral natural light. Subject: 宋慧乔 (song-hye-kyo) as in 2013 adult reference photograph, approximately age 32. Standing relaxed in a natural three-quarter pose with both bare feet visible, holding a small Korean celadon tea bowl at low waist with one hand supporting its base and other fingertips on side. Ivory light ramie short summer jeogori with pale jade collar/dongjeong, small pale-jade goreum bow, slim flowing celadon CHIMA skirt, delicate plum embroidery. Hair in a neat low bun with silver-jade binyeo, tiny pearl earrings, thin bracelet and long jade norigae. USER CONFIRMED COSTUME REQUIREMENT: unmistakably KOREAN summer hanbok, visually distinct from Chinese hanfu and Japanese kimono. Light mosi ramie or thin summer silk, breathable elbow/short sleeves, opaque lining and no heavy layered robes. Authentic Korean white dongjeong, curved jeogori front, small goreum bow and Korean maedeup/norigae. Do not make a Chinese long flowing crossover robe or obi. Maintain normal full-size adult ribcage and torso beneath traditional high-waisted chima, do not shrink torso to exaggerate the high waist. Use light, modest volume skirt drape and complete natural legs. The reference Image 2 is proportions ONLY; never copy its flowing Chinese skirt or high split.",
+      "statusGeneration": "completed",
+      "userApprovedProportions": true,
+      "selectionNote": "用户截图认可此版本；保留该版本脸部、身形、衣着及姿势。",
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a1615b-c380-73a3-bb7b-58bb2f9b4009/exec-b515717b-a0f4-4c2e-8b13-1b4be7b284f4.png",
+      "assetSha256": "1f21959a74d77607a7f05bd2cbb714f22983051625cb4e978ae677113a239cb9",
+      "footwear": "barefoot",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentFraction": 0.6211,
+        "nontransparentBorderPixels": 0,
+        "boundsAbove20": [
+          135,
+          15,
+          898,
+          1524
+        ]
+      },
+      "referenceAgeAtPhoto": 31,
+      "actualGenerationPrompt": "Use case: photorealistic-natural. Asset type: ONE isolated full-body adult Korean celebrity historical-fantasy game character, realistic elegant costume photograph with natural skin texture, transparent PNG. IMAGE 1 is FACE IDENTITY reference ONLY: preserve distinctive recognizable eye shape, nose, mouth, cheek/jaw structure and age appearance from the dated ADULT photograph, do not copy its cropped framing, lens distortion, background, outfit or other people. IMAGE 2 is the USER-APPROVED BODY PROPORTION reference ONLY: match its harmonious relationship between head size, normal shoulder span, full-sized torso/ribcage/pelvis and natural long legs; do NOT copy its face, Chinese costume or flute. Small proportionate adult head, approximately 7.5-8 heads standing equivalent, normal neck and shoulder width, no oversized head on a shrunken narrow body. Natural waist and coherent hip/knee/ankle joints; never stretch only shins. Distant eye-level 85mm fashion camera, no wide angle or foreshortening. Light authentic KOREAN summer HANBOK: mosi ramie or light silk, clearly Korean short jeogori, white dongjeong collar and goreum tie, appropriate chima/baji/baeja variants. Thin breathable fabric with opaque lining, tasteful ordinary nonsexual clothing. No Chinese hanfu/qipao, Japanese kimono/obi, heavy royal robes or winter layers. Two coherent arms, two natural hands with five fingers each, two legs, TWO ANATOMICALLY CORRECT BARE FEET with five toes, no shoes/socks. Credible grasp and physical support, balanced center of gravity. Full figure including all hair pins, props, hands, hems and toes inside portrait 2:3 canvas, comfortable 5% transparent margins. Genuine transparent alpha, no backdrop, checkerboard, floor, cast shadow, glow, text, logo or watermark. Soft neutral natural light. Subject: 宋慧乔 (song-hye-kyo) as in 2013 adult reference photograph, approximately age 32. Standing relaxed in a natural three-quarter pose with both bare feet visible, holding a small Korean celadon tea bowl at low waist with one hand supporting its base and other fingertips on side. Ivory light ramie short summer jeogori with pale jade collar/dongjeong, small pale-jade goreum bow, slim flowing celadon CHIMA skirt, delicate plum embroidery. Hair in a neat low bun with silver-jade binyeo, tiny pearl earrings, thin bracelet and long jade norigae.",
+      "visualReview": "已查看完整生成图和浅色/深蓝换底总览，检查成年比例、韩式夏装、头肩躯干与腿部关系、手持道具接触和光脚；真实alpha及边界检查通过。",
+      "supersededSourcePath": "/Users/fengheliang/.codex/generated_images/01a1615b-c380-73a3-bb7b-58bb2f9b4009/exec-64fb6189-2899-4e89-9a99-86720634d035.png",
+      "artworkRevision": "docs/art/japan-korea-slim-legs-feet-2026-10-22.json"
+    },
+    {
+      "key": "jun-ji-hyun",
+      "name": "全智贤",
+      "birthYear": 1981,
+      "referenceYear": 2013,
+      "imageUrl": "https://img.sbs.co.kr/newsnet/etv/upload/2013/12/16/30000341677_500.jpg",
+      "page": "https://ent.sbs.co.kr/news/article.do?article_id=E10004878743",
+      "ref": "assets/beauties/references/korea-ten-20261022/jun-ji-hyun.jpg",
+      "status": "downloaded",
+      "id": "korea-photo-ten-20261022-02",
+      "title": "荷影团扇",
+      "asset": "assets/beauties/random/番邦女子/韩国女子-全智贤-荷影团扇.png",
+      "proportionReference": "assets/beauties/references/japan-ten-20261022/user-approved-proportions.png",
+      "referenceSha256": "09038eab612b71e369b4414ef45b34662fd2a305bc88a230ccc22b64732cb3a8",
+      "prompt": "Use case: photorealistic-natural. Asset type: ONE isolated full-body adult Korean celebrity historical-fantasy game character, realistic elegant costume photograph with natural skin texture, transparent PNG. IMAGE 1 is FACE IDENTITY reference ONLY: preserve distinctive recognizable eye shape, nose, mouth, cheek/jaw structure and age appearance from the dated ADULT photograph, do not copy its cropped framing, lens distortion, background, outfit or other people. IMAGE 2 is the USER-APPROVED BODY PROPORTION reference ONLY: match its harmonious relationship between head size, normal shoulder span, full-sized torso/ribcage/pelvis and natural long legs; do NOT copy its face, Chinese costume or flute. Small proportionate adult head, approximately 7.5-8 heads standing equivalent, normal neck and shoulder width, no oversized head on a shrunken narrow body. Natural waist and coherent hip/knee/ankle joints; never stretch only shins. Distant eye-level 85mm fashion camera, no wide angle or foreshortening. Light authentic KOREAN summer HANBOK: mosi ramie or light silk, clearly Korean short jeogori, white dongjeong collar and goreum tie, appropriate chima/baji/baeja variants. Thin breathable fabric with opaque lining, tasteful ordinary nonsexual clothing. No Chinese hanfu/qipao, Japanese kimono/obi, heavy royal robes or winter layers. Two coherent arms, two natural hands with five fingers each, two legs, TWO ANATOMICALLY CORRECT BARE FEET with five toes, no shoes/socks. Credible grasp and physical support, balanced center of gravity. Full figure including all hair pins, props, hands, hems and toes inside portrait 2:3 canvas, comfortable 5% transparent margins. Genuine transparent alpha, no backdrop, checkerboard, floor, cast shadow, glow, text, logo or watermark. Soft neutral natural light. Subject: 全智贤 (jun-ji-hyun) as in 2013 adult reference photograph, approximately age 32. Standing tall and graceful with relaxed shoulders, one bare foot half-step forward, holding a round Korean painted bamboo dan-seon fan down beside hip, other hand naturally touching norigae cord. Pale blue airy Korean summer jeogori with elbow-length curved sleeves and a narrow white dongjeong, indigo goreum ribbon, ivory flowing slim chima with water iris motifs. Long dark hair half-up with silver floral dwikkoji, blue stone ear drops, fine chain necklace and decorative knot norigae. USER CONFIRMED COSTUME REQUIREMENT: unmistakably KOREAN summer hanbok, visually distinct from Chinese hanfu and Japanese kimono. Light mosi ramie or thin summer silk, breathable elbow/short sleeves, opaque lining and no heavy layered robes. Authentic Korean white dongjeong, curved jeogori front, small goreum bow and Korean maedeup/norigae. Do not make a Chinese long flowing crossover robe or obi. Maintain normal full-size adult ribcage and torso beneath traditional high-waisted chima, do not shrink torso to exaggerate the high waist. Use light, modest volume skirt drape and complete natural legs. The reference Image 2 is proportions ONLY; never copy its flowing Chinese skirt or high split.",
+      "statusGeneration": "completed",
+      "userApprovedProportions": true,
+      "selectionNote": "用户截图认可此版本；保留该版本脸部、身形、衣着及姿势。",
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a1615b-c380-73a3-bb7b-58bb2f9b4009/exec-d6211a6c-172e-45f4-b2bb-dabd4147eb54.png",
+      "assetSha256": "1d36725a140adb5bc833987deb6ff9fa0f391c7935e026987d6bb5c5f3fd06d1",
+      "footwear": "barefoot",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentFraction": 0.5372,
+        "nontransparentBorderPixels": 0,
+        "boundsAbove20": [
+          88,
+          14,
+          958,
+          1524
+        ]
+      },
+      "referenceAgeAtPhoto": 32,
+      "actualGenerationPrompt": "Use case: photorealistic-natural. Asset type: ONE isolated full-body adult Korean celebrity historical-fantasy game character, realistic elegant costume photograph with natural skin texture, transparent PNG. IMAGE 1 is FACE IDENTITY reference ONLY: preserve distinctive recognizable eye shape, nose, mouth, cheek/jaw structure and age appearance from the dated ADULT photograph, do not copy its cropped framing, lens distortion, background, outfit or other people. IMAGE 2 is the USER-APPROVED BODY PROPORTION reference ONLY: match its harmonious relationship between head size, normal shoulder span, full-sized torso/ribcage/pelvis and natural long legs; do NOT copy its face, Chinese costume or flute. Small proportionate adult head, approximately 7.5-8 heads standing equivalent, normal neck and shoulder width, no oversized head on a shrunken narrow body. Natural waist and coherent hip/knee/ankle joints; never stretch only shins. Distant eye-level 85mm fashion camera, no wide angle or foreshortening. Light authentic KOREAN summer HANBOK: mosi ramie or light silk, clearly Korean short jeogori, white dongjeong collar and goreum tie, appropriate chima/baji/baeja variants. Thin breathable fabric with opaque lining, tasteful ordinary nonsexual clothing. No Chinese hanfu/qipao, Japanese kimono/obi, heavy royal robes or winter layers. Two coherent arms, two natural hands with five fingers each, two legs, TWO ANATOMICALLY CORRECT BARE FEET with five toes, no shoes/socks. Credible grasp and physical support, balanced center of gravity. Full figure including all hair pins, props, hands, hems and toes inside portrait 2:3 canvas, comfortable 5% transparent margins. Genuine transparent alpha, no backdrop, checkerboard, floor, cast shadow, glow, text, logo or watermark. Soft neutral natural light. Subject: 全智贤 (jun-ji-hyun) as in 2013 adult reference photograph, approximately age 32. Standing tall and graceful with relaxed shoulders, one bare foot half-step forward, holding a round Korean painted bamboo dan-seon fan down beside hip, other hand naturally touching norigae cord. Pale blue airy Korean summer jeogori with elbow-length curved sleeves and a narrow white dongjeong, indigo goreum ribbon, ivory flowing slim chima with water iris motifs. Long dark hair half-up with silver floral dwikkoji, blue stone ear drops, fine chain necklace and decorative knot norigae.",
+      "visualReview": "已查看完整生成图和浅色/深蓝换底总览，检查成年比例、韩式夏装、头肩躯干与腿部关系、手持道具接触和光脚；真实alpha及边界检查通过。",
+      "supersededSourcePath": "/Users/fengheliang/.codex/generated_images/01a1615b-c380-73a3-bb7b-58bb2f9b4009/exec-7982778e-2b72-4bb1-8d3d-ca39536aee9d.png",
+      "artworkRevision": "docs/art/japan-korea-slim-legs-feet-2026-10-22.json"
+    },
+    {
+      "key": "son-ye-jin",
+      "name": "孙艺珍",
+      "birthYear": 1982,
+      "referenceYear": 2013,
+      "imageUrl": "https://image.newsis.com/2013/09/26/NISI20130926_0008722938_web.jpg",
+      "page": "https://www.newsjeju.net/news/articleView.html?idxno=144441",
+      "ref": "assets/beauties/references/korea-ten-20261022/son-ye-jin.jpg",
+      "status": "downloaded",
+      "id": "korea-photo-ten-20261022-03",
+      "title": "杏绡书香",
+      "asset": "assets/beauties/random/番邦女子/韩国女子-孙艺珍-杏绡书香.png",
+      "proportionReference": "assets/beauties/references/korea-ten-20261022/user-approved-song-body.png",
+      "referenceSha256": "eb7d5dbb050d2abbaa326f8b4475153ac119e2d02bcb01716985e8776a72f751",
+      "prompt": "Use case: identity-preserve. Edit Image 1 as the FULL-BODY SKELETON AND PROPORTION TEMPLATE, NOT just loose inspiration. Image 1 is a user-approved full adult body. Preserve its exact relative head scale, normal shoulder span, neck, chest/ribcage length and breadth, natural waist and hips, long thighs and shins, hands and bare feet scale. Do NOT enlarge the head to make the face clearer, do not shrink the torso or narrow shoulders. Same full-body camera distance and eye-level normal lens. Replace identity COMPLETELY with adult celebrity face from IMAGE 2, which is ONLY a face identity reference. Preserve her unique eyes, nose, mouth and jaw, natural individual attractiveness and skin texture. Never blend Image 1 face into Image 2 face. Change hair and costume as specified while retaining Image 1 adult anatomical proportions and normal joint placement. One isolated whole adult person, realistic costume photograph. Two arms, five fingers each hand, two coherent legs, two anatomically correct BARE FEET with five toes, correct physical grasp and gravity. Korean summer HANBOK with short light ramie/silk JEOGORI, white DONGJEONG collar, small GOREUM tie and NORIGAE accessory. Airy summer clothes, opaque lining, tasteful fully clothed adult, no shoes/socks. Keep skirt drape light with restrained volume and both feet visible, no heavy royal costume, no Chinese hanfu, no Japanese kimono or obi. Entire hairpins, props and toes in 2:3 portrait frame with 5% clear margins. GENUINE alpha transparency, no background/scene/floor/shadow/glow/checkerboard/text/logos. Son Ye-jin 孙艺珍, adult 2013 face, approximately age 31. NEW POSE standing naturally, shoulders relaxed, both hands holding an open clothbound poetry book at low waist, slight closed-mouth warm smile. Peach short elbow-sleeved mosi ramie Korean jeogori with white collar and coral goreum, simple ivory-coral ankle-length chima with tiny apricot blossom pattern; no big high slit. Dark-brown low chignon, coral binyeo, pearl earrings, slim gold bracelet, butterfly norigae. Remove the cup from Image 1, book is only handheld prop. Normal full adult torso under high-waisted skirt, arms must not make the torso smaller.",
+      "statusGeneration": "completed",
+      "previousPrompt": "Use case: photorealistic-natural. Asset type: ONE isolated full-body adult Korean celebrity historical-fantasy game character, realistic elegant costume photograph with natural skin texture, transparent PNG. IMAGE 1 is FACE IDENTITY reference ONLY: preserve distinctive recognizable eye shape, nose, mouth, cheek/jaw structure and age appearance from the dated ADULT photograph, do not copy its cropped framing, lens distortion, background, outfit or other people. IMAGE 2 is the USER-APPROVED BODY PROPORTION reference ONLY: match its harmonious relationship between head size, normal shoulder span, full-sized torso/ribcage/pelvis and natural long legs; do NOT copy its face, Chinese costume or flute. Small proportionate adult head, approximately 7.5-8 heads standing equivalent, normal neck and shoulder width, no oversized head on a shrunken narrow body. Natural waist and coherent hip/knee/ankle joints; never stretch only shins. Distant eye-level 85mm fashion camera, no wide angle or foreshortening. Light authentic KOREAN summer HANBOK: mosi ramie or light silk, clearly Korean short jeogori, white dongjeong collar and goreum tie, appropriate chima/baji/baeja variants. Thin breathable fabric with opaque lining, tasteful ordinary nonsexual clothing. No Chinese hanfu/qipao, Japanese kimono/obi, heavy royal robes or winter layers. Two coherent arms, two natural hands with five fingers each, two legs, TWO ANATOMICALLY CORRECT BARE FEET with five toes, no shoes/socks. Credible grasp and physical support, balanced center of gravity. Full figure including all hair pins, props, hands, hems and toes inside portrait 2:3 canvas, comfortable 5% transparent margins. Genuine transparent alpha, no backdrop, checkerboard, floor, cast shadow, glow, text, logo or watermark. Soft neutral natural light. Subject: 孙艺珍 (son-ye-jin) as in 2013 adult reference photograph, approximately age 31. Seated upright on a simple low wooden stool, normal adult torso and thighs, knees naturally together and both bare feet placed visibly on same level. Hold an open small clothbound poetry book naturally at lap. Peach fine ramie Korean jeogori with elbow-length sleeves and ivory collar, narrow coral goreum, light ivory-coral ankle-length chima. Soft brown hair low chignon with coral binyeo, pearl ear drops, slim gold bracelet, butterfly norigae. Only stool as supporting furniture. USER CONFIRMED COSTUME REQUIREMENT: unmistakably KOREAN summer hanbok, visually distinct from Chinese hanfu and Japanese kimono. Light mosi ramie or thin summer silk, breathable elbow/short sleeves, opaque lining and no heavy layered robes. Authentic Korean white dongjeong, curved jeogori front, small goreum bow and Korean maedeup/norigae. Do not make a Chinese long flowing crossover robe or obi. Maintain normal full-size adult ribcage and torso beneath traditional high-waisted chima, do not shrink torso to exaggerate the high waist. Use light, modest volume skirt drape and complete natural legs. The reference Image 2 is proportions ONLY; never copy its flowing Chinese skirt or high split.",
+      "inputRoles": [
+        "Image 1: user-approved Song Hye-kyo whole-body template; keep head/body relationship only, replace face, clothes and props.",
+        "Image 2: dated adult subject face identity."
+      ],
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a1615b-c380-73a3-bb7b-58bb2f9b4009/exec-22f90104-f0c3-4de0-b35d-02ecb66a3b5d.png",
+      "assetSha256": "55463d0bbfaf8a15ad246cfee921e5df49da92c97a529659a34808fe0962ed6f",
+      "footwear": "barefoot",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentFraction": 0.6204,
+        "nontransparentBorderPixels": 0,
+        "boundsAbove20": [
+          148,
+          13,
+          911,
+          1526
+        ]
+      },
+      "referenceAgeAtPhoto": 31,
+      "visualReview": "已查看完整生成图和浅色/深蓝换底总览，检查成年比例、韩式夏装、头肩躯干与腿部关系、手持道具接触和光脚；真实alpha及边界检查通过。",
+      "supersededSourcePath": "/Users/fengheliang/.codex/generated_images/01a1615b-c380-73a3-bb7b-58bb2f9b4009/exec-7ebe59a3-bb93-4181-ad73-a0faa2147be7.png",
+      "artworkRevision": "docs/art/japan-korea-slim-legs-feet-2026-10-22.json"
+    },
+    {
+      "key": "kim-tae-hee",
+      "name": "金泰希",
+      "birthYear": 1980,
+      "referenceYear": 2013,
+      "imageUrl": "https://cdn.livedoor.jp/kstyle/kstyle_news/USER/20130401/l6/lmzs9mk25wvz6bo44426/244/498x684x9a3c2f224344d980f3dc30ed.jpg",
+      "page": "https://kstyle.com/article.ksn?articleNo=1965722",
+      "ref": "assets/beauties/references/korea-ten-20261022/kim-tae-hee.jpg",
+      "status": "downloaded",
+      "id": "korea-photo-ten-20261022-04",
+      "title": "绯绡莲盏",
+      "asset": "assets/beauties/random/番邦女子/韩国女子-金泰希-绯绡莲盏.png",
+      "proportionReference": "assets/beauties/references/korea-ten-20261022/user-approved-song-body.png",
+      "referenceSha256": "b74faed541a1696183992145b5a27f5e517670b915f13fed028b61ae0ba62011",
+      "prompt": "Use case: identity-preserve. Edit Image 1 as the FULL-BODY SKELETON AND PROPORTION TEMPLATE, NOT just loose inspiration. Image 1 is a user-approved full adult body. Preserve its exact relative head scale, normal shoulder span, neck, chest/ribcage length and breadth, natural waist and hips, long thighs and shins, hands and bare feet scale. Do NOT enlarge the head to make the face clearer, do not shrink the torso or narrow shoulders. Same full-body camera distance and eye-level normal lens. Replace identity COMPLETELY with adult celebrity face from IMAGE 2, which is ONLY a face identity reference. Preserve her unique eyes, nose, mouth and jaw, natural individual attractiveness and skin texture. Never blend Image 1 face into Image 2 face. Change hair and costume as specified while retaining Image 1 adult anatomical proportions and normal joint placement. One isolated whole adult person, realistic costume photograph. Two arms, five fingers each hand, two coherent legs, two anatomically correct BARE FEET with five toes, correct physical grasp and gravity. Korean summer HANBOK with short light ramie/silk JEOGORI, white DONGJEONG collar, small GOREUM tie and NORIGAE accessory. Airy summer clothes, opaque lining, tasteful fully clothed adult, no shoes/socks. Keep skirt drape light with restrained volume and both feet visible, no heavy royal costume, no Chinese hanfu, no Japanese kimono or obi. Entire hairpins, props and toes in 2:3 portrait frame with 5% clear margins. GENUINE alpha transparency, no background/scene/floor/shadow/glow/checkerboard/text/logos. Kim Tae-hee 金泰希, adult 2013 face approximately age 33. Standing calm natural contrapposto matching Image 1 body, holding small shallow celadon bowl containing ONE pink lotus in both hands at low waist. Soft rose-pink short elbow-sleeved Korean summer jeogori, white collar, grey goreum; ivory sleeveless waist-length Korean baeja and soft pink ankle-length chima with subtle lotus embroidery, no long outer robe. Dark low jjok bun with small gold floral binyeo, pearl drop earrings, slim bracelet, jade norigae. Replace tea cup with lotus bowl. No crown or huge royal headdress.",
+      "statusGeneration": "completed",
+      "previousPrompt": "Use case: photorealistic-natural. Asset type: ONE isolated full-body adult Korean celebrity historical-fantasy game character, realistic elegant costume photograph with natural skin texture, transparent PNG. IMAGE 1 is FACE IDENTITY reference ONLY: preserve distinctive recognizable eye shape, nose, mouth, cheek/jaw structure and age appearance from the dated ADULT photograph, do not copy its cropped framing, lens distortion, background, outfit or other people. IMAGE 2 is the USER-APPROVED BODY PROPORTION reference ONLY: match its harmonious relationship between head size, normal shoulder span, full-sized torso/ribcage/pelvis and natural long legs; do NOT copy its face, Chinese costume or flute. Small proportionate adult head, approximately 7.5-8 heads standing equivalent, normal neck and shoulder width, no oversized head on a shrunken narrow body. Natural waist and coherent hip/knee/ankle joints; never stretch only shins. Distant eye-level 85mm fashion camera, no wide angle or foreshortening. Light authentic KOREAN summer HANBOK: mosi ramie or light silk, clearly Korean short jeogori, white dongjeong collar and goreum tie, appropriate chima/baji/baeja variants. Thin breathable fabric with opaque lining, tasteful ordinary nonsexual clothing. No Chinese hanfu/qipao, Japanese kimono/obi, heavy royal robes or winter layers. Two coherent arms, two natural hands with five fingers each, two legs, TWO ANATOMICALLY CORRECT BARE FEET with five toes, no shoes/socks. Credible grasp and physical support, balanced center of gravity. Full figure including all hair pins, props, hands, hems and toes inside portrait 2:3 canvas, comfortable 5% transparent margins. Genuine transparent alpha, no backdrop, checkerboard, floor, cast shadow, glow, text, logo or watermark. Soft neutral natural light. Subject: 金泰希 (kim-tae-hee) as in 2013 adult reference photograph, approximately age 33. Standing in a balanced calm pose, both bare feet visible, holding a small shallow jade bowl containing ONE lotus blossom at low waist with both hands. Light rose-pink Korean summer jeogori with white dongjeong and soft grey goreum, fine ivory sleeveless Korean baeja vest, plum-pink slim flowing chima. Refined low jjok bun with small gold floral binyeo, delicate drop earrings, fine necklace and jade tassel norigae. No crown or heavy royal layers. USER CONFIRMED COSTUME REQUIREMENT: unmistakably KOREAN summer hanbok, visually distinct from Chinese hanfu and Japanese kimono. Light mosi ramie or thin summer silk, breathable elbow/short sleeves, opaque lining and no heavy layered robes. Authentic Korean white dongjeong, curved jeogori front, small goreum bow and Korean maedeup/norigae. Do not make a Chinese long flowing crossover robe or obi. Maintain normal full-size adult ribcage and torso beneath traditional high-waisted chima, do not shrink torso to exaggerate the high waist. Use light, modest volume skirt drape and complete natural legs. The reference Image 2 is proportions ONLY; never copy its flowing Chinese skirt or high split.",
+      "inputRoles": [
+        "Image 1: user-approved Song Hye-kyo whole-body template; keep head/body relationship only, replace face, clothes and props.",
+        "Image 2: dated adult subject face identity."
+      ],
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a1615b-c380-73a3-bb7b-58bb2f9b4009/exec-38c6458c-cd4c-4b9b-bc8f-f426698836ea.png",
+      "assetSha256": "9b32f6c734665ad80ed989094b7946efc4a1f4786629deb884ba935c72533e39",
+      "footwear": "barefoot",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentFraction": 0.6285,
+        "nontransparentBorderPixels": 0,
+        "boundsAbove20": [
+          136,
+          21,
+          905,
+          1521
+        ]
+      },
+      "referenceAgeAtPhoto": 33,
+      "visualReview": "已查看完整生成图和浅色/深蓝换底总览，检查成年比例、韩式夏装、头肩躯干与腿部关系、手持道具接触和光脚；真实alpha及边界检查通过。",
+      "supersededSourcePath": "/Users/fengheliang/.codex/generated_images/01a1615b-c380-73a3-bb7b-58bb2f9b4009/exec-3bfc6df3-623e-459a-90b9-4166e4e633af.png",
+      "artworkRevision": "docs/art/japan-korea-slim-legs-feet-2026-10-22.json"
+    },
+    {
+      "key": "han-ga-in",
+      "name": "韩佳人",
+      "birthYear": 1982,
+      "referenceYear": 2012,
+      "imageUrl": "https://cdn.livedoor.jp/kstyle/kstyle_news/USER/20120314/l6/lmzs9mk25wvz6bo44426/250/500x761x9a3c2f224344d980f3dc30ed.jpg",
+      "page": "https://kstyle.com/article.ksn?articleNo=1938485",
+      "ref": "assets/beauties/references/korea-ten-20261022/han-ga-in.jpg",
+      "status": "downloaded",
+      "id": "korea-photo-ten-20261022-05",
+      "title": "竹露香囊",
+      "asset": "assets/beauties/random/番邦女子/韩国女子-韩佳人-竹露香囊.png",
+      "proportionReference": "assets/beauties/references/japan-ten-20261022/user-approved-proportions.png",
+      "referenceSha256": "fee99c00585b16bbe928c1a510175bb3841c67bd8f9e17a43b0ff8bbfe0d4eb4",
+      "prompt": "Use case: photorealistic-natural. Asset type: ONE isolated full-body adult Korean celebrity historical-fantasy game character, realistic elegant costume photograph with natural skin texture, transparent PNG. IMAGE 1 is FACE IDENTITY reference ONLY: preserve distinctive recognizable eye shape, nose, mouth, cheek/jaw structure and age appearance from the dated ADULT photograph, do not copy its cropped framing, lens distortion, background, outfit or other people. IMAGE 2 is the USER-APPROVED BODY PROPORTION reference ONLY: match its harmonious relationship between head size, normal shoulder span, full-sized torso/ribcage/pelvis and natural long legs; do NOT copy its face, Chinese costume or flute. Small proportionate adult head, approximately 7.5-8 heads standing equivalent, normal neck and shoulder width, no oversized head on a shrunken narrow body. Natural waist and coherent hip/knee/ankle joints; never stretch only shins. Distant eye-level 85mm fashion camera, no wide angle or foreshortening. Light authentic KOREAN summer HANBOK: mosi ramie or light silk, clearly Korean short jeogori, white dongjeong collar and goreum tie, appropriate chima/baji/baeja variants. Thin breathable fabric with opaque lining, tasteful ordinary nonsexual clothing. No Chinese hanfu/qipao, Japanese kimono/obi, heavy royal robes or winter layers. Two coherent arms, two natural hands with five fingers each, two legs, TWO ANATOMICALLY CORRECT BARE FEET with five toes, no shoes/socks. Credible grasp and physical support, balanced center of gravity. Full figure including all hair pins, props, hands, hems and toes inside portrait 2:3 canvas, comfortable 5% transparent margins. Genuine transparent alpha, no backdrop, checkerboard, floor, cast shadow, glow, text, logo or watermark. Soft neutral natural light. Subject: 韩佳人 (han-ga-in) as in 2012 adult reference photograph, approximately age 30. Standing softly turned, level shoulders and natural full-grown adult torso, left hand holds a small silk embroidered bokjumeoni pouch near low waist, right fingers lightly touch the drawstring tassel. Bamboo-green Korean short summer jeogori with white curved dongjeong and cream goreum, light cream chima with fine bamboo embroidery. Dark hair low bun, jade binyeo with tiny pearl dwikkoji, green drop earrings, slim jade bracelet and silver knot norigae. USER CONFIRMED COSTUME REQUIREMENT: unmistakably KOREAN summer hanbok, visually distinct from Chinese hanfu and Japanese kimono. Light mosi ramie or thin summer silk, breathable elbow/short sleeves, opaque lining and no heavy layered robes. Authentic Korean white dongjeong, curved jeogori front, small goreum bow and Korean maedeup/norigae. Do not make a Chinese long flowing crossover robe or obi. Maintain normal full-size adult ribcage and torso beneath traditional high-waisted chima, do not shrink torso to exaggerate the high waist. Use light, modest volume skirt drape and complete natural legs. The reference Image 2 is proportions ONLY; never copy its flowing Chinese skirt or high split. CLOTHING VARIANT OVERRIDE: replace the earlier chima skirt with authentic Korean summer loose cream MOSI BAJI trousers, calf-length, under the light green jeogori. Traditional Korean side ties and light short sleeveless green BAEJA vest, white collar and goreum remain. This is a trouser outfit, no skirt. Both bare feet and ankles visible. Keep pouch prop and natural standing pose.",
+      "statusGeneration": "completed",
+      "userApprovedProportions": true,
+      "selectionNote": "用户截图认可此版本；保留该版本脸部、身形、衣着及姿势。",
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a1615b-c380-73a3-bb7b-58bb2f9b4009/exec-aff25346-27a9-4600-b4fa-29f6eb5d40f0.png",
+      "assetSha256": "c4dfa6ad785041dbf022202822df07ee2e982581e71485e2e8bcb08b5c88e04d",
+      "footwear": "barefoot",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentFraction": 0.7488,
+        "nontransparentBorderPixels": 0,
+        "boundsAbove20": [
+          340,
+          15,
+          722,
+          1526
+        ]
+      },
+      "referenceAgeAtPhoto": 30,
+      "visualReview": "已查看完整生成图和浅色/深蓝换底总览，检查成年比例、韩式夏装、头肩躯干与腿部关系、手持道具接触和光脚；真实alpha及边界检查通过。",
+      "supersededSourcePath": "/Users/fengheliang/.codex/generated_images/01a1615b-c380-73a3-bb7b-58bb2f9b4009/exec-f68ae9c5-70d1-4edb-8d5f-1363633298bd.png",
+      "artworkRevision": "docs/art/japan-korea-slim-legs-feet-2026-10-22.json"
+    },
+    {
+      "key": "bae-suzy",
+      "name": "裴秀智",
+      "birthYear": 1994,
+      "referenceYear": 2025,
+      "imageUrl": "https://images.khan.co.kr/article/2025/09/29/rcv.YNA.20250929.PYH2025092914540001300_P1.jpg",
+      "page": "https://sports.khan.co.kr/article/202509291701003",
+      "ref": "assets/beauties/references/korea-ten-20261022/bae-suzy.jpg",
+      "status": "downloaded",
+      "id": "korea-photo-ten-20261022-06",
+      "title": "绛绡清歌",
+      "asset": "assets/beauties/random/番邦女子/韩国女子-裴秀智-绛绡清歌.png",
+      "proportionReference": "assets/beauties/references/japan-ten-20261022/user-approved-proportions.png",
+      "referenceSha256": "8e086ba3656774d3bee1abd95893c335e7cdfab90c089905dfebfb805ebddc07",
+      "prompt": "Use case: photorealistic-natural. Asset type: ONE isolated full-body adult Korean celebrity historical-fantasy game character, realistic elegant costume photograph with natural skin texture, transparent PNG. IMAGE 1 is FACE IDENTITY reference ONLY: preserve distinctive recognizable eye shape, nose, mouth, cheek/jaw structure and age appearance from the dated ADULT photograph, do not copy its cropped framing, lens distortion, background, outfit or other people. IMAGE 2 is the USER-APPROVED BODY PROPORTION reference ONLY: match its harmonious relationship between head size, normal shoulder span, full-sized torso/ribcage/pelvis and natural long legs; do NOT copy its face, Chinese costume or flute. Small proportionate adult head, approximately 7.5-8 heads standing equivalent, normal neck and shoulder width, no oversized head on a shrunken narrow body. Natural waist and coherent hip/knee/ankle joints; never stretch only shins. Distant eye-level 85mm fashion camera, no wide angle or foreshortening. Light authentic KOREAN summer HANBOK: mosi ramie or light silk, clearly Korean short jeogori, white dongjeong collar and goreum tie, appropriate chima/baji/baeja variants. Thin breathable fabric with opaque lining, tasteful ordinary nonsexual clothing. No Chinese hanfu/qipao, Japanese kimono/obi, heavy royal robes or winter layers. Two coherent arms, two natural hands with five fingers each, two legs, TWO ANATOMICALLY CORRECT BARE FEET with five toes, no shoes/socks. Credible grasp and physical support, balanced center of gravity. Full figure including all hair pins, props, hands, hems and toes inside portrait 2:3 canvas, comfortable 5% transparent margins. Genuine transparent alpha, no backdrop, checkerboard, floor, cast shadow, glow, text, logo or watermark. Soft neutral natural light. Subject: 裴秀智 (bae-suzy) as in 2025 adult reference photograph, approximately age 31. Standing naturally in the moment of softly singing, mouth slightly open in a believable relaxed singing expression, right hand holds one small traditional Korean bronze hand bell at low hip, left hand open gently at waist. No microphone. Coral short-sleeved modernized historical Korean summer jeogori with white dongjeong and cream goreum, lined light ivory chima with small coral floral pattern, unbulky silhouette. Loose dark wavy half-up hair with coral dwikkoji, pearl earrings, fine necklace, slim bracelet and decorative norigae. USER CONFIRMED COSTUME REQUIREMENT: unmistakably KOREAN summer hanbok, visually distinct from Chinese hanfu and Japanese kimono. Light mosi ramie or thin summer silk, breathable elbow/short sleeves, opaque lining and no heavy layered robes. Authentic Korean white dongjeong, curved jeogori front, small goreum bow and Korean maedeup/norigae. Do not make a Chinese long flowing crossover robe or obi. Maintain normal full-size adult ribcage and torso beneath traditional high-waisted chima, do not shrink torso to exaggerate the high waist. Use light, modest volume skirt drape and complete natural legs. The reference Image 2 is proportions ONLY; never copy its flowing Chinese skirt or high split.",
+      "statusGeneration": "completed",
+      "userApprovedProportions": true,
+      "selectionNote": "用户截图认可此版本；保留该版本脸部、身形、衣着及姿势。",
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a1615b-c380-73a3-bb7b-58bb2f9b4009/exec-8a41e481-8c25-4b08-99ca-2960748ed53e.png",
+      "assetSha256": "b2d72bd14ab7dfc03c3b710ad9ade85589aa60b7998cc8a99fd2d75fa4b8973e",
+      "footwear": "barefoot",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentFraction": 0.5326,
+        "nontransparentBorderPixels": 0,
+        "boundsAbove20": [
+          53,
+          5,
+          999,
+          1528
+        ]
+      },
+      "referenceAgeAtPhoto": 30,
+      "visualReview": "已查看完整生成图和浅色/深蓝换底总览，检查成年比例、韩式夏装、头肩躯干与腿部关系、手持道具接触和光脚；真实alpha及边界检查通过。",
+      "supersededSourcePath": "/Users/fengheliang/.codex/generated_images/01a1615b-c380-73a3-bb7b-58bb2f9b4009/exec-9c94ff15-dfc6-470a-9534-f8dfb9beb57b.png",
+      "artworkRevision": "docs/art/japan-korea-slim-legs-feet-2026-10-22.json"
+    },
+    {
+      "key": "im-yoona",
+      "name": "林允儿",
+      "birthYear": 1990,
+      "referenceYear": 2023,
+      "imageUrl": "https://thumbnews.nateimg.co.kr/view610/news.nateimg.co.kr/orgImg/nn/2023/06/15/202306151418571810_1.jpg",
+      "page": "https://news.nate.com/view/20230615n20262",
+      "status": "downloaded",
+      "ref": "assets/beauties/references/korea-ten-20261022/im-yoona.jpg",
+      "id": "korea-photo-ten-20261022-07",
+      "title": "月白伽倻",
+      "asset": "assets/beauties/random/番邦女子/韩国女子-林允儿-月白伽倻.png",
+      "proportionReference": "assets/beauties/references/japan-ten-20261022/user-approved-proportions.png",
+      "referenceSha256": "5f5c9182d1049eafae98f3fe4b5b752acf631c4e848bc99f418a7b4bc1aa2f8c",
+      "prompt": "Use case: photorealistic-natural. Asset type: ONE isolated full-body adult Korean celebrity historical-fantasy game character, realistic elegant costume photograph with natural skin texture, transparent PNG. IMAGE 1 is FACE IDENTITY reference ONLY: preserve distinctive recognizable eye shape, nose, mouth, cheek/jaw structure and age appearance from the dated ADULT photograph, do not copy its cropped framing, lens distortion, background, outfit or other people. IMAGE 2 is the USER-APPROVED BODY PROPORTION reference ONLY: match its harmonious relationship between head size, normal shoulder span, full-sized torso/ribcage/pelvis and natural long legs; do NOT copy its face, Chinese costume or flute. Small proportionate adult head, approximately 7.5-8 heads standing equivalent, normal neck and shoulder width, no oversized head on a shrunken narrow body. Natural waist and coherent hip/knee/ankle joints; never stretch only shins. Distant eye-level 85mm fashion camera, no wide angle or foreshortening. Light authentic KOREAN summer HANBOK: mosi ramie or light silk, clearly Korean short jeogori, white dongjeong collar and goreum tie, appropriate chima/baji/baeja variants. Thin breathable fabric with opaque lining, tasteful ordinary nonsexual clothing. No Chinese hanfu/qipao, Japanese kimono/obi, heavy royal robes or winter layers. Two coherent arms, two natural hands with five fingers each, two legs, TWO ANATOMICALLY CORRECT BARE FEET with five toes, no shoes/socks. Credible grasp and physical support, balanced center of gravity. Full figure including all hair pins, props, hands, hems and toes inside portrait 2:3 canvas, comfortable 5% transparent margins. Genuine transparent alpha, no backdrop, checkerboard, floor, cast shadow, glow, text, logo or watermark. Soft neutral natural light. Subject: 林允儿 (im-yoona) as in 2023 adult reference photograph, approximately age 33. Seated upright on a simple low wooden stool, coherent grown adult torso, normal thighs and long-enough shins, both bare feet grounded visibly side by side. A small Korean gayageum lies steadily horizontally across lap, right fingertips gently pluck strings, left fingertips rest on strings, anatomically plausible contact, no extra hands. Ivory light ramie summer jeogori with pale blue collar and navy goreum, dusty-blue lined chima with restrained floral embroidery. Long dark hair half-up, silver moon binyeo, pearl ear drops, blue norigae and delicate bracelet. No scenery or floor. USER CONFIRMED COSTUME REQUIREMENT: unmistakably KOREAN summer hanbok, visually distinct from Chinese hanfu and Japanese kimono. Light mosi ramie or thin summer silk, breathable elbow/short sleeves, opaque lining and no heavy layered robes. Authentic Korean white dongjeong, curved jeogori front, small goreum bow and Korean maedeup/norigae. Do not make a Chinese long flowing crossover robe or obi. Maintain normal full-size adult ribcage and torso beneath traditional high-waisted chima, do not shrink torso to exaggerate the high waist. Use light, modest volume skirt drape and complete natural legs. The reference Image 2 is proportions ONLY; never copy its flowing Chinese skirt or high split.",
+      "statusGeneration": "completed",
+      "userApprovedProportions": true,
+      "selectionNote": "用户截图认可此版本；保留该版本脸部、身形、衣着及姿势。",
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a1615b-c380-73a3-bb7b-58bb2f9b4009/exec-47af54d5-052c-467b-b1fa-bea77621de62.png",
+      "assetSha256": "e61b6b2737516a851c20819f1b2e94c7fcac02e4b090e9fcb7984028e93364dc",
+      "footwear": "barefoot",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentFraction": 0.4765,
+        "nontransparentBorderPixels": 0,
+        "boundsAbove20": [
+          23,
+          22,
+          1015,
+          1454
+        ]
+      },
+      "referenceAgeAtPhoto": 33,
+      "visualReview": "已查看完整生成图和浅色/深蓝换底总览，检查成年比例、韩式夏装、头肩躯干与腿部关系、手持道具接触和光脚；真实alpha及边界检查通过。",
+      "supersededSourcePath": "/Users/fengheliang/.codex/generated_images/01a1615b-c380-73a3-bb7b-58bb2f9b4009/exec-5b5276ac-efbb-449e-a963-80fef272a6f0.png",
+      "artworkRevision": "docs/art/japan-korea-slim-legs-feet-2026-10-22.json"
+    },
+    {
+      "key": "kim-jisoo",
+      "name": "金智秀",
+      "birthYear": 1995,
+      "referenceYear": 2020,
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/28/Kim_Ji-Soo_in_2020_Dior_%283%29.png",
+      "page": "https://commons.wikimedia.org/wiki/File:Kim_Ji-Soo_in_2020_Dior_(3).png",
+      "ref": "assets/beauties/references/korea-ten-20261022/kim-jisoo.jpg",
+      "status": "downloaded",
+      "id": "korea-photo-ten-20261022-08",
+      "title": "紫菀珠匣",
+      "asset": "assets/beauties/random/番邦女子/韩国女子-金智秀-紫菀珠匣.png",
+      "proportionReference": "assets/beauties/references/korea-ten-20261022/user-approved-song-body.png",
+      "referenceSha256": "bdf6b3dd4d69cff8c26c08918a1ad71b8d7850dcb6cbff655ff4c46041842e38",
+      "prompt": "Use case: identity-preserve. Edit Image 1 as the FULL-BODY SKELETON AND PROPORTION TEMPLATE, NOT just loose inspiration. Image 1 is a user-approved full adult body. Preserve its exact relative head scale, normal shoulder span, neck, chest/ribcage length and breadth, natural waist and hips, long thighs and shins, hands and bare feet scale. Do NOT enlarge the head to make the face clearer, do not shrink the torso or narrow shoulders. Same full-body camera distance and eye-level normal lens. Replace identity COMPLETELY with adult celebrity face from IMAGE 2, which is ONLY a face identity reference. Preserve her unique eyes, nose, mouth and jaw, natural individual attractiveness and skin texture. Never blend Image 1 face into Image 2 face. Change hair and costume as specified while retaining Image 1 adult anatomical proportions and normal joint placement. One isolated whole adult person, realistic costume photograph. Two arms, five fingers each hand, two coherent legs, two anatomically correct BARE FEET with five toes, correct physical grasp and gravity. Korean summer HANBOK with short light ramie/silk JEOGORI, white DONGJEONG collar, small GOREUM tie and NORIGAE accessory. Airy summer clothes, opaque lining, tasteful fully clothed adult, no shoes/socks. Keep skirt drape light with restrained volume and both feet visible, no heavy royal costume, no Chinese hanfu, no Japanese kimono or obi. Entire hairpins, props and toes in 2:3 portrait frame with 5% clear margins. GENUINE alpha transparency, no background/scene/floor/shadow/glow/checkerboard/text/logos. Jisoo 金智秀 BLACKPINK, adult 2020 face approximately age 25. Standing relaxed, face looking gently toward camera with a warm small CLOSED-LIP smile, preserve distinctive Jisoo lips and eyes. Both hands naturally hold a small CLOSED Korean najeon mother-of-pearl jewelry box at low waist. Pale lavender elbow-sleeved Korean summer jeogori with white collar and lilac goreum, simple ivory ankle-length chima, short waist-length lavender sleeveless baeja. Dark hair half-up with mother-of-pearl dwikkoji, small amethyst ear drops, thin silver bracelet and lilac maedeup norigae. Remove cup, use box only.",
+      "statusGeneration": "completed",
+      "previousPrompt": "Use case: photorealistic-natural. Asset type: ONE isolated full-body adult Korean celebrity historical-fantasy game character, realistic elegant costume photograph with natural skin texture, transparent PNG. IMAGE 1 is FACE IDENTITY reference ONLY: preserve distinctive recognizable eye shape, nose, mouth, cheek/jaw structure and age appearance from the dated ADULT photograph, do not copy its cropped framing, lens distortion, background, outfit or other people. IMAGE 2 is the USER-APPROVED BODY PROPORTION reference ONLY: match its harmonious relationship between head size, normal shoulder span, full-sized torso/ribcage/pelvis and natural long legs; do NOT copy its face, Chinese costume or flute. Small proportionate adult head, approximately 7.5-8 heads standing equivalent, normal neck and shoulder width, no oversized head on a shrunken narrow body. Natural waist and coherent hip/knee/ankle joints; never stretch only shins. Distant eye-level 85mm fashion camera, no wide angle or foreshortening. Light authentic KOREAN summer HANBOK: mosi ramie or light silk, clearly Korean short jeogori, white dongjeong collar and goreum tie, appropriate chima/baji/baeja variants. Thin breathable fabric with opaque lining, tasteful ordinary nonsexual clothing. No Chinese hanfu/qipao, Japanese kimono/obi, heavy royal robes or winter layers. Two coherent arms, two natural hands with five fingers each, two legs, TWO ANATOMICALLY CORRECT BARE FEET with five toes, no shoes/socks. Credible grasp and physical support, balanced center of gravity. Full figure including all hair pins, props, hands, hems and toes inside portrait 2:3 canvas, comfortable 5% transparent margins. Genuine transparent alpha, no backdrop, checkerboard, floor, cast shadow, glow, text, logo or watermark. Soft neutral natural light. Subject: 金智秀 (kim-jisoo) as in 2020 adult reference photograph, approximately age 25. Standing relaxed, both bare feet unobstructed, holding a small closed mother-of-pearl Korean najeon lacquer jewelry box naturally in both hands at low waist. Pale lavender light ramie Korean summer jeogori with white dongjeong and lilac goreum, lined ivory soft chima, elegant lilac sleeveless short baeja vest. Dark hair half-up with mother-of-pearl floral dwikkoji, tiny amethyst ear drops, fine necklace, slender silver bracelet and lilac knot norigae. USER CONFIRMED COSTUME REQUIREMENT: unmistakably KOREAN summer hanbok, visually distinct from Chinese hanfu and Japanese kimono. Light mosi ramie or thin summer silk, breathable elbow/short sleeves, opaque lining and no heavy layered robes. Authentic Korean white dongjeong, curved jeogori front, small goreum bow and Korean maedeup/norigae. Do not make a Chinese long flowing crossover robe or obi. Maintain normal full-size adult ribcage and torso beneath traditional high-waisted chima, do not shrink torso to exaggerate the high waist. Use light, modest volume skirt drape and complete natural legs. The reference Image 2 is proportions ONLY; never copy its flowing Chinese skirt or high split.",
+      "inputRoles": [
+        "Image 1: user-approved Song Hye-kyo whole-body template; keep head/body relationship only, replace face, clothes and props.",
+        "Image 2: dated adult subject face identity."
+      ],
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a1615b-c380-73a3-bb7b-58bb2f9b4009/exec-58284e09-cb08-41cc-833d-c15742570a2a.png",
+      "assetSha256": "96218476d77e21617232ba9963909276cf0a4418a54af694b205aea0c67744e2",
+      "footwear": "barefoot",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentFraction": 0.6152,
+        "nontransparentBorderPixels": 0,
+        "boundsAbove20": [
+          148,
+          14,
+          937,
+          1521
+        ]
+      },
+      "referenceAgeAtPhoto": 25,
+      "visualReview": "已查看完整生成图和浅色/深蓝换底总览，检查成年比例、韩式夏装、头肩躯干与腿部关系、手持道具接触和光脚；真实alpha及边界检查通过。",
+      "supersededSourcePath": "/Users/fengheliang/.codex/generated_images/01a1615b-c380-73a3-bb7b-58bb2f9b4009/exec-135ac513-d5fc-4be2-bbaa-7fb16bfee554.png",
+      "artworkRevision": "docs/art/japan-korea-slim-legs-feet-2026-10-22.json"
+    },
+    {
+      "key": "han-hyo-joo",
+      "name": "韩孝周",
+      "birthYear": 1987,
+      "referenceYear": 2025,
+      "imageUrl": "https://thumbnews.nateimg.co.kr/view610/news.nateimg.co.kr/orgImg/nn/2025/09/18/202509181047385510_1.jpg",
+      "page": "https://news.nate.com/view/20250918n14264",
+      "ref": "assets/beauties/references/korea-ten-20261022/han-hyo-joo.jpg",
+      "status": "downloaded",
+      "id": "korea-photo-ten-20261022-09",
+      "title": "碧绡鼓舞",
+      "asset": "assets/beauties/random/番邦女子/韩国女子-韩孝周-碧绡鼓舞.png",
+      "proportionReference": "assets/beauties/references/korea-ten-20261022/user-approved-song-body.png",
+      "referenceSha256": "250b5e7ed775de86db460a52a14799945ff91aae3210dd9112e52be7fc9b6b87",
+      "prompt": "Use case: identity-preserve. Edit Image 1 as the FULL-BODY SKELETON AND PROPORTION TEMPLATE, NOT just loose inspiration. Image 1 is a user-approved full adult body. Preserve its exact relative head scale, normal shoulder span, neck, chest/ribcage length and breadth, natural waist and hips, long thighs and shins, hands and bare feet scale. Do NOT enlarge the head to make the face clearer, do not shrink the torso or narrow shoulders. Same full-body camera distance and eye-level normal lens. Replace identity COMPLETELY with adult celebrity face from IMAGE 2, which is ONLY a face identity reference. Preserve her unique eyes, nose, mouth and jaw, natural individual attractiveness and skin texture. Never blend Image 1 face into Image 2 face. Change hair and costume as specified while retaining Image 1 adult anatomical proportions and normal joint placement. One isolated whole adult person, realistic costume photograph. Two arms, five fingers each hand, two coherent legs, two anatomically correct BARE FEET with five toes, correct physical grasp and gravity. Korean summer HANBOK with short light ramie/silk JEOGORI, white DONGJEONG collar, small GOREUM tie and NORIGAE accessory. Airy summer clothes, opaque lining, tasteful fully clothed adult, no shoes/socks. Keep skirt drape light with restrained volume and both feet visible, no heavy royal costume, no Chinese hanfu, no Japanese kimono or obi. Entire hairpins, props and toes in 2:3 portrait frame with 5% clear margins. GENUINE alpha transparency, no background/scene/floor/shadow/glow/checkerboard/text/logos. Han Hyo-joo 韩孝周, adult 2025 face approximately age 38. Gentle small Korean folk-dance step, weight over support foot, other bare foot extended slightly sideways with toe lightly resting down, balanced hips and normal shoulders. Left hand holds small Korean sogo hand drum by short handle at hip, right hand holds a short drumstick near drum rim, correct natural grips. Mint elbow-sleeved light Korean jeogori, white collar, dark jade goreum, light ankle-length jade chima with subtle leaf embroidery and no stiff huge bell shape. Dark low bun with silver leaf binyeo, jade earrings, thin bracelet and norigae. Remove cup entirely.",
+      "statusGeneration": "completed",
+      "previousPrompt": "Use case: photorealistic-natural. Asset type: ONE isolated full-body adult Korean celebrity historical-fantasy game character, realistic elegant costume photograph with natural skin texture, transparent PNG. IMAGE 1 is FACE IDENTITY reference ONLY: preserve distinctive recognizable eye shape, nose, mouth, cheek/jaw structure and age appearance from the dated ADULT photograph, do not copy its cropped framing, lens distortion, background, outfit or other people. IMAGE 2 is the USER-APPROVED BODY PROPORTION reference ONLY: match its harmonious relationship between head size, normal shoulder span, full-sized torso/ribcage/pelvis and natural long legs; do NOT copy its face, Chinese costume or flute. Small proportionate adult head, approximately 7.5-8 heads standing equivalent, normal neck and shoulder width, no oversized head on a shrunken narrow body. Natural waist and coherent hip/knee/ankle joints; never stretch only shins. Distant eye-level 85mm fashion camera, no wide angle or foreshortening. Light authentic KOREAN summer HANBOK: mosi ramie or light silk, clearly Korean short jeogori, white dongjeong collar and goreum tie, appropriate chima/baji/baeja variants. Thin breathable fabric with opaque lining, tasteful ordinary nonsexual clothing. No Chinese hanfu/qipao, Japanese kimono/obi, heavy royal robes or winter layers. Two coherent arms, two natural hands with five fingers each, two legs, TWO ANATOMICALLY CORRECT BARE FEET with five toes, no shoes/socks. Credible grasp and physical support, balanced center of gravity. Full figure including all hair pins, props, hands, hems and toes inside portrait 2:3 canvas, comfortable 5% transparent margins. Genuine transparent alpha, no backdrop, checkerboard, floor, cast shadow, glow, text, logo or watermark. Soft neutral natural light. Subject: 韩孝周 (han-hyo-joo) as in 2025 adult reference photograph, approximately age 38. A gentle balanced Korean folk-dance pose, support foot flat, other bare foot slightly extended sideways on light toes, soft knees, hips over support foot, no extreme bend. Left hand holds a small Korean sogo hand drum at hip by its short handle, right hand holds a short wooden drumstick gently near drum rim. Light mint Korean summer jeogori with elbow sleeves, white dongjeong, dark jade goreum and softly flowing jade chima, lined light fabric, not huge bell silhouette. Dark low bun with silver leaf binyeo, jade earrings, bracelet and small tassel norigae. USER CONFIRMED COSTUME REQUIREMENT: unmistakably KOREAN summer hanbok, visually distinct from Chinese hanfu and Japanese kimono. Light mosi ramie or thin summer silk, breathable elbow/short sleeves, opaque lining and no heavy layered robes. Authentic Korean white dongjeong, curved jeogori front, small goreum bow and Korean maedeup/norigae. Do not make a Chinese long flowing crossover robe or obi. Maintain normal full-size adult ribcage and torso beneath traditional high-waisted chima, do not shrink torso to exaggerate the high waist. Use light, modest volume skirt drape and complete natural legs. The reference Image 2 is proportions ONLY; never copy its flowing Chinese skirt or high split.",
+      "inputRoles": [
+        "Image 1: user-approved Song Hye-kyo whole-body template; keep head/body relationship only, replace face, clothes and props.",
+        "Image 2: dated adult subject face identity."
+      ],
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a1615b-c380-73a3-bb7b-58bb2f9b4009/exec-7e72cddf-4c9c-4dd4-946e-acbe2de9379b.png",
+      "assetSha256": "f3cf25a2df6fae16f4c4d05b65b2751d337f050d8009cf32e3ce5b2432ee86ed",
+      "footwear": "barefoot",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentFraction": 0.595,
+        "nontransparentBorderPixels": 0,
+        "boundsAbove20": [
+          131,
+          26,
+          932,
+          1516
+        ]
+      },
+      "referenceAgeAtPhoto": 38,
+      "visualReview": "已查看完整生成图和浅色/深蓝换底总览，检查成年比例、韩式夏装、头肩躯干与腿部关系、手持道具接触和光脚；真实alpha及边界检查通过。",
+      "supersededSourcePath": "/Users/fengheliang/.codex/generated_images/01a1615b-c380-73a3-bb7b-58bb2f9b4009/exec-526d519e-954d-4178-8996-0fa968fb37bc.png",
+      "artworkRevision": "docs/art/japan-korea-slim-legs-feet-2026-10-22.json"
+    },
+    {
+      "key": "kim-ji-won",
+      "name": "金智媛",
+      "birthYear": 1992,
+      "referenceYear": 2024,
+      "imageUrl": "https://img.hankyung.com/photo/202403/03.36048393.1.jpg",
+      "page": "https://plus.hankyung.com/apps/newsinside.view?aid=202403073601H&category=&sns=y",
+      "ref": "assets/beauties/references/korea-ten-20261022/kim-ji-won.jpg",
+      "status": "downloaded",
+      "id": "korea-photo-ten-20261022-10",
+      "title": "浅金花篮",
+      "asset": "assets/beauties/random/番邦女子/韩国女子-金智媛-浅金花篮.png",
+      "proportionReference": "assets/beauties/references/korea-ten-20261022/user-approved-song-body.png",
+      "referenceSha256": "b6d209fb5ab9989777285362545200e458203f2babfe34a77f2b89628044eed5",
+      "prompt": "Use case: identity-preserve. Edit Image 1 as the FULL-BODY SKELETON AND PROPORTION TEMPLATE, NOT just loose inspiration. Image 1 is a user-approved full adult body. Preserve its exact relative head scale, normal shoulder span, neck, chest/ribcage length and breadth, natural waist and hips, long thighs and shins, hands and bare feet scale. Do NOT enlarge the head to make the face clearer, do not shrink the torso or narrow shoulders. Same full-body camera distance and eye-level normal lens. Replace identity COMPLETELY with adult celebrity face from IMAGE 2, which is ONLY a face identity reference. Preserve her unique eyes, nose, mouth and jaw, natural individual attractiveness and skin texture. Never blend Image 1 face into Image 2 face. Change hair and costume as specified while retaining Image 1 adult anatomical proportions and normal joint placement. One isolated whole adult person, realistic costume photograph. Two arms, five fingers each hand, two coherent legs, two anatomically correct BARE FEET with five toes, correct physical grasp and gravity. Korean summer HANBOK with short light ramie/silk JEOGORI, white DONGJEONG collar, small GOREUM tie and NORIGAE accessory. Airy summer clothes, opaque lining, tasteful fully clothed adult, no shoes/socks. Keep skirt drape light with restrained volume and both feet visible, no heavy royal costume, no Chinese hanfu, no Japanese kimono or obi. Entire hairpins, props and toes in 2:3 portrait frame with 5% clear margins. GENUINE alpha transparency, no background/scene/floor/shadow/glow/checkerboard/text/logos. Kim Ji-won 金智媛, adult 2024 face approximately age 31, natural friendly closed-lip smile. Standing in gentle three-quarter contrapposto, one hand carrying a SMALL woven basket of white magnolia flowers low beside hip, other hand lightly supporting rim. Cream elbow-sleeved light Korean summer jeogori, white collar, muted gold goreum, pale buttery-yellow ankle-length chima with tiny magnolia embroidery. Long dark hair partly braided, gold magnolia dwikkoji, pearl earrings, thin gold bracelet and jade norigae. Replace cup with basket, do not change body or head scale.",
+      "statusGeneration": "completed",
+      "previousPrompt": "Use case: photorealistic-natural. Asset type: ONE isolated full-body adult Korean celebrity historical-fantasy game character, realistic elegant costume photograph with natural skin texture, transparent PNG. IMAGE 1 is FACE IDENTITY reference ONLY: preserve distinctive recognizable eye shape, nose, mouth, cheek/jaw structure and age appearance from the dated ADULT photograph, do not copy its cropped framing, lens distortion, background, outfit or other people. IMAGE 2 is the USER-APPROVED BODY PROPORTION reference ONLY: match its harmonious relationship between head size, normal shoulder span, full-sized torso/ribcage/pelvis and natural long legs; do NOT copy its face, Chinese costume or flute. Small proportionate adult head, approximately 7.5-8 heads standing equivalent, normal neck and shoulder width, no oversized head on a shrunken narrow body. Natural waist and coherent hip/knee/ankle joints; never stretch only shins. Distant eye-level 85mm fashion camera, no wide angle or foreshortening. Light authentic KOREAN summer HANBOK: mosi ramie or light silk, clearly Korean short jeogori, white dongjeong collar and goreum tie, appropriate chima/baji/baeja variants. Thin breathable fabric with opaque lining, tasteful ordinary nonsexual clothing. No Chinese hanfu/qipao, Japanese kimono/obi, heavy royal robes or winter layers. Two coherent arms, two natural hands with five fingers each, two legs, TWO ANATOMICALLY CORRECT BARE FEET with five toes, no shoes/socks. Credible grasp and physical support, balanced center of gravity. Full figure including all hair pins, props, hands, hems and toes inside portrait 2:3 canvas, comfortable 5% transparent margins. Genuine transparent alpha, no backdrop, checkerboard, floor, cast shadow, glow, text, logo or watermark. Soft neutral natural light. Subject: 金智媛 (kim-ji-won) as in 2024 adult reference photograph, approximately age 32. Standing in gentle contrapposto with natural adult shoulder width, both bare feet visible, right hand carries a small woven bamboo basket of white magnolia flowers beside hip, left hand lightly supports basket rim. Pale cream ramie elbow-sleeved Korean jeogori with white dongjeong and muted gold goreum, light buttery-yellow flowing chima with small magnolia embroidery. Long dark hair partly braided and pinned with a gold magnolia dwikkoji, pearl earrings, fine necklace, gold bracelet and jade-white norigae. USER CONFIRMED COSTUME REQUIREMENT: unmistakably KOREAN summer hanbok, visually distinct from Chinese hanfu and Japanese kimono. Light mosi ramie or thin summer silk, breathable elbow/short sleeves, opaque lining and no heavy layered robes. Authentic Korean white dongjeong, curved jeogori front, small goreum bow and Korean maedeup/norigae. Do not make a Chinese long flowing crossover robe or obi. Maintain normal full-size adult ribcage and torso beneath traditional high-waisted chima, do not shrink torso to exaggerate the high waist. Use light, modest volume skirt drape and complete natural legs. The reference Image 2 is proportions ONLY; never copy its flowing Chinese skirt or high split.",
+      "inputRoles": [
+        "Image 1: user-approved Song Hye-kyo whole-body template; keep head/body relationship only, replace face, clothes and props.",
+        "Image 2: dated adult subject face identity."
+      ],
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a1615b-c380-73a3-bb7b-58bb2f9b4009/exec-e8b12979-7b1a-49b5-8f32-162e378b623e.png",
+      "assetSha256": "777cc6060110ae5cf845af2785ee54cff98a71b3ac0822fc24611d475e8a1922",
+      "footwear": "barefoot",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentFraction": 0.6127,
+        "nontransparentBorderPixels": 0,
+        "boundsAbove20": [
+          137,
+          26,
+          914,
+          1521
+        ]
+      },
+      "referenceAgeAtPhoto": 31,
+      "visualReview": "已查看完整生成图和浅色/深蓝换底总览，检查成年比例、韩式夏装、头肩躯干与腿部关系、手持道具接触和光脚；真实alpha及边界检查通过。",
+      "supersededSourcePath": "/Users/fengheliang/.codex/generated_images/01a1615b-c380-73a3-bb7b-58bb2f9b4009/exec-7c5ddbd7-3adb-40db-8a59-1c63b1eebef5.png",
+      "artworkRevision": "docs/art/japan-korea-slim-legs-feet-2026-10-22.json"
+    },
+    {
+      "key": "iu",
+      "name": "IU李知恩",
+      "birthYear": 1993,
+      "referenceYear": 2026,
+      "imageUrl": "https://thumbnews.nateimg.co.kr/view610/news.nateimg.co.kr/orgImg/hi/2026/04/06/9a9571c0-46de-4537-8cae-9df895c09360.jpg",
+      "page": "https://news.nate.com/view/20260406n20689",
+      "ref": "assets/beauties/references/korea-ten-20261022/iu.jpg",
+      "status": "downloaded",
+      "id": "korea-photo-ten-20261022-11",
+      "title": "藕荷绢伞",
+      "asset": "assets/beauties/random/番邦女子/韩国女子-IU李知恩-藕荷绢伞.png",
+      "proportionReference": "assets/beauties/references/korea-ten-20261022/user-approved-song-body.png",
+      "referenceSha256": "d295e8da72620545e51e4e8839fa1cee2e9355cfc6b90275e420098e7f8ffe15",
+      "statusGeneration": "completed",
+      "prompt": "Use case: identity-preserve. Edit Image 1 as the FULL-BODY SKELETON AND PROPORTION TEMPLATE, NOT just loose inspiration. Image 1 is a user-approved full adult body. Preserve its exact relative head scale, normal shoulder span, neck, chest/ribcage length and breadth, natural waist and hips, long thighs and shins, hands and bare feet scale. Do NOT enlarge the head to make the face clearer, do not shrink the torso or narrow shoulders. Same full-body camera distance and eye-level normal lens. Replace identity COMPLETELY with adult celebrity face from IMAGE 2, which is ONLY a face identity reference. Preserve her unique eyes, nose, mouth and jaw, natural individual attractiveness and skin texture. Never blend Image 1 face into Image 2 face. Change hair and costume as specified while retaining Image 1 adult anatomical proportions and normal joint placement. One isolated whole adult person, realistic costume photograph. Two arms, five fingers each hand, two coherent legs, two anatomically correct BARE FEET with five toes, correct physical grasp and gravity. Korean summer HANBOK with short light ramie/silk JEOGORI, white DONGJEONG collar, small GOREUM tie and NORIGAE accessory. Airy summer clothes, opaque lining, tasteful fully clothed adult, no shoes/socks. Keep skirt drape light with restrained volume and both feet visible, no heavy royal costume, no Chinese hanfu, no Japanese kimono or obi. Entire hairpins, props and toes in 2:3 portrait frame with 5% clear margins. GENUINE alpha transparency, no background/scene/floor/shadow/glow/checkerboard/text/logos. IU Lee Ji-eun 李知恩 아이유, adult 2026 face approximately age 33, gentle closed-lip smile and bright friendly eyes. Standing in relaxed step with one bare foot slightly forward, normal full adult torso and proportionate small head. Right hand carries a CLOSED narrow plum-blossom paper parasol downward beside hip, left hand rests lightly near norigae. Pale-lotus-pink short elbow-sleeve Korean mosi ramie jeogori, white dongjeong, muted-purple goreum, lilac ankle-length chima with small magnolia embroidery and restrained drape. Dark half-up hair with mother-of-pearl flower dwikkoji and pearl pins, delicate earrings and bracelet, pale jade norigae. No tea bowl, parasol is only handheld prop.",
+      "previousPrompt": "Use case: photorealistic-natural. Asset type: ONE isolated full-body adult Korean celebrity historical-fantasy game character, realistic elegant costume photograph with natural skin texture, transparent PNG. IMAGE 1 is FACE IDENTITY reference ONLY: preserve distinctive recognizable eye shape, nose, mouth, cheek/jaw structure and age appearance from the dated ADULT photograph, do not copy its cropped framing, lens distortion, background, outfit or other people. IMAGE 2 is the USER-APPROVED BODY PROPORTION reference ONLY: match its harmonious relationship between head size, normal shoulder span, full-sized torso/ribcage/pelvis and natural long legs; do NOT copy its face, Chinese costume or flute. Small proportionate adult head, approximately 7.5-8 heads standing equivalent, normal neck and shoulder width, no oversized head on a shrunken narrow body. Natural waist and coherent hip/knee/ankle joints; never stretch only shins. Distant eye-level 85mm fashion camera, no wide angle or foreshortening. Light authentic KOREAN summer HANBOK: mosi ramie or light silk, clearly Korean short jeogori, white dongjeong collar and goreum tie, appropriate chima/baji/baeja variants. Thin breathable fabric with opaque lining, tasteful ordinary nonsexual clothing. No Chinese hanfu/qipao, Japanese kimono/obi, heavy royal robes or winter layers. Two coherent arms, two natural hands with five fingers each, two legs, TWO ANATOMICALLY CORRECT BARE FEET with five toes, no shoes/socks. Credible grasp and physical support, balanced center of gravity. Full figure including all hair pins, props, hands, hems and toes inside portrait 2:3 canvas, comfortable 5% transparent margins. Genuine transparent alpha, no backdrop, checkerboard, floor, cast shadow, glow, text, logo or watermark. Soft neutral natural light. Subject: IU Lee Ji-eun 李知恩 (아이유), clearly adult age 33 from 2026 photograph. Standing gracefully in a small relaxed step, weight on back foot and one bare foot lightly in front; coherent adult torso and long natural legs. Hold a CLOSED narrow plum-blossom paper parasol downward beside one hip in right hand, left fingers rest lightly near Korean maedeup knot pendant. Authentic Korean light summer outfit: pale-lotus-pink short elbow-sleeve ramie JEOGORI, distinct white dongjeong, soft muted-purple GOREUM tie, lilac CHIMA with tiny magnolia embroidery and restrained straight soft drape. Thin breathable ramie with opaque lining, no high slit or huge Chinese flowing silk ribbons. Dark hair half-up with small mother-of-pearl flower dwikkoji and pearl pins; delicate earrings, fine bracelet and beautiful pale jade NORIGAE tassel. Gentle closed-lip smile, bright friendly eyes, preserve distinctive IU face from Image 1.  USER CONFIRMED COSTUME REQUIREMENT: unmistakably KOREAN summer hanbok, visually distinct from Chinese hanfu and Japanese kimono. Light mosi ramie or thin summer silk, breathable elbow/short sleeves, opaque lining and no heavy layered robes. Authentic Korean white dongjeong, curved jeogori front, small goreum bow and Korean maedeup/norigae. Do not make a Chinese long flowing crossover robe or obi. Maintain normal full-size adult ribcage and torso beneath traditional high-waisted chima, do not shrink torso to exaggerate the high waist. Use light, modest volume skirt drape and complete natural legs. The reference Image 2 is proportions ONLY; never copy its flowing Chinese skirt or high split.",
+      "inputRoles": [
+        "Image 1: user-approved Song Hye-kyo whole-body template; keep head/body relationship only, replace face, clothes and props.",
+        "Image 2: dated adult subject face identity."
+      ],
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a1615b-c380-73a3-bb7b-58bb2f9b4009/exec-e599b2b3-740c-483e-8893-1940d0fe4f13.png",
+      "assetSha256": "d57bb06069643fdeea3aede6059dc2fae5cd640ed0cc175ab9d7b4ef95aab12e",
+      "footwear": "barefoot",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentFraction": 0.5823,
+        "nontransparentBorderPixels": 0,
+        "boundsAbove20": [
+          114,
+          18,
+          952,
+          1455
+        ]
+      },
+      "referenceAgeAtPhoto": 32,
+      "visualReview": "已查看完整生成图和浅色/深蓝换底总览，检查成年比例、韩式夏装、头肩躯干与腿部关系、手持道具接触和光脚；真实alpha及边界检查通过。",
+      "supersededSourcePath": "/Users/fengheliang/.codex/generated_images/01a1615b-c380-73a3-bb7b-58bb2f9b4009/exec-72d48a70-82eb-499f-b638-4cc21e657277.png",
+      "artworkRevision": "docs/art/japan-korea-slim-legs-feet-2026-10-22.json"
+    },
+    {
+      "key": "han-ji-min",
+      "name": "韩志敏",
+      "birthYear": 1982,
+      "referenceYear": 2014,
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/76/Han_Ji-min_at_the_press_conference_for_%22Fatal_Encounter%22%2C_2_May_2014.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Han_Ji-min_at_the_press_conference_for_%22Fatal_Encounter%22,_2_May_2014.jpg",
+      "ref": "assets/beauties/references/korea-ten-20261022/han-ji-min.jpg",
+      "status": "downloaded",
+      "id": "korea-photo-ten-20261022-12",
+      "title": "青莲药篓",
+      "asset": "assets/beauties/random/番邦女子/韩国女子-韩志敏-青莲药篓.png",
+      "proportionReference": "assets/beauties/references/korea-ten-20261022/user-approved-song-body.png",
+      "referenceSha256": "e2938c2ac3cc6d1441c8a10c572d399369a94220937a7feb55aeff80390dceb0",
+      "statusGeneration": "completed",
+      "prompt": "Use case: identity-preserve. Edit Image 1 as the FULL-BODY SKELETON AND PROPORTION TEMPLATE, NOT just loose inspiration. Image 1 is a user-approved full adult body. Preserve its exact relative head scale, normal shoulder span, neck, chest/ribcage length and breadth, natural waist and hips, long thighs and shins, hands and bare feet scale. Do NOT enlarge the head to make the face clearer, do not shrink the torso or narrow shoulders. Same full-body camera distance and eye-level normal lens. Replace identity COMPLETELY with adult celebrity face from IMAGE 2, which is ONLY a face identity reference. Preserve her unique eyes, nose, mouth and jaw, natural individual attractiveness and skin texture. Never blend Image 1 face into Image 2 face. Change hair and costume as specified while retaining Image 1 adult anatomical proportions and normal joint placement. One isolated whole adult person, realistic costume photograph. Two arms, five fingers each hand, two coherent legs, two anatomically correct BARE FEET with five toes, correct physical grasp and gravity. Korean summer HANBOK with short light ramie/silk JEOGORI, white DONGJEONG collar, small GOREUM tie and NORIGAE accessory. Airy summer clothes, opaque lining, tasteful fully clothed adult, no shoes/socks. Keep skirt drape light with restrained volume and both feet visible, no heavy royal costume, no Chinese hanfu, no Japanese kimono or obi. Entire hairpins, props and toes in 2:3 portrait frame with 5% clear margins. GENUINE alpha transparency, no background/scene/floor/shadow/glow/checkerboard/text/logos. Han Ji-min 韩志敏 (한지민), approximately age 31 as in the adult May 2014 photo. Standing relaxed in a three-quarter pose with both bare feet visible. Left hand carries a SMALL light bamboo herb basket at hip with a few medicinal leaves and one white flower, right hand gently holds a tiny closed ceramic medicine jar near low waist. No tea cup. Light powder-blue elbow-sleeve Korean summer ramie jeogori with white dongjeong and pale sage goreum, ivory-sage soft chima skirt ending at ankles, fine lotus-leaf embroidery and modest drape. Clearly Korean short jacket and goreum, no Japanese obi or Chinese long robe. Dark long hair in a half-up braid with silver lotus dwikkoji, tiny pearl ear drops, fine silver bracelet and light jade norigae. Bright friendly subtle closed-lip smile, recognizable Han Ji-min eyes and lips, small proportionate head. Preserve Image 1 full-sized adult shoulders/ribcage/torso/hips and natural long legs exactly. Two plausible distinct grips, no duplicated limbs.",
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a1615b-c380-73a3-bb7b-58bb2f9b4009/exec-6efc4692-5912-4dde-bb2e-ebca957c4158.png",
+      "assetSha256": "6c005fb5a6437ae57b6948b72e6ef44bad2392aa4003e04d9bab321868d4bf8c",
+      "footwear": "barefoot",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentFraction": 0.5936,
+        "nontransparentBorderPixels": 0,
+        "boundsAbove20": [
+          129,
+          15,
+          913,
+          1523
+        ]
+      },
+      "referenceAgeAtPhoto": 31,
+      "visualReview": "已查看完整生成图和浅色/深蓝换底总览，检查成年比例、韩式夏装、头肩躯干与腿部关系、手持道具接触和光脚；真实alpha及边界检查通过。",
+      "supersededSourcePath": "/Users/fengheliang/.codex/generated_images/01a1615b-c380-73a3-bb7b-58bb2f9b4009/exec-04f9c230-6596-43e7-9bd1-01207f0256a0.png",
+      "artworkRevision": "docs/art/japan-korea-slim-legs-feet-2026-10-22.json"
+    }
+  ],
+  "requestedCount": 12,
+  "costumePolicy": "用户再次明确11张全部韩式夏装；轻薄苎麻/纱/薄绸短襦、裙装、裤装与无袖褙子，保留韩服白领、系带和结饰，避免汉服、日式腰带和冬装。",
+  "completed": 12,
+  "reviewSheet": "outputs/korea-photo-twelve-20261022/contact-sheet.jpg",
+  "imageModelWorkflow": "built-in image_gen, one call per portrait/edit, preserved generated alpha; no post-generation cutout or geometric proportion manipulation.",
+  "verification": {
+    "relatedTestsPassed": 13,
+    "nativeCanvasPassed": 138,
+    "realHaremRosterPassed": 37,
+    "newKoreanPortraitsReachable": 12,
+    "koreaPoolCount": 14,
+    "alphaPassed": 12,
+    "userSelectedOriginalsRetained": 5,
+    "proportionRemakes": 7,
+    "desktopResults": "outputs/korea-photo-twelve-20261022/desktop/results.json"
+  },
+  "likenessNote": "公开成年照片仅用于五官与年龄面貌参考；这是二维游戏立绘，不是精确三维扫描。",
+  "currentArtworkRevision": "docs/art/japan-korea-slim-legs-feet-2026-10-22.json",
+  "supersededArtworkDeleted": true
+}

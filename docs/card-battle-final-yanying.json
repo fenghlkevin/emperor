@@ -1,0 +1,131 @@
+{
+  "version": "phase6-yanying-v6",
+  "date": "2026-10-24T09:39:28.461Z",
+  "section": "final-person",
+  "domain": "final-nonaudio-20261024-v6-heldout-A",
+  "pairsPerCase": 1000,
+  "sources": {
+    "src/card-battle.mjs": "463685db86c49de5b42811c01b7d5c8eac8232526f92204523b18988f8df7b43",
+    "src/card-battle-data.mjs": "bb83bbb6f92ea028c5373b7eafff97d29ddc4743668596f74bd8d9e1ec216162",
+    "src/card-battle-weapons.mjs": "2a9ec7ee720fbf9c71113a0d93852321a3af7fdbd130ff26a1d7977de331ac2c",
+    "src/card-battle-secrets.mjs": "249901403e59e76456a275e1e2d9832bbba47f8886b45ee9ce17d14c6993722c",
+    "src/card-battle-landmarks.mjs": "f24a9a0f1c5ac51bb5b7135cc604746ee2cd132a9c0e5a8aa05a7c9e13da62bf",
+    "scripts/card-battle-balance-fixture.mjs": "ee91f3149db232402821b94fdd3db56c9aebf21f4ed697a61b5423318212b656",
+    "scripts/card-battle-configured-fixture.mjs": "ba9a1fc7aaa46510d7cdee7e76a9d9a98fc8089f75bf90211a18f3ffb1713d40",
+    "scripts/card-battle-audit-telemetry.mjs": "0d753fae04dbb1c4338e18901235ded8aafddec4e1ba667945a0722916721a10",
+    "scripts/audit-card-battle-release.mjs": "59827ce743ca8776654d34c9dc5a4096bcc3147d64d949526ee9d8e55003fb17"
+  },
+  "rules": {
+    "version": 3,
+    "unitSize": 100,
+    "compactArmy": true,
+    "compactPenalty": true,
+    "troopCap": 18,
+    "boardLimit": 7,
+    "handLimit": 10,
+    "deckSize": 30,
+    "spellPackages": {
+      "martial": [
+        "precision",
+        "fire",
+        "fortify",
+        "assault",
+        "supply",
+        "pin",
+        "precision",
+        "fire",
+        "fortify",
+        "supply",
+        "dispel",
+        "heal"
+      ],
+      "intelligence": [
+        "precision",
+        "fire",
+        "arrows",
+        "barrage",
+        "pin",
+        "supply",
+        "precision",
+        "execute",
+        "arrows",
+        "barrage",
+        "pin",
+        "dispel"
+      ],
+      "command": [
+        "precision",
+        "fire",
+        "fortify",
+        "assault",
+        "supply",
+        "brace",
+        "fire",
+        "fortify",
+        "assault",
+        "supply",
+        "heal",
+        "dispel"
+      ]
+    },
+    "penaltyTiersOnly": true,
+    "reserveDeckGrowth": 2,
+    "lowTrainingPenalty": "general",
+    "scoutVariants": {
+      "intelligence": {
+        "cavalry": "cavalry_patrol_scout"
+      },
+      "command": {
+        "cavalry": "cavalry_patrol_scout"
+      }
+    }
+  },
+  "method": "Production cardAI + actCardsMutable; paired fixed A/B random streams, swapped first player. Each independent pair also varies equal ability-gated fixed person profiles. CI is paired normal 95%; draws score 0.5. Controller is heuristic, not a human or optimal policy.",
+  "acceptance": {
+    "target": [
+      0.47,
+      0.53
+    ],
+    "passed": true,
+    "failedCases": [],
+    "note": "Point-estimate gate only; inspect per-case confidence intervals. Base matrix does not establish configured decks/weapons/secrets/landmarks coverage."
+  },
+  "games": 2000,
+  "elapsedSeconds": 23.79,
+  "rows": [
+    {
+      "id": "manual-1509-final-mirror",
+      "roster": "mixed_1800",
+      "hero": "intelligence",
+      "person": 21,
+      "pairs": 1000,
+      "seedDomain": "final-nonaudio-20261024-v6-heldout-A",
+      "games": 2000,
+      "first": {
+        "mean": 0.5055,
+        "ci95": [
+          0.483251746666842,
+          0.5277482533331579
+        ]
+      },
+      "home": {
+        "mean": 0.4965,
+        "ci95": [
+          0.4749080303456691,
+          0.5180919696543309
+        ]
+      },
+      "draws": 0,
+      "rounds": {
+        "median": 16,
+        "p90": 19,
+        "max": 22
+      },
+      "actions": 218904,
+      "validatedFinalStates": 40,
+      "deployed": [
+        "manual-1509"
+      ]
+    }
+  ]
+}

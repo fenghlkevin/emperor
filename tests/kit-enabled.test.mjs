@@ -38,9 +38,9 @@ test('capital relocation preserves central kit stock and surrender transfers it 
 });
 function battle(){const general={martial:50,intelligence:50},b=createBattle({command:{kind:'war',id:1,kitVersion:1,squads:[{}],commanderSquad:{}},friendly:[{kind:'heavy-cavalry',count:100,name:'重骑',general},{kind:'infantry',count:100,commander:true,name:'主将',general}],enemy:[{kind:'infantry',count:1000,name:'目标',general},{kind:'infantry',count:100,commander:true,name:'敌将',general}],training:60,enemyTraining:60,targetName:'演练'});b.units[0].x=2;b.units[0].y=4;b.units[2].x=5;b.units[2].y=4;b.order=[b.units[0].id,...b.order.filter(id=>id!==b.units[0].id)];b.cursor=0;return b;}
 test('heavy cavalry is slower, harder to kill and only straight approach attacks gain charge',()=>{
- const b=battle(),a=b.units[0],t=b.units[2];assert.equal(movement(a),3);assert.equal(movement({...a,kind:'cavalry'}),4);
+ const b=battle(),a=b.units[0],t=b.units[2];assert.equal(movement(a),4);assert.equal(movement({...a,kind:'cavalry'}),6);
  assert.ok(damageEstimate(b,{...t,count:100},{...a,count:1000})<damageEstimate(b,{...t,count:100},{...a,kind:'cavalry',count:1000}));
- const p=attackPreview(b,a,t,{x:4,y:4});assert.equal(p.chargeMultiplier,1.3);const n=actBattle(b,{type:'attack',target:t.id,from:{x:4,y:4}});assert.equal(t.count-n.units[2].count,p.killed);assert.ok(n.log.some(l=>l.includes('冲锋 +30%')));
- const moved=actBattle(b,{type:'move',x:4,y:4});assert.equal(attackPreview(moved,moved.units[0],moved.units[2]).chargeMultiplier,1.3);
+ const p=attackPreview(b,a,t,{x:4,y:4});assert.equal(p.chargeMultiplier,1.35);const n=actBattle(b,{type:'attack',target:t.id,from:{x:4,y:4}});assert.equal(t.count-n.units[2].count,p.killed);assert.ok(n.log.some(l=>l.includes('冲锋 +35%')));
+ const moved=actBattle(b,{type:'move',x:4,y:4});assert.equal(attackPreview(moved,moved.units[0],moved.units[2]).chargeMultiplier,1.35);
  const bent=structuredClone(a);bent.chargeRun=2;bent.chargeFacing=1;assert.equal(chargeMultiplier(b,bent,t),1);
 });

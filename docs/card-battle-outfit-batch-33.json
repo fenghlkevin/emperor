@@ -1,0 +1,201 @@
+{
+  "scope": "30人已有卡面的人工服饰视检联系页，不代替实战/性能/考古复原验收",
+  "batchSize": 30,
+  "pages": [
+    {
+      "path": "docs/screenshots/card-outfit-review-batch-33-page-1.png",
+      "people": [
+        {
+          "id": "manual-1582",
+          "name": "李靖",
+          "period": "隋唐",
+          "src": "assets/battle/people/manual-1582-battle-v1.png"
+        },
+        {
+          "id": "general-403-90513",
+          "name": "薛仁贵",
+          "period": "唐",
+          "src": "assets/battle/people/general-403-90513-battle-v1.png"
+        },
+        {
+          "id": "cbdb-630",
+          "name": "韩琦",
+          "period": "北宋",
+          "src": "assets/battle/people/cbdb-630-battle-v1.png"
+        },
+        {
+          "id": "original-33",
+          "name": "黄飞鸿",
+          "period": "原作身份未定",
+          "src": "assets/battle/people/original-33-battle-v1.png"
+        },
+        {
+          "id": "manual-1590",
+          "name": "李林甫",
+          "period": "唐",
+          "src": "assets/battle/people/manual-1590-battle-v1.png"
+        },
+        {
+          "id": "manual-1591",
+          "name": "杨国忠",
+          "period": "唐",
+          "src": "assets/battle/people/manual-1591-battle-v1.png"
+        },
+        {
+          "id": "general-468-78206",
+          "name": "安禄山",
+          "period": "唐",
+          "src": "assets/battle/people/general-468-78206-battle-v1.png"
+        },
+        {
+          "id": "original-37",
+          "name": "屈原",
+          "period": "原作身份未定",
+          "src": "assets/battle/people/original-37-battle-v1.png"
+        },
+        {
+          "id": "manual-1537",
+          "name": "卫青",
+          "period": "西汉",
+          "src": "assets/battle/people/manual-1537-battle-v1.png"
+        },
+        {
+          "id": "manual-1536",
+          "name": "霍去病",
+          "period": "西汉",
+          "src": "assets/battle/people/manual-1536-battle-v1.png"
+        }
+      ]
+    },
+    {
+      "path": "docs/screenshots/card-outfit-review-batch-33-page-2.png",
+      "people": [
+        {
+          "id": "manual-1513",
+          "name": "孙膑",
+          "period": "战国",
+          "src": "assets/battle/people/manual-1513-battle-v1.png"
+        },
+        {
+          "id": "original-41",
+          "name": "庞涓",
+          "period": "原作身份未定",
+          "src": "assets/battle/people/original-41-battle-v1.png"
+        },
+        {
+          "id": "cbdb-25403",
+          "name": "诸葛亮",
+          "period": "汉末三国",
+          "src": "assets/battle/people/cbdb-25403-battle-v1.png"
+        },
+        {
+          "id": "original-43",
+          "name": "王玄策",
+          "period": "原作身份未定",
+          "src": "assets/battle/people/original-43-battle-v1.png"
+        },
+        {
+          "id": "original-44",
+          "name": "刘仁轨",
+          "period": "原作身份未定",
+          "src": "assets/battle/people/original-44-battle-v1.png"
+        },
+        {
+          "id": "general-422-82978",
+          "name": "苏定方",
+          "period": "隋唐",
+          "src": "assets/battle/people/general-422-82978-battle-v1.png"
+        },
+        {
+          "id": "general-523-68118",
+          "name": "狄青",
+          "period": "北宋",
+          "src": "assets/battle/people/general-523-68118-battle-v1.png"
+        },
+        {
+          "id": "cbdb-1488",
+          "name": "司马光",
+          "period": "北宋",
+          "src": "assets/battle/people/cbdb-1488-battle-v1.png"
+        },
+        {
+          "id": "cbdb-8175",
+          "name": "岳飞",
+          "period": "南宋",
+          "src": "assets/battle/people/cbdb-8175-battle-v1.png"
+        },
+        {
+          "id": "cbdb-19123",
+          "name": "文天祥",
+          "period": "南宋",
+          "src": "assets/battle/people/cbdb-19123-battle-v1.png"
+        }
+      ]
+    },
+    {
+      "path": "docs/screenshots/card-outfit-review-batch-33-page-3.png",
+      "people": [
+        {
+          "id": "manual-1608",
+          "name": "徐达",
+          "period": "元末明初",
+          "src": "assets/battle/people/manual-1608-battle-v1.png"
+        },
+        {
+          "id": "manual-1609",
+          "name": "常遇春",
+          "period": "元末明初",
+          "src": "assets/battle/people/manual-1609-battle-v1.png"
+        },
+        {
+          "id": "cbdb-54819",
+          "name": "林则徐",
+          "period": "清",
+          "src": "assets/battle/people/cbdb-54819-battle-v1.png"
+        },
+        {
+          "id": "cbdb-28093",
+          "name": "方孝孺",
+          "period": "明",
+          "src": "assets/battle/people/cbdb-28093-battle-v1.png"
+        },
+        {
+          "id": "manual-1614",
+          "name": "戚继光",
+          "period": "明",
+          "src": "assets/battle/people/manual-1614-battle-v1.png"
+        },
+        {
+          "id": "manual-1611",
+          "name": "于谦",
+          "period": "明",
+          "src": "assets/battle/people/manual-1611-battle-v1.png"
+        },
+        {
+          "id": "cbdb-30374",
+          "name": "王守仁",
+          "period": "明",
+          "src": "assets/battle/people/cbdb-30374-battle-v1.png"
+        },
+        {
+          "id": "original-57",
+          "name": "程咬金",
+          "period": "原作身份未定",
+          "src": "assets/battle/people/original-57-battle-v1.png"
+        },
+        {
+          "id": "cbdb-8008",
+          "name": "秦桧",
+          "period": "两宋",
+          "src": "assets/battle/people/cbdb-8008-battle-v1.png"
+        },
+        {
+          "id": "original-59",
+          "name": "史可法",
+          "period": "原作身份未定",
+          "src": "assets/battle/people/original-59-battle-v1.png"
+        }
+      ]
+    }
+  ]
+}

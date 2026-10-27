@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" preserveAspectRatio="none">
+<defs><g id="corner" fill="none" stroke="#b89958" stroke-width="1.2">
+<path d="M4 80V4H110M10 65V10H90M14 45Q19 30 36 33Q51 36 43 47Q38 53 32 47Q30 43 35 41M14 22Q28 12 44 19T76 22Q83 20 79 16Q73 12 69 17M18 4Q15 16 4 18M49 4Q48 14 59 14Q66 14 65 8"/>
+<path d="M4 58Q14 57 18 65Q22 73 16 80Q12 85 8 81Q5 76 10 75M22 22Q35 19 35 10M47 20Q54 33 68 26M18 54Q26 55 27 45"/>
+<path d="M78 4Q91 14 110 12M4 90Q16 96 12 112M86 15q5 9 14 7q-3-8-14-7M22 85q8 5 4 14q-8-3-4-14" fill="#b89958" fill-opacity=".35"/>
+</g></defs>
+<path d="M7 95V465M1193 95V465M110 7H1090M110 553H1090" fill="none" stroke="#b89958" stroke-width="1"/>
+<use href="#corner"/><use href="#corner" transform="translate(1200 0) scale(-1 1)"/>
+<use href="#corner" transform="translate(0 560) scale(1 -1)"/><use href="#corner" transform="translate(1200 560) scale(-1 -1)"/>
+</svg>

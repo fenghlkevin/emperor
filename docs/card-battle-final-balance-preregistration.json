@@ -1,0 +1,594 @@
+{
+  "status": "preregistered-not-run",
+  "catalogVersion": "phase6-yanying-v6",
+  "seedDomain": "final-nonaudio-20261024-v6-heldout-A",
+  "pairsPerGroup": 1000,
+  "gamesPerGroup": 2000,
+  "target": [
+    0.47,
+    0.53
+  ],
+  "drawScore": 0.5,
+  "method": "Paired A/B random streams and swapped first seat; independent seed domain from earlier reports; paired normal 95% CI. Report every group and failed group; no pooled-average substitution.",
+  "sourceHashes": {
+    "src/card-battle.mjs": "463685db86c49de5b42811c01b7d5c8eac8232526f92204523b18988f8df7b43",
+    "src/card-battle-data.mjs": "bb83bbb6f92ea028c5373b7eafff97d29ddc4743668596f74bd8d9e1ec216162",
+    "src/card-battle-weapons.mjs": "2a9ec7ee720fbf9c71113a0d93852321a3af7fdbd130ff26a1d7977de331ac2c",
+    "src/card-battle-secrets.mjs": "249901403e59e76456a275e1e2d9832bbba47f8886b45ee9ce17d14c6993722c",
+    "src/card-battle-landmarks.mjs": "f24a9a0f1c5ac51bb5b7135cc604746ee2cd132a9c0e5a8aa05a7c9e13da62bf"
+  },
+  "groups": [
+    {
+      "id": "mixed_1800-20-martial",
+      "section": "matrix",
+      "roster": "mixed_1800",
+      "training": 20,
+      "hero": "martial"
+    },
+    {
+      "id": "mixed_1800-20-intelligence",
+      "section": "matrix",
+      "roster": "mixed_1800",
+      "training": 20,
+      "hero": "intelligence"
+    },
+    {
+      "id": "mixed_1800-20-command",
+      "section": "matrix",
+      "roster": "mixed_1800",
+      "training": 20,
+      "hero": "command"
+    },
+    {
+      "id": "mixed_1800-60-martial",
+      "section": "matrix",
+      "roster": "mixed_1800",
+      "training": 60,
+      "hero": "martial"
+    },
+    {
+      "id": "mixed_1800-60-intelligence",
+      "section": "matrix",
+      "roster": "mixed_1800",
+      "training": 60,
+      "hero": "intelligence"
+    },
+    {
+      "id": "mixed_1800-60-command",
+      "section": "matrix",
+      "roster": "mixed_1800",
+      "training": 60,
+      "hero": "command"
+    },
+    {
+      "id": "mixed_1800-90-martial",
+      "section": "matrix",
+      "roster": "mixed_1800",
+      "training": 90,
+      "hero": "martial"
+    },
+    {
+      "id": "mixed_1800-90-intelligence",
+      "section": "matrix",
+      "roster": "mixed_1800",
+      "training": 90,
+      "hero": "intelligence"
+    },
+    {
+      "id": "mixed_1800-90-command",
+      "section": "matrix",
+      "roster": "mixed_1800",
+      "training": 90,
+      "hero": "command"
+    },
+    {
+      "id": "infantry_1800-20-martial",
+      "section": "matrix",
+      "roster": "infantry_1800",
+      "training": 20,
+      "hero": "martial"
+    },
+    {
+      "id": "infantry_1800-20-intelligence",
+      "section": "matrix",
+      "roster": "infantry_1800",
+      "training": 20,
+      "hero": "intelligence"
+    },
+    {
+      "id": "infantry_1800-20-command",
+      "section": "matrix",
+      "roster": "infantry_1800",
+      "training": 20,
+      "hero": "command"
+    },
+    {
+      "id": "infantry_1800-60-martial",
+      "section": "matrix",
+      "roster": "infantry_1800",
+      "training": 60,
+      "hero": "martial"
+    },
+    {
+      "id": "infantry_1800-60-intelligence",
+      "section": "matrix",
+      "roster": "infantry_1800",
+      "training": 60,
+      "hero": "intelligence"
+    },
+    {
+      "id": "infantry_1800-60-command",
+      "section": "matrix",
+      "roster": "infantry_1800",
+      "training": 60,
+      "hero": "command"
+    },
+    {
+      "id": "infantry_1800-90-martial",
+      "section": "matrix",
+      "roster": "infantry_1800",
+      "training": 90,
+      "hero": "martial"
+    },
+    {
+      "id": "infantry_1800-90-intelligence",
+      "section": "matrix",
+      "roster": "infantry_1800",
+      "training": 90,
+      "hero": "intelligence"
+    },
+    {
+      "id": "infantry_1800-90-command",
+      "section": "matrix",
+      "roster": "infantry_1800",
+      "training": 90,
+      "hero": "command"
+    },
+    {
+      "id": "cavalry_1800-20-martial",
+      "section": "matrix",
+      "roster": "cavalry_1800",
+      "training": 20,
+      "hero": "martial"
+    },
+    {
+      "id": "cavalry_1800-20-intelligence",
+      "section": "matrix",
+      "roster": "cavalry_1800",
+      "training": 20,
+      "hero": "intelligence"
+    },
+    {
+      "id": "cavalry_1800-20-command",
+      "section": "matrix",
+      "roster": "cavalry_1800",
+      "training": 20,
+      "hero": "command"
+    },
+    {
+      "id": "cavalry_1800-60-martial",
+      "section": "matrix",
+      "roster": "cavalry_1800",
+      "training": 60,
+      "hero": "martial"
+    },
+    {
+      "id": "cavalry_1800-60-intelligence",
+      "section": "matrix",
+      "roster": "cavalry_1800",
+      "training": 60,
+      "hero": "intelligence"
+    },
+    {
+      "id": "cavalry_1800-60-command",
+      "section": "matrix",
+      "roster": "cavalry_1800",
+      "training": 60,
+      "hero": "command"
+    },
+    {
+      "id": "cavalry_1800-90-martial",
+      "section": "matrix",
+      "roster": "cavalry_1800",
+      "training": 90,
+      "hero": "martial"
+    },
+    {
+      "id": "cavalry_1800-90-intelligence",
+      "section": "matrix",
+      "roster": "cavalry_1800",
+      "training": 90,
+      "hero": "intelligence"
+    },
+    {
+      "id": "cavalry_1800-90-command",
+      "section": "matrix",
+      "roster": "cavalry_1800",
+      "training": 90,
+      "hero": "command"
+    },
+    {
+      "id": "ranged_1800-20-martial",
+      "section": "matrix",
+      "roster": "ranged_1800",
+      "training": 20,
+      "hero": "martial"
+    },
+    {
+      "id": "ranged_1800-20-intelligence",
+      "section": "matrix",
+      "roster": "ranged_1800",
+      "training": 20,
+      "hero": "intelligence"
+    },
+    {
+      "id": "ranged_1800-20-command",
+      "section": "matrix",
+      "roster": "ranged_1800",
+      "training": 20,
+      "hero": "command"
+    },
+    {
+      "id": "ranged_1800-60-martial",
+      "section": "matrix",
+      "roster": "ranged_1800",
+      "training": 60,
+      "hero": "martial"
+    },
+    {
+      "id": "ranged_1800-60-intelligence",
+      "section": "matrix",
+      "roster": "ranged_1800",
+      "training": 60,
+      "hero": "intelligence"
+    },
+    {
+      "id": "ranged_1800-60-command",
+      "section": "matrix",
+      "roster": "ranged_1800",
+      "training": 60,
+      "hero": "command"
+    },
+    {
+      "id": "ranged_1800-90-martial",
+      "section": "matrix",
+      "roster": "ranged_1800",
+      "training": 90,
+      "hero": "martial"
+    },
+    {
+      "id": "ranged_1800-90-intelligence",
+      "section": "matrix",
+      "roster": "ranged_1800",
+      "training": 90,
+      "hero": "intelligence"
+    },
+    {
+      "id": "ranged_1800-90-command",
+      "section": "matrix",
+      "roster": "ranged_1800",
+      "training": 90,
+      "hero": "command"
+    },
+    {
+      "id": "heavy_1800-20-martial",
+      "section": "matrix",
+      "roster": "heavy_1800",
+      "training": 20,
+      "hero": "martial"
+    },
+    {
+      "id": "heavy_1800-20-intelligence",
+      "section": "matrix",
+      "roster": "heavy_1800",
+      "training": 20,
+      "hero": "intelligence"
+    },
+    {
+      "id": "heavy_1800-20-command",
+      "section": "matrix",
+      "roster": "heavy_1800",
+      "training": 20,
+      "hero": "command"
+    },
+    {
+      "id": "heavy_1800-60-martial",
+      "section": "matrix",
+      "roster": "heavy_1800",
+      "training": 60,
+      "hero": "martial"
+    },
+    {
+      "id": "heavy_1800-60-intelligence",
+      "section": "matrix",
+      "roster": "heavy_1800",
+      "training": 60,
+      "hero": "intelligence"
+    },
+    {
+      "id": "heavy_1800-60-command",
+      "section": "matrix",
+      "roster": "heavy_1800",
+      "training": 60,
+      "hero": "command"
+    },
+    {
+      "id": "heavy_1800-90-martial",
+      "section": "matrix",
+      "roster": "heavy_1800",
+      "training": 90,
+      "hero": "martial"
+    },
+    {
+      "id": "heavy_1800-90-intelligence",
+      "section": "matrix",
+      "roster": "heavy_1800",
+      "training": 90,
+      "hero": "intelligence"
+    },
+    {
+      "id": "heavy_1800-90-command",
+      "section": "matrix",
+      "roster": "heavy_1800",
+      "training": 90,
+      "hero": "command"
+    },
+    {
+      "id": "exotic_1800-20-martial",
+      "section": "matrix",
+      "roster": "exotic_1800",
+      "training": 20,
+      "hero": "martial"
+    },
+    {
+      "id": "exotic_1800-20-intelligence",
+      "section": "matrix",
+      "roster": "exotic_1800",
+      "training": 20,
+      "hero": "intelligence"
+    },
+    {
+      "id": "exotic_1800-20-command",
+      "section": "matrix",
+      "roster": "exotic_1800",
+      "training": 20,
+      "hero": "command"
+    },
+    {
+      "id": "exotic_1800-60-martial",
+      "section": "matrix",
+      "roster": "exotic_1800",
+      "training": 60,
+      "hero": "martial"
+    },
+    {
+      "id": "exotic_1800-60-intelligence",
+      "section": "matrix",
+      "roster": "exotic_1800",
+      "training": 60,
+      "hero": "intelligence"
+    },
+    {
+      "id": "exotic_1800-60-command",
+      "section": "matrix",
+      "roster": "exotic_1800",
+      "training": 60,
+      "hero": "command"
+    },
+    {
+      "id": "exotic_1800-90-martial",
+      "section": "matrix",
+      "roster": "exotic_1800",
+      "training": 90,
+      "hero": "martial"
+    },
+    {
+      "id": "exotic_1800-90-intelligence",
+      "section": "matrix",
+      "roster": "exotic_1800",
+      "training": 90,
+      "hero": "intelligence"
+    },
+    {
+      "id": "exotic_1800-90-command",
+      "section": "matrix",
+      "roster": "exotic_1800",
+      "training": 90,
+      "hero": "command"
+    },
+    {
+      "id": "mixed_600-20-martial",
+      "section": "matrix",
+      "roster": "mixed_600",
+      "training": 20,
+      "hero": "martial"
+    },
+    {
+      "id": "mixed_600-20-intelligence",
+      "section": "matrix",
+      "roster": "mixed_600",
+      "training": 20,
+      "hero": "intelligence"
+    },
+    {
+      "id": "mixed_600-20-command",
+      "section": "matrix",
+      "roster": "mixed_600",
+      "training": 20,
+      "hero": "command"
+    },
+    {
+      "id": "mixed_600-60-martial",
+      "section": "matrix",
+      "roster": "mixed_600",
+      "training": 60,
+      "hero": "martial"
+    },
+    {
+      "id": "mixed_600-60-intelligence",
+      "section": "matrix",
+      "roster": "mixed_600",
+      "training": 60,
+      "hero": "intelligence"
+    },
+    {
+      "id": "mixed_600-60-command",
+      "section": "matrix",
+      "roster": "mixed_600",
+      "training": 60,
+      "hero": "command"
+    },
+    {
+      "id": "mixed_600-90-martial",
+      "section": "matrix",
+      "roster": "mixed_600",
+      "training": 90,
+      "hero": "martial"
+    },
+    {
+      "id": "mixed_600-90-intelligence",
+      "section": "matrix",
+      "roster": "mixed_600",
+      "training": 90,
+      "hero": "intelligence"
+    },
+    {
+      "id": "mixed_600-90-command",
+      "section": "matrix",
+      "roster": "mixed_600",
+      "training": 90,
+      "hero": "command"
+    },
+    {
+      "id": "reserve_3600-20-martial",
+      "section": "matrix",
+      "roster": "reserve_3600",
+      "training": 20,
+      "hero": "martial"
+    },
+    {
+      "id": "reserve_3600-20-intelligence",
+      "section": "matrix",
+      "roster": "reserve_3600",
+      "training": 20,
+      "hero": "intelligence"
+    },
+    {
+      "id": "reserve_3600-20-command",
+      "section": "matrix",
+      "roster": "reserve_3600",
+      "training": 20,
+      "hero": "command"
+    },
+    {
+      "id": "reserve_3600-60-martial",
+      "section": "matrix",
+      "roster": "reserve_3600",
+      "training": 60,
+      "hero": "martial"
+    },
+    {
+      "id": "reserve_3600-60-intelligence",
+      "section": "matrix",
+      "roster": "reserve_3600",
+      "training": 60,
+      "hero": "intelligence"
+    },
+    {
+      "id": "reserve_3600-60-command",
+      "section": "matrix",
+      "roster": "reserve_3600",
+      "training": 60,
+      "hero": "command"
+    },
+    {
+      "id": "reserve_3600-90-martial",
+      "section": "matrix",
+      "roster": "reserve_3600",
+      "training": 90,
+      "hero": "martial"
+    },
+    {
+      "id": "reserve_3600-90-intelligence",
+      "section": "matrix",
+      "roster": "reserve_3600",
+      "training": 90,
+      "hero": "intelligence"
+    },
+    {
+      "id": "reserve_3600-90-command",
+      "section": "matrix",
+      "roster": "reserve_3600",
+      "training": 90,
+      "hero": "command"
+    },
+    {
+      "id": "configured-weapons-0",
+      "section": "configured",
+      "configuration": "weapons",
+      "rotation": 0,
+      "limitation": "Real asymmetric expedition; first-seat swapping tests order bias, not equal-army/deck strength."
+    },
+    {
+      "id": "configured-weapons-5",
+      "section": "configured",
+      "configuration": "weapons",
+      "rotation": 5,
+      "limitation": "Real asymmetric expedition; first-seat swapping tests order bias, not equal-army/deck strength."
+    },
+    {
+      "id": "configured-secrets-0",
+      "section": "configured",
+      "configuration": "secrets",
+      "rotation": 0,
+      "limitation": "Real asymmetric expedition; first-seat swapping tests order bias, not equal-army/deck strength."
+    },
+    {
+      "id": "configured-secrets-5",
+      "section": "configured",
+      "configuration": "secrets",
+      "rotation": 5,
+      "limitation": "Real asymmetric expedition; first-seat swapping tests order bias, not equal-army/deck strength."
+    },
+    {
+      "id": "configured-landmarks-0",
+      "section": "configured",
+      "configuration": "landmarks",
+      "rotation": 0,
+      "limitation": "Real asymmetric expedition; first-seat swapping tests order bias, not equal-army/deck strength."
+    },
+    {
+      "id": "configured-landmarks-5",
+      "section": "configured",
+      "configuration": "landmarks",
+      "rotation": 5,
+      "limitation": "Real asymmetric expedition; first-seat swapping tests order bias, not equal-army/deck strength."
+    },
+    {
+      "id": "configured-combined-0",
+      "section": "configured",
+      "configuration": "combined",
+      "rotation": 0,
+      "limitation": "Real asymmetric expedition; first-seat swapping tests order bias, not equal-army/deck strength."
+    },
+    {
+      "id": "configured-combined-5",
+      "section": "configured",
+      "configuration": "combined",
+      "rotation": 5,
+      "limitation": "Real asymmetric expedition; first-seat swapping tests order bias, not equal-army/deck strength."
+    },
+    {
+      "id": "manual-1509-final-mirror",
+      "section": "person",
+      "personId": "manual-1509"
+    }
+  ],
+  "totalGroups": 81,
+  "totalPlannedGames": 162000,
+  "limits": [
+    "Heuristic AI cannot certify all possible human constructed decks",
+    "Hidden UI runs are not the required foreground hour",
+    "Any rule tuning invalidates final results; re-lock a new version/domain and rerun complete acceptance"
+  ]
+}

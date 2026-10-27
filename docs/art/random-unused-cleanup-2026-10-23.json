@@ -1,0 +1,85 @@
+{
+  "scope": "Only obsolete unregistered PNG portraits under assets/beauties/random; current portraits and save migration aliases retained.",
+  "deleted": [
+    {
+      "file": "assets/beauties/random/番邦女子/日本女子-七泽美亚-水蓝风车.png",
+      "size": 1560383,
+      "sha256": "45c0d5bd0a102fa8a3bee27583020cc16c71bc5d77ad74435d44fffb8879ecf2",
+      "replacement": "assets/beauties/random/番邦女子/日本女子-七泽美亚-水蓝风车-体态-v2.png"
+    },
+    {
+      "file": "assets/beauties/random/番邦女子/日本女子-伊藤舞雪-绯夏漆盒.png",
+      "size": 2111199,
+      "sha256": "a038cb951baf615f17f7467925bc899c3969b1d43417a61f1dac3a2d96b2972f",
+      "replacement": "assets/beauties/random/番邦女子/日本女子-伊藤舞雪-绯夏漆盒-体态-v2.png"
+    },
+    {
+      "file": "assets/beauties/random/番邦女子/日本女子-凉森玲梦-青荷玉壶.png",
+      "size": 1811326,
+      "sha256": "1809d3577f66adc3259fd50f166f96bc8ad7205dcefb5bef1fddddfe5108c637",
+      "replacement": "assets/beauties/random/番邦女子/日本女子-凉森玲梦-青荷玉壶-体态-v2.png"
+    },
+    {
+      "file": "assets/beauties/random/番邦女子/日本女子-山岸逢花-浅杏竹笛.png",
+      "size": 1868316,
+      "sha256": "af2fb27d5962af7a1ededab5ddeebf16a18b62629e3a9d49a57150b46098b7e0",
+      "replacement": "assets/beauties/random/番邦女子/日本女子-山岸逢花-浅杏竹笛-体态-v2.png"
+    },
+    {
+      "file": "assets/beauties/random/番邦女子/日本女子-希岛爱理-藕绡琵琶.png",
+      "size": 2178680,
+      "sha256": "dd41bfbf2e9e19947f26acde894bb5428e6243fd832209e7b4444e3e27100350",
+      "replacement": "assets/beauties/random/番邦女子/日本女子-希岛爱理-藕绡琵琶-体态-v2.png"
+    },
+    {
+      "file": "assets/beauties/random/番邦女子/日本女子-明里紬-柳夏手毬.png",
+      "size": 1790895,
+      "sha256": "fc3357f18c3cb45e603a19488d6b3bfd005b2a566a82c338185a01ac9aa5e8c4",
+      "replacement": "assets/beauties/random/番邦女子/日本女子-明里紬-柳夏手毬-体态-v2.png"
+    },
+    {
+      "file": "assets/beauties/random/番邦女子/日本女子-松下纱荣子-墨夏香囊.png",
+      "size": 1751562,
+      "sha256": "6ac90012dec486d9c432a4390ad2f96a86f22c80126e5ab57bee661e04a2ac0e",
+      "replacement": "assets/beauties/random/番邦女子/日本女子-松下纱荣子-墨夏香囊-体态-v2.png"
+    },
+    {
+      "file": "assets/beauties/random/番邦女子/日本女子-枫可怜-藤紫团扇.png",
+      "size": 1645794,
+      "sha256": "ad7339c39b84b62ec6504ed68634460f935e63f627bfc64d35b3e7c2e40b4508",
+      "replacement": "assets/beauties/random/番邦女子/日本女子-枫可怜-藤紫团扇-体态-v2.png"
+    },
+    {
+      "file": "assets/beauties/random/番邦女子/日本女子-楪可怜-桃霞花笺.png",
+      "size": 1739478,
+      "sha256": "10809eac6dc72dba907fbd7309b252d81894192a0263200f6c8e3465834eb701",
+      "replacement": "assets/beauties/random/番邦女子/日本女子-楪可怜-桃霞花笺-体态-v2.png"
+    },
+    {
+      "file": "assets/beauties/random/番邦女子/日本女子-河北彩花-浅金香篆.png",
+      "size": 1709112,
+      "sha256": "07062c3ac64d5d95bc6fbe2e6bd8fc157aba04cee5b112177a66a276f8a570a8",
+      "replacement": "assets/beauties/random/番邦女子/日本女子-河北彩花-浅金香篆-体态-v2.png"
+    },
+    {
+      "file": "assets/beauties/random/番邦女子/日本女子-河北彩花-碧绡筝韵.png",
+      "size": 1922431,
+      "sha256": "114224fb168d01d0015f714009551a40f9dd15efda62eafa877f5758e9a00d91",
+      "replacement": "assets/beauties/random/番邦女子/日本女子-河北彩花-碧绡筝韵-体态-v2.png"
+    },
+    {
+      "file": "assets/beauties/random/番邦女子/日本女子-河北彩花-绯绡双扇.png",
+      "size": 2205045,
+      "sha256": "059918005c9373f3c24440d5270282722f42a9719a30098d50bf567e2ebc08f2",
+      "replacement": "assets/beauties/random/番邦女子/日本女子-河北彩花-绯绡双扇-体态-v2.png"
+    },
+    {
+      "file": "assets/beauties/random/番邦女子/日本女子-濑户环奈-月白桔梗.png",
+      "size": 1670408,
+      "sha256": "73068273d1246504e7ad54e1ac01e2573a7999cc4935b1cdcc5d8e11a63bfce3",
+      "replacement": "assets/beauties/random/番邦女子/日本女子-濑户环奈-月白桔梗-体态-v2.png"
+    }
+  ],
+  "protected": [],
+  "count": 13
+}

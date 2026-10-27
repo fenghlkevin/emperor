@@ -1,0 +1,100 @@
+{
+  "scope": "三兵种v2重绘预览，非九文化池所有实际兵源终验",
+  "sources": [
+    {
+      "url": "https://asia-archive.si.edu/learn/for-educators/teaching-china-with-the-smithsonian/explore-by-object/head-of-a-tomb-figure-of-a-sogdian-or-central-asian-traveler/",
+      "read": true,
+      "use": "唐代粟特/中亚交流背景；馆方明确提示俑像夸张与刻板化风险，不能照抄成族群测量标准"
+    },
+    {
+      "url": "https://www.shanghaimuseum.net/mu/frontend/pg/article/id/CI00160305",
+      "read": true,
+      "use": "唐代粟特马夫与商人迁居背景；不是士兵服饰或所有中亚人的外貌证据"
+    },
+    {
+      "url": "https://www.metmuseum.org/essays/tibetan-arms-and-armor",
+      "read": true,
+      "use": "扎甲结构及七八世纪可能使用的时代范围；晚期实物不能直接作为唐代整套复原"
+    },
+    {
+      "url": "https://www.metmuseum.org/art/collection/search/27399",
+      "read": true,
+      "use": "五世纪伊朗/美索不达米亚盔，参考构造和时间差，非全体波斯步兵统一装备证明"
+    },
+    {
+      "url": "https://www.metmuseum.org/art/collection/search/23025",
+      "read": true,
+      "use": "十四十五世纪日本甲，标记为时代不适用，不拿来证明唐代日本步兵装束"
+    }
+  ],
+  "policy": [
+    "人物肤色发质胡须体态为自然范围的创作表达，不宣称史料证明某地人都长一种脸",
+    "九文化池现有映射跨多个真实地区，需后续按来源细分；阿拉伯池含阿克苏姆/非洲等不应只套阿拉伯半岛代表图",
+    "三套先展示，未展示前不继续其他兵种",
+    "三套v1保留，v2新增文件，不覆盖原资产"
+  ],
+  "status": "three-atlases-shown-user-approved-and-native-verified",
+  "assets": [
+    {
+      "kind": "infantry",
+      "path": "assets/battle/card-regional-infantry-v2.png",
+      "generator": "builtin imagegen",
+      "source": "exec-26f07136-e644-4dd2-a2b6-a0873e9b8f9c.png",
+      "sha256": "0dd566f484ea008fba3674c84c341e4dc0bda2f49e1014d6aa660c179c49b411",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "visualReview": "九格已查看；自然群体与组内差异明显，宽泛游戏代表图，非全兵源历史复原通过"
+    },
+    {
+      "kind": "spears",
+      "path": "assets/battle/card-regional-spears-v2.png",
+      "generator": "builtin imagegen",
+      "source": "exec-b33a56f8-51ea-47c9-a290-a654d5d360ff.png",
+      "sha256": "cdb9a0c3487a51dc67df93b46b1c73a6ccaa0e7890727e94579f36da040e6e49",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "visualReview": "九格已查看；自然群体与组内差异明显，宽泛游戏代表图，非全兵源历史复原通过"
+    },
+    {
+      "kind": "archers",
+      "path": "assets/battle/card-regional-archers-v2.png",
+      "generator": "builtin imagegen",
+      "source": "exec-0abaffe9-5d99-4203-9331-d88c8e5712b6.png",
+      "sha256": "2b30d207a34a50885486a363942941ec9938d2e9cf40fbb4d7150da5f7710389",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "visualReview": "九格已查看；自然群体与组内差异明显，宽泛游戏代表图，非全兵源历史复原通过"
+    }
+  ],
+  "shownToUser": true,
+  "modelVerification": {
+    "passed": 24,
+    "failed": 0,
+    "durationMs": 4045.837334
+  },
+  "userApproved": true,
+  "approval": "用户看过三套后回复：没问题 可以",
+  "nativeVerification": {
+    "infantry": {
+      "checks": 27,
+      "errors": [],
+      "elapsedSeconds": 26.593
+    },
+    "spears": {
+      "checks": 27,
+      "errors": [],
+      "elapsedSeconds": 26.692
+    },
+    "archers": {
+      "checks": 27,
+      "errors": [],
+      "elapsedSeconds": 54.133
+    }
+  }
+}

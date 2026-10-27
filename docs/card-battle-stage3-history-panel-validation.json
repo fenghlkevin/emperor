@@ -1,0 +1,316 @@
+{
+  "date": "2026-10-23T00:44:45.124571+00:00",
+  "scope": "v3 read-only current battle record panel and recovered records; post-settlement archive and tutorial pending",
+  "sources": {
+    "src/card-battle-history-view.mjs": "ce609a6c66a29a9dae0cf617e7cc793c936be9e8f5eb2cbce40e868fc8ba0574",
+    "src/card-battle-history-ui.mjs": "cc25797fb53b6cadff3e141ec6e189c0e1cef2f6da46adb13dc52dd25038e6f0",
+    "src/card-battle-ui.mjs": "65a880c692ad29556baac2b5916382143d03e846549573bc98ae397456d1c449",
+    "src/card-battle-deck.css": "d2ca3b3fcc4092868b88d5ebcee516b9bf107db9cb0c59d748184463c0b9fb94",
+    "tests/card-battle-history-view.test.mjs": "64eba1192842728ed11e538622b72be13ac1cd2db203390cd17eed69232faa30",
+    "tests/card-battle-history-panel-desktop.cjs": "1dce5548fa6c3cee448a6eb5a237fd3a9df2d2b8e125d8b39dc2fc10a3732b2f",
+    "tests/card-battle-history-desktop.cjs": "543fee581bd6591054f7c5f060af42aeae38d7cbec692250fd9fe9d9afadfbc3",
+    "package.json": "b31c2ca1f5ef7327eb191b042c01fea9ccf60a549ccb4b121827932f50072b89"
+  },
+  "rulesAndEngineUnchanged": true,
+  "regression": {
+    "command": "npm test",
+    "tests": 881,
+    "pass": 881,
+    "fail": 0,
+    "elapsedSeconds": 71.224438416,
+    "types": "36 runtime snapshots and negative type checks passed",
+    "log": "/private/tmp/card-history-panel-full-regression.log"
+  },
+  "related": {
+    "command": "node --test tests/card-battle-history-view.test.mjs tests/card-battle-history.test.mjs",
+    "tests": 11,
+    "pass": 11,
+    "elapsedSeconds": 3.02017875,
+    "log": "/private/tmp/card-history-panel-model.log"
+  },
+  "desktopPanel": {
+    "date": "2026-10-23T00:42:21.876Z",
+    "elapsedSeconds": 6.646,
+    "checks": [
+      "empty history is available during mulligan without inventing previous moves",
+      "opening moves keyboard focus into read-only dialog without state changes",
+      "Escape restores battle keyboard focus, closes and removes the history dialog",
+      "opponent timer pauses throughout history inspection",
+      "all accepted actions render exactly once with the newest round expanded",
+      "expand all exposes chronological action/event details",
+      "collapse all retains a compact round overview",
+      "actor filter preserves keyboard focus and collapsed state",
+      "round filter shows a matching group and global action count",
+      "1440px record panel fits and close button remains a stable native target",
+      "1000px record panel fits and close button remains a stable native target",
+      "800px record panel fits and close button remains a stable native target",
+      "opponent resumes after closing the record panel",
+      "finished battle has a read-only history entry before settlement",
+      "old in-progress battles explicitly label missing earlier records",
+      "snapshot names are escaped and enemy draw identities stay hidden",
+      "hidden panel acceptance never writes the actual save key"
+    ],
+    "errors": []
+  },
+  "desktopRecovery": {
+    "date": "2026-10-23T00:43:01.405Z",
+    "elapsedSeconds": 9.376,
+    "checks": [
+      "opening action is persisted exactly once",
+      "troop deployment record commits before animation completion",
+      "reload during animation restores exact state and history without duplication",
+      "new hidden window restores the same committed action history",
+      "read-only deck view creates no phantom action record",
+      "recovered record panel renders the two committed actions without publishing another",
+      "recovered input unlocks and actual game save key stays untouched"
+    ],
+    "consoleErrors": [],
+    "publicHistory": {
+      "version": 1,
+      "nextId": 3,
+      "checksum": 3880145508,
+      "startedPly": 1,
+      "partial": false,
+      "entries": [
+        {
+          "id": 1,
+          "ply": 1,
+          "round": 1,
+          "side": "home",
+          "type": "mulligan",
+          "cost": 0,
+          "actor": {
+            "id": "home-hero",
+            "side": "home",
+            "type": "hero",
+            "name": "沈文远"
+          },
+          "swaps": 0,
+          "resources": {
+            "home": {
+              "before": {
+                "mana": 0,
+                "discount": 0
+              },
+              "after": {
+                "mana": 1,
+                "discount": 0
+              }
+            },
+            "enemy": {
+              "before": {
+                "mana": 0,
+                "discount": 0
+              },
+              "after": {
+                "mana": 0,
+                "discount": 0
+              }
+            }
+          },
+          "changes": [],
+          "events": [
+            {
+              "ordinal": 1,
+              "type": "draw",
+              "ply": 1,
+              "round": 1,
+              "cause": {
+                "parents": [
+                  {
+                    "kind": "mulligan",
+                    "source": {
+                      "id": "home-hero",
+                      "side": "home",
+                      "type": "hero",
+                      "name": "沈文远"
+                    }
+                  }
+                ],
+                "kind": "start-turn",
+                "source": {
+                  "id": "home-hero",
+                  "side": "home",
+                  "type": "hero",
+                  "name": "沈文远"
+                }
+              },
+              "side": "home",
+              "subject": {
+                "id": "home-21",
+                "side": "home",
+                "type": "tactic",
+                "name": "整队备战"
+              }
+            },
+            {
+              "ordinal": 2,
+              "type": "turn",
+              "ply": 1,
+              "round": 1,
+              "cause": {
+                "parents": [
+                  {
+                    "kind": "mulligan",
+                    "source": {
+                      "id": "home-hero",
+                      "side": "home",
+                      "type": "hero",
+                      "name": "沈文远"
+                    }
+                  }
+                ],
+                "kind": "start-turn",
+                "source": {
+                  "id": "home-hero",
+                  "side": "home",
+                  "type": "hero",
+                  "name": "沈文远"
+                }
+              },
+              "side": "home"
+            }
+          ],
+          "checksum": 3129603621
+        },
+        {
+          "id": 2,
+          "ply": 1,
+          "round": 1,
+          "side": "home",
+          "type": "play",
+          "cost": 1,
+          "actor": {
+            "id": "home-1",
+            "side": "home",
+            "type": "troop",
+            "name": "前锋小队"
+          },
+          "resources": {
+            "home": {
+              "before": {
+                "mana": 1,
+                "discount": 0
+              },
+              "after": {
+                "mana": 0,
+                "discount": 0
+              }
+            },
+            "enemy": {
+              "before": {
+                "mana": 0,
+                "discount": 0
+              },
+              "after": {
+                "mana": 0,
+                "discount": 0
+              }
+            }
+          },
+          "changes": [
+            {
+              "subject": {
+                "id": "home-1",
+                "side": "home",
+                "type": "troop",
+                "name": "前锋小队"
+              },
+              "before": null,
+              "after": {
+                "attack": 1,
+                "hp": 2,
+                "maxHp": 2,
+                "tags": [],
+                "frozen": false,
+                "silenced": false,
+                "tempAttack": 0,
+                "zone": "board"
+              }
+            }
+          ],
+          "events": [
+            {
+              "ordinal": 1,
+              "type": "play",
+              "ply": 1,
+              "round": 1,
+              "cause": {
+                "kind": "play",
+                "source": {
+                  "id": "home-1",
+                  "side": "home",
+                  "type": "troop",
+                  "name": "前锋小队"
+                }
+              },
+              "side": "home",
+              "subject": {
+                "id": "home-1",
+                "side": "home",
+                "type": "troop",
+                "name": "前锋小队"
+              },
+              "before": null,
+              "after": {
+                "attack": 1,
+                "hp": 2,
+                "maxHp": 2,
+                "tags": [],
+                "frozen": false,
+                "silenced": false,
+                "tempAttack": 0,
+                "zone": "board"
+              }
+            }
+          ],
+          "checksum": 3880145508
+        }
+      ]
+    }
+  },
+  "desktopStatus": {
+    "command": "node_modules/.bin/electron tests/card-battle-v3-status.cjs",
+    "pass": 21,
+    "checks": [
+      "cast wind-up does not prematurely display the new status",
+      "impact shows +3 attack and this-turn duration on the target",
+      "temporary attack badge and green number remain after animation",
+      "detail explains the exact reported 1 + 3 = 4 and expiry",
+      "status survives saved-game JSON reopen",
+      "temporary attack expires with the owner turn and restores normal attack",
+      "persistent attack and health bonuses each remain visible",
+      "1440 state badges fit inside the art without covering name or numbers",
+      "1440 end-turn lettering leaves space inside jade",
+      "1280 state badges fit inside the art without covering name or numbers",
+      "1280 end-turn lettering leaves space inside jade",
+      "1000 state badges fit inside the art without covering name or numbers",
+      "1000 end-turn lettering leaves space inside jade",
+      "enemy freeze has a persistent badge and ice border",
+      "freeze badge clears at the frozen side turn end",
+      "enemy card displays its combined active effects before silence",
+      "enemy silence remains visible after casting",
+      "actual silence removes earlier buffs, shield and freeze markers",
+      "active shield stays labeled",
+      "multiple effects compact on the card and all remain listed in detail",
+      "consumed shield does not leave a stale status"
+    ],
+    "log": "/private/tmp/card-history-panel-status.log",
+    "note": "Script has a historical hardcoded 2026-10-22 date; it was actually rerun during this unit, not reused."
+  },
+  "screenshots": [
+    "docs/screenshots/card-battle-history-panel-1440.png",
+    "docs/screenshots/card-battle-history-panel-1000.png",
+    "docs/screenshots/card-battle-history-panel-800.png"
+  ],
+  "wallClock": {
+    "startUtc": "2026-10-23T00:35:03Z",
+    "endUtc": "2026-10-23T00:44:45.124571+00:00",
+    "elapsedSeconds": 582.124571
+  },
+  "limits": [
+    "Archive after settlement is not yet implemented.",
+    "Tutorial pending.",
+    "Phase 1 balance matrix, 20 real games and one-hour foreground testing remain deferred until phases 2-6."
+  ]
+}

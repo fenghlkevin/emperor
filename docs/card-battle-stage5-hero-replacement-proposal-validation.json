@@ -1,0 +1,50 @@
+{
+  "date": "2026-10-23T07:51:17.631128+00:00",
+  "heartbeatStartedAt": "2026-10-23T07:41:15.341000+00:00",
+  "wallSeconds": 602.29,
+  "scope": "Design-only optional hero replacement compatibility proposal; executable read-only audit of CURRENT identity and ledger guards. No playable replacement, no new card/rules/AI/config entry.",
+  "proposal": "docs/card-battle-stage5-hero-replacement-proposal.md",
+  "currentRulesVersion": 6,
+  "currentLandmarkCatalogVersion": 1,
+  "currentLandmarkAiVersion": 1,
+  "structuralAudit": {
+    "command": "node scripts/audit-card-hero-replacement-compatibility.mjs docs/fixtures/card-landmarks-engine-base.json",
+    "passed": 6,
+    "elapsedSeconds": 0.33360820800000013,
+    "evidence": "docs/card-battle-stage5-hero-replacement-audit.json"
+  },
+  "relatedModels": {
+    "command": "node --test tests/card-battle-weapon-ledger.test.mjs tests/card-battle-weapon-combinations.test.mjs tests/card-battle-secrets.test.mjs tests/card-battle-landmarks.test.mjs",
+    "passed": 40,
+    "failed": 0,
+    "elapsedSeconds": 5.085003916,
+    "log": "/private/tmp/card-hero-replacement-model.log"
+  },
+  "verification": [
+    "node --check scripts/audit-card-hero-replacement-compatibility.mjs",
+    "git diff --check"
+  ],
+  "notRun": [
+    "No Electron run: production UI/assets unmodified.",
+    "No new full run: prior final1005/1005 and44contracts remain latest baseline;40relevant existing models verified this audit unit.",
+    "Future replacement acceptance matrix is proposed only, not executed or claimed passed."
+  ],
+  "limitations": [
+    "Actual hero replacement requires separate explicit authorization.",
+    "5mana, once-only same-source candidate are proposal parameters, not production or a balance conclusion.",
+    "Stage6 dedicated performances/voice/regional art pending; audio deferred as previously scoped; no save migration/recovery work.",
+    "Final stage1 per-group47–53%, historical17conditions and20real games plus1foreground hour remain unpassed."
+  ],
+  "sourceSha256": {
+    "docs/card-battle-stage5-hero-replacement-proposal.md": "45a907808c023199e21b8b80e5419dd41d4cd14c44669cd2373da4b24c5431eb",
+    "scripts/audit-card-hero-replacement-compatibility.mjs": "e7001b0fcf0c9b203d3923278b4c345d8357a167eab5a7d5e33dff53abd1654a",
+    "src/card-battle.mjs": "3b34d075dfd8a9290b8f233164b72d8ad25156304c585996753f0011c2e3f01d",
+    "src/card-battle-weapons.mjs": "2a9ec7ee720fbf9c71113a0d93852321a3af7fdbd130ff26a1d7977de331ac2c",
+    "src/card-battle-secrets.mjs": "249901403e59e76456a275e1e2d9832bbba47f8886b45ee9ce17d14c6993722c",
+    "src/card-battle-landmarks.mjs": "f24a9a0f1c5ac51bb5b7135cc604746ee2cd132a9c0e5a8aa05a7c9e13da62bf",
+    "src/card-battle-history.mjs": "88353f711fdaa2d190f1ef77b339a56db779fe37dc87086d29af54d548facacc",
+    "src/card-battle-ui.mjs": "279a2e874dc2cd72d54601d5295878ed062a0b996d7b8a2ea9f2089ddf96a8db",
+    "src/kit-war.mjs": "9df3b8f48533dbf7e5b342389d26ba1c8d2db12919b731c033aa2f8deb5b7342",
+    "src/kit-defense.mjs": "dfaa89b39587074b40b4e890370920ce8f2b9dc34828376e995c936829eaba82"
+  }
+}

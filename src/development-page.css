@@ -1,0 +1,77 @@
+/* Follow the revenue minister's paper, seal, typography and vermilion actions. */
+dialog.development-page[open]{display:grid!important;grid-template-rows:86px minmax(0,1fr) 112px!important;grid-template-columns:minmax(0,1fr)!important;width:min(1480px,96vw);height:min(940px,94vh);padding:0;overflow:hidden!important;background:#f5efe2;color:#332d24;border:1px solid #b7a88a;border-radius:4px;font-family:"Songti SC","STSong",serif}
+dialog.development-page>.civil-header{grid-column:1!important;grid-row:1;position:static!important;height:auto!important;min-height:0!important;display:flex!important;align-items:center;justify-content:space-between;padding:12px 24px!important;border-bottom:1px solid #cbbd9e;background:#faf5e9}
+dialog.development-page .civil-header h1{font-size:28px!important;letter-spacing:4px;margin:0}
+dialog.development-page .civil-header h1 span{display:none}
+dialog.development-page .civil-header small{font-size:13px;letter-spacing:2px;color:#817052}
+dialog.development-page .works-header-actions{display:flex;align-items:center;gap:12px}
+dialog.development-page .works-switch{display:none}
+dialog.development-page [data-works-switch]{display:block;max-width:160px}
+dialog.development-page>.revenue-body{grid-column:1!important;grid-row:2;position:static!important;inset:auto!important;padding:0!important;overflow:hidden!important;min-height:0;max-height:none;background:transparent}
+.development-sheet{height:100%;display:grid;grid-template-columns:minmax(0,42fr) minmax(0,58fr);min-height:0;overflow:hidden}
+.development-scene{position:relative;margin:0;min-width:0;min-height:0;border-right:1px solid #cbbd9e;overflow:hidden}
+.development-scene>img{width:100%;height:100%;object-fit:cover;object-position:43% center;display:block}
+.development-scene:after{content:"";position:absolute;inset:40% 0 0;background:linear-gradient(transparent,#30251acc)}
+.development-scene figcaption{position:absolute;left:28px;bottom:28px;right:20px;z-index:1;color:#fff0d5;text-shadow:0 2px 12px #30251a}
+.development-scene h2{font-size:34px;font-weight:400;letter-spacing:5px;margin:8px 0 0}.development-scene small{font-size:13px;letter-spacing:3px}
+.development-task{padding:24px 28px;min-width:0;min-height:0;display:flex;flex-direction:column;gap:18px;overflow:hidden}
+.development-facts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin:0;padding-bottom:18px;border-bottom:1px solid #cbbd9e}.development-facts dt{font-size:12px;color:#817052;margin-bottom:6px}.development-facts dd{margin:0;font-size:22px;font-variant-numeric:tabular-nums;color:#594126}
+dialog.development-page .development-task form{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px 18px;margin:0;min-width:0}
+dialog.development-page .development-task label{display:flex;flex-direction:column;gap:7px;min-width:0;font-size:14px;color:#766449}
+dialog.development-page .development-task :is(input,select){width:100%;min-width:0;box-sizing:border-box;min-height:40px;margin:0;padding:8px 10px;border:1px solid #bba581;border-radius:2px;background:#fff9ed;color:#332d24;font:16px "Songti SC",serif}
+dialog.development-page .development-task p{font-size:14px;line-height:1.7;letter-spacing:0;margin:0;color:#766449;overflow-wrap:anywhere}
+.development-task form>p{grid-column:1/-1}.development-task [data-industry-preview]{margin-top:auto;padding:14px 16px;background:#e9decb66;border-left:2px solid #a34232}.development-task [data-industry-preview]:empty{display:none}
+dialog.development-page>.revenue-command{grid-column:1!important;grid-row:3;position:static!important;inset:auto!important;width:auto!important;height:auto!important;min-height:0;padding:14px 24px!important;display:flex!important;flex-direction:row!important;align-items:center;justify-content:space-between;gap:20px;overflow:hidden!important;border:0;border-top:1px solid #cbbd9e;background:#eee4cf}
+dialog.development-page .revenue-command :is(.revenue-command-heading,.revenue-command-note){display:none}
+dialog.development-page .revenue-command small{display:block;font-size:12px;margin-top:5px;color:#817052}
+dialog.development-page .revenue-command [role=status]{font-size:12px;line-height:1.5;margin:5px 0 0;letter-spacing:0;color:#817052}
+dialog.development-page .revenue-command .primary{flex:0 0 auto;width:auto!important;min-width:190px;min-height:48px;margin:0;padding:12px 22px;background:linear-gradient(100deg,#a34232,#ac4c3b);color:#fff1dd;border:1px solid #93402f;font:18px "Songti SC",serif;letter-spacing:3px}
+dialog.development-page>.civil-footer{display:none}
+@media(max-height:760px){dialog.development-page[open]{grid-template-rows:74px minmax(0,1fr) 98px!important}.development-task{padding:16px 20px;gap:12px}.development-facts{padding-bottom:12px;gap:10px}.development-scene h2{font-size:28px}.development-task [data-industry-preview]{padding:9px 12px}}
+@media(max-width:980px){.development-sheet{grid-template-columns:minmax(0,35fr) minmax(0,65fr)}dialog.development-page .civil-header h1{font-size:24px!important}.development-page .revenue-header-end>span{display:none}.development-page .civil-header .revenue-brand{gap:12px}.development-page .civil-header .revenue-brand small{display:none}.development-facts dd{font-size:19px}}
+@media(max-width:700px){dialog.development-page[open]{grid-template-rows:70px minmax(0,1fr) 118px!important}.development-sheet{grid-template-columns:minmax(0,1fr);grid-template-rows:100px minmax(0,1fr)}.development-scene img{object-position:center 48%}.development-scene figcaption{left:16px;bottom:10px}.development-scene h2{font-size:23px;margin:4px 0}.development-scene small{font-size:11px}.development-task{padding:12px 16px;gap:10px}dialog.development-page .civil-header{padding:8px 12px!important}.development-page .revenue-seal{display:none}.development-page [data-special-works]{display:none}.development-page .revenue-brand{gap:0}.development-facts dd{font-size:17px}dialog.development-page>.revenue-command{padding:10px 14px!important;gap:12px}.development-page .revenue-command .primary{min-width:125px!important;font-size:16px!important;padding:10px!important}.development-task [data-industry-preview] p{font-size:12px!important}.development-task form{gap:10px!important}}
+.development-repay-form{height:100%;margin:0}.development-page .revenue-header-end{gap:12px}
+dialog.development-page .revenue-command [data-cost]{font-size:18px;line-height:1.4}
+dialog.development-page .revenue-command [data-balance]{margin:5px 0 0!important;line-height:1.4}
+dialog.development-page .revenue-command [role=status]{margin:5px 0 0!important;line-height:1.4!important}
+@media(max-height:760px){
+ dialog.development-page .development-task:has([data-project-work]){padding:12px 18px;gap:8px}
+ dialog.development-page .development-task:has([data-project-work]) .development-facts{gap:8px;padding-bottom:8px}
+ dialog.development-page .development-task:has([data-project-work]) form{gap:8px 14px}
+ dialog.development-page .development-task:has([data-project-work]) label{font-size:12px;gap:4px}
+ dialog.development-page .development-task:has([data-project-work]) :is(input,select){min-height:34px;padding:5px 8px;font-size:14px}
+ dialog.development-page .development-task:has([data-project-work]) p{font-size:12px;line-height:1.5}
+ dialog.development-page .development-task:has([data-project-work]) button{min-height:32px;margin:0;padding:6px 10px;font-size:14px}
+}
+/* Army recovery and campaign review share the revenue minister's fixed illustrated frame. */
+.army-recovery-page .military-paper-nav,.army-recovery-page .military-paper-actions{display:flex;align-items:center;gap:10px;flex:0 0 auto}
+.army-recovery-page .military-paper-nav button,.army-recovery-page .military-paper-actions>button:not(.primary){padding:7px 12px;background:#f8f0df;border:1px solid #bba581;color:#594126;font:14px "Songti SC",serif;border-radius:2px}
+.army-recovery-page .development-task h3{margin:0;font-size:21px;font-weight:400;color:#713f2c}
+.army-recovery-page .recovery-cost-grid,.army-recovery-page .recovery-gear-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.army-recovery-page .recovery-gear-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+.army-recovery-page :is(.recovery-cost-grid,.recovery-gear-grid)>div{padding:10px 12px;background:#e9decb66;border:1px solid #cbbd9e}
+.army-recovery-page :is(.recovery-cost-grid,.recovery-gear-grid) small{display:block;font-size:12px;color:#817052;margin-bottom:5px}
+.army-recovery-page :is(.recovery-cost-grid,.recovery-gear-grid) b{display:block;font-size:18px;font-weight:500;overflow-wrap:anywhere}
+.army-recovery-page .recovery-risk{padding-left:12px;border-left:3px solid #a34232;color:#913d2c!important}
+.army-recovery-page .military-paper-actions .primary{min-width:150px}
+.army-recovery-page [aria-pressed=true]{border-color:#a34232!important;color:#913d2c!important}
+@media(max-height:760px){dialog.army-recovery-page .development-task{gap:10px;padding:14px 20px}dialog.army-recovery-page .development-facts{gap:10px;padding-bottom:10px}dialog.army-recovery-page .development-task p{font-size:12px;line-height:1.5}dialog.army-recovery-page .development-task h3{font-size:18px}.army-recovery-page .recovery-cost-grid,.army-recovery-page .recovery-gear-grid{gap:8px}.army-recovery-page :is(.recovery-cost-grid,.recovery-gear-grid)>div{padding:8px}.army-recovery-page :is(.recovery-cost-grid,.recovery-gear-grid) b{font-size:16px}dialog.army-recovery-page .development-task :is(input,select){min-height:34px;font-size:13px;padding:5px}}
+@media(max-width:980px){.army-recovery-page .revenue-brand small{display:none}.army-recovery-page .military-paper-nav{gap:6px}.army-recovery-page .military-paper-nav button{padding:6px 8px}.army-recovery-page .revenue-command .primary{min-width:140px!important;font-size:16px!important;letter-spacing:1px}}
+.army-recovery-page .recovery-report-rows{display:grid;gap:8px}
+.army-recovery-page .recovery-report-rows>div{display:flex;justify-content:space-between;gap:10px;padding:10px;border-bottom:1px solid #cbbd9e}
+.army-recovery-page .recovery-report-rows small{display:block;color:#817052;margin-top:4px;font-size:12px}
+@media(max-width:700px){dialog.army-recovery-page>.revenue-command{display:grid!important;grid-template-columns:minmax(0,1fr);gap:6px}.army-recovery-page .military-paper-actions{justify-content:space-between}.army-recovery-page .military-paper-actions .primary{flex:1}.army-recovery-page .revenue-brand small{display:none}.army-recovery-page .development-task{gap:8px!important}.army-recovery-page .recovery-cost-grid b,.army-recovery-page .recovery-gear-grid b{font-size:14px}}
+dialog.army-recovery-page .revenue-command [role=status]:not(:empty){display:block!important;max-height:none;overflow:visible;color:#913d2c}
+@media(max-height:760px){.army-recovery-page .recovery-report-rows{gap:6px}.army-recovery-page .recovery-report-rows>div{padding:6px 8px}.army-recovery-page .recovery-report-rows b{font-size:15px}.army-recovery-page .recovery-report-rows small{margin-top:3px;line-height:1.3}}
+
+/* Illustrated campaign facts: ink symbols and shared-scale force comparison. */
+.campaign-review-page .recovery-cost-grid>div{position:relative;padding-left:64px;min-height:64px;display:flex;flex-direction:column;justify-content:center}
+.campaign-review-page .campaign-ink-icon{position:absolute;left:12px;top:14px;width:38px;height:38px;color:#92734d}
+.campaign-review-page .is-own .campaign-ink-icon{color:#a34232}
+.campaign-review-page .is-enemy .campaign-ink-icon{color:#53666a}
+.campaign-review-page .campaign-meter{display:block;height:7px;background:#d9cfbb;margin-top:8px;overflow:hidden;border-radius:1px}
+.campaign-review-page .campaign-meter{width:100%;flex:none}.campaign-review-page .campaign-meter-track{fill:#d9cfbb}.campaign-review-page .campaign-meter-fill{fill:#a34232}
+.campaign-review-page .is-enemy .campaign-meter-fill{fill:#53666a}
+.campaign-review-page .campaign-training{font-size:11px;color:#817052;margin-top:8px}
+.campaign-review-page .campaign-training+.campaign-meter{height:3px;margin-top:4px}
+@media(max-height:760px), (max-width:980px){.campaign-review-page .recovery-cost-grid>div{padding:8px 8px 8px 48px;min-height:50px}.campaign-review-page .campaign-ink-icon{width:28px;height:28px;left:10px;top:12px}.campaign-review-page .campaign-meter{margin-top:5px}.campaign-review-page .campaign-training{margin-top:5px}}

@@ -1,0 +1,56 @@
+{
+  "date": "2026-10-23T07:49:42.296Z",
+  "purpose": "Current rule6 structural constraints and actual rule4 counterattack damage audit only; no proposed hero replacement implementation or acceptance.",
+  "command": "node scripts/audit-card-hero-replacement-compatibility.mjs docs/fixtures/card-landmarks-engine-base.json",
+  "fixture": "docs/fixtures/card-landmarks-engine-base.json",
+  "fixtureSha256": "15d49378f5d8fbf0d142bf93ab0a7cd5cb9adc065e1c1829c9268adccc02adfd",
+  "rulesVersion": 6,
+  "originalCommander": {
+    "unitId": "u2",
+    "sourceId": "central",
+    "personId": "central-general"
+  },
+  "realCandidate": {
+    "unitId": "u0",
+    "sourceId": "central",
+    "personId": "hebei-general"
+  },
+  "actualCounterattack": {
+    "hero": 27,
+    "heroDamage": 3,
+    "dead": 5
+  },
+  "checks": [
+    {
+      "label": "rewrite original commander person ID to another actually participating officer",
+      "rejected": true,
+      "error": "奥秘来源或战斗状态无效"
+    },
+    {
+      "label": "flip commander flags to another participating physical unit",
+      "rejected": true,
+      "error": "奥秘来源或战斗状态无效"
+    },
+    {
+      "label": "retarget spare-weapon allocation to a different actual source",
+      "rejected": true,
+      "error": "武器来源或战斗状态无效"
+    },
+    {
+      "label": "rewrite an existing secret to a newly chosen officer identity",
+      "rejected": true,
+      "error": "奥秘来源或战斗状态无效"
+    },
+    {
+      "label": "rewrite an existing landmark to a newly chosen officer identity",
+      "rejected": true,
+      "error": "地标来源或状态无效"
+    },
+    {
+      "label": "erase cumulative hero damage while keeping actual wounded escort",
+      "rejected": true,
+      "error": "卡牌存档无效：真实战损"
+    }
+  ],
+  "elapsedSeconds": 0.33360820800000013
+}

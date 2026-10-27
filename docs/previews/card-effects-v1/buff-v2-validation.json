@@ -1,0 +1,30 @@
+{
+  "checks": [
+    {
+      "stats": "⚔ 5♥ 7 / 10",
+      "status": "攻击 +2生命上限 +3护甲盾",
+      "phase": "锋芒 · 生机 · 金甲"
+    },
+    {
+      "cleared": true,
+      "stats": "⚔ 3♥ 4 / 7"
+    },
+    {
+      "width": 1024,
+      "overflow": false
+    },
+    {
+      "width": 736,
+      "overflow": false
+    },
+    {
+      "width": 375,
+      "overflow": false
+    },
+    {
+      "width": 320,
+      "overflow": false
+    }
+  ],
+  "errors": []
+}

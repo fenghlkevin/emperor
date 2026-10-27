@@ -1,0 +1,78 @@
+{
+  "mode": "built-in imagegen; individual identity references; exact prompts; no originals overwritten",
+  "date": "2026-10-23T09:21:44.044Z",
+  "jobs": [
+    {
+      "id": "manual-1529",
+      "name": "张良",
+      "role": "文职",
+      "direction": "Zhang Liang: young graceful strategist with narrow mustache and pointed goatee, pale blue and white patterned robes, black scholar hat, as reference. Three-quarter upper body leaning toward a campaign map table, gently gesturing route with one hand, bamboo dispatch in other. Warm canvas command tent opening onto distant ordered ranks and mountains, muted pale-blue awning, subtle map shapes without writing. Calm insightful expression, unarmored.",
+      "prompt": "Use case: identity-preserve. ONE fullbleed vertical 5:7 production illustration for a historical strategy battle card, art only. Image1 is existing identity reference; image2 is approved UI style, match its Zhang Fei card's rich warm painterly battlefield rendering. Preserve image1 recognizable face, age, hair, beard, headgear, costume silhouette and colors. Waist/chest-up CLOSE-UP, large head and shoulders, face upper third, complete hat with some space above it, warm field-camp background secondary to person. Golden daylight, earthy colors, textured illustrated brushwork and convincing fabric. Game art, not archaeological reconstruction. No studio gradient, no black backdrop, no UI or frames, no text/letters/numbers anywhere including documents/banners, no logos/watermarks, no magic, no fullbody tiny catalog figure. No added armor unless it is present in the reference. Zhang Liang: young graceful strategist with narrow mustache and pointed goatee, pale blue and white patterned robes, black scholar hat, as reference. Three-quarter upper body leaning toward a campaign map table, gently gesturing route with one hand, bamboo dispatch in other. Warm canvas command tent opening onto distant ordered ranks and mountains, muted pale-blue awning, subtle map shapes without writing. Calm insightful expression, unarmored.",
+      "origin": "/Users/fengheliang/.codex/generated_images/01a16381-85b9-71f1-8014-3769188dd4cf/exec-8c3fbbe3-20ae-4b95-8277-cecd66716f35.png",
+      "path": "assets/battle/people/manual-1529-battle-v1.png",
+      "references": [
+        "assets/officials/historical/manual-1529/full.png",
+        "docs/screenshots/card-battle-original-prototype.png"
+      ],
+      "sha256": "781662fcee47a666cd911e569a99a967cef94cd9fc807990e53c7b05fb432dc3",
+      "dimensions": [
+        1060,
+        1484
+      ]
+    },
+    {
+      "id": "cbdb-8043",
+      "name": "范仲淹",
+      "role": "武将",
+      "direction": "Fan Zhongyan: middle-aged border administrator, square serious face, salt-and-pepper long beard, blue patterned official robe with bird badge and wide horizontal-wing black hat exactly as reference. Do not turn his official garment into armor. Upper body calmly holding rolled sealed dispatch near a fortified frontier rampart. Earth walls, beacon tower and distant disciplined garrison in dry mountain daylight. Solemn protective command, no modern objects.",
+      "prompt": "Use case: identity-preserve. ONE fullbleed vertical 5:7 production illustration for a historical strategy battle card, art only. Image1 is existing identity reference; image2 is approved UI style, match its Zhang Fei card's rich warm painterly battlefield rendering. Preserve image1 recognizable face, age, hair, beard, headgear, costume silhouette and colors. Waist/chest-up CLOSE-UP, large head and shoulders, face upper third, complete hat with some space above it, warm field-camp background secondary to person. Golden daylight, earthy colors, textured illustrated brushwork and convincing fabric. Game art, not archaeological reconstruction. No studio gradient, no black backdrop, no UI or frames, no text/letters/numbers anywhere including documents/banners, no logos/watermarks, no magic, no fullbody tiny catalog figure. No added armor unless it is present in the reference. Fan Zhongyan: middle-aged border administrator, square serious face, salt-and-pepper long beard, blue patterned official robe with bird badge and wide horizontal-wing black hat exactly as reference. Do not turn his official garment into armor. Upper body calmly holding rolled sealed dispatch near a fortified frontier rampart. Earth walls, beacon tower and distant disciplined garrison in dry mountain daylight. Solemn protective command, no modern objects.",
+      "origin": "/Users/fengheliang/.codex/generated_images/01a16381-85b9-71f1-8014-3769188dd4cf/exec-4c68e425-c5d3-4eb8-9764-e779a5aa2a68.png",
+      "path": "assets/battle/people/cbdb-8043-battle-v1.png",
+      "references": [
+        "assets/officials/historical/cbdb-8043/full.png",
+        "docs/screenshots/card-battle-original-prototype.png"
+      ],
+      "sha256": "ce60a7913efdcc0dc945e5072415989d94556e73916e1fe42c1cff5e1a4f9352",
+      "dimensions": [
+        1060,
+        1484
+      ]
+    },
+    {
+      "id": "cbdb-34344",
+      "name": "曾国藩",
+      "role": "武将",
+      "direction": "Zeng Guofan: elderly man with lined face and gray mustache and long gray goatee, navy embroidered late-imperial officer robe with bird badge, black fur brim hat with red dome and gold finial, exactly reference identity and period attire. Upper body inspecting troop organization from a camp desk, one hand over folded paper document without any writing, other near ceremonial sword hilt at waist. Late-imperial cloth tents, supply wagons and distant ranks in warm morning dust, avoid ancient Han armor or helmet, civilian-officer presentation.",
+      "prompt": "Use case: identity-preserve. ONE fullbleed vertical 5:7 production illustration for a historical strategy battle card, art only. Image1 is existing identity reference; image2 is approved UI style, match its Zhang Fei card's rich warm painterly battlefield rendering. Preserve image1 recognizable face, age, hair, beard, headgear, costume silhouette and colors. Waist/chest-up CLOSE-UP, large head and shoulders, face upper third, complete hat with some space above it, warm field-camp background secondary to person. Golden daylight, earthy colors, textured illustrated brushwork and convincing fabric. Game art, not archaeological reconstruction. No studio gradient, no black backdrop, no UI or frames, no text/letters/numbers anywhere including documents/banners, no logos/watermarks, no magic, no fullbody tiny catalog figure. No added armor unless it is present in the reference. Zeng Guofan: elderly man with lined face and gray mustache and long gray goatee, navy embroidered late-imperial officer robe with bird badge, black fur brim hat with red dome and gold finial, exactly reference identity and period attire. Upper body inspecting troop organization from a camp desk, one hand over folded paper document without any writing, other near ceremonial sword hilt at waist. Late-imperial cloth tents, supply wagons and distant ranks in warm morning dust, avoid ancient Han armor or helmet, civilian-officer presentation.",
+      "origin": "/Users/fengheliang/.codex/generated_images/01a16381-85b9-71f1-8014-3769188dd4cf/exec-5a027fbf-3d5e-41c9-8e23-239331cf8b48.png",
+      "path": "assets/battle/people/cbdb-34344-battle-v1.png",
+      "references": [
+        "assets/officials/historical/cbdb-34344/full.png",
+        "docs/screenshots/card-battle-original-prototype.png"
+      ],
+      "sha256": "8de5f8d1de6916ef83ecf842004c58404830d92c5787b5ebb2ba41275f7ecdef",
+      "dimensions": [
+        1060,
+        1484
+      ]
+    },
+    {
+      "id": "cbdb-1762",
+      "name": "王安石",
+      "role": "文职",
+      "direction": "Wang Anshi: stern lean mature reformer, thin black mustache and pointed goatee, dark olive robe with brown-gold lapels and soft black scholar hat, as reference. Upper body beside military provisioning desk, a plain unlabeled bound ledger at lower edge and an open palm indicating allocation. Grain baskets, tally sticks and campaign storehouse behind, olive awning and warm afternoon military camp, no added armor, no writing on ledger.",
+      "prompt": "Use case: identity-preserve. ONE fullbleed vertical 5:7 production illustration for a historical strategy battle card, art only. Image1 is existing identity reference; image2 is approved UI style, match its Zhang Fei card's rich warm painterly battlefield rendering. Preserve image1 recognizable face, age, hair, beard, headgear, costume silhouette and colors. Waist/chest-up CLOSE-UP, large head and shoulders, face upper third, complete hat with some space above it, warm field-camp background secondary to person. Golden daylight, earthy colors, textured illustrated brushwork and convincing fabric. Game art, not archaeological reconstruction. No studio gradient, no black backdrop, no UI or frames, no text/letters/numbers anywhere including documents/banners, no logos/watermarks, no magic, no fullbody tiny catalog figure. No added armor unless it is present in the reference. Wang Anshi: stern lean mature reformer, thin black mustache and pointed goatee, dark olive robe with brown-gold lapels and soft black scholar hat, as reference. Upper body beside military provisioning desk, a plain unlabeled bound ledger at lower edge and an open palm indicating allocation. Grain baskets, tally sticks and campaign storehouse behind, olive awning and warm afternoon military camp, no added armor, no writing on ledger.",
+      "origin": "/Users/fengheliang/.codex/generated_images/01a16381-85b9-71f1-8014-3769188dd4cf/exec-95862429-a1d7-4bcd-a5c5-6afdec8ec206.png",
+      "path": "assets/battle/people/cbdb-1762-battle-v1.png",
+      "references": [
+        "assets/officials/historical/cbdb-1762/full.png",
+        "docs/screenshots/card-battle-original-prototype.png"
+      ],
+      "sha256": "62ffa2e7b291953aa749facc093176d02b214244c37fc2b9fd2cdc53bd59bce6",
+      "dimensions": [
+        1060,
+        1484
+      ]
+    }
+  ]
+}

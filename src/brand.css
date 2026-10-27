@@ -1,0 +1,8 @@
+/* Approved imperial identity: full lockup on the home screen, compact mark in play. */
+.login .title-lockup { top: 6%; left: 8%; width: min(76%, 420px); mix-blend-mode: multiply; }
+.login .title-lockup .game-logo { margin: 0; line-height: 0; letter-spacing: 0; }
+.game-logo img { display: block; width: 100%; height: auto; mix-blend-mode: multiply; }
+.login .title-lockup p { margin: 12px 0 0; text-align: center; letter-spacing: 4px; }
+.login .cover:after { background: linear-gradient(180deg, #fff8eafc 0%, #fff4dfe8 48%, #fff0ce35 78%, transparent); }
+.topbar .brand .brand-icon { display: block; width: 40px; height: 40px; object-fit: contain; flex-shrink: 0; }
+@media (max-height: 760px) { .login .title-lockup { width: min(65%, 340px); top: 4%; } }

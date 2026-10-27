@@ -8,7 +8,7 @@ const {mountCourtActors,courtActorRecords}=await import('./src/court-actors.mjs'
 const {newGame}=await import('./src/game.mjs');
 const domestic=newGame('加载容错').domestic,records=courtActorRecords(domestic);
 const scene=document.createElement('section');scene.className='scene court';scene.style.width='800px';scene.style.height='600px';
-scene.innerHTML='<img src="assets/sketch-court-background-v8.png">'+records.map(({office})=>'<button data-entry="'+office.id+'" style="clip-path:circle(10%)"><span>'+office.name+'</span></button>').join('');document.body.append(scene);
+scene.innerHTML='<img src="assets/scenes/court/sketch-court-background-urban-v9.png">'+records.map(({office})=>'<button data-entry="'+office.id+'" style="clip-path:circle(10%)"><span>'+office.name+'</span></button>').join('');document.body.append(scene);
 const art=records.find(r=>r.office.id==='revenue-minister').art,original=art.court;art.court='assets/officials/missing-test.png';
 const cleanup=mountCourtActors(scene,domestic);
 for(let i=0;i<200&&scene.dataset.courtReady==='loading';i++)await new Promise(r=>setTimeout(r,25));

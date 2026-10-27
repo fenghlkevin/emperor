@@ -1,6 +1,6 @@
 // 游戏历法每月三旬；1—3月春、4—6月夏、7—9月秋、10—12月冬。
 export const SEASONS=[{id:'spring',name:'春',detail:'新芽初绽 · 满苑春绿'},{id:'summer',name:'夏',detail:'浓荫深翠 · 草木繁盛'},{id:'autumn',name:'秋',detail:'金叶染庭 · 秋意渐浓'},{id:'winter',name:'冬',detail:'琼楼覆雪 · 银装宫阙'}];
-export const DAYLIGHT=[{id:'dawn',name:'早上',detail:'晨曦初照'},{id:'morning',name:'上午',detail:'清光满庭'},{id:'noon',name:'中午',detail:'日华当空'},{id:'afternoon',name:'下午',detail:'斜阳入院'},{id:'dusk',name:'傍晚',detail:'落霞映阙'},{id:'night',name:'夜晚',detail:'月色宫灯'}];
+export const DAYLIGHT=[{id:'dawn',name:'卯时',detail:'晨曦初照'},{id:'morning',name:'巳时',detail:'清光满庭'},{id:'noon',name:'午时',detail:'日华当空'},{id:'afternoon',name:'申时',detail:'斜阳入院'},{id:'dusk',name:'酉时',detail:'落霞映阙'},{id:'night',name:'亥时',detail:'月色宫灯'}];
 const WEATHER={spring:['clear','clear','cloudy','mist','rain'],summer:['clear','clear','cloudy','rain','rain'],autumn:['clear','clear','cloudy','mist','leaves'],winter:['snow','snow','snow','cloudy','clear']};
 const WEATHER_NAMES={clear:'晴',cloudy:'多云',mist:'薄雾',rain:'细雨',leaves:'落叶随风',snow:'飘雪'};
 // 使用存档身份、回合与阶段取样，保证读档与重绘不会重新摇天气。
@@ -11,7 +11,7 @@ export function palaceAtmosphere(state){
  const key=`${state.createdAt??''}/${state.name??''}/${state.turn}/${state.phase??0}`;
  const choices=WEATHER[season.id],weather=choices[Math.floor(sample(key+'/weather')*choices.length)];
  const variation=['soft','balanced','vivid'][Math.floor(sample(key+'/light')*3)];
- return {month,season,light,weather,variation,image:`assets/sketch-palace-${season.id}.png`,label:`${season.name} · ${light.name} · ${WEATHER_NAMES[weather]}`,description:`${season.detail} · ${light.detail}`};
+ return {month,season,light,weather,variation,image:`assets/scenes/palace/sketch-palace-${season.id}.png`,label:`${season.name} · ${light.name} · ${WEATHER_NAMES[weather]}`,description:`${season.detail} · ${light.detail}`};
 }
 export function palaceArtwork(state){
  const a=palaceAtmosphere(state);

@@ -1,0 +1,311 @@
+{
+  "tool": "built-in image_gen",
+  "status": "completed",
+  "bodyReference": "何穗：高挑修长、自然肩宽和躯干、协调头身比例；仅体态参考，不复制其面孔",
+  "likenessNote": "以人物姓名引导的成年肖像演绎，不是三维扫描或逐像素面部复刻。",
+  "items": [
+    {
+      "name": "相泽南",
+      "english": "Minami Aizawa",
+      "title": "藤青风铃",
+      "design": "standing contrapposto holding a small glass wind chime by its wooden handle, lavender short-sleeved summer yukata with pale wisteria motifs, cream obi, bare feet",
+      "id": "japan-photo-twelve-20261023-01",
+      "prompt": "Use case: photorealistic-natural. Create ONE full-body, fully clothed adult Japanese woman for a historical game portrait. Genuine transparent alpha background, no floor, backdrop, halo or text. Realistic high-end costume photography. Body silhouette inspired by adult fashion model He Sui: tall lean elegant mature proportions, small proportionate head, broad natural shoulders, long neck, normally sized ribcage and pelvis, long balanced legs, approximately 8 heads tall standing equivalent; do not copy He Sui's face. Anatomically coherent joints, exactly two arms and two legs, natural hands with five fingers, coherent toes. Complete body including hair ornaments, props and feet within portrait canvas with 5% margins. Japanese summer clothes with light breathable but opaque fabric, proper Japanese construction, no socks. Rich tasteful kanzashi, earrings, necklace, bracelets, obi ornaments. Nonsexual fashion portrait. Subject likeness: Minami Aizawa, clearly adult age 25 or older, recognizable individual facial features, natural skin. Outfit and pose: standing contrapposto holding a small glass wind chime by its wooden handle, lavender short-sleeved summer yukata with pale wisteria motifs, cream obi, bare feet.",
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a16615-cc42-7e81-aa4f-b849b888d820/exec-0a3f006b-88f3-4f6b-870a-9c39b880cbe4.png",
+      "asset": "assets/beauties/random/番邦女子/日本女子-相泽南-藤青风铃.png",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentFraction": 0.7164,
+        "nontransparentBorderPixels": 0
+      },
+      "assetSha256": "f0a8f3429177b5ac965d18b7615e159edab137e64362fb681b848d6a8ae425a1"
+    },
+    {
+      "name": "高桥圣子",
+      "english": "Shoko Takahashi",
+      "title": "绛夏三味",
+      "design": "seated naturally on a small low wooden stool playing a shamisen, wine-red lightweight summer kosode and ivory hakama, bare feet",
+      "id": "japan-photo-twelve-20261023-02",
+      "prompt": "Use case: photorealistic-natural. Create ONE full-body, fully clothed adult Japanese woman for a historical game portrait. Genuine transparent alpha background, no floor, backdrop, halo or text. Realistic high-end costume photography. Body silhouette inspired by adult fashion model He Sui: tall lean elegant mature proportions, small proportionate head, broad natural shoulders, long neck, normally sized ribcage and pelvis, long balanced legs, approximately 8 heads tall standing equivalent; do not copy He Sui's face. Anatomically coherent joints, exactly two arms and two legs, natural hands with five fingers, coherent toes. Complete body including hair ornaments, props and feet within portrait canvas with 5% margins. Japanese summer clothes with light breathable but opaque fabric, proper Japanese construction, no socks. Rich tasteful kanzashi, earrings, necklace, bracelets, obi ornaments. Nonsexual fashion portrait. Subject likeness: Shoko Takahashi, clearly adult age 25 or older, recognizable individual facial features, natural skin. Outfit and pose: seated naturally on a small low wooden stool playing a shamisen, wine-red lightweight summer kosode and ivory hakama, bare feet.",
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a16615-cc42-7e81-aa4f-b849b888d820/exec-60e71743-8790-420a-b0c3-8dfff27dee4f.png",
+      "asset": "assets/beauties/random/番邦女子/日本女子-高桥圣子-绛夏三味.png",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentFraction": 0.5046,
+        "nontransparentBorderPixels": 0
+      },
+      "assetSha256": "3239ab3eb082728c7da2323447440ed197aa64f5fa40a79c832c6df96fb82228"
+    },
+    {
+      "name": "波多野结衣",
+      "english": "Yui Hatano",
+      "title": "青枫茶盏",
+      "design": "standing balanced holding a small ceramic teapot in right hand and teacup in left, teal maple summer yukata, narrow silver obi, wooden geta on bare feet",
+      "id": "japan-photo-twelve-20261023-03",
+      "prompt": "Use case: photorealistic-natural. Create ONE full-body, fully clothed adult Japanese woman for a historical game portrait. Genuine transparent alpha background, no floor, backdrop, halo or text. Realistic high-end costume photography. Body silhouette inspired by adult fashion model He Sui: tall lean elegant mature proportions, small proportionate head, broad natural shoulders, long neck, normally sized ribcage and pelvis, long balanced legs, approximately 8 heads tall standing equivalent; do not copy He Sui's face. Anatomically coherent joints, exactly two arms and two legs, natural hands with five fingers, coherent toes. Complete body including hair ornaments, props and feet within portrait canvas with 5% margins. Japanese summer clothes with light breathable but opaque fabric, proper Japanese construction, no socks. Rich tasteful kanzashi, earrings, necklace, bracelets, obi ornaments. Nonsexual fashion portrait. Subject likeness: Yui Hatano, clearly adult age 25 or older, recognizable individual facial features, natural skin. Outfit and pose: standing balanced holding a small ceramic teapot in right hand and teacup in left, teal maple summer yukata, narrow silver obi, wooden geta on bare feet.",
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a16615-cc42-7e81-aa4f-b849b888d820/exec-835ae253-e6a9-4aca-a814-5d86936becfe.png",
+      "asset": "assets/beauties/random/番邦女子/日本女子-波多野结衣-青枫茶盏.png",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentFraction": 0.709,
+        "nontransparentBorderPixels": 0
+      },
+      "assetSha256": "bf56936f431348e21d7d86cfe22a5732150b6f8e4eda824e27a2525204d8f923"
+    },
+    {
+      "name": "安斋拉拉",
+      "english": "Rara Anzai",
+      "title": "杏绡桧扇",
+      "design": "standing with a folded hinoki cypress fan held at waist in both hands, pale apricot airy Japanese summer kosode, bronze obi, barefoot",
+      "id": "japan-photo-twelve-20261023-04",
+      "prompt": "Use case: photorealistic-natural. Create ONE full-body, fully clothed adult Japanese woman for a historical game portrait. Genuine transparent alpha background, no floor, backdrop, halo or text. Realistic high-end costume photography. Body silhouette inspired by adult fashion model He Sui: tall lean elegant mature proportions, small proportionate head, broad natural shoulders, long neck, normally sized ribcage and pelvis, long balanced legs, approximately 8 heads tall standing equivalent; do not copy He Sui's face. Anatomically coherent joints, exactly two arms and two legs, natural hands with five fingers, coherent toes. Complete body including hair ornaments, props and feet within portrait canvas with 5% margins. Japanese summer clothes with light breathable but opaque fabric, proper Japanese construction, no socks. Rich tasteful kanzashi, earrings, necklace, bracelets, obi ornaments. Nonsexual fashion portrait. Subject likeness: Rara Anzai, clearly adult age 25 or older, recognizable individual facial features, natural skin. Outfit and pose: standing with a folded hinoki cypress fan held at waist in both hands, pale apricot airy Japanese summer kosode, bronze obi, barefoot.",
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a16615-cc42-7e81-aa4f-b849b888d820/exec-2852bc61-88b6-491d-9702-07f0008612ff.png",
+      "asset": "assets/beauties/random/番邦女子/日本女子-安斋拉拉-杏绡桧扇.png",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentFraction": 0.7095,
+        "nontransparentBorderPixels": 0
+      },
+      "assetSha256": "29e0653e9755ebd3ce76ca103d7e12abba6f4d3e9746e694b76572c2fe621743"
+    },
+    {
+      "name": "神宫寺奈绪",
+      "english": "Nao Jinguji",
+      "title": "碧竹花剪",
+      "design": "seated sideways on a low stool holding a small ikebana flower arrangement in a bamboo vase, sage-green sleeveless Japanese summer happi over opaque ivory wrap dress with indigo obi, bare feet",
+      "id": "japan-photo-twelve-20261023-05",
+      "prompt": "Use case: photorealistic-natural. Create ONE full-body, fully clothed adult Japanese woman for a historical game portrait. Genuine transparent alpha background, no floor, backdrop, halo or text. Realistic high-end costume photography. Body silhouette inspired by adult fashion model He Sui: tall lean elegant mature proportions, small proportionate head, broad natural shoulders, long neck, normally sized ribcage and pelvis, long balanced legs, approximately 8 heads tall standing equivalent; do not copy He Sui's face. Anatomically coherent joints, exactly two arms and two legs, natural hands with five fingers, coherent toes. Complete body including hair ornaments, props and feet within portrait canvas with 5% margins. Japanese summer clothes with light breathable but opaque fabric, proper Japanese construction, no socks. Rich tasteful kanzashi, earrings, necklace, bracelets, obi ornaments. Nonsexual fashion portrait. Subject likeness: Nao Jinguji, clearly adult age 25 or older, recognizable individual facial features, natural skin. Outfit and pose: seated sideways on a low stool holding a small ikebana flower arrangement in a bamboo vase, sage-green sleeveless Japanese summer happi over opaque ivory wrap dress with indigo obi, bare feet.",
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a16615-cc42-7e81-aa4f-b849b888d820/exec-52f66dd1-740d-4f4c-8223-203a7dbacd66.png",
+      "asset": "assets/beauties/random/番邦女子/日本女子-神宫寺奈绪-碧竹花剪.png",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentFraction": 0.5815,
+        "nontransparentBorderPixels": 0
+      },
+      "assetSha256": "96986a2d4819dabf6d236eb50176050521987cce7e48e7be1d42e28ef28dc071"
+    },
+    {
+      "name": "二阶堂梦",
+      "english": "Yume Nikaido",
+      "title": "月白琉璃",
+      "design": "standing in a graceful gentle dance pose with a short blue silk ribbon wand, pearl-white ro summer yukata patterned with light blue waves, blue obi, bare feet",
+      "id": "japan-photo-twelve-20261023-06",
+      "prompt": "Use case: photorealistic-natural. Create ONE full-body, fully clothed adult Japanese woman for a historical game portrait. Genuine transparent alpha background, no floor, backdrop, halo or text. Realistic high-end costume photography. Body silhouette inspired by adult fashion model He Sui: tall lean elegant mature proportions, small proportionate head, broad natural shoulders, long neck, normally sized ribcage and pelvis, long balanced legs, approximately 8 heads tall standing equivalent; do not copy He Sui's face. Anatomically coherent joints, exactly two arms and two legs, natural hands with five fingers, coherent toes. Complete body including hair ornaments, props and feet within portrait canvas with 5% margins. Japanese summer clothes with light breathable but opaque fabric, proper Japanese construction, no socks. Rich tasteful kanzashi, earrings, necklace, bracelets, obi ornaments. Nonsexual fashion portrait. Subject likeness: Yume Nikaido, clearly adult age 25 or older, recognizable individual facial features, natural skin. Outfit and pose: standing in a graceful gentle dance pose with a short blue silk ribbon wand, pearl-white ro summer yukata patterned with light blue waves, blue obi, bare feet.",
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a16615-cc42-7e81-aa4f-b849b888d820/exec-2aaa0959-16d5-484f-b443-0e87c3f82667.png",
+      "asset": "assets/beauties/random/番邦女子/日本女子-二阶堂梦-月白琉璃.png",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentFraction": 0.6638,
+        "nontransparentBorderPixels": 0
+      },
+      "assetSha256": "4f336fc1f63c5afc240284e2a10133628b22466977aa8c350cbdbf157b9116e4"
+    },
+    {
+      "name": "小仓由菜",
+      "english": "Yuna Ogura",
+      "title": "桃夏绢伞",
+      "design": "standing relaxed holding an open small Japanese wagasa parasol above one shoulder, peach-pink floral summer yukata ankle length, turquoise obi, wooden geta on bare feet",
+      "id": "japan-photo-twelve-20261023-07",
+      "prompt": "Use case: photorealistic-natural. Create ONE full-body, fully clothed adult Japanese woman for a historical game portrait. Genuine transparent alpha background, no floor, backdrop, halo or text. Realistic high-end costume photography. Body silhouette inspired by adult fashion model He Sui: tall lean elegant mature proportions, small proportionate head, broad natural shoulders, long neck, normally sized ribcage and pelvis, long balanced legs, approximately 8 heads tall standing equivalent; do not copy He Sui's face. Anatomically coherent joints, exactly two arms and two legs, natural hands with five fingers, coherent toes. Complete body including hair ornaments, props and feet within portrait canvas with 5% margins. Japanese summer clothes with light breathable but opaque fabric, proper Japanese construction, no socks. Rich tasteful kanzashi, earrings, necklace, bracelets, obi ornaments. Nonsexual fashion portrait. Subject likeness: Yuna Ogura, clearly adult age 25 or older, recognizable individual facial features, natural skin. Outfit and pose: standing relaxed holding an open small Japanese wagasa parasol above one shoulder, peach-pink floral summer yukata ankle length, turquoise obi, wooden geta on bare feet.",
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a16615-cc42-7e81-aa4f-b849b888d820/exec-fe2281d2-9f5c-419a-b7ac-8ef1de71d626.png",
+      "asset": "assets/beauties/random/番邦女子/日本女子-小仓由菜-桃夏绢伞.png",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentFraction": 0.6826,
+        "nontransparentBorderPixels": 0
+      },
+      "assetSha256": "211d45d9e55fa4c1e2b69473218aac1c329a6526f10daa88785ad558857de0bd"
+    },
+    {
+      "name": "本庄铃",
+      "english": "Suzu Honjo",
+      "title": "浅蓝贝香",
+      "design": "seated with legs naturally folded to one side holding a decorative seashell on an open palm, pale sky-blue lightweight summer jinbei top and matching loose knee-length shorts, bare feet",
+      "id": "japan-photo-twelve-20261023-08",
+      "prompt": "Use case: photorealistic-natural. Create ONE full-body, fully clothed adult Japanese woman for a historical game portrait. Genuine transparent alpha background, no floor, backdrop, halo or text. Realistic high-end costume photography. Body silhouette inspired by adult fashion model He Sui: tall lean elegant mature proportions, small proportionate head, broad natural shoulders, long neck, normally sized ribcage and pelvis, long balanced legs, approximately 8 heads tall standing equivalent; do not copy He Sui's face. Anatomically coherent joints, exactly two arms and two legs, natural hands with five fingers, coherent toes. Complete body including hair ornaments, props and feet within portrait canvas with 5% margins. Japanese summer clothes with light breathable but opaque fabric, proper Japanese construction, no socks. Rich tasteful kanzashi, earrings, necklace, bracelets, obi ornaments. Nonsexual fashion portrait. Subject likeness: Suzu Honjo, clearly adult age 25 or older, recognizable individual facial features, natural skin. Outfit and pose: seated with legs naturally folded to one side holding a decorative seashell on an open palm, pale sky-blue lightweight summer jinbei top and matching loose knee-length shorts, bare feet.",
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a16615-cc42-7e81-aa4f-b849b888d820/exec-0704dbc7-1b10-45e7-a36c-e3421a992ca3.png",
+      "asset": "assets/beauties/random/番邦女子/日本女子-本庄铃-浅蓝贝香.png",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentFraction": 0.5195,
+        "nontransparentBorderPixels": 0
+      },
+      "assetSha256": "b1fbbb1648b23951194ac4abc077651bd83ad54414c3e53a69da661d191b5b95"
+    },
+    {
+      "name": "白峰美羽",
+      "english": "Miu Shiromine",
+      "title": "墨樱书卷",
+      "design": "standing holding an open small illustrated book at waist, black-and-ivory summer yukata with subtle sakura motif and pale gold obi, bare feet",
+      "id": "japan-photo-twelve-20261023-09",
+      "prompt": "Use case: photorealistic-natural. Create ONE full-body, fully clothed adult Japanese woman for a historical game portrait. Genuine transparent alpha background, no floor, backdrop, halo or text. Realistic high-end costume photography. Body silhouette inspired by adult fashion model He Sui: tall lean elegant mature proportions, small proportionate head, broad natural shoulders, long neck, normally sized ribcage and pelvis, long balanced legs, approximately 8 heads tall standing equivalent; do not copy He Sui's face. Anatomically coherent joints, exactly two arms and two legs, natural hands with five fingers, coherent toes. Complete body including hair ornaments, props and feet within portrait canvas with 5% margins. Japanese summer clothes with light breathable but opaque fabric, proper Japanese construction, no socks. Rich tasteful kanzashi, earrings, necklace, bracelets, obi ornaments. Nonsexual fashion portrait. Subject likeness: Miu Shiromine, clearly adult age 25 or older, recognizable individual facial features, natural skin. Outfit and pose: standing holding an open small illustrated book at waist, black-and-ivory summer yukata with subtle sakura motif and pale gold obi, bare feet.",
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a16615-cc42-7e81-aa4f-b849b888d820/exec-9423c4ad-10f7-4285-81f2-0fe7dfa8a9fb.png",
+      "asset": "assets/beauties/random/番邦女子/日本女子-白峰美羽-墨樱书卷.png",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentFraction": 0.7359,
+        "nontransparentBorderPixels": 0
+      },
+      "assetSha256": "5b15ad2e1b5374fb03ac66e7cbac47566a8459de04aedde306a2aab133c6a042"
+    },
+    {
+      "name": "美谷朱里",
+      "english": "Akari Mitani",
+      "title": "柳绡铃舞",
+      "design": "simple balanced dance stance with both feet grounded one foot slightly forward holding a small kagura bell cluster at shoulder level, willow-green light summer kosode and cream pleated hakama, bare feet",
+      "id": "japan-photo-twelve-20261023-10",
+      "prompt": "Use case: photorealistic-natural. Create ONE full-body, fully clothed adult Japanese woman for a historical game portrait. Genuine transparent alpha background, no floor, backdrop, halo or text. Realistic high-end costume photography. Body silhouette inspired by adult fashion model He Sui: tall lean elegant mature proportions, small proportionate head, broad natural shoulders, long neck, normally sized ribcage and pelvis, long balanced legs, approximately 8 heads tall standing equivalent; do not copy He Sui's face. Anatomically coherent joints, exactly two arms and two legs, natural hands with five fingers, coherent toes. Complete body including hair ornaments, props and feet within portrait canvas with 5% margins. Japanese summer clothes with light breathable but opaque fabric, proper Japanese construction, no socks. Rich tasteful kanzashi, earrings, necklace, bracelets, obi ornaments. Nonsexual fashion portrait. Subject likeness: Akari Mitani, clearly adult age 25 or older, recognizable individual facial features, natural skin. Outfit and pose: simple balanced dance stance with both feet grounded one foot slightly forward holding a small kagura bell cluster at shoulder level, willow-green light summer kosode and cream pleated hakama, bare feet.",
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a16615-cc42-7e81-aa4f-b849b888d820/exec-64a236b6-3b0e-40c4-876d-f989dc2d1e49.png",
+      "asset": "assets/beauties/random/番邦女子/日本女子-美谷朱里-柳绡铃舞.png",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentFraction": 0.5674,
+        "nontransparentBorderPixels": 0
+      },
+      "assetSha256": "2a9ed47860ac493571633fcbc94280e4794366b4069cfa91b755962314b6323a"
+    },
+    {
+      "name": "葵司",
+      "english": "Tsukasa Aoi",
+      "title": "绯绡鼓舞",
+      "design": "elegant upright dance pose holding a small hand drum at hip and a single drum beater, coral-red summer yukata with white cranes, gold obi, bare feet",
+      "id": "japan-photo-twelve-20261023-11",
+      "prompt": "Use case: photorealistic-natural. Create ONE full-body, fully clothed adult Japanese woman for a historical game portrait. Genuine transparent alpha background, no floor, backdrop, halo or text. Realistic high-end costume photography. Body silhouette inspired by adult fashion model He Sui: tall lean elegant mature proportions, small proportionate head, broad natural shoulders, long neck, normally sized ribcage and pelvis, long balanced legs, approximately 8 heads tall standing equivalent; do not copy He Sui's face. Anatomically coherent joints, exactly two arms and two legs, natural hands with five fingers, coherent toes. Complete body including hair ornaments, props and feet within portrait canvas with 5% margins. Japanese summer clothes with light breathable but opaque fabric, proper Japanese construction, no socks. Rich tasteful kanzashi, earrings, necklace, bracelets, obi ornaments. Nonsexual fashion portrait. Subject likeness: Tsukasa Aoi, clearly adult age 25 or older, recognizable individual facial features, natural skin. Outfit and pose: elegant upright dance pose holding a small hand drum at hip and a single drum beater, coral-red summer yukata with white cranes, gold obi, bare feet.",
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a16615-cc42-7e81-aa4f-b849b888d820/exec-5e4eac3d-6f2a-4b52-b00c-9ba7579544a1.png",
+      "asset": "assets/beauties/random/番邦女子/日本女子-葵司-绯绡鼓舞.png",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentFraction": 0.6555,
+        "borderPixelsAbove20": 0
+      },
+      "assetSha256": "091b84fa2bc29f15f7d1225cde6e70c4f4a73fac649c074eb5e9cb64287c95c9",
+      "faceReworkPrompt": "Use case: identity-preserve. Image 1 is the fully clothed adult costume portrait to correct. Images 2 and 3 are USER SUPPLIED photographs of the same adult woman, Tsukasa Aoi, and are the authoritative face and haircut reference. Replace ONLY image 1's face and hairstyle with a faithful likeness of the woman in images 2 and 3: reproduce her own eye shape and spacing, soft cheek contour, nose bridge and tip, full natural lips, rounded chin and jaw, not a generic fashion model face. Her short dark espresso-brown bob, airy side fringe and visible nape, no long hair or bun or extensions. Natural tiny closed-mouth smile, relaxed eyes. Keep image 1's existing body, pose, camera angle, clothing, jewelry and props unchanged. Keep head size proportionately small, neck natural and upright. Do not copy reference underwear, pose, backdrop or lighting. Remain in the original fully clothed opaque Japanese summer costume. Preserve the ENTIRE person, fingers, toes and props within frame with empty margin. Actual transparent alpha PNG, no shadow, gradient, matte, text or background.",
+      "generatedPath": "/Users/fengheliang/.codex/generated_images/01a16615-cc42-7e81-aa4f-b849b888d820/exec-d703b9bc-c743-4792-9736-e21923da4ef0.png",
+      "userSuppliedFaceReference": true,
+      "latestRevisionManifest": "docs/art/aoi-reference-skill-rework-2026-10-23.json"
+    },
+    {
+      "name": "葵司",
+      "english": "Tsukasa Aoi",
+      "title": "水蓝静修",
+      "design": "seated in an easy natural yoga pose legs loosely crossed, hands relaxed on knees, upright long torso, powder-blue Japanese sleeveless summer wrap top and loose opaque cream ankle-length trousers with a blue sash, bare feet, blue hairpins and aquamarine jewelry",
+      "id": "japan-photo-twelve-20261023-12",
+      "prompt": "Use case: photorealistic-natural. Create ONE full-body, fully clothed adult Japanese woman for a historical game portrait. Genuine transparent alpha background, no floor, backdrop, halo or text. Realistic high-end costume photography. Body silhouette inspired by adult fashion model He Sui: tall lean elegant mature proportions, small proportionate head, broad natural shoulders, long neck, normally sized ribcage and pelvis, long balanced legs, approximately 8 heads tall standing equivalent; do not copy He Sui's face. Anatomically coherent joints, exactly two arms and two legs, natural hands with five fingers, coherent toes. Complete body including hair ornaments, props and feet within portrait canvas with 5% margins. Japanese summer clothes with light breathable but opaque fabric, proper Japanese construction, no socks. Rich tasteful kanzashi, earrings, necklace, bracelets, obi ornaments. Nonsexual fashion portrait. Subject likeness: Tsukasa Aoi, clearly adult age 25 or older, recognizable individual facial features, natural skin. Outfit and pose: seated in an easy natural yoga pose legs loosely crossed, hands relaxed on knees, upright long torso, powder-blue Japanese sleeveless summer wrap top and loose opaque cream ankle-length trousers with a blue sash, bare feet, blue hairpins and aquamarine jewelry.",
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a16615-cc42-7e81-aa4f-b849b888d820/exec-891a96bb-5888-4735-9c38-52e37171512b.png",
+      "asset": "assets/beauties/random/番邦女子/日本女子-葵司-水蓝静修.png",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentFraction": 0.4919,
+        "borderPixelsAbove20": 0
+      },
+      "assetSha256": "a20e8b5dec662648d496195f632c5530de17d5b987778af4cad9e084107f4e36",
+      "faceReworkPrompt": "Use case: identity-preserve. Image 1 is the fully clothed adult costume portrait to correct. Images 2 and 3 are USER SUPPLIED photographs of the same adult woman, Tsukasa Aoi, and are the authoritative face and haircut reference. Replace ONLY image 1's face and hairstyle with a faithful likeness of the woman in images 2 and 3: reproduce her own eye shape and spacing, soft cheek contour, nose bridge and tip, full natural lips, rounded chin and jaw, not a generic fashion model face. Her short dark espresso-brown bob, airy side fringe and visible nape, no long hair or bun or extensions. Natural tiny closed-mouth smile, relaxed eyes. Keep image 1's existing body, pose, camera angle, clothing, jewelry and props unchanged. Keep head size proportionately small, neck natural and upright. Do not copy reference underwear, pose, backdrop or lighting. Remain in the original fully clothed opaque Japanese summer costume. Preserve the ENTIRE person, fingers, toes and props within frame with empty margin. Actual transparent alpha PNG, no shadow, gradient, matte, text or background.",
+      "generatedPath": "/Users/fengheliang/.codex/generated_images/01a16615-cc42-7e81-aa4f-b849b888d820/exec-393b0c0b-06e6-4008-b354-aff10254e068.png",
+      "userSuppliedFaceReference": true,
+      "latestRevisionManifest": "docs/art/aoi-reference-skill-rework-2026-10-23.json"
+    }
+  ],
+  "completed": 12,
+  "verification": {
+    "relatedTestsPassed": 18,
+    "alphaPassed": 12,
+    "newIdentities": 10,
+    "aoiVariants": 2,
+    "contactSheet": "outputs/japan-photo-twelve-20261023/contact-sheet.jpg"
+  },
+  "visualReview": "已检查浅色及深色换底总览与手脚局部：日式轻薄夏装、无袜、不同饰品和道具、头肩躯干及腿长关系、关节与画面边缘。"
+}

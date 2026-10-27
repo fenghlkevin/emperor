@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-23T19:56:38.589Z",
+  "elapsedSeconds": 15.342,
+  "checks": [
+    "manual-1530 concise face copy retains complete accessible rules",
+    "manual-1530 deployment card identity motif keeps native hit rectangle",
+    "manual-1530 entry skill shows its personal subtitle before old health is released",
+    "manual-1530 holds a readable personal motif and original subtitle during windup",
+    "manual-1530 entry uses the full formal engine result once and cleans transient effects",
+    "manual-1530 deployed character retains the same ID-bound card face",
+    "manual-1530 commander identity motif keeps native hit rectangle",
+    "manual-1530 power shows its personal subtitle before old health is released",
+    "manual-1530 power uses the full formal engine result once and cleans transient effects",
+    "manual-1530 deployment fast preserves complete formal effects once and releases motion lock",
+    "manual-1530 power fast preserves complete formal effects once and releases motion lock",
+    "manual-1530 deployment reduced preserves complete formal effects once and releases motion lock",
+    "manual-1530 reduced persistent motifs have no CSS animation",
+    "manual-1530 power reduced preserves complete formal effects once and releases motion lock",
+    "manual-1530 reduced persistent motifs have no CSS animation"
+  ],
+  "errors": [],
+  "selectedIds": [
+    "manual-1530"
+  ],
+  "scope": "Selected historical-ID normal/fast/reduced deployment and commander fixtures only; excludes all100 artwork, gallery and viewport regression."
+}

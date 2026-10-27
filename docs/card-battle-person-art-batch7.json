@@ -1,0 +1,15 @@
+{
+  "jobs": [
+    {
+      "id": "general-790-68223",
+      "path": "assets/battle/people/general-790-68223-battle-v1.png",
+      "origin": "/Users/fengheliang/.codex/generated_images/01a16381-85b9-71f1-8014-3769188dd4cf/exec-1ad9c072-33bb-440c-8b50-dfaf2b5c3354.png",
+      "prompt": "Use case identity-preserve. ONE vertical5:7 fullbleed historical strategy battle card illustration. Preserve image1 Wu Sangui's exact recognizable mature face, curled mustache and pointed beard, bronze-black armor, ornate silver-bronze helmet with red plume, red cloak. Transform fullbody studio portrait into dramatic waist-up close view, entire helmet inside frame, large face upper third. Warm painterly battlefield style matching image2 Zhang Fei card, golden daylight, dusty frontier fortress pass and distant organized ranks, blank red standards. Practical command gesture, sword sheathed, no magic. No text/numbers, UI/frame, watermark or studio background. Game art, not historical reconstruction.",
+      "sha256": "26f7224989247c0159436571f0f4cab999bc0015754de675720454a90963a656",
+      "dimensions": [
+        1060,
+        1484
+      ]
+    }
+  ]
+}

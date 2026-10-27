@@ -1,0 +1,50 @@
+
+> emperor-foundation@0.1.0 test:card-battle-person-presentations
+> electron tests/card-battle-person-presentations-desktop.cjs
+
+1: cbdb-1762 concise face copy retains complete accessible rules
+2: cbdb-1762 deployment card identity motif keeps native hit rectangle
+3: cbdb-1762 entry skill shows its personal subtitle before old health is released
+4: cbdb-1762 holds a readable personal motif and original subtitle during windup
+5: cbdb-1762 entry uses the full formal engine result once and cleans transient effects
+6: cbdb-1762 deployed character retains the same ID-bound card face
+7: manual-1523 concise face copy retains complete accessible rules
+8: manual-1523 deployment card identity motif keeps native hit rectangle
+9: manual-1523 entry skill shows its personal subtitle before old health is released
+10: manual-1523 holds a readable personal motif and original subtitle during windup
+11: manual-1523 entry uses the full formal engine result once and cleans transient effects
+12: manual-1523 deployed character retains the same ID-bound card face
+13: manual-1554 concise face copy retains complete accessible rules
+14: manual-1554 deployment card identity motif keeps native hit rectangle
+15: manual-1554 entry skill shows its personal subtitle before old health is released
+16: manual-1554 holds a readable personal motif and original subtitle during windup
+17: manual-1554 entry uses the full formal engine result once and cleans transient effects
+18: manual-1554 deployed character retains the same ID-bound card face
+19: cbdb-1762 commander identity motif keeps native hit rectangle
+20: cbdb-1762 power shows its personal subtitle before old health is released
+21: cbdb-1762 power uses the full formal engine result once and cleans transient effects
+22: manual-1523 commander identity motif keeps native hit rectangle
+23: manual-1523 power shows its personal subtitle before old health is released
+24: manual-1523 power uses the full formal engine result once and cleans transient effects
+25: manual-1554 commander identity motif keeps native hit rectangle
+26: manual-1554 power shows its personal subtitle before old health is released
+27: manual-1554 power uses the full formal engine result once and cleans transient effects
+28: cbdb-1762 deployment fast preserves complete formal effects once and releases motion lock
+29: cbdb-1762 power fast preserves complete formal effects once and releases motion lock
+30: cbdb-1762 deployment reduced preserves complete formal effects once and releases motion lock
+31: cbdb-1762 reduced persistent motifs have no CSS animation
+32: cbdb-1762 power reduced preserves complete formal effects once and releases motion lock
+33: cbdb-1762 reduced persistent motifs have no CSS animation
+34: manual-1523 deployment fast preserves complete formal effects once and releases motion lock
+35: manual-1523 power fast preserves complete formal effects once and releases motion lock
+36: manual-1523 deployment reduced preserves complete formal effects once and releases motion lock
+37: manual-1523 reduced persistent motifs have no CSS animation
+38: manual-1523 power reduced preserves complete formal effects once and releases motion lock
+39: manual-1523 reduced persistent motifs have no CSS animation
+40: manual-1554 deployment fast preserves complete formal effects once and releases motion lock
+41: manual-1554 power fast preserves complete formal effects once and releases motion lock
+42: manual-1554 deployment reduced preserves complete formal effects once and releases motion lock
+43: manual-1554 reduced persistent motifs have no CSS animation
+44: manual-1554 power reduced preserves complete formal effects once and releases motion lock
+45: manual-1554 reduced persistent motifs have no CSS animation
+Selected person presentation passed 45 checks in 40.257s

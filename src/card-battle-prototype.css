@@ -1,0 +1,339 @@
+/* Match the approved painted command-table prototype, using its restored physical frame plate. */
+.card-battle-dialog:has(.cb-prototype){border:0!important;border-radius:0!important;box-shadow:0 24px 110px #000d!important}
+.cb-prototype{background:#392818 url('../assets/battle/card-prototype-plate-v2.png') center/100% 100%!important;font-family:'Kaiti SC','STKaiti','Songti SC',serif}
+.cb-prototype::after{display:none}.cb-prototype .cb-header{top:0;left:0;right:0;height:18%}
+.cb-prototype .cb-title-plaque{left:.8%;top:.6%;width:18%;max-width:18%;height:8cqh;padding:0 10px;background:none;border:0;border-radius:0;box-shadow:none;display:grid;place-items:center}
+.cb-prototype .cb-title-plaque::before,.cb-prototype .cb-title-plaque::after,.cb-prototype .cb-title-plaque>small{display:none}
+.cb-prototype .cb-header h1{font-family:'Kaiti SC','STKaiti',serif;font-size:clamp(23px,3.05cqw,54px);letter-spacing:.01em;font-weight:900;color:#f6df9d;text-shadow:0 2px 1px #1a1005,1px 0 #9b6a35;margin:0;max-width:100%;overflow:hidden}
+.cb-prototype .cb-header-tools{position:absolute;right:1.1%;top:1.3%;gap:5px}
+.cb-prototype .cb-header-tools button{padding:4px 8px;font-size:clamp(9px,.75cqw,13px);background:#251c13dc;border:1px solid #9e7d45;border-radius:2px;box-shadow:inset 0 0 0 1px #43301c,0 2px 5px #0008;color:#d6c294}
+.cb-prototype .cb-backhand{left:20.5%;top:0;width:20%;max-width:20%;gap:0;transform:none}
+.cb-prototype .cb-backhand i{width:4.7cqw;height:6.5cqw;margin-left:-10px;border:0;background:url('../assets/battle/card-back-v2.svg') center/100% 100%;box-shadow:1px 3px 4px #0009;transform:rotate(-3deg)}
+.cb-prototype .cb-backhand i:nth-child(2n){transform:rotate(3deg)}.cb-prototype .cb-backhand i span{display:none}.cb-prototype .cb-backhand small{font-size:.65cqw;padding-top:3px}
+.cb-prototype .cb-command{left:50%;width:12.2cqw;height:12.2cqw;max-width:none;max-height:none}
+.cb-prototype .cb-command.enemy{top:0}.cb-prototype .cb-command.home{bottom:21%;width:11.2cqw;height:11.2cqw}
+.cb-prototype .cb-portrait{position:absolute;left:8%;top:8%;width:84%;height:84%;padding:0!important;border:0!important;background:#201810!important;box-shadow:inset 0 0 14px #000c!important;overflow:hidden;border-radius:50%!important}
+.cb-prototype .cb-portrait img{border:0;object-position:center 14%;filter:saturate(.88) contrast(1.08);width:100%;height:100%}
+.cb-prototype .cb-portrait-rim,.cb-prototype .cb-portrait::after{display:none}
+.cb-prototype .cb-hero-banner{left:100%;top:4%;bottom:5%;width:33%;max-width:none;padding:9px 5px 12px;border:0;background:none!important;box-shadow:none;clip-path:none;border-radius:0;cursor:default}
+.cb-prototype .cb-hero-banner>strong{font-size:clamp(13px,1.35cqw,24px);max-height:55%;line-height:1.05;letter-spacing:.06em;color:#f7df9c;text-shadow:0 2px 2px #311207}
+.cb-prototype .cb-hero-banner>small{font-size:clamp(8px,.65cqw,12px);border:0;margin-top:4px;padding:0;color:#e4c287}
+.cb-prototype .cb-hero-banner>b{font:bold clamp(24px,2.25cqw,40px)/1 Georgia,serif;margin-top:4px;color:#fff0bd;text-shadow:0 2px 1px #2f1308,-1px 0 #5c3316}
+.cb-prototype .cb-command.home .cb-hero-banner{top:11%;bottom:8%;width:31%;padding-top:5px;padding-bottom:8px}
+.cb-prototype .cb-hero-banner.long-name>strong{font-size:clamp(11px,1.1cqw,20px)}
+.cb-prototype .cb-hero-banner.target{border-radius:2px;box-shadow:0 0 16px #e4c071, inset 0 0 12px #ffe7a65c;cursor:crosshair}
+.cb-prototype .cb-power{left:143%;bottom:27%;width:6.4cqw;height:6.4cqw;max-width:none;border:0!important;background:none!important;box-shadow:none;border-radius:50%;padding:0!important}
+.cb-prototype .cb-power>span{position:absolute;top:12%;left:0;width:100%;font-size:2.3cqw;line-height:1;color:#e5bc6c;text-shadow:0 2px 1px #344217}
+.cb-prototype .cb-power strong{position:absolute;bottom:8%;left:0;width:100%;font-size:1.1cqw;line-height:1;color:#f1d68b;letter-spacing:.05em}
+.cb-prototype .cb-power i{bottom:-9%;left:50%;padding:3px 0;width:29%;aspect-ratio:1;border:0;background:url('../assets/battle/card-cost-v2.svg') center/100% 100%;font:bold 1.1cqw/1.3 Georgia;box-sizing:border-box}
+.cb-prototype .cb-power.selected{filter:brightness(1.25);box-shadow:0 0 20px #e4cb7d}
+.cb-prototype .cb-field{left:24.5%;right:20%;top:23%;bottom:43%;gap:1.4cqh}
+.cb-prototype .cb-row{gap:.65cqw;height:calc(50% - .7cqh)}
+.cb-prototype .cb-slot,.cb-prototype .cb-card.board{width:calc((100% - 3.9cqw)/7);max-width:none;height:100%;min-width:0;aspect-ratio:auto}
+.cb-prototype .cb-slot{border:0;background:url('../assets/battle/card-slot-v2.svg') center/100% 100%;box-shadow:none;border-radius:3px}.cb-prototype .cb-slot span{display:none}
+.cb-prototype .cb-card{padding:5px!important;border:0!important;border-radius:5px!important;background:#d9c18f url('../assets/battle/card-frame-v2.svg') center/100% 100%!important;box-shadow:1px 3px 4px #231709b3;filter:none;overflow:visible}
+.cb-prototype .cb-card>strong{height:11%;padding:0 3%;font-size:clamp(10px,1.14cqw,20px);line-height:1.1;color:#24180d;font-weight:900;letter-spacing:.01em;text-shadow:0 1px #fff5;display:flex;align-items:center;justify-content:center;overflow:visible}
+.cb-prototype .cb-card .cb-art{flex:0 0 61%;height:61%!important;min-height:0!important;margin:2px 0 0;border:1px solid #65481f;border-bottom-color:#b99357;box-shadow:inset 0 0 7px #27190840;background-color:#b69b64}
+.cb-prototype .cb-card-copy{height:23%;flex:1;min-height:0;padding:3px 3px 0;display:flex;flex-direction:column;justify-content:center;overflow:hidden}
+.cb-prototype .cb-card-copy small{font-size:clamp(8px,.65cqw,12px);line-height:1.15;color:#3c2b13}
+.cb-prototype .cb-card-copy b{font-size:clamp(8px,.69cqw,12px);line-height:1.05;color:#49300e}
+.cb-prototype .cb-card-type{display:none}
+.cb-prototype .cb-card .cb-cost,.cb-prototype .cb-card .cb-attack,.cb-prototype .cb-card .cb-health{position:absolute;width:31%;height:auto;aspect-ratio:1;min-width:0;padding:0;display:grid;place-items:center;border:0;border-radius:0;box-shadow:none;font:bold clamp(17px,1.55cqw,28px)/1 Georgia,serif;color:#fff4d3;text-shadow:0 2px 1px #2b1609,-1px 0 #5a3c1d;z-index:5;box-sizing:border-box}
+.cb-prototype .cb-card .cb-cost{left:-9%;top:-5%;background:url('../assets/battle/card-cost-v2.svg') center/100% 100%}
+.cb-prototype .cb-card .cb-attack{left:-5%;bottom:-3%;background:url('../assets/battle/card-attack-v2.svg') center/100% 100%}
+.cb-prototype .cb-card .cb-health{right:-5%;bottom:-3%;background:url('../assets/battle/card-health-v2.svg') center/100% 100%}
+.cb-prototype .cb-card .cb-health.hurt{color:#ffcc9a}.cb-prototype .cb-card em{display:none}
+.cb-prototype .cb-card.board .cb-cost{display:none}
+.cb-prototype .cb-card.home{box-shadow:0 0 0 1px #47744e,1px 3px 5px #1a140bb3}
+.cb-prototype .cb-card.ready{box-shadow:0 0 0 2px #4e9d6a,0 0 9px #67a17270,1px 3px 4px #261d13}
+.cb-prototype .cb-card.target{box-shadow:0 0 0 2px #f6db9c,0 0 16px #ffca6277}
+.cb-prototype .cb-rest{font-size:clamp(7px,.6cqw,11px);line-height:1.1;padding:1px 3px;bottom:-11px;left:12%;right:12%;border:0;border-radius:0;background:#3b3824;color:#cbb68b;box-shadow:0 1px 3px #0005}
+.cb-prototype .cb-rest.available{background:#315637;color:#e5e3a7}
+.cb-prototype .cb-round{left:1.4%;top:26.7%;width:9.7%;height:15.7%;padding:0;border:0;border-radius:50%;background:none;box-shadow:none;display:flex;align-items:center;justify-content:center;flex-direction:column;overflow:visible}
+.cb-prototype .cb-round>small{display:none}.cb-prototype .cb-round>strong{font-size:clamp(15px,1.9cqw,34px);font-weight:900;line-height:1.3;letter-spacing:.01em;white-space:nowrap;color:#ead49c;text-shadow:0 2px 1px #1d170e}
+.cb-prototype .cb-round>span{font-size:clamp(8px,.72cqw,13px);line-height:1.5;color:#b6a16d}
+.cb-prototype .cb-round>button{position:absolute;top:calc(100% + 9px);width:87%;background:#201a12d9;color:#d7bd80;border:1px solid #927443;font-size:clamp(9px,.75cqw,13px);padding:4px 5px;box-shadow:inset 0 0 0 1px #44331d}
+.cb-prototype .cb-actions{right:2.2%;top:26.7%;width:13.2%;height:35%;display:block;padding:0}
+.cb-prototype .cb-end{position:absolute;left:0;top:0;width:100%;height:62%;border:0!important;background:none!important;box-shadow:none!important;border-radius:50%;padding:0;clip-path:circle(47%);transition:filter .15s}
+.cb-prototype .cb-end::before,.cb-prototype .cb-end::after{display:none}
+.cb-prototype .cb-end>span{font-size:clamp(20px,2.1cqw,37px);font-weight:900;line-height:1;color:#f3dfa5;text-shadow:0 2px 1px #173b2d,1px 0 #3d5429;letter-spacing:.015em;white-space:nowrap}
+.cb-prototype .cb-end:hover{filter:brightness(1.22);text-shadow:0 0 15px #e5ce84}
+.cb-prototype .cb-actions>[data-retreat]{position:absolute;top:67%;left:16%;width:68%;height:13.5%;border:0!important;background:none!important;box-shadow:none;padding:0;color:#eee1bd;font-size:clamp(14px,1.5cqw,26px);letter-spacing:.05em;text-shadow:0 1px #000}
+.cb-prototype .cb-actions>small{position:absolute;top:84%;left:0;width:100%;font-size:clamp(8px,.7cqw,12px);text-shadow:0 1px 2px #000;color:#d0bb87}
+.cb-prototype .cb-actions>[data-cancel-retreat]{position:absolute;top:99%;left:10%;width:80%;font-size:12px;background:#39271b}
+.cb-prototype .cb-table{left:0;right:0;bottom:0;height:22.5%;border:0;background:none;padding:0;display:block;pointer-events:none}
+.cb-prototype .cb-hand{position:absolute;left:22%;right:22%;bottom:1%;height:100%;width:auto;gap:0;padding:0;align-items:stretch;pointer-events:auto}
+.cb-prototype .cb-card.hand{width:clamp(80px,9cqw,158px);max-width:158px;height:100%;min-width:25px;margin-left:-9px;padding:6px!important;transform:rotate(-3deg);filter:drop-shadow(1px 3px 4px #160d08b0)}
+.cb-prototype .cb-card.hand:first-child{transform:translateY(4px) rotate(-7deg)}.cb-prototype .cb-card.hand:nth-child(2n){transform:rotate(2deg)}.cb-prototype .cb-card.hand:last-child{transform:translateY(5px) rotate(6deg)}
+.cb-prototype .cb-card.hand .cb-card-copy{height:22%;min-height:0;padding:3px 2px 0}.cb-prototype .cb-card.hand .cb-card-copy:has(b){height:22%}
+.cb-prototype .cb-card.hand .cb-card-copy small{font-size:clamp(8px,.68cqw,12px);line-height:1.15;-webkit-line-clamp:3}
+.cb-prototype .cb-card.hand:hover,.cb-prototype .cb-card.hand:focus-visible{transform:translateY(-35px) rotate(0deg) scale(1.12);z-index:21;box-shadow:0 0 0 1px #c6a467,0 0 16px #ecd4a050}
+.cb-prototype .cb-card.hand.selected{transform:translateY(-29px) rotate(0deg) scale(1.06);z-index:21;box-shadow:0 0 0 2px #e3c780,0 0 18px #efd79570}
+.cb-prototype .cb-mana{position:absolute;right:1.1%;bottom:9%;width:20.7%;max-width:none;min-width:0;height:66%;padding:13px 20px 14px;box-sizing:border-box;border:0;border-radius:0;background:url('../assets/battle/card-mana-tray-v2.svg') center/100% 100%;box-shadow:none;display:flex;justify-content:center;align-items:center;gap:0;pointer-events:auto}
+.cb-prototype .cb-mana strong{font-size:clamp(17px,1.65cqw,29px);line-height:1.2;color:#f3e5bd;letter-spacing:.07em;font-weight:600}
+.cb-prototype .cb-mana>div{width:90%;gap:2%;margin:7px 0 5px}.cb-prototype .cb-mana i{width:8%;max-width:26px;aspect-ratio:1;border:1px solid #a9955e;box-shadow:inset 0 0 4px #000d,0 1px 2px #0008;background:radial-gradient(circle at 35% 25%,#3c5544,#14271e 73%)}
+.cb-prototype .cb-mana i.lit{border-color:#e4c779;background:radial-gradient(circle at 32% 25%,#e7ffd6,#8cf2c8 12%,#0bb98c 38%,#006d58 68%,#103d31 85%);box-shadow:0 0 8px #42ac8d88,inset 0 0 2px #e9ffcc}
+.cb-prototype .cb-mana i.spent{background:radial-gradient(#32654b,#192b20);box-shadow:inset 0 0 4px #000b}
+.cb-prototype .cb-mana small{font-size:clamp(8px,.61cqw,11px);line-height:1.2;letter-spacing:.02em;color:#bca575}
+.cb-prototype .cb-deck{width:5.2%;height:12%;border:0;border-radius:3px;background:url('../assets/battle/card-back-v2.svg') center/100% 100%;box-shadow:2px 3px 1px #352117,4px 5px 0 #9b6f3e,5px 6px 3px #0008;opacity:.9;display:flex}
+.cb-prototype .cb-deck.enemy{right:20.3%;top:1.5%}.cb-prototype .cb-deck.home{left:3.4%;bottom:3.1%;height:12.5%}.cb-prototype .cb-deck>span{display:none}.cb-prototype .cb-deck b{font:clamp(9px,.8cqw,14px)/1.2 Georgia;border-color:#a47f48;background:#2b2519}
+.cb-prototype .cb-hint{bottom:22.4%;left:23%;right:23%;padding:3px 8px;background:linear-gradient(90deg,#22170b00,#22170bd9 18%,#22170bd9 82%,#22170b00);font-size:clamp(9px,.75cqw,13px);max-height:3.1%;color:#e7d39d}
+.cb-prototype .cb-attack-preview{bottom:22.5%;left:23%;right:23%;font-size:clamp(9px,.8cqw,14px);background:#282414ed;border-color:#a88b4b}
+.cb-prototype .cb-ledger{bottom:23.3%;left:1.6%;max-width:20%;font-size:clamp(9px,.75cqw,13px);border:1px solid #94723b;box-shadow:inset 0 0 0 1px #3e2b16;background:#2c2114e6;padding:4px 8px}
+.cb-prototype .cb-ledger[open]{width:29%;max-width:390px;bottom:23.3%;z-index:35;padding:10px}
+.cb-prototype .cb-gallery-card{padding:7px!important}.cb-prototype .cb-gallery-card .cb-art{flex-basis:61%}.cb-prototype .cb-gallery-card .cb-card-copy{height:23%;min-height:0}.cb-prototype .cb-gallery-card .cb-card-copy small{font-size:clamp(8px,.66cqw,12px)}
+@media(max-width:1050px){.cb-prototype .cb-card{padding:3px!important}.cb-prototype .cb-card.hand{padding:4px!important;margin-left:-11px}.cb-prototype .cb-header-tools button{padding:3px 5px}.cb-prototype .cb-title-plaque{padding:0 6px}.cb-prototype .cb-card-copy{padding:2px 1px 0}.cb-prototype .cb-rest{bottom:-9px;font-size:7px}.cb-prototype .cb-mana{padding:8px 12px}.cb-prototype .cb-mana>div{margin:4px 0}.cb-prototype .cb-ledger[open]{max-width:43%;width:43%}.cb-prototype .cb-gallery-card{padding:4px!important}}
+/* Full card faces stay above the table edge, including their raised value badges. */
+.cb-prototype .cb-hand{height:91%;bottom:6%}
+.cb-prototype .cb-card-corner{display:none}
+.cb-prototype .cb-card.hand .cb-card-copy small{font-size:clamp(10px,.86cqw,15px);line-height:1.13}
+.cb-prototype .cb-card.hand .cb-card-copy b{font-size:clamp(10px,.82cqw,15px)}
+.cb-prototype .cb-card .cb-cost,.cb-prototype .cb-card .cb-attack,.cb-prototype .cb-card .cb-health{font-size:clamp(19px,1.8cqw,31px)}
+.cb-prototype .cb-portrait.target{box-shadow:0 0 0 2px #e9c76b,0 0 18px #f3cb6a!important;cursor:crosshair}
+.cb-prototype .cb-card.hand.unaffordable{filter:saturate(.65) brightness(.85) drop-shadow(1px 3px 4px #160d08b0)}
+.cb-prototype .cb-card.unaffordable .cb-cost{background-image:url('../assets/battle/card-cost-v2.svg');filter:grayscale(.9) brightness(.72)}
+.cb-prototype .cb-end:disabled{background:radial-gradient(circle,#10211fbb,#0a100c77 60%,transparent 70%)!important}
+.cb-prototype .cb-power:disabled{background:radial-gradient(circle,#11241c99,transparent 72%)!important}
+
+.cb-prototype .cb-hand{bottom:9%}
+/* Reserve readable space for rules instead of letting value tokens cover the text. */
+.cb-prototype .cb-card .cb-attack,.cb-prototype .cb-card .cb-health{width:26%;font-size:clamp(18px,1.65cqw,29px)}
+.cb-prototype .cb-card.person .cb-card-copy{padding-left:14%;padding-right:14%}
+.cb-prototype .cb-gallery-card .cb-attack,.cb-prototype .cb-gallery-card .cb-health{width:24%}
+.cb-prototype .cb-gallery-card .cb-card-copy{padding-left:17%;padding-right:17%;padding-bottom:4%}
+.cb-prototype .cb-gallery-card .cb-card-copy small{font-size:clamp(8px,.66cqw,12px);line-height:1.12}
+/* Deployed units use a full-art battle face; hand and gallery retain the complete card. */
+.cb-prototype .cb-card.board{height:91%;align-self:center;padding:0!important;background-image:url('../assets/battle/card-unit-frame-v3.svg')!important}
+.cb-prototype .cb-slot{height:91%;align-self:center}
+.cb-prototype .cb-card.board>strong{position:absolute;left:5%;right:5%;top:2%;width:90%;height:10%;padding:0;z-index:2;font-size:clamp(10px,1.08cqw,19px);font-weight:900;line-height:1.1}
+.cb-prototype .cb-card.board .cb-art{position:absolute;left:4.5%;top:13%;bottom:3%;width:91%;height:auto!important;margin:0;min-height:0!important;border:0;box-shadow:inset 0 0 8px #32231255}
+.cb-prototype .cb-card.board .cb-card-copy,.cb-prototype .cb-card.board .cb-cost,.cb-prototype .cb-card.board .cb-rest{display:none}
+.cb-prototype .cb-card.board .cb-attack,.cb-prototype .cb-card.board .cb-health{width:28%;bottom:0;font-size:clamp(18px,1.65cqw,29px)}
+.cb-prototype .cb-card.board .cb-attack{left:0}.cb-prototype .cb-card.board .cb-health{right:0}
+.cb-prototype .cb-card.board.home{box-shadow:0 0 0 2px #2c6e64,1px 3px 5px #24160799}
+.cb-prototype .cb-card.board.ready{box-shadow:0 0 0 2px #3c8a6b,0 0 9px #64c5836b,1px 3px 5px #24160799}
+.cb-prototype .cb-card.board.target{box-shadow:0 0 0 2px #f3d787,0 0 14px #f5cf6e8c}
+.cb-prototype .cb-fx-morph{z-index:32}
+/* The hand keeps the prototype's complete paper card and a continuous, shallow fan. */
+.cb-prototype .cb-hand{bottom:12%}
+.cb-prototype .cb-hand .cb-card.hand{width:clamp(80px,9.8cqw,174px);max-width:174px;margin-left:var(--fan-overlap,0px);transform:translateY(var(--fan-y,0px)) rotate(var(--fan-angle,0deg));transform-origin:50% 100%}
+.cb-prototype .cb-hand .cb-card.hand:first-child{margin-left:0}
+.cb-prototype .cb-hand .cb-card.hand:hover,.cb-prototype .cb-hand .cb-card.hand:focus-visible{transform:translateY(-34px) rotate(0deg) scale(1.1);z-index:23}
+.cb-prototype .cb-hand .cb-card.hand.selected{transform:translateY(-28px) rotate(0deg) scale(1.05);z-index:23}
+.cb-prototype .cb-card.hand .cb-cost,.cb-prototype .cb-card.hand .cb-attack,.cb-prototype .cb-card.hand .cb-health{width:22%;font-size:clamp(17px,1.5cqw,26px)}
+.cb-prototype .cb-card.hand .cb-cost{left:-5%;top:-3%}.cb-prototype .cb-card.hand .cb-attack{left:0;bottom:0}.cb-prototype .cb-card.hand .cb-health{right:0;bottom:0}
+.cb-prototype .cb-card.hand{padding:4px!important}
+.cb-prototype .cb-order-seal{display:none}
+.cb-prototype .cb-card.tactic .cb-art{background-image:url('../assets/battle/card-tactics-v3.png');background-size:400% 300%;background-position:0 0!important}
+.cb-prototype .cb-card.tactic .troop-precision{background-position:0 0!important}
+.cb-prototype .cb-card.tactic .troop-fire{background-position:33.33333% 0!important}
+.cb-prototype .cb-card.tactic .troop-execute{background-position:66.66667% 0!important}
+.cb-prototype .cb-card.tactic .troop-arrows{background-position:100% 0!important}
+.cb-prototype .cb-card.tactic .troop-barrage{background-position:0 50%!important}
+.cb-prototype .cb-card.tactic .troop-brace{background-position:33.33333% 50%!important}
+.cb-prototype .cb-card.tactic .troop-assault{background-position:66.66667% 50%!important}
+.cb-prototype .cb-card.tactic .troop-fortify,.cb-prototype .cb-card.tactic .troop-coin{background-position:100% 50%!important}
+.cb-prototype .cb-card.tactic .troop-dispel{background-position:0 100%!important}
+.cb-prototype .cb-card.tactic .troop-pin{background-position:33.33333% 100%!important}
+.cb-prototype .cb-card.tactic .troop-supply{background-position:66.66667% 100%!important}
+.cb-prototype .cb-card.tactic .troop-heal{background-position:100% 100%!important}
+
+.cb-prototype .cb-gallery-card .cb-cost{width:22%;font-size:clamp(18px,1.6cqw,28px);left:-3%;top:-2%}
+
+.cb-prototype .cb-hand .cb-card.hand.home{box-shadow:1px 3px 5px #21160ba6}
+.cb-prototype .cb-hand .cb-card.hand.home.selected{box-shadow:0 0 0 2px #629b72,0 0 18px #d9cb8a66}
+/* In the prototype a plain troop has full art; a skilled troop places values at the art/rules seam. */
+.cb-prototype .cb-card.hand.no-rules{background-image:url('../assets/battle/card-unit-frame-v3.svg')!important}
+.cb-prototype .cb-card.hand.no-rules>strong{position:absolute;left:5%;right:5%;top:2%;width:90%;height:10%;z-index:2;padding:0}
+.cb-prototype .cb-card.hand.no-rules .cb-art{position:absolute;left:4.5%;top:13%;bottom:3%;width:91%;height:auto!important;margin:0;border:0;box-shadow:inset 0 0 7px #2c21113d}
+.cb-prototype .cb-card.hand:not(.no-rules) .cb-attack,.cb-prototype .cb-card.hand:not(.no-rules) .cb-health{bottom:21%}
+.cb-prototype .cb-card.hand.person .cb-card-copy{padding-left:3%;padding-right:3%}
+.cb-prototype .cb-gallery-card .cb-attack,.cb-prototype .cb-gallery-card .cb-health{bottom:22%;width:22%}
+.cb-prototype .cb-gallery-card.person .cb-card-copy{padding:2px 3% 1%;height:23%}
+/* 2026-10-22: physical rectangular cards, table projection, and explicit skill choreography. */
+.cb-prototype{--table-projection:perspective(950px) rotateX(12deg) skewX(-3deg) rotateZ(-1deg)}
+.cb-prototype .cb-card,.cb-prototype .cb-card.board,.cb-prototype .cb-card.hand.no-rules{background:#cbb382 url('../assets/battle/card-material-v4.png') center/100% 100%!important;border-radius:4px!important;padding:0!important;box-shadow:1px 2px 0 #3b2718,2px 4px 0 #674828,3px 6px 8px #21120699}
+.cb-prototype .cb-card>strong,.cb-prototype .cb-card.board>strong,.cb-prototype .cb-card.hand.no-rules>strong{position:absolute;left:7%;right:7%;top:4%;width:86%;height:9%;z-index:3;padding:0;line-height:1.1;font-size:clamp(10px,1.02cqw,18px);text-shadow:0 1px #fff1c766}
+.cb-prototype .cb-card .cb-art,.cb-prototype .cb-card.board .cb-art,.cb-prototype .cb-card.hand.no-rules .cb-art{position:absolute;left:5.2%;top:14.5%;bottom:26%;width:89.6%;height:auto!important;margin:0;border:1px solid #5b3c1f;box-shadow:inset 0 0 7px #2e1b1180;filter:saturate(.88) contrast(1.06)}
+.cb-prototype .cb-art::after{content:'';position:absolute;inset:0;pointer-events:none;box-shadow:inset 1px 1px 2px #edcf9966,inset -1px -2px 5px #3a24187a;background:linear-gradient(124deg,#f6d99520,transparent 32%,transparent 65%,#26150c26)}
+.cb-prototype .cb-card .cb-card-copy,.cb-prototype .cb-card.hand .cb-card-copy,.cb-prototype .cb-card.hand.person .cb-card-copy,.cb-prototype .cb-gallery-card.person .cb-card-copy{position:absolute;left:6%;right:6%;bottom:5%;height:19%;padding:1% 1.5%;min-height:0;justify-content:center}
+.cb-prototype .cb-card.hand .cb-card-copy small{font-size:clamp(9px,.76cqw,14px);line-height:1.16;-webkit-line-clamp:3}
+.cb-prototype .cb-card.hand .cb-card-copy b{font-size:clamp(9px,.76cqw,14px)}
+.cb-prototype .cb-card.hand .cb-cost{left:-5%;top:-2%;width:24%}
+.cb-prototype .cb-card.hand:not(.no-rules) .cb-attack,.cb-prototype .cb-card.hand:not(.no-rules) .cb-health,.cb-prototype .cb-gallery-card .cb-attack,.cb-prototype .cb-gallery-card .cb-health{bottom:18%;width:24%}
+.cb-prototype .cb-card.hand .cb-attack,.cb-prototype .cb-card.hand .cb-health{font-size:clamp(17px,1.6cqw,28px)}
+.cb-prototype .cb-card.board .cb-art,.cb-prototype .cb-card.hand.no-rules .cb-art{bottom:4.5%}
+.cb-prototype .cb-card.board .cb-attack,.cb-prototype .cb-card.board .cb-health,.cb-prototype .cb-card.hand.no-rules .cb-attack,.cb-prototype .cb-card.hand.no-rules .cb-health{bottom:0;width:29%}
+.cb-prototype .cb-card.board.home{box-shadow:0 0 0 1px #3c7966,1px 2px 0 #233f33,2px 4px 0 #3d4126,4px 7px 8px #26170d8c}
+.cb-prototype .cb-card.board.ready{box-shadow:0 0 0 1px #63a783,0 0 9px #a1c68d66,1px 2px 0 #264734,2px 4px 0 #4b4e2c,4px 7px 8px #26170d8c}
+.cb-prototype .cb-card.board.target{box-shadow:0 0 0 2px #e5c37d,0 0 15px #f5c96b88,2px 4px 0 #5a3e23,4px 7px 8px #26170d8c}
+.cb-prototype .cb-field{left:24%;right:20%;top:22.8%;bottom:41.6%;gap:1.3cqh}
+.cb-prototype .cb-row{height:calc((100% - 1.3cqh)/2);gap:.72cqw;align-items:center;justify-content:center}
+.cb-prototype .cb-card.board,.cb-prototype .cb-slot{height:17cqh;width:12.142857cqh;aspect-ratio:5/7;max-width:none;flex:0 0 auto;align-self:center;transform:var(--table-projection);transform-origin:center bottom}
+.cb-prototype .cb-card.board.selected{transform:translateY(-6px) var(--table-projection);z-index:12}
+.cb-prototype .cb-slot{background-size:100% 100%;filter:drop-shadow(1px 2px 1px #80634020)}
+.cb-prototype .cb-hand{left:20%;right:21%;height:20.5cqh;bottom:10%}
+.cb-prototype .cb-hand .cb-card.hand{height:100%;width:var(--hand-card-width,14.642857cqh);min-width:0;max-width:none;flex:0 0 var(--hand-card-width,14.642857cqh);aspect-ratio:5/7;padding:0!important;transform:perspective(1100px) rotateX(4deg) translateY(var(--fan-y,0px)) rotate(var(--fan-angle,0deg));box-shadow:1px 2px 0 #4b321d,2px 3px 0 #7a5730,3px 6px 8px #1d0e079c}
+.cb-prototype .cb-hand .cb-card.hand.home{box-shadow:1px 2px 0 #4b321d,2px 3px 0 #7a5730,3px 6px 8px #1d0e079c}
+.cb-prototype .cb-hand .cb-card.hand:hover,.cb-prototype .cb-hand .cb-card.hand:focus-visible{transform:translateY(-32px) rotate(0deg) scale(1.16);z-index:23;box-shadow:0 0 0 1px #d6bd7f,2px 4px 0 #604321,4px 9px 15px #170e08b3}
+.cb-prototype .cb-hand .cb-card.hand.selected{transform:translateY(-24px) rotate(0deg) scale(1.1);z-index:23;box-shadow:0 0 0 2px #69a481,2px 4px 0 #5f4829,0 0 18px #e7ca8580}
+.cb-prototype .cb-gallery-card{width:auto!important;max-width:100%;height:100%!important;aspect-ratio:5/7}
+.cb-prototype .cb-fx-cast-card{z-index:39;filter:drop-shadow(0 0 18px #f1c67b99) drop-shadow(0 13px 14px #1e110ab3)}
+.cb-prototype .cb-fx-cast-card>.cb-card{max-width:none!important;aspect-ratio:5/7}
+.cb-prototype .cb-fx-cast-card .cb-card-copy small{font-size:clamp(11px,.95cqw,17px)}
+.cb-prototype .cb-cast-scroll{height:100%;display:grid;place-items:center;background:#e8d2a2 url('../assets/battle/card-material-v4.png') center/100% 100%;color:#3e2614;font-size:1.5cqw}
+/* Effect hues and silhouettes communicate the result, independent of game logic. */
+.cb-prototype .cb-cast-banner,.cb-prototype .cb-skill-impact,.cb-prototype .cb-skill-source,.cb-prototype .cb-skill-missile{--fx:#edc77c;--fx-deep:#8d5424;position:absolute;pointer-events:none;z-index:38;box-sizing:border-box}
+.cb-prototype .fire{--fx:#ffb443;--fx-deep:#a9340f}.cb-prototype .volley{--fx:#f2d59d;--fx-deep:#6d4c29}.cb-prototype .heal{--fx:#8ef5be;--fx-deep:#2a9767}.cb-prototype .shield{--fx:#ffdf88;--fx-deep:#b38739}.cb-prototype .freeze{--fx:#bbebf4;--fx-deep:#5a9eba}.cb-prototype .silence{--fx:#d7d5b9;--fx-deep:#797870}.cb-prototype .buff{--fx:#f8ce72;--fx-deep:#9e6330}
+.cb-prototype .cb-cast-banner{left:50%;top:27%;min-width:27%;padding:9px 32px 11px;text-align:center;color:var(--fx);background:linear-gradient(90deg,transparent,#25180bf2 18%,#201a10f5 82%,transparent);border-top:1px solid #ceaa6380;border-bottom:1px solid #ceaa6380;text-shadow:0 2px 3px #000;z-index:41}
+.cb-prototype .cb-cast-banner small{display:block;font-size:clamp(10px,.8cqw,14px);letter-spacing:.14em;color:#e3c998}
+.cb-prototype .cb-cast-banner strong{display:block;font-size:clamp(23px,2.2cqw,38px);line-height:1.3;font-weight:800;letter-spacing:.12em}
+.cb-prototype .cb-skill-source{border:3px double var(--fx);border-radius:50%;background:radial-gradient(transparent 30%,color-mix(in srgb,var(--fx) 40%,transparent) 65%,transparent 70%);box-shadow:0 0 24px var(--fx),inset 0 0 22px var(--fx)}
+.cb-prototype .cb-skill-impact{isolation:isolate;filter:drop-shadow(0 0 7px var(--fx));z-index:40}
+.cb-prototype .cb-skill-impact i{position:absolute;display:block;font-style:normal;pointer-events:none}
+.cb-prototype .cb-skill-aura{inset:3%;border-radius:50%;background:radial-gradient(closest-side,#fff4c73b,color-mix(in srgb,var(--fx) 58%,transparent) 25%,transparent 72%)}
+.cb-prototype .cb-skill-ring{inset:12%;border:2px solid var(--fx);border-radius:50%;box-shadow:0 0 0 5px color-mix(in srgb,var(--fx) 15%,transparent),inset 0 0 18px var(--fx),0 0 16px var(--fx)}
+.cb-prototype .cb-skill-core{inset:32%;border-radius:50%;background:radial-gradient(#fffbe8,var(--fx) 20%,transparent 70%);filter:blur(1px)}
+.cb-prototype .cb-skill-particle{left:50%;top:50%;width:5px;height:10px;background:var(--fx);border-radius:50%;box-shadow:0 0 8px var(--fx)}
+.cb-prototype .cb-skill-impact>b{position:absolute;left:0;top:70%;width:100%;text-align:center;color:var(--fx);font-size:1.2cqw;text-shadow:0 2px 3px #000}
+.cb-prototype .cb-skill-impact.fire .cb-skill-ring{border-style:dashed;border-width:5px;filter:blur(1px);transform:rotate(-15deg)}
+.cb-prototype .cb-skill-impact.fire .cb-skill-aura{background:radial-gradient(ellipse,#fff7b088,#ff9d32b3 25%,#b9371766 48%,transparent 70%)}
+.cb-prototype .cb-skill-impact.fire .cb-skill-core{inset:20% 30%;border-radius:50% 50% 30% 30%;background:radial-gradient(ellipse at 50% 75%,#fff7bb,#ffb33b 25%,#db571f80 55%,transparent 70%);transform:rotate(12deg)}
+.cb-prototype .cb-skill-impact.fire .cb-skill-particle{width:6px;height:16px}
+.cb-prototype .cb-skill-impact.heal .cb-skill-core{inset:33%;border-radius:0;background:#dcffe1;clip-path:polygon(36% 0,64% 0,64% 36%,100% 36%,100% 64%,64% 64%,64% 100%,36% 100%,36% 64%,0 64%,0 36%,36% 36%);filter:drop-shadow(0 0 5px #9fffc0)}
+.cb-prototype .cb-skill-impact.heal .cb-skill-ring{border-style:dotted;border-width:3px}
+.cb-prototype .cb-skill-impact.buff .cb-skill-core,.cb-prototype .cb-skill-impact.command .cb-skill-core{inset:20%;border-radius:0;clip-path:polygon(50% 0,58% 32%,84% 12%,68% 42%,100% 50%,68% 58%,84% 88%,58% 68%,50% 100%,42% 68%,16% 88%,32% 58%,0 50%,32% 42%,16% 12%,42% 32%);background:radial-gradient(#fffbe6,var(--fx))}
+.cb-prototype .cb-skill-impact.shield .cb-skill-ring{inset:9% 20%;border:4px double var(--fx);border-radius:35% 35% 48% 48%;transform:scaleY(1.1)}
+.cb-prototype .cb-skill-impact.freeze .cb-skill-core{inset:15%;border-radius:0;background:var(--fx);clip-path:polygon(48% 0,52% 0,52% 43%,78% 18%,82% 22%,57% 48%,100% 48%,100% 52%,57% 52%,82% 78%,78% 82%,52% 57%,52% 100%,48% 100%,48% 57%,22% 82%,18% 78%,43% 52%,0 52%,0 48%,43% 48%,18% 22%,22% 18%,48% 43%)}
+.cb-prototype .cb-skill-impact.silence .cb-skill-ring{border:5px double var(--fx);border-left-color:transparent;border-bottom-color:transparent;transform:rotate(-35deg)}
+.cb-prototype .cb-skill-impact.slash .cb-skill-core,.cb-prototype .cb-skill-impact.volley .cb-skill-core{inset:15% 46%;border-radius:0;background:linear-gradient(transparent,#fff8d9 30%,var(--fx) 75%,transparent);transform:rotate(35deg);box-shadow:0 0 15px var(--fx)}
+.cb-prototype .cb-skill-impact.draw .cb-skill-core{inset:24% 32%;border:2px solid #f6e3a9;border-radius:3px;background:repeating-linear-gradient(#deb46e,#deb46e 4px,#9a693b 5px,#deb46e 6px);transform:rotate(-12deg)}
+.cb-prototype .cb-skill-missile{width:52px;height:9px;background:linear-gradient(90deg,transparent,var(--fx) 65%,#fff5c8);box-shadow:0 0 13px var(--fx);border-radius:50%;z-index:39;transform-origin:center}
+.cb-prototype .cb-skill-missile.fire{width:64px;height:15px;background:radial-gradient(ellipse at 85% 50%,#fff1a8,#f8ae31 30%,#c94f1880 55%,transparent 75%)}
+.cb-prototype .cb-skill-missile.volley{width:72px;height:3px;background:linear-gradient(90deg,transparent,#745131 30%,#efe0ad 85%);box-shadow:0 0 4px #ead5a380}
+.cb-prototype .cb-skill-missile.volley::after{content:'';position:absolute;right:-7px;top:-4px;border-left:13px solid #e3d7b2;border-top:5px solid transparent;border-bottom:5px solid transparent}
+.cb-prototype .cb-skill-missile.heal{width:35px;height:13px;background:radial-gradient(ellipse,#e7ffe9,var(--fx) 30%,transparent 75%)}
+@media(max-width:1050px){.cb-prototype .cb-card.hand .cb-card-copy small,.cb-prototype .cb-card.hand .cb-card-copy b{font-size:9px}.cb-prototype .cb-cast-banner{padding:6px 20px}.cb-prototype .cb-cast-banner strong{font-size:22px}}
+/* Field cards now sit square to the viewer; only hand cards retain their shallow fan. */
+.cb-prototype .cb-card.board,.cb-prototype .cb-slot{transform:none}
+.cb-prototype .cb-card.board.selected{transform:translateY(-6px)}
+.cb-prototype .cb-hand .cb-card.hand{transform:translateY(var(--fan-y,0px)) rotate(var(--fan-angle,0deg))}
+/* Only the artwork moves. Card names, values, frame and hit target stay stationary. */
+.cb-prototype .cb-living-art{position:absolute;inset:0;background:inherit;pointer-events:none;transform:scale(1.035);transform-origin:50% 60%;will-change:transform}
+.cb-prototype .cb-card.board .cb-living-art{animation:cb-living-breath 8s ease-in-out infinite;animation-delay:var(--idle-phase,0s)}
+.cb-prototype .cb-art-atmosphere{position:absolute;inset:0;z-index:1;pointer-events:none;overflow:hidden;background:linear-gradient(115deg,transparent 30%,#f9d48b10 48%,transparent 62%);background-size:280% 100%;animation:cb-armor-light 9s ease-in-out infinite;animation-delay:var(--idle-phase,0s)}
+.cb-prototype .cb-art-atmosphere i{position:absolute;bottom:-8%;left:25%;width:2px;height:3px;border-radius:50%;background:#ffe1a6;box-shadow:0 0 4px #ffc56d;opacity:0;animation:cb-card-ember 7s linear infinite;animation-delay:var(--idle-phase,0s)}
+.cb-prototype .cb-art-atmosphere i:nth-child(2){left:65%;animation-delay:calc(var(--idle-phase,0s) - 2.4s);width:1.5px;height:2px}
+.cb-prototype .cb-art-atmosphere i:nth-child(3){left:44%;animation-delay:calc(var(--idle-phase,0s) - 4.8s);width:1px;height:2px}
+.cb-prototype .cb-card.board::before{content:'';position:absolute;inset:1px;border:1px solid #ffe0a799;border-radius:4px;pointer-events:none;z-index:4;opacity:.15;box-shadow:inset 0 0 6px #f3c47726;animation:cb-card-edge 5s ease-in-out infinite;animation-delay:var(--idle-phase,0s)}
+.cb-prototype .cb-card.board.ready::before{border-color:#9edca8;box-shadow:0 0 7px #8fd99d66,inset 0 0 5px #8fd99d38}
+.cb-prototype .cb-card.board .cb-art::after{z-index:2}
+.cb-prototype .cb-fx-ghost .cb-art-atmosphere,.cb-prototype .cb-fx-ghost .cb-living-art{animation:none!important}
+.cb-prototype .cb-skill-impact.deploy .cb-skill-aura{inset:18% 0;background:radial-gradient(ellipse,#f6d19e66,#b786474d 35%,transparent 72%);transform:scaleY(.4)}
+.cb-prototype .cb-skill-impact.deploy .cb-skill-ring{inset:10% 0;border-width:3px;border-color:#f1c77d99;transform:scaleY(.3);box-shadow:0 0 18px #e9bf7777}
+.cb-prototype .cb-skill-impact.deploy .cb-skill-core{display:none}
+.cb-prototype .cb-skill-impact.deploy .cb-skill-particle{width:3px;height:3px;background:#dbc18a;box-shadow:0 0 3px #e7c58b}
+@keyframes cb-living-breath{0%,100%{transform:scale(1.035) translateY(0)}50%{transform:scale(1.055) translateY(-1.5px)}}
+@keyframes cb-armor-light{0%,100%{background-position:100% 50%;opacity:.35}50%{background-position:0 50%;opacity:.85}}
+@keyframes cb-card-ember{0%{opacity:0;transform:translate(0,0)}18%{opacity:.5}70%{opacity:.25}100%{opacity:0;transform:translate(10px,-95px)}}
+@keyframes cb-card-edge{0%,100%{opacity:.13}50%{opacity:.55}}
+/* Stable hand hit areas: only the painted face rises, never the mouse target. */
+.cb-prototype .cb-card>.cb-card-surface{position:absolute;inset:0;display:block;background:#cbb382 url('../assets/battle/card-material-v4.png') center/100% 100%;border-radius:4px;box-shadow:1px 2px 0 #3b2718,2px 4px 0 #674828,3px 6px 8px #21120699}
+.cb-prototype .cb-card,.cb-prototype .cb-card.board,.cb-prototype .cb-card.hand.no-rules{background:none!important}
+.cb-prototype .cb-card-surface>strong{position:absolute;left:7%;right:7%;top:4%;width:86%;height:9%;display:flex;align-items:center;justify-content:center;padding:0;z-index:3;font-size:clamp(10px,1.02cqw,18px);font-weight:900;line-height:1.1;white-space:nowrap;text-shadow:0 1px #fff1c766;overflow:hidden}
+.cb-prototype .cb-hand .cb-card.hand,.cb-prototype .cb-hand .cb-card.hand:hover,.cb-prototype .cb-hand .cb-card.hand:focus-visible,.cb-prototype .cb-hand .cb-card.hand.selected{transform:none;filter:none;box-shadow:none;transition:none}
+.cb-prototype .cb-hand .cb-card.hand>.cb-card-surface{transform:translateY(var(--fan-y,0px)) rotate(var(--fan-angle,0deg));transform-origin:50% 100%;transition:transform .16s ease-out,box-shadow .16s;pointer-events:auto;box-shadow:1px 2px 0 #4b321d,2px 3px 0 #7a5730,3px 6px 8px #1d0e079c}
+.cb-prototype .cb-hand .cb-card.hand:hover>.cb-card-surface,.cb-prototype .cb-hand .cb-card.hand:focus-visible>.cb-card-surface{transform:translateY(-32px) scale(1.16);box-shadow:0 0 0 1px #d6bd7f,2px 4px 0 #604321,4px 9px 15px #170e08b3}
+.cb-prototype .cb-hand .cb-card.hand.selected>.cb-card-surface{transform:translateY(-28px) scale(1.12);box-shadow:0 0 0 2px #69a481,2px 4px 0 #5f4829,0 0 18px #e7ca8580}
+.cb-prototype .cb-hand .cb-card.hand.unaffordable>.cb-card-surface{filter:saturate(.65) brightness(.85)}
+.cb-prototype .cb-fx-ghost .cb-card>.cb-card-surface{transform:none!important;transition:none!important;pointer-events:none!important}.cb-prototype .cb-fx-ghost *{pointer-events:none!important}
+.cb-prototype .cb-art-viewport{display:block;position:absolute;inset:0;width:100%;height:100%;overflow:hidden;pointer-events:none}
+.cb-prototype .cb-table{z-index:16}
+.cb-prototype .cb-hint,.cb-prototype .cb-attack-preview{left:2%;right:auto;bottom:28%;width:19%;max-height:9%;padding:7px 9px;display:block;font-size:clamp(10px,.77cqw,14px);line-height:1.5;text-align:left;border:1px solid #a78c5366;border-radius:3px;background:#241d12e8;color:#e5d19c;z-index:12;overflow:hidden}
+.cb-prototype .cb-hint button{margin-left:5px;vertical-align:middle}
+.cb-prototype .cb-attack-preview[hidden]{display:none}
+/* Icons, title and cost occupy separate parts of the existing jade power setting. */
+.cb-prototype .cb-power-icon{position:absolute;left:22%;top:15%;width:56%;height:49%;fill:#ddb66b;stroke:#f4daa1;stroke-width:1.2;filter:drop-shadow(0 2px 1px #24392a)}
+.cb-prototype .cb-power strong{position:absolute;left:6%;bottom:12%;width:88%;height:18%;display:grid;place-items:center;font-size:clamp(11px,1.05cqw,18px);line-height:1;letter-spacing:.02em;color:#f1d68b}
+.cb-prototype .cb-power i{position:absolute;left:50%;top:auto;bottom:-12%;width:28%;height:28%;aspect-ratio:1;transform:translateX(-50%);display:grid;place-items:center;padding:0;font:bold clamp(11px,1.08cqw,18px)/1 Georgia,serif}
+.cb-prototype .cb-cast-banner{top:25%;min-width:34%;max-width:46%;padding:10px 28px 13px;z-index:42}
+.cb-prototype .cb-cast-banner p{margin:4px auto 0;max-width:95%;color:#f3e3be;font-size:clamp(13px,1.05cqw,19px);line-height:1.5;letter-spacing:.02em}
+.cb-prototype .cb-fx-cast-card{z-index:39}
+@media(prefers-reduced-motion:reduce){.cb-prototype .cb-card-surface{transition:none!important}}
+@media(max-width:1050px){.cb-prototype .cb-cast-banner{min-width:40%;max-width:55%;padding:7px 18px 10px}.cb-prototype .cb-cast-banner p{font-size:12px}}
+
+/* Atlas content must be absolutely cropped even for the legacy tactic grid style. */
+.cb-prototype .cb-card .cb-art{position:absolute!important}
+.cb-prototype .cb-power-icon{top:14%;height:45%}
+.cb-prototype .cb-power strong{bottom:18%}
+
+/* Contact is held long enough to read: trail, twin slash, shock ring, then recovery. */
+.cb-prototype .cb-attack-trail{position:absolute;height:18px;z-index:33;pointer-events:none;transform:rotate(var(--angle));transform-origin:0 50%;background:linear-gradient(90deg,transparent,#eac27355 25%,#fff1b3aa 80%,transparent);filter:drop-shadow(0 0 6px #edbe76);border-radius:50%}
+.cb-prototype .cb-attack-trail.enemy{background:linear-gradient(90deg,transparent,#e18c6355 25%,#ffbf8cbb 80%,transparent)}
+.cb-prototype .cb-skill-impact.clash .cb-skill-ring{border-width:4px;box-shadow:0 0 0 9px #f4cd7922,inset 0 0 20px #eac578,0 0 24px #eac578}
+.cb-prototype .cb-skill-impact.clash .cb-skill-core{inset:9% 44%;border-radius:0;transform:rotate(38deg);background:linear-gradient(transparent,#fffbea 25%,#ffc76c 70%,transparent);box-shadow:0 0 14px #ffe1a2}
+.cb-prototype .cb-skill-impact.clash .cb-skill-core:after{content:'';position:absolute;inset:0;background:inherit;transform:rotate(100deg);box-shadow:inherit}
+.cb-prototype .cb-skill-impact.clash .cb-skill-particle{width:4px;height:17px}
+.cb-prototype .cb-skill-impact.charge .cb-skill-aura{background:radial-gradient(transparent 35%,#f5cf864d 54%,transparent 73%)}
+.cb-prototype .cb-skill-impact.charge .cb-skill-core{display:none}
+/* Jade moves within the fixed painted setting; the button hit area never shifts. */
+.cb-prototype .cb-end{isolation:isolate}
+.cb-prototype .cb-end::before,.cb-prototype .cb-end::after{content:'';display:block;position:absolute;inset:12%;left:12%;top:12%;bottom:12%;width:auto;height:auto;border:0;border-radius:50%;pointer-events:none;z-index:0}
+.cb-prototype .cb-end::before{background:radial-gradient(ellipse at 30% 25%,#bdffe858,transparent 58%);box-shadow:inset 0 0 17px #9cf6cf66;animation:cb-jade-breathe 3s ease-in-out infinite}
+.cb-prototype .cb-end::after{background:linear-gradient(115deg,transparent 32%,#dcffe755 48%,transparent 65%);background-size:300% 100%;animation:cb-jade-sweep 4.5s ease-in-out infinite}
+.cb-prototype .cb-end>span{position:relative;z-index:1;text-shadow:0 2px 2px #123c2c,0 0 9px #e7d3a333}
+.cb-prototype .cb-end:disabled::before,.cb-prototype .cb-end:disabled::after{animation:none;opacity:.12}
+.cb-prototype .cb-end.ending::before{animation:cb-jade-release .44s ease-out both;opacity:1}
+.cb-prototype .cb-deck-types{font-size:clamp(9px,.68cqw,12px);white-space:nowrap;color:#d6c193}
+@keyframes cb-jade-breathe{0%,100%{opacity:.35;transform:scale(.96)}50%{opacity:.9;transform:scale(1.04)}}
+@keyframes cb-jade-sweep{0%,20%{background-position:100% 50%;opacity:0}45%{opacity:.8}75%,100%{background-position:0 50%;opacity:0}}
+@keyframes cb-jade-release{0%{transform:scale(.75);opacity:.4}50%{transform:scale(1.1);opacity:1}100%{transform:scale(1.2);opacity:0}}
+@media(prefers-reduced-motion:reduce){.cb-prototype .cb-end::before,.cb-prototype .cb-end::after{animation:none!important}}
+
+/* Applied effects stay on the card after casting. The painted frame and target do not move. */
+.cb-prototype .cb-statuses{position:absolute;left:7%;right:7%;top:16%;z-index:7;display:flex;flex-wrap:wrap;justify-content:center;align-content:start;gap:2px;pointer-events:none;max-height:36%;overflow:hidden}
+.cb-prototype .cb-status{display:block;max-width:100%;padding:2px 4px;border:1px solid #adbc79;border-radius:3px;background:linear-gradient(#254936f5,#162f24f5);color:#d1f2bd;font-size:clamp(8px,.67cqw,12px);font-weight:800;line-height:1.2;white-space:nowrap;box-shadow:0 1px 3px #130e0abc;text-shadow:0 1px #132719}
+.cb-prototype .cb-status.temporary{color:#ffe5a6;background:linear-gradient(#594622f5,#332911f5);border-color:#d3ae61}
+.cb-prototype .cb-status.frozen{color:#d6f9ff;background:linear-gradient(#315563f5,#183b4cf5);border-color:#a4d8e5}
+.cb-prototype .cb-status.silenced{color:#e2d6c4;background:linear-gradient(#4a443cf5,#292620f5);border-color:#a9a08f}
+.cb-prototype .cb-status.weakened{color:#ffd0b7;background:#522a22f5;border-color:#c58c73}
+.cb-prototype .cb-status.shield{color:#ffe9a5;background:#51421cf5;border-color:#dbba65}
+.cb-prototype .cb-status.more{color:#f0dfba;background:#30291df5;border-color:#a78a55}
+.cb-prototype .cb-card .cb-attack.enhanced,.cb-prototype .cb-card .cb-health.enhanced:not(.hurt){color:#bff3a8!important;text-shadow:0 2px 1px #142b13,0 0 5px #448744}
+.cb-prototype .cb-card .cb-attack.weakened{color:#ffaf9f!important}
+.cb-prototype .cb-card.frozen:after{content:'';inset:13% 4% 4%;z-index:3;border:2px solid #b1e4ed99;border-radius:3px;background:linear-gradient(130deg,#b2edff22,transparent 45%,#8ed2ee22);box-shadow:inset 0 0 13px #a7e3f655;pointer-events:none}
+.cb-prototype .cb-card.silenced .cb-art{filter:saturate(.52)}
+.cb-prototype .cb-status-detail{padding:8px 0;border-top:1px solid #a7894c66}
+.cb-prototype .cb-status-detail>b{color:#315435;font-size:clamp(12px,1cqw,17px)}
+.cb-prototype .cb-status-detail ul{margin:6px 0;padding-left:1.2em;font-size:clamp(12px,.94cqw,17px);line-height:1.5}
+.cb-prototype .cb-status-detail p{font-size:clamp(11px,.88cqw,16px);line-height:1.5;margin:7px 0 0;padding:0;border:0}
+.cb-prototype .cb-inspect{max-height:82%;overflow:auto;overscroll-behavior:contain}
+.cb-prototype .cb-applied-effect{position:absolute;z-index:44;pointer-events:none;max-width:30%;padding:6px 12px;border:1px solid #c7bb7c;border-radius:4px;background:#1e3025f5;color:#e8efb9;font-weight:800;font-size:clamp(12px,1.05cqw,18px);line-height:1.4;white-space:nowrap;box-shadow:0 3px 10px #17100880;text-shadow:0 1px #102016}
+.cb-prototype .cb-applied-effect.frozen{background:#203c4bf5;color:#d2f6ff;border-color:#9bcede}
+.cb-prototype .cb-applied-effect.silenced{background:#3e3931f5;color:#f0e2cb;border-color:#b7a88a}
+/* Keep the four characters comfortably inside the jade, with equal horizontal breathing room. */
+.cb-prototype .cb-end{display:grid;place-items:center}
+.cb-prototype .cb-end>span{display:block;width:70%;max-width:70%;font-size:clamp(14px,1.65cqw,28px);letter-spacing:.015em;line-height:1.2;text-align:center}
+@media(max-width:1050px){.cb-prototype .cb-status{padding:2px 3px;font-size:8px}}
+
+/* Action availability is independent of buff/debuff effects. No card geometry moves. */
+.cb-prototype .cb-action-cue{position:absolute;inset:0;z-index:5;pointer-events:none;border-radius:4px;overflow:hidden}
+.cb-prototype .cb-action-cue *{pointer-events:none}
+.cb-prototype .cb-action-label{position:absolute;left:30%;right:30%;bottom:20%;padding:2px 0;border:1px solid #a8976877;border-radius:3px;background:#29281eea;color:#e4d6b2;text-align:center;font:500 clamp(8px,.65cqw,12px)/1.25 'Songti SC',serif;letter-spacing:.08em;box-shadow:0 1px 5px #0008}
+.cb-prototype .cb-action-cue.ready .cb-action-label{background:#183d2dea;border-color:#99cf9eaa;color:#d7efbc}
+.cb-prototype .cb-action-cue.spent .cb-action-label{background:#302e2bea;border-color:#8a827066;color:#bbb5a7}
+.cb-prototype .cb-action-cue.frozen .cb-action-label{background:#203c4bea;border-color:#99cbe0aa;color:#cceaf7}
+.cb-prototype .cb-action-hourglass{position:absolute;top:16%;right:8%;width:16%;height:18%;fill:none;stroke:#ddcfac;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;filter:drop-shadow(0 1px 2px #1b2016)}
+.cb-prototype .cb-action-sand{fill:#e3d4a7;stroke-width:.4;animation:cb-wait-sand 2.4s ease-in-out infinite}
+.cb-prototype .cb-action-grain{fill:#efdba7;stroke:none;animation:cb-wait-grain 1.3s linear infinite}
+.cb-prototype .cb-card.board[data-attack-state=summoned] .cb-art{filter:saturate(.72) brightness(.88)}
+.cb-prototype .cb-action-corners{position:absolute;inset:13% 5% 8%;background:linear-gradient(#a6efbc,#a6efbc) left top/12% 2px,linear-gradient(#a6efbc,#a6efbc) left top/2px 9%,linear-gradient(#a6efbc,#a6efbc) right top/12% 2px,linear-gradient(#a6efbc,#a6efbc) right top/2px 9%,linear-gradient(#a6efbc,#a6efbc) left bottom/12% 2px,linear-gradient(#a6efbc,#a6efbc) left bottom/2px 9%,linear-gradient(#a6efbc,#a6efbc) right bottom/12% 2px,linear-gradient(#a6efbc,#a6efbc) right bottom/2px 9%;background-repeat:no-repeat;filter:drop-shadow(0 0 3px #8ae7a5);animation:cb-action-ready 2.3s ease-in-out infinite}
+.cb-prototype .cb-fx-attacker .cb-action-cue{visibility:hidden}
+@keyframes cb-wait-sand{0%,100%{opacity:.45}50%{opacity:1}}
+@keyframes cb-wait-grain{0%{transform:translateY(-2px);opacity:0}20%{opacity:1}85%{opacity:.8}100%{transform:translateY(6px);opacity:0}}
+@keyframes cb-action-ready{0%,100%{opacity:.35}50%{opacity:.95}}
+@media(prefers-reduced-motion:reduce){.cb-prototype .cb-action-cue *{animation:none!important}}
+
+/* Align the label and jade glow to the actual painted jade center (90.993%, 36.769%). */
+.cb-prototype .cb-end{left:-1.57%;top:-2.23%}
+.cb-prototype .cb-end>span{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:70%;max-width:70%;margin:0;padding:0;line-height:1;font-size:clamp(18px,2.2cqw,34px);letter-spacing:0;text-align:center}

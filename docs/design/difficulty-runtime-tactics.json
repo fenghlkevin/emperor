@@ -1,0 +1,798 @@
+{
+  "date": "2026-10-26",
+  "method": "Same 16 seeds, swapped initiative, equal forces. Player current balanced AI. Opponent uses actual difficulty AI. This is a diagnostic, not human win rates.",
+  "matches": [
+    {
+      "tier": "novice",
+      "seed": 1,
+      "first": "home",
+      "result": "victory",
+      "actions": 140,
+      "maxDecisionMs": 0.5946659999999895
+    },
+    {
+      "tier": "novice",
+      "seed": 1,
+      "first": "enemy",
+      "result": "victory",
+      "actions": 120,
+      "maxDecisionMs": 0.32724999999999227
+    },
+    {
+      "tier": "novice",
+      "seed": 2,
+      "first": "home",
+      "result": "defeat",
+      "actions": 134,
+      "maxDecisionMs": 4.380166999999972
+    },
+    {
+      "tier": "novice",
+      "seed": 2,
+      "first": "enemy",
+      "result": "victory",
+      "actions": 99,
+      "maxDecisionMs": 0.8970000000000482
+    },
+    {
+      "tier": "novice",
+      "seed": 3,
+      "first": "home",
+      "result": "victory",
+      "actions": 55,
+      "maxDecisionMs": 0.6673329999999851
+    },
+    {
+      "tier": "novice",
+      "seed": 3,
+      "first": "enemy",
+      "result": "victory",
+      "actions": 134,
+      "maxDecisionMs": 0.14170799999999417
+    },
+    {
+      "tier": "novice",
+      "seed": 4,
+      "first": "home",
+      "result": "victory",
+      "actions": 78,
+      "maxDecisionMs": 0.197166999999979
+    },
+    {
+      "tier": "novice",
+      "seed": 4,
+      "first": "enemy",
+      "result": "victory",
+      "actions": 79,
+      "maxDecisionMs": 0.6255420000000527
+    },
+    {
+      "tier": "novice",
+      "seed": 5,
+      "first": "home",
+      "result": "victory",
+      "actions": 69,
+      "maxDecisionMs": 0.07704100000000835
+    },
+    {
+      "tier": "novice",
+      "seed": 5,
+      "first": "enemy",
+      "result": "victory",
+      "actions": 86,
+      "maxDecisionMs": 0.08666699999992034
+    },
+    {
+      "tier": "novice",
+      "seed": 6,
+      "first": "home",
+      "result": "defeat",
+      "actions": 114,
+      "maxDecisionMs": 0.0771670000000313
+    },
+    {
+      "tier": "novice",
+      "seed": 6,
+      "first": "enemy",
+      "result": "victory",
+      "actions": 81,
+      "maxDecisionMs": 0.355083000000036
+    },
+    {
+      "tier": "novice",
+      "seed": 7,
+      "first": "home",
+      "result": "victory",
+      "actions": 65,
+      "maxDecisionMs": 0.20279199999993125
+    },
+    {
+      "tier": "novice",
+      "seed": 7,
+      "first": "enemy",
+      "result": "victory",
+      "actions": 97,
+      "maxDecisionMs": 0.766083999999978
+    },
+    {
+      "tier": "novice",
+      "seed": 8,
+      "first": "home",
+      "result": "victory",
+      "actions": 85,
+      "maxDecisionMs": 0.1762499999999818
+    },
+    {
+      "tier": "novice",
+      "seed": 8,
+      "first": "enemy",
+      "result": "defeat",
+      "actions": 98,
+      "maxDecisionMs": 1.867750000000001
+    },
+    {
+      "tier": "novice",
+      "seed": 9,
+      "first": "home",
+      "result": "victory",
+      "actions": 150,
+      "maxDecisionMs": 3.6431660000000647
+    },
+    {
+      "tier": "novice",
+      "seed": 9,
+      "first": "enemy",
+      "result": "victory",
+      "actions": 106,
+      "maxDecisionMs": 0.15312500000004547
+    },
+    {
+      "tier": "novice",
+      "seed": 10,
+      "first": "home",
+      "result": "victory",
+      "actions": 71,
+      "maxDecisionMs": 0.11762499999997544
+    },
+    {
+      "tier": "novice",
+      "seed": 10,
+      "first": "enemy",
+      "result": "victory",
+      "actions": 74,
+      "maxDecisionMs": 1.6870830000000296
+    },
+    {
+      "tier": "novice",
+      "seed": 11,
+      "first": "home",
+      "result": "victory",
+      "actions": 51,
+      "maxDecisionMs": 0.05087499999990541
+    },
+    {
+      "tier": "novice",
+      "seed": 11,
+      "first": "enemy",
+      "result": "defeat",
+      "actions": 119,
+      "maxDecisionMs": 0.06558300000006057
+    },
+    {
+      "tier": "novice",
+      "seed": 12,
+      "first": "home",
+      "result": "victory",
+      "actions": 78,
+      "maxDecisionMs": 0.01545900000007805
+    },
+    {
+      "tier": "novice",
+      "seed": 12,
+      "first": "enemy",
+      "result": "defeat",
+      "actions": 81,
+      "maxDecisionMs": 0.0721250000000282
+    },
+    {
+      "tier": "novice",
+      "seed": 13,
+      "first": "home",
+      "result": "defeat",
+      "actions": 111,
+      "maxDecisionMs": 0.07654200000001765
+    },
+    {
+      "tier": "novice",
+      "seed": 13,
+      "first": "enemy",
+      "result": "victory",
+      "actions": 89,
+      "maxDecisionMs": 0.9639999999999418
+    },
+    {
+      "tier": "novice",
+      "seed": 14,
+      "first": "home",
+      "result": "victory",
+      "actions": 49,
+      "maxDecisionMs": 0.06937500000003638
+    },
+    {
+      "tier": "novice",
+      "seed": 14,
+      "first": "enemy",
+      "result": "victory",
+      "actions": 141,
+      "maxDecisionMs": 1.7630419999999276
+    },
+    {
+      "tier": "novice",
+      "seed": 15,
+      "first": "home",
+      "result": "victory",
+      "actions": 102,
+      "maxDecisionMs": 0.15312500000004547
+    },
+    {
+      "tier": "novice",
+      "seed": 15,
+      "first": "enemy",
+      "result": "victory",
+      "actions": 107,
+      "maxDecisionMs": 2.9995830000000296
+    },
+    {
+      "tier": "novice",
+      "seed": 16,
+      "first": "home",
+      "result": "defeat",
+      "actions": 72,
+      "maxDecisionMs": 0.042708999999831576
+    },
+    {
+      "tier": "novice",
+      "seed": 16,
+      "first": "enemy",
+      "result": "defeat",
+      "actions": 104,
+      "maxDecisionMs": 0.1069159999999556
+    },
+    {
+      "tier": "standard",
+      "seed": 1,
+      "first": "home",
+      "result": "defeat",
+      "actions": 78,
+      "maxDecisionMs": 0.108791999999994
+    },
+    {
+      "tier": "standard",
+      "seed": 1,
+      "first": "enemy",
+      "result": "victory",
+      "actions": 108,
+      "maxDecisionMs": 0.2517080000000078
+    },
+    {
+      "tier": "standard",
+      "seed": 2,
+      "first": "home",
+      "result": "defeat",
+      "actions": 124,
+      "maxDecisionMs": 0.0565839999999298
+    },
+    {
+      "tier": "standard",
+      "seed": 2,
+      "first": "enemy",
+      "result": "victory",
+      "actions": 108,
+      "maxDecisionMs": 0.06533300000000963
+    },
+    {
+      "tier": "standard",
+      "seed": 3,
+      "first": "home",
+      "result": "defeat",
+      "actions": 114,
+      "maxDecisionMs": 0.14554199999997763
+    },
+    {
+      "tier": "standard",
+      "seed": 3,
+      "first": "enemy",
+      "result": "defeat",
+      "actions": 101,
+      "maxDecisionMs": 0.14954200000011042
+    },
+    {
+      "tier": "standard",
+      "seed": 4,
+      "first": "home",
+      "result": "victory",
+      "actions": 77,
+      "maxDecisionMs": 0.12941599999999198
+    },
+    {
+      "tier": "standard",
+      "seed": 4,
+      "first": "enemy",
+      "result": "victory",
+      "actions": 79,
+      "maxDecisionMs": 0.05820799999992232
+    },
+    {
+      "tier": "standard",
+      "seed": 5,
+      "first": "home",
+      "result": "victory",
+      "actions": 118,
+      "maxDecisionMs": 2.6145420000000286
+    },
+    {
+      "tier": "standard",
+      "seed": 5,
+      "first": "enemy",
+      "result": "victory",
+      "actions": 77,
+      "maxDecisionMs": 0.056874999999990905
+    },
+    {
+      "tier": "standard",
+      "seed": 6,
+      "first": "home",
+      "result": "defeat",
+      "actions": 111,
+      "maxDecisionMs": 0.11816700000008495
+    },
+    {
+      "tier": "standard",
+      "seed": 6,
+      "first": "enemy",
+      "result": "victory",
+      "actions": 80,
+      "maxDecisionMs": 0.07154100000002472
+    },
+    {
+      "tier": "standard",
+      "seed": 7,
+      "first": "home",
+      "result": "victory",
+      "actions": 67,
+      "maxDecisionMs": 2.4869999999998527
+    },
+    {
+      "tier": "standard",
+      "seed": 7,
+      "first": "enemy",
+      "result": "defeat",
+      "actions": 116,
+      "maxDecisionMs": 0.05258400000002439
+    },
+    {
+      "tier": "standard",
+      "seed": 8,
+      "first": "home",
+      "result": "defeat",
+      "actions": 82,
+      "maxDecisionMs": 0.04666699999984303
+    },
+    {
+      "tier": "standard",
+      "seed": 8,
+      "first": "enemy",
+      "result": "defeat",
+      "actions": 100,
+      "maxDecisionMs": 0.039916999999832115
+    },
+    {
+      "tier": "standard",
+      "seed": 9,
+      "first": "home",
+      "result": "defeat",
+      "actions": 94,
+      "maxDecisionMs": 0.07016599999997197
+    },
+    {
+      "tier": "standard",
+      "seed": 9,
+      "first": "enemy",
+      "result": "defeat",
+      "actions": 86,
+      "maxDecisionMs": 0.0574579999999969
+    },
+    {
+      "tier": "standard",
+      "seed": 10,
+      "first": "home",
+      "result": "victory",
+      "actions": 87,
+      "maxDecisionMs": 0.07179200000018682
+    },
+    {
+      "tier": "standard",
+      "seed": 10,
+      "first": "enemy",
+      "result": "victory",
+      "actions": 100,
+      "maxDecisionMs": 0.08766599999989921
+    },
+    {
+      "tier": "standard",
+      "seed": 11,
+      "first": "home",
+      "result": "defeat",
+      "actions": 95,
+      "maxDecisionMs": 0.058958999999958905
+    },
+    {
+      "tier": "standard",
+      "seed": 11,
+      "first": "enemy",
+      "result": "defeat",
+      "actions": 96,
+      "maxDecisionMs": 0.14208300000018426
+    },
+    {
+      "tier": "standard",
+      "seed": 12,
+      "first": "home",
+      "result": "victory",
+      "actions": 81,
+      "maxDecisionMs": 0.07733299999995324
+    },
+    {
+      "tier": "standard",
+      "seed": 12,
+      "first": "enemy",
+      "result": "defeat",
+      "actions": 79,
+      "maxDecisionMs": 0.09595899999999347
+    },
+    {
+      "tier": "standard",
+      "seed": 13,
+      "first": "home",
+      "result": "defeat",
+      "actions": 67,
+      "maxDecisionMs": 0.20020900000008623
+    },
+    {
+      "tier": "standard",
+      "seed": 13,
+      "first": "enemy",
+      "result": "defeat",
+      "actions": 50,
+      "maxDecisionMs": 0.35370799999986957
+    },
+    {
+      "tier": "standard",
+      "seed": 14,
+      "first": "home",
+      "result": "victory",
+      "actions": 62,
+      "maxDecisionMs": 0.024667000000135886
+    },
+    {
+      "tier": "standard",
+      "seed": 14,
+      "first": "enemy",
+      "result": "victory",
+      "actions": 122,
+      "maxDecisionMs": 0.41533400000002985
+    },
+    {
+      "tier": "standard",
+      "seed": 15,
+      "first": "home",
+      "result": "victory",
+      "actions": 108,
+      "maxDecisionMs": 0.25683299999991505
+    },
+    {
+      "tier": "standard",
+      "seed": 15,
+      "first": "enemy",
+      "result": "victory",
+      "actions": 102,
+      "maxDecisionMs": 0.08495799999991505
+    },
+    {
+      "tier": "standard",
+      "seed": 16,
+      "first": "home",
+      "result": "defeat",
+      "actions": 63,
+      "maxDecisionMs": 0.05650000000014188
+    },
+    {
+      "tier": "standard",
+      "seed": 16,
+      "first": "enemy",
+      "result": "defeat",
+      "actions": 106,
+      "maxDecisionMs": 0.111458999999968
+    },
+    {
+      "tier": "veteran",
+      "seed": 1,
+      "first": "home",
+      "result": "defeat",
+      "actions": 97,
+      "maxDecisionMs": 120.00312499999973
+    },
+    {
+      "tier": "veteran",
+      "seed": 1,
+      "first": "enemy",
+      "result": "victory",
+      "actions": 110,
+      "maxDecisionMs": 51.064542000000074
+    },
+    {
+      "tier": "veteran",
+      "seed": 2,
+      "first": "home",
+      "result": "defeat",
+      "actions": 124,
+      "maxDecisionMs": 211.40479199999982
+    },
+    {
+      "tier": "veteran",
+      "seed": 2,
+      "first": "enemy",
+      "result": "defeat",
+      "actions": 79,
+      "maxDecisionMs": 328.53020800000013
+    },
+    {
+      "tier": "veteran",
+      "seed": 3,
+      "first": "home",
+      "result": "defeat",
+      "actions": 103,
+      "maxDecisionMs": 186.27241700000013
+    },
+    {
+      "tier": "veteran",
+      "seed": 3,
+      "first": "enemy",
+      "result": "victory",
+      "actions": 124,
+      "maxDecisionMs": 164.14891700000044
+    },
+    {
+      "tier": "veteran",
+      "seed": 4,
+      "first": "home",
+      "result": "victory",
+      "actions": 72,
+      "maxDecisionMs": 181.15937500000018
+    },
+    {
+      "tier": "veteran",
+      "seed": 4,
+      "first": "enemy",
+      "result": "victory",
+      "actions": 76,
+      "maxDecisionMs": 170.58279199999924
+    },
+    {
+      "tier": "veteran",
+      "seed": 5,
+      "first": "home",
+      "result": "victory",
+      "actions": 88,
+      "maxDecisionMs": 272.92933300000004
+    },
+    {
+      "tier": "veteran",
+      "seed": 5,
+      "first": "enemy",
+      "result": "victory",
+      "actions": 87,
+      "maxDecisionMs": 187.89341699999932
+    },
+    {
+      "tier": "veteran",
+      "seed": 6,
+      "first": "home",
+      "result": "victory",
+      "actions": 80,
+      "maxDecisionMs": 154.99870799999917
+    },
+    {
+      "tier": "veteran",
+      "seed": 6,
+      "first": "enemy",
+      "result": "victory",
+      "actions": 81,
+      "maxDecisionMs": 93.5296670000007
+    },
+    {
+      "tier": "veteran",
+      "seed": 7,
+      "first": "home",
+      "result": "defeat",
+      "actions": 88,
+      "maxDecisionMs": 236.62362499999836
+    },
+    {
+      "tier": "veteran",
+      "seed": 7,
+      "first": "enemy",
+      "result": "defeat",
+      "actions": 115,
+      "maxDecisionMs": 362.72137499999917
+    },
+    {
+      "tier": "veteran",
+      "seed": 8,
+      "first": "home",
+      "result": "victory",
+      "actions": 95,
+      "maxDecisionMs": 186.72054099999878
+    },
+    {
+      "tier": "veteran",
+      "seed": 8,
+      "first": "enemy",
+      "result": "defeat",
+      "actions": 84,
+      "maxDecisionMs": 183.6008329999986
+    },
+    {
+      "tier": "veteran",
+      "seed": 9,
+      "first": "home",
+      "result": "defeat",
+      "actions": 94,
+      "maxDecisionMs": 312.68783399999666
+    },
+    {
+      "tier": "veteran",
+      "seed": 9,
+      "first": "enemy",
+      "result": "defeat",
+      "actions": 85,
+      "maxDecisionMs": 414.52800000000207
+    },
+    {
+      "tier": "veteran",
+      "seed": 10,
+      "first": "home",
+      "result": "victory",
+      "actions": 81,
+      "maxDecisionMs": 303.7589169999992
+    },
+    {
+      "tier": "veteran",
+      "seed": 10,
+      "first": "enemy",
+      "result": "victory",
+      "actions": 96,
+      "maxDecisionMs": 153.4799579999999
+    },
+    {
+      "tier": "veteran",
+      "seed": 11,
+      "first": "home",
+      "result": "defeat",
+      "actions": 85,
+      "maxDecisionMs": 432.3943330000002
+    },
+    {
+      "tier": "veteran",
+      "seed": 11,
+      "first": "enemy",
+      "result": "defeat",
+      "actions": 97,
+      "maxDecisionMs": 425.3146670000024
+    },
+    {
+      "tier": "veteran",
+      "seed": 12,
+      "first": "home",
+      "result": "defeat",
+      "actions": 136,
+      "maxDecisionMs": 535.9387499999975
+    },
+    {
+      "tier": "veteran",
+      "seed": 12,
+      "first": "enemy",
+      "result": "victory",
+      "actions": 123,
+      "maxDecisionMs": 108.02166600000055
+    },
+    {
+      "tier": "veteran",
+      "seed": 13,
+      "first": "home",
+      "result": "defeat",
+      "actions": 66,
+      "maxDecisionMs": 336.450582999998
+    },
+    {
+      "tier": "veteran",
+      "seed": 13,
+      "first": "enemy",
+      "result": "defeat",
+      "actions": 76,
+      "maxDecisionMs": 223.81116699999984
+    },
+    {
+      "tier": "veteran",
+      "seed": 14,
+      "first": "home",
+      "result": "victory",
+      "actions": 62,
+      "maxDecisionMs": 233.421792000001
+    },
+    {
+      "tier": "veteran",
+      "seed": 14,
+      "first": "enemy",
+      "result": "victory",
+      "actions": 127,
+      "maxDecisionMs": 490.239834
+    },
+    {
+      "tier": "veteran",
+      "seed": 15,
+      "first": "home",
+      "result": "victory",
+      "actions": 100,
+      "maxDecisionMs": 294.7307920000021
+    },
+    {
+      "tier": "veteran",
+      "seed": 15,
+      "first": "enemy",
+      "result": "victory",
+      "actions": 67,
+      "maxDecisionMs": 108.12483300000167
+    },
+    {
+      "tier": "veteran",
+      "seed": 16,
+      "first": "home",
+      "result": "defeat",
+      "actions": 76,
+      "maxDecisionMs": 375.2681669999947
+    },
+    {
+      "tier": "veteran",
+      "seed": 16,
+      "first": "enemy",
+      "result": "defeat",
+      "actions": 89,
+      "maxDecisionMs": 206.6912500000035
+    }
+  ],
+  "errors": [],
+  "summary": {
+    "novice": {
+      "n": 32,
+      "playerWins": 24,
+      "enemyWins": 8,
+      "draws": 0,
+      "maxDecisionMs": 4.380166999999972
+    },
+    "standard": {
+      "n": 32,
+      "playerWins": 15,
+      "enemyWins": 17,
+      "draws": 0,
+      "maxDecisionMs": 2.6145420000000286
+    },
+    "veteran": {
+      "n": 32,
+      "playerWins": 16,
+      "enemyWins": 16,
+      "draws": 0,
+      "maxDecisionMs": 535.9387499999975
+    }
+  }
+}
