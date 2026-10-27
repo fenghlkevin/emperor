@@ -1,0 +1,406 @@
+{
+  "tool": "built-in image_gen",
+  "status": "completed",
+  "bodyReference": "何穗式高挑修长、自然头肩躯干比例",
+  "identityNote": "成年人二维肖像演绎，非三维扫描；河北彩花三套使用已有面部照片参考。",
+  "items": [
+    {
+      "id": "japan-photo-thirteen-20261023-01",
+      "name": "明里紬",
+      "english": "Tsumugi Akari",
+      "title": "柳夏手毬",
+      "design": "standing relaxed, holding a small embroidered Japanese temari ball at waist with both hands. Willow green short-sleeved ro summer yukata with white small chrysanthemum motifs, ivory obi, bare feet",
+      "asset": "assets/beauties/random/番邦女子/日本女子-明里紬-柳夏手毬-体态-v2.png",
+      "prompt": "Use case: photorealistic-natural. Asset: one isolated full-body adult Japanese woman, realistic historical game costume fashion photograph, portrait 2:3 PNG with TRUE transparent alpha. No environment, floor, cast shadow, glow, matte, text or watermarks. Grown adult tall slim body silhouette inspired by fashion model He Sui: small proportionate head, natural broad shoulders and long neck, normally sized ribcage, long torso and graceful long lean legs, harmonious standing equivalent 8 heads tall; NOT He Sui's face. Do not shrink shoulders, torso, waist or pelvis. Level 85mm full-body camera, no wide angle or foreshortening. Entire figure with ornaments, prop, garment, both feet and all toes enclosed inside frame with 5% margin. Exactly two anatomically coherent arms, hands with five fingers each, two legs with correct knee/ankle orientations and feet with five natural toes. Believable center of gravity, natural contact and correct grip. Distinctive JAPANESE lightweight summer clothing, breathable cotton/linen/silk, fully opaque and tasteful, no socks. Accessories: ornate but delicate kanzashi, earrings, fine necklace, bracelets and obijime/obidome/netsuke appropriate to garment. Nonsexual fully clothed portrait. Preserve distinct facial likeness of the named adult performer, natural skin and gentle expressive face. Named adult subject: Tsumugi Akari. Outfit and pose: standing relaxed, holding a small embroidered Japanese temari ball at waist with both hands. Willow green short-sleeved ro summer yukata with white small chrysanthemum motifs, ivory obi, bare feet.",
+      "birthDate": "1998-03-31",
+      "profileSource": "https://zh.wikipedia.org/wiki/明里紬",
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a16615-cc42-7e81-aa4f-b849b888d820/exec-4becd424-1dd5-4911-ab8c-576c32c7aa3b.png",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentFraction": 0.7589,
+        "borderPixelsAbove20": 0
+      },
+      "assetSha256": "78d1cebc6ac47486c3114c53d768063de14181fa5e48960b1151584cfc01cf89",
+      "previousAsset": "assets/beauties/random/番邦女子/日本女子-明里紬-柳夏手毬.png",
+      "previousSourcePath": "/Users/fengheliang/.codex/generated_images/01a16615-cc42-7e81-aa4f-b849b888d820/exec-92bd33de-43c4-4189-a6c4-34ea6f6d94ed.png",
+      "artworkRevision": "docs/art/japan-thirteen-body-rework-2026-10-23.json"
+    },
+    {
+      "id": "japan-photo-thirteen-20261023-02",
+      "name": "枫可怜",
+      "english": "Karen Kaede",
+      "title": "藤紫团扇",
+      "design": "standing lightly turned with both feet grounded holding a Japanese oval uchiwa fan by its wooden handle at one shoulder. Lavender sleeveless summer kosode-style wrap dress with opaque lining and a narrow cream obi, subtle wisteria pattern, wooden geta on bare feet",
+      "asset": "assets/beauties/random/番邦女子/日本女子-枫可怜-藤紫团扇-体态-v2.png",
+      "prompt": "Use case: photorealistic-natural. Asset: one isolated full-body adult Japanese woman, realistic historical game costume fashion photograph, portrait 2:3 PNG with TRUE transparent alpha. No environment, floor, cast shadow, glow, matte, text or watermarks. Grown adult tall slim body silhouette inspired by fashion model He Sui: small proportionate head, natural broad shoulders and long neck, normally sized ribcage, long torso and graceful long lean legs, harmonious standing equivalent 8 heads tall; NOT He Sui's face. Do not shrink shoulders, torso, waist or pelvis. Level 85mm full-body camera, no wide angle or foreshortening. Entire figure with ornaments, prop, garment, both feet and all toes enclosed inside frame with 5% margin. Exactly two anatomically coherent arms, hands with five fingers each, two legs with correct knee/ankle orientations and feet with five natural toes. Believable center of gravity, natural contact and correct grip. Distinctive JAPANESE lightweight summer clothing, breathable cotton/linen/silk, fully opaque and tasteful, no socks. Accessories: ornate but delicate kanzashi, earrings, fine necklace, bracelets and obijime/obidome/netsuke appropriate to garment. Nonsexual fully clothed portrait. Preserve distinct facial likeness of the named adult performer, natural skin and gentle expressive face. Named adult subject: Karen Kaede. Outfit and pose: standing lightly turned with both feet grounded holding a Japanese oval uchiwa fan by its wooden handle at one shoulder. Lavender sleeveless summer kosode-style wrap dress with opaque lining and a narrow cream obi, subtle wisteria pattern, wooden geta on bare feet.",
+      "birthDate": "1999-08-25",
+      "profileSource": "https://db.avjoho.com/楓カレン/",
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a16615-cc42-7e81-aa4f-b849b888d820/exec-e3703387-3a60-4a27-b196-14b34d23ad41.png",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentFraction": 0.7517,
+        "borderPixelsAbove20": 0
+      },
+      "assetSha256": "c1d76cf13a2e4171981cb5562be1df3b2e706ddca9d12e669e39a2efcaabf0e2",
+      "previousAsset": "assets/beauties/random/番邦女子/日本女子-枫可怜-藤紫团扇.png",
+      "previousSourcePath": "/Users/fengheliang/.codex/generated_images/01a16615-cc42-7e81-aa4f-b849b888d820/exec-b88dfa3e-7cb6-408c-99e5-053740214846.png",
+      "artworkRevision": "docs/art/japan-thirteen-body-rework-2026-10-23.json"
+    },
+    {
+      "id": "japan-photo-thirteen-20261023-03",
+      "name": "山岸逢花",
+      "english": "Aika Yamagishi",
+      "title": "浅杏竹笛",
+      "design": "seated upright on a small low wooden stool holding a short bamboo flute horizontally across lap in both hands. Apricot summer kosode with airy elbow-length sleeves and ivory pleated hakama, one bare foot slightly forward and the other planted",
+      "asset": "assets/beauties/random/番邦女子/日本女子-山岸逢花-浅杏竹笛-体态-v2.png",
+      "prompt": "Use case: photorealistic-natural. Asset: one isolated full-body adult Japanese woman, realistic historical game costume fashion photograph, portrait 2:3 PNG with TRUE transparent alpha. No environment, floor, cast shadow, glow, matte, text or watermarks. Grown adult tall slim body silhouette inspired by fashion model He Sui: small proportionate head, natural broad shoulders and long neck, normally sized ribcage, long torso and graceful long lean legs, harmonious standing equivalent 8 heads tall; NOT He Sui's face. Do not shrink shoulders, torso, waist or pelvis. Level 85mm full-body camera, no wide angle or foreshortening. Entire figure with ornaments, prop, garment, both feet and all toes enclosed inside frame with 5% margin. Exactly two anatomically coherent arms, hands with five fingers each, two legs with correct knee/ankle orientations and feet with five natural toes. Believable center of gravity, natural contact and correct grip. Distinctive JAPANESE lightweight summer clothing, breathable cotton/linen/silk, fully opaque and tasteful, no socks. Accessories: ornate but delicate kanzashi, earrings, fine necklace, bracelets and obijime/obidome/netsuke appropriate to garment. Nonsexual fully clothed portrait. Preserve distinct facial likeness of the named adult performer, natural skin and gentle expressive face. Named adult subject: Aika Yamagishi. Outfit and pose: seated upright on a small low wooden stool holding a short bamboo flute horizontally across lap in both hands. Apricot summer kosode with airy elbow-length sleeves and ivory pleated hakama, one bare foot slightly forward and the other planted.",
+      "birthDate": "1992-11-30",
+      "profileSource": "https://thetv.jp/person/2000051293/",
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a16615-cc42-7e81-aa4f-b849b888d820/exec-b24a9df6-b568-4731-bb99-b69a799dc5b7.png",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentFraction": 0.6617,
+        "borderPixelsAbove20": 0
+      },
+      "assetSha256": "40fde54b8e619ec95de84454baddced0c8d623f67e61868dd0ad07fce5a78bdb",
+      "previousAsset": "assets/beauties/random/番邦女子/日本女子-山岸逢花-浅杏竹笛.png",
+      "previousSourcePath": "/Users/fengheliang/.codex/generated_images/01a16615-cc42-7e81-aa4f-b849b888d820/exec-d02c09a7-4590-4a62-a2d1-2fb290cba730.png",
+      "artworkRevision": "docs/art/japan-thirteen-body-rework-2026-10-23.json"
+    },
+    {
+      "id": "japan-photo-thirteen-20261023-04",
+      "name": "楪可怜",
+      "english": "Karen Yuzuriha",
+      "title": "桃霞花笺",
+      "design": "standing holding a small stack of floral washi paper in one hand and a slender calligraphy brush in the other, both around waist. Pale coral-pink cotton yukata with subtle morning glory motifs, turquoise obi, bare feet",
+      "asset": "assets/beauties/random/番邦女子/日本女子-楪可怜-桃霞花笺-体态-v2.png",
+      "prompt": "Use case: photorealistic-natural. Asset: one isolated full-body adult Japanese woman, realistic historical game costume fashion photograph, portrait 2:3 PNG with TRUE transparent alpha. No environment, floor, cast shadow, glow, matte, text or watermarks. Grown adult tall slim body silhouette inspired by fashion model He Sui: small proportionate head, natural broad shoulders and long neck, normally sized ribcage, long torso and graceful long lean legs, harmonious standing equivalent 8 heads tall; NOT He Sui's face. Do not shrink shoulders, torso, waist or pelvis. Level 85mm full-body camera, no wide angle or foreshortening. Entire figure with ornaments, prop, garment, both feet and all toes enclosed inside frame with 5% margin. Exactly two anatomically coherent arms, hands with five fingers each, two legs with correct knee/ankle orientations and feet with five natural toes. Believable center of gravity, natural contact and correct grip. Distinctive JAPANESE lightweight summer clothing, breathable cotton/linen/silk, fully opaque and tasteful, no socks. Accessories: ornate but delicate kanzashi, earrings, fine necklace, bracelets and obijime/obidome/netsuke appropriate to garment. Nonsexual fully clothed portrait. Preserve distinct facial likeness of the named adult performer, natural skin and gentle expressive face. Named adult subject: Karen Yuzuriha. Outfit and pose: standing holding a small stack of floral washi paper in one hand and a slender calligraphy brush in the other, both around waist. Pale coral-pink cotton yukata with subtle morning glory motifs, turquoise obi, bare feet.",
+      "birthDate": "2001-03-28",
+      "profileSource": "https://www.kinenote.com/main/public/cinema/person.aspx?person_id=390221",
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a16615-cc42-7e81-aa4f-b849b888d820/exec-5c6429f3-716a-41de-8ac6-ac838358dd62.png",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentFraction": 0.7601,
+        "borderPixelsAbove20": 0
+      },
+      "assetSha256": "7bec0a099d6ff345a69b375b54c2060bde4419bc3cd1c27b7a0192eccb13b6f6",
+      "previousAsset": "assets/beauties/random/番邦女子/日本女子-楪可怜-桃霞花笺.png",
+      "previousSourcePath": "/Users/fengheliang/.codex/generated_images/01a16615-cc42-7e81-aa4f-b849b888d820/exec-924e99ad-0afe-42a1-9f90-895c485fbac8.png",
+      "artworkRevision": "docs/art/japan-thirteen-body-rework-2026-10-23.json"
+    },
+    {
+      "id": "japan-photo-thirteen-20261023-05",
+      "name": "七泽美亚",
+      "english": "Mia Nanasawa",
+      "title": "水蓝风车",
+      "design": "standing relaxed holding a single small bamboo pinwheel at chest level, other hand resting naturally at side. Powder-blue Japanese summer jinbei short-sleeved wrap top and loose matching knee-length shorts with white wave trim, bare feet",
+      "asset": "assets/beauties/random/番邦女子/日本女子-七泽美亚-水蓝风车-体态-v2.png",
+      "prompt": "Use case: photorealistic-natural. Asset: one isolated full-body adult Japanese woman, realistic historical game costume fashion photograph, portrait 2:3 PNG with TRUE transparent alpha. No environment, floor, cast shadow, glow, matte, text or watermarks. Grown adult tall slim body silhouette inspired by fashion model He Sui: small proportionate head, natural broad shoulders and long neck, normally sized ribcage, long torso and graceful long lean legs, harmonious standing equivalent 8 heads tall; NOT He Sui's face. Do not shrink shoulders, torso, waist or pelvis. Level 85mm full-body camera, no wide angle or foreshortening. Entire figure with ornaments, prop, garment, both feet and all toes enclosed inside frame with 5% margin. Exactly two anatomically coherent arms, hands with five fingers each, two legs with correct knee/ankle orientations and feet with five natural toes. Believable center of gravity, natural contact and correct grip. Distinctive JAPANESE lightweight summer clothing, breathable cotton/linen/silk, fully opaque and tasteful, no socks. Accessories: ornate but delicate kanzashi, earrings, fine necklace, bracelets and obijime/obidome/netsuke appropriate to garment. Nonsexual fully clothed portrait. Preserve distinct facial likeness of the named adult performer, natural skin and gentle expressive face. Named adult subject: Mia Nanasawa. Outfit and pose: standing relaxed holding a single small bamboo pinwheel at chest level, other hand resting naturally at side. Powder-blue Japanese summer jinbei short-sleeved wrap top and loose matching knee-length shorts with white wave trim, bare feet.",
+      "birthDate": "1998-12-13",
+      "profileSource": "https://en.wikipedia.org/wiki/Mia_Nanasawa",
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a16615-cc42-7e81-aa4f-b849b888d820/exec-7bc76183-d637-4c71-9c93-da2101748dcc.png",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentFraction": 0.7739,
+        "borderPixelsAbove20": 0
+      },
+      "assetSha256": "8a1ebda5c24993a701b3b91895aeec5f04aa811f6f8b3fb61babf09d2ac557a1",
+      "previousAsset": "assets/beauties/random/番邦女子/日本女子-七泽美亚-水蓝风车.png",
+      "previousSourcePath": "/Users/fengheliang/.codex/generated_images/01a16615-cc42-7e81-aa4f-b849b888d820/exec-5db65cb9-69c4-476c-aa92-2d42208bf2c5.png",
+      "artworkRevision": "docs/art/japan-thirteen-body-rework-2026-10-23.json"
+    },
+    {
+      "id": "japan-photo-thirteen-20261023-06",
+      "name": "伊藤舞雪",
+      "english": "Mayuki Ito",
+      "title": "绯夏漆盒",
+      "design": "seated sideways on a low stool, legs naturally together with both feet visible, holding a small closed red lacquer cosmetic box in both hands. Red-and-ivory light silk summer kosode and long cream wrap skirt, gold obi, bare feet",
+      "asset": "assets/beauties/random/番邦女子/日本女子-伊藤舞雪-绯夏漆盒-体态-v2.png",
+      "prompt": "Use case: photorealistic-natural. Asset: one isolated full-body adult Japanese woman, realistic historical game costume fashion photograph, portrait 2:3 PNG with TRUE transparent alpha. No environment, floor, cast shadow, glow, matte, text or watermarks. Grown adult tall slim body silhouette inspired by fashion model He Sui: small proportionate head, natural broad shoulders and long neck, normally sized ribcage, long torso and graceful long lean legs, harmonious standing equivalent 8 heads tall; NOT He Sui's face. Do not shrink shoulders, torso, waist or pelvis. Level 85mm full-body camera, no wide angle or foreshortening. Entire figure with ornaments, prop, garment, both feet and all toes enclosed inside frame with 5% margin. Exactly two anatomically coherent arms, hands with five fingers each, two legs with correct knee/ankle orientations and feet with five natural toes. Believable center of gravity, natural contact and correct grip. Distinctive JAPANESE lightweight summer clothing, breathable cotton/linen/silk, fully opaque and tasteful, no socks. Accessories: ornate but delicate kanzashi, earrings, fine necklace, bracelets and obijime/obidome/netsuke appropriate to garment. Nonsexual fully clothed portrait. Preserve distinct facial likeness of the named adult performer, natural skin and gentle expressive face. Named adult subject: Mayuki Ito. Outfit and pose: seated sideways on a low stool, legs naturally together with both feet visible, holding a small closed red lacquer cosmetic box in both hands. Red-and-ivory light silk summer kosode and long cream wrap skirt, gold obi, bare feet.",
+      "birthDate": "1997-11-30",
+      "profileSource": "https://official.nax-pro.com/model/56",
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a16615-cc42-7e81-aa4f-b849b888d820/exec-e7e6607b-4976-4606-b416-d9161a842080.png",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentFraction": 0.6386,
+        "borderPixelsAbove20": 0
+      },
+      "assetSha256": "5acdb3f636a916d3ada7350841f31e15337523a8f65b2a60cb30e5bfc16d701b",
+      "previousAsset": "assets/beauties/random/番邦女子/日本女子-伊藤舞雪-绯夏漆盒.png",
+      "previousSourcePath": "/Users/fengheliang/.codex/generated_images/01a16615-cc42-7e81-aa4f-b849b888d820/exec-d49f3211-1cf5-430b-85d4-5e0e86008635.png",
+      "artworkRevision": "docs/art/japan-thirteen-body-rework-2026-10-23.json"
+    },
+    {
+      "id": "japan-photo-thirteen-20261023-07",
+      "name": "凉森玲梦",
+      "english": "Remu Suzumori",
+      "title": "青荷玉壶",
+      "design": "standing relaxed holding a small celadon ceramic water pitcher at waist with both hands. Sage-green linen Japanese summer yukata with cream reed patterns, dark indigo narrow obi, wooden geta on bare feet",
+      "asset": "assets/beauties/random/番邦女子/日本女子-凉森玲梦-青荷玉壶-体态-v2.png",
+      "prompt": "Use case: photorealistic-natural. Asset: one isolated full-body adult Japanese woman, realistic historical game costume fashion photograph, portrait 2:3 PNG with TRUE transparent alpha. No environment, floor, cast shadow, glow, matte, text or watermarks. Grown adult tall slim body silhouette inspired by fashion model He Sui: small proportionate head, natural broad shoulders and long neck, normally sized ribcage, long torso and graceful long lean legs, harmonious standing equivalent 8 heads tall; NOT He Sui's face. Do not shrink shoulders, torso, waist or pelvis. Level 85mm full-body camera, no wide angle or foreshortening. Entire figure with ornaments, prop, garment, both feet and all toes enclosed inside frame with 5% margin. Exactly two anatomically coherent arms, hands with five fingers each, two legs with correct knee/ankle orientations and feet with five natural toes. Believable center of gravity, natural contact and correct grip. Distinctive JAPANESE lightweight summer clothing, breathable cotton/linen/silk, fully opaque and tasteful, no socks. Accessories: ornate but delicate kanzashi, earrings, fine necklace, bracelets and obijime/obidome/netsuke appropriate to garment. Nonsexual fully clothed portrait. Preserve distinct facial likeness of the named adult performer, natural skin and gentle expressive face. Named adult subject: Remu Suzumori. Outfit and pose: standing relaxed holding a small celadon ceramic water pitcher at waist with both hands. Sage-green linen Japanese summer yukata with cream reed patterns, dark indigo narrow obi, wooden geta on bare feet.",
+      "birthDate": "1997-12-03",
+      "profileSource": "https://www.theidolbase.com/actress/suzumori-remu",
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a16615-cc42-7e81-aa4f-b849b888d820/exec-fa2b3d6d-934f-4084-a2c3-f828d7dc7daa.png",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentFraction": 0.7466,
+        "borderPixelsAbove20": 0
+      },
+      "assetSha256": "6817b67aac8a9af26e3c5985bc9ca42aec112eff3a51689193cc4ab8841af9c2",
+      "previousAsset": "assets/beauties/random/番邦女子/日本女子-凉森玲梦-青荷玉壶.png",
+      "previousSourcePath": "/Users/fengheliang/.codex/generated_images/01a16615-cc42-7e81-aa4f-b849b888d820/exec-ebbada60-74b3-40e7-bbb1-4a42fd67d960.png",
+      "artworkRevision": "docs/art/japan-thirteen-body-rework-2026-10-23.json"
+    },
+    {
+      "id": "japan-photo-thirteen-20261023-08",
+      "name": "松下纱荣子",
+      "english": "Saeko Matsushita",
+      "title": "墨夏香囊",
+      "design": "standing with a tiny embroidered incense pouch dangling from one hand while the other lightly touches its silk cord at waist. Black-and-ivory striped Japanese summer yukata with pale gold obi, elegant mature expression, bare feet",
+      "asset": "assets/beauties/random/番邦女子/日本女子-松下纱荣子-墨夏香囊-体态-v2.png",
+      "prompt": "Use case: photorealistic-natural. Asset: one isolated full-body adult Japanese woman, realistic historical game costume fashion photograph, portrait 2:3 PNG with TRUE transparent alpha. No environment, floor, cast shadow, glow, matte, text or watermarks. Grown adult tall slim body silhouette inspired by fashion model He Sui: small proportionate head, natural broad shoulders and long neck, normally sized ribcage, long torso and graceful long lean legs, harmonious standing equivalent 8 heads tall; NOT He Sui's face. Do not shrink shoulders, torso, waist or pelvis. Level 85mm full-body camera, no wide angle or foreshortening. Entire figure with ornaments, prop, garment, both feet and all toes enclosed inside frame with 5% margin. Exactly two anatomically coherent arms, hands with five fingers each, two legs with correct knee/ankle orientations and feet with five natural toes. Believable center of gravity, natural contact and correct grip. Distinctive JAPANESE lightweight summer clothing, breathable cotton/linen/silk, fully opaque and tasteful, no socks. Accessories: ornate but delicate kanzashi, earrings, fine necklace, bracelets and obijime/obidome/netsuke appropriate to garment. Nonsexual fully clothed portrait. Preserve distinct facial likeness of the named adult performer, natural skin and gentle expressive face. Named adult subject: Saeko Matsushita. Outfit and pose: standing with a tiny embroidered incense pouch dangling from one hand while the other lightly touches its silk cord at waist. Black-and-ivory striped Japanese summer yukata with pale gold obi, elegant mature expression, bare feet.",
+      "birthDate": "1990-09-30",
+      "profileSource": "https://zh.wikipedia.org/wiki/松下紗榮子",
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a16615-cc42-7e81-aa4f-b849b888d820/exec-1ee7e4a4-c36f-4098-ae7c-3e435e094c2e.png",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentFraction": 0.7686,
+        "borderPixelsAbove20": 0
+      },
+      "assetSha256": "9449f226a9044e0fa577627673a672284c7779fba8eb82859d73c833e84a8fde",
+      "previousAsset": "assets/beauties/random/番邦女子/日本女子-松下纱荣子-墨夏香囊.png",
+      "previousSourcePath": "/Users/fengheliang/.codex/generated_images/01a16615-cc42-7e81-aa4f-b849b888d820/exec-f8ec52f9-89b2-484a-884a-78d3831fbcc1.png",
+      "artworkRevision": "docs/art/japan-thirteen-body-rework-2026-10-23.json"
+    },
+    {
+      "id": "japan-photo-thirteen-20261023-09",
+      "name": "希岛爱理",
+      "english": "Airi Kijima",
+      "title": "藕绡琵琶",
+      "design": "seated upright on a small stool with a small Japanese biwa lute resting securely on thigh, one hand on neck and other holding a plectrum. Dusty-rose lightweight summer kosode with elbow sleeves and ivory long hakama, bare feet",
+      "asset": "assets/beauties/random/番邦女子/日本女子-希岛爱理-藕绡琵琶-体态-v2.png",
+      "prompt": "Use case: photorealistic-natural. Asset: one isolated full-body adult Japanese woman, realistic historical game costume fashion photograph, portrait 2:3 PNG with TRUE transparent alpha. No environment, floor, cast shadow, glow, matte, text or watermarks. Grown adult tall slim body silhouette inspired by fashion model He Sui: small proportionate head, natural broad shoulders and long neck, normally sized ribcage, long torso and graceful long lean legs, harmonious standing equivalent 8 heads tall; NOT He Sui's face. Do not shrink shoulders, torso, waist or pelvis. Level 85mm full-body camera, no wide angle or foreshortening. Entire figure with ornaments, prop, garment, both feet and all toes enclosed inside frame with 5% margin. Exactly two anatomically coherent arms, hands with five fingers each, two legs with correct knee/ankle orientations and feet with five natural toes. Believable center of gravity, natural contact and correct grip. Distinctive JAPANESE lightweight summer clothing, breathable cotton/linen/silk, fully opaque and tasteful, no socks. Accessories: ornate but delicate kanzashi, earrings, fine necklace, bracelets and obijime/obidome/netsuke appropriate to garment. Nonsexual fully clothed portrait. Preserve distinct facial likeness of the named adult performer, natural skin and gentle expressive face. Named adult subject: Airi Kijima. Outfit and pose: seated upright on a small stool with a small Japanese biwa lute resting securely on thigh, one hand on neck and other holding a plectrum. Dusty-rose lightweight summer kosode with elbow sleeves and ivory long hakama, bare feet.",
+      "birthDate": "1988-12-24",
+      "profileSource": "https://www.duo-official.com/models/airi-kijima/",
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a16615-cc42-7e81-aa4f-b849b888d820/exec-6f49b2cd-f588-4cf8-afc3-71e62c747749.png",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentFraction": 0.5883,
+        "borderPixelsAbove20": 0
+      },
+      "assetSha256": "395a1b93433feb309f5619738e04ba24385084fc5a2d25e01a7dac94c5934cb5",
+      "previousAsset": "assets/beauties/random/番邦女子/日本女子-希岛爱理-藕绡琵琶.png",
+      "previousSourcePath": "/Users/fengheliang/.codex/generated_images/01a16615-cc42-7e81-aa4f-b849b888d820/exec-2769a197-d669-4323-bc06-42143a993733.png",
+      "artworkRevision": "docs/art/japan-thirteen-body-rework-2026-10-23.json"
+    },
+    {
+      "id": "japan-photo-thirteen-20261023-10",
+      "name": "濑户环奈",
+      "english": "Kanna Seto",
+      "title": "月白桔梗",
+      "design": "standing graceful relaxed pose holding a slim woven basket with two bellflower stems at waist in both hands. Ivory cotton summer yukata with pale blue bellflower pattern, sky-blue obi, bare feet",
+      "asset": "assets/beauties/random/番邦女子/日本女子-濑户环奈-月白桔梗-体态-v2.png",
+      "prompt": "Use case: photorealistic-natural. Asset: one isolated full-body adult Japanese woman, realistic historical game costume fashion photograph, portrait 2:3 PNG with TRUE transparent alpha. No environment, floor, cast shadow, glow, matte, text or watermarks. Grown adult tall slim body silhouette inspired by fashion model He Sui: small proportionate head, natural broad shoulders and long neck, normally sized ribcage, long torso and graceful long lean legs, harmonious standing equivalent 8 heads tall; NOT He Sui's face. Do not shrink shoulders, torso, waist or pelvis. Level 85mm full-body camera, no wide angle or foreshortening. Entire figure with ornaments, prop, garment, both feet and all toes enclosed inside frame with 5% margin. Exactly two anatomically coherent arms, hands with five fingers each, two legs with correct knee/ankle orientations and feet with five natural toes. Believable center of gravity, natural contact and correct grip. Distinctive JAPANESE lightweight summer clothing, breathable cotton/linen/silk, fully opaque and tasteful, no socks. Accessories: ornate but delicate kanzashi, earrings, fine necklace, bracelets and obijime/obidome/netsuke appropriate to garment. Nonsexual fully clothed portrait. Preserve distinct facial likeness of the named adult performer, natural skin and gentle expressive face. Named adult subject: Kanna Seto. Outfit and pose: standing graceful relaxed pose holding a slim woven basket with two bellflower stems at waist in both hands. Ivory cotton summer yukata with pale blue bellflower pattern, sky-blue obi, bare feet.",
+      "birthDate": "2004-05-10",
+      "profileSource": "https://jimbutsu.jitenon.jp/jimbutsu/p163126.php",
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a16615-cc42-7e81-aa4f-b849b888d820/exec-f534c307-2021-4dba-8c68-4ec536023bff.png",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentFraction": 0.7637,
+        "borderPixelsAbove20": 0
+      },
+      "assetSha256": "bb8e6e0ac4dd08d7c88d0f1345438785ed86c4357efdc43e3651df2f93160134",
+      "previousAsset": "assets/beauties/random/番邦女子/日本女子-濑户环奈-月白桔梗.png",
+      "previousSourcePath": "/Users/fengheliang/.codex/generated_images/01a16615-cc42-7e81-aa4f-b849b888d820/exec-c8d3b1ed-829b-4e49-91df-76436b50d85d.png",
+      "artworkRevision": "docs/art/japan-thirteen-body-rework-2026-10-23.json"
+    },
+    {
+      "id": "japan-photo-thirteen-20261023-11",
+      "name": "河北彩花",
+      "english": "Saika Kawakita",
+      "title": "浅金香篆",
+      "design": "standing balanced holding a small gold hanging incense burner by a short rigid handle in right hand at hip, left hand gently supporting its base. Pale gold and white sleeveless Japanese summer kosode-style wrap dress with opaque lining and turquoise obi, delicate blue floral hairpins, bare feet",
+      "asset": "assets/beauties/random/番邦女子/日本女子-河北彩花-浅金香篆-体态-v2.png",
+      "prompt": "Create a new full-body costume portrait using IMAGE 1 only for adult Saika Kawakita facial identity, and IMAGE 2 only for tall slim adult body proportions (not face, clothing or background). Preserve Image 1 eye, nose, lip and jaw likeness across all variants. Use case: photorealistic-natural. Asset: one isolated full-body adult Japanese woman, realistic historical game costume fashion photograph, portrait 2:3 PNG with TRUE transparent alpha. No environment, floor, cast shadow, glow, matte, text or watermarks. Grown adult tall slim body silhouette inspired by fashion model He Sui: small proportionate head, natural broad shoulders and long neck, normally sized ribcage, long torso and graceful long lean legs, harmonious standing equivalent 8 heads tall; NOT He Sui's face. Do not shrink shoulders, torso, waist or pelvis. Level 85mm full-body camera, no wide angle or foreshortening. Entire figure with ornaments, prop, garment, both feet and all toes enclosed inside frame with 5% margin. Exactly two anatomically coherent arms, hands with five fingers each, two legs with correct knee/ankle orientations and feet with five natural toes. Believable center of gravity, natural contact and correct grip. Distinctive JAPANESE lightweight summer clothing, breathable cotton/linen/silk, fully opaque and tasteful, no socks. Accessories: ornate but delicate kanzashi, earrings, fine necklace, bracelets and obijime/obidome/netsuke appropriate to garment. Nonsexual fully clothed portrait. Preserve distinct facial likeness of the named adult performer, natural skin and gentle expressive face. Named adult subject: Saika Kawakita. Outfit and pose: standing balanced holding a small gold hanging incense burner by a short rigid handle in right hand at hip, left hand gently supporting its base. Pale gold and white sleeveless Japanese summer kosode-style wrap dress with opaque lining and turquoise obi, delicate blue floral hairpins, bare feet.",
+      "birthDate": "1999-04-23",
+      "referencedImagePaths": [
+        "assets/beauties/references/japan-ten-20261022/kawakita-saika.jpg",
+        "assets/beauties/references/he-sui-calves-20261022/runway-shape-reference.jpg"
+      ],
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a16615-cc42-7e81-aa4f-b849b888d820/exec-a663e8f5-be69-4c38-b323-72dea175affc.png",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentFraction": 0.729,
+        "borderPixelsAbove20": 0
+      },
+      "assetSha256": "8202a64d40296a67606ed90ea58a05b338bbb26003922daddbbf9925e76e822d",
+      "previousAsset": "assets/beauties/random/番邦女子/日本女子-河北彩花-浅金香篆.png",
+      "previousSourcePath": "/Users/fengheliang/.codex/generated_images/01a16615-cc42-7e81-aa4f-b849b888d820/exec-ba26357c-c5cf-45f0-b652-98639a1c39a1.png",
+      "artworkRevision": "docs/art/japan-thirteen-body-rework-2026-10-23.json"
+    },
+    {
+      "id": "japan-photo-thirteen-20261023-12",
+      "name": "河北彩花",
+      "english": "Saika Kawakita",
+      "title": "碧绡筝韵",
+      "design": "seated upright on a small low wooden stool beside a short Japanese koto zither supported securely on two low wooden trestles; two hands naturally placed over strings. Celadon short-sleeved light summer kosode and ivory pleated hakama, pearl kanzashi, jade earrings, bare feet fully visible",
+      "asset": "assets/beauties/random/番邦女子/日本女子-河北彩花-碧绡筝韵-体态-v2.png",
+      "prompt": "Create a new full-body costume portrait using IMAGE 1 only for adult Saika Kawakita facial identity, and IMAGE 2 only for tall slim adult body proportions (not face, clothing or background). Preserve Image 1 eye, nose, lip and jaw likeness across all variants. Use case: photorealistic-natural. Asset: one isolated full-body adult Japanese woman, realistic historical game costume fashion photograph, portrait 2:3 PNG with TRUE transparent alpha. No environment, floor, cast shadow, glow, matte, text or watermarks. Grown adult tall slim body silhouette inspired by fashion model He Sui: small proportionate head, natural broad shoulders and long neck, normally sized ribcage, long torso and graceful long lean legs, harmonious standing equivalent 8 heads tall; NOT He Sui's face. Do not shrink shoulders, torso, waist or pelvis. Level 85mm full-body camera, no wide angle or foreshortening. Entire figure with ornaments, prop, garment, both feet and all toes enclosed inside frame with 5% margin. Exactly two anatomically coherent arms, hands with five fingers each, two legs with correct knee/ankle orientations and feet with five natural toes. Believable center of gravity, natural contact and correct grip. Distinctive JAPANESE lightweight summer clothing, breathable cotton/linen/silk, fully opaque and tasteful, no socks. Accessories: ornate but delicate kanzashi, earrings, fine necklace, bracelets and obijime/obidome/netsuke appropriate to garment. Nonsexual fully clothed portrait. Preserve distinct facial likeness of the named adult performer, natural skin and gentle expressive face. Named adult subject: Saika Kawakita. Outfit and pose: seated upright on a small low wooden stool beside a short Japanese koto zither supported securely on two low wooden trestles; two hands naturally placed over strings. Celadon short-sleeved light summer kosode and ivory pleated hakama, pearl kanzashi, jade earrings, bare feet fully visible.",
+      "birthDate": "1999-04-23",
+      "referencedImagePaths": [
+        "assets/beauties/references/japan-ten-20261022/kawakita-saika.jpg",
+        "assets/beauties/references/he-sui-calves-20261022/runway-shape-reference.jpg"
+      ],
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a16615-cc42-7e81-aa4f-b849b888d820/exec-9e9fb25c-cc55-423f-ae49-224f7d0c85d9.png",
+      "supersededSourcePath": "/Users/fengheliang/.codex/generated_images/01a16615-cc42-7e81-aa4f-b849b888d820/exec-124cff99-5386-4db4-a6e7-bfa6324e38f2.png",
+      "revisionReason": "筝右端初稿裁切，重新缩放构图使人物、琴身、琴架完整入画。",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentFraction": 0.5401,
+        "borderPixelsAbove20": 0
+      },
+      "assetSha256": "4e9a41e979092ee1c6712fe2ace19533dca50e3eaa73ae94537abafaa4d47a35",
+      "revisionPrompt": "Keep face, clothing and body proportions; zoom out to include the entire koto, both trestles, stool, figure and both feet with clear transparent margins. No cropped ends, no background.",
+      "previousAsset": "assets/beauties/random/番邦女子/日本女子-河北彩花-碧绡筝韵.png",
+      "previousSourcePath": "/Users/fengheliang/.codex/generated_images/01a16615-cc42-7e81-aa4f-b849b888d820/exec-56564165-7592-4a2d-b04c-3adbc26cd04f.png",
+      "artworkRevision": "docs/art/japan-thirteen-body-rework-2026-10-23.json"
+    },
+    {
+      "id": "japan-photo-thirteen-20261023-13",
+      "name": "河北彩花",
+      "english": "Saika Kawakita",
+      "title": "绯绡双扇",
+      "design": "graceful grounded Japanese dance stance, both feet planted with one slightly forward, one open gold folding fan raised to shoulder and another lowered beside waist, natural elbows and hands. Coral and white morning-glory cotton summer yukata with a slim pale gold obi and pink kanzashi, bare feet",
+      "asset": "assets/beauties/random/番邦女子/日本女子-河北彩花-绯绡双扇-体态-v2.png",
+      "prompt": "Create a new full-body costume portrait using IMAGE 1 only for adult Saika Kawakita facial identity, and IMAGE 2 only for tall slim adult body proportions (not face, clothing or background). Preserve Image 1 eye, nose, lip and jaw likeness across all variants. Use case: photorealistic-natural. Asset: one isolated full-body adult Japanese woman, realistic historical game costume fashion photograph, portrait 2:3 PNG with TRUE transparent alpha. No environment, floor, cast shadow, glow, matte, text or watermarks. Grown adult tall slim body silhouette inspired by fashion model He Sui: small proportionate head, natural broad shoulders and long neck, normally sized ribcage, long torso and graceful long lean legs, harmonious standing equivalent 8 heads tall; NOT He Sui's face. Do not shrink shoulders, torso, waist or pelvis. Level 85mm full-body camera, no wide angle or foreshortening. Entire figure with ornaments, prop, garment, both feet and all toes enclosed inside frame with 5% margin. Exactly two anatomically coherent arms, hands with five fingers each, two legs with correct knee/ankle orientations and feet with five natural toes. Believable center of gravity, natural contact and correct grip. Distinctive JAPANESE lightweight summer clothing, breathable cotton/linen/silk, fully opaque and tasteful, no socks. Accessories: ornate but delicate kanzashi, earrings, fine necklace, bracelets and obijime/obidome/netsuke appropriate to garment. Nonsexual fully clothed portrait. Preserve distinct facial likeness of the named adult performer, natural skin and gentle expressive face. Named adult subject: Saika Kawakita. Outfit and pose: graceful grounded Japanese dance stance, both feet planted with one slightly forward, one open gold folding fan raised to shoulder and another lowered beside waist, natural elbows and hands. Coral and white morning-glory cotton summer yukata with a slim pale gold obi and pink kanzashi, bare feet.",
+      "birthDate": "1999-04-23",
+      "referencedImagePaths": [
+        "assets/beauties/references/japan-ten-20261022/kawakita-saika.jpg",
+        "assets/beauties/references/he-sui-calves-20261022/runway-shape-reference.jpg"
+      ],
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a16615-cc42-7e81-aa4f-b849b888d820/exec-93f3d90f-d922-4f54-8cc3-9c7162c96f4c.png",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentFraction": 0.6776,
+        "borderPixelsAbove20": 0
+      },
+      "assetSha256": "a45c75a68c3470bcad38542b7ff2115d22846177ab94cf2ec4ab2223179f99db",
+      "previousAsset": "assets/beauties/random/番邦女子/日本女子-河北彩花-绯绡双扇.png",
+      "previousSourcePath": "/Users/fengheliang/.codex/generated_images/01a16615-cc42-7e81-aa4f-b849b888d820/exec-200818df-3f06-41df-bc55-6eb08ee98935.png",
+      "artworkRevision": "docs/art/japan-thirteen-body-rework-2026-10-23.json"
+    }
+  ],
+  "deduplication": {
+    "excludedAlias": {
+      "name": "新有菜",
+      "existingIdentity": "桥本有菜",
+      "source": "https://zh.wikipedia.org/wiki/新有菜"
+    },
+    "note": "按人物身份及曾用名去重，不仅比较文件名。"
+  },
+  "agePolicy": "截至2026-10-23，本批所选人物均未超过40岁，无需改用早年成年照片。",
+  "completed": 13,
+  "visualReview": "已检查浅色/深蓝换底总览、手脚局部及实际后宫画面；检查头肩躯干和腿长关系、关节、手指抓握、脚趾方向、轻薄夏装、无袜及道具边缘。",
+  "verification": {
+    "relatedTestsPassed": 21,
+    "alphaPassed": 13,
+    "newIdentities": 10,
+    "saikaVariants": 3,
+    "nativeCanvasDecoded": 163,
+    "realHaremRosterPassed": 62,
+    "newPortraitsRenderedInRoster": 13,
+    "contactSheet": "outputs/japan-photo-thirteen-20261023/contact-sheet.jpg",
+    "desktopResults": "outputs/japan-photo-thirteen-20261023/desktop/results.json"
+  }
+}

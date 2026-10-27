@@ -1,0 +1,259 @@
+{
+  "status": "running",
+  "version": "phase6-yanying-v6",
+  "domain": "configured-harness-smoke-20261024",
+  "section": "configured",
+  "completed": 8,
+  "total": 8,
+  "pairsPerCase": 2,
+  "rows": [
+    {
+      "id": "configured-weapons-0",
+      "configuration": "weapons",
+      "rotation": 0,
+      "pairs": 2,
+      "seedDomain": "configured-harness-smoke-20261024",
+      "games": 4,
+      "first": {
+        "mean": 0.5,
+        "ci95": [
+          0.5,
+          0.5
+        ]
+      },
+      "home": {
+        "mean": 0,
+        "ci95": [
+          0,
+          0
+        ]
+      },
+      "draws": 0,
+      "rounds": {
+        "median": 17,
+        "p90": 28,
+        "max": 28
+      },
+      "actions": 497,
+      "validatedFinalStates": 2,
+      "deployed": []
+    },
+    {
+      "id": "configured-weapons-5",
+      "configuration": "weapons",
+      "rotation": 5,
+      "pairs": 2,
+      "seedDomain": "configured-harness-smoke-20261024",
+      "games": 4,
+      "first": {
+        "mean": 0.25,
+        "ci95": [
+          0,
+          0.74
+        ]
+      },
+      "home": {
+        "mean": 0.25,
+        "ci95": [
+          0,
+          0.74
+        ]
+      },
+      "draws": 0,
+      "rounds": {
+        "median": 25,
+        "p90": 26,
+        "max": 26
+      },
+      "actions": 537,
+      "validatedFinalStates": 2,
+      "deployed": []
+    },
+    {
+      "id": "configured-secrets-0",
+      "configuration": "secrets",
+      "rotation": 0,
+      "pairs": 2,
+      "seedDomain": "configured-harness-smoke-20261024",
+      "games": 4,
+      "first": {
+        "mean": 0.5,
+        "ci95": [
+          0.5,
+          0.5
+        ]
+      },
+      "home": {
+        "mean": 0.5,
+        "ci95": [
+          0,
+          1
+        ]
+      },
+      "draws": 0,
+      "rounds": {
+        "median": 26,
+        "p90": 29,
+        "max": 29
+      },
+      "actions": 659,
+      "validatedFinalStates": 2,
+      "deployed": []
+    },
+    {
+      "id": "configured-secrets-5",
+      "configuration": "secrets",
+      "rotation": 5,
+      "pairs": 2,
+      "seedDomain": "configured-harness-smoke-20261024",
+      "games": 4,
+      "first": {
+        "mean": 0.75,
+        "ci95": [
+          0.26000000000000006,
+          1
+        ]
+      },
+      "home": {
+        "mean": 0.25,
+        "ci95": [
+          0,
+          0.74
+        ]
+      },
+      "draws": 0,
+      "rounds": {
+        "median": 19,
+        "p90": 28,
+        "max": 28
+      },
+      "actions": 571,
+      "validatedFinalStates": 2,
+      "deployed": []
+    },
+    {
+      "id": "configured-landmarks-0",
+      "configuration": "landmarks",
+      "rotation": 0,
+      "pairs": 2,
+      "seedDomain": "configured-harness-smoke-20261024",
+      "games": 4,
+      "first": {
+        "mean": 0,
+        "ci95": [
+          0,
+          0
+        ]
+      },
+      "home": {
+        "mean": 0.5,
+        "ci95": [
+          0.5,
+          0.5
+        ]
+      },
+      "draws": 0,
+      "rounds": {
+        "median": 12,
+        "p90": 14,
+        "max": 14
+      },
+      "actions": 303,
+      "validatedFinalStates": 2,
+      "deployed": []
+    },
+    {
+      "id": "configured-landmarks-5",
+      "configuration": "landmarks",
+      "rotation": 5,
+      "pairs": 2,
+      "seedDomain": "configured-harness-smoke-20261024",
+      "games": 4,
+      "first": {
+        "mean": 0.5,
+        "ci95": [
+          0.5,
+          0.5
+        ]
+      },
+      "home": {
+        "mean": 0,
+        "ci95": [
+          0,
+          0
+        ]
+      },
+      "draws": 0,
+      "rounds": {
+        "median": 19,
+        "p90": 26,
+        "max": 26
+      },
+      "actions": 485,
+      "validatedFinalStates": 2,
+      "deployed": []
+    },
+    {
+      "id": "configured-combined-0",
+      "configuration": "combined",
+      "rotation": 0,
+      "pairs": 2,
+      "seedDomain": "configured-harness-smoke-20261024",
+      "games": 4,
+      "first": {
+        "mean": 0.5,
+        "ci95": [
+          0.5,
+          0.5
+        ]
+      },
+      "home": {
+        "mean": 1,
+        "ci95": [
+          1,
+          1
+        ]
+      },
+      "draws": 0,
+      "rounds": {
+        "median": 14,
+        "p90": 14,
+        "max": 14
+      },
+      "actions": 391,
+      "validatedFinalStates": 2,
+      "deployed": []
+    },
+    {
+      "id": "configured-combined-5",
+      "configuration": "combined",
+      "rotation": 5,
+      "pairs": 2,
+      "seedDomain": "configured-harness-smoke-20261024",
+      "games": 4,
+      "first": {
+        "mean": 0,
+        "ci95": [
+          0,
+          0
+        ]
+      },
+      "home": {
+        "mean": 0.5,
+        "ci95": [
+          0.5,
+          0.5
+        ]
+      },
+      "draws": 0,
+      "rounds": {
+        "median": 19,
+        "p90": 20,
+        "max": 20
+      },
+      "actions": 500,
+      "validatedFinalStates": 2,
+      "deployed": []
+    }
+  ]
+}

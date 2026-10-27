@@ -338,3 +338,6 @@
 .court-defense .defense-secondary>summary{color:#6b4e32;font-size:14px}.court-defense .defense-secondary>p{color:#59452f;font-size:14px;line-height:1.6}
 
 .industry-dialog .report-table th,.industry-dialog .report-table td{font-size:14px!important;padding:10px 8px!important}.industry-dialog .revenue-body>p,.industry-dialog .revenue-body>details{font-size:14px!important}
+
+/* 财政页由页首入口切换，侧栏不占用正文空间。 */
+.revenue-fiscal>.revenue-nav{display:none}

@@ -5,7 +5,9 @@ const tacticTiles={precision:[0,0],fire:[1,0],execute:[2,0],arrows:[3,0],barrage
 function atlas(art,src,x,y,cols,rows,width,height){
  const host=art.querySelector('.cb-living-art')??art;for(const old of host.querySelectorAll('.cb-art-viewport'))old.remove();
  const svg=document.createElementNS(NS,'svg'),image=document.createElementNS(NS,'image'),cw=width/cols,ch=height/rows;
- svg.classList.add('cb-art-viewport');svg.setAttribute('viewBox',`${x*cw} ${y*ch} ${cw} ${ch}`);svg.setAttribute('preserveAspectRatio','xMidYMid slice');svg.setAttribute('aria-hidden','true');image.setAttribute('href',src);image.setAttribute('width',width);image.setAttribute('height',height);svg.append(image);host.prepend(svg);art.style.backgroundImage='none';
+ // Source atlases include a narrow separator; crop inside each cell rather than showing it on a card.
+ const inset=src.startsWith('assets/battle/card-source-')?8:0;
+ svg.classList.add('cb-art-viewport');svg.setAttribute('viewBox',`${x*cw+inset} ${y*ch+inset} ${cw-inset*2} ${ch-inset*2}`);svg.setAttribute('preserveAspectRatio','xMidYMid slice');svg.setAttribute('aria-hidden','true');image.setAttribute('href',src);image.setAttribute('width',width);image.setAttribute('height',height);svg.append(image);host.prepend(svg);art.style.backgroundImage='none';
 }
 export function applyCardArt(root){
  for(const art of root.querySelectorAll('[data-portrait-art]')){

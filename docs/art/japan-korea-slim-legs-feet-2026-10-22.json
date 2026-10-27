@@ -1,0 +1,1331 @@
+{
+  "tool": "built-in image_gen",
+  "status": "completed",
+  "scope": "All active Japan/Korea portraits, 27 total; user approved replacing and deleting superseded imagery.",
+  "approvedStandard": "Korean calves: real He Sui lower-leg reference. IU: uncrossed anatomical left/right feet correction.",
+  "replacePolicy": "Validate staged images then overwrite original active asset paths; do not keep backup images. Preserve IDs and existing legacy path compatibility mappings.",
+  "items": [
+    {
+      "id": "foreign-expansion-20261019-23",
+      "name": "朝鲜半岛-高丽女子-1",
+      "asset": "assets/beauties/random/番邦女子/朝鲜半岛-高丽女子-1.png",
+      "regionId": "korea",
+      "legacyAssets": [
+        "assets/beauties/random/foreign-expansion-20261019-23-v1.png",
+        "assets/beauties/random/foreign-expansion-20261019-23-transparent-v2.png"
+      ],
+      "category": "番邦女子",
+      "index": 0,
+      "originalSha256": "da267b7168eb4c8d0158b5be83f02ae91d334f49b604ffdbfaa198f44cf52bbb",
+      "prompt": "Use case: precise-object-edit. IMAGE 1 is the fully clothed adult historical Korean game character to EDIT. IMAGE 2 is real adult fashion model HE SUI 何穗 in a sporty street outfit, used ONLY as a LOWER-LEG SHAPE reference. Preserve Image 1 EXACT face/identity/expression, head size, hairstyle, neck, shoulders, torso/ribcage/hips, total height, upper-leg length, hands, original Korean summer hanbok and embroidery, all jewelry, handheld props, framing and natural skin tone. Do not copy Image 2 face, outfit, shoes, background, pose or model's total height. PRIMARY USER CORRECTION: recreate visible CALF AND ANKLE CONTOURS using He Sui's relaxed lower-leg proportions in Image 2, scaled to Image 1 skeleton and existing length. Clean lean near-straight shin line, only subtle calf volume in UPPER THIRD below knee, long smoothly tapering lower half, fine narrow ankle, natural Achilles and modest ankle bones. Remove low round bulges, thick cylindrical/sausage-shaped shins and abrupt knee-to-calf lumps; do not make emaciated stick legs, pinched concavities or stretched shins. Modestly slim visible thighs if needed to keep anatomical balance, without changing knee height or exposing extra skin. For standing figures let both ankles be neutral and heels down in a comfortable staggered stance, avoiding pointed toes or flexed calves; seated figures keep original seated angles with relaxed feet. Keep existing leg separation and overall pose above knees. Refine feet to normal slender adult shape with gentle arch/dorsum form shading and natural skin texture; exactly five correctly ordered toes on each foot, big toe ALWAYS medial and little toe lateral, natural left/right foot handedness and each ankle connected to its own shin. No swollen forefoot, broad thick toes, oversized feet or flat painted-on shape. All feet are bare; if Image 1 still has footwear remove it without adding footwear elsewhere. If clothing hides calves KEEP them covered; do not lift hem, invent slits or replace clothing. Only minimal adjacent hem adjustment for normal foot contact. Whole figure, props and toes fully visible with a little transparent margin. Preserve genuine transparent alpha background, no floor, cast ground shadows, glow, scenery, text or watermark. Ordinary realistic adult costume game portrait.",
+      "status": "replaced",
+      "stagedAsset": "outputs/japan-korea-slim-20261022/staging/foreign-expansion-20261019-23.png",
+      "footwearPolicy": "barefoot",
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a1615b-c380-73a3-bb7b-58bb2f9b4009/exec-57b6dc77-65f5-4fbe-bb83-b4cddc28ea65.png",
+      "assetSha256": "4661c19a6c245805310239ee1fc68fd72ad8c8541369009e74eaa27cfab0d393",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentFraction": 0.5134,
+        "nontransparentBorderPixels": 0,
+        "boundsAbove20": [
+          75,
+          7,
+          1004,
+          1528
+        ]
+      },
+      "calfReference": "assets/beauties/references/he-sui-calves-20261022/sports-street-2020.jpg",
+      "oldAssetDeleted": true,
+      "visualReview": "Reviewed full portrait and lower-leg sheets; regional outfit, original identity/props, proportional legs and complete silhouette retained. Three original Japanese geta retained."
+    },
+    {
+      "id": "foreign-expansion-20261019-24",
+      "name": "朝鲜半岛-高丽女子-2",
+      "asset": "assets/beauties/random/番邦女子/朝鲜半岛-高丽女子-2.png",
+      "regionId": "korea",
+      "legacyAssets": [
+        "assets/beauties/random/foreign-expansion-20261019-24-v1.png",
+        "assets/beauties/random/foreign-expansion-20261019-24-transparent-v2.png"
+      ],
+      "category": "番邦女子",
+      "index": 1,
+      "originalSha256": "c6624b411e80f805ebd6a6cbf46ee0d7da63897588d8419a23090caa9e2893a5",
+      "prompt": "Use case: precise-object-edit. IMAGE 1 is the fully clothed adult historical Korean game character to EDIT. IMAGE 2 is real adult fashion model HE SUI 何穗 in a sporty street outfit, used ONLY as a LOWER-LEG SHAPE reference. Preserve Image 1 EXACT face/identity/expression, head size, hairstyle, neck, shoulders, torso/ribcage/hips, total height, upper-leg length, hands, original Korean summer hanbok and embroidery, all jewelry, handheld props, framing and natural skin tone. Do not copy Image 2 face, outfit, shoes, background, pose or model's total height. PRIMARY USER CORRECTION: recreate visible CALF AND ANKLE CONTOURS using He Sui's relaxed lower-leg proportions in Image 2, scaled to Image 1 skeleton and existing length. Clean lean near-straight shin line, only subtle calf volume in UPPER THIRD below knee, long smoothly tapering lower half, fine narrow ankle, natural Achilles and modest ankle bones. Remove low round bulges, thick cylindrical/sausage-shaped shins and abrupt knee-to-calf lumps; do not make emaciated stick legs, pinched concavities or stretched shins. Modestly slim visible thighs if needed to keep anatomical balance, without changing knee height or exposing extra skin. For standing figures let both ankles be neutral and heels down in a comfortable staggered stance, avoiding pointed toes or flexed calves; seated figures keep original seated angles with relaxed feet. Keep existing leg separation and overall pose above knees. Refine feet to normal slender adult shape with gentle arch/dorsum form shading and natural skin texture; exactly five correctly ordered toes on each foot, big toe ALWAYS medial and little toe lateral, natural left/right foot handedness and each ankle connected to its own shin. No swollen forefoot, broad thick toes, oversized feet or flat painted-on shape. All feet are bare; if Image 1 still has footwear remove it without adding footwear elsewhere. If clothing hides calves KEEP them covered; do not lift hem, invent slits or replace clothing. Only minimal adjacent hem adjustment for normal foot contact. Whole figure, props and toes fully visible with a little transparent margin. Preserve genuine transparent alpha background, no floor, cast ground shadows, glow, scenery, text or watermark. Ordinary realistic adult costume game portrait.",
+      "status": "replaced",
+      "stagedAsset": "outputs/japan-korea-slim-20261022/staging/foreign-expansion-20261019-24.png",
+      "footwearPolicy": "barefoot",
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a1615b-c380-73a3-bb7b-58bb2f9b4009/exec-89e142de-161d-47c3-8be9-23f239650dd8.png",
+      "assetSha256": "ec58e5b73928396e2dfdab4894b2459dec14c8a8d35162a19486f6cb04ed13da",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentFraction": 0.5178,
+        "nontransparentBorderPixels": 0,
+        "boundsAbove20": [
+          49,
+          5,
+          992,
+          1518
+        ]
+      },
+      "calfReference": "assets/beauties/references/he-sui-calves-20261022/sports-street-2020.jpg",
+      "oldAssetDeleted": true,
+      "visualReview": "Reviewed full portrait and lower-leg sheets; regional outfit, original identity/props, proportional legs and complete silhouette retained. Three original Japanese geta retained."
+    },
+    {
+      "id": "foreign-expansion-20261019-25",
+      "name": "日本女子-葵司",
+      "asset": "assets/beauties/random/番邦女子/日本女子-葵司.png",
+      "regionId": "japan",
+      "legacyAssets": [
+        "assets/beauties/random/foreign-expansion-20261019-25-transparent-v4.png",
+        "assets/beauties/random/japan-aoi-tsukasa-transparent-v4.png"
+      ],
+      "category": "番邦女子",
+      "index": 2,
+      "originalSha256": "0a5d9d68e988b4ca1cef4a395328400f76fe8215070781ec2dee966e00dc68dc",
+      "prompt": "Use case: precise-object-edit. Edit this isolated full-body clearly adult game character. Change ONLY BOTH LEGS, ANKLES AND BARE FEET to the user-approved slender-leg and dimensional-foot standard. Preserve EXACT facial identity/expression, head size, hair, neck, shoulder span, ribcage/torso/hips, hands, total height, original leg length and knee positions, body pose, Japanese/Korean summer costume, every ornament, prop and framing. Make visible adult thighs/calves noticeably slimmer (roughly 15-20 percent narrower in cross-section), with natural smooth taper through realistic knees, delicate calves and narrow ankles. Do not stretch limbs or reduce torso; no stick legs or broken joints. Feet must be graceful slender normal-size adult feet: reduce puffy/broad forefoot and thick toes; sculpt realistic foot dorsum, medial arch, heel, ankle bones/Achilles transition, subtle tendon/metatarsal structure and five distinct naturally varying toes per foot with credible joints and subtle nails. Give feet realistic 3D volume through restrained directional highlights, local form shading, natural skin texture and small toe separation shadows, without hard outlines or plastic swelling. Correct natural left/right orientation and ankle attachment, no fused/extra toes. Normal foot length relative to shin, no oversized or tiny doll feet. USER FOOTWEAR OVERRIDE: PRESERVE the existing Japanese wooden GETA sandals EXACTLY, including wooden soles, thongs, straps, color, positions and foot contact; never remove footwear. Refine only visible legs, ankles, foot dorsum and exposed toes around existing straps. Keep all five toes correctly aligned on the sole and realistically under straps. Do not change any wood or strap geometry. Where skirt/trousers hide legs KEEP them hidden, do not lift clothes or add a new slit: refine visible ankles/feet and only the immediately adjacent lower hem if needed. Standing feet maintain original stance; seated or dancing legs keep their original credible angles and contact. Exactly two arms/hands and two coherent legs/feet; preserve natural grips and gravity. Original elegant realistic costume-photography/painterly finish retained. Whole character including hairpins, hands, props and every toe entirely visible with clear canvas margins; if a prop touches border add minimal transparent breathing room without changing head/body proportions. Genuine transparent alpha background remains, no floor, backdrop, cast ground shadow, gradient, glow, checkerboard, words or watermark. Tasteful fully clothed ordinary adult portrait.",
+      "status": "replaced",
+      "stagedAsset": "outputs/japan-korea-slim-20261022/staging/foreign-expansion-20261019-25.png",
+      "footwearPolicy": "preserve original geta and straps",
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a1615b-c380-73a3-bb7b-58bb2f9b4009/exec-35bb1290-9ac1-4658-9b14-d124e0202f5a.png",
+      "assetSha256": "649cf7794bd8a8f711707e03430e5345f65de88f9f3405a39e68f0a390ef6e9c",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentFraction": 0.6833,
+        "nontransparentBorderPixels": 0,
+        "boundsAbove20": [
+          246,
+          18,
+          791,
+          1523
+        ]
+      },
+      "oldAssetDeleted": true,
+      "visualReview": "Reviewed full portrait and lower-leg sheets; regional outfit, original identity/props, proportional legs and complete silhouette retained. Three original Japanese geta retained."
+    },
+    {
+      "id": "foreign-expansion-20261019-26",
+      "name": "日本女子-桥本有菜",
+      "asset": "assets/beauties/random/番邦女子/日本女子-桥本有菜.png",
+      "regionId": "japan",
+      "legacyAssets": [
+        "assets/beauties/random/foreign-expansion-20261019-26-transparent-v3.png",
+        "assets/beauties/random/japan-hashimoto-arina-transparent-v3.png"
+      ],
+      "category": "番邦女子",
+      "index": 3,
+      "originalSha256": "bd99f282207f980ebf3f101381bdb8f08856b29edc1dd6484f215c0134bbd091",
+      "prompt": "Use case: precise-object-edit. Edit this isolated full-body clearly adult game character. Change ONLY BOTH LEGS, ANKLES AND BARE FEET to the user-approved slender-leg and dimensional-foot standard. Preserve EXACT facial identity/expression, head size, hair, neck, shoulder span, ribcage/torso/hips, hands, total height, original leg length and knee positions, body pose, Japanese/Korean summer costume, every ornament, prop and framing. Make visible adult thighs/calves noticeably slimmer (roughly 15-20 percent narrower in cross-section), with natural smooth taper through realistic knees, delicate calves and narrow ankles. Do not stretch limbs or reduce torso; no stick legs or broken joints. Feet must be graceful slender normal-size adult feet: reduce puffy/broad forefoot and thick toes; sculpt realistic foot dorsum, medial arch, heel, ankle bones/Achilles transition, subtle tendon/metatarsal structure and five distinct naturally varying toes per foot with credible joints and subtle nails. Give feet realistic 3D volume through restrained directional highlights, local form shading, natural skin texture and small toe separation shadows, without hard outlines or plastic swelling. Correct natural left/right orientation and ankle attachment, no fused/extra toes. Normal foot length relative to shin, no oversized or tiny doll feet. USER FOOTWEAR OVERRIDE: PRESERVE the existing Japanese wooden GETA sandals EXACTLY, including wooden soles, thongs, straps, color, positions and foot contact; never remove footwear. Refine only visible legs, ankles, foot dorsum and exposed toes around existing straps. Keep all five toes correctly aligned on the sole and realistically under straps. Do not change any wood or strap geometry. Where skirt/trousers hide legs KEEP them hidden, do not lift clothes or add a new slit: refine visible ankles/feet and only the immediately adjacent lower hem if needed. Standing feet maintain original stance; seated or dancing legs keep their original credible angles and contact. Exactly two arms/hands and two coherent legs/feet; preserve natural grips and gravity. Original elegant realistic costume-photography/painterly finish retained. Whole character including hairpins, hands, props and every toe entirely visible with clear canvas margins; if a prop touches border add minimal transparent breathing room without changing head/body proportions. Genuine transparent alpha background remains, no floor, backdrop, cast ground shadow, gradient, glow, checkerboard, words or watermark. Tasteful fully clothed ordinary adult portrait.",
+      "status": "replaced",
+      "stagedAsset": "outputs/japan-korea-slim-20261022/staging/foreign-expansion-20261019-26.png",
+      "footwearPolicy": "preserve original geta and straps",
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a1615b-c380-73a3-bb7b-58bb2f9b4009/exec-9951d3f2-8f14-4fbf-aa26-beb1b85e5e8d.png",
+      "assetSha256": "8daccfa0faa341141947e41a0b17b8cc2d72a9123495c8ae3f3800628b30426c",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentFraction": 0.7284,
+        "nontransparentBorderPixels": 0,
+        "boundsAbove20": [
+          300,
+          14,
+          788,
+          1517
+        ]
+      },
+      "oldAssetDeleted": true,
+      "visualReview": "Reviewed full portrait and lower-leg sheets; regional outfit, original identity/props, proportional legs and complete silhouette retained. Three original Japanese geta retained."
+    },
+    {
+      "id": "japan-julia-20261020",
+      "name": "日本女子-JULIA",
+      "asset": "assets/beauties/random/番邦女子/日本女子-JULIA.png",
+      "regionId": "japan",
+      "legacyAssets": [
+        "assets/beauties/random/japan-julia-20261020-transparent-v1.png",
+        "assets/beauties/random/japan-julia-transparent-v1.png"
+      ],
+      "category": "番邦女子",
+      "index": 4,
+      "originalSha256": "c9283944e70b76179cf537ee0b77700da7dad2f56865b9561374528f36c25b5d",
+      "prompt": "Use case: precise-object-edit. Edit this isolated full-body clearly adult game character. Change ONLY BOTH LEGS, ANKLES AND BARE FEET to the user-approved slender-leg and dimensional-foot standard. Preserve EXACT facial identity/expression, head size, hair, neck, shoulder span, ribcage/torso/hips, hands, total height, original leg length and knee positions, body pose, Japanese/Korean summer costume, every ornament, prop and framing. Make visible adult thighs/calves noticeably slimmer (roughly 15-20 percent narrower in cross-section), with natural smooth taper through realistic knees, delicate calves and narrow ankles. Do not stretch limbs or reduce torso; no stick legs or broken joints. Feet must be graceful slender normal-size adult feet: reduce puffy/broad forefoot and thick toes; sculpt realistic foot dorsum, medial arch, heel, ankle bones/Achilles transition, subtle tendon/metatarsal structure and five distinct naturally varying toes per foot with credible joints and subtle nails. Give feet realistic 3D volume through restrained directional highlights, local form shading, natural skin texture and small toe separation shadows, without hard outlines or plastic swelling. Correct natural left/right orientation and ankle attachment, no fused/extra toes. Normal foot length relative to shin, no oversized or tiny doll feet. USER FOOTWEAR OVERRIDE: PRESERVE the existing Japanese wooden GETA sandals EXACTLY, including wooden soles, thongs, straps, color, positions and foot contact; never remove footwear. Refine only visible legs, ankles, foot dorsum and exposed toes around existing straps. Keep all five toes correctly aligned on the sole and realistically under straps. Do not change any wood or strap geometry. Where skirt/trousers hide legs KEEP them hidden, do not lift clothes or add a new slit: refine visible ankles/feet and only the immediately adjacent lower hem if needed. Standing feet maintain original stance; seated or dancing legs keep their original credible angles and contact. Exactly two arms/hands and two coherent legs/feet; preserve natural grips and gravity. Original elegant realistic costume-photography/painterly finish retained. Whole character including hairpins, hands, props and every toe entirely visible with clear canvas margins; if a prop touches border add minimal transparent breathing room without changing head/body proportions. Genuine transparent alpha background remains, no floor, backdrop, cast ground shadow, gradient, glow, checkerboard, words or watermark. Tasteful fully clothed ordinary adult portrait.",
+      "status": "replaced",
+      "stagedAsset": "outputs/japan-korea-slim-20261022/staging/japan-julia-20261020.png",
+      "footwearPolicy": "preserve original geta and straps",
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a1615b-c380-73a3-bb7b-58bb2f9b4009/exec-6cfce5dc-2480-4a5d-8e6b-97ed813bdaaf.png",
+      "assetSha256": "54acf6098fc910b46be7ec0f308a024e1b76c4e3324478eebc53ae7144643c5e",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentFraction": 0.6853,
+        "nontransparentBorderPixels": 0,
+        "boundsAbove20": [
+          289,
+          11,
+          751,
+          1515
+        ]
+      },
+      "oldAssetDeleted": true,
+      "visualReview": "Reviewed full portrait and lower-leg sheets; regional outfit, original identity/props, proportional legs and complete silhouette retained. Three original Japanese geta retained."
+    },
+    {
+      "id": "japan-photo-ten-20261022-01",
+      "name": "日本女子-三上悠亚-樱绡花篮",
+      "asset": "assets/beauties/random/番邦女子/日本女子-三上悠亚-樱绡花篮.png",
+      "regionId": "japan",
+      "legacyAssets": [],
+      "category": "番邦女子",
+      "index": 5,
+      "originalSha256": "6a1face0fba7a46a784cc452ec8a90421e3d06186faa50c04148a0eb5163479b",
+      "prompt": "Use case: precise-object-edit. Edit this isolated full-body clearly adult game character. Change ONLY BOTH LEGS, ANKLES AND BARE FEET to the user-approved slender-leg and dimensional-foot standard. Preserve EXACT facial identity/expression, head size, hair, neck, shoulder span, ribcage/torso/hips, hands, total height, original leg length and knee positions, body pose, Japanese/Korean summer costume, every ornament, prop and framing. Make visible adult thighs/calves noticeably slimmer (roughly 15-20 percent narrower in cross-section), with natural smooth taper through realistic knees, delicate calves and narrow ankles. Do not stretch limbs or reduce torso; no stick legs or broken joints. Feet must be graceful slender normal-size adult feet: reduce puffy/broad forefoot and thick toes; sculpt realistic foot dorsum, medial arch, heel, ankle bones/Achilles transition, subtle tendon/metatarsal structure and five distinct naturally varying toes per foot with credible joints and subtle nails. Give feet realistic 3D volume through restrained directional highlights, local form shading, natural skin texture and small toe separation shadows, without hard outlines or plastic swelling. Correct natural left/right orientation and ankle attachment, no fused/extra toes. Normal foot length relative to shin, no oversized or tiny doll feet. ALL FIGURES BAREFOOT: if source has shoes, sandals or socks remove them and generate naturally oriented bare feet in the SAME positions and stance; leave no discarded footwear. Where skirt/trousers hide legs KEEP them hidden, do not lift clothes or add a new slit: refine visible ankles/feet and only the immediately adjacent lower hem if needed. Standing feet maintain original stance; seated or dancing legs keep their original credible angles and contact. Exactly two arms/hands and two coherent legs/feet; preserve natural grips and gravity. Original elegant realistic costume-photography/painterly finish retained. Whole character including hairpins, hands, props and every toe entirely visible with clear canvas margins; if a prop touches border add minimal transparent breathing room without changing head/body proportions. Genuine transparent alpha background remains, no floor, backdrop, cast ground shadow, gradient, glow, checkerboard, words or watermark. Tasteful fully clothed ordinary adult portrait.",
+      "status": "replaced",
+      "stagedAsset": "outputs/japan-korea-slim-20261022/staging/japan-photo-ten-20261022-01.png",
+      "footwearPolicy": "barefoot",
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a1615b-c380-73a3-bb7b-58bb2f9b4009/exec-d7fe74ce-df63-4edf-9e45-8e17909d46b2.png",
+      "assetSha256": "6e0992ab26903f75322cbccff2f1e0c79d678ff4a6e6c9c553a35be9d7817c51",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentFraction": 0.7291,
+        "nontransparentBorderPixels": 0,
+        "boundsAbove20": [
+          345,
+          8,
+          861,
+          1522
+        ]
+      },
+      "oldAssetDeleted": true,
+      "visualReview": "Reviewed full portrait and lower-leg sheets; regional outfit, original identity/props, proportional legs and complete silhouette retained. Three original Japanese geta retained."
+    },
+    {
+      "id": "japan-photo-ten-20261022-02",
+      "name": "日本女子-明日花绮罗-紫藤执扇",
+      "asset": "assets/beauties/random/番邦女子/日本女子-明日花绮罗-紫藤执扇.png",
+      "regionId": "japan",
+      "legacyAssets": [],
+      "category": "番邦女子",
+      "index": 6,
+      "originalSha256": "ee6fc0a06d5fb0e638afb7755a20dbb1ebf79c43bf98a990402912dc87dc011d",
+      "prompt": "Use case: precise-object-edit. Edit this isolated full-body clearly adult game character. Change ONLY BOTH LEGS, ANKLES AND BARE FEET to the user-approved slender-leg and dimensional-foot standard. Preserve EXACT facial identity/expression, head size, hair, neck, shoulder span, ribcage/torso/hips, hands, total height, original leg length and knee positions, body pose, Japanese/Korean summer costume, every ornament, prop and framing. Make visible adult thighs/calves noticeably slimmer (roughly 15-20 percent narrower in cross-section), with natural smooth taper through realistic knees, delicate calves and narrow ankles. Do not stretch limbs or reduce torso; no stick legs or broken joints. Feet must be graceful slender normal-size adult feet: reduce puffy/broad forefoot and thick toes; sculpt realistic foot dorsum, medial arch, heel, ankle bones/Achilles transition, subtle tendon/metatarsal structure and five distinct naturally varying toes per foot with credible joints and subtle nails. Give feet realistic 3D volume through restrained directional highlights, local form shading, natural skin texture and small toe separation shadows, without hard outlines or plastic swelling. Correct natural left/right orientation and ankle attachment, no fused/extra toes. Normal foot length relative to shin, no oversized or tiny doll feet. ALL FIGURES BAREFOOT: if source has shoes, sandals or socks remove them and generate naturally oriented bare feet in the SAME positions and stance; leave no discarded footwear. Where skirt/trousers hide legs KEEP them hidden, do not lift clothes or add a new slit: refine visible ankles/feet and only the immediately adjacent lower hem if needed. Standing feet maintain original stance; seated or dancing legs keep their original credible angles and contact. Exactly two arms/hands and two coherent legs/feet; preserve natural grips and gravity. Original elegant realistic costume-photography/painterly finish retained. Whole character including hairpins, hands, props and every toe entirely visible with clear canvas margins; if a prop touches border add minimal transparent breathing room without changing head/body proportions. Genuine transparent alpha background remains, no floor, backdrop, cast ground shadow, gradient, glow, checkerboard, words or watermark. Tasteful fully clothed ordinary adult portrait.",
+      "status": "replaced",
+      "stagedAsset": "outputs/japan-korea-slim-20261022/staging/japan-photo-ten-20261022-02.png",
+      "footwearPolicy": "barefoot",
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a1615b-c380-73a3-bb7b-58bb2f9b4009/exec-452216c8-92c3-470a-b4b6-1bd60a56a4e8.png",
+      "assetSha256": "e12ccaa863f0e8f23cdb6b4663a8d118ce9270fa8c0292875d77042839478cc5",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentFraction": 0.7235,
+        "nontransparentBorderPixels": 0,
+        "boundsAbove20": [
+          334,
+          15,
+          890,
+          1514
+        ]
+      },
+      "oldAssetDeleted": true,
+      "visualReview": "Reviewed full portrait and lower-leg sheets; regional outfit, original identity/props, proportional legs and complete silhouette retained. Three original Japanese geta retained."
+    },
+    {
+      "id": "japan-photo-ten-20261022-03",
+      "name": "日本女子-深田咏美-青瓷茶香",
+      "asset": "assets/beauties/random/番邦女子/日本女子-深田咏美-青瓷茶香.png",
+      "regionId": "japan",
+      "legacyAssets": [],
+      "category": "番邦女子",
+      "index": 7,
+      "originalSha256": "4786c7e61554985efa5a1fcb501c3d3abc0dd8dee2ef08777faab3932210fc48",
+      "prompt": "Use case: precise-object-edit. Edit this isolated full-body clearly adult game character. Change ONLY BOTH LEGS, ANKLES AND BARE FEET to the user-approved slender-leg and dimensional-foot standard. Preserve EXACT facial identity/expression, head size, hair, neck, shoulder span, ribcage/torso/hips, hands, total height, original leg length and knee positions, body pose, Japanese/Korean summer costume, every ornament, prop and framing. Make visible adult thighs/calves noticeably slimmer (roughly 15-20 percent narrower in cross-section), with natural smooth taper through realistic knees, delicate calves and narrow ankles. Do not stretch limbs or reduce torso; no stick legs or broken joints. Feet must be graceful slender normal-size adult feet: reduce puffy/broad forefoot and thick toes; sculpt realistic foot dorsum, medial arch, heel, ankle bones/Achilles transition, subtle tendon/metatarsal structure and five distinct naturally varying toes per foot with credible joints and subtle nails. Give feet realistic 3D volume through restrained directional highlights, local form shading, natural skin texture and small toe separation shadows, without hard outlines or plastic swelling. Correct natural left/right orientation and ankle attachment, no fused/extra toes. Normal foot length relative to shin, no oversized or tiny doll feet. ALL FIGURES BAREFOOT: if source has shoes, sandals or socks remove them and generate naturally oriented bare feet in the SAME positions and stance; leave no discarded footwear. Where skirt/trousers hide legs KEEP them hidden, do not lift clothes or add a new slit: refine visible ankles/feet and only the immediately adjacent lower hem if needed. Standing feet maintain original stance; seated or dancing legs keep their original credible angles and contact. Exactly two arms/hands and two coherent legs/feet; preserve natural grips and gravity. Original elegant realistic costume-photography/painterly finish retained. Whole character including hairpins, hands, props and every toe entirely visible with clear canvas margins; if a prop touches border add minimal transparent breathing room without changing head/body proportions. Genuine transparent alpha background remains, no floor, backdrop, cast ground shadow, gradient, glow, checkerboard, words or watermark. Tasteful fully clothed ordinary adult portrait.",
+      "status": "replaced",
+      "stagedAsset": "outputs/japan-korea-slim-20261022/staging/japan-photo-ten-20261022-03.png",
+      "footwearPolicy": "barefoot",
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a1615b-c380-73a3-bb7b-58bb2f9b4009/exec-1d1b9a6c-8343-496c-8b30-6dd3145ddef3.png",
+      "assetSha256": "2c801200d0f23bb651f0a9e430c205b58ac9f8ddfc3b9cc85266ff213ea042fd",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentFraction": 0.6785,
+        "nontransparentBorderPixels": 0,
+        "boundsAbove20": [
+          215,
+          9,
+          773,
+          1509
+        ]
+      },
+      "oldAssetDeleted": true,
+      "visualReview": "Reviewed full portrait and lower-leg sheets; regional outfit, original identity/props, proportional legs and complete silhouette retained. Three original Japanese geta retained."
+    },
+    {
+      "id": "japan-photo-ten-20261022-04",
+      "name": "日本女子-河北彩花-月白横笛",
+      "asset": "assets/beauties/random/番邦女子/日本女子-河北彩花-月白横笛.png",
+      "regionId": "japan",
+      "legacyAssets": [],
+      "category": "番邦女子",
+      "index": 8,
+      "originalSha256": "ea0be678ef12cc75d45b0c9d13b322bfc3c95bfdb2faae70074b3bc7d6ced81c",
+      "prompt": "Use case: precise-object-edit. Edit this isolated full-body clearly adult game character. Change ONLY BOTH LEGS, ANKLES AND BARE FEET to the user-approved slender-leg and dimensional-foot standard. Preserve EXACT facial identity/expression, head size, hair, neck, shoulder span, ribcage/torso/hips, hands, total height, original leg length and knee positions, body pose, Japanese/Korean summer costume, every ornament, prop and framing. Make visible adult thighs/calves noticeably slimmer (roughly 15-20 percent narrower in cross-section), with natural smooth taper through realistic knees, delicate calves and narrow ankles. Do not stretch limbs or reduce torso; no stick legs or broken joints. Feet must be graceful slender normal-size adult feet: reduce puffy/broad forefoot and thick toes; sculpt realistic foot dorsum, medial arch, heel, ankle bones/Achilles transition, subtle tendon/metatarsal structure and five distinct naturally varying toes per foot with credible joints and subtle nails. Give feet realistic 3D volume through restrained directional highlights, local form shading, natural skin texture and small toe separation shadows, without hard outlines or plastic swelling. Correct natural left/right orientation and ankle attachment, no fused/extra toes. Normal foot length relative to shin, no oversized or tiny doll feet. ALL FIGURES BAREFOOT: if source has shoes, sandals or socks remove them and generate naturally oriented bare feet in the SAME positions and stance; leave no discarded footwear. Where skirt/trousers hide legs KEEP them hidden, do not lift clothes or add a new slit: refine visible ankles/feet and only the immediately adjacent lower hem if needed. Standing feet maintain original stance; seated or dancing legs keep their original credible angles and contact. Exactly two arms/hands and two coherent legs/feet; preserve natural grips and gravity. Original elegant realistic costume-photography/painterly finish retained. Whole character including hairpins, hands, props and every toe entirely visible with clear canvas margins; if a prop touches border add minimal transparent breathing room without changing head/body proportions. Genuine transparent alpha background remains, no floor, backdrop, cast ground shadow, gradient, glow, checkerboard, words or watermark. Tasteful fully clothed ordinary adult portrait.",
+      "status": "replaced",
+      "stagedAsset": "outputs/japan-korea-slim-20261022/staging/japan-photo-ten-20261022-04.png",
+      "footwearPolicy": "barefoot",
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a1615b-c380-73a3-bb7b-58bb2f9b4009/exec-ff1d43f6-0b59-48bc-9b2e-e4453934aaf5.png",
+      "assetSha256": "00a5b67be494225ad66d43d82d76f8fcdbab06c816cba39bd5c7c71c387892a4",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentFraction": 0.6264,
+        "nontransparentBorderPixels": 0,
+        "boundsAbove20": [
+          157,
+          4,
+          860,
+          1519
+        ]
+      },
+      "oldAssetDeleted": true,
+      "finalCorrectionPrompt": "Edit this fully clothed adult game character portrait. Keep identical face, body proportions, hairstyle, outfit, accessories, pose and props. Refine the lower-limb anatomy to a naturally slender healthy adult build: slightly slimmer calves and ankles, more natural narrow foot shape, correctly formed joints and five toes on each foot. Preserve both legs' original lengths and positions, with anatomically correct matching left and right feet, big toes on the medial side and smaller toes descending toward the lateral side. Subtle realistic form shading for a three-dimensional appearance. Keep all clothing fully covering the body as in the original; do not raise hemlines or increase skin exposure. Retain barefoot styling. Whole figure remains fully in frame; genuine transparent background with no scene, floor or text. This is an ordinary historical costume game sprite.",
+      "visualReview": "Reviewed full portrait and lower-leg sheets; regional outfit, original identity/props, proportional legs and complete silhouette retained. Three original Japanese geta retained."
+    },
+    {
+      "id": "japan-photo-ten-20261022-05",
+      "name": "日本女子-石川澪-浅杏书卷",
+      "asset": "assets/beauties/random/番邦女子/日本女子-石川澪-浅杏书卷.png",
+      "regionId": "japan",
+      "legacyAssets": [],
+      "category": "番邦女子",
+      "index": 9,
+      "originalSha256": "7ed3bb94f1f091b1876c569f80eab7d84d8ac775ed3c2c850bf97d5648f36b52",
+      "prompt": "Use case: precise-object-edit. Edit this isolated full-body clearly adult game character. Change ONLY BOTH LEGS, ANKLES AND BARE FEET to the user-approved slender-leg and dimensional-foot standard. Preserve EXACT facial identity/expression, head size, hair, neck, shoulder span, ribcage/torso/hips, hands, total height, original leg length and knee positions, body pose, Japanese/Korean summer costume, every ornament, prop and framing. Make visible adult thighs/calves noticeably slimmer (roughly 15-20 percent narrower in cross-section), with natural smooth taper through realistic knees, delicate calves and narrow ankles. Do not stretch limbs or reduce torso; no stick legs or broken joints. Feet must be graceful slender normal-size adult feet: reduce puffy/broad forefoot and thick toes; sculpt realistic foot dorsum, medial arch, heel, ankle bones/Achilles transition, subtle tendon/metatarsal structure and five distinct naturally varying toes per foot with credible joints and subtle nails. Give feet realistic 3D volume through restrained directional highlights, local form shading, natural skin texture and small toe separation shadows, without hard outlines or plastic swelling. Correct natural left/right orientation and ankle attachment, no fused/extra toes. Normal foot length relative to shin, no oversized or tiny doll feet. ALL FIGURES BAREFOOT: if source has shoes, sandals or socks remove them and generate naturally oriented bare feet in the SAME positions and stance; leave no discarded footwear. Where skirt/trousers hide legs KEEP them hidden, do not lift clothes or add a new slit: refine visible ankles/feet and only the immediately adjacent lower hem if needed. Standing feet maintain original stance; seated or dancing legs keep their original credible angles and contact. Exactly two arms/hands and two coherent legs/feet; preserve natural grips and gravity. Original elegant realistic costume-photography/painterly finish retained. Whole character including hairpins, hands, props and every toe entirely visible with clear canvas margins; if a prop touches border add minimal transparent breathing room without changing head/body proportions. Genuine transparent alpha background remains, no floor, backdrop, cast ground shadow, gradient, glow, checkerboard, words or watermark. Tasteful fully clothed ordinary adult portrait.",
+      "status": "replaced",
+      "stagedAsset": "outputs/japan-korea-slim-20261022/staging/japan-photo-ten-20261022-05.png",
+      "footwearPolicy": "barefoot",
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a1615b-c380-73a3-bb7b-58bb2f9b4009/exec-80ca1e3c-5d35-43f8-8579-47d5fa37619f.png",
+      "assetSha256": "798f754517a8ace85f316524ce00be361b80d6620faff6303d21b9a982b3eadf",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentFraction": 0.621,
+        "nontransparentBorderPixels": 0,
+        "boundsAbove20": [
+          237,
+          14,
+          844,
+          1519
+        ]
+      },
+      "oldAssetDeleted": true,
+      "visualReview": "Reviewed full portrait and lower-leg sheets; regional outfit, original identity/props, proportional legs and complete silhouette retained. Three original Japanese geta retained."
+    },
+    {
+      "id": "japan-photo-ten-20261022-06",
+      "name": "日本女子-松本一香-竹露香盒",
+      "asset": "assets/beauties/random/番邦女子/日本女子-松本一香-竹露香盒.png",
+      "regionId": "japan",
+      "legacyAssets": [],
+      "category": "番邦女子",
+      "index": 10,
+      "originalSha256": "c0bb3f970ee1003c751ba533e4c9a68365d9465fea83199f6760ed54d0e92e83",
+      "prompt": "Use case: precise-object-edit. Edit this isolated full-body clearly adult game character. Change ONLY BOTH LEGS, ANKLES AND BARE FEET to the user-approved slender-leg and dimensional-foot standard. Preserve EXACT facial identity/expression, head size, hair, neck, shoulder span, ribcage/torso/hips, hands, total height, original leg length and knee positions, body pose, Japanese/Korean summer costume, every ornament, prop and framing. Make visible adult thighs/calves noticeably slimmer (roughly 15-20 percent narrower in cross-section), with natural smooth taper through realistic knees, delicate calves and narrow ankles. Do not stretch limbs or reduce torso; no stick legs or broken joints. Feet must be graceful slender normal-size adult feet: reduce puffy/broad forefoot and thick toes; sculpt realistic foot dorsum, medial arch, heel, ankle bones/Achilles transition, subtle tendon/metatarsal structure and five distinct naturally varying toes per foot with credible joints and subtle nails. Give feet realistic 3D volume through restrained directional highlights, local form shading, natural skin texture and small toe separation shadows, without hard outlines or plastic swelling. Correct natural left/right orientation and ankle attachment, no fused/extra toes. Normal foot length relative to shin, no oversized or tiny doll feet. ALL FIGURES BAREFOOT: if source has shoes, sandals or socks remove them and generate naturally oriented bare feet in the SAME positions and stance; leave no discarded footwear. Where skirt/trousers hide legs KEEP them hidden, do not lift clothes or add a new slit: refine visible ankles/feet and only the immediately adjacent lower hem if needed. Standing feet maintain original stance; seated or dancing legs keep their original credible angles and contact. Exactly two arms/hands and two coherent legs/feet; preserve natural grips and gravity. Original elegant realistic costume-photography/painterly finish retained. Whole character including hairpins, hands, props and every toe entirely visible with clear canvas margins; if a prop touches border add minimal transparent breathing room without changing head/body proportions. Genuine transparent alpha background remains, no floor, backdrop, cast ground shadow, gradient, glow, checkerboard, words or watermark. Tasteful fully clothed ordinary adult portrait.",
+      "status": "replaced",
+      "stagedAsset": "outputs/japan-korea-slim-20261022/staging/japan-photo-ten-20261022-06.png",
+      "footwearPolicy": "barefoot",
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a1615b-c380-73a3-bb7b-58bb2f9b4009/exec-39a8088e-4800-4901-8747-e5aee06d70a8.png",
+      "assetSha256": "d92a962b3ab3d710db4521e15161b554146dbffe4ecb7b45cdef5dac4f369843",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentFraction": 0.6605,
+        "nontransparentBorderPixels": 0,
+        "boundsAbove20": [
+          265,
+          9,
+          812,
+          1525
+        ]
+      },
+      "oldAssetDeleted": true,
+      "visualReview": "Reviewed full portrait and lower-leg sheets; regional outfit, original identity/props, proportional legs and complete silhouette retained. Three original Japanese geta retained."
+    },
+    {
+      "id": "japan-photo-ten-20261022-07",
+      "name": "日本女子-桃乃木香奈-桃绡纸伞",
+      "asset": "assets/beauties/random/番邦女子/日本女子-桃乃木香奈-桃绡纸伞.png",
+      "regionId": "japan",
+      "legacyAssets": [],
+      "category": "番邦女子",
+      "index": 11,
+      "originalSha256": "4f168e029f4fc3c8c8fb8004d6b8df43789d75d263ae11baa65a40bed267b2e0",
+      "prompt": "Use case: precise-object-edit. Edit this isolated full-body clearly adult game character. Change ONLY BOTH LEGS, ANKLES AND BARE FEET to the user-approved slender-leg and dimensional-foot standard. Preserve EXACT facial identity/expression, head size, hair, neck, shoulder span, ribcage/torso/hips, hands, total height, original leg length and knee positions, body pose, Japanese/Korean summer costume, every ornament, prop and framing. Make visible adult thighs/calves noticeably slimmer (roughly 15-20 percent narrower in cross-section), with natural smooth taper through realistic knees, delicate calves and narrow ankles. Do not stretch limbs or reduce torso; no stick legs or broken joints. Feet must be graceful slender normal-size adult feet: reduce puffy/broad forefoot and thick toes; sculpt realistic foot dorsum, medial arch, heel, ankle bones/Achilles transition, subtle tendon/metatarsal structure and five distinct naturally varying toes per foot with credible joints and subtle nails. Give feet realistic 3D volume through restrained directional highlights, local form shading, natural skin texture and small toe separation shadows, without hard outlines or plastic swelling. Correct natural left/right orientation and ankle attachment, no fused/extra toes. Normal foot length relative to shin, no oversized or tiny doll feet. ALL FIGURES BAREFOOT: if source has shoes, sandals or socks remove them and generate naturally oriented bare feet in the SAME positions and stance; leave no discarded footwear. Where skirt/trousers hide legs KEEP them hidden, do not lift clothes or add a new slit: refine visible ankles/feet and only the immediately adjacent lower hem if needed. Standing feet maintain original stance; seated or dancing legs keep their original credible angles and contact. Exactly two arms/hands and two coherent legs/feet; preserve natural grips and gravity. Original elegant realistic costume-photography/painterly finish retained. Whole character including hairpins, hands, props and every toe entirely visible with clear canvas margins; if a prop touches border add minimal transparent breathing room without changing head/body proportions. Genuine transparent alpha background remains, no floor, backdrop, cast ground shadow, gradient, glow, checkerboard, words or watermark. Tasteful fully clothed ordinary adult portrait.",
+      "status": "replaced",
+      "stagedAsset": "outputs/japan-korea-slim-20261022/staging/japan-photo-ten-20261022-07.png",
+      "footwearPolicy": "barefoot",
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a1615b-c380-73a3-bb7b-58bb2f9b4009/exec-0424ad35-18e2-4cea-8814-79fba35b79b8.png",
+      "assetSha256": "865fae3ebf436315ce7f5b1ced94ea1d280bdc96af25271a2b5baf0bd1e1fd51",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentFraction": 0.7588,
+        "nontransparentBorderPixels": 0,
+        "boundsAbove20": [
+          352,
+          16,
+          751,
+          1515
+        ]
+      },
+      "oldAssetDeleted": true,
+      "visualReview": "Reviewed full portrait and lower-leg sheets; regional outfit, original identity/props, proportional legs and complete silhouette retained. Three original Japanese geta retained."
+    },
+    {
+      "id": "japan-photo-ten-20261022-08",
+      "name": "日本女子-樱空桃-绯绡铃舞",
+      "asset": "assets/beauties/random/番邦女子/日本女子-樱空桃-绯绡铃舞.png",
+      "regionId": "japan",
+      "legacyAssets": [],
+      "category": "番邦女子",
+      "index": 12,
+      "originalSha256": "356a3c7092211fe0573b940874f98de758c85287b4c38098d4181850e938bbe5",
+      "prompt": "Use case: precise-object-edit. Edit this isolated full-body clearly adult game character. Change ONLY BOTH LEGS, ANKLES AND BARE FEET to the user-approved slender-leg and dimensional-foot standard. Preserve EXACT facial identity/expression, head size, hair, neck, shoulder span, ribcage/torso/hips, hands, total height, original leg length and knee positions, body pose, Japanese/Korean summer costume, every ornament, prop and framing. Make visible adult thighs/calves noticeably slimmer (roughly 15-20 percent narrower in cross-section), with natural smooth taper through realistic knees, delicate calves and narrow ankles. Do not stretch limbs or reduce torso; no stick legs or broken joints. Feet must be graceful slender normal-size adult feet: reduce puffy/broad forefoot and thick toes; sculpt realistic foot dorsum, medial arch, heel, ankle bones/Achilles transition, subtle tendon/metatarsal structure and five distinct naturally varying toes per foot with credible joints and subtle nails. Give feet realistic 3D volume through restrained directional highlights, local form shading, natural skin texture and small toe separation shadows, without hard outlines or plastic swelling. Correct natural left/right orientation and ankle attachment, no fused/extra toes. Normal foot length relative to shin, no oversized or tiny doll feet. ALL FIGURES BAREFOOT: if source has shoes, sandals or socks remove them and generate naturally oriented bare feet in the SAME positions and stance; leave no discarded footwear. Where skirt/trousers hide legs KEEP them hidden, do not lift clothes or add a new slit: refine visible ankles/feet and only the immediately adjacent lower hem if needed. Standing feet maintain original stance; seated or dancing legs keep their original credible angles and contact. Exactly two arms/hands and two coherent legs/feet; preserve natural grips and gravity. Original elegant realistic costume-photography/painterly finish retained. Whole character including hairpins, hands, props and every toe entirely visible with clear canvas margins; if a prop touches border add minimal transparent breathing room without changing head/body proportions. Genuine transparent alpha background remains, no floor, backdrop, cast ground shadow, gradient, glow, checkerboard, words or watermark. Tasteful fully clothed ordinary adult portrait.",
+      "status": "replaced",
+      "stagedAsset": "outputs/japan-korea-slim-20261022/staging/japan-photo-ten-20261022-08.png",
+      "footwearPolicy": "barefoot",
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a1615b-c380-73a3-bb7b-58bb2f9b4009/exec-54347a88-f9f4-4d0c-928b-0ce510e8266e.png",
+      "assetSha256": "0bc24d13b253321c7875724ef82088ec6ac34f67071314d2c6b6bf362a506a1b",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentFraction": 0.7066,
+        "nontransparentBorderPixels": 0,
+        "boundsAbove20": [
+          293,
+          10,
+          976,
+          1514
+        ]
+      },
+      "oldAssetDeleted": true,
+      "finalCorrectionPrompt": "Use case: precise-object-edit. Edit this isolated full-body clearly adult game character. Change ONLY BOTH LEGS, ANKLES AND BARE FEET to the user-approved slender-leg and dimensional-foot standard. Preserve EXACT facial identity/expression, head size, hair, neck, shoulder span, ribcage/torso/hips, hands, total height, original leg length and knee positions, body pose, Japanese/Korean summer costume, every ornament, prop and framing. Make visible adult thighs/calves noticeably slimmer (roughly 15-20 percent narrower in cross-section), with natural smooth taper through realistic knees, delicate calves and narrow ankles. Do not stretch limbs or reduce torso; no stick legs or broken joints. Feet must be graceful slender normal-size adult feet: reduce puffy/broad forefoot and thick toes; sculpt realistic foot dorsum, medial arch, heel, ankle bones/Achilles transition, subtle tendon/metatarsal structure and five distinct naturally varying toes per foot with credible joints and subtle nails. Give feet realistic 3D volume through restrained directional highlights, local form shading, natural skin texture and small toe separation shadows, without hard outlines or plastic swelling. Correct natural left/right orientation and ankle attachment, no fused/extra toes. Normal foot length relative to shin, no oversized or tiny doll feet. ALL FIGURES BAREFOOT: if source has shoes, sandals or socks remove them and generate naturally oriented bare feet in the SAME positions and stance; leave no discarded footwear. Where skirt/trousers hide legs KEEP them hidden, do not lift clothes or add a new slit: refine visible ankles/feet and only the immediately adjacent lower hem if needed. Standing feet maintain original stance; seated or dancing legs keep their original credible angles and contact. Exactly two arms/hands and two coherent legs/feet; preserve natural grips and gravity. Original elegant realistic costume-photography/painterly finish retained. Whole character including hairpins, hands, props and every toe entirely visible with clear canvas margins; if a prop touches border add minimal transparent breathing room without changing head/body proportions. Genuine transparent alpha background remains, no floor, backdrop, cast ground shadow, gradient, glow, checkerboard, words or watermark. Tasteful fully clothed ordinary adult portrait.",
+      "visualReview": "Reviewed full portrait and lower-leg sheets; regional outfit, original identity/props, proportional legs and complete silhouette retained. Three original Japanese geta retained."
+    },
+    {
+      "id": "japan-photo-ten-20261022-09",
+      "name": "日本女子-天使萌-蓝绡静坐",
+      "asset": "assets/beauties/random/番邦女子/日本女子-天使萌-蓝绡静坐.png",
+      "regionId": "japan",
+      "legacyAssets": [],
+      "category": "番邦女子",
+      "index": 13,
+      "originalSha256": "522db4ce2910372b6d7dfcfacd4277e70857b31e392b7872f94c59fc2c470fb1",
+      "prompt": "Use case: precise-object-edit. Edit this isolated full-body clearly adult game character. Change ONLY BOTH LEGS, ANKLES AND BARE FEET to the user-approved slender-leg and dimensional-foot standard. Preserve EXACT facial identity/expression, head size, hair, neck, shoulder span, ribcage/torso/hips, hands, total height, original leg length and knee positions, body pose, Japanese/Korean summer costume, every ornament, prop and framing. Make visible adult thighs/calves noticeably slimmer (roughly 15-20 percent narrower in cross-section), with natural smooth taper through realistic knees, delicate calves and narrow ankles. Do not stretch limbs or reduce torso; no stick legs or broken joints. Feet must be graceful slender normal-size adult feet: reduce puffy/broad forefoot and thick toes; sculpt realistic foot dorsum, medial arch, heel, ankle bones/Achilles transition, subtle tendon/metatarsal structure and five distinct naturally varying toes per foot with credible joints and subtle nails. Give feet realistic 3D volume through restrained directional highlights, local form shading, natural skin texture and small toe separation shadows, without hard outlines or plastic swelling. Correct natural left/right orientation and ankle attachment, no fused/extra toes. Normal foot length relative to shin, no oversized or tiny doll feet. ALL FIGURES BAREFOOT: if source has shoes, sandals or socks remove them and generate naturally oriented bare feet in the SAME positions and stance; leave no discarded footwear. Where skirt/trousers hide legs KEEP them hidden, do not lift clothes or add a new slit: refine visible ankles/feet and only the immediately adjacent lower hem if needed. Standing feet maintain original stance; seated or dancing legs keep their original credible angles and contact. Exactly two arms/hands and two coherent legs/feet; preserve natural grips and gravity. Original elegant realistic costume-photography/painterly finish retained. Whole character including hairpins, hands, props and every toe entirely visible with clear canvas margins; if a prop touches border add minimal transparent breathing room without changing head/body proportions. Genuine transparent alpha background remains, no floor, backdrop, cast ground shadow, gradient, glow, checkerboard, words or watermark. Tasteful fully clothed ordinary adult portrait.",
+      "status": "replaced",
+      "stagedAsset": "outputs/japan-korea-slim-20261022/staging/japan-photo-ten-20261022-09.png",
+      "footwearPolicy": "barefoot",
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a1615b-c380-73a3-bb7b-58bb2f9b4009/exec-4a25e870-d995-4a5c-9b36-1ba2dbae9208.png",
+      "assetSha256": "7bad27cd228c5e3d0fd4a2906f3040768bd641ee1ded5fc1350c213369e7c321",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentFraction": 0.6443,
+        "nontransparentBorderPixels": 0,
+        "boundsAbove20": [
+          128,
+          25,
+          1007,
+          1504
+        ]
+      },
+      "oldAssetDeleted": true,
+      "finalCorrectionPrompt": "Edit this fully clothed adult game character portrait. Keep identical face, body proportions, hairstyle, outfit, accessories, pose and props. Refine the lower-limb anatomy to a naturally slender healthy adult build: slightly slimmer calves and ankles, more natural narrow foot shape, correctly formed joints and five toes on each foot. Preserve both legs' original lengths and positions, with anatomically correct matching left and right feet, big toes on the medial side and smaller toes descending toward the lateral side. Subtle realistic form shading for a three-dimensional appearance. Keep all clothing fully covering the body as in the original; do not raise hemlines or increase skin exposure. Retain barefoot styling. Whole figure remains fully in frame; genuine transparent background with no scene, floor or text. This is an ordinary historical costume game sprite.",
+      "visualReview": "Reviewed full portrait and lower-leg sheets; regional outfit, original identity/props, proportional legs and complete silhouette retained. Three original Japanese geta retained."
+    },
+    {
+      "id": "japan-photo-ten-20261022-10",
+      "name": "日本女子-八挂海-碧荷玉盏",
+      "asset": "assets/beauties/random/番邦女子/日本女子-八挂海-碧荷玉盏.png",
+      "regionId": "japan",
+      "legacyAssets": [],
+      "category": "番邦女子",
+      "index": 14,
+      "originalSha256": "81ffadc3818b64b5d146f2e8d184ccbc6a38b237aa090f752c562bffeb49b0d9",
+      "prompt": "Use case: precise-object-edit. Edit this isolated full-body clearly adult game character. Change ONLY BOTH LEGS, ANKLES AND BARE FEET to the user-approved slender-leg and dimensional-foot standard. Preserve EXACT facial identity/expression, head size, hair, neck, shoulder span, ribcage/torso/hips, hands, total height, original leg length and knee positions, body pose, Japanese/Korean summer costume, every ornament, prop and framing. Make visible adult thighs/calves noticeably slimmer (roughly 15-20 percent narrower in cross-section), with natural smooth taper through realistic knees, delicate calves and narrow ankles. Do not stretch limbs or reduce torso; no stick legs or broken joints. Feet must be graceful slender normal-size adult feet: reduce puffy/broad forefoot and thick toes; sculpt realistic foot dorsum, medial arch, heel, ankle bones/Achilles transition, subtle tendon/metatarsal structure and five distinct naturally varying toes per foot with credible joints and subtle nails. Give feet realistic 3D volume through restrained directional highlights, local form shading, natural skin texture and small toe separation shadows, without hard outlines or plastic swelling. Correct natural left/right orientation and ankle attachment, no fused/extra toes. Normal foot length relative to shin, no oversized or tiny doll feet. ALL FIGURES BAREFOOT: if source has shoes, sandals or socks remove them and generate naturally oriented bare feet in the SAME positions and stance; leave no discarded footwear. Where skirt/trousers hide legs KEEP them hidden, do not lift clothes or add a new slit: refine visible ankles/feet and only the immediately adjacent lower hem if needed. Standing feet maintain original stance; seated or dancing legs keep their original credible angles and contact. Exactly two arms/hands and two coherent legs/feet; preserve natural grips and gravity. Original elegant realistic costume-photography/painterly finish retained. Whole character including hairpins, hands, props and every toe entirely visible with clear canvas margins; if a prop touches border add minimal transparent breathing room without changing head/body proportions. Genuine transparent alpha background remains, no floor, backdrop, cast ground shadow, gradient, glow, checkerboard, words or watermark. Tasteful fully clothed ordinary adult portrait.",
+      "status": "replaced",
+      "stagedAsset": "outputs/japan-korea-slim-20261022/staging/japan-photo-ten-20261022-10.png",
+      "footwearPolicy": "barefoot",
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a1615b-c380-73a3-bb7b-58bb2f9b4009/exec-5590b634-7fdc-4b44-a8af-4ded5bfb4e58.png",
+      "assetSha256": "3d805870f4b9f06faa2c31fd7a80d39afea47ae755fef204526ae1a7d437aeec",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentFraction": 0.7283,
+        "nontransparentBorderPixels": 0,
+        "boundsAbove20": [
+          288,
+          16,
+          774,
+          1499
+        ]
+      },
+      "oldAssetDeleted": true,
+      "finalCorrectionPrompt": "Correct ONLY the lower ankles and both feet of this fully clothed adult historical game portrait. Preserve exact face, head/body ratio, torso, slim leg thickness, hair, Japanese yukata, obi, jewelry, hands and lotus bowl. Fix left/right anatomy and toe order. Replace awkward floating bent feet with a calm stable stance: BOTH heels naturally down at the same implied ground level, feet gently separated, toes facing generally toward viewer, no crossed ankles or twisted shins. The subject's RIGHT FOOT is on the LEFT of the image: its BIG TOE is on its INNER RIGHT edge, smaller toes descend toward outer LEFT edge. The subject's LEFT FOOT is on the RIGHT of the image: its BIG TOE is on its INNER LEFT edge, smaller toes descend toward outer RIGHT edge. Exactly five toes on each foot, ONE big toe per foot on medial side, natural joints, distinct nails, realistic narrow adult foot shape, subtle arch and three-dimensional dorsum shading. Each ankle connects directly to its own lower leg; no reversed feet or two feet of the same handedness. Existing feet are ordinarily bare; keep them bare. Change only foot orientation and minimal adjacent ankle/hem as necessary. Do not change pose above knees or enlarge feet or change clothing. Whole figure fully inside frame, genuine alpha transparency, no backdrop, floor, shadows, text or watermark.",
+      "visualReview": "Reviewed full portrait and lower-leg sheets; regional outfit, original identity/props, proportional legs and complete silhouette retained. Three original Japanese geta retained."
+    },
+    {
+      "id": "korea-photo-ten-20261022-01",
+      "name": "韩国女子-宋慧乔-玉瓷清茶",
+      "asset": "assets/beauties/random/番邦女子/韩国女子-宋慧乔-玉瓷清茶.png",
+      "regionId": "korea",
+      "legacyAssets": [],
+      "category": "番邦女子",
+      "index": 15,
+      "originalSha256": "06deec3cd1197101a4960ac214151d45c094decce3e1d874b21decb165b9f48b",
+      "prompt": "Use case: precise-object-edit. IMAGE 1 is the fully clothed adult historical Korean game character to EDIT. IMAGE 2 is real adult fashion model HE SUI 何穗 in a sporty street outfit, used ONLY as a LOWER-LEG SHAPE reference. Preserve Image 1 EXACT face/identity/expression, head size, hairstyle, neck, shoulders, torso/ribcage/hips, total height, upper-leg length, hands, original Korean summer hanbok and embroidery, all jewelry, handheld props, framing and natural skin tone. Do not copy Image 2 face, outfit, shoes, background, pose or model's total height. PRIMARY USER CORRECTION: recreate visible CALF AND ANKLE CONTOURS using He Sui's relaxed lower-leg proportions in Image 2, scaled to Image 1 skeleton and existing length. Clean lean near-straight shin line, only subtle calf volume in UPPER THIRD below knee, long smoothly tapering lower half, fine narrow ankle, natural Achilles and modest ankle bones. Remove low round bulges, thick cylindrical/sausage-shaped shins and abrupt knee-to-calf lumps; do not make emaciated stick legs, pinched concavities or stretched shins. Modestly slim visible thighs if needed to keep anatomical balance, without changing knee height or exposing extra skin. For standing figures let both ankles be neutral and heels down in a comfortable staggered stance, avoiding pointed toes or flexed calves; seated figures keep original seated angles with relaxed feet. Keep existing leg separation and overall pose above knees. Refine feet to normal slender adult shape with gentle arch/dorsum form shading and natural skin texture; exactly five correctly ordered toes on each foot, big toe ALWAYS medial and little toe lateral, natural left/right foot handedness and each ankle connected to its own shin. No swollen forefoot, broad thick toes, oversized feet or flat painted-on shape. All feet are bare; if Image 1 still has footwear remove it without adding footwear elsewhere. If clothing hides calves KEEP them covered; do not lift hem, invent slits or replace clothing. Only minimal adjacent hem adjustment for normal foot contact. Whole figure, props and toes fully visible with a little transparent margin. Preserve genuine transparent alpha background, no floor, cast ground shadows, glow, scenery, text or watermark. Ordinary realistic adult costume game portrait.",
+      "status": "replaced",
+      "stagedAsset": "outputs/japan-korea-slim-20261022/staging/korea-photo-ten-20261022-01.png",
+      "footwearPolicy": "barefoot",
+      "calfReference": "assets/beauties/references/he-sui-calves-20261022/sports-street-2020.jpg",
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a1615b-c380-73a3-bb7b-58bb2f9b4009/exec-b515717b-a0f4-4c2e-8b13-1b4be7b284f4.png",
+      "assetSha256": "1f21959a74d77607a7f05bd2cbb714f22983051625cb4e978ae677113a239cb9",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentFraction": 0.6211,
+        "nontransparentBorderPixels": 0,
+        "boundsAbove20": [
+          135,
+          15,
+          898,
+          1524
+        ]
+      },
+      "oldAssetDeleted": true,
+      "finalCorrectionPrompt": "Use case: precise-object-edit. Two inputs. IMAGE 1 = adult costume character edit TARGET. IMAGE 2 = user-approved IU character, use ONLY lower-leg contour as anatomical reference, never copy her face/clothes/pose. Preserve target's exact face, head/body proportions, shoulder/torso/hips, hairstyle, hands, hanbok, jewelry, tea bowl and full-body framing. Main correction: target's lower legs look sausage-like with a low rounded calf bulge and insufficient taper. Rebuild ONLY visible calves/ankles into naturally slender healthy adult anatomy matching Image 2: smaller, subtle calf fullness located in upper third below knee, smooth nearly straight outer shin contour, a gentle restrained inner-calf curve that tapers over a LONG lean lower half into a clearly narrower ankle; refined Achilles transition, two modest ankle landmarks, believable knee-to-shin transition. No low bulbous calf, no thick cylindrical shin, no abrupt concave pinching, no muscular balloon or stick legs. Slightly refine visible thigh width if necessary, preserving natural anatomy, total leg length, knee location, stance and overall height. Natural left/right matching feet with five toes each, big toes toward medial side, ordinary slender normal-sized foot shape and subtle dimensional form shading. Keep current face and clothing absolutely unchanged, do not increase visible skin area or raise skirt. Both legs join correct feet, no crossing or twisted ankles. Full adult fully clothed portrait, isolated genuine alpha transparent background, no setting/floor/ground shadow/glow/text. This is an ordinary costume game asset.",
+      "visualReview": "Reviewed full portrait and lower-leg sheets; regional outfit, original identity/props, proportional legs and complete silhouette retained. Three original Japanese geta retained."
+    },
+    {
+      "id": "korea-photo-ten-20261022-02",
+      "name": "韩国女子-全智贤-荷影团扇",
+      "asset": "assets/beauties/random/番邦女子/韩国女子-全智贤-荷影团扇.png",
+      "regionId": "korea",
+      "legacyAssets": [],
+      "category": "番邦女子",
+      "index": 16,
+      "originalSha256": "ada1f719e7036b8c0769aae82229aa9dfa06f7e074934c8de3b0db34be180edb",
+      "prompt": "Use case: precise-object-edit. IMAGE 1 is the fully clothed adult historical Korean game character to EDIT. IMAGE 2 is real adult fashion model HE SUI 何穗 in a sporty street outfit, used ONLY as a LOWER-LEG SHAPE reference. Preserve Image 1 EXACT face/identity/expression, head size, hairstyle, neck, shoulders, torso/ribcage/hips, total height, upper-leg length, hands, original Korean summer hanbok and embroidery, all jewelry, handheld props, framing and natural skin tone. Do not copy Image 2 face, outfit, shoes, background, pose or model's total height. PRIMARY USER CORRECTION: recreate visible CALF AND ANKLE CONTOURS using He Sui's relaxed lower-leg proportions in Image 2, scaled to Image 1 skeleton and existing length. Clean lean near-straight shin line, only subtle calf volume in UPPER THIRD below knee, long smoothly tapering lower half, fine narrow ankle, natural Achilles and modest ankle bones. Remove low round bulges, thick cylindrical/sausage-shaped shins and abrupt knee-to-calf lumps; do not make emaciated stick legs, pinched concavities or stretched shins. Modestly slim visible thighs if needed to keep anatomical balance, without changing knee height or exposing extra skin. For standing figures let both ankles be neutral and heels down in a comfortable staggered stance, avoiding pointed toes or flexed calves; seated figures keep original seated angles with relaxed feet. Keep existing leg separation and overall pose above knees. Refine feet to normal slender adult shape with gentle arch/dorsum form shading and natural skin texture; exactly five correctly ordered toes on each foot, big toe ALWAYS medial and little toe lateral, natural left/right foot handedness and each ankle connected to its own shin. No swollen forefoot, broad thick toes, oversized feet or flat painted-on shape. All feet are bare; if Image 1 still has footwear remove it without adding footwear elsewhere. If clothing hides calves KEEP them covered; do not lift hem, invent slits or replace clothing. Only minimal adjacent hem adjustment for normal foot contact. Whole figure, props and toes fully visible with a little transparent margin. Preserve genuine transparent alpha background, no floor, cast ground shadows, glow, scenery, text or watermark. Ordinary realistic adult costume game portrait.",
+      "status": "replaced",
+      "stagedAsset": "outputs/japan-korea-slim-20261022/staging/korea-photo-ten-20261022-02.png",
+      "footwearPolicy": "barefoot",
+      "calfReference": "assets/beauties/references/he-sui-calves-20261022/sports-street-2020.jpg",
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a1615b-c380-73a3-bb7b-58bb2f9b4009/exec-d6211a6c-172e-45f4-b2bb-dabd4147eb54.png",
+      "assetSha256": "1d36725a140adb5bc833987deb6ff9fa0f391c7935e026987d6bb5c5f3fd06d1",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentFraction": 0.5372,
+        "nontransparentBorderPixels": 0,
+        "boundsAbove20": [
+          88,
+          14,
+          958,
+          1524
+        ]
+      },
+      "oldAssetDeleted": true,
+      "finalCorrectionPrompt": "Use case: precise-object-edit. Two inputs. IMAGE 1 = adult costume character edit TARGET. IMAGE 2 = user-approved IU character, use ONLY lower-leg contour as anatomical reference, never copy her face/clothes/pose. Preserve target's exact face, head/body proportions, shoulder/torso/hips, hairstyle, hands, hanbok, jewelry, tea bowl and full-body framing. Main correction: target's lower legs look sausage-like with a low rounded calf bulge and insufficient taper. Rebuild ONLY visible calves/ankles into naturally slender healthy adult anatomy matching Image 2: smaller, subtle calf fullness located in upper third below knee, smooth nearly straight outer shin contour, a gentle restrained inner-calf curve that tapers over a LONG lean lower half into a clearly narrower ankle; refined Achilles transition, two modest ankle landmarks, believable knee-to-shin transition. No low bulbous calf, no thick cylindrical shin, no abrupt concave pinching, no muscular balloon or stick legs. Slightly refine visible thigh width if necessary, preserving natural anatomy, total leg length, knee location, stance and overall height. Natural left/right matching feet with five toes each, big toes toward medial side, ordinary slender normal-sized foot shape and subtle dimensional form shading. Keep current face and clothing absolutely unchanged, do not increase visible skin area or raise skirt. Both legs join correct feet, no crossing or twisted ankles. Full adult fully clothed portrait, isolated genuine alpha transparent background, no setting/floor/ground shadow/glow/text. This is an ordinary costume game asset.",
+      "visualReview": "Reviewed full portrait and lower-leg sheets; regional outfit, original identity/props, proportional legs and complete silhouette retained. Three original Japanese geta retained."
+    },
+    {
+      "id": "korea-photo-ten-20261022-03",
+      "name": "韩国女子-孙艺珍-杏绡书香",
+      "asset": "assets/beauties/random/番邦女子/韩国女子-孙艺珍-杏绡书香.png",
+      "regionId": "korea",
+      "legacyAssets": [],
+      "category": "番邦女子",
+      "index": 17,
+      "originalSha256": "e33ca6541fd6028bd11042fb290bb4c5b0ec5300dfcbd13ab61f36a07e45d585",
+      "prompt": "Use case: precise-object-edit. IMAGE 1 is the fully clothed adult historical Korean game character to EDIT. IMAGE 2 is real adult fashion model HE SUI 何穗 in a sporty street outfit, used ONLY as a LOWER-LEG SHAPE reference. Preserve Image 1 EXACT face/identity/expression, head size, hairstyle, neck, shoulders, torso/ribcage/hips, total height, upper-leg length, hands, original Korean summer hanbok and embroidery, all jewelry, handheld props, framing and natural skin tone. Do not copy Image 2 face, outfit, shoes, background, pose or model's total height. PRIMARY USER CORRECTION: recreate visible CALF AND ANKLE CONTOURS using He Sui's relaxed lower-leg proportions in Image 2, scaled to Image 1 skeleton and existing length. Clean lean near-straight shin line, only subtle calf volume in UPPER THIRD below knee, long smoothly tapering lower half, fine narrow ankle, natural Achilles and modest ankle bones. Remove low round bulges, thick cylindrical/sausage-shaped shins and abrupt knee-to-calf lumps; do not make emaciated stick legs, pinched concavities or stretched shins. Modestly slim visible thighs if needed to keep anatomical balance, without changing knee height or exposing extra skin. For standing figures let both ankles be neutral and heels down in a comfortable staggered stance, avoiding pointed toes or flexed calves; seated figures keep original seated angles with relaxed feet. Keep existing leg separation and overall pose above knees. Refine feet to normal slender adult shape with gentle arch/dorsum form shading and natural skin texture; exactly five correctly ordered toes on each foot, big toe ALWAYS medial and little toe lateral, natural left/right foot handedness and each ankle connected to its own shin. No swollen forefoot, broad thick toes, oversized feet or flat painted-on shape. All feet are bare; if Image 1 still has footwear remove it without adding footwear elsewhere. If clothing hides calves KEEP them covered; do not lift hem, invent slits or replace clothing. Only minimal adjacent hem adjustment for normal foot contact. Whole figure, props and toes fully visible with a little transparent margin. Preserve genuine transparent alpha background, no floor, cast ground shadows, glow, scenery, text or watermark. Ordinary realistic adult costume game portrait.",
+      "status": "replaced",
+      "stagedAsset": "outputs/japan-korea-slim-20261022/staging/korea-photo-ten-20261022-03.png",
+      "footwearPolicy": "barefoot",
+      "calfReference": "assets/beauties/references/he-sui-calves-20261022/sports-street-2020.jpg",
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a1615b-c380-73a3-bb7b-58bb2f9b4009/exec-22f90104-f0c3-4de0-b35d-02ecb66a3b5d.png",
+      "assetSha256": "55463d0bbfaf8a15ad246cfee921e5df49da92c97a529659a34808fe0962ed6f",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentFraction": 0.6204,
+        "nontransparentBorderPixels": 0,
+        "boundsAbove20": [
+          148,
+          13,
+          911,
+          1526
+        ]
+      },
+      "oldAssetDeleted": true,
+      "finalCorrectionPrompt": "Use case: precise-object-edit. Two inputs. IMAGE 1 = adult costume character edit TARGET. IMAGE 2 = user-approved IU character, use ONLY lower-leg contour as anatomical reference, never copy her face/clothes/pose. Preserve target's exact face, head/body proportions, shoulder/torso/hips, hairstyle, hands, hanbok, jewelry, tea bowl and full-body framing. Main correction: target's lower legs look sausage-like with a low rounded calf bulge and insufficient taper. Rebuild ONLY visible calves/ankles into naturally slender healthy adult anatomy matching Image 2: smaller, subtle calf fullness located in upper third below knee, smooth nearly straight outer shin contour, a gentle restrained inner-calf curve that tapers over a LONG lean lower half into a clearly narrower ankle; refined Achilles transition, two modest ankle landmarks, believable knee-to-shin transition. No low bulbous calf, no thick cylindrical shin, no abrupt concave pinching, no muscular balloon or stick legs. Slightly refine visible thigh width if necessary, preserving natural anatomy, total leg length, knee location, stance and overall height. Natural left/right matching feet with five toes each, big toes toward medial side, ordinary slender normal-sized foot shape and subtle dimensional form shading. Keep current face and clothing absolutely unchanged, do not increase visible skin area or raise skirt. Both legs join correct feet, no crossing or twisted ankles. Full adult fully clothed portrait, isolated genuine alpha transparent background, no setting/floor/ground shadow/glow/text. This is an ordinary costume game asset.",
+      "visualReview": "Reviewed full portrait and lower-leg sheets; regional outfit, original identity/props, proportional legs and complete silhouette retained. Three original Japanese geta retained."
+    },
+    {
+      "id": "korea-photo-ten-20261022-04",
+      "name": "韩国女子-金泰希-绯绡莲盏",
+      "asset": "assets/beauties/random/番邦女子/韩国女子-金泰希-绯绡莲盏.png",
+      "regionId": "korea",
+      "legacyAssets": [],
+      "category": "番邦女子",
+      "index": 18,
+      "originalSha256": "3240e3024a8a98ec0b66d68e871c4620cebcea0af3d814f74f6d06bde445962e",
+      "prompt": "Use case: precise-object-edit. IMAGE 1 is the fully clothed adult historical Korean game character to EDIT. IMAGE 2 is real adult fashion model HE SUI 何穗 in a sporty street outfit, used ONLY as a LOWER-LEG SHAPE reference. Preserve Image 1 EXACT face/identity/expression, head size, hairstyle, neck, shoulders, torso/ribcage/hips, total height, upper-leg length, hands, original Korean summer hanbok and embroidery, all jewelry, handheld props, framing and natural skin tone. Do not copy Image 2 face, outfit, shoes, background, pose or model's total height. PRIMARY USER CORRECTION: recreate visible CALF AND ANKLE CONTOURS using He Sui's relaxed lower-leg proportions in Image 2, scaled to Image 1 skeleton and existing length. Clean lean near-straight shin line, only subtle calf volume in UPPER THIRD below knee, long smoothly tapering lower half, fine narrow ankle, natural Achilles and modest ankle bones. Remove low round bulges, thick cylindrical/sausage-shaped shins and abrupt knee-to-calf lumps; do not make emaciated stick legs, pinched concavities or stretched shins. Modestly slim visible thighs if needed to keep anatomical balance, without changing knee height or exposing extra skin. For standing figures let both ankles be neutral and heels down in a comfortable staggered stance, avoiding pointed toes or flexed calves; seated figures keep original seated angles with relaxed feet. Keep existing leg separation and overall pose above knees. Refine feet to normal slender adult shape with gentle arch/dorsum form shading and natural skin texture; exactly five correctly ordered toes on each foot, big toe ALWAYS medial and little toe lateral, natural left/right foot handedness and each ankle connected to its own shin. No swollen forefoot, broad thick toes, oversized feet or flat painted-on shape. All feet are bare; if Image 1 still has footwear remove it without adding footwear elsewhere. If clothing hides calves KEEP them covered; do not lift hem, invent slits or replace clothing. Only minimal adjacent hem adjustment for normal foot contact. Whole figure, props and toes fully visible with a little transparent margin. Preserve genuine transparent alpha background, no floor, cast ground shadows, glow, scenery, text or watermark. Ordinary realistic adult costume game portrait.",
+      "status": "replaced",
+      "stagedAsset": "outputs/japan-korea-slim-20261022/staging/korea-photo-ten-20261022-04.png",
+      "footwearPolicy": "barefoot",
+      "calfReference": "assets/beauties/references/he-sui-calves-20261022/sports-street-2020.jpg",
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a1615b-c380-73a3-bb7b-58bb2f9b4009/exec-38c6458c-cd4c-4b9b-bc8f-f426698836ea.png",
+      "assetSha256": "9b32f6c734665ad80ed989094b7946efc4a1f4786629deb884ba935c72533e39",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentFraction": 0.6285,
+        "nontransparentBorderPixels": 0,
+        "boundsAbove20": [
+          136,
+          21,
+          905,
+          1521
+        ]
+      },
+      "oldAssetDeleted": true,
+      "finalCorrectionPrompt": "Use case: precise-object-edit. Two inputs. IMAGE 1 = adult costume character edit TARGET. IMAGE 2 = user-approved IU character, use ONLY lower-leg contour as anatomical reference, never copy her face/clothes/pose. Preserve target's exact face, head/body proportions, shoulder/torso/hips, hairstyle, hands, hanbok, jewelry, tea bowl and full-body framing. Main correction: target's lower legs look sausage-like with a low rounded calf bulge and insufficient taper. Rebuild ONLY visible calves/ankles into naturally slender healthy adult anatomy matching Image 2: smaller, subtle calf fullness located in upper third below knee, smooth nearly straight outer shin contour, a gentle restrained inner-calf curve that tapers over a LONG lean lower half into a clearly narrower ankle; refined Achilles transition, two modest ankle landmarks, believable knee-to-shin transition. No low bulbous calf, no thick cylindrical shin, no abrupt concave pinching, no muscular balloon or stick legs. Slightly refine visible thigh width if necessary, preserving natural anatomy, total leg length, knee location, stance and overall height. Natural left/right matching feet with five toes each, big toes toward medial side, ordinary slender normal-sized foot shape and subtle dimensional form shading. Keep current face and clothing absolutely unchanged, do not increase visible skin area or raise skirt. Both legs join correct feet, no crossing or twisted ankles. Full adult fully clothed portrait, isolated genuine alpha transparent background, no setting/floor/ground shadow/glow/text. This is an ordinary costume game asset.",
+      "visualReview": "Reviewed full portrait and lower-leg sheets; regional outfit, original identity/props, proportional legs and complete silhouette retained. Three original Japanese geta retained."
+    },
+    {
+      "id": "korea-photo-ten-20261022-05",
+      "name": "韩国女子-韩佳人-竹露香囊",
+      "asset": "assets/beauties/random/番邦女子/韩国女子-韩佳人-竹露香囊.png",
+      "regionId": "korea",
+      "legacyAssets": [],
+      "category": "番邦女子",
+      "index": 19,
+      "originalSha256": "1d1d377b3310d805c054a6c7878a01ff3b79da24fdc4dc87f5e21bbcdd2b156e",
+      "prompt": "Use case: precise-object-edit. IMAGE 1 is the fully clothed adult historical Korean game character to EDIT. IMAGE 2 is real adult fashion model HE SUI 何穗 in a sporty street outfit, used ONLY as a LOWER-LEG SHAPE reference. Preserve Image 1 EXACT face/identity/expression, head size, hairstyle, neck, shoulders, torso/ribcage/hips, total height, upper-leg length, hands, original Korean summer hanbok and embroidery, all jewelry, handheld props, framing and natural skin tone. Do not copy Image 2 face, outfit, shoes, background, pose or model's total height. PRIMARY USER CORRECTION: recreate visible CALF AND ANKLE CONTOURS using He Sui's relaxed lower-leg proportions in Image 2, scaled to Image 1 skeleton and existing length. Clean lean near-straight shin line, only subtle calf volume in UPPER THIRD below knee, long smoothly tapering lower half, fine narrow ankle, natural Achilles and modest ankle bones. Remove low round bulges, thick cylindrical/sausage-shaped shins and abrupt knee-to-calf lumps; do not make emaciated stick legs, pinched concavities or stretched shins. Modestly slim visible thighs if needed to keep anatomical balance, without changing knee height or exposing extra skin. For standing figures let both ankles be neutral and heels down in a comfortable staggered stance, avoiding pointed toes or flexed calves; seated figures keep original seated angles with relaxed feet. Keep existing leg separation and overall pose above knees. Refine feet to normal slender adult shape with gentle arch/dorsum form shading and natural skin texture; exactly five correctly ordered toes on each foot, big toe ALWAYS medial and little toe lateral, natural left/right foot handedness and each ankle connected to its own shin. No swollen forefoot, broad thick toes, oversized feet or flat painted-on shape. All feet are bare; if Image 1 still has footwear remove it without adding footwear elsewhere. If clothing hides calves KEEP them covered; do not lift hem, invent slits or replace clothing. Only minimal adjacent hem adjustment for normal foot contact. Whole figure, props and toes fully visible with a little transparent margin. Preserve genuine transparent alpha background, no floor, cast ground shadows, glow, scenery, text or watermark. Ordinary realistic adult costume game portrait.",
+      "status": "replaced",
+      "stagedAsset": "outputs/japan-korea-slim-20261022/staging/korea-photo-ten-20261022-05.png",
+      "footwearPolicy": "barefoot",
+      "calfReference": "assets/beauties/references/he-sui-calves-20261022/sports-street-2020.jpg",
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a1615b-c380-73a3-bb7b-58bb2f9b4009/exec-aff25346-27a9-4600-b4fa-29f6eb5d40f0.png",
+      "assetSha256": "c4dfa6ad785041dbf022202822df07ee2e982581e71485e2e8bcb08b5c88e04d",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentFraction": 0.7488,
+        "nontransparentBorderPixels": 0,
+        "boundsAbove20": [
+          340,
+          15,
+          722,
+          1526
+        ]
+      },
+      "oldAssetDeleted": true,
+      "finalCorrectionPrompt": "Use case: precise-object-edit. Two inputs. IMAGE 1 = adult costume character edit TARGET. IMAGE 2 = user-approved IU character, use ONLY lower-leg contour as anatomical reference, never copy her face/clothes/pose. Preserve target's exact face, head/body proportions, shoulder/torso/hips, hairstyle, hands, hanbok, jewelry, tea bowl and full-body framing. Main correction: target's lower legs look sausage-like with a low rounded calf bulge and insufficient taper. Rebuild ONLY visible calves/ankles into naturally slender healthy adult anatomy matching Image 2: smaller, subtle calf fullness located in upper third below knee, smooth nearly straight outer shin contour, a gentle restrained inner-calf curve that tapers over a LONG lean lower half into a clearly narrower ankle; refined Achilles transition, two modest ankle landmarks, believable knee-to-shin transition. No low bulbous calf, no thick cylindrical shin, no abrupt concave pinching, no muscular balloon or stick legs. Slightly refine visible thigh width if necessary, preserving natural anatomy, total leg length, knee location, stance and overall height. Natural left/right matching feet with five toes each, big toes toward medial side, ordinary slender normal-sized foot shape and subtle dimensional form shading. Keep current face and clothing absolutely unchanged, do not increase visible skin area or raise skirt. Both legs join correct feet, no crossing or twisted ankles. Full adult fully clothed portrait, isolated genuine alpha transparent background, no setting/floor/ground shadow/glow/text. This is an ordinary costume game asset.",
+      "visualReview": "Reviewed full portrait and lower-leg sheets; regional outfit, original identity/props, proportional legs and complete silhouette retained. Three original Japanese geta retained."
+    },
+    {
+      "id": "korea-photo-ten-20261022-06",
+      "name": "韩国女子-裴秀智-绛绡清歌",
+      "asset": "assets/beauties/random/番邦女子/韩国女子-裴秀智-绛绡清歌.png",
+      "regionId": "korea",
+      "legacyAssets": [],
+      "category": "番邦女子",
+      "index": 20,
+      "originalSha256": "5f2097a30b215cffab7978ebc2cb0ad318cbe84a115ff53d480cdacdd491edd4",
+      "prompt": "Use case: precise-object-edit. IMAGE 1 is the fully clothed adult historical Korean game character to EDIT. IMAGE 2 is real adult fashion model HE SUI 何穗 in a sporty street outfit, used ONLY as a LOWER-LEG SHAPE reference. Preserve Image 1 EXACT face/identity/expression, head size, hairstyle, neck, shoulders, torso/ribcage/hips, total height, upper-leg length, hands, original Korean summer hanbok and embroidery, all jewelry, handheld props, framing and natural skin tone. Do not copy Image 2 face, outfit, shoes, background, pose or model's total height. PRIMARY USER CORRECTION: recreate visible CALF AND ANKLE CONTOURS using He Sui's relaxed lower-leg proportions in Image 2, scaled to Image 1 skeleton and existing length. Clean lean near-straight shin line, only subtle calf volume in UPPER THIRD below knee, long smoothly tapering lower half, fine narrow ankle, natural Achilles and modest ankle bones. Remove low round bulges, thick cylindrical/sausage-shaped shins and abrupt knee-to-calf lumps; do not make emaciated stick legs, pinched concavities or stretched shins. Modestly slim visible thighs if needed to keep anatomical balance, without changing knee height or exposing extra skin. For standing figures let both ankles be neutral and heels down in a comfortable staggered stance, avoiding pointed toes or flexed calves; seated figures keep original seated angles with relaxed feet. Keep existing leg separation and overall pose above knees. Refine feet to normal slender adult shape with gentle arch/dorsum form shading and natural skin texture; exactly five correctly ordered toes on each foot, big toe ALWAYS medial and little toe lateral, natural left/right foot handedness and each ankle connected to its own shin. No swollen forefoot, broad thick toes, oversized feet or flat painted-on shape. All feet are bare; if Image 1 still has footwear remove it without adding footwear elsewhere. If clothing hides calves KEEP them covered; do not lift hem, invent slits or replace clothing. Only minimal adjacent hem adjustment for normal foot contact. Whole figure, props and toes fully visible with a little transparent margin. Preserve genuine transparent alpha background, no floor, cast ground shadows, glow, scenery, text or watermark. Ordinary realistic adult costume game portrait.",
+      "status": "replaced",
+      "stagedAsset": "outputs/japan-korea-slim-20261022/staging/korea-photo-ten-20261022-06.png",
+      "footwearPolicy": "barefoot",
+      "calfReference": "assets/beauties/references/he-sui-calves-20261022/sports-street-2020.jpg",
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a1615b-c380-73a3-bb7b-58bb2f9b4009/exec-8a41e481-8c25-4b08-99ca-2960748ed53e.png",
+      "assetSha256": "b2d72bd14ab7dfc03c3b710ad9ade85589aa60b7998cc8a99fd2d75fa4b8973e",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentFraction": 0.5326,
+        "nontransparentBorderPixels": 0,
+        "boundsAbove20": [
+          53,
+          5,
+          999,
+          1528
+        ]
+      },
+      "oldAssetDeleted": true,
+      "finalCorrectionPrompt": "Use case: precise-object-edit. Two inputs. IMAGE 1 = adult costume character edit TARGET. IMAGE 2 = user-approved IU character, use ONLY lower-leg contour as anatomical reference, never copy her face/clothes/pose. Preserve target's exact face, head/body proportions, shoulder/torso/hips, hairstyle, hands, hanbok, jewelry, tea bowl and full-body framing. Main correction: target's lower legs look sausage-like with a low rounded calf bulge and insufficient taper. Rebuild ONLY visible calves/ankles into naturally slender healthy adult anatomy matching Image 2: smaller, subtle calf fullness located in upper third below knee, smooth nearly straight outer shin contour, a gentle restrained inner-calf curve that tapers over a LONG lean lower half into a clearly narrower ankle; refined Achilles transition, two modest ankle landmarks, believable knee-to-shin transition. No low bulbous calf, no thick cylindrical shin, no abrupt concave pinching, no muscular balloon or stick legs. Slightly refine visible thigh width if necessary, preserving natural anatomy, total leg length, knee location, stance and overall height. Natural left/right matching feet with five toes each, big toes toward medial side, ordinary slender normal-sized foot shape and subtle dimensional form shading. Keep current face and clothing absolutely unchanged, do not increase visible skin area or raise skirt. Both legs join correct feet, no crossing or twisted ankles. Full adult fully clothed portrait, isolated genuine alpha transparent background, no setting/floor/ground shadow/glow/text. This is an ordinary costume game asset.",
+      "visualReview": "Reviewed full portrait and lower-leg sheets; regional outfit, original identity/props, proportional legs and complete silhouette retained. Three original Japanese geta retained."
+    },
+    {
+      "id": "korea-photo-ten-20261022-07",
+      "name": "韩国女子-林允儿-月白伽倻",
+      "asset": "assets/beauties/random/番邦女子/韩国女子-林允儿-月白伽倻.png",
+      "regionId": "korea",
+      "legacyAssets": [],
+      "category": "番邦女子",
+      "index": 21,
+      "originalSha256": "3e41c0372c58385f7d6af886083360e189425114c5be8f0b04a31e813e90c1c2",
+      "prompt": "Use case: precise-object-edit. IMAGE 1 is the fully clothed adult historical Korean game character to EDIT. IMAGE 2 is real adult fashion model HE SUI 何穗 in a sporty street outfit, used ONLY as a LOWER-LEG SHAPE reference. Preserve Image 1 EXACT face/identity/expression, head size, hairstyle, neck, shoulders, torso/ribcage/hips, total height, upper-leg length, hands, original Korean summer hanbok and embroidery, all jewelry, handheld props, framing and natural skin tone. Do not copy Image 2 face, outfit, shoes, background, pose or model's total height. PRIMARY USER CORRECTION: recreate visible CALF AND ANKLE CONTOURS using He Sui's relaxed lower-leg proportions in Image 2, scaled to Image 1 skeleton and existing length. Clean lean near-straight shin line, only subtle calf volume in UPPER THIRD below knee, long smoothly tapering lower half, fine narrow ankle, natural Achilles and modest ankle bones. Remove low round bulges, thick cylindrical/sausage-shaped shins and abrupt knee-to-calf lumps; do not make emaciated stick legs, pinched concavities or stretched shins. Modestly slim visible thighs if needed to keep anatomical balance, without changing knee height or exposing extra skin. For standing figures let both ankles be neutral and heels down in a comfortable staggered stance, avoiding pointed toes or flexed calves; seated figures keep original seated angles with relaxed feet. Keep existing leg separation and overall pose above knees. Refine feet to normal slender adult shape with gentle arch/dorsum form shading and natural skin texture; exactly five correctly ordered toes on each foot, big toe ALWAYS medial and little toe lateral, natural left/right foot handedness and each ankle connected to its own shin. No swollen forefoot, broad thick toes, oversized feet or flat painted-on shape. All feet are bare; if Image 1 still has footwear remove it without adding footwear elsewhere. If clothing hides calves KEEP them covered; do not lift hem, invent slits or replace clothing. Only minimal adjacent hem adjustment for normal foot contact. Whole figure, props and toes fully visible with a little transparent margin. Preserve genuine transparent alpha background, no floor, cast ground shadows, glow, scenery, text or watermark. Ordinary realistic adult costume game portrait.",
+      "status": "replaced",
+      "stagedAsset": "outputs/japan-korea-slim-20261022/staging/korea-photo-ten-20261022-07.png",
+      "footwearPolicy": "barefoot",
+      "calfReference": "assets/beauties/references/he-sui-calves-20261022/sports-street-2020.jpg",
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a1615b-c380-73a3-bb7b-58bb2f9b4009/exec-47af54d5-052c-467b-b1fa-bea77621de62.png",
+      "assetSha256": "e61b6b2737516a851c20819f1b2e94c7fcac02e4b090e9fcb7984028e93364dc",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentFraction": 0.4765,
+        "nontransparentBorderPixels": 0,
+        "boundsAbove20": [
+          23,
+          22,
+          1015,
+          1454
+        ]
+      },
+      "oldAssetDeleted": true,
+      "finalCorrectionPrompt": "Use case: identity-preserve. Preserve this exact adult Korean female game portrait with identical face, hair, seated pose, Korean white and blue summer hanbok, jewelry, hands on gayageum, slender naturally tapered calves and correct barefoot anatomy. ONLY fix framing: the instrument's far right tip is clipped by the image border. Pull camera back a little, center entire woman, chair, dress, gayageum and its full end cap with at least 5 percent transparent margin on ALL sides. Do not crop any object or toes. Do not change identities or anatomy or clothing. Genuine transparent alpha background with no scenery, glow, colored background, floor, shadows or checkerboard.",
+      "visualReview": "Reviewed full portrait and lower-leg sheets; regional outfit, original identity/props, proportional legs and complete silhouette retained. Three original Japanese geta retained."
+    },
+    {
+      "id": "korea-photo-ten-20261022-08",
+      "name": "韩国女子-金智秀-紫菀珠匣",
+      "asset": "assets/beauties/random/番邦女子/韩国女子-金智秀-紫菀珠匣.png",
+      "regionId": "korea",
+      "legacyAssets": [],
+      "category": "番邦女子",
+      "index": 22,
+      "originalSha256": "4c90bc8177cef0ba9a1098611d13c8d01894af88b2afbc9617bf09397d376896",
+      "prompt": "Use case: precise-object-edit. IMAGE 1 is the fully clothed adult historical Korean game character to EDIT. IMAGE 2 is real adult fashion model HE SUI 何穗 in a sporty street outfit, used ONLY as a LOWER-LEG SHAPE reference. Preserve Image 1 EXACT face/identity/expression, head size, hairstyle, neck, shoulders, torso/ribcage/hips, total height, upper-leg length, hands, original Korean summer hanbok and embroidery, all jewelry, handheld props, framing and natural skin tone. Do not copy Image 2 face, outfit, shoes, background, pose or model's total height. PRIMARY USER CORRECTION: recreate visible CALF AND ANKLE CONTOURS using He Sui's relaxed lower-leg proportions in Image 2, scaled to Image 1 skeleton and existing length. Clean lean near-straight shin line, only subtle calf volume in UPPER THIRD below knee, long smoothly tapering lower half, fine narrow ankle, natural Achilles and modest ankle bones. Remove low round bulges, thick cylindrical/sausage-shaped shins and abrupt knee-to-calf lumps; do not make emaciated stick legs, pinched concavities or stretched shins. Modestly slim visible thighs if needed to keep anatomical balance, without changing knee height or exposing extra skin. For standing figures let both ankles be neutral and heels down in a comfortable staggered stance, avoiding pointed toes or flexed calves; seated figures keep original seated angles with relaxed feet. Keep existing leg separation and overall pose above knees. Refine feet to normal slender adult shape with gentle arch/dorsum form shading and natural skin texture; exactly five correctly ordered toes on each foot, big toe ALWAYS medial and little toe lateral, natural left/right foot handedness and each ankle connected to its own shin. No swollen forefoot, broad thick toes, oversized feet or flat painted-on shape. All feet are bare; if Image 1 still has footwear remove it without adding footwear elsewhere. If clothing hides calves KEEP them covered; do not lift hem, invent slits or replace clothing. Only minimal adjacent hem adjustment for normal foot contact. Whole figure, props and toes fully visible with a little transparent margin. Preserve genuine transparent alpha background, no floor, cast ground shadows, glow, scenery, text or watermark. Ordinary realistic adult costume game portrait.",
+      "status": "replaced",
+      "stagedAsset": "outputs/japan-korea-slim-20261022/staging/korea-photo-ten-20261022-08.png",
+      "footwearPolicy": "barefoot",
+      "calfReference": "assets/beauties/references/he-sui-calves-20261022/sports-street-2020.jpg",
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a1615b-c380-73a3-bb7b-58bb2f9b4009/exec-58284e09-cb08-41cc-833d-c15742570a2a.png",
+      "assetSha256": "96218476d77e21617232ba9963909276cf0a4418a54af694b205aea0c67744e2",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentFraction": 0.6152,
+        "nontransparentBorderPixels": 0,
+        "boundsAbove20": [
+          148,
+          14,
+          937,
+          1521
+        ]
+      },
+      "oldAssetDeleted": true,
+      "finalCorrectionPrompt": "Use case: precise-object-edit. Two inputs. IMAGE 1 = adult costume character edit TARGET. IMAGE 2 = user-approved IU character, use ONLY lower-leg contour as anatomical reference, never copy her face/clothes/pose. Preserve target's exact face, head/body proportions, shoulder/torso/hips, hairstyle, hands, hanbok, jewelry, tea bowl and full-body framing. Main correction: target's lower legs look sausage-like with a low rounded calf bulge and insufficient taper. Rebuild ONLY visible calves/ankles into naturally slender healthy adult anatomy matching Image 2: smaller, subtle calf fullness located in upper third below knee, smooth nearly straight outer shin contour, a gentle restrained inner-calf curve that tapers over a LONG lean lower half into a clearly narrower ankle; refined Achilles transition, two modest ankle landmarks, believable knee-to-shin transition. No low bulbous calf, no thick cylindrical shin, no abrupt concave pinching, no muscular balloon or stick legs. Slightly refine visible thigh width if necessary, preserving natural anatomy, total leg length, knee location, stance and overall height. Natural left/right matching feet with five toes each, big toes toward medial side, ordinary slender normal-sized foot shape and subtle dimensional form shading. Keep current face and clothing absolutely unchanged, do not increase visible skin area or raise skirt. Both legs join correct feet, no crossing or twisted ankles. Full adult fully clothed portrait, isolated genuine alpha transparent background, no setting/floor/ground shadow/glow/text. This is an ordinary costume game asset.",
+      "visualReview": "Reviewed full portrait and lower-leg sheets; regional outfit, original identity/props, proportional legs and complete silhouette retained. Three original Japanese geta retained."
+    },
+    {
+      "id": "korea-photo-ten-20261022-09",
+      "name": "韩国女子-韩孝周-碧绡鼓舞",
+      "asset": "assets/beauties/random/番邦女子/韩国女子-韩孝周-碧绡鼓舞.png",
+      "regionId": "korea",
+      "legacyAssets": [],
+      "category": "番邦女子",
+      "index": 23,
+      "originalSha256": "a5032271589ade7650f3b31bdfee2826ad5261932a12e4f8f6245cbb9ff477b1",
+      "prompt": "Use case: precise-object-edit. IMAGE 1 is the fully clothed adult historical Korean game character to EDIT. IMAGE 2 is real adult fashion model HE SUI 何穗 in a sporty street outfit, used ONLY as a LOWER-LEG SHAPE reference. Preserve Image 1 EXACT face/identity/expression, head size, hairstyle, neck, shoulders, torso/ribcage/hips, total height, upper-leg length, hands, original Korean summer hanbok and embroidery, all jewelry, handheld props, framing and natural skin tone. Do not copy Image 2 face, outfit, shoes, background, pose or model's total height. PRIMARY USER CORRECTION: recreate visible CALF AND ANKLE CONTOURS using He Sui's relaxed lower-leg proportions in Image 2, scaled to Image 1 skeleton and existing length. Clean lean near-straight shin line, only subtle calf volume in UPPER THIRD below knee, long smoothly tapering lower half, fine narrow ankle, natural Achilles and modest ankle bones. Remove low round bulges, thick cylindrical/sausage-shaped shins and abrupt knee-to-calf lumps; do not make emaciated stick legs, pinched concavities or stretched shins. Modestly slim visible thighs if needed to keep anatomical balance, without changing knee height or exposing extra skin. For standing figures let both ankles be neutral and heels down in a comfortable staggered stance, avoiding pointed toes or flexed calves; seated figures keep original seated angles with relaxed feet. Keep existing leg separation and overall pose above knees. Refine feet to normal slender adult shape with gentle arch/dorsum form shading and natural skin texture; exactly five correctly ordered toes on each foot, big toe ALWAYS medial and little toe lateral, natural left/right foot handedness and each ankle connected to its own shin. No swollen forefoot, broad thick toes, oversized feet or flat painted-on shape. All feet are bare; if Image 1 still has footwear remove it without adding footwear elsewhere. If clothing hides calves KEEP them covered; do not lift hem, invent slits or replace clothing. Only minimal adjacent hem adjustment for normal foot contact. Whole figure, props and toes fully visible with a little transparent margin. Preserve genuine transparent alpha background, no floor, cast ground shadows, glow, scenery, text or watermark. Ordinary realistic adult costume game portrait.",
+      "status": "replaced",
+      "stagedAsset": "outputs/japan-korea-slim-20261022/staging/korea-photo-ten-20261022-09.png",
+      "footwearPolicy": "barefoot",
+      "calfReference": "assets/beauties/references/he-sui-calves-20261022/sports-street-2020.jpg",
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a1615b-c380-73a3-bb7b-58bb2f9b4009/exec-7e72cddf-4c9c-4dd4-946e-acbe2de9379b.png",
+      "assetSha256": "f3cf25a2df6fae16f4c4d05b65b2751d337f050d8009cf32e3ce5b2432ee86ed",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentFraction": 0.595,
+        "nontransparentBorderPixels": 0,
+        "boundsAbove20": [
+          131,
+          26,
+          932,
+          1516
+        ]
+      },
+      "oldAssetDeleted": true,
+      "finalCorrectionPrompt": "Use case: precise-object-edit. Two inputs. IMAGE 1 = adult costume character edit TARGET. IMAGE 2 = user-approved IU character, use ONLY lower-leg contour as anatomical reference, never copy her face/clothes/pose. Preserve target's exact face, head/body proportions, shoulder/torso/hips, hairstyle, hands, hanbok, jewelry, tea bowl and full-body framing. Main correction: target's lower legs look sausage-like with a low rounded calf bulge and insufficient taper. Rebuild ONLY visible calves/ankles into naturally slender healthy adult anatomy matching Image 2: smaller, subtle calf fullness located in upper third below knee, smooth nearly straight outer shin contour, a gentle restrained inner-calf curve that tapers over a LONG lean lower half into a clearly narrower ankle; refined Achilles transition, two modest ankle landmarks, believable knee-to-shin transition. No low bulbous calf, no thick cylindrical shin, no abrupt concave pinching, no muscular balloon or stick legs. Slightly refine visible thigh width if necessary, preserving natural anatomy, total leg length, knee location, stance and overall height. Natural left/right matching feet with five toes each, big toes toward medial side, ordinary slender normal-sized foot shape and subtle dimensional form shading. Keep current face and clothing absolutely unchanged, do not increase visible skin area or raise skirt. Both legs join correct feet, no crossing or twisted ankles. Full adult fully clothed portrait, isolated genuine alpha transparent background, no setting/floor/ground shadow/glow/text. This is an ordinary costume game asset.",
+      "visualReview": "Reviewed full portrait and lower-leg sheets; regional outfit, original identity/props, proportional legs and complete silhouette retained. Three original Japanese geta retained."
+    },
+    {
+      "id": "korea-photo-ten-20261022-10",
+      "name": "韩国女子-金智媛-浅金花篮",
+      "asset": "assets/beauties/random/番邦女子/韩国女子-金智媛-浅金花篮.png",
+      "regionId": "korea",
+      "legacyAssets": [],
+      "category": "番邦女子",
+      "index": 24,
+      "originalSha256": "d580c1f6a61b1ed0ef8938db4aaa2670267116f42807d1844cde2326cc3934ed",
+      "prompt": "Use case: precise-object-edit. IMAGE 1 is the fully clothed adult historical Korean game character to EDIT. IMAGE 2 is real adult fashion model HE SUI 何穗 in a sporty street outfit, used ONLY as a LOWER-LEG SHAPE reference. Preserve Image 1 EXACT face/identity/expression, head size, hairstyle, neck, shoulders, torso/ribcage/hips, total height, upper-leg length, hands, original Korean summer hanbok and embroidery, all jewelry, handheld props, framing and natural skin tone. Do not copy Image 2 face, outfit, shoes, background, pose or model's total height. PRIMARY USER CORRECTION: recreate visible CALF AND ANKLE CONTOURS using He Sui's relaxed lower-leg proportions in Image 2, scaled to Image 1 skeleton and existing length. Clean lean near-straight shin line, only subtle calf volume in UPPER THIRD below knee, long smoothly tapering lower half, fine narrow ankle, natural Achilles and modest ankle bones. Remove low round bulges, thick cylindrical/sausage-shaped shins and abrupt knee-to-calf lumps; do not make emaciated stick legs, pinched concavities or stretched shins. Modestly slim visible thighs if needed to keep anatomical balance, without changing knee height or exposing extra skin. For standing figures let both ankles be neutral and heels down in a comfortable staggered stance, avoiding pointed toes or flexed calves; seated figures keep original seated angles with relaxed feet. Keep existing leg separation and overall pose above knees. Refine feet to normal slender adult shape with gentle arch/dorsum form shading and natural skin texture; exactly five correctly ordered toes on each foot, big toe ALWAYS medial and little toe lateral, natural left/right foot handedness and each ankle connected to its own shin. No swollen forefoot, broad thick toes, oversized feet or flat painted-on shape. All feet are bare; if Image 1 still has footwear remove it without adding footwear elsewhere. If clothing hides calves KEEP them covered; do not lift hem, invent slits or replace clothing. Only minimal adjacent hem adjustment for normal foot contact. Whole figure, props and toes fully visible with a little transparent margin. Preserve genuine transparent alpha background, no floor, cast ground shadows, glow, scenery, text or watermark. Ordinary realistic adult costume game portrait.",
+      "status": "replaced",
+      "stagedAsset": "outputs/japan-korea-slim-20261022/staging/korea-photo-ten-20261022-10.png",
+      "footwearPolicy": "barefoot",
+      "calfReference": "assets/beauties/references/he-sui-calves-20261022/sports-street-2020.jpg",
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a1615b-c380-73a3-bb7b-58bb2f9b4009/exec-e8b12979-7b1a-49b5-8f32-162e378b623e.png",
+      "assetSha256": "777cc6060110ae5cf845af2785ee54cff98a71b3ac0822fc24611d475e8a1922",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentFraction": 0.6127,
+        "nontransparentBorderPixels": 0,
+        "boundsAbove20": [
+          137,
+          26,
+          914,
+          1521
+        ]
+      },
+      "oldAssetDeleted": true,
+      "finalCorrectionPrompt": "Use case: precise-object-edit. Two inputs. IMAGE 1 = adult costume character edit TARGET. IMAGE 2 = user-approved IU character, use ONLY lower-leg contour as anatomical reference, never copy her face/clothes/pose. Preserve target's exact face, head/body proportions, shoulder/torso/hips, hairstyle, hands, hanbok, jewelry, tea bowl and full-body framing. Main correction: target's lower legs look sausage-like with a low rounded calf bulge and insufficient taper. Rebuild ONLY visible calves/ankles into naturally slender healthy adult anatomy matching Image 2: smaller, subtle calf fullness located in upper third below knee, smooth nearly straight outer shin contour, a gentle restrained inner-calf curve that tapers over a LONG lean lower half into a clearly narrower ankle; refined Achilles transition, two modest ankle landmarks, believable knee-to-shin transition. No low bulbous calf, no thick cylindrical shin, no abrupt concave pinching, no muscular balloon or stick legs. Slightly refine visible thigh width if necessary, preserving natural anatomy, total leg length, knee location, stance and overall height. Natural left/right matching feet with five toes each, big toes toward medial side, ordinary slender normal-sized foot shape and subtle dimensional form shading. Keep current face and clothing absolutely unchanged, do not increase visible skin area or raise skirt. Both legs join correct feet, no crossing or twisted ankles. Full adult fully clothed portrait, isolated genuine alpha transparent background, no setting/floor/ground shadow/glow/text. This is an ordinary costume game asset.",
+      "visualReview": "Reviewed full portrait and lower-leg sheets; regional outfit, original identity/props, proportional legs and complete silhouette retained. Three original Japanese geta retained."
+    },
+    {
+      "id": "korea-photo-ten-20261022-11",
+      "name": "韩国女子-IU李知恩-藕荷绢伞",
+      "asset": "assets/beauties/random/番邦女子/韩国女子-IU李知恩-藕荷绢伞.png",
+      "regionId": "korea",
+      "legacyAssets": [],
+      "category": "番邦女子",
+      "index": 25,
+      "originalSha256": "579085064e12fedca95385c4edb64d7452d22430ba14ebaf64837650deb3f277",
+      "prompt": "Use case: precise-object-edit. IMAGE 1 is the fully clothed adult historical Korean game character to EDIT. IMAGE 2 is real adult fashion model HE SUI 何穗 in a sporty street outfit, used ONLY as a LOWER-LEG SHAPE reference. Preserve Image 1 EXACT face/identity/expression, head size, hairstyle, neck, shoulders, torso/ribcage/hips, total height, upper-leg length, hands, original Korean summer hanbok and embroidery, all jewelry, handheld props, framing and natural skin tone. Do not copy Image 2 face, outfit, shoes, background, pose or model's total height. PRIMARY USER CORRECTION: recreate visible CALF AND ANKLE CONTOURS using He Sui's relaxed lower-leg proportions in Image 2, scaled to Image 1 skeleton and existing length. Clean lean near-straight shin line, only subtle calf volume in UPPER THIRD below knee, long smoothly tapering lower half, fine narrow ankle, natural Achilles and modest ankle bones. Remove low round bulges, thick cylindrical/sausage-shaped shins and abrupt knee-to-calf lumps; do not make emaciated stick legs, pinched concavities or stretched shins. Modestly slim visible thighs if needed to keep anatomical balance, without changing knee height or exposing extra skin. For standing figures let both ankles be neutral and heels down in a comfortable staggered stance, avoiding pointed toes or flexed calves; seated figures keep original seated angles with relaxed feet. Keep existing leg separation and overall pose above knees. Refine feet to normal slender adult shape with gentle arch/dorsum form shading and natural skin texture; exactly five correctly ordered toes on each foot, big toe ALWAYS medial and little toe lateral, natural left/right foot handedness and each ankle connected to its own shin. No swollen forefoot, broad thick toes, oversized feet or flat painted-on shape. All feet are bare; if Image 1 still has footwear remove it without adding footwear elsewhere. If clothing hides calves KEEP them covered; do not lift hem, invent slits or replace clothing. Only minimal adjacent hem adjustment for normal foot contact. Whole figure, props and toes fully visible with a little transparent margin. Preserve genuine transparent alpha background, no floor, cast ground shadows, glow, scenery, text or watermark. Ordinary realistic adult costume game portrait.",
+      "status": "replaced",
+      "stagedAsset": "outputs/japan-korea-slim-20261022/staging/korea-photo-ten-20261022-11.png",
+      "footwearPolicy": "barefoot",
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a1615b-c380-73a3-bb7b-58bb2f9b4009/exec-e599b2b3-740c-483e-8893-1940d0fe4f13.png",
+      "assetSha256": "d57bb06069643fdeea3aede6059dc2fae5cd640ed0cc175ab9d7b4ef95aab12e",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentFraction": 0.5823,
+        "nontransparentBorderPixels": 0,
+        "boundsAbove20": [
+          114,
+          18,
+          952,
+          1455
+        ]
+      },
+      "calfReference": "assets/beauties/references/he-sui-calves-20261022/sports-street-2020.jpg",
+      "oldAssetDeleted": true,
+      "finalCorrectionPrompt": "Edit this adult IU full-body portrait. Keep everything above the knees visually identical: face, hair, physique, Korean pink lavender summer hanbok, closed parasol, jewelry and hands. Rebuild BOTH LOWER LEGS AND FEET in a NEW SIMPLE STRAIGHT STANDING POSE. The previous feet are anatomically reversed: do not reuse or copy their shapes. No crossed legs or crossed ankles. Both knees and slender shins point forward, two legs beside one another, body weight naturally supported, both heels resting on same invisible horizontal ground. Show the tops of two bare feet pointed toward the viewer, separated by a small gap. IMAGE-LEFT foot has little toe at far LEFT and big toe at RIGHT (inner edge). IMAGE-RIGHT foot has big toe at LEFT (inner edge) and little toe at far RIGHT. The two big toes face EACH OTHER across the gap. Each foot has one big toe and FOUR smaller toes, normal curved toe line, anatomically credible insteps and ankle connections. Preserve the existing elegant slim He Sui-inspired calf taper, not thick calves; retain original leg lengths and overall body proportions. Allow only minimum skirt-hem adjustment to accommodate this corrected stable standing stance. Full character and props completely in frame. Genuine transparent alpha background, no glow or scenery or checkerboard or floor. Photorealistic natural skin and lighting.",
+      "visualReview": "Reviewed full portrait and lower-leg sheets; regional outfit, original identity/props, proportional legs and complete silhouette retained. Three original Japanese geta retained."
+    },
+    {
+      "id": "korea-photo-ten-20261022-12",
+      "name": "韩国女子-韩志敏-青莲药篓",
+      "asset": "assets/beauties/random/番邦女子/韩国女子-韩志敏-青莲药篓.png",
+      "regionId": "korea",
+      "legacyAssets": [],
+      "category": "番邦女子",
+      "index": 26,
+      "originalSha256": "7fbc54007313c0e3842ca76e6e13aaeb26ec340cdb97597d8d04a7b4cf9cc9c2",
+      "prompt": "Use case: precise-object-edit. IMAGE 1 is the fully clothed adult historical Korean game character to EDIT. IMAGE 2 is real adult fashion model HE SUI 何穗 in a sporty street outfit, used ONLY as a LOWER-LEG SHAPE reference. Preserve Image 1 EXACT face/identity/expression, head size, hairstyle, neck, shoulders, torso/ribcage/hips, total height, upper-leg length, hands, original Korean summer hanbok and embroidery, all jewelry, handheld props, framing and natural skin tone. Do not copy Image 2 face, outfit, shoes, background, pose or model's total height. PRIMARY USER CORRECTION: recreate visible CALF AND ANKLE CONTOURS using He Sui's relaxed lower-leg proportions in Image 2, scaled to Image 1 skeleton and existing length. Clean lean near-straight shin line, only subtle calf volume in UPPER THIRD below knee, long smoothly tapering lower half, fine narrow ankle, natural Achilles and modest ankle bones. Remove low round bulges, thick cylindrical/sausage-shaped shins and abrupt knee-to-calf lumps; do not make emaciated stick legs, pinched concavities or stretched shins. Modestly slim visible thighs if needed to keep anatomical balance, without changing knee height or exposing extra skin. For standing figures let both ankles be neutral and heels down in a comfortable staggered stance, avoiding pointed toes or flexed calves; seated figures keep original seated angles with relaxed feet. Keep existing leg separation and overall pose above knees. Refine feet to normal slender adult shape with gentle arch/dorsum form shading and natural skin texture; exactly five correctly ordered toes on each foot, big toe ALWAYS medial and little toe lateral, natural left/right foot handedness and each ankle connected to its own shin. No swollen forefoot, broad thick toes, oversized feet or flat painted-on shape. All feet are bare; if Image 1 still has footwear remove it without adding footwear elsewhere. If clothing hides calves KEEP them covered; do not lift hem, invent slits or replace clothing. Only minimal adjacent hem adjustment for normal foot contact. Whole figure, props and toes fully visible with a little transparent margin. Preserve genuine transparent alpha background, no floor, cast ground shadows, glow, scenery, text or watermark. Ordinary realistic adult costume game portrait.",
+      "status": "replaced",
+      "stagedAsset": "outputs/japan-korea-slim-20261022/staging/korea-photo-ten-20261022-12.png",
+      "footwearPolicy": "barefoot",
+      "calfReference": "assets/beauties/references/he-sui-calves-20261022/sports-street-2020.jpg",
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a1615b-c380-73a3-bb7b-58bb2f9b4009/exec-6efc4692-5912-4dde-bb2e-ebca957c4158.png",
+      "assetSha256": "6c005fb5a6437ae57b6948b72e6ef44bad2392aa4003e04d9bab321868d4bf8c",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentFraction": 0.5936,
+        "nontransparentBorderPixels": 0,
+        "boundsAbove20": [
+          129,
+          15,
+          913,
+          1523
+        ]
+      },
+      "oldAssetDeleted": true,
+      "finalCorrectionPrompt": "Use case: precise-object-edit. Two inputs. IMAGE 1 = adult costume character edit TARGET. IMAGE 2 = user-approved IU character, use ONLY lower-leg contour as anatomical reference, never copy her face/clothes/pose. Preserve target's exact face, head/body proportions, shoulder/torso/hips, hairstyle, hands, hanbok, jewelry, tea bowl and full-body framing. Main correction: target's lower legs look sausage-like with a low rounded calf bulge and insufficient taper. Rebuild ONLY visible calves/ankles into naturally slender healthy adult anatomy matching Image 2: smaller, subtle calf fullness located in upper third below knee, smooth nearly straight outer shin contour, a gentle restrained inner-calf curve that tapers over a LONG lean lower half into a clearly narrower ankle; refined Achilles transition, two modest ankle landmarks, believable knee-to-shin transition. No low bulbous calf, no thick cylindrical shin, no abrupt concave pinching, no muscular balloon or stick legs. Slightly refine visible thigh width if necessary, preserving natural anatomy, total leg length, knee location, stance and overall height. Natural left/right matching feet with five toes each, big toes toward medial side, ordinary slender normal-sized foot shape and subtle dimensional form shading. Keep current face and clothing absolutely unchanged, do not increase visible skin area or raise skirt. Both legs join correct feet, no crossing or twisted ankles. Full adult fully clothed portrait, isolated genuine alpha transparent background, no setting/floor/ground shadow/glow/text. This is an ordinary costume game asset.",
+      "visualReview": "Reviewed full portrait and lower-leg sheets; regional outfit, original identity/props, proportional legs and complete silhouette retained. Three original Japanese geta retained."
+    }
+  ],
+  "stagedCount": 27,
+  "koreanCalfReferencePolicy": "用户最新要求：韩国14张含IU全部重新调整，改用何穗公开全身照片的小腿轮廓作参考；前轮IU腿型标准不再作为韩国小腿的最终标准。",
+  "heSuiReferences": [
+    {
+      "path": "assets/beauties/references/he-sui-calves-20261022/sports-street-2020.jpg",
+      "page": "https://www.sohu.com/a/407005315_469790",
+      "imageUrl": "https://p1.itc.cn/images01/20200711/460fef17b8a84f1bab63d2912fd7499e.jpeg",
+      "role": "成年何穗平底鞋街拍的小腿整体轮廓参考，不参考脸、服装、鞋和身高。"
+    },
+    {
+      "path": "assets/beauties/references/he-sui-calves-20261022/runway-shape-reference.jpg",
+      "page": "https://k.sina.cn/article_6476603724_p18209214c001017bag.html",
+      "imageUrl": "https://n.sinaimg.cn/sinakd10011/104/w1080h1424/20221217/d0dd-1ca0681ad27dd446c00850d1aa0ecead.jpg",
+      "role": "辅助核对腿肚位置、胫骨与脚踝收束；不复制高跟鞋或模特身高。"
+    }
+  ],
+  "replacedCount": 27,
+  "reviewSheets": [
+    "outputs/japan-korea-slim-20261022/review/full-00.jpg",
+    "outputs/japan-korea-slim-20261022/review/full-09.jpg",
+    "outputs/japan-korea-slim-20261022/review/full-18.jpg"
+  ],
+  "iuFootCorrection": "Rebuilt uncrossed stance: screen-left right foot big toe on right/inner edge; screen-right left foot big toe on left/inner edge; five toes per foot. Reviewed enlarged detail.",
+  "deletedOldWorkspaceFiles": [
+    "outputs/japan-photo-ten-20261022/contact-sheet.jpg",
+    "outputs/japan-photo-ten-20261022/desktop/results.json",
+    "outputs/japan-photo-ten-20261022/desktop/harem-1440.png",
+    "outputs/japan-photo-ten-20261022/desktop/harem-900.png",
+    "outputs/korea-photo-twelve-20261022/contact-sheet.jpg",
+    "outputs/korea-photo-twelve-20261022/desktop/results.json",
+    "outputs/korea-photo-twelve-20261022/desktop/harem-1440.png",
+    "outputs/korea-photo-twelve-20261022/desktop/harem-900.png",
+    "outputs/iu-leg-foot-preview-20261022/comparison.jpg",
+    "outputs/iu-leg-foot-preview-20261022/iu-slim-legs-feet-v2.png",
+    "outputs/iu-leg-foot-preview-20261022/generation-record.json",
+    "assets/beauties/references/japan-ten-20261022/user-approved-proportions.png",
+    "assets/beauties/references/korea-ten-20261022/user-approved-song-body.png",
+    "assets/beauties/references/korea-ten-20261022/user-approved-han-body.png"
+  ],
+  "deletedOldGeneratedFiles": [
+    "/Users/fengheliang/.codex/generated_images/01a1615b-c380-73a3-bb7b-58bb2f9b4009/exec-01b2a317-83f5-46b8-bde7-a9044c18dca1.png",
+    "/Users/fengheliang/.codex/generated_images/01a1615b-c380-73a3-bb7b-58bb2f9b4009/exec-03b7b8e1-8cf8-4bdd-9291-3bfb42d7c3af.png",
+    "/Users/fengheliang/.codex/generated_images/01a1615b-c380-73a3-bb7b-58bb2f9b4009/exec-04f9c230-6596-43e7-9bd1-01207f0256a0.png",
+    "/Users/fengheliang/.codex/generated_images/01a1615b-c380-73a3-bb7b-58bb2f9b4009/exec-06f9d127-930a-4707-bb83-75b211ab86ca.png",
+    "/Users/fengheliang/.codex/generated_images/01a1615b-c380-73a3-bb7b-58bb2f9b4009/exec-0edbef87-474c-47f6-913c-ea197aec5f57.png",
+    "/Users/fengheliang/.codex/generated_images/01a1615b-c380-73a3-bb7b-58bb2f9b4009/exec-135ac513-d5fc-4be2-bbaa-7fb16bfee554.png",
+    "/Users/fengheliang/.codex/generated_images/01a1615b-c380-73a3-bb7b-58bb2f9b4009/exec-19897634-54fe-4399-9aeb-9096aebb95ff.png",
+    "/Users/fengheliang/.codex/generated_images/01a1615b-c380-73a3-bb7b-58bb2f9b4009/exec-1a3c4a68-1d7c-408f-9a4e-a5e623288b61.png",
+    "/Users/fengheliang/.codex/generated_images/01a1615b-c380-73a3-bb7b-58bb2f9b4009/exec-1deaac03-2fcd-4b64-bb9d-a6b8a91f3c80.png",
+    "/Users/fengheliang/.codex/generated_images/01a1615b-c380-73a3-bb7b-58bb2f9b4009/exec-20342784-bfe9-4c01-ae8d-45b8df507c69.png",
+    "/Users/fengheliang/.codex/generated_images/01a1615b-c380-73a3-bb7b-58bb2f9b4009/exec-2240ceb1-b987-4677-85a5-84e52672b95c.png",
+    "/Users/fengheliang/.codex/generated_images/01a1615b-c380-73a3-bb7b-58bb2f9b4009/exec-24321a6e-a359-43fe-9b72-a7b74456fe42.png",
+    "/Users/fengheliang/.codex/generated_images/01a1615b-c380-73a3-bb7b-58bb2f9b4009/exec-27c12094-6100-442a-baf9-5303b0409d7d.png",
+    "/Users/fengheliang/.codex/generated_images/01a1615b-c380-73a3-bb7b-58bb2f9b4009/exec-29731d64-7c39-493b-8ccc-d17765d2c5e1.png",
+    "/Users/fengheliang/.codex/generated_images/01a1615b-c380-73a3-bb7b-58bb2f9b4009/exec-2e2747d2-2fd6-4388-88a7-fb3360c18583.png",
+    "/Users/fengheliang/.codex/generated_images/01a1615b-c380-73a3-bb7b-58bb2f9b4009/exec-2e9fe432-8480-4135-920b-66f902bf1201.png",
+    "/Users/fengheliang/.codex/generated_images/01a1615b-c380-73a3-bb7b-58bb2f9b4009/exec-2f67499a-3201-4675-a3c1-5a89841495c8.png",
+    "/Users/fengheliang/.codex/generated_images/01a1615b-c380-73a3-bb7b-58bb2f9b4009/exec-31d925a9-e48f-46b5-9011-de5368a1ab94.png",
+    "/Users/fengheliang/.codex/generated_images/01a1615b-c380-73a3-bb7b-58bb2f9b4009/exec-3a766793-a524-421a-b90d-3f4a812f74b6.png",
+    "/Users/fengheliang/.codex/generated_images/01a1615b-c380-73a3-bb7b-58bb2f9b4009/exec-3bfc6df3-623e-459a-90b9-4166e4e633af.png",
+    "/Users/fengheliang/.codex/generated_images/01a1615b-c380-73a3-bb7b-58bb2f9b4009/exec-3dba7bc1-facb-4ba8-b55c-89a61f737adb.png",
+    "/Users/fengheliang/.codex/generated_images/01a1615b-c380-73a3-bb7b-58bb2f9b4009/exec-3df2bb91-2947-41cc-b71f-71fd40b652fa.png",
+    "/Users/fengheliang/.codex/generated_images/01a1615b-c380-73a3-bb7b-58bb2f9b4009/exec-526d519e-954d-4178-8996-0fa968fb37bc.png",
+    "/Users/fengheliang/.codex/generated_images/01a1615b-c380-73a3-bb7b-58bb2f9b4009/exec-5b5276ac-efbb-449e-a963-80fef272a6f0.png",
+    "/Users/fengheliang/.codex/generated_images/01a1615b-c380-73a3-bb7b-58bb2f9b4009/exec-64fb6189-2899-4e89-9a99-86720634d035.png",
+    "/Users/fengheliang/.codex/generated_images/01a1615b-c380-73a3-bb7b-58bb2f9b4009/exec-6d4eb007-a8fa-4455-9299-3729b0d2e412.png",
+    "/Users/fengheliang/.codex/generated_images/01a1615b-c380-73a3-bb7b-58bb2f9b4009/exec-6f58766e-c181-4bad-af29-d1b935bc810c.png",
+    "/Users/fengheliang/.codex/generated_images/01a1615b-c380-73a3-bb7b-58bb2f9b4009/exec-70a8f734-191e-481a-8318-2045fb4fb088.png",
+    "/Users/fengheliang/.codex/generated_images/01a1615b-c380-73a3-bb7b-58bb2f9b4009/exec-70fdc278-89e0-4aa4-b76b-42734d4ce614.png",
+    "/Users/fengheliang/.codex/generated_images/01a1615b-c380-73a3-bb7b-58bb2f9b4009/exec-72d48a70-82eb-499f-b638-4cc21e657277.png",
+    "/Users/fengheliang/.codex/generated_images/01a1615b-c380-73a3-bb7b-58bb2f9b4009/exec-7982778e-2b72-4bb1-8d3d-ca39536aee9d.png",
+    "/Users/fengheliang/.codex/generated_images/01a1615b-c380-73a3-bb7b-58bb2f9b4009/exec-7a88c53b-733c-4fba-a4eb-f27bb9270494.png",
+    "/Users/fengheliang/.codex/generated_images/01a1615b-c380-73a3-bb7b-58bb2f9b4009/exec-7c5ddbd7-3adb-40db-8a59-1c63b1eebef5.png",
+    "/Users/fengheliang/.codex/generated_images/01a1615b-c380-73a3-bb7b-58bb2f9b4009/exec-7ebe59a3-bb93-4181-ad73-a0faa2147be7.png",
+    "/Users/fengheliang/.codex/generated_images/01a1615b-c380-73a3-bb7b-58bb2f9b4009/exec-8886c723-94f9-4599-a858-6b2ffffb8fb3.png",
+    "/Users/fengheliang/.codex/generated_images/01a1615b-c380-73a3-bb7b-58bb2f9b4009/exec-95268eb9-aba1-4c54-b024-2bd496206c77.png",
+    "/Users/fengheliang/.codex/generated_images/01a1615b-c380-73a3-bb7b-58bb2f9b4009/exec-9c94ff15-dfc6-470a-9534-f8dfb9beb57b.png",
+    "/Users/fengheliang/.codex/generated_images/01a1615b-c380-73a3-bb7b-58bb2f9b4009/exec-9e7499c7-d073-4efb-b205-0b853287d1d6.png",
+    "/Users/fengheliang/.codex/generated_images/01a1615b-c380-73a3-bb7b-58bb2f9b4009/exec-affdb084-d5ce-4d16-bc1c-50d48ad148fa.png",
+    "/Users/fengheliang/.codex/generated_images/01a1615b-c380-73a3-bb7b-58bb2f9b4009/exec-b68660eb-097f-4827-9882-3bb3cc69e50d.png",
+    "/Users/fengheliang/.codex/generated_images/01a1615b-c380-73a3-bb7b-58bb2f9b4009/exec-d0a83840-49d1-4e14-99db-8717e4327096.png",
+    "/Users/fengheliang/.codex/generated_images/01a1615b-c380-73a3-bb7b-58bb2f9b4009/exec-d2c73cc5-f133-477d-a460-09ad8117e344.png",
+    "/Users/fengheliang/.codex/generated_images/01a1615b-c380-73a3-bb7b-58bb2f9b4009/exec-d5cd3d9a-7c76-49f5-ab8c-f0c57ab2e4a7.png",
+    "/Users/fengheliang/.codex/generated_images/01a1615b-c380-73a3-bb7b-58bb2f9b4009/exec-d73db49a-5635-4faf-881c-f08a497b0321.png",
+    "/Users/fengheliang/.codex/generated_images/01a1615b-c380-73a3-bb7b-58bb2f9b4009/exec-f68ae9c5-70d1-4edb-8d5f-1363633298bd.png"
+  ],
+  "verification": {
+    "unitTests": {
+      "passed": 13,
+      "failed": 0
+    },
+    "desktop": {
+      "passed": true,
+      "decoded": [
+        "zhongyuan-expansion-20261021-03",
+        "zhongyuan-expansion-20261021-01",
+        "zhongyuan",
+        "hebei",
+        "henan",
+        "v1-sheng-00",
+        "v1-sheng-02",
+        "v1-sheng-03",
+        "peony-red",
+        "pine-silk",
+        "candle-curtain",
+        "lotus-picker",
+        "railing-coral",
+        "spring-rider",
+        "autumn-flute",
+        "red-twin-buns",
+        "butterfly-sleeves",
+        "green-fan",
+        "blue-dancer",
+        "moon-silk",
+        "rabbit-play",
+        "oasis-dance",
+        "expansion-20261019-01",
+        "expansion-20261019-02",
+        "expansion-20261019-03",
+        "expansion-20261019-04",
+        "expansion-20261019-05",
+        "expansion-20261019-06",
+        "expansion-20261019-07",
+        "expansion-20261019-08",
+        "expansion-20261019-09",
+        "expansion-20261019-10",
+        "expansion-20261019-11",
+        "expansion-20261019-12",
+        "expansion-20261019-13",
+        "expansion-20261019-14",
+        "expansion-20261019-14-princess",
+        "expansion-20261019-15",
+        "expansion-20261019-16",
+        "expansion-20261019-16-plain",
+        "expansion-20261019-17",
+        "expansion-20261019-18",
+        "expansion-20261019-19",
+        "expansion-20261019-20",
+        "foreign-expansion-20261019-01",
+        "foreign-expansion-20261019-02",
+        "foreign-expansion-20261019-03",
+        "foreign-expansion-20261019-04",
+        "foreign-expansion-20261019-05",
+        "foreign-expansion-20261019-06",
+        "foreign-expansion-20261019-07",
+        "foreign-expansion-20261019-08",
+        "foreign-expansion-20261019-09",
+        "foreign-expansion-20261019-10",
+        "foreign-expansion-20261019-11",
+        "foreign-expansion-20261019-12",
+        "foreign-expansion-20261019-13",
+        "foreign-expansion-20261019-14",
+        "foreign-expansion-20261019-15",
+        "foreign-expansion-20261019-16",
+        "foreign-expansion-20261019-17",
+        "foreign-expansion-20261019-18",
+        "foreign-expansion-20261019-19",
+        "foreign-expansion-20261019-20",
+        "foreign-expansion-20261019-21",
+        "foreign-expansion-20261019-22",
+        "foreign-expansion-20261019-23",
+        "foreign-expansion-20261019-24",
+        "foreign-expansion-20261019-25",
+        "foreign-expansion-20261019-26",
+        "japan-julia-20261020",
+        "foreign-expansion-20261019-27",
+        "foreign-expansion-20261019-28",
+        "foreign-expansion-20261019-29",
+        "foreign-expansion-20261019-30",
+        "foreign-expansion-20261019-31",
+        "foreign-expansion-20261019-32",
+        "foreign-expansion-20261019-33",
+        "foreign-expansion-20261019-34",
+        "foreign-expansion-20261019-35",
+        "foreign-expansion-20261019-36",
+        "foreign-expansion-20261019-37",
+        "foreign-expansion-20261019-38",
+        "foreign-expansion-20261019-39",
+        "foreign-expansion-20261019-40",
+        "xinjiang-tongliya-20261020",
+        "mainland-expansion-20261022-01",
+        "mainland-expansion-20261022-02",
+        "mainland-expansion-20261022-03",
+        "mainland-expansion-20261022-04",
+        "mainland-expansion-20261022-05",
+        "mainland-expansion-20261022-06",
+        "mainland-expansion-20261022-07",
+        "mainland-expansion-20261022-08",
+        "mainland-expansion-20261022-09",
+        "mainland-expansion-20261022-10",
+        "mainland-photo-five-20261022-01",
+        "mainland-photo-five-20261022-02",
+        "mainland-photo-five-20261022-03",
+        "mainland-photo-five-20261022-04",
+        "mainland-photo-five-20261022-05",
+        "mainland-photo-six-20261022-01",
+        "mainland-photo-six-20261022-02",
+        "mainland-photo-six-20261022-03",
+        "mainland-photo-six-20261022-04",
+        "mainland-photo-six-20261022-05",
+        "mainland-photo-six-20261022-06",
+        "mainland-photo-eight-20261022-01",
+        "mainland-photo-eight-20261022-02",
+        "mainland-photo-eight-20261022-03",
+        "mainland-photo-eight-20261022-04",
+        "mainland-photo-eight-20261022-05",
+        "mainland-photo-eight-20261022-06",
+        "mainland-photo-eight-20261022-07",
+        "mainland-photo-eight-20261022-08",
+        "mainland-photo-wu-20261022-01",
+        "japan-photo-ten-20261022-01",
+        "japan-photo-ten-20261022-02",
+        "japan-photo-ten-20261022-03",
+        "japan-photo-ten-20261022-04",
+        "japan-photo-ten-20261022-05",
+        "japan-photo-ten-20261022-06",
+        "japan-photo-ten-20261022-07",
+        "japan-photo-ten-20261022-08",
+        "japan-photo-ten-20261022-09",
+        "japan-photo-ten-20261022-10",
+        "korea-photo-ten-20261022-01",
+        "korea-photo-ten-20261022-02",
+        "korea-photo-ten-20261022-03",
+        "korea-photo-ten-20261022-04",
+        "korea-photo-ten-20261022-05",
+        "korea-photo-ten-20261022-06",
+        "korea-photo-ten-20261022-07",
+        "korea-photo-ten-20261022-08",
+        "korea-photo-ten-20261022-09",
+        "korea-photo-ten-20261022-10",
+        "korea-photo-ten-20261022-11",
+        "korea-photo-ten-20261022-12"
+      ],
+      "roster": [
+        "mainland-photo-six-20261022-01",
+        "mainland-photo-six-20261022-02",
+        "mainland-photo-six-20261022-03",
+        "mainland-photo-six-20261022-04",
+        "mainland-photo-six-20261022-05",
+        "mainland-photo-six-20261022-06",
+        "mainland-photo-eight-20261022-01",
+        "mainland-photo-eight-20261022-02",
+        "mainland-photo-eight-20261022-03",
+        "mainland-photo-eight-20261022-04",
+        "mainland-photo-eight-20261022-05",
+        "mainland-photo-eight-20261022-06",
+        "mainland-photo-eight-20261022-07",
+        "mainland-photo-eight-20261022-08",
+        "mainland-photo-wu-20261022-01",
+        "japan-photo-ten-20261022-01",
+        "japan-photo-ten-20261022-02",
+        "japan-photo-ten-20261022-03",
+        "japan-photo-ten-20261022-04",
+        "japan-photo-ten-20261022-05",
+        "japan-photo-ten-20261022-06",
+        "japan-photo-ten-20261022-07",
+        "japan-photo-ten-20261022-08",
+        "japan-photo-ten-20261022-09",
+        "japan-photo-ten-20261022-10",
+        "korea-photo-ten-20261022-01",
+        "korea-photo-ten-20261022-02",
+        "korea-photo-ten-20261022-03",
+        "korea-photo-ten-20261022-04",
+        "korea-photo-ten-20261022-05",
+        "korea-photo-ten-20261022-06",
+        "korea-photo-ten-20261022-07",
+        "korea-photo-ten-20261022-08",
+        "korea-photo-ten-20261022-09",
+        "korea-photo-ten-20261022-10",
+        "korea-photo-ten-20261022-11",
+        "korea-photo-ten-20261022-12"
+      ],
+      "checks": [
+        "Every registered portrait: real generation, admission, JSON save/reload and native canvas painting",
+        "All 37 recent portraits render in the real harem roster after save/reload"
+      ]
+    }
+  }
+}

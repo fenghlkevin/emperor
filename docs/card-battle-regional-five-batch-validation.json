@@ -1,0 +1,115 @@
+{
+  "status": "five-representative-atlases-generated-shown-and-native-verified",
+  "scope": "剩余五类九区域代表图同批制作，不代表全部实际兵源历史复原",
+  "kinds": [
+    "heavy-cavalry",
+    "crossbows",
+    "camel",
+    "elephant",
+    "horse-archers"
+  ],
+  "generation": "builtin imagegen, five separate role-specific requests in one batch, no subagents",
+  "visualPolicy": "沿用用户认可v2群体与组内自然差异，不同年龄脸型发质胡须体态和肤色范围，避免同脸换衣",
+  "specialUnitsPolicy": "异地象兵骆驼弩兵仅是游戏已存在编制的外观，不宣称各地区历史上普遍本土装备此兵种",
+  "verification": "24模型通过；五种135原生检查通过，正式一次提交、九区域解码手牌/牌组/部署；查看波斯弩兵与草原象兵最终截图",
+  "remaining": "实际兵源细化、随机人物区域变体、历史服饰审视、晏婴规则增强、完整视觉性能和平衡20局及1小时前台",
+  "assets": [
+    {
+      "kind": "heavy-cavalry",
+      "path": "assets/battle/card-regional-heavy-cavalry-v2.png",
+      "sha256": "4118a3646b1c38ca177f403634d35e5852abb333600bc8cab7a74d2577048653",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "sourceOutput": "exec-3d9f20a7-1521-44ae-a253-1e9654f8efb6.png",
+      "visualReview": "完整九格已查看，正确兵种和坐骑/武器，群体与组内自然差异",
+      "native": {
+        "checks": 27,
+        "errors": [],
+        "elapsedSeconds": 33.048,
+        "asset": "assets/battle/card-regional-heavy-cavalry-v2.png",
+        "timestamp": "2026-10-24T06:10:23.171Z"
+      }
+    },
+    {
+      "kind": "crossbows",
+      "path": "assets/battle/card-regional-crossbows-v2.png",
+      "sha256": "e5375cd422c89845db989d5cb2f8b06b3e68b160b2915e6f740e1806efe5a54f",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "sourceOutput": "exec-b405d5f4-39f4-471a-9319-53823064a487.png",
+      "visualReview": "完整九格已查看，正确兵种和坐骑/武器，群体与组内自然差异",
+      "native": {
+        "checks": 27,
+        "errors": [],
+        "elapsedSeconds": 33.032,
+        "asset": "assets/battle/card-regional-crossbows-v2.png",
+        "timestamp": "2026-10-24T06:11:34.436Z"
+      }
+    },
+    {
+      "kind": "camel",
+      "path": "assets/battle/card-regional-camel-v2.png",
+      "sha256": "edc1afa85d84760de48ebc390d1f57a910228a741e5bb834a1b6209eb0ef9f86",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "sourceOutput": "exec-4abbb1e9-ad11-4150-8a1a-c2944d92b596.png",
+      "visualReview": "完整九格已查看，正确兵种和坐骑/武器，群体与组内自然差异",
+      "native": {
+        "checks": 27,
+        "errors": [],
+        "elapsedSeconds": 33.283,
+        "asset": "assets/battle/card-regional-camel-v2.png",
+        "timestamp": "2026-10-24T06:12:44.804Z"
+      }
+    },
+    {
+      "kind": "elephant",
+      "path": "assets/battle/card-regional-elephant-v2.png",
+      "sha256": "ef8ed0a0c76d46352e3fa8cbb28f20c941f16f4eea4d7b2954ce340de9ed5292",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "sourceOutput": "exec-e5af28a0-6274-4821-a76d-9d9592c8e9e9.png",
+      "visualReview": "完整九格已查看，正确兵种和坐骑/武器，群体与组内自然差异",
+      "native": {
+        "checks": 27,
+        "errors": [],
+        "elapsedSeconds": 33.346,
+        "asset": "assets/battle/card-regional-elephant-v2.png",
+        "timestamp": "2026-10-24T06:13:42.999Z"
+      }
+    },
+    {
+      "kind": "horse-archers",
+      "path": "assets/battle/card-regional-horse-archers-v2.png",
+      "sha256": "5caa26a5e7632a5f46209ef7a1957e9b22b59ce7ce6c7212cc1c04c8d8c6ca73",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "sourceOutput": "exec-d3b7c952-698f-4000-bfe7-14c705fcc808.png",
+      "visualReview": "完整九格已查看，正确兵种和坐骑/武器，群体与组内自然差异",
+      "native": {
+        "checks": 27,
+        "errors": [],
+        "elapsedSeconds": 33.247,
+        "asset": "assets/battle/card-regional-horse-archers-v2.png",
+        "timestamp": "2026-10-24T06:14:30.782Z"
+      }
+    }
+  ],
+  "modelTests": {
+    "passed": 24,
+    "failed": 0,
+    "durationMs": 3756.077792
+  },
+  "shownToUser": true,
+  "nativeChecks": 135
+}

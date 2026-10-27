@@ -1,4 +1,8 @@
+import {executeSpecial} from '../src/special-buildings.mjs';
+import {captureArmyRecovery,offerArmyRecovery,quoteArmyRecovery,executeArmyRecovery,settleArmyRecovery} from '../src/army-recovery.mjs';
+import {loseForceKits} from '../src/kit-strategy.mjs';
 import {settleHanlin} from '../src/hanlin.mjs';
+import {companyBond} from '../src/harem-bonds.mjs';
 // Compile actual runtime snapshots against the saved-state contract, without
 // trusting the inferred `any` types of the JavaScript implementation.
 import ts from 'typescript';
@@ -7,7 +11,7 @@ import {mkdtempSync,writeFileSync,rmSync} from 'node:fs';
 import {tmpdir} from 'node:os';
 import {join,resolve} from 'node:path';
 import {fileURLToPath} from 'node:url';
-import {newGame,advance,validateSave} from '../src/game.mjs';
+import {newGame,createPlayableGame,advance,validateSave} from '../src/game.mjs';
 import {countrySummary} from '../src/domestic.mjs';
 import {beginWar,finishWar,generals,borderingCountries} from '../src/war.mjs';
 import {actBattle} from '../src/battle.mjs';
@@ -31,6 +35,15 @@ const snapshots=[];
 const game=()=>{const s=newGame('数据契约');s.createdAt='2026-10-17T00:00:00.000Z';return s;};
 const capture=(label,state)=>{const s=validateSave(structuredClone(state));snapshots.push({label,type:'GameSave',value:s});return s;};
 const fresh=capture('new game',game());
+capture('novice discounted special project',executeSpecial(createPlayableGame('特殊工程契约','大晟',{difficulty:'novice',seed:7}),{id:1,building:'mausoleum',provinceId:'longyou'}).state);
+for(const difficulty of ['novice','standard','veteran'])capture('difficulty '+difficulty,createPlayableGame('难度契约','大晟',{difficulty,seed:7}));
+for(const kind of ['longevity','harmony']){
+ const s=game();s.turn=40;s.harem.streak=1;
+ Object.assign(s.harem.members[0],{hiddenTraits:{version:1,source:'historical',kinds:[kind]},specialty:kind==='harmony'?'琴艺':'园艺',personality:'独立洒脱',bond:{visits:6,lastVisitTurn:39,lastEventTurn:0,lifeGranted:0}});
+ let earned;for(let seed=1;seed<2000;seed++){const candidate=structuredClone(s);candidate.harem.portraitSeed=seed;companyBond(candidate,candidate.harem.members[0]);if(candidate.harem.bonds.history[0]?.kind===kind){earned=candidate;break;}}
+ if(!earned)throw Error('Missing harem bond contract fixture: '+kind);capture('earned hidden harem '+kind,earned);
+}
+const playable=capture('canonical v2 new game',createPlayableGame('新版契约'));advance(playable);capture('canonical v2 settlement',playable);capture('v2 development plan',executeIndustry(createPlayableGame('计划契约'),{id:1,kind:'plan',provinceId:'hebei',industry:'commerce',area:1000,budget:2000}).state);capture('v2 expansion work',executeIndustry(createPlayableGame('扩城契约'),{id:1,kind:'expand',provinceId:'hebei'}).state);
 const resourceGame=game();initializeResourceEconomy(resourceGame.domestic);
 capture('resource economy new game',resourceGame);
 advance(resourceGame);capture('resource economy settled turn',resourceGame);
@@ -78,6 +91,9 @@ const hanlin=game();initializeResourceEconomy(hanlin.domestic);const pupil=hanli
 
 const extraGear=game();reserveWorldKits(extraGear.domestic,'central','type:extra',[{kind:'infantry',count:1}],{extraKits:{spears:2}});capture('extra equipment reservation without extra soldiers',extraGear);settleWorldKits(extraGear.domestic,'central','type:extra',[1],{extraKitLoss:{spears:1}});capture('separate equipment loss settlement',extraGear);
 
+let recovery=createPlayableGame('恢复契约');captureArmyRecovery(recovery.domestic,recovery.turn);loseForceKits(recovery.domestic,{countryId:'sheng',sourceId:'central',soldiers:1600,training:60},1600);offerArmyRecovery(recovery.domestic,recovery.turn);capture('central loss recovery offer',recovery);
+recovery=executeArmyRecovery(recovery,{id:1,kind:'start',cap:quoteArmyRecovery(recovery).suggestedCap,train:true,draft:true}).state;capture('authorized paid recovery',recovery);
+settleArmyRecovery(recovery.domestic,2);recovery.turn=2;capture('paid recovery batch',recovery);recovery=executeArmyRecovery(recovery,{id:2,kind:'cancel'}).state;capture('cancelled recovery budget',recovery);
 const directory=mkdtempSync(join(tmpdir(),'emperor-data-contract-'));
 try{
  const file=join(directory,'snapshots.mts');

@@ -1,0 +1,389 @@
+{
+  "date": "2026-10-26",
+  "pairs": 80,
+  "method": "Production card AI; fixed template profiles, same seed per pair, exchanged first seat; numeric abilities isolated from template and commander-skill selection. Score counts draw as half; CI from paired scores.",
+  "attributeRules": {
+    "version": 1,
+    "trainingAttack": 0.004,
+    "trainingHealth": 0.006,
+    "officerAttack": 0.003,
+    "officerHealth": 0.004,
+    "commander": 0.004
+  },
+  "rows": [
+    {
+      "version": "old",
+      "id": "mirror",
+      "name": "同条件对照",
+      "games": 160,
+      "wins": 84,
+      "draws": 0,
+      "score": 0.525,
+      "ci95": [
+        0.45333190071101226,
+        0.5966680992889878
+      ],
+      "firstScore": 0.6,
+      "meanRounds": 14.8125,
+      "meanHomeDeaths": 1182.63125,
+      "actions": 17165
+    },
+    {
+      "version": "old",
+      "id": "training30",
+      "name": "训练30 对 60",
+      "games": 160,
+      "wins": 69,
+      "draws": 0,
+      "score": 0.43125,
+      "ci95": [
+        0.35991397598138225,
+        0.5025860240186177
+      ],
+      "firstScore": 0.55625,
+      "meanRounds": 14.3125,
+      "meanHomeDeaths": 1161.83125,
+      "actions": 16605
+    },
+    {
+      "version": "old",
+      "id": "training90",
+      "name": "训练90 对 60",
+      "games": 160,
+      "wins": 100,
+      "draws": 0,
+      "score": 0.625,
+      "ci95": [
+        0.5460668444950116,
+        0.7039331555049884
+      ],
+      "firstScore": 0.5625,
+      "meanRounds": 13.625,
+      "meanHomeDeaths": 1067.14375,
+      "actions": 15838
+    },
+    {
+      "version": "old",
+      "id": "officers35",
+      "name": "带队能力35 对 60",
+      "games": 160,
+      "wins": 84,
+      "draws": 0,
+      "score": 0.525,
+      "ci95": [
+        0.45333190071101226,
+        0.5966680992889878
+      ],
+      "firstScore": 0.6,
+      "meanRounds": 14.8125,
+      "meanHomeDeaths": 1182.63125,
+      "actions": 17165
+    },
+    {
+      "version": "old",
+      "id": "officers90",
+      "name": "带队能力90 对 60",
+      "games": 160,
+      "wins": 84,
+      "draws": 0,
+      "score": 0.525,
+      "ci95": [
+        0.45333190071101226,
+        0.5966680992889878
+      ],
+      "firstScore": 0.6,
+      "meanRounds": 14.8125,
+      "meanHomeDeaths": 1182.63125,
+      "actions": 17165
+    },
+    {
+      "version": "old",
+      "id": "commander35",
+      "name": "主将统率35 对 60",
+      "games": 160,
+      "wins": 84,
+      "draws": 0,
+      "score": 0.525,
+      "ci95": [
+        0.45333190071101226,
+        0.5966680992889878
+      ],
+      "firstScore": 0.6,
+      "meanRounds": 14.8125,
+      "meanHomeDeaths": 1182.63125,
+      "actions": 17165
+    },
+    {
+      "version": "old",
+      "id": "commander90",
+      "name": "主将统率90 对 60",
+      "games": 160,
+      "wins": 84,
+      "draws": 0,
+      "score": 0.525,
+      "ci95": [
+        0.45333190071101226,
+        0.5966680992889878
+      ],
+      "firstScore": 0.6,
+      "meanRounds": 14.8125,
+      "meanHomeDeaths": 1182.63125,
+      "actions": 17165
+    },
+    {
+      "version": "old",
+      "id": "army1200",
+      "name": "兵力1200 对 1800",
+      "games": 160,
+      "wins": 60,
+      "draws": 0,
+      "score": 0.375,
+      "ci95": [
+        0.2980161121575315,
+        0.4519838878424685
+      ],
+      "firstScore": 0.525,
+      "meanRounds": 14.21875,
+      "meanHomeDeaths": 789.90625,
+      "actions": 16474
+    },
+    {
+      "version": "old",
+      "id": "army600",
+      "name": "兵力600 对 1800",
+      "games": 160,
+      "wins": 42,
+      "draws": 0,
+      "score": 0.2625,
+      "ci95": [
+        0.1997033873766902,
+        0.32529661262330983
+      ],
+      "firstScore": 0.4875,
+      "meanRounds": 13.61875,
+      "meanHomeDeaths": 401.45625,
+      "actions": 15926
+    },
+    {
+      "version": "old",
+      "id": "army3600",
+      "name": "兵力3600 对 1800",
+      "games": 160,
+      "wins": 112,
+      "draws": 0,
+      "score": 0.7,
+      "ci95": [
+        0.6289708564003034,
+        0.7710291435996965
+      ],
+      "firstScore": 0.45,
+      "meanRounds": 13.81875,
+      "meanHomeDeaths": 1173.2,
+      "actions": 16244
+    },
+    {
+      "version": "old",
+      "id": "quality",
+      "name": "600精兵良将 对 1800普通军",
+      "games": 160,
+      "wins": 66,
+      "draws": 0,
+      "score": 0.4125,
+      "ci95": [
+        0.33303917850979176,
+        0.4919608214902082
+      ],
+      "firstScore": 0.4625,
+      "meanRounds": 13.94375,
+      "meanHomeDeaths": 404.775,
+      "actions": 16409
+    },
+    {
+      "version": "new",
+      "id": "mirror",
+      "name": "同条件对照",
+      "games": 160,
+      "wins": 84,
+      "draws": 0,
+      "score": 0.525,
+      "ci95": [
+        0.45333190071101226,
+        0.5966680992889878
+      ],
+      "firstScore": 0.6,
+      "meanRounds": 14.8125,
+      "meanHomeDeaths": 1182.63125,
+      "actions": 17165
+    },
+    {
+      "version": "new",
+      "id": "training30",
+      "name": "训练30 对 60",
+      "games": 160,
+      "wins": 36,
+      "draws": 0,
+      "score": 0.225,
+      "ci95": [
+        0.16238514351078848,
+        0.28761485648921153
+      ],
+      "firstScore": 0.475,
+      "meanRounds": 13.75,
+      "meanHomeDeaths": 1150.01875,
+      "actions": 15913
+    },
+    {
+      "version": "new",
+      "id": "training90",
+      "name": "训练90 对 60",
+      "games": 160,
+      "wins": 124,
+      "draws": 0,
+      "score": 0.775,
+      "ci95": [
+        0.7033319007110123,
+        0.8466680992889878
+      ],
+      "firstScore": 0.575,
+      "meanRounds": 12.70625,
+      "meanHomeDeaths": 972.25625,
+      "actions": 14737
+    },
+    {
+      "version": "new",
+      "id": "officers35",
+      "name": "带队能力35 对 60",
+      "games": 160,
+      "wins": 75,
+      "draws": 0,
+      "score": 0.46875,
+      "ci95": [
+        0.39408336217695705,
+        0.543416637823043
+      ],
+      "firstScore": 0.61875,
+      "meanRounds": 14.74375,
+      "meanHomeDeaths": 1193.04375,
+      "actions": 17079
+    },
+    {
+      "version": "new",
+      "id": "officers90",
+      "name": "带队能力90 对 60",
+      "games": 160,
+      "wins": 100,
+      "draws": 0,
+      "score": 0.625,
+      "ci95": [
+        0.5541851227816991,
+        0.6958148772183009
+      ],
+      "firstScore": 0.5625,
+      "meanRounds": 14.43125,
+      "meanHomeDeaths": 1133.2875,
+      "actions": 16712
+    },
+    {
+      "version": "new",
+      "id": "commander35",
+      "name": "主将统率35 对 60",
+      "games": 160,
+      "wins": 80,
+      "draws": 0,
+      "score": 0.5,
+      "ci95": [
+        0.4201100440399975,
+        0.5798899559600025
+      ],
+      "firstScore": 0.6125,
+      "meanRounds": 14.93125,
+      "meanHomeDeaths": 1214.225,
+      "actions": 17350
+    },
+    {
+      "version": "new",
+      "id": "commander90",
+      "name": "主将统率90 对 60",
+      "games": 160,
+      "wins": 98,
+      "draws": 0,
+      "score": 0.6125,
+      "ci95": [
+        0.5345841292714225,
+        0.6904158707285776
+      ],
+      "firstScore": 0.575,
+      "meanRounds": 14.28125,
+      "meanHomeDeaths": 1127.975,
+      "actions": 16553
+    },
+    {
+      "version": "new",
+      "id": "army1200",
+      "name": "兵力1200 对 1800",
+      "games": 160,
+      "wins": 39,
+      "draws": 0,
+      "score": 0.24375,
+      "ci95": [
+        0.1785346859737354,
+        0.3089653140262646
+      ],
+      "firstScore": 0.50625,
+      "meanRounds": 13.76875,
+      "meanHomeDeaths": 779.65625,
+      "actions": 15948
+    },
+    {
+      "version": "new",
+      "id": "army600",
+      "name": "兵力600 对 1800",
+      "games": 160,
+      "wins": 0,
+      "draws": 0,
+      "score": 0,
+      "ci95": [
+        0,
+        0
+      ],
+      "firstScore": 0.5,
+      "meanRounds": 10.35,
+      "meanHomeDeaths": 305.5375,
+      "actions": 11289
+    },
+    {
+      "version": "new",
+      "id": "army3600",
+      "name": "兵力3600 对 1800",
+      "games": 160,
+      "wins": 112,
+      "draws": 0,
+      "score": 0.7,
+      "ci95": [
+        0.6289708564003034,
+        0.7710291435996965
+      ],
+      "firstScore": 0.45,
+      "meanRounds": 13.81875,
+      "meanHomeDeaths": 1173.2,
+      "actions": 16244
+    },
+    {
+      "version": "new",
+      "id": "quality",
+      "name": "600精兵良将 对 1800普通军",
+      "games": 160,
+      "wins": 71,
+      "draws": 0,
+      "score": 0.44375,
+      "ci95": [
+        0.361991639029347,
+        0.525508360970653
+      ],
+      "firstScore": 0.48125,
+      "meanRounds": 13.7625,
+      "meanHomeDeaths": 396.06875,
+      "actions": 16210
+    }
+  ]
+}

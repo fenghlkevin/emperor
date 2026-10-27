@@ -1,0 +1,61 @@
+{
+  "date": "2026-10-22",
+  "scope": "assets/beauties/random",
+  "registeredPortraits": 116,
+  "remainingImages": 116,
+  "reachablePortraits": 116,
+  "deletedCount": 7,
+  "reclaimedBytes": 13602275,
+  "legacyMappingsPreserved": true,
+  "deleted": [
+    {
+      "path": "assets/beauties/random/女明星/刘璇-绯练轻舞.png",
+      "bytes": 1935674,
+      "sha256": "51ff05284693626698920d814b3462a313bf030a4528c2d5bb0cc65be1a59daa",
+      "reason": "superseded legacy file; old path redirects to current asset",
+      "replacement": "assets/beauties/random/女明星/刘璇-绯练轻舞-v2.png"
+    },
+    {
+      "path": "assets/beauties/random/女明星/张子枫-竹青执笛.png",
+      "bytes": 1890831,
+      "sha256": "c7fdd4868ed82a73ba3ea4da99eb338513ffb22f1010fc94554f5e5ee0b33a8e",
+      "reason": "superseded legacy file; old path redirects to current asset",
+      "replacement": "assets/beauties/random/女明星/张子枫-竹青执笛-v2.png"
+    },
+    {
+      "path": "assets/beauties/random/女明星/张雨霏-碧水捧贝-v2.png",
+      "bytes": 1986557,
+      "sha256": "25a4a69a869cc8ed5a6b61ce8aa85353a434dc232dd9f77ab741efcce2229f56",
+      "reason": "superseded legacy file; old path redirects to current asset",
+      "replacement": "assets/beauties/random/女明星/张雨霏-碧水捧贝-v3.png"
+    },
+    {
+      "path": "assets/beauties/random/女明星/张雨霏-碧水捧贝.png",
+      "bytes": 1965957,
+      "sha256": "4f8481b0955fceb958f379bbc82d93d70b5b600826a5089a17a20c2146c89052",
+      "reason": "superseded legacy file; old path redirects to current asset",
+      "replacement": "assets/beauties/random/女明星/张雨霏-碧水捧贝-v3.png"
+    },
+    {
+      "path": "assets/beauties/random/女明星/潘晓婷-墨绡执杆.png",
+      "bytes": 1705790,
+      "sha256": "981a6116264c561a65022eb4a1dea1785570e0e6f90c6dba43d4c9474c652c58",
+      "reason": "superseded legacy file; old path redirects to current asset",
+      "replacement": "assets/beauties/random/女明星/潘晓婷-墨绡团扇-v2.png"
+    },
+    {
+      "path": "assets/beauties/random/女明星/王子文-烟紫香篆.png",
+      "bytes": 2241190,
+      "sha256": "ad5c7eec9aa244210d42daee87335f873445bbd5f9bfa09ee76326b09b56a24a",
+      "reason": "superseded legacy file; old path redirects to current asset",
+      "replacement": "assets/beauties/random/女明星/王子文-杏绡桃香-v2.png"
+    },
+    {
+      "path": "assets/beauties/random/女明星/王祖贤-月白兰书.png",
+      "bytes": 1876276,
+      "sha256": "d9ed51710d524154aa46f0d4ce364d6bf291d1c1d0f2f21b7ea833322602cf5d",
+      "reason": "not connected to random pool or runtime",
+      "replacement": null
+    }
+  ]
+}

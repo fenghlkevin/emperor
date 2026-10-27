@@ -1,3 +1,4 @@
+import {balanced} from './development-balance.mjs';
 import {postNationalGrain} from './national-resources.mjs';
 import {admittedPopulation} from './city-capacity.mjs';
 import {assignArrivalJobs} from './labor.mjs';
@@ -19,7 +20,7 @@ export const AUSPICES=[
  ['farmers','垦户来归','邻境农户携种而来，愿在此安家垦田，官府已妥善安置。','local','farmers',1600,'农人人口','人'],
  ['herders','牧野兴旺','牧户逐水草迁来，献上良马，愿入籍共事农牧。','local','herders',1000,'牧人人口','人']
 ].map(([id,title,story,scope,resource,amount,label,unit])=>({id,title,story,scope,resource,amount,label,unit}));
-export function auspiceDefinition(s,id){const e=AUSPICES.find(e=>e.id===id);
+export function auspiceDefinition(s,id){let e=AUSPICES.find(e=>e.id===id);if(e&&balanced(s.domestic))e={...e,amount:Math.max(1,Math.round(e.amount*(['grain','infantry','cavalry'].includes(e.resource)?.1:.3)))};
  if(s.domestic.resourceRulesVersion===1&&['workers','farmers','herders'].includes(e?.resource))return {...e,label:'迁入总人口',story:e.story+' 职业按可用劳力安置，其余人口保留在籍。'};
  return e;
 }
@@ -30,7 +31,7 @@ function turnRandom(s){
 }
 export function settleAuspices(s,random=turnRandom(s)){
  const system=initializeAuspices(s);if(system.lastTurn>=s.turn)return null;system.lastTurn=s.turn;
- if(random()>=AUSPICE_CHANCE)return null;
+ if(random()>=(balanced(s.domestic)?.12:AUSPICE_CHANCE))return null;
  const d=s.domestic,c=d.countries.find(c=>c.id===d.playerCountryId),owned=d.provinces.filter(p=>p.countryId===c.id);
  const previous=system.history[0]?.kind,pool=AUSPICES.filter(e=>e.id!==previous),e=auspiceDefinition(s,pool[Math.floor(random()*pool.length)].id);
  const p=e.scope==='local'?owned[Math.floor(random()*owned.length)]:null;
@@ -42,10 +43,10 @@ export function settleAuspices(s,random=turnRandom(s)){
  else {p.population.total+=arrivals;if(e.resource!=='people')assignArrivalJobs(p,{[e.resource]:arrivals});}
  s.stats.treasury=c.fiscal.treasury;
  const amount=arrivals??e.amount;
- const record={turn:s.turn,kind:e.id,provinceId:p?.id??null,amount,notified:false};
+ const record={turn:s.turn,...(balanced(d)?{rulesVersion:2}:{}),kind:e.id,provinceId:p?.id??null,amount,notified:false};
  system.history.unshift(record);system.history=system.history.slice(0,36);return record;
 }
 export function validateAuspices(s){
  const a=initializeAuspices(s);if(!Number.isSafeInteger(a.lastTurn)||a.lastTurn<1||a.lastTurn>s.turn||!Array.isArray(a.history)||a.history.length>36)throw Error('祥瑞记录无效');
- let previous=s.turn+1;for(const r of a.history){const e=AUSPICES.find(e=>e.id===r.kind);if(!e||!Number.isSafeInteger(r.turn)||r.turn<1||r.turn>=previous||r.turn>a.lastTurn||(!Number.isSafeInteger(r.amount)||r.amount<0||(['people','workers','farmers','herders'].includes(e.resource)?r.amount>e.amount:r.amount!==e.amount))||typeof r.notified!=='boolean'||(e.scope==='central'?r.provinceId!==null:!s.domestic.provinces.some(p=>p.id===r.provinceId)))throw Error('祥瑞记录无效');previous=r.turn;}
+ let previous=s.turn+1;for(const r of a.history){const e=r.rulesVersion===2?auspiceDefinition(s,r.kind):AUSPICES.find(e=>e.id===r.kind);if(!e||!Number.isSafeInteger(r.turn)||r.turn<1||r.turn>=previous||r.turn>a.lastTurn||(!Number.isSafeInteger(r.amount)||r.amount<0||(['people','workers','farmers','herders'].includes(e.resource)?r.amount>e.amount:r.amount!==e.amount))||typeof r.notified!=='boolean'||(e.scope==='central'?r.provinceId!==null:!s.domestic.provinces.some(p=>p.id===r.provinceId)))throw Error('祥瑞记录无效');previous=r.turn;}
 }

@@ -1,0 +1,52 @@
+{
+  "date": "2026-10-26",
+  "method": "Actual deliberately undersized expedition, real combat AI and casualty settlement, then authorized paid recovery. No fake outcome or injected treasury. Foreign strategy remains active.",
+  "runs": [
+    {
+      "seed": 1,
+      "outcome": "defeat",
+      "before": 8000,
+      "after": 5000,
+      "losses": 3000,
+      "quote": 20701,
+      "cap": 24842,
+      "completedTurn": 18,
+      "minCash": 73395,
+      "minGrain": 20516,
+      "finalSoldiers": 8000,
+      "paid": 20087,
+      "status": "兵员、兵装与训练均已恢复"
+    },
+    {
+      "seed": 7,
+      "outcome": "defeat",
+      "before": 8000,
+      "after": 5000,
+      "losses": 3000,
+      "quote": 20701,
+      "cap": 24842,
+      "completedTurn": 18,
+      "minCash": 72974,
+      "minGrain": 20451,
+      "finalSoldiers": 8000,
+      "paid": 20094,
+      "status": "兵员、兵装与训练均已恢复"
+    },
+    {
+      "seed": 41,
+      "outcome": "defeat",
+      "before": 8000,
+      "after": 5000,
+      "losses": 3000,
+      "quote": 20701,
+      "cap": 24842,
+      "completedTurn": 18,
+      "minCash": 74194,
+      "minGrain": 20772,
+      "finalSoldiers": 8000,
+      "paid": 20091,
+      "status": "兵员、兵装与训练均已恢复"
+    }
+  ],
+  "errors": []
+}

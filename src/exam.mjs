@@ -1,10 +1,14 @@
+import {difficultyRules} from './difficulty.mjs';
 import {ensureOfficialGrowth} from './official-growth.mjs';
 import {selectionEffect} from './central-office-effects.mjs';
 import {ability100} from './emperor-rules.mjs';
 import {HISTORICAL_PEOPLE} from './historical-people.mjs';
 import {ORIGINAL_OFFICIAL_TEMPLATES} from './original-officials.mjs';
+import {HISTORICAL_IDENTITY_OVERRIDES} from './historical-identity-overrides.mjs';
 const aliases={'刘伯温':'刘基','苏东坡':'苏轼','公孙侨':'子产','晏平仲':'晏婴','陶士行':'陶侃','王阳明':'王守仁','孙子':'孙武','秦叔宝':'秦琼','刘罗锅':'刘墉'};
 export const ACTIVE_HISTORICAL_PEOPLE=ORIGINAL_OFFICIAL_TEMPLATES.map(t=>{
+ const reviewed=HISTORICAL_IDENTITY_OVERRIDES[`original-${t.index}`];
+ if(reviewed)return {...reviewed,originalName:t.name};
  const p=HISTORICAL_PEOPLE.find(p=>p.name===(aliases[t.name]??t.name));
  if(p)return {...p,originalName:t.name};
  const [age,intelligence,martial,integrity,loyalty,experience]=t.u16_fields;
@@ -17,7 +21,7 @@ surnames.push('欧阳','司马','上官','诸葛','夏侯','东方','皇甫','�
 const given=[...'文明德安远志怀景行守正思元承彦子仲伯季云松柏清修仁义礼智信忠宁致宏毅达谦和诚勇威杰俊贤良允成泽平康泰绍庭岳川海林山启兴昌荣华'];
 const pick=(a,r)=>a[Math.floor(r()*a.length)];
 export function historicalChance(stats={}){const v=k=>ability100(stats?.[k]??250);return .05+.35*(v('charm')+v('wisdom'))/200;}
-export function examSelection(d,stats){const e=selectionEffect(d);return {...e,historicalChance:Math.min(.8,historicalChance(stats)+e.historicalBonus),minCount:5+e.extra,maxCount:15+e.extra};}
+export function examSelection(d,stats){const e=selectionEffect(d),t=difficultyRules(d);return {...e,highChance:Math.min(1,e.highChance*t.talentFactor),historicalChance:Math.min(1,(historicalChance(stats)+e.historicalBonus)*t.historicalFactor),minCount:t.examMin+e.extra,maxCount:t.examMax+e.extra};}
 // Ordinary recruits have modest, middle-weighted abilities; a rare specialist is not an all-round master.
 export function randomExamAbilities(random,role,talentChance){
  const skills=['intelligence','martial','leadership','politics'];
@@ -30,9 +34,9 @@ export function createExamCandidates(d,turn,random,stats){
  const excluded=new Set([...d.justice.officials.map(o=>o.name),...d.personnel.retired]);
  const pool=ACTIVE_HISTORICAL_PEOPLE.filter(o=>!excluded.has(o.name));
  const forbidden=new Set([...HISTORICAL_PEOPLE.map(p=>p.name),...ACTIVE_HISTORICAL_PEOPLE.map(p=>p.name),...excluded]);
- const selection=examSelection(d,stats),count=5+Math.floor(random()*11)+selection.extra,result=[];
+ const selection=examSelection(d,stats),count=selection.minCount+Math.floor(random()*(selection.maxCount-selection.minCount+1)),result=[];
  for(let i=0;i<count;i++){
-  if(i<count-1&&pool.length&&random()<selection.historicalChance){
+  if(i<count-1&&pool.length&&(i===0&&(d.difficulty?.examMisses??0)>=3&&difficultyRules(d).id==='novice'||random()<selection.historicalChance)){
    const o=pool.splice(Math.floor(random()*pool.length),1)[0];const {dimensionEvidence,ratingBasis,...profile}=o;
    result.push({...profile,age:o.initialAge,loyalty:o.initialLoyalty,experience:o.initialExperience});
   }else{
@@ -40,7 +44,7 @@ export function createExamCandidates(d,turn,random,stats){
    // Deterministic fallback also terminates when a supplied RNG always returns the same value.
    if(forbidden.has(name)){let n=0;do{name=surnames[n%surnames.length]+given[Math.floor(n/surnames.length)%given.length]+given[Math.floor(n/(surnames.length*given.length))%given.length];n++;}while(forbidden.has(name));}
    const role=i===0?'武将':i===1?'文职':random()<.5?'武将':'文职';
-   const abilities=randomExamAbilities(random,role,selection.highChance);
+   const abilities=randomExamAbilities(random,role,i===0&&!pool.length&&(d.difficulty?.examMisses??0)>=3&&difficultyRules(d).id==='novice'?1:selection.highChance);
    result.push({id:`random-${turn}-${i}`,name,generated:true,dynasty:'本朝',role,...abilities,age:18+Math.floor(random()*28),loyalty:40+Math.floor(random()*51),experience:Math.floor(random()*51),tags:['制举新秀'],biography:'本朝制举选出的新秀。',personality:'composed'});
   }
   ensureOfficialGrowth(result.at(-1));
@@ -48,5 +52,6 @@ export function createExamCandidates(d,turn,random,stats){
  }
  if(!result.some(p=>p.role==='武将'))result.at(-1).role='武将';
  if(!result.some(p=>p.role==='文职'))result.at(-1).role='文职';
+ if(d.difficulty?.id==='novice')d.difficulty.examMisses=result.some(p=>!p.generated)?0:d.difficulty.examMisses+1;
  return result;
 }

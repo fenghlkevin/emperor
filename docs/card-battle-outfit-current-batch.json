@@ -1,0 +1,59 @@
+{
+  "scope": "30人已有卡面的人工服饰视检联系页，不代替实战/性能/考古复原验收",
+  "batchSize": 8,
+  "pages": [
+    {
+      "path": "docs/screenshots/card-outfit-review-batch-93-page-1.png",
+      "people": [
+        {
+          "id": "cbdb-3332",
+          "name": "韩愈",
+          "period": "唐",
+          "src": "assets/battle/people/cbdb-3332-battle-v1.png"
+        },
+        {
+          "id": "general-795-83328",
+          "name": "郑成功",
+          "period": "明末清初",
+          "src": "assets/battle/people/general-795-83328-battle-v1.png"
+        },
+        {
+          "id": "manual-1616",
+          "name": "袁崇焕",
+          "period": "明",
+          "src": "assets/battle/people/manual-1616-battle-v1.png"
+        },
+        {
+          "id": "manual-1625",
+          "name": "刘墉",
+          "period": "清",
+          "src": "assets/battle/people/manual-1625-battle-v1.png"
+        },
+        {
+          "id": "manual-1618",
+          "name": "魏忠贤",
+          "period": "明",
+          "src": "assets/battle/people/manual-1618-battle-v1.png"
+        },
+        {
+          "id": "original-97",
+          "name": "刘耀伦",
+          "period": "原作身份未定",
+          "src": "assets/battle/people/original-97-battle-v1.png"
+        },
+        {
+          "id": "original-98",
+          "name": "邹鹏",
+          "period": "原作身份未定",
+          "src": "assets/battle/people/original-98-battle-v1.png"
+        },
+        {
+          "id": "original-99",
+          "name": "沈昌平",
+          "period": "原作身份未定",
+          "src": "assets/battle/people/original-99-battle-v1.png"
+        }
+      ]
+    }
+  ]
+}

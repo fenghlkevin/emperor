@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-24T05:32:35.841449+00:00",
+  "scope": "Nine broad regional infantry illustrations, not a claim of exact historical costume reconstruction or complete regional delivery",
+  "asset": {
+    "path": "assets/battle/card-regional-infantry-v1.png",
+    "sha256": "fd027984709a5af9a93bb292c694f231179bc50c98723def9ddf22f7285a5bed",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "generator": "built-in imagegen",
+    "sourceOutput": "exec-c9cb54dc-aa92-4ec1-a9d0-50bbc49d4bac.png",
+    "layout": "3x3 equal tiles; tibetan,steppe,centralasia,persian,arab,indian,roman,nanzhao,japan"
+  },
+  "verification": {
+    "modelTests": 24,
+    "modelPassed": 24,
+    "nativeChecks": 27,
+    "consoleErrors": 0,
+    "nativeElapsedSeconds": 26.409,
+    "visualReview": "Atlas all nine cells; steppe, arab, japan native screenshots; final steppe screenshot after compositor settle"
+  },
+  "remaining": [
+    "other eight troop kinds",
+    "regional random person variants",
+    "historical regional outfit review",
+    "Yan Ying rule adjustment",
+    "full visual/performance and balance acceptance"
+  ]
+}

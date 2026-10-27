@@ -1,0 +1,201 @@
+{
+  "scope": "30人已有卡面的人工服饰视检联系页，不代替实战/性能/考古复原验收",
+  "batchSize": 30,
+  "pages": [
+    {
+      "path": "docs/screenshots/card-outfit-review-batch-63-page-1.png",
+      "people": [
+        {
+          "id": "manual-1592",
+          "name": "包拯",
+          "period": "北宋",
+          "src": "assets/battle/people/manual-1592-battle-v1.png"
+        },
+        {
+          "id": "manual-1507",
+          "name": "姜子牙",
+          "period": "商末周初（史传层次）",
+          "src": "assets/battle/people/manual-1507-battle-v1.png"
+        },
+        {
+          "id": "original-62",
+          "name": "比干",
+          "period": "原作身份未定",
+          "src": "assets/battle/people/original-62-battle-v1.png"
+        },
+        {
+          "id": "original-63",
+          "name": "周公",
+          "period": "原作身份未定",
+          "src": "assets/battle/people/original-63-battle-v1.png"
+        },
+        {
+          "id": "original-64",
+          "name": "孔子",
+          "period": "原作身份未定",
+          "src": "assets/battle/people/original-64-battle-v1.png"
+        },
+        {
+          "id": "original-65",
+          "name": "康有为",
+          "period": "原作身份未定",
+          "src": "assets/battle/people/original-65-battle-v1.png"
+        },
+        {
+          "id": "original-66",
+          "name": "老子",
+          "period": "原作身份未定",
+          "src": "assets/battle/people/original-66-battle-v1.png"
+        },
+        {
+          "id": "manual-1512",
+          "name": "孙武",
+          "period": "春秋（史传层次）",
+          "src": "assets/battle/people/manual-1512-battle-v1.png"
+        },
+        {
+          "id": "original-68",
+          "name": "韩非",
+          "period": "原作身份未定",
+          "src": "assets/battle/people/original-68-battle-v1.png"
+        },
+        {
+          "id": "original-69",
+          "name": "墨子",
+          "period": "原作身份未定",
+          "src": "assets/battle/people/original-69-battle-v1.png"
+        }
+      ]
+    },
+    {
+      "path": "docs/screenshots/card-outfit-review-batch-63-page-2.png",
+      "people": [
+        {
+          "id": "manual-1520",
+          "name": "白起",
+          "period": "战国",
+          "src": "assets/battle/people/manual-1520-battle-v1.png"
+        },
+        {
+          "id": "manual-1521",
+          "name": "王翦",
+          "period": "战国秦",
+          "src": "assets/battle/people/manual-1521-battle-v1.png"
+        },
+        {
+          "id": "manual-1518",
+          "name": "廉颇",
+          "period": "战国",
+          "src": "assets/battle/people/manual-1518-battle-v1.png"
+        },
+        {
+          "id": "manual-1522",
+          "name": "李牧",
+          "period": "战国",
+          "src": "assets/battle/people/manual-1522-battle-v1.png"
+        },
+        {
+          "id": "manual-1524",
+          "name": "吕不韦",
+          "period": "战国秦",
+          "src": "assets/battle/people/manual-1524-battle-v1.png"
+        },
+        {
+          "id": "general-56-58629",
+          "name": "蒙恬",
+          "period": "秦",
+          "src": "assets/battle/people/general-56-58629-battle-v1.png"
+        },
+        {
+          "id": "general-103-50637",
+          "name": "李广",
+          "period": "西汉",
+          "src": "assets/battle/people/general-103-50637-battle-v1.png"
+        },
+        {
+          "id": "original-77",
+          "name": "荆轲",
+          "period": "原作身份未定",
+          "src": "assets/battle/people/original-77-battle-v1.png"
+        },
+        {
+          "id": "general-38-51333",
+          "name": "田单",
+          "period": "战国",
+          "src": "assets/battle/people/general-38-51333-battle-v1.png"
+        },
+        {
+          "id": "original-79",
+          "name": "司马迁",
+          "period": "原作身份未定",
+          "src": "assets/battle/people/original-79-battle-v1.png"
+        }
+      ]
+    },
+    {
+      "path": "docs/screenshots/card-outfit-review-batch-63-page-3.png",
+      "people": [
+        {
+          "id": "cbdb-30257",
+          "name": "曹操",
+          "period": "东汉末",
+          "src": "assets/battle/people/cbdb-30257-battle-v1.png"
+        },
+        {
+          "id": "manual-1555",
+          "name": "赵云",
+          "period": "汉末三国",
+          "src": "assets/battle/people/manual-1555-battle-v1.png"
+        },
+        {
+          "id": "manual-1565",
+          "name": "司马懿",
+          "period": "汉末曹魏",
+          "src": "assets/battle/people/manual-1565-battle-v1.png"
+        },
+        {
+          "id": "general-285-45592",
+          "name": "吕布",
+          "period": "东汉末",
+          "src": "assets/battle/people/general-285-45592-battle-v1.png"
+        },
+        {
+          "id": "manual-1553",
+          "name": "关羽",
+          "period": "汉末三国",
+          "src": "assets/battle/people/manual-1553-battle-v1.png"
+        },
+        {
+          "id": "manual-1554",
+          "name": "张飞",
+          "period": "汉末三国",
+          "src": "assets/battle/people/manual-1554-battle-v1.png"
+        },
+        {
+          "id": "manual-1569",
+          "name": "周瑜",
+          "period": "汉末",
+          "src": "assets/battle/people/manual-1569-battle-v1.png"
+        },
+        {
+          "id": "general-398-60962",
+          "name": "秦琼",
+          "period": "隋唐",
+          "src": "assets/battle/people/general-398-60962-battle-v1.png"
+        },
+        {
+          "id": "original-88",
+          "name": "尉迟恭",
+          "period": "原作身份未定",
+          "src": "assets/battle/people/original-88-battle-v1.png"
+        },
+        {
+          "id": "original-89",
+          "name": "李密",
+          "period": "原作身份未定",
+          "src": "assets/battle/people/original-89-battle-v1.png"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+html body{margin:0!important;background:#ece8de!important;font:16px sans-serif!important;color:#221b16!important;overflow:hidden!important}
+body main.outfit-review{display:grid!important;grid-template-columns:repeat(5,minmax(0,1fr))!important;gap:8px!important;padding:8px!important;width:1500px!important;box-sizing:border-box!important}
+body .outfit-review figure{margin:0!important;height:calc((100vh - 24px)/2)!important;overflow:hidden!important;background:white!important}
+body .outfit-review figcaption{height:55px!important;padding:5px!important;box-sizing:border-box!important;font-size:15px!important;line-height:22px!important}
+body .outfit-review img{width:100%!important;height:calc((100vh - 134px)/2)!important;object-fit:contain!important;display:block!important;background:#ddd!important}

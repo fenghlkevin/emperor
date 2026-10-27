@@ -1,0 +1,351 @@
+{
+  "date": "2026-10-25T00:05:45.417Z",
+  "scope": "26 actual production profile dialogs with native close; all 15 official raster variants decoded with genuine transparency; isolated userData",
+  "checks": [
+    {
+      "kind": "actual-profile",
+      "id": "original-4",
+      "name": "张巡",
+      "biography": 71,
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "kind": "actual-profile",
+      "id": "original-8",
+      "name": "魏徵",
+      "biography": 70,
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "kind": "actual-profile",
+      "id": "original-16",
+      "name": "公孙侨",
+      "biography": 76,
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "kind": "actual-profile",
+      "id": "original-29",
+      "name": "谢安",
+      "biography": 69,
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "kind": "actual-profile",
+      "id": "original-33",
+      "name": "黄飞鸿",
+      "biography": 79,
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "kind": "actual-profile",
+      "id": "original-37",
+      "name": "屈原",
+      "biography": 71,
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "kind": "actual-profile",
+      "id": "original-41",
+      "name": "庞涓",
+      "biography": 72,
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "kind": "actual-profile",
+      "id": "original-43",
+      "name": "王玄策",
+      "biography": 73,
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "kind": "actual-profile",
+      "id": "original-44",
+      "name": "刘仁轨",
+      "biography": 67,
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "kind": "actual-profile",
+      "id": "original-57",
+      "name": "程咬金",
+      "biography": 67,
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "kind": "actual-profile",
+      "id": "original-59",
+      "name": "史可法",
+      "biography": 74,
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "kind": "actual-profile",
+      "id": "original-62",
+      "name": "比干",
+      "biography": 61,
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "kind": "actual-profile",
+      "id": "original-63",
+      "name": "周公",
+      "biography": 84,
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "kind": "actual-profile",
+      "id": "original-64",
+      "name": "孔子",
+      "biography": 70,
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "kind": "actual-profile",
+      "id": "original-65",
+      "name": "康有为",
+      "biography": 69,
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "kind": "actual-profile",
+      "id": "original-66",
+      "name": "老子",
+      "biography": 83,
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "kind": "actual-profile",
+      "id": "original-68",
+      "name": "韩非",
+      "biography": 66,
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "kind": "actual-profile",
+      "id": "original-69",
+      "name": "墨子",
+      "biography": 82,
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "kind": "actual-profile",
+      "id": "original-77",
+      "name": "荆轲",
+      "biography": 78,
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "kind": "actual-profile",
+      "id": "original-79",
+      "name": "司马迁",
+      "biography": 74,
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "kind": "actual-profile",
+      "id": "original-88",
+      "name": "尉迟恭",
+      "biography": 67,
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "kind": "actual-profile",
+      "id": "original-89",
+      "name": "李密",
+      "biography": 86,
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "kind": "actual-profile",
+      "id": "manual-1561",
+      "name": "荀彧",
+      "biography": 48,
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "kind": "actual-profile",
+      "id": "manual-1557",
+      "name": "黄忠",
+      "biography": 73,
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "kind": "actual-profile",
+      "id": "manual-1550",
+      "name": "庞统",
+      "biography": 80,
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "kind": "actual-profile",
+      "id": "cbdb-33662",
+      "name": "陆逊",
+      "biography": 75,
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "kind": "raster-alpha",
+      "id": "manual-1561",
+      "variant": "avatar",
+      "width": 1254,
+      "height": 1254,
+      "clear": 775995,
+      "solid": 780239
+    },
+    {
+      "kind": "raster-alpha",
+      "id": "manual-1561",
+      "variant": "full",
+      "width": 1024,
+      "height": 1536,
+      "clear": 900752,
+      "solid": 651973
+    },
+    {
+      "kind": "raster-alpha",
+      "id": "manual-1561",
+      "variant": "court",
+      "width": 1024,
+      "height": 1536,
+      "clear": 939160,
+      "solid": 614296
+    },
+    {
+      "kind": "raster-alpha",
+      "id": "manual-1557",
+      "variant": "avatar",
+      "width": 1254,
+      "height": 1254,
+      "clear": 574635,
+      "solid": 951795
+    },
+    {
+      "kind": "raster-alpha",
+      "id": "manual-1557",
+      "variant": "full",
+      "width": 1024,
+      "height": 1536,
+      "clear": 843594,
+      "solid": 697211
+    },
+    {
+      "kind": "raster-alpha",
+      "id": "manual-1557",
+      "variant": "court",
+      "width": 1024,
+      "height": 1536,
+      "clear": 895515,
+      "solid": 658369
+    },
+    {
+      "kind": "raster-alpha",
+      "id": "manual-1550",
+      "variant": "avatar",
+      "width": 1254,
+      "height": 1254,
+      "clear": 649298,
+      "solid": 888479
+    },
+    {
+      "kind": "raster-alpha",
+      "id": "manual-1550",
+      "variant": "full",
+      "width": 1024,
+      "height": 1536,
+      "clear": 832331,
+      "solid": 713392
+    },
+    {
+      "kind": "raster-alpha",
+      "id": "manual-1550",
+      "variant": "court",
+      "width": 1024,
+      "height": 1536,
+      "clear": 907704,
+      "solid": 642213
+    },
+    {
+      "kind": "raster-alpha",
+      "id": "cbdb-33662",
+      "variant": "avatar",
+      "width": 1254,
+      "height": 1254,
+      "clear": 737338,
+      "solid": 822587
+    },
+    {
+      "kind": "raster-alpha",
+      "id": "cbdb-33662",
+      "variant": "full",
+      "width": 1024,
+      "height": 1536,
+      "clear": 940504,
+      "solid": 608639
+    },
+    {
+      "kind": "raster-alpha",
+      "id": "cbdb-33662",
+      "variant": "court",
+      "width": 1024,
+      "height": 1536,
+      "clear": 983570,
+      "solid": 567534
+    },
+    {
+      "kind": "raster-alpha",
+      "id": "original-89",
+      "variant": "avatar",
+      "width": 1254,
+      "height": 1254,
+      "clear": 676044,
+      "solid": 873711
+    },
+    {
+      "kind": "raster-alpha",
+      "id": "original-89",
+      "variant": "full",
+      "width": 1024,
+      "height": 1536,
+      "clear": 902123,
+      "solid": 644782
+    },
+    {
+      "kind": "raster-alpha",
+      "id": "original-89",
+      "variant": "court",
+      "width": 1024,
+      "height": 1536,
+      "clear": 887565,
+      "solid": 665266
+    }
+  ],
+  "errors": [],
+  "passed": true
+}

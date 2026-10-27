@@ -1,6 +1,6 @@
 {
-  "date": "2026-10-23T01:44:01.432Z",
-  "elapsedSeconds": 25.175,
+  "date": "2026-10-25T04:06:51.788Z",
+  "elapsedSeconds": 22.671,
   "checks": [
     "cast wind-up does not prematurely display the new status",
     "impact shows +3 attack and this-turn duration on the target",
@@ -8,20 +8,20 @@
     "detail explains the exact reported 1 + 3 = 4 and expiry",
     "status survives saved-game JSON reopen",
     "temporary attack expires with the owner turn and restores normal attack",
-    "persistent attack and health retain accessible semantics and a live enhancement layer",
+    "persistent attack and health retain accessible semantics and live V7 attack and health emitters",
     "1440 persistent animation stays inside the fixed card and large status labels stay visually clipped",
     "1440 end-turn lettering leaves space inside jade",
     "1280 persistent animation stays inside the fixed card and large status labels stay visually clipped",
     "1280 end-turn lettering leaves space inside jade",
     "1000 persistent animation stays inside the fixed card and large status labels stay visually clipped",
     "1000 end-turn lettering leaves space inside jade",
-    "enemy freeze has an accessible state and persistent ice shell",
+    "enemy freeze has an accessible state and persistent growing ice crystals",
     "freeze state clears at the frozen side turn end",
     "enemy card displays its combined active effects before silence",
     "enemy silence remains visible after casting",
     "actual silence removes earlier buffs, shield and freeze markers",
     "active shield retains its accessible description",
-    "multiple effects avoid large text badges and all remain listed in detail",
+    "every effect has an independent card emitter and remains listed in detail",
     "consumed shield does not leave a stale status"
   ],
   "consoleErrors": []

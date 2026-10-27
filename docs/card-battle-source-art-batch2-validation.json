@@ -1,0 +1,174 @@
+{
+  "scope": "九细分图像来源其余八兵种，同批72格，非所有历史来源最终完成",
+  "status": "eight-source-troop-atlases-native-verified",
+  "kinds": [
+    "spears",
+    "archers",
+    "cavalry",
+    "heavy-cavalry",
+    "crossbows",
+    "camel",
+    "elephant",
+    "horse-archers"
+  ],
+  "policy": "沿用现有九细分顺序korean/aksumite/amazigh/slavic/frankish/pyu/khmer/maritime/sinhala；异地特殊兵种明确游戏征募编制，不宣称本土普遍装备",
+  "next": "全部输出视检保存，再模型，最后串行八种216原生检查；不重复上一批刀盾与文武图",
+  "assets": [
+    {
+      "kind": "spears",
+      "path": "assets/battle/card-source-spears-v1.png",
+      "sourceOutput": "exec-f424de59-34e2-4e79-b02e-7b6054167f4d.png",
+      "sha256": "2a2cf67b92901ee6383941a638cb3a6a0a13ef6506989e5af0d4ac53f7b3035a",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "visualReview": "九格逐一查看，正确兵种/坐骑轮廓，组内外人群差异保留",
+      "native": {
+        "checks": 27,
+        "elapsedSeconds": 33.61,
+        "asset": "assets/battle/card-source-spears-v1.png",
+        "timestamp": "2026-10-24T06:56:50.455Z"
+      }
+    },
+    {
+      "kind": "archers",
+      "path": "assets/battle/card-source-archers-v1.png",
+      "sourceOutput": "exec-ac663bcf-f22e-424f-8701-061bf553e78b.png",
+      "sha256": "ccc215d1f7798e472eeddca2cd728fec26d6504ba73aa8a9998667b01daf90cb",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "visualReview": "九格逐一查看，正确兵种/坐骑轮廓，组内外人群差异保留",
+      "native": {
+        "checks": 27,
+        "elapsedSeconds": 54.232,
+        "asset": "assets/battle/card-source-archers-v1.png",
+        "timestamp": "2026-10-24T06:57:45.037Z"
+      }
+    },
+    {
+      "kind": "cavalry",
+      "path": "assets/battle/card-source-cavalry-v1.png",
+      "sourceOutput": "exec-1f332896-797f-459e-be60-1e0c710d6f8e.png",
+      "sha256": "d80a5d19a2c7d6e2470e69050f70bce95b7a461219c173f70358c7fc2b897d10",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "visualReview": "九格逐一查看，正确兵种/坐骑轮廓，组内外人群差异保留",
+      "native": {
+        "checks": 27,
+        "elapsedSeconds": 33.305,
+        "asset": "assets/battle/card-source-cavalry-v1.png",
+        "timestamp": "2026-10-24T06:58:18.645Z"
+      }
+    },
+    {
+      "kind": "heavy-cavalry",
+      "path": "assets/battle/card-source-heavy-cavalry-v1.png",
+      "sourceOutput": "exec-b206c384-8dc2-4fa2-a172-a7e8445717b9.png",
+      "sha256": "65e1c6c469c0288ce1f1e43ce4060d7c6dbb4219d8b7cd2d098fbfe4c67fd639",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "visualReview": "九格逐一查看，正确兵种/坐骑轮廓，组内外人群差异保留",
+      "native": {
+        "checks": 27,
+        "elapsedSeconds": 33.474,
+        "asset": "assets/battle/card-source-heavy-cavalry-v1.png",
+        "timestamp": "2026-10-24T06:58:52.469Z"
+      }
+    },
+    {
+      "kind": "crossbows",
+      "path": "assets/battle/card-source-crossbows-v1.png",
+      "sourceOutput": "exec-5fdf2045-5914-4e6a-acdd-478c6a413057.png",
+      "sha256": "0ef42d9f12c41e391693c96fb8bef55c211e386059345f22f10ad714ff956f95",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "visualReview": "九格逐一查看，正确兵种/坐骑轮廓，组内外人群差异保留",
+      "native": {
+        "checks": 27,
+        "elapsedSeconds": 33.377,
+        "asset": "assets/battle/card-source-crossbows-v1.png",
+        "timestamp": "2026-10-24T06:59:26.227Z"
+      }
+    },
+    {
+      "kind": "camel",
+      "path": "assets/battle/card-source-camel-v1.png",
+      "sourceOutput": "exec-5b0ee66e-d2d7-457a-ab7a-6f987f30ef9b.png",
+      "sha256": "2c5ebf1b8bf52221e6a3908329e8ac116cfd684f146163eb3ea885560a28a5a0",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "visualReview": "九格逐一查看，正确兵种/坐骑轮廓，组内外人群差异保留",
+      "native": {
+        "checks": 27,
+        "elapsedSeconds": 33.318,
+        "asset": "assets/battle/card-source-camel-v1.png",
+        "timestamp": "2026-10-24T07:02:55.233Z"
+      }
+    },
+    {
+      "kind": "elephant",
+      "path": "assets/battle/card-source-elephant-v1.png",
+      "sourceOutput": "exec-f1c87df4-e218-4e25-9047-700907f465dd.png",
+      "sha256": "00dab5b821b42fa982e71221c1622ed1741854ded65c05b8f4de55ce56cdecac",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "visualReview": "九格逐一查看，正确兵种/坐骑轮廓，组内外人群差异保留",
+      "native": {
+        "checks": 27,
+        "elapsedSeconds": 33.281,
+        "asset": "assets/battle/card-source-elephant-v1.png",
+        "timestamp": "2026-10-24T07:03:28.826Z"
+      }
+    },
+    {
+      "kind": "horse-archers",
+      "path": "assets/battle/card-source-horse-archers-v1.png",
+      "sourceOutput": "exec-14a40824-8435-4829-be91-ec712d0db9fa.png",
+      "sha256": "da7585b870bf36a086e7ed5179e18636edfb6a208ca6f21833597788fa24b743",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "visualReview": "九格逐一查看，正确兵种/坐骑轮廓，组内外人群差异保留",
+      "native": {
+        "checks": 27,
+        "elapsedSeconds": 33.252,
+        "asset": "assets/battle/card-source-horse-archers-v1.png",
+        "timestamp": "2026-10-24T07:04:02.363Z"
+      }
+    }
+  ],
+  "model": {
+    "passed": 26,
+    "failed": 0,
+    "durationMs": 4047.466584
+  },
+  "cropFix": "源图存在窄分隔线，SVG每格内缩8像素，保持比例与cell身份；原生检查验证精确viewBox402x402",
+  "native": {
+    "newTroopChecks": 216,
+    "errors": [],
+    "cropRegressionChecks": 81,
+    "totalThisRun": 297,
+    "visualReview": "阿克苏姆轻骑最终部署截图，图集边缘未显示白色分隔线"
+  },
+  "remaining": [
+    "林邑/靺鞨/黠戛斯来源",
+    "八虚构边疆设计审视",
+    "历史服饰与随机姓名来源",
+    "晏婴增强",
+    "完整视觉性能平衡、20局和1小时前台"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "catalogVersion": "phase6-yanying-v6",
+  "report": "docs/card-battle-final-person-presentation-ui-validation.json",
+  "reportSha256": "7831276459f6d8cdff1edfef9da5b84bde2f7c09e6c7e8b3dced9e87ee17a34c",
+  "checksPassed": 1901,
+  "consoleErrors": [],
+  "elapsedSeconds": 1608.871,
+  "scope": "100人物正式卡面、登场/主将技、快速/减少动态、完整状态一次结算、临时清理、视口和牌册专项",
+  "hiddenWindow": true,
+  "foregroundHourCompleted": false,
+  "frameIntervalsMs": {
+    "samples": 192074,
+    "median": 8.300000000046566,
+    "p95": 9.10000000000582,
+    "max": 91.69999999999982
+  },
+  "memory": {
+    "samples": 38,
+    "unit": "KiB workingSetSize from Electron app metrics",
+    "firstRenderer": {
+      "workingSetSize": 491568,
+      "peakWorkingSetSize": 503952
+    },
+    "lastRenderer": {
+      "workingSetSize": 368288,
+      "peakWorkingSetSize": 506848
+    }
+  },
+  "limitation": "rAF不是GPU呈现帧率；隐藏窗口即使document.visibilityState为visible也不算前台小时；本次内存趋势无持续增长证据，不能单凭端点证明所有泄漏不存在。"
+}

@@ -1,0 +1,45 @@
+{
+  "status": "running",
+  "version": "phase6-yanying-v6",
+  "domain": "final-nonaudio-20261024-v6-heldout-A",
+  "section": "final-person",
+  "completed": 1,
+  "total": 1,
+  "pairsPerCase": 1000,
+  "rows": [
+    {
+      "id": "manual-1509-final-mirror",
+      "roster": "mixed_1800",
+      "hero": "intelligence",
+      "person": 21,
+      "pairs": 1000,
+      "seedDomain": "final-nonaudio-20261024-v6-heldout-A",
+      "games": 2000,
+      "first": {
+        "mean": 0.5055,
+        "ci95": [
+          0.483251746666842,
+          0.5277482533331579
+        ]
+      },
+      "home": {
+        "mean": 0.4965,
+        "ci95": [
+          0.4749080303456691,
+          0.5180919696543309
+        ]
+      },
+      "draws": 0,
+      "rounds": {
+        "median": 16,
+        "p90": 19,
+        "max": 22
+      },
+      "actions": 218904,
+      "validatedFinalStates": 40,
+      "deployed": [
+        "manual-1509"
+      ]
+    }
+  ]
+}

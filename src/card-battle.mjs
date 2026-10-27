@@ -1,3 +1,5 @@
+import {DIFFICULTIES} from './difficulty.mjs';
+import {ATTRIBUTE_RULES,attributeStats,attributeExplanation} from './card-battle-attributes.mjs';
 import {LANDMARK_DEFINITIONS,landmarkSelectionIds,fieldOccupancy,landmarkTargets,deployLandmark,activateLandmark,removeLandmark,refreshLandmarks,validateLandmarkState} from './card-battle-landmarks.mjs';
 import {SECRET_DEFINITIONS,secretSelectionIds,canArmSecret,armSecret,resolveAttackSecrets,validateSecretState} from './card-battle-secrets.mjs';
 import {WEAPON_DEFINITIONS,weaponSelectionIds,visibleEnemyTargets,legalHeroAttacks,heroAttackPreview,equipWeapon,performHeroAttack,breakWeapon,validateWeaponState} from './card-battle-weapons.mjs';
@@ -5,13 +7,14 @@ import {beginCardHistory,finishCardHistory,abortCardHistory,observeCardHistoryEv
 import {armyCardCount,normalizeTacticSelection,tacticSelectionIds} from './card-battle-tactics.mjs';
 import {HISTORICAL_PEOPLE} from './historical-people.mjs';
 import {ensureOfficialGrowth,validateOfficialGrowth} from './official-growth.mjs';
-import {CARD_CULTURES,cardCulture,cardRegionalArt} from './card-battle-cultures.mjs';
+import {CARD_CULTURES,cardCulture,cardRegionalArt,sourceArtCulture,sourceArtRegion,cardArtRegion,regionalPersonPortrait} from './card-battle-cultures.mjs';
 import {CARD_CATALOG} from './card-battle-data.mjs';
 import * as legacy from './card-battle-legacy.mjs';
 import {OFFICIAL_ART, officialPortraitKey, stablePersonId} from './official-art.mjs';
 
 const historicalNames=new Set(HISTORICAL_PEOPLE.map(p=>p.name));
 export const CARD_RULES = {"version": 3, "unitSize": 100, "compactArmy": true, "compactPenalty": true, "troopCap": 18, "boardLimit": 7, "handLimit": 10, "deckSize": 30, "spellPackages": {"martial": ["precision", "fire", "fortify", "assault", "supply", "pin", "precision", "fire", "fortify", "supply", "dispel", "heal"], "intelligence": ["precision", "fire", "arrows", "barrage", "pin", "supply", "precision", "execute", "arrows", "barrage", "pin", "dispel"], "command": ["precision", "fire", "fortify", "assault", "supply", "brace", "fire", "fortify", "assault", "supply", "heal", "dispel"]}, "penaltyTiersOnly": true, "reserveDeckGrowth": 2, "lowTrainingPenalty": "general", "scoutVariants": {"intelligence": {"cavalry": "cavalry_patrol_scout"}, "command": {"cavalry": "cavalry_patrol_scout"}}};
+CARD_RULES.attributeRules=ATTRIBUTE_RULES;
 export const CARD_DEFINITIONS = Object.fromEntries([...CARD_CATALOG.cards, CARD_CATALOG.coin].map(d=>[d.id,d]));
 export const HISTORICAL_CARDS = CARD_CATALOG.cards.filter(d=>d.type==='general');
 export const RANDOM_CARD_POOLS = CARD_CATALOG.random_pools;
@@ -51,7 +54,7 @@ export function createFixedCardPerson(person,seed=personSeed(person.id),culture=
  d.attack=Math.min(cap,Math.max(1,d.attack+(ability.martial<30?-1:ability.martial>=90?1:0)));
  d.health=Math.max(1,d.health+(ability.leadership<40?-1:ability.leadership>=80?1:0));
  d.name=person.name;d.person_id=person.id;d.historical_definition_id=null;
- return {version:1,personId:person.id,historicalDefinitionId:null,name:person.name,portraitId:culture!=='central'&&CARD_CULTURES[culture]?'regional-'+(person.role==='文职'?'civil':'military')+'-'+culture:officialPortraitKey(person),abilities:ability,potential:clone(person.potential??null),role,tier,poolId:d.pool,templateId:d.id,generationSeed:seed>>>0,culture,definition:d};
+ return {version:1,personId:person.id,historicalDefinitionId:null,name:person.name,portraitId:regionalPersonPortrait(person.artRegion??culture,person.role,seed)??officialPortraitKey(person),abilities:ability,potential:clone(person.potential??null),role,tier,poolId:d.pool,templateId:d.id,generationSeed:seed>>>0,culture,definition:d};
 }
 export function registerCardPerson(d,person){
  const store=d.cardPeople??={version:1,rng:Math.floor(Math.random()*4294967296),people:{},garrisons:{}};
@@ -89,6 +92,8 @@ export function ensureCardPeople(d,b){
  const store=d.cardPeople??={version:1,rng:Math.floor(Math.random()*4294967296),people:{},garrisons:{}};
  store.worldSeed??=store.rng;const officials=[...(d.justice?.officials??[]),...(d.personnel?.candidates??[])];
  for(const u of b.units){
+  u.artCulture??=sourceArtCulture(d,u);
+  u.artRegion??=sourceArtRegion(d,u);
   let person=u.general;
   if(!person?.id){
    const source=u.sourceId??u.side,index=b.units.filter(v=>v.sourceId===u.sourceId&&v.commander===u.commander).indexOf(u);
@@ -96,13 +101,13 @@ export function ensureCardPeople(d,b){
    if(!store.garrisons[key]){
     const rng={rng:personSeed(key+':'+store.worldSeed)},country=d.provinces?.find(p=>p.id===source)?.countryId??d.playerCountryId,culture=cardCulture(country),pool=CARD_CULTURES[culture].names;
     // Missing names never grant free ability: both countries inherit the actual source leader's scores.
-    const scores={martial:person.martial??35,intelligence:person.intelligence??35,leadership:person.leadership??35};
+    const scores={martial:person?.martial??35,intelligence:person?.intelligence??35,leadership:person?.leadership??35};
     let name;do{name=pool[0][Math.floor(random(rng)*pool[0].length)]+pool[1][Math.floor(random(rng)*pool[1].length)];}while(historicalNames.has(name));
-    store.garrisons[key]={id:'garrison-'+key+':'+store.worldSeed,name,...scores,politics:35+Math.floor(random(rng)*25),integrity:45+Math.floor(random(rng)*40),experience:10+Math.floor(random(rng)*20),role:'武将',generated:true,culture};
+    store.garrisons[key]={id:'garrison-'+key+':'+store.worldSeed,name,...scores,politics:35+Math.floor(random(rng)*25),integrity:45+Math.floor(random(rng)*40),experience:10+Math.floor(random(rng)*20),role:'武将',generated:true,culture,artRegion:cardArtRegion(country)};
    }
    person=store.garrisons[key];ensureOfficialGrowth(person);
   }else person=officials.find(p=>p.id===person.id)??person;
-  const identity=stablePersonId(person);if(!store.people[identity]){const profile=createFixedCardPerson(person,personSeed(identity+':'+store.worldSeed),person.culture??'central');if(person.culture&&person.culture!=='central')profile.portraitId='regional-'+(person.role==='文职'?'civil':'military')+'-'+person.culture;store.people[identity]=profile;}const profile=store.people[identity];
+  const identity=stablePersonId(person);if(!store.people[identity]){const profile=createFixedCardPerson(person,personSeed(identity+':'+store.worldSeed),person.culture??'central');store.people[identity]=profile;}const profile=store.people[identity];
   u.cardPersonId=identity;
   // Existing names and portraits are preserved, including the initial eleven officers.
   // The ID-keyed domestic registry persists the fixed profile without changing officer snapshots.
@@ -119,8 +124,19 @@ function setStats(d,count,training,rules=CARD_RULES){
  const ratio=Math.min(1,count/(rules.compactArmy?25:rules.unitSize));
  return {attack:Math.max(1,Math.floor(d.attack*ratio)),hp:Math.max(1,Math.floor(Math.max(1,d.health+delta)*ratio))};
 }
+function unitStats(b,d,u,count){
+ const rules=b.cards.rulesSnapshot;
+ return rules.attributeRules?attributeStats(d,count,u.training,rules.attributeRules,battlePerson(b,u).abilities,battlePerson(b,leader(b,u.side)).abilities,u.kind):setStats(d,count,u.training,rules);
+}
+export function cardAttributeBreakdown(b,x){
+ if(!isUnit(x))return null;
+ const u=b.units.find(u=>u.id===x.unitId&&u.side===x.side);
+ if(!u)return null;
+ if(!b.cards.rulesSnapshot.attributeRules)return {title:'开战属性 · 旧版规则',lines:[`本场沿用旧版开战快照：${x.count}人，训练${x.training}，锁定${x.printedAttack}攻／${x.printedHp}命。新属性规则从下一场战斗生效。`]};
+ return attributeExplanation(unitStats(b,x.definition,u,x.count),x.definition,x.count,x.training,battlePerson(b,u).name,battlePerson(b,leader(b,u.side)).name);
+}
 function makeCard(b,side,d,unit=null,count=0){
- const c=b.cards,id=side+'-'+c.nextId++,stats=count?setStats(d,count,unit.training,c.rulesSnapshot):{};
+ const c=b.cards,id=side+'-'+c.nextId++,computed=count?unitStats(b,d,unit,count):{},stats=count?{attack:computed.attack,hp:computed.hp}:{};
  const x={id,definitionId:d.id,type:d.type==='spell'?'tactic':d.type,side,name:d.name,cost:d.cost,definition:clone(d),...(unit?{unitId:unit.id,kind:unit.kind,count,training:unit.training,general:unit.general?.name,...(d.type==='general'?{personId:unit.cardPersonId,personInstanceId:unit.general?.id??battlePerson(b,unit).personId,historicalDefinitionId:battlePerson(b,unit).historicalDefinitionId??null}:{}),...stats,maxHp:stats.hp,printedAttack:stats.attack,printedHp:stats.hp,ready:false,rushing:false,tags:[...d.tags],buffAttack:0,buffHealth:0,tempAttack:0,lossPeak:0,played:0,frozen:false,silenced:false}: {})};
  c.catalog[id]=x;return id;
 }
@@ -373,7 +389,7 @@ function selfLethal(b,x){
  for(const fx of x.definition.enter){if(fx.op==='armor')armor+=fx.n;else if(fx.op==='heal')hp=Math.min(30,hp+fx.n);else if(fx.op==='selfdamage')damage(fx.n);else if(fx.op==='draw'&&!fx.filter)for(let i=0;i<fx.n;i++){if(deck)deck--;else damage(++fatigue);}}
  return hp<=0;
 }
-export function cardAI(b,{policy='balanced'}={}){
+function balancedCardAI(b,{policy='balanced'}={}){
  if((b.cards.rulesVersion??1)<3)return legacy.cardAI(b);
  const c=b.cards,p=c.players[c.turn],e=c.players[other(c.turn)],actions=legalCardActions(b);if(c.phase==='mulligan')return actions[0];
  const face=policy==='aggressive'?1.25:policy==='control'?.8:1,total=p.board.filter(id=>legalCardAttacks(b,id).includes('hero')).reduce((n,id)=>n+c.catalog[id].attack,0),danger=Math.max(0,e.board.reduce((n,id)=>n+c.catalog[id].attack,0)-p.hero-p.armor+4);
@@ -400,6 +416,27 @@ export function cardAI(b,{policy='balanced'}={}){
   }
   if(score>bestScore){best=a;bestScore=score;}
  }
+ return best;
+}
+
+// Difficulty choices never alter damage, hidden cards or the real combat RNG.
+function publicSearchState(b){const next=clone(b),c=next.cards,p=c.players[c.turn],e=c.players[other(c.turn)];
+ e.hand=[];e.deck=[];e.secrets=[];e.gaps=[];p.deck=[...p.deck].sort();for(const side of ['home','enemy'])c.players[side].rng=123456;
+ const visible=new Set([...p.hand,...p.deck,...p.board,...p.grave,...(p.secrets??[]),...(p.landmarks??[]),...e.board,...e.grave,...(e.landmarks??[]),p.weapon?.id,e.weapon?.id]);
+ for(const [id,x] of Object.entries(c.catalog))if(x.side!==c.turn&&!visible.has(id))delete c.catalog[id];
+ return next;
+}
+function boardScore(b,side){const c=b.cards,p=c.players[side],e=c.players[other(side)];if(p.hero<=0)return -100000;if(e.hero<=0)return 100000;const material=q=>q.board.reduce((n,id)=>n+value(c.catalog[id]),0);return (p.hero-e.hero)*1.4+(p.armor-e.armor)*.8+(material(p)-material(e))*2+p.hand.length*.6;}
+function searchActions(b){const actions=legalCardActions(b).filter(a=>a.type!=='end'),preferred=balancedCardAI(b);return [preferred,...actions.filter(a=>JSON.stringify(a)!==JSON.stringify(preferred))].slice(0,12);}
+export function cardAI(b,{policy='balanced',difficulty=b.difficultyId}={}){
+ if(!difficulty||b.cards.turn!=='enemy'||b.cards.phase!=='play'||(b.cards.rulesVersion??1)<3)return balancedCardAI(b,{policy});
+ const t=DIFFICULTIES.find(t=>t.id===difficulty);if(!t||t.id==='standard')return balancedCardAI(b,{policy});
+ if(t.id==='novice'){const choices=legalCardActions(b).filter(a=>a.type!=='end'),roll=personSeed(`${b.cards.seed}:${b.cards.ply}:${b.cards.sequence}:${b.cards.players.enemy.mana}:${choices.length}`)/4294967296;return choices.length&&roll<t.battleMistakeChance?choices[Math.floor(roll/t.battleMistakeChance*choices.length)]:balancedCardAI(b,{policy});}
+ const publicState=publicSearchState(b),side=b.cards.turn,baseline=balancedCardAI(publicState,{policy});
+ // Preserve the proven deployment policy; look ahead when ordering public attacks.
+ if(!['attack','hero-attack','landmark-use'].includes(baseline.type))return baseline;
+ let best=baseline,score=-Infinity;
+ for(const action of searchActions(publicState)){try{const next=clone(publicState);actCardsMutable(next,action);let candidate=boardScore(next,side);if(!next.result&&next.cards.turn===side&&action.type!=='end'){for(const second of searchActions(next).slice(0,6)){const last=clone(next);actCardsMutable(last,second);candidate=Math.max(candidate,boardScore(last,side));}}if(candidate>score){best=action;score=candidate;}}catch{/* Unknown hidden effects are excluded from planning. */}}
  return best;
 }
 
@@ -436,7 +473,7 @@ export function validateCards(b){
   const u=b.units.find(u=>u.id===x.unitId&&u.side===x.side&&!u.commander);if(!u||!integer(x.count,1)||!integer(x.training,0,100)||x.training!==u.training||x.kind!==u.kind)fail('兵员来源');
   const expected=x.type==='general'?definitionFor(b,u):c.definitionCatalog[x.definitionId];
   if(!expected||JSON.stringify(x.definition)!==JSON.stringify(expected))fail('人物或部队定义');
-  const stats=setStats(expected,x.count,u.training,c.rulesSnapshot);if(x.printedAttack!==stats.attack||x.printedHp!==stats.hp||!integer(x.attack,0,200)||!integer(x.maxHp,1,200)||!integer(x.hp,-10000,x.maxHp)||x.attack!==x.printedAttack+x.buffAttack+x.tempAttack||x.maxHp!==x.printedHp+x.buffHealth||!Number.isFinite(x.lossPeak)||x.lossPeak<0||x.lossPeak>1||!Array.isArray(x.tags)||x.tags.some(t=>!Object.hasOwn(keywordNames,t))||new Set(x.tags).size!==x.tags.length||['ready','rushing','frozen','silenced'].some(k=>typeof x[k]!=='boolean'))fail('部队状态');
+  const stats=unitStats(b,expected,u,x.count);if(x.printedAttack!==stats.attack||x.printedHp!==stats.hp||!integer(x.attack,0,200)||!integer(x.maxHp,1,200)||!integer(x.hp,-10000,x.maxHp)||x.attack!==x.printedAttack+x.buffAttack+x.tempAttack||x.maxHp!==x.printedHp+x.buffHealth||!Number.isFinite(x.lossPeak)||x.lossPeak<0||x.lossPeak>1||!Array.isArray(x.tags)||x.tags.some(t=>!Object.hasOwn(keywordNames,t))||new Set(x.tags).size!==x.tags.length||['ready','rushing','frozen','silenced'].some(k=>typeof x[k]!=='boolean'))fail('部队状态');
   if(x.type==='general'){if(x.personInstanceId!==(u.general?.id??battlePerson(b,u).personId)||x.historicalDefinitionId!==(battlePerson(b,u).historicalDefinitionId??null)||!x.personId||x.personId!==u.cardPersonId||persons.has(x.personId)||x.personId===leader(b,x.side).cardPersonId)fail('人物重复或主将互斥');persons.add(x.personId);}
  }
  for(const u of b.units){const p=c.players[u.side],cards=Object.values(c.catalog).filter(x=>x.unitId===u.id);if(!u.commander&&(cards.reduce((n,x)=>n+x.count,0)+(p.reserve[u.id]??0)!==u.initial))fail('兵员不守恒');const dead=u.commander?Math.ceil(u.initial*Math.min(30,p.heroDamage)/60):cards.reduce((n,x)=>n+cardDeaths(x),0);if(u.dead!==dead||u.count!==u.initial-dead)fail('真实战损');}

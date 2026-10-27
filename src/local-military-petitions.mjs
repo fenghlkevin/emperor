@@ -1,3 +1,4 @@
+import {recruitRate} from './difficulty.mjs';
 import {ENABLED_KITS} from './troop-kit-world.mjs';
 import {localAuthority} from './local-autonomy.mjs';
 import {executeKitCommand,quoteKitCommand,worldKitDepot} from './troop-kit-world.mjs';
@@ -47,5 +48,5 @@ export function decideLocalMilitaryPetition(state,{id,approve}){
 }
 export function validateLocalMilitaryPetitions(d,turn){
  const b=d.governance.militaryPetitions;if(b===undefined)return;if(!Number.isSafeInteger(b.nextId)||b.nextId<1||!Array.isArray(b.items)||b.items.length>1000)throw Error('地方军务奏请无效');
- const ids=new Set();for(const r of b.items){checkCommand(r.command);if(!Number.isSafeInteger(r.id)||r.id<1||r.id>=b.nextId||ids.has(r.id)||r.provinceId!==r.command.sourceId||!d.provinces.some(p=>p.id===r.provinceId)||(r.command.kind==='transfer'&&!d.provinces.some(p=>p.id===r.command.targetId))||!Number.isSafeInteger(r.cost)||r.cost!==(r.command.kind==='recruit'?r.command.amount*4:0)||!Number.isSafeInteger(r.turn)||r.turn<1||r.turn>turn||!['pending','deferred',...terminal].includes(r.status)||typeof r.reason!=='string'||r.reason.length>500||(r.status!=='pending'&&(!Number.isSafeInteger(r.decidedTurn)||r.decidedTurn<r.turn||r.decidedTurn>turn)))throw Error('地方军务奏请无效');ids.add(r.id);}
+ const ids=new Set();for(const r of b.items){checkCommand(r.command);if(!Number.isSafeInteger(r.id)||r.id<1||r.id>=b.nextId||ids.has(r.id)||r.provinceId!==r.command.sourceId||!d.provinces.some(p=>p.id===r.provinceId)||(r.command.kind==='transfer'&&!d.provinces.some(p=>p.id===r.command.targetId))||!Number.isSafeInteger(r.cost)||r.cost!==(r.command.kind==='recruit'?Math.ceil(r.command.amount*recruitRate(d)):0)||!Number.isSafeInteger(r.turn)||r.turn<1||r.turn>turn||!['pending','deferred',...terminal].includes(r.status)||typeof r.reason!=='string'||r.reason.length>500||(r.status!=='pending'&&(!Number.isSafeInteger(r.decidedTurn)||r.decidedTurn<r.turn||r.decidedTurn>turn)))throw Error('地方军务奏请无效');ids.add(r.id);}
 }

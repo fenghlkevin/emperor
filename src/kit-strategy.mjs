@@ -1,3 +1,5 @@
+import {balanced} from './development-balance.mjs';
+import {foreignOutlook,foreignMilitaryTarget} from './foreign-policy.mjs';
 import {MAX_SQUAD_SOLDIERS} from './formation-limits.mjs';
 import {laborProfile} from './labor.mjs';
 import {kitGarrison} from './kit-war.mjs';
@@ -25,8 +27,10 @@ export function buyForeignKits(d,p,budget,turn,{plannedSoldiers}={}){
 
 // Pay for complete equipment before increasing the foreign soldier register.
 export function growForeignKitArmy(d,p,budget,turn){
- const old=p.population.professions.soldiers,free=laborProfile(p).available,target=Math.floor(p.population.total*.02);
- const wanted=Math.max(0,Math.min(100,free,target-old)),reserve=Math.min(wanted,Math.floor(budget/(Math.min(...TROOP_KITS.map(k=>k.price))+4)))*4;
+ const c=d.countries.find(c=>c.id===p.countryId),outlook=balanced(d)?foreignOutlook(d,c,turn):null;
+ if(outlook){budget=Math.min(budget,Math.floor(outlook.militaryBudget));if(!outlook.grainSafe||budget<10)return {cost:0,recruited:0,gearCost:0};}
+ const old=p.population.professions.soldiers,free=laborProfile(p).available,target=balanced(d)?foreignMilitaryTarget(d,p):Math.floor(p.population.total*.02);
+ const wanted=Math.max(0,Math.min(100,free,target-old,outlook?Math.min(outlook.grainRecruitLimit,Math.floor(Math.max(0,outlook.net-25)/.1)):100)),reserve=Math.min(wanted,Math.floor(budget/(Math.min(...TROOP_KITS.map(k=>k.price))+4)))*4;
  const gearCost=buyForeignKits(d,p,Math.max(0,budget-reserve),turn,{plannedSoldiers:old+wanted});
  const depot=worldKitDepot(d,p.id),coverage=Object.values(depot.stock).reduce((a,b)=>a+b,0),n=Math.max(0,Math.min(wanted,coverage-old,Math.floor((budget-gearCost)/4)));
  if(n){postTreasury(d,p.countryId,{turn,expense:n*4,reason:'外国征兵',key:`strategy:${turn}:${p.id}:recruit`});p.population.professions.soldiers+=n;p.military.training=Math.floor((p.military.training*old+newRecruitTraining(p)*n)/(old+n));}

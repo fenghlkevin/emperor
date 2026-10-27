@@ -1,3 +1,4 @@
+import {balanced} from './development-balance.mjs';
 import {quoteShortage,resourceShortage} from './action-feedback.mjs';
 import {grainMarketAccess,quoteMarketPrice,recordMarketTrade} from './grain-market.mjs';
 import {procurementEffect,purchaseCost,validatePurchaseEffect} from './central-office-effects.mjs';
@@ -22,7 +23,7 @@ export function initializeRelief(d){
 export function foodForecast(p,turn,settlementTurn=turn+1,d){
  if(d?.nationalResourcesVersion===1){const national=nationalFoodForecast(d,settlementTurn,p.countryId),row=national.provinces.find(r=>r.id===p.id),purchase=d.foodRelief.purchase?.turn===turn?d.foodRelief.purchase:null;
  const ration=d.provinces.filter(x=>x.countryId===p.countryId).reduce((n,x)=>n+Math.round(x.population.total*.005),0),limit=purchase?.limit??ration*PURCHASE_RATION_TURNS;
- return {...national,...row,grain:national.opening,closing:national.closing,storageLoss:0,national,retain:0,transferable:0,stockTurns:national.need?national.opening/national.need:null,purchaseLimit:limit,purchased:purchase?.bought??0,purchaseRemaining:Math.max(0,limit-(purchase?.bought??0)),quotaLocked:Boolean(purchase),protectedTurns:0,disaster:activeDisaster(p,turn)};
+ return {...national,...row,grain:national.opening,closing:national.closing,storageLoss:0,national,retain:0,transferable:0,stockTurns:national.need?national.opening/national.need:null,...(balanced(d)?{purchased:d.foodRelief.history.filter(r=>r.turn===turn&&r.kind==='purchase').reduce((n,r)=>n+r.amount,0)}:{purchaseLimit:limit,purchased:purchase?.bought??0,purchaseRemaining:Math.max(0,limit-(purchase?.bought??0)),quotaLocked:Boolean(purchase)}),protectedTurns:0,disaster:activeDisaster(p,turn)};
  }
  const resource=p.resourceRulesVersion===1?quoteProvinceResources(p,{turn:settlementTurn}):null;
  const need=resource?resource.grain.need:Math.round(p.population.total*.005),produced=resource?resource.grain.tax:legacyFoodOutput(p,settlementTurn),grain=p.welfare.grainReserve;
@@ -59,8 +60,8 @@ export function executeRelief(state,c,options){
  const q=quoteRelief(next,c,options);if(!q.canAfford)throw Error(quoteShortage(q,`购粮${c.amount.toLocaleString('zh-CN')}石`));
  transferTreasury(d,d.playerCountryId,q.sellerCountryId,q.cost,{turn:state.turn,reason:`向${q.sellerName}购买粮食${c.amount}石`,key:`food-trade:${c.id}`});
  postNationalGrain(d,q.sellerCountryId,{turn:state.turn,expense:c.amount,category:'transfer',reason:'向本国售粮',key:`relief:${c.id}:out`});
- if(r.purchase?.turn!==state.turn)r.purchase={turn:state.turn,ration:q.targetForecast.purchaseLimit/PURCHASE_RATION_TURNS,limit:q.targetForecast.purchaseLimit,bought:0};
- r.purchase.bought+=c.amount;
+ if(!balanced(d)&&r.purchase?.turn!==state.turn)r.purchase={turn:state.turn,ration:q.targetForecast.purchaseLimit/PURCHASE_RATION_TURNS,limit:q.targetForecast.purchaseLimit,bought:0};
+ if(!balanced(d))r.purchase.bought+=c.amount;
  postNationalGrain(d,d.playerCountryId,{turn:state.turn,income:c.amount,category:'purchase',reason:'全国购粮入库',key:`relief:${c.id}:in`});
  const receipt={sellerCountryId:q.sellerCountryId,sellerGrainBefore:q.sellerGrainBefore,sellerGrainAfter:q.sellerGrainAfter,sellerTreasuryBefore:q.sellerTreasuryBefore,sellerTreasuryAfter:q.sellerTreasuryAfter,id:r.nextId++,turn:state.turn,kind:'purchase',national:true,sourceId:null,targetId:q.targetId,amount:c.amount,cost:q.cost,procurement:q.officer,market:q.market,
  sourceBefore:null,sourceAfter:null,targetBefore:q.targetBefore,targetAfter:q.targetAfter,treasuryBefore:q.treasuryBefore,treasuryAfter:q.treasuryAfter};

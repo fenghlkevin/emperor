@@ -1,5 +1,5 @@
 // Dedicated battle illustration assets; official/court portraits are never overwritten.
-export const BATTLE_PERSON_ART_VERSION=1;
+export const BATTLE_PERSON_ART_VERSION=2;
 export const BATTLE_PERSON_ART=Object.freeze(Object.fromEntries([
  ['manual-1554','张飞','武将','assets/battle/people/manual-1554-battle-v1.png'],['cbdb-27948','刘基','文职','assets/battle/people/cbdb-27948-battle-v1.png'],['cbdb-3767','苏轼','文职','assets/battle/people/cbdb-3767-battle-v1.png'],['cbdb-8175','岳飞','武将','assets/battle/people/cbdb-8175-battle-v1.png'],
  ['cbdb-1384','欧阳修','文职','assets/battle/people/cbdb-1384-battle-v1.png'],
@@ -28,20 +28,20 @@ export const BATTLE_PERSON_ART=Object.freeze(Object.fromEntries([
  ["manual-1582","李靖","武将","assets/battle/people/manual-1582-battle-v1.png"],
  ["original-4","张巡","武将","assets/battle/people/original-4-battle-v1.png"],
  ["original-8","魏徵","文职","assets/battle/people/original-8-battle-v1.png"],
- ["original-14","朱庆国","文职","assets/battle/people/original-14-battle-v1.png"],
+ ["manual-1561","荀彧","文职","assets/battle/people/manual-1561-battle-v1.png"],
  ["original-16","公孙侨","文职","assets/battle/people/original-16-battle-v1.png"],
  ["original-29","谢安","文职","assets/battle/people/original-29-battle-v1.png"],
  ["general-403-90513","薛仁贵","武将","assets/battle/people/general-403-90513-battle-v1.png"],
  ["cbdb-630","韩琦","武将","assets/battle/people/cbdb-630-battle-v1.png"],
  ["original-33","黄飞鸿","武将","assets/battle/people/original-33-battle-v1.png"],
  ["manual-1590","李林甫","文职","assets/battle/people/manual-1590-battle-v1.png"],
- ["manual-1591","杨国忠","文职","assets/battle/people/manual-1591-battle-v1.png"],
+ ["manual-1591","杨国忠","文职","assets/battle/people/manual-1591-battle-v2.png"],
  ["general-468-78206","安禄山","武将","assets/battle/people/general-468-78206-battle-v1.png"],
  ["original-37","屈原","文职","assets/battle/people/original-37-battle-v1.png"],
  ["manual-1537","卫青","武将","assets/battle/people/manual-1537-battle-v1.png"],
  ["manual-1536","霍去病","武将","assets/battle/people/manual-1536-battle-v1.png"],
  ["manual-1513","孙膑","武将","assets/battle/people/manual-1513-battle-v1.png"],
- ["original-41","庞涓","文职","assets/battle/people/original-41-battle-v1.png"],
+ ["original-41","庞涓","武将","assets/battle/people/original-41-battle-v1.png"],
  ["cbdb-25403","诸葛亮","武将","assets/battle/people/cbdb-25403-battle-v1.png"],
  ["original-43","王玄策","武将","assets/battle/people/original-43-battle-v1.png"],
  ["original-44","刘仁轨","武将","assets/battle/people/original-44-battle-v1.png"],
@@ -56,7 +56,7 @@ export const BATTLE_PERSON_ART=Object.freeze(Object.fromEntries([
  ["manual-1614","戚继光","武将","assets/battle/people/manual-1614-battle-v1.png"],
  ["manual-1611","于谦","武将","assets/battle/people/manual-1611-battle-v1.png"],
  ["cbdb-30374","王守仁","武将","assets/battle/people/cbdb-30374-battle-v1.png"],
- ["original-57","程咬金","武将","assets/battle/people/original-57-battle-v1.png"],
+ ["original-57","程咬金","武将","assets/battle/people/original-57-battle-v2.png"],
  ["cbdb-8008","秦桧","文职","assets/battle/people/cbdb-8008-battle-v1.png"],
  ["original-59","史可法","武将","assets/battle/people/original-59-battle-v1.png"],
  ["manual-1592","包拯","文职","assets/battle/people/manual-1592-battle-v1.png"],
@@ -87,7 +87,7 @@ export const BATTLE_PERSON_ART=Object.freeze(Object.fromEntries([
  ["manual-1569","周瑜","武将","assets/battle/people/manual-1569-battle-v1.png"],
  ["general-398-60962","秦琼","武将","assets/battle/people/general-398-60962-battle-v1.png"],
  ["original-88","尉迟恭","武将","assets/battle/people/original-88-battle-v1.png"],
- ["original-89","李密","文职","assets/battle/people/original-89-battle-v1.png"],
+ ["original-89","李密","武将","assets/battle/people/original-89-battle-v2.png"],
  ["cbdb-3332","韩愈","文职","assets/battle/people/cbdb-3332-battle-v1.png"],
  ["general-638-62417","拔都","武将","assets/battle/people/general-638-62417-battle-v1.png"],
  ["general-795-83328","郑成功","武将","assets/battle/people/general-795-83328-battle-v1.png"],
@@ -95,9 +95,9 @@ export const BATTLE_PERSON_ART=Object.freeze(Object.fromEntries([
  ["manual-1625","刘墉","文职","assets/battle/people/manual-1625-battle-v1.png"],
  ["manual-1618","魏忠贤","文职","assets/battle/people/manual-1618-battle-v1.png"],
  ["manual-1624","和珅","文职","assets/battle/people/manual-1624-battle-v1.png"],
- ["original-97","刘耀伦","武将","assets/battle/people/original-97-battle-v1.png"],
- ["original-98","邹鹏","文职","assets/battle/people/original-98-battle-v1.png"],
- ["original-99","沈昌平","文职","assets/battle/people/original-99-battle-v1.png"]
-].map(([personId,name,role,src])=>[personId,Object.freeze({personId,name,role,src,version:1})])));
+ ["manual-1557","黄忠","武将","assets/battle/people/manual-1557-battle-v1.png"],
+ ["manual-1550","庞统","文职","assets/battle/people/manual-1550-battle-v1.png"],
+ ["cbdb-33662","陆逊","武将","assets/battle/people/cbdb-33662-battle-v1.png"]
+].map(([personId,name,role,src])=>[personId,Object.freeze({personId,name,role,src,version:Number(src.match(/-v(\d+)\.png$/)?.[1]??1)})])));
 export const battlePersonArt=id=>typeof id==='string'?BATTLE_PERSON_ART[id]??null:null;
 export const battleDefinitionArt=id=>typeof id==='string'&&id.startsWith('person_')?battlePersonArt(id.slice(7)):null;

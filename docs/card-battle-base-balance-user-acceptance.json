@@ -1,0 +1,25 @@
+{
+  "scope": "72基础矩阵，不扩展新牌型配置",
+  "userDecision": "用户明确表示72组中24组未达47%至53%、45.55%至54.90%差异可以接受",
+  "report": "docs/card-battle-final-matrix.json",
+  "status": "accepted-by-user-with-original-target-exceptions",
+  "originalTarget": [
+    0.47,
+    0.53
+  ],
+  "actualRange": [
+    0.4555,
+    0.549
+  ],
+  "originalTargetFailedGroups": 24,
+  "doNotTuneSolelyForOriginalTarget": true,
+  "additionalAcceptance": {
+    "scope": "8新牌型配置",
+    "actualRange": [
+      0.431,
+      0.4705
+    ],
+    "userDecision": "接受新牌型结果，继续实机验收",
+    "report": "docs/card-battle-final-configured.json"
+  }
+}

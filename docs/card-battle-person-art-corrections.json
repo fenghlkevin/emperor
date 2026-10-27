@@ -1,0 +1,47 @@
+{
+  "scope": "单人物服色定点修正，保留v1及原始100生成报告",
+  "assets": [
+    {
+      "personId": "manual-1591",
+      "path": "assets/battle/people/manual-1591-battle-v2.png",
+      "sha256": "3b367c8a3ba377e193c53136e751cfb1ad93a7eee54adf4b5ba4f2598aee274a",
+      "dimensions": [
+        1060,
+        1484
+      ],
+      "originalPath": "assets/battle/people/manual-1591-battle-v1.png",
+      "method": "built-in imagegen precise-object-edit",
+      "prompt": "Change only main golden-yellow robe to deep muted purple for high Tang minister; preserve face, hair, expression, hands, pose, hat, ivory tablet, jade belt, background and portrait framing. No text or new objects.",
+      "reference": "https://zh.wikisource.org/wiki/舊唐書/卷45",
+      "visualReview": "主袍已紫色，面部、姿势、帽、笏、腰带及背景一致；保留花鸟纹，非考古复原。"
+    },
+    {
+      "personId": "original-89",
+      "variant": "battle",
+      "source": "/Users/fengheliang/.codex/generated_images/01a16c0b-7192-7431-a6aa-541003d97679/exec-82d862ec-bf47-4108-8d83-2645141567e0.png",
+      "prompt": "Use case: identity-preserve. Edit/reference target: Li Mi (李密), the Sui-end Wagang leader, NOT the Western Jin author. Preserve his current exact face, beard, age about35, natural anatomy and richly painted game style. Dedicated 5:7 battle-card scene 1060x1484 or1100x1540. Waist-up Li Mi in indigo robe over Sui lamellar armor, holding a bamboo dispatch and watching gathered Wagang troops at a Sui-end fortified granary, banners have no writing, warm dusk and distant spear ranks, strong thoughtful ambitious expression. Full painted scenery, no transparent background. No text, labels, frames, watermarks or celebrity likeness.",
+      "path": "assets/battle/people/original-89-battle-v2.png",
+      "sha256": "7a6b7573f5c21597b699c0bee2ce058ad39f2fc561c5a4f2378fb99591a3a1b7",
+      "dimensions": [
+        1060,
+        1484
+      ],
+      "method": "built-in imagegen",
+      "originalPath": "assets/battle/people/original-89-battle-v1.png"
+    },
+    {
+      "personId": "original-57",
+      "variant": "battle",
+      "source": "/Users/fengheliang/.codex/generated_images/01a16c0b-7192-7431-a6aa-541003d97679/exec-40ce0789-6f0d-455a-be79-7b32158d86a0.png",
+      "prompt": "Use case: precise-object-edit. Change ONLY Cheng Yaojin's oversized axe into a Tang horse lance (mashuo): straight shaft, narrow elongated straight spearhead, absolutely no axe blade. Preserve this exact person's face, expression, curly beard, green cloak, lamellar armor, hands and lively pose. Preserve the entire army camp background, warm lighting, camera, 1060x1484 portrait5:7 framing. No new text, border, watermark or magic. Historical game interpretation using his attested horse-lance skill.",
+      "path": "assets/battle/people/original-57-battle-v2.png",
+      "dimensions": [
+        1060,
+        1484
+      ],
+      "sha256": "3436e6f83a52c9a72812ee9a3804a37319b64d6a60736c33e5bfa10ecb0c098c",
+      "method": "built-in imagegen precise edit",
+      "originalPath": "assets/battle/people/original-57-battle-v1.png"
+    }
+  ]
+}

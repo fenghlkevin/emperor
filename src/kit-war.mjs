@@ -1,14 +1,16 @@
+import {difficultyRules} from './difficulty.mjs';
 import {normalizeLandmarkSelection,landmarkSelectionIds,planLandmarkAllocation} from './card-battle-landmarks.mjs';
 import {normalizeSecretSelection,secretSelectionIds,planSecretAllocation} from './card-battle-secrets.mjs';
 import {normalizeWeaponSelection,weaponSelectionIds,weaponKitCounts,autoWeaponSelection,expectedWeaponKits,weaponLossForSource} from './card-battle-weapons.mjs';
 import {archiveCardHistory} from './card-battle-history-archive.mjs';
 import {armyCardCount,normalizeTacticSelection} from './card-battle-tactics.mjs';
 import {attachCards,ensureCardPeople,battlePerson,CARD_RULES} from './card-battle.mjs';
+import {captureArmyRecovery,offerArmyRecovery} from './army-recovery.mjs';
 import {resourceShortage} from './action-feedback.mjs';
 import {gainOfficialExperience} from './official-growth.mjs';
 import {validatePurchaseEffect} from './central-office-effects.mjs';
 import {postNationalGrain} from './national-resources.mjs';
-import {CAMPAIGN_SUPPLY,campaignSupply} from './military-costs.mjs';
+import {CAMPAIGN_SUPPLY,campaignSupply,mountedShare} from './military-costs.mjs';
 import {postTreasury} from './finance.mjs';
 import {postGrain} from './grain-finance.mjs';
 import {MAX_SQUAD_SOLDIERS,squadSoldierLimit} from './formation-limits.mjs';
@@ -44,8 +46,8 @@ export function quoteKitWar(state,c){
  const selectedWeapons=normalizeWeaponSelection(c.cardWeapons);if(weaponSelectionIds(selectedWeapons).length&&c.battleMode!=='cards')throw Error('武器仅用于卡牌战斗');
  normalizeTacticSelection(c.cardTactics,CARD_RULES.deckSize-landmarkSelectionIds(selectedLandmarks).length-weaponSelectionIds(selectedWeapons).length-secretSelectionIds(selectedSecrets).length-armyCardCount(friendly.filter(u=>!u.commander).reduce((n,u)=>n+u.count,0),CARD_RULES));
  reserveKitSquads(worldKitDepot(d,'central'),battleId(c.id),friendly,{extraKits:weaponKitCounts(selectedWeapons)});
- const supply=campaignSupply(d,friendly.reduce((n,u)=>n+u.count,0));
- return {supply,title:'发动战争',lines:[`向${target.name}出征，由${commander.name}率领 ${friendly.reduce((n,u)=>n+u.count,0)} 人；按兵种自动配装。`,...(supply?[`额外出征整备${supply.silver}两、补给${supply.grain}石；驻防常规钱粮照计；兵部${supply.officer.source.name}节约${Math.ceil(supply.count*CAMPAIGN_SUPPLY.silverPerSoldier)-supply.silver}两`]:[]),...(landmarkSelectionIds(selectedLandmarks).length?[`军阵地标${landmarkSelectionIds(selectedLandmarks).length}张：沿用中央${commander.name}亲卫军阵营地与号令位置，不新增建筑、兵员、装备或训练。`]:[]),...(secretSelectionIds(selectedSecrets).length?[`奥秘军令${secretSelectionIds(selectedSecrets).length}张：来自中央${commander.name}亲卫军阵，替代普通计策名额；不额外占用兵员或装备。`]:[]),...(weaponSelectionIds(selectedWeapons).length?[`备用武器额外占装：${Object.entries(weaponKitCounts(selectedWeapons)).map(([kind,n])=>label(kind)+n+'人份').join('、')}；不额外占用士兵，毁损随战果核销。`]:[]),...friendly.map(u=>`${u.name} ${u.count} 人，${label(u.kind)}装备 ${u.count} 人份`)],details:{friendly,selectedWeapons,selectedSecrets,selectedLandmarks,targetId:target.id,provinceId:borderingProvinces(d,d.playerCountryId,target.id)[0]?.id??target.provinceIds[0]}};
+ const supply=campaignSupply(d,friendly.reduce((n,u)=>n+u.count,0),friendly);
+ return {supply,title:'发动战争',lines:[`向${target.name}出征，由${commander.name}率领 ${friendly.reduce((n,u)=>n+u.count,0)} 人；按兵种自动配装。`,...(supply?[`额外出征整备${supply.silver}两、补给${supply.grain}石；驻防常规钱粮照计；兵部${supply.officer.source.name}节约${Math.ceil(supply.count*(supply.version>=2?difficultyRules(d).campaignSilver:CAMPAIGN_SUPPLY.silverPerSoldier))-supply.silver}两`]:[]),...(landmarkSelectionIds(selectedLandmarks).length?[`军阵地标${landmarkSelectionIds(selectedLandmarks).length}张：沿用中央${commander.name}亲卫军阵营地与号令位置，不新增建筑、兵员、装备或训练。`]:[]),...(secretSelectionIds(selectedSecrets).length?[`奥秘军令${secretSelectionIds(selectedSecrets).length}张：来自中央${commander.name}亲卫军阵，替代普通计策名额；不额外占用兵员或装备。`]:[]),...(weaponSelectionIds(selectedWeapons).length?[`备用武器额外占装：${Object.entries(weaponKitCounts(selectedWeapons)).map(([kind,n])=>label(kind)+n+'人份').join('、')}；不额外占用士兵，毁损随战果核销。`]:[]),...friendly.map(u=>`${u.name} ${u.count} 人，${label(u.kind)}装备 ${u.count} 人份`)],details:{friendly,selectedWeapons,selectedSecrets,selectedLandmarks,targetId:target.id,provinceId:borderingProvinces(d,d.playerCountryId,target.id)[0]?.id??target.provinceIds[0]}};
 }
 // Shared formation builder: all troop counts and kit coverage come from one depot.
 export function kitGarrison(d,sourceId,count,{commander=false,support=0,prefix='守军',maxStacks=10,allowReserve=false}={}){
@@ -84,17 +86,24 @@ export function beginKitWar(state,c){
  // only matching source and kind, never silently drop soldiers or equipment.
  if(enemies.filter(u=>!u.commander).length>13)throw Error('援军编队超过战场容量，请减少盟军来源');
  if(q.supply){postTreasury(d,d.playerCountryId,{turn:state.turn,expense:q.supply.silver,reason:'出征额外整备',key:`campaign-supply:${c.id}`});postNationalGrain(d,d.playerCountryId,{turn:state.turn,expense:q.supply.grain,category:'consumption',reason:'出征额外补给',key:`campaign-supply:${c.id}`});next.stats.treasury=d.countries.find(x=>x.id===d.playerCountryId).fiscal.treasury;}
+ captureArmyRecovery(d,state.turn);
  const landmarkAllocation=planLandmarkAllocation(q.details.friendly,enemies,q.details.selectedLandmarks);
  const secretAllocation=planSecretAllocation(q.details.friendly,enemies,q.details.selectedSecrets),allocation=planKitWeapons(d,q.details.friendly,enemies,q.details.selectedWeapons),id=battleId(c.id);reserveArmy(d,id,q.details.friendly,allocation);reserveArmy(d,id,enemies,allocation);
  d.war.battle=createBattle({command:{...structuredClone(c),...(landmarkAllocation?{cardLandmarks:q.details.selectedLandmarks,landmarkAllocation}:{}),...(secretAllocation?{cardSecrets:q.details.selectedSecrets,secretAllocation}:{}),...(allocation?{cardWeapons:q.details.selectedWeapons,weaponAllocation:allocation}:{}),...(d.resourceRulesVersion===1?{squadLimitVersion:1}:{}),...(q.supply?{supply:q.supply}:{}),kitVersion:1,kitSupport:support,kitBattleId:id,provinceId:p.id,alliedForces:allied},friendly:q.details.friendly,enemy:enemies,training:d.centralArmy.training,enemyTraining:p.military.training,targetName:d.countries.find(t=>t.id===c.targetId).name,field:battlefieldFor({...d,provinces:[p,...d.provinces.filter(row=>row!==p)]},c.targetId,state.turn)});
- if(c.battleMode==='cards'){ensureCardPeople(d,d.war.battle);attachCards(d.war.battle);}
+ if(d.difficulty&&!d.difficulty.provoked.includes(p.countryId))d.difficulty.provoked.push(p.countryId);
+ if(c.battleMode==='cards'){ensureCardPeople(d,d.war.battle);d.war.battle.difficultyId=difficultyRules(d).id;attachCards(d.war.battle);}
  validateKitBattle(d,d.war.battle);validateDomestic(d);return next;
 }
 export function validateKitBattle(d,b){
- if(b.command.kitVersion!==1)return;validateBattle(b);
+ if(b.command.kitVersion!==1)return;if(b.difficultyId!==undefined&&b.difficultyId!==difficultyRules(d).id)throw Error('战场难度不一致');validateBattle(b);
  if(b.command.squadLimitVersion!==undefined&&(b.command.squadLimitVersion!==1||b.units.some(u=>u.initial>MAX_SQUAD_SOLDIERS)))throw Error('战场单队人数超过上限');
  if(!Number.isInteger(b.command.kitSupport)||b.command.kitSupport<0||b.command.kitSupport>20||b.command.kitBattleId!==battleId(b.command.id)||b.command.defensive)throw Error('套装战场编号无效');
- if(b.command.supply){const q=b.command.supply,count=b.units.filter(u=>u.side==='home').reduce((n,u)=>n+u.initial,0);if(q.version!==1||q.count!==count||(q.officer?false:q.silver!==Math.ceil(count*CAMPAIGN_SUPPLY.silverPerSoldier))||q.grain!==Math.ceil(count*CAMPAIGN_SUPPLY.grainPerSoldier)||q.sourceProvinceId!==d.centralArmy.sourceProvinceId)throw Error('出征补给快照无效');if(q.officer)validatePurchaseEffect(q.officer,Math.ceil(count*CAMPAIGN_SUPPLY.silverPerSoldier),1,q.silver,'军需');}
+ if(b.command.supply){const q=b.command.supply,count=b.units.filter(u=>u.side==='home').reduce((n,u)=>n+u.initial,0),modern=q.version>=2;
+  if(![1,2,3].includes(q.version)||q.count!==count||q.sourceProvinceId!==d.centralArmy.sourceProvinceId||(modern&&(!Number.isFinite(q.logistics)||q.logistics<0||q.logistics>.15||!Number.isFinite(q.mounted)||q.mounted<0||q.mounted>1)))throw Error('出征补给快照无效');
+  if(q.version===3&&Math.abs(q.mounted-mountedShare(b.units.filter(u=>u.side==='home')))>1e-9)throw Error('出征补给兵种比例无效');
+  const base=Math.ceil(count*(modern?difficultyRules(d).campaignSilver:CAMPAIGN_SUPPLY.silverPerSoldier)*(modern?1-q.logistics:1)),grain=Math.ceil(count*(modern?difficultyRules(d).campaignGrain:CAMPAIGN_SUPPLY.grainPerSoldier)*(modern?1+q.mounted*.5:1));
+  if(q.grain!==grain||(!q.officer&&q.silver!==base))throw Error('出征补给快照无效');if(q.officer)validatePurchaseEffect(q.officer,base,1,q.silver,'军需');}
+
  const sources=new Set(b.units.map(u=>u.sourceId));
  const reservedSources=Object.entries(d.troopKits.depots).filter(([,record])=>record.reservations[b.command.kitBattleId]?.status==='active').map(([id])=>id);
  if(reservedSources.length!==sources.size||reservedSources.some(id=>!sources.has(id)))throw Error('战场遗漏已占用的部队来源');
@@ -132,7 +141,7 @@ export function finishKitWar(state){
  const receipt={id:d.war.nextId++,turn:state.turn,kind:'war',title:'套装军备战报',report,...(occupation?{occupation}:{}),lines:[report.reason,`我军出征 ${report.home.initial} 人，阵亡 ${report.home.dead} 人，生还 ${report.home.survived} 人归营。`,`军备损失：${TROOP_KITS.filter(k=>kitLoss[k.id]).map(k=>`${k.name}${kitLoss[k.id]}人份`).join('、')||'无'}。`,`获得战利银 ${loot} 两。`]};
  for(const f of b.command.alliedForces??[])if(f.reserve)receipt.lines.push(`盟军${d.countries.find(c=>c.id===f.countryId)?.name??''}：实际出战${f.soldiers}人，受编队名额限制的${f.reserve}人携装留在原驻地。`);
  const cardHistory=archiveCardHistory(b);if(cardHistory)receipt.cardHistory=cardHistory;
- recordWar(d,receipt.id,{win:b.result==='draw'?null:win,homeDead:report.home.dead,enemyDead:report.enemy.dead});d.war.history.unshift(receipt);d.war.history=d.war.history.slice(0,100);delete d.war.battle;
+ recordWar(d,receipt.id,{win:b.result==='draw'?null:win,homeDead:report.home.dead,enemyDead:report.enemy.dead});d.war.history.unshift(receipt);d.war.history=d.war.history.slice(0,100);delete d.war.battle;offerArmyRecovery(d,state.turn);
  if(!d.centralArmy.soldiers){d.centralArmy.training=0;d.general.ongoing=false;d.general.trainingFloor=0;}
  next.stats.treasury=home.fiscal.treasury;next.stats.prestige=home.prestige;validateDomestic(d);return {state:next,receipt};
 }

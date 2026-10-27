@@ -6,11 +6,15 @@ test('unknown people, names and non-person cards cannot accidentally inherit ano
 test('all shipped historical battle art matches its recorded generation checksum and exact identity manifest',async()=>{
  const {createHash}=await import('node:crypto');
  const ids=new Set();
+ const adaptation=JSON.parse(readFileSync('docs/card-battle-identity-replacements.json','utf8'));
+ const replacements=adaptation.replacements;
+ const corrections=JSON.parse(readFileSync('docs/card-battle-person-art-corrections.json','utf8')).assets;
  for(let batch=1;batch<=9;batch++){
   const report=JSON.parse(readFileSync(`docs/card-battle-person-art-batch${batch}.json`,'utf8'));
   for(const asset of report.assets??report.jobs){
-   const id=asset.personId??asset.id;assert.ok(!ids.has(id),'duplicate generation identity '+id);ids.add(id);
-   const registered=battlePersonArt(id);assert.ok(registered,id);assert.equal(registered.src,asset.path);
+   const oldId=asset.personId??asset.id,id=replacements.find(r=>r.oldId===oldId)?.newId??oldId;assert.ok(!ids.has(id),'duplicate generation identity '+id);ids.add(id);
+   const registered=battlePersonArt(id);assert.ok(registered,id);const correction=corrections.find(x=>x.personId===id)??adaptation.assets.find(x=>x.personId===id&&x.variant==='battle');assert.equal(registered.src,correction?.path??asset.path);
+   if(correction){const updated=readFileSync(correction.path);assert.equal(createHash('sha256').update(updated).digest('hex'),correction.sha256,id+' correction');assert.deepEqual([updated.readUInt32BE(16),updated.readUInt32BE(20)],correction.dimensions);assert.equal(correction.originalPath,asset.path);}
    const bytes=readFileSync(asset.path);assert.equal(createHash('sha256').update(bytes).digest('hex'),asset.sha256,id);
    assert.deepEqual([bytes.readUInt32BE(16),bytes.readUInt32BE(20)],asset.dimensions,id);
   }

@@ -1,3 +1,4 @@
+import {balanced} from './development-balance.mjs';
 import {changeWelfare,effectiveBuildings} from './building-effects.mjs';
 import {postTreasury} from './finance.mjs';
 import {INCOGNITO_PLACES,incognitoDialogue} from './incognito-data.mjs';
@@ -25,6 +26,8 @@ export function travelImperialPower(s){
  return local+protectedStates*20+Math.floor(population/100);
 }
 function record(s,message){s.harem.history.unshift(`第${s.turn}旬：${message}`);s.harem.history=s.harem.history.slice(0,30);}
+export const travelTreasuryCost=(s,kind)=>balanced(s.domestic)&&kind==='tour'?8000:TRAVEL_RULES[kind].treasuryCost;
+export function travelRule(s,kind){const rule=TRAVEL_RULES[kind],treasuryCost=travelTreasuryCost(s,kind);return {...rule,treasuryCost,description:rule.description.replace('20,000',treasuryCost.toLocaleString('en-US'))};}
 export function scheduleTravel(state,kind,provinceId){
  const s=structuredClone(state);initializeTravel(s);const rule=Object.hasOwn(TRAVEL_RULES,kind)&&TRAVEL_RULES[kind];
  if(!rule)throw Error('出行类型无效');
@@ -37,7 +40,7 @@ export function scheduleTravel(state,kind,provinceId){
  const place=travelDestinations(s,kind).find(p=>p.id===provinceId);
  if(!place)throw Error(kind==='tour'?'请选择本国已建成行宫的地方':'微服体察须从京畿出发');
  const country=s.domestic.countries.find(c=>c.id===s.domestic.playerCountryId);
- if(country.fiscal.treasury<rule.treasuryCost)throw Error('国库不足，巡游出发需20,000两');
+ if(country.fiscal.treasury<travelTreasuryCost(s,kind))throw Error(`国库不足，巡游出发需${travelTreasuryCost(s,kind)}两`);
  s.stats.energy-=rule.energyCost;s.harem.streak=0;
  s.travel.pending={id:s.travel.nextId++,kind,provinceId:place.id,scheduledTurn:s.turn,dueTurn:s.turn+1,visits:[],visitCounts:{},events:[],encounters:[],ended:false};
  const message=`已安排${rule.name}${kind==='tour'?'前往'+place.name:''}，次晨出发；体力减少20。`;
@@ -50,15 +53,15 @@ export function beginTravel(state){
  if(s.stats.life===0)throw Error('寿元已尽，本朝终结');
  if(s.domestic.war?.battle||s.domestic.strategy?.pending?.defender===s.domestic.playerCountryId)throw Error('请先处理战事');
  if(!travelDestinations(s,p.kind).some(place=>place.id===p.provinceId))throw Error('目的地已不具备出行条件，请取消行程');
- const rule=TRAVEL_RULES[p.kind],country=s.domestic.countries.find(c=>c.id===s.domestic.playerCountryId);
+ const rule={...TRAVEL_RULES[p.kind],treasuryCost:travelTreasuryCost(s,p.kind)},country=s.domestic.countries.find(c=>c.id===s.domestic.playerCountryId);
  if(rule.treasuryCost)postTreasury(s.domestic,country.id,{turn:s.turn,expense:rule.treasuryCost,reason:'浩荡巡游仪仗支出',key:`travel:${p.id}`});
  s.stats.treasury=country.fiscal.treasury;
- p.startedTurn=s.turn;p.startedPhase=s.phase;p.returnTurn=p.kind==='tour'?(Math.floor((s.turn-1)/3)+1)*3+1:s.turn;
+ p.rulesVersion=balanced(s.domestic)?2:1;p.startedTurn=s.turn;p.startedPhase=s.phase;p.returnTurn=p.kind==='tour'?(Math.floor((s.turn-1)/3)+1)*3+1:s.turn;
  p.reward={treasury:rule.treasuryCost,happiness:Math.min(rule.happinessGain,100-s.stats.happiness),life:p.kind==='incognito'?Math.min(s.stats.life,rule.lifeCost):0,health:0,loyalty:0};
  s.stats.happiness+=p.reward.happiness;s.stats.life-=p.reward.life;s.harem.streak=0;
  p.encounters=p.kind==='tour'?createTourEncounters(s,p):[];
  const encounteredPeople=p.encounters.map(e=>e.personId).filter(Boolean);if(encounteredPeople.length)s.harem.seen=[...new Set([...(s.harem.seen??[]),...encounteredPeople])];
- const message=`${rule.name}已启程，${rule.treasuryCost?'国库支出20,000两，':''}快乐增加${p.reward.happiness}${p.reward.life?'，寿元减少'+p.reward.life:''}。`;
+ const message=`${rule.name}已启程，${rule.treasuryCost?`国库支出${rule.treasuryCost}两，`:''}快乐增加${p.reward.happiness}${p.reward.life?'，寿元减少'+p.reward.life:''}。`;
  record(s,message);return {state:s,message};
 }
 export function visitIncognito(state,placeId,random){
@@ -118,7 +121,9 @@ export function validateTravel(s){
   if(typeof r.ended!=='boolean'||!r.visitCounts||Object.keys(r.visitCounts).some(id=>!r.visits.includes(id)||!int(r.visitCounts[id])||r.visitCounts[id]>1000)||r.visits.some(id=>!int(r.visitCounts[id])))fail();
   if(r.startedTurn!==undefined){
    if(!int(r.startedTurn)||r.startedTurn<r.dueTurn||r.startedTurn>s.turn||!Number.isInteger(r.startedPhase)||r.startedPhase<0||r.startedPhase>5||r.returnTurn!==(r.kind==='tour'?(Math.floor((r.startedTurn-1)/3)+1)*3+1:r.startedTurn)||!r.reward)fail();
-   const a=r.reward;if(a.treasury!==TRAVEL_RULES[r.kind].treasuryCost||!Number.isInteger(a.happiness)||a.happiness<0||a.happiness>20||!Number.isInteger(a.life)||a.life<0||a.life>(r.kind==='tour'?10:18)||!Number.isInteger(a.health)||a.health< -20||a.health>0||!Number.isInteger(a.loyalty)||a.loyalty<0||a.loyalty>2)fail();
+   if(r.rulesVersion!==undefined&&![1,2].includes(r.rulesVersion))fail();
+   const expectedCost=r.rulesVersion===2&&r.kind==='tour'?8000:TRAVEL_RULES[r.kind].treasuryCost;
+   const a=r.reward;if(a.treasury!==expectedCost||!Number.isInteger(a.happiness)||a.happiness<0||a.happiness>20||!Number.isInteger(a.life)||a.life<0||a.life>(r.kind==='tour'?10:18)||!Number.isInteger(a.health)||a.health< -20||a.health>0||!Number.isInteger(a.loyalty)||a.loyalty<0||a.loyalty>2)fail();
   }else if(r.visits.length||r.events.length||r.ended||r.reward!==undefined||r.returnTurn!==undefined)fail();
   if(r.completedTurn!==undefined&&(r.startedTurn===undefined||r.completedTurn<r.startedTurn))fail();
   if(r.events.some(e=>!e||typeof e.title!=='string'||e.title.length>100||typeof e.text!=='string'||e.text.length>1000||!r.visits.includes(e.placeId)))fail();

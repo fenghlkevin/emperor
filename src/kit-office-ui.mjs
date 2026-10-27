@@ -7,6 +7,9 @@ import {openBattlePlans} from './card-battle-plans-ui.mjs';
 import {openTacticDraft} from './card-battle-tactics-ui.mjs';
 import {previewCampaignDeck} from './card-battle-deck.mjs';
 import {openBattleDeck} from './card-battle-deck-ui.mjs';
+import {openArmyRecovery} from './army-recovery-ui.mjs';
+import {courtCampaignPlan} from './court-campaign.mjs';
+import {drawCampaignReview} from './campaign-review-ui.mjs';
 import {quoteShortage} from './action-feedback.mjs';
 import {openMilitaryRegister} from './military-register-ui.mjs';
 import {militaryPage} from './military-page.mjs';
@@ -21,7 +24,7 @@ import {TROOP_KITS,kitProductionAllowed} from './troop-kits.mjs';
 import {ENABLED_KITS,worldKitSummary,quoteKitCommand,executeKitCommand} from './troop-kit-world.mjs';
 import {beginWar,quoteWar,generals,borderingCountries} from './war.mjs';
 import {drawBattle} from './battle-ui.mjs';
-import {drawWarResult} from './war-result-ui.mjs';
+import {drawWarResult,drawBorderWarResult} from './war-result-ui.mjs';
 import {drawCourtDefense as drawKitDefenseDeployment} from './court-defense-ui.mjs';
 import {drawCapitalCrisis} from './ending-ui.mjs';
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -37,13 +40,15 @@ export function openKitOffice(initial,root,onCommit,onClose,options={}){
  resetWar();
  function quantities(){return Object.fromEntries([...dialog.querySelectorAll('[data-kit-quantity]')].map(e=>[e.dataset.kitQuantity,Number(e.value)]));}
  function command(){return tab==='war'?{id:state.domestic.war.nextId,kind:'war',kitVersion:1,battleMode:'cards',...warDraft}:{id:state.domestic.troopKits.nextId,kind:tab,sourceId,targetId,draftRates,quantities:quantities(),amount:Number(dialog.querySelector('[data-kit-amount]')?.value),soldiers:Number(dialog.querySelector('[data-kit-transfer-soldiers]')?.value??0)};}
- function quantityTable(row){return `<table><thead><tr><th>兵种装备</th><th>单价 / 两</th><th>当前可用 / 人份</th><th>${tab==='transfer'?'调拨':'购买'} / 人份</th></tr></thead><tbody>${kits().map(k=>`<tr><th>${k.name}装备${k.description?`<small>${esc(k.description)}</small>`:''}${tab==='purchase'&&!kitProductionAllowed(state.domestic.provinces.find(p=>p.id===(row.id==='central'?state.domestic.centralArmy.sourceProvinceId:row.id)),k.id)?'<small>当前驻地无产购权限</small>':''}</th><td>${k.price}</td><td>${row.kits[k.id].available}</td><td><input type="number" min="0" max="${tab==='transfer'?row.kits[k.id].available:1000000}" value="0" ${tab==='purchase'&&!kitProductionAllowed(state.domestic.provinces.find(p=>p.id===(row.id==='central'?state.domestic.centralArmy.sourceProvinceId:row.id)),k.id)?'disabled':''} data-kit-quantity="${k.id}" aria-label="${k.name}装备数量"></td></tr>`).join('')}</tbody></table>`;}
+ function quantityTable(row){return `<table><thead><tr><th>兵种装备</th><th>基础单价 / 两</th><th>当前可用 / 人份</th><th>${tab==='transfer'?'调拨':'购买'} / 人份</th></tr></thead><tbody>${kits().map(k=>`<tr><th>${k.name}装备${k.description?`<small>${esc(k.description)}</small>`:''}${tab==='purchase'&&!kitProductionAllowed(state.domestic.provinces.find(p=>p.id===(row.id==='central'?state.domestic.centralArmy.sourceProvinceId:row.id)),k.id)?'<small>当前驻地无产购权限</small>':''}</th><td>${k.price}</td><td>${row.kits[k.id].available}</td><td><input type="number" min="0" max="${tab==='transfer'?row.kits[k.id].available:1000000}" value="0" ${tab==='purchase'&&!kitProductionAllowed(state.domestic.provinces.find(p=>p.id===(row.id==='central'?state.domestic.centralArmy.sourceProvinceId:row.id)),k.id)?'disabled':''} data-kit-quantity="${k.id}" aria-label="${k.name}装备数量"></td></tr>`).join('')}</tbody></table>`;}
  function warRow(u,i,guard=false){return `<section class="defense-squad"><header><b>${guard?'主将亲卫':`第 ${i+1} 队`}</b>${guard?'':`<button data-kit-war-remove="${i}">移除</button>`}</header><label>兵种${select(kits().map(k=>[k.id,k.name]),u.kind,`data-kit-war-${guard?'guard':'row'}="${i}" data-field="kind"`)}</label><label>人数${formationCountSelect(u.count,MAX_SQUAD_SOLDIERS,`data-kit-war-${guard?'guard':'row'}="${i}" data-field="count" aria-label="编队人数"`)}</label>${guard?'':`<label>将领${select(generals(state.domestic).map(g=>[g.id,g.name]),u.generalId,`data-kit-war-row="${i}" data-field="generalId"`)}</label>`}</section>`;}
  function draw(){
   if(state.domestic.collapse?.pending){drawCapitalCrisis(dialog,state,commit,r=>{receipt={lines:[r.message]};draw();});return;}
   if(state.domestic.war?.battle){drawBattle(dialog,()=>state,commit,r=>{receipt=r;draw();});return;}
   if(state.domestic.strategy?.pending?.defender===state.domestic.playerCountryId){drawKitDefenseDeployment(dialog,()=>state,commit,r=>{receipt=r;draw();},{savePlans:options.savePlans?next=>{const saved=commitOperation(options.savePlans,next);state=saved?.domestic?saved:next;return saved;}:undefined});return;}
-  if(receipt?.report){drawWarResult(dialog,receipt,()=>{receipt=null;draw();},()=>dialog.close());return;}
+  if(receipt?.report){drawWarResult(dialog,receipt,()=>{receipt=null;draw();},()=>dialog.close(),{onRecovery:()=>{dialog.onclose=()=>dialog.remove();dialog.close();openArmyRecovery(state,root,onCommit,onClose);}});return;}
+  if(receipt?.kind==='war'){drawBorderWarResult(dialog,receipt,state,()=>{receipt=null;draw();},()=>dialog.close(),()=>{dialog.onclose=()=>dialog.remove();dialog.close();openArmyRecovery(state,root,onCommit,onClose);});return;}
+  if(tab==='war'&&warStage===3&&!receipt){const review=courtCampaignPlan(state,warDraft);drawCampaignReview(dialog,state,review,{onEdit:()=>{warStage=2;draw();},onSeal:()=>{try{commit(beginWar(state,review.command));warStage=1;draw();}catch(e){dialog.querySelector('[data-campaign-error]').textContent=e.message;}}});return;}
   dialog.className='domestic-dialog ink-mode revenue-dialog general-dialog war-dialog war-office';dialog.setAttribute('aria-label','兵部套装军务');const rows=sources(),row=rows.find(r=>r.id===sourceId)??rows[0];sourceId=row.id;dialog.dataset.kitTab=tab;dialog.dataset.warStage=String(warStage);
   const nav=[['inventory','军队与军备'],['purchase','购买装备'],['recruit','招募士兵'],['dismiss','解散士兵'],['transfer','调拨军队'],['war','发动战争']];
   let body=receipt?`<h2>军令已执行</h2>${receipt.lines.map(line=>`<p>${esc(line)}</p>`).join('')}${receipt.cardHistory?'<button data-kit-receipt-history>查看本战交战记录</button>':''}<button data-kit-receipt-back>继续军务</button>`:'';

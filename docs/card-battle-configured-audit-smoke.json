@@ -1,0 +1,350 @@
+{
+  "version": "phase6-yanying-v6",
+  "date": "2026-10-24T09:12:21.769Z",
+  "section": "configured",
+  "domain": "configured-harness-smoke-20261024",
+  "pairsPerCase": 2,
+  "sources": {
+    "src/card-battle.mjs": "463685db86c49de5b42811c01b7d5c8eac8232526f92204523b18988f8df7b43",
+    "src/card-battle-data.mjs": "bb83bbb6f92ea028c5373b7eafff97d29ddc4743668596f74bd8d9e1ec216162",
+    "src/card-battle-weapons.mjs": "2a9ec7ee720fbf9c71113a0d93852321a3af7fdbd130ff26a1d7977de331ac2c",
+    "src/card-battle-secrets.mjs": "249901403e59e76456a275e1e2d9832bbba47f8886b45ee9ce17d14c6993722c",
+    "src/card-battle-landmarks.mjs": "f24a9a0f1c5ac51bb5b7135cc604746ee2cd132a9c0e5a8aa05a7c9e13da62bf",
+    "scripts/card-battle-balance-fixture.mjs": "ee91f3149db232402821b94fdd3db56c9aebf21f4ed697a61b5423318212b656",
+    "scripts/card-battle-configured-fixture.mjs": "ba9a1fc7aaa46510d7cdee7e76a9d9a98fc8089f75bf90211a18f3ffb1713d40",
+    "scripts/card-battle-audit-telemetry.mjs": "0d753fae04dbb1c4338e18901235ded8aafddec4e1ba667945a0722916721a10",
+    "scripts/audit-card-battle-release.mjs": "9a851e28e49ed7897ad311a64c36a9df257abdb01ef8fd3bc0d11e05a28b7b5c"
+  },
+  "rules": {
+    "version": 3,
+    "unitSize": 100,
+    "compactArmy": true,
+    "compactPenalty": true,
+    "troopCap": 18,
+    "boardLimit": 7,
+    "handLimit": 10,
+    "deckSize": 30,
+    "spellPackages": {
+      "martial": [
+        "precision",
+        "fire",
+        "fortify",
+        "assault",
+        "supply",
+        "pin",
+        "precision",
+        "fire",
+        "fortify",
+        "supply",
+        "dispel",
+        "heal"
+      ],
+      "intelligence": [
+        "precision",
+        "fire",
+        "arrows",
+        "barrage",
+        "pin",
+        "supply",
+        "precision",
+        "execute",
+        "arrows",
+        "barrage",
+        "pin",
+        "dispel"
+      ],
+      "command": [
+        "precision",
+        "fire",
+        "fortify",
+        "assault",
+        "supply",
+        "brace",
+        "fire",
+        "fortify",
+        "assault",
+        "supply",
+        "heal",
+        "dispel"
+      ]
+    },
+    "penaltyTiersOnly": true,
+    "reserveDeckGrowth": 2,
+    "lowTrainingPenalty": "general",
+    "scoutVariants": {
+      "intelligence": {
+        "cavalry": "cavalry_patrol_scout"
+      },
+      "command": {
+        "cavalry": "cavalry_patrol_scout"
+      }
+    }
+  },
+  "method": "Production cardAI + actCardsMutable; paired fixed A/B random streams, swapped first player. Each independent pair also varies equal ability-gated fixed person profiles. CI is paired normal 95%; draws score 0.5. Controller is heuristic, not a human or optimal policy.",
+  "acceptance": {
+    "target": [
+      0.47,
+      0.53
+    ],
+    "passed": false,
+    "failedCases": [
+      "configured-combined-5",
+      "configured-landmarks-0",
+      "configured-secrets-5",
+      "configured-weapons-5"
+    ],
+    "note": "Point-estimate gate only; inspect per-case confidence intervals. Base matrix does not establish configured decks/weapons/secrets/landmarks coverage."
+  },
+  "games": 32,
+  "elapsedSeconds": 3.464,
+  "rows": [
+    {
+      "id": "configured-combined-0",
+      "configuration": "combined",
+      "rotation": 0,
+      "pairs": 2,
+      "seedDomain": "configured-harness-smoke-20261024",
+      "games": 4,
+      "first": {
+        "mean": 0.5,
+        "ci95": [
+          0.5,
+          0.5
+        ]
+      },
+      "home": {
+        "mean": 1,
+        "ci95": [
+          1,
+          1
+        ]
+      },
+      "draws": 0,
+      "rounds": {
+        "median": 14,
+        "p90": 14,
+        "max": 14
+      },
+      "actions": 391,
+      "validatedFinalStates": 2,
+      "deployed": []
+    },
+    {
+      "id": "configured-combined-5",
+      "configuration": "combined",
+      "rotation": 5,
+      "pairs": 2,
+      "seedDomain": "configured-harness-smoke-20261024",
+      "games": 4,
+      "first": {
+        "mean": 0,
+        "ci95": [
+          0,
+          0
+        ]
+      },
+      "home": {
+        "mean": 0.5,
+        "ci95": [
+          0.5,
+          0.5
+        ]
+      },
+      "draws": 0,
+      "rounds": {
+        "median": 19,
+        "p90": 20,
+        "max": 20
+      },
+      "actions": 500,
+      "validatedFinalStates": 2,
+      "deployed": []
+    },
+    {
+      "id": "configured-landmarks-0",
+      "configuration": "landmarks",
+      "rotation": 0,
+      "pairs": 2,
+      "seedDomain": "configured-harness-smoke-20261024",
+      "games": 4,
+      "first": {
+        "mean": 0,
+        "ci95": [
+          0,
+          0
+        ]
+      },
+      "home": {
+        "mean": 0.5,
+        "ci95": [
+          0.5,
+          0.5
+        ]
+      },
+      "draws": 0,
+      "rounds": {
+        "median": 12,
+        "p90": 14,
+        "max": 14
+      },
+      "actions": 303,
+      "validatedFinalStates": 2,
+      "deployed": []
+    },
+    {
+      "id": "configured-landmarks-5",
+      "configuration": "landmarks",
+      "rotation": 5,
+      "pairs": 2,
+      "seedDomain": "configured-harness-smoke-20261024",
+      "games": 4,
+      "first": {
+        "mean": 0.5,
+        "ci95": [
+          0.5,
+          0.5
+        ]
+      },
+      "home": {
+        "mean": 0,
+        "ci95": [
+          0,
+          0
+        ]
+      },
+      "draws": 0,
+      "rounds": {
+        "median": 19,
+        "p90": 26,
+        "max": 26
+      },
+      "actions": 485,
+      "validatedFinalStates": 2,
+      "deployed": []
+    },
+    {
+      "id": "configured-secrets-0",
+      "configuration": "secrets",
+      "rotation": 0,
+      "pairs": 2,
+      "seedDomain": "configured-harness-smoke-20261024",
+      "games": 4,
+      "first": {
+        "mean": 0.5,
+        "ci95": [
+          0.5,
+          0.5
+        ]
+      },
+      "home": {
+        "mean": 0.5,
+        "ci95": [
+          0,
+          1
+        ]
+      },
+      "draws": 0,
+      "rounds": {
+        "median": 26,
+        "p90": 29,
+        "max": 29
+      },
+      "actions": 659,
+      "validatedFinalStates": 2,
+      "deployed": []
+    },
+    {
+      "id": "configured-secrets-5",
+      "configuration": "secrets",
+      "rotation": 5,
+      "pairs": 2,
+      "seedDomain": "configured-harness-smoke-20261024",
+      "games": 4,
+      "first": {
+        "mean": 0.75,
+        "ci95": [
+          0.26000000000000006,
+          1
+        ]
+      },
+      "home": {
+        "mean": 0.25,
+        "ci95": [
+          0,
+          0.74
+        ]
+      },
+      "draws": 0,
+      "rounds": {
+        "median": 19,
+        "p90": 28,
+        "max": 28
+      },
+      "actions": 571,
+      "validatedFinalStates": 2,
+      "deployed": []
+    },
+    {
+      "id": "configured-weapons-0",
+      "configuration": "weapons",
+      "rotation": 0,
+      "pairs": 2,
+      "seedDomain": "configured-harness-smoke-20261024",
+      "games": 4,
+      "first": {
+        "mean": 0.5,
+        "ci95": [
+          0.5,
+          0.5
+        ]
+      },
+      "home": {
+        "mean": 0,
+        "ci95": [
+          0,
+          0
+        ]
+      },
+      "draws": 0,
+      "rounds": {
+        "median": 17,
+        "p90": 28,
+        "max": 28
+      },
+      "actions": 497,
+      "validatedFinalStates": 2,
+      "deployed": []
+    },
+    {
+      "id": "configured-weapons-5",
+      "configuration": "weapons",
+      "rotation": 5,
+      "pairs": 2,
+      "seedDomain": "configured-harness-smoke-20261024",
+      "games": 4,
+      "first": {
+        "mean": 0.25,
+        "ci95": [
+          0,
+          0.74
+        ]
+      },
+      "home": {
+        "mean": 0.25,
+        "ci95": [
+          0,
+          0.74
+        ]
+      },
+      "draws": 0,
+      "rounds": {
+        "median": 25,
+        "p90": 26,
+        "max": 26
+      },
+      "actions": 537,
+      "validatedFinalStates": 2,
+      "deployed": []
+    }
+  ]
+}

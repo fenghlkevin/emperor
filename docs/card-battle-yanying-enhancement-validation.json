@@ -1,0 +1,34 @@
+{
+  "catalogVersion": "phase6-yanying-v6",
+  "personId": "manual-1509",
+  "before": "3费2/4，登场本回合下一计策减1费",
+  "after": "3费2/4，登场先抽1计策，再使本回合下一计策减1费",
+  "reason": "解决没有计策在手时登场收益落空，增强资源衔接，同时保留原费用身材与减费期限；属游戏规则设计，不宣称史事量化。",
+  "tests": {
+    "passed": 42,
+    "durationSeconds": 5.292,
+    "command": "node --test tests/card-battle-yanying.test.mjs tests/card-battle-person-copy.test.mjs tests/card-battle-person-presentations.test.mjs tests/card-battle-secrets.test.mjs tests/card-battle.test.mjs",
+    "coverage": [
+      "真实人物定义部署抽牌与减费",
+      "计策消费减费一次",
+      "跨回合减费清零",
+      "无计策不抽部队或疲劳",
+      "满手打出空位接收抽牌",
+      "100人物正式部署及资源结算",
+      "奥秘与武器回归"
+    ]
+  },
+  "pending": [
+    "原生UI技能演出与完整100人视觉性能验收",
+    "最终独立种子逐组平衡",
+    "20实际对局与1小时前台运行"
+  ],
+  "note": "首次专项fixture误查personId而非definitionId导致4测试失败；修正测试定位后重跑42项全通过。未修改正式引擎以迁就fixture。",
+  "nativeUI": {
+    "report": "docs/card-battle-yanying-ui-validation.json",
+    "passed": 15,
+    "elapsedSeconds": 17.841,
+    "scope": "正常/快速/减少动态下登场及主将技、完整正式状态一致且一次提交、字幕/纸面/锁和临时演出清理",
+    "screenshot": "docs/screenshots/card-yanying-enhanced-cast.png"
+  }
+}

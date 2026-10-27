@@ -1,0 +1,131 @@
+{
+  "date": "2026-10-21",
+  "generator": "built-in image_gen",
+  "references": [
+    {
+      "person": "邵雨琪",
+      "page": "https://news.hubeidaily.net/pc/z_743551.html",
+      "image": "https://hbrbapp.hubeidaily.net/b426610e466a4909b8d581716fe895c0.jpg",
+      "local": "assets/beauties/references/shao-yuqi/front-news.jpg"
+    },
+    {
+      "person": "邵雨琪",
+      "page": "https://k.sina.cn/article_1510039900_5a01615c001011xgs.html",
+      "image": "https://k.sinaimg.cn/n/sinakd20111/72/w934h738/20251120/9653-3c0e306495ffa9c913ec959dc25d253b.jpg/w700d1q75cms.jpg",
+      "local": "assets/beauties/references/shao-yuqi/front-medal.jpg"
+    },
+    {
+      "person": "陈丽君 / 阿育娅造型",
+      "page": "https://www.sina.cn/news/detail/5268147047242703.html",
+      "image": "https://wx3.sinaimg.cn/middle/005SyZ1Sgy1iag79qxfsdj30oi0zinax.jpg",
+      "local": "assets/beauties/references/chen-lijun/biaoren-poster.jpg"
+    },
+    {
+      "person": "陈丽君 / 阿育娅造型",
+      "page": "https://k.sina.com.cn/article_7879776328_1d5abd84806801cstk.html",
+      "image": "https://n.sinaimg.cn/sinakd20260315ac/358/w468h690/20260315/7c66-8c66503146b3b68af147fd120788614f.jpg",
+      "local": "assets/beauties/references/chen-lijun/biaoren-costume.jpg"
+    }
+  ],
+  "assets": [
+    {
+      "path": "assets/beauties/special/shao-yuqi-v2.png",
+      "state": "happy palace",
+      "prompt": "Create a revised transparent full-body ancient Chinese game portrait of adult Chinese athlete Shao Yuqi. Reference 1 and 2 are her ACTUAL real identity and must control the face. Reference 3 is the old game portrait and is ONLY a wardrobe, framing and painted-art-style guide: replace its generic face entirely. Highest priority accurate likeness to photos: natural elongated oval face, real cheek and jaw volume, slender almond eyes of the same scale as photos (do not enlarge), natural brows, her actual nose bridge and tip, wider natural smiling mouth and lip proportions, not tiny cherry lips, not pointed V chin, no generic idol face, no anime. Preserve her distinctive facial proportions. She has a friendly happy natural smile in this PALACE version, front-facing with both eyes and both cheeks fully visible. Wear the same muted blue and ivory embroidered flowing full-sleeved hanfu and simple blue ribbon half-up dark hair, no face-obscuring bangs, holding a folded fan at waist, tall athletic natural proportions. Fine ink lines and opaque watercolor/gouache painted silk, refined realism matching the game's Xia Yuhe full-body cutout art. Entire hair, sleeves, skirt hem and shoes visible with margin, portrait 1024x1536, centered. Genuine transparent background, no glow, no scenery, no modern sportswear, no UI, text, border, watermark. One person only."
+    },
+    {
+      "path": "assets/beauties/special/shao-yuqi-encounter-v2.png",
+      "state": "guarded encounter and immediate result",
+      "prompt": "Edit the supplied Shao Yuqi v2 portrait into its separate ENCOUNTER version. Preserve EXACT same person and recognizable face proportions, do not change her into a different beauty: same natural elongated face, cheek and jaw structure, almond eye scale, nose and natural mouth proportions. Preserve exact blue ivory hanfu, hair and accessories, full-body pose, fan, art style and genuine transparent background. Change expression ONLY to wary and uneasy: no smile, closed lips, gently knitted brows, guarded gaze toward viewer, shoulders a little tense. Face almost frontal, both eyes and both cheeks visible. Not theatrical anger or crying. No text or scene, no guards, restraint, violence or sexual content. Entire hair, skirt and shoes within frame. Transparent PNG."
+    },
+    {
+      "path": "assets/beauties/special/chen-lijun-v1.png",
+      "state": "happy palace",
+      "prompt": "Generate ONE standalone transparent full-body game portrait of adult actress Chen Lijun in her Ayuya costume from the film Blades of the Guardians (镖人). References 1 and 2 define the actor's recognizable face and the costume, reference 3 is ONLY the existing game's painted full-body cutout style and scale. Preserve Chen Lijun's distinctive strong brows, almond eyes, angular cheek/jaw structure, real nose and mouth; do not make a generic sweet beauty or doll. PALACE version: relaxed happy small natural smile, face facing forward, both eyes and both cheeks visible. Costume faithfully based on supplied film stills: engraved silver forehead headband with central hanging ornament, dark partly pulled-back hair with thin braids, tiny dark and silver hair beads, high-collared pale dusty blue layered tunic/robe with restrained geometric embroidery, off-white linen scarf/shawl draped around shoulders and down back, brown fitted leather forearm bracers, broad dark leather waist belt, layered pale blue and gray-beige skirt panels over practical trousers, weathered brown boots. No floral palace gown, no lotus jewelry, no imperial crown. Carry a relaxed sheathed curved saber at hip, safe neutral hands resting near belt; one adult woman only. Natural tall athletic proportions, full length head to boots, complete scarf and clothes contained with clear margins. Fine detailed ink lines with realistic opaque watercolor/gouache painting and painted cloth detail, not a photo, not anime. Genuine transparent background without scene, halo, haze or floor, no text, logos, UI or watermark. Portrait 1024x1536."
+    },
+    {
+      "path": "assets/beauties/special/chen-lijun-encounter-v1.png",
+      "state": "guarded encounter and immediate result",
+      "prompt": "Edit the supplied Chen Lijun Ayuya portrait to create its separate ENCOUNTER version. Preserve EXACT same actress identity, facial geometry and distinctive brows, silver forehead headband and thin braids, dusty pale blue robe with geometric embroidery, off-white linen shawl, brown leather bracers, belt, sheathed curved saber, boots, full-body framing, painted art style and genuine transparent background. Change expression ONLY: serious guarded and defiant, no smile, closed lips, slightly knitted brows, wary determined gaze directly at viewer. Natural dignified tense posture, hand resting on sheathed sword hilt, weapon stays fully sheathed. Both eyes and cheeks visible, frontal full face, never side profile. No scene, text, logos, UI, guards, restraint, violence or sexual content. Entire head, scarf and boots visible with margins. Transparent PNG."
+    }
+  ],
+  "rules": {
+    "characters": [
+      "fanfan",
+      "shao-yuqi",
+      "chen-lijun"
+    ],
+    "choices": [
+      "admit",
+      "part"
+    ],
+    "labels": [
+      "强行带回宫中",
+      "放弃"
+    ],
+    "chancePerCharacter": 0.01,
+    "oncePerGame": true,
+    "immediateAdmission": true,
+    "legacy": "Retired patron can only remain as a settled result for fanfan/shao-yuqi, never as an available action."
+  },
+  "validation": [
+    "35 tour/travel tests passed"
+  ],
+  "note": "Reference photographs control likeness; costumes and all game events remain artistic adaptations.",
+  "activeRevision": {
+    "displayNames": {
+      "fanfan": "帆帆",
+      "shao-yuqi": "邵琪琪",
+      "chen-lijun": "阿育娅"
+    },
+    "generator": "built-in image_gen",
+    "assets": [
+      {
+        "path": "assets/beauties/special/shao-qiqi-v3.png",
+        "state": "happy palace",
+        "prompt": "Preserve revised face likeness and happy frontal smile. Replace ornate gown with athletic ancient Chinese training outfit: fitted blue short tunic, ivory trim, separate blue trouser legs, wrist wraps, sash, light running boots and functional high ponytail. Remove fan, floral jewelry, long skirt and flowing sleeves. Natural lean athletic build. Full-body painted game cutout on genuine transparent background."
+      },
+      {
+        "path": "assets/beauties/special/shao-qiqi-encounter-v3.png",
+        "state": "angry and frightened encounter/result",
+        "prompt": "Preserve same face and blue athletic tunic, separate trousers, boots, ponytail and full-body art. Clearly show anger mixed with fear: sharply furrowed brow with raised inner brows, widened uneasy eyes, slightly parted tense lips, tense jaw, shoulders braced and leaning back, fists clenched protectively. No smile, no calm fashion pose. Both eyes and cheeks visible. Genuine transparent PNG; no other people, violence, injuries, scenery, UI or text."
+      },
+      {
+        "path": "assets/beauties/special/fanfan-encounter-v2.png",
+        "state": "frightened encounter/result",
+        "prompt": "Preserve Fanfan identity, peach jade hanfu, hair, fan and painted full-body cutout. Make fear unmistakable: widened eyes, raised inner brows, slightly parted trembling lips, recoiling shoulders and hands clutching fan protectively against chest. No smile, cartoon tears or exaggerated horror. Genuine transparent PNG; no other people, restraint, violence, scenery, text or UI."
+      },
+      {
+        "path": "assets/beauties/special/ayuya-encounter-v2.png",
+        "state": "angry and frightened encounter/result",
+        "prompt": "Preserve Ayuya face and film-inspired silver headband, braids, pale blue robe, linen scarf, leather bracers, sheathed saber and boots. Sharply furrowed brows with raised inner brows, widened eyes, slightly parted lips with tense angry corners, tense jaw, braced shoulders, hand gripping sheathed sword hilt. Clearly angry and frightened, not calm or smiling. Full-body painted game cutout, genuine transparency; no other people, violence, injuries, scenery, text or UI."
+      }
+    ],
+    "stateRules": "First encounters and immediate abduction results use angry/frightened variants. Palace views retain happy expressions. Shao Qiqi uses athletic clothing in both states.",
+    "migration": "Stable internal cameo IDs preserve seen markers. Old palace member names, biographies and travel/harem logs update to the new display names without re-encounter or duplicate admission.",
+    "verification": [
+      "36 tour/travel logic tests passed",
+      "38 data-contract snapshots and negative type checks passed"
+    ],
+    "locations": [
+      {
+        "character": "帆帆",
+        "city": "扬州",
+        "tourRegion": "淮南",
+        "provinceId": "huainan"
+      },
+      {
+        "character": "邵琪琪",
+        "city": "襄阳",
+        "tourRegion": "山南",
+        "provinceId": "shannan"
+      },
+      {
+        "character": "阿育娅",
+        "city": "凉州",
+        "tourRegion": "陇右",
+        "provinceId": "longyou"
+      }
+    ]
+  }
+}

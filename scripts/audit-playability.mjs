@@ -1,7 +1,7 @@
 // Real-start balance audit. No injected cash, loyalty, stats or free equipment.
 // Only RNG/creation time are fixed; stress fixtures are labelled separately.
 import {mkdirSync,writeFileSync} from 'node:fs';
-import {newGame,leaveRoom,sleepUntilNextTurn,resolveExhaustion,validateSave} from '../src/game.mjs';
+import {createPlayableGame as newGame,leaveRoom,sleepUntilNextTurn,resolveExhaustion,validateSave} from '../src/game.mjs';
 import {palaceAction,spendEnergy,courtBlock} from '../src/emperor.mjs';
 import {executeRevenue} from '../src/revenue.mjs';
 import {executePersonnel} from '../src/personnel-actions.mjs';

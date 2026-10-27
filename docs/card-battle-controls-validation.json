@@ -1,0 +1,25 @@
+{
+  "date": "2026-10-25T05:06:39.953Z",
+  "checks": [
+    "newly summoned troop has a distinct pending hourglass and cannot look ready",
+    "pending hourglass keeps animating after deployment",
+    "notice change 1 retains connected hand faces, artwork, hover position and unchanged game state",
+    "notice change 2 retains connected hand faces, artwork, hover position and unchanged game state",
+    "notice change 3 retains connected hand faces, artwork, hover position and unchanged game state",
+    "notice change 4 retains connected hand faces, artwork, hover position and unchanged game state",
+    "notice change 5 retains connected hand faces, artwork, hover position and unchanged game state",
+    "notice change 6 retains connected hand faces, artwork, hover position and unchanged game state",
+    "notice change 7 retains connected hand faces, artwork, hover position and unchanged game state",
+    "notice change 8 retains connected hand faces, artwork, hover position and unchanged game state",
+    "actual next owner turn replaces pending effect with the ready flow cue",
+    "selection and its new hint keep the existing hand connected and stationary",
+    "cancelling selection preserves the settled hand fan",
+    "a spent attack is visually different from a newly summoned troop",
+    "newly deployed rush troop remains usable and never receives the pending cue",
+    "1440px command label is centered on the painted jade",
+    "1000px command label is centered on the painted jade",
+    "800px command label is centered on the painted jade",
+    "reduced-motion keeps the pending distinction without moving particles"
+  ],
+  "errors": []
+}

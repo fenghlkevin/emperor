@@ -70,10 +70,10 @@ export const OFFICIAL_ART={
     "full": "assets/officials/historical/manual-1629/full.png",
     "court": "assets/officials/historical/manual-1629/court.png"
   },
-  "original-14": {
-    "avatar": "assets/officials/historical/original-14/avatar.png",
-    "full": "assets/officials/historical/original-14/full.png",
-    "court": "assets/officials/historical/original-14/court.png"
+  "manual-1561": {
+    "avatar": "assets/officials/historical/manual-1561/avatar.png",
+    "full": "assets/officials/historical/manual-1561/full.png",
+    "court": "assets/officials/historical/manual-1561/court.png"
   },
   "manual-1543": {
     "avatar": "assets/officials/historical/manual-1543/avatar.png",
@@ -485,20 +485,20 @@ export const OFFICIAL_ART={
     "full": "assets/officials/historical/manual-1624/full.png",
     "court": "assets/officials/historical/manual-1624/court.png"
   },
-  "original-97": {
-    "avatar": "assets/officials/historical/original-97/avatar.png",
-    "full": "assets/officials/historical/original-97/full.png",
-    "court": "assets/officials/historical/original-97/court.png"
+  "manual-1557": {
+    "avatar": "assets/officials/historical/manual-1557/avatar.png",
+    "full": "assets/officials/historical/manual-1557/full.png",
+    "court": "assets/officials/historical/manual-1557/court.png"
   },
-  "original-98": {
-    "avatar": "assets/officials/historical/original-98/avatar.png",
-    "full": "assets/officials/historical/original-98/full.png",
-    "court": "assets/officials/historical/original-98/court.png"
+  "manual-1550": {
+    "avatar": "assets/officials/historical/manual-1550/avatar.png",
+    "full": "assets/officials/historical/manual-1550/full.png",
+    "court": "assets/officials/historical/manual-1550/court.png"
   },
-  "original-99": {
-    "avatar": "assets/officials/historical/original-99/avatar.png",
-    "full": "assets/officials/historical/original-99/full.png",
-    "court": "assets/officials/historical/original-99/court.png"
+  "cbdb-33662": {
+    "avatar": "assets/officials/historical/cbdb-33662/avatar.png",
+    "full": "assets/officials/historical/cbdb-33662/full.png",
+    "court": "assets/officials/historical/cbdb-33662/court.png"
   },
   "random-civil-1": {
     "avatar": "assets/officials/random/random-civil-1/avatar.png",

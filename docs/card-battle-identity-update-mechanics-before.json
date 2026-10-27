@@ -1,0 +1,1703 @@
+[
+  {
+    "id": "cbdb-27948",
+    "cost": 5,
+    "attack": 2,
+    "health": 5,
+    "tags": [],
+    "enter": [
+      {
+        "op": "draw",
+        "n": 1,
+        "filter": "tactic"
+      },
+      {
+        "op": "discount",
+        "n": 1
+      }
+    ],
+    "death": []
+  },
+  {
+    "id": "cbdb-3767",
+    "cost": 4,
+    "attack": 2,
+    "health": 5,
+    "tags": [],
+    "enter": [
+      {
+        "op": "armor",
+        "n": 3
+      },
+      {
+        "op": "heal",
+        "n": 3
+      }
+    ],
+    "death": []
+  },
+  {
+    "id": "cbdb-1384",
+    "cost": 3,
+    "attack": 2,
+    "health": 3,
+    "tags": [],
+    "enter": [
+      {
+        "op": "draw",
+        "n": 1,
+        "filter": "general"
+      }
+    ],
+    "death": []
+  },
+  {
+    "id": "manual-1523",
+    "cost": 5,
+    "attack": 2,
+    "health": 5,
+    "tags": [],
+    "enter": [
+      {
+        "op": "silence",
+        "target": "enemy"
+      },
+      {
+        "op": "armor",
+        "n": 2
+      }
+    ],
+    "death": []
+  },
+  {
+    "id": "original-4",
+    "cost": 5,
+    "attack": 3,
+    "health": 6,
+    "tags": [
+      "taunt"
+    ],
+    "enter": [
+      {
+        "op": "armor",
+        "n": 3
+      }
+    ],
+    "death": []
+  },
+  {
+    "id": "cbdb-17364",
+    "cost": 4,
+    "attack": 2,
+    "health": 4,
+    "tags": [],
+    "enter": [
+      {
+        "op": "discount",
+        "n": 1
+      },
+      {
+        "op": "armor",
+        "n": 2
+      }
+    ],
+    "death": []
+  },
+  {
+    "id": "manual-1527",
+    "cost": 4,
+    "attack": 2,
+    "health": 5,
+    "tags": [],
+    "enter": [
+      {
+        "op": "draw",
+        "n": 1,
+        "filter": "troop"
+      }
+    ],
+    "death": []
+  },
+  {
+    "id": "manual-1529",
+    "cost": 4,
+    "attack": 2,
+    "health": 4,
+    "tags": [],
+    "enter": [
+      {
+        "op": "draw",
+        "n": 1,
+        "filter": "tactic"
+      }
+    ],
+    "death": []
+  },
+  {
+    "id": "original-8",
+    "cost": 3,
+    "attack": 2,
+    "health": 4,
+    "tags": [],
+    "enter": [
+      {
+        "op": "heal",
+        "n": 2
+      }
+    ],
+    "death": []
+  },
+  {
+    "id": "cbdb-8043",
+    "cost": 5,
+    "attack": 3,
+    "health": 5,
+    "tags": [
+      "taunt"
+    ],
+    "enter": [
+      {
+        "op": "buff",
+        "a": 0,
+        "h": 2,
+        "mask": "foot",
+        "target": "friend",
+        "temp": false
+      }
+    ],
+    "death": []
+  },
+  {
+    "id": "cbdb-34344",
+    "cost": 6,
+    "attack": 3,
+    "health": 6,
+    "tags": [
+      "taunt"
+    ],
+    "enter": [
+      {
+        "op": "group",
+        "a": 0,
+        "h": 1,
+        "mask": "all",
+        "limit": 2,
+        "temp": false
+      }
+    ],
+    "death": []
+  },
+  {
+    "id": "cbdb-1762",
+    "cost": 4,
+    "attack": 2,
+    "health": 4,
+    "tags": [],
+    "enter": [
+      {
+        "op": "discount",
+        "n": 1
+      },
+      {
+        "op": "heal",
+        "n": 2
+      }
+    ],
+    "death": []
+  },
+  {
+    "id": "manual-1510",
+    "cost": 4,
+    "attack": 2,
+    "health": 4,
+    "tags": [],
+    "enter": [
+      {
+        "op": "buff",
+        "a": 2,
+        "h": 0,
+        "mask": "all",
+        "target": "friend",
+        "temp": true
+      }
+    ],
+    "death": []
+  },
+  {
+    "id": "manual-1629",
+    "cost": 6,
+    "attack": 3,
+    "health": 5,
+    "tags": [],
+    "enter": [
+      {
+        "op": "draw",
+        "n": 1,
+        "filter": "high"
+      },
+      {
+        "op": "armor",
+        "n": 2
+      }
+    ],
+    "death": []
+  },
+  {
+    "id": "original-14",
+    "cost": 4,
+    "attack": 3,
+    "health": 5,
+    "tags": [],
+    "enter": [
+      {
+        "op": "armor",
+        "n": 2
+      }
+    ],
+    "death": []
+  },
+  {
+    "id": "manual-1543",
+    "cost": 5,
+    "attack": 4,
+    "health": 4,
+    "tags": [
+      "rush"
+    ],
+    "enter": [
+      {
+        "op": "draw",
+        "n": 1
+      }
+    ],
+    "death": []
+  },
+  {
+    "id": "original-16",
+    "cost": 3,
+    "attack": 2,
+    "health": 3,
+    "tags": [],
+    "enter": [
+      {
+        "op": "heal",
+        "n": 4
+      }
+    ],
+    "death": []
+  },
+  {
+    "id": "manual-1530",
+    "cost": 7,
+    "attack": 4,
+    "health": 6,
+    "tags": [],
+    "enter": [
+      {
+        "op": "group",
+        "a": 1,
+        "h": 1,
+        "mask": "all",
+        "limit": 2,
+        "temp": false
+      }
+    ],
+    "death": []
+  },
+  {
+    "id": "general-874-55746",
+    "cost": 5,
+    "attack": 4,
+    "health": 5,
+    "tags": [],
+    "enter": [
+      {
+        "op": "buff",
+        "a": 1,
+        "h": 1,
+        "mask": "ranged",
+        "target": "friend",
+        "temp": false
+      }
+    ],
+    "death": []
+  },
+  {
+    "id": "manual-1519",
+    "cost": 4,
+    "attack": 2,
+    "health": 5,
+    "tags": [],
+    "enter": [
+      {
+        "op": "buff",
+        "a": 0,
+        "h": 0,
+        "give": "shield",
+        "target": "friend"
+      }
+    ],
+    "death": []
+  },
+  {
+    "id": "manual-1579",
+    "cost": 4,
+    "attack": 2,
+    "health": 4,
+    "tags": [],
+    "enter": [
+      {
+        "op": "draw",
+        "n": 1,
+        "filter": "low"
+      },
+      {
+        "op": "armor",
+        "n": 1
+      }
+    ],
+    "death": []
+  },
+  {
+    "id": "manual-1509",
+    "cost": 3,
+    "attack": 2,
+    "health": 4,
+    "tags": [],
+    "enter": [
+      {
+        "op": "draw",
+        "n": 1,
+        "filter": "tactic"
+      },
+      {
+        "op": "discount",
+        "n": 1
+      }
+    ],
+    "death": []
+  },
+  {
+    "id": "general-113-60981",
+    "cost": 3,
+    "attack": 1,
+    "health": 5,
+    "tags": [
+      "taunt"
+    ],
+    "enter": [
+      {
+        "op": "armor",
+        "n": 2
+      }
+    ],
+    "death": []
+  },
+  {
+    "id": "cbdb-898",
+    "cost": 4,
+    "attack": 2,
+    "health": 4,
+    "tags": [],
+    "enter": [
+      {
+        "op": "freeze",
+        "target": "enemy"
+      },
+      {
+        "op": "armor",
+        "n": 1
+      }
+    ],
+    "death": []
+  },
+  {
+    "id": "manual-1544",
+    "cost": 5,
+    "attack": 4,
+    "health": 5,
+    "tags": [],
+    "enter": [
+      {
+        "op": "buff",
+        "a": 1,
+        "h": 2,
+        "mask": "foot",
+        "target": "friend",
+        "temp": false
+      }
+    ],
+    "death": []
+  },
+  {
+    "id": "general-296-67948",
+    "cost": 5,
+    "attack": 4,
+    "health": 4,
+    "tags": [
+      "rush"
+    ],
+    "enter": [
+      {
+        "op": "armor",
+        "n": 2
+      }
+    ],
+    "death": []
+  },
+  {
+    "id": "general-790-68223",
+    "cost": 5,
+    "attack": 4,
+    "health": 4,
+    "tags": [
+      "rush"
+    ],
+    "enter": [
+      {
+        "op": "buff",
+        "a": 1,
+        "h": 0,
+        "mask": "cavalry",
+        "target": "friend",
+        "temp": true
+      }
+    ],
+    "death": []
+  },
+  {
+    "id": "cbdb-94373",
+    "cost": 6,
+    "attack": 4,
+    "health": 6,
+    "tags": [
+      "taunt"
+    ],
+    "enter": [
+      {
+        "op": "armor",
+        "n": 4
+      }
+    ],
+    "death": []
+  },
+  {
+    "id": "general-298-58873",
+    "cost": 5,
+    "attack": 3,
+    "health": 5,
+    "tags": [
+      "taunt"
+    ],
+    "enter": [
+      {
+        "op": "draw",
+        "n": 1,
+        "filter": "low"
+      }
+    ],
+    "death": []
+  },
+  {
+    "id": "original-29",
+    "cost": 5,
+    "attack": 3,
+    "health": 5,
+    "tags": [],
+    "enter": [
+      {
+        "op": "freeze",
+        "target": "enemy"
+      },
+      {
+        "op": "draw",
+        "n": 1
+      }
+    ],
+    "death": []
+  },
+  {
+    "id": "manual-1582",
+    "cost": 6,
+    "attack": 4,
+    "health": 5,
+    "tags": [
+      "rush"
+    ],
+    "enter": [
+      {
+        "op": "buff",
+        "a": 1,
+        "h": 1,
+        "mask": "cavalry",
+        "target": "friend",
+        "temp": false
+      }
+    ],
+    "death": []
+  },
+  {
+    "id": "general-403-90513",
+    "cost": 5,
+    "attack": 4,
+    "health": 4,
+    "tags": [],
+    "enter": [
+      {
+        "op": "damage",
+        "n": 3,
+        "target": "enemy"
+      }
+    ],
+    "death": []
+  },
+  {
+    "id": "cbdb-630",
+    "cost": 4,
+    "attack": 2,
+    "health": 5,
+    "tags": [
+      "taunt"
+    ],
+    "enter": [
+      {
+        "op": "heal",
+        "n": 3
+      }
+    ],
+    "death": []
+  },
+  {
+    "id": "original-33",
+    "cost": 4,
+    "attack": 4,
+    "health": 3,
+    "tags": [
+      "rush"
+    ],
+    "enter": [
+      {
+        "op": "armor",
+        "n": 1
+      }
+    ],
+    "death": []
+  },
+  {
+    "id": "manual-1590",
+    "cost": 4,
+    "attack": 2,
+    "health": 4,
+    "tags": [],
+    "enter": [
+      {
+        "op": "silence",
+        "target": "enemy"
+      }
+    ],
+    "death": []
+  },
+  {
+    "id": "manual-1591",
+    "cost": 3,
+    "attack": 2,
+    "health": 3,
+    "tags": [],
+    "enter": [
+      {
+        "op": "refund",
+        "n": 1
+      },
+      {
+        "op": "selfdamage",
+        "n": 2
+      }
+    ],
+    "death": []
+  },
+  {
+    "id": "general-468-78206",
+    "cost": 6,
+    "attack": 5,
+    "health": 5,
+    "tags": [
+      "rush"
+    ],
+    "enter": [
+      {
+        "op": "group",
+        "a": 1,
+        "h": 0,
+        "mask": "cavalry",
+        "limit": 2,
+        "temp": true
+      }
+    ],
+    "death": []
+  },
+  {
+    "id": "original-37",
+    "cost": 3,
+    "attack": 2,
+    "health": 3,
+    "tags": [],
+    "enter": [
+      {
+        "op": "draw",
+        "n": 1
+      }
+    ],
+    "death": []
+  },
+  {
+    "id": "manual-1537",
+    "cost": 6,
+    "attack": 4,
+    "health": 6,
+    "tags": [
+      "taunt"
+    ],
+    "enter": [
+      {
+        "op": "buff",
+        "a": 1,
+        "h": 1,
+        "mask": "cavalry",
+        "target": "friend",
+        "temp": false
+      }
+    ],
+    "death": []
+  },
+  {
+    "id": "manual-1536",
+    "cost": 6,
+    "attack": 5,
+    "health": 4,
+    "tags": [
+      "rush"
+    ],
+    "enter": [
+      {
+        "op": "damage",
+        "n": 2,
+        "target": "enemy"
+      }
+    ],
+    "death": []
+  },
+  {
+    "id": "manual-1513",
+    "cost": 5,
+    "attack": 2,
+    "health": 6,
+    "tags": [],
+    "enter": [
+      {
+        "op": "freeze",
+        "target": "enemy"
+      },
+      {
+        "op": "draw",
+        "n": 1
+      }
+    ],
+    "death": []
+  },
+  {
+    "id": "original-41",
+    "cost": 5,
+    "attack": 4,
+    "health": 4,
+    "tags": [],
+    "enter": [
+      {
+        "op": "damage",
+        "n": 2,
+        "target": "enemy"
+      },
+      {
+        "op": "discount",
+        "n": 1
+      }
+    ],
+    "death": []
+  },
+  {
+    "id": "cbdb-25403",
+    "cost": 6,
+    "attack": 2,
+    "health": 6,
+    "tags": [],
+    "enter": [
+      {
+        "op": "draw",
+        "n": 1,
+        "filter": "tactic"
+      },
+      {
+        "op": "armor",
+        "n": 3
+      }
+    ],
+    "death": []
+  },
+  {
+    "id": "original-43",
+    "cost": 5,
+    "attack": 4,
+    "health": 4,
+    "tags": [],
+    "enter": [
+      {
+        "op": "silence",
+        "target": "enemy"
+      },
+      {
+        "op": "armor",
+        "n": 2
+      }
+    ],
+    "death": []
+  },
+  {
+    "id": "original-44",
+    "cost": 5,
+    "attack": 3,
+    "health": 5,
+    "tags": [
+      "taunt"
+    ],
+    "enter": [
+      {
+        "op": "buff",
+        "a": 1,
+        "h": 1,
+        "mask": "ranged",
+        "target": "friend",
+        "temp": false
+      }
+    ],
+    "death": []
+  },
+  {
+    "id": "general-422-82978",
+    "cost": 6,
+    "attack": 5,
+    "health": 5,
+    "tags": [
+      "rush"
+    ],
+    "enter": [
+      {
+        "op": "armor",
+        "n": 2
+      }
+    ],
+    "death": []
+  },
+  {
+    "id": "general-523-68118",
+    "cost": 5,
+    "attack": 4,
+    "health": 4,
+    "tags": [
+      "rush"
+    ],
+    "enter": [
+      {
+        "op": "freeze",
+        "target": "enemy"
+      }
+    ],
+    "death": []
+  },
+  {
+    "id": "cbdb-1488",
+    "cost": 4,
+    "attack": 2,
+    "health": 5,
+    "tags": [],
+    "enter": [
+      {
+        "op": "draw",
+        "n": 1,
+        "filter": "tactic"
+      }
+    ],
+    "death": []
+  },
+  {
+    "id": "cbdb-8175",
+    "cost": 6,
+    "attack": 4,
+    "health": 5,
+    "tags": [
+      "rush"
+    ],
+    "enter": [
+      {
+        "op": "group",
+        "a": 1,
+        "h": 0,
+        "mask": "foot",
+        "limit": 2,
+        "temp": true
+      }
+    ],
+    "death": []
+  },
+  {
+    "id": "cbdb-19123",
+    "cost": 4,
+    "attack": 2,
+    "health": 5,
+    "tags": [
+      "taunt"
+    ],
+    "enter": [
+      {
+        "op": "heal",
+        "n": 3
+      }
+    ],
+    "death": []
+  },
+  {
+    "id": "manual-1608",
+    "cost": 6,
+    "attack": 4,
+    "health": 6,
+    "tags": [],
+    "enter": [
+      {
+        "op": "group",
+        "a": 0,
+        "h": 2,
+        "mask": "all",
+        "limit": 2,
+        "temp": false
+      }
+    ],
+    "death": []
+  },
+  {
+    "id": "manual-1609",
+    "cost": 6,
+    "attack": 6,
+    "health": 4,
+    "tags": [
+      "rush"
+    ],
+    "enter": [
+      {
+        "op": "buff",
+        "a": 1,
+        "h": 0,
+        "mask": "all",
+        "target": "friend",
+        "temp": true
+      }
+    ],
+    "death": []
+  },
+  {
+    "id": "cbdb-54819",
+    "cost": 4,
+    "attack": 2,
+    "health": 4,
+    "tags": [],
+    "enter": [
+      {
+        "op": "silence",
+        "target": "enemy"
+      },
+      {
+        "op": "heal",
+        "n": 2
+      }
+    ],
+    "death": []
+  },
+  {
+    "id": "cbdb-28093",
+    "cost": 3,
+    "attack": 1,
+    "health": 4,
+    "tags": [
+      "taunt"
+    ],
+    "enter": [],
+    "death": [
+      {
+        "op": "draw",
+        "n": 1
+      }
+    ]
+  },
+  {
+    "id": "manual-1614",
+    "cost": 6,
+    "attack": 4,
+    "health": 5,
+    "tags": [],
+    "enter": [
+      {
+        "op": "group",
+        "a": 1,
+        "h": 1,
+        "mask": "foot",
+        "limit": 2,
+        "temp": false
+      }
+    ],
+    "death": []
+  },
+  {
+    "id": "manual-1611",
+    "cost": 5,
+    "attack": 2,
+    "health": 6,
+    "tags": [
+      "taunt"
+    ],
+    "enter": [
+      {
+        "op": "buff",
+        "a": 0,
+        "h": 0,
+        "give": "shield",
+        "target": "friend"
+      }
+    ],
+    "death": []
+  },
+  {
+    "id": "cbdb-30374",
+    "cost": 5,
+    "attack": 3,
+    "health": 5,
+    "tags": [],
+    "enter": [
+      {
+        "op": "damage",
+        "n": 2,
+        "target": "enemy"
+      },
+      {
+        "op": "armor",
+        "n": 2
+      }
+    ],
+    "death": []
+  },
+  {
+    "id": "original-57",
+    "cost": 5,
+    "attack": 5,
+    "health": 4,
+    "tags": [
+      "rush"
+    ],
+    "enter": [],
+    "death": [
+      {
+        "op": "armor",
+        "n": 2
+      }
+    ]
+  },
+  {
+    "id": "cbdb-8008",
+    "cost": 4,
+    "attack": 2,
+    "health": 5,
+    "tags": [],
+    "enter": [
+      {
+        "op": "silence",
+        "target": "enemy"
+      },
+      {
+        "op": "selfdamage",
+        "n": 1
+      }
+    ],
+    "death": []
+  },
+  {
+    "id": "original-59",
+    "cost": 5,
+    "attack": 3,
+    "health": 5,
+    "tags": [
+      "taunt"
+    ],
+    "enter": [],
+    "death": [
+      {
+        "op": "armor",
+        "n": 4
+      }
+    ]
+  },
+  {
+    "id": "manual-1592",
+    "cost": 4,
+    "attack": 2,
+    "health": 4,
+    "tags": [],
+    "enter": [
+      {
+        "op": "damage",
+        "n": 2,
+        "target": "enemy"
+      }
+    ],
+    "death": []
+  },
+  {
+    "id": "manual-1507",
+    "cost": 6,
+    "attack": 3,
+    "health": 6,
+    "tags": [],
+    "enter": [
+      {
+        "op": "buff",
+        "a": 0,
+        "h": 0,
+        "give": "shield",
+        "target": "friend"
+      },
+      {
+        "op": "draw",
+        "n": 1,
+        "filter": "low"
+      }
+    ],
+    "death": []
+  },
+  {
+    "id": "original-62",
+    "cost": 3,
+    "attack": 1,
+    "health": 5,
+    "tags": [
+      "taunt"
+    ],
+    "enter": [],
+    "death": [
+      {
+        "op": "heal",
+        "n": 3
+      }
+    ]
+  },
+  {
+    "id": "original-63",
+    "cost": 5,
+    "attack": 3,
+    "health": 5,
+    "tags": [],
+    "enter": [
+      {
+        "op": "group",
+        "a": 0,
+        "h": 1,
+        "mask": "all",
+        "limit": 2,
+        "temp": false
+      },
+      {
+        "op": "armor",
+        "n": 2
+      }
+    ],
+    "death": []
+  },
+  {
+    "id": "original-64",
+    "cost": 4,
+    "attack": 2,
+    "health": 4,
+    "tags": [],
+    "enter": [
+      {
+        "op": "buff",
+        "a": 1,
+        "h": 1,
+        "mask": "all",
+        "target": "friend",
+        "temp": false
+      },
+      {
+        "op": "draw",
+        "n": 1
+      }
+    ],
+    "death": []
+  },
+  {
+    "id": "original-65",
+    "cost": 3,
+    "attack": 2,
+    "health": 3,
+    "tags": [],
+    "enter": [
+      {
+        "op": "draw",
+        "n": 1,
+        "filter": "low"
+      }
+    ],
+    "death": []
+  },
+  {
+    "id": "original-66",
+    "cost": 4,
+    "attack": 2,
+    "health": 5,
+    "tags": [],
+    "enter": [
+      {
+        "op": "freeze",
+        "target": "enemy"
+      },
+      {
+        "op": "heal",
+        "n": 2
+      }
+    ],
+    "death": []
+  },
+  {
+    "id": "manual-1512",
+    "cost": 6,
+    "attack": 3,
+    "health": 6,
+    "tags": [],
+    "enter": [
+      {
+        "op": "silence",
+        "target": "enemy"
+      },
+      {
+        "op": "draw",
+        "n": 1,
+        "filter": "troop"
+      }
+    ],
+    "death": []
+  },
+  {
+    "id": "original-68",
+    "cost": 4,
+    "attack": 3,
+    "health": 4,
+    "tags": [],
+    "enter": [
+      {
+        "op": "buff",
+        "a": 1,
+        "h": 0,
+        "mask": "all",
+        "target": "friend",
+        "temp": true
+      },
+      {
+        "op": "armor",
+        "n": 2
+      }
+    ],
+    "death": []
+  },
+  {
+    "id": "original-69",
+    "cost": 5,
+    "attack": 2,
+    "health": 6,
+    "tags": [
+      "taunt"
+    ],
+    "enter": [
+      {
+        "op": "armor",
+        "n": 4
+      }
+    ],
+    "death": []
+  },
+  {
+    "id": "manual-1520",
+    "cost": 7,
+    "attack": 5,
+    "health": 5,
+    "tags": [],
+    "enter": [
+      {
+        "op": "destroy",
+        "target": "enemy",
+        "injured": true
+      }
+    ],
+    "death": []
+  },
+  {
+    "id": "manual-1521",
+    "cost": 7,
+    "attack": 4,
+    "health": 8,
+    "tags": [
+      "taunt"
+    ],
+    "enter": [
+      {
+        "op": "armor",
+        "n": 3
+      }
+    ],
+    "death": []
+  },
+  {
+    "id": "manual-1518",
+    "cost": 6,
+    "attack": 4,
+    "health": 7,
+    "tags": [
+      "taunt"
+    ],
+    "enter": [],
+    "death": [
+      {
+        "op": "armor",
+        "n": 3
+      }
+    ]
+  },
+  {
+    "id": "manual-1522",
+    "cost": 6,
+    "attack": 4,
+    "health": 6,
+    "tags": [
+      "taunt",
+      "anti"
+    ],
+    "enter": [
+      {
+        "op": "armor",
+        "n": 1
+      }
+    ],
+    "death": []
+  },
+  {
+    "id": "manual-1524",
+    "cost": 4,
+    "attack": 2,
+    "health": 4,
+    "tags": [],
+    "enter": [
+      {
+        "op": "refund",
+        "n": 1
+      }
+    ],
+    "death": []
+  },
+  {
+    "id": "general-56-58629",
+    "cost": 5,
+    "attack": 3,
+    "health": 6,
+    "tags": [
+      "taunt"
+    ],
+    "enter": [
+      {
+        "op": "buff",
+        "a": 0,
+        "h": 2,
+        "mask": "foot",
+        "target": "friend",
+        "temp": false
+      }
+    ],
+    "death": []
+  },
+  {
+    "id": "general-103-50637",
+    "cost": 5,
+    "attack": 4,
+    "health": 3,
+    "tags": [],
+    "enter": [
+      {
+        "op": "damage",
+        "n": 4,
+        "target": "enemy"
+      }
+    ],
+    "death": []
+  },
+  {
+    "id": "original-77",
+    "cost": 5,
+    "attack": 5,
+    "health": 3,
+    "tags": [
+      "stealth"
+    ],
+    "enter": [],
+    "death": []
+  },
+  {
+    "id": "general-38-51333",
+    "cost": 6,
+    "attack": 4,
+    "health": 5,
+    "tags": [],
+    "enter": [
+      {
+        "op": "aoe",
+        "n": 1
+      }
+    ],
+    "death": []
+  },
+  {
+    "id": "original-79",
+    "cost": 3,
+    "attack": 2,
+    "health": 3,
+    "tags": [],
+    "enter": [
+      {
+        "op": "draw",
+        "n": 1,
+        "filter": "high"
+      }
+    ],
+    "death": []
+  },
+  {
+    "id": "cbdb-30257",
+    "cost": 6,
+    "attack": 3,
+    "health": 5,
+    "tags": [],
+    "enter": [
+      {
+        "op": "draw",
+        "n": 1,
+        "filter": "troop"
+      },
+      {
+        "op": "armor",
+        "n": 3
+      }
+    ],
+    "death": []
+  },
+  {
+    "id": "manual-1555",
+    "cost": 6,
+    "attack": 4,
+    "health": 5,
+    "tags": [
+      "rush",
+      "shield"
+    ],
+    "enter": [],
+    "death": []
+  },
+  {
+    "id": "manual-1565",
+    "cost": 6,
+    "attack": 3,
+    "health": 6,
+    "tags": [],
+    "enter": [
+      {
+        "op": "setattack",
+        "n": 1,
+        "target": "enemy"
+      }
+    ],
+    "death": []
+  },
+  {
+    "id": "general-285-45592",
+    "cost": 6,
+    "attack": 6,
+    "health": 5,
+    "tags": [
+      "rush"
+    ],
+    "enter": [],
+    "death": []
+  },
+  {
+    "id": "manual-1553",
+    "cost": 6,
+    "attack": 5,
+    "health": 5,
+    "tags": [
+      "rush"
+    ],
+    "enter": [
+      {
+        "op": "damage",
+        "n": 2,
+        "target": "enemy",
+        "injured": true
+      }
+    ],
+    "death": []
+  },
+  {
+    "id": "manual-1554",
+    "cost": 5,
+    "attack": 4,
+    "health": 5,
+    "tags": [
+      "taunt"
+    ],
+    "enter": [
+      {
+        "op": "damage",
+        "n": 1,
+        "target": "enemy"
+      }
+    ],
+    "death": []
+  },
+  {
+    "id": "manual-1569",
+    "cost": 6,
+    "attack": 4,
+    "health": 4,
+    "tags": [],
+    "enter": [
+      {
+        "op": "aoe",
+        "n": 2
+      }
+    ],
+    "death": []
+  },
+  {
+    "id": "general-398-60962",
+    "cost": 5,
+    "attack": 4,
+    "health": 5,
+    "tags": [
+      "rush"
+    ],
+    "enter": [],
+    "death": []
+  },
+  {
+    "id": "original-88",
+    "cost": 5,
+    "attack": 4,
+    "health": 5,
+    "tags": [
+      "taunt"
+    ],
+    "enter": [
+      {
+        "op": "armor",
+        "n": 2
+      }
+    ],
+    "death": []
+  },
+  {
+    "id": "original-89",
+    "cost": 5,
+    "attack": 3,
+    "health": 5,
+    "tags": [],
+    "enter": [
+      {
+        "op": "draw",
+        "n": 1,
+        "filter": "troop"
+      },
+      {
+        "op": "discount",
+        "n": 1
+      }
+    ],
+    "death": []
+  },
+  {
+    "id": "cbdb-3332",
+    "cost": 3,
+    "attack": 2,
+    "health": 4,
+    "tags": [],
+    "enter": [
+      {
+        "op": "heal",
+        "n": 3
+      }
+    ],
+    "death": []
+  },
+  {
+    "id": "general-638-62417",
+    "cost": 5,
+    "attack": 3,
+    "health": 4,
+    "tags": [
+      "rush"
+    ],
+    "enter": [
+      {
+        "op": "buff",
+        "a": 0,
+        "h": 1,
+        "mask": "cavalry",
+        "target": "friend",
+        "temp": false
+      }
+    ],
+    "death": []
+  },
+  {
+    "id": "general-795-83328",
+    "cost": 6,
+    "attack": 4,
+    "health": 6,
+    "tags": [],
+    "enter": [
+      {
+        "op": "buff",
+        "a": 1,
+        "h": 1,
+        "mask": "ranged",
+        "target": "friend",
+        "temp": false
+      },
+      {
+        "op": "armor",
+        "n": 2
+      }
+    ],
+    "death": []
+  },
+  {
+    "id": "manual-1616",
+    "cost": 6,
+    "attack": 3,
+    "health": 7,
+    "tags": [
+      "taunt"
+    ],
+    "enter": [
+      {
+        "op": "armor",
+        "n": 3
+      }
+    ],
+    "death": []
+  },
+  {
+    "id": "manual-1625",
+    "cost": 4,
+    "attack": 2,
+    "health": 5,
+    "tags": [],
+    "enter": [
+      {
+        "op": "draw",
+        "n": 1
+      }
+    ],
+    "death": []
+  },
+  {
+    "id": "manual-1618",
+    "cost": 4,
+    "attack": 2,
+    "health": 3,
+    "tags": [],
+    "enter": [
+      {
+        "op": "silence",
+        "target": "enemy"
+      },
+      {
+        "op": "refund",
+        "n": 1
+      }
+    ],
+    "death": []
+  },
+  {
+    "id": "manual-1624",
+    "cost": 4,
+    "attack": 2,
+    "health": 4,
+    "tags": [],
+    "enter": [
+      {
+        "op": "draw",
+        "n": 1,
+        "filter": "tactic"
+      },
+      {
+        "op": "selfdamage",
+        "n": 2
+      }
+    ],
+    "death": []
+  },
+  {
+    "id": "original-97",
+    "cost": 5,
+    "attack": 4,
+    "health": 5,
+    "tags": [
+      "taunt"
+    ],
+    "enter": [
+      {
+        "op": "armor",
+        "n": 1
+      }
+    ],
+    "death": []
+  },
+  {
+    "id": "original-98",
+    "cost": 4,
+    "attack": 3,
+    "health": 4,
+    "tags": [],
+    "enter": [
+      {
+        "op": "draw",
+        "n": 1
+      }
+    ],
+    "death": []
+  },
+  {
+    "id": "original-99",
+    "cost": 4,
+    "attack": 3,
+    "health": 5,
+    "tags": [],
+    "enter": [
+      {
+        "op": "heal",
+        "n": 2
+      }
+    ],
+    "death": []
+  }
+]

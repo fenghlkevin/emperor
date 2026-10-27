@@ -111,7 +111,7 @@ test('failed save of a full turn publishes no recovery, and retry does not doubl
  const next=persistCandidate(initial,candidate,{setItem(){}});assert.equal(welfareValue(city(next),'stability'),50.25);const restored=save(next),snapshot=JSON.stringify(restored);settleDomestic(restored.domestic,2);assert.equal(JSON.stringify(restored),snapshot);
 });
 
-test('effect report displays fractional gains, caps, delayed activation and combat limitation',()=>{
+test('effect report displays fractional gains, caps, delayed activation and combat defense',()=>{
  const s=fixture(),p=city(s);p.buildings.temples=8;p.buildings.palaces=1;settleBuildingEffects(p,2,true,false);
- const html=buildingEffectsReport(p,2);assert.match(html,/当前收益已封顶/);assert.match(html,/0.1/);assert.match(html,/尚不影响战棋伤害/);assert.match(html,/缺粮暂停/);
+ const html=buildingEffectsReport(p,2);assert.match(html,/当前收益已封顶/);assert.match(html,/0.1/);assert.match(html,/守方战场防御系数/);assert.match(html,/缺粮暂停/);
 });

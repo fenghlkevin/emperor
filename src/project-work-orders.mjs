@@ -3,10 +3,10 @@ import {workOfficerEffect,effectiveWorkMode} from './official-effects.mjs';
 import {activeDisaster} from './disasters.mjs';
 import {welfareValue} from './building-effects.mjs';
 import {CONSTRUCTION_PLANS} from './construction.mjs';
-import {SPECIAL_PLANS} from './special-buildings.mjs';
+import {SPECIAL_PLANS,specialProjectPlan} from './special-buildings.mjs';
 import {projectWorkers,projectLaborOverview} from './project-labor.mjs';
-export function findProject(d,p,kind){return kind==='construction'?p.construction.project:kind==='development'?p.development.project:kind==='special'&&d.specialWorks.project?.provinceId===p.id?d.specialWorks.project:null;}
-export function projectTotal(kind,r){return kind==='construction'?CONSTRUCTION_PLANS[r.building].turns:kind==='development'?1:SPECIAL_PLANS[r.building].turns;}
+export function findProject(d,p,kind){return kind==='construction'?p.construction.project:kind==='development'?p.development.project:kind==='expansion'?p.cityCapacity.expansion:kind==='special'&&d.specialWorks.project?.provinceId===p.id?d.specialWorks.project:null;}
+export function projectTotal(kind,r){return kind==='construction'?(r.requiredTurns??CONSTRUCTION_PLANS[r.building].turns):kind==='development'?1:kind==='expansion'?6:specialProjectPlan(r).turns;}
 export function configureProjectWork(state,provinceId,kind,{mode=0,duration=1,comfort=false}={}){
  const s=structuredClone(state),d=s.domestic,p=d.provinces.find(p=>p.id===provinceId&&p.countryId===d.playerCountryId);
  if(!p||p.resourceRulesVersion!==1)throw Error('仅新制本国工程可调整投入');
@@ -30,10 +30,10 @@ export function quoteProjectWork(state,provinceId,kind,options={}){
 }
 export function cancelProjectWork(state,provinceId,kind,id){
  const s=structuredClone(state),d=s.domestic,p=d.provinces.find(p=>p.id===provinceId&&p.countryId===d.playerCountryId);
- if(!p||p.resourceRulesVersion!==1||!['construction','development'].includes(kind))throw Error('请选择新制本国普通工程或开垦项目');
+ if(!p||p.resourceRulesVersion!==1||!['construction','development','expansion'].includes(kind))throw Error('请选择新制本国普通工程或开垦项目');
  if(id!==d.industryActions.nextId)throw Error('停建指令已执行或状态已更新');
  const r=findProject(d,p,kind);if(!r)throw Error('没有可停建的项目');
  if(r.ownerId&&r.ownerId!==d.playerCountryId)throw Error('不能停建其他国家的工程');
- p[kind].project=null;d.industryActions.nextId++;
+ if(kind==='expansion')delete p.cityCapacity.expansion;else p[kind].project=null;d.industryActions.nextId++;
  return {state:s,message:'工程已停建，已付费用不退，后续旬不再占用民夫；当旬已使用的人手不重复复用。'};
 }

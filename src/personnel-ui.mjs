@@ -1,3 +1,4 @@
+import {examFee} from './difficulty.mjs';
 import {officeId} from './personnel-actions.mjs';
 import {officeRegister} from './personnel.mjs';
 import {officialAvatar} from './official-art.mjs';

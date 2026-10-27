@@ -1,0 +1,81 @@
+{
+  "tool": "built-in image_gen",
+  "referenceSource": "User supplied photographs, aoi-user-reference-1.png and aoi-user-reference-2.png",
+  "preserveCurrentKneeling": true,
+  "items": [
+    {
+      "key": "绯绡鼓舞",
+      "asset": "assets/beauties/random/番邦女子/日本女子-葵司-绯绡鼓舞.png",
+      "path": "/Users/fengheliang/.codex/generated_images/01a16615-cc42-7e81-aa4f-b849b888d820/exec-828f84f4-8162-4360-b40b-b7ce0193a1df.png",
+      "name": "葵司",
+      "english": "Tsukasa Aoi",
+      "title": "绯绡鼓舞",
+      "generatedPath": "/Users/fengheliang/.codex/generated_images/01a16615-cc42-7e81-aa4f-b849b888d820/exec-bbe5ecec-9bdc-448c-a39c-796954737e09.png",
+      "prompt": "Use case: identity-preserve. Image 1 is the fully clothed adult costume portrait to correct. Images 2 and 3 are USER SUPPLIED photographs of the same adult woman, Tsukasa Aoi, and are the authoritative face and haircut reference. Replace ONLY image 1's face and hairstyle with a faithful likeness of the woman in images 2 and 3: reproduce her own eye shape and spacing, soft cheek contour, nose bridge and tip, full natural lips, rounded chin and jaw, not a generic fashion model face. Her short dark espresso-brown bob, airy side fringe and visible nape, no long hair or bun or extensions. Natural tiny closed-mouth smile, relaxed eyes. Keep image 1's existing body, pose, camera angle, clothing, jewelry and props unchanged. Keep head size proportionately small, neck natural and upright. Do not copy reference underwear, pose, backdrop or lighting. Remain in the original fully clothed opaque Japanese summer costume. Preserve the ENTIRE person, fingers, toes and props within frame with empty margin. Actual transparent alpha PNG, no shadow, gradient, matte, text or background.",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentFraction": 0.6555,
+        "borderPixelsAbove20": 0
+      },
+      "assetSha256": "f5f71e8188b0aa16891c147c610fabda7fa0eb7891562556cad66387f2c03a93"
+    },
+    {
+      "key": "水蓝静修",
+      "asset": "assets/beauties/random/番邦女子/日本女子-葵司-水蓝静修.png",
+      "path": "/Users/fengheliang/.codex/generated_images/01a16615-cc42-7e81-aa4f-b849b888d820/exec-02dc9f7c-d7c0-4c7c-a4ff-644b08b77f9b.png",
+      "name": "葵司",
+      "english": "Tsukasa Aoi",
+      "title": "水蓝静修",
+      "generatedPath": "/Users/fengheliang/.codex/generated_images/01a16615-cc42-7e81-aa4f-b849b888d820/exec-514e258d-764a-4ead-92b6-0159f32826a2.png",
+      "prompt": "Use case: identity-preserve. Image 1 is the fully clothed adult costume portrait to correct. Images 2 and 3 are USER SUPPLIED photographs of the same adult woman, Tsukasa Aoi, and are the authoritative face and haircut reference. Replace ONLY image 1's face and hairstyle with a faithful likeness of the woman in images 2 and 3: reproduce her own eye shape and spacing, soft cheek contour, nose bridge and tip, full natural lips, rounded chin and jaw, not a generic fashion model face. Her short dark espresso-brown bob, airy side fringe and visible nape, no long hair or bun or extensions. Natural tiny closed-mouth smile, relaxed eyes. Keep image 1's existing body, pose, camera angle, clothing, jewelry and props unchanged. Keep head size proportionately small, neck natural and upright. Do not copy reference underwear, pose, backdrop or lighting. Remain in the original fully clothed opaque Japanese summer costume. Preserve the ENTIRE person, fingers, toes and props within frame with empty margin. Actual transparent alpha PNG, no shadow, gradient, matte, text or background.",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentFraction": 0.4919,
+        "borderPixelsAbove20": 0
+      },
+      "assetSha256": "bb5f8ff67553a9d487d4742e8154c60361b5f4a3298608b1f2222f589724f1f4"
+    },
+    {
+      "key": "front",
+      "asset": "assets/beauties/random/番邦女子/日本女子-葵司-碧绡端坐.png",
+      "path": "/Users/fengheliang/.codex/generated_images/01a16615-cc42-7e81-aa4f-b849b888d820/exec-be31b03a-0e13-4e41-9b02-7907373eb89b.png",
+      "name": "葵司",
+      "english": "Tsukasa Aoi",
+      "title": "front",
+      "generatedPath": "/Users/fengheliang/.codex/generated_images/01a16615-cc42-7e81-aa4f-b849b888d820/exec-bc78f8dc-b5bc-4950-af3d-fc0cc75e70a0.png",
+      "prompt": "Use case: identity-preserve. Image 1 is the fully clothed adult costume portrait to correct. Images 2 and 3 are USER SUPPLIED photographs of the same adult woman, Tsukasa Aoi, and are the authoritative face and haircut reference. Replace ONLY image 1's face and hairstyle with a faithful likeness of the woman in images 2 and 3: reproduce her own eye shape and spacing, soft cheek contour, nose bridge and tip, full natural lips, rounded chin and jaw, not a generic fashion model face. Her short dark espresso-brown bob, airy side fringe and visible nape, no long hair or bun or extensions. Natural tiny closed-mouth smile, relaxed eyes. Keep image 1's existing body, pose, camera angle, clothing, jewelry and props unchanged. Keep head size proportionately small, neck natural and upright. Do not copy reference underwear, pose, backdrop or lighting. Remain in the original fully clothed opaque Japanese summer costume. Preserve the ENTIRE person, fingers, toes and props within frame with empty margin. Actual transparent alpha PNG, no shadow, gradient, matte, text or background.",
+      "validation": {
+        "size": [
+          1113,
+          1413
+        ],
+        "alphaRange": [
+          0,
+          255
+        ],
+        "transparentFraction": 0.6005,
+        "borderPixelsAbove20": 0
+      },
+      "assetSha256": "1fc2f888eed7227962e01d7c28d1ce3ab76e82776cd483bb55f76090c0f184f1"
+    }
+  ],
+  "preservedAssets": [
+    "assets/beauties/random/番邦女子/日本女子-葵司.png",
+    "assets/beauties/random/番邦女子/日本女子-葵司-碧绡俯拍.png"
+  ],
+  "status": "integrated"
+}

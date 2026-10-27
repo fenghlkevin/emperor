@@ -1,0 +1,75 @@
+{
+  "scope": "九个图像来源区域覆盖11个势力，刀盾及文武各一形象；其他八兵种仍待补",
+  "status": "partial-source-art-native-verified",
+  "generator": "builtin imagegen",
+  "assets": [
+    {
+      "role": "infantry",
+      "path": "assets/battle/card-source-infantry-v1.png",
+      "source": "exec-a08e404b-d265-494f-9f14-83aaaf6c34f3.png",
+      "sha256": "8d4ab56a36fb1347d9e245b6339f6ddfbb45c39ef7963ac1ebe264924a9f4e0b",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "visualReview": "全部九格已查看，阿克苏姆/柏柏尔/欧洲/亚洲来源人群与装备可辨；非精确时代服饰或人口复原"
+    },
+    {
+      "role": "civil",
+      "path": "assets/battle/card-source-civil-v1.png",
+      "source": "exec-093da27a-6e1e-4f7a-8bf1-a8942ef445db.png",
+      "sha256": "5b469d0122721be4797cad3aafdfeeaba7952b6957645233e5f9dbedc110a234",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "visualReview": "全部九格已查看，阿克苏姆/柏柏尔/欧洲/亚洲来源人群与装备可辨；非精确时代服饰或人口复原"
+    },
+    {
+      "role": "military",
+      "path": "assets/battle/card-source-military-v1.png",
+      "source": "exec-3ab586f9-0ce2-4f0e-bbde-adf70ade8572.png",
+      "sha256": "8965a5f5022ee11d55594bf2b140ad6474694e3515af63d658e63b30112fb4ae",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "visualReview": "全部九格已查看，阿克苏姆/柏柏尔/欧洲/亚洲来源人群与装备可辨；非精确时代服饰或人口复原"
+    }
+  ],
+  "model": {
+    "passed": 26,
+    "failed": 0,
+    "durationMs": 3870.206167
+  },
+  "native": {
+    "troop": 27,
+    "people": 54,
+    "errors": [],
+    "elapsedSeconds": 122.03300000000002,
+    "visualReview": "阿克苏姆实际刀盾兵部署截图已查看"
+  },
+  "referencesRead": [
+    {
+      "url": "https://www.metmuseum.org/essays/arms-and-armor-in-medieval-europe",
+      "use": "早期欧洲环甲/鳞甲与圆椭圆盾，排除晚期全身板甲"
+    },
+    {
+      "url": "https://www.metmuseum.org/art/collection/search/465790",
+      "use": "七世纪法兰克腰带金属件，非全套军装证明"
+    }
+  ],
+  "referenceFailed": [
+    {
+      "url": "https://resources.metmuseum.org/resources/metpublications/pdf/Lost_Kingdoms_Hindu_Buddhist_Sculpture_of_Early_Southeast_Asia.pdf",
+      "reason": "正文超过网页工具20MB读取限制，未以搜索摘要冒充已读证据"
+    }
+  ],
+  "limitations": [
+    "三国海岛东南亚仍共用maritime代表",
+    "其余八兵种目前回退旧宽池，未标细分完成",
+    "林邑/靺鞨/黠戛斯与八虚构边疆尚未细化",
+    "新来源肖像各角色一张，variant0/1同图，不冒充双变体",
+    "姓名池与能力规则未改，未来随机来源姓名仍需检查"
+  ]
+}

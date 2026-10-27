@@ -1,12 +1,18 @@
+import {balanced} from './development-balance.mjs';
+import {outputFor} from './economy.mjs';
 import {borderingCountries} from './war.mjs';
 import {nationalGrain,postNationalGrain,nationalFoodForecast} from './national-resources.mjs';
 import {transferTreasury} from './finance.mjs';
 export const MARKET_SURCHARGE_RATE=.5;
+export function marketCapacity(d,a,b){
+ const capacity=id=>d.provinces.filter(p=>p.countryId===id).reduce((n,p)=>n+outputFor(p,'commerce')+p.buildings.markets*120,0);
+ return Math.max(100,Math.round(Math.min(capacity(a),capacity(b))*1.5));
+}
 export function grainMarketAccess(d,a,b,turn){
- const relation=d.diplomacy.find(r=>r.countryIds.includes(a)&&r.countryIds.includes(b)&&a!==b),quota=(relation?.agreement?.exports??0)+(relation?.agreement?.imports??0);
+ const relation=d.diplomacy.find(r=>r.countryIds.includes(a)&&r.countryIds.includes(b)&&a!==b),agreedQuota=(relation?.agreement?.exports??0)+(relation?.agreement?.imports??0),quota=balanced(d)?Math.min(agreedQuota,marketCapacity(d,a,b)):agreedQuota;
  const adjacent=borderingCountries(d,a).some(c=>c.id===b),open=Boolean(relation&&relation.relation!=='hostile'&&quota>0);
  const spent=relation?.trade?.grainMarket?.turn===turn?relation.trade.grainMarket.spent:0;
- return {relation,adjacent,open,allowed:adjacent&&open,quota,spent,remaining:Math.max(0,quota-spent)};
+ return {relation,adjacent,open,allowed:adjacent&&open,quota,agreedQuota,spent,remaining:Math.max(0,quota-spent)};
 }
 export function quoteMarketPrice(d,buyer,seller,turn,baseCost){
  const access=grainMarketAccess(d,buyer,seller,turn);
@@ -28,6 +34,7 @@ export function recordMarketTrade(d,{buyer,seller,turn,amount,cost,baseCost,surc
 // Foreign countries buy only to cover an actual food shortage, never empty the
 // player's reserve. The pair's shared turnover includes both trade directions.
 export function settleForeignGrainPurchases(d,turn){
+ if(balanced(d)){for(const c of d.countries.filter(c=>c.id!==d.playerCountryId&&c.provinceIds.length))purchaseForeignRelief(d,c.id,turn);return;}
  const home=d.playerCountryId;
  for(const other of borderingCountries(d,home).toSorted((a,b)=>a.id.localeCompare(b.id))){
   const access=grainMarketAccess(d,home,other.id,turn);if(!access.allowed)continue;
@@ -44,6 +51,17 @@ export function settleForeignGrainPurchases(d,turn){
   recordMarketTrade(d,{buyer:other.id,seller:home,turn,amount:lo,...q,key});
 
  }
+}
+export function purchaseForeignRelief(d,buyer,turn,budget=1000){
+ const buyerCountry=d.countries.find(c=>c.id===buyer),need=nationalFoodForecast(d,turn+1,buyer);
+ if(!need.shortfall)return 0;
+ const sellers=borderingCountries(d,buyer).filter(c=>grainMarketAccess(d,buyer,c.id,turn).allowed).sort((a,b)=>nationalGrain(d,b.id)-nationalGrain(d,a.id));
+ for(const seller of sellers){const relation=grainMarketAccess(d,buyer,seller.id,turn).relation,key=`foreign-relief:${turn}:${buyer}:${seller.id}`;if(relation.trade.grainMarket?.turn===turn&&relation.trade.grainMarket.records.some(r=>r.key===key))continue;const f=nationalFoodForecast(d,turn+1,seller.id),available=Math.max(0,nationalGrain(d,seller.id)-f.need*6),limit=Math.min(need.shortfall,available);
+  let lo=0,hi=limit;while(lo<hi){const mid=Math.ceil((lo+hi)/2),q=quoteMarketPrice(d,buyer,seller.id,turn,mid*2);if(q.cost<=Math.min(budget,buyerCountry.fiscal.treasury))lo=mid;else hi=mid-1;}
+  if(!lo)continue;const q=quoteMarketPrice(d,buyer,seller.id,turn,lo*2);
+  transferTreasury(d,buyer,seller.id,q.cost,{turn,key,reason:'互市救急购粮'});postNationalGrain(d,seller.id,{turn,expense:lo,category:'transfer',reason:'互市售粮',key:key+':out'});postNationalGrain(d,buyer,{turn,income:lo,category:'purchase',reason:'互市救济购粮',key:key+':in'});recordMarketTrade(d,{buyer,seller:seller.id,turn,amount:lo,...q,key});return lo;
+ }
+ return 0;
 }
 export function validateGrainMarkets(d){
  for(const r of d.diplomacy){const m=r.trade.grainMarket;if(!m)continue;

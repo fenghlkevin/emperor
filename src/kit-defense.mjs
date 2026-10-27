@@ -1,9 +1,11 @@
+import {difficultyRules} from './difficulty.mjs';
 import {normalizeLandmarkSelection,landmarkSelectionIds,planLandmarkAllocation} from './card-battle-landmarks.mjs';
 import {normalizeSecretSelection,secretSelectionIds,planSecretAllocation} from './card-battle-secrets.mjs';
 import {normalizeWeaponSelection,weaponSelectionIds,weaponKitCounts,expectedWeaponKits,weaponLossForSource} from './card-battle-weapons.mjs';
 import {archiveCardHistory} from './card-battle-history-archive.mjs';
 import {armyCardCount,normalizeTacticSelection} from './card-battle-tactics.mjs';
 import {attachCards,ensureCardPeople,battlePerson,CARD_RULES} from './card-battle.mjs';
+import {captureArmyRecovery,offerArmyRecovery} from './army-recovery.mjs';
 import {gainOfficialExperience} from './official-growth.mjs';
 import {MAX_SQUAD_SOLDIERS,squadSoldierLimit} from './formation-limits.mjs';
 import {ENABLED_KITS,worldKitDepot,reserveWorldKits,settleWorldKits} from './troop-kit-world.mjs';
@@ -12,7 +14,7 @@ import {kitGarrison,planKitWeapons} from './kit-war.mjs';
 import {generals} from './war.mjs';
 import {createBattle,validateBattle,bonuses,actBattle,aiAction} from './battle.mjs';
 import {conclude} from './foreign-strategy.mjs';
-import {specialActive} from './special-buildings.mjs';
+import {specialActive,specialDefenseBonus} from './special-buildings.mjs';
 import {validateDomestic} from './domestic.mjs';
 const acting={id:null,name:'署理将领',martial:30,intelligence:30,leadership:30,experience:0};
 const label=id=>TROOP_KITS.find(k=>k.id===id)?.name??'乡勇';
@@ -72,12 +74,13 @@ export function quoteKitDefense(state,plan,{legacyReplay=false,cardRules=CARD_RU
 export function beginKitDefense(state,plan){
  const q=quoteKitDefense(state,plan);if(q.selectedLandmarks&&plan.battleMode!=='cards')throw Error('地标仅用于卡牌战斗');if(q.selectedSecrets&&plan.battleMode!=='cards')throw Error('奥秘仅用于卡牌战斗');if(weaponSelectionIds(q.selectedWeapons).length&&plan.battleMode!=='cards')throw Error('武器仅用于卡牌战斗');
  const s=structuredClone(state),d=s.domestic,c=d.strategy.pending,id=key(d,c),p=d.provinces.find(p=>p.id===c.provinceId),allocation=planKitWeapons(d,q.friendly,q.enemy,q.selectedWeapons),secretAllocation=planSecretAllocation(q.friendly,q.enemy,q.selectedSecrets),landmarkAllocation=planLandmarkAllocation(q.friendly,q.enemy,q.selectedLandmarks);
+ captureArmyRecovery(d,s.turn);
  for(const sourceId of new Set([...q.friendly,...q.enemy].map(u=>u.sourceId)))reserveWorldKits(d,sourceId,id,[...q.friendly,...q.enemy].filter(u=>u.sourceId===sourceId),{extraKits:expectedWeaponKits({command:{weaponAllocation:allocation}},sourceId)});
- d.war.battle=createBattle({command:{id:d.war.nextId,kind:'war',kitVersion:1,...(landmarkAllocation?{cardLandmarks:q.selectedLandmarks,landmarkAllocation}:{}),...(secretAllocation?{cardSecrets:q.selectedSecrets,secretAllocation}:{}),...(allocation?{cardWeapons:q.selectedWeapons,weaponAllocation:allocation}:{}),...(d.resourceRulesVersion===1?{squadLimitVersion:1}:{}),kitBattleId:id,defensive:true,campaignId:c.id,deploymentVersion:2,deployment:q.plan,generalId:q.plan.generalId,commanderSquad:q.plan.commander,squads:q.plan.squads,forces:q.forces,attack:structuredClone(c.attack)},friendly:q.friendly,enemy:q.enemy,training:0,enemyTraining:c.attack.training,targetName:`${p.name}保卫战`,field:{terrain:p.terrain,surface:kitSurface(p),defenderSide:'home',defense:Math.min(1.5,1+p.welfare.defense/500+(specialActive(d,'greatWall',s.turn)?.2:0))}});
- if(plan.battleMode==='cards'){d.war.battle.command.battleMode='cards';if(plan.cardTactics!==undefined)d.war.battle.command.cardTactics=structuredClone(plan.cardTactics);if(q.selectedWeapons!==undefined)d.war.battle.command.cardWeapons=structuredClone(q.selectedWeapons);ensureCardPeople(d,d.war.battle);attachCards(d.war.battle);}
+ d.war.battle=createBattle({command:{id:d.war.nextId,kind:'war',kitVersion:1,...(landmarkAllocation?{cardLandmarks:q.selectedLandmarks,landmarkAllocation}:{}),...(secretAllocation?{cardSecrets:q.selectedSecrets,secretAllocation}:{}),...(allocation?{cardWeapons:q.selectedWeapons,weaponAllocation:allocation}:{}),...(d.resourceRulesVersion===1?{squadLimitVersion:1}:{}),kitBattleId:id,defensive:true,campaignId:c.id,deploymentVersion:2,deployment:q.plan,generalId:q.plan.generalId,commanderSquad:q.plan.commander,squads:q.plan.squads,forces:q.forces,attack:structuredClone(c.attack)},friendly:q.friendly,enemy:q.enemy,training:0,enemyTraining:c.attack.training,targetName:`${p.name}保卫战`,field:{terrain:p.terrain,surface:kitSurface(p),defenderSide:'home',defense:Math.min(1.5,1+p.welfare.defense/500+specialDefenseBonus(d,s.turn))}});
+ if(plan.battleMode==='cards'){d.war.battle.command.battleMode='cards';if(plan.cardTactics!==undefined)d.war.battle.command.cardTactics=structuredClone(plan.cardTactics);if(q.selectedWeapons!==undefined)d.war.battle.command.cardWeapons=structuredClone(q.selectedWeapons);ensureCardPeople(d,d.war.battle);d.war.battle.difficultyId=difficultyRules(d).id;attachCards(d.war.battle);}
  validateKitDefense(d,d.war.battle);validateDomestic(d);return s;
 }
-export function validateKitDefense(d,b){
+export function validateKitDefense(d,b){if(b.difficultyId!==undefined&&b.difficultyId!==difficultyRules(d).id)throw Error('战场难度不一致');
  if(b.command.kitVersion!==1||!b.command.defensive)return;validateBattle(b);const c=d.strategy?.pending,id=c&&key(d,c);
  if(!c||c.defender!==d.playerCountryId||b.command.campaignId!==c.id||b.command.kitBattleId!==id||b.command.deploymentVersion!==2)throw Error('套装守城来源无效');
  const draft=structuredClone(d);delete draft.war.battle;
@@ -103,7 +106,7 @@ export function finishKitDefense(state){
  receipt.defenseDetails={version:2,units:b.units.map(u=>({side:u.side,sourceId:u.sourceId,kind:u.kind,generalName:b.cards?.rulesVersion>=3?battlePerson(b,u).name:u.general.name,...(b.cards?.rulesVersion>=3?{generalId:u.cardPersonId}:{}),initial:u.initial,dead:u.dead,survived:u.count})),kitLoss:{home:kits('home'),enemy:kits('enemy')}};
  const ids=new Set([b.command.generalId,...b.command.squads.map(u=>u.generalId)].filter(Boolean));for(const o of d.justice.officials.filter(o=>ids.has(o.id))){gainOfficialExperience(o,3);}
  if(b.command.weaponAllocation)for(const sourceId of new Set(b.units.map(u=>u.sourceId))){const loss=weaponLossForSource(b,sourceId);if(Object.keys(loss).length)receipt.lines.push(`${sourceId==='central'?'中央':d.provinces.find(p=>p.id===sourceId).name}备用武器毁损：${Object.entries(loss).map(([kind,n])=>label(kind)+n+'人份完整套装').join('、')}；不额外扣兵员。`);}
- receipt.lines.push(...b.command.forces.map(f=>`${f.sourceId==='central'?'中央':d.provinces.find(p=>p.id===f.sourceId).name}：生还部队携装归营，按兵种套装核销损失。`));delete d.war.battle;
+ receipt.lines.push(...b.command.forces.map(f=>`${f.sourceId==='central'?'中央':d.provinces.find(p=>p.id===f.sourceId).name}：生还部队携装归营，按兵种套装核销损失。`));delete d.war.battle;offerArmyRecovery(d,s.turn);
  if(!d.centralArmy.soldiers){d.centralArmy.training=0;d.general.ongoing=false;d.general.trainingFloor=0;}
  s.stats.treasury=d.countries.find(c=>c.id===d.playerCountryId).fiscal.treasury;s.stats.prestige=d.countries.find(c=>c.id===d.playerCountryId).prestige;validateDomestic(d);return {state:s,receipt};
 }
@@ -113,6 +116,7 @@ export function autoKitDefense(state,plan=defaultKitDefensePlan(state)){
 export function withdrawKitDefense(state,{central=0}={}){
  const s=structuredClone(state),d=s.domestic,c=d.strategy?.pending;
  if(!c||c.defender!==d.playerCountryId||d.war.battle||d.collapse?.pending||d.collapse?.ended||state.stats?.life===0||state.reignResult||!Number.isSafeInteger(central)||central<0||central>d.centralArmy.soldiers)throw Error('当前不能撤守');
+ captureArmyRecovery(d,s.turn);
  const forces=kitDefenseSources(d).map(f=>({...f,soldiers:f.sourceId==='central'?Math.min(f.soldiers,central):f.soldiers})).filter(f=>f.soldiers>0).map(({countryId,sourceId,soldiers,training})=>({countryId,sourceId,soldiers,training}));
  const id=`kit-withdraw:${c.id}:${d.war.nextId}`;
  function retreatLoss(f,ratio){
@@ -121,6 +125,7 @@ export function withdrawKitDefense(state,{central=0}={}){
   reserveWorldKits(d,f.sourceId,id,units);settleWorldKits(d,f.sourceId,id,units.map((u,i)=>u.count-losses[i]));return dead;
  }
  const losses=forces.map(f=>retreatLoss(f,.04)),attackDead=retreatLoss(c.attack,.02),receipt=conclude(d,c,forces,losses,attackDead,false,s.turn,true);
+ offerArmyRecovery(d,s.turn);
  receipt.lines.push('撤守按真实来源核销：守方损失4%，攻方损失2%；未阵亡兵员携装归营。');
  if(!d.centralArmy.soldiers){d.centralArmy.training=0;d.general.ongoing=false;d.general.trainingFloor=0;}
  s.stats.treasury=d.countries.find(c=>c.id===d.playerCountryId).fiscal.treasury;s.stats.prestige=d.countries.find(c=>c.id===d.playerCountryId).prestige;validateDomestic(d);return {state:s,receipt};

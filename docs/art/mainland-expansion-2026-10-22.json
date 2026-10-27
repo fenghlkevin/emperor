@@ -1,0 +1,373 @@
+{
+  "tool": "built-in image_gen",
+  "target": 10,
+  "completed": 10,
+  "selection": "Names absent from current roster and repository art history; all selected actresses are adults under 40 as of 2026-10-22.",
+  "items": [
+    {
+      "id": "mainland-expansion-20261022-01",
+      "name": "54eb923be0cceff2",
+      "title": "绯纱莲灯",
+      "asset": "assets/beauties/random/原创女子/54eb923be0cceff2.png",
+      "regionId": "sheng",
+      "category": "原创女子",
+      "legacyAssets": [],
+      "status": "completed",
+      "prompt": "Use case: photorealistic-natural. Asset type: full-body cutout portrait for Chinese imperial game random beauty library. Generate ONE clearly adult Chinese mainland actress 张予曦, recognizable individual face likeness: distinctive elongated almond eyes, high defined nose bridge, small sculpted oval face. Photorealistic costume photography with natural skin pores, no illustration or doll look. Pose: standing in relaxed contrapposto, one hand holding a small unlit lotus-shaped hand lantern low beside hip, other hand relaxed. Clothing: coral-red sleeveless fitted ruqun with opaque bodice and airy pale rose gauze drape; fine breathable summer fabrics with opaque coverage of torso and hips. Accessories: gold floral hair comb, ruby drop earrings, fine pendant necklace, gold bangles. Historically inspired Chinese hairstyle and costume, no modern objects. Entire figure, hair ornaments, hands, all limbs and feet and any prop/support fully visible with generous 6 percent transparent margins. Natural adult body proportions equivalent to 7.5 heads standing height, small realistic head relative to body, proportionate shoulders and legs, eye-level 70mm lens without foreshortening. Anatomically correct two arms, two hands with five fingers each, two legs, two feet, sensible joints, relaxed fingers properly contacting objects; coherent gravity and posture. Genuine transparent alpha background. Isolated woman and specified small props/support only, no backdrop, no floor, no scenery, no shadow, no halo, no text, no watermark. Portrait 2:3 framing; seated or reclining figure still fully fits without cropping. Soft neutral daylight.",
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a16120-e3fa-7aa0-9d0e-831ef2c72319/exec-5075bc29-ab4f-4dcc-890f-4c46d31eeedc.png",
+      "validation": {
+        "mode": "RGBA",
+        "size": [
+          1024,
+          1536
+        ],
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentPixels": 985560,
+        "alphaBoundingBox": [
+          0,
+          0,
+          1006,
+          1536
+        ]
+      },
+      "visualReview": "检查原尺寸预览和浅灰/深灰合成总览：人物、发饰、道具完整，未见明显多余肢体；站坐卧及静态运动姿态可读，头身比例自然。可见手脚无明显畸形，遮挡部分不宣称逐指可见。背景alpha为真实透明，换底后无预览光晕。",
+      "likenessNote": "未使用真人照片进行面部建模，按用户要求作为原创人物素材，以随机字符串命名。原始prompt仅作历史生成记录，不代表真人身份。",
+      "originalPromptSubject": "张予曦",
+      "assetSha256": "19e913f40d3b9170a66b0e54c0d96df505d497a433a18a1593d3b4006a4b623c"
+    },
+    {
+      "id": "mainland-expansion-20261022-02",
+      "name": "90c522e3b6016075",
+      "title": "杏罗绣绷",
+      "asset": "assets/beauties/random/原创女子/90c522e3b6016075.png",
+      "regionId": "sheng",
+      "category": "原创女子",
+      "legacyAssets": [],
+      "status": "completed",
+      "prompt": "Use case: photorealistic-natural. Asset type: full-body cutout portrait for Chinese imperial game random beauty library. Generate ONE clearly adult Chinese mainland actress 徐璐, recognizable individual face likeness: angular softly square jaw, bright eyes, full natural lips. Photorealistic costume photography with natural skin pores, no illustration or doll look. Pose: sitting upright sideways on a small backless wooden stool, both feet resting naturally on ground, holding a small embroidery hoop on lap. Clothing: apricot short-sleeve summer beizi over ivory camisole and light pleated skirt; fine breathable summer fabrics with opaque coverage of torso and hips. Accessories: pearl hairpins, pearl earrings, jade bracelet, embroidered waist pendant. Historically inspired Chinese hairstyle and costume, no modern objects. Entire figure, hair ornaments, hands, all limbs and feet and any prop/support fully visible with generous 6 percent transparent margins. Natural adult body proportions equivalent to 7.5 heads standing height, small realistic head relative to body, proportionate shoulders and legs, eye-level 70mm lens without foreshortening. Anatomically correct two arms, two hands with five fingers each, two legs, two feet, sensible joints, relaxed fingers properly contacting objects; coherent gravity and posture. Genuine transparent alpha background. Isolated woman and specified small props/support only, no backdrop, no floor, no scenery, no shadow, no halo, no text, no watermark. Portrait 2:3 framing; seated or reclining figure still fully fits without cropping. Soft neutral daylight.",
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a16120-e3fa-7aa0-9d0e-831ef2c72319/exec-bfb85a7f-aec1-412c-bff9-91aaaf4e6b12.png",
+      "validation": {
+        "mode": "RGBA",
+        "size": [
+          1024,
+          1536
+        ],
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentPixels": 941509,
+        "alphaBoundingBox": [
+          0,
+          17,
+          1018,
+          1536
+        ]
+      },
+      "visualReview": "检查原尺寸预览和浅灰/深灰合成总览：人物、发饰、道具完整，未见明显多余肢体；站坐卧及静态运动姿态可读，头身比例自然。可见手脚无明显畸形，遮挡部分不宣称逐指可见。背景alpha为真实透明，换底后无预览光晕。",
+      "likenessNote": "未使用真人照片进行面部建模，按用户要求作为原创人物素材，以随机字符串命名。原始prompt仅作历史生成记录，不代表真人身份。",
+      "originalPromptSubject": "徐璐",
+      "assetSha256": "2c25ba6b25930c70c439d49bf7fee84904438c4b7e45fbe1e37ee42ecef2d9de"
+    },
+    {
+      "id": "mainland-expansion-20261022-03",
+      "name": "4c6d4950dc1e9573",
+      "title": "碧衣竹笛",
+      "asset": "assets/beauties/random/原创女子/4c6d4950dc1e9573.png",
+      "regionId": "sheng",
+      "category": "原创女子",
+      "legacyAssets": [],
+      "status": "completed",
+      "prompt": "Use case: photorealistic-natural. Asset type: full-body cutout portrait for Chinese imperial game random beauty library. Generate ONE clearly adult Chinese mainland actress 陈钰琪, recognizable individual face likeness: clear lively wide eyes, refined small oval face, defined straight brows. Photorealistic costume photography with natural skin pores, no illustration or doll look. Pose: standing relaxed three-quarter view, holding a bamboo flute diagonally at waist with both hands, not playing. Clothing: mint-green sleeveless cross-collar summer top, white airy wide trousers and short gauze overlayer; fine breathable summer fabrics with opaque coverage of torso and hips. Accessories: silver bamboo hairpin, green jade earrings, slim silver bracelet, jade belt charm. Historically inspired Chinese hairstyle and costume, no modern objects. Entire figure, hair ornaments, hands, all limbs and feet and any prop/support fully visible with generous 6 percent transparent margins. Natural adult body proportions equivalent to 7.5 heads standing height, small realistic head relative to body, proportionate shoulders and legs, eye-level 70mm lens without foreshortening. Anatomically correct two arms, two hands with five fingers each, two legs, two feet, sensible joints, relaxed fingers properly contacting objects; coherent gravity and posture. Genuine transparent alpha background. Isolated woman and specified small props/support only, no backdrop, no floor, no scenery, no shadow, no halo, no text, no watermark. Portrait 2:3 framing; seated or reclining figure still fully fits without cropping. Soft neutral daylight.",
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a16120-e3fa-7aa0-9d0e-831ef2c72319/exec-c635ee85-81a5-4338-b16e-2aa735b4353d.png",
+      "validation": {
+        "mode": "RGBA",
+        "size": [
+          1024,
+          1536
+        ],
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentPixels": 985948,
+        "alphaBoundingBox": [
+          0,
+          14,
+          1010,
+          1536
+        ]
+      },
+      "visualReview": "检查原尺寸预览和浅灰/深灰合成总览：人物、发饰、道具完整，未见明显多余肢体；站坐卧及静态运动姿态可读，头身比例自然。可见手脚无明显畸形，遮挡部分不宣称逐指可见。背景alpha为真实透明，换底后无预览光晕。",
+      "likenessNote": "未使用真人照片进行面部建模，按用户要求作为原创人物素材，以随机字符串命名。原始prompt仅作历史生成记录，不代表真人身份。",
+      "originalPromptSubject": "陈钰琪",
+      "assetSha256": "fd7327ffa6ff6f10f5a16df318163192422df081571d1786458d81e3a30be6a4"
+    },
+    {
+      "id": "mainland-expansion-20261022-04",
+      "name": "a377e0f8d3dda2ea",
+      "title": "紫绡香盒",
+      "asset": "assets/beauties/random/原创女子/a377e0f8d3dda2ea.png",
+      "regionId": "sheng",
+      "category": "原创女子",
+      "legacyAssets": [],
+      "status": "completed",
+      "prompt": "Use case: photorealistic-natural. Asset type: full-body cutout portrait for Chinese imperial game random beauty library. Generate ONE clearly adult Chinese mainland actress 祝绪丹, recognizable individual face likeness: elongated oval face, expressive almond eyes, elegant arched brows. Photorealistic costume photography with natural skin pores, no illustration or doll look. Pose: seated with both knees bent to one side, spine upright, holding an open small round carved incense box at lap. Clothing: lilac summer wrap skirt and opaque ivory short sleeve top with very light loose gauze shawl; fine breathable summer fabrics with opaque coverage of torso and hips. Accessories: silver butterfly hair ornament, amethyst earrings, delicate necklace, matching bangles. Historically inspired Chinese hairstyle and costume, no modern objects. Entire figure, hair ornaments, hands, all limbs and feet and any prop/support fully visible with generous 6 percent transparent margins. Natural adult body proportions equivalent to 7.5 heads standing height, small realistic head relative to body, proportionate shoulders and legs, eye-level 70mm lens without foreshortening. Anatomically correct two arms, two hands with five fingers each, two legs, two feet, sensible joints, relaxed fingers properly contacting objects; coherent gravity and posture. Genuine transparent alpha background. Isolated woman and specified small props/support only, no backdrop, no floor, no scenery, no shadow, no halo, no text, no watermark. Portrait 2:3 framing; seated or reclining figure still fully fits without cropping. Soft neutral daylight.",
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a16120-e3fa-7aa0-9d0e-831ef2c72319/exec-e6acc5fd-0a0b-4670-8e91-c9a96cd518cd.png",
+      "validation": {
+        "mode": "RGBA",
+        "size": [
+          1024,
+          1536
+        ],
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentPixels": 769293,
+        "alphaBoundingBox": [
+          0,
+          31,
+          1008,
+          1536
+        ]
+      },
+      "visualReview": "检查原尺寸预览和浅灰/深灰合成总览：人物、发饰、道具完整，未见明显多余肢体；站坐卧及静态运动姿态可读，头身比例自然。可见手脚无明显畸形，遮挡部分不宣称逐指可见。背景alpha为真实透明，换底后无预览光晕。",
+      "likenessNote": "未使用真人照片进行面部建模，按用户要求作为原创人物素材，以随机字符串命名。原始prompt仅作历史生成记录，不代表真人身份。",
+      "originalPromptSubject": "祝绪丹",
+      "assetSha256": "996092ff48c1c72ff8e04d6a456f5669d8cdd978b2d76b36c69f0a86975f2553"
+    },
+    {
+      "id": "mainland-expansion-20261022-05",
+      "name": "e4d7dad4baf5d1d3",
+      "title": "青绸静修",
+      "asset": "assets/beauties/random/原创女子/e4d7dad4baf5d1d3.png",
+      "regionId": "sheng",
+      "category": "原创女子",
+      "legacyAssets": [],
+      "status": "completed",
+      "prompt": "Use case: photorealistic-natural. Asset type: full-body cutout portrait for Chinese imperial game random beauty library. Generate ONE clearly adult Chinese mainland actress 宣璐, recognizable individual face likeness: gentle elongated almond eyes, soft oval face, graceful dancer bearing. Photorealistic costume photography with natural skin pores, no illustration or doll look. Pose: seated cross-legged in easy yoga pose, both hands resting on respective knees, anatomically plausible hips and ankles, no props. Clothing: teal breathable sleeveless crossover summer tunic and loose pale cream silk trousers, non-revealing; fine breathable summer fabrics with opaque coverage of torso and hips. Accessories: lotus silver hairpin, jade drop earrings, delicate wrist beads, fine waist chain. Historically inspired Chinese hairstyle and costume, no modern objects. Entire figure, hair ornaments, hands, all limbs and feet and any prop/support fully visible with generous 6 percent transparent margins. Natural adult body proportions equivalent to 7.5 heads standing height, small realistic head relative to body, proportionate shoulders and legs, eye-level 70mm lens without foreshortening. Anatomically correct two arms, two hands with five fingers each, two legs, two feet, sensible joints, relaxed fingers properly contacting objects; coherent gravity and posture. Genuine transparent alpha background. Isolated woman and specified small props/support only, no backdrop, no floor, no scenery, no shadow, no halo, no text, no watermark. Portrait 2:3 framing; seated or reclining figure still fully fits without cropping. Soft neutral daylight.",
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a16120-e3fa-7aa0-9d0e-831ef2c72319/exec-7de5ccd7-1824-4f19-93c5-c9265dd9699d.png",
+      "validation": {
+        "mode": "RGBA",
+        "size": [
+          1024,
+          1536
+        ],
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentPixels": 812537,
+        "alphaBoundingBox": [
+          0,
+          9,
+          1010,
+          1536
+        ]
+      },
+      "visualReview": "检查原尺寸预览和浅灰/深灰合成总览：人物、发饰、道具完整，未见明显多余肢体；站坐卧及静态运动姿态可读，头身比例自然。可见手脚无明显畸形，遮挡部分不宣称逐指可见。背景alpha为真实透明，换底后无预览光晕。",
+      "likenessNote": "未使用真人照片进行面部建模，按用户要求作为原创人物素材，以随机字符串命名。原始prompt仅作历史生成记录，不代表真人身份。",
+      "originalPromptSubject": "宣璐",
+      "assetSha256": "b7b951f73aaab86a7e0169c736ac1c5bd77abba3eda886b549c04826d633fd42"
+    },
+    {
+      "id": "mainland-expansion-20261022-06",
+      "name": "dd77d6a2b124d0ab",
+      "title": "丹纱葡萄",
+      "asset": "assets/beauties/random/原创女子/dd77d6a2b124d0ab.png",
+      "regionId": "sheng",
+      "category": "原创女子",
+      "legacyAssets": [],
+      "status": "completed",
+      "prompt": "Use case: photorealistic-natural. Asset type: full-body cutout portrait for Chinese imperial game random beauty library. Generate ONE clearly adult Chinese mainland actress 彭小苒, recognizable individual face likeness: large expressive round almond eyes, softly rounded cheeks, distinct full cupid bow lips. Photorealistic costume photography with natural skin pores, no illustration or doll look. Pose: standing with weight evenly balanced, left hand supporting a small shallow copper dish of grapes at waist, right hand lightly holding one grape stem above it. Clothing: vermilion light summer Central Plains ruqun with opaque fitted bodice, bare forearms and gold embroidered fine gauze drape; fine breathable summer fabrics with opaque coverage of torso and hips. Accessories: gold flower headdress, turquoise drop earrings, delicate forehead pendant, linked gold bracelets. Historically inspired Chinese hairstyle and costume, no modern objects. Entire figure, hair ornaments, hands, all limbs and feet and any prop/support fully visible with generous 6 percent transparent margins. Natural adult body proportions equivalent to 7.5 heads standing height, small realistic head relative to body, proportionate shoulders and legs, eye-level 70mm lens without foreshortening. Anatomically correct two arms, two hands with five fingers each, two legs, two feet, sensible joints, relaxed fingers properly contacting objects; coherent gravity and posture. Genuine transparent alpha background. Isolated woman and specified small props/support only, no backdrop, no floor, no scenery, no shadow, no halo, no text, no watermark. Portrait 2:3 framing; seated or reclining figure still fully fits without cropping. Soft neutral daylight.",
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a16120-e3fa-7aa0-9d0e-831ef2c72319/exec-9ec15040-0fd5-434e-80b6-4700ad251ac5.png",
+      "validation": {
+        "mode": "RGBA",
+        "size": [
+          1024,
+          1536
+        ],
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentPixels": 959487,
+        "alphaBoundingBox": [
+          55,
+          0,
+          1023,
+          1536
+        ]
+      },
+      "visualReview": "检查原尺寸预览和浅灰/深灰合成总览：人物、发饰、道具完整，未见明显多余肢体；站坐卧及静态运动姿态可读，头身比例自然。可见手脚无明显畸形，遮挡部分不宣称逐指可见。背景alpha为真实透明，换底后无预览光晕。",
+      "likenessNote": "未使用真人照片进行面部建模，按用户要求作为原创人物素材，以随机字符串命名。原始prompt仅作历史生成记录，不代表真人身份。",
+      "originalPromptSubject": "彭小苒",
+      "assetSha256": "795ae053b9564bf39e3ca9a57d5b643d90ad6ac921098e5dff421c75296de4dc"
+    },
+    {
+      "id": "mainland-expansion-20261022-07",
+      "name": "64562484114d3b76",
+      "title": "湖蓝书简",
+      "asset": "assets/beauties/random/原创女子/64562484114d3b76.png",
+      "regionId": "sheng",
+      "category": "原创女子",
+      "legacyAssets": [],
+      "status": "completed",
+      "prompt": "Use case: photorealistic-natural. Asset type: full-body cutout portrait for Chinese imperial game random beauty library. Generate ONE clearly adult Chinese mainland actress 王玉雯, recognizable individual face likeness: long oval face, straight nose, long bright eyes, tall graceful proportions. Photorealistic costume photography with natural skin pores, no illustration or doll look. Pose: seated sideways on small backless stool, two lower legs naturally angled forward and feet separated, holding a partly open slim bound book in both hands. Clothing: sky blue short sleeve hanfu blouse and white lightweight summer wrap skirt; fine breathable summer fabrics with opaque coverage of torso and hips. Accessories: silver cloud hairpin, pearl earrings, turquoise necklace, thin silver bangles. Historically inspired Chinese hairstyle and costume, no modern objects. Entire figure, hair ornaments, hands, all limbs and feet and any prop/support fully visible with generous 6 percent transparent margins. Natural adult body proportions equivalent to 7.5 heads standing height, small realistic head relative to body, proportionate shoulders and legs, eye-level 70mm lens without foreshortening. Anatomically correct two arms, two hands with five fingers each, two legs, two feet, sensible joints, relaxed fingers properly contacting objects; coherent gravity and posture. Genuine transparent alpha background. Isolated woman and specified small props/support only, no backdrop, no floor, no scenery, no shadow, no halo, no text, no watermark. Portrait 2:3 framing; seated or reclining figure still fully fits without cropping. Soft neutral daylight.",
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a16120-e3fa-7aa0-9d0e-831ef2c72319/exec-d0bc1700-562f-4874-9dbe-63bc643f3188.png",
+      "validation": {
+        "mode": "RGBA",
+        "size": [
+          1024,
+          1536
+        ],
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentPixels": 945005,
+        "alphaBoundingBox": [
+          33,
+          0,
+          1010,
+          1536
+        ]
+      },
+      "visualReview": "检查原尺寸预览和浅灰/深灰合成总览：人物、发饰、道具完整，未见明显多余肢体；站坐卧及静态运动姿态可读，头身比例自然。可见手脚无明显畸形，遮挡部分不宣称逐指可见。背景alpha为真实透明，换底后无预览光晕。",
+      "likenessNote": "未使用真人照片进行面部建模，按用户要求作为原创人物素材，以随机字符串命名。原始prompt仅作历史生成记录，不代表真人身份。",
+      "cityId": "hebei",
+      "originalPromptSubject": "王玉雯",
+      "assetSha256": "454ed8fffac514c69c112673f8b10200c1a3c6a515504d6939c3a8b692e34740"
+    },
+    {
+      "id": "mainland-expansion-20261022-08",
+      "name": "4a83e320a9b7fdf7",
+      "title": "鹅黄竹篮",
+      "asset": "assets/beauties/random/原创女子/4a83e320a9b7fdf7.png",
+      "regionId": "sheng",
+      "category": "原创女子",
+      "legacyAssets": [],
+      "status": "completed",
+      "prompt": "Use case: photorealistic-natural. Asset type: full-body cutout portrait for Chinese imperial game random beauty library. Generate ONE clearly adult Chinese mainland actress 包上恩, recognizable individual face likeness: adult 24-year-old appearance, softly rounded youthful adult face, bright almond eyes, small natural lips. Photorealistic costume photography with natural skin pores, no illustration or doll look. Pose: standing relaxed facing viewer, holding a small woven basket with two peaches by handle in one hand, other hand relaxed. Clothing: pale yellow opaque sleeveless summer ruqun with short ivory airy gauze jacket; fine breathable summer fabrics with opaque coverage of torso and hips. Accessories: small gold jasmine hairpins, pearl drop earrings, jade bracelet, floral waist tassel. Historically inspired Chinese hairstyle and costume, no modern objects. Entire figure, hair ornaments, hands, all limbs and feet and any prop/support fully visible with generous 6 percent transparent margins. Natural adult body proportions equivalent to 7.5 heads standing height, small realistic head relative to body, proportionate shoulders and legs, eye-level 70mm lens without foreshortening. Anatomically correct two arms, two hands with five fingers each, two legs, two feet, sensible joints, relaxed fingers properly contacting objects; coherent gravity and posture. Genuine transparent alpha background. Isolated woman and specified small props/support only, no backdrop, no floor, no scenery, no shadow, no halo, no text, no watermark. Portrait 2:3 framing; seated or reclining figure still fully fits without cropping. Soft neutral daylight.",
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a16120-e3fa-7aa0-9d0e-831ef2c72319/exec-d3682ffd-dd82-4763-b086-7a0d4990df9b.png",
+      "validation": {
+        "mode": "RGBA",
+        "size": [
+          1024,
+          1536
+        ],
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentPixels": 1012852,
+        "alphaBoundingBox": [
+          0,
+          27,
+          1002,
+          1536
+        ]
+      },
+      "visualReview": "检查原尺寸预览和浅灰/深灰合成总览：人物、发饰、道具完整，未见明显多余肢体；站坐卧及静态运动姿态可读，头身比例自然。可见手脚无明显畸形，遮挡部分不宣称逐指可见。背景alpha为真实透明，换底后无预览光晕。",
+      "likenessNote": "未使用真人照片进行面部建模，按用户要求作为原创人物素材，以随机字符串命名。原始prompt仅作历史生成记录，不代表真人身份。",
+      "cityId": "henan",
+      "originalPromptSubject": "包上恩",
+      "assetSha256": "5e7cae6f14b884f52f6c6d5751a6a4211574f4601c50392326d63f5739e86a30"
+    },
+    {
+      "id": "mainland-expansion-20261022-09",
+      "name": "4af56c033026aa9c",
+      "title": "月白听荷",
+      "asset": "assets/beauties/random/原创女子/4af56c033026aa9c.png",
+      "regionId": "sheng",
+      "category": "原创女子",
+      "legacyAssets": [],
+      "status": "completed",
+      "prompt": "Use case: photorealistic-natural. Asset type: full-body cutout portrait for Chinese imperial game random beauty library. Generate ONE clearly adult Chinese mainland actress 卢昱晓, recognizable individual face likeness: soft rounded oval face, gentle long eyes, natural full lips, quiet expression. Photorealistic costume photography with natural skin pores, no illustration or doll look. Pose: reclining in a relaxed side-sitting pose, torso supported by left forearm on a small plain ivory cushion, both legs extended diagonally with knees softly bent and both feet visible, right hand holding a single lotus flower loosely over lap. Clothing: ivory opaque sleeveless summer dress with sage-green gauze drape and soft pleated skirt, fully clothed; fine breathable summer fabrics with opaque coverage of torso and hips. Accessories: silver lotus hairpins, pale green earrings, jade bangle, delicate pendant. Historically inspired Chinese hairstyle and costume, no modern objects. Entire figure, hair ornaments, hands, all limbs and feet and any prop/support fully visible with generous 6 percent transparent margins. Natural adult body proportions equivalent to 7.5 heads standing height, small realistic head relative to body, proportionate shoulders and legs, eye-level 70mm lens without foreshortening. Anatomically correct two arms, two hands with five fingers each, two legs, two feet, sensible joints, relaxed fingers properly contacting objects; coherent gravity and posture. Genuine transparent alpha background. Isolated woman and specified small props/support only, no backdrop, no floor, no scenery, no shadow, no halo, no text, no watermark. Portrait 2:3 framing; seated or reclining figure still fully fits without cropping. Soft neutral daylight.",
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a16120-e3fa-7aa0-9d0e-831ef2c72319/exec-deafefd6-f01c-42d8-9ab4-c25c18f59557.png",
+      "validation": {
+        "mode": "RGBA",
+        "size": [
+          1024,
+          1536
+        ],
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentPixels": 902440,
+        "alphaBoundingBox": [
+          0,
+          17,
+          1024,
+          1510
+        ]
+      },
+      "visualReview": "检查原尺寸预览和浅灰/深灰合成总览：人物、发饰、道具完整，未见明显多余肢体；站坐卧及静态运动姿态可读，头身比例自然。可见手脚无明显畸形，遮挡部分不宣称逐指可见。背景alpha为真实透明，换底后无预览光晕。",
+      "likenessNote": "未使用真人照片进行面部建模，按用户要求作为原创人物素材，以随机字符串命名。原始prompt仅作历史生成记录，不代表真人身份。",
+      "originalPromptSubject": "卢昱晓",
+      "assetSha256": "31b61565d28a09823df94b60d434908a89fd553eae131f5f2549603ac1b06868"
+    },
+    {
+      "id": "mainland-expansion-20261022-10",
+      "name": "c563fa0cde129974",
+      "title": "桃绡舒展",
+      "asset": "assets/beauties/random/原创女子/c563fa0cde129974.png",
+      "regionId": "sheng",
+      "category": "原创女子",
+      "legacyAssets": [],
+      "status": "completed",
+      "prompt": "Use case: photorealistic-natural. Asset type: full-body cutout portrait for Chinese imperial game random beauty library. Generate ONE clearly adult Chinese mainland actress 孙珍妮, recognizable individual face likeness: adult 26-year-old appearance, lively almond eyes, softly sculpted oval face, full lips. Photorealistic costume photography with natural skin pores, no illustration or doll look. Pose: standing in a simple static yoga tree pose, one bare foot planted flat and other sole gently against inner calf below knee, hands lightly joined at chest, stable natural balance. Clothing: dusty rose sleeveless summer crossover tunic and lightweight ivory ankle length loose trousers, fully clothed; fine breathable summer fabrics with opaque coverage of torso and hips. Accessories: pearl flower hairpin, small gold earrings, fine pendant and slim bracelets. Historically inspired Chinese hairstyle and costume, no modern objects. Entire figure, hair ornaments, hands, all limbs and feet and any prop/support fully visible with generous 6 percent transparent margins. Natural adult body proportions equivalent to 7.5 heads standing height, small realistic head relative to body, proportionate shoulders and legs, eye-level 70mm lens without foreshortening. Anatomically correct two arms, two hands with five fingers each, two legs, two feet, sensible joints, relaxed fingers properly contacting objects; coherent gravity and posture. Genuine transparent alpha background. Isolated woman and specified small props/support only, no backdrop, no floor, no scenery, no shadow, no halo, no text, no watermark. Portrait 2:3 framing; seated or reclining figure still fully fits without cropping. Soft neutral daylight.",
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a16120-e3fa-7aa0-9d0e-831ef2c72319/exec-4a5851e6-c8f7-4611-9621-b07d565e68b9.png",
+      "validation": {
+        "mode": "RGBA",
+        "size": [
+          1024,
+          1536
+        ],
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentPixels": 1162939,
+        "alphaBoundingBox": [
+          25,
+          15,
+          1010,
+          1521
+        ]
+      },
+      "visualReview": "检查原尺寸预览和浅灰/深灰合成总览：人物、发饰、道具完整，未见明显多余肢体；站坐卧及静态运动姿态可读，头身比例自然。可见手脚无明显畸形，遮挡部分不宣称逐指可见。背景alpha为真实透明，换底后无预览光晕。",
+      "likenessNote": "未使用真人照片进行面部建模，按用户要求作为原创人物素材，以随机字符串命名。原始prompt仅作历史生成记录，不代表真人身份。",
+      "originalPromptSubject": "孙珍妮",
+      "assetSha256": "5c3f6a19d437a58a8adc925c678c574b4609f9a8eeeab93cb5ca6ba416f32d71"
+    }
+  ],
+  "poolBefore": 86,
+  "poolAfter": 96,
+  "contactSheet": "outputs/mainland-expansion-20261022/contact-sheet.jpg",
+  "biographySources": [
+    "https://www.iq.com/actor-info/张予曦-zhang-yuxi-215206805?lang=zh_cn",
+    "https://www.iq.com/actor-info/徐璐-lulu-214729805?lang=zh_cn",
+    "https://www.iq.com/actor-info/陈钰琪-yukee-233337905?lang=zh_cn",
+    "https://m.1905.com/m/star/info/3024540/",
+    "https://www.iq.com/actor-info/宣璐-xuan-lu-214439705?lang=zh_cn",
+    "https://www.iq.com/actor-info/包上恩-bao-shangen-1212573949640905?lang=zh_cn",
+    "https://www.iq.com/actor-info/卢昱晓-lu-yuxiao-1650556502485205?lang=zh_cn"
+  ],
+  "integrationValidation": {
+    "pool": 96,
+    "added": 10,
+    "allFilesExist": true,
+    "allPathsResolve": true,
+    "newAssetsActuallyDrawn": 10
+  },
+  "namingRevision": {
+    "date": "2026-10-22",
+    "reason": "未使用真人照片建模，不以明星名字命名；改用随机字符串，分类为原创女子。按用户要求移除这10张素材的旧路径兼容映射。"
+  }
+}

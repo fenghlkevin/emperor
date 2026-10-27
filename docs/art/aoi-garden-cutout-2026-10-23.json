@@ -1,0 +1,33 @@
+{
+  "tool": "built-in image_gen",
+  "items": [
+    {
+      "id": "japan-aoi-garden-20261023-01",
+      "name": "葵司",
+      "english": "Tsukasa Aoi",
+      "asset": "assets/beauties/random/番邦女子/日本女子-葵司-樱绡庭步.png",
+      "generatedPath": "/Users/fengheliang/.codex/generated_images/01a16615-cc42-7e81-aa4f-b849b888d820/exec-11d77702-0ebb-46e0-a851-64aa6ee7663b.png",
+      "prompt": "Use case: background-extraction. Remove ONLY the background from the attached photograph. Keep this exact adult woman's face, hair, facial expression, skin, body shape, pose, pink and ivory floral summer yukata, pink obi, hands, legs, toes and wooden sandals unchanged. Preserve fine hair strands and fabric edges accurately. Delete all garden, trees, architecture, path and ground and their shadows. Output one isolated complete person on a genuinely transparent alpha PNG. No replacement background, checkerboard, floor, halo, glow, matte, drop shadow or text. Do not beautify or regenerate identity, do not change clothing or anatomy. Include entire head and sandals with a little transparent space around all edges.",
+      "validation": {
+        "size": [
+          755,
+          2081
+        ],
+        "alphaRange": [
+          0,
+          255
+        ],
+        "transparentFraction": 0.6071,
+        "borderPixelsAbove20": 0
+      },
+      "assetSha256": "6f94c3fe3cca62e5282c70cc3fc4803b0d90c9966ca315b70c87a66ee5fa230e"
+    }
+  ],
+  "status": "complete",
+  "validation": {
+    "unitTestsPassed": 11,
+    "desktopPassed": true,
+    "allDecoded": 234,
+    "allRoster": 133
+  }
+}

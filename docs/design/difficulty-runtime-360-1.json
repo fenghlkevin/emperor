@@ -1,0 +1,1474 @@
+{
+  "date": "2026-10-26",
+  "mode": "360-turn",
+  "method": "Production candidate engine, foreign economy/disasters/war active. Rest each turn. Default policy leaves delegation enabled. Leisure policy builds/develops every 18 turns and holds an exam every 36. Actions spend court energy; no free wins, treasury injections or disabled strategy. Real defense AI used for threats. Paired seed with separate exam/disaster domains; remaining ambient randomness seeded per run.",
+  "runs": [
+    {
+      "tier": "novice",
+      "seed": 1,
+      "policy": "default",
+      "opening": {
+        "turn": 1,
+        "cash": 80000,
+        "debt": 0,
+        "net": 1432,
+        "grain": 42840,
+        "foodNeed": 357,
+        "foodShortfall": 0,
+        "living": 63,
+        "stability": 79,
+        "provinces": 10,
+        "life": 2160,
+        "central": 8000
+      },
+      "samples": [
+        {
+          "turn": 37,
+          "cash": 86584,
+          "debt": 0,
+          "net": 1158,
+          "grain": 14992,
+          "foodNeed": 357,
+          "foodShortfall": 0,
+          "living": 64,
+          "stability": 67,
+          "provinces": 10,
+          "life": 2124,
+          "central": 8000
+        },
+        {
+          "turn": 73,
+          "cash": 103704,
+          "debt": 0,
+          "net": 1226,
+          "grain": 15655,
+          "foodNeed": 357,
+          "foodShortfall": 0,
+          "living": 64,
+          "stability": 60,
+          "provinces": 10,
+          "life": 2088,
+          "central": 8000
+        },
+        {
+          "turn": 109,
+          "cash": 103648,
+          "debt": 0,
+          "net": 836,
+          "grain": 15597,
+          "foodNeed": 357,
+          "foodShortfall": 0,
+          "living": 63,
+          "stability": 58,
+          "provinces": 10,
+          "life": 2052,
+          "central": 8000
+        },
+        {
+          "turn": 145,
+          "cash": 106892,
+          "debt": 0,
+          "net": 733,
+          "grain": 16035,
+          "foodNeed": 357,
+          "foodShortfall": 0,
+          "living": 63,
+          "stability": 62,
+          "provinces": 10,
+          "life": 2016,
+          "central": 8000
+        },
+        {
+          "turn": 181,
+          "cash": 110459,
+          "debt": 0,
+          "net": 787,
+          "grain": 16719,
+          "foodNeed": 357,
+          "foodShortfall": 0,
+          "living": 63,
+          "stability": 71,
+          "provinces": 10,
+          "life": 1980,
+          "central": 8000
+        },
+        {
+          "turn": 217,
+          "cash": 116152,
+          "debt": 0,
+          "net": 718,
+          "grain": 16923,
+          "foodNeed": 357,
+          "foodShortfall": 0,
+          "living": 65,
+          "stability": 76,
+          "provinces": 10,
+          "life": 1944,
+          "central": 8000
+        },
+        {
+          "turn": 253,
+          "cash": 120025,
+          "debt": 0,
+          "net": 523,
+          "grain": 17410,
+          "foodNeed": 357,
+          "foodShortfall": 0,
+          "living": 66,
+          "stability": 78,
+          "provinces": 10,
+          "life": 1908,
+          "central": 8000
+        },
+        {
+          "turn": 289,
+          "cash": 124656,
+          "debt": 0,
+          "net": 424,
+          "grain": 17330,
+          "foodNeed": 357,
+          "foodShortfall": 0,
+          "living": 67,
+          "stability": 79,
+          "provinces": 10,
+          "life": 1872,
+          "central": 8000
+        },
+        {
+          "turn": 325,
+          "cash": 134989,
+          "debt": 0,
+          "net": 515,
+          "grain": 17934,
+          "foodNeed": 357,
+          "foodShortfall": 0,
+          "living": 68,
+          "stability": 80,
+          "provinces": 10,
+          "life": 1836,
+          "central": 8000
+        },
+        {
+          "turn": 361,
+          "cash": 142581,
+          "debt": 0,
+          "net": 494,
+          "grain": 17618,
+          "foodNeed": 357,
+          "foodShortfall": 0,
+          "living": 68,
+          "stability": 80,
+          "provinces": 10,
+          "life": 1800,
+          "central": 8000
+        }
+      ],
+      "orders": [],
+      "blocked": [],
+      "firstDebt": null,
+      "firstFoodShortfall": null,
+      "defenses": [],
+      "ended": null,
+      "final": {
+        "turn": 361,
+        "cash": 142581,
+        "debt": 0,
+        "net": 494,
+        "grain": 17618,
+        "foodNeed": 357,
+        "foodShortfall": 0,
+        "living": 68,
+        "stability": 80,
+        "provinces": 10,
+        "life": 1800,
+        "central": 8000
+      }
+    },
+    {
+      "tier": "novice",
+      "seed": 1,
+      "policy": "leisure",
+      "opening": {
+        "turn": 1,
+        "cash": 80000,
+        "debt": 0,
+        "net": 1432,
+        "grain": 42840,
+        "foodNeed": 357,
+        "foodShortfall": 0,
+        "living": 63,
+        "stability": 79,
+        "provinces": 10,
+        "life": 2160,
+        "central": 8000
+      },
+      "samples": [
+        {
+          "turn": 37,
+          "cash": 86464,
+          "debt": 0,
+          "net": 1152,
+          "grain": 15037,
+          "foodNeed": 357,
+          "foodShortfall": 0,
+          "living": 64,
+          "stability": 67,
+          "provinces": 10,
+          "life": 2124,
+          "central": 8000
+        },
+        {
+          "turn": 73,
+          "cash": 106146,
+          "debt": 0,
+          "net": 1222,
+          "grain": 15296,
+          "foodNeed": 357,
+          "foodShortfall": 0,
+          "living": 64,
+          "stability": 60,
+          "provinces": 10,
+          "life": 2088,
+          "central": 8000
+        },
+        {
+          "turn": 109,
+          "cash": 101980,
+          "debt": 0,
+          "net": 835,
+          "grain": 15875,
+          "foodNeed": 357,
+          "foodShortfall": 0,
+          "living": 63,
+          "stability": 58,
+          "provinces": 10,
+          "life": 2052,
+          "central": 8000
+        },
+        {
+          "turn": 145,
+          "cash": 103843,
+          "debt": 0,
+          "net": 731,
+          "grain": 16228,
+          "foodNeed": 357,
+          "foodShortfall": 0,
+          "living": 63,
+          "stability": 63,
+          "provinces": 10,
+          "life": 2016,
+          "central": 8000
+        },
+        {
+          "turn": 181,
+          "cash": 108184,
+          "debt": 0,
+          "net": 805,
+          "grain": 16707,
+          "foodNeed": 357,
+          "foodShortfall": 0,
+          "living": 63,
+          "stability": 71,
+          "provinces": 10,
+          "life": 1980,
+          "central": 8000
+        },
+        {
+          "turn": 217,
+          "cash": 114546,
+          "debt": 0,
+          "net": 727,
+          "grain": 16895,
+          "foodNeed": 357,
+          "foodShortfall": 0,
+          "living": 65,
+          "stability": 76,
+          "provinces": 10,
+          "life": 1944,
+          "central": 8000
+        },
+        {
+          "turn": 253,
+          "cash": 117118,
+          "debt": 0,
+          "net": 547,
+          "grain": 17397,
+          "foodNeed": 357,
+          "foodShortfall": 0,
+          "living": 66,
+          "stability": 79,
+          "provinces": 10,
+          "life": 1908,
+          "central": 8000
+        },
+        {
+          "turn": 289,
+          "cash": 118481,
+          "debt": 0,
+          "net": 451,
+          "grain": 17596,
+          "foodNeed": 357,
+          "foodShortfall": 0,
+          "living": 67,
+          "stability": 79,
+          "provinces": 10,
+          "life": 1872,
+          "central": 8000
+        },
+        {
+          "turn": 325,
+          "cash": 127159,
+          "debt": 0,
+          "net": 546,
+          "grain": 18369,
+          "foodNeed": 357,
+          "foodShortfall": 0,
+          "living": 68,
+          "stability": 80,
+          "provinces": 10,
+          "life": 1836,
+          "central": 8000
+        },
+        {
+          "turn": 361,
+          "cash": 134792,
+          "debt": 0,
+          "net": 528,
+          "grain": 18102,
+          "foodNeed": 357,
+          "foodShortfall": 0,
+          "living": 68,
+          "stability": 80,
+          "provinces": 10,
+          "life": 1800,
+          "central": 8000
+        }
+      ],
+      "orders": [
+        {
+          "turn": 1,
+          "kind": "exam",
+          "cash": 79800
+        },
+        {
+          "turn": 18,
+          "kind": "develop",
+          "cash": 77029
+        },
+        {
+          "turn": 18,
+          "kind": "build",
+          "cash": 76679
+        },
+        {
+          "turn": 36,
+          "kind": "develop",
+          "cash": 86245
+        },
+        {
+          "turn": 36,
+          "kind": "build",
+          "cash": 85825
+        },
+        {
+          "turn": 37,
+          "kind": "hire",
+          "cash": 86464
+        },
+        {
+          "turn": 37,
+          "kind": "clear",
+          "cash": 86464
+        },
+        {
+          "turn": 37,
+          "kind": "exam",
+          "cash": 86264
+        },
+        {
+          "turn": 54,
+          "kind": "develop",
+          "cash": 93563
+        },
+        {
+          "turn": 54,
+          "kind": "build",
+          "cash": 93213
+        },
+        {
+          "turn": 72,
+          "kind": "develop",
+          "cash": 106740
+        },
+        {
+          "turn": 72,
+          "kind": "build",
+          "cash": 106320
+        },
+        {
+          "turn": 73,
+          "kind": "hire",
+          "cash": 106146
+        },
+        {
+          "turn": 73,
+          "kind": "clear",
+          "cash": 106146
+        },
+        {
+          "turn": 73,
+          "kind": "exam",
+          "cash": 105946
+        },
+        {
+          "turn": 90,
+          "kind": "develop",
+          "cash": 100737
+        },
+        {
+          "turn": 90,
+          "kind": "build",
+          "cash": 100387
+        },
+        {
+          "turn": 108,
+          "kind": "develop",
+          "cash": 102956
+        },
+        {
+          "turn": 108,
+          "kind": "build",
+          "cash": 102536
+        }
+      ],
+      "blocked": [
+        {
+          "turn": 109,
+          "kind": "hire",
+          "error": "快乐不足20：现有18，还差2点；请先去后宫休息。"
+        },
+        {
+          "turn": 109,
+          "kind": "clear",
+          "error": "快乐不足20：现有18，还差2点；请先去后宫休息。"
+        },
+        {
+          "turn": 109,
+          "kind": "exam",
+          "error": "快乐不足20：现有18，还差2点；请先去后宫休息。"
+        },
+        {
+          "turn": 126,
+          "kind": "develop",
+          "error": "快乐不足20：现有18，还差2点；请先去后宫休息。"
+        },
+        {
+          "turn": 126,
+          "kind": "build",
+          "error": "快乐不足20：现有18，还差2点；请先去后宫休息。"
+        },
+        {
+          "turn": 144,
+          "kind": "develop",
+          "error": "快乐不足20：现有18，还差2点；请先去后宫休息。"
+        },
+        {
+          "turn": 144,
+          "kind": "build",
+          "error": "快乐不足20：现有18，还差2点；请先去后宫休息。"
+        },
+        {
+          "turn": 145,
+          "kind": "hire",
+          "error": "快乐不足20：现有18，还差2点；请先去后宫休息。"
+        },
+        {
+          "turn": 145,
+          "kind": "clear",
+          "error": "快乐不足20：现有18，还差2点；请先去后宫休息。"
+        },
+        {
+          "turn": 145,
+          "kind": "exam",
+          "error": "快乐不足20：现有18，还差2点；请先去后宫休息。"
+        },
+        {
+          "turn": 162,
+          "kind": "develop",
+          "error": "快乐不足20：现有18，还差2点；请先去后宫休息。"
+        },
+        {
+          "turn": 162,
+          "kind": "build",
+          "error": "快乐不足20：现有18，还差2点；请先去后宫休息。"
+        },
+        {
+          "turn": 180,
+          "kind": "develop",
+          "error": "快乐不足20：现有18，还差2点；请先去后宫休息。"
+        },
+        {
+          "turn": 180,
+          "kind": "build",
+          "error": "快乐不足20：现有18，还差2点；请先去后宫休息。"
+        },
+        {
+          "turn": 181,
+          "kind": "hire",
+          "error": "快乐不足20：现有18，还差2点；请先去后宫休息。"
+        },
+        {
+          "turn": 181,
+          "kind": "clear",
+          "error": "快乐不足20：现有18，还差2点；请先去后宫休息。"
+        },
+        {
+          "turn": 181,
+          "kind": "exam",
+          "error": "快乐不足20：现有18，还差2点；请先去后宫休息。"
+        },
+        {
+          "turn": 198,
+          "kind": "develop",
+          "error": "快乐不足20：现有18，还差2点；请先去后宫休息。"
+        },
+        {
+          "turn": 198,
+          "kind": "build",
+          "error": "快乐不足20：现有18，还差2点；请先去后宫休息。"
+        },
+        {
+          "turn": 216,
+          "kind": "develop",
+          "error": "快乐不足20：现有18，还差2点；请先去后宫休息。"
+        },
+        {
+          "turn": 216,
+          "kind": "build",
+          "error": "快乐不足20：现有18，还差2点；请先去后宫休息。"
+        },
+        {
+          "turn": 217,
+          "kind": "hire",
+          "error": "快乐不足20：现有18，还差2点；请先去后宫休息。"
+        },
+        {
+          "turn": 217,
+          "kind": "clear",
+          "error": "快乐不足20：现有18，还差2点；请先去后宫休息。"
+        },
+        {
+          "turn": 217,
+          "kind": "exam",
+          "error": "快乐不足20：现有18，还差2点；请先去后宫休息。"
+        },
+        {
+          "turn": 234,
+          "kind": "develop",
+          "error": "快乐不足20：现有18，还差2点；请先去后宫休息。"
+        },
+        {
+          "turn": 234,
+          "kind": "build",
+          "error": "快乐不足20：现有18，还差2点；请先去后宫休息。"
+        },
+        {
+          "turn": 252,
+          "kind": "develop",
+          "error": "快乐不足20：现有18，还差2点；请先去后宫休息。"
+        },
+        {
+          "turn": 252,
+          "kind": "build",
+          "error": "快乐不足20：现有18，还差2点；请先去后宫休息。"
+        },
+        {
+          "turn": 253,
+          "kind": "hire",
+          "error": "快乐不足20：现有18，还差2点；请先去后宫休息。"
+        },
+        {
+          "turn": 253,
+          "kind": "clear",
+          "error": "快乐不足20：现有18，还差2点；请先去后宫休息。"
+        },
+        {
+          "turn": 253,
+          "kind": "exam",
+          "error": "快乐不足20：现有18，还差2点；请先去后宫休息。"
+        },
+        {
+          "turn": 270,
+          "kind": "develop",
+          "error": "快乐不足20：现有18，还差2点；请先去后宫休息。"
+        },
+        {
+          "turn": 270,
+          "kind": "build",
+          "error": "快乐不足20：现有18，还差2点；请先去后宫休息。"
+        },
+        {
+          "turn": 288,
+          "kind": "develop",
+          "error": "快乐不足20：现有18，还差2点；请先去后宫休息。"
+        },
+        {
+          "turn": 288,
+          "kind": "build",
+          "error": "快乐不足20：现有18，还差2点；请先去后宫休息。"
+        },
+        {
+          "turn": 289,
+          "kind": "hire",
+          "error": "快乐不足20：现有18，还差2点；请先去后宫休息。"
+        },
+        {
+          "turn": 289,
+          "kind": "clear",
+          "error": "快乐不足20：现有18，还差2点；请先去后宫休息。"
+        },
+        {
+          "turn": 289,
+          "kind": "exam",
+          "error": "快乐不足20：现有18，还差2点；请先去后宫休息。"
+        },
+        {
+          "turn": 306,
+          "kind": "develop",
+          "error": "快乐不足20：现有18，还差2点；请先去后宫休息。"
+        },
+        {
+          "turn": 306,
+          "kind": "build",
+          "error": "快乐不足20：现有18，还差2点；请先去后宫休息。"
+        },
+        {
+          "turn": 324,
+          "kind": "develop",
+          "error": "快乐不足20：现有18，还差2点；请先去后宫休息。"
+        },
+        {
+          "turn": 324,
+          "kind": "build",
+          "error": "快乐不足20：现有18，还差2点；请先去后宫休息。"
+        },
+        {
+          "turn": 325,
+          "kind": "hire",
+          "error": "快乐不足20：现有18，还差2点；请先去后宫休息。"
+        },
+        {
+          "turn": 325,
+          "kind": "clear",
+          "error": "快乐不足20：现有18，还差2点；请先去后宫休息。"
+        },
+        {
+          "turn": 325,
+          "kind": "exam",
+          "error": "快乐不足20：现有18，还差2点；请先去后宫休息。"
+        },
+        {
+          "turn": 342,
+          "kind": "develop",
+          "error": "快乐不足20：现有18，还差2点；请先去后宫休息。"
+        },
+        {
+          "turn": 342,
+          "kind": "build",
+          "error": "快乐不足20：现有18，还差2点；请先去后宫休息。"
+        },
+        {
+          "turn": 360,
+          "kind": "develop",
+          "error": "快乐不足20：现有18，还差2点；请先去后宫休息。"
+        },
+        {
+          "turn": 360,
+          "kind": "build",
+          "error": "快乐不足20：现有18，还差2点；请先去后宫休息。"
+        }
+      ],
+      "firstDebt": null,
+      "firstFoodShortfall": null,
+      "defenses": [],
+      "ended": null,
+      "final": {
+        "turn": 361,
+        "cash": 134792,
+        "debt": 0,
+        "net": 528,
+        "grain": 18102,
+        "foodNeed": 357,
+        "foodShortfall": 0,
+        "living": 68,
+        "stability": 80,
+        "provinces": 10,
+        "life": 1800,
+        "central": 8000
+      }
+    },
+    {
+      "tier": "standard",
+      "seed": 1,
+      "policy": "default",
+      "opening": {
+        "turn": 1,
+        "cash": 30000,
+        "debt": 0,
+        "net": 426,
+        "grain": 13860,
+        "foodNeed": 308,
+        "foodShortfall": 0,
+        "living": 56,
+        "stability": 76,
+        "provinces": 10,
+        "life": 2160,
+        "central": 6000
+      },
+      "samples": [
+        {
+          "turn": 37,
+          "cash": 6299,
+          "debt": 0,
+          "net": 325,
+          "grain": 11740,
+          "foodNeed": 308,
+          "foodShortfall": 0,
+          "living": 56,
+          "stability": 60,
+          "provinces": 10,
+          "life": 2124,
+          "central": 6000
+        },
+        {
+          "turn": 73,
+          "cash": 7617,
+          "debt": 0,
+          "net": 115,
+          "grain": 10657,
+          "foodNeed": 308,
+          "foodShortfall": 0,
+          "living": 56,
+          "stability": 53,
+          "provinces": 10,
+          "life": 2088,
+          "central": 6000
+        },
+        {
+          "turn": 109,
+          "cash": 2484,
+          "debt": 0,
+          "net": -220,
+          "grain": 6034,
+          "foodNeed": 308,
+          "foodShortfall": 0,
+          "living": 55,
+          "stability": 46,
+          "provinces": 10,
+          "life": 2052,
+          "central": 6000
+        },
+        {
+          "turn": 145,
+          "cash": 3438,
+          "debt": 0,
+          "net": 28,
+          "grain": 6471,
+          "foodNeed": 308,
+          "foodShortfall": 0,
+          "living": 55,
+          "stability": 44,
+          "provinces": 10,
+          "life": 2016,
+          "central": 6000
+        },
+        {
+          "turn": 181,
+          "cash": 1032,
+          "debt": 71,
+          "net": -532,
+          "grain": 6586,
+          "foodNeed": 308,
+          "foodShortfall": 0,
+          "living": 54,
+          "stability": 42,
+          "provinces": 10,
+          "life": 1980,
+          "central": 6000
+        },
+        {
+          "turn": 217,
+          "cash": 5759,
+          "debt": 71,
+          "net": 105,
+          "grain": 7172,
+          "foodNeed": 308,
+          "foodShortfall": 0,
+          "living": 54,
+          "stability": 42,
+          "provinces": 10,
+          "life": 1944,
+          "central": 6000
+        },
+        {
+          "turn": 253,
+          "cash": 7529,
+          "debt": 0,
+          "net": 520,
+          "grain": 8219,
+          "foodNeed": 308,
+          "foodShortfall": 0,
+          "living": 54,
+          "stability": 42,
+          "provinces": 10,
+          "life": 1908,
+          "central": 6000
+        },
+        {
+          "turn": 289,
+          "cash": 7002,
+          "debt": 0,
+          "net": 522,
+          "grain": 8035,
+          "foodNeed": 308,
+          "foodShortfall": 0,
+          "living": 54,
+          "stability": 42,
+          "provinces": 10,
+          "life": 1872,
+          "central": 6000
+        },
+        {
+          "turn": 325,
+          "cash": 7819,
+          "debt": 0,
+          "net": 32,
+          "grain": 7945,
+          "foodNeed": 308,
+          "foodShortfall": 0,
+          "living": 54,
+          "stability": 42,
+          "provinces": 10,
+          "life": 1836,
+          "central": 6000
+        },
+        {
+          "turn": 361,
+          "cash": 2657,
+          "debt": 0,
+          "net": -422,
+          "grain": 4200,
+          "foodNeed": 308,
+          "foodShortfall": 0,
+          "living": 54,
+          "stability": 42,
+          "provinces": 10,
+          "life": 1800,
+          "central": 6000
+        }
+      ],
+      "orders": [],
+      "blocked": [],
+      "firstDebt": 181,
+      "firstFoodShortfall": null,
+      "defenses": [],
+      "ended": null,
+      "final": {
+        "turn": 361,
+        "cash": 2657,
+        "debt": 0,
+        "net": -422,
+        "grain": 4200,
+        "foodNeed": 308,
+        "foodShortfall": 0,
+        "living": 54,
+        "stability": 42,
+        "provinces": 10,
+        "life": 1800,
+        "central": 6000
+      }
+    },
+    {
+      "tier": "standard",
+      "seed": 1,
+      "policy": "leisure",
+      "opening": {
+        "turn": 1,
+        "cash": 30000,
+        "debt": 0,
+        "net": 426,
+        "grain": 13860,
+        "foodNeed": 308,
+        "foodShortfall": 0,
+        "living": 56,
+        "stability": 76,
+        "provinces": 10,
+        "life": 2160,
+        "central": 6000
+      },
+      "samples": [
+        {
+          "turn": 37,
+          "cash": 6584,
+          "debt": 0,
+          "net": 329,
+          "grain": 12585,
+          "foodNeed": 308,
+          "foodShortfall": 0,
+          "living": 56,
+          "stability": 60,
+          "provinces": 10,
+          "life": 2124,
+          "central": 6000
+        },
+        {
+          "turn": 73,
+          "cash": 7671,
+          "debt": 0,
+          "net": 118,
+          "grain": 10943,
+          "foodNeed": 308,
+          "foodShortfall": 0,
+          "living": 56,
+          "stability": 53,
+          "provinces": 10,
+          "life": 2088,
+          "central": 6000
+        },
+        {
+          "turn": 109,
+          "cash": 3105,
+          "debt": 0,
+          "net": -217,
+          "grain": 6946,
+          "foodNeed": 308,
+          "foodShortfall": 0,
+          "living": 55,
+          "stability": 46,
+          "provinces": 10,
+          "life": 2052,
+          "central": 6000
+        },
+        {
+          "turn": 145,
+          "cash": 3281,
+          "debt": 0,
+          "net": 31,
+          "grain": 7294,
+          "foodNeed": 308,
+          "foodShortfall": 0,
+          "living": 55,
+          "stability": 44,
+          "provinces": 10,
+          "life": 2016,
+          "central": 6000
+        },
+        {
+          "turn": 181,
+          "cash": 1033,
+          "debt": 152,
+          "net": -526,
+          "grain": 8161,
+          "foodNeed": 308,
+          "foodShortfall": 0,
+          "living": 54,
+          "stability": 42,
+          "provinces": 10,
+          "life": 1980,
+          "central": 6000
+        },
+        {
+          "turn": 217,
+          "cash": 5992,
+          "debt": 152,
+          "net": 110,
+          "grain": 7734,
+          "foodNeed": 308,
+          "foodShortfall": 0,
+          "living": 54,
+          "stability": 42,
+          "provinces": 10,
+          "life": 1944,
+          "central": 6000
+        },
+        {
+          "turn": 253,
+          "cash": 7536,
+          "debt": 0,
+          "net": 522,
+          "grain": 8171,
+          "foodNeed": 308,
+          "foodShortfall": 0,
+          "living": 54,
+          "stability": 42,
+          "provinces": 10,
+          "life": 1908,
+          "central": 6000
+        },
+        {
+          "turn": 289,
+          "cash": 7211,
+          "debt": 0,
+          "net": 528,
+          "grain": 8579,
+          "foodNeed": 308,
+          "foodShortfall": 0,
+          "living": 54,
+          "stability": 42,
+          "provinces": 10,
+          "life": 1872,
+          "central": 6000
+        },
+        {
+          "turn": 325,
+          "cash": 7827,
+          "debt": 0,
+          "net": 33,
+          "grain": 8509,
+          "foodNeed": 308,
+          "foodShortfall": 0,
+          "living": 54,
+          "stability": 42,
+          "provinces": 10,
+          "life": 1836,
+          "central": 6000
+        },
+        {
+          "turn": 361,
+          "cash": 2119,
+          "debt": 0,
+          "net": -422,
+          "grain": 4711,
+          "foodNeed": 308,
+          "foodShortfall": 0,
+          "living": 54,
+          "stability": 42,
+          "provinces": 10,
+          "life": 1800,
+          "central": 6000
+        }
+      ],
+      "orders": [
+        {
+          "turn": 1,
+          "kind": "exam",
+          "cash": 29500
+        }
+      ],
+      "blocked": [],
+      "firstDebt": 181,
+      "firstFoodShortfall": null,
+      "defenses": [],
+      "ended": null,
+      "final": {
+        "turn": 361,
+        "cash": 2119,
+        "debt": 0,
+        "net": -422,
+        "grain": 4711,
+        "foodNeed": 308,
+        "foodShortfall": 0,
+        "living": 54,
+        "stability": 42,
+        "provinces": 10,
+        "life": 1800,
+        "central": 6000
+      }
+    },
+    {
+      "tier": "veteran",
+      "seed": 1,
+      "policy": "default",
+      "opening": {
+        "turn": 1,
+        "cash": 22000,
+        "debt": 0,
+        "net": 293,
+        "grain": 10908,
+        "foodNeed": 303,
+        "foodShortfall": 0,
+        "living": 56,
+        "stability": 76,
+        "provinces": 10,
+        "life": 2160,
+        "central": 5000
+      },
+      "samples": [
+        {
+          "turn": 37,
+          "cash": 2366,
+          "debt": 374,
+          "net": 393,
+          "grain": 10248,
+          "foodNeed": 303,
+          "foodShortfall": 0,
+          "living": 56,
+          "stability": 60,
+          "provinces": 10,
+          "life": 2124,
+          "central": 5000
+        },
+        {
+          "turn": 73,
+          "cash": 6909,
+          "debt": 0,
+          "net": 100,
+          "grain": 8717,
+          "foodNeed": 295,
+          "foodShortfall": 0,
+          "living": 56,
+          "stability": 53,
+          "provinces": 10,
+          "life": 2088,
+          "central": 3746
+        },
+        {
+          "turn": 109,
+          "cash": 3383,
+          "debt": 87,
+          "net": -39,
+          "grain": 4615,
+          "foodNeed": 295,
+          "foodShortfall": 0,
+          "living": 55,
+          "stability": 46,
+          "provinces": 10,
+          "life": 2052,
+          "central": 3746
+        },
+        {
+          "turn": 145,
+          "cash": 4592,
+          "debt": 0,
+          "net": 16,
+          "grain": 4822,
+          "foodNeed": 295,
+          "foodShortfall": 0,
+          "living": 54,
+          "stability": 44,
+          "provinces": 10,
+          "life": 2016,
+          "central": 3746
+        },
+        {
+          "turn": 181,
+          "cash": 1078,
+          "debt": 0,
+          "net": -732,
+          "grain": 5076,
+          "foodNeed": 295,
+          "foodShortfall": 0,
+          "living": 54,
+          "stability": 42,
+          "provinces": 10,
+          "life": 1980,
+          "central": 3746
+        },
+        {
+          "turn": 217,
+          "cash": 3019,
+          "debt": 352,
+          "net": 95,
+          "grain": 5316,
+          "foodNeed": 295,
+          "foodShortfall": 0,
+          "living": 54,
+          "stability": 42,
+          "provinces": 10,
+          "life": 1944,
+          "central": 3746
+        },
+        {
+          "turn": 253,
+          "cash": 6521,
+          "debt": 0,
+          "net": 508,
+          "grain": 6414,
+          "foodNeed": 295,
+          "foodShortfall": 0,
+          "living": 53,
+          "stability": 42,
+          "provinces": 10,
+          "life": 1908,
+          "central": 3746
+        },
+        {
+          "turn": 289,
+          "cash": 6456,
+          "debt": 0,
+          "net": 513,
+          "grain": 6706,
+          "foodNeed": 295,
+          "foodShortfall": 0,
+          "living": 54,
+          "stability": 42,
+          "provinces": 10,
+          "life": 1872,
+          "central": 3746
+        },
+        {
+          "turn": 325,
+          "cash": 7354,
+          "debt": 0,
+          "net": 99,
+          "grain": 8166,
+          "foodNeed": 289,
+          "foodShortfall": 0,
+          "living": 54,
+          "stability": 42,
+          "provinces": 10,
+          "life": 1836,
+          "central": 3543
+        },
+        {
+          "turn": 361,
+          "cash": 2880,
+          "debt": 0,
+          "net": -341,
+          "grain": 4831,
+          "foodNeed": 289,
+          "foodShortfall": 0,
+          "living": 54,
+          "stability": 42,
+          "provinces": 10,
+          "life": 1800,
+          "central": 3543
+        }
+      ],
+      "orders": [],
+      "blocked": [],
+      "firstDebt": 34,
+      "firstFoodShortfall": null,
+      "defenses": [
+        {
+          "turn": 68,
+          "before": 5000,
+          "after": 3746,
+          "title": "边境战报"
+        },
+        {
+          "turn": 308,
+          "before": 3746,
+          "after": 3543,
+          "title": "边境战报"
+        }
+      ],
+      "ended": null,
+      "final": {
+        "turn": 361,
+        "cash": 2880,
+        "debt": 0,
+        "net": -341,
+        "grain": 4831,
+        "foodNeed": 289,
+        "foodShortfall": 0,
+        "living": 54,
+        "stability": 42,
+        "provinces": 10,
+        "life": 1800,
+        "central": 3543
+      }
+    },
+    {
+      "tier": "veteran",
+      "seed": 1,
+      "policy": "leisure",
+      "opening": {
+        "turn": 1,
+        "cash": 22000,
+        "debt": 0,
+        "net": 293,
+        "grain": 10908,
+        "foodNeed": 303,
+        "foodShortfall": 0,
+        "living": 56,
+        "stability": 76,
+        "provinces": 10,
+        "life": 2160,
+        "central": 5000
+      },
+      "samples": [
+        {
+          "turn": 37,
+          "cash": 1953,
+          "debt": 0,
+          "net": 199,
+          "grain": 9900,
+          "foodNeed": 303,
+          "foodShortfall": 0,
+          "living": 56,
+          "stability": 60,
+          "provinces": 10,
+          "life": 2124,
+          "central": 5000
+        },
+        {
+          "turn": 73,
+          "cash": 5096,
+          "debt": 844,
+          "net": 298,
+          "grain": 9316,
+          "foodNeed": 295,
+          "foodShortfall": 0,
+          "living": 56,
+          "stability": 53,
+          "provinces": 10,
+          "life": 2088,
+          "central": 3678
+        },
+        {
+          "turn": 109,
+          "cash": 3039,
+          "debt": 25,
+          "net": -39,
+          "grain": 5248,
+          "foodNeed": 295,
+          "foodShortfall": 0,
+          "living": 55,
+          "stability": 46,
+          "provinces": 10,
+          "life": 2052,
+          "central": 3678
+        },
+        {
+          "turn": 145,
+          "cash": 4358,
+          "debt": 0,
+          "net": 17,
+          "grain": 5373,
+          "foodNeed": 295,
+          "foodShortfall": 0,
+          "living": 54,
+          "stability": 44,
+          "provinces": 10,
+          "life": 2016,
+          "central": 3678
+        },
+        {
+          "turn": 181,
+          "cash": 1063,
+          "debt": 0,
+          "net": -733,
+          "grain": 6072,
+          "foodNeed": 295,
+          "foodShortfall": 0,
+          "living": 54,
+          "stability": 42,
+          "provinces": 10,
+          "life": 1980,
+          "central": 3678
+        },
+        {
+          "turn": 217,
+          "cash": 4040,
+          "debt": 889,
+          "net": 93,
+          "grain": 7110,
+          "foodNeed": 295,
+          "foodShortfall": 0,
+          "living": 54,
+          "stability": 42,
+          "provinces": 10,
+          "life": 1944,
+          "central": 3678
+        },
+        {
+          "turn": 253,
+          "cash": 8203,
+          "debt": 44,
+          "net": 699,
+          "grain": 7553,
+          "foodNeed": 295,
+          "foodShortfall": 0,
+          "living": 54,
+          "stability": 42,
+          "provinces": 10,
+          "life": 1908,
+          "central": 3678
+        },
+        {
+          "turn": 289,
+          "cash": 6051,
+          "debt": 0,
+          "net": 508,
+          "grain": 9276,
+          "foodNeed": 295,
+          "foodShortfall": 0,
+          "living": 54,
+          "stability": 42,
+          "provinces": 10,
+          "life": 1872,
+          "central": 3678
+        },
+        {
+          "turn": 325,
+          "cash": 6876,
+          "debt": 0,
+          "net": 87,
+          "grain": 9660,
+          "foodNeed": 290,
+          "foodShortfall": 0,
+          "living": 54,
+          "stability": 43,
+          "provinces": 10,
+          "life": 1836,
+          "central": 3639
+        },
+        {
+          "turn": 361,
+          "cash": 2907,
+          "debt": 0,
+          "net": -371,
+          "grain": 6127,
+          "foodNeed": 290,
+          "foodShortfall": 0,
+          "living": 54,
+          "stability": 42,
+          "provinces": 10,
+          "life": 1800,
+          "central": 3639
+        }
+      ],
+      "orders": [
+        {
+          "turn": 1,
+          "kind": "exam",
+          "cash": 21400
+        }
+      ],
+      "blocked": [],
+      "firstDebt": 62,
+      "firstFoodShortfall": null,
+      "defenses": [
+        {
+          "turn": 68,
+          "before": 5000,
+          "after": 3678,
+          "title": "边境战报"
+        },
+        {
+          "turn": 308,
+          "before": 3678,
+          "after": 3639,
+          "title": "边境战报"
+        }
+      ],
+      "ended": null,
+      "final": {
+        "turn": 361,
+        "cash": 2907,
+        "debt": 0,
+        "net": -371,
+        "grain": 6127,
+        "foodNeed": 290,
+        "foodShortfall": 0,
+        "living": 54,
+        "stability": 42,
+        "provinces": 10,
+        "life": 1800,
+        "central": 3639
+      }
+    }
+  ],
+  "errors": []
+}

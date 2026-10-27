@@ -1,0 +1,39 @@
+{
+  "date": "2026-10-21",
+  "character": "苏苏",
+  "generator": "built-in image_gen",
+  "assets": [
+    {
+      "path": "assets/beauties/special/susu-pregnant-v1.png",
+      "state": "pregnant, admitted before delivery",
+      "prompt": "Edit this full-body adult woman Su Su ancient Chinese game portrait. Preserve EXACT identity, face outline and features, mole below right eye (viewer left), shoulder-length chestnut/dark bob, ornaments, chestnut/cream peony hanfu embroidery, realistic gouache game style, full-body standing framing and warm happy smile. Change her to visibly LATE PREGNANT: unmistakable naturally rounded large pregnant belly under modest opaque loose maternity hanfu; gather fabric naturally over the bump with high comfortable waistband. One hand gently supports below her belly and one rests above; remove the flower basket so the belly silhouette is unobstructed. Fully clothed, shoulders and midriff covered, no sexual context, no birth depiction or baby. Complete head-to-shoes within 1024x1536 portrait, genuine transparent alpha background, no halo, floor, scenery, text or watermark."
+    },
+    {
+      "path": "assets/beauties/special/susu-pregnant-encounter-v1.png",
+      "state": "pregnant, first meeting",
+      "prompt": "Edit this adult Su Su pregnant game character into FIRST MEETING expression variant. Preserve EXACT recognizable facial identity, mole under right eye, chestnut short bob, same ornaments, modest full-sleeved peony hanfu, large clear pregnant belly under opaque cloth, hands supporting belly, full body standing composition and refined painted style. Change only face expression to polite reserved curiosity, neutral closed lips without smile and mild uncertainty, relaxed brows; she is freely meeting a visitor without threat. Nearly frontal complete face, both eyes and cheeks visible. Full head-to-shoes 1024x1536, genuine transparent alpha background. No scenery, halo, lettering, watermark, baby, violence, birth depiction or sexual context."
+    },
+    {
+      "path": "assets/beauties/special/susu-v1.png",
+      "state": "after delivery"
+    }
+  ],
+  "rules": {
+    "invitationVoluntary": true,
+    "delivery": "next turn after admission",
+    "gender": {
+      "male": 0.5,
+      "female": 0.5
+    },
+    "childrenRegistry": true,
+    "persistedPregnancy": true,
+    "duplicateDeliveryPrevented": true,
+    "ordinaryPregnancyRulesUnchanged": true
+  },
+  "verification": [
+    "67 tour, travel, royal-family and emperor tests passed",
+    "38 runtime type-contract snapshots and negative type checks passed",
+    "Two new 1024x1536 RGBA images with genuine transparent alpha verified",
+    "Electron passed: pregnant first meeting, pregnant admission portrait, birth notice, saved child and postpartum portrait after return/reload; Youyou and Ruoxi regression passed"
+  ]
+}

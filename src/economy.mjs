@@ -1,3 +1,4 @@
+import {balanced,economicEffort,disasterProduction} from './development-balance.mjs';
 import {terrainMultiplier} from './terrain-economy.mjs';
 import {effectiveIndustryArea,industryStaffing} from './industry-labor.mjs';
 import {officialProductionMultiplier,officialCollection} from './official-production.mjs';
@@ -18,7 +19,7 @@ export function outputFor(p,key,turn){
   const development=(p.industryLabor?p.industryLabor.base[key].area:productiveArea(p,key,turn))/sector.capacityArea;
   const base=Math.round((p.industryLabor?Math.min(staffing.workers,staffing.required):p.population.professions[job])*scale*development*sector.productivity/100*terrainMultiplier(p,key));
   const resourceBase=key==='pastoral'?base*2:key==='industry'?Math.round(base*.8):base;
-  return Math.round((key==='commerce'?resourceBase*commerceMultiplier(p,turn)*(1+(p.specialCommerceBonus??0)/100):resourceBase)*officialProductionMultiplier(p));
+  return Math.round((key==='commerce'?resourceBase*commerceMultiplier(p,turn)*(1+(p.specialCommerceBonus??0)/100):resourceBase)*officialProductionMultiplier(p)*economicEffort(p)*disasterProduction(p,key,turn));
 }
 export function fullOutputFor(p,key,turn){
  if(!p.industryLabor)return outputFor(p,key,turn);
@@ -32,9 +33,10 @@ export function foodSectorProduction(p,key,turn){
  if(!['agriculture','pastoral'].includes(key))throw Error('粮食产业无效');
  const job=key==='agriculture'?'farmers':'herders',developed=Math.max(0,productiveArea(p,key,turn));
  const staffing=industryStaffing(p,key,turn),b=p.industryLabor?.base[key];
- const cultivated=b?developed*Math.min(1,b.workers*RESOURCE_RULES.areaPerFarmer/b.area)*staffing.ratio:Math.min(developed,p.population.professions[job]*RESOURCE_RULES.areaPerFarmer);
+ const areaPerWorker=balanced(p)&&key==='pastoral'?.6:RESOURCE_RULES.areaPerFarmer;
+ const cultivated=b?developed*Math.min(1,b.workers*areaPerWorker/b.area)*staffing.ratio:Math.min(developed,p.population.professions[job]*areaPerWorker);
  const yieldPerMu=key==='agriculture'?RESOURCE_RULES.grainPerMu:RESOURCE_RULES.pastoralGrainPerMu;
- const base=Math.round(cultivated*yieldPerMu*p.economy[key].productivity/100*terrainMultiplier(p,key));
+ const base=Math.round(cultivated*yieldPerMu*p.economy[key].productivity/100*terrainMultiplier(p,key)*disasterProduction(p,key,turn));
  return {developed,cultivated,base,produced:Math.round(base*officialProductionMultiplier(p))};
 }
 export function agriculturalProduction(p,turn){return foodSectorProduction(p,'agriculture',turn);}

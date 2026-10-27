@@ -1,0 +1,296 @@
+{
+  "tool": "built-in image_gen",
+  "status": "completed",
+  "selection": "Five mainland actresses absent from current pool and prior art manifests; direct downloaded photo references used.",
+  "items": [
+    {
+      "key": "zeng-li",
+      "name": "曾黎",
+      "title": "藕荷执莲",
+      "refs": [
+        "assets/beauties/references/mainland-five-20261022/zeng-li-1.jpg",
+        "assets/beauties/references/mainland-five-20261022/zeng-li-3.jpg"
+      ],
+      "detail": "Subject: Zeng Li 曾黎 at her 2010 adult appearance (33), use reference 1 for face and reference 2 for slim tall body proportions. Standing relaxed contrapposto, both feet visible in pale embroidered flat shoes. One hand holds a single lotus stem with a pink flower lowered beside her hip, other hand rests loosely along waist. Pale lotus-pink sleeveless high-waist ruqun with fitted opaque ivory bodice and flowing light skirt, a very light lavender gauze stole hanging behind arms. Pearl-and-gold floral hairpins in elegant partial updo, pearl drop earrings, slender gold necklace, jade bangle and waist tassel. Direct camera gaze, subtle smile.",
+      "id": "mainland-photo-five-20261022-01",
+      "prompt": "Use case: photorealistic-natural. Asset: one full-body transparent cutout for a Chinese imperial game random portrait library. Input photos are identity and visible body-build references ONLY; create new costume, pose and composition. Preserve the specific actress's recognizable face, eye shape, nose, jaw and natural skin, adult appearance at the reference period, individual likeness over generic beauty. High quality realistic costume photography, no illustration, no doll. Historically inspired Chinese summer clothing: lightweight silk and gauze, opaque lined bodice and skirt/trousers, tasteful elegant styling. True adult proportions about 7.5 heads tall, proportionate head, shoulders, torso and long natural legs, normal perspective 70mm, no big head or shrunken body. Exactly two anatomically coherent arms, two hands with five natural fingers each, two legs, two correctly oriented feet; realistic contact with props, relaxed joints and stable gravity. Entire body, hair ornaments, all feet and props within frame with generous 8% clear transparent margins on all sides. Genuine transparent alpha background; isolate person and specified props/support only, no scenery, no floor, no cast shadow, no haze, no background colors, no frame, no text, no watermark. Portrait 2:3 image, soft neutral natural light. Subject: Zeng Li 曾黎 at her 2010 adult appearance (33), use reference 1 for face and reference 2 for slim tall body proportions. Standing relaxed contrapposto, both feet visible in pale embroidered flat shoes. One hand holds a single lotus stem with a pink flower lowered beside her hip, other hand rests loosely along waist. Pale lotus-pink sleeveless high-waist ruqun with fitted opaque ivory bodice and flowing light skirt, a very light lavender gauze stole hanging behind arms. Pearl-and-gold floral hairpins in elegant partial updo, pearl drop earrings, slender gold necklace, jade bangle and waist tassel. Direct camera gaze, subtle smile.",
+      "asset": "assets/beauties/random/女明星/曾黎-藕荷执莲.png",
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a1612b-a622-7073-bc74-c23f907ae0f5/exec-27603259-c82a-44aa-b69d-bd5d976ab190.png",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentFraction": 0.585,
+        "boundsAbove20": [
+          195,
+          18,
+          956,
+          1524
+        ],
+        "nontransparentBorderPixels": 0
+      },
+      "status": "completed",
+      "category": "女明星",
+      "regionId": "sheng",
+      "sources": [
+        {
+          "subject": "zeng-li",
+          "page": "https://eladies.sina.com.cn/news/p/2010/0427/1703988232.shtml",
+          "imageUrl": "https://i2.sinaimg.cn/lx/news/p/2010/0427/U2075P8T1D988232F913DT20100427170324.jpg",
+          "localPath": "assets/beauties/references/mainland-five-20261022/zeng-li-1.jpg",
+          "sha256": "1c48068eb5c35bab52daa56e5b16e936ff19a6b4d33b00851c45afe2216a738c"
+        },
+        {
+          "subject": "zeng-li",
+          "page": "https://eladies.sina.com.cn/news/p/2010/0427/1703988232.shtml",
+          "imageUrl": "https://i0.sinaimg.cn/lx/news/p/2010/0427/U2075P8T1D988232F915DT20100427170324.jpg",
+          "localPath": "assets/beauties/references/mainland-five-20261022/zeng-li-3.jpg",
+          "sha256": "b7060e11a7d3a9cf549e368a4bd758f469993966364e581af07aa33b29a6c7e5"
+        }
+      ],
+      "assetSha256": "4ce824869ddb339bfa894a8f87e59c696e564c37bf6bb313e93875e3e142ce22",
+      "visualReview": "已查看原图及浅米色、深蓝色换底总览：人物和道具完整，未见明显多余肢体或手脚畸形，姿势与头身比例自然。衣物遮挡处不宣称逐指逐趾可见。PNG保留生成器原始alpha，四周边界无非透明像素。",
+      "likenessNote": "已将列出的公开真人照片直接作为imagegen输入；依据照片中的脸型、五官及可见身形生成古装立绘。照片未展示的身体结构按自然成人比例补全；不等同于精确三维扫描。"
+    },
+    {
+      "key": "chen-hao",
+      "name": "陈好",
+      "title": "杏纱琵琶",
+      "refs": [
+        "assets/beauties/references/mainland-five-20261022/chen-hao-1.jpg",
+        "assets/beauties/references/mainland-five-20261022/chen-hao-4.jpg"
+      ],
+      "detail": "Subject: Chen Hao 陈好 at her 2007 adult appearance (27). Use both photos for face and upper body silhouette; preserve rounded almond eyes, expressive brows and warm full lips. Seated upright on a small backless carved wood stool, two feet in delicate embroidered shoes placed naturally, one slightly forward. Small pear-shaped pipa held upright across lap, left hand relaxed on neck below headstock, right hand resting naturally over strings, not elaborate playing. Apricot short-sleeve fine-silk open beizi over an opaque pale gold camisole and light cream pleated skirt. Gold filigree floral combs, amber drop earrings, delicate layered necklace and fine bracelets. Refined warm smile, elegant natural waist.",
+      "id": "mainland-photo-five-20261022-02",
+      "prompt": "Use case: photorealistic-natural. Asset: one full-body transparent cutout for a Chinese imperial game random portrait library. Input photos are identity and visible body-build references ONLY; create new costume, pose and composition. Preserve the specific actress's recognizable face, eye shape, nose, jaw and natural skin, adult appearance at the reference period, individual likeness over generic beauty. High quality realistic costume photography, no illustration, no doll. Historically inspired Chinese summer clothing: lightweight silk and gauze, opaque lined bodice and skirt/trousers, tasteful elegant styling. True adult proportions about 7.5 heads tall, proportionate head, shoulders, torso and long natural legs, normal perspective 70mm, no big head or shrunken body. Exactly two anatomically coherent arms, two hands with five natural fingers each, two legs, two correctly oriented feet; realistic contact with props, relaxed joints and stable gravity. Entire body, hair ornaments, all feet and props within frame with generous 8% clear transparent margins on all sides. Genuine transparent alpha background; isolate person and specified props/support only, no scenery, no floor, no cast shadow, no haze, no background colors, no frame, no text, no watermark. Portrait 2:3 image, soft neutral natural light. Subject: Chen Hao 陈好 at her 2007 adult appearance (27). Use both photos for face and upper body silhouette; preserve rounded almond eyes, expressive brows and warm full lips. Seated upright on a small backless carved wood stool, two feet in delicate embroidered shoes placed naturally, one slightly forward. Small pear-shaped pipa held upright across lap, left hand relaxed on neck below headstock, right hand resting naturally over strings, not elaborate playing. Apricot short-sleeve fine-silk open beizi over an opaque pale gold camisole and light cream pleated skirt. Gold filigree floral combs, amber drop earrings, delicate layered necklace and fine bracelets. Refined warm smile, elegant natural waist.",
+      "asset": "assets/beauties/random/女明星/陈好-杏纱琵琶.png",
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a1612b-a622-7073-bc74-c23f907ae0f5/exec-63ec95ed-0fd6-4458-808d-e25e6edf5f31.png",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentFraction": 0.504,
+        "boundsAbove20": [
+          58,
+          34,
+          958,
+          1490
+        ],
+        "nontransparentBorderPixels": 0
+      },
+      "status": "completed",
+      "category": "女明星",
+      "regionId": "sheng",
+      "sources": [
+        {
+          "subject": "chen-hao",
+          "page": "https://ent.sina.com.cn/s/m/p/2007-08-22/09411684544.shtml",
+          "imageUrl": "https://www.sinaimg.cn/ent/s/m/p/2007-08-22/U1624P28T3D1684544F326DT20070822094106.jpg",
+          "localPath": "assets/beauties/references/mainland-five-20261022/chen-hao-1.jpg",
+          "sha256": "556be9675d2e1eb7482a91edb3ce0cd75b0a737a72a196b2cce6f41e137f9765"
+        },
+        {
+          "subject": "chen-hao",
+          "page": "https://ent.sina.com.cn/s/m/p/2007-08-22/09411684544.shtml",
+          "imageUrl": "https://www.sinaimg.cn/ent/s/m/p/2007-08-22/U1624P28T3D1684544F358DT20070822094106.jpg",
+          "localPath": "assets/beauties/references/mainland-five-20261022/chen-hao-4.jpg",
+          "sha256": "3a37f0f2718397df5e05d70e795131a8d94418a4a06a4e10b64e6ad550ad4534"
+        }
+      ],
+      "assetSha256": "4ff1f9bc7dbb52f9241f4c4edb7cac70a82561cd61a45a061a1a1d163c833ed2",
+      "visualReview": "已查看原图及浅米色、深蓝色换底总览：人物和道具完整，未见明显多余肢体或手脚畸形，姿势与头身比例自然。衣物遮挡处不宣称逐指逐趾可见。PNG保留生成器原始alpha，四周边界无非透明像素。",
+      "likenessNote": "已将列出的公开真人照片直接作为imagegen输入；依据照片中的脸型、五官及可见身形生成古装立绘。照片未展示的身体结构按自然成人比例补全；不等同于精确三维扫描。"
+    },
+    {
+      "key": "yu-feihong",
+      "name": "俞飞鸿",
+      "title": "青绡捧卷",
+      "refs": [
+        "assets/beauties/references/mainland-five-20261022/yu-feihong-2.jpg",
+        "assets/beauties/references/mainland-five-20261022/yu-feihong-1.jpg"
+      ],
+      "detail": "Subject: Yu Feihong 俞飞鸿 in her young adult Little Li Flying Dagger period (around 28), use first reference face prominently, second reference for face structure only. Preserve elegant elongated eyes and naturally structured oval jaw. Sitting with legs bent gracefully to one side on a small ivory cushion, torso upright and shoulders relaxed; two embroidered slipper tips visible beneath a naturally draped skirt. Hold a closed rolled silk manuscript horizontally with both relaxed hands at lap, clearly separated fingers. Pale celadon sleeveless cross-collar summer top, ivory softly flowing long wrap skirt, tiny sheer silk short shoulder cape. Silver orchid hairpins and jade hair comb in half-up long dark hair, jade drop earrings, silver necklace and jade bangle. Composed gentle expression.",
+      "id": "mainland-photo-five-20261022-03",
+      "prompt": "Use case: photorealistic-natural. Asset: one full-body transparent cutout for a Chinese imperial game random portrait library. Input photos are identity and visible body-build references ONLY; create new costume, pose and composition. Preserve the specific actress's recognizable face, eye shape, nose, jaw and natural skin, adult appearance at the reference period, individual likeness over generic beauty. High quality realistic costume photography, no illustration, no doll. Historically inspired Chinese summer clothing: lightweight silk and gauze, opaque lined bodice and skirt/trousers, tasteful elegant styling. True adult proportions about 7.5 heads tall, proportionate head, shoulders, torso and long natural legs, normal perspective 70mm, no big head or shrunken body. Exactly two anatomically coherent arms, two hands with five natural fingers each, two legs, two correctly oriented feet; realistic contact with props, relaxed joints and stable gravity. Entire body, hair ornaments, all feet and props within frame with generous 8% clear transparent margins on all sides. Genuine transparent alpha background; isolate person and specified props/support only, no scenery, no floor, no cast shadow, no haze, no background colors, no frame, no text, no watermark. Portrait 2:3 image, soft neutral natural light. Subject: Yu Feihong 俞飞鸿 in her young adult Little Li Flying Dagger period (around 28), use first reference face prominently, second reference for face structure only. Preserve elegant elongated eyes and naturally structured oval jaw. Sitting with legs bent gracefully to one side on a small ivory cushion, torso upright and shoulders relaxed; two embroidered slipper tips visible beneath a naturally draped skirt. Hold a closed rolled silk manuscript horizontally with both relaxed hands at lap, clearly separated fingers. Pale celadon sleeveless cross-collar summer top, ivory softly flowing long wrap skirt, tiny sheer silk short shoulder cape. Silver orchid hairpins and jade hair comb in half-up long dark hair, jade drop earrings, silver necklace and jade bangle. Composed gentle expression.",
+      "asset": "assets/beauties/random/女明星/俞飞鸿-青绡捧卷.png",
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a1612b-a622-7073-bc74-c23f907ae0f5/exec-1ef79276-d450-4340-a2f5-9ca5346c7777.png",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentFraction": 0.476,
+        "boundsAbove20": [
+          22,
+          13,
+          1012,
+          1523
+        ],
+        "nontransparentBorderPixels": 0
+      },
+      "status": "completed",
+      "category": "女明星",
+      "regionId": "sheng",
+      "sources": [
+        {
+          "subject": "yu-feihong",
+          "page": "https://ent.sina.com.cn/m/c/2009-08-16/10462655728.shtml",
+          "imageUrl": "https://i1.sinaimg.cn/ent/m/c/2009-08-16/U996P28T3D2655728F326DT20090816104603.jpg",
+          "localPath": "assets/beauties/references/mainland-five-20261022/yu-feihong-1.jpg",
+          "sha256": "62c2c338b8a510020b392741131402bd8e76cf8fa782e907fab062286883052e"
+        },
+        {
+          "subject": "yu-feihong",
+          "page": "https://ent.sina.com.cn/m/c/2009-08-16/10462655728.shtml",
+          "imageUrl": "https://i3.sinaimg.cn/ent/m/c/2009-08-16/U996P28T3D2655728F328DT20090816104603.jpg",
+          "localPath": "assets/beauties/references/mainland-five-20261022/yu-feihong-2.jpg",
+          "sha256": "86be41c60f08ea3436ee9b4d172ca7a5951b363599bd8e93333d9cea7ba03102"
+        }
+      ],
+      "assetSha256": "faab700d36df6bebda95539401b7a7f0a4a03ab4dd846b46b3c6177795071a12",
+      "visualReview": "已查看原图及浅米色、深蓝色换底总览：人物和道具完整，未见明显多余肢体或手脚畸形，姿势与头身比例自然。衣物遮挡处不宣称逐指逐趾可见。PNG保留生成器原始alpha，四周边界无非透明像素。",
+      "likenessNote": "已将列出的公开真人照片直接作为imagegen输入；依据照片中的脸型、五官及可见身形生成古装立绘。照片未展示的身体结构按自然成人比例补全；不等同于精确三维扫描。"
+    },
+    {
+      "key": "shu-chang",
+      "name": "舒畅",
+      "title": "薄荷静修",
+      "refs": [
+        "assets/beauties/references/mainland-five-20261022/shu-chang-3.jpg",
+        "assets/beauties/references/mainland-five-20261022/shu-chang-5.jpg"
+      ],
+      "detail": "Subject: Shu Chang 舒畅 as adult in 2017 (29); first reference identity, second reference body proportions and slim build. Calm seated easy yoga pose Sukhasana on a small pale woven oval mat: shins loosely crossed in front, knees relaxed down, upright straight spine, no contortion or lotus foot wrapping. Both feet anatomically accounted for with naturally visible toes, no extra limbs. Both hands rest palms up on respective knees, relaxed open fingers. Mint-green opaque sleeveless silk wrap top and loose airy ivory ankle-length trousers, pale green waist sash. Fine silver hairpins, small jade earrings, delicate pendant necklace, two thin silver bracelets and anklet. Small closed sandalwood bead strand lies loosely in right palm. Peaceful open-eyed slight smile.",
+      "id": "mainland-photo-five-20261022-04",
+      "prompt": "Use case: photorealistic-natural. Asset: one full-body transparent cutout for a Chinese imperial game random portrait library. Input photos are identity and visible body-build references ONLY; create new costume, pose and composition. Preserve the specific actress's recognizable face, eye shape, nose, jaw and natural skin, adult appearance at the reference period, individual likeness over generic beauty. High quality realistic costume photography, no illustration, no doll. Historically inspired Chinese summer clothing: lightweight silk and gauze, opaque lined bodice and skirt/trousers, tasteful elegant styling. True adult proportions about 7.5 heads tall, proportionate head, shoulders, torso and long natural legs, normal perspective 70mm, no big head or shrunken body. Exactly two anatomically coherent arms, two hands with five natural fingers each, two legs, two correctly oriented feet; realistic contact with props, relaxed joints and stable gravity. Entire body, hair ornaments, all feet and props within frame with generous 8% clear transparent margins on all sides. Genuine transparent alpha background; isolate person and specified props/support only, no scenery, no floor, no cast shadow, no haze, no background colors, no frame, no text, no watermark. Portrait 2:3 image, soft neutral natural light. Subject: Shu Chang 舒畅 as adult in 2017 (29); first reference identity, second reference body proportions and slim build. Calm seated easy yoga pose Sukhasana on a small pale woven oval mat: shins loosely crossed in front, knees relaxed down, upright straight spine, no contortion or lotus foot wrapping. Both feet anatomically accounted for with naturally visible toes, no extra limbs. Both hands rest palms up on respective knees, relaxed open fingers. Mint-green opaque sleeveless silk wrap top and loose airy ivory ankle-length trousers, pale green waist sash. Fine silver hairpins, small jade earrings, delicate pendant necklace, two thin silver bracelets and anklet. Small closed sandalwood bead strand lies loosely in right palm. Peaceful open-eyed slight smile.",
+      "asset": "assets/beauties/random/女明星/舒畅-薄荷静修.png",
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a1612b-a622-7073-bc74-c23f907ae0f5/exec-d2955296-28eb-4c92-ac9f-a77f07a4fb20.png",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentFraction": 0.484,
+        "boundsAbove20": [
+          19,
+          86,
+          1010,
+          1466
+        ],
+        "nontransparentBorderPixels": 0
+      },
+      "status": "completed",
+      "category": "女明星",
+      "regionId": "sheng",
+      "sources": [
+        {
+          "subject": "shu-chang",
+          "page": "https://ent.sina.cn/star/tv/2017-08-15/detail-ifyixtym4642392.d.html?vt=4",
+          "imageUrl": "https://k.sinaimg.cn/n/ent/4_img/upload/a5d31629/20170815/_qHE-fyixhyw8263022.jpg/w640slw.jpg",
+          "localPath": "assets/beauties/references/mainland-five-20261022/shu-chang-3.jpg",
+          "sha256": "c70be8d090a951aed356c56d98c42ed3dbbad0ff503bd915d03cafb2566a42dd"
+        },
+        {
+          "subject": "shu-chang",
+          "page": "https://ent.sina.cn/star/tv/2017-08-15/detail-ifyixtym4642392.d.html?vt=4",
+          "imageUrl": "https://k.sinaimg.cn/n/ent/4_img/upload/a5d31629/20170815/pYvX-fyixiay7658572.jpg/w640slw.jpg",
+          "localPath": "assets/beauties/references/mainland-five-20261022/shu-chang-5.jpg",
+          "sha256": "f9fee8e76fbaefb15e60eb954a1e455b3a2f7d40cd1203a2f6d5c62ac420fb60"
+        }
+      ],
+      "assetSha256": "80bf4b54686889570b5d9fa9af4d1cb5b73d2d22cd8764942837a2e38b11d035",
+      "visualReview": "已查看原图及浅米色、深蓝色换底总览：人物和道具完整，未见明显多余肢体或手脚畸形，姿势与头身比例自然。衣物遮挡处不宣称逐指逐趾可见。PNG保留生成器原始alpha，四周边界无非透明像素。",
+      "likenessNote": "已将列出的公开真人照片直接作为imagegen输入；依据照片中的脸型、五官及可见身形生成古装立绘。照片未展示的身体结构按自然成人比例补全；不等同于精确三维扫描。"
+    },
+    {
+      "key": "zhang-xinyu",
+      "name": "张馨予",
+      "title": "朱纱果盏",
+      "refs": [
+        "assets/beauties/references/mainland-five-20261022/zhang-xinyu-2.jpg",
+        "assets/beauties/references/mainland-five-20261022/zhang-xinyu-1.jpg"
+      ],
+      "detail": "Subject: Zhang Xinyu 张馨予 as adult in 2015 (28), use both photos for face and graceful slim build. Preserve distinct lifted almond eyes, straight defined nose and tapered oval face. Graceful semi-reclining side-sitting pose on a small low pale silk chaise cushion, supported on left forearm with elbow directly under shoulder, torso diagonal and face turned toward camera; two legs extend together diagonally with slight natural knee bend and two feet fully visible in red silk slippers. Right hand cradles one small blue-and-white porcelain fruit bowl holding two peaches near waist, no floating fruit. Lightweight vermilion summer bandeau-style opaque ruqun bodice with fine gold embroidery, airy ivory-red long wrap skirt, translucent red gauze drape only over arms. Garnet and gold hairpins in half-up dark hair, gold tassel earrings, gold collar necklace, bangles and jeweled waist chain. Elegant relaxed, no sexualized pose. Fit whole reclining silhouette and cushion naturally within 2:3 portrait; keep small natural head relative to full body.",
+      "id": "mainland-photo-five-20261022-05",
+      "prompt": "Use case: photorealistic-natural. Asset: one full-body transparent cutout for a Chinese imperial game random portrait library. Input photos are identity and visible body-build references ONLY; create new costume, pose and composition. Preserve the specific actress's recognizable face, eye shape, nose, jaw and natural skin, adult appearance at the reference period, individual likeness over generic beauty. High quality realistic costume photography, no illustration, no doll. Historically inspired Chinese summer clothing: lightweight silk and gauze, opaque lined bodice and skirt/trousers, tasteful elegant styling. True adult proportions about 7.5 heads tall, proportionate head, shoulders, torso and long natural legs, normal perspective 70mm, no big head or shrunken body. Exactly two anatomically coherent arms, two hands with five natural fingers each, two legs, two correctly oriented feet; realistic contact with props, relaxed joints and stable gravity. Entire body, hair ornaments, all feet and props within frame with generous 8% clear transparent margins on all sides. Genuine transparent alpha background; isolate person and specified props/support only, no scenery, no floor, no cast shadow, no haze, no background colors, no frame, no text, no watermark. Portrait 2:3 image, soft neutral natural light. Subject: Zhang Xinyu 张馨予 as adult in 2015 (28), use both photos for face and graceful slim build. Preserve distinct lifted almond eyes, straight defined nose and tapered oval face. Graceful semi-reclining side-sitting pose on a small low pale silk chaise cushion, supported on left forearm with elbow directly under shoulder, torso diagonal and face turned toward camera; two legs extend together diagonally with slight natural knee bend and two feet fully visible in red silk slippers. Right hand cradles one small blue-and-white porcelain fruit bowl holding two peaches near waist, no floating fruit. Lightweight vermilion summer bandeau-style opaque ruqun bodice with fine gold embroidery, airy ivory-red long wrap skirt, translucent red gauze drape only over arms. Garnet and gold hairpins in half-up dark hair, gold tassel earrings, gold collar necklace, bangles and jeweled waist chain. Elegant relaxed, no sexualized pose. Fit whole reclining silhouette and cushion naturally within 2:3 portrait; keep small natural head relative to full body. CRITICAL COMPOSITION CORRECTION: use a pulled-back full-body camera and reduce the entire subject to 75 percent of canvas width, with at least 100 pixels of completely empty transparent space on both left and right edges, and at least 90 pixels top and bottom. Only a SMALL low oval chaise cushion, no large chaise frame or furniture. Her full supporting elbow, forearm, both slippers and all floating fabric must be INSIDE the canvas. No object may intersect any image boundary. Prefer moderately reclined upright torso with bent knees if necessary to fit. Wide view within portrait canvas. Do not enlarge face to fill frame.",
+      "asset": "assets/beauties/random/女明星/张馨予-朱纱果盏.png",
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a1612b-a622-7073-bc74-c23f907ae0f5/exec-43b28b94-04ca-4960-b922-03579eb744a7.png",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentFraction": 0.645,
+        "boundsAbove20": [
+          12,
+          293,
+          1018,
+          1366
+        ],
+        "nontransparentBorderPixels": 0
+      },
+      "status": "completed",
+      "category": "女明星",
+      "regionId": "sheng",
+      "sources": [
+        {
+          "subject": "zhang-xinyu",
+          "page": "https://www.chinanews.com/yl/2015/11-12/7618981.shtml",
+          "imageUrl": "https://www.chinanews.com/yl/2015/11-12/U609P4T8D7618981F107DT20151112092230.jpg",
+          "localPath": "assets/beauties/references/mainland-five-20261022/zhang-xinyu-1.jpg",
+          "sha256": "6e16ba31570649589b8cbd233a1898ecef699524ada490b54961e8c98eef9f19"
+        },
+        {
+          "subject": "zhang-xinyu",
+          "page": "https://www.chinanews.com/yl/2015/11-12/7618981.shtml",
+          "imageUrl": "https://www.chinanews.com/yl/2015/11-12/U609P4T8D7618981F116DT20151112092230.jpg",
+          "localPath": "assets/beauties/references/mainland-five-20261022/zhang-xinyu-2.jpg",
+          "sha256": "c070746b3ceb6cc190b691bb48664676613e5315be716bc466b2b57675e02db7"
+        }
+      ],
+      "assetSha256": "c4a35ab5154b00422a0af990a6284648bf3a9b9ccea9995b3c0fdd8dbeec7ef1",
+      "visualReview": "已查看原图及浅米色、深蓝色换底总览：人物和道具完整，未见明显多余肢体或手脚畸形，姿势与头身比例自然。衣物遮挡处不宣称逐指逐趾可见。PNG保留生成器原始alpha，四周边界无非透明像素。",
+      "likenessNote": "已将列出的公开真人照片直接作为imagegen输入；依据照片中的脸型、五官及可见身形生成古装立绘。照片未展示的身体结构按自然成人比例补全；不等同于精确三维扫描。",
+      "revisionNote": "初版榻边及衣摆贴边，未入库；重新生成小软枕侧倚版本，最终PNG边界透明。"
+    }
+  ],
+  "completed": 5,
+  "validation": {
+    "testsPassed": 17,
+    "command": "node --test tests/random-beauty-generation.test.mjs tests/featured-beauties.test.mjs tests/beauty-portrait.test.mjs",
+    "checks": [
+      "unique actress identities",
+      "all five reachable through mainland city random pools",
+      "new portrait assets stable after admission and save reload",
+      "1024x1536 RGBA with genuine transparent pixels and clear borders",
+      "light and dark background visual inspection"
+    ],
+    "preview": "outputs/mainland-photo-five-20261022/contact-sheet.jpg"
+  }
+}

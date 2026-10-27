@@ -1,0 +1,31 @@
+{
+  "date": "2026-10-24T05:42:27.247718+00:00",
+  "scope": "Nine fictional regional spear infantry illustrations; broad period inspiration, not exact costume reconstruction",
+  "asset": {
+    "path": "assets/battle/card-regional-spears-v1.png",
+    "sha256": "40a9f7f8550df17305832ccbf118313af67bd7c40c33b60c502d04fe6490d1ea",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "generator": "built-in imagegen",
+    "sourceOutput": "exec-e0bedc38-27a8-4a18-803c-ea4658105ad0.png",
+    "layout": "3x3 tibetan,steppe,centralasia,persian,arab,indian,roman,nanzhao,japan"
+  },
+  "verification": {
+    "modelTests": 24,
+    "modelPassed": 24,
+    "modelDurationMs": 4290.363083,
+    "nativeChecks": 27,
+    "consoleErrors": [],
+    "nativeElapsedSeconds": 26.531,
+    "visualReview": "All nine atlas cells and Japanese actual deployed spear card screenshot reviewed"
+  },
+  "remaining": [
+    "seven other troop kinds",
+    "regional random person variants",
+    "historical outfit review",
+    "Yan Ying skill enhancement",
+    "full visual performance balance acceptance, 20 games and one hour foreground"
+  ]
+}

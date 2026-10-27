@@ -1,3 +1,6 @@
+import {balanced,laborRatio} from './development-balance.mjs';
+import {industryStaffing} from './industry-labor.mjs';
+import {laborProfile} from './labor.mjs';
 import {quoteShortage} from './action-feedback.mjs';
 import {quoteDisasterSubsidy,applyDisasterSubsidy} from './disasters.mjs';
 import {assignArrivalJobs} from './labor.mjs';
@@ -6,7 +9,7 @@ import {changeWelfare} from './building-effects.mjs';
 import {postTreasury} from './finance.mjs';
 import {countrySummary,provinceBudget,validateDomestic,INDUSTRIES} from './domestic.mjs';
 export const CENSUS_COST=5000;
-export const REVENUE_TABS=[['census','招纳流民入籍'],['purchase','武装购买'],['subsidy','中央补助'],['tax','各州税率']];
+export const REVENUE_TABS=[['census','招纳流民入籍'],['purchase','武装购买'],['subsidy','中央补助'],['tax','各州税率'],['repay','偿还国债']];
 const integer=(n,min=0,max=1000000000)=>{if(!Number.isSafeInteger(n)||n<min||n>max)throw Error('请输入范围内的整数');return n;};
 const owned=state=>{const d=state.domestic,c=d.countries.find(c=>c.id===d.playerCountryId);return c.provinceIds.map(id=>d.provinces.find(p=>p.id===id&&p.countryId===c.id));};
 function checkedEntries(values,provinces,all=false){
@@ -18,9 +21,11 @@ export function quoteRevenue(state,command){
  const provinces=owned(state),s=countrySummary(state.domestic),kind=command.kind;
  if(kind==='levy')throw Error('全国钱粮统一结算，已取消地方拨款与府库加征');
  let cost=0,income=0,lines=[],changes=[];
- if(kind==='census'){
-  cost=CENSUS_COST;changes=provinces.map(p=>({provinceId:p.id,added:admittedPopulation(p,Math.max(1,Math.floor(p.population.total*.01)))}));
-  if(!changes.some(r=>r.added))throw Error('各州已达人口超载上限，请先扩建或迁出人口');
+ if(kind==='repay'){cost=integer(command.amount,1,Math.min(1000000000,s.country.fiscal.debt));lines=[`偿还国债本金${cost}两；国债${s.country.fiscal.debt} → ${s.country.fiscal.debt-cost}两`];
+ }else if(kind==='census'){
+  cost=CENSUS_COST;changes=provinces.map(p=>({provinceId:p.id,added:admittedPopulation(p,balanced(p)?Math.min(Math.floor(p.population.total*.01),Math.ceil(Math.max(0,INDUSTRIES.reduce((n,[key])=>n+industryStaffing(p,key,state.turn).vacant,0)-laborProfile(p).available)/laborRatio(p))):Math.max(1,Math.floor(p.population.total*.01)))}));
+  if(!changes.some(r=>r.added))throw Error(balanced(state.domestic)?'当前没有需招纳流民填补的空缺岗位；请先开发产业或使用本地空闲劳力':'各州已达人口超载上限，请先扩建或迁出人口');
+  if(balanced(state.domestic))cost=Math.min(CENSUS_COST,200+Math.ceil(changes.reduce((n,r)=>n+r.added,0)*.15));
   lines=changes.map(r=>`${provinces.find(p=>p.id===r.provinceId).name}：新登记 ${r.added.toLocaleString('zh-CN')} 人`);
  }else if(kind==='subsidy'){
   changes=checkedEntries(command.amounts,provinces).map(([p,n])=>{
@@ -46,6 +51,7 @@ export function quoteRevenue(state,command){
   changes=checkedEntries(command.rates,provinces,true).map(([p,n])=>({provinceId:p.id,before:p.budget.taxRate,rate:integer(n,0,50)/100})).filter(r=>Math.abs(r.rate-r.before)>1e-9);
   if(!changes.length)throw Error('各州税率与原来相同');
   lines=changes.map(r=>`${provinces.find(p=>p.id===r.provinceId).name}：税率由 ${Math.round(r.before*100)}% 调为 ${Math.round(r.rate*100)}%`);
+  if(balanced(state.domestic)&&changes.some(r=>r.rate>.24))lines.push('临时加税有缓冲，积怨10/20会先预警；持续高税积怨至30会引发民变，特赦无法抵消。50%税率仍有数月后动荡风险，及时降税治理可恢复，不免除既有债务。');
  }else throw Error('户部政令无效');
  if(!Number.isSafeInteger(cost)||!Number.isSafeInteger(income))throw Error('金额超出范围');
  return {kind,title:REVENUE_TABS.find(([key])=>key===kind)[1],cost,income,lines,changes,treasuryBefore:s.country.fiscal.treasury,treasuryAfter:s.country.fiscal.treasury-cost+income,canAfford:s.country.fiscal.treasury>=cost};
@@ -57,6 +63,7 @@ export function executeRevenue(state,command){
  const byId=id=>provinces.find(p=>p.id===id);
  if(command.kind==='census')for(const r of quote.changes){
   const p=byId(r.provinceId);p.population.total+=r.added;
+  if(balanced(p)){assignArrivalJobs(p,Object.fromEntries(INDUSTRIES.map(([key,,job])=>[job,industryStaffing(p,key,state.turn).vacant])));continue;}
   // Register new productive residents without changing existing soldiers/militia.
   const keys=INDUSTRIES.map(([, ,job])=>job),total=keys.reduce((n,k)=>n+p.population.professions[k],0);let remaining=r.added;
   keys.forEach((key,i)=>{const n=i===keys.length-1?remaining:Math.floor(r.added*(total?p.population.professions[key]/total:1/keys.length));if(p.industryLabor)assignArrivalJobs(p,{[key]:n});else p.population.professions[key]+=n;remaining-=n;});
@@ -64,7 +71,7 @@ export function executeRevenue(state,command){
  else if(command.kind==='subsidy')for(const r of quote.changes){const p=byId(r.provinceId);p.status.livingStandard=r.after;applyDisasterSubsidy(d,p,state.turn,r.disaster);}
  else if(command.kind==='tax')for(const r of quote.changes)byId(r.provinceId).budget.taxRate=r.rate;
 
- postTreasury(d,c.id,{turn:state.turn,income:quote.income,expense:quote.cost,category:'oneOff',reason:quote.title,key:`revenue:${command.id}`});next.stats.treasury=c.fiscal.treasury;
+ postTreasury(d,c.id,{turn:state.turn,income:quote.income,expense:quote.cost,...(command.kind==='repay'?{debtRepayment:quote.cost}:{}),category:'oneOff',reason:quote.title,key:`revenue:${command.id}`});next.stats.treasury=c.fiscal.treasury;
  const receipt={id:command.id,turn:state.turn,kind:quote.kind,title:quote.title,cost:quote.cost,income:quote.income,treasuryBefore:quote.treasuryBefore,treasuryAfter:quote.treasuryAfter,lines:quote.lines};
  d.fiscalActions.nextId++;d.fiscalActions.records.unshift(receipt);d.fiscalActions.records=d.fiscalActions.records.slice(0,100);
  validateDomestic(d);return {state:next,receipt};

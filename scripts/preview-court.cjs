@@ -10,7 +10,7 @@ app.whenReady().then(async()=>{
  w.webContents.setWindowOpenHandler(()=>({action:'deny'}));w.webContents.on('will-navigate',e=>e.preventDefault());
  try{
   await w.loadFile(path.join(__dirname,'../index.html'));
-  await w.webContents.executeJavaScript(`(async()=>{if(!localStorage.getItem('emperor.save.v1')){const {newGame}=await import('./src/game.mjs');const s=newGame('朝堂试玩');s.scene='court';localStorage.setItem('emperor.save.v1',JSON.stringify(s));}})()`);
+  await w.webContents.executeJavaScript(`(async()=>{if(!localStorage.getItem('emperor.save.v1')){const {createPlayableGame}=await import('./src/game.mjs');const s=createPlayableGame('朝堂试玩');s.scene='court';localStorage.setItem('emperor.save.v1',JSON.stringify(s));}})()`);
   await w.loadFile(path.join(__dirname,'../index.html'));
   await w.webContents.executeJavaScript(`document.querySelector('#continue')?.click();`);
   w.setTitle('皇帝 · 朝堂交互试玩');w.show();w.focus();console.log('朝堂试玩已打开；存档目录：'+app.getPath('userData'));

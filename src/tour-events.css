@@ -23,3 +23,53 @@
 .has-tour-portrait .travel-journey-scene::before{content:"";position:absolute;inset:0;z-index:-3;background:linear-gradient(90deg,#183c32eb,#183c32b8),var(--tour-portrait-scene,url('../assets/scenes/tour/sketch-beauty-xia-yuhe-v3.png')) center 65%/cover}
 .has-tour-portrait .travel-journey-scene>span{font-size:27px}
 @media(max-width:750px){.has-tour-event .travel-content{grid-template-columns:1fr;max-height:48vh;padding:14px}.tour-choices{grid-template-columns:1fr}.tour-event-story{font-size:13px}.has-tour-event .travel-summary{display:none}.has-tour-event .travel-journey-scene{height:26vh}.has-tour-portrait .travel-journey-scene{height:32vh}.has-tour-portrait .travel-journey-scene>.travel-scene{width:54%;right:0}.has-tour-portrait .travel-journey-scene>span{font-size:20px}.tour-person span{display:block;margin:5px 0 0}}
+
+/* Match the approved event illustration: close portrait, warm paper and fine goldwork. */
+.travel-journey.has-commoner-event{width:min(1260px,97vw);border:2px solid #a8894e;border-radius:2px;font-family:"Imperial ZhenKai","Songti SC",serif;background:#eee4ca}
+.has-commoner-event .travel-sheet{position:relative;display:grid;grid-template-columns:43% minmax(0,1fr);background:url('./tour-paper-grain.svg') center/480px 480px,radial-gradient(ellipse at 65% 15%,#fcf7eb,#eee3cb)}
+.has-commoner-event .travel-sheet::after{content:"";position:absolute;inset:0;z-index:5;pointer-events:none;background:url('./tour-event-frame.svg') center/100% 100% no-repeat}
+.has-commoner-event .travel-sheet>header,.has-commoner-event .travel-status{grid-column:1/-1}
+.has-commoner-event .travel-sheet>header{position:relative;justify-content:center;height:40px;box-sizing:border-box;padding:3px 18px;background:linear-gradient(90deg,#233d30,#344d3b,#233d30);color:#ead9a8;border-bottom:1px solid #af914e}
+.has-commoner-event .travel-sheet>header>div{display:contents}
+.has-commoner-event .travel-sheet>header small{display:none}
+.has-commoner-event .travel-sheet>header h1{font-size:20px;font-weight:400;letter-spacing:6px;margin:0;border:1px solid #a98d51;padding:1px 30px;background:#263d2e;clip-path:polygon(10px 0,calc(100% - 10px) 0,100% 50%,calc(100% - 10px) 100%,10px 100%,0 50%)}
+.has-commoner-event .travel-journey-scene{height:470px;min-height:0;margin:0;padding:0;background:#c0bc9f;border:0}
+.has-commoner-event .travel-journey-scene::before{z-index:-3;background:linear-gradient(0deg,#e4dcc142,#efe6ce45),var(--tour-portrait-scene) center/cover;filter:saturate(.65) sepia(.12)}
+.has-commoner-event .travel-journey-scene::after{background:linear-gradient(90deg,transparent 82%,#ede3cb);pointer-events:none}
+.has-commoner-event .travel-journey-scene>.travel-scene{inset:0 auto auto -16%;width:132%;height:195%;max-width:none;object-fit:contain;object-position:center top}
+.has-commoner-event .travel-journey-scene>span,.has-commoner-event .travel-journey-scene>p{display:none}
+.has-commoner-event .travel-content{display:block;max-height:none;overflow:visible;padding:26px 34px 24px 20px;align-self:center}
+.has-commoner-event .travel-content>.travel-summary,.has-commoner-event .tour-event-kicker{display:none}
+.has-commoner-event .travel-content h2{font-size:35px;font-weight:600;letter-spacing:2px;color:#29351f;margin:0 0 16px}
+.has-commoner-event .tour-event-story{font-size:18px;line-height:1.8;margin:0 0 22px;color:#333a2a}
+.has-commoner-event .tour-choices{grid-template-columns:1fr;gap:11px}
+.has-commoner-event .tour-choices button{position:relative;text-align:center;align-items:center;border:0;border-radius:0;box-shadow:none;padding:11px 30px;gap:2px;background:url('./tour-choice-frame.svg') center/100% 100% no-repeat,#f7efdc;clip-path:polygon(4% 0,96% 0,98% 20%,100% 50%,98% 80%,96% 100%,4% 100%,2% 80%,0 50%,2% 20%);min-height:73px}
+.has-commoner-event .tour-choices button::after{content:'›';position:absolute;right:26px;top:16px;color:#a88744;font-size:30px}
+.has-commoner-event .tour-choices strong{font-size:25px;font-weight:600;letter-spacing:3px;color:#283e2e}
+.has-commoner-event .tour-choices small{font-size:14px;line-height:1.5;color:#5f523d}
+.has-commoner-event .tour-choices .tour-choice-forced{background-image:url('./tour-choice-frame.svg'),url('./tour-paper-grain.svg');background-size:100% 100%,480px 480px;background-color:#81382b}
+.has-commoner-event .tour-choice-forced strong,.has-commoner-event .tour-choice-forced small{color:#fff0cc}
+.has-commoner-event .tour-choices button:hover{background-color:#fff8e7;filter:brightness(1.04)}
+.has-commoner-event .tour-choices .tour-choice-forced:hover{background-color:#904331}
+.has-commoner-event .tour-resolution{font-size:19px;line-height:2}
+.has-commoner-event [data-tour-next]{background:#2a4e3c;border:1px solid #b39354;padding:13px 28px;color:#fff0c7}
+.has-commoner-event .travel-status{font-size:12px;line-height:1.5;min-height:0;max-height:72px;padding:7px 84px;background:#ede2c7;border-top:1px solid #bca670}
+@media(max-width:750px){
+ .has-commoner-event .travel-sheet{grid-template-columns:40% minmax(0,1fr)}
+ .has-commoner-event .travel-journey-scene{height:100%;min-height:460px}
+ .has-commoner-event .travel-journey-scene>.travel-scene{left:-52%;width:204%;height:145%;object-position:center top}
+ .has-commoner-event .travel-content{padding:24px 22px 24px 12px}
+ .has-commoner-event .travel-content h2{font-size:26px;letter-spacing:0}
+ .has-commoner-event .tour-event-story{font-size:16px;margin-bottom:18px}
+ .has-commoner-event .tour-choices strong{font-size:21px;letter-spacing:1px}
+ .has-commoner-event .tour-choices small{font-size:12px}
+ .has-commoner-event .tour-choices button{padding:12px 20px}
+ .has-commoner-event .tour-choices button::after{right:12px;font-size:24px}
+ .has-commoner-event .travel-sheet>header small{display:none}
+}
+@media(max-width:480px){
+ .has-commoner-event .travel-sheet{grid-template-columns:1fr}
+ .has-commoner-event .travel-journey-scene{height:260px;min-height:0}
+ .has-commoner-event .travel-journey-scene>.travel-scene{left:0;width:100%;height:240%;object-position:center top}
+ .has-commoner-event .travel-content{padding:20px 24px}
+}

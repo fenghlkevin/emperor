@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-25T04:16:50.255Z",
+  "checks": [
+    "all twelve effects coexist on a rectangular card with both polarity borders",
+    "canvas changes after activation has finished: the result is a live animation",
+    "removing freezing retains the eleven other independently active effects",
+    "native state toggle restores its ongoing animation",
+    "freeze comparison intentionally stops all effect motion",
+    "resuming continues motion without reapplying or losing states",
+    "all fourteen formation cards retain all twelve effects and independent dual borders",
+    "no external badge grid or extra card height: every card keeps its rectangle",
+    "every card in the full formation continues animating",
+    "800px preview retains the whole formation without page overflow",
+    "phone preview preserves seven-column formation using its dedicated horizontal viewing area",
+    "clearing effects removes each emitter and both borders"
+  ],
+  "errors": [],
+  "scope": "Approved interactive preview sharing its renderer with the production battle UI."
+}

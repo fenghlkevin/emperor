@@ -27,3 +27,36 @@ test('summoning exceeds the former roster, preserves stats after rest and surviv
  s.harem.encounter=null;encounter(s);s=palaceAction(s,'dismiss').state;validateSave(JSON.parse(JSON.stringify(s)));
  assert.ok(s.harem.seen.length<100);
 });
+test('all ten mainland expansion portraits are reachable across homeland cities',async()=>{
+ const {BEAUTY_CITIES}=await import('../src/beauty-cities.mjs');
+ const {RANDOM_BEAUTY_ART}=await import('../src/random-beauties-data.mjs');
+ const additions=RANDOM_BEAUTY_ART.filter(row=>row.id.startsWith('mainland-expansion-20261022-'));
+ assert.equal(additions.length,10);
+ const seen=new Set(),random=portraitRandom(20261022);
+ for(const city of BEAUTY_CITIES.filter(city=>city.regionId==='sheng')){
+  for(let i=0;i<300;i++)seen.add(generateBeauty({id:`random-beauty-1-${i}`,cityId:city.id,random}).randomPortraitAsset);
+ }
+ for(const row of additions)assert.ok(seen.has(row.asset),row.name);
+});
+test('five photo-referenced mainland actresses are unique, reachable and stable after reload',async()=>{
+ const {BEAUTY_CITIES}=await import('../src/beauty-cities.mjs');
+ const {RANDOM_BEAUTY_ART}=await import('../src/random-beauties-data.mjs');
+ const {portraitDataUrl}=await import('../src/beauty-raster-portrait.mjs');
+ const additions=RANDOM_BEAUTY_ART.filter(row=>row.id.startsWith('mainland-photo-five-20261022-'));
+ assert.equal(additions.length,5);
+ for(const name of ['曾黎','陈好','俞飞鸿','舒畅','张馨予'])assert.equal(RANDOM_BEAUTY_ART.filter(row=>row.name.startsWith(name)).length,1,name);
+ const found=new Map(),random=portraitRandom(202610225);
+ for(const city of BEAUTY_CITIES.filter(city=>city.regionId==='sheng'))for(let i=0;i<300;i++){
+  const person=generateBeauty({id:`random-beauty-1-${i}`,cityId:city.id,random});
+  if(additions.some(row=>row.asset===person.randomPortraitAsset))found.set(person.randomPortraitAsset,person);
+ }
+ for(const row of additions){
+  const person=found.get(row.asset);assert.ok(person,row.name);
+  const s=newGame('照片立绘验收');s.harem.encounter=person;
+  const admitted=palaceAction(s,'admit',{rank:null}).state;
+  const saved=validateSave(JSON.parse(JSON.stringify(admitted)));
+  const member=saved.harem.members.find(p=>p.id===person.id);
+  assert.equal(member.randomPortraitAsset,row.asset);
+  assert.equal(portraitDataUrl(member),portraitDataUrl(person));
+ }
+});

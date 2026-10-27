@@ -1,0 +1,51 @@
+{
+  "version": 2,
+  "status": "implemented",
+  "supersedes": "difficulty-v1 startingKits and opening military assumptions",
+  "standardLocalTroops": {
+    "hebei": 6000,
+    "henan": 4500,
+    "huainan": 4000,
+    "jiangnan": 4000,
+    "lingnan": 4000,
+    "hedong": 6000,
+    "guannei": 5000,
+    "shannan": 4000,
+    "jiannan": 5000,
+    "longyou": 7000
+  },
+  "tiers": [
+    {
+      "id": "novice",
+      "central": 8000,
+      "localFactor": 1.15,
+      "kits": 1.25,
+      "training": 70,
+      "estateIncome": 2400,
+      "foodCoverage": 120,
+      "openingLivingFloor": 60,
+      "openingStabilityFloor": 75,
+      "openingSecurityFloor": 75,
+      "openingLoyaltyFloor": 65
+    },
+    {
+      "id": "standard",
+      "central": 6000,
+      "localFactor": 1,
+      "kits": 1.15,
+      "training": 65,
+      "estateIncome": 600,
+      "foodCoverage": 45
+    },
+    {
+      "id": "veteran",
+      "central": 5000,
+      "localFactor": 1,
+      "kits": 1.05,
+      "training": 60,
+      "estateIncome": 400,
+      "foodCoverage": 36
+    }
+  ],
+  "implementationReport": "difficulty-delivery.md"
+}

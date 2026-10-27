@@ -1,6 +1,6 @@
 {
-  "date": "2026-10-23T23:18:47.647Z",
-  "presentationVersion": 43,
+  "date": "2026-10-24T04:51:26.589Z",
+  "presentationVersion": 44,
   "scope": "Per-ID production checklist from current catalog, not a claim that all historical sources or new performances have been accepted.",
   "total": 100,
   "sourceCounts": {
@@ -10,7 +10,7 @@
   "dedicatedBattleCards": 100,
   "visualSamples": 100,
   "missingVoiceClips": 200,
-  "unassignedCultures": 100,
+  "unassignedCultures": 26,
   "fullyAccepted": 0,
   "missingArt": [],
   "people": [
@@ -20,8 +20,19 @@
       "name": "刘基",
       "role": "文职",
       "catalogDynasty": "明",
-      "culture": null,
-      "cultureStatus": "needs-review",
+      "culture": "central",
+      "cultureStatus": "regional-evidence-reviewed",
+      "cultureReview": {
+        "culture": "central",
+        "status": "regional-evidence-reviewed",
+        "period": "元末明初",
+        "region": "青田",
+        "identityStatus": "catalog-and-independent-biography-consistent",
+        "conclusion": "游戏宽泛文化池映射，以明确时代和生平地域供后续美术参考；不是民族、现代国籍或精确服饰鉴定。",
+        "evidence": [
+          "https://zh.wikisource.org/wiki/明史/卷128"
+        ]
+      },
       "source": {
         "url": "https://cbdb.fas.harvard.edu/cbdbapi/person.php?id=27948&o=json",
         "title": "CBDB人物资料：27948",
@@ -111,8 +122,19 @@
       "name": "苏轼",
       "role": "文职",
       "catalogDynasty": "宋",
-      "culture": null,
-      "cultureStatus": "needs-review",
+      "culture": "central",
+      "cultureStatus": "regional-evidence-reviewed",
+      "cultureReview": {
+        "culture": "central",
+        "status": "regional-evidence-reviewed",
+        "period": "宋",
+        "region": "眉州眉山（今四川眉山）",
+        "identityStatus": "catalog-and-independent-biography-consistent",
+        "conclusion": "central为游戏宽泛区域美术池；据地域与时代作产品映射，不是民族或服饰鉴定。",
+        "evidence": [
+          "https://dict.revised.moe.edu.tw/dictView.jsp?ID=145198&la=0&powerMode=0"
+        ]
+      },
       "source": {
         "url": "https://zh.wikipedia.org/?curid=6433",
         "title": "维基百科：苏轼（导言节录，CC BY-SA 4.0）",
@@ -201,8 +223,19 @@
       "name": "欧阳修",
       "role": "文职",
       "catalogDynasty": "宋",
-      "culture": null,
-      "cultureStatus": "needs-review",
+      "culture": "central",
+      "cultureStatus": "regional-evidence-reviewed",
+      "cultureReview": {
+        "culture": "central",
+        "status": "regional-evidence-reviewed",
+        "period": "宋",
+        "region": "吉州庐陵",
+        "identityStatus": "catalog-and-independent-biography-consistent",
+        "conclusion": "central为游戏宽泛区域美术池；据地域与时代作产品映射，不是民族或服饰鉴定。",
+        "evidence": [
+          "https://pedia.cloud.edu.tw/Entry/Detail?title=%E6%AD%90%E9%99%BD%E4%BF%AE(1007-1072)"
+        ]
+      },
       "source": {
         "url": "https://zh.wikipedia.org/?curid=10634",
         "title": "维基百科：欧阳修（导言节录，CC BY-SA 4.0）",
@@ -288,8 +321,19 @@
       "name": "李斯",
       "role": "文职",
       "catalogDynasty": "周",
-      "culture": null,
-      "cultureStatus": "needs-review",
+      "culture": "central",
+      "cultureStatus": "regional-evidence-reviewed",
+      "cultureReview": {
+        "culture": "central",
+        "status": "regional-evidence-reviewed",
+        "period": "战国至秦",
+        "region": "楚上蔡",
+        "identityStatus": "catalog-and-independent-biography-consistent",
+        "conclusion": "游戏central为宽泛先秦秦汉文化美术池映射，不代表现代民族分类；古地名和地域不确定性保留。",
+        "evidence": [
+          "https://zh.wikisource.org/wiki/史記/卷087"
+        ]
+      },
       "source": {
         "url": "https://zh.wikipedia.org/?curid=13760",
         "title": "维基百科：李斯（导言节录，CC BY-SA 4.0）",
@@ -379,7 +423,18 @@
       "role": "武将",
       "catalogDynasty": "原作",
       "culture": null,
-      "cultureStatus": "needs-review",
+      "cultureStatus": "reviewed-identity-unresolved",
+      "cultureReview": {
+        "culture": null,
+        "status": "reviewed-identity-unresolved",
+        "period": null,
+        "region": null,
+        "identityStatus": "historical-link-pending",
+        "conclusion": "已读历史候选生平，但原作表缺乏字、年代、籍贯等独立绑定线索；仅同名不足以确认，保留原作身份与现有表现。",
+        "evidence": [
+          "https://zh.wikisource.org/wiki/舊唐書/卷187下"
+        ]
+      },
       "source": {
         "url": "",
         "title": "原作反汇编人物表",
@@ -464,8 +519,19 @@
       "name": "管仲",
       "role": "文职",
       "catalogDynasty": "汉前",
-      "culture": null,
-      "cultureStatus": "needs-review",
+      "culture": "central",
+      "cultureStatus": "regional-evidence-reviewed",
+      "cultureReview": {
+        "culture": "central",
+        "status": "regional-evidence-reviewed",
+        "period": "春秋",
+        "region": "颍上（古地名，现代对应未定）；仕齐",
+        "identityStatus": "catalog-and-independent-biography-consistent",
+        "conclusion": "游戏central为宽泛先秦秦汉文化美术池映射，不代表现代民族分类；古地名和地域不确定性保留。",
+        "evidence": [
+          "https://zh.wikisource.org/wiki/史記/卷062"
+        ]
+      },
       "source": {
         "url": "https://zh.wikipedia.org/?curid=38041",
         "title": "维基百科：管仲（导言节录，CC BY-SA 4.0）",
@@ -554,8 +620,19 @@
       "name": "萧何",
       "role": "文职",
       "catalogDynasty": "秦汉",
-      "culture": null,
-      "cultureStatus": "needs-review",
+      "culture": "central",
+      "cultureStatus": "regional-evidence-reviewed",
+      "cultureReview": {
+        "culture": "central",
+        "status": "regional-evidence-reviewed",
+        "period": "秦末至西汉",
+        "region": "沛丰",
+        "identityStatus": "catalog-and-independent-biography-consistent",
+        "conclusion": "游戏central为宽泛先秦秦汉文化美术池映射，不代表现代民族分类；古地名和地域不确定性保留。",
+        "evidence": [
+          "https://zh.wikisource.org/wiki/史記/卷053"
+        ]
+      },
       "source": {
         "url": "https://zh.wikipedia.org/?curid=93952",
         "title": "维基百科：萧何（导言节录，CC BY-SA 4.0）",
@@ -641,8 +718,19 @@
       "name": "张良",
       "role": "文职",
       "catalogDynasty": "秦汉",
-      "culture": null,
-      "cultureStatus": "needs-review",
+      "culture": "central",
+      "cultureStatus": "regional-evidence-reviewed",
+      "cultureReview": {
+        "culture": "central",
+        "status": "regional-evidence-reviewed",
+        "period": "战国末至西汉",
+        "region": "先世韩国；活动于淮阳、下邳等地",
+        "identityStatus": "catalog-and-independent-biography-consistent",
+        "conclusion": "游戏central为宽泛先秦秦汉文化美术池映射，不代表现代民族分类；古地名和地域不确定性保留。",
+        "evidence": [
+          "https://zh.wikisource.org/wiki/史記/卷055"
+        ]
+      },
       "source": {
         "url": "https://zh.wikipedia.org/?curid=15455",
         "title": "维基百科：张良（导言节录，CC BY-SA 4.0）",
@@ -729,7 +817,18 @@
       "role": "文职",
       "catalogDynasty": "原作",
       "culture": null,
-      "cultureStatus": "needs-review",
+      "cultureStatus": "reviewed-identity-unresolved",
+      "cultureReview": {
+        "culture": null,
+        "status": "reviewed-identity-unresolved",
+        "period": null,
+        "region": null,
+        "identityStatus": "historical-link-pending",
+        "conclusion": "已读历史候选生平，但原作表缺乏字、年代、籍贯等独立绑定线索；仅同名不足以确认，保留原作身份与现有表现。",
+        "evidence": [
+          "https://zh.wikisource.org/wiki/舊唐書/卷71"
+        ]
+      },
       "source": {
         "url": "",
         "title": "原作反汇编人物表",
@@ -814,8 +913,19 @@
       "name": "范仲淹",
       "role": "武将",
       "catalogDynasty": "宋",
-      "culture": null,
-      "cultureStatus": "needs-review",
+      "culture": "central",
+      "cultureStatus": "regional-evidence-reviewed",
+      "cultureReview": {
+        "culture": "central",
+        "status": "regional-evidence-reviewed",
+        "period": "北宋",
+        "region": "吴县（今江苏苏州）",
+        "identityStatus": "catalog-and-independent-biography-consistent",
+        "conclusion": "central仅为游戏宽泛区域池；保留具体时代地域供美术分期，不以同一池混用宋、清服饰。",
+        "evidence": [
+          "https://www.dpm.org.cn/lemmas/240582.html"
+        ]
+      },
       "source": {
         "url": "https://zh.wikipedia.org/?curid=83581",
         "title": "维基百科：范仲淹（导言节录，CC BY-SA 4.0）",
@@ -904,8 +1014,19 @@
       "name": "曾国藩",
       "role": "武将",
       "catalogDynasty": "清",
-      "culture": null,
-      "cultureStatus": "needs-review",
+      "culture": "central",
+      "cultureStatus": "regional-evidence-reviewed",
+      "cultureReview": {
+        "culture": "central",
+        "status": "regional-evidence-reviewed",
+        "period": "清",
+        "region": "湖南湘乡荷叶塘（今属双峰）",
+        "identityStatus": "catalog-and-independent-biography-consistent",
+        "conclusion": "central仅为游戏宽泛区域池；保留具体时代地域供美术分期，不以同一池混用宋、清服饰。",
+        "evidence": [
+          "https://css.hunan.gov.cn/css/tslm/hxws/gywc/201609/t20160905_3253829.html"
+        ]
+      },
       "source": {
         "url": "https://zh.wikipedia.org/?curid=8457",
         "title": "维基百科：曾国藩（导言节录，CC BY-SA 4.0）",
@@ -994,8 +1115,19 @@
       "name": "王安石",
       "role": "文职",
       "catalogDynasty": "宋",
-      "culture": null,
-      "cultureStatus": "needs-review",
+      "culture": "central",
+      "cultureStatus": "regional-evidence-reviewed",
+      "cultureReview": {
+        "culture": "central",
+        "status": "regional-evidence-reviewed",
+        "period": "北宋",
+        "region": "江西临川",
+        "identityStatus": "catalog-and-independent-biography-consistent",
+        "conclusion": "central为游戏宽泛区域美术池；据时代地域作产品映射，不作为族属或服饰鉴定。",
+        "evidence": [
+          "https://www.chinakongzi.org/baike/RENWU/SONGYUAN/201711/t20171110_146675.htm"
+        ]
+      },
       "source": {
         "url": "https://zh.wikipedia.org/?curid=16067",
         "title": "维基百科：王安石（导言节录，CC BY-SA 4.0）",
@@ -1084,8 +1216,19 @@
       "name": "商鞅",
       "role": "文职",
       "catalogDynasty": "周",
-      "culture": null,
-      "cultureStatus": "needs-review",
+      "culture": "central",
+      "cultureStatus": "regional-evidence-reviewed",
+      "cultureReview": {
+        "culture": "central",
+        "status": "regional-evidence-reviewed",
+        "period": "战国",
+        "region": "卫；后仕魏、秦",
+        "identityStatus": "catalog-and-independent-biography-consistent",
+        "conclusion": "游戏宽泛文化池映射，以明确时代和生平地域供后续美术参考；不是民族、现代国籍或精确服饰鉴定。",
+        "evidence": [
+          "https://zh.wikisource.org/wiki/史記/卷068"
+        ]
+      },
       "source": {
         "url": "https://zh.wikipedia.org/?curid=5851",
         "title": "维基百科：商鞅（导言节录，CC BY-SA 4.0）",
@@ -1174,8 +1317,19 @@
       "name": "左宗棠",
       "role": "武将",
       "catalogDynasty": "清",
-      "culture": null,
-      "cultureStatus": "needs-review",
+      "culture": "central",
+      "cultureStatus": "regional-evidence-reviewed",
+      "cultureReview": {
+        "culture": "central",
+        "status": "regional-evidence-reviewed",
+        "period": "清",
+        "region": "湖南湘阴",
+        "identityStatus": "catalog-and-independent-biography-consistent",
+        "conclusion": "central仅为游戏宽泛区域池；保留具体时代地域供美术分期，不以同一池混用宋、清服饰。",
+        "evidence": [
+          "https://css.hunan.gov.cn/css/tslm/hxws/gywc/201609/t20160905_3253829.html"
+        ]
+      },
       "source": {
         "url": "https://zh.wikipedia.org/?curid=105623",
         "title": "维基百科：左宗棠（导言节录，CC BY-SA 4.0）",
@@ -1266,7 +1420,16 @@
       "role": "文职",
       "catalogDynasty": "原作",
       "culture": null,
-      "cultureStatus": "needs-review",
+      "cultureStatus": "reviewed-identity-unresolved",
+      "cultureReview": {
+        "culture": null,
+        "status": "reviewed-identity-unresolved",
+        "period": null,
+        "region": null,
+        "identityStatus": "historical-link-pending",
+        "conclusion": "原作表仅姓名及原始数值，未取得可靠生平和绑定线索；保留原作模板，不推定历史人物。",
+        "evidence": []
+      },
       "source": {
         "url": "",
         "title": "原作反汇编人物表",
@@ -1351,8 +1514,19 @@
       "name": "班超",
       "role": "武将",
       "catalogDynasty": "秦汉",
-      "culture": null,
-      "cultureStatus": "needs-review",
+      "culture": "central",
+      "cultureStatus": "regional-evidence-reviewed",
+      "cultureReview": {
+        "culture": "central",
+        "status": "regional-evidence-reviewed",
+        "period": "东汉",
+        "region": "扶风平陵",
+        "identityStatus": "catalog-and-independent-biography-consistent",
+        "conclusion": "游戏宽泛文化池映射，以明确时代和生平地域供后续美术参考；不是民族、现代国籍或精确服饰鉴定。",
+        "evidence": [
+          "https://zh.wikisource.org/wiki/後漢書/卷47"
+        ]
+      },
       "source": {
         "url": "https://zh.wikipedia.org/?curid=13520",
         "title": "维基百科：班超（导言节录，CC BY-SA 4.0）",
@@ -1438,7 +1612,18 @@
       "role": "文职",
       "catalogDynasty": "原作",
       "culture": null,
-      "cultureStatus": "needs-review",
+      "cultureStatus": "reviewed-identity-unresolved",
+      "cultureReview": {
+        "culture": null,
+        "status": "reviewed-identity-unresolved",
+        "period": null,
+        "region": null,
+        "identityStatus": "historical-link-pending",
+        "conclusion": "台大左传课程明确子产又称公孙侨；原作ID仍只有同名，缺少字、时代与籍贯绑定，不升级历史关联。",
+        "evidence": [
+          "https://ocw.aca.ntu.edu.tw/uploads/course_item_file/file/576/104S205_AA07L01.pdf"
+        ]
+      },
       "source": {
         "url": "",
         "title": "原作反汇编人物表",
@@ -1523,8 +1708,19 @@
       "name": "韩信",
       "role": "武将",
       "catalogDynasty": "秦汉",
-      "culture": null,
-      "cultureStatus": "needs-review",
+      "culture": "central",
+      "cultureStatus": "regional-evidence-reviewed",
+      "cultureReview": {
+        "culture": "central",
+        "status": "regional-evidence-reviewed",
+        "period": "秦末西汉",
+        "region": "淮阴",
+        "identityStatus": "catalog-and-independent-biography-consistent",
+        "conclusion": "游戏宽泛文化池映射，以明确时代和生平地域供后续美术参考；不是民族、现代国籍或精确服饰鉴定。",
+        "evidence": [
+          "https://zh.wikisource.org/wiki/史記/卷092"
+        ]
+      },
       "source": {
         "url": "https://zh.wikipedia.org/?curid=69222",
         "title": "维基百科：韩信（导言节录，CC BY-SA 4.0）",
@@ -1613,8 +1809,19 @@
       "name": "施琅",
       "role": "武将",
       "catalogDynasty": "清",
-      "culture": null,
-      "cultureStatus": "needs-review",
+      "culture": "central",
+      "cultureStatus": "regional-evidence-reviewed",
+      "cultureReview": {
+        "culture": "central",
+        "status": "regional-evidence-reviewed",
+        "period": "明末清初",
+        "region": "福建晋江",
+        "identityStatus": "catalog-and-independent-biography-consistent",
+        "conclusion": "游戏宽泛文化池映射，以明确时代和生平地域供后续美术参考；不是民族、现代国籍或精确服饰鉴定。",
+        "evidence": [
+          "https://zh.wikisource.org/wiki/清史稿/卷260"
+        ]
+      },
       "source": {
         "url": "https://zh.wikipedia.org/?curid=38071",
         "title": "维基百科：施琅（导言节录，CC BY-SA 4.0）",
@@ -1703,8 +1910,19 @@
       "name": "蔺相如",
       "role": "武将",
       "catalogDynasty": "周",
-      "culture": null,
-      "cultureStatus": "needs-review",
+      "culture": "central",
+      "cultureStatus": "regional-evidence-reviewed",
+      "cultureReview": {
+        "culture": "central",
+        "status": "regional-evidence-reviewed",
+        "period": "战国",
+        "region": "赵",
+        "identityStatus": "catalog-and-independent-biography-consistent",
+        "conclusion": "游戏宽泛文化池映射，以明确时代和生平地域供后续美术参考；不是民族、现代国籍或精确服饰鉴定。",
+        "evidence": [
+          "https://zh.wikisource.org/wiki/史記/卷081"
+        ]
+      },
       "source": {
         "url": "https://zh.wikipedia.org/?curid=103486",
         "title": "维基百科：蔺相如（导言节录，CC BY-SA 4.0）",
@@ -1792,8 +2010,19 @@
       "name": "房玄龄",
       "role": "文职",
       "catalogDynasty": "唐",
-      "culture": null,
-      "cultureStatus": "needs-review",
+      "culture": "central",
+      "cultureStatus": "regional-evidence-reviewed",
+      "cultureReview": {
+        "culture": "central",
+        "status": "regional-evidence-reviewed",
+        "period": "隋唐",
+        "region": "齐州临淄",
+        "identityStatus": "catalog-and-independent-biography-consistent",
+        "conclusion": "游戏宽泛文化池映射，以明确时代和生平地域供后续美术参考；不是民族、现代国籍或精确服饰鉴定。",
+        "evidence": [
+          "https://zh.wikisource.org/wiki/舊唐書/卷66"
+        ]
+      },
       "source": {
         "url": "https://zh.wikipedia.org/?curid=78968",
         "title": "维基百科：房玄龄（导言节录，CC BY-SA 4.0）",
@@ -1883,8 +2112,19 @@
       "name": "晏婴",
       "role": "文职",
       "catalogDynasty": "周",
-      "culture": null,
-      "cultureStatus": "needs-review",
+      "culture": "central",
+      "cultureStatus": "regional-evidence-reviewed",
+      "cultureReview": {
+        "culture": "central",
+        "status": "regional-evidence-reviewed",
+        "period": "春秋",
+        "region": "莱之夷维；仕齐",
+        "identityStatus": "catalog-and-independent-biography-consistent",
+        "conclusion": "游戏central为宽泛先秦秦汉文化美术池映射，不代表现代民族分类；古地名和地域不确定性保留。",
+        "evidence": [
+          "https://zh.wikisource.org/wiki/史記/卷062"
+        ]
+      },
       "source": {
         "url": "https://zh.wikipedia.org/?curid=1446",
         "title": "维基百科：晏婴（导言节录，CC BY-SA 4.0）",
@@ -1969,8 +2209,19 @@
       "name": "苏武",
       "role": "武将",
       "catalogDynasty": "秦汉",
-      "culture": null,
-      "cultureStatus": "needs-review",
+      "culture": "central",
+      "cultureStatus": "regional-evidence-reviewed",
+      "cultureReview": {
+        "culture": "central",
+        "status": "regional-evidence-reviewed",
+        "period": "西汉",
+        "region": "家族杜陵；活动于汉与匈奴",
+        "identityStatus": "catalog-and-independent-biography-consistent",
+        "conclusion": "游戏宽泛文化池映射，以明确时代和生平地域供后续美术参考；不是民族、现代国籍或精确服饰鉴定。",
+        "evidence": [
+          "https://zh.wikisource.org/wiki/漢書/卷054"
+        ]
+      },
       "source": {
         "url": "https://zh.wikipedia.org/?curid=110844",
         "title": "维基百科：苏武（导言节录，CC BY-SA 4.0）",
@@ -2055,8 +2306,19 @@
       "name": "寇准",
       "role": "文职",
       "catalogDynasty": "宋",
-      "culture": null,
-      "cultureStatus": "needs-review",
+      "culture": "central",
+      "cultureStatus": "regional-evidence-reviewed",
+      "cultureReview": {
+        "culture": "central",
+        "status": "regional-evidence-reviewed",
+        "period": "北宋",
+        "region": "华州下邽（保留古地名）",
+        "identityStatus": "catalog-and-independent-biography-consistent",
+        "conclusion": "按宋代中原文官映射游戏区域池，不裁定现代行政区对应。",
+        "evidence": [
+          "https://dict.revised.moe.edu.tw/dictView.jsp?ID=77293&la=0&powerMode=0"
+        ]
+      },
       "source": {
         "url": "https://zh.wikipedia.org/?curid=98792",
         "title": "维基百科：寇准（导言节录，CC BY-SA 4.0）",
@@ -2145,8 +2407,19 @@
       "name": "马援",
       "role": "武将",
       "catalogDynasty": "秦汉",
-      "culture": null,
-      "cultureStatus": "needs-review",
+      "culture": "central",
+      "cultureStatus": "regional-evidence-reviewed",
+      "cultureReview": {
+        "culture": "central",
+        "status": "regional-evidence-reviewed",
+        "period": "东汉",
+        "region": "扶风茂陵",
+        "identityStatus": "catalog-and-independent-biography-consistent",
+        "conclusion": "游戏宽泛文化池映射，以明确时代和生平地域供后续美术参考；不是民族、现代国籍或精确服饰鉴定。",
+        "evidence": [
+          "https://zh.wikisource.org/wiki/後漢書/卷24"
+        ]
+      },
       "source": {
         "url": "https://zh.wikipedia.org/?curid=135961",
         "title": "维基百科：马援（导言节录，CC BY-SA 4.0）",
@@ -2235,8 +2508,19 @@
       "name": "祖逖",
       "role": "武将",
       "catalogDynasty": "两晋南北朝",
-      "culture": null,
-      "cultureStatus": "needs-review",
+      "culture": "central",
+      "cultureStatus": "regional-evidence-reviewed",
+      "cultureReview": {
+        "culture": "central",
+        "status": "regional-evidence-reviewed",
+        "period": "西晋至东晋",
+        "region": "范阳遒",
+        "identityStatus": "catalog-and-independent-biography-consistent",
+        "conclusion": "游戏宽泛文化池映射，以明确时代和生平地域供后续美术参考；不是民族、现代国籍或精确服饰鉴定。",
+        "evidence": [
+          "https://zh.wikisource.org/wiki/晉書/卷062"
+        ]
+      },
       "source": {
         "url": "https://zh.wikipedia.org/?curid=187760",
         "title": "维基百科：祖逖（导言节录，CC BY-SA 4.0）",
@@ -2321,8 +2605,19 @@
       "name": "吴三桂",
       "role": "武将",
       "catalogDynasty": "明",
-      "culture": null,
-      "cultureStatus": "needs-review",
+      "culture": "central",
+      "cultureStatus": "regional-evidence-reviewed",
+      "cultureReview": {
+        "culture": "central",
+        "status": "regional-evidence-reviewed",
+        "period": "明末清初",
+        "region": "江南高邮，籍辽东",
+        "identityStatus": "catalog-and-independent-biography-consistent",
+        "conclusion": "游戏宽泛文化池映射，以明确时代和生平地域供后续美术参考；不是民族、现代国籍或精确服饰鉴定。",
+        "evidence": [
+          "https://zh.wikisource.org/wiki/清史稿/卷474"
+        ]
+      },
       "source": {
         "url": "https://zh.wikipedia.org/?curid=48763",
         "title": "维基百科：吴三桂（导言节录，CC BY-SA 4.0）",
@@ -2411,8 +2706,19 @@
       "name": "郭子仪",
       "role": "武将",
       "catalogDynasty": "唐",
-      "culture": null,
-      "cultureStatus": "needs-review",
+      "culture": "central",
+      "cultureStatus": "regional-evidence-reviewed",
+      "cultureReview": {
+        "culture": "central",
+        "status": "regional-evidence-reviewed",
+        "period": "唐",
+        "region": "华州郑县",
+        "identityStatus": "catalog-and-independent-biography-consistent",
+        "conclusion": "游戏宽泛文化池映射，以明确时代和生平地域供后续美术参考；不是民族、现代国籍或精确服饰鉴定。",
+        "evidence": [
+          "https://zh.wikisource.org/wiki/舊唐書/卷120"
+        ]
+      },
       "source": {
         "url": "https://zh.wikipedia.org/?curid=1007698",
         "title": "维基百科：郭子仪（导言节录，CC BY-SA 4.0）",
@@ -2497,8 +2803,19 @@
       "name": "陶侃",
       "role": "武将",
       "catalogDynasty": "两晋南北朝",
-      "culture": null,
-      "cultureStatus": "needs-review",
+      "culture": "central",
+      "cultureStatus": "regional-evidence-reviewed",
+      "cultureReview": {
+        "culture": "central",
+        "status": "regional-evidence-reviewed",
+        "period": "西晋至东晋",
+        "region": "本鄱阳，徙庐江寻阳",
+        "identityStatus": "catalog-and-independent-biography-consistent",
+        "conclusion": "游戏宽泛文化池映射，以明确时代和生平地域供后续美术参考；不是民族、现代国籍或精确服饰鉴定。",
+        "evidence": [
+          "https://zh.wikisource.org/wiki/晉書/卷066"
+        ]
+      },
       "source": {
         "url": "https://zh.wikipedia.org/?curid=302095",
         "title": "维基百科：陶侃（导言节录，CC BY-SA 4.0）",
@@ -2585,7 +2902,18 @@
       "role": "文职",
       "catalogDynasty": "原作",
       "culture": null,
-      "cultureStatus": "needs-review",
+      "cultureStatus": "reviewed-identity-unresolved",
+      "cultureReview": {
+        "culture": null,
+        "status": "reviewed-identity-unresolved",
+        "period": null,
+        "region": null,
+        "identityStatus": "historical-link-pending",
+        "conclusion": "已读历史候选生平，但原作表缺乏字、年代、籍贯等独立绑定线索；仅同名不足以确认，保留原作身份与现有表现。",
+        "evidence": [
+          "https://zh.wikisource.org/wiki/晉書/卷079"
+        ]
+      },
       "source": {
         "url": "",
         "title": "原作反汇编人物表",
@@ -2674,8 +3002,19 @@
       "name": "李靖",
       "role": "武将",
       "catalogDynasty": "唐",
-      "culture": null,
-      "cultureStatus": "needs-review",
+      "culture": "central",
+      "cultureStatus": "regional-evidence-reviewed",
+      "cultureReview": {
+        "culture": "central",
+        "status": "regional-evidence-reviewed",
+        "period": "隋唐",
+        "region": "雍州三原",
+        "identityStatus": "catalog-and-independent-biography-consistent",
+        "conclusion": "游戏宽泛文化池映射，以明确时代和生平地域供后续美术参考；不是民族、现代国籍或精确服饰鉴定。",
+        "evidence": [
+          "https://zh.wikisource.org/wiki/舊唐書/卷67"
+        ]
+      },
       "source": {
         "url": "https://zh.wikipedia.org/?curid=1160",
         "title": "维基百科：李靖（导言节录，CC BY-SA 4.0）",
@@ -2764,8 +3103,19 @@
       "name": "薛仁贵",
       "role": "武将",
       "catalogDynasty": "隋唐",
-      "culture": null,
-      "cultureStatus": "needs-review",
+      "culture": "central",
+      "cultureStatus": "regional-evidence-reviewed",
+      "cultureReview": {
+        "culture": "central",
+        "status": "regional-evidence-reviewed",
+        "period": "唐",
+        "region": "绛州龙门",
+        "identityStatus": "catalog-and-independent-biography-consistent",
+        "conclusion": "游戏宽泛文化池映射，以明确时代和生平地域供后续美术参考；不是民族、现代国籍或精确服饰鉴定。",
+        "evidence": [
+          "https://zh.wikisource.org/wiki/舊唐書/卷83"
+        ]
+      },
       "source": {
         "url": "https://zh.wikipedia.org/?curid=388382",
         "title": "维基百科：薛仁贵（导言节录，CC BY-SA 4.0）",
@@ -2851,8 +3201,19 @@
       "name": "韩琦",
       "role": "武将",
       "catalogDynasty": "宋",
-      "culture": null,
-      "cultureStatus": "needs-review",
+      "culture": "central",
+      "cultureStatus": "regional-evidence-reviewed",
+      "cultureReview": {
+        "culture": "central",
+        "status": "regional-evidence-reviewed",
+        "period": "北宋",
+        "region": "相州安阳",
+        "identityStatus": "catalog-and-independent-biography-consistent",
+        "conclusion": "游戏宽泛文化池映射，以明确时代和生平地域供后续美术参考；不是民族、现代国籍或精确服饰鉴定。",
+        "evidence": [
+          "https://zh.wikisource.org/wiki/宋史/卷312"
+        ]
+      },
       "source": {
         "url": "https://zh.wikipedia.org/?curid=193154",
         "title": "维基百科：韩琦（导言节录，CC BY-SA 4.0）",
@@ -2938,7 +3299,18 @@
       "role": "武将",
       "catalogDynasty": "原作",
       "culture": null,
-      "cultureStatus": "needs-review",
+      "cultureStatus": "reviewed-identity-unresolved",
+      "cultureReview": {
+        "culture": null,
+        "status": "reviewed-identity-unresolved",
+        "period": null,
+        "region": null,
+        "identityStatus": "historical-link-pending",
+        "conclusion": "香港电影资料馆表明存在清末背景的影视重塑与杜撰角色；原作ID缺少可区分史实与影视版本的线索，不套用电影容貌或桥段。",
+        "evidence": [
+          "https://www.filmarchive.gov.hk/sc/web/hkfa/2024/martial/pe-event-2024-martial-fs-film13.html"
+        ]
+      },
       "source": {
         "url": "",
         "title": "原作反汇编人物表",
@@ -3023,8 +3395,19 @@
       "name": "李林甫",
       "role": "文职",
       "catalogDynasty": "唐",
-      "culture": null,
-      "cultureStatus": "needs-review",
+      "culture": "central",
+      "cultureStatus": "regional-evidence-reviewed",
+      "cultureReview": {
+        "culture": "central",
+        "status": "regional-evidence-reviewed",
+        "period": "唐",
+        "region": "唐宗室支属；具体出生地本次未核",
+        "identityStatus": "catalog-and-independent-biography-consistent",
+        "conclusion": "游戏宽泛文化池映射，以明确时代和生平地域供后续美术参考；不是民族、现代国籍或精确服饰鉴定。",
+        "evidence": [
+          "https://zh.wikisource.org/wiki/舊唐書/卷106"
+        ]
+      },
       "source": {
         "url": "https://zh.wikipedia.org/?curid=181807",
         "title": "维基百科：李林甫（导言节录，CC BY-SA 4.0）",
@@ -3109,8 +3492,19 @@
       "name": "杨国忠",
       "role": "文职",
       "catalogDynasty": "唐",
-      "culture": null,
-      "cultureStatus": "needs-review",
+      "culture": "central",
+      "cultureStatus": "regional-evidence-reviewed",
+      "cultureReview": {
+        "culture": "central",
+        "status": "regional-evidence-reviewed",
+        "period": "唐",
+        "region": "蒲州永乐",
+        "identityStatus": "catalog-and-independent-biography-consistent",
+        "conclusion": "游戏宽泛文化池映射，以明确时代和生平地域供后续美术参考；不是民族、现代国籍或精确服饰鉴定。",
+        "evidence": [
+          "https://zh.wikisource.org/wiki/舊唐書/卷106"
+        ]
+      },
       "source": {
         "url": "https://zh.wikipedia.org/?curid=132019",
         "title": "维基百科：杨国忠（导言节录，CC BY-SA 4.0）",
@@ -3199,8 +3593,19 @@
       "name": "安禄山",
       "role": "武将",
       "catalogDynasty": "隋唐",
-      "culture": null,
-      "cultureStatus": "needs-review",
+      "culture": "steppe",
+      "cultureStatus": "regional-evidence-reviewed",
+      "cultureReview": {
+        "culture": "steppe",
+        "status": "regional-evidence-reviewed",
+        "period": "唐",
+        "region": "营州柳城；少年生活于突厥中",
+        "identityStatus": "catalog-and-independent-biography-consistent",
+        "conclusion": "游戏宽泛文化池映射，以明确时代和生平地域供后续美术参考；不是民族、现代国籍或精确服饰鉴定。",
+        "evidence": [
+          "https://zh.wikisource.org/wiki/舊唐書/卷200上"
+        ]
+      },
       "source": {
         "url": "https://zh.wikipedia.org/?curid=64765",
         "title": "维基百科：安禄山（导言节录，CC BY-SA 4.0）",
@@ -3290,7 +3695,18 @@
       "role": "文职",
       "catalogDynasty": "原作",
       "culture": null,
-      "cultureStatus": "needs-review",
+      "cultureStatus": "reviewed-identity-unresolved",
+      "cultureReview": {
+        "culture": null,
+        "status": "reviewed-identity-unresolved",
+        "period": null,
+        "region": null,
+        "identityStatus": "historical-link-pending",
+        "conclusion": "已读历史候选生平，但原作表缺乏字、年代、籍贯等独立绑定线索；仅同名不足以确认，保留原作身份与现有表现。",
+        "evidence": [
+          "https://zh.wikisource.org/wiki/史記/卷084"
+        ]
+      },
       "source": {
         "url": "",
         "title": "原作反汇编人物表",
@@ -3375,8 +3791,19 @@
       "name": "卫青",
       "role": "武将",
       "catalogDynasty": "秦汉",
-      "culture": null,
-      "cultureStatus": "needs-review",
+      "culture": "central",
+      "cultureStatus": "regional-evidence-reviewed",
+      "cultureReview": {
+        "culture": "central",
+        "status": "regional-evidence-reviewed",
+        "period": "西汉",
+        "region": "平阳",
+        "identityStatus": "catalog-and-independent-biography-consistent",
+        "conclusion": "游戏宽泛文化池映射，以明确时代和生平地域供后续美术参考；不是民族、现代国籍或精确服饰鉴定。",
+        "evidence": [
+          "https://zh.wikisource.org/wiki/史記/卷111"
+        ]
+      },
       "source": {
         "url": "https://zh.wikipedia.org/?curid=70251",
         "title": "维基百科：卫青（导言节录，CC BY-SA 4.0）",
@@ -3465,8 +3892,19 @@
       "name": "霍去病",
       "role": "武将",
       "catalogDynasty": "秦汉",
-      "culture": null,
-      "cultureStatus": "needs-review",
+      "culture": "central",
+      "cultureStatus": "regional-evidence-reviewed",
+      "cultureReview": {
+        "culture": "central",
+        "status": "regional-evidence-reviewed",
+        "period": "西汉",
+        "region": "汉廷及陇西河西军事活动；出生地本次未核",
+        "identityStatus": "catalog-and-independent-biography-consistent",
+        "conclusion": "游戏宽泛文化池映射，以明确时代和生平地域供后续美术参考；不是民族、现代国籍或精确服饰鉴定。",
+        "evidence": [
+          "https://zh.wikisource.org/wiki/史記/卷111"
+        ]
+      },
       "source": {
         "url": "https://zh.wikipedia.org/?curid=72011",
         "title": "维基百科：霍去病（导言节录，CC BY-SA 4.0）",
@@ -3552,8 +3990,19 @@
       "name": "孙膑",
       "role": "武将",
       "catalogDynasty": "周",
-      "culture": null,
-      "cultureStatus": "needs-review",
+      "culture": "central",
+      "cultureStatus": "regional-evidence-reviewed",
+      "cultureReview": {
+        "culture": "central",
+        "status": "regional-evidence-reviewed",
+        "period": "战国",
+        "region": "阿鄄之间；仕齐",
+        "identityStatus": "catalog-and-independent-biography-consistent",
+        "conclusion": "游戏宽泛文化池映射，以明确时代和生平地域供后续美术参考；不是民族、现代国籍或精确服饰鉴定。",
+        "evidence": [
+          "https://zh.wikisource.org/wiki/史記/卷065"
+        ]
+      },
       "source": {
         "url": "https://zh.wikipedia.org/?curid=1137",
         "title": "维基百科：孙膑（导言节录，CC BY-SA 4.0）",
@@ -3643,7 +4092,18 @@
       "role": "文职",
       "catalogDynasty": "原作",
       "culture": null,
-      "cultureStatus": "needs-review",
+      "cultureStatus": "reviewed-identity-unresolved",
+      "cultureReview": {
+        "culture": null,
+        "status": "reviewed-identity-unresolved",
+        "period": null,
+        "region": null,
+        "identityStatus": "historical-link-pending",
+        "conclusion": "已审历史同名候选；原作模板缺少年代、字或生平的独立绑定证据，保持原作身份，候选史料不升级为ID关联确认。",
+        "evidence": [
+          "https://zh.wikisource.org/wiki/史記/卷065"
+        ]
+      },
       "source": {
         "url": "",
         "title": "原作反汇编人物表",
@@ -3733,8 +4193,19 @@
       "name": "诸葛亮",
       "role": "武将",
       "catalogDynasty": "三国蜀",
-      "culture": null,
-      "cultureStatus": "needs-review",
+      "culture": "central",
+      "cultureStatus": "regional-evidence-reviewed",
+      "cultureReview": {
+        "culture": "central",
+        "status": "regional-evidence-reviewed",
+        "period": "汉末三国",
+        "region": "琅邪阳都",
+        "identityStatus": "catalog-and-independent-biography-consistent",
+        "conclusion": "宽泛游戏文化池映射，具体时代和古地域分别保留；非现代民族或服饰鉴定。",
+        "evidence": [
+          "https://zh.wikisource.org/wiki/三國志/卷35"
+        ]
+      },
       "source": {
         "url": "https://zh.wikipedia.org/?curid=2837",
         "title": "维基百科：诸葛亮（导言节录，CC BY-SA 4.0）",
@@ -3825,7 +4296,18 @@
       "role": "武将",
       "catalogDynasty": "原作",
       "culture": null,
-      "cultureStatus": "needs-review",
+      "cultureStatus": "reviewed-identity-unresolved",
+      "cultureReview": {
+        "culture": null,
+        "status": "reviewed-identity-unresolved",
+        "period": null,
+        "region": null,
+        "identityStatus": "historical-link-pending",
+        "conclusion": "已审历史同名候选；原作模板缺少年代、字或生平的独立绑定证据，保持原作身份，候选史料不升级为ID关联确认。",
+        "evidence": [
+          "https://zh.wikisource.org/wiki/舊唐書/卷198"
+        ]
+      },
       "source": {
         "url": "",
         "title": "原作反汇编人物表",
@@ -3915,7 +4397,18 @@
       "role": "武将",
       "catalogDynasty": "原作",
       "culture": null,
-      "cultureStatus": "needs-review",
+      "cultureStatus": "reviewed-identity-unresolved",
+      "cultureReview": {
+        "culture": null,
+        "status": "reviewed-identity-unresolved",
+        "period": null,
+        "region": null,
+        "identityStatus": "historical-link-pending",
+        "conclusion": "已审历史同名候选；原作模板缺少年代、字或生平的独立绑定证据，保持原作身份，候选史料不升级为ID关联确认。",
+        "evidence": [
+          "https://zh.wikisource.org/wiki/舊唐書/卷84"
+        ]
+      },
       "source": {
         "url": "",
         "title": "原作反汇编人物表",
@@ -4004,8 +4497,19 @@
       "name": "苏定方",
       "role": "武将",
       "catalogDynasty": "隋唐",
-      "culture": null,
-      "cultureStatus": "needs-review",
+      "culture": "central",
+      "cultureStatus": "regional-evidence-reviewed",
+      "cultureReview": {
+        "culture": "central",
+        "status": "regional-evidence-reviewed",
+        "period": "隋唐",
+        "region": "冀州武邑",
+        "identityStatus": "catalog-and-independent-biography-consistent",
+        "conclusion": "宽泛游戏文化池映射，具体时代和古地域分别保留；非现代民族或服饰鉴定。",
+        "evidence": [
+          "https://zh.wikisource.org/wiki/舊唐書/卷83"
+        ]
+      },
       "source": {
         "url": "https://zh.wikipedia.org/?curid=524793",
         "title": "维基百科：苏定方（导言节录，CC BY-SA 4.0）",
@@ -4090,8 +4594,19 @@
       "name": "狄青",
       "role": "武将",
       "catalogDynasty": "宋辽金夏",
-      "culture": null,
-      "cultureStatus": "needs-review",
+      "culture": "central",
+      "cultureStatus": "regional-evidence-reviewed",
+      "cultureReview": {
+        "culture": "central",
+        "status": "regional-evidence-reviewed",
+        "period": "北宋",
+        "region": "汾州西河",
+        "identityStatus": "catalog-and-independent-biography-consistent",
+        "conclusion": "宽泛游戏文化池映射，具体时代和古地域分别保留；非现代民族或服饰鉴定。",
+        "evidence": [
+          "https://zh.wikisource.org/wiki/宋史/卷290"
+        ]
+      },
       "source": {
         "url": "https://zh.wikipedia.org/?curid=24558",
         "title": "维基百科：狄青（导言节录，CC BY-SA 4.0）",
@@ -4176,8 +4691,19 @@
       "name": "司马光",
       "role": "文职",
       "catalogDynasty": "宋",
-      "culture": null,
-      "cultureStatus": "needs-review",
+      "culture": "central",
+      "cultureStatus": "regional-evidence-reviewed",
+      "cultureReview": {
+        "culture": "central",
+        "status": "regional-evidence-reviewed",
+        "period": "北宋",
+        "region": "陕州夏县",
+        "identityStatus": "catalog-and-independent-biography-consistent",
+        "conclusion": "宽泛游戏文化池映射，具体时代和古地域分别保留；非现代民族或服饰鉴定。",
+        "evidence": [
+          "https://zh.wikisource.org/wiki/宋史/卷336"
+        ]
+      },
       "source": {
         "url": "https://zh.wikipedia.org/?curid=6432",
         "title": "维基百科：司马光（导言节录，CC BY-SA 4.0）",
@@ -4263,8 +4789,19 @@
       "name": "岳飞",
       "role": "武将",
       "catalogDynasty": "宋",
-      "culture": null,
-      "cultureStatus": "needs-review",
+      "culture": "central",
+      "cultureStatus": "regional-evidence-reviewed",
+      "cultureReview": {
+        "culture": "central",
+        "status": "regional-evidence-reviewed",
+        "period": "南宋",
+        "region": "相州汤阴",
+        "identityStatus": "catalog-and-independent-biography-consistent",
+        "conclusion": "宽泛游戏文化池映射，具体时代和古地域分别保留；非现代民族或服饰鉴定。",
+        "evidence": [
+          "https://zh.wikisource.org/wiki/宋史/卷365"
+        ]
+      },
       "source": {
         "url": "https://zh.wikipedia.org/?curid=7133",
         "title": "维基百科：岳飞（导言节录，CC BY-SA 4.0）",
@@ -4353,8 +4890,19 @@
       "name": "文天祥",
       "role": "武将",
       "catalogDynasty": "宋",
-      "culture": null,
-      "cultureStatus": "needs-review",
+      "culture": "central",
+      "cultureStatus": "regional-evidence-reviewed",
+      "cultureReview": {
+        "culture": "central",
+        "status": "regional-evidence-reviewed",
+        "period": "南宋",
+        "region": "吉州吉水",
+        "identityStatus": "catalog-and-independent-biography-consistent",
+        "conclusion": "宽泛游戏文化池映射，具体时代和古地域分别保留；非现代民族或服饰鉴定。",
+        "evidence": [
+          "https://zh.wikisource.org/wiki/宋史/卷418"
+        ]
+      },
       "source": {
         "url": "https://zh.wikipedia.org/?curid=7134",
         "title": "维基百科：文天祥（导言节录，CC BY-SA 4.0）",
@@ -4439,8 +4987,19 @@
       "name": "徐达",
       "role": "武将",
       "catalogDynasty": "明",
-      "culture": null,
-      "cultureStatus": "needs-review",
+      "culture": "central",
+      "cultureStatus": "regional-evidence-reviewed",
+      "cultureReview": {
+        "culture": "central",
+        "status": "regional-evidence-reviewed",
+        "period": "元末明初",
+        "region": "濠",
+        "identityStatus": "catalog-and-independent-biography-consistent",
+        "conclusion": "宽泛游戏文化池映射，具体时代和古地域分别保留；非现代民族或服饰鉴定。",
+        "evidence": [
+          "https://zh.wikisource.org/wiki/明史/卷125"
+        ]
+      },
       "source": {
         "url": "https://zh.wikipedia.org/?curid=26339",
         "title": "维基百科：徐达（导言节录，CC BY-SA 4.0）",
@@ -4529,8 +5088,19 @@
       "name": "常遇春",
       "role": "武将",
       "catalogDynasty": "明",
-      "culture": null,
-      "cultureStatus": "needs-review",
+      "culture": "central",
+      "cultureStatus": "regional-evidence-reviewed",
+      "cultureReview": {
+        "culture": "central",
+        "status": "regional-evidence-reviewed",
+        "period": "元末明初",
+        "region": "怀远",
+        "identityStatus": "catalog-and-independent-biography-consistent",
+        "conclusion": "宽泛游戏文化池映射，具体时代和古地域分别保留；非现代民族或服饰鉴定。",
+        "evidence": [
+          "https://zh.wikisource.org/wiki/明史/卷125"
+        ]
+      },
       "source": {
         "url": "https://zh.wikipedia.org/?curid=76028",
         "title": "维基百科：常遇春（导言节录，CC BY-SA 4.0）",
@@ -4619,8 +5189,19 @@
       "name": "林则徐",
       "role": "文职",
       "catalogDynasty": "清",
-      "culture": null,
-      "cultureStatus": "needs-review",
+      "culture": "central",
+      "cultureStatus": "regional-evidence-reviewed",
+      "cultureReview": {
+        "culture": "central",
+        "status": "regional-evidence-reviewed",
+        "period": "清",
+        "region": "福建侯官",
+        "identityStatus": "catalog-and-independent-biography-consistent",
+        "conclusion": "宽泛游戏文化池映射，具体时代和古地域分别保留；非现代民族或服饰鉴定。",
+        "evidence": [
+          "https://zh.wikisource.org/wiki/清史稿/卷369"
+        ]
+      },
       "source": {
         "url": "https://zh.wikipedia.org/?curid=37941",
         "title": "维基百科：林则徐（导言节录，CC BY-SA 4.0）",
@@ -4709,8 +5290,19 @@
       "name": "方孝孺",
       "role": "文职",
       "catalogDynasty": "明",
-      "culture": null,
-      "cultureStatus": "needs-review",
+      "culture": "central",
+      "cultureStatus": "regional-evidence-reviewed",
+      "cultureReview": {
+        "culture": "central",
+        "status": "regional-evidence-reviewed",
+        "period": "明",
+        "region": "宁海",
+        "identityStatus": "catalog-and-independent-biography-consistent",
+        "conclusion": "宽泛游戏文化池映射，具体时代和古地域分别保留；非现代民族或服饰鉴定。",
+        "evidence": [
+          "https://zh.wikisource.org/wiki/明史/卷141"
+        ]
+      },
       "source": {
         "url": "https://zh.wikipedia.org/?curid=25600",
         "title": "维基百科：方孝孺（导言节录，CC BY-SA 4.0）",
@@ -4795,8 +5387,19 @@
       "name": "戚继光",
       "role": "武将",
       "catalogDynasty": "明",
-      "culture": null,
-      "cultureStatus": "needs-review",
+      "culture": "central",
+      "cultureStatus": "regional-evidence-reviewed",
+      "cultureReview": {
+        "culture": "central",
+        "status": "regional-evidence-reviewed",
+        "period": "明",
+        "region": "世登州卫军职；任山东及浙江",
+        "identityStatus": "catalog-and-independent-biography-consistent",
+        "conclusion": "宽泛游戏文化池映射，具体时代和古地域分别保留；非现代民族或服饰鉴定。",
+        "evidence": [
+          "https://zh.wikisource.org/wiki/明史/卷212"
+        ]
+      },
       "source": {
         "url": "https://zh.wikipedia.org/?curid=38978",
         "title": "维基百科：戚继光（导言节录，CC BY-SA 4.0）",
@@ -4885,8 +5488,19 @@
       "name": "于谦",
       "role": "武将",
       "catalogDynasty": "明",
-      "culture": null,
-      "cultureStatus": "needs-review",
+      "culture": "central",
+      "cultureStatus": "regional-evidence-reviewed",
+      "cultureReview": {
+        "culture": "central",
+        "status": "regional-evidence-reviewed",
+        "period": "明",
+        "region": "钱塘",
+        "identityStatus": "catalog-and-independent-biography-consistent",
+        "conclusion": "宽泛游戏文化池映射，具体时代和古地域分别保留；非现代民族或服饰鉴定。",
+        "evidence": [
+          "https://zh.wikisource.org/wiki/明史/卷170"
+        ]
+      },
       "source": {
         "url": "https://zh.wikipedia.org/?curid=307345",
         "title": "维基百科：于谦（导言节录，CC BY-SA 4.0）",
@@ -4974,8 +5588,19 @@
       "name": "王守仁",
       "role": "武将",
       "catalogDynasty": "明",
-      "culture": null,
-      "cultureStatus": "needs-review",
+      "culture": "central",
+      "cultureStatus": "regional-evidence-reviewed",
+      "cultureReview": {
+        "culture": "central",
+        "status": "regional-evidence-reviewed",
+        "period": "明",
+        "region": "余姚",
+        "identityStatus": "catalog-and-independent-biography-consistent",
+        "conclusion": "宽泛游戏文化池映射，具体时代和古地域分别保留；非现代民族或服饰鉴定。",
+        "evidence": [
+          "https://zh.wikisource.org/wiki/明史/卷195"
+        ]
+      },
       "source": {
         "url": "https://zh.wikipedia.org/?curid=48474",
         "title": "维基百科：王阳明（导言节录，CC BY-SA 4.0）",
@@ -5066,7 +5691,18 @@
       "role": "武将",
       "catalogDynasty": "原作",
       "culture": null,
-      "cultureStatus": "needs-review",
+      "cultureStatus": "reviewed-identity-unresolved",
+      "cultureReview": {
+        "culture": null,
+        "status": "reviewed-identity-unresolved",
+        "period": null,
+        "region": null,
+        "identityStatus": "historical-link-pending",
+        "conclusion": "已审历史同名候选；原作模板缺少年代、字或生平的独立绑定证据，保持原作身份，候选史料不升级为ID关联确认。",
+        "evidence": [
+          "https://zh.wikisource.org/wiki/舊唐書/卷68"
+        ]
+      },
       "source": {
         "url": "",
         "title": "原作反汇编人物表",
@@ -5151,8 +5787,19 @@
       "name": "秦桧",
       "role": "文职",
       "catalogDynasty": "宋",
-      "culture": null,
-      "cultureStatus": "needs-review",
+      "culture": "central",
+      "cultureStatus": "regional-evidence-reviewed",
+      "cultureReview": {
+        "culture": "central",
+        "status": "regional-evidence-reviewed",
+        "period": "两宋",
+        "region": "江宁",
+        "identityStatus": "catalog-and-independent-biography-consistent",
+        "conclusion": "宽泛游戏文化池映射，具体时代和古地域分别保留；非现代民族或服饰鉴定。",
+        "evidence": [
+          "https://zh.wikisource.org/wiki/宋史/卷473"
+        ]
+      },
       "source": {
         "url": "https://zh.wikipedia.org/?curid=43263",
         "title": "维基百科：秦桧（导言节录，CC BY-SA 4.0）",
@@ -5242,7 +5889,18 @@
       "role": "武将",
       "catalogDynasty": "原作",
       "culture": null,
-      "cultureStatus": "needs-review",
+      "cultureStatus": "reviewed-identity-unresolved",
+      "cultureReview": {
+        "culture": null,
+        "status": "reviewed-identity-unresolved",
+        "period": null,
+        "region": null,
+        "identityStatus": "historical-link-pending",
+        "conclusion": "已审历史同名候选；原作模板缺少年代、字或生平的独立绑定证据，保持原作身份，候选史料不升级为ID关联确认。",
+        "evidence": [
+          "https://zh.wikisource.org/wiki/明史/卷274"
+        ]
+      },
       "source": {
         "url": "",
         "title": "原作反汇编人物表",
@@ -5327,8 +5985,19 @@
       "name": "包拯",
       "role": "文职",
       "catalogDynasty": "宋",
-      "culture": null,
-      "cultureStatus": "needs-review",
+      "culture": "central",
+      "cultureStatus": "regional-evidence-reviewed",
+      "cultureReview": {
+        "culture": "central",
+        "status": "regional-evidence-reviewed",
+        "period": "北宋",
+        "region": "庐州合肥",
+        "identityStatus": "catalog-and-independent-biography-consistent",
+        "conclusion": "宽泛游戏文化池映射，具体时代和古地域分别保留；非现代民族或服饰鉴定。",
+        "evidence": [
+          "https://zh.wikisource.org/wiki/宋史/卷316"
+        ]
+      },
       "source": {
         "url": "https://zh.wikipedia.org/?curid=13519",
         "title": "维基百科：包拯（导言节录，CC BY-SA 4.0）",
@@ -5414,8 +6083,19 @@
       "name": "姜子牙",
       "role": "武将",
       "catalogDynasty": "周",
-      "culture": null,
-      "cultureStatus": "needs-review",
+      "culture": "central",
+      "cultureStatus": "regional-evidence-reviewed",
+      "cultureReview": {
+        "culture": "central",
+        "status": "regional-evidence-reviewed",
+        "period": "商末周初（史传层次）",
+        "region": "东海上；后封齐营丘",
+        "identityStatus": "catalog-and-independent-biography-consistent",
+        "conclusion": "宽泛游戏文化池映射，具体时代和古地域分别保留；非现代民族或服饰鉴定。",
+        "evidence": [
+          "https://zh.wikisource.org/wiki/史記/卷032"
+        ]
+      },
       "source": {
         "url": "https://zh.wikipedia.org/?curid=91415",
         "title": "维基百科：姜太公（导言节录，CC BY-SA 4.0）",
@@ -5509,7 +6189,18 @@
       "role": "文职",
       "catalogDynasty": "原作",
       "culture": null,
-      "cultureStatus": "needs-review",
+      "cultureStatus": "reviewed-identity-unresolved",
+      "cultureReview": {
+        "culture": null,
+        "status": "reviewed-identity-unresolved",
+        "period": null,
+        "region": null,
+        "identityStatus": "historical-link-pending",
+        "conclusion": "已审历史同名候选；原作模板缺少年代、字或生平的独立绑定证据，保持原作身份，候选史料不升级为ID关联确认。",
+        "evidence": [
+          "https://zh.wikisource.org/wiki/史記/卷003"
+        ]
+      },
       "source": {
         "url": "",
         "title": "原作反汇编人物表",
@@ -5595,7 +6286,18 @@
       "role": "文职",
       "catalogDynasty": "原作",
       "culture": null,
-      "cultureStatus": "needs-review",
+      "cultureStatus": "reviewed-identity-unresolved",
+      "cultureReview": {
+        "culture": null,
+        "status": "reviewed-identity-unresolved",
+        "period": null,
+        "region": null,
+        "identityStatus": "historical-link-pending",
+        "conclusion": "已审历史同名候选；原作模板缺少年代、字或生平的独立绑定证据，保持原作身份，候选史料不升级为ID关联确认。",
+        "evidence": [
+          "https://zh.wikisource.org/wiki/史記/卷033"
+        ]
+      },
       "source": {
         "url": "",
         "title": "原作反汇编人物表",
@@ -5689,7 +6391,18 @@
       "role": "文职",
       "catalogDynasty": "原作",
       "culture": null,
-      "cultureStatus": "needs-review",
+      "cultureStatus": "reviewed-identity-unresolved",
+      "cultureReview": {
+        "culture": null,
+        "status": "reviewed-identity-unresolved",
+        "period": null,
+        "region": null,
+        "identityStatus": "historical-link-pending",
+        "conclusion": "已审历史同名候选；原作模板缺少年代、字或生平的独立绑定证据，保持原作身份，候选史料不升级为ID关联确认。",
+        "evidence": [
+          "https://zh.wikisource.org/wiki/史記/卷047"
+        ]
+      },
       "source": {
         "url": "",
         "title": "原作反汇编人物表",
@@ -5783,7 +6496,18 @@
       "role": "文职",
       "catalogDynasty": "原作",
       "culture": null,
-      "cultureStatus": "needs-review",
+      "cultureStatus": "reviewed-identity-unresolved",
+      "cultureReview": {
+        "culture": null,
+        "status": "reviewed-identity-unresolved",
+        "period": null,
+        "region": null,
+        "identityStatus": "historical-link-pending",
+        "conclusion": "政府故居资料证明清末维新领袖康有为在京活动；没有原作ID的独立绑定线索，保留原作身份。",
+        "evidence": [
+          "https://www.beijing.gov.cn/tsbj/sxym/202508/t20250804_4166018.html"
+        ]
+      },
       "source": {
         "url": "",
         "title": "原作反汇编人物表",
@@ -5870,7 +6594,18 @@
       "role": "文职",
       "catalogDynasty": "原作",
       "culture": null,
-      "cultureStatus": "needs-review",
+      "cultureStatus": "reviewed-identity-unresolved",
+      "cultureReview": {
+        "culture": null,
+        "status": "reviewed-identity-unresolved",
+        "period": null,
+        "region": null,
+        "identityStatus": "historical-link-pending",
+        "conclusion": "已审历史同名候选；原作模板缺少年代、字或生平的独立绑定证据，保持原作身份，候选史料不升级为ID关联确认。",
+        "evidence": [
+          "https://zh.wikisource.org/wiki/史記/卷063"
+        ]
+      },
       "source": {
         "url": "",
         "title": "原作反汇编人物表",
@@ -5959,8 +6694,19 @@
       "name": "孙武",
       "role": "武将",
       "catalogDynasty": "周",
-      "culture": null,
-      "cultureStatus": "needs-review",
+      "culture": "central",
+      "cultureStatus": "regional-evidence-reviewed",
+      "cultureReview": {
+        "culture": "central",
+        "status": "regional-evidence-reviewed",
+        "period": "春秋（史传层次）",
+        "region": "齐；仕吴",
+        "identityStatus": "catalog-and-independent-biography-consistent",
+        "conclusion": "宽泛游戏文化池映射，具体时代和古地域分别保留；非现代民族或服饰鉴定。",
+        "evidence": [
+          "https://zh.wikisource.org/wiki/史記/卷065"
+        ]
+      },
       "source": {
         "url": "https://zh.wikipedia.org/?curid=142752",
         "title": "维基百科：孙武（导言节录，CC BY-SA 4.0）",
@@ -6051,7 +6797,18 @@
       "role": "文职",
       "catalogDynasty": "原作",
       "culture": null,
-      "cultureStatus": "needs-review",
+      "cultureStatus": "reviewed-identity-unresolved",
+      "cultureReview": {
+        "culture": null,
+        "status": "reviewed-identity-unresolved",
+        "period": null,
+        "region": null,
+        "identityStatus": "historical-link-pending",
+        "conclusion": "已审历史同名候选；原作模板缺少年代、字或生平的独立绑定证据，保持原作身份，候选史料不升级为ID关联确认。",
+        "evidence": [
+          "https://zh.wikisource.org/wiki/史記/卷063"
+        ]
+      },
       "source": {
         "url": "",
         "title": "原作反汇编人物表",
@@ -6145,7 +6902,18 @@
       "role": "文职",
       "catalogDynasty": "原作",
       "culture": null,
-      "cultureStatus": "needs-review",
+      "cultureStatus": "reviewed-identity-unresolved",
+      "cultureReview": {
+        "culture": null,
+        "status": "reviewed-identity-unresolved",
+        "period": null,
+        "region": null,
+        "identityStatus": "historical-link-pending",
+        "conclusion": "已审历史同名候选；原作模板缺少年代、字或生平的独立绑定证据，保持原作身份，候选史料不升级为ID关联确认。",
+        "evidence": [
+          "https://zh.wikisource.org/wiki/史記/卷074"
+        ]
+      },
       "source": {
         "url": "",
         "title": "原作反汇编人物表",
@@ -6230,8 +6998,19 @@
       "name": "白起",
       "role": "武将",
       "catalogDynasty": "周",
-      "culture": null,
-      "cultureStatus": "needs-review",
+      "culture": "central",
+      "cultureStatus": "regional-evidence-reviewed",
+      "cultureReview": {
+        "culture": "central",
+        "status": "regional-evidence-reviewed",
+        "period": "战国",
+        "region": "郿；仕秦",
+        "identityStatus": "catalog-and-independent-biography-consistent",
+        "conclusion": "宽泛游戏文化池映射，具体时代和古地域分别保留；非现代民族或服饰鉴定。",
+        "evidence": [
+          "https://zh.wikisource.org/wiki/史記/卷073"
+        ]
+      },
       "source": {
         "url": "https://zh.wikipedia.org/?curid=19391",
         "title": "维基百科：白起（导言节录，CC BY-SA 4.0）",
@@ -6317,8 +7096,19 @@
       "name": "王翦",
       "role": "武将",
       "catalogDynasty": "周",
-      "culture": null,
-      "cultureStatus": "needs-review",
+      "culture": "central",
+      "cultureStatus": "regional-evidence-reviewed",
+      "cultureReview": {
+        "culture": "central",
+        "status": "regional-evidence-reviewed",
+        "period": "战国秦",
+        "region": "频阳东乡",
+        "identityStatus": "catalog-and-independent-biography-consistent",
+        "conclusion": "游戏宽泛区域池映射；具体时代、迁徙、旗籍与家族背景另存，不等同民族或精确服饰。清代满洲官员需保留本时代服饰。",
+        "evidence": [
+          "https://zh.wikisource.org/wiki/史記/卷073"
+        ]
+      },
       "source": {
         "url": "https://zh.wikipedia.org/?curid=29919",
         "title": "维基百科：王翦（导言节录，CC BY-SA 4.0）",
@@ -6403,8 +7193,19 @@
       "name": "廉颇",
       "role": "武将",
       "catalogDynasty": "周",
-      "culture": null,
-      "cultureStatus": "needs-review",
+      "culture": "central",
+      "cultureStatus": "regional-evidence-reviewed",
+      "cultureReview": {
+        "culture": "central",
+        "status": "regional-evidence-reviewed",
+        "period": "战国",
+        "region": "赵；晚年居魏楚",
+        "identityStatus": "catalog-and-independent-biography-consistent",
+        "conclusion": "游戏宽泛区域池映射；具体时代、迁徙、旗籍与家族背景另存，不等同民族或精确服饰。清代满洲官员需保留本时代服饰。",
+        "evidence": [
+          "https://zh.wikisource.org/wiki/史記/卷081"
+        ]
+      },
       "source": {
         "url": "https://zh.wikipedia.org/?curid=29932",
         "title": "维基百科：廉颇（导言节录，CC BY-SA 4.0）",
@@ -6489,8 +7290,19 @@
       "name": "李牧",
       "role": "武将",
       "catalogDynasty": "周",
-      "culture": null,
-      "cultureStatus": "needs-review",
+      "culture": "central",
+      "cultureStatus": "regional-evidence-reviewed",
+      "cultureReview": {
+        "culture": "central",
+        "status": "regional-evidence-reviewed",
+        "period": "战国",
+        "region": "赵北边代雁门军事活动",
+        "identityStatus": "catalog-and-independent-biography-consistent",
+        "conclusion": "游戏宽泛区域池映射；具体时代、迁徙、旗籍与家族背景另存，不等同民族或精确服饰。清代满洲官员需保留本时代服饰。",
+        "evidence": [
+          "https://zh.wikisource.org/wiki/史記/卷081"
+        ]
+      },
       "source": {
         "url": "https://zh.wikipedia.org/?curid=184014",
         "title": "维基百科：李牧（导言节录，CC BY-SA 4.0）",
@@ -6575,8 +7387,19 @@
       "name": "吕不韦",
       "role": "文职",
       "catalogDynasty": "周",
-      "culture": null,
-      "cultureStatus": "needs-review",
+      "culture": "central",
+      "cultureStatus": "regional-evidence-reviewed",
+      "cultureReview": {
+        "culture": "central",
+        "status": "regional-evidence-reviewed",
+        "period": "战国秦",
+        "region": "阳翟；商旅往来赵秦",
+        "identityStatus": "catalog-and-independent-biography-consistent",
+        "conclusion": "游戏宽泛区域池映射；具体时代、迁徙、旗籍与家族背景另存，不等同民族或精确服饰。清代满洲官员需保留本时代服饰。",
+        "evidence": [
+          "https://zh.wikisource.org/wiki/史記/卷085"
+        ]
+      },
       "source": {
         "url": "https://zh.wikipedia.org/?curid=5852",
         "title": "维基百科：吕不韦（导言节录，CC BY-SA 4.0）",
@@ -6661,8 +7484,19 @@
       "name": "蒙恬",
       "role": "武将",
       "catalogDynasty": "先秦",
-      "culture": null,
-      "cultureStatus": "needs-review",
+      "culture": "central",
+      "cultureStatus": "regional-evidence-reviewed",
+      "cultureReview": {
+        "culture": "central",
+        "status": "regional-evidence-reviewed",
+        "period": "秦",
+        "region": "先世齐，仕秦居上郡",
+        "identityStatus": "catalog-and-independent-biography-consistent",
+        "conclusion": "游戏宽泛区域池映射；具体时代、迁徙、旗籍与家族背景另存，不等同民族或精确服饰。清代满洲官员需保留本时代服饰。",
+        "evidence": [
+          "https://zh.wikisource.org/wiki/史記/卷088"
+        ]
+      },
       "source": {
         "url": "https://zh.wikipedia.org/?curid=108334",
         "title": "维基百科：蒙恬（导言节录，CC BY-SA 4.0）",
@@ -6751,8 +7585,19 @@
       "name": "李广",
       "role": "武将",
       "catalogDynasty": "秦汉",
-      "culture": null,
-      "cultureStatus": "needs-review",
+      "culture": "central",
+      "cultureStatus": "regional-evidence-reviewed",
+      "cultureReview": {
+        "culture": "central",
+        "status": "regional-evidence-reviewed",
+        "period": "西汉",
+        "region": "陇西成纪",
+        "identityStatus": "catalog-and-independent-biography-consistent",
+        "conclusion": "游戏宽泛区域池映射；具体时代、迁徙、旗籍与家族背景另存，不等同民族或精确服饰。清代满洲官员需保留本时代服饰。",
+        "evidence": [
+          "https://zh.wikisource.org/wiki/漢書/卷054"
+        ]
+      },
       "source": {
         "url": "https://zh.wikipedia.org/?curid=94116",
         "title": "维基百科：李广（导言节录，CC BY-SA 4.0）",
@@ -6839,7 +7684,18 @@
       "role": "武将",
       "catalogDynasty": "原作",
       "culture": null,
-      "cultureStatus": "needs-review",
+      "cultureStatus": "reviewed-identity-unresolved",
+      "cultureReview": {
+        "culture": null,
+        "status": "reviewed-identity-unresolved",
+        "period": null,
+        "region": null,
+        "identityStatus": "historical-link-pending",
+        "conclusion": "已读历史候选，但原作ID没有字、籍贯、年代或生平独立绑定，保留原作身份，不凭同名确认。",
+        "evidence": [
+          "https://zh.wikisource.org/wiki/史記/卷086"
+        ]
+      },
       "source": {
         "url": "",
         "title": "原作反汇编人物表",
@@ -6919,8 +7775,19 @@
       "name": "田单",
       "role": "武将",
       "catalogDynasty": "先秦",
-      "culture": null,
-      "cultureStatus": "needs-review",
+      "culture": "central",
+      "cultureStatus": "regional-evidence-reviewed",
+      "cultureReview": {
+        "culture": "central",
+        "status": "regional-evidence-reviewed",
+        "period": "战国",
+        "region": "齐；临淄安平即墨活动",
+        "identityStatus": "catalog-and-independent-biography-consistent",
+        "conclusion": "游戏宽泛区域池映射；具体时代、迁徙、旗籍与家族背景另存，不等同民族或精确服饰。清代满洲官员需保留本时代服饰。",
+        "evidence": [
+          "https://zh.wikisource.org/wiki/史記/卷082"
+        ]
+      },
       "source": {
         "url": "https://zh.wikipedia.org/?curid=313431",
         "title": "维基百科：田单（导言节录，CC BY-SA 4.0）",
@@ -7006,7 +7873,18 @@
       "role": "文职",
       "catalogDynasty": "原作",
       "culture": null,
-      "cultureStatus": "needs-review",
+      "cultureStatus": "reviewed-identity-unresolved",
+      "cultureReview": {
+        "culture": null,
+        "status": "reviewed-identity-unresolved",
+        "period": null,
+        "region": null,
+        "identityStatus": "historical-link-pending",
+        "conclusion": "已读历史候选，但原作ID没有字、籍贯、年代或生平独立绑定，保留原作身份，不凭同名确认。",
+        "evidence": [
+          "https://zh.wikisource.org/wiki/史記/卷130"
+        ]
+      },
       "source": {
         "url": "",
         "title": "原作反汇编人物表",
@@ -7092,8 +7970,19 @@
       "name": "曹操",
       "role": "文职",
       "catalogDynasty": "东汉",
-      "culture": null,
-      "cultureStatus": "needs-review",
+      "culture": "central",
+      "cultureStatus": "regional-evidence-reviewed",
+      "cultureReview": {
+        "culture": "central",
+        "status": "regional-evidence-reviewed",
+        "period": "东汉末",
+        "region": "沛国谯",
+        "identityStatus": "catalog-and-independent-biography-consistent",
+        "conclusion": "游戏宽泛区域池映射；具体时代、迁徙、旗籍与家族背景另存，不等同民族或精确服饰。清代满洲官员需保留本时代服饰。",
+        "evidence": [
+          "https://zh.wikisource.org/wiki/三國志/卷01"
+        ]
+      },
       "source": {
         "url": "https://zh.wikipedia.org/?curid=2870",
         "title": "维基百科：曹操（导言节录，CC BY-SA 4.0）",
@@ -7183,8 +8072,19 @@
       "name": "赵云",
       "role": "武将",
       "catalogDynasty": "三国",
-      "culture": null,
-      "cultureStatus": "needs-review",
+      "culture": "central",
+      "cultureStatus": "regional-evidence-reviewed",
+      "cultureReview": {
+        "culture": "central",
+        "status": "regional-evidence-reviewed",
+        "period": "汉末三国",
+        "region": "常山真定",
+        "identityStatus": "catalog-and-independent-biography-consistent",
+        "conclusion": "游戏宽泛区域池映射；具体时代、迁徙、旗籍与家族背景另存，不等同民族或精确服饰。清代满洲官员需保留本时代服饰。",
+        "evidence": [
+          "https://zh.wikisource.org/wiki/三國志/卷36"
+        ]
+      },
       "source": {
         "url": "https://zh.wikipedia.org/?curid=22278",
         "title": "维基百科：赵云（导言节录，CC BY-SA 4.0）",
@@ -7264,8 +8164,19 @@
       "name": "司马懿",
       "role": "武将",
       "catalogDynasty": "三国",
-      "culture": null,
-      "cultureStatus": "needs-review",
+      "culture": "central",
+      "cultureStatus": "regional-evidence-reviewed",
+      "cultureReview": {
+        "culture": "central",
+        "status": "regional-evidence-reviewed",
+        "period": "汉末曹魏",
+        "region": "河内温县孝敬里",
+        "identityStatus": "catalog-and-independent-biography-consistent",
+        "conclusion": "游戏宽泛区域池映射；具体时代、迁徙、旗籍与家族背景另存，不等同民族或精确服饰。清代满洲官员需保留本时代服饰。",
+        "evidence": [
+          "https://zh.wikisource.org/wiki/晉書/卷001"
+        ]
+      },
       "source": {
         "url": "https://zh.wikipedia.org/?curid=49432",
         "title": "维基百科：司马懿（导言节录，CC BY-SA 4.0）",
@@ -7351,8 +8262,19 @@
       "name": "吕布",
       "role": "武将",
       "catalogDynasty": "三国",
-      "culture": null,
-      "cultureStatus": "needs-review",
+      "culture": "central",
+      "cultureStatus": "regional-evidence-reviewed",
+      "cultureReview": {
+        "culture": "central",
+        "status": "regional-evidence-reviewed",
+        "period": "东汉末",
+        "region": "五原九原",
+        "identityStatus": "catalog-and-independent-biography-consistent",
+        "conclusion": "游戏宽泛区域池映射；具体时代、迁徙、旗籍与家族背景另存，不等同民族或精确服饰。清代满洲官员需保留本时代服饰。",
+        "evidence": [
+          "https://zh.wikisource.org/wiki/三國志/卷07"
+        ]
+      },
       "source": {
         "url": "https://zh.wikipedia.org/?curid=15693",
         "title": "维基百科：吕布（导言节录，CC BY-SA 4.0）",
@@ -7432,8 +8354,19 @@
       "name": "关羽",
       "role": "武将",
       "catalogDynasty": "三国",
-      "culture": null,
-      "cultureStatus": "needs-review",
+      "culture": "central",
+      "cultureStatus": "regional-evidence-reviewed",
+      "cultureReview": {
+        "culture": "central",
+        "status": "regional-evidence-reviewed",
+        "period": "汉末三国",
+        "region": "河东解",
+        "identityStatus": "catalog-and-independent-biography-consistent",
+        "conclusion": "游戏宽泛区域池映射；具体时代、迁徙、旗籍与家族背景另存，不等同民族或精确服饰。清代满洲官员需保留本时代服饰。",
+        "evidence": [
+          "https://zh.wikisource.org/wiki/三國志/卷36"
+        ]
+      },
       "source": {
         "url": "https://zh.wikipedia.org/?curid=22300",
         "title": "维基百科：关羽（导言节录，CC BY-SA 4.0）",
@@ -7520,8 +8453,19 @@
       "name": "张飞",
       "role": "武将",
       "catalogDynasty": "三国",
-      "culture": null,
-      "cultureStatus": "needs-review",
+      "culture": "central",
+      "cultureStatus": "regional-evidence-reviewed",
+      "cultureReview": {
+        "culture": "central",
+        "status": "regional-evidence-reviewed",
+        "period": "汉末三国",
+        "region": "涿郡",
+        "identityStatus": "catalog-and-independent-biography-consistent",
+        "conclusion": "游戏宽泛区域池映射；具体时代、迁徙、旗籍与家族背景另存，不等同民族或精确服饰。清代满洲官员需保留本时代服饰。",
+        "evidence": [
+          "https://zh.wikisource.org/wiki/三國志/卷36"
+        ]
+      },
       "source": {
         "url": "https://zh.wikipedia.org/?curid=22305",
         "title": "维基百科：张飞（导言节录，CC BY-SA 4.0）",
@@ -7607,8 +8551,19 @@
       "name": "周瑜",
       "role": "武将",
       "catalogDynasty": "三国",
-      "culture": null,
-      "cultureStatus": "needs-review",
+      "culture": "central",
+      "cultureStatus": "regional-evidence-reviewed",
+      "cultureReview": {
+        "culture": "central",
+        "status": "regional-evidence-reviewed",
+        "period": "汉末",
+        "region": "庐江舒",
+        "identityStatus": "catalog-and-independent-biography-consistent",
+        "conclusion": "游戏宽泛区域池映射；具体时代、迁徙、旗籍与家族背景另存，不等同民族或精确服饰。清代满洲官员需保留本时代服饰。",
+        "evidence": [
+          "https://zh.wikisource.org/wiki/三國志/卷54"
+        ]
+      },
       "source": {
         "url": "https://zh.wikipedia.org/?curid=4163",
         "title": "维基百科：周瑜（导言节录，CC BY-SA 4.0）",
@@ -7693,8 +8648,19 @@
       "name": "秦琼",
       "role": "武将",
       "catalogDynasty": "隋唐",
-      "culture": null,
-      "cultureStatus": "needs-review",
+      "culture": "central",
+      "cultureStatus": "regional-evidence-reviewed",
+      "cultureReview": {
+        "culture": "central",
+        "status": "regional-evidence-reviewed",
+        "period": "隋唐",
+        "region": "齐州历城",
+        "identityStatus": "catalog-and-independent-biography-consistent",
+        "conclusion": "游戏宽泛区域池映射；具体时代、迁徙、旗籍与家族背景另存，不等同民族或精确服饰。清代满洲官员需保留本时代服饰。",
+        "evidence": [
+          "https://zh.wikisource.org/wiki/舊唐書/卷68"
+        ]
+      },
       "source": {
         "url": "https://zh.wikipedia.org/?curid=134467",
         "title": "维基百科：秦琼（导言节录，CC BY-SA 4.0）",
@@ -7775,7 +8741,18 @@
       "role": "武将",
       "catalogDynasty": "原作",
       "culture": null,
-      "cultureStatus": "needs-review",
+      "cultureStatus": "reviewed-identity-unresolved",
+      "cultureReview": {
+        "culture": null,
+        "status": "reviewed-identity-unresolved",
+        "period": null,
+        "region": null,
+        "identityStatus": "historical-link-pending",
+        "conclusion": "已读历史候选，但原作ID没有字、籍贯、年代或生平独立绑定，保留原作身份，不凭同名确认。",
+        "evidence": [
+          "https://zh.wikisource.org/wiki/舊唐書/卷68"
+        ]
+      },
       "source": {
         "url": "",
         "title": "原作反汇编人物表",
@@ -7861,7 +8838,18 @@
       "role": "文职",
       "catalogDynasty": "原作",
       "culture": null,
-      "cultureStatus": "needs-review",
+      "cultureStatus": "reviewed-identity-unresolved",
+      "cultureReview": {
+        "culture": null,
+        "status": "reviewed-identity-unresolved",
+        "period": null,
+        "region": null,
+        "identityStatus": "historical-link-pending",
+        "conclusion": "已读历史候选，但原作ID没有字、籍贯、年代或生平独立绑定，保留原作身份，不凭同名确认。",
+        "evidence": [
+          "https://zh.wikisource.org/wiki/隋書/卷70"
+        ]
+      },
       "source": {
         "url": "",
         "title": "原作反汇编人物表",
@@ -7951,8 +8939,19 @@
       "name": "韩愈",
       "role": "文职",
       "catalogDynasty": "唐",
-      "culture": null,
-      "cultureStatus": "needs-review",
+      "culture": "central",
+      "cultureStatus": "regional-evidence-reviewed",
+      "cultureReview": {
+        "culture": "central",
+        "status": "regional-evidence-reviewed",
+        "period": "唐",
+        "region": "史称昌黎；具体出生地另核",
+        "identityStatus": "catalog-and-independent-biography-consistent",
+        "conclusion": "游戏宽泛区域池映射；具体时代、迁徙、旗籍与家族背景另存，不等同民族或精确服饰。清代满洲官员需保留本时代服饰。",
+        "evidence": [
+          "https://zh.wikisource.org/wiki/舊唐書/卷160"
+        ]
+      },
       "source": {
         "url": "https://zh.wikipedia.org/?curid=16413",
         "title": "维基百科：韩愈（导言节录，CC BY-SA 4.0）",
@@ -8037,8 +9036,19 @@
       "name": "拔都",
       "role": "武将",
       "catalogDynasty": "元",
-      "culture": null,
-      "cultureStatus": "needs-review",
+      "culture": "steppe",
+      "cultureStatus": "regional-evidence-reviewed",
+      "cultureReview": {
+        "culture": "steppe",
+        "status": "regional-evidence-reviewed",
+        "period": "13世纪蒙古帝国",
+        "region": "蒙古朮赤系；钦察草原与东欧活动",
+        "identityStatus": "catalog-and-independent-biography-consistent",
+        "conclusion": "依据明确时代文化背景选择游戏宽泛美术池，不等于现代民族分类或精确服饰核定。",
+        "evidence": [
+          "https://georgianencyclopedia.ge/en/form_eng/380"
+        ]
+      },
       "source": {
         "url": "https://zh.wikipedia.org/?curid=100626",
         "title": "维基百科：拔都（导言节录，CC BY-SA 4.0）",
@@ -8127,8 +9137,19 @@
       "name": "郑成功",
       "role": "武将",
       "catalogDynasty": "明",
-      "culture": null,
-      "cultureStatus": "needs-review",
+      "culture": "central",
+      "cultureStatus": "regional-evidence-reviewed",
+      "cultureReview": {
+        "culture": "central",
+        "status": "regional-evidence-reviewed",
+        "period": "明末清初",
+        "region": "福建南安家族与学籍；母为日本人",
+        "identityStatus": "catalog-and-independent-biography-consistent",
+        "conclusion": "游戏宽泛区域池映射；具体时代、迁徙、旗籍与家族背景另存，不等同民族或精确服饰。清代满洲官员需保留本时代服饰。",
+        "evidence": [
+          "https://zh.wikisource.org/wiki/清史稿/卷224"
+        ]
+      },
       "source": {
         "url": "https://zh.wikipedia.org/?curid=35169",
         "title": "维基百科：郑成功（导言节录，CC BY-SA 4.0）",
@@ -8221,8 +9242,19 @@
       "name": "袁崇焕",
       "role": "武将",
       "catalogDynasty": "明",
-      "culture": null,
-      "cultureStatus": "needs-review",
+      "culture": "central",
+      "cultureStatus": "regional-evidence-reviewed",
+      "cultureReview": {
+        "culture": "central",
+        "status": "regional-evidence-reviewed",
+        "period": "明",
+        "region": "东莞",
+        "identityStatus": "catalog-and-independent-biography-consistent",
+        "conclusion": "游戏宽泛区域池映射；具体时代、迁徙、旗籍与家族背景另存，不等同民族或精确服饰。清代满洲官员需保留本时代服饰。",
+        "evidence": [
+          "https://zh.wikisource.org/wiki/明史/卷259"
+        ]
+      },
       "source": {
         "url": "https://zh.wikipedia.org/?curid=65732",
         "title": "维基百科：袁崇焕（导言节录，CC BY-SA 4.0）",
@@ -8307,8 +9339,19 @@
       "name": "刘墉",
       "role": "文职",
       "catalogDynasty": "清",
-      "culture": null,
-      "cultureStatus": "needs-review",
+      "culture": "central",
+      "cultureStatus": "regional-evidence-reviewed",
+      "cultureReview": {
+        "culture": "central",
+        "status": "regional-evidence-reviewed",
+        "period": "清",
+        "region": "山东诸城",
+        "identityStatus": "catalog-and-independent-biography-consistent",
+        "conclusion": "依据明确时代文化背景选择游戏宽泛美术池，不等于现代民族分类或精确服饰核定。",
+        "evidence": [
+          "https://dict.revised.moe.edu.tw/dictView.jsp?ID=63674&la=0&powerMode=0"
+        ]
+      },
       "source": {
         "url": "https://zh.wikipedia.org/wiki/%E5%88%98%E5%A2%89",
         "title": "人物身份资料，尚缺详传",
@@ -8393,8 +9436,19 @@
       "name": "魏忠贤",
       "role": "文职",
       "catalogDynasty": "明",
-      "culture": null,
-      "cultureStatus": "needs-review",
+      "culture": "central",
+      "cultureStatus": "regional-evidence-reviewed",
+      "cultureReview": {
+        "culture": "central",
+        "status": "regional-evidence-reviewed",
+        "period": "明",
+        "region": "肃宁",
+        "identityStatus": "catalog-and-independent-biography-consistent",
+        "conclusion": "游戏宽泛区域池映射；具体时代、迁徙、旗籍与家族背景另存，不等同民族或精确服饰。清代满洲官员需保留本时代服饰。",
+        "evidence": [
+          "https://zh.wikisource.org/wiki/明史/卷305"
+        ]
+      },
       "source": {
         "url": "https://zh.wikipedia.org/?curid=91350",
         "title": "维基百科：魏忠贤（导言节录，CC BY-SA 4.0）",
@@ -8483,8 +9537,19 @@
       "name": "和珅",
       "role": "文职",
       "catalogDynasty": "清",
-      "culture": null,
-      "cultureStatus": "needs-review",
+      "culture": "central",
+      "cultureStatus": "regional-evidence-reviewed",
+      "cultureReview": {
+        "culture": "central",
+        "status": "regional-evidence-reviewed",
+        "period": "清",
+        "region": "满洲正红旗身份；清廷活动",
+        "identityStatus": "catalog-and-independent-biography-consistent",
+        "conclusion": "游戏宽泛区域池映射；具体时代、迁徙、旗籍与家族背景另存，不等同民族或精确服饰。清代满洲官员需保留本时代服饰。",
+        "evidence": [
+          "https://zh.wikisource.org/wiki/清史稿/卷319"
+        ]
+      },
       "source": {
         "url": "https://zh.wikipedia.org/?curid=7415",
         "title": "维基百科：和珅（导言节录，CC BY-SA 4.0）",
@@ -8575,7 +9640,18 @@
       "role": "武将",
       "catalogDynasty": "原作",
       "culture": null,
-      "cultureStatus": "needs-review",
+      "cultureStatus": "reviewed-identity-unresolved",
+      "cultureReview": {
+        "culture": null,
+        "status": "reviewed-identity-unresolved",
+        "period": null,
+        "region": null,
+        "identityStatus": "historical-link-pending",
+        "conclusion": "核对原作表，只有姓名、原始数值与地址，字段语义仍待核。没有可靠可绑定生平；明确保留原作人物，不虚构朝代史事或同名身份。",
+        "evidence": [
+          "src/original-officials.mjs"
+        ]
+      },
       "source": {
         "url": "",
         "title": "原作反汇编人物表",
@@ -8661,7 +9737,18 @@
       "role": "文职",
       "catalogDynasty": "原作",
       "culture": null,
-      "cultureStatus": "needs-review",
+      "cultureStatus": "reviewed-identity-unresolved",
+      "cultureReview": {
+        "culture": null,
+        "status": "reviewed-identity-unresolved",
+        "period": null,
+        "region": null,
+        "identityStatus": "historical-link-pending",
+        "conclusion": "核对原作表，只有姓名、原始数值与地址，字段语义仍待核。没有可靠可绑定生平；明确保留原作人物，不虚构朝代史事或同名身份。",
+        "evidence": [
+          "src/original-officials.mjs"
+        ]
+      },
       "source": {
         "url": "",
         "title": "原作反汇编人物表",
@@ -8747,7 +9834,18 @@
       "role": "文职",
       "catalogDynasty": "原作",
       "culture": null,
-      "cultureStatus": "needs-review",
+      "cultureStatus": "reviewed-identity-unresolved",
+      "cultureReview": {
+        "culture": null,
+        "status": "reviewed-identity-unresolved",
+        "period": null,
+        "region": null,
+        "identityStatus": "historical-link-pending",
+        "conclusion": "核对原作表，只有姓名、原始数值与地址，字段语义仍待核。没有可靠可绑定生平；明确保留原作人物，不虚构朝代史事或同名身份。",
+        "evidence": [
+          "src/original-officials.mjs"
+        ]
+      },
       "source": {
         "url": "",
         "title": "原作反汇编人物表",
@@ -8827,5 +9925,5 @@
       }
     }
   ],
-  "elapsedSeconds": 0.002056958
+  "elapsedSeconds": 0.0024200420000000025
 }

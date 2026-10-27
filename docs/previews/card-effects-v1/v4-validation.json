@@ -1,0 +1,121 @@
+{
+  "checks": [
+    {
+      "mode": "buff",
+      "radius": "9px",
+      "width": 202,
+      "height": 366,
+      "rules": "block",
+      "status": "攻击 +2生命上限 +3护甲盾",
+      "phase": "增益完成 · 护甲盾持续"
+    },
+    {
+      "mode": "buff",
+      "cleared": true
+    },
+    {
+      "mode": "debuff",
+      "radius": "9px",
+      "width": 202,
+      "height": 366,
+      "rules": "block",
+      "status": "冻结攻击 −2沉默",
+      "phase": "冰壳冻结 · 攻击削弱 · 沉默封印"
+    },
+    {
+      "mode": "debuff",
+      "cleared": true
+    },
+    {
+      "width": 1024,
+      "mode": "buff",
+      "overflow": false,
+      "targetLeft": 472.296875,
+      "arenaLeft": 49,
+      "targetRight": 930,
+      "arenaRight": 975
+    },
+    {
+      "width": 1024,
+      "mode": "debuff",
+      "overflow": false,
+      "targetLeft": 472.296875,
+      "arenaLeft": 49,
+      "targetRight": 930,
+      "arenaRight": 975
+    },
+    {
+      "width": 736,
+      "mode": "buff",
+      "overflow": false,
+      "targetLeft": 349.8984375,
+      "arenaLeft": 49,
+      "targetRight": 642,
+      "arenaRight": 687
+    },
+    {
+      "width": 736,
+      "mode": "debuff",
+      "overflow": false,
+      "targetLeft": 349.8984375,
+      "arenaLeft": 49,
+      "targetRight": 642,
+      "arenaRight": 687
+    },
+    {
+      "width": 420,
+      "mode": "buff",
+      "overflow": false,
+      "targetLeft": 45,
+      "arenaLeft": 35,
+      "targetRight": 375,
+      "arenaRight": 385
+    },
+    {
+      "width": 420,
+      "mode": "debuff",
+      "overflow": false,
+      "targetLeft": 45,
+      "arenaLeft": 35,
+      "targetRight": 375,
+      "arenaRight": 385
+    },
+    {
+      "width": 375,
+      "mode": "buff",
+      "overflow": false,
+      "targetLeft": 45,
+      "arenaLeft": 35,
+      "targetRight": 330,
+      "arenaRight": 340
+    },
+    {
+      "width": 375,
+      "mode": "debuff",
+      "overflow": false,
+      "targetLeft": 45,
+      "arenaLeft": 35,
+      "targetRight": 330,
+      "arenaRight": 340
+    },
+    {
+      "width": 320,
+      "mode": "buff",
+      "overflow": false,
+      "targetLeft": 45,
+      "arenaLeft": 35,
+      "targetRight": 275,
+      "arenaRight": 285
+    },
+    {
+      "width": 320,
+      "mode": "debuff",
+      "overflow": false,
+      "targetLeft": 45,
+      "arenaLeft": 35,
+      "targetRight": 275,
+      "arenaRight": 285
+    }
+  ],
+  "errors": []
+}

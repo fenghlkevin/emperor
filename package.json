@@ -1,7 +1,7 @@
 {
-  "name": "emperor-foundation",
+  "name": "emperor",
   "version": "0.1.0",
-  "description": "皇帝游戏基础框架",
+  "description": "Emperor — 古代帝王策略养成游戏",
   "main": "desktop.cjs",
   "author": "Emperor Game",
   "license": "UNLICENSED",
@@ -77,9 +77,13 @@
     "test:card-battle": "node --test tests/card-battle.test.mjs",
     "test:card-battle-ui": "electron tests/card-battle-v3-desktop.cjs",
     "preview:card-battle": "electron scripts/preview-card-battle.cjs",
+    "preview:card-effects": "electron scripts/preview-card-battle-effects.cjs",
     "test:card-battle-attack": "electron tests/card-battle-v3-interactions.cjs",
     "test:card-battle-skills": "electron tests/card-battle-v3-skills.cjs",
     "test:card-battle-feedback": "electron tests/card-battle-v3-feedback.cjs",
+    "test:card-battle-controls": "electron tests/card-battle-controls-desktop.cjs",
+    "test:card-battle-inspect": "electron tests/card-battle-inspect-desktop.cjs",
+    "test:card-battle-aim": "electron tests/card-battle-aim-desktop.cjs",
     "test:card-battle-motion": "electron tests/card-battle-v3-motion.cjs",
     "test:card-battle-status": "electron tests/card-battle-v3-status.cjs",
     "test:card-battle-recovery": "electron tests/card-battle-preview-recovery.cjs",
@@ -102,7 +106,9 @@
     "test:card-battle-landmarks": "electron tests/card-battle-landmarks-desktop.cjs",
     "test:card-battle-defense-landmarks": "electron tests/card-battle-defense-landmarks-desktop.cjs",
     "test:card-battle-landmark-tutorial": "electron tests/card-battle-landmark-tutorial-desktop.cjs",
-    "test:card-battle-person-presentations": "electron tests/card-battle-person-presentations-desktop.cjs"
+    "test:card-battle-person-presentations": "electron tests/card-battle-person-presentations-desktop.cjs",
+    "test:development-balance": "node scripts/audit-development-balance.mjs",
+    "test:development-edges": "node scripts/audit-development-edge-cases.mjs"
   },
   "devDependencies": {
     "electron": "^38.0.0",
@@ -111,7 +117,7 @@
   },
   "build": {
     "appId": "com.emperor.game",
-    "productName": "皇帝",
+    "productName": "Emperor",
     "directories": {
       "output": "dist"
     },
@@ -129,13 +135,15 @@
         "zip"
       ],
       "category": "public.app-category.games",
-      "identity": null
+      "identity": null,
+      "icon": "assets/brand/emperor.icns"
     },
     "win": {
       "target": [
         "nsis",
         "zip"
-      ]
+      ],
+      "icon": "assets/brand/emperor.ico"
     },
     "nsis": {
       "oneClick": false,

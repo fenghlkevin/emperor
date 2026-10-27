@@ -1,0 +1,406 @@
+{
+  "scope": "Constructor and source validation only; no games or balance claim",
+  "cases": 16,
+  "rows": [
+    {
+      "configuration": "weapons",
+      "rotation": 0,
+      "first": "home",
+      "rulesVersion": 4,
+      "homeTactics": {
+        "arrows": 2,
+        "assault": 2,
+        "barrage": 2,
+        "brace": 2,
+        "dispel": 1,
+        "execute": 1,
+        "fire": 1,
+        "fortify": 1,
+        "heal": 1,
+        "pin": 1,
+        "precision": 1,
+        "supply": 1
+      },
+      "types": {
+        "weapon": 2,
+        "secret": 0,
+        "landmark": 0
+      }
+    },
+    {
+      "configuration": "weapons",
+      "rotation": 0,
+      "first": "enemy",
+      "rulesVersion": 4,
+      "homeTactics": {
+        "arrows": 2,
+        "assault": 2,
+        "barrage": 2,
+        "brace": 2,
+        "dispel": 1,
+        "execute": 1,
+        "fire": 1,
+        "fortify": 1,
+        "heal": 1,
+        "pin": 1,
+        "precision": 1,
+        "supply": 1
+      },
+      "types": {
+        "weapon": 2,
+        "secret": 0,
+        "landmark": 0
+      }
+    },
+    {
+      "configuration": "weapons",
+      "rotation": 5,
+      "first": "home",
+      "rulesVersion": 4,
+      "homeTactics": {
+        "execute": 2,
+        "fire": 2,
+        "fortify": 2,
+        "heal": 2,
+        "pin": 1,
+        "precision": 1,
+        "supply": 1,
+        "arrows": 1,
+        "assault": 1,
+        "barrage": 1,
+        "brace": 1,
+        "dispel": 1
+      },
+      "types": {
+        "weapon": 2,
+        "secret": 0,
+        "landmark": 0
+      }
+    },
+    {
+      "configuration": "weapons",
+      "rotation": 5,
+      "first": "enemy",
+      "rulesVersion": 4,
+      "homeTactics": {
+        "execute": 2,
+        "fire": 2,
+        "fortify": 2,
+        "heal": 2,
+        "pin": 1,
+        "precision": 1,
+        "supply": 1,
+        "arrows": 1,
+        "assault": 1,
+        "barrage": 1,
+        "brace": 1,
+        "dispel": 1
+      },
+      "types": {
+        "weapon": 2,
+        "secret": 0,
+        "landmark": 0
+      }
+    },
+    {
+      "configuration": "secrets",
+      "rotation": 0,
+      "first": "home",
+      "rulesVersion": 5,
+      "homeTactics": {
+        "arrows": 2,
+        "assault": 2,
+        "barrage": 2,
+        "brace": 2,
+        "dispel": 1,
+        "execute": 1,
+        "fire": 1,
+        "fortify": 1,
+        "heal": 1,
+        "pin": 1,
+        "precision": 1,
+        "supply": 1
+      },
+      "types": {
+        "weapon": 0,
+        "secret": 2,
+        "landmark": 0
+      }
+    },
+    {
+      "configuration": "secrets",
+      "rotation": 0,
+      "first": "enemy",
+      "rulesVersion": 5,
+      "homeTactics": {
+        "arrows": 2,
+        "assault": 2,
+        "barrage": 2,
+        "brace": 2,
+        "dispel": 1,
+        "execute": 1,
+        "fire": 1,
+        "fortify": 1,
+        "heal": 1,
+        "pin": 1,
+        "precision": 1,
+        "supply": 1
+      },
+      "types": {
+        "weapon": 0,
+        "secret": 2,
+        "landmark": 0
+      }
+    },
+    {
+      "configuration": "secrets",
+      "rotation": 5,
+      "first": "home",
+      "rulesVersion": 5,
+      "homeTactics": {
+        "execute": 2,
+        "fire": 2,
+        "fortify": 2,
+        "heal": 2,
+        "pin": 1,
+        "precision": 1,
+        "supply": 1,
+        "arrows": 1,
+        "assault": 1,
+        "barrage": 1,
+        "brace": 1,
+        "dispel": 1
+      },
+      "types": {
+        "weapon": 0,
+        "secret": 2,
+        "landmark": 0
+      }
+    },
+    {
+      "configuration": "secrets",
+      "rotation": 5,
+      "first": "enemy",
+      "rulesVersion": 5,
+      "homeTactics": {
+        "execute": 2,
+        "fire": 2,
+        "fortify": 2,
+        "heal": 2,
+        "pin": 1,
+        "precision": 1,
+        "supply": 1,
+        "arrows": 1,
+        "assault": 1,
+        "barrage": 1,
+        "brace": 1,
+        "dispel": 1
+      },
+      "types": {
+        "weapon": 0,
+        "secret": 2,
+        "landmark": 0
+      }
+    },
+    {
+      "configuration": "landmarks",
+      "rotation": 0,
+      "first": "home",
+      "rulesVersion": 6,
+      "homeTactics": {
+        "arrows": 2,
+        "assault": 2,
+        "barrage": 2,
+        "brace": 2,
+        "dispel": 1,
+        "execute": 1,
+        "fire": 1,
+        "fortify": 1,
+        "heal": 1,
+        "pin": 1,
+        "precision": 1,
+        "supply": 1
+      },
+      "types": {
+        "weapon": 0,
+        "secret": 0,
+        "landmark": 2
+      }
+    },
+    {
+      "configuration": "landmarks",
+      "rotation": 0,
+      "first": "enemy",
+      "rulesVersion": 6,
+      "homeTactics": {
+        "arrows": 2,
+        "assault": 2,
+        "barrage": 2,
+        "brace": 2,
+        "dispel": 1,
+        "execute": 1,
+        "fire": 1,
+        "fortify": 1,
+        "heal": 1,
+        "pin": 1,
+        "precision": 1,
+        "supply": 1
+      },
+      "types": {
+        "weapon": 0,
+        "secret": 0,
+        "landmark": 2
+      }
+    },
+    {
+      "configuration": "landmarks",
+      "rotation": 5,
+      "first": "home",
+      "rulesVersion": 6,
+      "homeTactics": {
+        "execute": 2,
+        "fire": 2,
+        "fortify": 2,
+        "heal": 2,
+        "pin": 1,
+        "precision": 1,
+        "supply": 1,
+        "arrows": 1,
+        "assault": 1,
+        "barrage": 1,
+        "brace": 1,
+        "dispel": 1
+      },
+      "types": {
+        "weapon": 0,
+        "secret": 0,
+        "landmark": 2
+      }
+    },
+    {
+      "configuration": "landmarks",
+      "rotation": 5,
+      "first": "enemy",
+      "rulesVersion": 6,
+      "homeTactics": {
+        "execute": 2,
+        "fire": 2,
+        "fortify": 2,
+        "heal": 2,
+        "pin": 1,
+        "precision": 1,
+        "supply": 1,
+        "arrows": 1,
+        "assault": 1,
+        "barrage": 1,
+        "brace": 1,
+        "dispel": 1
+      },
+      "types": {
+        "weapon": 0,
+        "secret": 0,
+        "landmark": 2
+      }
+    },
+    {
+      "configuration": "combined",
+      "rotation": 0,
+      "first": "home",
+      "rulesVersion": 6,
+      "homeTactics": {
+        "arrows": 1,
+        "assault": 1,
+        "barrage": 1,
+        "brace": 1,
+        "dispel": 1,
+        "execute": 1,
+        "fire": 1,
+        "fortify": 1,
+        "heal": 1,
+        "pin": 1,
+        "precision": 1,
+        "supply": 1
+      },
+      "types": {
+        "weapon": 2,
+        "secret": 2,
+        "landmark": 2
+      }
+    },
+    {
+      "configuration": "combined",
+      "rotation": 0,
+      "first": "enemy",
+      "rulesVersion": 6,
+      "homeTactics": {
+        "arrows": 1,
+        "assault": 1,
+        "barrage": 1,
+        "brace": 1,
+        "dispel": 1,
+        "execute": 1,
+        "fire": 1,
+        "fortify": 1,
+        "heal": 1,
+        "pin": 1,
+        "precision": 1,
+        "supply": 1
+      },
+      "types": {
+        "weapon": 2,
+        "secret": 2,
+        "landmark": 2
+      }
+    },
+    {
+      "configuration": "combined",
+      "rotation": 5,
+      "first": "home",
+      "rulesVersion": 6,
+      "homeTactics": {
+        "execute": 1,
+        "fire": 1,
+        "fortify": 1,
+        "heal": 1,
+        "pin": 1,
+        "precision": 1,
+        "supply": 1,
+        "arrows": 1,
+        "assault": 1,
+        "barrage": 1,
+        "brace": 1,
+        "dispel": 1
+      },
+      "types": {
+        "weapon": 2,
+        "secret": 2,
+        "landmark": 2
+      }
+    },
+    {
+      "configuration": "combined",
+      "rotation": 5,
+      "first": "enemy",
+      "rulesVersion": 6,
+      "homeTactics": {
+        "execute": 1,
+        "fire": 1,
+        "fortify": 1,
+        "heal": 1,
+        "pin": 1,
+        "precision": 1,
+        "supply": 1,
+        "arrows": 1,
+        "assault": 1,
+        "barrage": 1,
+        "brace": 1,
+        "dispel": 1
+      },
+      "types": {
+        "weapon": 2,
+        "secret": 2,
+        "landmark": 2
+      }
+    }
+  ]
+}

@@ -2,7 +2,7 @@ const {app,BrowserWindow}=require('electron'),fs=require('node:fs'),path=require
 app.setPath('userData',`/private/tmp/emperor-card-interactions-${process.pid}`);
 app.whenReady().then(async()=>{
  const timeout=setTimeout(()=>app.exit(1),180000),w=new BrowserWindow({show:false,width:1440,height:1000,webPreferences:{sandbox:true,contextIsolation:true,nodeIntegration:false,backgroundThrottling:false}}),errors=[],checks=[];
- w.webContents.on('console-message',(_e,level,message)=>{if(level>=3)errors.push(message);});
+ w.webContents.on('console-message',({level,message})=>{if(level==='error')errors.push(message);});
  const run=code=>w.webContents.executeJavaScript(`(async()=>{${code}})()`),pause=ms=>new Promise(r=>setTimeout(r,ms));
  const phase=async(value)=>{for(let i=0;i<200;i++){if(await run(`return document.querySelector('.cb-stage')?.dataset.attackPhase===${JSON.stringify(value)};`))return;await pause(15);}throw Error('missing attack phase '+value);};
  const idle=async()=>{for(let i=0;i<220;i++){if(await run(`return !window.cardDialog?.open||window.cardDialog.dataset.busy==='false';`))return;await pause(30);}throw Error('animation did not unlock');};
@@ -43,6 +43,6 @@ app.whenReady().then(async()=>{
  await run(`window.cardDialog.close();const c=window.cardState.domestic.war.battle.cards,p=c.players.home;while(p.hand.length<10&&p.deck.length)p.hand.push(p.deck.shift());window.validateCardsSave(window.cardState);window.openCards();`);
  for(const [width,height]of [[1440,1000],[1280,800],[1000,720]]){w.setSize(width,height);await pause(120);await assert(`(()=>{const d=window.cardDialog.getBoundingClientRect();return [...document.querySelectorAll('.cb-card.hand,.cb-mana,.cb-end,.cb-command')].every(e=>{const r=e.getBoundingClientRect();return r.left>=d.left-2&&r.right<=d.right+2&&r.top>=d.top-2&&r.bottom<=d.bottom+2&&(!e.classList.contains('cb-card')||Math.abs(e.offsetWidth/e.offsetHeight-5/7)<.02);});})()`,width+' maximum-hand layout keeps rectangular cards inside battlefield');}
  await run(`window.cardDialog.close();let b=window.cardState.domestic.war.battle;for(let i=0;!b.result&&i<2500;i++)window.engine.actCardsMutable(b,window.engine.cardAI(b));if(!b.result)throw Error('full game stalled');window.validateCardsSave(window.cardState);window.openCards();`);await click('[data-settle]');await assert(`!!window.cardReceipt&&!window.cardState.domestic.war.battle`,'complete game settles the real troop and equipment ledger');
- if(errors.length)throw Error(errors.join('\n'));clearTimeout(timeout);console.log('Real mouse and animation acceptance passed:\n'+checks.join('\n'));fs.writeFileSync(path.join(__dirname,'../docs/card-battle-ui-validation.json'),JSON.stringify({date:'2026-10-22',checks,consoleErrors:errors},null,2)+'\n');app.exit(0);
+ if(errors.length)throw Error(errors.join('\n'));clearTimeout(timeout);console.log('Real mouse and animation acceptance passed:\n'+checks.join('\n'));fs.writeFileSync(path.join(__dirname,'../docs/card-battle-ui-validation.json'),JSON.stringify({date:new Date().toISOString(),checks,consoleErrors:errors},null,2)+'\n');app.exit(0);
  }catch(e){fs.writeFileSync(path.join(__dirname,'../docs/screenshots/card-battle-v3-test-failure.png'),(await w.webContents.capturePage()).toPNG());console.error(e);clearTimeout(timeout);app.exit(1);}
 });

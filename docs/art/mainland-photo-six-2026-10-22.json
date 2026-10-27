@@ -1,0 +1,394 @@
+{
+  "tool": "built-in image_gen",
+  "status": "completed",
+  "operation": "Add six variants; retain five existing actress variants and their legacy mappings.",
+  "likenessNote": "照片作为五官参考；未展示的身体按自然成人比例补全。这是二维游戏立绘，不是精确三维扫描。",
+  "items": [
+    {
+      "key": "zhang-zifeng",
+      "name": "张子枫",
+      "title": "竹青执笛",
+      "ref": "assets/beauties/references/zzf-wu-20261022/zzf-forest-4.jpg",
+      "detail": "Use case: photorealistic-natural. Asset: single adult full-body Chinese historical summer character cutout for game random portrait library. Photos are identity and visible build references ONLY; new costume, pose and composition. Realistic graceful costume photography, natural skin texture, accurate individual face over generic doll beauty. Healthy slender adult proportions about 7.5 heads tall, proportionate small head, natural neck, slim shoulders/arms/waist and long natural legs. Light silk/gauze Chinese historical summer clothing, opaque lining, tasteful elegance. All figures BAREFOOT: exactly two coherent arms, two hands each with five fingers, two legs, two correctly oriented bare feet with five toes each, natural joints and gravity. Entire hair, ornaments, hands, hems, toes and props within portrait 2:3 canvas with clear margins, no clipping. GENUINE transparent alpha, no scene/floor/shadow/halo/text/watermark or modern items. Soft neutral natural light, normal 70mm perspective. Subject: Zhang Zifeng 张子枫 adult age 21 as in 2023 forest photos. Image 1 PRIMARY face/soft beauty reference (clear eyes, brows, delicate nose, natural lips); image 2 supports facial contour and adult body build. Preserve recognizable Zhang Zifeng identity, make expression naturally tender and composed with a subtle CLOSED-LIP smile, clean natural makeup, eyes toward camera. Do not reuse old punk short-haired portrait or its stern side profile. Newly generated whole character, head upright and face near-front with very slight three-quarter turn, no dramatically tilted chin. Graceful relaxed standing contrapposto with both bare feet visible and naturally grounded slightly apart. Bamboo-green short-sleeved thin silk wrap blouse over ivory lined bodice, flowing pale ivory long skirt ending above toes with fine bamboo and jasmine embroidery, light mint gauze ribbons behind arms. Both hands gently support a bamboo flute horizontally low at waist with relaxed natural fingers. Soft black hair in loose half-updo with silver jasmine comb and pearl pins, small jade drop earrings, delicate necklace, jade bangle, embroidered waist sachet and tassels. Keep torso full adult size and slender harmonious limbs. Do not copy forest, modern knitwear, trousers or leaf covering eye.",
+      "id": "mainland-photo-six-20261022-01",
+      "asset": "assets/beauties/random/女明星/张子枫-竹青执笛-v2.png",
+      "prompt": "Use case: photorealistic-natural. Asset: single adult full-body Chinese historical summer character cutout for game random portrait library. Photos are identity and visible build references ONLY; new costume, pose and composition. Realistic graceful costume photography, natural skin texture, accurate individual face over generic doll beauty. Healthy slender adult proportions about 7.5 heads tall, proportionate small head, natural neck, slim shoulders/arms/waist and long natural legs. Light silk/gauze Chinese historical summer clothing, opaque lining, tasteful elegance. All figures BAREFOOT: exactly two coherent arms, two hands each with five fingers, two legs, two correctly oriented bare feet with five toes each, natural joints and gravity. Entire hair, ornaments, hands, hems, toes and props within portrait 2:3 canvas with clear margins, no clipping. GENUINE transparent alpha, no scene/floor/shadow/halo/text/watermark or modern items. Soft neutral natural light, normal 70mm perspective. Subject: Zhang Zifeng 张子枫 adult age 21 as in 2023 forest photos. Image 1 PRIMARY face/soft beauty reference (clear eyes, brows, delicate nose, natural lips); image 2 supports facial contour and adult body build. Preserve recognizable Zhang Zifeng identity, make expression naturally tender and composed with a subtle CLOSED-LIP smile, clean natural makeup, eyes toward camera. Do not reuse old punk short-haired portrait or its stern side profile. Newly generated whole character, head upright and face near-front with very slight three-quarter turn, no dramatically tilted chin. Graceful relaxed standing contrapposto with both bare feet visible and naturally grounded slightly apart. Bamboo-green short-sleeved thin silk wrap blouse over ivory lined bodice, flowing pale ivory long skirt ending above toes with fine bamboo and jasmine embroidery, light mint gauze ribbons behind arms. Both hands gently support a bamboo flute horizontally low at waist with relaxed natural fingers. Soft black hair in loose half-updo with silver jasmine comb and pearl pins, small jade drop earrings, delicate necklace, jade bangle, embroidered waist sachet and tassels. Keep torso full adult size and slender harmonious limbs. Do not copy forest, modern knitwear, trousers or leaf covering eye.",
+      "status": "completed",
+      "sources": [
+        {
+          "page": "https://k.sina.com.cn/article_1893711543_70dfbeb704001hgdc.html",
+          "imageUrl": "https://k.sinaimg.cn/n/sinakd20230726ac/159/w1024h1535/20230726/1cd0-698ed886f2fef8507e01ef5de963c120.jpg/w700d1q75cms.jpg",
+          "localPath": "assets/beauties/references/zzf-wu-20261022/zzf-forest-4.jpg"
+        },
+        {
+          "page": "https://k.sina.com.cn/article_1893711543_70dfbeb704001hgdc.html",
+          "imageUrl": "https://k.sinaimg.cn/n/sinakd20230726ac/160/w1024h1536/20230726/5879-63869af9de4909a3ffac2f2b0507c7c8.jpg/w700d1q75cms.jpg",
+          "localPath": "assets/beauties/references/zzf-wu-20261022/zzf-forest-3.jpg"
+        }
+      ],
+      "referenceDimensions": [
+        700,
+        1049
+      ],
+      "referenceSha256": "2aa4294fe3917c86d4941b7c17082ec024086e665e383235e5b1931114c5713b",
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a16133-240f-7033-bf18-3e8342b820ca/exec-7e1feff0-fcd4-47e0-8712-65bd99d55b36.png",
+      "footwear": "barefoot",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentFraction": 0.5452,
+        "nontransparentBorderPixels": 0,
+        "boundsAbove20": [
+          171,
+          6,
+          957,
+          1522
+        ]
+      },
+      "assetSha256": "406d14e9241acabf429f9d531d54a24f905ab09c8ae15b16dcb4dce3cba4bcbb",
+      "poolScope": "mainland",
+      "visualReview": "对照实际输入成年照片检查成图，已查看完整原图及浅色/深蓝换底：面部清晰、头身与四肢协调，双手接触道具自然，光脚且无明显多余肢体，饰品和衣摆未裁切，真实alpha透明。",
+      "history": [
+        {
+          "key": "zhang-zifeng",
+          "name": "张子枫",
+          "title": "竹青执笛",
+          "ref": "assets/beauties/references/mainland-six-20261022/zhang-zifeng.jpg",
+          "detail": "Zhang Zifeng 张子枫, adult age 24. Small softly squared face and distinctive natural eyebrows from photo; petite slender adult build, NOT childlike proportions. Standing relaxed contrapposto, holding bamboo flute horizontally low at waist with both hands, no playing. Bamboo green short-sleeved cross-collar thin silk blouse and ivory flowing pleated skirt with green hem, both embroidered shoes visible. Partial updo with silver leaf hairpin, small jade earrings, fine silver necklace, jade bracelet and embroidered waist pouch.",
+          "id": "mainland-photo-six-20261022-01",
+          "asset": "assets/beauties/random/女明星/张子枫-竹青执笛.png",
+          "prompt": "Use case: photorealistic-natural. Asset type: full-body transparent PNG cutout for Chinese imperial game random beauty pool. Reference photo is identity reference ONLY. Generate one clearly adult actress in new summer Chinese historical clothing, high-quality realistic costume photography, preserve distinctive face, eye shape, lips, nose and jaw from reference, natural skin texture, no generic doll face. Slim natural adult body, about 7.5 heads tall when standing, proportionate small head and normal shoulders, anatomically coherent two arms/two hands/five fingers per hand, two legs/two correctly oriented feet, stable center of gravity, natural relaxed joints and credible contact with objects. Light summer silk/gauze fabric, opaque lined bodice and skirt or trousers, tasteful fully clothed styling. Entire body head ornaments, hands, feet and all props fully inside 2:3 portrait canvas with 7% clear margins. Genuinely transparent background alpha, no studio background, no floor, no cast shadow, no glow, no scenery, no text/watermark. Soft neutral natural lighting, 70mm normal perspective. Zhang Zifeng 张子枫, adult age 24. Small softly squared face and distinctive natural eyebrows from photo; petite slender adult build, NOT childlike proportions. Standing relaxed contrapposto, holding bamboo flute horizontally low at waist with both hands, no playing. Bamboo green short-sleeved cross-collar thin silk blouse and ivory flowing pleated skirt with green hem, both embroidered shoes visible. Partial updo with silver leaf hairpin, small jade earrings, fine silver necklace, jade bracelet and embroidered waist pouch.",
+          "status": "completed",
+          "sources": [
+            {
+              "page": "https://www.xykuu.com/star/283.html",
+              "imageUrl": "https://qny.xykuu.com/1ca/image/20230316/7119aa3b91fdc3fc1b94e76a68a4ffc1.jpeg",
+              "localPath": "assets/beauties/references/mainland-six-20261022/zhang-zifeng.jpg"
+            }
+          ],
+          "referenceDimensions": [
+            2048,
+            3072
+          ],
+          "referenceSha256": "ab315b7d5566f25edf618b6eaf44f4506f65ddf581d52424ff569c54ce8da127",
+          "sourcePath": "/Users/fengheliang/.codex/generated_images/01a16133-240f-7033-bf18-3e8342b820ca/exec-13b55955-55b4-4e9e-96d1-6a5fc447f637.png",
+          "footwear": "barefoot",
+          "barefootEditPrompt": "Use case: precise-object-edit. Edit the supplied full-body adult character cutout. Change ONLY shoes and immediately surrounding lower hem where necessary: remove all shoes and socks, make BOTH FEET BARE, anatomically correct natural feet with five toes each, credible ankles and proper left/right orientation, appropriate to existing standing or seated pose. Keep exact face, hairstyle, costume, accessories, props, pose and body proportions. If a foot was hidden, subtly lift lower hem enough to show it naturally without lengthening or shortening legs. Entire character and both bare feet inside frame, at least small clear margin. No discarded shoes. Preserve genuine transparent alpha background, no background or floor, no shadow/halo. This is an ordinary nonsexual game character portrait.",
+          "validation": {
+            "size": [
+              1024,
+              1536
+            ],
+            "mode": "RGBA",
+            "alphaRange": [
+              0,
+              254
+            ],
+            "transparentFraction": 0.622,
+            "nontransparentBorderPixels": 0,
+            "boundsAbove20": [
+              225,
+              15,
+              937,
+              1525
+            ]
+          },
+          "assetSha256": "c7fdd4868ed82a73ba3ea4da99eb338513ffb22f1010fc94554f5e5ee0b33a8e",
+          "poolScope": "mainland",
+          "visualReview": "已对照输入照片查看成图；浅色、深蓝色换底及脚部放大图复核：无鞋袜、人物道具完整，未见明显多余肢体，头身与关节衔接自然。遮挡处不宣称逐指逐趾均可见。"
+        }
+      ],
+      "references": [
+        {
+          "path": "assets/beauties/references/zzf-wu-20261022/zzf-forest-4.jpg",
+          "page": "https://k.sina.com.cn/article_1893711543_70dfbeb704001hgdc.html",
+          "imageUrl": "https://k.sinaimg.cn/n/sinakd20230726ac/159/w1024h1535/20230726/1cd0-698ed886f2fef8507e01ef5de963c120.jpg/w700d1q75cms.jpg",
+          "size": [
+            700,
+            1049
+          ],
+          "sha256": "2aa4294fe3917c86d4941b7c17082ec024086e665e383235e5b1931114c5713b"
+        },
+        {
+          "path": "assets/beauties/references/zzf-wu-20261022/zzf-forest-3.jpg",
+          "page": "https://k.sina.com.cn/article_1893711543_70dfbeb704001hgdc.html",
+          "imageUrl": "https://k.sinaimg.cn/n/sinakd20230726ac/160/w1024h1536/20230726/5879-63869af9de4909a3ffac2f2b0507c7c8.jpg/w700d1q75cms.jpg",
+          "size": [
+            700,
+            1050
+          ],
+          "sha256": "fa356216a39a44a66ade3d8224b56bc62fa677555697d4c559870cb86cda29ba"
+        }
+      ],
+      "revisionManifest": "docs/art/zhang-zifeng-wu-liufang-2026-10-22.json"
+    },
+    {
+      "key": "chen-duling",
+      "name": "陈都灵",
+      "title": "月白茶韵",
+      "ref": "assets/beauties/references/chen-duling/face-reference.jpg",
+      "detail": "Chen Duling 陈都灵 adult age 30. Preserve her narrow oval face and delicate pointed chin, tall slim naturally long-limbed figure. Seated upright but relaxed sideways on a low simple wooden stool, knees together angled slightly, both feet in ivory silk flat shoes resting naturally down, no impossible limb overlap. One hand holds a tiny celadon teacup at waist and the other hand on lap. Moon-white sleeveless high-waist ruqun with sky blue lightweight gauze open outer shawl, opaque skirt. Pearl floral hairpins, pearl earrings, delicate necklace, silver bangle and blue waist pendant. Stool isolated with her, no environment.",
+      "id": "mainland-photo-six-20261022-02",
+      "asset": "assets/beauties/random/女明星/陈都灵-月白茶韵.png",
+      "prompt": "Use case: photorealistic-natural. Asset type: full-body transparent PNG cutout for Chinese imperial game random beauty pool. Reference photo is identity reference ONLY. Generate one clearly adult actress in new summer Chinese historical clothing, high-quality realistic costume photography, preserve distinctive face, eye shape, lips, nose and jaw from reference, natural skin texture, no generic doll face. Slim natural adult body, about 7.5 heads tall when standing, proportionate small head and normal shoulders, anatomically coherent two arms/two hands/five fingers per hand, two legs/two correctly oriented feet, stable center of gravity, natural relaxed joints and credible contact with objects. Light summer silk/gauze fabric, opaque lined bodice and skirt or trousers, tasteful fully clothed styling. Entire body head ornaments, hands, feet and all props fully inside 2:3 portrait canvas with 7% clear margins. Genuinely transparent background alpha, no studio background, no floor, no cast shadow, no glow, no scenery, no text/watermark. Soft neutral natural lighting, 70mm normal perspective. Chen Duling 陈都灵 adult age 30. Preserve her narrow oval face and delicate pointed chin, tall slim naturally long-limbed figure. Seated upright but relaxed sideways on a low simple wooden stool, knees together angled slightly, both feet in ivory silk flat shoes resting naturally down, no impossible limb overlap. One hand holds a tiny celadon teacup at waist and the other hand on lap. Moon-white sleeveless high-waist ruqun with sky blue lightweight gauze open outer shawl, opaque skirt. Pearl floral hairpins, pearl earrings, delicate necklace, silver bangle and blue waist pendant. Stool isolated with her, no environment.",
+      "status": "completed",
+      "sources": [
+        {
+          "page": "https://www.sohu.com/picture/749363780",
+          "imageUrl": "https://q2.itc.cn/images01/20240104/7738955180d14da59322a135f56fa3d6.jpeg",
+          "localPath": "assets/beauties/references/chen-duling/face-reference.jpg"
+        }
+      ],
+      "referenceDimensions": [
+        1530,
+        1505
+      ],
+      "referenceSha256": "019eb128c1390662206cec0796c551b00144d9e8f805fe72d178550c3b1c9955",
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a16133-240f-7033-bf18-3e8342b820ca/exec-2f2e588a-0fdd-4957-b4f3-794103b51090.png",
+      "footwear": "barefoot",
+      "barefootEditPrompt": "Use case: precise-object-edit. Edit the supplied full-body adult character cutout. Change ONLY shoes and immediately surrounding lower hem where necessary: remove all shoes and socks, make BOTH FEET BARE, anatomically correct natural feet with five toes each, credible ankles and proper left/right orientation, appropriate to existing standing or seated pose. Keep exact face, hairstyle, costume, accessories, props, pose and body proportions. If a foot was hidden, subtly lift lower hem enough to show it naturally without lengthening or shortening legs. Entire character and both bare feet inside frame, at least small clear margin. No discarded shoes. Preserve genuine transparent alpha background, no background or floor, no shadow/halo. This is an ordinary nonsexual game character portrait.",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentFraction": 0.5144,
+        "nontransparentBorderPixels": 0,
+        "boundsAbove20": [
+          17,
+          11,
+          1004,
+          1518
+        ]
+      },
+      "assetSha256": "a72213b2e09e7d0ebbb5c40005fc1bdc6b7f6712da1d4dc091b056e734b19caf",
+      "poolScope": "mainland",
+      "visualReview": "已对照输入照片查看成图；浅色、深蓝色换底及脚部放大图复核：无鞋袜、人物道具完整，未见明显多余肢体，头身与关节衔接自然。遮挡处不宣称逐指逐趾均可见。"
+    },
+    {
+      "key": "zhang-ruonan",
+      "name": "章若楠",
+      "title": "杏纱花篮",
+      "ref": "assets/beauties/references/zhang-ruonan/face-reference.jpg",
+      "detail": "Zhang Ruonan 章若楠 adult age 28. Preserve gentle round almond eyes and softly tapered face, natural adult slender build. Standing three-quarter relaxed pose with one foot slightly advanced, head toward camera. Right hand carries small woven basket with a few jasmine blossoms lowered at hip, left hand lightly holds one jasmine sprig away from face. Apricot pink lightweight short jacket, opaque ivory camisole and airy pale peach long skirt, simple embroidered flat shoes. Half-up braided hair, tiny gold flower comb, pearl drop earrings, fine chain necklace, jade bracelet and small hanging silk sachet.",
+      "id": "mainland-photo-six-20261022-03",
+      "asset": "assets/beauties/random/女明星/章若楠-杏纱花篮.png",
+      "prompt": "Use case: photorealistic-natural. Asset type: full-body transparent PNG cutout for Chinese imperial game random beauty pool. Reference photo is identity reference ONLY. Generate one clearly adult actress in new summer Chinese historical clothing, high-quality realistic costume photography, preserve distinctive face, eye shape, lips, nose and jaw from reference, natural skin texture, no generic doll face. Slim natural adult body, about 7.5 heads tall when standing, proportionate small head and normal shoulders, anatomically coherent two arms/two hands/five fingers per hand, two legs/two correctly oriented feet, stable center of gravity, natural relaxed joints and credible contact with objects. Light summer silk/gauze fabric, opaque lined bodice and skirt or trousers, tasteful fully clothed styling. Entire body head ornaments, hands, feet and all props fully inside 2:3 portrait canvas with 7% clear margins. Genuinely transparent background alpha, no studio background, no floor, no cast shadow, no glow, no scenery, no text/watermark. Soft neutral natural lighting, 70mm normal perspective. Zhang Ruonan 章若楠 adult age 28. Preserve gentle round almond eyes and softly tapered face, natural adult slender build. Standing three-quarter relaxed pose with one foot slightly advanced, head toward camera. Right hand carries small woven basket with a few jasmine blossoms lowered at hip, left hand lightly holds one jasmine sprig away from face. Apricot pink lightweight short jacket, opaque ivory camisole and airy pale peach long skirt, simple embroidered flat shoes. Half-up braided hair, tiny gold flower comb, pearl drop earrings, fine chain necklace, jade bracelet and small hanging silk sachet.",
+      "status": "completed",
+      "sources": [
+        {
+          "path": "assets/beauties/references/zhang-ruonan/face-reference.jpg",
+          "sourcePage": "https://cj.sina.com.cn/articles/view/7513322744/p1bfd434f8001016niu",
+          "imageUrl": "https://n.sinaimg.cn/sinakd10016/276/w1470h2006/20230404/fa91-cfa3af6f3c27ab61d0dad6379acacdae.jpg",
+          "width": 1470,
+          "height": 2006,
+          "inspection": "2023成年公开写真，眉眼鼻唇清晰无遮挡，手在下颌边缘。"
+        }
+      ],
+      "referenceDimensions": [
+        1470,
+        2006
+      ],
+      "referenceSha256": "dcd520eaa1c86d734b97131f3e2277f426a83824f173904b70b25bbbe2175146",
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a16133-240f-7033-bf18-3e8342b820ca/exec-38906c92-2025-49c5-aa1b-405745c84a4c.png",
+      "footwear": "barefoot",
+      "barefootEditPrompt": "Use case: precise-object-edit. Edit the supplied full-body adult character cutout. Change ONLY shoes and immediately surrounding lower hem where necessary: remove all shoes and socks, make BOTH FEET BARE, anatomically correct natural feet with five toes each, credible ankles and proper left/right orientation, appropriate to existing standing or seated pose. Keep exact face, hairstyle, costume, accessories, props, pose and body proportions. If a foot was hidden, subtly lift lower hem enough to show it naturally without lengthening or shortening legs. Entire character and both bare feet inside frame, at least small clear margin. No discarded shoes. Preserve genuine transparent alpha background, no background or floor, no shadow/halo. This is an ordinary nonsexual game character portrait.",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentFraction": 0.57,
+        "nontransparentBorderPixels": 0,
+        "boundsAbove20": [
+          143,
+          5,
+          954,
+          1526
+        ]
+      },
+      "assetSha256": "553cc4e9b6d92f182130c9973dbf2681d79b9867d5247863ab03d1ec1d9f66db",
+      "poolScope": "mainland",
+      "visualReview": "已对照输入照片查看成图；浅色、深蓝色换底及脚部放大图复核：无鞋袜、人物道具完整，未见明显多余肢体，头身与关节衔接自然。遮挡处不宣称逐指逐趾均可见。"
+    },
+    {
+      "key": "guan-xiaotong",
+      "name": "关晓彤",
+      "title": "绯绡剑舞",
+      "ref": "assets/beauties/references/guan-xiaotong/face-reference-2.jpg",
+      "detail": "Guan Xiaotong 关晓彤 adult age 27. Preserve recognizable facial features, tall slender long-legged physique, proportionate head. Stable paused classical sword-dance stance: front foot flat bearing weight, rear toe lightly down close behind, knees relaxed, torso upright. Right hand holds a slim ceremonial sword pointing safely downward along outer right leg, left arm gently extended at waist level with relaxed hand, no extreme pose. Coral red sleeveless fitted silk dance tunic with gold trim and opaque soft ivory flowing wide trousers, narrow red silk waist sash, lightweight embroidered red flat shoes. Hair high bun with gold hairpins and red ribbon, gold drop earrings, fine necklace, gold upper-arm bangle and waist jade tassel. All sword and limbs within frame.",
+      "id": "mainland-photo-six-20261022-04",
+      "asset": "assets/beauties/random/女明星/关晓彤-绯绡剑舞.png",
+      "prompt": "Use case: photorealistic-natural. Asset type: full-body transparent PNG cutout for Chinese imperial game random beauty pool. Reference photo is identity reference ONLY. Generate one clearly adult actress in new summer Chinese historical clothing, high-quality realistic costume photography, preserve distinctive face, eye shape, lips, nose and jaw from reference, natural skin texture, no generic doll face. Slim natural adult body, about 7.5 heads tall when standing, proportionate small head and normal shoulders, anatomically coherent two arms/two hands/five fingers per hand, two legs/two correctly oriented feet, stable center of gravity, natural relaxed joints and credible contact with objects. Light summer silk/gauze fabric, opaque lined bodice and skirt or trousers, tasteful fully clothed styling. Entire body head ornaments, hands, feet and all props fully inside 2:3 portrait canvas with 7% clear margins. Genuinely transparent background alpha, no studio background, no floor, no cast shadow, no glow, no scenery, no text/watermark. Soft neutral natural lighting, 70mm normal perspective. Guan Xiaotong 关晓彤 adult age 27. Preserve recognizable facial features, tall slender long-legged physique, proportionate head. Stable paused classical sword-dance stance: front foot flat bearing weight, rear toe lightly down close behind, knees relaxed, torso upright. Right hand holds a slim ceremonial sword pointing safely downward along outer right leg, left arm gently extended at waist level with relaxed hand, no extreme pose. Coral red sleeveless fitted silk dance tunic with gold trim and opaque soft ivory flowing wide trousers, narrow red silk waist sash, lightweight embroidered red flat shoes. Hair high bun with gold hairpins and red ribbon, gold drop earrings, fine necklace, gold upper-arm bangle and waist jade tassel. All sword and limbs within frame.",
+      "status": "completed",
+      "sources": [
+        {
+          "page": "https://www.themoviedb.org/person/1686977/images/profiles",
+          "imageUrl": "https://image.tmdb.org/t/p/original/szIOCP9xhYrgXL35p6kV2IGand1.jpg",
+          "localPath": "assets/beauties/references/guan-xiaotong/face-reference-2.jpg"
+        }
+      ],
+      "referenceDimensions": [
+        1600,
+        2400
+      ],
+      "referenceSha256": "1bd07ba9514a3c1aac2d88c7e04dfefbe461248d608fcdd82a92da7ee915583e",
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a16133-240f-7033-bf18-3e8342b820ca/exec-05e80d7e-6fdf-4a01-a05c-5488e653b450.png",
+      "footwear": "barefoot",
+      "barefootEditPrompt": "Use case: precise-object-edit. Edit the supplied full-body adult character cutout. Change ONLY shoes and immediately surrounding lower hem where necessary: remove all shoes and socks, make BOTH FEET BARE, anatomically correct natural feet with five toes each, credible ankles and proper left/right orientation, appropriate to existing standing or seated pose. Keep exact face, hairstyle, costume, accessories, props, pose and body proportions. If a foot was hidden, subtly lift lower hem enough to show it naturally without lengthening or shortening legs. Entire character and both bare feet inside frame, at least small clear margin. No discarded shoes. Preserve genuine transparent alpha background, no background or floor, no shadow/halo. This is an ordinary nonsexual game character portrait.",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentFraction": 0.5558,
+        "nontransparentBorderPixels": 0,
+        "boundsAbove20": [
+          47,
+          7,
+          1009,
+          1515
+        ]
+      },
+      "assetSha256": "793b44570b257ad5435ca21d8828408df205ca68b1c2111bc2d1ff2fcb05433c",
+      "poolScope": "mainland",
+      "visualReview": "已对照输入照片查看成图；浅色、深蓝色换底及脚部放大图复核：无鞋袜、人物道具完整，未见明显多余肢体，头身与关节衔接自然。遮挡处不宣称逐指逐趾均可见。"
+    },
+    {
+      "key": "zhang-jingyi",
+      "name": "张婧仪",
+      "title": "黛蓝抱阮",
+      "ref": "assets/beauties/references/zhang-jingyi/face-reference.jpg",
+      "detail": "Zhang Jingyi 张婧仪 adult age 26, preserve dark straight brows, long almond eyes, full natural lips and softly broad lower face. Sitting relaxed on simple low wooden stool, body three-quarter and face toward camera, both feet visible in blue embroidered slippers. Holding a small round wooden ruan lute upright at an angle across lap, one hand naturally supports neck and other rests on strings, exactly natural hands. Deep indigo light silk sleeveless ruqun with ivory bodice and narrow pale blue gauze stole over arms, opaque skirt, summer weight fabric. Half updo with silver cloud comb, lapis drop earrings, fine pearl necklace, silver bracelet, blue waist pendant. Stool isolated no scene.",
+      "id": "mainland-photo-six-20261022-05",
+      "asset": "assets/beauties/random/女明星/张婧仪-黛蓝抱阮.png",
+      "prompt": "Use case: photorealistic-natural. Asset type: full-body transparent PNG cutout for Chinese imperial game random beauty pool. Reference photo is identity reference ONLY. Generate one clearly adult actress in new summer Chinese historical clothing, high-quality realistic costume photography, preserve distinctive face, eye shape, lips, nose and jaw from reference, natural skin texture, no generic doll face. Slim natural adult body, about 7.5 heads tall when standing, proportionate small head and normal shoulders, anatomically coherent two arms/two hands/five fingers per hand, two legs/two correctly oriented feet, stable center of gravity, natural relaxed joints and credible contact with objects. Light summer silk/gauze fabric, opaque lined bodice and skirt or trousers, tasteful fully clothed styling. Entire body head ornaments, hands, feet and all props fully inside 2:3 portrait canvas with 7% clear margins. Genuinely transparent background alpha, no studio background, no floor, no cast shadow, no glow, no scenery, no text/watermark. Soft neutral natural lighting, 70mm normal perspective. Zhang Jingyi 张婧仪 adult age 26, preserve dark straight brows, long almond eyes, full natural lips and softly broad lower face. Sitting relaxed on simple low wooden stool, body three-quarter and face toward camera, both feet visible in blue embroidered slippers. Holding a small round wooden ruan lute upright at an angle across lap, one hand naturally supports neck and other rests on strings, exactly natural hands. Deep indigo light silk sleeveless ruqun with ivory bodice and narrow pale blue gauze stole over arms, opaque skirt, summer weight fabric. Half updo with silver cloud comb, lapis drop earrings, fine pearl necklace, silver bracelet, blue waist pendant. Stool isolated no scene.",
+      "status": "completed",
+      "sources": [
+        {
+          "path": "assets/beauties/references/zhang-jingyi/face-reference.jpg",
+          "sourcePage": "https://www.duitang.com/blog/?id=1436758434",
+          "imageUrl": "https://a-ho-img.dtstatic.com/uploads/blog/202211/19/20221119072012_c8593.jpg",
+          "size": [
+            1600,
+            1600
+          ],
+          "inspection": "2022成年写真，眉鼻唇清楚，目光下垂，补充睁眼照核对。"
+        }
+      ],
+      "referenceDimensions": [
+        1600,
+        1600
+      ],
+      "referenceSha256": "590e1d3fe3fea4578bfe72503c981d57268156cee36a123e25ffb342094bb4ed",
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a16133-240f-7033-bf18-3e8342b820ca/exec-951c7f8a-8743-400e-bf3e-81fbc32a5d62.png",
+      "footwear": "barefoot",
+      "barefootEditPrompt": "Use case: precise-object-edit. Edit the supplied full-body adult character cutout. Change ONLY shoes and immediately surrounding lower hem where necessary: remove all shoes and socks, make BOTH FEET BARE, anatomically correct natural feet with five toes each, credible ankles and proper left/right orientation, appropriate to existing standing or seated pose. Keep exact face, hairstyle, costume, accessories, props, pose and body proportions. If a foot was hidden, subtly lift lower hem enough to show it naturally without lengthening or shortening legs. Entire character and both bare feet inside frame, at least small clear margin. No discarded shoes. Preserve genuine transparent alpha background, no background or floor, no shadow/halo. This is an ordinary nonsexual game character portrait.",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentFraction": 0.449,
+        "nontransparentBorderPixels": 0,
+        "boundsAbove20": [
+          27,
+          8,
+          1004,
+          1521
+        ]
+      },
+      "assetSha256": "10be21f168498ad565ce4c69ab518ad2626464233c18249c32553aa85af0beb4",
+      "poolScope": "mainland",
+      "visualReview": "已对照输入照片查看成图；浅色、深蓝色换底及脚部放大图复核：无鞋袜、人物道具完整，未见明显多余肢体，头身与关节衔接自然。遮挡处不宣称逐指逐趾均可见。"
+    },
+    {
+      "key": "liu-haocun",
+      "name": "刘浩存",
+      "title": "柳绡静修",
+      "ref": "assets/beauties/references/liu-haocun/face-reference.jpg",
+      "detail": "Liu Haocun 刘浩存 adult age 25. Preserve her distinctive eyes, small nose, naturally proportioned lips and facial beauty marks. Seated in simple comfortable cross-legged meditation pose, spine upright, both relaxed hands palms down upon respective knees, anatomically clear natural folded legs with both feet emerging and oriented correctly, no tangled limbs. Leaf green lightweight short-sleeve wrap top over opaque ivory bodice and loose opaque pale green silk trousers, soft green slippers. Small closed book resting beside her right knee as secondary prop. Long black hair partial updo with jade butterfly pin, small pearl drop earrings, delicate jade pendant necklace, silver bracelet, waist silk tassel. Entire seated body and book isolated on transparent background, no mat or floor.",
+      "id": "mainland-photo-six-20261022-06",
+      "asset": "assets/beauties/random/女明星/刘浩存-柳绡静修.png",
+      "prompt": "Use case: photorealistic-natural. Asset type: full-body transparent PNG cutout for Chinese imperial game random beauty pool. Reference photo is identity reference ONLY. Generate one clearly adult actress in new summer Chinese historical clothing, high-quality realistic costume photography, preserve distinctive face, eye shape, lips, nose and jaw from reference, natural skin texture, no generic doll face. Slim natural adult body, about 7.5 heads tall when standing, proportionate small head and normal shoulders, anatomically coherent two arms/two hands/five fingers per hand, two legs/two correctly oriented feet, stable center of gravity, natural relaxed joints and credible contact with objects. Light summer silk/gauze fabric, opaque lined bodice and skirt or trousers, tasteful fully clothed styling. Entire body head ornaments, hands, feet and all props fully inside 2:3 portrait canvas with 7% clear margins. Genuinely transparent background alpha, no studio background, no floor, no cast shadow, no glow, no scenery, no text/watermark. Soft neutral natural lighting, 70mm normal perspective. Liu Haocun 刘浩存 adult age 25. Preserve her distinctive eyes, small nose, naturally proportioned lips and facial beauty marks. Seated in simple comfortable cross-legged meditation pose, spine upright, both relaxed hands palms down upon respective knees, anatomically clear natural folded legs with both feet emerging and oriented correctly, no tangled limbs. Leaf green lightweight short-sleeve wrap top over opaque ivory bodice and loose opaque pale green silk trousers, soft green slippers. Small closed book resting beside her right knee as secondary prop. Long black hair partial updo with jade butterfly pin, small pearl drop earrings, delicate jade pendant necklace, silver bracelet, waist silk tassel. Entire seated body and book isolated on transparent background, no mat or floor.",
+      "status": "completed",
+      "sources": [
+        {
+          "path": "assets/beauties/references/liu-haocun/face-reference.jpg",
+          "sourcePage": "https://www.duitang.com/blog/?id=1369984298",
+          "imageUrl": "https://c-ssl.dtstatic.com/uploads/blog/202110/13/20211013203908_efa0e.jpeg",
+          "width": 1066,
+          "height": 1599,
+          "inspection": "2021成年公开写真，五官清晰，发丝掠过脸侧不遮眼鼻唇。"
+        }
+      ],
+      "referenceDimensions": [
+        1066,
+        1599
+      ],
+      "referenceSha256": "89fc8ad6646fd6e0002ca85539a94b21be07fb28870c6d0a90238ed8fb019ee6",
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a16133-240f-7033-bf18-3e8342b820ca/exec-cd12b7be-b59b-4254-92db-cc6096e667b4.png",
+      "footwear": "barefoot",
+      "barefootEditPrompt": "Use case: precise-object-edit. Edit the supplied full-body adult character cutout. Change ONLY shoes and immediately surrounding lower hem where necessary: remove all shoes and socks, make BOTH FEET BARE, anatomically correct natural feet with five toes each, credible ankles and proper left/right orientation, appropriate to existing standing or seated pose. Keep exact face, hairstyle, costume, accessories, props, pose and body proportions. If a foot was hidden, subtly lift lower hem enough to show it naturally without lengthening or shortening legs. Entire character and both bare feet inside frame, at least small clear margin. No discarded shoes. Preserve genuine transparent alpha background, no background or floor, no shadow/halo. This is an ordinary nonsexual game character portrait.",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentFraction": 0.4394,
+        "nontransparentBorderPixels": 0,
+        "boundsAbove20": [
+          11,
+          28,
+          1021,
+          1500
+        ]
+      },
+      "assetSha256": "42e20f9e0f4f1999f0f743c6a4dee2bcb6f56eba812367e87131ba139c2cab80",
+      "poolScope": "mainland",
+      "visualReview": "已对照输入照片查看成图；浅色、深蓝色换底及脚部放大图复核：无鞋袜、人物道具完整，未见明显多余肢体，头身与关节衔接自然。遮挡处不宣称逐指逐趾均可见。"
+    }
+  ],
+  "footwearRule": "本次全部光脚，既有旧款保留。",
+  "poolScope": "mainland",
+  "completed": 6,
+  "verification": {
+    "relatedTestsPassed": 22,
+    "alphaPassed": true,
+    "sharedVariantsReachableInEveryMainlandCity": true,
+    "saveReloadPassed": true,
+    "reviewPreview": "outputs/mainland-fourteen-20261022/all-light.jpg"
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "tool": "built-in image_gen",
+  "status": "completed",
+  "name": "张雨霏",
+  "id": "mainland-photo-eight-20261022-03",
+  "asset": "assets/beauties/random/女明星/张雨霏-碧水捧贝-v3.png",
+  "previousAsset": "assets/beauties/random/女明星/张雨霏-碧水捧贝-v2.png",
+  "prompt": "Use case: photorealistic-natural. Asset: one full-body adult Zhang Yufei 张雨霏 Chinese historical summer costume portrait for game random beauty library. Input image 1: actual Zhang Yufei October 2024 SuperELLE fashion close-up, PRIMARY facial identity and flattering editorial makeup reference; image 2: same adult woman's fashion editorial side angle, supporting facial contour reference. Use ONLY these off-pool FASHION PHOTOS, do not reproduce swimming competition appearance or medal ceremony. Keep her recognizable brow/eye/nose/lip/jaw structure from new fashion photos; refined makeup, natural softly composed closed lips as in reference 1, no toothy sports-victory grin. Remove all cover typography, garments and accessories from photos. New elegant historical Chinese styling: graceful SLENDER healthy adult build, slim natural shoulders/arms/waist and long proportional legs, no bulky athlete muscles, realistic approximately 7.5 heads tall, normal 70mm perspective, appropriately sized head, natural neck. Upright relaxed STANDING three-quarter contrapposto with face toward viewer, stable gravity and two natural bare feet grounded and fully visible. Pale turquoise sleeveless summer silk ruqun bodice with opaque ivory lined long skirt, lightweight thin aqua gauze stole behind arms, delicate silver wave embroidery. Both hands hold modest pearly seashell bowl low at waist with relaxed elbows and correct finger contact. Half-up black hair with silver and pearl floral hairpins, pearl drop earrings, slender jade necklace, jade bracelet and small waist tassels. Exactly two anatomically coherent arms, two hands each with five fingers, two legs and two BARE FEET each with five toes, no shoes/socks. Entire hair ornaments, body, hands, flowing hem, bare feet and prop within portrait 2:3 frame with clear margins, no cropping. GENUINE transparent alpha background; isolated person and shell bowl ONLY, no scenery, no floor, shadow, halo, border, text, modern object or watermark. Realistic costume photography, natural detailed skin and fabric, no illustration/doll/airbrushed plastic.",
+  "sourcePage": "https://www.sohu.com/a/805939818_121948404",
+  "references": [
+    {
+      "path": "assets/beauties/references/mainland-eight-20261022/zhang-yufei-editorial-1.jpg",
+      "imageUrl": "https://q3.itc.cn/images03/20240903/25168ca7eb794a2ca65601aeaab9e4cb.jpeg",
+      "role": "Primary face and editorial makeup reference",
+      "size": [
+        1080,
+        1388
+      ],
+      "sha256": "80d7489b3b9239ade701c58fa6c376009b7c6ab79771d6dd4949512a5878b3eb"
+    },
+    {
+      "path": "assets/beauties/references/mainland-eight-20261022/zhang-yufei-editorial-2.jpg",
+      "imageUrl": "https://q3.itc.cn/images03/20240903/2e4af2daf87346d7ab55faeb9656c400.jpeg",
+      "role": "Supporting facial contour reference",
+      "size": [
+        1080,
+        1388
+      ],
+      "sha256": "1c2124c85e07adfd064f09eb0429cf91de24237dabbd8ead1618687cbc20f24f"
+    }
+  ],
+  "constraints": [
+    "Use only non-pool editorial photos",
+    "slender standing pose",
+    "barefoot",
+    "light summer historical clothing",
+    "transparent alpha"
+  ],
+  "sourcePath": "/Users/fengheliang/.codex/generated_images/01a16133-240f-7033-bf18-3e8342b820ca/exec-8389befd-3682-4394-8528-0ee0ecb0f171.png",
+  "validation": {
+    "size": [
+      1024,
+      1536
+    ],
+    "mode": "RGBA",
+    "alphaRange": [
+      0,
+      254
+    ],
+    "transparentFraction": 0.494,
+    "nontransparentBorderPixels": 0,
+    "boundsAbove20": [
+      32,
+      16,
+      1005,
+      1527
+    ]
+  },
+  "assetSha256": "1ce7be0e16578e4a4338c199d8e7f02d64bb26dba8f7f44df55f7de28b4c1dde",
+  "visualReview": "对照非泳池SuperELLE近照及侧面照复核五官与妆容；成图为纤细站姿，手持贝盏，光脚，手脚和头身比例自然。浅色和深蓝底检查无背景残留，边界无不透明像素。",
+  "verification": {
+    "relatedTestsPassed": 10,
+    "nativeCanvasPassed": 115,
+    "realHaremRosterPassed": 14,
+    "oldSavePathMigrationPassed": true
+  }
+}

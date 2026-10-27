@@ -1,0 +1,110 @@
+{
+  "status": "updated",
+  "tool": "built-in image_gen",
+  "skill": "/Users/fengheliang/.codex/skills/person-reference-photo/SKILL.md",
+  "referenceRoles": {
+    "primary_original": "/Users/fengheliang/.codex/skills/person-reference-photo/assets/aoi-tsukasa/original-1.png",
+    "supporting_original": "/Users/fengheliang/.codex/skills/person-reference-photo/assets/aoi-tsukasa/original-3.png",
+    "existing_portraits": "composition and costumes only"
+  },
+  "items": [
+    {
+      "name": "葵司",
+      "english": "Tsukasa Aoi",
+      "asset": "assets/beauties/random/番邦女子/日本女子-葵司.png",
+      "beforeSha256": "649cf7794bd8a8f711707e03430e5345f65de88f9f3405a39e68f0a390ef6e9c",
+      "backup": "outputs/aoi-reference-skill-rework-20261023/before/日本女子-葵司.png",
+      "generatedPath": "/Users/fengheliang/.codex/generated_images/01a16615-cc42-7e81-aa4f-b849b888d820/exec-d11e6103-26e6-4d73-b9d1-ca2833f7bb42.png",
+      "prompt": "Use case: identity-preserve. Correct ONE adult Tsukasa Aoi game costume portrait. Image 1 is PRIMARY ORIGINAL face photograph from the registered person-reference library. Image 2 is supporting ORIGINAL near-frontal face photograph. Image 3 is the existing costume portrait to edit and supplies ONLY clothing, props, full body pose, framing and camera. Rebuild image 3's FACE faithfully from ORIGINALS 1 and 2, never treat image 3's generated face as identity evidence. Closely retain original eye shape and spacing, natural eyelid structure, nose tip and nostril width, natural full upper/lower lip shapes, soft cheek volume, jaw and short rounded chin, subtle natural asymmetry and adult age. Do not slim the jaw into a pointed V, enlarge the eyes, over-whiten or smooth away skin texture. Soft natural makeup and very slight relaxed smile, no grin. Keep a dark brown chin-length SHORT BOB with the airy forehead fringe of the original photos; no long extensions, bun or ponytail. Preserve image 3's body proportions, pose, camera, outfit and props exactly. Keep head upright, no unnatural side tilt. Whole figure and every prop fully inside canvas with 7% margin. Fully clothed opaque Japanese summer costume, no socks. Genuine transparent alpha PNG, no background, shadow, gradient, glow, text or watermark. Natural photographic facial structure, not a doll or generic AI beauty face.",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentFraction": 0.67,
+        "borderPixelsAbove20": 0
+      },
+      "assetSha256": "b1600362f237b33634e37c753d18d70073ea86974530d34a52aa0bfba728b734"
+    },
+    {
+      "name": "葵司",
+      "english": "Tsukasa Aoi",
+      "asset": "assets/beauties/random/番邦女子/日本女子-葵司-绯绡鼓舞.png",
+      "beforeSha256": "f5f71e8188b0aa16891c147c610fabda7fa0eb7891562556cad66387f2c03a93",
+      "backup": "outputs/aoi-reference-skill-rework-20261023/before/日本女子-葵司-绯绡鼓舞.png",
+      "generatedPath": "/Users/fengheliang/.codex/generated_images/01a16615-cc42-7e81-aa4f-b849b888d820/exec-d703b9bc-c743-4792-9736-e21923da4ef0.png",
+      "prompt": "Use case: identity-preserve. Correct ONE adult Tsukasa Aoi game costume portrait. Image 1 is PRIMARY ORIGINAL face photograph from the registered person-reference library. Image 2 is supporting ORIGINAL near-frontal face photograph. Image 3 is the existing costume portrait to edit and supplies ONLY clothing, props, full body pose, framing and camera. Rebuild image 3's FACE faithfully from ORIGINALS 1 and 2, never treat image 3's generated face as identity evidence. Closely retain original eye shape and spacing, natural eyelid structure, nose tip and nostril width, natural full upper/lower lip shapes, soft cheek volume, jaw and short rounded chin, subtle natural asymmetry and adult age. Do not slim the jaw into a pointed V, enlarge the eyes, over-whiten or smooth away skin texture. Soft natural makeup and very slight relaxed smile, no grin. Keep a dark brown chin-length SHORT BOB with the airy forehead fringe of the original photos; no long extensions, bun or ponytail. Preserve image 3's body proportions, pose, camera, outfit and props exactly. Keep head upright, no unnatural side tilt. Whole figure and every prop fully inside canvas with 7% margin. Fully clothed opaque Japanese summer costume, no socks. Genuine transparent alpha PNG, no background, shadow, gradient, glow, text or watermark. Natural photographic facial structure, not a doll or generic AI beauty face.",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentFraction": 0.6578,
+        "borderPixelsAbove20": 0
+      },
+      "assetSha256": "091b84fa2bc29f15f7d1225cde6e70c4f4a73fac649c074eb5e9cb64287c95c9"
+    },
+    {
+      "name": "葵司",
+      "english": "Tsukasa Aoi",
+      "asset": "assets/beauties/random/番邦女子/日本女子-葵司-水蓝静修.png",
+      "beforeSha256": "bb5f8ff67553a9d487d4742e8154c60361b5f4a3298608b1f2222f589724f1f4",
+      "backup": "outputs/aoi-reference-skill-rework-20261023/before/日本女子-葵司-水蓝静修.png",
+      "generatedPath": "/Users/fengheliang/.codex/generated_images/01a16615-cc42-7e81-aa4f-b849b888d820/exec-393b0c0b-06e6-4008-b354-aff10254e068.png",
+      "prompt": "Use case: identity-preserve. Correct ONE adult Tsukasa Aoi game costume portrait. Image 1 is PRIMARY ORIGINAL face photograph from the registered person-reference library. Image 2 is supporting ORIGINAL near-frontal face photograph. Image 3 is the existing costume portrait to edit and supplies ONLY clothing, props, full body pose, framing and camera. Rebuild image 3's FACE faithfully from ORIGINALS 1 and 2, never treat image 3's generated face as identity evidence. Closely retain original eye shape and spacing, natural eyelid structure, nose tip and nostril width, natural full upper/lower lip shapes, soft cheek volume, jaw and short rounded chin, subtle natural asymmetry and adult age. Do not slim the jaw into a pointed V, enlarge the eyes, over-whiten or smooth away skin texture. Soft natural makeup and very slight relaxed smile, no grin. Keep a dark brown chin-length SHORT BOB with the airy forehead fringe of the original photos; no long extensions, bun or ponytail. Preserve image 3's body proportions, pose, camera, outfit and props exactly. Keep head upright, no unnatural side tilt. Whole figure and every prop fully inside canvas with 7% margin. Fully clothed opaque Japanese summer costume, no socks. Genuine transparent alpha PNG, no background, shadow, gradient, glow, text or watermark. Natural photographic facial structure, not a doll or generic AI beauty face.",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentFraction": 0.475,
+        "borderPixelsAbove20": 0
+      },
+      "assetSha256": "a20e8b5dec662648d496195f632c5530de17d5b987778af4cad9e084107f4e36"
+    },
+    {
+      "name": "葵司",
+      "english": "Tsukasa Aoi",
+      "asset": "assets/beauties/random/番邦女子/日本女子-葵司-碧绡端坐.png",
+      "beforeSha256": "1fc2f888eed7227962e01d7c28d1ce3ab76e82776cd483bb55f76090c0f184f1",
+      "backup": "outputs/aoi-reference-skill-rework-20261023/before/日本女子-葵司-碧绡端坐.png",
+      "generatedPath": "/Users/fengheliang/.codex/generated_images/01a16615-cc42-7e81-aa4f-b849b888d820/exec-abb80ac3-cfd6-4fc0-aab6-971a47c33ffa.png",
+      "prompt": "Use case: identity-preserve. Correct ONE adult Tsukasa Aoi game costume portrait. Image 1 is PRIMARY ORIGINAL face photograph from the registered person-reference library. Image 2 is supporting ORIGINAL near-frontal face photograph. Image 3 is the existing costume portrait to edit and supplies ONLY clothing, props, full body pose, framing and camera. Rebuild image 3's FACE faithfully from ORIGINALS 1 and 2, never treat image 3's generated face as identity evidence. Closely retain original eye shape and spacing, natural eyelid structure, nose tip and nostril width, natural full upper/lower lip shapes, soft cheek volume, jaw and short rounded chin, subtle natural asymmetry and adult age. Do not slim the jaw into a pointed V, enlarge the eyes, over-whiten or smooth away skin texture. Soft natural makeup and very slight relaxed smile, no grin. Keep a dark brown chin-length SHORT BOB with the airy forehead fringe of the original photos; no long extensions, bun or ponytail. Preserve image 3's body proportions, pose, camera, outfit and props exactly. Retain frontal upright seiza kneeling, head level, gaze gently at camera. Whole figure and every prop fully inside canvas with 7% margin. Fully clothed opaque Japanese summer costume, no socks. Genuine transparent alpha PNG, no background, shadow, gradient, glow, text or watermark. Natural photographic facial structure, not a doll or generic AI beauty face.",
+      "validation": {
+        "size": [
+          1113,
+          1413
+        ],
+        "alphaRange": [
+          0,
+          255
+        ],
+        "transparentFraction": 0.5636,
+        "borderPixelsAbove20": 0
+      },
+      "assetSha256": "508da7eee06e0ab8ba87ebe7a67dbaafbd35142c41342c89463eef3a9192edda"
+    }
+  ],
+  "review": "All five reviewed for face anatomy, short hair, costume, pose and framing; likeness remains a generated approximation, not a measured score.",
+  "desktopValidation": {
+    "passed": true,
+    "decoded": 234,
+    "roster": 133
+  },
+  "removedAngles": [
+    45,
+    70
+  ]
+}

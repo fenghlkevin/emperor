@@ -1,0 +1,1791 @@
+{
+  "date": "2026-10-22",
+  "status": "passed",
+  "total": 116,
+  "categories": {
+    "女明星": 64,
+    "番邦女子": 42,
+    "原创女子": 10
+  },
+  "missingAssets": 0,
+  "unreachable": 0,
+  "legacyMappingsChecked": 230,
+  "nativeGeneratedAdmittedSavedReloadedAndPainted": 116,
+  "realHaremRosterChecked": 15,
+  "relatedTestsPassed": 24,
+  "packagingIncludes": [
+    "src/**/*",
+    "assets/**/*"
+  ],
+  "intentionallyExcluded": [
+    {
+      "asset": "assets/beauties/random/女明星/王祖贤-月白兰书.png",
+      "reason": "Existing art manifest marks this character deleted_by_user; do not restore removed portraits."
+    }
+  ],
+  "rows": [
+    {
+      "id": "zhongyuan-expansion-20261021-03",
+      "name": "陈瑶-杏绡桂囊",
+      "category": "女明星",
+      "regionId": "sheng",
+      "asset": "assets/beauties/random/女明星/陈瑶-杏绡桂囊.png",
+      "fileExists": true,
+      "reachableInCities": [
+        "hebei"
+      ],
+      "legacyMappingsPassed": true,
+      "nativeCanvasPassed": true,
+      "haremRosterChecked": false
+    },
+    {
+      "id": "zhongyuan-expansion-20261021-01",
+      "name": "文咏珊-青玉梅影",
+      "category": "女明星",
+      "regionId": "sheng",
+      "asset": "assets/beauties/random/女明星/文咏珊-青玉梅影.png",
+      "fileExists": true,
+      "reachableInCities": [
+        "henan"
+      ],
+      "legacyMappingsPassed": true,
+      "nativeCanvasPassed": true,
+      "haremRosterChecked": false
+    },
+    {
+      "id": "zhongyuan",
+      "name": "刘诗诗",
+      "category": "女明星",
+      "regionId": "sheng",
+      "asset": "assets/beauties/random/女明星/刘诗诗.png",
+      "fileExists": true,
+      "reachableInCities": [
+        "huainan"
+      ],
+      "legacyMappingsPassed": true,
+      "nativeCanvasPassed": true,
+      "haremRosterChecked": false
+    },
+    {
+      "id": "hebei",
+      "name": "王楚然",
+      "category": "女明星",
+      "regionId": "sheng",
+      "asset": "assets/beauties/random/女明星/王楚然.png",
+      "fileExists": true,
+      "reachableInCities": [
+        "hebei",
+        "jiangnan"
+      ],
+      "legacyMappingsPassed": true,
+      "nativeCanvasPassed": true,
+      "haremRosterChecked": false
+    },
+    {
+      "id": "henan",
+      "name": "刘涛",
+      "category": "女明星",
+      "regionId": "sheng",
+      "asset": "assets/beauties/random/女明星/刘涛.png",
+      "fileExists": true,
+      "reachableInCities": [
+        "henan",
+        "lingnan"
+      ],
+      "legacyMappingsPassed": true,
+      "nativeCanvasPassed": true,
+      "haremRosterChecked": false
+    },
+    {
+      "id": "v1-sheng-00",
+      "name": "杨幂",
+      "category": "女明星",
+      "regionId": "sheng",
+      "asset": "assets/beauties/random/女明星/杨幂.png",
+      "fileExists": true,
+      "reachableInCities": [
+        "hedong"
+      ],
+      "legacyMappingsPassed": true,
+      "nativeCanvasPassed": true,
+      "haremRosterChecked": false
+    },
+    {
+      "id": "v1-sheng-02",
+      "name": "倪妮",
+      "category": "女明星",
+      "regionId": "sheng",
+      "asset": "assets/beauties/random/女明星/倪妮.png",
+      "fileExists": true,
+      "reachableInCities": [
+        "guannei"
+      ],
+      "legacyMappingsPassed": true,
+      "nativeCanvasPassed": true,
+      "haremRosterChecked": false
+    },
+    {
+      "id": "v1-sheng-03",
+      "name": "孙俪",
+      "category": "女明星",
+      "regionId": "sheng",
+      "asset": "assets/beauties/random/女明星/孙俪.png",
+      "fileExists": true,
+      "reachableInCities": [
+        "shannan"
+      ],
+      "legacyMappingsPassed": true,
+      "nativeCanvasPassed": true,
+      "haremRosterChecked": false
+    },
+    {
+      "id": "peony-red",
+      "name": "范冰冰",
+      "category": "女明星",
+      "regionId": "sheng",
+      "asset": "assets/beauties/random/女明星/范冰冰.png",
+      "fileExists": true,
+      "reachableInCities": [
+        "jiannan"
+      ],
+      "legacyMappingsPassed": true,
+      "nativeCanvasPassed": true,
+      "haremRosterChecked": false
+    },
+    {
+      "id": "pine-silk",
+      "name": "景甜",
+      "category": "女明星",
+      "regionId": "sheng",
+      "asset": "assets/beauties/random/女明星/景甜.png",
+      "fileExists": true,
+      "reachableInCities": [
+        "longyou"
+      ],
+      "legacyMappingsPassed": true,
+      "nativeCanvasPassed": true,
+      "haremRosterChecked": false
+    },
+    {
+      "id": "candle-curtain",
+      "name": "江疏影",
+      "category": "女明星",
+      "regionId": "sheng",
+      "asset": "assets/beauties/random/女明星/江疏影.png",
+      "fileExists": true,
+      "reachableInCities": [
+        "hebei"
+      ],
+      "legacyMappingsPassed": true,
+      "nativeCanvasPassed": true,
+      "haremRosterChecked": false
+    },
+    {
+      "id": "lotus-picker",
+      "name": "李沁",
+      "category": "女明星",
+      "regionId": "sheng",
+      "asset": "assets/beauties/random/女明星/李沁.png",
+      "fileExists": true,
+      "reachableInCities": [
+        "henan"
+      ],
+      "legacyMappingsPassed": true,
+      "nativeCanvasPassed": true,
+      "haremRosterChecked": false
+    },
+    {
+      "id": "railing-coral",
+      "name": "张梓琳",
+      "category": "女明星",
+      "regionId": "sheng",
+      "asset": "assets/beauties/random/女明星/张梓琳.png",
+      "fileExists": true,
+      "reachableInCities": [
+        "huainan"
+      ],
+      "legacyMappingsPassed": true,
+      "nativeCanvasPassed": true,
+      "haremRosterChecked": false
+    },
+    {
+      "id": "spring-rider",
+      "name": "关晓彤",
+      "category": "女明星",
+      "regionId": "sheng",
+      "asset": "assets/beauties/random/女明星/关晓彤.png",
+      "fileExists": true,
+      "reachableInCities": [
+        "jiangnan"
+      ],
+      "legacyMappingsPassed": true,
+      "nativeCanvasPassed": true,
+      "haremRosterChecked": false
+    },
+    {
+      "id": "autumn-flute",
+      "name": "李一桐",
+      "category": "女明星",
+      "regionId": "sheng",
+      "asset": "assets/beauties/random/女明星/李一桐.png",
+      "fileExists": true,
+      "reachableInCities": [
+        "lingnan"
+      ],
+      "legacyMappingsPassed": true,
+      "nativeCanvasPassed": true,
+      "haremRosterChecked": false
+    },
+    {
+      "id": "red-twin-buns",
+      "name": "赵今麦",
+      "category": "女明星",
+      "regionId": "sheng",
+      "asset": "assets/beauties/random/女明星/赵今麦.png",
+      "fileExists": true,
+      "reachableInCities": [
+        "hedong"
+      ],
+      "legacyMappingsPassed": true,
+      "nativeCanvasPassed": true,
+      "haremRosterChecked": false
+    },
+    {
+      "id": "butterfly-sleeves",
+      "name": "宋茜",
+      "category": "女明星",
+      "regionId": "sheng",
+      "asset": "assets/beauties/random/女明星/宋茜.png",
+      "fileExists": true,
+      "reachableInCities": [
+        "guannei"
+      ],
+      "legacyMappingsPassed": true,
+      "nativeCanvasPassed": true,
+      "haremRosterChecked": false
+    },
+    {
+      "id": "green-fan",
+      "name": "王丽坤",
+      "category": "女明星",
+      "regionId": "sheng",
+      "asset": "assets/beauties/random/女明星/王丽坤.png",
+      "fileExists": true,
+      "reachableInCities": [
+        "shannan"
+      ],
+      "legacyMappingsPassed": true,
+      "nativeCanvasPassed": true,
+      "haremRosterChecked": false
+    },
+    {
+      "id": "blue-dancer",
+      "name": "章若楠",
+      "category": "女明星",
+      "regionId": "sheng",
+      "asset": "assets/beauties/random/女明星/章若楠.png",
+      "fileExists": true,
+      "reachableInCities": [
+        "jiannan"
+      ],
+      "legacyMappingsPassed": true,
+      "nativeCanvasPassed": true,
+      "haremRosterChecked": false
+    },
+    {
+      "id": "moon-silk",
+      "name": "刘浩存",
+      "category": "女明星",
+      "regionId": "sheng",
+      "asset": "assets/beauties/random/女明星/刘浩存.png",
+      "fileExists": true,
+      "reachableInCities": [
+        "longyou"
+      ],
+      "legacyMappingsPassed": true,
+      "nativeCanvasPassed": true,
+      "haremRosterChecked": false
+    },
+    {
+      "id": "rabbit-play",
+      "name": "张佳宁",
+      "category": "女明星",
+      "regionId": "sheng",
+      "asset": "assets/beauties/random/女明星/张佳宁.png",
+      "fileExists": true,
+      "reachableInCities": [
+        "hebei"
+      ],
+      "legacyMappingsPassed": true,
+      "nativeCanvasPassed": true,
+      "haremRosterChecked": false
+    },
+    {
+      "id": "oasis-dance",
+      "name": "迪丽热巴",
+      "category": "女明星",
+      "regionId": "sheng",
+      "asset": "assets/beauties/random/女明星/迪丽热巴.png",
+      "fileExists": true,
+      "reachableInCities": [
+        "henan"
+      ],
+      "legacyMappingsPassed": true,
+      "nativeCanvasPassed": true,
+      "haremRosterChecked": false
+    },
+    {
+      "id": "expansion-20261019-01",
+      "name": "刘亦菲",
+      "category": "女明星",
+      "regionId": "sheng",
+      "asset": "assets/beauties/random/女明星/刘亦菲.png",
+      "fileExists": true,
+      "reachableInCities": [
+        "huainan"
+      ],
+      "legacyMappingsPassed": true,
+      "nativeCanvasPassed": true,
+      "haremRosterChecked": false
+    },
+    {
+      "id": "expansion-20261019-02",
+      "name": "田曦薇",
+      "category": "女明星",
+      "regionId": "sheng",
+      "asset": "assets/beauties/random/女明星/田曦薇.png",
+      "fileExists": true,
+      "reachableInCities": [
+        "jiangnan"
+      ],
+      "legacyMappingsPassed": true,
+      "nativeCanvasPassed": true,
+      "haremRosterChecked": false
+    },
+    {
+      "id": "expansion-20261019-03",
+      "name": "宋轶",
+      "category": "女明星",
+      "regionId": "sheng",
+      "asset": "assets/beauties/random/女明星/宋轶.png",
+      "fileExists": true,
+      "reachableInCities": [
+        "lingnan"
+      ],
+      "legacyMappingsPassed": true,
+      "nativeCanvasPassed": true,
+      "haremRosterChecked": false
+    },
+    {
+      "id": "expansion-20261019-04",
+      "name": "周也",
+      "category": "女明星",
+      "regionId": "sheng",
+      "asset": "assets/beauties/random/女明星/周也.png",
+      "fileExists": true,
+      "reachableInCities": [
+        "hedong"
+      ],
+      "legacyMappingsPassed": true,
+      "nativeCanvasPassed": true,
+      "haremRosterChecked": false
+    },
+    {
+      "id": "expansion-20261019-05",
+      "name": "杨紫",
+      "category": "女明星",
+      "regionId": "sheng",
+      "asset": "assets/beauties/random/女明星/杨紫.png",
+      "fileExists": true,
+      "reachableInCities": [
+        "guannei"
+      ],
+      "legacyMappingsPassed": true,
+      "nativeCanvasPassed": true,
+      "haremRosterChecked": false
+    },
+    {
+      "id": "expansion-20261019-06",
+      "name": "虞书欣",
+      "category": "女明星",
+      "regionId": "sheng",
+      "asset": "assets/beauties/random/女明星/虞书欣.png",
+      "fileExists": true,
+      "reachableInCities": [
+        "shannan"
+      ],
+      "legacyMappingsPassed": true,
+      "nativeCanvasPassed": true,
+      "haremRosterChecked": false
+    },
+    {
+      "id": "expansion-20261019-07",
+      "name": "金晨",
+      "category": "女明星",
+      "regionId": "sheng",
+      "asset": "assets/beauties/random/女明星/金晨.png",
+      "fileExists": true,
+      "reachableInCities": [
+        "jiannan"
+      ],
+      "legacyMappingsPassed": true,
+      "nativeCanvasPassed": true,
+      "haremRosterChecked": false
+    },
+    {
+      "id": "expansion-20261019-08",
+      "name": "陈都灵",
+      "category": "女明星",
+      "regionId": "sheng",
+      "asset": "assets/beauties/random/女明星/陈都灵.png",
+      "fileExists": true,
+      "reachableInCities": [
+        "longyou"
+      ],
+      "legacyMappingsPassed": true,
+      "nativeCanvasPassed": true,
+      "haremRosterChecked": false
+    },
+    {
+      "id": "expansion-20261019-09",
+      "name": "高圆圆",
+      "category": "女明星",
+      "regionId": "sheng",
+      "asset": "assets/beauties/random/女明星/高圆圆.png",
+      "fileExists": true,
+      "reachableInCities": [
+        "hebei"
+      ],
+      "legacyMappingsPassed": true,
+      "nativeCanvasPassed": true,
+      "haremRosterChecked": false
+    },
+    {
+      "id": "expansion-20261019-10",
+      "name": "袁泉",
+      "category": "女明星",
+      "regionId": "sheng",
+      "asset": "assets/beauties/random/女明星/袁泉.png",
+      "fileExists": true,
+      "reachableInCities": [
+        "henan"
+      ],
+      "legacyMappingsPassed": true,
+      "nativeCanvasPassed": true,
+      "haremRosterChecked": false
+    },
+    {
+      "id": "expansion-20261019-11",
+      "name": "张雨绮",
+      "category": "女明星",
+      "regionId": "sheng",
+      "asset": "assets/beauties/random/女明星/张雨绮.png",
+      "fileExists": true,
+      "reachableInCities": [
+        "huainan"
+      ],
+      "legacyMappingsPassed": true,
+      "nativeCanvasPassed": true,
+      "haremRosterChecked": false
+    },
+    {
+      "id": "expansion-20261019-12",
+      "name": "白鹿",
+      "category": "女明星",
+      "regionId": "sheng",
+      "asset": "assets/beauties/random/女明星/白鹿.png",
+      "fileExists": true,
+      "reachableInCities": [
+        "jiangnan"
+      ],
+      "legacyMappingsPassed": true,
+      "nativeCanvasPassed": true,
+      "haremRosterChecked": false
+    },
+    {
+      "id": "expansion-20261019-13",
+      "name": "戚薇",
+      "category": "女明星",
+      "regionId": "sheng",
+      "asset": "assets/beauties/random/女明星/戚薇.png",
+      "fileExists": true,
+      "reachableInCities": [
+        "lingnan"
+      ],
+      "legacyMappingsPassed": true,
+      "nativeCanvasPassed": true,
+      "haremRosterChecked": false
+    },
+    {
+      "id": "expansion-20261019-14",
+      "name": "孟子义",
+      "category": "女明星",
+      "regionId": "sheng",
+      "asset": "assets/beauties/random/女明星/孟子义.png",
+      "fileExists": true,
+      "reachableInCities": [
+        "hedong"
+      ],
+      "legacyMappingsPassed": true,
+      "nativeCanvasPassed": true,
+      "haremRosterChecked": false
+    },
+    {
+      "id": "expansion-20261019-14-princess",
+      "name": "孟子义-公主",
+      "category": "女明星",
+      "regionId": "sheng",
+      "asset": "assets/beauties/random/女明星/孟子义-公主.png",
+      "fileExists": true,
+      "reachableInCities": [
+        "guannei"
+      ],
+      "legacyMappingsPassed": true,
+      "nativeCanvasPassed": true,
+      "haremRosterChecked": false
+    },
+    {
+      "id": "expansion-20261019-15",
+      "name": "董洁",
+      "category": "女明星",
+      "regionId": "sheng",
+      "asset": "assets/beauties/random/女明星/董洁.png",
+      "fileExists": true,
+      "reachableInCities": [
+        "shannan"
+      ],
+      "legacyMappingsPassed": true,
+      "nativeCanvasPassed": true,
+      "haremRosterChecked": false
+    },
+    {
+      "id": "expansion-20261019-16",
+      "name": "钟楚曦",
+      "category": "女明星",
+      "regionId": "sheng",
+      "asset": "assets/beauties/random/女明星/钟楚曦.png",
+      "fileExists": true,
+      "reachableInCities": [
+        "jiannan"
+      ],
+      "legacyMappingsPassed": true,
+      "nativeCanvasPassed": true,
+      "haremRosterChecked": false
+    },
+    {
+      "id": "expansion-20261019-16-plain",
+      "name": "钟楚曦-素雅",
+      "category": "女明星",
+      "regionId": "sheng",
+      "asset": "assets/beauties/random/女明星/钟楚曦-素雅.png",
+      "fileExists": true,
+      "reachableInCities": [
+        "longyou"
+      ],
+      "legacyMappingsPassed": true,
+      "nativeCanvasPassed": true,
+      "haremRosterChecked": false
+    },
+    {
+      "id": "expansion-20261019-17",
+      "name": "张天爱",
+      "category": "女明星",
+      "regionId": "sheng",
+      "asset": "assets/beauties/random/女明星/张天爱.png",
+      "fileExists": true,
+      "reachableInCities": [
+        "hebei"
+      ],
+      "legacyMappingsPassed": true,
+      "nativeCanvasPassed": true,
+      "haremRosterChecked": false
+    },
+    {
+      "id": "expansion-20261019-18",
+      "name": "毛晓彤",
+      "category": "女明星",
+      "regionId": "sheng",
+      "asset": "assets/beauties/random/女明星/毛晓彤.png",
+      "fileExists": true,
+      "reachableInCities": [
+        "henan"
+      ],
+      "legacyMappingsPassed": true,
+      "nativeCanvasPassed": true,
+      "haremRosterChecked": false
+    },
+    {
+      "id": "expansion-20261019-19",
+      "name": "古力娜扎",
+      "category": "女明星",
+      "regionId": "sheng",
+      "asset": "assets/beauties/random/女明星/古力娜扎.png",
+      "fileExists": true,
+      "reachableInCities": [
+        "huainan"
+      ],
+      "legacyMappingsPassed": true,
+      "nativeCanvasPassed": true,
+      "haremRosterChecked": false
+    },
+    {
+      "id": "expansion-20261019-20",
+      "name": "张婧仪",
+      "category": "女明星",
+      "regionId": "sheng",
+      "asset": "assets/beauties/random/女明星/张婧仪.png",
+      "fileExists": true,
+      "reachableInCities": [
+        "jiangnan"
+      ],
+      "legacyMappingsPassed": true,
+      "nativeCanvasPassed": true,
+      "haremRosterChecked": false
+    },
+    {
+      "id": "foreign-expansion-20261019-01",
+      "name": "波斯女子-1",
+      "category": "番邦女子",
+      "regionId": "persia",
+      "asset": "assets/beauties/random/番邦女子/波斯女子-1.png",
+      "fileExists": true,
+      "reachableInCities": [
+        "persia-core"
+      ],
+      "legacyMappingsPassed": true,
+      "nativeCanvasPassed": true,
+      "haremRosterChecked": false
+    },
+    {
+      "id": "foreign-expansion-20261019-02",
+      "name": "波斯女子-2",
+      "category": "番邦女子",
+      "regionId": "persia",
+      "asset": "assets/beauties/random/番邦女子/波斯女子-2.png",
+      "fileExists": true,
+      "reachableInCities": [
+        "persia-core"
+      ],
+      "legacyMappingsPassed": true,
+      "nativeCanvasPassed": true,
+      "haremRosterChecked": false
+    },
+    {
+      "id": "foreign-expansion-20261019-03",
+      "name": "大漠-阿拉伯女子-1",
+      "category": "番邦女子",
+      "regionId": "arabia",
+      "asset": "assets/beauties/random/番邦女子/大漠-阿拉伯女子-1.png",
+      "fileExists": true,
+      "reachableInCities": [
+        "arabia-core"
+      ],
+      "legacyMappingsPassed": true,
+      "nativeCanvasPassed": true,
+      "haremRosterChecked": false
+    },
+    {
+      "id": "foreign-expansion-20261019-04",
+      "name": "大漠-阿拉伯女子-2",
+      "category": "番邦女子",
+      "regionId": "arabia",
+      "asset": "assets/beauties/random/番邦女子/大漠-阿拉伯女子-2.png",
+      "fileExists": true,
+      "reachableInCities": [
+        "arabia-core"
+      ],
+      "legacyMappingsPassed": true,
+      "nativeCanvasPassed": true,
+      "haremRosterChecked": false
+    },
+    {
+      "id": "foreign-expansion-20261019-05",
+      "name": "西域女子-迪丽热巴",
+      "category": "番邦女子",
+      "regionId": "uyghur",
+      "asset": "assets/beauties/random/番邦女子/西域女子-迪丽热巴.png",
+      "fileExists": true,
+      "reachableInCities": [
+        "uyghur-core"
+      ],
+      "legacyMappingsPassed": true,
+      "nativeCanvasPassed": true,
+      "haremRosterChecked": false
+    },
+    {
+      "id": "foreign-expansion-20261019-06",
+      "name": "西域女子-哈妮克孜",
+      "category": "番邦女子",
+      "regionId": "uyghur",
+      "asset": "assets/beauties/random/番邦女子/西域女子-哈妮克孜.png",
+      "fileExists": true,
+      "reachableInCities": [
+        "uyghur-core"
+      ],
+      "legacyMappingsPassed": true,
+      "nativeCanvasPassed": true,
+      "haremRosterChecked": false
+    },
+    {
+      "id": "foreign-expansion-20261019-07",
+      "name": "西藏-藏地女子-1",
+      "category": "番邦女子",
+      "regionId": "tubo",
+      "asset": "assets/beauties/random/番邦女子/西藏-藏地女子-1.png",
+      "fileExists": true,
+      "reachableInCities": [
+        "tubo-core"
+      ],
+      "legacyMappingsPassed": true,
+      "nativeCanvasPassed": true,
+      "haremRosterChecked": false
+    },
+    {
+      "id": "foreign-expansion-20261019-08",
+      "name": "西藏-藏地女子-2",
+      "category": "番邦女子",
+      "regionId": "tubo",
+      "asset": "assets/beauties/random/番邦女子/西藏-藏地女子-2.png",
+      "fileExists": true,
+      "reachableInCities": [
+        "tubo-core"
+      ],
+      "legacyMappingsPassed": true,
+      "nativeCanvasPassed": true,
+      "haremRosterChecked": false
+    },
+    {
+      "id": "foreign-expansion-20261019-09",
+      "name": "蒙古草原女子-1",
+      "category": "番邦女子",
+      "regionId": "steppe",
+      "asset": "assets/beauties/random/番邦女子/蒙古草原女子-1.png",
+      "fileExists": true,
+      "reachableInCities": [
+        "steppe-core"
+      ],
+      "legacyMappingsPassed": true,
+      "nativeCanvasPassed": true,
+      "haremRosterChecked": false
+    },
+    {
+      "id": "foreign-expansion-20261019-10",
+      "name": "蒙古草原女子-2",
+      "category": "番邦女子",
+      "regionId": "steppe",
+      "asset": "assets/beauties/random/番邦女子/蒙古草原女子-2.png",
+      "fileExists": true,
+      "reachableInCities": [
+        "steppe-core"
+      ],
+      "legacyMappingsPassed": true,
+      "nativeCanvasPassed": true,
+      "haremRosterChecked": false
+    },
+    {
+      "id": "foreign-expansion-20261019-11",
+      "name": "中亚-粟特女子-1",
+      "category": "番邦女子",
+      "regionId": "tokhara",
+      "asset": "assets/beauties/random/番邦女子/中亚-粟特女子-1.png",
+      "fileExists": true,
+      "reachableInCities": [
+        "tokhara-core"
+      ],
+      "legacyMappingsPassed": true,
+      "nativeCanvasPassed": true,
+      "haremRosterChecked": false
+    },
+    {
+      "id": "foreign-expansion-20261019-12",
+      "name": "中亚-粟特女子-2",
+      "category": "番邦女子",
+      "regionId": "tokhara",
+      "asset": "assets/beauties/random/番邦女子/中亚-粟特女子-2.png",
+      "fileExists": true,
+      "reachableInCities": [
+        "tokhara-core"
+      ],
+      "legacyMappingsPassed": true,
+      "nativeCanvasPassed": true,
+      "haremRosterChecked": false
+    },
+    {
+      "id": "foreign-expansion-20261019-13",
+      "name": "南亚-印度女子-1",
+      "category": "番邦女子",
+      "regionId": "india",
+      "asset": "assets/beauties/random/番邦女子/南亚-印度女子-1.png",
+      "fileExists": true,
+      "reachableInCities": [
+        "india-core"
+      ],
+      "legacyMappingsPassed": true,
+      "nativeCanvasPassed": true,
+      "haremRosterChecked": false
+    },
+    {
+      "id": "foreign-expansion-20261019-14",
+      "name": "南亚-印度女子-2",
+      "category": "番邦女子",
+      "regionId": "india",
+      "asset": "assets/beauties/random/番邦女子/南亚-印度女子-2.png",
+      "fileExists": true,
+      "reachableInCities": [
+        "india-core"
+      ],
+      "legacyMappingsPassed": true,
+      "nativeCanvasPassed": true,
+      "haremRosterChecked": false
+    },
+    {
+      "id": "foreign-expansion-20261019-15",
+      "name": "南亚-斯里兰卡女子-1",
+      "category": "番邦女子",
+      "regionId": "sinhala",
+      "asset": "assets/beauties/random/番邦女子/南亚-斯里兰卡女子-1.png",
+      "fileExists": true,
+      "reachableInCities": [
+        "sinhala-core"
+      ],
+      "legacyMappingsPassed": true,
+      "nativeCanvasPassed": true,
+      "haremRosterChecked": false
+    },
+    {
+      "id": "foreign-expansion-20261019-16",
+      "name": "南亚-斯里兰卡女子-2",
+      "category": "番邦女子",
+      "regionId": "sinhala",
+      "asset": "assets/beauties/random/番邦女子/南亚-斯里兰卡女子-2.png",
+      "fileExists": true,
+      "reachableInCities": [
+        "sinhala-core"
+      ],
+      "legacyMappingsPassed": true,
+      "nativeCanvasPassed": true,
+      "haremRosterChecked": false
+    },
+    {
+      "id": "foreign-expansion-20261019-17",
+      "name": "东南亚大陆女子-1",
+      "category": "番邦女子",
+      "regionId": "pyu",
+      "asset": "assets/beauties/random/番邦女子/东南亚大陆女子-1.png",
+      "fileExists": true,
+      "reachableInCities": [
+        "pyu-core"
+      ],
+      "legacyMappingsPassed": true,
+      "nativeCanvasPassed": true,
+      "haremRosterChecked": false
+    },
+    {
+      "id": "foreign-expansion-20261019-18",
+      "name": "东南亚大陆女子-2",
+      "category": "番邦女子",
+      "regionId": "pyu",
+      "asset": "assets/beauties/random/番邦女子/东南亚大陆女子-2.png",
+      "fileExists": true,
+      "reachableInCities": [
+        "pyu-core"
+      ],
+      "legacyMappingsPassed": true,
+      "nativeCanvasPassed": true,
+      "haremRosterChecked": false
+    },
+    {
+      "id": "foreign-expansion-20261019-19",
+      "name": "东南亚海岛女子-1",
+      "category": "番邦女子",
+      "regionId": "java",
+      "asset": "assets/beauties/random/番邦女子/东南亚海岛女子-1.png",
+      "fileExists": true,
+      "reachableInCities": [
+        "java-core"
+      ],
+      "legacyMappingsPassed": true,
+      "nativeCanvasPassed": true,
+      "haremRosterChecked": false
+    },
+    {
+      "id": "foreign-expansion-20261019-20",
+      "name": "东南亚海岛女子-2",
+      "category": "番邦女子",
+      "regionId": "java",
+      "asset": "assets/beauties/random/番邦女子/东南亚海岛女子-2.png",
+      "fileExists": true,
+      "reachableInCities": [
+        "java-core"
+      ],
+      "legacyMappingsPassed": true,
+      "nativeCanvasPassed": true,
+      "haremRosterChecked": false
+    },
+    {
+      "id": "foreign-expansion-20261019-21",
+      "name": "云南-南诏女子-1",
+      "category": "番邦女子",
+      "regionId": "nanzhao",
+      "asset": "assets/beauties/random/番邦女子/云南-南诏女子-1.png",
+      "fileExists": true,
+      "reachableInCities": [
+        "nanzhao-core"
+      ],
+      "legacyMappingsPassed": true,
+      "nativeCanvasPassed": true,
+      "haremRosterChecked": false
+    },
+    {
+      "id": "foreign-expansion-20261019-22",
+      "name": "云南-南诏女子-2",
+      "category": "番邦女子",
+      "regionId": "nanzhao",
+      "asset": "assets/beauties/random/番邦女子/云南-南诏女子-2.png",
+      "fileExists": true,
+      "reachableInCities": [
+        "nanzhao-core"
+      ],
+      "legacyMappingsPassed": true,
+      "nativeCanvasPassed": true,
+      "haremRosterChecked": false
+    },
+    {
+      "id": "foreign-expansion-20261019-23",
+      "name": "朝鲜半岛-高丽女子-1",
+      "category": "番邦女子",
+      "regionId": "korea",
+      "asset": "assets/beauties/random/番邦女子/朝鲜半岛-高丽女子-1.png",
+      "fileExists": true,
+      "reachableInCities": [
+        "korea-core"
+      ],
+      "legacyMappingsPassed": true,
+      "nativeCanvasPassed": true,
+      "haremRosterChecked": false
+    },
+    {
+      "id": "foreign-expansion-20261019-24",
+      "name": "朝鲜半岛-高丽女子-2",
+      "category": "番邦女子",
+      "regionId": "korea",
+      "asset": "assets/beauties/random/番邦女子/朝鲜半岛-高丽女子-2.png",
+      "fileExists": true,
+      "reachableInCities": [
+        "korea-core"
+      ],
+      "legacyMappingsPassed": true,
+      "nativeCanvasPassed": true,
+      "haremRosterChecked": false
+    },
+    {
+      "id": "foreign-expansion-20261019-25",
+      "name": "日本女子-葵司",
+      "category": "番邦女子",
+      "regionId": "japan",
+      "asset": "assets/beauties/random/番邦女子/日本女子-葵司.png",
+      "fileExists": true,
+      "reachableInCities": [
+        "japan-core"
+      ],
+      "legacyMappingsPassed": true,
+      "nativeCanvasPassed": true,
+      "haremRosterChecked": false
+    },
+    {
+      "id": "foreign-expansion-20261019-26",
+      "name": "日本女子-桥本有菜",
+      "category": "番邦女子",
+      "regionId": "japan",
+      "asset": "assets/beauties/random/番邦女子/日本女子-桥本有菜.png",
+      "fileExists": true,
+      "reachableInCities": [
+        "japan-core"
+      ],
+      "legacyMappingsPassed": true,
+      "nativeCanvasPassed": true,
+      "haremRosterChecked": false
+    },
+    {
+      "id": "japan-julia-20261020",
+      "name": "日本女子-JULIA",
+      "category": "番邦女子",
+      "regionId": "japan",
+      "asset": "assets/beauties/random/番邦女子/日本女子-JULIA.png",
+      "fileExists": true,
+      "reachableInCities": [
+        "japan-core"
+      ],
+      "legacyMappingsPassed": true,
+      "nativeCanvasPassed": true,
+      "haremRosterChecked": false
+    },
+    {
+      "id": "foreign-expansion-20261019-27",
+      "name": "东南欧-拜占庭女子-1",
+      "category": "番邦女子",
+      "regionId": "rome",
+      "asset": "assets/beauties/random/番邦女子/东南欧-拜占庭女子-1.png",
+      "fileExists": true,
+      "reachableInCities": [
+        "rome-core"
+      ],
+      "legacyMappingsPassed": true,
+      "nativeCanvasPassed": true,
+      "haremRosterChecked": false
+    },
+    {
+      "id": "foreign-expansion-20261019-28",
+      "name": "东南欧-拜占庭女子-2",
+      "category": "番邦女子",
+      "regionId": "rome",
+      "asset": "assets/beauties/random/番邦女子/东南欧-拜占庭女子-2.png",
+      "fileExists": true,
+      "reachableInCities": [
+        "rome-core"
+      ],
+      "legacyMappingsPassed": true,
+      "nativeCanvasPassed": true,
+      "haremRosterChecked": false
+    },
+    {
+      "id": "foreign-expansion-20261019-29",
+      "name": "东欧-斯拉夫女子-1",
+      "category": "番邦女子",
+      "regionId": "slavs",
+      "asset": "assets/beauties/random/番邦女子/东欧-斯拉夫女子-1.png",
+      "fileExists": true,
+      "reachableInCities": [
+        "slavs-core"
+      ],
+      "legacyMappingsPassed": true,
+      "nativeCanvasPassed": true,
+      "haremRosterChecked": false
+    },
+    {
+      "id": "foreign-expansion-20261019-30",
+      "name": "东欧-斯拉夫女子-2",
+      "category": "番邦女子",
+      "regionId": "slavs",
+      "asset": "assets/beauties/random/番邦女子/东欧-斯拉夫女子-2.png",
+      "fileExists": true,
+      "reachableInCities": [
+        "slavs-core"
+      ],
+      "legacyMappingsPassed": true,
+      "nativeCanvasPassed": true,
+      "haremRosterChecked": false
+    },
+    {
+      "id": "foreign-expansion-20261019-31",
+      "name": "西欧-法兰西女子-1",
+      "category": "番邦女子",
+      "regionId": "franks",
+      "asset": "assets/beauties/random/番邦女子/西欧-法兰西女子-1.png",
+      "fileExists": true,
+      "reachableInCities": [
+        "franks-core"
+      ],
+      "legacyMappingsPassed": true,
+      "nativeCanvasPassed": true,
+      "haremRosterChecked": false
+    },
+    {
+      "id": "foreign-expansion-20261019-32",
+      "name": "西欧-法兰西女子-2",
+      "category": "番邦女子",
+      "regionId": "franks",
+      "asset": "assets/beauties/random/番邦女子/西欧-法兰西女子-2.png",
+      "fileExists": true,
+      "reachableInCities": [
+        "franks-core"
+      ],
+      "legacyMappingsPassed": true,
+      "nativeCanvasPassed": true,
+      "haremRosterChecked": false
+    },
+    {
+      "id": "foreign-expansion-20261019-33",
+      "name": "中欧-日耳曼女子-1",
+      "category": "番邦女子",
+      "regionId": "franks",
+      "asset": "assets/beauties/random/番邦女子/中欧-日耳曼女子-1.png",
+      "fileExists": true,
+      "reachableInCities": [
+        "franks-core"
+      ],
+      "legacyMappingsPassed": true,
+      "nativeCanvasPassed": true,
+      "haremRosterChecked": false
+    },
+    {
+      "id": "foreign-expansion-20261019-34",
+      "name": "中欧-日耳曼女子-2",
+      "category": "番邦女子",
+      "regionId": "franks",
+      "asset": "assets/beauties/random/番邦女子/中欧-日耳曼女子-2.png",
+      "fileExists": true,
+      "reachableInCities": [
+        "franks-core"
+      ],
+      "legacyMappingsPassed": true,
+      "nativeCanvasPassed": true,
+      "haremRosterChecked": false
+    },
+    {
+      "id": "foreign-expansion-20261019-35",
+      "name": "北欧-斯堪的纳维亚女子-1",
+      "category": "番邦女子",
+      "regionId": "franks",
+      "asset": "assets/beauties/random/番邦女子/北欧-斯堪的纳维亚女子-1.png",
+      "fileExists": true,
+      "reachableInCities": [
+        "franks-core"
+      ],
+      "legacyMappingsPassed": true,
+      "nativeCanvasPassed": true,
+      "haremRosterChecked": false
+    },
+    {
+      "id": "foreign-expansion-20261019-36",
+      "name": "北欧-斯堪的纳维亚女子-2",
+      "category": "番邦女子",
+      "regionId": "franks",
+      "asset": "assets/beauties/random/番邦女子/北欧-斯堪的纳维亚女子-2.png",
+      "fileExists": true,
+      "reachableInCities": [
+        "franks-core"
+      ],
+      "legacyMappingsPassed": true,
+      "nativeCanvasPassed": true,
+      "haremRosterChecked": false
+    },
+    {
+      "id": "foreign-expansion-20261019-37",
+      "name": "南欧-伊比利亚女子-1",
+      "category": "番邦女子",
+      "regionId": "rome",
+      "asset": "assets/beauties/random/番邦女子/南欧-伊比利亚女子-1.png",
+      "fileExists": true,
+      "reachableInCities": [
+        "rome-core"
+      ],
+      "legacyMappingsPassed": true,
+      "nativeCanvasPassed": true,
+      "haremRosterChecked": false
+    },
+    {
+      "id": "foreign-expansion-20261019-38",
+      "name": "南欧-伊比利亚女子-2",
+      "category": "番邦女子",
+      "regionId": "rome",
+      "asset": "assets/beauties/random/番邦女子/南欧-伊比利亚女子-2.png",
+      "fileExists": true,
+      "reachableInCities": [
+        "rome-core"
+      ],
+      "legacyMappingsPassed": true,
+      "nativeCanvasPassed": true,
+      "haremRosterChecked": false
+    },
+    {
+      "id": "foreign-expansion-20261019-39",
+      "name": "南欧-意大利女子-1",
+      "category": "番邦女子",
+      "regionId": "rome",
+      "asset": "assets/beauties/random/番邦女子/南欧-意大利女子-1.png",
+      "fileExists": true,
+      "reachableInCities": [
+        "rome-core"
+      ],
+      "legacyMappingsPassed": true,
+      "nativeCanvasPassed": true,
+      "haremRosterChecked": false
+    },
+    {
+      "id": "foreign-expansion-20261019-40",
+      "name": "南欧-意大利女子-2",
+      "category": "番邦女子",
+      "regionId": "rome",
+      "asset": "assets/beauties/random/番邦女子/南欧-意大利女子-2.png",
+      "fileExists": true,
+      "reachableInCities": [
+        "rome-core"
+      ],
+      "legacyMappingsPassed": true,
+      "nativeCanvasPassed": true,
+      "haremRosterChecked": false
+    },
+    {
+      "id": "xinjiang-tongliya-20261020",
+      "name": "西域女子-佟丽娅",
+      "category": "番邦女子",
+      "regionId": "uyghur",
+      "asset": "assets/beauties/random/番邦女子/西域女子-佟丽娅.png",
+      "fileExists": true,
+      "reachableInCities": [
+        "uyghur-core"
+      ],
+      "legacyMappingsPassed": true,
+      "nativeCanvasPassed": true,
+      "haremRosterChecked": false
+    },
+    {
+      "id": "mainland-expansion-20261022-01",
+      "name": "54eb923be0cceff2",
+      "category": "原创女子",
+      "regionId": "sheng",
+      "asset": "assets/beauties/random/原创女子/54eb923be0cceff2.png",
+      "fileExists": true,
+      "reachableInCities": [
+        "lingnan"
+      ],
+      "legacyMappingsPassed": true,
+      "nativeCanvasPassed": true,
+      "haremRosterChecked": false
+    },
+    {
+      "id": "mainland-expansion-20261022-02",
+      "name": "90c522e3b6016075",
+      "category": "原创女子",
+      "regionId": "sheng",
+      "asset": "assets/beauties/random/原创女子/90c522e3b6016075.png",
+      "fileExists": true,
+      "reachableInCities": [
+        "hedong"
+      ],
+      "legacyMappingsPassed": true,
+      "nativeCanvasPassed": true,
+      "haremRosterChecked": false
+    },
+    {
+      "id": "mainland-expansion-20261022-03",
+      "name": "4c6d4950dc1e9573",
+      "category": "原创女子",
+      "regionId": "sheng",
+      "asset": "assets/beauties/random/原创女子/4c6d4950dc1e9573.png",
+      "fileExists": true,
+      "reachableInCities": [
+        "guannei"
+      ],
+      "legacyMappingsPassed": true,
+      "nativeCanvasPassed": true,
+      "haremRosterChecked": false
+    },
+    {
+      "id": "mainland-expansion-20261022-04",
+      "name": "a377e0f8d3dda2ea",
+      "category": "原创女子",
+      "regionId": "sheng",
+      "asset": "assets/beauties/random/原创女子/a377e0f8d3dda2ea.png",
+      "fileExists": true,
+      "reachableInCities": [
+        "shannan"
+      ],
+      "legacyMappingsPassed": true,
+      "nativeCanvasPassed": true,
+      "haremRosterChecked": false
+    },
+    {
+      "id": "mainland-expansion-20261022-05",
+      "name": "e4d7dad4baf5d1d3",
+      "category": "原创女子",
+      "regionId": "sheng",
+      "asset": "assets/beauties/random/原创女子/e4d7dad4baf5d1d3.png",
+      "fileExists": true,
+      "reachableInCities": [
+        "jiannan"
+      ],
+      "legacyMappingsPassed": true,
+      "nativeCanvasPassed": true,
+      "haremRosterChecked": false
+    },
+    {
+      "id": "mainland-expansion-20261022-06",
+      "name": "dd77d6a2b124d0ab",
+      "category": "原创女子",
+      "regionId": "sheng",
+      "asset": "assets/beauties/random/原创女子/dd77d6a2b124d0ab.png",
+      "fileExists": true,
+      "reachableInCities": [
+        "longyou"
+      ],
+      "legacyMappingsPassed": true,
+      "nativeCanvasPassed": true,
+      "haremRosterChecked": false
+    },
+    {
+      "id": "mainland-expansion-20261022-07",
+      "name": "64562484114d3b76",
+      "category": "原创女子",
+      "regionId": "sheng",
+      "asset": "assets/beauties/random/原创女子/64562484114d3b76.png",
+      "fileExists": true,
+      "reachableInCities": [
+        "hebei"
+      ],
+      "legacyMappingsPassed": true,
+      "nativeCanvasPassed": true,
+      "haremRosterChecked": false
+    },
+    {
+      "id": "mainland-expansion-20261022-08",
+      "name": "4a83e320a9b7fdf7",
+      "category": "原创女子",
+      "regionId": "sheng",
+      "asset": "assets/beauties/random/原创女子/4a83e320a9b7fdf7.png",
+      "fileExists": true,
+      "reachableInCities": [
+        "henan"
+      ],
+      "legacyMappingsPassed": true,
+      "nativeCanvasPassed": true,
+      "haremRosterChecked": false
+    },
+    {
+      "id": "mainland-expansion-20261022-09",
+      "name": "4af56c033026aa9c",
+      "category": "原创女子",
+      "regionId": "sheng",
+      "asset": "assets/beauties/random/原创女子/4af56c033026aa9c.png",
+      "fileExists": true,
+      "reachableInCities": [
+        "huainan"
+      ],
+      "legacyMappingsPassed": true,
+      "nativeCanvasPassed": true,
+      "haremRosterChecked": false
+    },
+    {
+      "id": "mainland-expansion-20261022-10",
+      "name": "c563fa0cde129974",
+      "category": "原创女子",
+      "regionId": "sheng",
+      "asset": "assets/beauties/random/原创女子/c563fa0cde129974.png",
+      "fileExists": true,
+      "reachableInCities": [
+        "jiangnan"
+      ],
+      "legacyMappingsPassed": true,
+      "nativeCanvasPassed": true,
+      "haremRosterChecked": false
+    },
+    {
+      "id": "mainland-photo-five-20261022-01",
+      "name": "曾黎-藕荷执莲",
+      "category": "女明星",
+      "regionId": "sheng",
+      "asset": "assets/beauties/random/女明星/曾黎-藕荷执莲.png",
+      "fileExists": true,
+      "reachableInCities": [
+        "lingnan"
+      ],
+      "legacyMappingsPassed": true,
+      "nativeCanvasPassed": true,
+      "haremRosterChecked": false
+    },
+    {
+      "id": "mainland-photo-five-20261022-02",
+      "name": "陈好-杏纱琵琶",
+      "category": "女明星",
+      "regionId": "sheng",
+      "asset": "assets/beauties/random/女明星/陈好-杏纱琵琶.png",
+      "fileExists": true,
+      "reachableInCities": [
+        "hedong"
+      ],
+      "legacyMappingsPassed": true,
+      "nativeCanvasPassed": true,
+      "haremRosterChecked": false
+    },
+    {
+      "id": "mainland-photo-five-20261022-03",
+      "name": "俞飞鸿-青绡捧卷",
+      "category": "女明星",
+      "regionId": "sheng",
+      "asset": "assets/beauties/random/女明星/俞飞鸿-青绡捧卷.png",
+      "fileExists": true,
+      "reachableInCities": [
+        "guannei"
+      ],
+      "legacyMappingsPassed": true,
+      "nativeCanvasPassed": true,
+      "haremRosterChecked": false
+    },
+    {
+      "id": "mainland-photo-five-20261022-04",
+      "name": "舒畅-薄荷静修",
+      "category": "女明星",
+      "regionId": "sheng",
+      "asset": "assets/beauties/random/女明星/舒畅-薄荷静修.png",
+      "fileExists": true,
+      "reachableInCities": [
+        "shannan"
+      ],
+      "legacyMappingsPassed": true,
+      "nativeCanvasPassed": true,
+      "haremRosterChecked": false
+    },
+    {
+      "id": "mainland-photo-five-20261022-05",
+      "name": "张馨予-朱纱果盏",
+      "category": "女明星",
+      "regionId": "sheng",
+      "asset": "assets/beauties/random/女明星/张馨予-朱纱果盏.png",
+      "fileExists": true,
+      "reachableInCities": [
+        "jiannan"
+      ],
+      "legacyMappingsPassed": true,
+      "nativeCanvasPassed": true,
+      "haremRosterChecked": false
+    },
+    {
+      "id": "mainland-photo-six-20261022-01",
+      "name": "张子枫-竹青执笛",
+      "category": "女明星",
+      "regionId": "sheng",
+      "asset": "assets/beauties/random/女明星/张子枫-竹青执笛-v2.png",
+      "fileExists": true,
+      "reachableInCities": [
+        "hebei",
+        "henan",
+        "huainan",
+        "jiangnan",
+        "lingnan",
+        "hedong",
+        "guannei",
+        "shannan",
+        "jiannan",
+        "longyou"
+      ],
+      "legacyMappingsPassed": true,
+      "nativeCanvasPassed": true,
+      "haremRosterChecked": true
+    },
+    {
+      "id": "mainland-photo-six-20261022-02",
+      "name": "陈都灵-月白茶韵",
+      "category": "女明星",
+      "regionId": "sheng",
+      "asset": "assets/beauties/random/女明星/陈都灵-月白茶韵.png",
+      "fileExists": true,
+      "reachableInCities": [
+        "hebei",
+        "henan",
+        "huainan",
+        "jiangnan",
+        "lingnan",
+        "hedong",
+        "guannei",
+        "shannan",
+        "jiannan",
+        "longyou"
+      ],
+      "legacyMappingsPassed": true,
+      "nativeCanvasPassed": true,
+      "haremRosterChecked": true
+    },
+    {
+      "id": "mainland-photo-six-20261022-03",
+      "name": "章若楠-杏纱花篮",
+      "category": "女明星",
+      "regionId": "sheng",
+      "asset": "assets/beauties/random/女明星/章若楠-杏纱花篮.png",
+      "fileExists": true,
+      "reachableInCities": [
+        "hebei",
+        "henan",
+        "huainan",
+        "jiangnan",
+        "lingnan",
+        "hedong",
+        "guannei",
+        "shannan",
+        "jiannan",
+        "longyou"
+      ],
+      "legacyMappingsPassed": true,
+      "nativeCanvasPassed": true,
+      "haremRosterChecked": true
+    },
+    {
+      "id": "mainland-photo-six-20261022-04",
+      "name": "关晓彤-绯绡剑舞",
+      "category": "女明星",
+      "regionId": "sheng",
+      "asset": "assets/beauties/random/女明星/关晓彤-绯绡剑舞.png",
+      "fileExists": true,
+      "reachableInCities": [
+        "hebei",
+        "henan",
+        "huainan",
+        "jiangnan",
+        "lingnan",
+        "hedong",
+        "guannei",
+        "shannan",
+        "jiannan",
+        "longyou"
+      ],
+      "legacyMappingsPassed": true,
+      "nativeCanvasPassed": true,
+      "haremRosterChecked": true
+    },
+    {
+      "id": "mainland-photo-six-20261022-05",
+      "name": "张婧仪-黛蓝抱阮",
+      "category": "女明星",
+      "regionId": "sheng",
+      "asset": "assets/beauties/random/女明星/张婧仪-黛蓝抱阮.png",
+      "fileExists": true,
+      "reachableInCities": [
+        "hebei",
+        "henan",
+        "huainan",
+        "jiangnan",
+        "lingnan",
+        "hedong",
+        "guannei",
+        "shannan",
+        "jiannan",
+        "longyou"
+      ],
+      "legacyMappingsPassed": true,
+      "nativeCanvasPassed": true,
+      "haremRosterChecked": true
+    },
+    {
+      "id": "mainland-photo-six-20261022-06",
+      "name": "刘浩存-柳绡静修",
+      "category": "女明星",
+      "regionId": "sheng",
+      "asset": "assets/beauties/random/女明星/刘浩存-柳绡静修.png",
+      "fileExists": true,
+      "reachableInCities": [
+        "hebei",
+        "henan",
+        "huainan",
+        "jiangnan",
+        "lingnan",
+        "hedong",
+        "guannei",
+        "shannan",
+        "jiannan",
+        "longyou"
+      ],
+      "legacyMappingsPassed": true,
+      "nativeCanvasPassed": true,
+      "haremRosterChecked": true
+    },
+    {
+      "id": "mainland-photo-eight-20261022-01",
+      "name": "王子文-杏绡桃香",
+      "category": "女明星",
+      "regionId": "sheng",
+      "asset": "assets/beauties/random/女明星/王子文-杏绡桃香-v2.png",
+      "fileExists": true,
+      "reachableInCities": [
+        "hebei",
+        "henan",
+        "huainan",
+        "jiangnan",
+        "lingnan",
+        "hedong",
+        "guannei",
+        "shannan",
+        "jiannan",
+        "longyou"
+      ],
+      "legacyMappingsPassed": true,
+      "nativeCanvasPassed": true,
+      "haremRosterChecked": true
+    },
+    {
+      "id": "mainland-photo-eight-20261022-02",
+      "name": "刘璇-绯练轻舞",
+      "category": "女明星",
+      "regionId": "sheng",
+      "asset": "assets/beauties/random/女明星/刘璇-绯练轻舞-v2.png",
+      "fileExists": true,
+      "reachableInCities": [
+        "hebei",
+        "henan",
+        "huainan",
+        "jiangnan",
+        "lingnan",
+        "hedong",
+        "guannei",
+        "shannan",
+        "jiannan",
+        "longyou"
+      ],
+      "legacyMappingsPassed": true,
+      "nativeCanvasPassed": true,
+      "haremRosterChecked": true
+    },
+    {
+      "id": "mainland-photo-eight-20261022-03",
+      "name": "张雨霏-碧水捧贝",
+      "category": "女明星",
+      "regionId": "sheng",
+      "asset": "assets/beauties/random/女明星/张雨霏-碧水捧贝-v3.png",
+      "fileExists": true,
+      "reachableInCities": [
+        "hebei",
+        "henan",
+        "huainan",
+        "jiangnan",
+        "lingnan",
+        "hedong",
+        "guannei",
+        "shannan",
+        "jiannan",
+        "longyou"
+      ],
+      "legacyMappingsPassed": true,
+      "nativeCanvasPassed": true,
+      "haremRosterChecked": true
+    },
+    {
+      "id": "mainland-photo-eight-20261022-04",
+      "name": "惠若琪-青绡绣球",
+      "category": "女明星",
+      "regionId": "sheng",
+      "asset": "assets/beauties/random/女明星/惠若琪-青绡绣球.png",
+      "fileExists": true,
+      "reachableInCities": [
+        "hebei",
+        "henan",
+        "huainan",
+        "jiangnan",
+        "lingnan",
+        "hedong",
+        "guannei",
+        "shannan",
+        "jiannan",
+        "longyou"
+      ],
+      "legacyMappingsPassed": true,
+      "nativeCanvasPassed": true,
+      "haremRosterChecked": true
+    },
+    {
+      "id": "mainland-photo-eight-20261022-05",
+      "name": "夏思凝-杏绡展卷",
+      "category": "女明星",
+      "regionId": "sheng",
+      "asset": "assets/beauties/random/女明星/夏思凝-杏绡展卷.png",
+      "fileExists": true,
+      "reachableInCities": [
+        "hebei",
+        "henan",
+        "huainan",
+        "jiangnan",
+        "lingnan",
+        "hedong",
+        "guannei",
+        "shannan",
+        "jiannan",
+        "longyou"
+      ],
+      "legacyMappingsPassed": true,
+      "nativeCanvasPassed": true,
+      "haremRosterChecked": true
+    },
+    {
+      "id": "mainland-photo-eight-20261022-06",
+      "name": "潘晓婷-墨绡团扇",
+      "category": "女明星",
+      "regionId": "sheng",
+      "asset": "assets/beauties/random/女明星/潘晓婷-墨绡团扇-v2.png",
+      "fileExists": true,
+      "reachableInCities": [
+        "hebei",
+        "henan",
+        "huainan",
+        "jiangnan",
+        "lingnan",
+        "hedong",
+        "guannei",
+        "shannan",
+        "jiannan",
+        "longyou"
+      ],
+      "legacyMappingsPassed": true,
+      "nativeCanvasPassed": true,
+      "haremRosterChecked": true
+    },
+    {
+      "id": "mainland-photo-eight-20261022-07",
+      "name": "赵丽娜-素绡蹴鞠",
+      "category": "女明星",
+      "regionId": "sheng",
+      "asset": "assets/beauties/random/女明星/赵丽娜-素绡蹴鞠.png",
+      "fileExists": true,
+      "reachableInCities": [
+        "hebei",
+        "henan",
+        "huainan",
+        "jiangnan",
+        "lingnan",
+        "hedong",
+        "guannei",
+        "shannan",
+        "jiannan",
+        "longyou"
+      ],
+      "legacyMappingsPassed": true,
+      "nativeCanvasPassed": true,
+      "haremRosterChecked": true
+    },
+    {
+      "id": "mainland-photo-eight-20261022-08",
+      "name": "宋雨琦-桃绡铃鼓",
+      "category": "女明星",
+      "regionId": "sheng",
+      "asset": "assets/beauties/random/女明星/宋雨琦-桃绡铃鼓.png",
+      "fileExists": true,
+      "reachableInCities": [
+        "hebei",
+        "henan",
+        "huainan",
+        "jiangnan",
+        "lingnan",
+        "hedong",
+        "guannei",
+        "shannan",
+        "jiannan",
+        "longyou"
+      ],
+      "legacyMappingsPassed": true,
+      "nativeCanvasPassed": true,
+      "haremRosterChecked": true
+    },
+    {
+      "id": "mainland-photo-wu-20261022-01",
+      "name": "吴柳芳-藕绡如意",
+      "category": "女明星",
+      "regionId": "sheng",
+      "asset": "assets/beauties/random/女明星/吴柳芳-藕绡如意.png",
+      "fileExists": true,
+      "reachableInCities": [
+        "hebei",
+        "henan",
+        "huainan",
+        "jiangnan",
+        "lingnan",
+        "hedong",
+        "guannei",
+        "shannan",
+        "jiannan",
+        "longyou"
+      ],
+      "legacyMappingsPassed": true,
+      "nativeCanvasPassed": true,
+      "haremRosterChecked": true
+    }
+  ],
+  "latestArtworkRevision": "docs/art/wang-ziwen-warm-rework-2026-10-22.json",
+  "latestRevisionRelatedTestsPassed": 10
+}

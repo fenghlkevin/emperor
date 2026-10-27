@@ -1,11 +1,12 @@
 // Simple game ratio, no age/sex simulation. 75% keeps default starting jobs
 // intact. Existing over-capacity jobs are reported, never silently deleted.
+import {laborRatio} from './development-balance.mjs';
 export const LABOR_RATIO=.75;
 export function laborProfile(p) {
  const total=p.population.total;
  const assigned=Object.values(p.population.professions).reduce((a,b)=>a+b,0);
- const capacity=Math.floor(total*LABOR_RATIO);
- return {ratio:LABOR_RATIO,total,capacity,nonLabor:total-capacity,assigned,
+ const ratio=laborRatio(p),capacity=Math.floor(total*ratio);
+ return {ratio,total,capacity,nonLabor:total-capacity,assigned,
   available:Math.max(0,capacity-assigned),overCapacity:Math.max(0,assigned-capacity)};
 }
 export function productionLaborLimit(p) {

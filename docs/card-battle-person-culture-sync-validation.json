@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-24T04:51:46.286964+00:00",
+  "scope": "Metadata synchronization and model tests only; no regional artwork or complete person acceptance claimed",
+  "checks": {
+    "tests": 6,
+    "passed": 6,
+    "cultureAssigned": 74,
+    "identityUnresolved": 26,
+    "regionalArtAccepted": 0,
+    "fullyAccepted": 0
+  },
+  "hashes": {
+    "src/card-battle-person-culture-data.mjs": "780e274eb334879b26859a94cedd92a1d9bce8a87ab1bbfa0b82db86fe93a33c",
+    "src/card-battle-person-presentations.mjs": "4dae12c0d6cb119112d316fb42788c67a55de15d079f50cceb819e1d6dddd288",
+    "scripts/sync-card-person-cultures.mjs": "00f518f68a645b2183bc8c625b721d167b2b923b9e31bcf5995f0d00b5ee8117",
+    "tests/card-battle-person-cultures.test.mjs": "e7cf9d6588fca410858968c89cb4b484f13366430f55dbc7beec201decd96983",
+    "tests/card-battle-person-presentations.test.mjs": "e1da945aafc4ec3fbcf356a2018327bd0120af7b903833920620d93bf5c4873d"
+  }
+}

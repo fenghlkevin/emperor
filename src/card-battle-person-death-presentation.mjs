@@ -3,7 +3,7 @@ import {personPresentation} from './card-battle-person-presentations.mjs';
 // Original performance lines, keyed by catalog identity. Never dispatch rules here.
 export const PERSON_DEATH_LINES=Object.freeze({
  'cbdb-28093':'此简留后，接续军谋。',
- 'original-57':'战斧虽歇，守阵勿退。',
+ 'original-57':'马槊暂歇，守阵勿退。',
  'original-59':'守备之令，托付诸军。',
  'original-62':'留此谏简，安顿伤疲。',
  'manual-1518':'老将退阵，坚壁仍存。'

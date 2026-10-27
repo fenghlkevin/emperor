@@ -1,3 +1,4 @@
+import {balanced} from './development-balance.mjs';
 import {initializeIndustryLabor} from './industry-labor.mjs';
 import {officialCollection,validateOfficialProductionSnapshot} from './official-production.mjs';
 import {foodProduction,nonAgriculturalTaxDetail} from './economy.mjs';
@@ -26,6 +27,7 @@ export function validateResourceEconomy(d){
  for(const p of d.provinces)if(p.resourceRulesVersion!==d.resourceRulesVersion)throw Error('州郡资源规则不一致');
 }
 const nonnegative=n=>Number.isSafeInteger(n)&&n>=0;
+export const assessedFoodTax=(p,produced,rate,civilianNeed)=>Math.floor((balanced(p)?Math.max(0,produced-civilianNeed)*.1:produced)*rate);
 export function quoteProvinceResources(p,{turn,grainTaxRate=p.budget.taxRate,
  cashTaxRate=p.budget.taxRate,cashExpense=0}={}) {
  if(!Number.isSafeInteger(turn)||turn<1||!nonnegative(cashExpense)||
@@ -37,7 +39,7 @@ export function quoteProvinceResources(p,{turn,grainTaxRate=p.budget.taxRate,
  const civilianNeed=totalNeed-officialNeed;
  // Preserve civilian subsistence before collecting grain. A bad harvest cannot
  // create both compulsory tax and relief for the same grain in one settlement.
- const levy=officialCollection(p,Math.floor(produced*grainTaxRate),Math.max(0,produced-civilianNeed));
+ const levy=officialCollection(p,assessedFoodTax(p,produced,grainTaxRate,civilianNeed),Math.max(0,produced-civilianNeed));
  const grainTax=levy.net;
  const civilianAvailable=produced-levy.gross;
  const civilianShortfall=Math.max(0,civilianNeed-civilianAvailable);
@@ -46,7 +48,7 @@ export function quoteProvinceResources(p,{turn,grainTaxRate=p.budget.taxRate,
  const consumed=Math.min(publicAvailable,need),shortfall=need-consumed;
  // Agriculture and pastoral pay food tax; commerce and industry pay silver only.
  const cashLevy=nonAgriculturalTaxDetail(p,cashTaxRate,turn),cashTax=cashLevy.net;
- return {version:1,turn,provinceId:p.id,production:{developed,cultivated,produced,foodSources},...(p.officialProduction?{officers:structuredClone(p.officialProduction),officialImpact:{baseProduction:base,productionDelta:produced-base,grainAssessed:levy.gross,grainLoss:levy.loss,cashBase:cashLevy.base,cashAssessed:cashLevy.gross,cashLoss:cashLevy.loss}}:{}),
+ return {version:1,...(balanced(p)?{developmentBalanceVersion:2}:{}),turn,provinceId:p.id,production:{developed,cultivated,produced,foodSources},...(p.officialProduction?{officers:structuredClone(p.officialProduction),officialImpact:{baseProduction:base,productionDelta:produced-base,grainAssessed:levy.gross,grainLoss:levy.loss,cashBase:cashLevy.base,cashAssessed:cashLevy.gross,cashLoss:cashLevy.loss}}:{}),
   civilian:{need:civilianNeed,available:civilianAvailable,shortfall:civilianShortfall,
    surplus:Math.max(0,civilianAvailable-civilianNeed)},
   grain:{opening,tax:grainTax,officialNeed,reliefNeed:civilianShortfall,need,consumed,storageLoss,shortfall,
@@ -87,6 +89,7 @@ export function settleProvinceGrain(p,turn){
 export function validateResourceSettlement(p,turn=Infinity) {
  const r=p.resourceSettlement;if(r===undefined)return;
  const fail=()=>{throw Error('州郡资源快照无效');};
+ if(r.developmentBalanceVersion!==undefined&&(r.developmentBalanceVersion!==2||!balanced(p)))fail();
  if(!r||r.version!==1||r.provinceId!==p.id||!Number.isSafeInteger(r.turn)||r.turn<1||r.turn>turn||
   !r.production||!r.civilian||!r.grain||!r.cash||!r.rates)fail();
  for(const [group,keys] of [[r.production,['produced']],[r.civilian,['need','available','shortfall','surplus']],
@@ -99,7 +102,7 @@ export function validateResourceSettlement(p,turn=Infinity) {
  if(r.officers||r.officialImpact){
   validateOfficialProductionSnapshot(r.officers,p.id,r.turn);
   const i=r.officialImpact;if(!r.officers||!i||!['baseProduction','grainAssessed','grainLoss','cashBase','cashAssessed','cashLoss'].every(k=>nonnegative(i[k]))||!Number.isSafeInteger(i.productionDelta)||i.baseProduction+i.productionDelta!==r.production.produced||i.grainAssessed-i.grainLoss!==r.grain.tax||i.cashAssessed-i.cashLoss!==r.cash.tax||Math.abs(i.productionDelta)>Math.ceil(i.baseProduction*.1)+(sources?1:0)||(sources?i.baseProduction!==sources.agriculture.base+sources.pastoral.base:r.production.produced!==Math.round(i.baseProduction*(1+r.officers.productionRate))))fail();
-  const grain=officialCollection({officialProduction:r.officers},Math.floor(r.production.produced*r.rates.grain),Math.max(0,r.production.produced-r.civilian.need)),cash=officialCollection({officialProduction:r.officers},i.cashBase);if(grain.gross!==i.grainAssessed||grain.loss!==i.grainLoss||cash.gross!==i.cashAssessed||cash.loss!==i.cashLoss)fail();
+ const grain=officialCollection({officialProduction:r.officers},assessedFoodTax(r, r.production.produced,r.rates.grain,r.civilian.need),Math.max(0,r.production.produced-r.civilian.need)),cash=officialCollection({officialProduction:r.officers},i.cashBase);if(grain.gross!==i.grainAssessed||grain.loss!==i.grainLoss||cash.gross!==i.cashAssessed||cash.loss!==i.cashLoss)fail();
  }
  const g=r.grain,c=r.civilian;
  if((g.nationalIn!==undefined&&(!nonnegative(g.nationalIn)||!nonnegative(g.nationalOut)))||g.opening-g.storageLoss+g.tax+(g.nationalIn??0)-(g.nationalOut??0)-g.consumed!==g.closing||g.need!==g.officialNeed+g.reliefNeed||

@@ -1,0 +1,29 @@
+{
+  "scope": "九文化代表轻骑兵，不宣称所有实际兵源或全区域已完成",
+  "asset": "assets/battle/card-regional-cavalry-v2.png",
+  "sha256": "9f3161c5b27d314ae97840efd49b9826ea3e92be153337b7ce1eed622f851eaa",
+  "dimensions": [
+    1254,
+    1254
+  ],
+  "generator": "builtin imagegen",
+  "sourceOutput": "exec-7fb2345c-4da5-4ebf-b418-d38b945e0230.png",
+  "visualReview": "已查看完整九格：各格真实骑马、马头颈清晰；人物群体及组内差异保留；无步兵图冒充骑兵",
+  "modelTests": {
+    "passed": 24,
+    "failed": 0,
+    "durationMs": 3822.33875
+  },
+  "nativeStatus": "passed",
+  "limitations": [
+    "历史启发的游戏代表图，非精准考古复原",
+    "宽泛文化池仍需按实际来源细化",
+    "重骑弩兵骆驼象兵弓骑及随机人物未完成"
+  ],
+  "nativeVerification": {
+    "checks": 27,
+    "errors": [],
+    "elapsedSeconds": 33.342,
+    "visualReview": "印度部署实际截图已查看"
+  }
+}

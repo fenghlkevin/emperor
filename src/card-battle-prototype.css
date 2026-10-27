@@ -315,3 +315,25 @@
 .cb-prototype .cb-end{display:grid;place-items:center}
 .cb-prototype .cb-end>span{display:block;width:70%;max-width:70%;font-size:clamp(14px,1.65cqw,28px);letter-spacing:.015em;line-height:1.2;text-align:center}
 @media(max-width:1050px){.cb-prototype .cb-status{padding:2px 3px;font-size:8px}}
+
+/* Action availability is independent of buff/debuff effects. No card geometry moves. */
+.cb-prototype .cb-action-cue{position:absolute;inset:0;z-index:5;pointer-events:none;border-radius:4px;overflow:hidden}
+.cb-prototype .cb-action-cue *{pointer-events:none}
+.cb-prototype .cb-action-label{position:absolute;left:30%;right:30%;bottom:20%;padding:2px 0;border:1px solid #a8976877;border-radius:3px;background:#29281eea;color:#e4d6b2;text-align:center;font:500 clamp(8px,.65cqw,12px)/1.25 'Songti SC',serif;letter-spacing:.08em;box-shadow:0 1px 5px #0008}
+.cb-prototype .cb-action-cue.ready .cb-action-label{background:#183d2dea;border-color:#99cf9eaa;color:#d7efbc}
+.cb-prototype .cb-action-cue.spent .cb-action-label{background:#302e2bea;border-color:#8a827066;color:#bbb5a7}
+.cb-prototype .cb-action-cue.frozen .cb-action-label{background:#203c4bea;border-color:#99cbe0aa;color:#cceaf7}
+.cb-prototype .cb-action-hourglass{position:absolute;top:16%;right:8%;width:16%;height:18%;fill:none;stroke:#ddcfac;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;filter:drop-shadow(0 1px 2px #1b2016)}
+.cb-prototype .cb-action-sand{fill:#e3d4a7;stroke-width:.4;animation:cb-wait-sand 2.4s ease-in-out infinite}
+.cb-prototype .cb-action-grain{fill:#efdba7;stroke:none;animation:cb-wait-grain 1.3s linear infinite}
+.cb-prototype .cb-card.board[data-attack-state=summoned] .cb-art{filter:saturate(.72) brightness(.88)}
+.cb-prototype .cb-action-corners{position:absolute;inset:13% 5% 8%;background:linear-gradient(#a6efbc,#a6efbc) left top/12% 2px,linear-gradient(#a6efbc,#a6efbc) left top/2px 9%,linear-gradient(#a6efbc,#a6efbc) right top/12% 2px,linear-gradient(#a6efbc,#a6efbc) right top/2px 9%,linear-gradient(#a6efbc,#a6efbc) left bottom/12% 2px,linear-gradient(#a6efbc,#a6efbc) left bottom/2px 9%,linear-gradient(#a6efbc,#a6efbc) right bottom/12% 2px,linear-gradient(#a6efbc,#a6efbc) right bottom/2px 9%;background-repeat:no-repeat;filter:drop-shadow(0 0 3px #8ae7a5);animation:cb-action-ready 2.3s ease-in-out infinite}
+.cb-prototype .cb-fx-attacker .cb-action-cue{visibility:hidden}
+@keyframes cb-wait-sand{0%,100%{opacity:.45}50%{opacity:1}}
+@keyframes cb-wait-grain{0%{transform:translateY(-2px);opacity:0}20%{opacity:1}85%{opacity:.8}100%{transform:translateY(6px);opacity:0}}
+@keyframes cb-action-ready{0%,100%{opacity:.35}50%{opacity:.95}}
+@media(prefers-reduced-motion:reduce){.cb-prototype .cb-action-cue *{animation:none!important}}
+
+/* Align the label and jade glow to the actual painted jade center (90.993%, 36.769%). */
+.cb-prototype .cb-end{left:-1.57%;top:-2.23%}
+.cb-prototype .cb-end>span{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:70%;max-width:70%;margin:0;padding:0;line-height:1;font-size:clamp(18px,2.2cqw,34px);letter-spacing:0;text-align:center}

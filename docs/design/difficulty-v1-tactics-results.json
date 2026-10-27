@@ -1,0 +1,3873 @@
+{
+  "date": "2026-10-26",
+  "method": "Player uses current balanced AI in all matches. Equal mixed armies/training/hero. Same seed and initiative pair in all difficulties. Easy has explicit 20% legal-action mistakes; standard current balanced; veteran public-board adaptive control/aggressive only (not unimplemented search). Small-sample diagnostic, not human win rates.",
+  "matches": [
+    {
+      "tier": "novice",
+      "seed": 1,
+      "first": "home",
+      "result": "defeat",
+      "round": 12,
+      "actions": 89,
+      "homeDead": 950,
+      "enemyDead": 1069
+    },
+    {
+      "tier": "novice",
+      "seed": 1,
+      "first": "enemy",
+      "result": "victory",
+      "round": 14,
+      "actions": 102,
+      "homeDead": 1019,
+      "enemyDead": 1150
+    },
+    {
+      "tier": "novice",
+      "seed": 2,
+      "first": "home",
+      "result": "victory",
+      "round": 14,
+      "actions": 102,
+      "homeDead": 1115,
+      "enemyDead": 1050
+    },
+    {
+      "tier": "novice",
+      "seed": 2,
+      "first": "enemy",
+      "result": "defeat",
+      "round": 12,
+      "actions": 87,
+      "homeDead": 975,
+      "enemyDead": 1110
+    },
+    {
+      "tier": "novice",
+      "seed": 3,
+      "first": "home",
+      "result": "victory",
+      "round": 13,
+      "actions": 97,
+      "homeDead": 1025,
+      "enemyDead": 900
+    },
+    {
+      "tier": "novice",
+      "seed": 3,
+      "first": "enemy",
+      "result": "victory",
+      "round": 14,
+      "actions": 105,
+      "homeDead": 1144,
+      "enemyDead": 1350
+    },
+    {
+      "tier": "novice",
+      "seed": 4,
+      "first": "home",
+      "result": "victory",
+      "round": 10,
+      "actions": 70,
+      "homeDead": 810,
+      "enemyDead": 625
+    },
+    {
+      "tier": "novice",
+      "seed": 4,
+      "first": "enemy",
+      "result": "victory",
+      "round": 8,
+      "actions": 56,
+      "homeDead": 512,
+      "enemyDead": 525
+    },
+    {
+      "tier": "novice",
+      "seed": 5,
+      "first": "home",
+      "result": "victory",
+      "round": 10,
+      "actions": 69,
+      "homeDead": 600,
+      "enemyDead": 750
+    },
+    {
+      "tier": "novice",
+      "seed": 5,
+      "first": "enemy",
+      "result": "victory",
+      "round": 10,
+      "actions": 79,
+      "homeDead": 638,
+      "enemyDead": 950
+    },
+    {
+      "tier": "novice",
+      "seed": 6,
+      "first": "home",
+      "result": "victory",
+      "round": 8,
+      "actions": 49,
+      "homeDead": 625,
+      "enemyDead": 434
+    },
+    {
+      "tier": "novice",
+      "seed": 6,
+      "first": "enemy",
+      "result": "victory",
+      "round": 11,
+      "actions": 79,
+      "homeDead": 830,
+      "enemyDead": 1150
+    },
+    {
+      "tier": "novice",
+      "seed": 7,
+      "first": "home",
+      "result": "victory",
+      "round": 10,
+      "actions": 68,
+      "homeDead": 865,
+      "enemyDead": 550
+    },
+    {
+      "tier": "novice",
+      "seed": 7,
+      "first": "enemy",
+      "result": "defeat",
+      "round": 16,
+      "actions": 121,
+      "homeDead": 1350,
+      "enemyDead": 1350
+    },
+    {
+      "tier": "novice",
+      "seed": 8,
+      "first": "home",
+      "result": "victory",
+      "round": 14,
+      "actions": 100,
+      "homeDead": 1257,
+      "enemyDead": 1250
+    },
+    {
+      "tier": "novice",
+      "seed": 8,
+      "first": "enemy",
+      "result": "defeat",
+      "round": 14,
+      "actions": 103,
+      "homeDead": 1250,
+      "enemyDead": 1117
+    },
+    {
+      "tier": "novice",
+      "seed": 9,
+      "first": "home",
+      "result": "victory",
+      "round": 20,
+      "actions": 144,
+      "homeDead": 1542,
+      "enemyDead": 1750
+    },
+    {
+      "tier": "novice",
+      "seed": 9,
+      "first": "enemy",
+      "result": "victory",
+      "round": 16,
+      "actions": 115,
+      "homeDead": 1134,
+      "enemyDead": 1350
+    },
+    {
+      "tier": "novice",
+      "seed": 10,
+      "first": "home",
+      "result": "victory",
+      "round": 11,
+      "actions": 77,
+      "homeDead": 709,
+      "enemyDead": 1050
+    },
+    {
+      "tier": "novice",
+      "seed": 10,
+      "first": "enemy",
+      "result": "victory",
+      "round": 12,
+      "actions": 86,
+      "homeDead": 1029,
+      "enemyDead": 950
+    },
+    {
+      "tier": "novice",
+      "seed": 11,
+      "first": "home",
+      "result": "defeat",
+      "round": 19,
+      "actions": 144,
+      "homeDead": 1750,
+      "enemyDead": 1442
+    },
+    {
+      "tier": "novice",
+      "seed": 11,
+      "first": "enemy",
+      "result": "victory",
+      "round": 10,
+      "actions": 71,
+      "homeDead": 709,
+      "enemyDead": 600
+    },
+    {
+      "tier": "novice",
+      "seed": 12,
+      "first": "home",
+      "result": "victory",
+      "round": 12,
+      "actions": 85,
+      "homeDead": 904,
+      "enemyDead": 1050
+    },
+    {
+      "tier": "novice",
+      "seed": 12,
+      "first": "enemy",
+      "result": "defeat",
+      "round": 16,
+      "actions": 115,
+      "homeDead": 1425,
+      "enemyDead": 1517
+    },
+    {
+      "tier": "novice",
+      "seed": 13,
+      "first": "home",
+      "result": "defeat",
+      "round": 9,
+      "actions": 66,
+      "homeDead": 725,
+      "enemyDead": 650
+    },
+    {
+      "tier": "novice",
+      "seed": 13,
+      "first": "enemy",
+      "result": "victory",
+      "round": 13,
+      "actions": 101,
+      "homeDead": 1040,
+      "enemyDead": 1250
+    },
+    {
+      "tier": "novice",
+      "seed": 14,
+      "first": "home",
+      "result": "victory",
+      "round": 8,
+      "actions": 48,
+      "homeDead": 288,
+      "enemyDead": 450
+    },
+    {
+      "tier": "novice",
+      "seed": 14,
+      "first": "enemy",
+      "result": "victory",
+      "round": 13,
+      "actions": 94,
+      "homeDead": 1012,
+      "enemyDead": 1150
+    },
+    {
+      "tier": "novice",
+      "seed": 15,
+      "first": "home",
+      "result": "victory",
+      "round": 14,
+      "actions": 107,
+      "homeDead": 859,
+      "enemyDead": 1250
+    },
+    {
+      "tier": "novice",
+      "seed": 15,
+      "first": "enemy",
+      "result": "victory",
+      "round": 11,
+      "actions": 84,
+      "homeDead": 824,
+      "enemyDead": 1000
+    },
+    {
+      "tier": "novice",
+      "seed": 16,
+      "first": "home",
+      "result": "defeat",
+      "round": 10,
+      "actions": 78,
+      "homeDead": 750,
+      "enemyDead": 677
+    },
+    {
+      "tier": "novice",
+      "seed": 16,
+      "first": "enemy",
+      "result": "defeat",
+      "round": 12,
+      "actions": 87,
+      "homeDead": 1025,
+      "enemyDead": 907
+    },
+    {
+      "tier": "novice",
+      "seed": 17,
+      "first": "home",
+      "result": "defeat",
+      "round": 14,
+      "actions": 108,
+      "homeDead": 1450,
+      "enemyDead": 1264
+    },
+    {
+      "tier": "novice",
+      "seed": 17,
+      "first": "enemy",
+      "result": "victory",
+      "round": 10,
+      "actions": 77,
+      "homeDead": 622,
+      "enemyDead": 750
+    },
+    {
+      "tier": "novice",
+      "seed": 18,
+      "first": "home",
+      "result": "defeat",
+      "round": 12,
+      "actions": 85,
+      "homeDead": 1050,
+      "enemyDead": 814
+    },
+    {
+      "tier": "novice",
+      "seed": 18,
+      "first": "enemy",
+      "result": "defeat",
+      "round": 17,
+      "actions": 136,
+      "homeDead": 1650,
+      "enemyDead": 1534
+    },
+    {
+      "tier": "novice",
+      "seed": 19,
+      "first": "home",
+      "result": "victory",
+      "round": 12,
+      "actions": 89,
+      "homeDead": 1010,
+      "enemyDead": 1025
+    },
+    {
+      "tier": "novice",
+      "seed": 19,
+      "first": "enemy",
+      "result": "victory",
+      "round": 12,
+      "actions": 88,
+      "homeDead": 905,
+      "enemyDead": 925
+    },
+    {
+      "tier": "novice",
+      "seed": 20,
+      "first": "home",
+      "result": "victory",
+      "round": 8,
+      "actions": 53,
+      "homeDead": 336,
+      "enemyDead": 525
+    },
+    {
+      "tier": "novice",
+      "seed": 20,
+      "first": "enemy",
+      "result": "defeat",
+      "round": 8,
+      "actions": 52,
+      "homeDead": 600,
+      "enemyDead": 310
+    },
+    {
+      "tier": "novice",
+      "seed": 21,
+      "first": "home",
+      "result": "victory",
+      "round": 7,
+      "actions": 43,
+      "homeDead": 375,
+      "enemyDead": 450
+    },
+    {
+      "tier": "novice",
+      "seed": 21,
+      "first": "enemy",
+      "result": "victory",
+      "round": 14,
+      "actions": 108,
+      "homeDead": 1217,
+      "enemyDead": 1350
+    },
+    {
+      "tier": "novice",
+      "seed": 22,
+      "first": "home",
+      "result": "defeat",
+      "round": 16,
+      "actions": 121,
+      "homeDead": 1400,
+      "enemyDead": 1430
+    },
+    {
+      "tier": "novice",
+      "seed": 22,
+      "first": "enemy",
+      "result": "victory",
+      "round": 12,
+      "actions": 91,
+      "homeDead": 935,
+      "enemyDead": 1150
+    },
+    {
+      "tier": "novice",
+      "seed": 23,
+      "first": "home",
+      "result": "victory",
+      "round": 10,
+      "actions": 65,
+      "homeDead": 843,
+      "enemyDead": 550
+    },
+    {
+      "tier": "novice",
+      "seed": 23,
+      "first": "enemy",
+      "result": "victory",
+      "round": 12,
+      "actions": 89,
+      "homeDead": 904,
+      "enemyDead": 1050
+    },
+    {
+      "tier": "novice",
+      "seed": 24,
+      "first": "home",
+      "result": "defeat",
+      "round": 14,
+      "actions": 110,
+      "homeDead": 1100,
+      "enemyDead": 1234
+    },
+    {
+      "tier": "novice",
+      "seed": 24,
+      "first": "enemy",
+      "result": "victory",
+      "round": 10,
+      "actions": 75,
+      "homeDead": 722,
+      "enemyDead": 1050
+    },
+    {
+      "tier": "novice",
+      "seed": 25,
+      "first": "home",
+      "result": "victory",
+      "round": 10,
+      "actions": 68,
+      "homeDead": 694,
+      "enemyDead": 650
+    },
+    {
+      "tier": "novice",
+      "seed": 25,
+      "first": "enemy",
+      "result": "victory",
+      "round": 13,
+      "actions": 92,
+      "homeDead": 1012,
+      "enemyDead": 1250
+    },
+    {
+      "tier": "novice",
+      "seed": 26,
+      "first": "home",
+      "result": "victory",
+      "round": 16,
+      "actions": 116,
+      "homeDead": 1307,
+      "enemyDead": 1550
+    },
+    {
+      "tier": "novice",
+      "seed": 26,
+      "first": "enemy",
+      "result": "defeat",
+      "round": 16,
+      "actions": 117,
+      "homeDead": 1350,
+      "enemyDead": 1430
+    },
+    {
+      "tier": "novice",
+      "seed": 27,
+      "first": "home",
+      "result": "defeat",
+      "round": 13,
+      "actions": 104,
+      "homeDead": 1350,
+      "enemyDead": 1217
+    },
+    {
+      "tier": "novice",
+      "seed": 27,
+      "first": "enemy",
+      "result": "victory",
+      "round": 12,
+      "actions": 90,
+      "homeDead": 1059,
+      "enemyDead": 1150
+    },
+    {
+      "tier": "novice",
+      "seed": 28,
+      "first": "home",
+      "result": "defeat",
+      "round": 14,
+      "actions": 110,
+      "homeDead": 1350,
+      "enemyDead": 1172
+    },
+    {
+      "tier": "novice",
+      "seed": 28,
+      "first": "enemy",
+      "result": "victory",
+      "round": 10,
+      "actions": 75,
+      "homeDead": 898,
+      "enemyDead": 925
+    },
+    {
+      "tier": "novice",
+      "seed": 29,
+      "first": "home",
+      "result": "victory",
+      "round": 13,
+      "actions": 89,
+      "homeDead": 1175,
+      "enemyDead": 1050
+    },
+    {
+      "tier": "novice",
+      "seed": 29,
+      "first": "enemy",
+      "result": "defeat",
+      "round": 15,
+      "actions": 113,
+      "homeDead": 1550,
+      "enemyDead": 1230
+    },
+    {
+      "tier": "novice",
+      "seed": 30,
+      "first": "home",
+      "result": "victory",
+      "round": 9,
+      "actions": 63,
+      "homeDead": 671,
+      "enemyDead": 850
+    },
+    {
+      "tier": "novice",
+      "seed": 30,
+      "first": "enemy",
+      "result": "defeat",
+      "round": 11,
+      "actions": 80,
+      "homeDead": 950,
+      "enemyDead": 809
+    },
+    {
+      "tier": "novice",
+      "seed": 31,
+      "first": "home",
+      "result": "victory",
+      "round": 12,
+      "actions": 90,
+      "homeDead": 957,
+      "enemyDead": 1150
+    },
+    {
+      "tier": "novice",
+      "seed": 31,
+      "first": "enemy",
+      "result": "defeat",
+      "round": 15,
+      "actions": 109,
+      "homeDead": 1275,
+      "enemyDead": 1214
+    },
+    {
+      "tier": "novice",
+      "seed": 32,
+      "first": "home",
+      "result": "victory",
+      "round": 10,
+      "actions": 68,
+      "homeDead": 684,
+      "enemyDead": 850
+    },
+    {
+      "tier": "novice",
+      "seed": 32,
+      "first": "enemy",
+      "result": "victory",
+      "round": 15,
+      "actions": 113,
+      "homeDead": 1227,
+      "enemyDead": 1350
+    },
+    {
+      "tier": "novice",
+      "seed": 33,
+      "first": "home",
+      "result": "victory",
+      "round": 11,
+      "actions": 74,
+      "homeDead": 702,
+      "enemyDead": 850
+    },
+    {
+      "tier": "novice",
+      "seed": 33,
+      "first": "enemy",
+      "result": "victory",
+      "round": 15,
+      "actions": 115,
+      "homeDead": 1212,
+      "enemyDead": 1450
+    },
+    {
+      "tier": "novice",
+      "seed": 34,
+      "first": "home",
+      "result": "victory",
+      "round": 11,
+      "actions": 81,
+      "homeDead": 707,
+      "enemyDead": 950
+    },
+    {
+      "tier": "novice",
+      "seed": 34,
+      "first": "enemy",
+      "result": "defeat",
+      "round": 14,
+      "actions": 110,
+      "homeDead": 1150,
+      "enemyDead": 1284
+    },
+    {
+      "tier": "novice",
+      "seed": 35,
+      "first": "home",
+      "result": "victory",
+      "round": 19,
+      "actions": 143,
+      "homeDead": 1450,
+      "enemyDead": 1550
+    },
+    {
+      "tier": "novice",
+      "seed": 35,
+      "first": "enemy",
+      "result": "defeat",
+      "round": 12,
+      "actions": 92,
+      "homeDead": 1050,
+      "enemyDead": 1010
+    },
+    {
+      "tier": "novice",
+      "seed": 36,
+      "first": "home",
+      "result": "victory",
+      "round": 9,
+      "actions": 54,
+      "homeDead": 550,
+      "enemyDead": 525
+    },
+    {
+      "tier": "novice",
+      "seed": 36,
+      "first": "enemy",
+      "result": "defeat",
+      "round": 10,
+      "actions": 69,
+      "homeDead": 893,
+      "enemyDead": 459
+    },
+    {
+      "tier": "novice",
+      "seed": 37,
+      "first": "home",
+      "result": "victory",
+      "round": 10,
+      "actions": 64,
+      "homeDead": 610,
+      "enemyDead": 650
+    },
+    {
+      "tier": "novice",
+      "seed": 37,
+      "first": "enemy",
+      "result": "defeat",
+      "round": 19,
+      "actions": 140,
+      "homeDead": 1550,
+      "enemyDead": 1400
+    },
+    {
+      "tier": "novice",
+      "seed": 38,
+      "first": "home",
+      "result": "victory",
+      "round": 9,
+      "actions": 60,
+      "homeDead": 511,
+      "enemyDead": 750
+    },
+    {
+      "tier": "novice",
+      "seed": 38,
+      "first": "enemy",
+      "result": "victory",
+      "round": 15,
+      "actions": 115,
+      "homeDead": 1234,
+      "enemyDead": 1350
+    },
+    {
+      "tier": "novice",
+      "seed": 39,
+      "first": "home",
+      "result": "victory",
+      "round": 14,
+      "actions": 102,
+      "homeDead": 969,
+      "enemyDead": 1250
+    },
+    {
+      "tier": "novice",
+      "seed": 39,
+      "first": "enemy",
+      "result": "victory",
+      "round": 11,
+      "actions": 86,
+      "homeDead": 1032,
+      "enemyDead": 925
+    },
+    {
+      "tier": "novice",
+      "seed": 40,
+      "first": "home",
+      "result": "defeat",
+      "round": 11,
+      "actions": 85,
+      "homeDead": 950,
+      "enemyDead": 932
+    },
+    {
+      "tier": "novice",
+      "seed": 40,
+      "first": "enemy",
+      "result": "victory",
+      "round": 11,
+      "actions": 86,
+      "homeDead": 1212,
+      "enemyDead": 934
+    },
+    {
+      "tier": "novice",
+      "seed": 41,
+      "first": "home",
+      "result": "defeat",
+      "round": 14,
+      "actions": 104,
+      "homeDead": 1350,
+      "enemyDead": 1232
+    },
+    {
+      "tier": "novice",
+      "seed": 41,
+      "first": "enemy",
+      "result": "victory",
+      "round": 11,
+      "actions": 90,
+      "homeDead": 937,
+      "enemyDead": 950
+    },
+    {
+      "tier": "novice",
+      "seed": 42,
+      "first": "home",
+      "result": "victory",
+      "round": 7,
+      "actions": 45,
+      "homeDead": 250,
+      "enemyDead": 450
+    },
+    {
+      "tier": "novice",
+      "seed": 42,
+      "first": "enemy",
+      "result": "victory",
+      "round": 10,
+      "actions": 82,
+      "homeDead": 904,
+      "enemyDead": 800
+    },
+    {
+      "tier": "novice",
+      "seed": 43,
+      "first": "home",
+      "result": "defeat",
+      "round": 15,
+      "actions": 117,
+      "homeDead": 1350,
+      "enemyDead": 1357
+    },
+    {
+      "tier": "novice",
+      "seed": 43,
+      "first": "enemy",
+      "result": "victory",
+      "round": 10,
+      "actions": 75,
+      "homeDead": 790,
+      "enemyDead": 910
+    },
+    {
+      "tier": "novice",
+      "seed": 44,
+      "first": "home",
+      "result": "victory",
+      "round": 18,
+      "actions": 130,
+      "homeDead": 1342,
+      "enemyDead": 1325
+    },
+    {
+      "tier": "novice",
+      "seed": 44,
+      "first": "enemy",
+      "result": "defeat",
+      "round": 20,
+      "actions": 145,
+      "homeDead": 1700,
+      "enemyDead": 1534
+    },
+    {
+      "tier": "novice",
+      "seed": 45,
+      "first": "home",
+      "result": "victory",
+      "round": 8,
+      "actions": 51,
+      "homeDead": 452,
+      "enemyDead": 750
+    },
+    {
+      "tier": "novice",
+      "seed": 45,
+      "first": "enemy",
+      "result": "victory",
+      "round": 9,
+      "actions": 67,
+      "homeDead": 589,
+      "enemyDead": 950
+    },
+    {
+      "tier": "novice",
+      "seed": 46,
+      "first": "home",
+      "result": "defeat",
+      "round": 19,
+      "actions": 140,
+      "homeDead": 1450,
+      "enemyDead": 1725
+    },
+    {
+      "tier": "novice",
+      "seed": 46,
+      "first": "enemy",
+      "result": "victory",
+      "round": 16,
+      "actions": 114,
+      "homeDead": 1229,
+      "enemyDead": 1250
+    },
+    {
+      "tier": "novice",
+      "seed": 47,
+      "first": "home",
+      "result": "defeat",
+      "round": 13,
+      "actions": 108,
+      "homeDead": 1125,
+      "enemyDead": 1159
+    },
+    {
+      "tier": "novice",
+      "seed": 47,
+      "first": "enemy",
+      "result": "victory",
+      "round": 16,
+      "actions": 124,
+      "homeDead": 1334,
+      "enemyDead": 1450
+    },
+    {
+      "tier": "novice",
+      "seed": 48,
+      "first": "home",
+      "result": "victory",
+      "round": 8,
+      "actions": 49,
+      "homeDead": 155,
+      "enemyDead": 350
+    },
+    {
+      "tier": "novice",
+      "seed": 48,
+      "first": "enemy",
+      "result": "defeat",
+      "round": 12,
+      "actions": 90,
+      "homeDead": 770,
+      "enemyDead": 549
+    },
+    {
+      "tier": "novice",
+      "seed": 49,
+      "first": "home",
+      "result": "victory",
+      "round": 13,
+      "actions": 90,
+      "homeDead": 905,
+      "enemyDead": 850
+    },
+    {
+      "tier": "novice",
+      "seed": 49,
+      "first": "enemy",
+      "result": "victory",
+      "round": 15,
+      "actions": 115,
+      "homeDead": 1365,
+      "enemyDead": 1350
+    },
+    {
+      "tier": "novice",
+      "seed": 50,
+      "first": "home",
+      "result": "defeat",
+      "round": 15,
+      "actions": 113,
+      "homeDead": 1150,
+      "enemyDead": 1129
+    },
+    {
+      "tier": "novice",
+      "seed": 50,
+      "first": "enemy",
+      "result": "victory",
+      "round": 17,
+      "actions": 125,
+      "homeDead": 1280,
+      "enemyDead": 1450
+    },
+    {
+      "tier": "novice",
+      "seed": 51,
+      "first": "home",
+      "result": "defeat",
+      "round": 11,
+      "actions": 82,
+      "homeDead": 950,
+      "enemyDead": 862
+    },
+    {
+      "tier": "novice",
+      "seed": 51,
+      "first": "enemy",
+      "result": "victory",
+      "round": 11,
+      "actions": 79,
+      "homeDead": 961,
+      "enemyDead": 1050
+    },
+    {
+      "tier": "novice",
+      "seed": 52,
+      "first": "home",
+      "result": "defeat",
+      "round": 16,
+      "actions": 112,
+      "homeDead": 1350,
+      "enemyDead": 1329
+    },
+    {
+      "tier": "novice",
+      "seed": 52,
+      "first": "enemy",
+      "result": "victory",
+      "round": 12,
+      "actions": 91,
+      "homeDead": 1057,
+      "enemyDead": 1225
+    },
+    {
+      "tier": "novice",
+      "seed": 53,
+      "first": "home",
+      "result": "victory",
+      "round": 13,
+      "actions": 93,
+      "homeDead": 1125,
+      "enemyDead": 1010
+    },
+    {
+      "tier": "novice",
+      "seed": 53,
+      "first": "enemy",
+      "result": "defeat",
+      "round": 19,
+      "actions": 135,
+      "homeDead": 1450,
+      "enemyDead": 1332
+    },
+    {
+      "tier": "novice",
+      "seed": 54,
+      "first": "home",
+      "result": "defeat",
+      "round": 12,
+      "actions": 91,
+      "homeDead": 950,
+      "enemyDead": 914
+    },
+    {
+      "tier": "novice",
+      "seed": 54,
+      "first": "enemy",
+      "result": "defeat",
+      "round": 15,
+      "actions": 111,
+      "homeDead": 1150,
+      "enemyDead": 1245
+    },
+    {
+      "tier": "novice",
+      "seed": 55,
+      "first": "home",
+      "result": "defeat",
+      "round": 18,
+      "actions": 133,
+      "homeDead": 1550,
+      "enemyDead": 1545
+    },
+    {
+      "tier": "novice",
+      "seed": 55,
+      "first": "enemy",
+      "result": "victory",
+      "round": 11,
+      "actions": 82,
+      "homeDead": 1014,
+      "enemyDead": 775
+    },
+    {
+      "tier": "novice",
+      "seed": 56,
+      "first": "home",
+      "result": "victory",
+      "round": 10,
+      "actions": 64,
+      "homeDead": 559,
+      "enemyDead": 750
+    },
+    {
+      "tier": "novice",
+      "seed": 56,
+      "first": "enemy",
+      "result": "defeat",
+      "round": 13,
+      "actions": 93,
+      "homeDead": 1050,
+      "enemyDead": 1044
+    },
+    {
+      "tier": "novice",
+      "seed": 57,
+      "first": "home",
+      "result": "victory",
+      "round": 19,
+      "actions": 137,
+      "homeDead": 1569,
+      "enemyDead": 1550
+    },
+    {
+      "tier": "novice",
+      "seed": 57,
+      "first": "enemy",
+      "result": "victory",
+      "round": 9,
+      "actions": 70,
+      "homeDead": 907,
+      "enemyDead": 800
+    },
+    {
+      "tier": "novice",
+      "seed": 58,
+      "first": "home",
+      "result": "victory",
+      "round": 12,
+      "actions": 85,
+      "homeDead": 912,
+      "enemyDead": 950
+    },
+    {
+      "tier": "novice",
+      "seed": 58,
+      "first": "enemy",
+      "result": "victory",
+      "round": 16,
+      "actions": 114,
+      "homeDead": 1120,
+      "enemyDead": 1450
+    },
+    {
+      "tier": "novice",
+      "seed": 59,
+      "first": "home",
+      "result": "victory",
+      "round": 16,
+      "actions": 106,
+      "homeDead": 1184,
+      "enemyDead": 1150
+    },
+    {
+      "tier": "novice",
+      "seed": 59,
+      "first": "enemy",
+      "result": "victory",
+      "round": 14,
+      "actions": 110,
+      "homeDead": 1224,
+      "enemyDead": 1050
+    },
+    {
+      "tier": "novice",
+      "seed": 60,
+      "first": "home",
+      "result": "victory",
+      "round": 14,
+      "actions": 102,
+      "homeDead": 1054,
+      "enemyDead": 1350
+    },
+    {
+      "tier": "novice",
+      "seed": 60,
+      "first": "enemy",
+      "result": "defeat",
+      "round": 10,
+      "actions": 63,
+      "homeDead": 625,
+      "enemyDead": 624
+    },
+    {
+      "tier": "novice",
+      "seed": 61,
+      "first": "home",
+      "result": "defeat",
+      "round": 11,
+      "actions": 82,
+      "homeDead": 925,
+      "enemyDead": 1015
+    },
+    {
+      "tier": "novice",
+      "seed": 61,
+      "first": "enemy",
+      "result": "defeat",
+      "round": 14,
+      "actions": 107,
+      "homeDead": 1250,
+      "enemyDead": 1125
+    },
+    {
+      "tier": "novice",
+      "seed": 62,
+      "first": "home",
+      "result": "defeat",
+      "round": 14,
+      "actions": 110,
+      "homeDead": 1334,
+      "enemyDead": 1310
+    },
+    {
+      "tier": "novice",
+      "seed": 62,
+      "first": "enemy",
+      "result": "victory",
+      "round": 16,
+      "actions": 118,
+      "homeDead": 1284,
+      "enemyDead": 1450
+    },
+    {
+      "tier": "novice",
+      "seed": 63,
+      "first": "home",
+      "result": "victory",
+      "round": 15,
+      "actions": 114,
+      "homeDead": 1324,
+      "enemyDead": 1350
+    },
+    {
+      "tier": "novice",
+      "seed": 63,
+      "first": "enemy",
+      "result": "defeat",
+      "round": 14,
+      "actions": 100,
+      "homeDead": 1050,
+      "enemyDead": 1020
+    },
+    {
+      "tier": "novice",
+      "seed": 64,
+      "first": "home",
+      "result": "defeat",
+      "round": 11,
+      "actions": 80,
+      "homeDead": 750,
+      "enemyDead": 529
+    },
+    {
+      "tier": "novice",
+      "seed": 64,
+      "first": "enemy",
+      "result": "victory",
+      "round": 15,
+      "actions": 116,
+      "homeDead": 1562,
+      "enemyDead": 1450
+    },
+    {
+      "tier": "standard",
+      "seed": 1,
+      "first": "home",
+      "result": "defeat",
+      "round": 9,
+      "actions": 63,
+      "homeDead": 750,
+      "enemyDead": 707
+    },
+    {
+      "tier": "standard",
+      "seed": 1,
+      "first": "enemy",
+      "result": "victory",
+      "round": 14,
+      "actions": 102,
+      "homeDead": 1029,
+      "enemyDead": 1150
+    },
+    {
+      "tier": "standard",
+      "seed": 2,
+      "first": "home",
+      "result": "defeat",
+      "round": 17,
+      "actions": 124,
+      "homeDead": 1450,
+      "enemyDead": 1287
+    },
+    {
+      "tier": "standard",
+      "seed": 2,
+      "first": "enemy",
+      "result": "victory",
+      "round": 14,
+      "actions": 108,
+      "homeDead": 1150,
+      "enemyDead": 1150
+    },
+    {
+      "tier": "standard",
+      "seed": 3,
+      "first": "home",
+      "result": "victory",
+      "round": 17,
+      "actions": 124,
+      "homeDead": 1109,
+      "enemyDead": 1450
+    },
+    {
+      "tier": "standard",
+      "seed": 3,
+      "first": "enemy",
+      "result": "defeat",
+      "round": 14,
+      "actions": 100,
+      "homeDead": 1350,
+      "enemyDead": 1304
+    },
+    {
+      "tier": "standard",
+      "seed": 4,
+      "first": "home",
+      "result": "victory",
+      "round": 11,
+      "actions": 77,
+      "homeDead": 1010,
+      "enemyDead": 850
+    },
+    {
+      "tier": "standard",
+      "seed": 4,
+      "first": "enemy",
+      "result": "victory",
+      "round": 11,
+      "actions": 79,
+      "homeDead": 832,
+      "enemyDead": 750
+    },
+    {
+      "tier": "standard",
+      "seed": 5,
+      "first": "home",
+      "result": "victory",
+      "round": 16,
+      "actions": 118,
+      "homeDead": 1425,
+      "enemyDead": 1350
+    },
+    {
+      "tier": "standard",
+      "seed": 5,
+      "first": "enemy",
+      "result": "victory",
+      "round": 10,
+      "actions": 77,
+      "homeDead": 605,
+      "enemyDead": 950
+    },
+    {
+      "tier": "standard",
+      "seed": 6,
+      "first": "home",
+      "result": "defeat",
+      "round": 15,
+      "actions": 111,
+      "homeDead": 1350,
+      "enemyDead": 1134
+    },
+    {
+      "tier": "standard",
+      "seed": 6,
+      "first": "enemy",
+      "result": "victory",
+      "round": 11,
+      "actions": 80,
+      "homeDead": 885,
+      "enemyDead": 1150
+    },
+    {
+      "tier": "standard",
+      "seed": 7,
+      "first": "home",
+      "result": "victory",
+      "round": 10,
+      "actions": 67,
+      "homeDead": 905,
+      "enemyDead": 710
+    },
+    {
+      "tier": "standard",
+      "seed": 7,
+      "first": "enemy",
+      "result": "defeat",
+      "round": 16,
+      "actions": 116,
+      "homeDead": 1350,
+      "enemyDead": 1132
+    },
+    {
+      "tier": "standard",
+      "seed": 8,
+      "first": "home",
+      "result": "defeat",
+      "round": 16,
+      "actions": 117,
+      "homeDead": 1450,
+      "enemyDead": 1212
+    },
+    {
+      "tier": "standard",
+      "seed": 8,
+      "first": "enemy",
+      "result": "defeat",
+      "round": 14,
+      "actions": 99,
+      "homeDead": 1150,
+      "enemyDead": 1045
+    },
+    {
+      "tier": "standard",
+      "seed": 9,
+      "first": "home",
+      "result": "defeat",
+      "round": 12,
+      "actions": 94,
+      "homeDead": 1050,
+      "enemyDead": 864
+    },
+    {
+      "tier": "standard",
+      "seed": 9,
+      "first": "enemy",
+      "result": "defeat",
+      "round": 17,
+      "actions": 120,
+      "homeDead": 1150,
+      "enemyDead": 1359
+    },
+    {
+      "tier": "standard",
+      "seed": 10,
+      "first": "home",
+      "result": "victory",
+      "round": 12,
+      "actions": 87,
+      "homeDead": 919,
+      "enemyDead": 1050
+    },
+    {
+      "tier": "standard",
+      "seed": 10,
+      "first": "enemy",
+      "result": "victory",
+      "round": 13,
+      "actions": 99,
+      "homeDead": 1275,
+      "enemyDead": 1000
+    },
+    {
+      "tier": "standard",
+      "seed": 11,
+      "first": "home",
+      "result": "defeat",
+      "round": 12,
+      "actions": 86,
+      "homeDead": 1100,
+      "enemyDead": 734
+    },
+    {
+      "tier": "standard",
+      "seed": 11,
+      "first": "enemy",
+      "result": "defeat",
+      "round": 14,
+      "actions": 104,
+      "homeDead": 1350,
+      "enemyDead": 1094
+    },
+    {
+      "tier": "standard",
+      "seed": 12,
+      "first": "home",
+      "result": "victory",
+      "round": 12,
+      "actions": 81,
+      "homeDead": 952,
+      "enemyDead": 1050
+    },
+    {
+      "tier": "standard",
+      "seed": 12,
+      "first": "enemy",
+      "result": "defeat",
+      "round": 17,
+      "actions": 126,
+      "homeDead": 1517,
+      "enemyDead": 1635
+    },
+    {
+      "tier": "standard",
+      "seed": 13,
+      "first": "home",
+      "result": "defeat",
+      "round": 9,
+      "actions": 66,
+      "homeDead": 725,
+      "enemyDead": 650
+    },
+    {
+      "tier": "standard",
+      "seed": 13,
+      "first": "enemy",
+      "result": "defeat",
+      "round": 8,
+      "actions": 50,
+      "homeDead": 350,
+      "enemyDead": 400
+    },
+    {
+      "tier": "standard",
+      "seed": 14,
+      "first": "home",
+      "result": "victory",
+      "round": 8,
+      "actions": 46,
+      "homeDead": 336,
+      "enemyDead": 534
+    },
+    {
+      "tier": "standard",
+      "seed": 14,
+      "first": "enemy",
+      "result": "victory",
+      "round": 16,
+      "actions": 122,
+      "homeDead": 1327,
+      "enemyDead": 1350
+    },
+    {
+      "tier": "standard",
+      "seed": 15,
+      "first": "home",
+      "result": "victory",
+      "round": 14,
+      "actions": 108,
+      "homeDead": 827,
+      "enemyDead": 1310
+    },
+    {
+      "tier": "standard",
+      "seed": 15,
+      "first": "enemy",
+      "result": "victory",
+      "round": 13,
+      "actions": 93,
+      "homeDead": 1061,
+      "enemyDead": 1150
+    },
+    {
+      "tier": "standard",
+      "seed": 16,
+      "first": "home",
+      "result": "defeat",
+      "round": 9,
+      "actions": 63,
+      "homeDead": 650,
+      "enemyDead": 565
+    },
+    {
+      "tier": "standard",
+      "seed": 16,
+      "first": "enemy",
+      "result": "defeat",
+      "round": 13,
+      "actions": 96,
+      "homeDead": 1050,
+      "enemyDead": 1112
+    },
+    {
+      "tier": "standard",
+      "seed": 17,
+      "first": "home",
+      "result": "defeat",
+      "round": 11,
+      "actions": 84,
+      "homeDead": 1150,
+      "enemyDead": 947
+    },
+    {
+      "tier": "standard",
+      "seed": 17,
+      "first": "enemy",
+      "result": "defeat",
+      "round": 20,
+      "actions": 139,
+      "homeDead": 1450,
+      "enemyDead": 1522
+    },
+    {
+      "tier": "standard",
+      "seed": 18,
+      "first": "home",
+      "result": "defeat",
+      "round": 10,
+      "actions": 69,
+      "homeDead": 850,
+      "enemyDead": 662
+    },
+    {
+      "tier": "standard",
+      "seed": 18,
+      "first": "enemy",
+      "result": "defeat",
+      "round": 15,
+      "actions": 118,
+      "homeDead": 1350,
+      "enemyDead": 1199
+    },
+    {
+      "tier": "standard",
+      "seed": 19,
+      "first": "home",
+      "result": "defeat",
+      "round": 13,
+      "actions": 98,
+      "homeDead": 1250,
+      "enemyDead": 925
+    },
+    {
+      "tier": "standard",
+      "seed": 19,
+      "first": "enemy",
+      "result": "victory",
+      "round": 12,
+      "actions": 88,
+      "homeDead": 882,
+      "enemyDead": 925
+    },
+    {
+      "tier": "standard",
+      "seed": 20,
+      "first": "home",
+      "result": "victory",
+      "round": 10,
+      "actions": 69,
+      "homeDead": 800,
+      "enemyDead": 860
+    },
+    {
+      "tier": "standard",
+      "seed": 20,
+      "first": "enemy",
+      "result": "defeat",
+      "round": 8,
+      "actions": 50,
+      "homeDead": 550,
+      "enemyDead": 310
+    },
+    {
+      "tier": "standard",
+      "seed": 21,
+      "first": "home",
+      "result": "defeat",
+      "round": 12,
+      "actions": 89,
+      "homeDead": 950,
+      "enemyDead": 739
+    },
+    {
+      "tier": "standard",
+      "seed": 21,
+      "first": "enemy",
+      "result": "defeat",
+      "round": 17,
+      "actions": 124,
+      "homeDead": 1450,
+      "enemyDead": 1440
+    },
+    {
+      "tier": "standard",
+      "seed": 22,
+      "first": "home",
+      "result": "victory",
+      "round": 22,
+      "actions": 155,
+      "homeDead": 1716,
+      "enemyDead": 1850
+    },
+    {
+      "tier": "standard",
+      "seed": 22,
+      "first": "enemy",
+      "result": "victory",
+      "round": 12,
+      "actions": 94,
+      "homeDead": 945,
+      "enemyDead": 1150
+    },
+    {
+      "tier": "standard",
+      "seed": 23,
+      "first": "home",
+      "result": "victory",
+      "round": 13,
+      "actions": 90,
+      "homeDead": 1115,
+      "enemyDead": 850
+    },
+    {
+      "tier": "standard",
+      "seed": 23,
+      "first": "enemy",
+      "result": "defeat",
+      "round": 15,
+      "actions": 107,
+      "homeDead": 1250,
+      "enemyDead": 1234
+    },
+    {
+      "tier": "standard",
+      "seed": 24,
+      "first": "home",
+      "result": "defeat",
+      "round": 13,
+      "actions": 97,
+      "homeDead": 1050,
+      "enemyDead": 1209
+    },
+    {
+      "tier": "standard",
+      "seed": 24,
+      "first": "enemy",
+      "result": "victory",
+      "round": 12,
+      "actions": 91,
+      "homeDead": 1059,
+      "enemyDead": 1150
+    },
+    {
+      "tier": "standard",
+      "seed": 25,
+      "first": "home",
+      "result": "victory",
+      "round": 9,
+      "actions": 58,
+      "homeDead": 505,
+      "enemyDead": 450
+    },
+    {
+      "tier": "standard",
+      "seed": 25,
+      "first": "enemy",
+      "result": "defeat",
+      "round": 16,
+      "actions": 119,
+      "homeDead": 1350,
+      "enemyDead": 1344
+    },
+    {
+      "tier": "standard",
+      "seed": 26,
+      "first": "home",
+      "result": "victory",
+      "round": 17,
+      "actions": 126,
+      "homeDead": 1327,
+      "enemyDead": 1550
+    },
+    {
+      "tier": "standard",
+      "seed": 26,
+      "first": "enemy",
+      "result": "defeat",
+      "round": 9,
+      "actions": 54,
+      "homeDead": 450,
+      "enemyDead": 500
+    },
+    {
+      "tier": "standard",
+      "seed": 27,
+      "first": "home",
+      "result": "defeat",
+      "round": 12,
+      "actions": 95,
+      "homeDead": 1284,
+      "enemyDead": 1009
+    },
+    {
+      "tier": "standard",
+      "seed": 27,
+      "first": "enemy",
+      "result": "victory",
+      "round": 15,
+      "actions": 118,
+      "homeDead": 1375,
+      "enemyDead": 1350
+    },
+    {
+      "tier": "standard",
+      "seed": 28,
+      "first": "home",
+      "result": "defeat",
+      "round": 15,
+      "actions": 116,
+      "homeDead": 1550,
+      "enemyDead": 1360
+    },
+    {
+      "tier": "standard",
+      "seed": 28,
+      "first": "enemy",
+      "result": "victory",
+      "round": 13,
+      "actions": 102,
+      "homeDead": 1161,
+      "enemyDead": 1050
+    },
+    {
+      "tier": "standard",
+      "seed": 29,
+      "first": "home",
+      "result": "defeat",
+      "round": 16,
+      "actions": 115,
+      "homeDead": 1450,
+      "enemyDead": 1132
+    },
+    {
+      "tier": "standard",
+      "seed": 29,
+      "first": "enemy",
+      "result": "defeat",
+      "round": 12,
+      "actions": 86,
+      "homeDead": 1050,
+      "enemyDead": 904
+    },
+    {
+      "tier": "standard",
+      "seed": 30,
+      "first": "home",
+      "result": "defeat",
+      "round": 15,
+      "actions": 109,
+      "homeDead": 1150,
+      "enemyDead": 1111
+    },
+    {
+      "tier": "standard",
+      "seed": 30,
+      "first": "enemy",
+      "result": "defeat",
+      "round": 22,
+      "actions": 160,
+      "homeDead": 1850,
+      "enemyDead": 1750
+    },
+    {
+      "tier": "standard",
+      "seed": 31,
+      "first": "home",
+      "result": "victory",
+      "round": 12,
+      "actions": 89,
+      "homeDead": 859,
+      "enemyDead": 1150
+    },
+    {
+      "tier": "standard",
+      "seed": 31,
+      "first": "enemy",
+      "result": "victory",
+      "round": 14,
+      "actions": 103,
+      "homeDead": 1164,
+      "enemyDead": 1150
+    },
+    {
+      "tier": "standard",
+      "seed": 32,
+      "first": "home",
+      "result": "victory",
+      "round": 16,
+      "actions": 108,
+      "homeDead": 1132,
+      "enemyDead": 1150
+    },
+    {
+      "tier": "standard",
+      "seed": 32,
+      "first": "enemy",
+      "result": "defeat",
+      "round": 13,
+      "actions": 94,
+      "homeDead": 1150,
+      "enemyDead": 1082
+    },
+    {
+      "tier": "standard",
+      "seed": 33,
+      "first": "home",
+      "result": "victory",
+      "round": 11,
+      "actions": 77,
+      "homeDead": 559,
+      "enemyDead": 875
+    },
+    {
+      "tier": "standard",
+      "seed": 33,
+      "first": "enemy",
+      "result": "victory",
+      "round": 14,
+      "actions": 115,
+      "homeDead": 1110,
+      "enemyDead": 1350
+    },
+    {
+      "tier": "standard",
+      "seed": 34,
+      "first": "home",
+      "result": "defeat",
+      "round": 15,
+      "actions": 110,
+      "homeDead": 1250,
+      "enemyDead": 1277
+    },
+    {
+      "tier": "standard",
+      "seed": 34,
+      "first": "enemy",
+      "result": "defeat",
+      "round": 15,
+      "actions": 111,
+      "homeDead": 1217,
+      "enemyDead": 1425
+    },
+    {
+      "tier": "standard",
+      "seed": 35,
+      "first": "home",
+      "result": "defeat",
+      "round": 15,
+      "actions": 112,
+      "homeDead": 1350,
+      "enemyDead": 1376
+    },
+    {
+      "tier": "standard",
+      "seed": 35,
+      "first": "enemy",
+      "result": "defeat",
+      "round": 9,
+      "actions": 62,
+      "homeDead": 625,
+      "enemyDead": 627
+    },
+    {
+      "tier": "standard",
+      "seed": 36,
+      "first": "home",
+      "result": "victory",
+      "round": 13,
+      "actions": 93,
+      "homeDead": 1275,
+      "enemyDead": 1150
+    },
+    {
+      "tier": "standard",
+      "seed": 36,
+      "first": "enemy",
+      "result": "victory",
+      "round": 12,
+      "actions": 86,
+      "homeDead": 1009,
+      "enemyDead": 850
+    },
+    {
+      "tier": "standard",
+      "seed": 37,
+      "first": "home",
+      "result": "victory",
+      "round": 10,
+      "actions": 64,
+      "homeDead": 610,
+      "enemyDead": 650
+    },
+    {
+      "tier": "standard",
+      "seed": 37,
+      "first": "enemy",
+      "result": "defeat",
+      "round": 22,
+      "actions": 157,
+      "homeDead": 1700,
+      "enemyDead": 1850
+    },
+    {
+      "tier": "standard",
+      "seed": 38,
+      "first": "home",
+      "result": "defeat",
+      "round": 15,
+      "actions": 110,
+      "homeDead": 1450,
+      "enemyDead": 1260
+    },
+    {
+      "tier": "standard",
+      "seed": 38,
+      "first": "enemy",
+      "result": "victory",
+      "round": 17,
+      "actions": 128,
+      "homeDead": 1240,
+      "enemyDead": 1450
+    },
+    {
+      "tier": "standard",
+      "seed": 39,
+      "first": "home",
+      "result": "defeat",
+      "round": 13,
+      "actions": 100,
+      "homeDead": 1050,
+      "enemyDead": 1017
+    },
+    {
+      "tier": "standard",
+      "seed": 39,
+      "first": "enemy",
+      "result": "victory",
+      "round": 15,
+      "actions": 111,
+      "homeDead": 1479,
+      "enemyDead": 1350
+    },
+    {
+      "tier": "standard",
+      "seed": 40,
+      "first": "home",
+      "result": "defeat",
+      "round": 11,
+      "actions": 83,
+      "homeDead": 950,
+      "enemyDead": 924
+    },
+    {
+      "tier": "standard",
+      "seed": 40,
+      "first": "enemy",
+      "result": "victory",
+      "round": 11,
+      "actions": 82,
+      "homeDead": 944,
+      "enemyDead": 1100
+    },
+    {
+      "tier": "standard",
+      "seed": 41,
+      "first": "home",
+      "result": "defeat",
+      "round": 13,
+      "actions": 96,
+      "homeDead": 1325,
+      "enemyDead": 1109
+    },
+    {
+      "tier": "standard",
+      "seed": 41,
+      "first": "enemy",
+      "result": "victory",
+      "round": 13,
+      "actions": 99,
+      "homeDead": 1220,
+      "enemyDead": 1150
+    },
+    {
+      "tier": "standard",
+      "seed": 42,
+      "first": "home",
+      "result": "victory",
+      "round": 7,
+      "actions": 47,
+      "homeDead": 300,
+      "enemyDead": 550
+    },
+    {
+      "tier": "standard",
+      "seed": 42,
+      "first": "enemy",
+      "result": "defeat",
+      "round": 14,
+      "actions": 111,
+      "homeDead": 1250,
+      "enemyDead": 1000
+    },
+    {
+      "tier": "standard",
+      "seed": 43,
+      "first": "home",
+      "result": "defeat",
+      "round": 9,
+      "actions": 67,
+      "homeDead": 625,
+      "enemyDead": 655
+    },
+    {
+      "tier": "standard",
+      "seed": 43,
+      "first": "enemy",
+      "result": "defeat",
+      "round": 16,
+      "actions": 115,
+      "homeDead": 1650,
+      "enemyDead": 1160
+    },
+    {
+      "tier": "standard",
+      "seed": 44,
+      "first": "home",
+      "result": "victory",
+      "round": 16,
+      "actions": 114,
+      "homeDead": 1242,
+      "enemyDead": 1250
+    },
+    {
+      "tier": "standard",
+      "seed": 44,
+      "first": "enemy",
+      "result": "victory",
+      "round": 17,
+      "actions": 127,
+      "homeDead": 1342,
+      "enemyDead": 1350
+    },
+    {
+      "tier": "standard",
+      "seed": 45,
+      "first": "home",
+      "result": "victory",
+      "round": 14,
+      "actions": 100,
+      "homeDead": 944,
+      "enemyDead": 1010
+    },
+    {
+      "tier": "standard",
+      "seed": 45,
+      "first": "enemy",
+      "result": "victory",
+      "round": 12,
+      "actions": 91,
+      "homeDead": 722,
+      "enemyDead": 1050
+    },
+    {
+      "tier": "standard",
+      "seed": 46,
+      "first": "home",
+      "result": "defeat",
+      "round": 13,
+      "actions": 99,
+      "homeDead": 1150,
+      "enemyDead": 1209
+    },
+    {
+      "tier": "standard",
+      "seed": 46,
+      "first": "enemy",
+      "result": "victory",
+      "round": 12,
+      "actions": 89,
+      "homeDead": 909,
+      "enemyDead": 1250
+    },
+    {
+      "tier": "standard",
+      "seed": 47,
+      "first": "home",
+      "result": "victory",
+      "round": 19,
+      "actions": 143,
+      "homeDead": 1437,
+      "enemyDead": 1650
+    },
+    {
+      "tier": "standard",
+      "seed": 47,
+      "first": "enemy",
+      "result": "defeat",
+      "round": 15,
+      "actions": 107,
+      "homeDead": 1350,
+      "enemyDead": 1182
+    },
+    {
+      "tier": "standard",
+      "seed": 48,
+      "first": "home",
+      "result": "victory",
+      "round": 14,
+      "actions": 107,
+      "homeDead": 1150,
+      "enemyDead": 1000
+    },
+    {
+      "tier": "standard",
+      "seed": 48,
+      "first": "enemy",
+      "result": "defeat",
+      "round": 12,
+      "actions": 85,
+      "homeDead": 750,
+      "enemyDead": 522
+    },
+    {
+      "tier": "standard",
+      "seed": 49,
+      "first": "home",
+      "result": "victory",
+      "round": 13,
+      "actions": 85,
+      "homeDead": 909,
+      "enemyDead": 925
+    },
+    {
+      "tier": "standard",
+      "seed": 49,
+      "first": "enemy",
+      "result": "defeat",
+      "round": 14,
+      "actions": 102,
+      "homeDead": 1310,
+      "enemyDead": 1204
+    },
+    {
+      "tier": "standard",
+      "seed": 50,
+      "first": "home",
+      "result": "defeat",
+      "round": 11,
+      "actions": 80,
+      "homeDead": 950,
+      "enemyDead": 819
+    },
+    {
+      "tier": "standard",
+      "seed": 50,
+      "first": "enemy",
+      "result": "victory",
+      "round": 17,
+      "actions": 123,
+      "homeDead": 1265,
+      "enemyDead": 1450
+    },
+    {
+      "tier": "standard",
+      "seed": 51,
+      "first": "home",
+      "result": "defeat",
+      "round": 11,
+      "actions": 84,
+      "homeDead": 950,
+      "enemyDead": 869
+    },
+    {
+      "tier": "standard",
+      "seed": 51,
+      "first": "enemy",
+      "result": "victory",
+      "round": 13,
+      "actions": 96,
+      "homeDead": 1169,
+      "enemyDead": 1250
+    },
+    {
+      "tier": "standard",
+      "seed": 52,
+      "first": "home",
+      "result": "defeat",
+      "round": 13,
+      "actions": 90,
+      "homeDead": 1150,
+      "enemyDead": 1027
+    },
+    {
+      "tier": "standard",
+      "seed": 52,
+      "first": "enemy",
+      "result": "victory",
+      "round": 12,
+      "actions": 91,
+      "homeDead": 1230,
+      "enemyDead": 1225
+    },
+    {
+      "tier": "standard",
+      "seed": 53,
+      "first": "home",
+      "result": "victory",
+      "round": 13,
+      "actions": 93,
+      "homeDead": 1117,
+      "enemyDead": 1050
+    },
+    {
+      "tier": "standard",
+      "seed": 53,
+      "first": "enemy",
+      "result": "defeat",
+      "round": 19,
+      "actions": 131,
+      "homeDead": 1450,
+      "enemyDead": 1414
+    },
+    {
+      "tier": "standard",
+      "seed": 54,
+      "first": "home",
+      "result": "defeat",
+      "round": 12,
+      "actions": 89,
+      "homeDead": 950,
+      "enemyDead": 954
+    },
+    {
+      "tier": "standard",
+      "seed": 54,
+      "first": "enemy",
+      "result": "defeat",
+      "round": 14,
+      "actions": 103,
+      "homeDead": 1117,
+      "enemyDead": 1112
+    },
+    {
+      "tier": "standard",
+      "seed": 55,
+      "first": "home",
+      "result": "defeat",
+      "round": 19,
+      "actions": 136,
+      "homeDead": 1550,
+      "enemyDead": 1537
+    },
+    {
+      "tier": "standard",
+      "seed": 55,
+      "first": "enemy",
+      "result": "victory",
+      "round": 10,
+      "actions": 74,
+      "homeDead": 827,
+      "enemyDead": 750
+    },
+    {
+      "tier": "standard",
+      "seed": 56,
+      "first": "home",
+      "result": "victory",
+      "round": 10,
+      "actions": 64,
+      "homeDead": 609,
+      "enemyDead": 750
+    },
+    {
+      "tier": "standard",
+      "seed": 56,
+      "first": "enemy",
+      "result": "victory",
+      "round": 17,
+      "actions": 126,
+      "homeDead": 1232,
+      "enemyDead": 1550
+    },
+    {
+      "tier": "standard",
+      "seed": 57,
+      "first": "home",
+      "result": "victory",
+      "round": 18,
+      "actions": 130,
+      "homeDead": 1420,
+      "enemyDead": 1450
+    },
+    {
+      "tier": "standard",
+      "seed": 57,
+      "first": "enemy",
+      "result": "victory",
+      "round": 9,
+      "actions": 69,
+      "homeDead": 767,
+      "enemyDead": 800
+    },
+    {
+      "tier": "standard",
+      "seed": 58,
+      "first": "home",
+      "result": "victory",
+      "round": 13,
+      "actions": 88,
+      "homeDead": 912,
+      "enemyDead": 1150
+    },
+    {
+      "tier": "standard",
+      "seed": 58,
+      "first": "enemy",
+      "result": "defeat",
+      "round": 10,
+      "actions": 68,
+      "homeDead": 675,
+      "enemyDead": 752
+    },
+    {
+      "tier": "standard",
+      "seed": 59,
+      "first": "home",
+      "result": "victory",
+      "round": 16,
+      "actions": 106,
+      "homeDead": 1184,
+      "enemyDead": 1150
+    },
+    {
+      "tier": "standard",
+      "seed": 59,
+      "first": "enemy",
+      "result": "defeat",
+      "round": 13,
+      "actions": 97,
+      "homeDead": 1150,
+      "enemyDead": 1019
+    },
+    {
+      "tier": "standard",
+      "seed": 60,
+      "first": "home",
+      "result": "victory",
+      "round": 15,
+      "actions": 110,
+      "homeDead": 1115,
+      "enemyDead": 1425
+    },
+    {
+      "tier": "standard",
+      "seed": 60,
+      "first": "enemy",
+      "result": "victory",
+      "round": 15,
+      "actions": 118,
+      "homeDead": 1209,
+      "enemyDead": 1350
+    },
+    {
+      "tier": "standard",
+      "seed": 61,
+      "first": "home",
+      "result": "defeat",
+      "round": 9,
+      "actions": 66,
+      "homeDead": 650,
+      "enemyDead": 464
+    },
+    {
+      "tier": "standard",
+      "seed": 61,
+      "first": "enemy",
+      "result": "defeat",
+      "round": 16,
+      "actions": 118,
+      "homeDead": 1300,
+      "enemyDead": 1344
+    },
+    {
+      "tier": "standard",
+      "seed": 62,
+      "first": "home",
+      "result": "defeat",
+      "round": 19,
+      "actions": 137,
+      "homeDead": 1650,
+      "enemyDead": 1642
+    },
+    {
+      "tier": "standard",
+      "seed": 62,
+      "first": "enemy",
+      "result": "victory",
+      "round": 13,
+      "actions": 99,
+      "homeDead": 1029,
+      "enemyDead": 1350
+    },
+    {
+      "tier": "standard",
+      "seed": 63,
+      "first": "home",
+      "result": "defeat",
+      "round": 8,
+      "actions": 54,
+      "homeDead": 700,
+      "enemyDead": 600
+    },
+    {
+      "tier": "standard",
+      "seed": 63,
+      "first": "enemy",
+      "result": "defeat",
+      "round": 18,
+      "actions": 134,
+      "homeDead": 1650,
+      "enemyDead": 1420
+    },
+    {
+      "tier": "standard",
+      "seed": 64,
+      "first": "home",
+      "result": "victory",
+      "round": 17,
+      "actions": 122,
+      "homeDead": 1250,
+      "enemyDead": 1175
+    },
+    {
+      "tier": "standard",
+      "seed": 64,
+      "first": "enemy",
+      "result": "victory",
+      "round": 15,
+      "actions": 119,
+      "homeDead": 1534,
+      "enemyDead": 1450
+    },
+    {
+      "tier": "veteran",
+      "seed": 1,
+      "first": "home",
+      "result": "defeat",
+      "round": 9,
+      "actions": 63,
+      "homeDead": 750,
+      "enemyDead": 707
+    },
+    {
+      "tier": "veteran",
+      "seed": 1,
+      "first": "enemy",
+      "result": "victory",
+      "round": 14,
+      "actions": 102,
+      "homeDead": 1029,
+      "enemyDead": 1150
+    },
+    {
+      "tier": "veteran",
+      "seed": 2,
+      "first": "home",
+      "result": "defeat",
+      "round": 17,
+      "actions": 124,
+      "homeDead": 1450,
+      "enemyDead": 1287
+    },
+    {
+      "tier": "veteran",
+      "seed": 2,
+      "first": "enemy",
+      "result": "defeat",
+      "round": 12,
+      "actions": 87,
+      "homeDead": 1000,
+      "enemyDead": 1117
+    },
+    {
+      "tier": "veteran",
+      "seed": 3,
+      "first": "home",
+      "result": "victory",
+      "round": 17,
+      "actions": 124,
+      "homeDead": 1109,
+      "enemyDead": 1450
+    },
+    {
+      "tier": "veteran",
+      "seed": 3,
+      "first": "enemy",
+      "result": "defeat",
+      "round": 14,
+      "actions": 100,
+      "homeDead": 1350,
+      "enemyDead": 1304
+    },
+    {
+      "tier": "veteran",
+      "seed": 4,
+      "first": "home",
+      "result": "victory",
+      "round": 11,
+      "actions": 77,
+      "homeDead": 1010,
+      "enemyDead": 850
+    },
+    {
+      "tier": "veteran",
+      "seed": 4,
+      "first": "enemy",
+      "result": "victory",
+      "round": 11,
+      "actions": 79,
+      "homeDead": 832,
+      "enemyDead": 750
+    },
+    {
+      "tier": "veteran",
+      "seed": 5,
+      "first": "home",
+      "result": "victory",
+      "round": 16,
+      "actions": 118,
+      "homeDead": 1425,
+      "enemyDead": 1350
+    },
+    {
+      "tier": "veteran",
+      "seed": 5,
+      "first": "enemy",
+      "result": "victory",
+      "round": 10,
+      "actions": 77,
+      "homeDead": 605,
+      "enemyDead": 950
+    },
+    {
+      "tier": "veteran",
+      "seed": 6,
+      "first": "home",
+      "result": "defeat",
+      "round": 15,
+      "actions": 111,
+      "homeDead": 1350,
+      "enemyDead": 1134
+    },
+    {
+      "tier": "veteran",
+      "seed": 6,
+      "first": "enemy",
+      "result": "victory",
+      "round": 11,
+      "actions": 80,
+      "homeDead": 885,
+      "enemyDead": 1150
+    },
+    {
+      "tier": "veteran",
+      "seed": 7,
+      "first": "home",
+      "result": "victory",
+      "round": 10,
+      "actions": 67,
+      "homeDead": 905,
+      "enemyDead": 710
+    },
+    {
+      "tier": "veteran",
+      "seed": 7,
+      "first": "enemy",
+      "result": "defeat",
+      "round": 16,
+      "actions": 116,
+      "homeDead": 1350,
+      "enemyDead": 1132
+    },
+    {
+      "tier": "veteran",
+      "seed": 8,
+      "first": "home",
+      "result": "defeat",
+      "round": 16,
+      "actions": 117,
+      "homeDead": 1450,
+      "enemyDead": 1212
+    },
+    {
+      "tier": "veteran",
+      "seed": 8,
+      "first": "enemy",
+      "result": "defeat",
+      "round": 14,
+      "actions": 99,
+      "homeDead": 1150,
+      "enemyDead": 1045
+    },
+    {
+      "tier": "veteran",
+      "seed": 9,
+      "first": "home",
+      "result": "defeat",
+      "round": 12,
+      "actions": 94,
+      "homeDead": 1050,
+      "enemyDead": 864
+    },
+    {
+      "tier": "veteran",
+      "seed": 9,
+      "first": "enemy",
+      "result": "defeat",
+      "round": 17,
+      "actions": 120,
+      "homeDead": 1150,
+      "enemyDead": 1359
+    },
+    {
+      "tier": "veteran",
+      "seed": 10,
+      "first": "home",
+      "result": "victory",
+      "round": 12,
+      "actions": 87,
+      "homeDead": 919,
+      "enemyDead": 1050
+    },
+    {
+      "tier": "veteran",
+      "seed": 10,
+      "first": "enemy",
+      "result": "victory",
+      "round": 13,
+      "actions": 99,
+      "homeDead": 1275,
+      "enemyDead": 1000
+    },
+    {
+      "tier": "veteran",
+      "seed": 11,
+      "first": "home",
+      "result": "defeat",
+      "round": 12,
+      "actions": 86,
+      "homeDead": 1100,
+      "enemyDead": 734
+    },
+    {
+      "tier": "veteran",
+      "seed": 11,
+      "first": "enemy",
+      "result": "defeat",
+      "round": 14,
+      "actions": 104,
+      "homeDead": 1350,
+      "enemyDead": 1094
+    },
+    {
+      "tier": "veteran",
+      "seed": 12,
+      "first": "home",
+      "result": "victory",
+      "round": 12,
+      "actions": 81,
+      "homeDead": 952,
+      "enemyDead": 1050
+    },
+    {
+      "tier": "veteran",
+      "seed": 12,
+      "first": "enemy",
+      "result": "defeat",
+      "round": 17,
+      "actions": 126,
+      "homeDead": 1517,
+      "enemyDead": 1635
+    },
+    {
+      "tier": "veteran",
+      "seed": 13,
+      "first": "home",
+      "result": "defeat",
+      "round": 9,
+      "actions": 66,
+      "homeDead": 725,
+      "enemyDead": 650
+    },
+    {
+      "tier": "veteran",
+      "seed": 13,
+      "first": "enemy",
+      "result": "defeat",
+      "round": 8,
+      "actions": 50,
+      "homeDead": 350,
+      "enemyDead": 400
+    },
+    {
+      "tier": "veteran",
+      "seed": 14,
+      "first": "home",
+      "result": "victory",
+      "round": 8,
+      "actions": 46,
+      "homeDead": 336,
+      "enemyDead": 534
+    },
+    {
+      "tier": "veteran",
+      "seed": 14,
+      "first": "enemy",
+      "result": "victory",
+      "round": 16,
+      "actions": 122,
+      "homeDead": 1327,
+      "enemyDead": 1350
+    },
+    {
+      "tier": "veteran",
+      "seed": 15,
+      "first": "home",
+      "result": "victory",
+      "round": 14,
+      "actions": 108,
+      "homeDead": 827,
+      "enemyDead": 1310
+    },
+    {
+      "tier": "veteran",
+      "seed": 15,
+      "first": "enemy",
+      "result": "victory",
+      "round": 13,
+      "actions": 93,
+      "homeDead": 1061,
+      "enemyDead": 1150
+    },
+    {
+      "tier": "veteran",
+      "seed": 16,
+      "first": "home",
+      "result": "defeat",
+      "round": 9,
+      "actions": 63,
+      "homeDead": 650,
+      "enemyDead": 565
+    },
+    {
+      "tier": "veteran",
+      "seed": 16,
+      "first": "enemy",
+      "result": "defeat",
+      "round": 13,
+      "actions": 96,
+      "homeDead": 1050,
+      "enemyDead": 1112
+    },
+    {
+      "tier": "veteran",
+      "seed": 17,
+      "first": "home",
+      "result": "defeat",
+      "round": 11,
+      "actions": 84,
+      "homeDead": 1150,
+      "enemyDead": 947
+    },
+    {
+      "tier": "veteran",
+      "seed": 17,
+      "first": "enemy",
+      "result": "defeat",
+      "round": 20,
+      "actions": 139,
+      "homeDead": 1450,
+      "enemyDead": 1522
+    },
+    {
+      "tier": "veteran",
+      "seed": 18,
+      "first": "home",
+      "result": "defeat",
+      "round": 10,
+      "actions": 69,
+      "homeDead": 850,
+      "enemyDead": 662
+    },
+    {
+      "tier": "veteran",
+      "seed": 18,
+      "first": "enemy",
+      "result": "defeat",
+      "round": 15,
+      "actions": 118,
+      "homeDead": 1350,
+      "enemyDead": 1199
+    },
+    {
+      "tier": "veteran",
+      "seed": 19,
+      "first": "home",
+      "result": "defeat",
+      "round": 13,
+      "actions": 98,
+      "homeDead": 1250,
+      "enemyDead": 925
+    },
+    {
+      "tier": "veteran",
+      "seed": 19,
+      "first": "enemy",
+      "result": "victory",
+      "round": 12,
+      "actions": 88,
+      "homeDead": 882,
+      "enemyDead": 925
+    },
+    {
+      "tier": "veteran",
+      "seed": 20,
+      "first": "home",
+      "result": "victory",
+      "round": 10,
+      "actions": 69,
+      "homeDead": 800,
+      "enemyDead": 860
+    },
+    {
+      "tier": "veteran",
+      "seed": 20,
+      "first": "enemy",
+      "result": "defeat",
+      "round": 8,
+      "actions": 50,
+      "homeDead": 550,
+      "enemyDead": 310
+    },
+    {
+      "tier": "veteran",
+      "seed": 21,
+      "first": "home",
+      "result": "defeat",
+      "round": 12,
+      "actions": 89,
+      "homeDead": 950,
+      "enemyDead": 739
+    },
+    {
+      "tier": "veteran",
+      "seed": 21,
+      "first": "enemy",
+      "result": "defeat",
+      "round": 17,
+      "actions": 122,
+      "homeDead": 1250,
+      "enemyDead": 1342
+    },
+    {
+      "tier": "veteran",
+      "seed": 22,
+      "first": "home",
+      "result": "victory",
+      "round": 22,
+      "actions": 155,
+      "homeDead": 1716,
+      "enemyDead": 1850
+    },
+    {
+      "tier": "veteran",
+      "seed": 22,
+      "first": "enemy",
+      "result": "victory",
+      "round": 12,
+      "actions": 94,
+      "homeDead": 945,
+      "enemyDead": 1150
+    },
+    {
+      "tier": "veteran",
+      "seed": 23,
+      "first": "home",
+      "result": "victory",
+      "round": 13,
+      "actions": 90,
+      "homeDead": 1115,
+      "enemyDead": 850
+    },
+    {
+      "tier": "veteran",
+      "seed": 23,
+      "first": "enemy",
+      "result": "defeat",
+      "round": 15,
+      "actions": 107,
+      "homeDead": 1250,
+      "enemyDead": 1234
+    },
+    {
+      "tier": "veteran",
+      "seed": 24,
+      "first": "home",
+      "result": "defeat",
+      "round": 13,
+      "actions": 97,
+      "homeDead": 1050,
+      "enemyDead": 1209
+    },
+    {
+      "tier": "veteran",
+      "seed": 24,
+      "first": "enemy",
+      "result": "victory",
+      "round": 12,
+      "actions": 91,
+      "homeDead": 1059,
+      "enemyDead": 1150
+    },
+    {
+      "tier": "veteran",
+      "seed": 25,
+      "first": "home",
+      "result": "victory",
+      "round": 9,
+      "actions": 58,
+      "homeDead": 505,
+      "enemyDead": 450
+    },
+    {
+      "tier": "veteran",
+      "seed": 25,
+      "first": "enemy",
+      "result": "defeat",
+      "round": 16,
+      "actions": 119,
+      "homeDead": 1350,
+      "enemyDead": 1344
+    },
+    {
+      "tier": "veteran",
+      "seed": 26,
+      "first": "home",
+      "result": "victory",
+      "round": 17,
+      "actions": 126,
+      "homeDead": 1327,
+      "enemyDead": 1550
+    },
+    {
+      "tier": "veteran",
+      "seed": 26,
+      "first": "enemy",
+      "result": "defeat",
+      "round": 9,
+      "actions": 54,
+      "homeDead": 450,
+      "enemyDead": 500
+    },
+    {
+      "tier": "veteran",
+      "seed": 27,
+      "first": "home",
+      "result": "defeat",
+      "round": 12,
+      "actions": 95,
+      "homeDead": 1284,
+      "enemyDead": 1009
+    },
+    {
+      "tier": "veteran",
+      "seed": 27,
+      "first": "enemy",
+      "result": "victory",
+      "round": 15,
+      "actions": 118,
+      "homeDead": 1375,
+      "enemyDead": 1350
+    },
+    {
+      "tier": "veteran",
+      "seed": 28,
+      "first": "home",
+      "result": "defeat",
+      "round": 15,
+      "actions": 116,
+      "homeDead": 1550,
+      "enemyDead": 1360
+    },
+    {
+      "tier": "veteran",
+      "seed": 28,
+      "first": "enemy",
+      "result": "victory",
+      "round": 13,
+      "actions": 102,
+      "homeDead": 1161,
+      "enemyDead": 1050
+    },
+    {
+      "tier": "veteran",
+      "seed": 29,
+      "first": "home",
+      "result": "defeat",
+      "round": 16,
+      "actions": 115,
+      "homeDead": 1450,
+      "enemyDead": 1132
+    },
+    {
+      "tier": "veteran",
+      "seed": 29,
+      "first": "enemy",
+      "result": "defeat",
+      "round": 12,
+      "actions": 86,
+      "homeDead": 1050,
+      "enemyDead": 904
+    },
+    {
+      "tier": "veteran",
+      "seed": 30,
+      "first": "home",
+      "result": "defeat",
+      "round": 15,
+      "actions": 109,
+      "homeDead": 1150,
+      "enemyDead": 1111
+    },
+    {
+      "tier": "veteran",
+      "seed": 30,
+      "first": "enemy",
+      "result": "defeat",
+      "round": 17,
+      "actions": 125,
+      "homeDead": 1470,
+      "enemyDead": 1215
+    },
+    {
+      "tier": "veteran",
+      "seed": 31,
+      "first": "home",
+      "result": "victory",
+      "round": 12,
+      "actions": 89,
+      "homeDead": 859,
+      "enemyDead": 1150
+    },
+    {
+      "tier": "veteran",
+      "seed": 31,
+      "first": "enemy",
+      "result": "victory",
+      "round": 14,
+      "actions": 103,
+      "homeDead": 1164,
+      "enemyDead": 1150
+    },
+    {
+      "tier": "veteran",
+      "seed": 32,
+      "first": "home",
+      "result": "victory",
+      "round": 16,
+      "actions": 108,
+      "homeDead": 1132,
+      "enemyDead": 1150
+    },
+    {
+      "tier": "veteran",
+      "seed": 32,
+      "first": "enemy",
+      "result": "defeat",
+      "round": 13,
+      "actions": 94,
+      "homeDead": 1150,
+      "enemyDead": 1082
+    },
+    {
+      "tier": "veteran",
+      "seed": 33,
+      "first": "home",
+      "result": "victory",
+      "round": 11,
+      "actions": 77,
+      "homeDead": 559,
+      "enemyDead": 875
+    },
+    {
+      "tier": "veteran",
+      "seed": 33,
+      "first": "enemy",
+      "result": "victory",
+      "round": 14,
+      "actions": 115,
+      "homeDead": 1110,
+      "enemyDead": 1350
+    },
+    {
+      "tier": "veteran",
+      "seed": 34,
+      "first": "home",
+      "result": "defeat",
+      "round": 15,
+      "actions": 110,
+      "homeDead": 1250,
+      "enemyDead": 1277
+    },
+    {
+      "tier": "veteran",
+      "seed": 34,
+      "first": "enemy",
+      "result": "defeat",
+      "round": 15,
+      "actions": 111,
+      "homeDead": 1217,
+      "enemyDead": 1425
+    },
+    {
+      "tier": "veteran",
+      "seed": 35,
+      "first": "home",
+      "result": "defeat",
+      "round": 15,
+      "actions": 112,
+      "homeDead": 1350,
+      "enemyDead": 1376
+    },
+    {
+      "tier": "veteran",
+      "seed": 35,
+      "first": "enemy",
+      "result": "defeat",
+      "round": 9,
+      "actions": 62,
+      "homeDead": 625,
+      "enemyDead": 627
+    },
+    {
+      "tier": "veteran",
+      "seed": 36,
+      "first": "home",
+      "result": "victory",
+      "round": 13,
+      "actions": 93,
+      "homeDead": 1275,
+      "enemyDead": 1150
+    },
+    {
+      "tier": "veteran",
+      "seed": 36,
+      "first": "enemy",
+      "result": "victory",
+      "round": 12,
+      "actions": 86,
+      "homeDead": 1009,
+      "enemyDead": 850
+    },
+    {
+      "tier": "veteran",
+      "seed": 37,
+      "first": "home",
+      "result": "victory",
+      "round": 10,
+      "actions": 64,
+      "homeDead": 610,
+      "enemyDead": 650
+    },
+    {
+      "tier": "veteran",
+      "seed": 37,
+      "first": "enemy",
+      "result": "defeat",
+      "round": 22,
+      "actions": 157,
+      "homeDead": 1700,
+      "enemyDead": 1850
+    },
+    {
+      "tier": "veteran",
+      "seed": 38,
+      "first": "home",
+      "result": "defeat",
+      "round": 15,
+      "actions": 110,
+      "homeDead": 1450,
+      "enemyDead": 1260
+    },
+    {
+      "tier": "veteran",
+      "seed": 38,
+      "first": "enemy",
+      "result": "victory",
+      "round": 17,
+      "actions": 128,
+      "homeDead": 1240,
+      "enemyDead": 1450
+    },
+    {
+      "tier": "veteran",
+      "seed": 39,
+      "first": "home",
+      "result": "defeat",
+      "round": 13,
+      "actions": 100,
+      "homeDead": 1050,
+      "enemyDead": 1017
+    },
+    {
+      "tier": "veteran",
+      "seed": 39,
+      "first": "enemy",
+      "result": "victory",
+      "round": 15,
+      "actions": 111,
+      "homeDead": 1479,
+      "enemyDead": 1350
+    },
+    {
+      "tier": "veteran",
+      "seed": 40,
+      "first": "home",
+      "result": "defeat",
+      "round": 11,
+      "actions": 83,
+      "homeDead": 950,
+      "enemyDead": 924
+    },
+    {
+      "tier": "veteran",
+      "seed": 40,
+      "first": "enemy",
+      "result": "victory",
+      "round": 11,
+      "actions": 82,
+      "homeDead": 944,
+      "enemyDead": 1100
+    },
+    {
+      "tier": "veteran",
+      "seed": 41,
+      "first": "home",
+      "result": "defeat",
+      "round": 13,
+      "actions": 96,
+      "homeDead": 1325,
+      "enemyDead": 1109
+    },
+    {
+      "tier": "veteran",
+      "seed": 41,
+      "first": "enemy",
+      "result": "victory",
+      "round": 13,
+      "actions": 99,
+      "homeDead": 1220,
+      "enemyDead": 1150
+    },
+    {
+      "tier": "veteran",
+      "seed": 42,
+      "first": "home",
+      "result": "victory",
+      "round": 7,
+      "actions": 47,
+      "homeDead": 300,
+      "enemyDead": 550
+    },
+    {
+      "tier": "veteran",
+      "seed": 42,
+      "first": "enemy",
+      "result": "defeat",
+      "round": 14,
+      "actions": 111,
+      "homeDead": 1250,
+      "enemyDead": 1000
+    },
+    {
+      "tier": "veteran",
+      "seed": 43,
+      "first": "home",
+      "result": "defeat",
+      "round": 9,
+      "actions": 67,
+      "homeDead": 625,
+      "enemyDead": 655
+    },
+    {
+      "tier": "veteran",
+      "seed": 43,
+      "first": "enemy",
+      "result": "defeat",
+      "round": 16,
+      "actions": 115,
+      "homeDead": 1650,
+      "enemyDead": 1160
+    },
+    {
+      "tier": "veteran",
+      "seed": 44,
+      "first": "home",
+      "result": "victory",
+      "round": 16,
+      "actions": 114,
+      "homeDead": 1242,
+      "enemyDead": 1250
+    },
+    {
+      "tier": "veteran",
+      "seed": 44,
+      "first": "enemy",
+      "result": "victory",
+      "round": 17,
+      "actions": 127,
+      "homeDead": 1342,
+      "enemyDead": 1350
+    },
+    {
+      "tier": "veteran",
+      "seed": 45,
+      "first": "home",
+      "result": "victory",
+      "round": 14,
+      "actions": 100,
+      "homeDead": 944,
+      "enemyDead": 1010
+    },
+    {
+      "tier": "veteran",
+      "seed": 45,
+      "first": "enemy",
+      "result": "victory",
+      "round": 12,
+      "actions": 91,
+      "homeDead": 722,
+      "enemyDead": 1050
+    },
+    {
+      "tier": "veteran",
+      "seed": 46,
+      "first": "home",
+      "result": "defeat",
+      "round": 13,
+      "actions": 99,
+      "homeDead": 1150,
+      "enemyDead": 1209
+    },
+    {
+      "tier": "veteran",
+      "seed": 46,
+      "first": "enemy",
+      "result": "victory",
+      "round": 12,
+      "actions": 89,
+      "homeDead": 909,
+      "enemyDead": 1250
+    },
+    {
+      "tier": "veteran",
+      "seed": 47,
+      "first": "home",
+      "result": "victory",
+      "round": 19,
+      "actions": 143,
+      "homeDead": 1437,
+      "enemyDead": 1650
+    },
+    {
+      "tier": "veteran",
+      "seed": 47,
+      "first": "enemy",
+      "result": "defeat",
+      "round": 15,
+      "actions": 107,
+      "homeDead": 1325,
+      "enemyDead": 1182
+    },
+    {
+      "tier": "veteran",
+      "seed": 48,
+      "first": "home",
+      "result": "victory",
+      "round": 14,
+      "actions": 107,
+      "homeDead": 1150,
+      "enemyDead": 1000
+    },
+    {
+      "tier": "veteran",
+      "seed": 48,
+      "first": "enemy",
+      "result": "defeat",
+      "round": 12,
+      "actions": 85,
+      "homeDead": 750,
+      "enemyDead": 522
+    },
+    {
+      "tier": "veteran",
+      "seed": 49,
+      "first": "home",
+      "result": "victory",
+      "round": 13,
+      "actions": 85,
+      "homeDead": 909,
+      "enemyDead": 925
+    },
+    {
+      "tier": "veteran",
+      "seed": 49,
+      "first": "enemy",
+      "result": "defeat",
+      "round": 14,
+      "actions": 102,
+      "homeDead": 1310,
+      "enemyDead": 1204
+    },
+    {
+      "tier": "veteran",
+      "seed": 50,
+      "first": "home",
+      "result": "defeat",
+      "round": 11,
+      "actions": 80,
+      "homeDead": 950,
+      "enemyDead": 819
+    },
+    {
+      "tier": "veteran",
+      "seed": 50,
+      "first": "enemy",
+      "result": "victory",
+      "round": 17,
+      "actions": 123,
+      "homeDead": 1265,
+      "enemyDead": 1450
+    },
+    {
+      "tier": "veteran",
+      "seed": 51,
+      "first": "home",
+      "result": "defeat",
+      "round": 11,
+      "actions": 84,
+      "homeDead": 950,
+      "enemyDead": 869
+    },
+    {
+      "tier": "veteran",
+      "seed": 51,
+      "first": "enemy",
+      "result": "victory",
+      "round": 13,
+      "actions": 96,
+      "homeDead": 1169,
+      "enemyDead": 1250
+    },
+    {
+      "tier": "veteran",
+      "seed": 52,
+      "first": "home",
+      "result": "defeat",
+      "round": 13,
+      "actions": 90,
+      "homeDead": 1150,
+      "enemyDead": 1027
+    },
+    {
+      "tier": "veteran",
+      "seed": 52,
+      "first": "enemy",
+      "result": "defeat",
+      "round": 16,
+      "actions": 118,
+      "homeDead": 1350,
+      "enemyDead": 1250
+    },
+    {
+      "tier": "veteran",
+      "seed": 53,
+      "first": "home",
+      "result": "victory",
+      "round": 13,
+      "actions": 93,
+      "homeDead": 1117,
+      "enemyDead": 1050
+    },
+    {
+      "tier": "veteran",
+      "seed": 53,
+      "first": "enemy",
+      "result": "defeat",
+      "round": 19,
+      "actions": 131,
+      "homeDead": 1450,
+      "enemyDead": 1414
+    },
+    {
+      "tier": "veteran",
+      "seed": 54,
+      "first": "home",
+      "result": "defeat",
+      "round": 12,
+      "actions": 89,
+      "homeDead": 950,
+      "enemyDead": 954
+    },
+    {
+      "tier": "veteran",
+      "seed": 54,
+      "first": "enemy",
+      "result": "defeat",
+      "round": 14,
+      "actions": 103,
+      "homeDead": 1117,
+      "enemyDead": 1112
+    },
+    {
+      "tier": "veteran",
+      "seed": 55,
+      "first": "home",
+      "result": "defeat",
+      "round": 19,
+      "actions": 136,
+      "homeDead": 1550,
+      "enemyDead": 1537
+    },
+    {
+      "tier": "veteran",
+      "seed": 55,
+      "first": "enemy",
+      "result": "victory",
+      "round": 10,
+      "actions": 74,
+      "homeDead": 827,
+      "enemyDead": 750
+    },
+    {
+      "tier": "veteran",
+      "seed": 56,
+      "first": "home",
+      "result": "victory",
+      "round": 10,
+      "actions": 64,
+      "homeDead": 609,
+      "enemyDead": 750
+    },
+    {
+      "tier": "veteran",
+      "seed": 56,
+      "first": "enemy",
+      "result": "victory",
+      "round": 17,
+      "actions": 126,
+      "homeDead": 1232,
+      "enemyDead": 1550
+    },
+    {
+      "tier": "veteran",
+      "seed": 57,
+      "first": "home",
+      "result": "victory",
+      "round": 18,
+      "actions": 130,
+      "homeDead": 1420,
+      "enemyDead": 1450
+    },
+    {
+      "tier": "veteran",
+      "seed": 57,
+      "first": "enemy",
+      "result": "victory",
+      "round": 9,
+      "actions": 69,
+      "homeDead": 767,
+      "enemyDead": 800
+    },
+    {
+      "tier": "veteran",
+      "seed": 58,
+      "first": "home",
+      "result": "victory",
+      "round": 13,
+      "actions": 88,
+      "homeDead": 912,
+      "enemyDead": 1150
+    },
+    {
+      "tier": "veteran",
+      "seed": 58,
+      "first": "enemy",
+      "result": "defeat",
+      "round": 10,
+      "actions": 68,
+      "homeDead": 675,
+      "enemyDead": 752
+    },
+    {
+      "tier": "veteran",
+      "seed": 59,
+      "first": "home",
+      "result": "victory",
+      "round": 16,
+      "actions": 106,
+      "homeDead": 1184,
+      "enemyDead": 1150
+    },
+    {
+      "tier": "veteran",
+      "seed": 59,
+      "first": "enemy",
+      "result": "defeat",
+      "round": 12,
+      "actions": 92,
+      "homeDead": 1075,
+      "enemyDead": 1017
+    },
+    {
+      "tier": "veteran",
+      "seed": 60,
+      "first": "home",
+      "result": "victory",
+      "round": 15,
+      "actions": 110,
+      "homeDead": 1115,
+      "enemyDead": 1425
+    },
+    {
+      "tier": "veteran",
+      "seed": 60,
+      "first": "enemy",
+      "result": "victory",
+      "round": 15,
+      "actions": 118,
+      "homeDead": 1209,
+      "enemyDead": 1350
+    },
+    {
+      "tier": "veteran",
+      "seed": 61,
+      "first": "home",
+      "result": "defeat",
+      "round": 9,
+      "actions": 66,
+      "homeDead": 650,
+      "enemyDead": 464
+    },
+    {
+      "tier": "veteran",
+      "seed": 61,
+      "first": "enemy",
+      "result": "defeat",
+      "round": 16,
+      "actions": 118,
+      "homeDead": 1300,
+      "enemyDead": 1344
+    },
+    {
+      "tier": "veteran",
+      "seed": 62,
+      "first": "home",
+      "result": "defeat",
+      "round": 19,
+      "actions": 137,
+      "homeDead": 1650,
+      "enemyDead": 1642
+    },
+    {
+      "tier": "veteran",
+      "seed": 62,
+      "first": "enemy",
+      "result": "victory",
+      "round": 13,
+      "actions": 99,
+      "homeDead": 1029,
+      "enemyDead": 1350
+    },
+    {
+      "tier": "veteran",
+      "seed": 63,
+      "first": "home",
+      "result": "defeat",
+      "round": 8,
+      "actions": 54,
+      "homeDead": 700,
+      "enemyDead": 600
+    },
+    {
+      "tier": "veteran",
+      "seed": 63,
+      "first": "enemy",
+      "result": "defeat",
+      "round": 18,
+      "actions": 134,
+      "homeDead": 1650,
+      "enemyDead": 1420
+    },
+    {
+      "tier": "veteran",
+      "seed": 64,
+      "first": "home",
+      "result": "victory",
+      "round": 17,
+      "actions": 122,
+      "homeDead": 1250,
+      "enemyDead": 1175
+    },
+    {
+      "tier": "veteran",
+      "seed": 64,
+      "first": "enemy",
+      "result": "victory",
+      "round": 15,
+      "actions": 119,
+      "homeDead": 1534,
+      "enemyDead": 1450
+    }
+  ],
+  "errors": [],
+  "summary": {
+    "novice": {
+      "n": 128,
+      "playerWins": 82,
+      "enemyWins": 46,
+      "draws": 0,
+      "unfinished": 0,
+      "meanActions": 93.7109375
+    },
+    "standard": {
+      "n": 128,
+      "playerWins": 63,
+      "enemyWins": 65,
+      "draws": 0,
+      "unfinished": 0,
+      "meanActions": 98.5703125
+    },
+    "veteran": {
+      "n": 128,
+      "playerWins": 61,
+      "enemyWins": 67,
+      "draws": 0,
+      "unfinished": 0,
+      "meanActions": 98.2890625
+    }
+  }
+}

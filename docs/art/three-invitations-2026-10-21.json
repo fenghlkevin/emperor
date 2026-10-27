@@ -1,0 +1,82 @@
+{
+  "date": "2026-10-21",
+  "generator": "built-in image_gen",
+  "styleReference": "assets/beauties/special/sketch-beauty-xia-yuhe-transparent-v6.png",
+  "note": "Face shapes and facial proportions follow user supplied photos/video; costumes and adult game characters are fictional adaptations. All three invitations are voluntary.",
+  "rules": {
+    "chancePerEligibleTour": 0.01,
+    "oncePerGame": true,
+    "refusalAlsoMarksSeen": true,
+    "choices": [
+      "邀请入宫",
+      "放弃"
+    ],
+    "immediateVoluntaryAdmission": true,
+    "localLoyaltyPenalty": 0,
+    "prestigePenalty": 0
+  },
+  "locations": {
+    "youyou": [
+      "广州",
+      "lingnan"
+    ],
+    "susu": [
+      "洛阳",
+      "henan"
+    ],
+    "ruoxi": [
+      "太原",
+      "hedong"
+    ]
+  },
+  "characters": [
+    {
+      "id": "youyou",
+      "generator": "built-in image_gen",
+      "faceReference": "assets/beauties/references/youyou/face-reference-1.jpg",
+      "assets": [
+        {
+          "path": "assets/beauties/special/youyou-v1.png",
+          "prompt": "Create standalone full-body ancient Chinese game portrait of adult woman 悠悠, age 25. Input 1 is FACE LIKENESS reference: preserve its recognizable face shape, narrow tapered jaw, almond eyes, small nose, lip proportions and dark brows; input 2 ONLY defines painted game cutout style. Retain recognizable facial identity instead of generic beautiful face. Happy warm smile and near-frontal complete face with both eyes unobscured. Dark hair in loose low ponytail, gold pendant, ivory/sea-blue modest opaque full-sleeved hanfu with wave embroidery, floor length skirt and flat shoes, folded silk fan at waist. One adult, full head-to-shoes inside 1024x1536 frame, clear margins. Refined gouache and fine ink detail, not photograph/anime. GENUINE transparent background, no glow, scene, floor, text or watermark. Fictional peaceful voluntary court invitation character, no force or sexual context."
+        },
+        {
+          "path": "assets/beauties/special/youyou-encounter-v1.png"
+        }
+      ]
+    },
+    {
+      "id": "susu",
+      "generator": "built-in image_gen",
+      "faceReference": "assets/beauties/references/susu/face-reference-1.jpg",
+      "assets": [
+        {
+          "path": "assets/beauties/special/susu-v1.png",
+          "prompt": "Create standalone full-body ancient Chinese game portrait of adult woman 苏苏, age 25. Input 1 is FACE reference: closely preserve its distinctive oval face outline, rounded cheeks and jaw, full lips, eye and nose proportions, small mole below her right eye (viewer left), side-parted shoulder-length bob with dark roots and chestnut ends. Input 2 defines ONLY painted game cutout style. Do not substitute a generic face. Translate to modest fully clothed ancient costume: chestnut and cream long-sleeved hanfu with peony embroidery, small flower hairpin, basket of peonies at waist, long opaque layered skirt and flat shoes, normal non-pregnant silhouette. Happy relaxed smile, complete nearly frontal face, both eyes and cheeks visible. Full head-to-shoes portrait 1024x1536 with clear margins. Refined realistic gouache and ink game painting, not photograph/anime. GENUINE transparent background, no halo, scenery, text or watermark. Peaceful fictional voluntary court invitation, no coercion or sexual context."
+        },
+        {
+          "path": "assets/beauties/special/susu-encounter-v1.png"
+        }
+      ]
+    },
+    {
+      "id": "ruoxi",
+      "generator": "built-in image_gen",
+      "faceReference": "assets/beauties/references/ruoxi/face-reference-1.jpg",
+      "assets": [
+        {
+          "path": "assets/beauties/special/ruoxi-v1.png",
+          "prompt": "Create one standalone transparent full-body ancient Chinese painted game portrait of adult woman 若曦 age 25. First input video frame is the FACE LIKENESS reference only: preserve her actual recognizable long oval face, softly tapered chin, distinct brow and eye spacing, small natural lips and nose shape, dark side-parted hair, and thin silver rectangular eyeglasses. Do not copy modern dress, pose or room. Second input defines ONLY the refined gouache game illustration style. Keep her unique facial identity, not generic game beauty. Near-frontal unobstructed face with both eyes visible through clear glasses, happy natural smile. Lavender and silver modest opaque full-sleeved hanfu with orchid embroidery, long layered skirt and flat shoes, silver hairpin with long half-up dark hair, rolled painting in relaxed hands at waist. Elegant natural adult standing posture. Whole head-to-shoes within frame, generous margins, 1024x1536 portrait. Fine ink lines and realistic painted silk textures. GENUINE transparent background, no glow/halo, scenery, ground, lettering, UI or watermark. Peaceful fictional voluntary court invitation scene, no coercion, nudity or sexual context."
+        },
+        {
+          "path": "assets/beauties/special/ruoxi-encounter-v1.png"
+        }
+      ]
+    }
+  ],
+  "verification": [
+    "38 tour/travel tests passed",
+    "38 runtime data-contract snapshots and negative type checks passed",
+    "Six 1024x1536 RGBA assets verified with genuine transparent backgrounds",
+    "Electron UI: all three first encounters, exactly two actions, invitation, return, reload and correct dedicated palace portrait passed; narrow layout and combined harem screenshot verified"
+  ]
+}

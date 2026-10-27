@@ -1,0 +1,271 @@
+{
+  "date": "2026-10-25",
+  "method": "built-in image_gen; separate generation for each variant; reference identity preserved",
+  "assets": [
+    {
+      "personId": "manual-1561",
+      "variant": "full",
+      "source": "/Users/fengheliang/.codex/generated_images/01a16c0b-7192-7431-a6aa-541003d97679/exec-fb8a8d83-ab6a-4125-a3e2-23a0a80da79e.png",
+      "prompt": "Use case: historical-scene. Asset type: strategy game transparent full-body character portrait, portrait 2:3 composition. Primary request: Xun Yu, Eastern Han statesman serving Cao Cao, age about 45, refined oval face, alert narrow eyes, neatly trimmed black moustache and pointed medium beard. Dark indigo and ivory crossed-collar Han scholar robes, restrained woven trim, black tall Han official cap (no Ming wings), bamboo document bundle. Calm upright administrator. Style: finely rendered realistic colored hand-painted historical game illustration, natural 7.5-head anatomy, warm upper-left lighting, detailed cloth and hair. Entire figure headgear to soles visible with 8% margin, standing frontal three-quarter, isolated with genuine transparent alpha. No scene, no floor, no glow, no text, no watermark. Artistic interpretation, not a claim of an authentic historical likeness.",
+      "path": "assets/officials/historical/manual-1561/full.png",
+      "sha256": "8d3e636623d60e470e2c1a19b88be978a7af6115f6fcbf6842bd86e0f2a1cbff",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "method": "built-in imagegen"
+    },
+    {
+      "personId": "manual-1561",
+      "variant": "avatar",
+      "source": "/Users/fengheliang/.codex/generated_images/01a16c0b-7192-7431-a6aa-541003d97679/exec-4dd42f07-78a8-463b-acd2-1f2cb96e1592.png",
+      "prompt": "Use case: identity-preserve. Input is a reference for the exact same person's face, age, beard and costume. Create a square head-and-shoulders game portrait of 荀彧, keeping that exact recognizable individual, detailed realistic painted historical game illustration. Entire headgear visible with 8% headroom, face large and clear, upper chest visible. Keep original late Han / Three Kingdoms costume. Genuine transparent alpha background, no scene, no glow, no smoky vignette, no text or watermark. Natural warm directional lighting.",
+      "path": "assets/officials/historical/manual-1561/avatar.png",
+      "sha256": "77757cb4e606bcaece6bff605879abf0b73d8dc18caa6d6f1cccd16faf90d1eb",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "method": "built-in imagegen"
+    },
+    {
+      "personId": "manual-1561",
+      "variant": "court",
+      "source": "/Users/fengheliang/.codex/generated_images/01a16c0b-7192-7431-a6aa-541003d97679/exec-ce7f13e8-6b78-4a2f-b373-deb08cfcd4f7.png",
+      "prompt": "Use case: identity-preserve. Edit target: supplied full-body portrait of 荀彧. Keep the same exact face, age, skin, hair, beard, height and illustrated style. Change attire and pose only: formal audience at the imperial court, late Eastern Han formal dark teal crossed-collar robe, plain period black cap without Ming-style wings or rank badge, dark belt, both hands respectfully holding a plain wooden court tablet. Entire figure from cap to shoes with 8% margin, portrait 2:3, NO armor or battle weapons. Remove ALL background, ground and vignette: genuine transparent alpha background with clean silhouette, no glow or translucent scenery, no text. Warm directional figure lighting. This is a game court adaptation, not an archaeological reconstruction.",
+      "path": "assets/officials/historical/manual-1561/court.png",
+      "sha256": "2a9c22cf27fde5ed855900351895de40d777dc3a66eab54b23916b8e19bb23ac",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "method": "built-in imagegen"
+    },
+    {
+      "personId": "manual-1561",
+      "variant": "battle",
+      "source": "/Users/fengheliang/.codex/generated_images/01a16c0b-7192-7431-a6aa-541003d97679/exec-c88d2b0b-704f-4b50-add2-c104d1bf9c1c.png",
+      "prompt": "Use case: identity-preserve. Edit target: supplied full-body portrait of 荀彧. Preserve the exact face, age, hair, beard and identity and main period costume. Create a dedicated historical battle-card illustration portrait exactly 5:7, target 1060x1484 or 1100x1540. Waist-up close view, character fills frame, finely painted realistic strategy-game art, warm cinematic lighting, natural hands. In a late Han command tent checking bamboo military supply records, calm strategic expression, indigo scholarly robes. A complete illustrated scene background, no transparency for this asset. No lettering, border, frame, watermark or HUD. No celebrity likeness.",
+      "path": "assets/battle/people/manual-1561-battle-v1.png",
+      "sha256": "8c307ca6a4425869bf43beeb0238bc795b0f587173a9b1e2afde70f11f04f267",
+      "dimensions": [
+        1060,
+        1484
+      ],
+      "method": "built-in imagegen",
+      "originalPath": "assets/battle/people/original-14-battle-v1.png"
+    },
+    {
+      "personId": "manual-1557",
+      "variant": "full",
+      "source": "/Users/fengheliang/.codex/generated_images/01a16c0b-7192-7431-a6aa-541003d97679/exec-4bce67ac-dc87-4518-b995-0118f7c79987.png",
+      "prompt": "Use case: historical-scene. Asset type: strategy game transparent full-body character portrait, portrait 2:3 composition. Primary request: Huang Zhong, veteran general serving Liu Bei, age about 60, broad weathered face, deep-set eyes, salt-and-pepper beard and moustache. Late Eastern Han iron lamellar cuirass over russet cloth, plain helmet, dark red cloak, sheathed straight dao, robust but natural build. No fantasy giant bow or excessively ornate gold armor. Style: finely rendered realistic colored hand-painted historical game illustration, natural 7.5-head anatomy, warm upper-left lighting, detailed cloth and hair. Entire figure headgear to soles visible with 8% margin, standing frontal three-quarter, isolated with genuine transparent alpha. No scene, no floor, no glow, no text, no watermark. Artistic interpretation, not a claim of an authentic historical likeness.",
+      "path": "assets/officials/historical/manual-1557/full.png",
+      "sha256": "d60334edfd186ac9cbdd43437234c7251bd1d2b125c6a13929d3e4454c172368",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "method": "built-in imagegen"
+    },
+    {
+      "personId": "manual-1557",
+      "variant": "avatar",
+      "source": "/Users/fengheliang/.codex/generated_images/01a16c0b-7192-7431-a6aa-541003d97679/exec-0ada4af8-a953-46ee-9c76-7077d65505c0.png",
+      "prompt": "Use case: identity-preserve. Input is a reference for the exact same person's face, age, beard and costume. Create a square head-and-shoulders game portrait of 黄忠, keeping that exact recognizable individual, detailed realistic painted historical game illustration. Entire headgear visible with 8% headroom, face large and clear, upper chest visible. Keep original late Han / Three Kingdoms costume. Genuine transparent alpha background, no scene, no glow, no smoky vignette, no text or watermark. Natural warm directional lighting.",
+      "path": "assets/officials/historical/manual-1557/avatar.png",
+      "sha256": "f08be90b15476e7ed756f83fae442f8b37440838daf5252df2b9a4314503c1f1",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "method": "built-in imagegen"
+    },
+    {
+      "personId": "manual-1557",
+      "variant": "court",
+      "source": "/Users/fengheliang/.codex/generated_images/01a16c0b-7192-7431-a6aa-541003d97679/exec-b6dc1ff8-27c0-4268-8804-b0c1e3f76475.png",
+      "prompt": "Use case: identity-preserve. Edit target: supplied full-body portrait of 黄忠. Keep the same exact face, age, skin, hair, beard, height and illustrated style. Change attire and pose only: formal audience at the imperial court, late Eastern Han formal dark teal crossed-collar robe, plain period black cap without Ming-style wings or rank badge, dark belt, both hands respectfully holding a plain wooden court tablet. Entire figure from cap to shoes with 8% margin, portrait 2:3, NO armor or battle weapons. Remove ALL background, ground and vignette: genuine transparent alpha background with clean silhouette, no glow or translucent scenery, no text. Warm directional figure lighting. This is a game court adaptation, not an archaeological reconstruction.",
+      "path": "assets/officials/historical/manual-1557/court.png",
+      "sha256": "5d5bd55e414cb4e74b2caa4d8c1dd5614c5022ebac2c1916cafcdd6e25b3d1a2",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "method": "built-in imagegen"
+    },
+    {
+      "personId": "manual-1557",
+      "variant": "battle",
+      "source": "/Users/fengheliang/.codex/generated_images/01a16c0b-7192-7431-a6aa-541003d97679/exec-5ed77a45-9ffd-40e8-a256-8832dcb3eeeb.png",
+      "prompt": "Use case: identity-preserve. Edit target: supplied full-body portrait of 黄忠. Preserve the exact face, age, hair, beard and identity and main period costume. Create a dedicated historical battle-card illustration portrait exactly 5:7, target 1060x1484 or 1100x1540. Waist-up close view, character fills frame, finely painted realistic strategy-game art, warm cinematic lighting, natural hands. On a wooded fortified ridge at Dingjun, veteran urging advance beside a low banner, late Han lamellar armor and sheathed straight dao, no giant fantasy bow. A complete illustrated scene background, no transparency for this asset. No lettering, border, frame, watermark or HUD. No celebrity likeness.",
+      "path": "assets/battle/people/manual-1557-battle-v1.png",
+      "sha256": "f1ce24fe85573d52ce875e130ddfc10ab6a929a9232e0e8eaeeda3cfc5511f58",
+      "dimensions": [
+        1060,
+        1484
+      ],
+      "method": "built-in imagegen",
+      "originalPath": "assets/battle/people/original-97-battle-v1.png"
+    },
+    {
+      "personId": "manual-1550",
+      "variant": "full",
+      "source": "/Users/fengheliang/.codex/generated_images/01a16c0b-7192-7431-a6aa-541003d97679/exec-98cc7361-f75e-49b6-bce6-ab3b74f2ccf9.png",
+      "prompt": "Use case: historical-scene. Asset type: strategy game transparent full-body character portrait, portrait 2:3 composition. Primary request: Pang Tong, Liu Bei's military adviser, age about 35, broad irregular face, thick brows, short untidy dark beard, thoughtful lively eyes; distinctive yet not grotesque. Olive and warm brown late Eastern Han scholar robes, simple black cloth guan, rolled bamboo campaign map. No feather fan, no Zhuge Liang costume. Style: finely rendered realistic colored hand-painted historical game illustration, natural 7.5-head anatomy, warm upper-left lighting, detailed cloth and hair. Entire figure headgear to soles visible with 8% margin, standing frontal three-quarter, isolated with genuine transparent alpha. No scene, no floor, no glow, no text, no watermark. Artistic interpretation, not a claim of an authentic historical likeness.",
+      "path": "assets/officials/historical/manual-1550/full.png",
+      "sha256": "c8147f7ce2f0562ef31d38f6019e6bd9cc360c01f833ac20cf8c69d5a0510e40",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "method": "built-in imagegen"
+    },
+    {
+      "personId": "manual-1550",
+      "variant": "avatar",
+      "source": "/Users/fengheliang/.codex/generated_images/01a16c0b-7192-7431-a6aa-541003d97679/exec-987b9cc1-a33d-47aa-a286-1e90a5bf44e1.png",
+      "prompt": "Use case: identity-preserve. Input is a reference for the exact same person's face, age, beard and costume. Create a square head-and-shoulders game portrait of 庞统, keeping that exact recognizable individual, detailed realistic painted historical game illustration. Entire headgear visible with 8% headroom, face large and clear, upper chest visible. Keep original late Han / Three Kingdoms costume. Genuine transparent alpha background, no scene, no glow, no smoky vignette, no text or watermark. Natural warm directional lighting.",
+      "path": "assets/officials/historical/manual-1550/avatar.png",
+      "sha256": "ba19103248bde470a2d95855ce9e0bc16f6333a06700a9c0c23b9946bce639c8",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "method": "built-in imagegen"
+    },
+    {
+      "personId": "manual-1550",
+      "variant": "court",
+      "source": "/Users/fengheliang/.codex/generated_images/01a16c0b-7192-7431-a6aa-541003d97679/exec-f7b62b15-2e9d-4465-b37b-3915155df3e8.png",
+      "prompt": "Use case: identity-preserve. Edit target: supplied full-body portrait of 庞统. Keep the same exact face, age, skin, hair, beard, height and illustrated style. Change attire and pose only: formal audience at the imperial court, late Eastern Han formal dark teal crossed-collar robe, plain period black cap without Ming-style wings or rank badge, dark belt, both hands respectfully holding a plain wooden court tablet. Entire figure from cap to shoes with 8% margin, portrait 2:3, NO armor or battle weapons. Remove ALL background, ground and vignette: genuine transparent alpha background with clean silhouette, no glow or translucent scenery, no text. Warm directional figure lighting. This is a game court adaptation, not an archaeological reconstruction.",
+      "path": "assets/officials/historical/manual-1550/court.png",
+      "sha256": "ab357251acf3883e7417e5393e8e0e747acebe1e7f610a92243b567f5c7f150c",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "method": "built-in imagegen"
+    },
+    {
+      "personId": "manual-1550",
+      "variant": "battle",
+      "source": "/Users/fengheliang/.codex/generated_images/01a16c0b-7192-7431-a6aa-541003d97679/exec-a593ada8-a440-4b4f-98c6-07b9b34f2c3c.png",
+      "prompt": "Use case: identity-preserve. Edit target: supplied full-body portrait of 庞统. Preserve the exact face, age, hair, beard and identity and main period costume. Create a dedicated historical battle-card illustration portrait exactly 5:7, target 1060x1484 or 1100x1540. Waist-up close view, character fills frame, finely painted realistic strategy-game art, warm cinematic lighting, natural hands. In a western campaign planning tent, examining three possible routes on a bamboo map, olive scholar robe, no feather fan, no magical fire. A complete illustrated scene background, no transparency for this asset. No lettering, border, frame, watermark or HUD. No celebrity likeness.",
+      "path": "assets/battle/people/manual-1550-battle-v1.png",
+      "sha256": "1ae66e0e8c2fa240923de62b20ee90eb9660daef5ec46843d502e25f3a596a63",
+      "dimensions": [
+        1060,
+        1484
+      ],
+      "method": "built-in imagegen",
+      "originalPath": "assets/battle/people/original-98-battle-v1.png"
+    },
+    {
+      "personId": "cbdb-33662",
+      "variant": "full",
+      "source": "/Users/fengheliang/.codex/generated_images/01a16c0b-7192-7431-a6aa-541003d97679/exec-075c5bd7-635d-40fa-8ad7-a5e2e62ac595.png",
+      "prompt": "Use case: historical-scene. Asset type: strategy game transparent full-body character portrait, portrait 2:3 composition. Primary request: Lu Xun, Eastern Wu commander and statesman, age about 40, slender angular face, fine moustache and short chin beard, composed observant expression. Late Eastern Han / Three Kingdoms dark teal crossed-collar robe with restrained lamellar vest and maroon sash, plain black cap, sheathed straight sword and bamboo dispatch. Not a teenager, no fantasy armor. Style: finely rendered realistic colored hand-painted historical game illustration, natural 7.5-head anatomy, warm upper-left lighting, detailed cloth and hair. Entire figure headgear to soles visible with 8% margin, standing frontal three-quarter, isolated with genuine transparent alpha. No scene, no floor, no glow, no text, no watermark. Artistic interpretation, not a claim of an authentic historical likeness.",
+      "path": "assets/officials/historical/cbdb-33662/full.png",
+      "sha256": "cf3bb2df3b57b2e11c277f1626f3f33817feffa0066e87b8b103fff1909f65c5",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "method": "built-in imagegen"
+    },
+    {
+      "personId": "cbdb-33662",
+      "variant": "avatar",
+      "source": "/Users/fengheliang/.codex/generated_images/01a16c0b-7192-7431-a6aa-541003d97679/exec-b3b8fd94-a8dc-4f74-a96e-5a59330dee64.png",
+      "prompt": "Use case: identity-preserve. Input is a reference for the exact same person's face, age, beard and costume. Create a square head-and-shoulders game portrait of 陆逊, keeping that exact recognizable individual, detailed realistic painted historical game illustration. Entire headgear visible with 8% headroom, face large and clear, upper chest visible. Keep original late Han / Three Kingdoms costume. Genuine transparent alpha background, no scene, no glow, no smoky vignette, no text or watermark. Natural warm directional lighting.",
+      "path": "assets/officials/historical/cbdb-33662/avatar.png",
+      "sha256": "459b5d47396087a00bba73677936772cdcebf1b13b3c6307daef2e2567092733",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "method": "built-in imagegen"
+    },
+    {
+      "personId": "cbdb-33662",
+      "variant": "court",
+      "source": "/Users/fengheliang/.codex/generated_images/01a16c0b-7192-7431-a6aa-541003d97679/exec-8c335058-a63e-4b1e-983e-878ac88f0726.png",
+      "prompt": "Use case: identity-preserve. Edit target: supplied full-body portrait of 陆逊. Keep the same exact face, age, skin, hair, beard, height and illustrated style. Change attire and pose only: formal audience at the imperial court, late Eastern Han formal dark teal crossed-collar robe, plain period black cap without Ming-style wings or rank badge, dark belt, both hands respectfully holding a plain wooden court tablet. Entire figure from cap to shoes with 8% margin, portrait 2:3, NO armor or battle weapons. Remove ALL background, ground and vignette: genuine transparent alpha background with clean silhouette, no glow or translucent scenery, no text. Warm directional figure lighting. This is a game court adaptation, not an archaeological reconstruction.",
+      "path": "assets/officials/historical/cbdb-33662/court.png",
+      "sha256": "0330aa3cd3f5c33919e786a49e68bf8efebc90fe62d8617c21e4164ab5554746",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "method": "built-in imagegen"
+    },
+    {
+      "personId": "cbdb-33662",
+      "variant": "battle",
+      "source": "/Users/fengheliang/.codex/generated_images/01a16c0b-7192-7431-a6aa-541003d97679/exec-5f138325-36e8-440e-9bf4-e9573d9db754.png",
+      "prompt": "Use case: identity-preserve. Edit target: supplied full-body portrait of 陆逊. Preserve the exact face, age, hair, beard and identity and main period costume. Create a dedicated historical battle-card illustration portrait exactly 5:7, target 1060x1484 or 1100x1540. Waist-up close view, character fills frame, finely painted realistic strategy-game art, warm cinematic lighting, natural hands. At a Yangtze army encampment, composed commander surveying distant woodlands and orderly troops, restrained late Han lamellar vest under teal robe, no magical fire. A complete illustrated scene background, no transparency for this asset. No lettering, border, frame, watermark or HUD. No celebrity likeness.",
+      "path": "assets/battle/people/cbdb-33662-battle-v1.png",
+      "sha256": "f1ab6563d335accbd6afea34b076099fa593a5d8d224d18ee436f49b2a62c4a1",
+      "dimensions": [
+        1060,
+        1484
+      ],
+      "method": "built-in imagegen",
+      "originalPath": "assets/battle/people/original-99-battle-v1.png"
+    },
+    {
+      "personId": "original-89",
+      "variant": "full",
+      "source": "/Users/fengheliang/.codex/generated_images/01a16c0b-7192-7431-a6aa-541003d97679/exec-a6710899-6020-41e1-ab35-6919ac658d4e.png",
+      "prompt": "Use case: identity-preserve. Edit/reference target: Li Mi (李密), the Sui-end Wagang leader, NOT the Western Jin author. Preserve his current exact face, beard, age about35, natural anatomy and richly painted game style. Full body head to boots entirely visible, 8% margin, Sui-end plain black cap, indigo crossed collar robe, restrained iron lamellar armor, sheathed straight dao and bamboo dispatch. Standing three-quarter pose. Genuine transparent alpha background, remove scenery, ground, glow and vignette. Portrait2:3. No text, labels, frames, watermarks or celebrity likeness.",
+      "path": "assets/officials/historical/original-89/full.png",
+      "sha256": "53bf95e76591032a9bc473c86e6fe49fb4dc1b3a721154f4abd114417deac01d",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "method": "built-in imagegen"
+    },
+    {
+      "personId": "original-89",
+      "variant": "avatar",
+      "source": "/Users/fengheliang/.codex/generated_images/01a16c0b-7192-7431-a6aa-541003d97679/exec-3f9de44e-551f-4f44-b26a-6ec6773ec3e9.png",
+      "prompt": "Use case: identity-preserve. Input is a reference for the exact same person's face, age, beard and costume. Create a square head-and-shoulders game portrait of 李密, keeping that exact recognizable individual, detailed realistic painted historical game illustration. Entire headgear visible with 8% headroom, face large and clear, upper chest visible. Sui-end military-political leader Li Mi, age about 35, dark indigo robe over restrained Sui lamellar armor, plain black period cap, no Jin dynasty scholar styling. Genuine transparent alpha background, no scene, no glow, no smoky vignette, no text or watermark. Natural warm directional lighting.",
+      "path": "assets/officials/historical/original-89/avatar.png",
+      "sha256": "29657d9beb8cce6a9778c15218b42f65fa72d294c844aab53727668dd68b2695",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "method": "built-in imagegen"
+    },
+    {
+      "personId": "original-89",
+      "variant": "court",
+      "source": "/Users/fengheliang/.codex/generated_images/01a16c0b-7192-7431-a6aa-541003d97679/exec-8ac9c1db-cee9-46c4-b90d-def77ef31295.png",
+      "prompt": "Use case: identity-preserve. Edit/reference target: Li Mi (李密), the Sui-end Wagang leader, NOT the Western Jin author. Preserve his current exact face, beard, age about35, natural anatomy and richly painted game style. Full body formal court-audience pose, head to shoes visible with8% margin, Sui-style dark teal formal crossed-collar robe, plain black period cap, no Ming winged cap or rank badge, NO armor or weapons, both hands holding plain wooden court tablet. Same face and beard. Genuine transparent alpha background, no ground, smoke, glow or vignette. Portrait2:3. No text, labels, frames, watermarks or celebrity likeness.",
+      "path": "assets/officials/historical/original-89/court.png",
+      "sha256": "cc33e17935584e43c5cd825648eb44bfe5e3860021a8f6f5d565943dce358075",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "method": "built-in imagegen"
+    },
+    {
+      "personId": "original-89",
+      "variant": "battle",
+      "source": "/Users/fengheliang/.codex/generated_images/01a16c0b-7192-7431-a6aa-541003d97679/exec-82d862ec-bf47-4108-8d83-2645141567e0.png",
+      "prompt": "Use case: identity-preserve. Edit/reference target: Li Mi (李密), the Sui-end Wagang leader, NOT the Western Jin author. Preserve his current exact face, beard, age about35, natural anatomy and richly painted game style. Dedicated 5:7 battle-card scene 1060x1484 or1100x1540. Waist-up Li Mi in indigo robe over Sui lamellar armor, holding a bamboo dispatch and watching gathered Wagang troops at a Sui-end fortified granary, banners have no writing, warm dusk and distant spear ranks, strong thoughtful ambitious expression. Full painted scenery, no transparent background. No text, labels, frames, watermarks or celebrity likeness.",
+      "path": "assets/battle/people/original-89-battle-v2.png",
+      "sha256": "7a6b7573f5c21597b699c0bee2ce058ad39f2fc561c5a4f2378fb99591a3a1b7",
+      "dimensions": [
+        1060,
+        1484
+      ],
+      "method": "built-in imagegen",
+      "originalPath": "assets/battle/people/original-89-battle-v1.png"
+    }
+  ]
+}

@@ -3,7 +3,7 @@ import {kitSurface} from './troop-kits.mjs';
 import {quoteKitWar,beginKitWar,finishKitWar,validateKitBattle} from './kit-war.mjs';
 import {initializeWarRecord,validateWarRecord} from './war-records.mjs';
 import {finishDefense} from './foreign-strategy.mjs';
-import {specialActive} from './special-buildings.mjs';
+import {specialActive,specialDefenseBonus} from './special-buildings.mjs';
 import {actBattle,validateBattle} from './battle.mjs';
 import {validateDomestic} from './domestic.mjs';
 import {provinceGeometry,realmGeometry} from './campaign-map.mjs';
@@ -55,4 +55,4 @@ export const beginWar=beginKitWar;
 export function advanceWar(state,action){const next=structuredClone(state),b=next.domestic.war?.battle;if(!b)throw Error('尚未开战');next.domestic.war.battle=actBattle(b,action);return next;}
 export function finishWar(state){return state.domestic.war?.battle?.command.defensive?finishDefense(state):finishKitWar(state);}
 
-export function battlefieldFor(d,id,turn){const p=d.provinces.find(p=>p.countryId===id);return {terrain:p?.terrain??'平原型',surface:kitSurface(p),defense:Math.min(1.5,1+(p?.welfare.defense??0)/500+(specialActive(d,'greatWall',turn,id)?.2:0))};}
+export function battlefieldFor(d,id,turn){const p=d.provinces.find(p=>p.countryId===id);return {terrain:p?.terrain??'平原型',surface:kitSurface(p),defense:Math.min(1.5,1+(p?.welfare.defense??0)/500+specialDefenseBonus(d,turn,id))};}

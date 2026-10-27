@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-25T15:03:26.098Z",
+  "checks": [
+    "hostile aim keeps short cinnabar dashes with a dark keyline and a distinct target lock",
+    "visual trajectory and lock never intercept the legal card target",
+    "line starts beyond the source card edge and leaves its illustration unobscured",
+    "short dashes keep moving toward the target",
+    "invalid targets show a subdued unlocked trajectory",
+    "Escape clears every trajectory layer without casting a skill",
+    "friendly enhancement uses jade light with the same legal-target lock",
+    "native card drag retains the trajectory and legal lock under pointer capture",
+    "drag cancellation clears the trajectory and spends no card or mana",
+    "reduced motion preserves the visible trajectory and lock without moving dashes",
+    "1440px trajectory endpoint follows the actual pointer coordinates",
+    "1000px trajectory endpoint follows the actual pointer coordinates",
+    "800px trajectory endpoint follows the actual pointer coordinates"
+  ],
+  "errors": []
+}

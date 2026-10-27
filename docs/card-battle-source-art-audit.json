@@ -1,0 +1,649 @@
+{
+  "scope": "全部42场景势力实际映射审计，不伪造美术通过；不改玩法文化池、姓名或身份",
+  "total": 42,
+  "counts": {
+    "central-design": 1,
+    "representative-only": 19,
+    "source-representative-integrated": 14,
+    "fictional-source-designed": 8
+  },
+  "rows": [
+    {
+      "countryId": "sheng",
+      "name": "大晟",
+      "currentPool": "central",
+      "artRegion": "central",
+      "imageCoverage": null,
+      "scenarioType": "fictional-player",
+      "status": "central-design",
+      "suggestedArtRegion": null,
+      "reason": "现有图可作宽泛代表，不能当精确年代/全部人口核定",
+      "basis": "local scenario identity plus explicit audit of current mapping, not external historical costume verification"
+    },
+    {
+      "countryId": "tubo",
+      "name": "吐蕃",
+      "currentPool": "tibetan",
+      "artRegion": "tibetan",
+      "imageCoverage": null,
+      "scenarioType": "historically-named-scenario",
+      "status": "representative-only",
+      "suggestedArtRegion": null,
+      "reason": "现有图可作宽泛代表，不能当精确年代/全部人口核定",
+      "basis": "local scenario identity plus explicit audit of current mapping, not external historical costume verification"
+    },
+    {
+      "countryId": "nanzhao",
+      "name": "南诏",
+      "currentPool": "nanzhao",
+      "artRegion": "nanzhao",
+      "imageCoverage": null,
+      "scenarioType": "historically-named-scenario",
+      "status": "representative-only",
+      "suggestedArtRegion": null,
+      "reason": "现有图可作宽泛代表，不能当精确年代/全部人口核定",
+      "basis": "local scenario identity plus explicit audit of current mapping, not external historical costume verification"
+    },
+    {
+      "countryId": "korea",
+      "name": "高丽",
+      "currentPool": "central",
+      "artRegion": "source_korean",
+      "imageCoverage": {
+        "infantry": true,
+        "civil": true,
+        "military": true,
+        "remainingTroopKinds": 0,
+        "portraitVariants": 1
+      },
+      "scenarioType": "historically-named-scenario",
+      "status": "source-representative-integrated",
+      "suggestedArtRegion": "korean",
+      "reason": "高丽当前回退中原，缺独立兵装与人物文化图",
+      "basis": "local scenario identity plus explicit audit of current mapping, not external historical costume verification"
+    },
+    {
+      "countryId": "japan",
+      "name": "日本",
+      "currentPool": "japan",
+      "artRegion": "japan",
+      "imageCoverage": null,
+      "scenarioType": "historically-named-scenario",
+      "status": "representative-only",
+      "suggestedArtRegion": null,
+      "reason": "现有图可作宽泛代表，不能当精确年代/全部人口核定",
+      "basis": "local scenario identity plus explicit audit of current mapping, not external historical costume verification"
+    },
+    {
+      "countryId": "steppe",
+      "name": "铁勒",
+      "currentPool": "steppe",
+      "artRegion": "steppe",
+      "imageCoverage": null,
+      "scenarioType": "historically-named-scenario",
+      "status": "representative-only",
+      "suggestedArtRegion": null,
+      "reason": "现有图可作宽泛代表，不能当精确年代/全部人口核定",
+      "basis": "local scenario identity plus explicit audit of current mapping, not external historical costume verification"
+    },
+    {
+      "countryId": "uyghur",
+      "name": "回纥",
+      "currentPool": "steppe",
+      "artRegion": "steppe",
+      "imageCoverage": null,
+      "scenarioType": "historically-named-scenario",
+      "status": "representative-only",
+      "suggestedArtRegion": null,
+      "reason": "现有图可作宽泛代表，不能当精确年代/全部人口核定",
+      "basis": "local scenario identity plus explicit audit of current mapping, not external historical costume verification"
+    },
+    {
+      "countryId": "persia",
+      "name": "波斯",
+      "currentPool": "persian",
+      "artRegion": "persian",
+      "imageCoverage": null,
+      "scenarioType": "historically-named-scenario",
+      "status": "representative-only",
+      "suggestedArtRegion": null,
+      "reason": "现有图可作宽泛代表，不能当精确年代/全部人口核定",
+      "basis": "local scenario identity plus explicit audit of current mapping, not external historical costume verification"
+    },
+    {
+      "countryId": "arabia",
+      "name": "大食",
+      "currentPool": "arab",
+      "artRegion": "arab",
+      "imageCoverage": null,
+      "scenarioType": "historically-named-scenario",
+      "status": "representative-only",
+      "suggestedArtRegion": null,
+      "reason": "现有图可作宽泛代表，不能当精确年代/全部人口核定",
+      "basis": "local scenario identity plus explicit audit of current mapping, not external historical costume verification"
+    },
+    {
+      "countryId": "rome",
+      "name": "罗马",
+      "currentPool": "roman",
+      "artRegion": "roman",
+      "imageCoverage": null,
+      "scenarioType": "historically-named-scenario",
+      "status": "representative-only",
+      "suggestedArtRegion": null,
+      "reason": "现有图可作宽泛代表，不能当精确年代/全部人口核定",
+      "basis": "local scenario identity plus explicit audit of current mapping, not external historical costume verification"
+    },
+    {
+      "countryId": "india",
+      "name": "天竺",
+      "currentPool": "indian",
+      "artRegion": "indian",
+      "imageCoverage": null,
+      "scenarioType": "historically-named-scenario",
+      "status": "representative-only",
+      "suggestedArtRegion": null,
+      "reason": "现有图可作宽泛代表，不能当精确年代/全部人口核定",
+      "basis": "local scenario identity plus explicit audit of current mapping, not external historical costume verification"
+    },
+    {
+      "countryId": "west-turk",
+      "name": "西突厥",
+      "currentPool": "steppe",
+      "artRegion": "steppe",
+      "imageCoverage": null,
+      "scenarioType": "historically-named-scenario",
+      "status": "representative-only",
+      "suggestedArtRegion": null,
+      "reason": "现有图可作宽泛代表，不能当精确年代/全部人口核定",
+      "basis": "local scenario identity plus explicit audit of current mapping, not external historical costume verification"
+    },
+    {
+      "countryId": "gaochang",
+      "name": "高昌",
+      "currentPool": "centralasia",
+      "artRegion": "centralasia",
+      "imageCoverage": null,
+      "scenarioType": "historically-named-scenario",
+      "status": "representative-only",
+      "suggestedArtRegion": null,
+      "reason": "现有图可作宽泛代表，不能当精确年代/全部人口核定",
+      "basis": "local scenario identity plus explicit audit of current mapping, not external historical costume verification"
+    },
+    {
+      "countryId": "east-turk",
+      "name": "东突厥",
+      "currentPool": "steppe",
+      "artRegion": "steppe",
+      "imageCoverage": null,
+      "scenarioType": "historically-named-scenario",
+      "status": "representative-only",
+      "suggestedArtRegion": null,
+      "reason": "现有图可作宽泛代表，不能当精确年代/全部人口核定",
+      "basis": "local scenario identity plus explicit audit of current mapping, not external historical costume verification"
+    },
+    {
+      "countryId": "khitan",
+      "name": "契丹",
+      "currentPool": "steppe",
+      "artRegion": "steppe",
+      "imageCoverage": null,
+      "scenarioType": "historically-named-scenario",
+      "status": "representative-only",
+      "suggestedArtRegion": null,
+      "reason": "现有图可作宽泛代表，不能当精确年代/全部人口核定",
+      "basis": "local scenario identity plus explicit audit of current mapping, not external historical costume verification"
+    },
+    {
+      "countryId": "xi",
+      "name": "奚",
+      "currentPool": "steppe",
+      "artRegion": "steppe",
+      "imageCoverage": null,
+      "scenarioType": "historically-named-scenario",
+      "status": "representative-only",
+      "suggestedArtRegion": null,
+      "reason": "现有图可作宽泛代表，不能当精确年代/全部人口核定",
+      "basis": "local scenario identity plus explicit audit of current mapping, not external historical costume verification"
+    },
+    {
+      "countryId": "tokhara",
+      "name": "吐火罗",
+      "currentPool": "centralasia",
+      "artRegion": "centralasia",
+      "imageCoverage": null,
+      "scenarioType": "historically-named-scenario",
+      "status": "representative-only",
+      "suggestedArtRegion": null,
+      "reason": "现有图可作宽泛代表，不能当精确年代/全部人口核定",
+      "basis": "local scenario identity plus explicit audit of current mapping, not external historical costume verification"
+    },
+    {
+      "countryId": "shule",
+      "name": "疏勒",
+      "currentPool": "centralasia",
+      "artRegion": "centralasia",
+      "imageCoverage": null,
+      "scenarioType": "historically-named-scenario",
+      "status": "representative-only",
+      "suggestedArtRegion": null,
+      "reason": "现有图可作宽泛代表，不能当精确年代/全部人口核定",
+      "basis": "local scenario identity plus explicit audit of current mapping, not external historical costume verification"
+    },
+    {
+      "countryId": "kucha",
+      "name": "龟兹",
+      "currentPool": "centralasia",
+      "artRegion": "centralasia",
+      "imageCoverage": null,
+      "scenarioType": "historically-named-scenario",
+      "status": "representative-only",
+      "suggestedArtRegion": null,
+      "reason": "现有图可作宽泛代表，不能当精确年代/全部人口核定",
+      "basis": "local scenario identity plus explicit audit of current mapping, not external historical costume verification"
+    },
+    {
+      "countryId": "tuyuhun",
+      "name": "吐谷浑",
+      "currentPool": "tibetan",
+      "artRegion": "tibetan",
+      "imageCoverage": null,
+      "scenarioType": "historically-named-scenario",
+      "status": "representative-only",
+      "suggestedArtRegion": null,
+      "reason": "现有图可作宽泛代表，不能当精确年代/全部人口核定",
+      "basis": "local scenario identity plus explicit audit of current mapping, not external historical costume verification"
+    },
+    {
+      "countryId": "bolur",
+      "name": "小勃律",
+      "currentPool": "tibetan",
+      "artRegion": "tibetan",
+      "imageCoverage": null,
+      "scenarioType": "historically-named-scenario",
+      "status": "representative-only",
+      "suggestedArtRegion": null,
+      "reason": "现有图可作宽泛代表，不能当精确年代/全部人口核定",
+      "basis": "local scenario identity plus explicit audit of current mapping, not external historical costume verification"
+    },
+    {
+      "countryId": "slavs",
+      "name": "斯拉夫",
+      "currentPool": "roman",
+      "artRegion": "source_slavic",
+      "imageCoverage": {
+        "infantry": true,
+        "civil": true,
+        "military": true,
+        "remainingTroopKinds": 0,
+        "portraitVariants": 1
+      },
+      "scenarioType": "historically-named-scenario",
+      "status": "source-representative-integrated",
+      "suggestedArtRegion": "slavic",
+      "reason": "斯拉夫不应仅用东罗马代表图",
+      "basis": "local scenario identity plus explicit audit of current mapping, not external historical costume verification"
+    },
+    {
+      "countryId": "franks",
+      "name": "法兰克",
+      "currentPool": "roman",
+      "artRegion": "source_frankish",
+      "imageCoverage": {
+        "infantry": true,
+        "civil": true,
+        "military": true,
+        "remainingTroopKinds": 0,
+        "portraitVariants": 1
+      },
+      "scenarioType": "historically-named-scenario",
+      "status": "source-representative-integrated",
+      "suggestedArtRegion": "frankish",
+      "reason": "法兰克不应仅用东罗马代表图",
+      "basis": "local scenario identity plus explicit audit of current mapping, not external historical costume verification"
+    },
+    {
+      "countryId": "siberia",
+      "name": "黠戛斯",
+      "currentPool": "steppe",
+      "artRegion": "source_yenisei",
+      "imageCoverage": {
+        "infantry": true,
+        "civil": true,
+        "military": true,
+        "remainingTroopKinds": 0,
+        "portraitVariants": 1
+      },
+      "scenarioType": "historically-named-scenario",
+      "status": "source-representative-integrated",
+      "suggestedArtRegion": "yenisei",
+      "reason": "黠戛斯与其他草原人口的差异需保留",
+      "basis": "local scenario identity plus explicit audit of current mapping, not external historical costume verification"
+    },
+    {
+      "countryId": "mohe",
+      "name": "靺鞨",
+      "currentPool": "steppe",
+      "artRegion": "source_mohe",
+      "imageCoverage": {
+        "infantry": true,
+        "civil": true,
+        "military": true,
+        "remainingTroopKinds": 0,
+        "portraitVariants": 1
+      },
+      "scenarioType": "historically-named-scenario",
+      "status": "source-representative-integrated",
+      "suggestedArtRegion": "northeast",
+      "reason": "靺鞨与草原游牧代表不能直接等同",
+      "basis": "local scenario identity plus explicit audit of current mapping, not external historical costume verification"
+    },
+    {
+      "countryId": "pyu",
+      "name": "骠国",
+      "currentPool": "nanzhao",
+      "artRegion": "source_pyu",
+      "imageCoverage": {
+        "infantry": true,
+        "civil": true,
+        "military": true,
+        "remainingTroopKinds": 0,
+        "portraitVariants": 1
+      },
+      "scenarioType": "historically-named-scenario",
+      "status": "source-representative-integrated",
+      "suggestedArtRegion": "pyu",
+      "reason": "骠国与云南山地不能直接等同",
+      "basis": "local scenario identity plus explicit audit of current mapping, not external historical costume verification"
+    },
+    {
+      "countryId": "chenla",
+      "name": "真腊",
+      "currentPool": "nanzhao",
+      "artRegion": "source_khmer",
+      "imageCoverage": {
+        "infantry": true,
+        "civil": true,
+        "military": true,
+        "remainingTroopKinds": 0,
+        "portraitVariants": 1
+      },
+      "scenarioType": "historically-named-scenario",
+      "status": "source-representative-integrated",
+      "suggestedArtRegion": "khmer",
+      "reason": "真腊需独立大陆东南亚表达",
+      "basis": "local scenario identity plus explicit audit of current mapping, not external historical costume verification"
+    },
+    {
+      "countryId": "srivijaya",
+      "name": "室利佛逝",
+      "currentPool": "nanzhao",
+      "artRegion": "source_maritime",
+      "imageCoverage": {
+        "infantry": true,
+        "civil": true,
+        "military": true,
+        "remainingTroopKinds": 0,
+        "portraitVariants": 1
+      },
+      "scenarioType": "historically-named-scenario",
+      "status": "source-representative-integrated",
+      "suggestedArtRegion": "maritime",
+      "reason": "海岛东南亚不应仅用云南山地代表图",
+      "basis": "local scenario identity plus explicit audit of current mapping, not external historical costume verification"
+    },
+    {
+      "countryId": "java",
+      "name": "诃陵",
+      "currentPool": "nanzhao",
+      "artRegion": "source_maritime",
+      "imageCoverage": {
+        "infantry": true,
+        "civil": true,
+        "military": true,
+        "remainingTroopKinds": 0,
+        "portraitVariants": 1
+      },
+      "scenarioType": "historically-named-scenario",
+      "status": "source-representative-integrated",
+      "suggestedArtRegion": "maritime",
+      "reason": "海岛东南亚不应仅用云南山地代表图",
+      "basis": "local scenario identity plus explicit audit of current mapping, not external historical costume verification"
+    },
+    {
+      "countryId": "champa",
+      "name": "林邑",
+      "currentPool": "nanzhao",
+      "artRegion": "source_cham",
+      "imageCoverage": {
+        "infantry": true,
+        "civil": true,
+        "military": true,
+        "remainingTroopKinds": 0,
+        "portraitVariants": 1
+      },
+      "scenarioType": "historically-named-scenario",
+      "status": "source-representative-integrated",
+      "suggestedArtRegion": "cham",
+      "reason": "林邑与真腊/云南不得直接等同",
+      "basis": "local scenario identity plus explicit audit of current mapping, not external historical costume verification"
+    },
+    {
+      "countryId": "luzon",
+      "name": "吕宋",
+      "currentPool": "nanzhao",
+      "artRegion": "source_maritime",
+      "imageCoverage": {
+        "infantry": true,
+        "civil": true,
+        "military": true,
+        "remainingTroopKinds": 0,
+        "portraitVariants": 1
+      },
+      "scenarioType": "historically-named-scenario",
+      "status": "source-representative-integrated",
+      "suggestedArtRegion": "maritime",
+      "reason": "海岛东南亚不应仅用云南山地代表图",
+      "basis": "local scenario identity plus explicit audit of current mapping, not external historical costume verification"
+    },
+    {
+      "countryId": "axum",
+      "name": "阿克苏姆",
+      "currentPool": "arab",
+      "artRegion": "source_aksumite",
+      "imageCoverage": {
+        "infantry": true,
+        "civil": true,
+        "military": true,
+        "remainingTroopKinds": 0,
+        "portraitVariants": 1
+      },
+      "scenarioType": "historically-named-scenario",
+      "status": "source-representative-integrated",
+      "suggestedArtRegion": "aksumite",
+      "reason": "阿克苏姆不应仅用阿拉伯半岛代表图",
+      "basis": "local scenario identity plus explicit audit of current mapping, not external historical costume verification"
+    },
+    {
+      "countryId": "maghreb",
+      "name": "柏柏尔",
+      "currentPool": "arab",
+      "artRegion": "source_amazigh",
+      "imageCoverage": {
+        "infantry": true,
+        "civil": true,
+        "military": true,
+        "remainingTroopKinds": 0,
+        "portraitVariants": 1
+      },
+      "scenarioType": "historically-named-scenario",
+      "status": "source-representative-integrated",
+      "suggestedArtRegion": "amazigh",
+      "reason": "柏柏尔/阿马齐格不应仅用阿拉伯半岛代表图",
+      "basis": "local scenario identity plus explicit audit of current mapping, not external historical costume verification"
+    },
+    {
+      "countryId": "sinhala",
+      "name": "僧伽罗",
+      "currentPool": "indian",
+      "artRegion": "source_sinhala",
+      "imageCoverage": {
+        "infantry": true,
+        "civil": true,
+        "military": true,
+        "remainingTroopKinds": 0,
+        "portraitVariants": 1
+      },
+      "scenarioType": "historically-named-scenario",
+      "status": "source-representative-integrated",
+      "suggestedArtRegion": "sinhala",
+      "reason": "僧伽罗需保留岛屿文化差异",
+      "basis": "local scenario identity plus explicit audit of current mapping, not external historical costume verification"
+    },
+    {
+      "countryId": "north-sea",
+      "name": "北海诸部",
+      "currentPool": "steppe",
+      "artRegion": "source_borealwest",
+      "imageCoverage": {
+        "infantry": true,
+        "civil": true,
+        "military": true,
+        "remainingTroopKinds": 0,
+        "portraitVariants": 1
+      },
+      "scenarioType": "fictional-frontier",
+      "status": "fictional-source-designed",
+      "suggestedArtRegion": null,
+      "reason": "本地scenario-geography明示虚构边疆，已接入地理启发虚构设计，不虚构真实历史族属。",
+      "basis": "local scenario identity plus explicit audit of current mapping, not external historical costume verification"
+    },
+    {
+      "countryId": "frostland",
+      "name": "寒原诸部",
+      "currentPool": "steppe",
+      "artRegion": "source_borealwest",
+      "imageCoverage": {
+        "infantry": true,
+        "civil": true,
+        "military": true,
+        "remainingTroopKinds": 0,
+        "portraitVariants": 1
+      },
+      "scenarioType": "fictional-frontier",
+      "status": "fictional-source-designed",
+      "suggestedArtRegion": null,
+      "reason": "本地scenario-geography明示虚构边疆，已接入地理启发虚构设计，不虚构真实历史族属。",
+      "basis": "local scenario identity plus explicit audit of current mapping, not external historical costume verification"
+    },
+    {
+      "countryId": "forestland",
+      "name": "林海诸部",
+      "currentPool": "steppe",
+      "artRegion": "source_borealeast",
+      "imageCoverage": {
+        "infantry": true,
+        "civil": true,
+        "military": true,
+        "remainingTroopKinds": 0,
+        "portraitVariants": 1
+      },
+      "scenarioType": "fictional-frontier",
+      "status": "fictional-source-designed",
+      "suggestedArtRegion": null,
+      "reason": "本地scenario-geography明示虚构边疆，已接入地理启发虚构设计，不虚构真实历史族属。",
+      "basis": "local scenario identity plus explicit audit of current mapping, not external historical costume verification"
+    },
+    {
+      "countryId": "far-east",
+      "name": "极东诸部",
+      "currentPool": "steppe",
+      "artRegion": "source_borealeast",
+      "imageCoverage": {
+        "infantry": true,
+        "civil": true,
+        "military": true,
+        "remainingTroopKinds": 0,
+        "portraitVariants": 1
+      },
+      "scenarioType": "fictional-frontier",
+      "status": "fictional-source-designed",
+      "suggestedArtRegion": null,
+      "reason": "本地scenario-geography明示虚构边疆，已接入地理启发虚构设计，不虚构真实历史族属。",
+      "basis": "local scenario identity plus explicit audit of current mapping, not external historical costume verification"
+    },
+    {
+      "countryId": "west-south",
+      "name": "西南诸部",
+      "currentPool": "arab",
+      "artRegion": "source_tropicalwest",
+      "imageCoverage": {
+        "infantry": true,
+        "civil": true,
+        "military": true,
+        "remainingTroopKinds": 0,
+        "portraitVariants": 1
+      },
+      "scenarioType": "fictional-frontier",
+      "status": "fictional-source-designed",
+      "suggestedArtRegion": null,
+      "reason": "本地scenario-geography明示虚构边疆，已接入地理启发虚构设计，不虚构真实历史族属。",
+      "basis": "local scenario identity plus explicit audit of current mapping, not external historical costume verification"
+    },
+    {
+      "countryId": "southland",
+      "name": "南陆诸部",
+      "currentPool": "arab",
+      "artRegion": "source_tropicalinterior",
+      "imageCoverage": {
+        "infantry": true,
+        "civil": true,
+        "military": true,
+        "remainingTroopKinds": 0,
+        "portraitVariants": 1
+      },
+      "scenarioType": "fictional-frontier",
+      "status": "fictional-source-designed",
+      "suggestedArtRegion": null,
+      "reason": "本地scenario-geography明示虚构边疆，已接入地理启发虚构设计，不虚构真实历史族属。",
+      "basis": "local scenario identity plus explicit audit of current mapping, not external historical costume verification"
+    },
+    {
+      "countryId": "east-coast",
+      "name": "东岸诸部",
+      "currentPool": "arab",
+      "artRegion": "source_tropicalcoast",
+      "imageCoverage": {
+        "infantry": true,
+        "civil": true,
+        "military": true,
+        "remainingTroopKinds": 0,
+        "portraitVariants": 1
+      },
+      "scenarioType": "fictional-frontier",
+      "status": "fictional-source-designed",
+      "suggestedArtRegion": null,
+      "reason": "本地scenario-geography明示虚构边疆，已接入地理启发虚构设计，不虚构真实历史族属。",
+      "basis": "local scenario identity plus explicit audit of current mapping, not external historical costume verification"
+    },
+    {
+      "countryId": "cape",
+      "name": "海角诸部",
+      "currentPool": "arab",
+      "artRegion": "source_southerncape",
+      "imageCoverage": {
+        "infantry": true,
+        "civil": true,
+        "military": true,
+        "remainingTroopKinds": 0,
+        "portraitVariants": 1
+      },
+      "scenarioType": "fictional-frontier",
+      "status": "fictional-source-designed",
+      "suggestedArtRegion": null,
+      "reason": "本地scenario-geography明示虚构边疆，已接入地理启发虚构设计，不虚构真实历史族属。",
+      "basis": "local scenario identity plus explicit audit of current mapping, not external historical costume verification"
+    }
+  ],
+  "next": "按最新原生报告归档代表美术覆盖；未分配来源为0后停止扩张补图，继续历史人物服饰实际审视、晏婴规则增强及完整最终验收。代表设计不冒充精确史实复原。"
+}

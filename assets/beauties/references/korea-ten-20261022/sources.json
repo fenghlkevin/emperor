@@ -1,0 +1,102 @@
+[
+  {
+    "key": "song-hye-kyo",
+    "name": "宋慧乔",
+    "birthYear": 1981,
+    "referenceYear": 2013,
+    "imageUrl": "https://image.xportsnews.com/contents/images/upload/article/2013/0616/1371375191675.jpg",
+    "page": "https://www.xportsnews.com/article/337720",
+    "ref": "assets/beauties/references/korea-ten-20261022/song-hye-kyo.jpg",
+    "status": "downloaded"
+  },
+  {
+    "key": "jun-ji-hyun",
+    "name": "全智贤",
+    "birthYear": 1981,
+    "referenceYear": 2013,
+    "imageUrl": "https://img.sbs.co.kr/newsnet/etv/upload/2013/12/16/30000341677_500.jpg",
+    "page": "https://ent.sbs.co.kr/news/article.do?article_id=E10004878743",
+    "ref": "assets/beauties/references/korea-ten-20261022/jun-ji-hyun.jpg",
+    "status": "downloaded"
+  },
+  {
+    "key": "son-ye-jin",
+    "name": "孙艺珍",
+    "birthYear": 1982,
+    "referenceYear": 2013,
+    "imageUrl": "https://image.newsis.com/2013/09/26/NISI20130926_0008722938_web.jpg",
+    "page": "https://www.newsjeju.net/news/articleView.html?idxno=144441",
+    "ref": "assets/beauties/references/korea-ten-20261022/son-ye-jin.jpg",
+    "status": "downloaded"
+  },
+  {
+    "key": "kim-tae-hee",
+    "name": "金泰希",
+    "birthYear": 1980,
+    "referenceYear": 2013,
+    "imageUrl": "https://cdn.livedoor.jp/kstyle/kstyle_news/USER/20130401/l6/lmzs9mk25wvz6bo44426/244/498x684x9a3c2f224344d980f3dc30ed.jpg",
+    "page": "https://kstyle.com/article.ksn?articleNo=1965722",
+    "ref": "assets/beauties/references/korea-ten-20261022/kim-tae-hee.jpg",
+    "status": "downloaded"
+  },
+  {
+    "key": "han-ga-in",
+    "name": "韩佳人",
+    "birthYear": 1982,
+    "referenceYear": 2012,
+    "imageUrl": "https://cdn.livedoor.jp/kstyle/kstyle_news/USER/20120314/l6/lmzs9mk25wvz6bo44426/250/500x761x9a3c2f224344d980f3dc30ed.jpg",
+    "page": "https://kstyle.com/article.ksn?articleNo=1938485",
+    "ref": "assets/beauties/references/korea-ten-20261022/han-ga-in.jpg",
+    "status": "downloaded"
+  },
+  {
+    "key": "bae-suzy",
+    "name": "裴秀智",
+    "birthYear": 1994,
+    "referenceYear": 2025,
+    "imageUrl": "https://images.khan.co.kr/article/2025/09/29/rcv.YNA.20250929.PYH2025092914540001300_P1.jpg",
+    "page": "https://sports.khan.co.kr/article/202509291701003",
+    "ref": "assets/beauties/references/korea-ten-20261022/bae-suzy.jpg",
+    "status": "downloaded"
+  },
+  {
+    "key": "im-yoona",
+    "name": "林允儿",
+    "birthYear": 1990,
+    "referenceYear": 2023,
+    "imageUrl": "https://thumbnews.nateimg.co.kr/view610/news.nateimg.co.kr/orgImg/nn/2023/06/15/202306151418571810_1.jpg",
+    "page": "https://news.nate.com/view/20230615n20262",
+    "status": "downloaded",
+    "ref": "assets/beauties/references/korea-ten-20261022/im-yoona.jpg"
+  },
+  {
+    "key": "kim-jisoo",
+    "name": "金智秀",
+    "birthYear": 1995,
+    "referenceYear": 2020,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/28/Kim_Ji-Soo_in_2020_Dior_%283%29.png",
+    "page": "https://commons.wikimedia.org/wiki/File:Kim_Ji-Soo_in_2020_Dior_(3).png",
+    "ref": "assets/beauties/references/korea-ten-20261022/kim-jisoo.jpg",
+    "status": "downloaded"
+  },
+  {
+    "key": "han-hyo-joo",
+    "name": "韩孝周",
+    "birthYear": 1987,
+    "referenceYear": 2025,
+    "imageUrl": "https://thumbnews.nateimg.co.kr/view610/news.nateimg.co.kr/orgImg/nn/2025/09/18/202509181047385510_1.jpg",
+    "page": "https://news.nate.com/view/20250918n14264",
+    "ref": "assets/beauties/references/korea-ten-20261022/han-hyo-joo.jpg",
+    "status": "downloaded"
+  },
+  {
+    "key": "kim-ji-won",
+    "name": "金智媛",
+    "birthYear": 1992,
+    "referenceYear": 2024,
+    "imageUrl": "https://img.hankyung.com/photo/202403/03.36048393.1.jpg",
+    "page": "https://plus.hankyung.com/apps/newsinside.view?aid=202403073601H&category=&sns=y",
+    "ref": "assets/beauties/references/korea-ten-20261022/kim-ji-won.jpg",
+    "status": "downloaded"
+  }
+]

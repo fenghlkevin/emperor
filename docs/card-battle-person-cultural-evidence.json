@@ -1,0 +1,3328 @@
+{
+  "updated": "2026-10-25",
+  "scope": "独立证据登记，不直接改变生产身份、服饰或完整验收标志。",
+  "total": 100,
+  "regionalEvidenceReviewed": 100,
+  "pendingRegionalEvidence": 0,
+  "historicalLinkPending": 0,
+  "people": [
+    {
+      "personId": "cbdb-27948",
+      "name": "刘基",
+      "catalogDynasty": "明",
+      "catalogSource": {
+        "url": "https://cbdb.fas.harvard.edu/cbdbapi/person.php?id=27948&o=json",
+        "title": "CBDB人物资料：27948",
+        "catalogVerified": true,
+        "evidenceStatus": "现有人物简介可追溯",
+        "reviewStatus": "catalog-traceable-not-rereviewed"
+      },
+      "identityStatus": "catalog-and-independent-biography-consistent",
+      "cultureStatus": "regional-evidence-reviewed",
+      "culture": "central",
+      "evidence": [
+        {
+          "url": "https://zh.wikisource.org/wiki/明史/卷128",
+          "publisher": "历史文献原文／维基文库数字转录",
+          "accessed": "2026-10-24",
+          "summary": "字伯温，元进士，后辅佐明太祖，封诚意伯。",
+          "limitations": "仅确认本段支持的古地名和人物生平；目录编号未独立复核，转录未代替点校校勘；部分条目只有家族地域或活动地，已明确标注。"
+        }
+      ],
+      "sourceAttempts": [
+        {
+          "url": "https://www.zjsjw.gov.cn/zhuantizhuanlan/shipindongman/weishipin1/202208/t20220825_6799512_ext.html",
+          "date": "2026-10-24",
+          "result": "搜索可见摘要，但实际打开超时，尚不计资料核验通过。"
+        },
+        {
+          "url": "https://www.zgbk.com/ecph/words?ID=443144&SiteID=1&Type=bkzyb",
+          "date": "2026-10-24",
+          "result": "搜索摘要含刘基浙江青田，但实际页显示路径已失效，跟随新地址失败；不计核验通过。"
+        }
+      ],
+      "period": "元末明初",
+      "region": "青田",
+      "mappingRationale": "游戏宽泛文化池映射，以明确时代和生平地域供后续美术参考；不是民族、现代国籍或精确服饰鉴定。",
+      "reviewBatch": "20261024-30-01"
+    },
+    {
+      "personId": "cbdb-3767",
+      "name": "苏轼",
+      "catalogDynasty": "宋",
+      "catalogSource": {
+        "url": "https://zh.wikipedia.org/?curid=6433",
+        "title": "维基百科：苏轼（导言节录，CC BY-SA 4.0）",
+        "catalogVerified": true,
+        "evidenceStatus": "现有人物简介可追溯",
+        "reviewStatus": "catalog-traceable-not-rereviewed"
+      },
+      "identityStatus": "catalog-and-independent-biography-consistent",
+      "cultureStatus": "regional-evidence-reviewed",
+      "culture": "central",
+      "evidence": [
+        {
+          "url": "https://dict.revised.moe.edu.tw/dictView.jsp?ID=145198&la=0&powerMode=0",
+          "publisher": "教育部《重編國語辭典修訂本》",
+          "accessed": "2026-10-24",
+          "summary": "字子瞻，号东坡居士；宋代文人与官员。",
+          "region": "眉州眉山（今四川眉山）",
+          "limitations": "外部来源不提供CBDB编号；编号沿用原目录，未声称编号独立复核；不据此推断族属、服饰或精确生年。"
+        }
+      ],
+      "region": "眉州眉山（今四川眉山）",
+      "period": "宋",
+      "mappingRationale": "central为游戏宽泛区域美术池；据地域与时代作产品映射，不是民族或服饰鉴定。"
+    },
+    {
+      "personId": "cbdb-1384",
+      "name": "欧阳修",
+      "catalogDynasty": "宋",
+      "catalogSource": {
+        "url": "https://zh.wikipedia.org/?curid=10634",
+        "title": "维基百科：欧阳修（导言节录，CC BY-SA 4.0）",
+        "catalogVerified": true,
+        "evidenceStatus": "现有人物简介可追溯",
+        "reviewStatus": "catalog-traceable-not-rereviewed"
+      },
+      "identityStatus": "catalog-and-independent-biography-consistent",
+      "cultureStatus": "regional-evidence-reviewed",
+      "culture": "central",
+      "evidence": [
+        {
+          "url": "https://pedia.cloud.edu.tw/Entry/Detail?title=%E6%AD%90%E9%99%BD%E4%BF%AE(1007-1072)",
+          "publisher": "国家教育研究院辞书／教育百科",
+          "accessed": "2026-10-24",
+          "summary": "字永叔，号醉翁、六一居士；宋代文人与官员。",
+          "region": "吉州庐陵",
+          "limitations": "外部来源不提供CBDB编号；编号沿用原目录，未声称编号独立复核；不据此推断族属、服饰或精确生年。"
+        }
+      ],
+      "region": "吉州庐陵",
+      "period": "宋",
+      "mappingRationale": "central为游戏宽泛区域美术池；据地域与时代作产品映射，不是民族或服饰鉴定。"
+    },
+    {
+      "personId": "manual-1523",
+      "name": "李斯",
+      "catalogDynasty": "周",
+      "catalogSource": {
+        "url": "https://zh.wikipedia.org/?curid=13760",
+        "title": "维基百科：李斯（导言节录，CC BY-SA 4.0）",
+        "catalogVerified": true,
+        "evidenceStatus": "现有人物简介可追溯",
+        "reviewStatus": "catalog-traceable-not-rereviewed"
+      },
+      "identityStatus": "catalog-and-independent-biography-consistent",
+      "cultureStatus": "regional-evidence-reviewed",
+      "culture": "central",
+      "evidence": [
+        {
+          "url": "https://zh.wikisource.org/wiki/史記/卷087",
+          "publisher": "司马迁《史记》／维基文库数字转录",
+          "accessed": "2026-10-24",
+          "summary": "从楚上蔡入秦，受学荀卿，后任秦廷尉、丞相。",
+          "limitations": "仅保留古地名，不依现代地图强定地域。 目录ID沿用既有映射，未称外部编号已独立核验；转录需与点校本复核才适合作直接引文。"
+        }
+      ],
+      "region": "楚上蔡",
+      "period": "战国至秦",
+      "mappingRationale": "游戏central为宽泛先秦秦汉文化美术池映射，不代表现代民族分类；古地名和地域不确定性保留。"
+    },
+    {
+      "personId": "original-4",
+      "name": "张巡",
+      "catalogDynasty": "唐",
+      "catalogSource": {
+        "url": "https://zh.wikisource.org/wiki/舊唐書/卷187下",
+        "title": "史籍数字转录：舊唐書/卷187下",
+        "catalogVerified": true,
+        "evidenceStatus": "史料已读与用户选定改编",
+        "reviewStatus": "reviewed-historical-adaptation"
+      },
+      "identityStatus": "historical-adaptation-selected",
+      "cultureStatus": "regional-evidence-reviewed",
+      "culture": "central",
+      "evidence": [
+        {
+          "url": "https://zh.wikisource.org/wiki/舊唐書/卷187下",
+          "publisher": "史籍数字转录或机构资料；见身份复核报告",
+          "accessed": "2026-10-25",
+          "summary": "张巡，唐代蒲州河东人，进士出身，曾任真源令。安史之乱中先守雍丘，后与许远等守睢阳，城陷后遇害。其事迹体现守城组织与坚守，睢阳是主要战事活动地。",
+          "limitations": "本作选定改编；历史容貌及能力数值不作实证。"
+        }
+      ],
+      "reviewBatch": "20261024-30-01",
+      "identityRecheck": {
+        "date": "2026-10-25",
+        "historicalReferentStatus": "historical-referent-identifiable",
+        "conclusion": "唐代睢阳守将，蒲州河东人",
+        "originalAuthorLinkStatus": "not-directly-documented",
+        "report": "2026-10-25"
+      },
+      "period": "唐",
+      "region": "蒲州河东",
+      "mappingRationale": "经本轮史料复核并由用户指定采用历史身份；central是宽泛游戏美术池，不是民族、现代国籍或精确服饰考证。",
+      "productionSelection": {
+        "date": "2026-10-25",
+        "originalSlot": "original-4",
+        "selectedId": "original-4",
+        "authorIntentProved": false,
+        "originalAuthorIntentProved": false
+      }
+    },
+    {
+      "personId": "cbdb-17364",
+      "name": "管仲",
+      "catalogDynasty": "汉前",
+      "catalogSource": {
+        "url": "https://zh.wikipedia.org/?curid=38041",
+        "title": "维基百科：管仲（导言节录，CC BY-SA 4.0）",
+        "catalogVerified": true,
+        "evidenceStatus": "现有人物简介可追溯",
+        "reviewStatus": "catalog-traceable-not-rereviewed"
+      },
+      "identityStatus": "catalog-and-independent-biography-consistent",
+      "cultureStatus": "regional-evidence-reviewed",
+      "culture": "central",
+      "evidence": [
+        {
+          "url": "https://zh.wikisource.org/wiki/史記/卷062",
+          "publisher": "司马迁《史记》／维基文库数字转录",
+          "accessed": "2026-10-24",
+          "summary": "名夷吾，曾事公子纠，后经鲍叔推荐相齐，辅佐齐桓公。",
+          "limitations": "保留颍上古地名，不直接等同现代安徽颍上县；出生地现代对应不作为已核。 目录ID沿用既有映射，未称外部编号已独立核验；转录需与点校本复核才适合作直接引文。"
+        }
+      ],
+      "region": "颍上（古地名，现代对应未定）；仕齐",
+      "period": "春秋",
+      "mappingRationale": "游戏central为宽泛先秦秦汉文化美术池映射，不代表现代民族分类；古地名和地域不确定性保留。"
+    },
+    {
+      "personId": "manual-1527",
+      "name": "萧何",
+      "catalogDynasty": "秦汉",
+      "catalogSource": {
+        "url": "https://zh.wikipedia.org/?curid=93952",
+        "title": "维基百科：萧何（导言节录，CC BY-SA 4.0）",
+        "catalogVerified": true,
+        "evidenceStatus": "现有人物简介可追溯",
+        "reviewStatus": "catalog-traceable-not-rereviewed"
+      },
+      "identityStatus": "catalog-and-independent-biography-consistent",
+      "cultureStatus": "regional-evidence-reviewed",
+      "culture": "central",
+      "evidence": [
+        {
+          "url": "https://zh.wikisource.org/wiki/史記/卷053",
+          "publisher": "司马迁《史记》／维基文库数字转录",
+          "accessed": "2026-10-24",
+          "summary": "曾为沛主吏掾，随刘邦，任汉丞相及相国，负责律令图书与后勤。",
+          "limitations": "沛丰为史籍原文地域，未扩展族属或具体服饰。 目录ID沿用既有映射，未称外部编号已独立核验；转录需与点校本复核才适合作直接引文。"
+        }
+      ],
+      "region": "沛丰",
+      "period": "秦末至西汉",
+      "mappingRationale": "游戏central为宽泛先秦秦汉文化美术池映射，不代表现代民族分类；古地名和地域不确定性保留。"
+    },
+    {
+      "personId": "manual-1529",
+      "name": "张良",
+      "catalogDynasty": "秦汉",
+      "catalogSource": {
+        "url": "https://zh.wikipedia.org/?curid=15455",
+        "title": "维基百科：张良（导言节录，CC BY-SA 4.0）",
+        "catalogVerified": true,
+        "evidenceStatus": "现有人物简介可追溯",
+        "reviewStatus": "catalog-traceable-not-rereviewed"
+      },
+      "identityStatus": "catalog-and-independent-biography-consistent",
+      "cultureStatus": "regional-evidence-reviewed",
+      "culture": "central",
+      "evidence": [
+        {
+          "url": "https://zh.wikisource.org/wiki/史記/卷055",
+          "publisher": "司马迁《史记》／维基文库数字转录",
+          "accessed": "2026-10-24",
+          "summary": "先世五世相韩，秦灭韩后谋报韩仇，后辅佐刘邦。",
+          "limitations": "史记只明言先世韩人；不裁定有争议的城父现代地望，不把活动地当出生地。 目录ID沿用既有映射，未称外部编号已独立核验；转录需与点校本复核才适合作直接引文。"
+        }
+      ],
+      "region": "先世韩国；活动于淮阳、下邳等地",
+      "period": "战国末至西汉",
+      "mappingRationale": "游戏central为宽泛先秦秦汉文化美术池映射，不代表现代民族分类；古地名和地域不确定性保留。"
+    },
+    {
+      "personId": "original-8",
+      "name": "魏徵",
+      "catalogDynasty": "隋唐",
+      "catalogSource": {
+        "url": "https://zh.wikisource.org/wiki/舊唐書/卷71",
+        "title": "史籍数字转录：舊唐書/卷71",
+        "catalogVerified": true,
+        "evidenceStatus": "史料已读与用户选定改编",
+        "reviewStatus": "reviewed-historical-adaptation"
+      },
+      "identityStatus": "historical-adaptation-selected",
+      "cultureStatus": "regional-evidence-reviewed",
+      "culture": "central",
+      "evidence": [
+        {
+          "url": "https://zh.wikisource.org/wiki/舊唐書/卷71",
+          "publisher": "史籍数字转录或机构资料；见身份复核报告",
+          "accessed": "2026-10-25",
+          "summary": "魏徵字玄成，钜鹿曲城人。隋末曾从李密，入唐后任谏议大夫、秘书监等职，以谏诤和参与政务著称。其专长是政治判断与直谏，不以谏臣身份虚构个人武勇。",
+          "limitations": "本作选定改编；历史容貌及能力数值不作实证。"
+        }
+      ],
+      "reviewBatch": "20261024-30-01",
+      "identityRecheck": {
+        "date": "2026-10-25",
+        "historicalReferentStatus": "historical-referent-identifiable",
+        "conclusion": "唐代谏臣，字玄成",
+        "originalAuthorLinkStatus": "not-directly-documented",
+        "report": "2026-10-25"
+      },
+      "period": "隋唐",
+      "region": "钜鹿曲城",
+      "mappingRationale": "经本轮史料复核并由用户指定采用历史身份；central是宽泛游戏美术池，不是民族、现代国籍或精确服饰考证。",
+      "productionSelection": {
+        "date": "2026-10-25",
+        "originalSlot": "original-8",
+        "selectedId": "original-8",
+        "authorIntentProved": false,
+        "originalAuthorIntentProved": false
+      }
+    },
+    {
+      "personId": "cbdb-8043",
+      "name": "范仲淹",
+      "catalogDynasty": "宋",
+      "catalogSource": {
+        "url": "https://zh.wikipedia.org/?curid=83581",
+        "title": "维基百科：范仲淹（导言节录，CC BY-SA 4.0）",
+        "catalogVerified": true,
+        "evidenceStatus": "现有人物简介可追溯",
+        "reviewStatus": "catalog-traceable-not-rereviewed"
+      },
+      "identityStatus": "catalog-and-independent-biography-consistent",
+      "cultureStatus": "regional-evidence-reviewed",
+      "culture": "central",
+      "evidence": [
+        {
+          "url": "https://www.dpm.org.cn/lemmas/240582.html",
+          "publisher": "故宫博物院",
+          "accessed": "2026-10-24",
+          "summary": "字希文，仕真宗、仁宗，官至参知政事，谥文正。",
+          "limitations": "独立生平核对目录，不声称外部CBDB或手工目录编号已另行核定；族属和精确服饰需另证。"
+        }
+      ],
+      "region": "吴县（今江苏苏州）",
+      "period": "北宋",
+      "mappingRationale": "central仅为游戏宽泛区域池；保留具体时代地域供美术分期，不以同一池混用宋、清服饰。"
+    },
+    {
+      "personId": "cbdb-34344",
+      "name": "曾国藩",
+      "catalogDynasty": "清",
+      "catalogSource": {
+        "url": "https://zh.wikipedia.org/?curid=8457",
+        "title": "维基百科：曾国藩（导言节录，CC BY-SA 4.0）",
+        "catalogVerified": true,
+        "evidenceStatus": "现有人物简介可追溯",
+        "reviewStatus": "catalog-traceable-not-rereviewed"
+      },
+      "identityStatus": "catalog-and-independent-biography-consistent",
+      "cultureStatus": "regional-evidence-reviewed",
+      "culture": "central",
+      "evidence": [
+        {
+          "url": "https://css.hunan.gov.cn/css/tslm/hxws/gywc/201609/t20160905_3253829.html",
+          "publisher": "湖南省文史研究馆／刘泱泱",
+          "accessed": "2026-10-24",
+          "summary": "字伯涵、号涤生，道光进士，组建湘军并历任两江等总督。",
+          "limitations": "独立生平核对目录，不声称外部CBDB或手工目录编号已另行核定；族属和精确服饰需另证。"
+        }
+      ],
+      "sourceAttempts": [
+        {
+          "url": "https://dict.revised.moe.edu.tw/dictView.jsp?ID=139071&q=1&word=%E8%97%A9",
+          "date": "2026-10-24",
+          "result": "搜索可见摘要，但实际打开返回错误，尚不计资料核验通过。"
+        }
+      ],
+      "region": "湖南湘乡荷叶塘（今属双峰）",
+      "period": "清",
+      "mappingRationale": "central仅为游戏宽泛区域池；保留具体时代地域供美术分期，不以同一池混用宋、清服饰。"
+    },
+    {
+      "personId": "cbdb-1762",
+      "name": "王安石",
+      "catalogDynasty": "宋",
+      "catalogSource": {
+        "url": "https://zh.wikipedia.org/?curid=16067",
+        "title": "维基百科：王安石（导言节录，CC BY-SA 4.0）",
+        "catalogVerified": true,
+        "evidenceStatus": "现有人物简介可追溯",
+        "reviewStatus": "catalog-traceable-not-rereviewed"
+      },
+      "identityStatus": "catalog-and-independent-biography-consistent",
+      "cultureStatus": "regional-evidence-reviewed",
+      "culture": "central",
+      "evidence": [
+        {
+          "url": "https://www.chinakongzi.org/baike/RENWU/SONGYUAN/201711/t20171110_146675.htm",
+          "publisher": "中国孔子网／中国孔子基金会秘书处",
+          "accessed": "2026-10-24",
+          "summary": "王安石字介甫、号半山老人，北宋政治家、思想家与文学家，籍贯江西临川；熙宁年间主持变法。",
+          "limitations": "独立生平与目录一致，未独立复核CBDB编号；不据此判定精确服饰。"
+        }
+      ],
+      "region": "江西临川",
+      "period": "北宋",
+      "mappingRationale": "central为游戏宽泛区域美术池；据时代地域作产品映射，不作为族属或服饰鉴定。"
+    },
+    {
+      "personId": "manual-1510",
+      "name": "商鞅",
+      "catalogDynasty": "周",
+      "catalogSource": {
+        "url": "https://zh.wikipedia.org/?curid=5851",
+        "title": "维基百科：商鞅（导言节录，CC BY-SA 4.0）",
+        "catalogVerified": true,
+        "evidenceStatus": "现有人物简介可追溯",
+        "reviewStatus": "catalog-traceable-not-rereviewed"
+      },
+      "identityStatus": "catalog-and-independent-biography-consistent",
+      "cultureStatus": "regional-evidence-reviewed",
+      "culture": "central",
+      "evidence": [
+        {
+          "url": "https://zh.wikisource.org/wiki/史記/卷068",
+          "publisher": "历史文献原文／维基文库数字转录",
+          "accessed": "2026-10-24",
+          "summary": "公孙氏、名鞅，卫国公族支属；由魏入秦，受秦孝公任用。",
+          "limitations": "仅确认本段支持的古地名和人物生平；目录编号未独立复核，转录未代替点校校勘；部分条目只有家族地域或活动地，已明确标注。"
+        }
+      ],
+      "period": "战国",
+      "region": "卫；后仕魏、秦",
+      "mappingRationale": "游戏宽泛文化池映射，以明确时代和生平地域供后续美术参考；不是民族、现代国籍或精确服饰鉴定。",
+      "reviewBatch": "20261024-30-01"
+    },
+    {
+      "personId": "manual-1629",
+      "name": "左宗棠",
+      "catalogDynasty": "清",
+      "catalogSource": {
+        "url": "https://zh.wikipedia.org/?curid=105623",
+        "title": "维基百科：左宗棠（导言节录，CC BY-SA 4.0）",
+        "catalogVerified": true,
+        "evidenceStatus": "现有人物简介可追溯",
+        "reviewStatus": "catalog-traceable-not-rereviewed"
+      },
+      "identityStatus": "catalog-and-independent-biography-consistent",
+      "cultureStatus": "regional-evidence-reviewed",
+      "culture": "central",
+      "evidence": [
+        {
+          "url": "https://css.hunan.gov.cn/css/tslm/hxws/gywc/201609/t20160905_3253829.html",
+          "publisher": "湖南省文史研究馆／刘泱泱",
+          "accessed": "2026-10-24",
+          "summary": "字季高，一字朴存，举人出身，曾任闽浙、陕甘等总督，创办福建船政。",
+          "limitations": "独立生平核对目录，不声称外部CBDB或手工目录编号已另行核定；族属和精确服饰需另证。"
+        }
+      ],
+      "region": "湖南湘阴",
+      "period": "清",
+      "mappingRationale": "central仅为游戏宽泛区域池；保留具体时代地域供美术分期，不以同一池混用宋、清服饰。"
+    },
+    {
+      "personId": "manual-1561",
+      "name": "荀彧",
+      "catalogDynasty": "东汉末",
+      "catalogSource": {
+        "url": "https://zh.wikisource.org/wiki/三國志/卷10",
+        "title": "《三国志》卷10人物本传",
+        "catalogVerified": true,
+        "evidenceStatus": "史料已读与用户选定改编",
+        "reviewStatus": "reviewed-historical-adaptation"
+      },
+      "identityStatus": "user-selected-replacement",
+      "cultureStatus": "regional-evidence-reviewed",
+      "culture": "central",
+      "evidence": [
+        {
+          "url": "https://zh.wikisource.org/wiki/三國志/卷10",
+          "publisher": "史籍数字转录或机构资料；见身份复核报告",
+          "accessed": "2026-10-25",
+          "summary": "荀彧字文若，颍川颍阴人。东汉末年政治家，辅佐曹操，参与战略谋划、经营后方和荐举人才，官至尚书令。",
+          "limitations": "本作选定改编；历史容貌及能力数值不作实证。"
+        }
+      ],
+      "reviewBatch": "20261024-30-01",
+      "identityRecheck": {
+        "date": "2026-10-25",
+        "historicalReferentStatus": "no-supported-referent",
+        "conclusion": "暂缺可靠历史对应",
+        "originalAuthorLinkStatus": "not-directly-documented",
+        "report": "2026-10-25"
+      },
+      "period": "东汉末",
+      "region": "颍川颍阴",
+      "mappingRationale": "经本轮史料复核并由用户指定采用历史身份；central是宽泛游戏美术池，不是民族、现代国籍或精确服饰考证。",
+      "productionSelection": {
+        "date": "2026-10-25",
+        "originalSlot": "original-14",
+        "selectedId": "manual-1561",
+        "authorIntentProved": false,
+        "originalAuthorIntentProved": false
+      }
+    },
+    {
+      "personId": "manual-1543",
+      "name": "班超",
+      "catalogDynasty": "秦汉",
+      "catalogSource": {
+        "url": "https://zh.wikipedia.org/?curid=13520",
+        "title": "维基百科：班超（导言节录，CC BY-SA 4.0）",
+        "catalogVerified": true,
+        "evidenceStatus": "现有人物简介可追溯",
+        "reviewStatus": "catalog-traceable-not-rereviewed"
+      },
+      "identityStatus": "catalog-and-independent-biography-consistent",
+      "cultureStatus": "regional-evidence-reviewed",
+      "culture": "central",
+      "evidence": [
+        {
+          "url": "https://zh.wikisource.org/wiki/後漢書/卷47",
+          "publisher": "历史文献原文／维基文库数字转录",
+          "accessed": "2026-10-24",
+          "summary": "字仲升，班彪少子，随窦固出征，后奉使西域。",
+          "limitations": "仅确认本段支持的古地名和人物生平；目录编号未独立复核，转录未代替点校校勘；部分条目只有家族地域或活动地，已明确标注。"
+        }
+      ],
+      "period": "东汉",
+      "region": "扶风平陵",
+      "mappingRationale": "游戏宽泛文化池映射，以明确时代和生平地域供后续美术参考；不是民族、现代国籍或精确服饰鉴定。",
+      "reviewBatch": "20261024-30-01"
+    },
+    {
+      "personId": "original-16",
+      "name": "公孙侨",
+      "catalogDynasty": "春秋郑",
+      "catalogSource": {
+        "url": "https://zh.wikisource.org/wiki/史記/卷119",
+        "title": "史籍数字转录：史記/卷119",
+        "catalogVerified": true,
+        "evidenceStatus": "史料已读与用户选定改编",
+        "reviewStatus": "reviewed-historical-adaptation"
+      },
+      "identityStatus": "historical-adaptation-selected",
+      "cultureStatus": "regional-evidence-reviewed",
+      "culture": "central",
+      "evidence": [
+        {
+          "url": "https://zh.wikisource.org/wiki/史記/卷119",
+          "publisher": "史籍数字转录或机构资料；见身份复核报告",
+          "accessed": "2026-10-25",
+          "summary": "公孙侨，字子产，春秋郑国政治家，主持郑国政务，以治理、外交与礼政见载。《左传》中的自称“侨”与子产为同一人。郑国是其政治活动范围，不据此强定现代出生地。",
+          "limitations": "本作选定改编；历史容貌及能力数值不作实证。"
+        },
+        {
+          "url": "https://ocw.aca.ntu.edu.tw/uploads/course_item_file/file/576/104S205_AA07L01.pdf",
+          "publisher": "史籍数字转录或机构资料；见身份复核报告",
+          "accessed": "2026-10-25",
+          "summary": "公孙侨，字子产，春秋郑国政治家，主持郑国政务，以治理、外交与礼政见载。《左传》中的自称“侨”与子产为同一人。郑国是其政治活动范围，不据此强定现代出生地。",
+          "limitations": "本作选定改编；历史容貌及能力数值不作实证。"
+        }
+      ],
+      "reviewBatch": "20261024-30-01",
+      "identityRecheck": {
+        "date": "2026-10-25",
+        "historicalReferentStatus": "historical-referent-identifiable",
+        "conclusion": "春秋郑国子产",
+        "originalAuthorLinkStatus": "not-directly-documented",
+        "report": "2026-10-25"
+      },
+      "period": "春秋郑",
+      "region": "郑国；史料所见政治活动地",
+      "mappingRationale": "经本轮史料复核并由用户指定采用历史身份；central是宽泛游戏美术池，不是民族、现代国籍或精确服饰考证。",
+      "productionSelection": {
+        "date": "2026-10-25",
+        "originalSlot": "original-16",
+        "selectedId": "original-16",
+        "authorIntentProved": false,
+        "originalAuthorIntentProved": false
+      }
+    },
+    {
+      "personId": "manual-1530",
+      "name": "韩信",
+      "catalogDynasty": "秦汉",
+      "catalogSource": {
+        "url": "https://zh.wikipedia.org/?curid=69222",
+        "title": "维基百科：韩信（导言节录，CC BY-SA 4.0）",
+        "catalogVerified": true,
+        "evidenceStatus": "现有人物简介可追溯",
+        "reviewStatus": "catalog-traceable-not-rereviewed"
+      },
+      "identityStatus": "catalog-and-independent-biography-consistent",
+      "cultureStatus": "regional-evidence-reviewed",
+      "culture": "central",
+      "evidence": [
+        {
+          "url": "https://zh.wikisource.org/wiki/史記/卷092",
+          "publisher": "历史文献原文／维基文库数字转录",
+          "accessed": "2026-10-24",
+          "summary": "曾随项梁项羽，后归刘邦，经萧何推荐任大将。",
+          "limitations": "仅确认本段支持的古地名和人物生平；目录编号未独立复核，转录未代替点校校勘；部分条目只有家族地域或活动地，已明确标注。"
+        }
+      ],
+      "period": "秦末西汉",
+      "region": "淮阴",
+      "mappingRationale": "游戏宽泛文化池映射，以明确时代和生平地域供后续美术参考；不是民族、现代国籍或精确服饰鉴定。",
+      "reviewBatch": "20261024-30-01"
+    },
+    {
+      "personId": "general-874-55746",
+      "name": "施琅",
+      "catalogDynasty": "清",
+      "catalogSource": {
+        "url": "https://zh.wikipedia.org/?curid=38071",
+        "title": "维基百科：施琅（导言节录，CC BY-SA 4.0）",
+        "catalogVerified": true,
+        "evidenceStatus": "现有人物简介可追溯",
+        "reviewStatus": "catalog-traceable-not-rereviewed"
+      },
+      "identityStatus": "catalog-and-independent-biography-consistent",
+      "cultureStatus": "regional-evidence-reviewed",
+      "culture": "central",
+      "evidence": [
+        {
+          "url": "https://zh.wikisource.org/wiki/清史稿/卷260",
+          "publisher": "历史文献原文／维基文库数字转录",
+          "accessed": "2026-10-24",
+          "summary": "早年属郑芝龙，后仕清，任水师提督；原文称字琢公，暂不统一不同资料字与号说法。",
+          "limitations": "仅确认本段支持的古地名和人物生平；目录编号未独立复核，转录未代替点校校勘；部分条目只有家族地域或活动地，已明确标注。"
+        }
+      ],
+      "period": "明末清初",
+      "region": "福建晋江",
+      "mappingRationale": "游戏宽泛文化池映射，以明确时代和生平地域供后续美术参考；不是民族、现代国籍或精确服饰鉴定。",
+      "reviewBatch": "20261024-30-01"
+    },
+    {
+      "personId": "manual-1519",
+      "name": "蔺相如",
+      "catalogDynasty": "周",
+      "catalogSource": {
+        "url": "https://zh.wikipedia.org/?curid=103486",
+        "title": "维基百科：蔺相如（导言节录，CC BY-SA 4.0）",
+        "catalogVerified": true,
+        "evidenceStatus": "现有人物简介可追溯",
+        "reviewStatus": "catalog-traceable-not-rereviewed"
+      },
+      "identityStatus": "catalog-and-independent-biography-consistent",
+      "cultureStatus": "regional-evidence-reviewed",
+      "culture": "central",
+      "evidence": [
+        {
+          "url": "https://zh.wikisource.org/wiki/史記/卷081",
+          "publisher": "历史文献原文／维基文库数字转录",
+          "accessed": "2026-10-24",
+          "summary": "赵人，曾为缪贤舍人，奉璧使秦，后列上卿。",
+          "limitations": "仅确认本段支持的古地名和人物生平；目录编号未独立复核，转录未代替点校校勘；部分条目只有家族地域或活动地，已明确标注。"
+        }
+      ],
+      "period": "战国",
+      "region": "赵",
+      "mappingRationale": "游戏宽泛文化池映射，以明确时代和生平地域供后续美术参考；不是民族、现代国籍或精确服饰鉴定。",
+      "reviewBatch": "20261024-30-01"
+    },
+    {
+      "personId": "manual-1579",
+      "name": "房玄龄",
+      "catalogDynasty": "唐",
+      "catalogSource": {
+        "url": "https://zh.wikipedia.org/?curid=78968",
+        "title": "维基百科：房玄龄（导言节录，CC BY-SA 4.0）",
+        "catalogVerified": true,
+        "evidenceStatus": "现有人物简介可追溯",
+        "reviewStatus": "catalog-traceable-not-rereviewed"
+      },
+      "identityStatus": "catalog-and-independent-biography-consistent",
+      "cultureStatus": "regional-evidence-reviewed",
+      "culture": "central",
+      "evidence": [
+        {
+          "url": "https://zh.wikisource.org/wiki/舊唐書/卷66",
+          "publisher": "历史文献原文／维基文库数字转录",
+          "accessed": "2026-10-24",
+          "summary": "原文名房乔、字玄龄；父彦谦仕隋，后辅佐唐太宗。",
+          "limitations": "仅确认本段支持的古地名和人物生平；目录编号未独立复核，转录未代替点校校勘；部分条目只有家族地域或活动地，已明确标注。"
+        }
+      ],
+      "period": "隋唐",
+      "region": "齐州临淄",
+      "mappingRationale": "游戏宽泛文化池映射，以明确时代和生平地域供后续美术参考；不是民族、现代国籍或精确服饰鉴定。",
+      "reviewBatch": "20261024-30-01"
+    },
+    {
+      "personId": "manual-1509",
+      "name": "晏婴",
+      "catalogDynasty": "周",
+      "catalogSource": {
+        "url": "https://zh.wikipedia.org/?curid=1446",
+        "title": "维基百科：晏婴（导言节录，CC BY-SA 4.0）",
+        "catalogVerified": true,
+        "evidenceStatus": "现有人物简介可追溯",
+        "reviewStatus": "catalog-traceable-not-rereviewed"
+      },
+      "identityStatus": "catalog-and-independent-biography-consistent",
+      "cultureStatus": "regional-evidence-reviewed",
+      "culture": "central",
+      "evidence": [
+        {
+          "url": "https://zh.wikisource.org/wiki/史記/卷062",
+          "publisher": "司马迁《史记》／维基文库数字转录",
+          "accessed": "2026-10-24",
+          "summary": "史籍称晏平仲婴，先后事齐灵公、庄公、景公，相齐，以节俭力行著称。",
+          "limitations": "仅据古代地域、仕宦与名号作身份核对，不推定现代族属或精确服饰。 目录ID沿用既有映射，未称外部编号已独立核验；转录需与点校本复核才适合作直接引文。"
+        }
+      ],
+      "region": "莱之夷维；仕齐",
+      "period": "春秋",
+      "mappingRationale": "游戏central为宽泛先秦秦汉文化美术池映射，不代表现代民族分类；古地名和地域不确定性保留。"
+    },
+    {
+      "personId": "general-113-60981",
+      "name": "苏武",
+      "catalogDynasty": "秦汉",
+      "catalogSource": {
+        "url": "https://zh.wikipedia.org/?curid=110844",
+        "title": "维基百科：苏武（导言节录，CC BY-SA 4.0）",
+        "catalogVerified": true,
+        "evidenceStatus": "现有人物简介可追溯",
+        "reviewStatus": "catalog-traceable-not-rereviewed"
+      },
+      "identityStatus": "catalog-and-independent-biography-consistent",
+      "cultureStatus": "regional-evidence-reviewed",
+      "culture": "central",
+      "evidence": [
+        {
+          "url": "https://zh.wikisource.org/wiki/漢書/卷054",
+          "publisher": "历史文献原文／维基文库数字转录",
+          "accessed": "2026-10-24",
+          "summary": "苏建之子、字子卿，奉使匈奴持节，后归汉；杜陵是父传所载家族地域，不直接称出生地。",
+          "limitations": "仅确认本段支持的古地名和人物生平；目录编号未独立复核，转录未代替点校校勘；部分条目只有家族地域或活动地，已明确标注。"
+        }
+      ],
+      "period": "西汉",
+      "region": "家族杜陵；活动于汉与匈奴",
+      "mappingRationale": "游戏宽泛文化池映射，以明确时代和生平地域供后续美术参考；不是民族、现代国籍或精确服饰鉴定。",
+      "reviewBatch": "20261024-30-01"
+    },
+    {
+      "personId": "cbdb-898",
+      "name": "寇准",
+      "catalogDynasty": "宋",
+      "catalogSource": {
+        "url": "https://zh.wikipedia.org/?curid=98792",
+        "title": "维基百科：寇准（导言节录，CC BY-SA 4.0）",
+        "catalogVerified": true,
+        "evidenceStatus": "现有人物简介可追溯",
+        "reviewStatus": "catalog-traceable-not-rereviewed"
+      },
+      "identityStatus": "catalog-and-independent-biography-consistent",
+      "cultureStatus": "regional-evidence-reviewed",
+      "culture": "central",
+      "evidence": [
+        {
+          "url": "https://dict.revised.moe.edu.tw/dictView.jsp?ID=77293&la=0&powerMode=0",
+          "publisher": "教育部《重編國語辭典修訂本》",
+          "accessed": "2026-10-24",
+          "summary": "字平仲，宋华州下邽人，真宗时为相，参与澶渊之盟，后贬雷州。",
+          "limitations": "现代地名对应未采纳；目录编号未独立复核。"
+        }
+      ],
+      "period": "北宋",
+      "region": "华州下邽（保留古地名）",
+      "mappingRationale": "按宋代中原文官映射游戏区域池，不裁定现代行政区对应。",
+      "reviewBatch": "20261024-30-01"
+    },
+    {
+      "personId": "manual-1544",
+      "name": "马援",
+      "catalogDynasty": "秦汉",
+      "catalogSource": {
+        "url": "https://zh.wikipedia.org/?curid=135961",
+        "title": "维基百科：马援（导言节录，CC BY-SA 4.0）",
+        "catalogVerified": true,
+        "evidenceStatus": "现有人物简介可追溯",
+        "reviewStatus": "catalog-traceable-not-rereviewed"
+      },
+      "identityStatus": "catalog-and-independent-biography-consistent",
+      "cultureStatus": "regional-evidence-reviewed",
+      "culture": "central",
+      "evidence": [
+        {
+          "url": "https://zh.wikisource.org/wiki/後漢書/卷24",
+          "publisher": "历史文献原文／维基文库数字转录",
+          "accessed": "2026-10-24",
+          "summary": "字文渊，先世自邯郸迁茂陵，仕光武帝。",
+          "limitations": "仅确认本段支持的古地名和人物生平；目录编号未独立复核，转录未代替点校校勘；部分条目只有家族地域或活动地，已明确标注。"
+        }
+      ],
+      "period": "东汉",
+      "region": "扶风茂陵",
+      "mappingRationale": "游戏宽泛文化池映射，以明确时代和生平地域供后续美术参考；不是民族、现代国籍或精确服饰鉴定。",
+      "reviewBatch": "20261024-30-01"
+    },
+    {
+      "personId": "general-296-67948",
+      "name": "祖逖",
+      "catalogDynasty": "两晋南北朝",
+      "catalogSource": {
+        "url": "https://zh.wikipedia.org/?curid=187760",
+        "title": "维基百科：祖逖（导言节录，CC BY-SA 4.0）",
+        "catalogVerified": true,
+        "evidenceStatus": "现有人物简介可追溯",
+        "reviewStatus": "catalog-traceable-not-rereviewed"
+      },
+      "identityStatus": "catalog-and-independent-biography-consistent",
+      "cultureStatus": "regional-evidence-reviewed",
+      "culture": "central",
+      "evidence": [
+        {
+          "url": "https://zh.wikisource.org/wiki/晉書/卷062",
+          "publisher": "历史文献原文／维基文库数字转录",
+          "accessed": "2026-10-24",
+          "summary": "字士稚，与刘琨交好，乱后率亲党渡淮泗。",
+          "limitations": "仅确认本段支持的古地名和人物生平；目录编号未独立复核，转录未代替点校校勘；部分条目只有家族地域或活动地，已明确标注。"
+        }
+      ],
+      "period": "西晋至东晋",
+      "region": "范阳遒",
+      "mappingRationale": "游戏宽泛文化池映射，以明确时代和生平地域供后续美术参考；不是民族、现代国籍或精确服饰鉴定。",
+      "reviewBatch": "20261024-30-01"
+    },
+    {
+      "personId": "general-790-68223",
+      "name": "吴三桂",
+      "catalogDynasty": "明",
+      "catalogSource": {
+        "url": "https://zh.wikipedia.org/?curid=48763",
+        "title": "维基百科：吴三桂（导言节录，CC BY-SA 4.0）",
+        "catalogVerified": true,
+        "evidenceStatus": "现有人物简介可追溯",
+        "reviewStatus": "catalog-traceable-not-rereviewed"
+      },
+      "identityStatus": "catalog-and-independent-biography-consistent",
+      "cultureStatus": "regional-evidence-reviewed",
+      "culture": "central",
+      "evidence": [
+        {
+          "url": "https://zh.wikisource.org/wiki/清史稿/卷474",
+          "publisher": "历史文献原文／维基文库数字转录",
+          "accessed": "2026-10-24",
+          "summary": "字长伯，父吴襄为明锦州总兵；三桂守宁远，后降清。",
+          "limitations": "仅确认本段支持的古地名和人物生平；目录编号未独立复核，转录未代替点校校勘；部分条目只有家族地域或活动地，已明确标注。"
+        }
+      ],
+      "period": "明末清初",
+      "region": "江南高邮，籍辽东",
+      "mappingRationale": "游戏宽泛文化池映射，以明确时代和生平地域供后续美术参考；不是民族、现代国籍或精确服饰鉴定。",
+      "reviewBatch": "20261024-30-01"
+    },
+    {
+      "personId": "cbdb-94373",
+      "name": "郭子仪",
+      "catalogDynasty": "唐",
+      "catalogSource": {
+        "url": "https://zh.wikipedia.org/?curid=1007698",
+        "title": "维基百科：郭子仪（导言节录，CC BY-SA 4.0）",
+        "catalogVerified": true,
+        "evidenceStatus": "现有人物简介可追溯",
+        "reviewStatus": "catalog-traceable-not-rereviewed"
+      },
+      "identityStatus": "catalog-and-independent-biography-consistent",
+      "cultureStatus": "regional-evidence-reviewed",
+      "culture": "central",
+      "evidence": [
+        {
+          "url": "https://zh.wikisource.org/wiki/舊唐書/卷120",
+          "publisher": "历史文献原文／维基文库数字转录",
+          "accessed": "2026-10-24",
+          "summary": "武举出身，任朔方节度使，安史之乱中参与收复两京。",
+          "limitations": "仅确认本段支持的古地名和人物生平；目录编号未独立复核，转录未代替点校校勘；部分条目只有家族地域或活动地，已明确标注。"
+        }
+      ],
+      "period": "唐",
+      "region": "华州郑县",
+      "mappingRationale": "游戏宽泛文化池映射，以明确时代和生平地域供后续美术参考；不是民族、现代国籍或精确服饰鉴定。",
+      "reviewBatch": "20261024-30-01"
+    },
+    {
+      "personId": "general-298-58873",
+      "name": "陶侃",
+      "catalogDynasty": "两晋南北朝",
+      "catalogSource": {
+        "url": "https://zh.wikipedia.org/?curid=302095",
+        "title": "维基百科：陶侃（导言节录，CC BY-SA 4.0）",
+        "catalogVerified": true,
+        "evidenceStatus": "现有人物简介可追溯",
+        "reviewStatus": "catalog-traceable-not-rereviewed"
+      },
+      "identityStatus": "catalog-and-independent-biography-consistent",
+      "cultureStatus": "regional-evidence-reviewed",
+      "culture": "central",
+      "evidence": [
+        {
+          "url": "https://zh.wikisource.org/wiki/晉書/卷066",
+          "publisher": "历史文献原文／维基文库数字转录",
+          "accessed": "2026-10-24",
+          "summary": "字士行，父陶丹仕吴，早年县吏，后领军政。",
+          "limitations": "仅确认本段支持的古地名和人物生平；目录编号未独立复核，转录未代替点校校勘；部分条目只有家族地域或活动地，已明确标注。"
+        }
+      ],
+      "period": "西晋至东晋",
+      "region": "本鄱阳，徙庐江寻阳",
+      "mappingRationale": "游戏宽泛文化池映射，以明确时代和生平地域供后续美术参考；不是民族、现代国籍或精确服饰鉴定。",
+      "reviewBatch": "20261024-30-01"
+    },
+    {
+      "personId": "original-29",
+      "name": "谢安",
+      "catalogDynasty": "东晋",
+      "catalogSource": {
+        "url": "https://zh.wikisource.org/wiki/晉書/卷079",
+        "title": "史籍数字转录：晉書/卷079",
+        "catalogVerified": true,
+        "evidenceStatus": "史料已读与用户选定改编",
+        "reviewStatus": "reviewed-historical-adaptation"
+      },
+      "identityStatus": "historical-adaptation-selected",
+      "cultureStatus": "regional-evidence-reviewed",
+      "culture": "central",
+      "evidence": [
+        {
+          "url": "https://zh.wikisource.org/wiki/晉書/卷079",
+          "publisher": "史籍数字转录或机构资料；见身份复核报告",
+          "accessed": "2026-10-25",
+          "summary": "谢安字安石，陈郡阳夏人，东晋政治家。早年隐居，后入仕主持政务。淝水之战时参与总体部署与后方组织；前线主要指挥谢玄等，不混同两人的战场职分。",
+          "limitations": "本作选定改编；历史容貌及能力数值不作实证。"
+        }
+      ],
+      "reviewBatch": "20261024-30-01",
+      "identityRecheck": {
+        "date": "2026-10-25",
+        "historicalReferentStatus": "historical-referent-identifiable",
+        "conclusion": "东晋政治家，字安石",
+        "originalAuthorLinkStatus": "not-directly-documented",
+        "report": "2026-10-25"
+      },
+      "period": "东晋",
+      "region": "陈郡阳夏",
+      "mappingRationale": "经本轮史料复核并由用户指定采用历史身份；central是宽泛游戏美术池，不是民族、现代国籍或精确服饰考证。",
+      "productionSelection": {
+        "date": "2026-10-25",
+        "originalSlot": "original-29",
+        "selectedId": "original-29",
+        "authorIntentProved": false,
+        "originalAuthorIntentProved": false
+      }
+    },
+    {
+      "personId": "manual-1582",
+      "name": "李靖",
+      "catalogDynasty": "唐",
+      "catalogSource": {
+        "url": "https://zh.wikipedia.org/?curid=1160",
+        "title": "维基百科：李靖（导言节录，CC BY-SA 4.0）",
+        "catalogVerified": true,
+        "evidenceStatus": "现有人物简介可追溯",
+        "reviewStatus": "catalog-traceable-not-rereviewed"
+      },
+      "identityStatus": "catalog-and-independent-biography-consistent",
+      "cultureStatus": "regional-evidence-reviewed",
+      "culture": "central",
+      "evidence": [
+        {
+          "url": "https://zh.wikisource.org/wiki/舊唐書/卷67",
+          "publisher": "历史文献原文／维基文库数字转录",
+          "accessed": "2026-10-24",
+          "summary": "本名药师，曾仕隋，后入唐太宗幕府。",
+          "limitations": "仅确认本段支持的古地名和人物生平；目录编号未独立复核，转录未代替点校校勘；部分条目只有家族地域或活动地，已明确标注。"
+        }
+      ],
+      "period": "隋唐",
+      "region": "雍州三原",
+      "mappingRationale": "游戏宽泛文化池映射，以明确时代和生平地域供后续美术参考；不是民族、现代国籍或精确服饰鉴定。",
+      "reviewBatch": "20261024-30-01"
+    },
+    {
+      "personId": "general-403-90513",
+      "name": "薛仁贵",
+      "catalogDynasty": "隋唐",
+      "catalogSource": {
+        "url": "https://zh.wikipedia.org/?curid=388382",
+        "title": "维基百科：薛仁贵（导言节录，CC BY-SA 4.0）",
+        "catalogVerified": true,
+        "evidenceStatus": "现有人物简介可追溯",
+        "reviewStatus": "catalog-traceable-not-rereviewed"
+      },
+      "identityStatus": "catalog-and-independent-biography-consistent",
+      "cultureStatus": "regional-evidence-reviewed",
+      "culture": "central",
+      "evidence": [
+        {
+          "url": "https://zh.wikisource.org/wiki/舊唐書/卷83",
+          "publisher": "历史文献原文／维基文库数字转录",
+          "accessed": "2026-10-24",
+          "summary": "应募从征辽东，史载白衣执戟与弓，并非神话人物。",
+          "limitations": "仅确认本段支持的古地名和人物生平；目录编号未独立复核，转录未代替点校校勘；部分条目只有家族地域或活动地，已明确标注。"
+        }
+      ],
+      "period": "唐",
+      "region": "绛州龙门",
+      "mappingRationale": "游戏宽泛文化池映射，以明确时代和生平地域供后续美术参考；不是民族、现代国籍或精确服饰鉴定。",
+      "reviewBatch": "20261024-30-01"
+    },
+    {
+      "personId": "cbdb-630",
+      "name": "韩琦",
+      "catalogDynasty": "宋",
+      "catalogSource": {
+        "url": "https://zh.wikipedia.org/?curid=193154",
+        "title": "维基百科：韩琦（导言节录，CC BY-SA 4.0）",
+        "catalogVerified": true,
+        "evidenceStatus": "现有人物简介可追溯",
+        "reviewStatus": "catalog-traceable-not-rereviewed"
+      },
+      "identityStatus": "catalog-and-independent-biography-consistent",
+      "cultureStatus": "regional-evidence-reviewed",
+      "culture": "central",
+      "evidence": [
+        {
+          "url": "https://zh.wikisource.org/wiki/宋史/卷312",
+          "publisher": "历史文献原文／维基文库数字转录",
+          "accessed": "2026-10-24",
+          "summary": "字稚圭，进士第二，曾任谏官与陕西安抚使。",
+          "limitations": "仅确认本段支持的古地名和人物生平；目录编号未独立复核，转录未代替点校校勘；部分条目只有家族地域或活动地，已明确标注。"
+        }
+      ],
+      "period": "北宋",
+      "region": "相州安阳",
+      "mappingRationale": "游戏宽泛文化池映射，以明确时代和生平地域供后续美术参考；不是民族、现代国籍或精确服饰鉴定。",
+      "reviewBatch": "20261024-30-01"
+    },
+    {
+      "personId": "original-33",
+      "name": "黄飞鸿",
+      "catalogDynasty": "清末民初",
+      "catalogSource": {
+        "url": "https://paper.people.com.cn/rmrbhwb/html/2013-11/28/content_1353939.htm",
+        "title": "人民日报海外版人物介绍，非同时代史料：28/content_1353939.htm",
+        "catalogVerified": true,
+        "evidenceStatus": "史料已读与用户选定改编",
+        "reviewStatus": "reviewed-historical-adaptation"
+      },
+      "identityStatus": "historical-adaptation-selected",
+      "cultureStatus": "regional-evidence-reviewed",
+      "culture": "central",
+      "evidence": [
+        {
+          "url": "https://paper.people.com.cn/rmrbhwb/html/2013-11/28/content_1353939.htm",
+          "publisher": "史籍数字转录或机构资料；见身份复核报告",
+          "accessed": "2026-10-25",
+          "summary": "黄飞鸿，清末民初岭南武术家，洪拳传承的重要人物，其拳术、狮艺经弟子推广。采用历史武术家身份，具体生卒和容貌不强定，电影中的十三姨及传奇战绩不作为本人生平确证。",
+          "limitations": "本作选定改编；历史容貌及能力数值不作实证。"
+        }
+      ],
+      "reviewBatch": "20261024-30-01",
+      "identityRecheck": {
+        "date": "2026-10-25",
+        "historicalReferentStatus": "historical-referent-identifiable",
+        "conclusion": "清末民初岭南武术家、洪拳名家",
+        "originalAuthorLinkStatus": "not-directly-documented",
+        "report": "2026-10-25"
+      },
+      "period": "清末民初",
+      "region": "岭南佛山武术活动与传承",
+      "mappingRationale": "经本轮史料复核并由用户指定采用历史身份；central是宽泛游戏美术池，不是民族、现代国籍或精确服饰考证。",
+      "productionSelection": {
+        "date": "2026-10-25",
+        "originalSlot": "original-33",
+        "selectedId": "original-33",
+        "authorIntentProved": false,
+        "originalAuthorIntentProved": false
+      }
+    },
+    {
+      "personId": "manual-1590",
+      "name": "李林甫",
+      "catalogDynasty": "唐",
+      "catalogSource": {
+        "url": "https://zh.wikipedia.org/?curid=181807",
+        "title": "维基百科：李林甫（导言节录，CC BY-SA 4.0）",
+        "catalogVerified": true,
+        "evidenceStatus": "现有人物简介可追溯",
+        "reviewStatus": "catalog-traceable-not-rereviewed"
+      },
+      "identityStatus": "catalog-and-independent-biography-consistent",
+      "cultureStatus": "regional-evidence-reviewed",
+      "culture": "central",
+      "evidence": [
+        {
+          "url": "https://zh.wikisource.org/wiki/舊唐書/卷106",
+          "publisher": "历史文献原文／维基文库数字转录",
+          "accessed": "2026-10-24",
+          "summary": "长平王叔良曾孙，父思诲，小字哥奴，曾任太子中允。",
+          "limitations": "仅确认本段支持的古地名和人物生平；目录编号未独立复核，转录未代替点校校勘；部分条目只有家族地域或活动地，已明确标注。"
+        }
+      ],
+      "period": "唐",
+      "region": "唐宗室支属；具体出生地本次未核",
+      "mappingRationale": "游戏宽泛文化池映射，以明确时代和生平地域供后续美术参考；不是民族、现代国籍或精确服饰鉴定。",
+      "reviewBatch": "20261024-30-01"
+    },
+    {
+      "personId": "manual-1591",
+      "name": "杨国忠",
+      "catalogDynasty": "唐",
+      "catalogSource": {
+        "url": "https://zh.wikipedia.org/?curid=132019",
+        "title": "维基百科：杨国忠（导言节录，CC BY-SA 4.0）",
+        "catalogVerified": true,
+        "evidenceStatus": "现有人物简介可追溯",
+        "reviewStatus": "catalog-traceable-not-rereviewed"
+      },
+      "identityStatus": "catalog-and-independent-biography-consistent",
+      "cultureStatus": "regional-evidence-reviewed",
+      "culture": "central",
+      "evidence": [
+        {
+          "url": "https://zh.wikisource.org/wiki/舊唐書/卷106",
+          "publisher": "历史文献原文／维基文库数字转录",
+          "accessed": "2026-10-24",
+          "summary": "本名钊，早年从军于蜀，后因杨贵妃关系进入朝廷。",
+          "limitations": "仅确认本段支持的古地名和人物生平；目录编号未独立复核，转录未代替点校校勘；部分条目只有家族地域或活动地，已明确标注。"
+        }
+      ],
+      "period": "唐",
+      "region": "蒲州永乐",
+      "mappingRationale": "游戏宽泛文化池映射，以明确时代和生平地域供后续美术参考；不是民族、现代国籍或精确服饰鉴定。",
+      "reviewBatch": "20261024-30-01"
+    },
+    {
+      "personId": "general-468-78206",
+      "name": "安禄山",
+      "catalogDynasty": "隋唐",
+      "catalogSource": {
+        "url": "https://zh.wikipedia.org/?curid=64765",
+        "title": "维基百科：安禄山（导言节录，CC BY-SA 4.0）",
+        "catalogVerified": true,
+        "evidenceStatus": "现有人物简介可追溯",
+        "reviewStatus": "catalog-traceable-not-rereviewed"
+      },
+      "identityStatus": "catalog-and-independent-biography-consistent",
+      "cultureStatus": "regional-evidence-reviewed",
+      "culture": "steppe",
+      "evidence": [
+        {
+          "url": "https://zh.wikisource.org/wiki/舊唐書/卷200上",
+          "publisher": "历史文献原文／维基文库数字转录",
+          "accessed": "2026-10-24",
+          "summary": "原名轧荦山，母阿史德氏，通多种蕃语，后任平卢节度使；保留边地多文化经历，不套现代民族标签。",
+          "limitations": "仅确认本段支持的古地名和人物生平；目录编号未独立复核，转录未代替点校校勘；部分条目只有家族地域或活动地，已明确标注。"
+        }
+      ],
+      "period": "唐",
+      "region": "营州柳城；少年生活于突厥中",
+      "mappingRationale": "游戏宽泛文化池映射，以明确时代和生平地域供后续美术参考；不是民族、现代国籍或精确服饰鉴定。",
+      "reviewBatch": "20261024-30-01"
+    },
+    {
+      "personId": "original-37",
+      "name": "屈原",
+      "catalogDynasty": "战国楚",
+      "catalogSource": {
+        "url": "https://zh.wikisource.org/wiki/史記/卷084",
+        "title": "史籍数字转录：史記/卷084",
+        "catalogVerified": true,
+        "evidenceStatus": "史料已读与用户选定改编",
+        "reviewStatus": "reviewed-historical-adaptation"
+      },
+      "identityStatus": "historical-adaptation-selected",
+      "cultureStatus": "regional-evidence-reviewed",
+      "culture": "central",
+      "evidence": [
+        {
+          "url": "https://zh.wikisource.org/wiki/史記/卷084",
+          "publisher": "史籍数字转录或机构资料；见身份复核报告",
+          "accessed": "2026-10-25",
+          "summary": "屈原名平，战国楚国人，与楚王同姓，曾任楚怀王左徒，参与国事。《史记》记其遭谗被疏、放逐，最终投汨罗而死。其政治经历与文学创作共同构成人物身份。",
+          "limitations": "本作选定改编；历史容貌及能力数值不作实证。"
+        }
+      ],
+      "reviewBatch": "20261024-30-01",
+      "identityRecheck": {
+        "date": "2026-10-25",
+        "historicalReferentStatus": "historical-referent-identifiable",
+        "conclusion": "战国楚国文臣、诗人，名平",
+        "originalAuthorLinkStatus": "not-directly-documented",
+        "report": "2026-10-25"
+      },
+      "period": "战国楚",
+      "region": "楚国；政治活动地，不定现代出生地",
+      "mappingRationale": "经本轮史料复核并由用户指定采用历史身份；central是宽泛游戏美术池，不是民族、现代国籍或精确服饰考证。",
+      "productionSelection": {
+        "date": "2026-10-25",
+        "originalSlot": "original-37",
+        "selectedId": "original-37",
+        "authorIntentProved": false,
+        "originalAuthorIntentProved": false
+      }
+    },
+    {
+      "personId": "manual-1537",
+      "name": "卫青",
+      "catalogDynasty": "秦汉",
+      "catalogSource": {
+        "url": "https://zh.wikipedia.org/?curid=70251",
+        "title": "维基百科：卫青（导言节录，CC BY-SA 4.0）",
+        "catalogVerified": true,
+        "evidenceStatus": "现有人物简介可追溯",
+        "reviewStatus": "catalog-traceable-not-rereviewed"
+      },
+      "identityStatus": "catalog-and-independent-biography-consistent",
+      "cultureStatus": "regional-evidence-reviewed",
+      "culture": "central",
+      "evidence": [
+        {
+          "url": "https://zh.wikisource.org/wiki/史記/卷111",
+          "publisher": "历史文献原文／维基文库数字转录",
+          "accessed": "2026-10-24",
+          "summary": "字仲卿，郑季与卫媪之子，后为汉大将军。",
+          "limitations": "仅确认本段支持的古地名和人物生平；目录编号未独立复核，转录未代替点校校勘；部分条目只有家族地域或活动地，已明确标注。"
+        }
+      ],
+      "period": "西汉",
+      "region": "平阳",
+      "mappingRationale": "游戏宽泛文化池映射，以明确时代和生平地域供后续美术参考；不是民族、现代国籍或精确服饰鉴定。",
+      "reviewBatch": "20261024-30-01"
+    },
+    {
+      "personId": "manual-1536",
+      "name": "霍去病",
+      "catalogDynasty": "秦汉",
+      "catalogSource": {
+        "url": "https://zh.wikipedia.org/?curid=72011",
+        "title": "维基百科：霍去病（导言节录，CC BY-SA 4.0）",
+        "catalogVerified": true,
+        "evidenceStatus": "现有人物简介可追溯",
+        "reviewStatus": "catalog-traceable-not-rereviewed"
+      },
+      "identityStatus": "catalog-and-independent-biography-consistent",
+      "cultureStatus": "regional-evidence-reviewed",
+      "culture": "central",
+      "evidence": [
+        {
+          "url": "https://zh.wikisource.org/wiki/史記/卷111",
+          "publisher": "历史文献原文／维基文库数字转录",
+          "accessed": "2026-10-24",
+          "summary": "卫青姊子，任侍中、剽姚校尉、骠骑将军，封冠军侯。",
+          "limitations": "仅确认本段支持的古地名和人物生平；目录编号未独立复核，转录未代替点校校勘；部分条目只有家族地域或活动地，已明确标注。"
+        }
+      ],
+      "period": "西汉",
+      "region": "汉廷及陇西河西军事活动；出生地本次未核",
+      "mappingRationale": "游戏宽泛文化池映射，以明确时代和生平地域供后续美术参考；不是民族、现代国籍或精确服饰鉴定。",
+      "reviewBatch": "20261024-30-01"
+    },
+    {
+      "personId": "manual-1513",
+      "name": "孙膑",
+      "catalogDynasty": "周",
+      "catalogSource": {
+        "url": "https://zh.wikipedia.org/?curid=1137",
+        "title": "维基百科：孙膑（导言节录，CC BY-SA 4.0）",
+        "catalogVerified": true,
+        "evidenceStatus": "现有人物简介可追溯",
+        "reviewStatus": "catalog-traceable-not-rereviewed"
+      },
+      "identityStatus": "catalog-and-independent-biography-consistent",
+      "cultureStatus": "regional-evidence-reviewed",
+      "culture": "central",
+      "evidence": [
+        {
+          "url": "https://zh.wikisource.org/wiki/史記/卷065",
+          "publisher": "历史文献原文／维基文库数字转录",
+          "accessed": "2026-10-24",
+          "summary": "与庞涓同学兵法，后为齐军谋划，史载桂陵与马陵之战。",
+          "limitations": "仅确认本段支持的古地名和人物生平；目录编号未独立复核，转录未代替点校校勘；部分条目只有家族地域或活动地，已明确标注。"
+        }
+      ],
+      "period": "战国",
+      "region": "阿鄄之间；仕齐",
+      "mappingRationale": "游戏宽泛文化池映射，以明确时代和生平地域供后续美术参考；不是民族、现代国籍或精确服饰鉴定。",
+      "reviewBatch": "20261024-30-01"
+    },
+    {
+      "personId": "original-41",
+      "name": "庞涓",
+      "catalogDynasty": "战国魏",
+      "catalogSource": {
+        "url": "https://zh.wikisource.org/wiki/史記/卷065",
+        "title": "史籍数字转录：史記/卷065",
+        "catalogVerified": true,
+        "evidenceStatus": "史料已读与用户选定改编",
+        "reviewStatus": "reviewed-historical-adaptation"
+      },
+      "identityStatus": "historical-adaptation-selected",
+      "cultureStatus": "regional-evidence-reviewed",
+      "culture": "central",
+      "evidence": [
+        {
+          "url": "https://zh.wikisource.org/wiki/史記/卷065",
+          "publisher": "史籍数字转录或机构资料；见身份复核报告",
+          "accessed": "2026-10-25",
+          "summary": "庞涓，战国魏国将领。《史记·孙子吴起列传》记其任用于魏惠王，与孙膑有隙，后在马陵之战败亡。作为魏国军事人物呈现，不把鬼谷门派等小说叙事写为史实。",
+          "limitations": "本作选定改编；历史容貌及能力数值不作实证。"
+        }
+      ],
+      "reviewBatch": "20261024-30-02",
+      "identityRecheck": {
+        "date": "2026-10-25",
+        "historicalReferentStatus": "historical-referent-identifiable",
+        "conclusion": "战国魏国将领",
+        "originalAuthorLinkStatus": "not-directly-documented",
+        "report": "2026-10-25"
+      },
+      "period": "战国魏",
+      "region": "魏国任将；出生地未定",
+      "mappingRationale": "经本轮史料复核并由用户指定采用历史身份；central是宽泛游戏美术池，不是民族、现代国籍或精确服饰考证。",
+      "productionSelection": {
+        "date": "2026-10-25",
+        "originalSlot": "original-41",
+        "selectedId": "original-41",
+        "authorIntentProved": false,
+        "originalAuthorIntentProved": false
+      }
+    },
+    {
+      "personId": "cbdb-25403",
+      "name": "诸葛亮",
+      "catalogDynasty": "三国蜀",
+      "catalogSource": {
+        "url": "https://zh.wikipedia.org/?curid=2837",
+        "title": "维基百科：诸葛亮（导言节录，CC BY-SA 4.0）",
+        "catalogVerified": true,
+        "evidenceStatus": "现有人物简介可追溯",
+        "reviewStatus": "catalog-traceable-not-rereviewed"
+      },
+      "identityStatus": "catalog-and-independent-biography-consistent",
+      "cultureStatus": "regional-evidence-reviewed",
+      "culture": "central",
+      "evidence": [
+        {
+          "url": "https://zh.wikisource.org/wiki/三國志/卷35",
+          "publisher": "历史文献／维基文库数字转录",
+          "accessed": "2026-10-24",
+          "summary": "字孔明，父圭、从父玄，后辅佐刘备、任蜀汉丞相。",
+          "limitations": "目录ID仍沿用现有目录；史传记载不等于全部细节已获现代考古或点校本复核，地域不确定部分已注明。"
+        }
+      ],
+      "region": "琅邪阳都",
+      "period": "汉末三国",
+      "mappingRationale": "宽泛游戏文化池映射，具体时代和古地域分别保留；非现代民族或服饰鉴定。",
+      "reviewBatch": "20261024-30-02"
+    },
+    {
+      "personId": "original-43",
+      "name": "王玄策",
+      "catalogDynasty": "唐",
+      "catalogSource": {
+        "url": "https://zh.wikisource.org/wiki/舊唐書/卷198",
+        "title": "史籍数字转录：舊唐書/卷198",
+        "catalogVerified": true,
+        "evidenceStatus": "史料已读与用户选定改编",
+        "reviewStatus": "reviewed-historical-adaptation"
+      },
+      "identityStatus": "historical-adaptation-selected",
+      "cultureStatus": "regional-evidence-reviewed",
+      "culture": "central",
+      "evidence": [
+        {
+          "url": "https://zh.wikisource.org/wiki/舊唐書/卷198",
+          "publisher": "史籍数字转录或机构资料；见身份复核报告",
+          "accessed": "2026-10-25",
+          "summary": "王玄策，唐代使臣，曾奉命出使天竺。出使期间遭当地政变势力袭击，后联合吐蕃、泥婆罗兵力反击。其特点是外交和临事组织；借兵地区不代表本人民族或出生地。",
+          "limitations": "本作选定改编；历史容貌及能力数值不作实证。"
+        }
+      ],
+      "reviewBatch": "20261024-30-02",
+      "identityRecheck": {
+        "date": "2026-10-25",
+        "historicalReferentStatus": "historical-referent-identifiable",
+        "conclusion": "唐代出使天竺的使臣",
+        "originalAuthorLinkStatus": "not-directly-documented",
+        "report": "2026-10-25"
+      },
+      "period": "唐",
+      "region": "唐廷出使天竺；出生地未定",
+      "mappingRationale": "经本轮史料复核并由用户指定采用历史身份；central是宽泛游戏美术池，不是民族、现代国籍或精确服饰考证。",
+      "productionSelection": {
+        "date": "2026-10-25",
+        "originalSlot": "original-43",
+        "selectedId": "original-43",
+        "authorIntentProved": false,
+        "originalAuthorIntentProved": false
+      }
+    },
+    {
+      "personId": "original-44",
+      "name": "刘仁轨",
+      "catalogDynasty": "唐",
+      "catalogSource": {
+        "url": "https://zh.wikisource.org/wiki/舊唐書/卷84",
+        "title": "史籍数字转录：舊唐書/卷84",
+        "catalogVerified": true,
+        "evidenceStatus": "史料已读与用户选定改编",
+        "reviewStatus": "reviewed-historical-adaptation"
+      },
+      "identityStatus": "historical-adaptation-selected",
+      "cultureStatus": "regional-evidence-reviewed",
+      "culture": "central",
+      "evidence": [
+        {
+          "url": "https://zh.wikisource.org/wiki/舊唐書/卷84",
+          "publisher": "史籍数字转录或机构资料；见身份复核报告",
+          "accessed": "2026-10-25",
+          "summary": "刘仁轨字正则，唐代汴州尉氏人，早年为吏，后历任文武官职。参与百济、白江口等战事，兼有政务、军政组织经历，不只用个人勇将形象概括其生涯。",
+          "limitations": "本作选定改编；历史容貌及能力数值不作实证。"
+        }
+      ],
+      "reviewBatch": "20261024-30-02",
+      "identityRecheck": {
+        "date": "2026-10-25",
+        "historicalReferentStatus": "historical-referent-identifiable",
+        "conclusion": "唐代文武官员，汴州尉氏人",
+        "originalAuthorLinkStatus": "not-directly-documented",
+        "report": "2026-10-25"
+      },
+      "period": "唐",
+      "region": "汴州尉氏",
+      "mappingRationale": "经本轮史料复核并由用户指定采用历史身份；central是宽泛游戏美术池，不是民族、现代国籍或精确服饰考证。",
+      "productionSelection": {
+        "date": "2026-10-25",
+        "originalSlot": "original-44",
+        "selectedId": "original-44",
+        "authorIntentProved": false,
+        "originalAuthorIntentProved": false
+      }
+    },
+    {
+      "personId": "general-422-82978",
+      "name": "苏定方",
+      "catalogDynasty": "隋唐",
+      "catalogSource": {
+        "url": "https://zh.wikipedia.org/?curid=524793",
+        "title": "维基百科：苏定方（导言节录，CC BY-SA 4.0）",
+        "catalogVerified": true,
+        "evidenceStatus": "现有人物简介可追溯",
+        "reviewStatus": "catalog-traceable-not-rereviewed"
+      },
+      "identityStatus": "catalog-and-independent-biography-consistent",
+      "cultureStatus": "regional-evidence-reviewed",
+      "culture": "central",
+      "evidence": [
+        {
+          "url": "https://zh.wikisource.org/wiki/舊唐書/卷83",
+          "publisher": "历史文献／维基文库数字转录",
+          "accessed": "2026-10-24",
+          "summary": "少随父邕领乡兵，后归乡，唐贞观时随李靖作战。",
+          "limitations": "目录ID仍沿用现有目录；史传记载不等于全部细节已获现代考古或点校本复核，地域不确定部分已注明。"
+        }
+      ],
+      "region": "冀州武邑",
+      "period": "隋唐",
+      "mappingRationale": "宽泛游戏文化池映射，具体时代和古地域分别保留；非现代民族或服饰鉴定。",
+      "reviewBatch": "20261024-30-02"
+    },
+    {
+      "personId": "general-523-68118",
+      "name": "狄青",
+      "catalogDynasty": "宋辽金夏",
+      "catalogSource": {
+        "url": "https://zh.wikipedia.org/?curid=24558",
+        "title": "维基百科：狄青（导言节录，CC BY-SA 4.0）",
+        "catalogVerified": true,
+        "evidenceStatus": "现有人物简介可追溯",
+        "reviewStatus": "catalog-traceable-not-rereviewed"
+      },
+      "identityStatus": "catalog-and-independent-biography-consistent",
+      "cultureStatus": "regional-evidence-reviewed",
+      "culture": "central",
+      "evidence": [
+        {
+          "url": "https://zh.wikisource.org/wiki/宋史/卷290",
+          "publisher": "历史文献／维基文库数字转录",
+          "accessed": "2026-10-24",
+          "summary": "字汉臣，从禁军行伍起，善骑射，后受韩琦范仲淹赏识。",
+          "limitations": "目录ID仍沿用现有目录；史传记载不等于全部细节已获现代考古或点校本复核，地域不确定部分已注明。"
+        }
+      ],
+      "region": "汾州西河",
+      "period": "北宋",
+      "mappingRationale": "宽泛游戏文化池映射，具体时代和古地域分别保留；非现代民族或服饰鉴定。",
+      "reviewBatch": "20261024-30-02"
+    },
+    {
+      "personId": "cbdb-1488",
+      "name": "司马光",
+      "catalogDynasty": "宋",
+      "catalogSource": {
+        "url": "https://zh.wikipedia.org/?curid=6432",
+        "title": "维基百科：司马光（导言节录，CC BY-SA 4.0）",
+        "catalogVerified": true,
+        "evidenceStatus": "现有人物简介可追溯",
+        "reviewStatus": "catalog-traceable-not-rereviewed"
+      },
+      "identityStatus": "catalog-and-independent-biography-consistent",
+      "cultureStatus": "regional-evidence-reviewed",
+      "culture": "central",
+      "evidence": [
+        {
+          "url": "https://zh.wikisource.org/wiki/宋史/卷336",
+          "publisher": "历史文献／维基文库数字转录",
+          "accessed": "2026-10-24",
+          "summary": "字君实，父池，仁宗宝元初中进士，后任史馆及谏职。",
+          "limitations": "目录ID仍沿用现有目录；史传记载不等于全部细节已获现代考古或点校本复核，地域不确定部分已注明。"
+        }
+      ],
+      "region": "陕州夏县",
+      "period": "北宋",
+      "mappingRationale": "宽泛游戏文化池映射，具体时代和古地域分别保留；非现代民族或服饰鉴定。",
+      "reviewBatch": "20261024-30-02"
+    },
+    {
+      "personId": "cbdb-8175",
+      "name": "岳飞",
+      "catalogDynasty": "宋",
+      "catalogSource": {
+        "url": "https://zh.wikipedia.org/?curid=7133",
+        "title": "维基百科：岳飞（导言节录，CC BY-SA 4.0）",
+        "catalogVerified": true,
+        "evidenceStatus": "现有人物简介可追溯",
+        "reviewStatus": "catalog-traceable-not-rereviewed"
+      },
+      "identityStatus": "catalog-and-independent-biography-consistent",
+      "cultureStatus": "regional-evidence-reviewed",
+      "culture": "central",
+      "evidence": [
+        {
+          "url": "https://zh.wikisource.org/wiki/宋史/卷365",
+          "publisher": "历史文献／维基文库数字转录",
+          "accessed": "2026-10-24",
+          "summary": "字鹏举，父和，世力农，南宋领军将领。",
+          "limitations": "目录ID仍沿用现有目录；史传记载不等于全部细节已获现代考古或点校本复核，地域不确定部分已注明。"
+        }
+      ],
+      "region": "相州汤阴",
+      "period": "南宋",
+      "mappingRationale": "宽泛游戏文化池映射，具体时代和古地域分别保留；非现代民族或服饰鉴定。",
+      "reviewBatch": "20261024-30-02"
+    },
+    {
+      "personId": "cbdb-19123",
+      "name": "文天祥",
+      "catalogDynasty": "宋",
+      "catalogSource": {
+        "url": "https://zh.wikipedia.org/?curid=7134",
+        "title": "维基百科：文天祥（导言节录，CC BY-SA 4.0）",
+        "catalogVerified": true,
+        "evidenceStatus": "现有人物简介可追溯",
+        "reviewStatus": "catalog-traceable-not-rereviewed"
+      },
+      "identityStatus": "catalog-and-independent-biography-consistent",
+      "cultureStatus": "regional-evidence-reviewed",
+      "culture": "central",
+      "evidence": [
+        {
+          "url": "https://zh.wikisource.org/wiki/宋史/卷418",
+          "publisher": "历史文献／维基文库数字转录",
+          "accessed": "2026-10-24",
+          "summary": "字宋瑞，又字履善，进士第一，南宋末文臣。",
+          "limitations": "目录ID仍沿用现有目录；史传记载不等于全部细节已获现代考古或点校本复核，地域不确定部分已注明。"
+        }
+      ],
+      "region": "吉州吉水",
+      "period": "南宋",
+      "mappingRationale": "宽泛游戏文化池映射，具体时代和古地域分别保留；非现代民族或服饰鉴定。",
+      "reviewBatch": "20261024-30-02"
+    },
+    {
+      "personId": "manual-1608",
+      "name": "徐达",
+      "catalogDynasty": "明",
+      "catalogSource": {
+        "url": "https://zh.wikipedia.org/?curid=26339",
+        "title": "维基百科：徐达（导言节录，CC BY-SA 4.0）",
+        "catalogVerified": true,
+        "evidenceStatus": "现有人物简介可追溯",
+        "reviewStatus": "catalog-traceable-not-rereviewed"
+      },
+      "identityStatus": "catalog-and-independent-biography-consistent",
+      "cultureStatus": "regional-evidence-reviewed",
+      "culture": "central",
+      "evidence": [
+        {
+          "url": "https://zh.wikisource.org/wiki/明史/卷125",
+          "publisher": "历史文献／维基文库数字转录",
+          "accessed": "2026-10-24",
+          "summary": "字天德，世业农，早年追随朱元璋，任征虏大将军。",
+          "limitations": "目录ID仍沿用现有目录；史传记载不等于全部细节已获现代考古或点校本复核，地域不确定部分已注明。"
+        }
+      ],
+      "region": "濠",
+      "period": "元末明初",
+      "mappingRationale": "宽泛游戏文化池映射，具体时代和古地域分别保留；非现代民族或服饰鉴定。",
+      "reviewBatch": "20261024-30-02"
+    },
+    {
+      "personId": "manual-1609",
+      "name": "常遇春",
+      "catalogDynasty": "明",
+      "catalogSource": {
+        "url": "https://zh.wikipedia.org/?curid=76028",
+        "title": "维基百科：常遇春（导言节录，CC BY-SA 4.0）",
+        "catalogVerified": true,
+        "evidenceStatus": "现有人物简介可追溯",
+        "reviewStatus": "catalog-traceable-not-rereviewed"
+      },
+      "identityStatus": "catalog-and-independent-biography-consistent",
+      "cultureStatus": "regional-evidence-reviewed",
+      "culture": "central",
+      "evidence": [
+        {
+          "url": "https://zh.wikisource.org/wiki/明史/卷125",
+          "publisher": "历史文献／维基文库数字转录",
+          "accessed": "2026-10-24",
+          "summary": "字伯仁，归朱元璋后任先锋，与徐达领军。",
+          "limitations": "目录ID仍沿用现有目录；史传记载不等于全部细节已获现代考古或点校本复核，地域不确定部分已注明。"
+        }
+      ],
+      "region": "怀远",
+      "period": "元末明初",
+      "mappingRationale": "宽泛游戏文化池映射，具体时代和古地域分别保留；非现代民族或服饰鉴定。",
+      "reviewBatch": "20261024-30-02"
+    },
+    {
+      "personId": "cbdb-54819",
+      "name": "林则徐",
+      "catalogDynasty": "清",
+      "catalogSource": {
+        "url": "https://zh.wikipedia.org/?curid=37941",
+        "title": "维基百科：林则徐（导言节录，CC BY-SA 4.0）",
+        "catalogVerified": true,
+        "evidenceStatus": "现有人物简介可追溯",
+        "reviewStatus": "catalog-traceable-not-rereviewed"
+      },
+      "identityStatus": "catalog-and-independent-biography-consistent",
+      "cultureStatus": "regional-evidence-reviewed",
+      "culture": "central",
+      "evidence": [
+        {
+          "url": "https://zh.wikisource.org/wiki/清史稿/卷369",
+          "publisher": "历史文献／维基文库数字转录",
+          "accessed": "2026-10-24",
+          "summary": "字少穆，嘉庆进士，后历御史、道员、巡抚等。",
+          "limitations": "目录ID仍沿用现有目录；史传记载不等于全部细节已获现代考古或点校本复核，地域不确定部分已注明。"
+        }
+      ],
+      "region": "福建侯官",
+      "period": "清",
+      "mappingRationale": "宽泛游戏文化池映射，具体时代和古地域分别保留；非现代民族或服饰鉴定。",
+      "reviewBatch": "20261024-30-02"
+    },
+    {
+      "personId": "cbdb-28093",
+      "name": "方孝孺",
+      "catalogDynasty": "明",
+      "catalogSource": {
+        "url": "https://zh.wikipedia.org/?curid=25600",
+        "title": "维基百科：方孝孺（导言节录，CC BY-SA 4.0）",
+        "catalogVerified": true,
+        "evidenceStatus": "现有人物简介可追溯",
+        "reviewStatus": "catalog-traceable-not-rereviewed"
+      },
+      "identityStatus": "catalog-and-independent-biography-consistent",
+      "cultureStatus": "regional-evidence-reviewed",
+      "culture": "central",
+      "evidence": [
+        {
+          "url": "https://zh.wikisource.org/wiki/明史/卷141",
+          "publisher": "历史文献／维基文库数字转录",
+          "accessed": "2026-10-24",
+          "summary": "字希直又字希古，父克勤，从宋濂学，建文朝翰林侍讲。",
+          "limitations": "目录ID仍沿用现有目录；史传记载不等于全部细节已获现代考古或点校本复核，地域不确定部分已注明。"
+        }
+      ],
+      "region": "宁海",
+      "period": "明",
+      "mappingRationale": "宽泛游戏文化池映射，具体时代和古地域分别保留；非现代民族或服饰鉴定。",
+      "reviewBatch": "20261024-30-02"
+    },
+    {
+      "personId": "manual-1614",
+      "name": "戚继光",
+      "catalogDynasty": "明",
+      "catalogSource": {
+        "url": "https://zh.wikipedia.org/?curid=38978",
+        "title": "维基百科：戚继光（导言节录，CC BY-SA 4.0）",
+        "catalogVerified": true,
+        "evidenceStatus": "现有人物简介可追溯",
+        "reviewStatus": "catalog-traceable-not-rereviewed"
+      },
+      "identityStatus": "catalog-and-independent-biography-consistent",
+      "cultureStatus": "regional-evidence-reviewed",
+      "culture": "central",
+      "evidence": [
+        {
+          "url": "https://zh.wikisource.org/wiki/明史/卷212",
+          "publisher": "历史文献／维基文库数字转录",
+          "accessed": "2026-10-24",
+          "summary": "字元敬，父景通，嗣卫所职，后在浙江训练部队御倭；本段记军籍与活动地，不直接等同出生地。",
+          "limitations": "目录ID仍沿用现有目录；史传记载不等于全部细节已获现代考古或点校本复核，地域不确定部分已注明。"
+        }
+      ],
+      "region": "世登州卫军职；任山东及浙江",
+      "period": "明",
+      "mappingRationale": "宽泛游戏文化池映射，具体时代和古地域分别保留；非现代民族或服饰鉴定。",
+      "reviewBatch": "20261024-30-02"
+    },
+    {
+      "personId": "manual-1611",
+      "name": "于谦",
+      "catalogDynasty": "明",
+      "catalogSource": {
+        "url": "https://zh.wikipedia.org/?curid=307345",
+        "title": "维基百科：于谦（导言节录，CC BY-SA 4.0）",
+        "catalogVerified": true,
+        "evidenceStatus": "现有人物简介可追溯",
+        "reviewStatus": "catalog-traceable-not-rereviewed"
+      },
+      "identityStatus": "catalog-and-independent-biography-consistent",
+      "cultureStatus": "regional-evidence-reviewed",
+      "culture": "central",
+      "evidence": [
+        {
+          "url": "https://zh.wikisource.org/wiki/明史/卷170",
+          "publisher": "历史文献／维基文库数字转录",
+          "accessed": "2026-10-24",
+          "summary": "字廷益，永乐进士，历御史、兵部侍郎，巡抚河南山西。",
+          "limitations": "目录ID仍沿用现有目录；史传记载不等于全部细节已获现代考古或点校本复核，地域不确定部分已注明。"
+        }
+      ],
+      "region": "钱塘",
+      "period": "明",
+      "mappingRationale": "宽泛游戏文化池映射，具体时代和古地域分别保留；非现代民族或服饰鉴定。",
+      "reviewBatch": "20261024-30-02"
+    },
+    {
+      "personId": "cbdb-30374",
+      "name": "王守仁",
+      "catalogDynasty": "明",
+      "catalogSource": {
+        "url": "https://zh.wikipedia.org/?curid=48474",
+        "title": "维基百科：王阳明（导言节录，CC BY-SA 4.0）",
+        "catalogVerified": true,
+        "evidenceStatus": "现有人物简介可追溯",
+        "reviewStatus": "catalog-traceable-not-rereviewed"
+      },
+      "identityStatus": "catalog-and-independent-biography-consistent",
+      "cultureStatus": "regional-evidence-reviewed",
+      "culture": "central",
+      "evidence": [
+        {
+          "url": "https://zh.wikisource.org/wiki/明史/卷195",
+          "publisher": "历史文献／维基文库数字转录",
+          "accessed": "2026-10-24",
+          "summary": "字伯安，明代文臣，后在两广处置军政。",
+          "limitations": "目录ID仍沿用现有目录；史传记载不等于全部细节已获现代考古或点校本复核，地域不确定部分已注明。"
+        }
+      ],
+      "region": "余姚",
+      "period": "明",
+      "mappingRationale": "宽泛游戏文化池映射，具体时代和古地域分别保留；非现代民族或服饰鉴定。",
+      "reviewBatch": "20261024-30-02"
+    },
+    {
+      "personId": "original-57",
+      "name": "程咬金",
+      "catalogDynasty": "隋唐",
+      "catalogSource": {
+        "url": "https://zh.wikisource.org/wiki/舊唐書/卷68",
+        "title": "史籍数字转录：舊唐書/卷68",
+        "catalogVerified": true,
+        "evidenceStatus": "史料已读与用户选定改编",
+        "reviewStatus": "reviewed-historical-adaptation"
+      },
+      "identityStatus": "historical-adaptation-selected",
+      "cultureStatus": "regional-evidence-reviewed",
+      "culture": "central",
+      "evidence": [
+        {
+          "url": "https://zh.wikisource.org/wiki/舊唐書/卷68",
+          "publisher": "史籍数字转录或机构资料；见身份复核报告",
+          "accessed": "2026-10-25",
+          "summary": "程咬金，后更名知节，济州东阿人。隋末参加瓦岗军，后归唐，随李世民参与唐初战争。《旧唐书》记其善用马槊；三板斧等通俗故事不当作正史履历。",
+          "limitations": "本作选定改编；历史容貌及能力数值不作实证。"
+        }
+      ],
+      "reviewBatch": "20261024-30-02",
+      "identityRecheck": {
+        "date": "2026-10-25",
+        "historicalReferentStatus": "historical-referent-identifiable",
+        "conclusion": "唐代程知节，本名咬金",
+        "originalAuthorLinkStatus": "not-directly-documented",
+        "report": "2026-10-25"
+      },
+      "period": "隋唐",
+      "region": "济州东阿",
+      "mappingRationale": "经本轮史料复核并由用户指定采用历史身份；central是宽泛游戏美术池，不是民族、现代国籍或精确服饰考证。",
+      "productionSelection": {
+        "date": "2026-10-25",
+        "originalSlot": "original-57",
+        "selectedId": "original-57",
+        "authorIntentProved": false,
+        "originalAuthorIntentProved": false
+      }
+    },
+    {
+      "personId": "cbdb-8008",
+      "name": "秦桧",
+      "catalogDynasty": "宋",
+      "catalogSource": {
+        "url": "https://zh.wikipedia.org/?curid=43263",
+        "title": "维基百科：秦桧（导言节录，CC BY-SA 4.0）",
+        "catalogVerified": true,
+        "evidenceStatus": "现有人物简介可追溯",
+        "reviewStatus": "catalog-traceable-not-rereviewed"
+      },
+      "identityStatus": "catalog-and-independent-biography-consistent",
+      "cultureStatus": "regional-evidence-reviewed",
+      "culture": "central",
+      "evidence": [
+        {
+          "url": "https://zh.wikisource.org/wiki/宋史/卷473",
+          "publisher": "历史文献／维基文库数字转录",
+          "accessed": "2026-10-24",
+          "summary": "字会之，政和进士，历教授、太学学正与谏官。",
+          "limitations": "目录ID仍沿用现有目录；史传记载不等于全部细节已获现代考古或点校本复核，地域不确定部分已注明。"
+        }
+      ],
+      "region": "江宁",
+      "period": "两宋",
+      "mappingRationale": "宽泛游戏文化池映射，具体时代和古地域分别保留；非现代民族或服饰鉴定。",
+      "reviewBatch": "20261024-30-02"
+    },
+    {
+      "personId": "original-59",
+      "name": "史可法",
+      "catalogDynasty": "明末南明",
+      "catalogSource": {
+        "url": "https://zh.wikisource.org/wiki/明史/卷274",
+        "title": "史籍数字转录：明史/卷274",
+        "catalogVerified": true,
+        "evidenceStatus": "史料已读与用户选定改编",
+        "reviewStatus": "reviewed-historical-adaptation"
+      },
+      "identityStatus": "historical-adaptation-selected",
+      "cultureStatus": "regional-evidence-reviewed",
+      "culture": "central",
+      "evidence": [
+        {
+          "url": "https://zh.wikisource.org/wiki/明史/卷274",
+          "publisher": "史籍数字转录或机构资料；见身份复核报告",
+          "accessed": "2026-10-25",
+          "summary": "史可法字宪之，大兴籍、祥符人，明末及南明文臣、督师。曾任兵部尚书等职，参与江北军政组织，扬州失守后死难。其身份兼具文臣与督师，籍贯和活动地分开登记。",
+          "limitations": "本作选定改编；历史容貌及能力数值不作实证。"
+        }
+      ],
+      "reviewBatch": "20261024-30-02",
+      "identityRecheck": {
+        "date": "2026-10-25",
+        "historicalReferentStatus": "historical-referent-identifiable",
+        "conclusion": "明末、南明文臣督师",
+        "originalAuthorLinkStatus": "not-directly-documented",
+        "report": "2026-10-25"
+      },
+      "period": "明末南明",
+      "region": "大兴籍、祥符人",
+      "mappingRationale": "经本轮史料复核并由用户指定采用历史身份；central是宽泛游戏美术池，不是民族、现代国籍或精确服饰考证。",
+      "productionSelection": {
+        "date": "2026-10-25",
+        "originalSlot": "original-59",
+        "selectedId": "original-59",
+        "authorIntentProved": false,
+        "originalAuthorIntentProved": false
+      }
+    },
+    {
+      "personId": "manual-1592",
+      "name": "包拯",
+      "catalogDynasty": "宋",
+      "catalogSource": {
+        "url": "https://zh.wikipedia.org/?curid=13519",
+        "title": "维基百科：包拯（导言节录，CC BY-SA 4.0）",
+        "catalogVerified": true,
+        "evidenceStatus": "现有人物简介可追溯",
+        "reviewStatus": "catalog-traceable-not-rereviewed"
+      },
+      "identityStatus": "catalog-and-independent-biography-consistent",
+      "cultureStatus": "regional-evidence-reviewed",
+      "culture": "central",
+      "evidence": [
+        {
+          "url": "https://zh.wikisource.org/wiki/宋史/卷316",
+          "publisher": "历史文献／维基文库数字转录",
+          "accessed": "2026-10-24",
+          "summary": "字希仁，进士，知天长端州，后任御史。",
+          "limitations": "目录ID仍沿用现有目录；史传记载不等于全部细节已获现代考古或点校本复核，地域不确定部分已注明。"
+        }
+      ],
+      "region": "庐州合肥",
+      "period": "北宋",
+      "mappingRationale": "宽泛游戏文化池映射，具体时代和古地域分别保留；非现代民族或服饰鉴定。",
+      "reviewBatch": "20261024-30-02"
+    },
+    {
+      "personId": "manual-1507",
+      "name": "姜子牙",
+      "catalogDynasty": "周",
+      "catalogSource": {
+        "url": "https://zh.wikipedia.org/?curid=91415",
+        "title": "维基百科：姜太公（导言节录，CC BY-SA 4.0）",
+        "catalogVerified": true,
+        "evidenceStatus": "现有人物简介可追溯",
+        "reviewStatus": "catalog-traceable-not-rereviewed"
+      },
+      "identityStatus": "catalog-and-independent-biography-consistent",
+      "cultureStatus": "regional-evidence-reviewed",
+      "culture": "central",
+      "evidence": [
+        {
+          "url": "https://zh.wikisource.org/wiki/史記/卷032",
+          "publisher": "历史文献／维基文库数字转录",
+          "accessed": "2026-10-24",
+          "summary": "史传称吕尚、姜氏、太公望；文武之师。史记自载多种出仕说法，不采用封神小说造型或超自然功业。",
+          "limitations": "目录ID仍沿用现有目录；史传记载不等于全部细节已获现代考古或点校本复核，地域不确定部分已注明。"
+        }
+      ],
+      "region": "东海上；后封齐营丘",
+      "period": "商末周初（史传层次）",
+      "mappingRationale": "宽泛游戏文化池映射，具体时代和古地域分别保留；非现代民族或服饰鉴定。",
+      "reviewBatch": "20261024-30-02"
+    },
+    {
+      "personId": "original-62",
+      "name": "比干",
+      "catalogDynasty": "商末",
+      "catalogSource": {
+        "url": "https://zh.wikisource.org/wiki/史記/卷003",
+        "title": "史籍数字转录：史記/卷003",
+        "catalogVerified": true,
+        "evidenceStatus": "史料已读与用户选定改编",
+        "reviewStatus": "reviewed-historical-adaptation"
+      },
+      "identityStatus": "historical-adaptation-selected",
+      "cultureStatus": "regional-evidence-reviewed",
+      "culture": "central",
+      "evidence": [
+        {
+          "url": "https://zh.wikisource.org/wiki/史記/卷003",
+          "publisher": "史籍数字转录或机构资料；见身份复核报告",
+          "accessed": "2026-10-25",
+          "summary": "比干，商末王族谏臣。《史记·殷本纪》记其强谏纣王而被杀。采用史传谏臣身份，后世财神、封神体系中的神格与法术不列入历史生平。",
+          "limitations": "本作选定改编；历史容貌及能力数值不作实证。"
+        }
+      ],
+      "reviewBatch": "20261024-30-02",
+      "identityRecheck": {
+        "date": "2026-10-25",
+        "historicalReferentStatus": "historical-referent-identifiable",
+        "conclusion": "商代王族谏臣",
+        "originalAuthorLinkStatus": "not-directly-documented",
+        "report": "2026-10-25"
+      },
+      "period": "商末",
+      "region": "商王族；具体出生地不定",
+      "mappingRationale": "经本轮史料复核并由用户指定采用历史身份；central是宽泛游戏美术池，不是民族、现代国籍或精确服饰考证。",
+      "productionSelection": {
+        "date": "2026-10-25",
+        "originalSlot": "original-62",
+        "selectedId": "original-62",
+        "authorIntentProved": false,
+        "originalAuthorIntentProved": false
+      }
+    },
+    {
+      "personId": "original-63",
+      "name": "周公",
+      "catalogDynasty": "西周",
+      "catalogSource": {
+        "url": "https://zh.wikisource.org/wiki/史記/卷033",
+        "title": "史籍数字转录：史記/卷033",
+        "catalogVerified": true,
+        "evidenceStatus": "史料已读与用户选定改编",
+        "reviewStatus": "reviewed-historical-adaptation"
+      },
+      "identityStatus": "historical-adaptation-selected",
+      "cultureStatus": "regional-evidence-reviewed",
+      "culture": "central",
+      "evidence": [
+        {
+          "url": "https://zh.wikisource.org/wiki/史記/卷033",
+          "publisher": "史籍数字转录或机构资料；见身份复核报告",
+          "accessed": "2026-10-25",
+          "summary": "周公在本作采用周公旦身份。周公旦是周武王之弟，西周初年参与辅政、平定叛乱和政治制度建设。《史记》为其立《鲁周公世家》；周公也是称号，采用周公旦是本作明确的历史改编选择。",
+          "limitations": "本作选定改编；历史容貌及能力数值不作实证。"
+        }
+      ],
+      "reviewBatch": "20261024-30-02",
+      "identityRecheck": {
+        "date": "2026-10-25",
+        "historicalReferentStatus": "historical-referent-identifiable",
+        "conclusion": "通常对应西周周公旦",
+        "originalAuthorLinkStatus": "not-directly-documented",
+        "report": "2026-10-25"
+      },
+      "period": "西周",
+      "region": "周初宗室、鲁国封建与周廷活动",
+      "mappingRationale": "经本轮史料复核并由用户指定采用历史身份；central是宽泛游戏美术池，不是民族、现代国籍或精确服饰考证。",
+      "productionSelection": {
+        "date": "2026-10-25",
+        "originalSlot": "original-63",
+        "selectedId": "original-63",
+        "authorIntentProved": false,
+        "originalAuthorIntentProved": false
+      }
+    },
+    {
+      "personId": "original-64",
+      "name": "孔子",
+      "catalogDynasty": "春秋鲁",
+      "catalogSource": {
+        "url": "https://zh.wikisource.org/wiki/史記/卷047",
+        "title": "史籍数字转录：史記/卷047",
+        "catalogVerified": true,
+        "evidenceStatus": "史料已读与用户选定改编",
+        "reviewStatus": "reviewed-historical-adaptation"
+      },
+      "identityStatus": "historical-adaptation-selected",
+      "cultureStatus": "regional-evidence-reviewed",
+      "culture": "central",
+      "evidence": [
+        {
+          "url": "https://zh.wikisource.org/wiki/史記/卷047",
+          "publisher": "史籍数字转录或机构资料；见身份复核报告",
+          "accessed": "2026-10-25",
+          "summary": "孔子名丘，字仲尼，春秋鲁国人，生于昌平乡陬邑。曾参与鲁国政务，周游列国，并以教育、礼乐及思想传授影响后世。其教育者身份不转化为虚构统军战绩。",
+          "limitations": "本作选定改编；历史容貌及能力数值不作实证。"
+        }
+      ],
+      "reviewBatch": "20261024-30-02",
+      "identityRecheck": {
+        "date": "2026-10-25",
+        "historicalReferentStatus": "historical-referent-identifiable",
+        "conclusion": "孔丘，字仲尼，春秋鲁国思想家",
+        "originalAuthorLinkStatus": "not-directly-documented",
+        "report": "2026-10-25"
+      },
+      "period": "春秋鲁",
+      "region": "鲁昌平乡陬邑",
+      "mappingRationale": "经本轮史料复核并由用户指定采用历史身份；central是宽泛游戏美术池，不是民族、现代国籍或精确服饰考证。",
+      "productionSelection": {
+        "date": "2026-10-25",
+        "originalSlot": "original-64",
+        "selectedId": "original-64",
+        "authorIntentProved": false,
+        "originalAuthorIntentProved": false
+      }
+    },
+    {
+      "personId": "original-65",
+      "name": "康有为",
+      "catalogDynasty": "清末民初",
+      "catalogSource": {
+        "url": "https://www.beijing.gov.cn/tsbj/sxym/202508/t20250804_4166018.html",
+        "title": "北京市政府历史文化介绍：202508/t20250804_4166018.html",
+        "catalogVerified": true,
+        "evidenceStatus": "史料已读与用户选定改编",
+        "reviewStatus": "reviewed-historical-adaptation"
+      },
+      "identityStatus": "historical-adaptation-selected",
+      "cultureStatus": "regional-evidence-reviewed",
+      "culture": "central",
+      "evidence": [
+        {
+          "url": "https://www.beijing.gov.cn/tsbj/sxym/202508/t20250804_4166018.html",
+          "publisher": "史籍数字转录或机构资料；见身份复核报告",
+          "accessed": "2026-10-25",
+          "summary": "康有为，清末维新派领袖，参与倡议变法与政治思想论述，曾在北京居住并筹画维新活动。本作采用维新人物身份，其清末以后经历不因时代标签而被否认。",
+          "limitations": "本作选定改编；历史容貌及能力数值不作实证。"
+        }
+      ],
+      "reviewBatch": "20261024-30-02",
+      "identityRecheck": {
+        "date": "2026-10-25",
+        "historicalReferentStatus": "historical-referent-identifiable",
+        "conclusion": "清末维新派领袖",
+        "originalAuthorLinkStatus": "not-directly-documented",
+        "report": "2026-10-25"
+      },
+      "period": "清末民初",
+      "region": "在京维新活动；本轮来源不扩定出生地",
+      "mappingRationale": "经本轮史料复核并由用户指定采用历史身份；central是宽泛游戏美术池，不是民族、现代国籍或精确服饰考证。",
+      "productionSelection": {
+        "date": "2026-10-25",
+        "originalSlot": "original-65",
+        "selectedId": "original-65",
+        "authorIntentProved": false,
+        "originalAuthorIntentProved": false
+      }
+    },
+    {
+      "personId": "original-66",
+      "name": "老子",
+      "catalogDynasty": "春秋传统、时代有争议",
+      "catalogSource": {
+        "url": "https://zh.wikisource.org/wiki/史記/卷063",
+        "title": "史籍数字转录：史記/卷063",
+        "catalogVerified": true,
+        "evidenceStatus": "史料已读与用户选定改编",
+        "reviewStatus": "reviewed-historical-adaptation"
+      },
+      "identityStatus": "historical-adaptation-selected",
+      "cultureStatus": "regional-evidence-reviewed",
+      "culture": "central",
+      "evidence": [
+        {
+          "url": "https://zh.wikisource.org/wiki/史記/卷063",
+          "publisher": "史籍数字转录或机构资料；见身份复核报告",
+          "accessed": "2026-10-25",
+          "summary": "老子在本作按传统采用李耳、字聃的思想家形象。《史记》记其与周守藏史传统有关，同时保留老莱子、太史儋等不同说法。身份细节、确切年代和寿数均有争议，不将传说长寿定为事实。",
+          "limitations": "本作选定改编；历史容貌及能力数值不作实证。"
+        }
+      ],
+      "reviewBatch": "20261024-30-02",
+      "identityRecheck": {
+        "date": "2026-10-25",
+        "historicalReferentStatus": "historical-referent-identifiable",
+        "conclusion": "传统对应李耳、字聃，道家人物",
+        "originalAuthorLinkStatus": "not-directly-documented",
+        "report": "2026-10-25"
+      },
+      "period": "春秋传统、时代有争议",
+      "region": "传统楚苦县说，具体身份与年代保留争议",
+      "mappingRationale": "经本轮史料复核并由用户指定采用历史身份；central是宽泛游戏美术池，不是民族、现代国籍或精确服饰考证。",
+      "productionSelection": {
+        "date": "2026-10-25",
+        "originalSlot": "original-66",
+        "selectedId": "original-66",
+        "authorIntentProved": false,
+        "originalAuthorIntentProved": false
+      }
+    },
+    {
+      "personId": "manual-1512",
+      "name": "孙武",
+      "catalogDynasty": "周",
+      "catalogSource": {
+        "url": "https://zh.wikipedia.org/?curid=142752",
+        "title": "维基百科：孙武（导言节录，CC BY-SA 4.0）",
+        "catalogVerified": true,
+        "evidenceStatus": "现有人物简介可追溯",
+        "reviewStatus": "catalog-traceable-not-rereviewed"
+      },
+      "identityStatus": "catalog-and-independent-biography-consistent",
+      "cultureStatus": "regional-evidence-reviewed",
+      "culture": "central",
+      "evidence": [
+        {
+          "url": "https://zh.wikisource.org/wiki/史記/卷065",
+          "publisher": "历史文献／维基文库数字转录",
+          "accessed": "2026-10-24",
+          "summary": "史记载孙武以兵法见吴王阖闾，后为吴将；不把孙膑与孙武混同。",
+          "limitations": "目录ID仍沿用现有目录；史传记载不等于全部细节已获现代考古或点校本复核，地域不确定部分已注明。"
+        }
+      ],
+      "region": "齐；仕吴",
+      "period": "春秋（史传层次）",
+      "mappingRationale": "宽泛游戏文化池映射，具体时代和古地域分别保留；非现代民族或服饰鉴定。",
+      "reviewBatch": "20261024-30-02"
+    },
+    {
+      "personId": "original-68",
+      "name": "韩非",
+      "catalogDynasty": "战国韩",
+      "catalogSource": {
+        "url": "https://zh.wikisource.org/wiki/史記/卷063",
+        "title": "史籍数字转录：史記/卷063",
+        "catalogVerified": true,
+        "evidenceStatus": "史料已读与用户选定改编",
+        "reviewStatus": "reviewed-historical-adaptation"
+      },
+      "identityStatus": "historical-adaptation-selected",
+      "cultureStatus": "regional-evidence-reviewed",
+      "culture": "central",
+      "evidence": [
+        {
+          "url": "https://zh.wikisource.org/wiki/史記/卷063",
+          "publisher": "史籍数字转录或机构资料；见身份复核报告",
+          "accessed": "2026-10-25",
+          "summary": "韩非，战国韩国公子，思想家，研究刑名法术，曾与李斯同从荀卿学习。其著述和政治论述影响后世，后入秦而死。不与韩愈、韩信等不同人物混同。",
+          "limitations": "本作选定改编；历史容貌及能力数值不作实证。"
+        }
+      ],
+      "reviewBatch": "20261024-30-02",
+      "identityRecheck": {
+        "date": "2026-10-25",
+        "historicalReferentStatus": "historical-referent-identifiable",
+        "conclusion": "战国韩国公子、法术学思想家",
+        "originalAuthorLinkStatus": "not-directly-documented",
+        "report": "2026-10-25"
+      },
+      "period": "战国韩",
+      "region": "韩国公子；后入秦",
+      "mappingRationale": "经本轮史料复核并由用户指定采用历史身份；central是宽泛游戏美术池，不是民族、现代国籍或精确服饰考证。",
+      "productionSelection": {
+        "date": "2026-10-25",
+        "originalSlot": "original-68",
+        "selectedId": "original-68",
+        "authorIntentProved": false,
+        "originalAuthorIntentProved": false
+      }
+    },
+    {
+      "personId": "original-69",
+      "name": "墨子",
+      "catalogDynasty": "春秋战国之际、年代有争议",
+      "catalogSource": {
+        "url": "https://zh.wikisource.org/wiki/史記/卷074",
+        "title": "史籍数字转录：史記/卷074",
+        "catalogVerified": true,
+        "evidenceStatus": "史料已读与用户选定改编",
+        "reviewStatus": "reviewed-historical-adaptation"
+      },
+      "identityStatus": "historical-adaptation-selected",
+      "cultureStatus": "regional-evidence-reviewed",
+      "culture": "central",
+      "evidence": [
+        {
+          "url": "https://zh.wikisource.org/wiki/史記/卷074",
+          "publisher": "史籍数字转录或机构资料；见身份复核报告",
+          "accessed": "2026-10-25",
+          "summary": "墨子即墨翟，墨家思想家。《史记》称其为宋之大夫，善守御，主张节用，并保留与孔子同时或在后的不同说法。本作采用墨家思想与守御技术人物形象，不强定有争议的出生地和生年。",
+          "limitations": "本作选定改编；历史容貌及能力数值不作实证。"
+        }
+      ],
+      "reviewBatch": "20261024-30-02",
+      "identityRecheck": {
+        "date": "2026-10-25",
+        "historicalReferentStatus": "historical-referent-identifiable",
+        "conclusion": "墨翟，墨家思想家",
+        "originalAuthorLinkStatus": "not-directly-documented",
+        "report": "2026-10-25"
+      },
+      "period": "春秋战国之际、年代有争议",
+      "region": "史记称宋大夫；籍贯不强定",
+      "mappingRationale": "经本轮史料复核并由用户指定采用历史身份；central是宽泛游戏美术池，不是民族、现代国籍或精确服饰考证。",
+      "productionSelection": {
+        "date": "2026-10-25",
+        "originalSlot": "original-69",
+        "selectedId": "original-69",
+        "authorIntentProved": false,
+        "originalAuthorIntentProved": false
+      }
+    },
+    {
+      "personId": "manual-1520",
+      "name": "白起",
+      "catalogDynasty": "周",
+      "catalogSource": {
+        "url": "https://zh.wikipedia.org/?curid=19391",
+        "title": "维基百科：白起（导言节录，CC BY-SA 4.0）",
+        "catalogVerified": true,
+        "evidenceStatus": "现有人物简介可追溯",
+        "reviewStatus": "catalog-traceable-not-rereviewed"
+      },
+      "identityStatus": "catalog-and-independent-biography-consistent",
+      "cultureStatus": "regional-evidence-reviewed",
+      "culture": "central",
+      "evidence": [
+        {
+          "url": "https://zh.wikisource.org/wiki/史記/卷073",
+          "publisher": "历史文献／维基文库数字转录",
+          "accessed": "2026-10-24",
+          "summary": "仕秦昭王，任左庶长、国尉、大良造，封武安君。",
+          "limitations": "目录ID仍沿用现有目录；史传记载不等于全部细节已获现代考古或点校本复核，地域不确定部分已注明。"
+        }
+      ],
+      "region": "郿；仕秦",
+      "period": "战国",
+      "mappingRationale": "宽泛游戏文化池映射，具体时代和古地域分别保留；非现代民族或服饰鉴定。",
+      "reviewBatch": "20261024-30-02"
+    },
+    {
+      "personId": "manual-1521",
+      "name": "王翦",
+      "catalogDynasty": "周",
+      "catalogSource": {
+        "url": "https://zh.wikipedia.org/?curid=29919",
+        "title": "维基百科：王翦（导言节录，CC BY-SA 4.0）",
+        "catalogVerified": true,
+        "evidenceStatus": "现有人物简介可追溯",
+        "reviewStatus": "catalog-traceable-not-rereviewed"
+      },
+      "identityStatus": "catalog-and-independent-biography-consistent",
+      "cultureStatus": "regional-evidence-reviewed",
+      "culture": "central",
+      "evidence": [
+        {
+          "url": "https://zh.wikisource.org/wiki/史記/卷073",
+          "publisher": "历史文献／维基文库数字转录",
+          "accessed": "2026-10-24",
+          "summary": "少好兵，仕秦始皇，领军攻赵燕楚。",
+          "limitations": "沿用目录ID而非外部编号独立复核；仅确认明确时代、古地名、家族／军籍或活动地，不擅补出生地、现代族属或服饰。"
+        }
+      ],
+      "period": "战国秦",
+      "region": "频阳东乡",
+      "reviewBatch": "20261024-29-03",
+      "mappingRationale": "游戏宽泛区域池映射；具体时代、迁徙、旗籍与家族背景另存，不等同民族或精确服饰。清代满洲官员需保留本时代服饰。"
+    },
+    {
+      "personId": "manual-1518",
+      "name": "廉颇",
+      "catalogDynasty": "周",
+      "catalogSource": {
+        "url": "https://zh.wikipedia.org/?curid=29932",
+        "title": "维基百科：廉颇（导言节录，CC BY-SA 4.0）",
+        "catalogVerified": true,
+        "evidenceStatus": "现有人物简介可追溯",
+        "reviewStatus": "catalog-traceable-not-rereviewed"
+      },
+      "identityStatus": "catalog-and-independent-biography-consistent",
+      "cultureStatus": "regional-evidence-reviewed",
+      "culture": "central",
+      "evidence": [
+        {
+          "url": "https://zh.wikisource.org/wiki/史記/卷081",
+          "publisher": "历史文献／维基文库数字转录",
+          "accessed": "2026-10-24",
+          "summary": "赵将，拜上卿，后封信平君，晚年卒于寿春；不以晚年居所推断出生地。",
+          "limitations": "沿用目录ID而非外部编号独立复核；仅确认明确时代、古地名、家族／军籍或活动地，不擅补出生地、现代族属或服饰。"
+        }
+      ],
+      "period": "战国",
+      "region": "赵；晚年居魏楚",
+      "reviewBatch": "20261024-29-03",
+      "mappingRationale": "游戏宽泛区域池映射；具体时代、迁徙、旗籍与家族背景另存，不等同民族或精确服饰。清代满洲官员需保留本时代服饰。"
+    },
+    {
+      "personId": "manual-1522",
+      "name": "李牧",
+      "catalogDynasty": "周",
+      "catalogSource": {
+        "url": "https://zh.wikipedia.org/?curid=184014",
+        "title": "维基百科：李牧（导言节录，CC BY-SA 4.0）",
+        "catalogVerified": true,
+        "evidenceStatus": "现有人物简介可追溯",
+        "reviewStatus": "catalog-traceable-not-rereviewed"
+      },
+      "identityStatus": "catalog-and-independent-biography-consistent",
+      "cultureStatus": "regional-evidence-reviewed",
+      "culture": "central",
+      "evidence": [
+        {
+          "url": "https://zh.wikisource.org/wiki/史記/卷081",
+          "publisher": "历史文献／维基文库数字转录",
+          "accessed": "2026-10-24",
+          "summary": "赵北边将，训练边军备匈奴；本段只确认军职与驻地。",
+          "limitations": "沿用目录ID而非外部编号独立复核；仅确认明确时代、古地名、家族／军籍或活动地，不擅补出生地、现代族属或服饰。"
+        }
+      ],
+      "period": "战国",
+      "region": "赵北边代雁门军事活动",
+      "reviewBatch": "20261024-29-03",
+      "mappingRationale": "游戏宽泛区域池映射；具体时代、迁徙、旗籍与家族背景另存，不等同民族或精确服饰。清代满洲官员需保留本时代服饰。"
+    },
+    {
+      "personId": "manual-1524",
+      "name": "吕不韦",
+      "catalogDynasty": "周",
+      "catalogSource": {
+        "url": "https://zh.wikipedia.org/?curid=5852",
+        "title": "维基百科：吕不韦（导言节录，CC BY-SA 4.0）",
+        "catalogVerified": true,
+        "evidenceStatus": "现有人物简介可追溯",
+        "reviewStatus": "catalog-traceable-not-rereviewed"
+      },
+      "identityStatus": "catalog-and-independent-biography-consistent",
+      "cultureStatus": "regional-evidence-reviewed",
+      "culture": "central",
+      "evidence": [
+        {
+          "url": "https://zh.wikisource.org/wiki/史記/卷085",
+          "publisher": "历史文献／维基文库数字转录",
+          "accessed": "2026-10-24",
+          "summary": "阳翟商人，后入秦任相；阳翟为史传标识。",
+          "limitations": "沿用目录ID而非外部编号独立复核；仅确认明确时代、古地名、家族／军籍或活动地，不擅补出生地、现代族属或服饰。"
+        }
+      ],
+      "period": "战国秦",
+      "region": "阳翟；商旅往来赵秦",
+      "reviewBatch": "20261024-29-03",
+      "mappingRationale": "游戏宽泛区域池映射；具体时代、迁徙、旗籍与家族背景另存，不等同民族或精确服饰。清代满洲官员需保留本时代服饰。"
+    },
+    {
+      "personId": "general-56-58629",
+      "name": "蒙恬",
+      "catalogDynasty": "先秦",
+      "catalogSource": {
+        "url": "https://zh.wikipedia.org/?curid=108334",
+        "title": "维基百科：蒙恬（导言节录，CC BY-SA 4.0）",
+        "catalogVerified": true,
+        "evidenceStatus": "现有人物简介可追溯",
+        "reviewStatus": "catalog-traceable-not-rereviewed"
+      },
+      "identityStatus": "catalog-and-independent-biography-consistent",
+      "cultureStatus": "regional-evidence-reviewed",
+      "culture": "central",
+      "evidence": [
+        {
+          "url": "https://zh.wikisource.org/wiki/史記/卷088",
+          "publisher": "历史文献／维基文库数字转录",
+          "accessed": "2026-10-24",
+          "summary": "祖蒙骜自齐事秦，父蒙武，蒙恬为秦将北逐匈奴筑边防。",
+          "limitations": "沿用目录ID而非外部编号独立复核；仅确认明确时代、古地名、家族／军籍或活动地，不擅补出生地、现代族属或服饰。"
+        }
+      ],
+      "period": "秦",
+      "region": "先世齐，仕秦居上郡",
+      "reviewBatch": "20261024-29-03",
+      "mappingRationale": "游戏宽泛区域池映射；具体时代、迁徙、旗籍与家族背景另存，不等同民族或精确服饰。清代满洲官员需保留本时代服饰。"
+    },
+    {
+      "personId": "general-103-50637",
+      "name": "李广",
+      "catalogDynasty": "秦汉",
+      "catalogSource": {
+        "url": "https://zh.wikipedia.org/?curid=94116",
+        "title": "维基百科：李广（导言节录，CC BY-SA 4.0）",
+        "catalogVerified": true,
+        "evidenceStatus": "现有人物简介可追溯",
+        "reviewStatus": "catalog-traceable-not-rereviewed"
+      },
+      "identityStatus": "catalog-and-independent-biography-consistent",
+      "cultureStatus": "regional-evidence-reviewed",
+      "culture": "central",
+      "evidence": [
+        {
+          "url": "https://zh.wikisource.org/wiki/漢書/卷054",
+          "publisher": "历史文献／维基文库数字转录",
+          "accessed": "2026-10-24",
+          "summary": "世习射术，从文帝时从军，历边郡太守；不把李陵等同李广。",
+          "limitations": "沿用目录ID而非外部编号独立复核；仅确认明确时代、古地名、家族／军籍或活动地，不擅补出生地、现代族属或服饰。"
+        }
+      ],
+      "period": "西汉",
+      "region": "陇西成纪",
+      "reviewBatch": "20261024-29-03",
+      "mappingRationale": "游戏宽泛区域池映射；具体时代、迁徙、旗籍与家族背景另存，不等同民族或精确服饰。清代满洲官员需保留本时代服饰。"
+    },
+    {
+      "personId": "original-77",
+      "name": "荆轲",
+      "catalogDynasty": "战国末",
+      "catalogSource": {
+        "url": "https://zh.wikisource.org/wiki/史記/卷086",
+        "title": "史籍数字转录：史記/卷086",
+        "catalogVerified": true,
+        "evidenceStatus": "史料已读与用户选定改编",
+        "reviewStatus": "reviewed-historical-adaptation"
+      },
+      "identityStatus": "historical-adaptation-selected",
+      "cultureStatus": "regional-evidence-reviewed",
+      "culture": "central",
+      "evidence": [
+        {
+          "url": "https://zh.wikisource.org/wiki/史記/卷086",
+          "publisher": "史籍数字转录或机构资料；见身份复核报告",
+          "accessed": "2026-10-25",
+          "summary": "荆轲，战国末年人物。《史记》记其为卫人，先世来自齐，后来赴燕，受燕太子丹之托入秦刺秦王而失败身亡。卫、齐、燕分别涉及本贯、先世与活动地，不混为同一地域概念。",
+          "limitations": "本作选定改编；历史容貌及能力数值不作实证。"
+        }
+      ],
+      "reviewBatch": "20261024-29-03",
+      "identityRecheck": {
+        "date": "2026-10-25",
+        "historicalReferentStatus": "historical-referent-identifiable",
+        "conclusion": "战国末刺秦人物",
+        "originalAuthorLinkStatus": "not-directly-documented",
+        "report": "2026-10-25"
+      },
+      "period": "战国末",
+      "region": "卫人、先世齐、活动于燕",
+      "mappingRationale": "经本轮史料复核并由用户指定采用历史身份；central是宽泛游戏美术池，不是民族、现代国籍或精确服饰考证。",
+      "productionSelection": {
+        "date": "2026-10-25",
+        "originalSlot": "original-77",
+        "selectedId": "original-77",
+        "authorIntentProved": false,
+        "originalAuthorIntentProved": false
+      }
+    },
+    {
+      "personId": "general-38-51333",
+      "name": "田单",
+      "catalogDynasty": "先秦",
+      "catalogSource": {
+        "url": "https://zh.wikipedia.org/?curid=313431",
+        "title": "维基百科：田单（导言节录，CC BY-SA 4.0）",
+        "catalogVerified": true,
+        "evidenceStatus": "现有人物简介可追溯",
+        "reviewStatus": "catalog-traceable-not-rereviewed"
+      },
+      "identityStatus": "catalog-and-independent-biography-consistent",
+      "cultureStatus": "regional-evidence-reviewed",
+      "culture": "central",
+      "evidence": [
+        {
+          "url": "https://zh.wikisource.org/wiki/史記/卷082",
+          "publisher": "历史文献／维基文库数字转录",
+          "accessed": "2026-10-24",
+          "summary": "齐田氏疏属，曾为临淄市掾，燕伐齐时被推为将。",
+          "limitations": "沿用目录ID而非外部编号独立复核；仅确认明确时代、古地名、家族／军籍或活动地，不擅补出生地、现代族属或服饰。"
+        }
+      ],
+      "period": "战国",
+      "region": "齐；临淄安平即墨活动",
+      "reviewBatch": "20261024-29-03",
+      "mappingRationale": "游戏宽泛区域池映射；具体时代、迁徙、旗籍与家族背景另存，不等同民族或精确服饰。清代满洲官员需保留本时代服饰。"
+    },
+    {
+      "personId": "original-79",
+      "name": "司马迁",
+      "catalogDynasty": "西汉",
+      "catalogSource": {
+        "url": "https://zh.wikisource.org/wiki/史記/卷130",
+        "title": "史籍数字转录：史記/卷130",
+        "catalogVerified": true,
+        "evidenceStatus": "史料已读与用户选定改编",
+        "reviewStatus": "reviewed-historical-adaptation"
+      },
+      "identityStatus": "historical-adaptation-selected",
+      "cultureStatus": "regional-evidence-reviewed",
+      "culture": "central",
+      "evidence": [
+        {
+          "url": "https://zh.wikisource.org/wiki/史記/卷130",
+          "publisher": "史籍数字转录或机构资料；见身份复核报告",
+          "accessed": "2026-10-25",
+          "summary": "司马迁，西汉史官、史学家，《史记》作者。其父司马谈任太史，司马迁继承相关事业，任太史令，经历李陵之祸后继续著述。不与北宋《资治通鉴》作者司马光混同。",
+          "limitations": "本作选定改编；历史容貌及能力数值不作实证。"
+        }
+      ],
+      "reviewBatch": "20261024-29-03",
+      "identityRecheck": {
+        "date": "2026-10-25",
+        "historicalReferentStatus": "historical-referent-identifiable",
+        "conclusion": "西汉太史令、《史记》作者",
+        "originalAuthorLinkStatus": "not-directly-documented",
+        "report": "2026-10-25"
+      },
+      "period": "西汉",
+      "region": "生龙门；不强定现代行政归属",
+      "mappingRationale": "经本轮史料复核并由用户指定采用历史身份；central是宽泛游戏美术池，不是民族、现代国籍或精确服饰考证。",
+      "productionSelection": {
+        "date": "2026-10-25",
+        "originalSlot": "original-79",
+        "selectedId": "original-79",
+        "authorIntentProved": false,
+        "originalAuthorIntentProved": false
+      }
+    },
+    {
+      "personId": "cbdb-30257",
+      "name": "曹操",
+      "catalogDynasty": "东汉",
+      "catalogSource": {
+        "url": "https://zh.wikipedia.org/?curid=2870",
+        "title": "维基百科：曹操（导言节录，CC BY-SA 4.0）",
+        "catalogVerified": true,
+        "evidenceStatus": "现有人物简介可追溯",
+        "reviewStatus": "catalog-traceable-not-rereviewed"
+      },
+      "identityStatus": "catalog-and-independent-biography-consistent",
+      "cultureStatus": "regional-evidence-reviewed",
+      "culture": "central",
+      "evidence": [
+        {
+          "url": "https://zh.wikisource.org/wiki/三國志/卷01",
+          "publisher": "历史文献／维基文库数字转录",
+          "accessed": "2026-10-24",
+          "summary": "字孟德，父嵩、祖腾，本纪为其后追尊帝号，不据追尊误称在世皇帝。",
+          "limitations": "沿用目录ID而非外部编号独立复核；仅确认明确时代、古地名、家族／军籍或活动地，不擅补出生地、现代族属或服饰。"
+        }
+      ],
+      "period": "东汉末",
+      "region": "沛国谯",
+      "reviewBatch": "20261024-29-03",
+      "mappingRationale": "游戏宽泛区域池映射；具体时代、迁徙、旗籍与家族背景另存，不等同民族或精确服饰。清代满洲官员需保留本时代服饰。"
+    },
+    {
+      "personId": "manual-1555",
+      "name": "赵云",
+      "catalogDynasty": "三国",
+      "catalogSource": {
+        "url": "https://zh.wikipedia.org/?curid=22278",
+        "title": "维基百科：赵云（导言节录，CC BY-SA 4.0）",
+        "catalogVerified": true,
+        "evidenceStatus": "现有人物简介可追溯",
+        "reviewStatus": "catalog-traceable-not-rereviewed"
+      },
+      "identityStatus": "catalog-and-independent-biography-consistent",
+      "cultureStatus": "regional-evidence-reviewed",
+      "culture": "central",
+      "evidence": [
+        {
+          "url": "https://zh.wikisource.org/wiki/三國志/卷36",
+          "publisher": "历史文献／维基文库数字转录",
+          "accessed": "2026-10-24",
+          "summary": "字子龙，先属公孙瓒，后随刘备，任蜀汉将领。",
+          "limitations": "沿用目录ID而非外部编号独立复核；仅确认明确时代、古地名、家族／军籍或活动地，不擅补出生地、现代族属或服饰。"
+        }
+      ],
+      "period": "汉末三国",
+      "region": "常山真定",
+      "reviewBatch": "20261024-29-03",
+      "mappingRationale": "游戏宽泛区域池映射；具体时代、迁徙、旗籍与家族背景另存，不等同民族或精确服饰。清代满洲官员需保留本时代服饰。"
+    },
+    {
+      "personId": "manual-1565",
+      "name": "司马懿",
+      "catalogDynasty": "三国",
+      "catalogSource": {
+        "url": "https://zh.wikipedia.org/?curid=49432",
+        "title": "维基百科：司马懿（导言节录，CC BY-SA 4.0）",
+        "catalogVerified": true,
+        "evidenceStatus": "现有人物简介可追溯",
+        "reviewStatus": "catalog-traceable-not-rereviewed"
+      },
+      "identityStatus": "catalog-and-independent-biography-consistent",
+      "cultureStatus": "regional-evidence-reviewed",
+      "culture": "central",
+      "evidence": [
+        {
+          "url": "https://zh.wikisource.org/wiki/晉書/卷001",
+          "publisher": "历史文献／维基文库数字转录",
+          "accessed": "2026-10-24",
+          "summary": "字仲达，父司马防，仕曹氏，晋书用宣帝追尊名号；不称其在世称帝。",
+          "limitations": "沿用目录ID而非外部编号独立复核；仅确认明确时代、古地名、家族／军籍或活动地，不擅补出生地、现代族属或服饰。"
+        }
+      ],
+      "period": "汉末曹魏",
+      "region": "河内温县孝敬里",
+      "reviewBatch": "20261024-29-03",
+      "mappingRationale": "游戏宽泛区域池映射；具体时代、迁徙、旗籍与家族背景另存，不等同民族或精确服饰。清代满洲官员需保留本时代服饰。"
+    },
+    {
+      "personId": "general-285-45592",
+      "name": "吕布",
+      "catalogDynasty": "三国",
+      "catalogSource": {
+        "url": "https://zh.wikipedia.org/?curid=15693",
+        "title": "维基百科：吕布（导言节录，CC BY-SA 4.0）",
+        "catalogVerified": true,
+        "evidenceStatus": "现有人物简介可追溯",
+        "reviewStatus": "catalog-traceable-not-rereviewed"
+      },
+      "identityStatus": "catalog-and-independent-biography-consistent",
+      "cultureStatus": "regional-evidence-reviewed",
+      "culture": "central",
+      "evidence": [
+        {
+          "url": "https://zh.wikisource.org/wiki/三國志/卷07",
+          "publisher": "历史文献／维基文库数字转录",
+          "accessed": "2026-10-24",
+          "summary": "字奉先，初为丁原主簿，后事董卓；善弓马。",
+          "limitations": "沿用目录ID而非外部编号独立复核；仅确认明确时代、古地名、家族／军籍或活动地，不擅补出生地、现代族属或服饰。"
+        }
+      ],
+      "period": "东汉末",
+      "region": "五原九原",
+      "reviewBatch": "20261024-29-03",
+      "mappingRationale": "游戏宽泛区域池映射；具体时代、迁徙、旗籍与家族背景另存，不等同民族或精确服饰。清代满洲官员需保留本时代服饰。"
+    },
+    {
+      "personId": "manual-1553",
+      "name": "关羽",
+      "catalogDynasty": "三国",
+      "catalogSource": {
+        "url": "https://zh.wikipedia.org/?curid=22300",
+        "title": "维基百科：关羽（导言节录，CC BY-SA 4.0）",
+        "catalogVerified": true,
+        "evidenceStatus": "现有人物简介可追溯",
+        "reviewStatus": "catalog-traceable-not-rereviewed"
+      },
+      "identityStatus": "catalog-and-independent-biography-consistent",
+      "cultureStatus": "regional-evidence-reviewed",
+      "culture": "central",
+      "evidence": [
+        {
+          "url": "https://zh.wikisource.org/wiki/三國志/卷36",
+          "publisher": "历史文献／维基文库数字转录",
+          "accessed": "2026-10-24",
+          "summary": "字云长，本字长生，亡命涿郡后随刘备。",
+          "limitations": "沿用目录ID而非外部编号独立复核；仅确认明确时代、古地名、家族／军籍或活动地，不擅补出生地、现代族属或服饰。"
+        }
+      ],
+      "period": "汉末三国",
+      "region": "河东解",
+      "reviewBatch": "20261024-29-03",
+      "mappingRationale": "游戏宽泛区域池映射；具体时代、迁徙、旗籍与家族背景另存，不等同民族或精确服饰。清代满洲官员需保留本时代服饰。"
+    },
+    {
+      "personId": "manual-1554",
+      "name": "张飞",
+      "catalogDynasty": "三国",
+      "catalogSource": {
+        "url": "https://zh.wikipedia.org/?curid=22305",
+        "title": "维基百科：张飞（导言节录，CC BY-SA 4.0）",
+        "catalogVerified": true,
+        "evidenceStatus": "现有人物简介可追溯",
+        "reviewStatus": "catalog-traceable-not-rereviewed"
+      },
+      "identityStatus": "catalog-and-independent-biography-consistent",
+      "cultureStatus": "regional-evidence-reviewed",
+      "culture": "central",
+      "evidence": [
+        {
+          "url": "https://zh.wikisource.org/wiki/三國志/卷36",
+          "publisher": "历史文献／维基文库数字转录",
+          "accessed": "2026-10-24",
+          "summary": "本传字益德，少随刘备、与关羽亲近；保留史籍字形，不据演义翼德改生产名号。",
+          "limitations": "沿用目录ID而非外部编号独立复核；仅确认明确时代、古地名、家族／军籍或活动地，不擅补出生地、现代族属或服饰。"
+        }
+      ],
+      "period": "汉末三国",
+      "region": "涿郡",
+      "reviewBatch": "20261024-29-03",
+      "mappingRationale": "游戏宽泛区域池映射；具体时代、迁徙、旗籍与家族背景另存，不等同民族或精确服饰。清代满洲官员需保留本时代服饰。"
+    },
+    {
+      "personId": "manual-1569",
+      "name": "周瑜",
+      "catalogDynasty": "三国",
+      "catalogSource": {
+        "url": "https://zh.wikipedia.org/?curid=4163",
+        "title": "维基百科：周瑜（导言节录，CC BY-SA 4.0）",
+        "catalogVerified": true,
+        "evidenceStatus": "现有人物简介可追溯",
+        "reviewStatus": "catalog-traceable-not-rereviewed"
+      },
+      "identityStatus": "catalog-and-independent-biography-consistent",
+      "cultureStatus": "regional-evidence-reviewed",
+      "culture": "central",
+      "evidence": [
+        {
+          "url": "https://zh.wikisource.org/wiki/三國志/卷54",
+          "publisher": "历史文献／维基文库数字转录",
+          "accessed": "2026-10-24",
+          "summary": "字公瑾，父异，早与孙策交好，后助孙权领军。",
+          "limitations": "沿用目录ID而非外部编号独立复核；仅确认明确时代、古地名、家族／军籍或活动地，不擅补出生地、现代族属或服饰。"
+        }
+      ],
+      "period": "汉末",
+      "region": "庐江舒",
+      "reviewBatch": "20261024-29-03",
+      "mappingRationale": "游戏宽泛区域池映射；具体时代、迁徙、旗籍与家族背景另存，不等同民族或精确服饰。清代满洲官员需保留本时代服饰。"
+    },
+    {
+      "personId": "general-398-60962",
+      "name": "秦琼",
+      "catalogDynasty": "隋唐",
+      "catalogSource": {
+        "url": "https://zh.wikipedia.org/?curid=134467",
+        "title": "维基百科：秦琼（导言节录，CC BY-SA 4.0）",
+        "catalogVerified": true,
+        "evidenceStatus": "现有人物简介可追溯",
+        "reviewStatus": "catalog-traceable-not-rereviewed"
+      },
+      "identityStatus": "catalog-and-independent-biography-consistent",
+      "cultureStatus": "regional-evidence-reviewed",
+      "culture": "central",
+      "evidence": [
+        {
+          "url": "https://zh.wikisource.org/wiki/舊唐書/卷68",
+          "publisher": "历史文献／维基文库数字转录",
+          "accessed": "2026-10-24",
+          "summary": "名琼，史传标题秦叔宝；先属来护儿张须陀李密，后归唐；史载马槊。",
+          "limitations": "沿用目录ID而非外部编号独立复核；仅确认明确时代、古地名、家族／军籍或活动地，不擅补出生地、现代族属或服饰。"
+        }
+      ],
+      "period": "隋唐",
+      "region": "齐州历城",
+      "reviewBatch": "20261024-29-03",
+      "mappingRationale": "游戏宽泛区域池映射；具体时代、迁徙、旗籍与家族背景另存，不等同民族或精确服饰。清代满洲官员需保留本时代服饰。"
+    },
+    {
+      "personId": "original-88",
+      "name": "尉迟恭",
+      "catalogDynasty": "隋唐",
+      "catalogSource": {
+        "url": "https://zh.wikisource.org/wiki/新唐書/卷089",
+        "title": "史籍数字转录：新唐書/卷089",
+        "catalogVerified": true,
+        "evidenceStatus": "史料已读与用户选定改编",
+        "reviewStatus": "reviewed-historical-adaptation"
+      },
+      "identityStatus": "historical-adaptation-selected",
+      "cultureStatus": "regional-evidence-reviewed",
+      "culture": "central",
+      "evidence": [
+        {
+          "url": "https://zh.wikisource.org/wiki/新唐書/卷089",
+          "publisher": "史籍数字转录或机构资料；见身份复核报告",
+          "accessed": "2026-10-25",
+          "summary": "尉迟恭字敬德，朔州善阳人，隋末曾为刘武周部将，后归唐，随李世民作战，封鄂国公。《新唐书》明确其名恭、以字行，尉迟恭与尉迟敬德是同一人。",
+          "limitations": "本作选定改编；历史容貌及能力数值不作实证。"
+        }
+      ],
+      "reviewBatch": "20261024-29-03",
+      "identityRecheck": {
+        "date": "2026-10-25",
+        "historicalReferentStatus": "historical-referent-identifiable",
+        "conclusion": "唐代尉迟敬德，开国将领",
+        "originalAuthorLinkStatus": "not-directly-documented",
+        "report": "2026-10-25"
+      },
+      "period": "隋唐",
+      "region": "朔州善阳",
+      "mappingRationale": "经本轮史料复核并由用户指定采用历史身份；central是宽泛游戏美术池，不是民族、现代国籍或精确服饰考证。",
+      "productionSelection": {
+        "date": "2026-10-25",
+        "originalSlot": "original-88",
+        "selectedId": "original-88",
+        "authorIntentProved": false,
+        "originalAuthorIntentProved": false
+      }
+    },
+    {
+      "personId": "original-89",
+      "name": "李密",
+      "catalogDynasty": "隋末唐初",
+      "catalogSource": {
+        "url": "https://zh.wikisource.org/wiki/隋書/卷70",
+        "title": "《隋书》卷七十·李密传",
+        "catalogVerified": true,
+        "evidenceStatus": "史料已读与用户选定改编",
+        "reviewStatus": "reviewed-historical-adaptation"
+      },
+      "identityStatus": "historical-adaptation-selected",
+      "cultureStatus": "regional-evidence-reviewed",
+      "culture": "central",
+      "evidence": [
+        {
+          "url": "https://zh.wikisource.org/wiki/隋書/卷70",
+          "publisher": "史籍数字转录或机构资料；见身份复核报告",
+          "accessed": "2026-10-25",
+          "summary": "李密字法主，隋末群雄之一，承袭蒲山公爵位。参与杨玄感起兵后，投奔翟让领导的瓦岗军，后为魏公，率军与王世充争雄，兵败降唐，后复叛唐而死。采用隋末李密身份，不是《陈情表》作者。",
+          "limitations": "本作选定改编；历史容貌及能力数值不作实证。"
+        }
+      ],
+      "reviewBatch": "20261024-29-03",
+      "identityRecheck": {
+        "date": "2026-10-25",
+        "historicalReferentStatus": "same-name-ambiguous",
+        "conclusion": "至少两位著名同名候选，暂不选定",
+        "originalAuthorLinkStatus": "not-directly-documented",
+        "report": "2026-10-25"
+      },
+      "period": "隋末唐初",
+      "region": "隋末主要活动于瓦岗、洛口；祖籍与活动地不混同",
+      "mappingRationale": "经本轮史料复核并由用户指定采用历史身份；central是宽泛游戏美术池，不是民族、现代国籍或精确服饰考证。",
+      "productionSelection": {
+        "date": "2026-10-25",
+        "originalSlot": "original-89",
+        "selectedId": "original-89",
+        "authorIntentProved": false,
+        "originalAuthorIntentProved": false
+      }
+    },
+    {
+      "personId": "cbdb-3332",
+      "name": "韩愈",
+      "catalogDynasty": "唐",
+      "catalogSource": {
+        "url": "https://zh.wikipedia.org/?curid=16413",
+        "title": "维基百科：韩愈（导言节录，CC BY-SA 4.0）",
+        "catalogVerified": true,
+        "evidenceStatus": "现有人物简介可追溯",
+        "reviewStatus": "catalog-traceable-not-rereviewed"
+      },
+      "identityStatus": "catalog-and-independent-biography-consistent",
+      "cultureStatus": "regional-evidence-reviewed",
+      "culture": "central",
+      "evidence": [
+        {
+          "url": "https://zh.wikisource.org/wiki/舊唐書/卷160",
+          "publisher": "历史文献／维基文库数字转录",
+          "accessed": "2026-10-24",
+          "summary": "字退之，进士，历幕职、御史和国子博士；史称昌黎不强行作为出生地。",
+          "limitations": "沿用目录ID而非外部编号独立复核；仅确认明确时代、古地名、家族／军籍或活动地，不擅补出生地、现代族属或服饰。"
+        }
+      ],
+      "period": "唐",
+      "region": "史称昌黎；具体出生地另核",
+      "reviewBatch": "20261024-29-03",
+      "mappingRationale": "游戏宽泛区域池映射；具体时代、迁徙、旗籍与家族背景另存，不等同民族或精确服饰。清代满洲官员需保留本时代服饰。"
+    },
+    {
+      "personId": "general-638-62417",
+      "name": "拔都",
+      "catalogDynasty": "元",
+      "catalogSource": {
+        "url": "https://zh.wikipedia.org/?curid=100626",
+        "title": "维基百科：拔都（导言节录，CC BY-SA 4.0）",
+        "catalogVerified": true,
+        "evidenceStatus": "现有人物简介可追溯",
+        "reviewStatus": "catalog-traceable-not-rereviewed"
+      },
+      "identityStatus": "catalog-and-independent-biography-consistent",
+      "cultureStatus": "regional-evidence-reviewed",
+      "culture": "steppe",
+      "evidence": [
+        {
+          "url": "https://georgianencyclopedia.ge/en/form_eng/380",
+          "publisher": "格鲁吉亚国家科学院百科编辑部",
+          "accessed": "2026-10-24",
+          "summary": "Batu亦称Sain-Khan，为Jochi之子、成吉思汗之孙，领朮赤兀鲁思；不采争议精确生年。",
+          "limitations": "具体有争议细节不采纳；ID沿用目录，不声称外部编号复核。"
+        }
+      ],
+      "period": "13世纪蒙古帝国",
+      "region": "蒙古朮赤系；钦察草原与东欧活动",
+      "reviewBatch": "20261024-29-03",
+      "mappingRationale": "依据明确时代文化背景选择游戏宽泛美术池，不等于现代民族分类或精确服饰核定。"
+    },
+    {
+      "personId": "general-795-83328",
+      "name": "郑成功",
+      "catalogDynasty": "明",
+      "catalogSource": {
+        "url": "https://zh.wikipedia.org/?curid=35169",
+        "title": "维基百科：郑成功（导言节录，CC BY-SA 4.0）",
+        "catalogVerified": true,
+        "evidenceStatus": "现有人物简介可追溯",
+        "reviewStatus": "catalog-traceable-not-rereviewed"
+      },
+      "identityStatus": "catalog-and-independent-biography-consistent",
+      "cultureStatus": "regional-evidence-reviewed",
+      "culture": "central",
+      "evidence": [
+        {
+          "url": "https://zh.wikisource.org/wiki/清史稿/卷224",
+          "publisher": "历史文献／维基文库数字转录",
+          "accessed": "2026-10-24",
+          "summary": "初名森、字大木，父郑芝龙，南安诸生，唐王赐姓更名；不把母系来源直接变成日本文化池归类。",
+          "limitations": "沿用目录ID而非外部编号独立复核；仅确认明确时代、古地名、家族／军籍或活动地，不擅补出生地、现代族属或服饰。"
+        }
+      ],
+      "period": "明末清初",
+      "region": "福建南安家族与学籍；母为日本人",
+      "reviewBatch": "20261024-29-03",
+      "mappingRationale": "游戏宽泛区域池映射；具体时代、迁徙、旗籍与家族背景另存，不等同民族或精确服饰。清代满洲官员需保留本时代服饰。"
+    },
+    {
+      "personId": "manual-1616",
+      "name": "袁崇焕",
+      "catalogDynasty": "明",
+      "catalogSource": {
+        "url": "https://zh.wikipedia.org/?curid=65732",
+        "title": "维基百科：袁崇焕（导言节录，CC BY-SA 4.0）",
+        "catalogVerified": true,
+        "evidenceStatus": "现有人物简介可追溯",
+        "reviewStatus": "catalog-traceable-not-rereviewed"
+      },
+      "identityStatus": "catalog-and-independent-biography-consistent",
+      "cultureStatus": "regional-evidence-reviewed",
+      "culture": "central",
+      "evidence": [
+        {
+          "url": "https://zh.wikisource.org/wiki/明史/卷259",
+          "publisher": "历史文献／维基文库数字转录",
+          "accessed": "2026-10-24",
+          "summary": "字元素，万历进士，邵武知县出身，后经略辽东。",
+          "limitations": "沿用目录ID而非外部编号独立复核；仅确认明确时代、古地名、家族／军籍或活动地，不擅补出生地、现代族属或服饰。"
+        }
+      ],
+      "period": "明",
+      "region": "东莞",
+      "reviewBatch": "20261024-29-03",
+      "mappingRationale": "游戏宽泛区域池映射；具体时代、迁徙、旗籍与家族背景另存，不等同民族或精确服饰。清代满洲官员需保留本时代服饰。"
+    },
+    {
+      "personId": "manual-1625",
+      "name": "刘墉",
+      "catalogDynasty": "清",
+      "catalogSource": {
+        "url": "https://zh.wikipedia.org/wiki/%E5%88%98%E5%A2%89",
+        "title": "人物身份资料，尚缺详传",
+        "catalogVerified": true,
+        "evidenceStatus": "现有人物简介可追溯",
+        "reviewStatus": "catalog-traceable-not-rereviewed"
+      },
+      "identityStatus": "catalog-and-independent-biography-consistent",
+      "cultureStatus": "regional-evidence-reviewed",
+      "culture": "central",
+      "evidence": [
+        {
+          "url": "https://dict.revised.moe.edu.tw/dictView.jsp?ID=63674&la=0&powerMode=0",
+          "publisher": "教育部《重編國語辭典修訂本》",
+          "accessed": "2026-10-24",
+          "summary": "字崇如号石庵，乾隆进士，官大学士，善书法；不采来源间不一致的精确生卒及谥号。",
+          "limitations": "具体有争议细节不采纳；ID沿用目录，不声称外部编号复核。"
+        }
+      ],
+      "period": "清",
+      "region": "山东诸城",
+      "reviewBatch": "20261024-29-03",
+      "mappingRationale": "依据明确时代文化背景选择游戏宽泛美术池，不等于现代民族分类或精确服饰核定。"
+    },
+    {
+      "personId": "manual-1618",
+      "name": "魏忠贤",
+      "catalogDynasty": "明",
+      "catalogSource": {
+        "url": "https://zh.wikipedia.org/?curid=91350",
+        "title": "维基百科：魏忠贤（导言节录，CC BY-SA 4.0）",
+        "catalogVerified": true,
+        "evidenceStatus": "现有人物简介可追溯",
+        "reviewStatus": "catalog-traceable-not-rereviewed"
+      },
+      "identityStatus": "catalog-and-independent-biography-consistent",
+      "cultureStatus": "regional-evidence-reviewed",
+      "culture": "central",
+      "evidence": [
+        {
+          "url": "https://zh.wikisource.org/wiki/明史/卷305",
+          "publisher": "历史文献／维基文库数字转录",
+          "accessed": "2026-10-24",
+          "summary": "曾改姓名李进忠，后复魏姓赐名忠贤，万历时入宫；不用影视人物代替。",
+          "limitations": "沿用目录ID而非外部编号独立复核；仅确认明确时代、古地名、家族／军籍或活动地，不擅补出生地、现代族属或服饰。"
+        }
+      ],
+      "period": "明",
+      "region": "肃宁",
+      "reviewBatch": "20261024-29-03",
+      "mappingRationale": "游戏宽泛区域池映射；具体时代、迁徙、旗籍与家族背景另存，不等同民族或精确服饰。清代满洲官员需保留本时代服饰。"
+    },
+    {
+      "personId": "manual-1624",
+      "name": "和珅",
+      "catalogDynasty": "清",
+      "catalogSource": {
+        "url": "https://zh.wikipedia.org/?curid=7415",
+        "title": "维基百科：和珅（导言节录，CC BY-SA 4.0）",
+        "catalogVerified": true,
+        "evidenceStatus": "现有人物简介可追溯",
+        "reviewStatus": "catalog-traceable-not-rereviewed"
+      },
+      "identityStatus": "catalog-and-independent-biography-consistent",
+      "cultureStatus": "regional-evidence-reviewed",
+      "culture": "central",
+      "evidence": [
+        {
+          "url": "https://zh.wikisource.org/wiki/清史稿/卷319",
+          "publisher": "历史文献／维基文库数字转录",
+          "accessed": "2026-10-24",
+          "summary": "字致斋，钮祜禄氏，承世职后任侍卫、户部与军机大臣；旗籍不是出生地，不改映射为草原蒙古装。",
+          "limitations": "沿用目录ID而非外部编号独立复核；仅确认明确时代、古地名、家族／军籍或活动地，不擅补出生地、现代族属或服饰。"
+        }
+      ],
+      "period": "清",
+      "region": "满洲正红旗身份；清廷活动",
+      "reviewBatch": "20261024-29-03",
+      "mappingRationale": "游戏宽泛区域池映射；具体时代、迁徙、旗籍与家族背景另存，不等同民族或精确服饰。清代满洲官员需保留本时代服饰。"
+    },
+    {
+      "personId": "manual-1557",
+      "name": "黄忠",
+      "catalogDynasty": "东汉末",
+      "catalogSource": {
+        "url": "https://zh.wikisource.org/wiki/三國志/卷36",
+        "title": "《三国志》卷36人物本传",
+        "catalogVerified": true,
+        "evidenceStatus": "史料已读与用户选定改编",
+        "reviewStatus": "reviewed-historical-adaptation"
+      },
+      "identityStatus": "user-selected-replacement",
+      "cultureStatus": "regional-evidence-reviewed",
+      "culture": "central",
+      "evidence": [
+        {
+          "url": "https://zh.wikisource.org/wiki/三國志/卷36",
+          "publisher": "史籍数字转录或机构资料；见身份复核报告",
+          "accessed": "2026-10-25",
+          "summary": "黄忠字汉升，南阳人。先从刘表，后归刘备，入蜀时常先登陷阵。定军山之战击败夏侯渊，升后将军，封关内侯。史载勇毅，不把演义中的年龄和射术故事写成确证。",
+          "limitations": "本作选定改编；历史容貌及能力数值不作实证。"
+        }
+      ],
+      "reviewBatch": "20261024-29-03",
+      "identityRecheck": {
+        "date": "2026-10-25",
+        "historicalReferentStatus": "no-supported-referent",
+        "conclusion": "暂缺可靠历史对应",
+        "originalAuthorLinkStatus": "not-directly-documented",
+        "report": "2026-10-25"
+      },
+      "period": "东汉末",
+      "region": "南阳",
+      "mappingRationale": "经本轮史料复核并由用户指定采用历史身份；central是宽泛游戏美术池，不是民族、现代国籍或精确服饰考证。",
+      "productionSelection": {
+        "date": "2026-10-25",
+        "originalSlot": "original-97",
+        "selectedId": "manual-1557",
+        "authorIntentProved": false,
+        "originalAuthorIntentProved": false
+      }
+    },
+    {
+      "personId": "manual-1550",
+      "name": "庞统",
+      "catalogDynasty": "东汉末",
+      "catalogSource": {
+        "url": "https://zh.wikisource.org/wiki/三國志/卷37",
+        "title": "《三国志》卷37人物本传",
+        "catalogVerified": true,
+        "evidenceStatus": "史料已读与用户选定改编",
+        "reviewStatus": "reviewed-historical-adaptation"
+      },
+      "identityStatus": "user-selected-replacement",
+      "cultureStatus": "regional-evidence-reviewed",
+      "culture": "central",
+      "evidence": [
+        {
+          "url": "https://zh.wikisource.org/wiki/三國志/卷37",
+          "publisher": "史籍数字转录或机构资料；见身份复核报告",
+          "accessed": "2026-10-25",
+          "summary": "庞统字士元，襄阳人。刘备谋臣，与诸葛亮同为军师中郎将，参与入蜀谋划，进攻雒县时中流矢身亡。凤雏称号见裴注所引《襄阳记》；连环计和落凤坡等通俗情节不作为本传事实。",
+          "limitations": "本作选定改编；历史容貌及能力数值不作实证。"
+        }
+      ],
+      "reviewBatch": "20261024-29-03",
+      "identityRecheck": {
+        "date": "2026-10-25",
+        "historicalReferentStatus": "no-supported-referent",
+        "conclusion": "暂缺可靠历史对应",
+        "originalAuthorLinkStatus": "not-directly-documented",
+        "report": "2026-10-25"
+      },
+      "period": "东汉末",
+      "region": "襄阳",
+      "mappingRationale": "经本轮史料复核并由用户指定采用历史身份；central是宽泛游戏美术池，不是民族、现代国籍或精确服饰考证。",
+      "productionSelection": {
+        "date": "2026-10-25",
+        "originalSlot": "original-98",
+        "selectedId": "manual-1550",
+        "authorIntentProved": false,
+        "originalAuthorIntentProved": false
+      }
+    },
+    {
+      "personId": "cbdb-33662",
+      "name": "陆逊",
+      "catalogDynasty": "三国吴",
+      "catalogSource": {
+        "url": "https://zh.wikisource.org/wiki/三國志/卷58",
+        "title": "《三国志》卷58人物本传",
+        "catalogVerified": true,
+        "evidenceStatus": "史料已读与用户选定改编",
+        "reviewStatus": "reviewed-historical-adaptation"
+      },
+      "identityStatus": "user-selected-replacement",
+      "cultureStatus": "regional-evidence-reviewed",
+      "culture": "central",
+      "evidence": [
+        {
+          "url": "https://zh.wikisource.org/wiki/三國志/卷58",
+          "publisher": "史籍数字转录或机构资料；见身份复核报告",
+          "accessed": "2026-10-25",
+          "summary": "陆逊字伯言，本名议，吴郡吴县人。孙吴将领、政治家，曾任海昌屯田都尉并领县事，夷陵之战统军击败刘备，后任丞相。既有军略也有行政经历，不采用少年神将形象。",
+          "limitations": "本作选定改编；历史容貌及能力数值不作实证。"
+        }
+      ],
+      "reviewBatch": "20261024-29-03",
+      "identityRecheck": {
+        "date": "2026-10-25",
+        "historicalReferentStatus": "no-supported-referent",
+        "conclusion": "暂缺可靠历史对应",
+        "originalAuthorLinkStatus": "not-directly-documented",
+        "report": "2026-10-25"
+      },
+      "period": "三国吴",
+      "region": "吴郡吴县",
+      "mappingRationale": "经本轮史料复核并由用户指定采用历史身份；central是宽泛游戏美术池，不是民族、现代国籍或精确服饰考证。",
+      "productionSelection": {
+        "date": "2026-10-25",
+        "originalSlot": "original-99",
+        "selectedId": "cbdb-33662",
+        "authorIntentProved": false,
+        "originalAuthorIntentProved": false
+      }
+    }
+  ],
+  "reviewedIdentityUnresolved": 0,
+  "notYetReviewed": 0,
+  "batches": [
+    {
+      "id": "20261024-30-01",
+      "people": [
+        "cbdb-27948",
+        "original-4",
+        "original-8",
+        "manual-1510",
+        "original-14",
+        "manual-1543",
+        "original-16",
+        "manual-1530",
+        "general-874-55746",
+        "manual-1519",
+        "manual-1579",
+        "general-113-60981",
+        "cbdb-898",
+        "manual-1544",
+        "general-296-67948",
+        "general-790-68223",
+        "cbdb-94373",
+        "general-298-58873",
+        "original-29",
+        "manual-1582",
+        "general-403-90513",
+        "cbdb-630",
+        "original-33",
+        "manual-1590",
+        "manual-1591",
+        "general-468-78206",
+        "original-37",
+        "manual-1537",
+        "manual-1536",
+        "manual-1513"
+      ],
+      "processed": 30,
+      "regionalEvidenceConfirmed": 23,
+      "identityUnresolved": 7
+    },
+    {
+      "id": "20261024-30-02",
+      "people": [
+        "original-41",
+        "cbdb-25403",
+        "original-43",
+        "original-44",
+        "general-422-82978",
+        "general-523-68118",
+        "cbdb-1488",
+        "cbdb-8175",
+        "cbdb-19123",
+        "manual-1608",
+        "manual-1609",
+        "cbdb-54819",
+        "cbdb-28093",
+        "manual-1614",
+        "manual-1611",
+        "cbdb-30374",
+        "original-57",
+        "cbdb-8008",
+        "original-59",
+        "manual-1592",
+        "manual-1507",
+        "original-62",
+        "original-63",
+        "original-64",
+        "original-65",
+        "original-66",
+        "manual-1512",
+        "original-68",
+        "original-69",
+        "manual-1520"
+      ],
+      "processed": 30,
+      "regionalEvidenceConfirmed": 18,
+      "identityUnresolved": 12
+    },
+    {
+      "id": "20261024-29-03",
+      "people": [
+        "manual-1521",
+        "manual-1518",
+        "manual-1522",
+        "manual-1524",
+        "general-56-58629",
+        "general-103-50637",
+        "original-77",
+        "general-38-51333",
+        "original-79",
+        "cbdb-30257",
+        "manual-1555",
+        "manual-1565",
+        "general-285-45592",
+        "manual-1553",
+        "manual-1554",
+        "manual-1569",
+        "general-398-60962",
+        "original-88",
+        "original-89",
+        "cbdb-3332",
+        "general-638-62417",
+        "general-795-83328",
+        "manual-1616",
+        "manual-1625",
+        "manual-1618",
+        "manual-1624",
+        "original-97",
+        "original-98",
+        "original-99"
+      ],
+      "processed": 29,
+      "regionalEvidenceConfirmed": 22,
+      "identityUnresolved": 7
+    }
+  ],
+  "firstPassComplete": true,
+  "identityPolicy": "生产身份全部按用户选定改编；与原作者直接绑定证明分开。原始26项历史核验报告保留。",
+  "nextStage": "2026-10-25追加改编：100人生产文化映射已齐，四名三国替换与隋末李密已接入；原始身份未定报告保留历史记录。",
+  "originalIdentityRecheck": {
+    "date": "2026-10-25",
+    "report": "docs/card-battle-original-person-identity-review-2026-10-25.json",
+    "total": 26,
+    "historicalReferentIdentifiable": 21,
+    "sameNameAmbiguous": 1,
+    "noSupportedReferent": 4,
+    "originalAuthorLinkDirectlyProved": 0,
+    "interpretation": "历史对应识别与原作者直接绑定分开；原historicalLinkPending不等于26名均无可识别历史对应。"
+  },
+  "productionIdentityUpdate": {
+    "date": "2026-10-25",
+    "confirmedAdaptations": 21,
+    "suiLiMi": 1,
+    "threeKingdomReplacements": 4,
+    "rawOriginalTablePreserved": true
+  }
+}

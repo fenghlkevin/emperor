@@ -11,7 +11,7 @@ import {governanceSummaryMarkup} from './court-governance-ui.mjs';
 const actions={
  'revenue-minister':['atlas-grain','food-purchase','tax','subsidy','census','register'],
  'works-minister':['atlas-build','industry','special','register','works-buildings','works-develop','works-expand','works-levy-militia','works-release-militia','works-special','works-schedule','works-records'],
- 'war-minister':['espionage','garrison','garrison-purchase','garrison-recruit','garrison-dismiss','garrison-transfer','campaign'],
+ 'war-minister':['army-recovery','espionage','garrison','garrison-purchase','garrison-recruit','garrison-dismiss','garrison-transfer','campaign'],
  'central-general':['register'],
  'personnel-minister':['personnel','personnel-honor','personnel-dismiss','personnel-budget','personnel-delegate','personnel-exam','personnel-hanlin'],
  'justice-minister':['justice','justice-funding','justice-sentence','justice-amnesty','register'],

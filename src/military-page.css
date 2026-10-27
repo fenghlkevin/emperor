@@ -59,3 +59,9 @@ dialog.military-single-page:not([open]){display:none!important}
 @media(min-width:701px) and (max-width:1000px){.military-single-page .draft-controls .industry-targets{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
 .wd-register-entry{display:flex;justify-content:flex-end;margin:0 0 8px}.wd-register-entry button{position:static;transform:none;border:3px double #b99b68;border-radius:4px;background:linear-gradient(#f8edcf,#e6d1a4);color:#6f5736;font:16px GovernanceKai,serif;padding:5px 14px;cursor:pointer}
 .military-audience .court-audience-tasks>button{display:grid;grid-template-columns:35px minmax(0,1fr) 16px;align-items:center;gap:15px}.military-audience .court-audience-tasks>button>span{width:35px;height:35px;box-sizing:border-box}.military-audience .court-audience-tasks>button>div{min-width:0}.military-audience .court-audience-tasks>button>b{margin:0;text-align:right}
+
+/* Keep related audience actions together, with a quiet heading above each pair. */
+.military-audience .court-audience-tasks>.court-task-category{grid-column:1/-1;margin:8px 0 0;font-size:12px;font-weight:400;letter-spacing:4px;color:#947953;line-height:1.5}
+.military-audience .court-audience-tasks:has(.court-task-category){gap:3px 10px;overflow:auto!important}
+.military-audience .court-audience-tasks:has(.court-task-category)>button{padding:8px 10px}
+@media(max-width:700px){.military-audience .court-audience-tasks>.court-task-category{font-size:10px;letter-spacing:2px;margin-top:5px}.military-audience .court-audience-tasks:has(.court-task-category)>button{padding:5px;gap:6px;grid-template-columns:28px minmax(0,1fr) 12px}.military-audience .court-audience-tasks:has(.court-task-category)>button>span{width:28px;height:28px}}

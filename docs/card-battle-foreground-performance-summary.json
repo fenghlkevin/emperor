@@ -1,0 +1,31 @@
+{
+  "status": "completed-evidence",
+  "focusedSeconds": 3615.541,
+  "wallSeconds": 7423.022,
+  "uiGamesInThisRun": 53,
+  "focusedSampleCount": 122,
+  "errors": [],
+  "rendererWorkingSetKiB": {
+    "first": 472096,
+    "last": 594608,
+    "min": 468064,
+    "max": 610944
+  },
+  "frameIntervalsMs": {
+    "medianWindowRange": [
+      8.299999999813735,
+      8.300000000745058
+    ],
+    "p95WindowRange": [
+      8.700000000186265,
+      10.299999999813735
+    ]
+  },
+  "cleanupConfirmedByHarness": true,
+  "limits": [
+    "Each frame statistic is from a 30-second rAF sampling window, not GPU presented FPS or a pooled percentile.",
+    "Working-set measurements show this test duration only; they are not a proof against every possible long-term memory leak.",
+    "Focus loss is excluded from the hour; the foreground total is cumulative measured focus time."
+  ],
+  "evidence": "docs/card-battle-foreground-soak-validation.json"
+}

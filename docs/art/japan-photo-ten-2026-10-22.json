@@ -1,0 +1,438 @@
+{
+  "tool": "built-in image_gen",
+  "status": "completed",
+  "existingJapan": [
+    "葵司",
+    "桥本有菜",
+    "JULIA"
+  ],
+  "likenessNote": "以公开成年日常肖像作二维游戏立绘的五官参考；不声称精确三维扫描。所选人物均未满40岁，无需寻找40岁以上者的早年照片。",
+  "items": [
+    {
+      "key": "mikami-yua",
+      "name": "三上悠亚",
+      "imageUrl": "https://images.entamenext.com/articles_photos/26000/26663/ORG/005bfca7a2956a29937b411ce1b7741c.jpg",
+      "page": "https://entamenext.com/articles/gallery/26663/129133",
+      "status": "downloaded",
+      "ref": "assets/beauties/references/japan-ten-20261022/mikami-yua.jpg",
+      "id": "japan-photo-ten-20261022-01",
+      "title": "樱绡花篮",
+      "asset": "assets/beauties/random/番邦女子/日本女子-三上悠亚-樱绡花篮.png",
+      "prompt": "Use case: photorealistic-natural. Generate ONE adult Japanese woman, realistic costume photograph, isolated full-body PNG with genuine transparent alpha. IMAGE 1 = adult FACE IDENTITY reference ONLY, use individual eye/nose/lip/jaw likeness, do NOT copy its large head framing, upper-body composition or lens distortion. IMAGE 2 = USER-APPROVED BODY PROPORTION REFERENCE, this is the primary template for HEAD SIZE RELATIVE TO SHOULDERS AND TORSO, torso length, waist position, hip size and natural long legs. Match its harmonious slim grown adult skeleton. Small proportionate head, anatomically normal shoulder span, normal chest/ribcage/pelvis sizes, natural neck; no narrow shrunken shoulders, no oversized head, no compact toy body. Keep upper body full size, do not stretch only shins or shrink waist. Use a distant level 85mm full-body fashion camera, no foreshortening or wide angle. A different clearly adult woman age 24+ with distinct face from Image 1. All clothing must be unmistakably JAPANESE summer garments, light breathable fabric, opaque lined and tasteful. Exactly two coherent arms, five fingers per hand, two coherent legs, two properly oriented BARE FEET with five toes each. Correct stable gravity and natural grips. Entire figure, hair ornaments, props and all toes inside portrait 2:3 frame, 5% clear margins. No shoes/socks, no background, no floor, no shadow/glow/matte/checkerboard/text/watermark. Subject identity: 三上悠亚 (mikami-yua). Standing relaxed, one hand carrying woven basket of camellias at hip, other lightly on basket rim. Costume: Blush-pink ro cotton summer YUKATA, authentic straight T-shaped Japanese silhouette, properly overlapping left front OVER right, shortened airy rectangular sleeves, single ivory underlayer only at neckline, cream HAKATA OBI tied in a visible compact bunko bow at back, ankle-length hem raised just enough for both bare feet. Woven small sakura motifs, no big flowing Hanfu skirt. Distinct Japanese kanzashi hair ornament, delicate drop earrings, fine necklace, slim bracelet, tasteful obijime/obidome or netsuke according to garment. Match hairstyle and face identity from Image 1. Do not copy face or Chinese costume from Image 2. Body and head relationship from Image 2 takes priority over earlier drafts.",
+      "statusGeneration": "completed",
+      "initialPrompt": "Use case: photorealistic-natural. Asset type: one full-body adult Japanese historical-fantasy summer game character PNG cutout for an imperial game random beauty pool. Input photograph is an IDENTITY REFERENCE ONLY: preserve the adult celebrity distinctive recognizable facial structure, eyes, nose, mouth and jaw, natural skin texture; create a new outfit, body pose and composition. Realistic elegant costume photography, subtle natural makeup, calm friendly expression, soft neutral lighting, normal 70mm perspective. Entire figure with every hair ornament, prop, finger, hem and both bare feet inside portrait 2:3 frame with comfortable 5% margins. Realistic harmonious adult body proportions around 7.5 heads tall standing equivalent, proportionate head, normal shoulders, natural waist and limbs. Exactly two arms, two anatomically correct hands with five fingers per hand, two legs, two naturally oriented bare feet with five toes each. Natural center of gravity, coherent joints and realistic grip/contact. All figures barefoot, no shoes or socks. Summer fabrics are light silk, cotton, linen and gauze, opaque lined clothing with tasteful full coverage. Truly transparent alpha background, no setting, floor, ground shadow, checkerboard, text, logo, watermark or halo. Ordinary nonsexual fully clothed portrait. Subject: 三上悠亚 (mikami-yua), clearly adult age 24 or older as in supplied adult reference. Standing relaxed contrapposto. Blush-pink thin silk short-sleeved kosode with ivory lined ankle-length flowing skirt, narrow floral obi. Carry a small woven basket of white camellias in right hand; left lightly rests on basket rim. Half-up chestnut wavy hair, gold sakura hair comb, pearl drop earrings, fine gold necklace, jade bracelet, obi charm tassels.",
+      "rejectedProportionPrompt": "Use case: photorealistic-natural. Asset type: one full-body adult Japanese historical-fantasy summer game character PNG cutout for an imperial game random beauty pool. Input photograph is an IDENTITY REFERENCE ONLY: preserve the adult celebrity distinctive recognizable facial structure, eyes, nose, mouth and jaw, natural skin texture; create a new outfit, body pose and composition. Realistic elegant costume photography, subtle natural makeup, calm friendly expression, soft neutral lighting, normal 70mm perspective. Entire figure with every hair ornament, prop, finger, hem and both bare feet inside portrait 2:3 frame with comfortable 5% margins. Realistic harmonious adult body proportions around 7.5 heads tall standing equivalent, proportionate head, normal shoulders, natural waist and limbs. Exactly two arms, two anatomically correct hands with five fingers per hand, two legs, two naturally oriented bare feet with five toes each. Natural center of gravity, coherent joints and realistic grip/contact. All figures barefoot, no shoes or socks. Summer fabrics are light silk, cotton, linen and gauze, opaque lined clothing with tasteful full coverage. Truly transparent alpha background, no setting, floor, ground shadow, checkerboard, text, logo, watermark or halo. Ordinary nonsexual fully clothed portrait. Subject: 三上悠亚 (mikami-yua), clearly adult age 24 or older as in supplied adult reference. Standing relaxed contrapposto. Blush-pink thin silk short-sleeved kosode with ivory lined ankle-length flowing skirt, narrow floral obi. Carry a small woven basket of white camellias in right hand; left lightly rests on basket rim. Half-up chestnut wavy hair, gold sakura hair comb, pearl drop earrings, fine gold necklace, jade bracelet, obi charm tassels. USER COSTUME CORRECTION - THIS OVERRIDES ALL EARLIER CLOTHING WORDING: unmistakably JAPANESE traditional summer clothing. Blush-pink ro cotton summer YUKATA, authentic straight T-shaped Japanese silhouette, properly overlapping left front OVER right, shortened airy rectangular sleeves, single ivory underlayer only at neckline, cream HAKATA OBI tied in a visible compact bunko bow at back, ankle-length hem raised just enough for both bare feet. Woven small sakura motifs, no big flowing Hanfu skirt. Japanese kanzashi hairpins and Japanese accessories. Preserve the originally specified adult identity, handheld prop, barefoot requirement and pose unless clothing correction requires small changes. Do not use Hanfu, hanbok, Chinese ruqun, qipao, Chinese palace headdress or Western fantasy gowns. Thin but opaque lined clothing. GENUINE alpha transparency with no dark gradient, matte or glow. Full figure and toes inside canvas with 5% margins.",
+      "proportionReference": "assets/beauties/references/japan-ten-20261022/user-approved-proportions.png",
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a1615b-c380-73a3-bb7b-58bb2f9b4009/exec-d7fe74ce-df63-4edf-9e45-8e17909d46b2.png",
+      "assetSha256": "6e0992ab26903f75322cbccff2f1e0c79d678ff4a6e6c9c553a35be9d7817c51",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentFraction": 0.7291,
+        "nontransparentBorderPixels": 0,
+        "boundsAbove20": [
+          345,
+          8,
+          861,
+          1522
+        ]
+      },
+      "visualReview": "已查看完整生成图与浅色/深蓝换底拼图，检查日式夏装、光脚、头肩躯干与腿部关系、手持道具接触、画面边缘及真实alpha透明；以用户认可的横笛初稿作为身形比例参考。",
+      "footwear": "barefoot",
+      "supersededSourcePath": "/Users/fengheliang/.codex/generated_images/01a1615b-c380-73a3-bb7b-58bb2f9b4009/exec-03b7b8e1-8cf8-4bdd-9291-3bfb42d7c3af.png",
+      "artworkRevision": "docs/art/japan-korea-slim-legs-feet-2026-10-22.json"
+    },
+    {
+      "key": "asuka-kirara",
+      "name": "明日花绮罗",
+      "imageUrl": "https://ignewsimg.s3.ap-northeast-1.wasabisys.com/2968522257158886370",
+      "page": "https://instagrammernews.com/detail/2968522261336289103",
+      "status": "downloaded",
+      "ref": "assets/beauties/references/japan-ten-20261022/asuka-kirara.jpg",
+      "id": "japan-photo-ten-20261022-02",
+      "title": "紫藤执扇",
+      "asset": "assets/beauties/random/番邦女子/日本女子-明日花绮罗-紫藤执扇.png",
+      "prompt": "Use case: photorealistic-natural. Generate ONE adult Japanese woman, realistic costume photograph, isolated full-body PNG with genuine transparent alpha. IMAGE 1 = adult FACE IDENTITY reference ONLY, use individual eye/nose/lip/jaw likeness, do NOT copy its large head framing, upper-body composition or lens distortion. IMAGE 2 = USER-APPROVED BODY PROPORTION REFERENCE, this is the primary template for HEAD SIZE RELATIVE TO SHOULDERS AND TORSO, torso length, waist position, hip size and natural long legs. Match its harmonious slim grown adult skeleton. Small proportionate head, anatomically normal shoulder span, normal chest/ribcage/pelvis sizes, natural neck; no narrow shrunken shoulders, no oversized head, no compact toy body. Keep upper body full size, do not stretch only shins or shrink waist. Use a distant level 85mm full-body fashion camera, no foreshortening or wide angle. A different clearly adult woman age 24+ with distinct face from Image 1. All clothing must be unmistakably JAPANESE summer garments, light breathable fabric, opaque lined and tasteful. Exactly two coherent arms, five fingers per hand, two coherent legs, two properly oriented BARE FEET with five toes each. Correct stable gravity and natural grips. Entire figure, hair ornaments, props and all toes inside portrait 2:3 frame, 5% clear margins. No shoes/socks, no background, no floor, no shadow/glow/matte/checkerboard/text/watermark. Subject identity: 明日花绮罗 (asuka-kirara). Balanced small dance step, one hand holding open Japanese folding fan at shoulder, other relaxed near waist. Costume: Pale-lilac lightweight Japanese summer KOSODE, straight T-shaped robe, proper left-over-right lapels, short rectangular kimono sleeves, lavender narrow HAKATA OBI and compact back knot, subtle wisteria motifs, ankles visible, no Chinese dancing ribbons or multilayer skirt. Distinct Japanese kanzashi hair ornament, delicate drop earrings, fine necklace, slim bracelet, tasteful obijime/obidome or netsuke according to garment. Match hairstyle and face identity from Image 1. Do not copy face or Chinese costume from Image 2. Body and head relationship from Image 2 takes priority over earlier drafts.",
+      "statusGeneration": "completed",
+      "initialPrompt": "Use case: photorealistic-natural. Asset type: one full-body adult Japanese historical-fantasy summer game character PNG cutout for an imperial game random beauty pool. Input photograph is an IDENTITY REFERENCE ONLY: preserve the adult celebrity distinctive recognizable facial structure, eyes, nose, mouth and jaw, natural skin texture; create a new outfit, body pose and composition. Realistic elegant costume photography, subtle natural makeup, calm friendly expression, soft neutral lighting, normal 70mm perspective. Entire figure with every hair ornament, prop, finger, hem and both bare feet inside portrait 2:3 frame with comfortable 5% margins. Realistic harmonious adult body proportions around 7.5 heads tall standing equivalent, proportionate head, normal shoulders, natural waist and limbs. Exactly two arms, two anatomically correct hands with five fingers per hand, two legs, two naturally oriented bare feet with five toes each. Natural center of gravity, coherent joints and realistic grip/contact. All figures barefoot, no shoes or socks. Summer fabrics are light silk, cotton, linen and gauze, opaque lined clothing with tasteful full coverage. Truly transparent alpha background, no setting, floor, ground shadow, checkerboard, text, logo, watermark or halo. Ordinary nonsexual fully clothed portrait. Subject: 明日花绮罗 (asuka-kirara), clearly adult age 24 or older as in supplied adult reference. Standing in a gentle classical dance step, weight on left foot, right foot lightly extended on toes, balanced hips, left hand holding open painted folding fan at shoulder height, right relaxed at waist. Pale lilac lightweight lined summer kimono with shorter airy sleeves and narrow lavender sash, floral embroidery. Wavy honey-brown hair in low updo, wisteria kanzashi, crystal earrings, gold bracelet, small pendant and obi beads.",
+      "rejectedProportionPrompt": "Use case: photorealistic-natural. Asset type: one full-body adult Japanese historical-fantasy summer game character PNG cutout for an imperial game random beauty pool. Input photograph is an IDENTITY REFERENCE ONLY: preserve the adult celebrity distinctive recognizable facial structure, eyes, nose, mouth and jaw, natural skin texture; create a new outfit, body pose and composition. Realistic elegant costume photography, subtle natural makeup, calm friendly expression, soft neutral lighting, normal 70mm perspective. Entire figure with every hair ornament, prop, finger, hem and both bare feet inside portrait 2:3 frame with comfortable 5% margins. Realistic harmonious adult body proportions around 7.5 heads tall standing equivalent, proportionate head, normal shoulders, natural waist and limbs. Exactly two arms, two anatomically correct hands with five fingers per hand, two legs, two naturally oriented bare feet with five toes each. Natural center of gravity, coherent joints and realistic grip/contact. All figures barefoot, no shoes or socks. Summer fabrics are light silk, cotton, linen and gauze, opaque lined clothing with tasteful full coverage. Truly transparent alpha background, no setting, floor, ground shadow, checkerboard, text, logo, watermark or halo. Ordinary nonsexual fully clothed portrait. Subject: 明日花绮罗 (asuka-kirara), clearly adult age 24 or older as in supplied adult reference. Standing in a gentle classical dance step, weight on left foot, right foot lightly extended on toes, balanced hips, left hand holding open painted folding fan at shoulder height, right relaxed at waist. Pale lilac lightweight lined summer kimono with shorter airy sleeves and narrow lavender sash, floral embroidery. Wavy honey-brown hair in low updo, wisteria kanzashi, crystal earrings, gold bracelet, small pendant and obi beads. USER COSTUME CORRECTION - THIS OVERRIDES ALL EARLIER CLOTHING WORDING: unmistakably JAPANESE traditional summer clothing. Pale-lilac lightweight Japanese summer KOSODE, straight T-shaped robe, proper left-over-right lapels, short rectangular kimono sleeves, lavender narrow HAKATA OBI and compact back knot, subtle wisteria motifs, ankles visible, no Chinese dancing ribbons or multilayer skirt. Japanese kanzashi hairpins and Japanese accessories. Preserve the originally specified adult identity, handheld prop, barefoot requirement and pose unless clothing correction requires small changes. Do not use Hanfu, hanbok, Chinese ruqun, qipao, Chinese palace headdress or Western fantasy gowns. Thin but opaque lined clothing. GENUINE alpha transparency with no dark gradient, matte or glow. Full figure and toes inside canvas with 5% margins.",
+      "proportionReference": "assets/beauties/references/japan-ten-20261022/user-approved-proportions.png",
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a1615b-c380-73a3-bb7b-58bb2f9b4009/exec-452216c8-92c3-470a-b4b6-1bd60a56a4e8.png",
+      "assetSha256": "e12ccaa863f0e8f23cdb6b4663a8d118ce9270fa8c0292875d77042839478cc5",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentFraction": 0.7235,
+        "nontransparentBorderPixels": 0,
+        "boundsAbove20": [
+          334,
+          15,
+          890,
+          1514
+        ]
+      },
+      "visualReview": "已查看完整生成图与浅色/深蓝换底拼图，检查日式夏装、光脚、头肩躯干与腿部关系、手持道具接触、画面边缘及真实alpha透明；以用户认可的横笛初稿作为身形比例参考。",
+      "footwear": "barefoot",
+      "supersededSourcePath": "/Users/fengheliang/.codex/generated_images/01a1615b-c380-73a3-bb7b-58bb2f9b4009/exec-29731d64-7c39-493b-8ccc-d17765d2c5e1.png",
+      "artworkRevision": "docs/art/japan-korea-slim-legs-feet-2026-10-22.json"
+    },
+    {
+      "key": "fukada-eimi",
+      "name": "深田咏美",
+      "imageUrl": "https://imgcp.aacdn.jp/img-a/auto/auto/aa_news/article/2023/12/01/65694bffdf93b.jpg",
+      "page": "https://news.allabout.co.jp/articles/o/72742/?page=2",
+      "status": "downloaded",
+      "ref": "assets/beauties/references/japan-ten-20261022/fukada-eimi.jpg",
+      "id": "japan-photo-ten-20261022-03",
+      "title": "青瓷茶香",
+      "asset": "assets/beauties/random/番邦女子/日本女子-深田咏美-青瓷茶香.png",
+      "prompt": "Use case: photorealistic-natural. Generate ONE adult Japanese woman, realistic costume photograph, isolated full-body PNG with genuine transparent alpha. IMAGE 1 = adult FACE IDENTITY reference ONLY, use individual eye/nose/lip/jaw likeness, do NOT copy its large head framing, upper-body composition or lens distortion. IMAGE 2 = USER-APPROVED BODY PROPORTION REFERENCE, this is the primary template for HEAD SIZE RELATIVE TO SHOULDERS AND TORSO, torso length, waist position, hip size and natural long legs. Match its harmonious slim grown adult skeleton. Small proportionate head, anatomically normal shoulder span, normal chest/ribcage/pelvis sizes, natural neck; no narrow shrunken shoulders, no oversized head, no compact toy body. Keep upper body full size, do not stretch only shins or shrink waist. Use a distant level 85mm full-body fashion camera, no foreshortening or wide angle. A different clearly adult woman age 24+ with distinct face from Image 1. All clothing must be unmistakably JAPANESE summer garments, light breathable fabric, opaque lined and tasteful. Exactly two coherent arms, five fingers per hand, two coherent legs, two properly oriented BARE FEET with five toes each. Correct stable gravity and natural grips. Entire figure, hair ornaments, props and all toes inside portrait 2:3 frame, 5% clear margins. No shoes/socks, no background, no floor, no shadow/glow/matte/checkerboard/text/watermark. Subject identity: 深田咏美 (fukada-eimi). Sit upright on a simple low wooden stool, realistic normal-length torso, thighs and lower legs, knees together and both bare feet grounded. Hold tea cup and saucer naturally at lap. Costume: Seafoam Japanese women summer JINBEI: authentic short-sleeved collarless side-tied cotton kimono jacket, matching loose calf-length trousers, simple side ties rather than waist sash. Small shibori patterns. No long skirt. Distinct Japanese kanzashi hair ornament, delicate drop earrings, fine necklace, slim bracelet, tasteful obijime/obidome or netsuke according to garment. Match hairstyle and face identity from Image 1. Do not copy face or Chinese costume from Image 2. Body and head relationship from Image 2 takes priority over earlier drafts.",
+      "statusGeneration": "completed",
+      "initialPrompt": "Use case: photorealistic-natural. Asset type: one full-body adult Japanese historical-fantasy summer game character PNG cutout for an imperial game random beauty pool. Input photograph is an IDENTITY REFERENCE ONLY: preserve the adult celebrity distinctive recognizable facial structure, eyes, nose, mouth and jaw, natural skin texture; create a new outfit, body pose and composition. Realistic elegant costume photography, subtle natural makeup, calm friendly expression, soft neutral lighting, normal 70mm perspective. Entire figure with every hair ornament, prop, finger, hem and both bare feet inside portrait 2:3 frame with comfortable 5% margins. Realistic harmonious adult body proportions around 7.5 heads tall standing equivalent, proportionate head, normal shoulders, natural waist and limbs. Exactly two arms, two anatomically correct hands with five fingers per hand, two legs, two naturally oriented bare feet with five toes each. Natural center of gravity, coherent joints and realistic grip/contact. All figures barefoot, no shoes or socks. Summer fabrics are light silk, cotton, linen and gauze, opaque lined clothing with tasteful full coverage. Truly transparent alpha background, no setting, floor, ground shadow, checkerboard, text, logo, watermark or halo. Ordinary nonsexual fully clothed portrait. Subject: 深田咏美 (fukada-eimi), clearly adult age 24 or older as in supplied adult reference. Seated sideways on a small simple carved stool, natural upright torso, knees together, both bare feet resting visibly side by side. Seafoam short-sleeved light silk cross-wrap blouse, lined cream calf-length pleated skirt. Hold a small turquoise ceramic tea cup and matching saucer naturally in both hands at lap. Short dark-brown bob, silver leaf hairpin, jade earrings, necklace, bracelet and waist sachet. Stool is the only supporting furniture.",
+      "rejectedProportionPrompt": "Use case: photorealistic-natural. Asset type: one full-body adult Japanese historical-fantasy summer game character PNG cutout for an imperial game random beauty pool. Input photograph is an IDENTITY REFERENCE ONLY: preserve the adult celebrity distinctive recognizable facial structure, eyes, nose, mouth and jaw, natural skin texture; create a new outfit, body pose and composition. Realistic elegant costume photography, subtle natural makeup, calm friendly expression, soft neutral lighting, normal 70mm perspective. Entire figure with every hair ornament, prop, finger, hem and both bare feet inside portrait 2:3 frame with comfortable 5% margins. Realistic harmonious adult body proportions around 7.5 heads tall standing equivalent, proportionate head, normal shoulders, natural waist and limbs. Exactly two arms, two anatomically correct hands with five fingers per hand, two legs, two naturally oriented bare feet with five toes each. Natural center of gravity, coherent joints and realistic grip/contact. All figures barefoot, no shoes or socks. Summer fabrics are light silk, cotton, linen and gauze, opaque lined clothing with tasteful full coverage. Truly transparent alpha background, no setting, floor, ground shadow, checkerboard, text, logo, watermark or halo. Ordinary nonsexual fully clothed portrait. Subject: 深田咏美 (fukada-eimi), clearly adult age 24 or older as in supplied adult reference. Seated sideways on a small simple carved stool, natural upright torso, knees together, both bare feet resting visibly side by side. Seafoam short-sleeved light silk cross-wrap blouse, lined cream calf-length pleated skirt. Hold a small turquoise ceramic tea cup and matching saucer naturally in both hands at lap. Short dark-brown bob, silver leaf hairpin, jade earrings, necklace, bracelet and waist sachet. Stool is the only supporting furniture. USER COSTUME CORRECTION - THIS OVERRIDES ALL EARLIER CLOTHING WORDING: unmistakably JAPANESE traditional summer clothing. Seafoam Japanese women summer JINBEI: authentic short-sleeved collarless side-tied cotton kimono jacket, matching loose calf-length trousers, simple side ties rather than waist sash. Small shibori patterns. No long skirt. Japanese kanzashi hairpins and Japanese accessories. Preserve the originally specified adult identity, handheld prop, barefoot requirement and pose unless clothing correction requires small changes. Do not use Hanfu, hanbok, Chinese ruqun, qipao, Chinese palace headdress or Western fantasy gowns. Thin but opaque lined clothing. GENUINE alpha transparency with no dark gradient, matte or glow. Full figure and toes inside canvas with 5% margins.",
+      "proportionReference": "assets/beauties/references/japan-ten-20261022/user-approved-proportions.png",
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a1615b-c380-73a3-bb7b-58bb2f9b4009/exec-1d1b9a6c-8343-496c-8b30-6dd3145ddef3.png",
+      "assetSha256": "2c801200d0f23bb651f0a9e430c205b58ac9f8ddfc3b9cc85266ff213ea042fd",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentFraction": 0.6785,
+        "nontransparentBorderPixels": 0,
+        "boundsAbove20": [
+          215,
+          9,
+          773,
+          1509
+        ]
+      },
+      "visualReview": "已查看完整生成图与浅色/深蓝换底拼图，检查日式夏装、光脚、头肩躯干与腿部关系、手持道具接触、画面边缘及真实alpha透明；以用户认可的横笛初稿作为身形比例参考。",
+      "footwear": "barefoot",
+      "supersededSourcePath": "/Users/fengheliang/.codex/generated_images/01a1615b-c380-73a3-bb7b-58bb2f9b4009/exec-6f58766e-c181-4bad-af29-d1b935bc810c.png",
+      "artworkRevision": "docs/art/japan-korea-slim-legs-feet-2026-10-22.json"
+    },
+    {
+      "key": "kawakita-saika",
+      "name": "河北彩花",
+      "imageUrl": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts221/v4/72/2d/c2/722dc2cc-2635-1a3d-5faf-9f50d6ed0dcb/mza_8927496975690926174.jpg/1200x1200bf-60.jpg",
+      "page": "https://podcasts.apple.com/us/podcast/河北彩伽のfairy-flower/id1749505547",
+      "status": "downloaded",
+      "ref": "assets/beauties/references/japan-ten-20261022/kawakita-saika.jpg",
+      "id": "japan-photo-ten-20261022-04",
+      "title": "月白横笛",
+      "asset": "assets/beauties/random/番邦女子/日本女子-河北彩花-月白横笛.png",
+      "prompt": "Use case: photorealistic-natural. Generate ONE adult Japanese woman, realistic costume photograph, isolated full-body PNG with genuine transparent alpha. IMAGE 1 = adult FACE IDENTITY reference ONLY, use individual eye/nose/lip/jaw likeness, do NOT copy its large head framing, upper-body composition or lens distortion. IMAGE 2 = USER-APPROVED BODY PROPORTION REFERENCE, this is the primary template for HEAD SIZE RELATIVE TO SHOULDERS AND TORSO, torso length, waist position, hip size and natural long legs. Match its harmonious slim grown adult skeleton. Small proportionate head, anatomically normal shoulder span, normal chest/ribcage/pelvis sizes, natural neck; no narrow shrunken shoulders, no oversized head, no compact toy body. Keep upper body full size, do not stretch only shins or shrink waist. Use a distant level 85mm full-body fashion camera, no foreshortening or wide angle. A different clearly adult woman age 24+ with distinct face from Image 1. All clothing must be unmistakably JAPANESE summer garments, light breathable fabric, opaque lined and tasteful. Exactly two coherent arms, five fingers per hand, two coherent legs, two properly oriented BARE FEET with five toes each. Correct stable gravity and natural grips. Entire figure, hair ornaments, props and all toes inside portrait 2:3 frame, 5% clear margins. No shoes/socks, no background, no floor, no shadow/glow/matte/checkerboard/text/watermark. Subject identity: 河北彩花 (kawakita-saika). Standing in the EXACT SAME natural three-quarter pose, body proportions, shoulder width, torso length, limb length and head size as Image 2, both hands hold bamboo flute at waist. Costume: Ivory and pale-blue Japanese summer YUKATA with iris motifs, authentic T-shaped cut, rectangular elbow-length kimono sleeves, proper left-over-right lapels, indigo HAKATA OBI tied in a compact kai-no-kuchi knot behind. Straight ankle-length silhouette, no gown or Chinese sash. Distinct Japanese kanzashi hair ornament, delicate drop earrings, fine necklace, slim bracelet, tasteful obijime/obidome or netsuke according to garment. Match hairstyle and face identity from Image 1. Do not copy face or Chinese costume from Image 2. Body and head relationship from Image 2 takes priority over earlier drafts.",
+      "statusGeneration": "completed",
+      "initialPrompt": "Use case: photorealistic-natural. Asset type: one full-body adult Japanese historical-fantasy summer game character PNG cutout for an imperial game random beauty pool. Input photograph is an IDENTITY REFERENCE ONLY: preserve the adult celebrity distinctive recognizable facial structure, eyes, nose, mouth and jaw, natural skin texture; create a new outfit, body pose and composition. Realistic elegant costume photography, subtle natural makeup, calm friendly expression, soft neutral lighting, normal 70mm perspective. Entire figure with every hair ornament, prop, finger, hem and both bare feet inside portrait 2:3 frame with comfortable 5% margins. Realistic harmonious adult body proportions around 7.5 heads tall standing equivalent, proportionate head, normal shoulders, natural waist and limbs. Exactly two arms, two anatomically correct hands with five fingers per hand, two legs, two naturally oriented bare feet with five toes each. Natural center of gravity, coherent joints and realistic grip/contact. All figures barefoot, no shoes or socks. Summer fabrics are light silk, cotton, linen and gauze, opaque lined clothing with tasteful full coverage. Truly transparent alpha background, no setting, floor, ground shadow, checkerboard, text, logo, watermark or halo. Ordinary nonsexual fully clothed portrait. Subject: 河北彩花 (kawakita-saika), clearly adult age 24 or older as in supplied adult reference. Standing in natural three-quarter pose, shoulders level, both bare feet visible. Ivory sleeveless lined summer silk long dress with pale blue open gauze haori and narrow blue obi, subtle iris embroidery. Both hands support a bamboo flute horizontally at waist, no playing. Dark shoulder-length hair half-up, silver crescent hairpin, pearl ear drops, blue pendant, slim silver bangles and waist chain.",
+      "rejectedProportionPrompt": "Use case: photorealistic-natural. Asset type: one full-body adult Japanese historical-fantasy summer game character PNG cutout for an imperial game random beauty pool. Input photograph is an IDENTITY REFERENCE ONLY: preserve the adult celebrity distinctive recognizable facial structure, eyes, nose, mouth and jaw, natural skin texture; create a new outfit, body pose and composition. Realistic elegant costume photography, subtle natural makeup, calm friendly expression, soft neutral lighting, normal 70mm perspective. Entire figure with every hair ornament, prop, finger, hem and both bare feet inside portrait 2:3 frame with comfortable 5% margins. Realistic harmonious adult body proportions around 7.5 heads tall standing equivalent, proportionate head, normal shoulders, natural waist and limbs. Exactly two arms, two anatomically correct hands with five fingers per hand, two legs, two naturally oriented bare feet with five toes each. Natural center of gravity, coherent joints and realistic grip/contact. All figures barefoot, no shoes or socks. Summer fabrics are light silk, cotton, linen and gauze, opaque lined clothing with tasteful full coverage. Truly transparent alpha background, no setting, floor, ground shadow, checkerboard, text, logo, watermark or halo. Ordinary nonsexual fully clothed portrait. Subject: 河北彩花 (kawakita-saika), clearly adult age 24 or older as in supplied adult reference. Standing in natural three-quarter pose, shoulders level, both bare feet visible. Ivory sleeveless lined summer silk long dress with pale blue open gauze haori and narrow blue obi, subtle iris embroidery. Both hands support a bamboo flute horizontally at waist, no playing. Dark shoulder-length hair half-up, silver crescent hairpin, pearl ear drops, blue pendant, slim silver bangles and waist chain. USER COSTUME CORRECTION - THIS OVERRIDES ALL EARLIER CLOTHING WORDING: unmistakably JAPANESE traditional summer clothing. Ivory and pale-blue Japanese summer YUKATA with iris motifs, authentic T-shaped cut, rectangular elbow-length kimono sleeves, proper left-over-right lapels, indigo HAKATA OBI tied in a compact kai-no-kuchi knot behind. Straight ankle-length silhouette, no gown or Chinese sash. Japanese kanzashi hairpins and Japanese accessories. Preserve the originally specified adult identity, handheld prop, barefoot requirement and pose unless clothing correction requires small changes. Do not use Hanfu, hanbok, Chinese ruqun, qipao, Chinese palace headdress or Western fantasy gowns. Thin but opaque lined clothing. GENUINE alpha transparency with no dark gradient, matte or glow. Full figure and toes inside canvas with 5% margins.",
+      "proportionReference": "assets/beauties/references/japan-ten-20261022/user-approved-proportions.png",
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a1615b-c380-73a3-bb7b-58bb2f9b4009/exec-ff1d43f6-0b59-48bc-9b2e-e4453934aaf5.png",
+      "assetSha256": "00a5b67be494225ad66d43d82d76f8fcdbab06c816cba39bd5c7c71c387892a4",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentFraction": 0.6264,
+        "nontransparentBorderPixels": 0,
+        "boundsAbove20": [
+          157,
+          4,
+          860,
+          1519
+        ]
+      },
+      "visualReview": "已查看完整生成图与浅色/深蓝换底拼图，检查日式夏装、光脚、头肩躯干与腿部关系、手持道具接触、画面边缘及真实alpha透明；以用户认可的横笛初稿作为身形比例参考。",
+      "footwear": "barefoot",
+      "actualFinalPrompt": "Edit the user-approved original flute portrait; preserve exact face, body proportions, head size, torso, limbs, pose, hands and flute. Change only costume to lightweight Japanese white-blue iris kosode with rectangular sleeves, left-over-right wrap, blue Hakata obi, obijime, silver obidome and back bow. Preserve barefoot and transparent alpha.",
+      "supersededSourcePath": "/Users/fengheliang/.codex/generated_images/01a1615b-c380-73a3-bb7b-58bb2f9b4009/exec-3dba7bc1-facb-4ba8-b55c-89a61f737adb.png",
+      "artworkRevision": "docs/art/japan-korea-slim-legs-feet-2026-10-22.json"
+    },
+    {
+      "key": "ishikawa-mio",
+      "name": "石川澪",
+      "imageUrl": "https://pbs.twimg.com/media/FroyggUagAAvci2.jpg",
+      "page": "https://x.com/fempass/status/1645364748849156097",
+      "status": "downloaded",
+      "ref": "assets/beauties/references/japan-ten-20261022/ishikawa-mio.jpg",
+      "id": "japan-photo-ten-20261022-05",
+      "title": "浅杏书卷",
+      "asset": "assets/beauties/random/番邦女子/日本女子-石川澪-浅杏书卷.png",
+      "prompt": "Use case: photorealistic-natural. Generate ONE adult Japanese woman, realistic costume photograph, isolated full-body PNG with genuine transparent alpha. IMAGE 1 = adult FACE IDENTITY reference ONLY, use individual eye/nose/lip/jaw likeness, do NOT copy its large head framing, upper-body composition or lens distortion. IMAGE 2 = USER-APPROVED BODY PROPORTION REFERENCE, this is the primary template for HEAD SIZE RELATIVE TO SHOULDERS AND TORSO, torso length, waist position, hip size and natural long legs. Match its harmonious slim grown adult skeleton. Small proportionate head, anatomically normal shoulder span, normal chest/ribcage/pelvis sizes, natural neck; no narrow shrunken shoulders, no oversized head, no compact toy body. Keep upper body full size, do not stretch only shins or shrink waist. Use a distant level 85mm full-body fashion camera, no foreshortening or wide angle. A different clearly adult woman age 24+ with distinct face from Image 1. All clothing must be unmistakably JAPANESE summer garments, light breathable fabric, opaque lined and tasteful. Exactly two coherent arms, five fingers per hand, two coherent legs, two properly oriented BARE FEET with five toes each. Correct stable gravity and natural grips. Entire figure, hair ornaments, props and all toes inside portrait 2:3 frame, 5% clear margins. No shoes/socks, no background, no floor, no shadow/glow/matte/checkerboard/text/watermark. Subject identity: 石川澪 (ishikawa-mio). Sit upright on simple low stool, thighs extend naturally forward from hips, bent knees, long enough shins, both bare feet grounded. Hold open poetry book at lap. Seated height must follow a normal adult skeleton, not compact doll proportions. Costume: Apricot Japanese summer KOSODE with subtle plum motifs, traditional Japanese straight silhouette and rectangular elbow sleeves, ivory HAKATA OBI, visible obijime cord and netsuke charm. Proper left-over-right lapels, ankle-length hem with both feet visible. No blouse/skirt combination. Distinct Japanese kanzashi hair ornament, delicate drop earrings, fine necklace, slim bracelet, tasteful obijime/obidome or netsuke according to garment. Match hairstyle and face identity from Image 1. Do not copy face or Chinese costume from Image 2. Body and head relationship from Image 2 takes priority over earlier drafts.",
+      "statusGeneration": "completed",
+      "initialPrompt": "Use case: photorealistic-natural. Asset type: one full-body adult Japanese historical-fantasy summer game character PNG cutout for an imperial game random beauty pool. Input photograph is an IDENTITY REFERENCE ONLY: preserve the adult celebrity distinctive recognizable facial structure, eyes, nose, mouth and jaw, natural skin texture; create a new outfit, body pose and composition. Realistic elegant costume photography, subtle natural makeup, calm friendly expression, soft neutral lighting, normal 70mm perspective. Entire figure with every hair ornament, prop, finger, hem and both bare feet inside portrait 2:3 frame with comfortable 5% margins. Realistic harmonious adult body proportions around 7.5 heads tall standing equivalent, proportionate head, normal shoulders, natural waist and limbs. Exactly two arms, two anatomically correct hands with five fingers per hand, two legs, two naturally oriented bare feet with five toes each. Natural center of gravity, coherent joints and realistic grip/contact. All figures barefoot, no shoes or socks. Summer fabrics are light silk, cotton, linen and gauze, opaque lined clothing with tasteful full coverage. Truly transparent alpha background, no setting, floor, ground shadow, checkerboard, text, logo, watermark or halo. Ordinary nonsexual fully clothed portrait. Subject: 石川澪 (ishikawa-mio), clearly adult age 24 or older as in supplied adult reference. Seated on a plain low stool with knees angled together to one side, both bare feet unobstructed. Pale apricot short-sleeved linen wrap blouse, ivory lined airy long skirt with plum motifs. Hold an open small bound poetry book in both hands at lap, blank unlettered pages. Dark hair in loose low bun with small pearl pins, rose-quartz earrings, delicate necklace, slim bracelet, embroidered obi pouch. Stool is only supporting object.",
+      "rejectedProportionPrompt": "Use case: photorealistic-natural. Asset type: one full-body adult Japanese historical-fantasy summer game character PNG cutout for an imperial game random beauty pool. Input photograph is an IDENTITY REFERENCE ONLY: preserve the adult celebrity distinctive recognizable facial structure, eyes, nose, mouth and jaw, natural skin texture; create a new outfit, body pose and composition. Realistic elegant costume photography, subtle natural makeup, calm friendly expression, soft neutral lighting, normal 70mm perspective. Entire figure with every hair ornament, prop, finger, hem and both bare feet inside portrait 2:3 frame with comfortable 5% margins. Realistic harmonious adult body proportions around 7.5 heads tall standing equivalent, proportionate head, normal shoulders, natural waist and limbs. Exactly two arms, two anatomically correct hands with five fingers per hand, two legs, two naturally oriented bare feet with five toes each. Natural center of gravity, coherent joints and realistic grip/contact. All figures barefoot, no shoes or socks. Summer fabrics are light silk, cotton, linen and gauze, opaque lined clothing with tasteful full coverage. Truly transparent alpha background, no setting, floor, ground shadow, checkerboard, text, logo, watermark or halo. Ordinary nonsexual fully clothed portrait. Subject: 石川澪 (ishikawa-mio), clearly adult age 24 or older as in supplied adult reference. Seated on a plain low stool with knees angled together to one side, both bare feet unobstructed. Pale apricot short-sleeved linen wrap blouse, ivory lined airy long skirt with plum motifs. Hold an open small bound poetry book in both hands at lap, blank unlettered pages. Dark hair in loose low bun with small pearl pins, rose-quartz earrings, delicate necklace, slim bracelet, embroidered obi pouch. Stool is only supporting object. USER COSTUME CORRECTION - THIS OVERRIDES ALL EARLIER CLOTHING WORDING: unmistakably JAPANESE traditional summer clothing. Apricot Japanese summer KOSODE with subtle plum motifs, traditional Japanese straight silhouette and rectangular elbow sleeves, ivory HAKATA OBI, visible obijime cord and netsuke charm. Proper left-over-right lapels, ankle-length hem with both feet visible. No blouse/skirt combination. Japanese kanzashi hairpins and Japanese accessories. Preserve the originally specified adult identity, handheld prop, barefoot requirement and pose unless clothing correction requires small changes. Do not use Hanfu, hanbok, Chinese ruqun, qipao, Chinese palace headdress or Western fantasy gowns. Thin but opaque lined clothing. GENUINE alpha transparency with no dark gradient, matte or glow. Full figure and toes inside canvas with 5% margins.",
+      "proportionReference": "assets/beauties/references/japan-ten-20261022/user-approved-proportions.png",
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a1615b-c380-73a3-bb7b-58bb2f9b4009/exec-80ca1e3c-5d35-43f8-8579-47d5fa37619f.png",
+      "assetSha256": "798f754517a8ace85f316524ce00be361b80d6620faff6303d21b9a982b3eadf",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentFraction": 0.621,
+        "nontransparentBorderPixels": 0,
+        "boundsAbove20": [
+          237,
+          14,
+          844,
+          1519
+        ]
+      },
+      "visualReview": "已查看完整生成图与浅色/深蓝换底拼图，检查日式夏装、光脚、头肩躯干与腿部关系、手持道具接触、画面边缘及真实alpha透明；以用户认可的横笛初稿作为身形比例参考。",
+      "footwear": "barefoot",
+      "supersededSourcePath": "/Users/fengheliang/.codex/generated_images/01a1615b-c380-73a3-bb7b-58bb2f9b4009/exec-24321a6e-a359-43fe-9b72-a7b74456fe42.png",
+      "artworkRevision": "docs/art/japan-korea-slim-legs-feet-2026-10-22.json"
+    },
+    {
+      "key": "matsumoto-ichika",
+      "name": "松本一香",
+      "imageUrl": "https://i.pinimg.com/originals/93/73/bf/9373bf6f346ff3da506558367782646b.jpg",
+      "page": "https://jp.pinterest.com/mambrain/松本いちか/",
+      "status": "downloaded",
+      "ref": "assets/beauties/references/japan-ten-20261022/matsumoto-ichika.jpg",
+      "id": "japan-photo-ten-20261022-06",
+      "title": "竹露香盒",
+      "asset": "assets/beauties/random/番邦女子/日本女子-松本一香-竹露香盒.png",
+      "prompt": "Use case: photorealistic-natural. Generate ONE adult Japanese woman, realistic costume photograph, isolated full-body PNG with genuine transparent alpha. IMAGE 1 = adult FACE IDENTITY reference ONLY, use individual eye/nose/lip/jaw likeness, do NOT copy its large head framing, upper-body composition or lens distortion. IMAGE 2 = USER-APPROVED BODY PROPORTION REFERENCE, this is the primary template for HEAD SIZE RELATIVE TO SHOULDERS AND TORSO, torso length, waist position, hip size and natural long legs. Match its harmonious slim grown adult skeleton. Small proportionate head, anatomically normal shoulder span, normal chest/ribcage/pelvis sizes, natural neck; no narrow shrunken shoulders, no oversized head, no compact toy body. Keep upper body full size, do not stretch only shins or shrink waist. Use a distant level 85mm full-body fashion camera, no foreshortening or wide angle. A different clearly adult woman age 24+ with distinct face from Image 1. All clothing must be unmistakably JAPANESE summer garments, light breathable fabric, opaque lined and tasteful. Exactly two coherent arms, five fingers per hand, two coherent legs, two properly oriented BARE FEET with five toes each. Correct stable gravity and natural grips. Entire figure, hair ornaments, props and all toes inside portrait 2:3 frame, 5% clear margins. No shoes/socks, no background, no floor, no shadow/glow/matte/checkerboard/text/watermark. Subject identity: 松本一香 (matsumoto-ichika). Standing relaxed, hold a small closed lacquer incense box in both hands at low waist. Costume: Bamboo-green Japanese short-sleeved light cotton KOSODE paired with ivory ANDON HAKAMA, authentic broad pleats and tied hakama himo, calf-to-ankle length so bare feet visible. Genuine Japanese historical costume, no high-neck Chinese blouse. Distinct Japanese kanzashi hair ornament, delicate drop earrings, fine necklace, slim bracelet, tasteful obijime/obidome or netsuke according to garment. Match hairstyle and face identity from Image 1. Do not copy face or Chinese costume from Image 2. Body and head relationship from Image 2 takes priority over earlier drafts.",
+      "statusGeneration": "completed",
+      "initialPrompt": "Use case: photorealistic-natural. Asset type: one full-body adult Japanese historical-fantasy summer game character PNG cutout for an imperial game random beauty pool. Input photograph is an IDENTITY REFERENCE ONLY: preserve the adult celebrity distinctive recognizable facial structure, eyes, nose, mouth and jaw, natural skin texture; create a new outfit, body pose and composition. Realistic elegant costume photography, subtle natural makeup, calm friendly expression, soft neutral lighting, normal 70mm perspective. Entire figure with every hair ornament, prop, finger, hem and both bare feet inside portrait 2:3 frame with comfortable 5% margins. Realistic harmonious adult body proportions around 7.5 heads tall standing equivalent, proportionate head, normal shoulders, natural waist and limbs. Exactly two arms, two anatomically correct hands with five fingers per hand, two legs, two naturally oriented bare feet with five toes each. Natural center of gravity, coherent joints and realistic grip/contact. All figures barefoot, no shoes or socks. Summer fabrics are light silk, cotton, linen and gauze, opaque lined clothing with tasteful full coverage. Truly transparent alpha background, no setting, floor, ground shadow, checkerboard, text, logo, watermark or halo. Ordinary nonsexual fully clothed portrait. Subject: 松本一香 (matsumoto-ichika), clearly adult age 24 or older as in supplied adult reference. Standing relaxed with one foot slightly in front, full grown adult slender build, ordinary head-to-body ratio. Light bamboo-green sleeveless high-neck silk blouse, flowing lined cream wide trousers with silk ribbon belt and delicate bamboo embroidery. Left hand supports a small closed lacquer incense box, right fingers lightly touch lid. Long brown hair partly braided, silver bamboo comb, green stone earrings, pendant, bangles, obi tassels.",
+      "rejectedProportionPrompt": "Use case: photorealistic-natural. Asset type: one full-body adult Japanese historical-fantasy summer game character PNG cutout for an imperial game random beauty pool. Input photograph is an IDENTITY REFERENCE ONLY: preserve the adult celebrity distinctive recognizable facial structure, eyes, nose, mouth and jaw, natural skin texture; create a new outfit, body pose and composition. Realistic elegant costume photography, subtle natural makeup, calm friendly expression, soft neutral lighting, normal 70mm perspective. Entire figure with every hair ornament, prop, finger, hem and both bare feet inside portrait 2:3 frame with comfortable 5% margins. Realistic harmonious adult body proportions around 7.5 heads tall standing equivalent, proportionate head, normal shoulders, natural waist and limbs. Exactly two arms, two anatomically correct hands with five fingers per hand, two legs, two naturally oriented bare feet with five toes each. Natural center of gravity, coherent joints and realistic grip/contact. All figures barefoot, no shoes or socks. Summer fabrics are light silk, cotton, linen and gauze, opaque lined clothing with tasteful full coverage. Truly transparent alpha background, no setting, floor, ground shadow, checkerboard, text, logo, watermark or halo. Ordinary nonsexual fully clothed portrait. Subject: 松本一香 (matsumoto-ichika), clearly adult age 24 or older as in supplied adult reference. Standing relaxed with one foot slightly in front, full grown adult slender build, ordinary head-to-body ratio. Light bamboo-green sleeveless high-neck silk blouse, flowing lined cream wide trousers with silk ribbon belt and delicate bamboo embroidery. Left hand supports a small closed lacquer incense box, right fingers lightly touch lid. Long brown hair partly braided, silver bamboo comb, green stone earrings, pendant, bangles, obi tassels. USER COSTUME CORRECTION - THIS OVERRIDES ALL EARLIER CLOTHING WORDING: unmistakably JAPANESE traditional summer clothing. Bamboo-green Japanese short-sleeved light cotton KOSODE paired with ivory ANDON HAKAMA, authentic broad pleats and tied hakama himo, calf-to-ankle length so bare feet visible. Genuine Japanese historical costume, no high-neck Chinese blouse. Japanese kanzashi hairpins and Japanese accessories. Preserve the originally specified adult identity, handheld prop, barefoot requirement and pose unless clothing correction requires small changes. Do not use Hanfu, hanbok, Chinese ruqun, qipao, Chinese palace headdress or Western fantasy gowns. Thin but opaque lined clothing. GENUINE alpha transparency with no dark gradient, matte or glow. Full figure and toes inside canvas with 5% margins.",
+      "proportionReference": "assets/beauties/references/japan-ten-20261022/user-approved-proportions.png",
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a1615b-c380-73a3-bb7b-58bb2f9b4009/exec-39a8088e-4800-4901-8747-e5aee06d70a8.png",
+      "assetSha256": "d92a962b3ab3d710db4521e15161b554146dbffe4ecb7b45cdef5dac4f369843",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentFraction": 0.6605,
+        "nontransparentBorderPixels": 0,
+        "boundsAbove20": [
+          265,
+          9,
+          812,
+          1525
+        ]
+      },
+      "visualReview": "已查看完整生成图与浅色/深蓝换底拼图，检查日式夏装、光脚、头肩躯干与腿部关系、手持道具接触、画面边缘及真实alpha透明；以用户认可的横笛初稿作为身形比例参考。",
+      "footwear": "barefoot",
+      "supersededSourcePath": "/Users/fengheliang/.codex/generated_images/01a1615b-c380-73a3-bb7b-58bb2f9b4009/exec-31d925a9-e48f-46b5-9011-de5368a1ab94.png",
+      "artworkRevision": "docs/art/japan-korea-slim-legs-feet-2026-10-22.json"
+    },
+    {
+      "key": "momonogi-kana",
+      "name": "桃乃木香奈",
+      "imageUrl": "https://ignewsimg.s3.ap-northeast-1.wasabisys.com/CxAm64qS5AY",
+      "page": "https://instagrammernews.com/detail/3188719716643025104",
+      "status": "downloaded",
+      "ref": "assets/beauties/references/japan-ten-20261022/momonogi-kana.jpg",
+      "id": "japan-photo-ten-20261022-07",
+      "title": "桃绡纸伞",
+      "asset": "assets/beauties/random/番邦女子/日本女子-桃乃木香奈-桃绡纸伞.png",
+      "prompt": "Use case: photorealistic-natural. Generate ONE adult Japanese woman, realistic costume photograph, isolated full-body PNG with genuine transparent alpha. IMAGE 1 = adult FACE IDENTITY reference ONLY, use individual eye/nose/lip/jaw likeness, do NOT copy its large head framing, upper-body composition or lens distortion. IMAGE 2 = USER-APPROVED BODY PROPORTION REFERENCE, this is the primary template for HEAD SIZE RELATIVE TO SHOULDERS AND TORSO, torso length, waist position, hip size and natural long legs. Match its harmonious slim grown adult skeleton. Small proportionate head, anatomically normal shoulder span, normal chest/ribcage/pelvis sizes, natural neck; no narrow shrunken shoulders, no oversized head, no compact toy body. Keep upper body full size, do not stretch only shins or shrink waist. Use a distant level 85mm full-body fashion camera, no foreshortening or wide angle. A different clearly adult woman age 24+ with distinct face from Image 1. All clothing must be unmistakably JAPANESE summer garments, light breathable fabric, opaque lined and tasteful. Exactly two coherent arms, five fingers per hand, two coherent legs, two properly oriented BARE FEET with five toes each. Correct stable gravity and natural grips. Entire figure, hair ornaments, props and all toes inside portrait 2:3 frame, 5% clear margins. No shoes/socks, no background, no floor, no shadow/glow/matte/checkerboard/text/watermark. Subject identity: 桃乃木香奈 (momonogi-kana). Standing gently turned, carry a CLOSED Japanese wagasa paper parasol down beside body in one hand, other hand near obi. Costume: Peach cotton Japanese summer YUKATA with plum motifs and cream HAKATA OBI tied in bunko knot at back, straight T-shaped robe and elbow-length rectangular kimono sleeves, left front over right, hem above ankles. Closed wagasa paper parasol. No flowing Chinese skirt. Distinct Japanese kanzashi hair ornament, delicate drop earrings, fine necklace, slim bracelet, tasteful obijime/obidome or netsuke according to garment. Match hairstyle and face identity from Image 1. Do not copy face or Chinese costume from Image 2. Body and head relationship from Image 2 takes priority over earlier drafts.",
+      "statusGeneration": "completed",
+      "initialPrompt": "Use case: photorealistic-natural. Asset type: one full-body adult Japanese historical-fantasy summer game character PNG cutout for an imperial game random beauty pool. Input photograph is an IDENTITY REFERENCE ONLY: preserve the adult celebrity distinctive recognizable facial structure, eyes, nose, mouth and jaw, natural skin texture; create a new outfit, body pose and composition. Realistic elegant costume photography, subtle natural makeup, calm friendly expression, soft neutral lighting, normal 70mm perspective. Entire figure with every hair ornament, prop, finger, hem and both bare feet inside portrait 2:3 frame with comfortable 5% margins. Realistic harmonious adult body proportions around 7.5 heads tall standing equivalent, proportionate head, normal shoulders, natural waist and limbs. Exactly two arms, two anatomically correct hands with five fingers per hand, two legs, two naturally oriented bare feet with five toes each. Natural center of gravity, coherent joints and realistic grip/contact. All figures barefoot, no shoes or socks. Summer fabrics are light silk, cotton, linen and gauze, opaque lined clothing with tasteful full coverage. Truly transparent alpha background, no setting, floor, ground shadow, checkerboard, text, logo, watermark or halo. Ordinary nonsexual fully clothed portrait. Subject: 桃乃木香奈 (momonogi-kana), clearly adult age 24 or older as in supplied adult reference. Standing with slight torso turn and balanced shoulders, right hand naturally gripping a closed small wagasa paper parasol pointed downward beside body, left holds silk sash gently. Peach thin cotton short-sleeved yukata-style wrap dress with lined flowing calf-length skirt and cream obi, plum embroidery. Dark hair in elegant side bun, peach blossom hairpin, pearl earrings, gold pendant necklace, jade bangle and little obi charm. Both bare feet visible.",
+      "rejectedProportionPrompt": "Use case: photorealistic-natural. Asset type: one full-body adult Japanese historical-fantasy summer game character PNG cutout for an imperial game random beauty pool. Input photograph is an IDENTITY REFERENCE ONLY: preserve the adult celebrity distinctive recognizable facial structure, eyes, nose, mouth and jaw, natural skin texture; create a new outfit, body pose and composition. Realistic elegant costume photography, subtle natural makeup, calm friendly expression, soft neutral lighting, normal 70mm perspective. Entire figure with every hair ornament, prop, finger, hem and both bare feet inside portrait 2:3 frame with comfortable 5% margins. Realistic harmonious adult body proportions around 7.5 heads tall standing equivalent, proportionate head, normal shoulders, natural waist and limbs. Exactly two arms, two anatomically correct hands with five fingers per hand, two legs, two naturally oriented bare feet with five toes each. Natural center of gravity, coherent joints and realistic grip/contact. All figures barefoot, no shoes or socks. Summer fabrics are light silk, cotton, linen and gauze, opaque lined clothing with tasteful full coverage. Truly transparent alpha background, no setting, floor, ground shadow, checkerboard, text, logo, watermark or halo. Ordinary nonsexual fully clothed portrait. Subject: 桃乃木香奈 (momonogi-kana), clearly adult age 24 or older as in supplied adult reference. Standing with slight torso turn and balanced shoulders, right hand naturally gripping a closed small wagasa paper parasol pointed downward beside body, left holds silk sash gently. Peach thin cotton short-sleeved yukata-style wrap dress with lined flowing calf-length skirt and cream obi, plum embroidery. Dark hair in elegant side bun, peach blossom hairpin, pearl earrings, gold pendant necklace, jade bangle and little obi charm. Both bare feet visible. USER COSTUME CORRECTION - THIS OVERRIDES ALL EARLIER CLOTHING WORDING: unmistakably JAPANESE traditional summer clothing. Peach cotton Japanese summer YUKATA with plum motifs and cream HAKATA OBI tied in bunko knot at back, straight T-shaped robe and elbow-length rectangular kimono sleeves, left front over right, hem above ankles. Closed wagasa paper parasol. No flowing Chinese skirt. Japanese kanzashi hairpins and Japanese accessories. Preserve the originally specified adult identity, handheld prop, barefoot requirement and pose unless clothing correction requires small changes. Do not use Hanfu, hanbok, Chinese ruqun, qipao, Chinese palace headdress or Western fantasy gowns. Thin but opaque lined clothing. GENUINE alpha transparency with no dark gradient, matte or glow. Full figure and toes inside canvas with 5% margins.",
+      "proportionReference": "assets/beauties/references/japan-ten-20261022/user-approved-proportions.png",
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a1615b-c380-73a3-bb7b-58bb2f9b4009/exec-0424ad35-18e2-4cea-8814-79fba35b79b8.png",
+      "assetSha256": "865fae3ebf436315ce7f5b1ced94ea1d280bdc96af25271a2b5baf0bd1e1fd51",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentFraction": 0.7588,
+        "nontransparentBorderPixels": 0,
+        "boundsAbove20": [
+          352,
+          16,
+          751,
+          1515
+        ]
+      },
+      "visualReview": "已查看完整生成图与浅色/深蓝换底拼图，检查日式夏装、光脚、头肩躯干与腿部关系、手持道具接触、画面边缘及真实alpha透明；以用户认可的横笛初稿作为身形比例参考。",
+      "footwear": "barefoot",
+      "supersededSourcePath": "/Users/fengheliang/.codex/generated_images/01a1615b-c380-73a3-bb7b-58bb2f9b4009/exec-d5cd3d9a-7c76-49f5-ab8c-f0c57ab2e4a7.png",
+      "artworkRevision": "docs/art/japan-korea-slim-legs-feet-2026-10-22.json"
+    },
+    {
+      "key": "sakura-momo",
+      "name": "樱空桃",
+      "imageUrl": "https://kai-you.net/press/img/7bba4dc2edd0378b94abc3ea83cb8891.jpeg",
+      "page": "https://kai-you.net/article/70547/images/58",
+      "status": "downloaded",
+      "ref": "assets/beauties/references/japan-ten-20261022/sakura-momo.jpg",
+      "id": "japan-photo-ten-20261022-08",
+      "title": "绯绡铃舞",
+      "asset": "assets/beauties/random/番邦女子/日本女子-樱空桃-绯绡铃舞.png",
+      "prompt": "Use case: photorealistic-natural. Generate ONE adult Japanese woman, realistic costume photograph, isolated full-body PNG with genuine transparent alpha. IMAGE 1 = adult FACE IDENTITY reference ONLY, use individual eye/nose/lip/jaw likeness, do NOT copy its large head framing, upper-body composition or lens distortion. IMAGE 2 = USER-APPROVED BODY PROPORTION REFERENCE, this is the primary template for HEAD SIZE RELATIVE TO SHOULDERS AND TORSO, torso length, waist position, hip size and natural long legs. Match its harmonious slim grown adult skeleton. Small proportionate head, anatomically normal shoulder span, normal chest/ribcage/pelvis sizes, natural neck; no narrow shrunken shoulders, no oversized head, no compact toy body. Keep upper body full size, do not stretch only shins or shrink waist. Use a distant level 85mm full-body fashion camera, no foreshortening or wide angle. A different clearly adult woman age 24+ with distinct face from Image 1. All clothing must be unmistakably JAPANESE summer garments, light breathable fabric, opaque lined and tasteful. Exactly two coherent arms, five fingers per hand, two coherent legs, two properly oriented BARE FEET with five toes each. Correct stable gravity and natural grips. Entire figure, hair ornaments, props and all toes inside portrait 2:3 frame, 5% clear margins. No shoes/socks, no background, no floor, no shadow/glow/matte/checkerboard/text/watermark. Subject identity: 樱空桃 (sakura-momo). Graceful balanced small Japanese dance step with hips over support foot, one foot lightly extended sideways, holding small Japanese uchiwa-daiko wooden hand drum at hip. Costume: Coral-red Japanese summer dance YUKATA, authentic short rectangular kimono sleeves and straight T silhouette with subtle wave patterns, ivory HAKATA OBI and red obijime, hem above ankles to permit small dance steps. No Chinese dance dress, no long ribbons. Drum is a small Japanese hand-held uchiwa-daiko with wooden handle. Distinct Japanese kanzashi hair ornament, delicate drop earrings, fine necklace, slim bracelet, tasteful obijime/obidome or netsuke according to garment. Match hairstyle and face identity from Image 1. Do not copy face or Chinese costume from Image 2. Body and head relationship from Image 2 takes priority over earlier drafts.",
+      "statusGeneration": "completed",
+      "initialPrompt": "Use case: photorealistic-natural. Asset type: one full-body adult Japanese historical-fantasy summer game character PNG cutout for an imperial game random beauty pool. Input photograph is an IDENTITY REFERENCE ONLY: preserve the adult celebrity distinctive recognizable facial structure, eyes, nose, mouth and jaw, natural skin texture; create a new outfit, body pose and composition. Realistic elegant costume photography, subtle natural makeup, calm friendly expression, soft neutral lighting, normal 70mm perspective. Entire figure with every hair ornament, prop, finger, hem and both bare feet inside portrait 2:3 frame with comfortable 5% margins. Realistic harmonious adult body proportions around 7.5 heads tall standing equivalent, proportionate head, normal shoulders, natural waist and limbs. Exactly two arms, two anatomically correct hands with five fingers per hand, two legs, two naturally oriented bare feet with five toes each. Natural center of gravity, coherent joints and realistic grip/contact. All figures barefoot, no shoes or socks. Summer fabrics are light silk, cotton, linen and gauze, opaque lined clothing with tasteful full coverage. Truly transparent alpha background, no setting, floor, ground shadow, checkerboard, text, logo, watermark or halo. Ordinary nonsexual fully clothed portrait. Subject: 樱空桃 (sakura-momo), clearly adult age 24 or older as in supplied adult reference. A graceful balanced classical dance pose, both knees soft, weight on right bare foot and left bare foot placed slightly to side, no extreme backbend. Coral-red lightweight lined dance dress with soft cream silk ribbon draped from sleeves, no floating disconnected fabric. Hold a small round wooden hand drum in left hand at hip, right hand poised near drum rim. Dark updo, gold floral kanzashi, ruby ear drops, fine necklace, slim gold bracelets and waist tassels.",
+      "rejectedProportionPrompt": "Use case: photorealistic-natural. Asset type: one full-body adult Japanese historical-fantasy summer game character PNG cutout for an imperial game random beauty pool. Input photograph is an IDENTITY REFERENCE ONLY: preserve the adult celebrity distinctive recognizable facial structure, eyes, nose, mouth and jaw, natural skin texture; create a new outfit, body pose and composition. Realistic elegant costume photography, subtle natural makeup, calm friendly expression, soft neutral lighting, normal 70mm perspective. Entire figure with every hair ornament, prop, finger, hem and both bare feet inside portrait 2:3 frame with comfortable 5% margins. Realistic harmonious adult body proportions around 7.5 heads tall standing equivalent, proportionate head, normal shoulders, natural waist and limbs. Exactly two arms, two anatomically correct hands with five fingers per hand, two legs, two naturally oriented bare feet with five toes each. Natural center of gravity, coherent joints and realistic grip/contact. All figures barefoot, no shoes or socks. Summer fabrics are light silk, cotton, linen and gauze, opaque lined clothing with tasteful full coverage. Truly transparent alpha background, no setting, floor, ground shadow, checkerboard, text, logo, watermark or halo. Ordinary nonsexual fully clothed portrait. Subject: 樱空桃 (sakura-momo), clearly adult age 24 or older as in supplied adult reference. A graceful balanced classical dance pose, both knees soft, weight on right bare foot and left bare foot placed slightly to side, no extreme backbend. Coral-red lightweight lined dance dress with soft cream silk ribbon draped from sleeves, no floating disconnected fabric. Hold a small round wooden hand drum in left hand at hip, right hand poised near drum rim. Dark updo, gold floral kanzashi, ruby ear drops, fine necklace, slim gold bracelets and waist tassels. USER COSTUME CORRECTION - THIS OVERRIDES ALL EARLIER CLOTHING WORDING: unmistakably JAPANESE traditional summer clothing. Coral-red Japanese summer dance YUKATA, authentic short rectangular kimono sleeves and straight T silhouette with subtle wave patterns, ivory HAKATA OBI and red obijime, hem above ankles to permit small dance steps. No Chinese dance dress, no long ribbons. Drum is a small Japanese hand-held uchiwa-daiko with wooden handle. Japanese kanzashi hairpins and Japanese accessories. Preserve the originally specified adult identity, handheld prop, barefoot requirement and pose unless clothing correction requires small changes. Do not use Hanfu, hanbok, Chinese ruqun, qipao, Chinese palace headdress or Western fantasy gowns. Thin but opaque lined clothing. GENUINE alpha transparency with no dark gradient, matte or glow. Full figure and toes inside canvas with 5% margins.",
+      "proportionReference": "assets/beauties/references/japan-ten-20261022/user-approved-proportions.png",
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a1615b-c380-73a3-bb7b-58bb2f9b4009/exec-54347a88-f9f4-4d0c-928b-0ce510e8266e.png",
+      "assetSha256": "0bc24d13b253321c7875724ef82088ec6ac34f67071314d2c6b6bf362a506a1b",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentFraction": 0.7066,
+        "nontransparentBorderPixels": 0,
+        "boundsAbove20": [
+          293,
+          10,
+          976,
+          1514
+        ]
+      },
+      "visualReview": "已查看完整生成图与浅色/深蓝换底拼图，检查日式夏装、光脚、头肩躯干与腿部关系、手持道具接触、画面边缘及真实alpha透明；以用户认可的横笛初稿作为身形比例参考。",
+      "footwear": "barefoot",
+      "supersededSourcePath": "/Users/fengheliang/.codex/generated_images/01a1615b-c380-73a3-bb7b-58bb2f9b4009/exec-6d4eb007-a8fa-4455-9299-3729b0d2e412.png",
+      "artworkRevision": "docs/art/japan-korea-slim-legs-feet-2026-10-22.json"
+    },
+    {
+      "key": "amatsuka-moe",
+      "name": "天使萌",
+      "imageUrl": "https://pbs.twimg.com/media/FfOy66AaMAAtnQP.jpg",
+      "page": "https://fetcherx.com/post/twitter/1581804626508414977",
+      "status": "downloaded",
+      "ref": "assets/beauties/references/japan-ten-20261022/amatsuka-moe.jpg",
+      "id": "japan-photo-ten-20261022-09",
+      "title": "蓝绡静坐",
+      "asset": "assets/beauties/random/番邦女子/日本女子-天使萌-蓝绡静坐.png",
+      "prompt": "Use case: photorealistic-natural. Generate ONE adult Japanese woman, realistic costume photograph, isolated full-body PNG with genuine transparent alpha. IMAGE 1 = adult FACE IDENTITY reference ONLY, use individual eye/nose/lip/jaw likeness, do NOT copy its large head framing, upper-body composition or lens distortion. IMAGE 2 = USER-APPROVED BODY PROPORTION REFERENCE, this is the primary template for HEAD SIZE RELATIVE TO SHOULDERS AND TORSO, torso length, waist position, hip size and natural long legs. Match its harmonious slim grown adult skeleton. Small proportionate head, anatomically normal shoulder span, normal chest/ribcage/pelvis sizes, natural neck; no narrow shrunken shoulders, no oversized head, no compact toy body. Keep upper body full size, do not stretch only shins or shrink waist. Use a distant level 85mm full-body fashion camera, no foreshortening or wide angle. A different clearly adult woman age 24+ with distinct face from Image 1. All clothing must be unmistakably JAPANESE summer garments, light breathable fabric, opaque lined and tasteful. Exactly two coherent arms, five fingers per hand, two coherent legs, two properly oriented BARE FEET with five toes each. Correct stable gravity and natural grips. Entire figure, hair ornaments, props and all toes inside portrait 2:3 frame, 5% clear margins. No shoes/socks, no background, no floor, no shadow/glow/matte/checkerboard/text/watermark. Subject identity: 天使萌 (amatsuka-moe). Seated upright with legs extended diagonally sideways and one knee mildly bent, coherent hips/thighs/knees/shins. Both bare feet visible. Hold a small embroidered Japanese omamori pouch at lap. Costume: Powder-blue Japanese women summer JINBEI with authentic short-sleeved side-tied cotton kimono jacket and matching loose calf-length cotton trousers, tiny indigo shibori pattern, simple side knots and one Japanese omamori pouch, no Chinese tunic or wide sash. Distinct Japanese kanzashi hair ornament, delicate drop earrings, fine necklace, slim bracelet, tasteful obijime/obidome or netsuke according to garment. Match hairstyle and face identity from Image 1. Do not copy face or Chinese costume from Image 2. Body and head relationship from Image 2 takes priority over earlier drafts.",
+      "statusGeneration": "completed",
+      "initialPrompt": "Use case: photorealistic-natural. Asset type: one full-body adult Japanese historical-fantasy summer game character PNG cutout for an imperial game random beauty pool. Input photograph is an IDENTITY REFERENCE ONLY: preserve the adult celebrity distinctive recognizable facial structure, eyes, nose, mouth and jaw, natural skin texture; create a new outfit, body pose and composition. Realistic elegant costume photography, subtle natural makeup, calm friendly expression, soft neutral lighting, normal 70mm perspective. Entire figure with every hair ornament, prop, finger, hem and both bare feet inside portrait 2:3 frame with comfortable 5% margins. Realistic harmonious adult body proportions around 7.5 heads tall standing equivalent, proportionate head, normal shoulders, natural waist and limbs. Exactly two arms, two anatomically correct hands with five fingers per hand, two legs, two naturally oriented bare feet with five toes each. Natural center of gravity, coherent joints and realistic grip/contact. All figures barefoot, no shoes or socks. Summer fabrics are light silk, cotton, linen and gauze, opaque lined clothing with tasteful full coverage. Truly transparent alpha background, no setting, floor, ground shadow, checkerboard, text, logo, watermark or halo. Ordinary nonsexual fully clothed portrait. Subject: 天使萌 (amatsuka-moe), clearly adult age 24 or older as in supplied adult reference. Seated naturally with both legs extended diagonally to the side, one knee mildly bent, clearly visible two bare feet; upright calm torso, normal coherent hips and knees. Powder-blue lined light silk wrap tunic with short sleeves and wide cream cropped silk trousers suitable for gentle seated stretching. Both hands naturally hold a small pale-blue silk embroidered pouch at lap. Shoulder-length dark hair partly pinned, silver butterfly hairpins, pearl earrings, slim necklace, jade bracelet and sash beads. No floor or scenery.",
+      "rejectedProportionPrompt": "Use case: photorealistic-natural. Asset type: one full-body adult Japanese historical-fantasy summer game character PNG cutout for an imperial game random beauty pool. Input photograph is an IDENTITY REFERENCE ONLY: preserve the adult celebrity distinctive recognizable facial structure, eyes, nose, mouth and jaw, natural skin texture; create a new outfit, body pose and composition. Realistic elegant costume photography, subtle natural makeup, calm friendly expression, soft neutral lighting, normal 70mm perspective. Entire figure with every hair ornament, prop, finger, hem and both bare feet inside portrait 2:3 frame with comfortable 5% margins. Realistic harmonious adult body proportions around 7.5 heads tall standing equivalent, proportionate head, normal shoulders, natural waist and limbs. Exactly two arms, two anatomically correct hands with five fingers per hand, two legs, two naturally oriented bare feet with five toes each. Natural center of gravity, coherent joints and realistic grip/contact. All figures barefoot, no shoes or socks. Summer fabrics are light silk, cotton, linen and gauze, opaque lined clothing with tasteful full coverage. Truly transparent alpha background, no setting, floor, ground shadow, checkerboard, text, logo, watermark or halo. Ordinary nonsexual fully clothed portrait. Subject: 天使萌 (amatsuka-moe), clearly adult age 24 or older as in supplied adult reference. Seated naturally with both legs extended diagonally to the side, one knee mildly bent, clearly visible two bare feet; upright calm torso, normal coherent hips and knees. Powder-blue lined light silk wrap tunic with short sleeves and wide cream cropped silk trousers suitable for gentle seated stretching. Both hands naturally hold a small pale-blue silk embroidered pouch at lap. Shoulder-length dark hair partly pinned, silver butterfly hairpins, pearl earrings, slim necklace, jade bracelet and sash beads. No floor or scenery. USER COSTUME CORRECTION - THIS OVERRIDES ALL EARLIER CLOTHING WORDING: unmistakably JAPANESE traditional summer clothing. Powder-blue Japanese women summer JINBEI with authentic short-sleeved side-tied cotton kimono jacket and matching loose calf-length cotton trousers, tiny indigo shibori pattern, simple side knots and one Japanese omamori pouch, no Chinese tunic or wide sash. Japanese kanzashi hairpins and Japanese accessories. Preserve the originally specified adult identity, handheld prop, barefoot requirement and pose unless clothing correction requires small changes. Do not use Hanfu, hanbok, Chinese ruqun, qipao, Chinese palace headdress or Western fantasy gowns. Thin but opaque lined clothing. GENUINE alpha transparency with no dark gradient, matte or glow. Full figure and toes inside canvas with 5% margins.",
+      "proportionReference": "assets/beauties/references/japan-ten-20261022/user-approved-proportions.png",
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a1615b-c380-73a3-bb7b-58bb2f9b4009/exec-4a25e870-d995-4a5c-9b36-1ba2dbae9208.png",
+      "assetSha256": "7bad27cd228c5e3d0fd4a2906f3040768bd641ee1ded5fc1350c213369e7c321",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentFraction": 0.6443,
+        "nontransparentBorderPixels": 0,
+        "boundsAbove20": [
+          128,
+          25,
+          1007,
+          1504
+        ]
+      },
+      "visualReview": "已查看完整生成图与浅色/深蓝换底拼图，检查日式夏装、光脚、头肩躯干与腿部关系、手持道具接触、画面边缘及真实alpha透明；以用户认可的横笛初稿作为身形比例参考。",
+      "footwear": "barefoot",
+      "supersededSourcePath": "/Users/fengheliang/.codex/generated_images/01a1615b-c380-73a3-bb7b-58bb2f9b4009/exec-95268eb9-aba1-4c54-b024-2bd496206c77.png",
+      "artworkRevision": "docs/art/japan-korea-slim-legs-feet-2026-10-22.json"
+    },
+    {
+      "key": "yatsugake-umi",
+      "name": "八挂海",
+      "imageUrl": "https://image.av-event.jp/contents/images/38498/c5cec3ee0f6cd4832721ba6c1f3e5ffa.jpg",
+      "page": "https://www.av-event.jp/search/2/?date=20260307",
+      "status": "downloaded",
+      "ref": "assets/beauties/references/japan-ten-20261022/yatsugake-umi.jpg",
+      "id": "japan-photo-ten-20261022-10",
+      "title": "碧荷玉盏",
+      "asset": "assets/beauties/random/番邦女子/日本女子-八挂海-碧荷玉盏.png",
+      "prompt": "Use case: photorealistic-natural. Generate ONE adult Japanese woman, realistic costume photograph, isolated full-body PNG with genuine transparent alpha. IMAGE 1 = adult FACE IDENTITY reference ONLY, use individual eye/nose/lip/jaw likeness, do NOT copy its large head framing, upper-body composition or lens distortion. IMAGE 2 = USER-APPROVED BODY PROPORTION REFERENCE, this is the primary template for HEAD SIZE RELATIVE TO SHOULDERS AND TORSO, torso length, waist position, hip size and natural long legs. Match its harmonious slim grown adult skeleton. Small proportionate head, anatomically normal shoulder span, normal chest/ribcage/pelvis sizes, natural neck; no narrow shrunken shoulders, no oversized head, no compact toy body. Keep upper body full size, do not stretch only shins or shrink waist. Use a distant level 85mm full-body fashion camera, no foreshortening or wide angle. A different clearly adult woman age 24+ with distinct face from Image 1. All clothing must be unmistakably JAPANESE summer garments, light breathable fabric, opaque lined and tasteful. Exactly two coherent arms, five fingers per hand, two coherent legs, two properly oriented BARE FEET with five toes each. Correct stable gravity and natural grips. Entire figure, hair ornaments, props and all toes inside portrait 2:3 frame, 5% clear margins. No shoes/socks, no background, no floor, no shadow/glow/matte/checkerboard/text/watermark. Subject identity: 八挂海 (yatsugake-umi). Standing relaxed, hold a shallow jade bowl with one lotus flower at low waist, both hands supporting naturally. Costume: Celadon Japanese summer YUKATA with cream lotus motifs, traditional T-shaped straight silhouette, elbow-length rectangular sleeves, proper left-over-right lapels, cream HAKATA OBI with compact bunko knot, pearl obidome and braided obijime. No gauze stole, no Chinese flowing dress. Distinct Japanese kanzashi hair ornament, delicate drop earrings, fine necklace, slim bracelet, tasteful obijime/obidome or netsuke according to garment. Match hairstyle and face identity from Image 1. Do not copy face or Chinese costume from Image 2. Body and head relationship from Image 2 takes priority over earlier drafts.",
+      "statusGeneration": "completed",
+      "initialPrompt": "Use case: photorealistic-natural. Asset type: one full-body adult Japanese historical-fantasy summer game character PNG cutout for an imperial game random beauty pool. Input photograph is an IDENTITY REFERENCE ONLY: preserve the adult celebrity distinctive recognizable facial structure, eyes, nose, mouth and jaw, natural skin texture; create a new outfit, body pose and composition. Realistic elegant costume photography, subtle natural makeup, calm friendly expression, soft neutral lighting, normal 70mm perspective. Entire figure with every hair ornament, prop, finger, hem and both bare feet inside portrait 2:3 frame with comfortable 5% margins. Realistic harmonious adult body proportions around 7.5 heads tall standing equivalent, proportionate head, normal shoulders, natural waist and limbs. Exactly two arms, two anatomically correct hands with five fingers per hand, two legs, two naturally oriented bare feet with five toes each. Natural center of gravity, coherent joints and realistic grip/contact. All figures barefoot, no shoes or socks. Summer fabrics are light silk, cotton, linen and gauze, opaque lined clothing with tasteful full coverage. Truly transparent alpha background, no setting, floor, ground shadow, checkerboard, text, logo, watermark or halo. Ordinary nonsexual fully clothed portrait. Subject: 八挂海 (yatsugake-umi), clearly adult age 24 or older as in supplied adult reference. Standing in a relaxed balanced pose with both bare feet visible, long lean natural adult proportions. Celadon thin silk sleeveless wrap dress with opaque lining, cream light gauze stole draped around upper arms and narrow cream obi, fine lotus embroidery. Right hand holds a shallow jade bowl containing one lotus blossom at waist, left hand lightly supports its base. Long dark hair in half-up style, silver lotus comb, jade earrings, pearl necklace, fine bangles and waist pendant.",
+      "rejectedProportionPrompt": "Use case: photorealistic-natural. Asset type: one full-body adult Japanese historical-fantasy summer game character PNG cutout for an imperial game random beauty pool. Input photograph is an IDENTITY REFERENCE ONLY: preserve the adult celebrity distinctive recognizable facial structure, eyes, nose, mouth and jaw, natural skin texture; create a new outfit, body pose and composition. Realistic elegant costume photography, subtle natural makeup, calm friendly expression, soft neutral lighting, normal 70mm perspective. Entire figure with every hair ornament, prop, finger, hem and both bare feet inside portrait 2:3 frame with comfortable 5% margins. Realistic harmonious adult body proportions around 7.5 heads tall standing equivalent, proportionate head, normal shoulders, natural waist and limbs. Exactly two arms, two anatomically correct hands with five fingers per hand, two legs, two naturally oriented bare feet with five toes each. Natural center of gravity, coherent joints and realistic grip/contact. All figures barefoot, no shoes or socks. Summer fabrics are light silk, cotton, linen and gauze, opaque lined clothing with tasteful full coverage. Truly transparent alpha background, no setting, floor, ground shadow, checkerboard, text, logo, watermark or halo. Ordinary nonsexual fully clothed portrait. Subject: 八挂海 (yatsugake-umi), clearly adult age 24 or older as in supplied adult reference. Standing in a relaxed balanced pose with both bare feet visible, long lean natural adult proportions. Celadon thin silk sleeveless wrap dress with opaque lining, cream light gauze stole draped around upper arms and narrow cream obi, fine lotus embroidery. Right hand holds a shallow jade bowl containing one lotus blossom at waist, left hand lightly supports its base. Long dark hair in half-up style, silver lotus comb, jade earrings, pearl necklace, fine bangles and waist pendant. USER COSTUME CORRECTION - THIS OVERRIDES ALL EARLIER CLOTHING WORDING: unmistakably JAPANESE traditional summer clothing. Celadon Japanese summer YUKATA with cream lotus motifs, traditional T-shaped straight silhouette, elbow-length rectangular sleeves, proper left-over-right lapels, cream HAKATA OBI with compact bunko knot, pearl obidome and braided obijime. No gauze stole, no Chinese flowing dress. Japanese kanzashi hairpins and Japanese accessories. Preserve the originally specified adult identity, handheld prop, barefoot requirement and pose unless clothing correction requires small changes. Do not use Hanfu, hanbok, Chinese ruqun, qipao, Chinese palace headdress or Western fantasy gowns. Thin but opaque lined clothing. GENUINE alpha transparency with no dark gradient, matte or glow. Full figure and toes inside canvas with 5% margins.",
+      "proportionReference": "assets/beauties/references/japan-ten-20261022/user-approved-proportions.png",
+      "sourcePath": "/Users/fengheliang/.codex/generated_images/01a1615b-c380-73a3-bb7b-58bb2f9b4009/exec-5590b634-7fdc-4b44-a8af-4ded5bfb4e58.png",
+      "assetSha256": "3d805870f4b9f06faa2c31fd7a80d39afea47ae755fef204526ae1a7d437aeec",
+      "validation": {
+        "size": [
+          1024,
+          1536
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentFraction": 0.7283,
+        "nontransparentBorderPixels": 0,
+        "boundsAbove20": [
+          288,
+          16,
+          774,
+          1499
+        ]
+      },
+      "visualReview": "已查看完整生成图与浅色/深蓝换底拼图，检查日式夏装、光脚、头肩躯干与腿部关系、手持道具接触、画面边缘及真实alpha透明；以用户认可的横笛初稿作为身形比例参考。",
+      "footwear": "barefoot",
+      "supersededSourcePath": "/Users/fengheliang/.codex/generated_images/01a1615b-c380-73a3-bb7b-58bb2f9b4009/exec-affdb084-d5ce-4d16-bc1c-50d48ad148fa.png",
+      "artworkRevision": "docs/art/japan-korea-slim-legs-feet-2026-10-22.json"
+    }
+  ],
+  "costumePolicy": "用户要求服饰具有日本特色；采用浴衣、小袖、甚平、袴装及日式腰带结、簪饰。",
+  "proportionPolicy": "用户仅认可河北彩花初稿2240ceb1的身形；以其为第二参考约束头肩躯干与腿长，前轮其他图不入池。",
+  "completed": 10,
+  "verification": {
+    "relatedTestsPassed": 13,
+    "nativeCanvasPassed": 126,
+    "realHaremRosterPassed": 25,
+    "newJapanesePortraitsReachable": 10,
+    "japanPoolCount": 13,
+    "alphaPassed": 10,
+    "contactSheet": "outputs/japan-photo-ten-20261022/contact-sheet.jpg",
+    "desktopResults": "outputs/japan-photo-ten-20261022/desktop/results.json"
+  },
+  "currentArtworkRevision": "docs/art/japan-korea-slim-legs-feet-2026-10-22.json",
+  "supersededArtworkDeleted": true
+}

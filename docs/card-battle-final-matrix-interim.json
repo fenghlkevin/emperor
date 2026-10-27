@@ -1,0 +1,216 @@
+{
+  "status": "in-progress-not-final",
+  "domain": "final-nonaudio-20261024-v6-heldout-A",
+  "completedGroups": 72,
+  "totalGroups": 72,
+  "games": 144000,
+  "failedPointEstimateGroups": [
+    {
+      "id": "infantry_1800-90-martial",
+      "score": 0.5365,
+      "ci95": [
+        0.5156620767002216,
+        0.5573379232997784
+      ]
+    },
+    {
+      "id": "cavalry_1800-20-command",
+      "score": 0.4685,
+      "ci95": [
+        0.4468173915797036,
+        0.49018260842029643
+      ]
+    },
+    {
+      "id": "cavalry_1800-60-intelligence",
+      "score": 0.5345,
+      "ci95": [
+        0.5122655783725976,
+        0.5567344216274024
+      ]
+    },
+    {
+      "id": "cavalry_1800-90-intelligence",
+      "score": 0.5425,
+      "ci95": [
+        0.5205805024151013,
+        0.5644194975848986
+      ]
+    },
+    {
+      "id": "ranged_1800-20-intelligence",
+      "score": 0.5395,
+      "ci95": [
+        0.518362324041065,
+        0.560637675958935
+      ]
+    },
+    {
+      "id": "ranged_1800-60-intelligence",
+      "score": 0.543,
+      "ci95": [
+        0.5214603426573577,
+        0.5645396573426423
+      ]
+    },
+    {
+      "id": "ranged_1800-60-command",
+      "score": 0.462,
+      "ci95": [
+        0.4402025722284151,
+        0.48379742777158496
+      ]
+    },
+    {
+      "id": "ranged_1800-90-intelligence",
+      "score": 0.545,
+      "ci95": [
+        0.5235655745447982,
+        0.5664344254552018
+      ]
+    },
+    {
+      "id": "heavy_1800-60-martial",
+      "score": 0.4575,
+      "ci95": [
+        0.4359342263622982,
+        0.4790657736377018
+      ]
+    },
+    {
+      "id": "exotic_1800-20-intelligence",
+      "score": 0.5365,
+      "ci95": [
+        0.5144515859762893,
+        0.5585484140237107
+      ]
+    },
+    {
+      "id": "exotic_1800-60-martial",
+      "score": 0.5325,
+      "ci95": [
+        0.5111808157375188,
+        0.5538191842624811
+      ]
+    },
+    {
+      "id": "exotic_1800-60-intelligence",
+      "score": 0.536,
+      "ci95": [
+        0.514189521248185,
+        0.5578104787518151
+      ]
+    },
+    {
+      "id": "exotic_1800-60-command",
+      "score": 0.539,
+      "ci95": [
+        0.5172093653566917,
+        0.5607906346433084
+      ]
+    },
+    {
+      "id": "exotic_1800-90-martial",
+      "score": 0.532,
+      "ci95": [
+        0.5112491542533997,
+        0.5527508457466004
+      ]
+    },
+    {
+      "id": "mixed_600-60-martial",
+      "score": 0.4555,
+      "ci95": [
+        0.43408399390836555,
+        0.4769160060916345
+      ]
+    },
+    {
+      "id": "mixed_600-60-command",
+      "score": 0.459,
+      "ci95": [
+        0.4374453514695026,
+        0.48055464853049745
+      ]
+    },
+    {
+      "id": "mixed_600-90-martial",
+      "score": 0.4625,
+      "ci95": [
+        0.4408097668012487,
+        0.4841902331987513
+      ]
+    },
+    {
+      "id": "mixed_600-90-command",
+      "score": 0.466,
+      "ci95": [
+        0.445494479114473,
+        0.48650552088552707
+      ]
+    },
+    {
+      "id": "reserve_3600-20-intelligence",
+      "score": 0.532,
+      "ci95": [
+        0.5103423903984384,
+        0.5536576096015616
+      ]
+    },
+    {
+      "id": "reserve_3600-20-command",
+      "score": 0.464,
+      "ci95": [
+        0.4427702664174045,
+        0.4852297335825955
+      ]
+    },
+    {
+      "id": "reserve_3600-60-intelligence",
+      "score": 0.532,
+      "ci95": [
+        0.5100338644110368,
+        0.5539661355889632
+      ]
+    },
+    {
+      "id": "reserve_3600-60-command",
+      "score": 0.4655,
+      "ci95": [
+        0.44374638983627895,
+        0.4872536101637211
+      ]
+    },
+    {
+      "id": "reserve_3600-90-martial",
+      "score": 0.535,
+      "ci95": [
+        0.5137638371023714,
+        0.5562361628976287
+      ]
+    },
+    {
+      "id": "reserve_3600-90-intelligence",
+      "score": 0.549,
+      "ci95": [
+        0.527825130614488,
+        0.5701748693855121
+      ]
+    }
+  ],
+  "byCommander": {
+    "martial": {
+      "completedGroups": 24,
+      "meanOfGroupScores": 0.4960833333333334
+    },
+    "intelligence": {
+      "completedGroups": 24,
+      "meanOfGroupScores": 0.5246458333333334
+    },
+    "command": {
+      "completedGroups": 24,
+      "meanOfGroupScores": 0.4847708333333333
+    }
+  },
+  "interpretation": "Grouped descriptive values only, not substitute acceptance. CI overlapping target does not turn a point-estimate failure into pass. Do not tune or reroll from partial heldout data."
+}

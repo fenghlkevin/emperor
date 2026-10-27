@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>御前军阵 · 卡面常驻动效</title><link rel="stylesheet" href="preview.css"></head>
+<body>
+<main id="surface-preview">
+ <header><div><small>御前军阵 / 效果探索 07</small><h1>让状态，活在卡牌上。</h1></div><nav aria-label="查看场景"><button data-scene="focus" aria-pressed="true">单卡细看</button><button data-scene="formation" aria-pressed="false">七卡满阵</button></nav><span class="design-label">交互设计预览</span></header>
+ <div class="workspace">
+  <section class="stage" aria-label="卡牌动效预览">
+   <div class="stage-top"><span data-scene-label>三组对照 · 选择卡牌调整状态</span><span class="running"><i></i><span data-motion-label>常驻动效运行中</span></span></div>
+   <div id="field"></div>
+   <footer><div><b data-card-caption>12 种状态同时存在</b><span>人物、卡名与攻血数值保持清晰</span></div><button data-replay>↻ 重新施加</button><button data-pause aria-pressed="false">定格对照</button></footer>
+  </section>
+  <aside class="controls">
+   <div class="control-heading"><small>组合调试</small><h2 data-selection>前锋统领</h2><span data-status-count>8 项增益 / 4 项负面</span></div>
+   <div class="presets"><button data-preset="positive">增益</button><button data-preset="negative">负面</button><button data-preset="mixed">混合</button><button data-preset="all" aria-pressed="true">全技能</button><button data-preset="none">清空</button></div>
+   <div class="effect-group"><h3><i class="positive-dot"></i>增益 <span>各自运动，持续保留</span></h3><div class="effect-options" data-positive></div></div>
+   <div class="effect-group"><h3><i class="negative-dot"></i>负面 <span>与已有增益同时存在</span></h3><div class="effect-options" data-negative></div></div>
+   <div class="detail" aria-live="polite"><b data-effect-name>多状态共存</b><p data-effect-description>每种效果使用独立位置和运动轨迹。点击任意状态，观察它单独加入或消失。</p></div>
+   <div class="intensity"><label for="intensity">常驻强度 <output>标准</output></label><input type="range" id="intensity" min="25" max="85" value="55"></div>
+   <label class="sync"><input type="checkbox" data-sync checked> 满阵时同步调整全场</label>
+  </aside>
+ </div>
+ <p class="preview-note">当前仅演示状态呈现与持续动画；可点击状态开关对照，也可切到满阵观察整体密度。</p>
+</main><script type="module" src="preview.js"></script>
+</body></html>

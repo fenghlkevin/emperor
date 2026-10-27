@@ -1,0 +1,44 @@
+{
+  "fixes": [
+    {
+      "personId": "cbdb-33662",
+      "variant": "avatar",
+      "source": "/Users/fengheliang/.codex/generated_images/01a16c0b-7192-7431-a6aa-541003d97679/exec-6a03a582-85df-480d-99ae-ed59a56d4665.png",
+      "prompt": "Use case: background-extraction. Edit this Lu Xun avatar only to make all background outside his silhouette genuinely fully transparent alpha zero, including the upper-left corner. Preserve exact face, hair, beard, cap, costume, lighting, square size and framing. No background fill, vignette, glow, text or watermark. Clean antialiased outline; leave figure unchanged.",
+      "path": "assets/officials/historical/cbdb-33662/avatar.png",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "sha256": "4645eea3b191393dabf998bc7c16826d67c61877a90e38d3aa0ef9bfd29dc247",
+      "method": "built-in imagegen precise edit"
+    },
+    {
+      "personId": "original-57",
+      "variant": "full",
+      "source": "/Users/fengheliang/.codex/generated_images/01a16c0b-7192-7431-a6aa-541003d97679/exec-b98e1fa6-af68-4a69-919c-edfea99aec0d.png",
+      "prompt": "Use case: precise-object-edit. Edit this full-body portrait of Cheng Yaojin / Cheng Zhijie: replace only the large axe with a historically inspired Tang horse lance (mashuo), a straight wooden shaft with a narrow elongated straight spearhead and NO axe blade. Keep the identical cheerful broad face, curly beard, hair, robust build, hands, green cloak, dark lamellar armor, pose, full figure framing and natural scale. Genuine transparent alpha background, no scenery, glow or vignette. No writing or watermark. Portrait2:3.",
+      "path": "assets/officials/historical/original-57/full.png",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "sha256": "e1a7ddf97371b57b9294680a959de8685e3ba0eed843919366090337bfc2034e",
+      "method": "built-in imagegen precise edit"
+    },
+    {
+      "personId": "original-57",
+      "variant": "battle",
+      "source": "/Users/fengheliang/.codex/generated_images/01a16c0b-7192-7431-a6aa-541003d97679/exec-40ce0789-6f0d-455a-be79-7b32158d86a0.png",
+      "prompt": "Use case: precise-object-edit. Change ONLY Cheng Yaojin's oversized axe into a Tang horse lance (mashuo): straight shaft, narrow elongated straight spearhead, absolutely no axe blade. Preserve this exact person's face, expression, curly beard, green cloak, lamellar armor, hands and lively pose. Preserve the entire army camp background, warm lighting, camera, 1060x1484 portrait5:7 framing. No new text, border, watermark or magic. Historical game interpretation using his attested horse-lance skill.",
+      "path": "assets/battle/people/original-57-battle-v2.png",
+      "dimensions": [
+        1060,
+        1484
+      ],
+      "sha256": "3436e6f83a52c9a72812ee9a3804a37319b64d6a60736c33e5bfa10ecb0c098c",
+      "method": "built-in imagegen precise edit",
+      "originalPath": "assets/battle/people/original-57-battle-v1.png"
+    }
+  ]
+}

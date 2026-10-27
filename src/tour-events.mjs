@@ -10,6 +10,7 @@ import {changeWelfare} from './building-effects.mjs';
 import {BEAUTIES} from './beauties.mjs';
 import {ensurePortrait,portraitHash,portraitRandom} from './beauty-portrait.mjs';
 import {RANDOM_PORTRAITS} from './random-beauties-data.mjs';
+import {ensureBeautyTraits} from './beauty-hidden-traits.mjs';
 import {entryConsortRank} from './emperor.mjs';
 import {settleProgress} from './imperial-progress.mjs';
 import {settleReignResult} from './reign-result.mjs';
@@ -100,17 +101,27 @@ const homeProvinces=new Set(['hebei','henan','huainan','jiangnan','lingnan','hed
 const byId=new Map(TOUR_EVENTS.map(e=>[e.id,e]));
 const ordinary=BEAUTIES.filter(p=>p.origin==='原创'&&p.regionId==='sheng');
 const bounded=(n,min,max)=>Math.max(min,Math.min(max,n));
+// Keep stable cameo IDs/seen markers while updating names in existing saves.
+const commonerRenames=[['shao-yuqi','邵雨琪','邵琪琪'],['chen-lijun','陈丽君','阿育娅']];
+const renameCommonerText=text=>typeof text==='string'?commonerRenames.reduce((v,[,from,to])=>v.replaceAll(from,to),text):text;
 export function initializeTourEvents(s){
  // Retire the removed Li Fengjie encounter without making existing saves unreadable.
  for(const trip of [...(s.travel?.pending?[s.travel.pending]:[]),...(s.travel?.history??[])]){
   trip.encounters??=[];
+  if(Array.isArray(trip.encounters))for(const event of trip.encounters)if(commonerRenames.some(([id])=>id===event?.type))event.result=renameCommonerText(event.result);
+  if(typeof trip.message==='string')trip.message=renameCommonerText(trip.message);
   if(Array.isArray(trip.encounters)&&trip.encounters.some(e=>e?.type==='li-fengjie')){
    trip.encounters=trip.encounters.filter(e=>e?.type!=='li-fengjie');
    trip.encounters.forEach((e,i)=>{e.id=`tour-${trip.id}-${i+1}`;});
   }
  }
  if(Array.isArray(s.travel?.easterEggs?.cameosSeen))s.travel.easterEggs.cameosSeen=s.travel.easterEggs.cameosSeen.filter(id=>id!=='li-fengjie');
- for(const person of [...(s.harem?.members??[]),...(s.harem?.encounter?[s.harem.encounter]:[])])if(person.travelOrigin?.easterEgg==='li-fengjie')delete person.travelOrigin.easterEgg;
+ for(const person of [...(s.harem?.members??[]),...(s.harem?.encounter?[s.harem.encounter]:[])]){
+  if(person.travelOrigin?.easterEgg==='li-fengjie')delete person.travelOrigin.easterEgg;
+  const renamed=commonerRenames.find(([id,from])=>id===person.travelOrigin?.easterEgg&&person.name===from);
+  if(renamed){person.name=renamed[2];person.biography=renameCommonerText(person.biography)?.replace(/美术参考[^。]*年轻成年时期的容貌。/g,'');}
+ }
+ if(Array.isArray(s.harem?.history))s.harem.history=s.harem.history.map(renameCommonerText);
  return s;
 }
 export function createTourEncounters(s,trip){
@@ -140,6 +151,7 @@ export function createTourEncounters(s,trip){
 export function nextTourEvent(s){return s.travel?.pending?.kind==='tour'?s.travel.pending.encounters?.find(e=>e.status==='pending')??null:null;}
 export function tourEventDefinition(event){return event?byId.get(event.type):null;}
 export function eventCompanion(s,event){
+ const finish=person=>{delete person.hiddenTraits;ensureBeautyTraits(person,`${s.harem.portraitSeed}|tour:${event.seed}:${event.id}`);return ensurePortrait(person,`tour:${event.id}`);};
  const cameo=tourCameo(event.type);
  if(cameo&&cameo.id!=='xia-yuhe'){
   const province=s.domestic.provinces.find(p=>p.id===s.travel.pending?.provinceId);
@@ -147,8 +159,8 @@ export function eventCompanion(s,event){
   if(!person)return null;
   Object.assign(person,{name:cameo.name,age:cameo.age,appearance:cameo.appearance,experience:cameo.experience,ability:cameo.ability,baseAbility:cameo.ability,randomBeauty:true,rank:null,inColdPalace:false,specialty:cameo.specialty,personality:cameo.personality,
    cityId:cameo.homeCityId??person.cityId,biography:`${cameo.story}取意${cameo.source}的巡游改编。${cameo.actor?`美术参考${cameo.actor}年轻成年时期的容貌。`:''}游戏情节、具体容貌与人物属性为艺术设计，不等同史实或原作结局。`,
-   travelOrigin:{eventId:event.id,turn:s.turn,provinceId:province?.id??'guannei',consented:true,easterEgg:cameo.id}});
-  return ensurePortrait(person,`tour:${event.id}`);
+   travelOrigin:{eventId:event.id,turn:s.turn,provinceId:province?.id??'guannei',consented:!cameo.forceAdmission,easterEgg:cameo.id}});
+  return finish(person);
  }
 
  if(event.type==='bereaved'&&isGeneratedBeautyId(event.personId)){
@@ -156,13 +168,13 @@ export function eventCompanion(s,event){
  const province=s.domestic.provinces.find(p=>p.id===s.travel.pending?.provinceId);
  person.biography=`巡游${province?.name??'地方'}时相逢的成年民女。父亲病故后因家贫无力安葬，在御前得到救助；父事料理妥当后，自愿随驾入宫。${person.biography}`;
  person.travelOrigin={eventId:event.id,turn:s.turn,provinceId:province?.id??'guannei',consented:true};
- return ensurePortrait(person,`tour:${event.id}`);
+ return finish(person);
  }
  const base=ordinary.find(p=>p.id===event.personId);if(!base)return null;
  const p=s.domestic.provinces.find(p=>p.id===s.travel.pending?.provinceId),seed=event.seed;
  const names=['沈','林','顾','苏','陆','柳','江','许'],given=['晚晴','清禾','知微','若兰','锦书','云舒','念慈','映秋'];
  const rare=event.type==='xia-yuhe';
- return ensurePortrait({...structuredClone(base),name:rare?'夏雨荷':names[seed%8]+given[Math.floor(seed/8)%8],age:rare?22:18+seed%7,appearance:rare?98:68+seed%18,experience:rare?25:0,ability:rare?110:35+seed%21,randomBeauty:true,randomPortraitAsset:RANDOM_PORTRAITS[seed%RANDOM_PORTRAITS.length],rank:null,inColdPalace:false,cityId:p?.id?.endsWith('-core')?'guannei':p?.id??'guannei',specialty:rare?'诗书、琴艺与荷花丹青':'刺绣与诗书',personality:rare?'温婉聪慧':'温婉坚韧',biography:rare?'大明湖畔题诗绘荷的成年女子，与巡游中的皇帝相识，自愿随驾入宫。取意《还珠格格》的虚构彩蛋人物；外表、经验与能力均为游戏设计。':`巡游${p?.name??'地方'}时相逢的成年民女。父亲病故后因家贫无力安葬，在御前得到救助；父事料理妥当后，自愿随驾入宫。此为原创巡游人物。`,travelOrigin:{eventId:event.id,turn:s.turn,provinceId:p?.id??'guannei',consented:true,...(rare?{easterEgg:'xia-yuhe'}:{})}},`tour:${event.id}`);
+ return finish({...structuredClone(base),name:rare?'夏雨荷':names[seed%8]+given[Math.floor(seed/8)%8],age:rare?22:18+seed%7,appearance:rare?98:68+seed%18,experience:rare?25:0,ability:rare?110:35+seed%21,randomBeauty:true,randomPortraitAsset:RANDOM_PORTRAITS[seed%RANDOM_PORTRAITS.length],rank:null,inColdPalace:false,cityId:p?.id?.endsWith('-core')?'guannei':p?.id??'guannei',specialty:rare?'诗书、琴艺与荷花丹青':'刺绣与诗书',personality:rare?'温婉聪慧':'温婉坚韧',biography:rare?'大明湖畔题诗绘荷的成年女子，与巡游中的皇帝相识，自愿随驾入宫。取意《还珠格格》的虚构彩蛋人物；外表、经验与能力均为游戏设计。':`巡游${p?.name??'地方'}时相逢的成年民女。父亲病故后因家贫无力安葬，在御前得到救助；父事料理妥当后，自愿随驾入宫。此为原创巡游人物。`,travelOrigin:{eventId:event.id,turn:s.turn,provinceId:p?.id??'guannei',consented:true,...(rare?{easterEgg:'xia-yuhe'}:{})}});
 }
 export function tourRiskChance(s,event,choice){
  const p=s.domestic.provinces.find(p=>p.id===s.travel.pending.provinceId);
@@ -180,7 +192,7 @@ export function effectSummary(e){
  for(const [key,n]of Object.entries(e.stats??{}))parts.push(statNames[key]+signed(n));
  for(const [key,n]of Object.entries(e.local??{}))parts.push('当地'+welfareNames[key]+signed(n));
  for(const [key,label]of Object.entries({grain:'全国存粮',cash:'全国国库',living:'当地生活水平',productivity:'当地各业生产率',training:'中央训练',population:'当地人口'}))if(e[key])parts.push(label+signed(e[key]));
- if(e.admit)parts.push('迎入后宫（自愿）');if(e.justice)parts.push('记入刑部案卷');return parts.join('，');
+ if(e.admit)parts.push(e.forced?'立即带回宫中':'迎入后宫（自愿）');if(e.justice)parts.push('记入刑部案卷');return parts.join('，');
 }
 export function tourChoiceBlock(s,event,choice){
  const country=s.domestic.countries.find(c=>c.id===s.domestic.playerCountryId),p=s.domestic.provinces.find(p=>p.id===s.travel.pending.provinceId);
@@ -202,7 +214,7 @@ function applyEffects(s,e,event,lines,tag){
  s.stats.treasury=c.fiscal.treasury;
  if(e.productivity){for(const [key,v]of Object.entries(p.economy)){const before=v.productivity;v.productivity=bounded(v.productivity+e.productivity,0,100);describe(`${p.name}${key}生产率`,before,v.productivity);}}
  if(e.population){const n=admittedPopulation(p,e.population);p.population.total+=n;assignArrivalJobs(p,{farmers:Math.floor(n*.6),workers:Math.floor(n*.2)});lines.push(`当地人口+${n}${n<e.population?'（受城州容量限制）':''}`);}
- if(e.admit){const person=eventCompanion(s,event);person.rank=entryConsortRank(s);s.harem.members.push(person);s.harem.seen=[...new Set([...(s.harem.seen??[]),person.id])];lines.push(`${person.name}（${person.age}岁）自愿入宫，已录入后宫名册`);const reveal=tourCameo(event.type)?.admissionText;if(reveal)lines.push(reveal);}
+ if(e.admit){const person=eventCompanion(s,event);person.rank=entryConsortRank(s);if(tourCameo(event.type)?.arrivalPregnancy)person.pregnancy={conceivedTurn:s.turn,arrivalDueTurn:s.turn+1};s.harem.members.push(person);s.harem.seen=[...new Set([...(s.harem.seen??[]),person.id])];lines.push(`${person.name}（${person.age}岁）${e.forced?'已带回宫中':'自愿入宫'}，已录入后宫名册`);const reveal=tourCameo(event.type)?.admissionText;if(reveal)lines.push(reveal);}
  if(e.justice){d.justice.history.unshift(`第${s.turn}旬：巡游${p.name}，处理「${byId.get(event.type).title}」，御前指示及结果见出行纪事。`);d.justice.history=d.justice.history.slice(0,100);}
 }
 export function resolveTourEvent(state,eventId,choiceId){
@@ -227,7 +239,8 @@ export function validateTourEvents(s){
    if(e.personId!==undefined&&(!(e.type==='bereaved'||tourCameo(e.type))||!(ordinary.some(p=>p.id===e.personId)||((e.type==='bereaved'||tourCameo(e.type)?.id!=='xia-yuhe')&&isGeneratedBeautyId(e.personId)))))fail();
    if(tourCameo(e.type)&&!e.personId)fail();
    if(e.status==='pending'){unresolved=true;if(e.choiceId!==null||e.result!==null)fail();}
-   else if(unresolved||!def.choices.some(c=>c.id===e.choiceId)||typeof e.result!=='string'||!e.result||e.result.length>1000)fail();
+   // The removed third choice remains readable only as an already settled legacy record.
+   else if(unresolved||!(def.choices.some(c=>c.id===e.choiceId)||(['fanfan','shao-yuqi'].includes(e.type)&&e.choiceId==='patron'))||typeof e.result!=='string'||!e.result||e.result.length>1000)fail();
   }
  }
  const seen=s.travel.easterEggs.cameosSeen??[];

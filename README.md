@@ -138,7 +138,7 @@ npm run test:court-special
 npm run test:court-honors
 ```
 
-桌面验收需要可访问图形界面的本机会话。当前业务测试共四百九十五项，已全部通过；这不代表所有桌面场景与系统版本均已完成验收。
+桌面验收需要可访问图形界面的本机会话。本轮类型契约和业务回归结果见发展平衡第二版复验报告；桌面验收覆盖指定窗口与交互流程，不代表所有操作系统均已完成验收。
 
 ## 玩法与数据文档
 
@@ -150,6 +150,20 @@ npm run test:court-honors
 - [地方治理与游戏进程](docs/p01-governance-and-progression.md)
 - [长期玩法实施说明](docs/longterm-development.md)
 - [平衡规则与复验](docs/balance-v1-2026-10-17.md)
+- [发展、经济与战斗资源原始检查（2026-10-21）](docs/development-balance-audit-2026-10-21.md)
+- [22项问题的修复方案与完整复验](docs/development-balance-fixes-2026-10-21.md)
+- [从头复测记录：扩大桌面回归存在9组失败](docs/development-balance-retest-2026-10-21.md)
+- [整体平衡再检查：8项问题、40组场景及解决方案](docs/game-balance-complete-review-2026-10-21.md)
+- [8项整改与最终复检：55条路线、39,960旬及恢复方案](docs/game-balance-fixes-2026-10-21.md)
+- [玩家容错调整：增加冗余与58条路线复测](docs/player-cushion-2026-10-21.md)
+- [当前版新局完整复测：118条路线、战灾容错与恢复方案](docs/player-tolerance-retest-2026-10-21.md)
+- [战后恢复与出征核阅修复：3项修复、142条路线完整复测](docs/army-recovery-fixes-2026-10-21.md)
+- [玩家操作新局复测：48条路线、连续战争与自然灾害、5项解决方案](docs/player-operations-retest-2026-10-21.md)
+- [战后恢复五项修复：51条新局路线、债务战备与续批、完整验收](docs/player-recovery-fixes-2026-10-22.md)
+- [人物随机生成失败修复：全库可达、116张立绘、904项回归通过](docs/random-portrait-generation-fix-2026-10-22.md)
+- [整体平衡再次检查：148组、65,340旬、2项问题与解决方案](docs/game-balance-complete-recheck-2026-10-22.md)
+- [两项平衡修复与新局复测：分批恢复基本兵力、地方军备对账、913项回归](docs/balance-two-fixes-2026-10-22.md)
+- [战灾债务组合复测与修复（最新）：93条路线、3项补齐、恢复建议与922项回归](docs/player-combined-recovery-2026-10-22.md)
 - [外国使臣美术说明](docs/envoy-art/README.md)
 
 ## 项目状态与素材

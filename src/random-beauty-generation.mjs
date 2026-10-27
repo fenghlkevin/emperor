@@ -1,6 +1,7 @@
 import {BEAUTY_REGIONS,CULTURES} from './beauties.mjs';
 import {BEAUTY_CITIES} from './beauty-cities.mjs';
 import {RANDOM_BEAUTY_ART} from './random-beauties-data.mjs';
+import {ensureBeautyTraits} from './beauty-hidden-traits.mjs';
 // Appearance and innate ability are rolled independently; ranges are inclusive.
 export const RANDOM_BEAUTY_TIERS=[
  {name:'一般般',weight:450,appearance:[30,49],ability:[20,39]},
@@ -22,11 +23,16 @@ export function generateBeauty({id,cityId='guannei',random}){
  const given=pick(c.first,random),extra=pick(Array.from('清月云雪兰芷玉锦秋春若映舒宁婉瑶'),random);
  const name=r.id==='sheng'?pick(c.last,random)+(random()<.5?given:extra+pick(Array.from('华音微荷晴霜溪棠柔烟'),random)):['japan','korea','nanzhao'].includes(r.culture)?pick(c.last,random)+given:given+'·'+pick(c.last,random);
  const localArt=RANDOM_BEAUTY_ART.filter(a=>r.id==='sheng'?!a.regionId||a.regionId==='sheng':a.regionId===r.id);
- const specific=localArt.filter(a=>a.id===cityId);
+ const specific=localArt.filter(a=>a.id===cityId||a.cityId===cityId);
  const provincial=r.id==='sheng'?localArt.filter((a,i)=>i%10===city.style):[];
- const art=(specific.length?specific:provincial.length?provincial:localArt);const randomPortraitAsset=art.length?pick(art,random).asset:undefined;
+ // Keep local portraits without orphaning the city's share of the regional catalogue.
+ const cityArt=[...new Set([...specific,...provincial])];
+ const baseArt=cityArt.length?cityArt:localArt;
+ // Shared mainland variants remain reachable in cities with exclusive local art.
+ const sharedArt=localArt.filter(a=>a.poolScope==='mainland'&&!baseArt.includes(a));
+ const art=[...baseArt,...sharedArt];const randomPortraitAsset=art.length?pick(art,random).asset:undefined;
  const appearance=rollBeautyStat('appearance',random),baseAbility=rollBeautyStat('ability',random);
  const personality=pick(['沉静细致','爽朗坦诚','机敏好学','温和坚韧','自信果决','风趣健谈','独立洒脱','好奇敏锐'],random),specialty=pick(c.skills,random);
  const background=pick(['书香门第','商贾之家','工匠之家','医者之家','乡野人家','地方艺坊'],random);
- return {id,name,origin:'原创',regionId:r.id,region:r.name,culture:r.culture,dress:r.dress,portrait:r.portrait,cityId,age:18+Math.floor(random()*8),appearance,baseAbility,ability:baseAbility,experience:0,personality,specialty,biography:`出身${city.name}${background}，${personality}，擅长${specialty}。`,rank:null,randomBeauty:true,...(randomPortraitAsset?{randomPortraitAsset}:{regionalPortrait:true})};
+ return ensureBeautyTraits({id,name,origin:'原创',regionId:r.id,region:r.name,culture:r.culture,dress:r.dress,portrait:r.portrait,cityId,age:18+Math.floor(random()*8),appearance,baseAbility,ability:baseAbility,experience:0,personality,specialty,biography:`出身${city.name}${background}，${personality}，擅长${specialty}。`,rank:null,randomBeauty:true,...(randomPortraitAsset?{randomPortraitAsset}:{regionalPortrait:true})},id);
 }

@@ -1,0 +1,34 @@
+{
+  "checks": [
+    {
+      "oldHeight": 1654.28125,
+      "newHeight": 848.078125,
+      "reduction": "49%"
+    },
+    "inspector hidden by default",
+    "all fourteen units retain eight statuses",
+    {
+      "count": 12,
+      "rows": 3,
+      "height": 77,
+      "root": 873.078125
+    },
+    "badge opens the correct floating detail",
+    "floating detail does not add layout height",
+    "editor opens on demand",
+    "remove one state preserves eleven others",
+    "expiry removes only temporary effects",
+    "Escape closes floating inspector",
+    "single layout and popup fit 1440",
+    "stress layout and popup fit 1440",
+    "single layout and popup fit 1024",
+    "stress layout and popup fit 1024",
+    "single layout and popup fit 736",
+    "stress layout and popup fit 736",
+    "single layout and popup fit 375",
+    "stress layout and popup fit 375",
+    "single layout and popup fit 320",
+    "stress layout and popup fit 320"
+  ],
+  "errors": []
+}
