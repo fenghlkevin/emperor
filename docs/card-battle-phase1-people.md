@@ -47,7 +47,7 @@
 | [王安石](../assets/officials/historical/cbdb-1762/avatar.png) | 4 | 2 | 4 | — | **新法整备**：战吼：本回合下一张计策费用减少1，最低0费；己方主将恢复2生命 |
 | [商鞅](../assets/officials/historical/manual-1510/avatar.png) | 4 | 2 | 4 | — | **军功励战**：战吼：使一个其他友方部队获得攻击+2，仅本回合 |
 | [左宗棠](../assets/officials/historical/manual-1629/avatar.png) | 6 | 3 | 5 | — | **筹饷西征**：战吼：从牌库抽1张费用≥5的牌；己方主将获得2点护甲 |
-| [朱庆国](../assets/officials/historical/original-14/avatar.png) | 4 | 3 | 5 | — | **筹划**：战吼：己方主将获得2点护甲 |
+| [朱庆国](art/retired-docs/art/retired-assets/officials/historical/original-14/avatar.png) | 4 | 3 | 5 | — | **筹划**：战吼：己方主将获得2点护甲 |
 | [班超](../assets/officials/historical/manual-1543/avatar.png) | 5 | 4 | 4 | 突袭 | **经营西域**：战吼：抽1张牌 |
 | [公孙侨](../assets/officials/historical/original-16/avatar.png) | 3 | 2 | 3 | — | **宽政养民**：战吼：己方主将恢复4生命 |
 | [韩信](../assets/officials/historical/manual-1530/avatar.png) | 7 | 4 | 6 | — | **多多益善**：战吼：使随机至多2个其他友方部队获得攻击+1、生命+1 |
@@ -274,9 +274,9 @@
 | [刘墉](../assets/officials/historical/manual-1625/avatar.png) | 4 | 2 | 5 | — | **稽核军需**：战吼：抽1张牌 |
 | [魏忠贤](../assets/officials/historical/manual-1618/avatar.png) | 4 | 2 | 3 | — | **专断**：战吼：沉默一个敌方部队；本回合恢复／临时获得1点可用军令，通常最高10 |
 | [和珅](../assets/officials/historical/manual-1624/avatar.png) | 4 | 2 | 4 | — | **调度财货**：战吼：从牌库抽1张计策；己方主将受到2伤害 |
-| [刘耀伦](../assets/officials/historical/original-97/avatar.png) | 5 | 4 | 5 | 护卫（嘲讽） | **统兵**：战吼：己方主将获得1点护甲 |
-| [邹鹏](../assets/officials/historical/original-98/avatar.png) | 4 | 3 | 4 | — | **筹策**：战吼：抽1张牌 |
-| [沈昌平](../assets/officials/historical/original-99/avatar.png) | 4 | 3 | 5 | — | **整军**：战吼：己方主将恢复2生命 |
+| [刘耀伦](art/retired-docs/art/retired-assets/officials/historical/original-97/avatar.png) | 5 | 4 | 5 | 护卫（嘲讽） | **统兵**：战吼：己方主将获得1点护甲 |
+| [邹鹏](art/retired-docs/art/retired-assets/officials/historical/original-98/avatar.png) | 4 | 3 | 4 | — | **筹策**：战吼：抽1张牌 |
+| [沈昌平](art/retired-docs/art/retired-assets/officials/historical/original-99/avatar.png) | 4 | 3 | 5 | — | **整军**：战吼：己方主将恢复2生命 |
 
 人物关联与设计依据：
 

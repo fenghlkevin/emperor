@@ -127,7 +127,8 @@
       "preload.cjs",
       "index.html",
       "src/**/*",
-      "assets/**/*"
+      "assets/**/*",
+      "!assets/beauties/references/**/*"
     ],
     "mac": {
       "target": [

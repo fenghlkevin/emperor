@@ -14,8 +14,8 @@
 
 | 用途 | 运行时路径 | 原始生成文件 |
 |---|---|---|
-| 随机军官 | `assets/battle/card-regional-military-v1.png` | `/Users/fengheliang/.codex/generated_images/01a15ee4-794a-7840-ad34-c11183262c4a/exec-08086b14-5712-4b47-9a9f-58ded27b693f.png` |
-| 随机文臣 | `assets/battle/card-regional-civil-v1.png` | `/Users/fengheliang/.codex/generated_images/01a15ee4-794a-7840-ad34-c11183262c4a/exec-561b2fa0-b827-4838-8482-720b3248fa6b.png` |
+| 随机军官 | `docs/art/retired-assets/battle/card-regional-military-v1.png` | `/Users/fengheliang/.codex/generated_images/01a15ee4-794a-7840-ad34-c11183262c4a/exec-08086b14-5712-4b47-9a9f-58ded27b693f.png` |
+| 随机文臣 | `docs/art/retired-assets/battle/card-regional-civil-v1.png` | `/Users/fengheliang/.codex/generated_images/01a15ee4-794a-7840-ad34-c11183262c4a/exec-561b2fa0-b827-4838-8482-720b3248fa6b.png` |
 
 格序为：吐蕃、草原、中亚；波斯、阿拉伯、印度；东罗马、南诏／大理、日本。区域映射、文武选择与姓名池保存在 `src/card-battle-cultures.mjs`。这些是虚构随机人物的时期风格插画，不声称是特定真人或考古复原。
 

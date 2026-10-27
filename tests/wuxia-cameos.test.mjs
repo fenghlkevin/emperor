@@ -1,3 +1,4 @@
+import {createHash} from 'node:crypto';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
@@ -57,7 +58,7 @@ test('distinct choices pay once, admit the correct named heroine and preserve he
   const base=reachCameo(naturalEncounter(c)),event=nextTourEvent(base);
   const candidate=eventCompanion(base,event);assert.equal(candidate.name,c.name);
   assert.ok(portraitDataUrl(candidate).endsWith(c.portraitAsset));
-  assert.deepEqual(readFileSync(new URL('../'+c.portraitAsset,import.meta.url)),readFileSync(new URL('../outputs/model-portraits-20261026/李若彤-'+c.name+'-柳岩裹裙-v3.png',import.meta.url)));
+  assert.equal(createHash('sha256').update(readFileSync(new URL('../'+c.portraitAsset,import.meta.url))).digest('hex'),JSON.parse(readFileSync(new URL('../docs/model-portrait-source-checksums.json',import.meta.url))).eventPortraits[c.name]);
   for(const choice of tourEventDefinition(event).choices){
    const result=resolveTourEvent(base,event.id,choice.id);
    const saved=validateSave(JSON.parse(JSON.stringify(result.state)));

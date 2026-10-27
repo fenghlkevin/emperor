@@ -3,6 +3,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import path from 'node:path';
+import {CARD_CULTURES,SOURCE_ART_REGIONS,regionalTroopArt,regionalPersonPortrait,cardRegionalArt} from '../src/card-battle-cultures.mjs';
 import {TOUR_EVENTS} from '../src/tour-events.mjs';
 import {AUSPICES} from '../src/auspices.mjs';
 import {ENVOY_COUNTRIES,portraitAsset} from '../src/envoy-portraits.mjs';
@@ -44,6 +45,18 @@ test('all shipped non-beauty artwork has a runtime consumer, including dynamic p
  // Composite markup chooses these short paths inside a single assets prefix.
  used.add('assets/examinations/exam-gongyuan.png');
  used.add('assets/scenes/governance/sketch-governance-scenes-v1.png');
+ // Enumerate dynamic paths through the production resolvers, including both portrait variants.
+ for(const culture of [...Object.keys(CARD_CULTURES),...Object.keys(SOURCE_ART_REGIONS)]){
+  for(const kind of ['infantry','spears','archers','cavalry','heavy-cavalry','crossbows','camel','elephant','horse-archers']){
+   const art=regionalTroopArt(culture,kind);if(art)used.add(art.src);
+  }
+  for(const role of ['文职','武将'])for(const variant of [0,1]){
+   const art=cardRegionalArt(regionalPersonPortrait(culture,role,variant));if(art)used.add(art.src);
+  }
+ }
+ for(const name of ['dos-courtier-v1.png','dos-emperor-v1.png','dos-throne-hall-v1.png'])used.add('assets/cinematics/'+name);
+ const build=JSON.parse(fs.readFileSync(new URL('package.json',root),'utf8')).build;
+ for(const platform of ['mac','win'])used.add(build[platform].icon);
  const nonBeauty=asset=>!asset.startsWith('assets/beauties/');
  for(const asset of [...used].filter(nonBeauty))assert.ok(fs.existsSync(new URL(asset,root)),`missing runtime asset: ${asset}`);
  const unused=files('assets').filter(nonBeauty).filter(asset=>!used.has(asset)&&!['assets/fonts/OFL-LXGWZhenKai.txt','assets/auspices/README.md','assets/royal-events/README.md'].includes(asset)&&!/^assets\/officials\/(?:[^/]+\/)*readme\.md$/.test(asset));

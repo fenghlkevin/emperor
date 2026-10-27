@@ -22,3 +22,7 @@ M-*.BIN
 # Local research directory and Git metadata
 reverse/
 .git/
+
+# Local IDE state and interrupted audit checkpoints
+.idea/
+docs/*.checkpoint.json

@@ -1,0 +1,191 @@
+{
+  "completed": [
+    "刘雯",
+    "奚梦瑶",
+    "何穗",
+    "杜鹃",
+    "裴蓓",
+    "秦舒培",
+    "雎晓雯",
+    "孙菲菲",
+    "张丽娜",
+    "陈碧舸",
+    "游天翼",
+    "侯梦蝶",
+    "林志玲",
+    "贺聪",
+    "杨颖",
+    "赵佳丽",
+    "柳岩",
+    "徐若瑄"
+  ],
+  "skippedExisting": [],
+  "pending": [],
+  "revisions": {
+    "杜鹃": "杜鹃-轻纱修订.png",
+    "裴蓓": "裴蓓-轻纱修订.png",
+    "游天翼": "游天翼-轻纱开衩-v5.png",
+    "侯梦蝶": "侯梦蝶-轻纱开衩-v5.png",
+    "林志玲": "林志玲-轻纱修订.png",
+    "杨颖": "杨颖.png",
+    "熊黛林": "熊黛林.png",
+    "柳岩": "柳岩-一字领轻纱-v6.png",
+    "徐若瑄": "徐若瑄-一字领轻纱-v6.png",
+    "张梓琳": "张梓琳-头身修订-v3.png",
+    "贺聪": "贺聪-一字肩轻纱-v1.png",
+    "赵佳丽": "赵佳丽-站姿修订-v2.png",
+    "雎晓雯": "雎晓雯-完整全身-v2.png"
+  },
+  "registered": [
+    {
+      "name": "刘雯",
+      "asset": "assets/beauties/random/女明星/刘雯-古绡模特.png",
+      "source": "刘雯.png",
+      "sha256": "6afeef1b514d3a2afe77f48c4049f0489f8aaaed039ecf85cfb28bc44bb3ec03"
+    },
+    {
+      "name": "奚梦瑶",
+      "asset": "assets/beauties/random/女明星/奚梦瑶-古绡模特.png",
+      "source": "奚梦瑶.png",
+      "sha256": "72416dd5f822d3305fc1bfaa7da75b885f81cd0b24ffa75441e9941a534ac7f3"
+    },
+    {
+      "name": "何穗",
+      "asset": "assets/beauties/random/女明星/何穗-古绡模特.png",
+      "source": "何穗.png",
+      "sha256": "636805d6c94d1fec7654ff5f2adee94e8fa3c1c7d40e154290ad8f0d9b4aef05"
+    },
+    {
+      "name": "杜鹃",
+      "asset": "assets/beauties/random/女明星/杜鹃-古绡模特.png",
+      "source": "杜鹃-轻纱修订.png",
+      "sha256": "2072ba3bef6385c4a7addd1f38b03649b686743920e5fc9ebc1bfae2638d454b"
+    },
+    {
+      "name": "裴蓓",
+      "asset": "assets/beauties/random/女明星/裴蓓-古绡模特.png",
+      "source": "裴蓓-轻纱修订.png",
+      "sha256": "8a56e84df320151416a7c4bb5f3feced502be13de488db209701342d8ca59677"
+    },
+    {
+      "name": "秦舒培",
+      "asset": "assets/beauties/random/女明星/秦舒培-古绡模特.png",
+      "source": "秦舒培.png",
+      "sha256": "c473ddf984998d378d2ce8d0eda5bf5dfcb45bd7a8ed78d108045f2d576fd6dc"
+    },
+    {
+      "name": "雎晓雯",
+      "asset": "assets/beauties/random/女明星/雎晓雯-古绡模特.png",
+      "source": "雎晓雯-完整全身-v2.png",
+      "sha256": "20472c711e2542841ae60b019d6432db746dff10660bec5ffd86079e5144086d"
+    },
+    {
+      "name": "孙菲菲",
+      "asset": "assets/beauties/random/女明星/孙菲菲-古绡模特.png",
+      "source": "孙菲菲.png",
+      "sha256": "83192000a3f8be05158f93e629407e924f4aab45041a10ec5d0391d5093e0b98"
+    },
+    {
+      "name": "张丽娜",
+      "asset": "assets/beauties/random/女明星/张丽娜-古绡模特.png",
+      "source": "张丽娜.png",
+      "sha256": "a3d3f0d4defd916b58aa7547a4b55bcae1422a63eb8e0ba91dae6533d76fbc54"
+    },
+    {
+      "name": "陈碧舸",
+      "asset": "assets/beauties/random/女明星/陈碧舸-古绡模特.png",
+      "source": "陈碧舸.png",
+      "sha256": "6378fba20ba6c7df4a256472f7918a10d91073f578c71675795f52b897d169c6"
+    },
+    {
+      "name": "游天翼",
+      "asset": "assets/beauties/random/女明星/游天翼-古绡模特.png",
+      "source": "游天翼-轻纱开衩-v5.png",
+      "sha256": "46ea148a0166c665777d64bd51c9d8b4c46523485b8f89350a219845c2894092"
+    },
+    {
+      "name": "侯梦蝶",
+      "asset": "assets/beauties/random/女明星/侯梦蝶-古绡模特.png",
+      "source": "侯梦蝶-轻纱开衩-v5.png",
+      "sha256": "b96219e3666447206a0b86d895f279f78d6bd615f3f0b8ef39dc6020f5199329"
+    },
+    {
+      "name": "林志玲",
+      "asset": "assets/beauties/random/女明星/林志玲-古绡模特.png",
+      "source": "林志玲-轻纱修订.png",
+      "sha256": "eab0bfdf129c622727ff4290ea3755a5dfea9ce7bc00f92a5cacf049d1bf54d5"
+    },
+    {
+      "name": "贺聪",
+      "asset": "assets/beauties/random/女明星/贺聪-古绡模特.png",
+      "source": "贺聪-一字肩轻纱-v1.png",
+      "sha256": "d521da091c4816d8e315347165d376e575b46181168a540d5414f17cee240d44"
+    },
+    {
+      "name": "杨颖",
+      "asset": "assets/beauties/random/女明星/杨颖-古绡模特.png",
+      "source": "杨颖.png",
+      "sha256": "38ccba868597606d251ea4ebe4a4ee7dd4f08014918f29a0ef362b73f54a0c98"
+    },
+    {
+      "name": "赵佳丽",
+      "asset": "assets/beauties/random/女明星/赵佳丽-古绡模特.png",
+      "source": "赵佳丽-站姿修订-v2.png",
+      "sha256": "4fedfb4ecd947d9f89fda3b36941f88c44b5a257d920341849cc9396fabb7ee1"
+    },
+    {
+      "name": "柳岩",
+      "asset": "assets/beauties/random/女明星/柳岩-古绡模特.png",
+      "source": "柳岩-一字领轻纱-v6.png",
+      "sha256": "110c6337868e747b827dae7377c9851bbec0f1a15e74a7f1032de10f42fbf37c"
+    },
+    {
+      "name": "徐若瑄",
+      "asset": "assets/beauties/random/女明星/徐若瑄-古绡模特.png",
+      "source": "徐若瑄-一字领轻纱-v6.png",
+      "sha256": "2a93f9fd7df4561adf6c06767d891558f5a3ca46a148715ee142b5dd43258c82"
+    }
+  ],
+  "existingRetained": {
+    "name": "张梓琳",
+    "asset": "assets/beauties/random/女明星/张梓琳.png",
+    "source": "张梓琳-头身修订-v3.png",
+    "sha256": "5d473ecfc53464af2a577bc8a4651ff8e3eb141b1041a6fe2bf87ffb04d45794"
+  },
+  "removedFromPool": [
+    "熊黛林",
+    "乐基儿",
+    "王李丹妮"
+  ],
+  "reworkCompleted": [
+    "柳岩",
+    "徐若瑄",
+    "侯梦蝶",
+    "游天翼",
+    "张梓琳",
+    "贺聪",
+    "赵佳丽",
+    "雎晓雯"
+  ],
+  "replacements": [
+    {
+      "previous": "乐基儿",
+      "name": "贺聪",
+      "source": "贺聪-一字肩轻纱-v1.png"
+    },
+    {
+      "previous": "王李丹妮",
+      "name": "赵佳丽",
+      "source": "赵佳丽-站姿修订-v2.png"
+    },
+    {
+      "previous": "雎晓雯",
+      "name": "雎晓雯",
+      "source": "雎晓雯-完整全身-v2.png"
+    }
+  ],
+  "eventPortraits": {
+    "小龙女": "8f48c5377c9d76ce102f2ff1da2e7768b2e51769c0ebfeb1732b8f3607e909b1",
+    "王语嫣": "163398ed4976dc966a04b14df48b0051a0852fce0996982013cdd868feae7370"
+  }
+}

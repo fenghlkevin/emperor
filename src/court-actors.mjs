@@ -41,7 +41,7 @@ function loadArt(src){if(!cache.has(src))cache.set(src,(async()=>{
 })().catch(error=>{cache.delete(src);throw error;}));return cache.get(src);}
 export function alphaHit(mask,x,y){if(!mask||x<0||y<0||x>=mask.width||y>=mask.height)return false;return mask.data[(Math.floor(y)*mask.width+Math.floor(x))*4+3]>64;}
 export function mountCourtActors(scene,domestic){
- const controller=new AbortController(),actors=[],records=courtActorRecords(domestic);let disposed=false,frame=0;
+ const controller=new AbortController(),actors=[],records=courtActorRecords(domestic);let disposed=false,loaded=false,frame=0;
  if(records.some(r=>r.person&&!r.art?.court)){scene.querySelector(':scope>img').src='assets/scenes/court/sketch-court-emperor-pov-v7.png';scene.dataset.courtReady='fallback';return ()=>{};}
  scene.classList.add('has-court-actors');scene.dataset.courtReady='loading';
  const caption=document.createElement('span');caption.className='court-person-caption';caption.hidden=true;caption.setAttribute('aria-hidden','true');scene.append(caption);
@@ -64,7 +64,7 @@ export function mountCourtActors(scene,domestic){
   captionObserver.observe(button,{attributes:true,attributeFilter:['class']});
   actors.push({button,canvas,source,slot,mask:null});
  }));
- function paint(){if(disposed)return;const bounds=scene.getBoundingClientRect();if(!bounds.width||!bounds.height)return;
+ function paint(){if(disposed||!loaded)return;const bounds=scene.getBoundingClientRect();if(!bounds.width||!bounds.height)return;
   // Anchor the back row to the doorway floor and fit the formation before the desk.
   // The desk's rear edge is below its transparent upper margin.
   const desk=scene.parentElement.querySelector('.court-desk')?.getBoundingClientRect();
@@ -74,7 +74,8 @@ export function mountCourtActors(scene,domestic){
   const frontFoot=Math.max(...actors.map(a=>a.slot[1]));
   const originalBack=Math.min(...actors.map(a=>a.slot[1])),backFoot=46;
   const visibleFront=Math.min(frontFoot,(rear-bounds.top-14)/bounds.height*100);
-  const depthScale=Math.max(0,(visibleFront-backFoot)/(frontFoot-originalBack));
+  const depth=frontFoot-originalBack;
+  const depthScale=depth>0?Math.max(0,(visibleFront-backFoot)/depth):0;
   for(const actor of actors){const {button,canvas,source,slot}=actor;const [center,originalFoot]=slot;const foot=backFoot+(originalFoot-originalBack)*depthScale;const height=perspective.bodyHeight(bounds.height*foot/100)/bounds.height*100;actor.displaySlot=[center,foot,height];
    const cssHeight=bounds.height*height/100,cssWidth=cssHeight*source.width/source.height;
    Object.assign(button.style,{left:`${center}%`,top:`${foot-height}%`,width:`${cssWidth}px`,height:`${cssHeight}px`,transform:'translateX(-50%)',zIndex:String(Math.round(foot))});
@@ -92,7 +93,7 @@ export function mountCourtActors(scene,domestic){
   if(event.detail===0||event.target.closest('.scene-heading,footer,#next'))return;
   event.preventDefault();event.stopImmediatePropagation();pick(event)?.button.click();
  },{capture:true,signal:controller.signal});
- ready.then(()=>{if(disposed)return;paint();scene.dataset.courtReady='true';}).catch(error=>{if(disposed)return;
+ ready.then(()=>{if(disposed)return;loaded=true;paint();scene.dataset.courtReady='true';}).catch(error=>{if(disposed)return;
   disposed=true;controller.abort();observer.disconnect();captionObserver.disconnect();caption.remove();cancelAnimationFrame(frame);
   scene.classList.remove('has-court-actors');scene.style.cursor='';
   scene.querySelector(':scope>img').src='assets/scenes/court/sketch-court-emperor-pov-v7.png';

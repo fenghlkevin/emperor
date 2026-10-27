@@ -1,6 +1,6 @@
 # 邹鹏上朝立绘
 
-内置 ImageGen，本轮一张。人物 `original-98`，类型 `court`，保存至 `assets/officials/historical/original-98/court.png`，参考同 ID 的 full 主图。面容、全身构图及朝服核验通过，RGBA 透明通道与边界检查通过。已同步人物绑定、状态、画廊及完整性报告，5 项测试及录用前缀绑定通过。剩余 27 张：1 张上朝像、26 张头像。审计因剩余缺图按预期失败。
+内置 ImageGen，本轮一张。人物 `original-98`，类型 `court`，保存至 `docs/art/retired-assets/officials/historical/original-98/court.png`，参考同 ID 的 full 主图。面容、全身构图及朝服核验通过，RGBA 透明通道与边界检查通过。已同步人物绑定、状态、画廊及完整性报告，5 项测试及录用前缀绑定通过。剩余 27 张：1 张上朝像、26 张头像。审计因剩余缺图按预期失败。
 
 提示词：
 

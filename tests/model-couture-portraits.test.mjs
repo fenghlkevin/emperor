@@ -1,3 +1,4 @@
+import {createHash} from 'node:crypto';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {existsSync,readFileSync} from 'node:fs';
@@ -11,10 +12,10 @@ const names=['刘雯','奚梦瑶','何穗','杜鹃','裴蓓','游天翼','秦舒
 const additions=RANDOM_BEAUTY_ART.filter(r=>r.id.startsWith('model-couture-20261026-'));
 test('all eighteen portraits are registered once and Zhang Zilin keeps one catalogue entry',()=>{
  assert.equal(additions.length,18);
- const manifest=JSON.parse(readFileSync(new URL('../outputs/model-portraits-20261026/manifest.json',import.meta.url)));
- for(const name of names){const rows=additions.filter(r=>r.name===name+'-古绡模特');assert.equal(rows.length,1,name);const r=rows[0];assert.equal(r.regionId,'sheng');assert.equal(r.poolScope,'mainland');assert.ok(existsSync(new URL('../'+r.asset,import.meta.url)));const source=manifest.registered.find(s=>s.name===name);assert.deepEqual(readFileSync(new URL('../'+r.asset,import.meta.url)),readFileSync(new URL('../outputs/model-portraits-20261026/'+source.source,import.meta.url)),name+' uses selected revision');}
+ const manifest=JSON.parse(readFileSync(new URL('../docs/model-portrait-source-checksums.json',import.meta.url)));
+ for(const name of names){const rows=additions.filter(r=>r.name===name+'-古绡模特');assert.equal(rows.length,1,name);const r=rows[0];assert.equal(r.regionId,'sheng');assert.equal(r.poolScope,'mainland');assert.ok(existsSync(new URL('../'+r.asset,import.meta.url)));const source=manifest.registered.find(s=>s.name===name);assert.equal(createHash('sha256').update(readFileSync(new URL('../'+r.asset,import.meta.url))).digest('hex'),source.sha256,name+' uses selected revision');}
  assert.equal(RANDOM_BEAUTY_ART.filter(r=>r.name==='张梓琳').length,1);
- if(manifest.existingRetained.source){assert.deepEqual(readFileSync(new URL('../'+manifest.existingRetained.asset,import.meta.url)),readFileSync(new URL('../outputs/model-portraits-20261026/'+manifest.existingRetained.source,import.meta.url)));}
+ if(manifest.existingRetained.source){assert.equal(createHash('sha256').update(readFileSync(new URL('../'+manifest.existingRetained.asset,import.meta.url))).digest('hex'),manifest.existingRetained.sha256);}
 });
 test('each mainland city can draw all eighteen portraits and admission persists the selected image',()=>{
  const found=new Map();let serial=0;
