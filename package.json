@@ -1,6 +1,6 @@
 {
   "name": "emperor",
-  "version": "0.1.0",
+  "version": "1.0.1",
   "description": "Emperor — 古代帝王策略养成游戏",
   "main": "desktop.cjs",
   "author": "Emperor Game",
@@ -108,7 +108,8 @@
     "test:card-battle-landmark-tutorial": "electron tests/card-battle-landmark-tutorial-desktop.cjs",
     "test:card-battle-person-presentations": "electron tests/card-battle-person-presentations-desktop.cjs",
     "test:development-balance": "node scripts/audit-development-balance.mjs",
-    "test:development-edges": "node scripts/audit-development-edge-cases.mjs"
+    "test:development-edges": "node scripts/audit-development-edge-cases.mjs",
+    "build:release": "node scripts/release/build.mjs"
   },
   "devDependencies": {
     "electron": "^38.0.0",
@@ -128,7 +129,10 @@
       "index.html",
       "src/**/*",
       "assets/**/*",
-      "!assets/beauties/references/**/*"
+      "!assets/beauties/references/**/*",
+      "desktop-assets.cjs",
+      "desktop-smoke.cjs",
+      "release-assets.json"
     ],
     "mac": {
       "target": [
@@ -150,5 +154,9 @@
       "oneClick": false,
       "allowToChangeInstallationDirectory": true
     }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fenghlkevin/emperor.git"
   }
 }

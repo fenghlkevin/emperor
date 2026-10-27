@@ -1,0 +1,98 @@
+name: Standalone desktop release
+run-name: Build and verify ${{ inputs.release_tag }}
+on:
+  workflow_dispatch:
+    inputs:
+      release_tag:
+        description: Draft release tag matching package.json
+        required: true
+        default: v1.0.1
+permissions:
+  contents: read
+concurrency:
+  group: desktop-release-${{ inputs.release_tag }}
+  cancel-in-progress: false
+jobs:
+  build:
+    permissions:
+      contents: write
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - runner: macos-15
+            arch: arm64
+          - runner: macos-15-intel
+            arch: x64
+          - runner: windows-2022
+            arch: x64
+    runs-on: ${{ matrix.runner }}
+    timeout-minutes: 60
+    env:
+      RELEASE_TAG: ${{ inputs.release_tag }}
+      GH_TOKEN: ${{ github.token }}
+      CSC_IDENTITY_AUTO_DISCOVERY: 'false'
+      PYTHON: python
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: ${{ github.sha }}
+          fetch-depth: 1
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            /package.json
+            /package-lock.json
+            /desktop.cjs
+            /desktop-runtime.cjs
+            /desktop-assets.cjs
+            /desktop-smoke.cjs
+            /preload.cjs
+            /index.html
+            /electron-builder.release.cjs
+            /src/
+            /assets/
+            /scripts/release/
+            /scripts/validate-data-contract.mjs
+            /tests/release-assets.test.mjs
+            /tests/release-assets-desktop.cjs
+            /tests/asset-usage.test.mjs
+      - uses: actions/setup-node@v5
+        with:
+          node-version: '22'
+          cache: npm
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - name: Free the ephemeral checkout pack cache
+        shell: bash
+        run: |
+          node --input-type=module -e "import fs from 'node:fs';if(process.env.GITHUB_ACTIONS==='true'&&process.env.RUNNER_ENVIRONMENT==='github-hosted'){fs.rmSync('.git/objects/pack',{recursive:true,force:true});fs.mkdirSync('.git/objects/pack',{recursive:true});}"
+      - run: npm ci
+      - run: python -m pip install Pillow==11.3.0
+      - name: Verify runtime contracts and asset coverage
+        run: npm run test:types
+      - run: node --test tests/release-assets.test.mjs tests/asset-usage.test.mjs
+      - name: Verify legacy image URLs in the native Electron runtime
+        run: npx electron tests/release-assets-desktop.cjs
+      - name: Build independent applications and run packaged smoke test
+        run: npm run build:release -- --arch=${{ matrix.arch }}
+      - name: Upload verified packages to the draft release
+        run: node scripts/release/upload.mjs
+  publish:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    env:
+      RELEASE_TAG: ${{ inputs.release_tag }}
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: ${{ github.sha }}
+          sparse-checkout: scripts/release
+      - uses: actions/setup-node@v5
+        with:
+          node-version: '22'
+      - name: Verify all native packages, combine checksums and publish
+        run: node scripts/release/publish.mjs

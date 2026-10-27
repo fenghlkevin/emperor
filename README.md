@@ -23,6 +23,18 @@
 | 帝王起居 | 修习、安寝、后宫相伴、狩猎、巡游、微服出行与炼丹 |
 | 王朝传承 | 管理宗室与储君，推进特殊工程，积累本朝纪事并迎接终评与继位 |
 
+## 下载独立运行版
+
+前往 [GitHub Releases](https://github.com/fenghlkevin/emperor/releases/latest)，按设备选择发行包。包内包含运行环境、游戏代码和完整运行素材，不需要安装 Node.js、Python 或克隆仓库。
+
+| 设备 | 下载与运行 |
+| --- | --- |
+| Apple Silicon Mac（M 系列） | 选择 `mac-arm64.dmg` 安装，或解压 `mac-arm64.zip` 后打开 `Emperor.app` |
+| Intel Mac | 选择 `mac-x64.dmg` 安装，或解压 `mac-x64.zip` 后打开 `Emperor.app` |
+| Windows 10/11 64 位 | `windows-x64-portable.exe` 直接运行；`windows-x64-setup.exe` 为安装版 |
+
+macOS 版本要求 macOS 12 或更高版本。本版使用 ad-hoc 签名，尚未做 Apple 公证；首次打开时，可在系统设置的“隐私与安全性”中按系统提示允许。发行页面同时提供 SHA-256 校验文件和各平台启动验收记录。
+
 ## 快速开始
 
 ### 从源码运行桌面版
@@ -213,7 +225,16 @@ npm run build:mac
 npm run build:win
 ```
 
-构建产物位于 `dist/`。macOS 构建当前未配置签名与公证；Windows 产物应在 Windows 环境另行验收。本页截图来自 macOS 桌面运行。
+构建产物位于 `dist/`。普通开发构建未配置签名与公证。本页截图来自 macOS 桌面运行。正式发行流程使用各平台原生运行器构建，并启动成品验证。
+
+发行构建（构建机另需 Python 3 和 Pillow 11.3.0）：
+
+```sh
+python3 -m pip install Pillow==11.3.0
+npm run build:release
+```
+
+发行素材仅在独立构建目录中转换为逐像素一致的无损 WebP，仓库原图和存档路径保持不变。原生构建、成品启动验收、校验和与 Release 上传流程位于 `.github/workflows/release.yml`。
 
 ## 进一步了解
 
