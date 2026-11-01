@@ -1,9 +1,11 @@
+import {openPersonnelBulk} from './personnel-bulk-ui.mjs';
+import {openAppointmentTable} from './appointment-table-ui.mjs';
 import {examFee} from './difficulty.mjs';
 import {officeAbility,officeAbilityBasis} from './office-ability.mjs';
 import {hanlinEffect,hanlinEligible,hanlinAttributeStep,HANLIN_FEE,HANLIN_ABILITY_CAP} from './hanlin.mjs';
 import {GROWTH_KEYS,STUDY_KEYS,GROWTH_LABELS,abilityCap} from './official-growth.mjs';
 import {assignmentEffectComparison} from './central-office-effects.mjs';
-import {examSelection,ACTIVE_HISTORICAL_PEOPLE} from './exam.mjs';
+import {examSelection} from './exam.mjs';
 import {commitOperation} from './operation-result.mjs';
 import {localPolicyControls,bindLocalPolicyControls} from './local-policy-ui.mjs';
 import {courtGovernanceFeedback} from './court-governance-feedback.mjs';
@@ -16,12 +18,14 @@ import {governorProfile} from './governance.mjs';
 import {courtBlock} from './emperor.mjs';
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const fmt=n=>Number(n).toLocaleString('zh-CN');
-const titles={assign:'官职任命',honor:'加官封爵',dismiss:'官员外调',delegate:'地方治理',budget:'治理预算',exam:'开科求贤',hanlin:'翰林院研习',profiles:'人物名册'};
+const titles={assign:'官职任命',honor:'加官封爵',dismiss:'官员外调',delegate:'地方治理',budget:'治理预算',exam:'开科求贤',hanlin:'翰林院研习'};
 const officeOrder=['prime-minister','central-general','personnel-minister','personnel-deputy','revenue-minister','revenue-deputy','rites-minister','rites-deputy','war-minister','war-deputy','justice-minister','works-minister','works-deputy'];
 const orderedOffices=d=>officeRegister(d).sort((a,b)=>(officeOrder.indexOf(a.id)<0?999:officeOrder.indexOf(a.id))-(officeOrder.indexOf(b.id)<0?999:officeOrder.indexOf(b.id)));
 const dimensions=[['politics','政务'],['leadership','统率'],['intelligence','智力'],['martial','武力'],['integrity','清廉'],['loyalty','忠诚']];
-const rules={assign:['选择官位和人选后拟旨，再确认颁旨。原任转为待命，调出官位会空缺；调任忠诚最多增加5。','岗位能力按该官职的实际规则计算，清廉与忠诚单独生效。能力差值为拟任相对现任的变化。'],honor:['加官与封爵分别晋升一级，赏银按当前等级计算。忠诚最多增加10，并增加后续俸禄；拟旨后展示实际钱粮变化。'],dismiss:['外调会永久移出在朝名册，无法返回中央。请在御批页核对人员及风险后确认。'],delegate:['州牧与将军分别处理勾选的日常事务。缺官、缺少资源或超出授权时暂停并上奏。','全国预算、国库保留线与本州上限同时生效。保留线不保证常规结算后的余额。','锁定的职业不会被自动治理调整；无法保粮时须复奏。扩军、跨州调动和重大工程须另请旨。'],budget:['全国预算限制每旬自动治理支出，国库保留线同时生效。修改从下次治理生效；常规财政结算仍可能使余额低于保留线。'],exam:['开科费用见本届费用，下旬揭榜；退朝后的工作阶段举行制举，可选择多人统一录用。','候选名额与名士概率由揭榜时的在职官员和皇帝能力核定。每届至少一名本朝新秀。'],hanlin:[`仅没有官职、没有辖区且未执行密查的待命官员可研习。每个实际研习旬支银${HANLIN_FEE}两。`,'基础每6旬积累1经验；所选能力70以下约18旬增加1点，70以上约36旬增加1点。侍郎只增加进度。',`研习不突破个人潜力与${HANLIN_ABILITY_CAP}点培养上限；清廉、忠诚不可研习。缺钱、保留线不足、尚书空缺或名额不足时暂停且不扣费。`,'换科与出院保留进度，获任官职即停止研习；经验与本科目均封顶后不再收费。'],profiles:['名册使用游戏收录的人物资料。点击详情可查阅人物生平、性格、当前能力与个人成长上限。']};
+const rules={assign:['选择官位和人选后加入任命单，可连续安排多人，再统一拟旨。每人、每个官职只能安排一次；支持互换官职，未获新任的原任转为待命。整批确认消耗一次政务行动，调任嘉奖沿用原规则。','岗位能力按该官职的实际规则计算，清廉与忠诚单独生效。能力差值为拟任相对现任的变化。'],honor:['加官与封爵分别晋升一级，赏银按当前等级计算。忠诚最多增加10，并增加后续俸禄；拟旨后展示实际钱粮变化。'],dismiss:['外调会永久移出在朝名册，无法返回中央。请在御批页核对人员及风险后确认。'],delegate:['州牧与将军分别处理勾选的日常事务。缺官、缺少资源或超出授权时暂停并上奏。','全国预算、国库保留线与本州上限同时生效。保留线不保证常规结算后的余额。','锁定的职业不会被自动治理调整；无法保粮时须复奏。扩军、跨州调动和重大工程须另请旨。'],budget:['全国预算限制每旬自动治理支出，国库保留线同时生效。修改从下次治理生效；常规财政结算仍可能使余额低于保留线。'],exam:['开科费用见本届费用，下旬揭榜；退朝后的工作阶段举行制举，可选择多人统一录用。','候选名额与名士概率由揭榜时的在职官员和皇帝能力核定。每届至少一名本朝新秀。'],hanlin:[`仅没有官职、没有辖区且未执行密查的待命官员可研习。每个实际研习旬支银${HANLIN_FEE}两。`,'基础每6旬积累1经验；所选能力70以下约18旬增加1点，70以上约36旬增加1点。侍郎只增加进度。',`研习不突破个人潜力与${HANLIN_ABILITY_CAP}点培养上限；清廉、忠诚不可研习。缺钱、保留线不足、尚书空缺或名额不足时暂停且不扣费。`,'换科与出院保留进度，获任官职即停止研习；经验与本科目均封顶后不再收费。']};
 export function openCourtPersonnel(initial,root,onCommit,onClose,options={}){
+ if(['honor','dismiss','hanlin'].includes(options.view))return openPersonnelBulk(initial,root,onCommit,onClose,options);
+ if((options.view??'assign')==='assign')return openAppointmentTable(initial,root,onCommit,onClose,options);
  const officeTitle=options.office==='personnel-deputy'?'吏部侍郎':'吏部尚书';const view=options.view??'assign';if(!titles[view])throw Error('未知吏部事项');
  let state=initial,selectedId=null,office='prime-minister',province=options.provinceId,stage='draft',draft=null,error='',busy=false,query='',filter='all',scope='central',page=0,officePage=0,provincePage=0,studyAttribute='intelligence',studyPersonId=null,budget=initial.domestic.governance.budget,reserve=initial.domestic.governance.reserve,child=null;
  const dialog=document.createElement('dialog');dialog.className='governance-dialog court-personnel personnel-office-scroll';dialog.setAttribute('aria-label',`${officeTitle} · ${titles[view]}`);root.append(dialog);
@@ -54,21 +58,14 @@ export function openCourtPersonnel(initial,root,onCommit,onClose,options={}){
  function identity(p){return `<div class="personnel-office-identity">${p?avatar(p):''}<div><h2>${esc(p?.name??'暂无人选')}</h2><p>${esc(p?.office??p?.dynasty??'')}</p>${p?'<button data-personnel-profile>详情 ↗</button>':''}</div></div>`;}
  function draw(){
   dialog.dataset.personnelPage=view;dialog.dataset.personnelStage=stage;
-  const all=people(),eligible=view==='hanlin'?hanlinEligible(state.domestic):view==='profiles'?ACTIVE_HISTORICAL_PEOPLE:all;
-  let main='',side='',footer='';const rosterHtml=['assign','honor','dismiss','hanlin','profiles'].includes(view)?roster(eligible):'';
+  const all=people(),eligible=view==='hanlin'?hanlinEligible(state.domestic):all;
+  let main='',side='',footer='';const rosterHtml=['assign','honor','dismiss','hanlin'].includes(view)?roster(eligible):'';
   const person=eligible.find(p=>p.id===selectedId);province??=owned()[0]?.id;
   if(view==='hanlin'&&studyPersonId!==selectedId){studyPersonId=selectedId;studyAttribute=state.domestic.personnel.hanlin?.students.find(r=>r.officialId===selectedId)?.attribute??'intelligence';}
   if(stage==='confirm'){
-   main=`<section class="personnel-office-confirm-art">${person?full(person):`<img src="assets/${view==='exam'?'examinations/exam-gongyuan.png':'scenes/governance/sketch-governance-scenes-v1.png'}" alt="${titles[view]}">`}<h2>${esc(person?.name??titles[view])}</h2></section>`;
+   main=draft.assignments?`<section class="personnel-batch-review"><h2>任命单 · ${draft.assignments.length}人</h2><table><thead><tr><th>官员</th><th>原职</th><th>拟任</th><th>原任</th><th>忠诚</th></tr></thead><tbody>${draft.assignments.map(r=>`<tr><th>${esc(r.name)}</th><td>${esc(r.from)}</td><td>${esc(r.to)}</td><td>${esc(r.incumbent)}</td><td>${r.loyaltyBefore} → ${r.loyaltyAfter}</td></tr>`).join('')}</tbody></table><p>未获新任的原任转为待命。</p><p>调整后空缺：${esc(draft.vacancies.join('、')||'无新增空缺')}。</p></section>`:`<section class="personnel-office-confirm-art">${person?full(person):`<img src="assets/${view==='exam'?'examinations/exam-gongyuan.png':'scenes/governance/sketch-governance-scenes-v1.png'}" alt="${titles[view]}">`}<h2>${esc(person?.name??titles[view])}</h2></section>`;
    side=`<section class="personnel-confirm"><h2>请陛下落旨</h2><p>${esc(draft.message)}</p><strong>支银 ${fmt(draft.cost)} 两</strong><p>国库 ${fmt(draft.treasuryBefore)} → ${fmt(draft.treasuryAfter)} 两</p><p>预计旬结余 ${fmt(draft.netBefore)} → ${fmt(draft.netAfter)} 两</p>${draft.personBefore&&draft.personAfter?`<p>忠诚 ${draft.personBefore.loyalty} → ${draft.personAfter.loyalty}</p>`:''}</section>`;
    footer=`${draft.warning?`<p class="atlas-confirm-risk">${esc(draft.warning)}</p>`:''}<div class="personnel-seal-actions"><button data-personnel-edit>再斟酌</button><button class="court-vermilion" data-personnel-seal>落印颁旨</button></div>`;
-  }else if(view==='assign'){
-   const officeSize=pageSize();const offices=orderedOffices(state.domestic).filter(o=>scope==='central'?o.scope==='central':o.provinceId===province),count=Math.ceil(offices.length/officeSize);officePage=Math.min(officePage,Math.max(0,count-1));
-   if(!offices.some(o=>o.id===office))office=offices[0]?.id;const current=personnelSeat(state.domestic,office).incumbent;
-   main=`<section class="personnel-seats"><header><span>拟任官位</span><div><select data-personnel-scope aria-label="官位范围"><option value="central" ${scope==='central'?'selected':''}>中央</option><option value="local" ${scope==='local'?'selected':''}>地方</option></select>${scope==='local'?`<select data-personnel-province-select aria-label="选择州郡">${owned().map(p=>`<option value="${p.id}" ${p.id===province?'selected':''}>${esc(p.name)}</option>`).join('')}</select>`:''}</div></header><div class="personnel-office-seals">${offices.slice(officePage*officeSize,officePage*officeSize+officeSize).map(o=>`<button data-personnel-office="${o.id}" aria-pressed="${office===o.id}"><strong>${esc(o.name)}</strong><small>${esc(personnelSeat(state.domestic,o.id).incumbent?.name??'虚位待贤')}</small></button>`).join('')}${Array.from({length:officeSize-offices.slice(officePage*officeSize,officePage*officeSize+officeSize).length},()=>'<span class="personnel-office-placeholder" aria-hidden="true"></span>').join('')}</div>${pagination(officePage,count,'offices')}</section><div class="personnel-comparison"><figure>${current?avatar(current):'<span>虚位待贤</span>'}<figcaption>现任 · ${esc(current?.name??'空缺')}</figcaption></figure><div class="personnel-vacancy"><h2>${esc(personnelSeat(state.domestic,office).office?.name)}</h2><span>→</span></div><figure>${avatar(person)}<figcaption>拟任 · ${esc(person?.name??'未选')}</figcaption></figure></div>${rosterHtml}`;
-   const effect=assignmentEffectComparison(state.domestic,office,person);
-   side=identity(person)+scores(person,current)+`<p class="personnel-office-effect" data-office-ability>岗位能力 ${current?officeAbility(current,office):'空缺'} → ${person?officeAbility(person,office):'未选'} <button data-effect-help aria-label="岗位能力说明">？</button></p>${effect?'<button class="personnel-inline-help" data-office-effect>任职影响 ？</button>':''}`;
-   footer=`<button class="court-vermilion" data-personnel-propose="assign" ${person&&office?'':'disabled'}>拟定任命 →</button>`;
   }else if(view==='honor'||view==='dismiss'){
    main=`<figure class="personnel-office-large-portrait">${full(person)}<figcaption>${esc(person?.name??'暂无人选')}</figcaption></figure>${rosterHtml}`;side=identity(person)+scores(person);
    const rank=person?.rank??0,nobility=person?.nobilityLevel??0;
@@ -80,7 +77,7 @@ export function openCourtPersonnel(initial,root,onCommit,onClose,options={}){
    side=p?`<h2>${esc(p.name)}</h2><p>${g.active?esc(g.name):'州牧空缺'} · 治理能力 ${g.ability}</p><div class="personnel-governor-facts"><span>民忠 <b>${Math.round(p.welfare.loyalty)}</b></span><span>清廉 <b>${g.integrity}</b></span><span>损耗 <b>${Math.round(g.lossRate*100)}%</b></span></div>${localPolicyControls(state,p)}<button data-feedback>最近治理记录 ？</button>`:'<h2>暂无本国州郡</h2>';
    if(p&&p.resourceRulesVersion!==1)footer=`<button class="court-vermilion" data-personnel-propose="delegate">${state.domestic.personnel.delegations.includes(province)?'收回地方委任':'委任地方治理'} →</button>`;
   }else if(view==='budget'){
-   main='<section class="personnel-office-illustration"><h2>全国治理预算</h2><div aria-hidden="true"></div></section>';
+   main='<section class="personnel-office-illustration"><h2>全国治理预算</h2><p>控制委任地方官每旬自动办事的支出，设置预算不会立即扣款。</p><p>用于缺粮购粮、产业开发、地方设施、驻军补装和训练等日常治理；仍需地方授权、官员与资源条件满足。</p><p>每旬预算是全国共用额度，各州上限同时生效。额度不足时暂缓，重大工程与扩军另行请旨。</p><p>国库保留是日常自动治理的留底线，并非全部财政的最低余额；俸禄、维护等正常结算仍会扣款，特殊恢复政策也可能调整额度与留底。</p><p>例如预算 1,400 两、保留 7,000 两：常规自动治理每旬合计最多使用 1,400 两，且须留足保留金；没办事就不花钱。</p><div aria-hidden="true"></div></section>';
    side=`<h2>全国预算</h2><label class="personnel-budget-field">每旬预算 / 两<input data-personnel-budget type="number" min="0" max="1000000" value="${budget}"></label><label class="personnel-budget-field">国库保留 / 两<input data-personnel-reserve type="number" min="0" max="1000000" value="${reserve}"></label><p>现行预算 ${fmt(state.domestic.governance.budget)} 两 / 旬</p><p>现行保留 ${fmt(state.domestic.governance.reserve)} 两</p>`;
    footer='<button class="court-vermilion" data-personnel-propose="governanceBudget">拟定全国预算 →</button>';
   }else if(view==='exam'){
@@ -94,8 +91,6 @@ export function openCourtPersonnel(initial,root,onCommit,onClose,options={}){
    main=`<section class="hanlin-study"><header><h2>在院 ${students.length} / ${e.capacity} 人</h2><button data-hanlin-history>研习记录 ？</button></header>${rosterHtml}${person?`<h3>${esc(person.name)} · 经验 ${person.experience??0}</h3><table class="personnel-study-table"><thead><tr><th>能力</th><th>当前</th><th>个人上限</th><th>培养上限</th><th>进度</th></tr></thead><tbody>${GROWTH_KEYS.map(key=>`<tr><th>${GROWTH_LABELS[key]}</th><td>${person[key]??0}</td><td>${abilityCap(person,key)}</td><td>${STUDY_KEYS.includes(key)?Math.min(HANLIN_ABILITY_CAP,abilityCap(person,key)):'—'}</td><td>${STUDY_KEYS.includes(key)?(person[key]??0)>=Math.min(HANLIN_ABILITY_CAP,abilityCap(person,key))?'已封顶':`${person.studyProgress?.abilities[key]??0}/${hanlinAttributeStep(person,key)}`:'不可研习'}</td></tr>`).join('')}</tbody></table>`:'<p>暂无待命官员</p>'}</section>`;
    side=identity(person)+`<p>每旬费用 ${HANLIN_FEE} 两 / 人</p><p>侍郎进度加成 ＋${e.rate-100}%</p><label>研习科目<select class="hanlin-course" data-hanlin-attribute>${STUDY_KEYS.map(key=>`<option value="${key}" ${key===studyAttribute?'selected':''}>${GROWTH_LABELS[key]}</option>`).join('')}</select></label>${row?'<button data-hanlin-stop>停止研习</button>':''}`;
    footer=`<button class="court-vermilion" data-personnel-propose="hanlin-enroll" ${person&&e.capacity?'':'disabled'}>${row?'调整研习科目':'拟旨入院研习'} →</button>`;
-  }else if(view==='profiles'){
-   main=`<figure class="personnel-office-large-portrait">${full(person)}</figure>${rosterHtml}`;side=identity(person)+scores(person);footer=`<button class="court-vermilion" data-personnel-profile ${person?'':'disabled'}>查看人物档案 ↗</button>`;
   }
   dialog.oninput=()=>{error='';showError();};
   dialog.innerHTML=`<header class="governance-header personnel-scene-header"><h1>${officeTitle} · ${titles[view]}</h1><button class="court-dialog-close" data-personnel-close aria-label="返回朝堂">关闭 ×</button></header><div class="personnel-office-meta"><span>国库 ${fmt(state.stats.treasury)} 两 · 第 ${state.turn} 旬</span><button data-personnel-help aria-label="${titles[view]}说明">？</button></div><div class="personnel-scene-body"><section class="personnel-scene-main">${main}</section><aside class="personnel-scene-side"><div class="personnel-scene-detail">${side}</div><footer class="personnel-decision">${footer}<p data-personnel-error role="status">${esc(error)}</p></footer></aside></div>`;
@@ -130,7 +125,7 @@ export function openCourtPersonnel(initial,root,onCommit,onClose,options={}){
   click('[data-personnel-honor]',b=>propose({kind:'honor',officialId:selectedId,honor:b.dataset.personnelHonor}));
   dialog.querySelector('[data-personnel-budget]')?.addEventListener('input',e=>budget=e.target.value===''?NaN:Number(e.target.value));dialog.querySelector('[data-personnel-reserve]')?.addEventListener('input',e=>reserve=e.target.value===''?NaN:Number(e.target.value));
   dialog.querySelector('[data-hanlin-attribute]')?.addEventListener('change',e=>studyAttribute=e.target.value);click('[data-hanlin-stop]',()=>propose({kind:'hanlin-stop',officialId:selectedId}));
-  click('[data-personnel-propose]',b=>{const kind=b.dataset.personnelPropose;propose(kind==='assign'?{kind,officialId:selectedId,officeId:office}:kind==='dismiss'?{kind,officialId:selectedId}:kind==='delegate'?{kind,provinceId:province,enabled:!state.domestic.personnel.delegations.includes(province)}:kind==='governanceBudget'?{kind,budget,reserve}:kind==='hanlin-enroll'?{kind,officialId:selectedId,attribute:studyAttribute}:{kind});});
+  click('[data-personnel-propose]',b=>{const kind=b.dataset.personnelPropose;propose(kind==='dismiss'?{kind,officialId:selectedId}:kind==='delegate'?{kind,provinceId:province,enabled:!state.domestic.personnel.delegations.includes(province)}:kind==='governanceBudget'?{kind,budget,reserve}:kind==='hanlin-enroll'?{kind,officialId:selectedId,attribute:studyAttribute}:{kind});});
   click('[data-personnel-edit]',()=>{stage='draft';error='';draw();});
   click('[data-personnel-seal]',()=>{if(busy||stage!=='confirm')return;busy=true;try{const result=executePersonnel(state,draft.command);state=commitOperation(onCommit,result.state)??result.state;dialog.close();}catch(e){error=e.message;showError();}finally{busy=false;}});
   click('[data-personnel-exam-retire]',()=>{if(!options.onRetire)return;dialog.onclose=()=>{breakpoint.removeEventListener('change',onBreakpoint);dialog.remove();};dialog.close();options.onRetire();});

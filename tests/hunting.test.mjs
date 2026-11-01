@@ -38,15 +38,15 @@ test('DOS score boundaries and caps preserve current energy, happiness, martial 
   const s=ready();s.stats.health=50;s.stats.energy=117;
   const h=createHunt(s,0,'score-'+score);Object.assign(h,{ended:true,arrows:0,hits:score===0?0:Math.ceil(score/3),score});
   const r=settleHunt(s,h);assert.equal(r.state.stats.maxEnergy,200+Math.floor(score/4));assert.equal(r.state.stats.health,70);assert.equal(r.state.stats.life,s.stats.life-8);
-  for(const key of ['energy','happiness','martial','treasury'])assert.equal(r.state.stats[key],s.stats[key]);
+  assert.equal(r.state.stats.energy,s.stats.energy-20);assert.equal(r.state.stats.happiness,Math.min(100,s.stats.happiness+10));for(const key of ['martial','treasury'])assert.equal(r.state.stats[key],s.stats[key]);
   assert.equal(s.stats.maxEnergy,200);assert.doesNotThrow(()=>validateSave(JSON.parse(JSON.stringify(r.state))));assert.throws(()=>settleHunt(r.state,h),/已结算/);
  }
  const s=ready();s.stats.maxEnergy=498;s.stats.health=85;s.stats.life=5;const h=createHunt(s,0,'caps');Object.assign(h,{ended:true,arrows:20,hits:10,score:20});const r=settleHunt(s,h);assert.deepEqual(r.reward,{maxEnergy:2,health:15,life:5});assert.equal(r.state.stats.life,0);assert.ok(r.state.reignResult);validateSave(r.state);
 });
 test('failed storage leaves state unchanged and prepared settlement can retry exactly once',()=>{
  const s=ready(),h=createHunt(s,0,'storage');h.ended=true;
- const candidate=settleHunt(s,h).state;assert.throws(()=>persistCandidate(s,candidate,{setItem(){throw Error();}}),/保存失败/);assert.equal(s.stats.life,2160);
- const result=persistCandidate(s,candidate,{setItem(){}});assert.equal(result.stats.life,2152);assert.throws(()=>settleHunt(result,h),/已结算/);assert.throws(()=>persistCandidate(result,candidate,{setItem(){}}));
+ const candidate=settleHunt(s,h).state;assert.throws(()=>persistCandidate(s,candidate,{setItem(){throw Error();}}),/保存失败/);assert.equal(s.stats.life,2520);
+ const result=persistCandidate(s,candidate,{setItem(){}});assert.equal(result.stats.life,2512);assert.throws(()=>settleHunt(result,h),/已结算/);assert.throws(()=>persistCandidate(result,candidate,{setItem(){}}));
 });
 test('entry restrictions and invalid or unfinished rounds never award stats',()=>{
  const s=ready();for(const phase of [0,5]){s.phase=phase;assert.throws(()=>createHunt(s));}s.phase=1;

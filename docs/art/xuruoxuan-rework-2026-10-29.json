@@ -1,0 +1,12 @@
+{
+  "date": "2026-10-29",
+  "name": "徐若瑄",
+  "asset": "assets/beauties/random/女明星/徐若瑄-古绡模特.png",
+  "source": "outputs/xuruoxuan-rework-20261029/徐若瑄-早期剧照脸-v3.png",
+  "sha256": "3549771a2059cbe3026418b8f5cd715c0d443d752e26c9077b5d9d36a261e4a8",
+  "backup": "outputs/xuruoxuan-rework-20261029/徐若瑄-替换前.png",
+  "faceReference": "https://k.sina.cn/article_6293107597_17719338d00101bqtc.html",
+  "tool": "built-in image_gen",
+  "promptSummary": "内置image_gen，以1995年成年电影剧照为脸部及表情参考，重建柔和眉眼、放松微张双唇与楚楚动人的神情；保留粉色纱裙和透明背景。",
+  "previousVersion": "outputs/xuruoxuan-rework-20261029/徐若瑄-年轻成年脸-v2.png"
+}

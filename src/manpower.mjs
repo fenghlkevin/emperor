@@ -18,6 +18,27 @@ export function planManpower(d,provinces,amount,rates={}){
  if(left)throw Error(resourceShortage('按当前抽调比例征调','可征平民',amount,amount-left,'人')+'可增加产业抽调比例（累计上限50%）。');
  return rows;
 }
+// Local public works draw proportionally from permitted industries instead of
+// exhausting agriculture first. The same cumulative military/labor caps apply.
+export function planMilitia(d,provinces,amount,rates=Object.fromEntries(jobs.map(j=>[j,50]))) {
+ // Reuse canonical validation and feasibility checks before distributing.
+ planManpower(d,provinces,amount,rates);
+ let left=amount;const rows=[];
+ for(const p of provinces){const n=Math.min(left,laborProfile(p).available);if(n)rows.push({provinceId:p.id,job:null,count:n});left-=n;}
+ for(const p of provinces){
+  if(!left)break;
+  const caps=jobs.map(job=>({job,count:0,cap:Math.min(Math.floor(p.population.professions[job]*(rates[job]??0)/100),draftCapacity(d,p,job))}));
+  const total=caps.reduce((n,r)=>n+r.cap,0),wanted=Math.min(left,cityDraftCapacity(d,p),total);
+  if(!wanted)continue;
+  for(const r of caps)r.count=Math.floor(wanted*r.cap/total);
+  let remainder=wanted-caps.reduce((n,r)=>n+r.count,0);
+  for(const r of [...caps].sort((a,b)=>(wanted*b.cap/total-b.count)-(wanted*a.cap/total-a.count))){if(remainder&&r.count<r.cap){r.count++;remainder--;}}
+  for(const r of caps)if(r.count)rows.push({provinceId:p.id,job:r.job,count:r.count});
+  left-=wanted;
+ }
+ if(left)throw Error('地方劳力不足，请减少征调人数');
+ return rows;
+}
 function addDraft(d,row){const existing=d.manpower.drafts.find(r=>r.originId===row.originId&&r.stationId===row.stationId&&r.role===row.role&&r.job===row.job);if(existing)existing.count+=row.count;else d.manpower.drafts.push({...row});}
 export function applyManpower(d,rows,role,stationId){
  initializeManpower(d);

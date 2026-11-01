@@ -11,15 +11,23 @@ import {onLocalAppointment,updateLocalPolicy} from './local-autonomy.mjs';
 import {initializeGovernance,settleGovernance} from './governance.mjs';
 import {postTreasury} from './finance.mjs';
 import {officeRegister} from './personnel.mjs';
+import {initializeJustice} from './justice.mjs';
 import {HISTORICAL_PEOPLE} from './historical-people.mjs';
 import {ACTIVE_HISTORICAL_PEOPLE,ABILITY_KEYS,RANDOM_ABILITY_CAPS,createExamCandidates} from './exam.mjs';
-export const PERSONNEL_TABS=[['assign','官职调动'],['dismiss','官员外调'],['honor','封爵'],['delegate','地方委任'],['exam','制举'],['profiles','人物名册']];
+export const PERSONNEL_TABS=[['assign','官职调动'],['dismiss','官员外调'],['honor','封爵'],['delegate','地方委任'],['exam','制举']];
 export const NOBILITY=['无爵','男','子','伯','侯','公','王'];
 export function initializePersonnel(d){d.personnel??={nextId:1,lastTurn:0,examTurn:null,candidates:[],delegations:[],history:[],retired:[]};
  initializeGovernance(d);
  const activeIds=new Set(ACTIVE_HISTORICAL_PEOPLE.map(p=>p.id));
  const hidden=o=>HISTORICAL_PEOPLE.some(p=>p.id===o.id?.replace(/^recruit-/,''))&&!activeIds.has(o.id?.replace(/^recruit-/,''));
  d.personnel.hiddenPeople??=[];
+ let restoredOfficial=false;
+ for(let i=d.personnel.hiddenPeople.length-1;i>=0;i--){const person=d.personnel.hiddenPeople[i];if(person.id?.replace(/^recruit-/,'')==='manual-1556'){
+  const list=person.id.startsWith('recruit-')?d.justice.officials:d.personnel.candidates;
+  if(!list.some(p=>p.id===person.id)){list.push(person);restoredOfficial||=person.id.startsWith('recruit-');}
+  d.personnel.hiddenPeople.splice(i,1);
+ }}
+ if(restoredOfficial)initializeJustice(d);
  for(const list of [d.personnel.candidates,d.justice?.officials??[]]){for(let i=list.length-1;i>=0;i--)if(hidden(list[i]))d.personnel.hiddenPeople.push(list.splice(i,1)[0]);}
  for(const person of [...d.personnel.candidates,...(d.justice?.officials??[])]){delete person.dimensionEvidence;delete person.ratingBasis;const source=HISTORICAL_PEOPLE.find(p=>p.id===person.id?.replace(/^recruit-/,''));if(source&&person.ratingVersion!==source.ratingVersion){for(const key of ['intelligence','martial','leadership','politics','integrity','tags','biography','source','sourceTitle','biographyStatus','ratingStatus','ratingMethod','ratingConfidence','designNote','designCaveats','personality','characterTraits','personalityBasis','personalityEvidence','personalityMethod','personalitySource','personalityVersion','ratingVersion'])if(!(person.growthVersion===1&&person[key]!=null&&['intelligence','martial','leadership','politics','integrity'].includes(key)))person[key]=structuredClone(source[key]);if(person.status===undefined){person.age=source.initialAge;person.loyalty=source.initialLoyalty;person.experience=source.initialExperience;}}}
  for(const person of [...d.personnel.candidates,...(d.justice?.officials??[])]){ensureOfficialGrowth(person);registerCardPerson(d,person);}
@@ -28,14 +36,32 @@ export const officeId=o=>o.positionId===undefined?o.id:o.positionId;
 export function servingOfficials(d){return d.justice.officials.filter(o=>o.status==='serving'&&!spyBusy(d,o.id)&&(!o.provinceId||d.provinces.some(p=>p.id===o.provinceId&&p.countryId===d.playerCountryId)));}
 function log(p,s){p.history.unshift(s);p.history=p.history.slice(0,100);}
 export function executePersonnel(state,c){const next=structuredClone(state),d=initializePersonnel(next.domestic),p=d.personnel,home=d.countries.find(x=>x.id===d.playerCountryId);if(c.id!==p.nextId)throw Error('政令已执行，请重新拟令');let message='';if(d.war?.battle)throw Error('请先结束当前战斗，再调整官员与研习安排');const person=servingOfficials(d).find(o=>o.id===c.officialId);
- if(c.kind==='assign'){
+ if(c.kind==='personnel-batch'){
+ const rows=c.operations,allowed=['honor','dismiss','hanlin-enroll','hanlin-stop'];
+ if(!Array.isArray(rows)||!rows.length||rows.length>servingOfficials(d).length*2)throw Error('请选择有效的批量安排');
+ const seen=new Map();for(const row of rows){if(!row||!allowed.includes(row.kind)||typeof row.officialId!=='string')throw Error('批量人事安排无效');const previous=seen.get(row.officialId)??[];if(previous.length&&(row.kind!=='honor'||previous.some(r=>r.kind!=='honor'||r.honor===row.honor)))throw Error('同一人员的安排重复或冲突');seen.set(row.officialId,[...previous,row]);}
+ let candidate=next;const messages=[];
+ // Free study places before admitting replacements in the same order.
+ const ordered=[...rows.filter(r=>r.kind==='hanlin-stop'),...rows.filter(r=>r.kind!=='hanlin-stop')];
+ for(const row of ordered){const result=executePersonnel(candidate,{...row,id:candidate.domestic.personnel.nextId});candidate=result.state;messages.push(result.message);}
+ return {state:candidate,message:`已统一处理${seen.size}名官员。`,messages};
+ }else if(c.kind==='assign-batch'){
+ const rows=c.assignments,officials=servingOfficials(d),offices=officeRegister(d);
+ if(!Array.isArray(rows)||!rows.length||rows.length>offices.length)throw Error('请添加有效的任命安排');
+ if(new Set(rows.map(r=>r?.officialId)).size!==rows.length)throw Error('同一人不能同时拟任多个官职');
+ if(new Set(rows.map(r=>r?.officeId)).size!==rows.length)throw Error('同一官职不能同时拟任多人');
+ for(const row of rows){const person=officials.find(o=>o.id===row?.officialId);if(!person||!offices.some(o=>o.id===row?.officeId))throw Error('请选择本国官员及有效职位');if(officeId(person)===row.officeId)throw Error(`${person.name}已任此职`);}
+ let candidate=next;const messages=[];
+ for(const row of rows){const result=executePersonnel(candidate,{kind:'assign',officialId:row.officialId,officeId:row.officeId,id:candidate.domestic.personnel.nextId});candidate=result.state;messages.push(result.message);}
+ return {state:candidate,message:`已统一任命${rows.length}人。`,messages};
+ }else if(c.kind==='assign'){
  const office=officeRegister(d).find(o=>o.id===c.officeId);if(!person||!office)throw Error('请选择本国官员及有效职位');if(officeId(person)===office.id)throw Error('该官员已任此职');
  const incumbent=servingOfficials(d).find(o=>officeId(o)===office.id);if(incumbent){incumbent.positionId=null;incumbent.office='待命';incumbent.provinceId=null;incumbent.plotTurn=null;}
  Object.assign(person,{positionId:office.id,office:office.name,provinceId:office.provinceId,plotTurn:null});const loyaltyGain=!balanced(d)||person.lastAppointmentRewardTurn===undefined||state.turn-person.lastAppointmentRewardTurn>=36?5:0;person.loyalty=Math.min(100,person.loyalty+loyaltyGain);if(loyaltyGain)person.lastAppointmentRewardTurn=state.turn;if(office.provinceId)onLocalAppointment(d,d.provinces.find(p=>p.id===office.provinceId),office.id.endsWith('-governor')?'governor':'general');message=`${person.name}任${office.name}，忠诚提高${loyaltyGain}${incumbent?`；${incumbent.name}转为待命`:''}。`;
  }else if(c.kind==='dismiss'){
  if(!person)throw Error('请选择在朝官员');d.justice.officials=d.justice.officials.filter(o=>o.id!==person.id);p.retired.push(person.name);message=`${person.name}已外调，不再回中央任职。`;
  }else if(c.kind==='honor'){
- if(!person)throw Error('请选择在朝官员');if(!['rank','nobility'].includes(c.honor))throw Error('请选择加官或封爵');const key=c.honor==='rank'?'rank':'nobilityLevel',max=key==='rank'?9:6,level=person[key]??0;if(level>=max)throw Error('已达最高等级');const cost=(level+1)*100;if(home.fiscal.treasury<cost)throw Error(treasuryShortage(cost,home.fiscal.treasury,person.name+(c.honor==='rank'?'加官':'封爵')));postTreasury(d,home.id,{turn:state.turn,expense:cost,reason:'加官封爵',key:`personnel:${c.id}`});person[key]=level+1;person.loyalty=Math.min(100,person.loyalty+10);message=`${person.name}${key==='rank'?`晋为${10-person[key]}品`:`获封${NOBILITY[person[key]]}爵`}，忠诚提高10，赏银${cost}两。`;
+ if(!person)throw Error('请选择在朝官员');if(!['rank','nobility'].includes(c.honor))throw Error('请选择加官或封爵');const key=c.honor==='rank'?'rank':'nobilityLevel',max=key==='rank'?9:6,level=person[key]??0;const levels=c.levels??1;if(!Number.isInteger(levels)||levels<1||levels>max-level)throw Error('提升级数无效或超过最高等级');const cost=levels*(2*level+levels+1)*50;if(home.fiscal.treasury<cost)throw Error(treasuryShortage(cost,home.fiscal.treasury,person.name+(c.honor==='rank'?'加官':'封爵')));postTreasury(d,home.id,{turn:state.turn,expense:cost,reason:'加官封爵',key:`personnel:${c.id}`});const loyaltyBefore=person.loyalty;person[key]=level+levels;person.loyalty=Math.min(100,person.loyalty+10*levels);message=`${person.name}${key==='rank'?`晋为${10-person[key]}品`:`获封${NOBILITY[person[key]]}爵`}，忠诚 ${loyaltyBefore} → ${person.loyalty}（+${person.loyalty-loyaltyBefore}），赏银${cost}两。`;
  }else if(c.kind==='delegate'){
  if(!d.provinces.some(x=>x.id===c.provinceId&&x.countryId===d.playerCountryId)||typeof c.enabled!=='boolean')throw Error('委任设置无效');const city=d.provinces.find(x=>x.id===c.provinceId);if(city.localPolicy){city.localPolicy.civil=c.enabled;city.localPolicy.military=c.enabled;}p.delegations=p.delegations.filter(x=>x!==c.provinceId);if(c.enabled)p.delegations.push(c.provinceId);message=c.enabled?'已委任地方：每旬按缺粮、灾情、民生与产业需求治理，遵守全国预算及国库保留线。':'已收回地方委任。';
  }else if(c.kind==='localPolicy'){message=updateLocalPolicy(d,c);

@@ -24,17 +24,13 @@ test('purchase updates exact depot, treasury, finance and receipt atomically; re
 });
 test('invalid ownership, future types, foreign caller claims and unaffordable quotes cannot publish',()=>{
  const s=fresh(),before=structuredClone(s);
- assert.throws(()=>executeKitCommand(s,command(s,{kind:'purchase',sourceId:'india-core',quantities:{infantry:1}})),/本国/);
+ assert.throws(()=>executeKitCommand(s,command(s,{kind:'purchase',sourceId:'india-core',quantities:{infantry:1}})),/中央|本国/);
  assert.throws(()=>executeKitCommand(s,command(s,{kind:'purchase',quantities:{elephant:1},originId:'india',stable:true})),/产地|采购/);
  assert.throws(()=>executeKitCommand(s,command(s,{kind:'purchase',quantities:{infantry:100000}})),/国库不足/);
  assert.throws(()=>executeKitCommand(s,command(s,{kind:'purchase',quantities:{horses:1}})));
  assert.deepEqual(s,before);
 });
-test('local procurement does not redirect kits into central depot',()=>{
- const s=fresh(),p=s.domestic.provinces[1],r=executeKitCommand(s,command(s,{kind:'purchase',sourceId:p.id,quantities:{cavalry:5}})).state;
- assert.equal(r.domestic.troopKits.depots[p.id].stock.cavalry,s.domestic.troopKits.depots[p.id].stock.cavalry+5);
- assert.deepEqual(r.domestic.troopKits.depots.central,s.domestic.troopKits.depots.central);validateDomestic(r.domestic,r.turn);
-});
+test('local procurement requires central purchase followed by dispatch',()=>{const s=fresh(),before=structuredClone(s);assert.throws(()=>executeKitCommand(s,command(s,{kind:'purchase',sourceId:'hebei',quantities:{cavalry:5}})),/中央/);assert.deepEqual(s,before);});
 test('recruit and dismiss change profession once, preserve population and leave equipment alone',()=>{
  const s=fresh(),r=executeKitCommand(s,command(s,{kind:'recruit',amount:101})).state;
  assert.equal(totals(r.domestic),totals(s.domestic));assert.equal(soldiers(r.domestic),soldiers(s.domestic)+101);
@@ -43,11 +39,7 @@ test('recruit and dismiss change profession once, preserve population and leave 
  const n=executeKitCommand(r,command(r,{kind:'dismiss',amount:101})).state;
  assert.equal(soldiers(n.domestic),soldiers(s.domestic));assert.equal(totals(n.domestic),totals(s.domestic));validateSave(n);
 });
-test('local recruitment only uses local civilians and does not add central soldiers',()=>{
- const s=fresh(),p=s.domestic.provinces[1],r=executeKitCommand(s,command(s,{kind:'recruit',sourceId:p.id,amount:50})).state;
- assert.equal(r.domestic.centralArmy.soldiers,s.domestic.centralArmy.soldiers);
- assert.equal(worldKitDepot(r.domestic,p.id).soldiers,worldKitDepot(s.domestic,p.id).soldiers+50);validateSave(r);
-});
+test('local recruitment and dismissal require central processing',()=>{const s=fresh(),before=structuredClone(s);for(const kind of ['recruit','dismiss'])assert.throws(()=>executeKitCommand(s,command(s,{kind,sourceId:'hebei',amount:50})),/中央/);assert.deepEqual(s,before);});
 test('central-local and local-central transfer preserve population, military totals and kits',()=>{
  const s=fresh(),id=s.domestic.provinces[1].id,c=command(s,{kind:'transfer',targetId:id,soldiers:103,quantities:{spears:77}}),r=executeKitCommand(s,c).state;
  assert.equal(totals(r.domestic),totals(s.domestic));assert.equal(soldiers(r.domestic),soldiers(s.domestic));

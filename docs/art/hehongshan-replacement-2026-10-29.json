@@ -1,0 +1,14 @@
+{
+  "date": "2026-10-29",
+  "previous": "徐若瑄",
+  "name": "何泓姗",
+  "asset": "assets/beauties/random/女明星/何泓姗-古绡模特.png",
+  "legacyAssets": [
+    "assets/beauties/random/女明星/徐若瑄-古绡模特.png"
+  ],
+  "source": "outputs/hehongshan-replacement-20261029/何泓姗-粉绡-v1.png",
+  "sha256": "3ef610a0b4a8bf3be183c98a1501ef9b066821acd60e001f3addc502c1130c34",
+  "faceReference": "https://www.sohu.com/a/234501889_496919",
+  "tool": "built-in image_gen",
+  "promptSummary": "以何泓姗《凤弈》成年剧照为五官与发型参考，重做清柔神态、古装盘发；保留粉绡刺绣纱裙和透明背景。"
+}

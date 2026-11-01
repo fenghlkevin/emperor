@@ -1,3 +1,4 @@
+import {demobilizeCentral} from './central-demobilization.mjs';
 import {difficultyRules,difficultyFactor,recruitRate} from './difficulty.mjs';
 import {industrialProcurement} from './supply-economy.mjs';
 import {quoteShortage,resourceShortage} from './action-feedback.mjs';
@@ -5,7 +6,7 @@ import {organizedRecruitTraining,recruitOrganization} from './central-office-eff
 import {planManpower,applyManpower,moveDrafts,releaseDrafts,validateManpower} from './manpower.mjs';
 import {manpowerEffects,manpowerEffectLines} from './manpower-effects.mjs';
 import {requirePopulationRoom} from './city-capacity.mjs';
-import {TROOP_KITS,createKitDepot,validateKitDepot,kitAvailability,reserveKitSquads,settleKitSquads,transferKitDepot,quoteKitPurchase,kitOrigin,kitTargetMix} from './troop-kits.mjs';
+import {TROOP_KITS,createKitDepot,validateKitDepot,kitAvailability,reserveKitSquads,settleKitSquads,transferKitDepot,quoteKitPurchase,kitOrigin,kitTargetMix,kitProductionAllowed,kitQuantities} from './troop-kits.mjs';
 import {postTreasury} from './finance.mjs';
 import {newRecruitTraining} from './building-effects.mjs';
 import {playerMilitaryCrisis} from './military-crisis.mjs';
@@ -48,18 +49,27 @@ export function validateTroopKits(d){
  for(const row of data.history){integer(row.id,1,previous-1);previous=row.id;integer(row.turn,1);integer(row.cost);if(!['purchase','transfer','recruit','dismiss'].includes(row.kind)||!Array.isArray(row.lines)||row.lines.some(s=>typeof s!=='string'||s.length>500))throw Error('套装军令历史无效');}
 }
 function ownedDepot(d,id){if(owner(d,id)!==d.playerCountryId)throw Error('只能操作本国驻地');return worldKitDepot(d,id);}
+export const centralKitProductionAllowed=(d,id)=>d.provinces.some(p=>p.countryId===d.playerCountryId&&kitProductionAllowed(p,id));
 export function quoteKitCommand(state,c,{recovery=false}={}){
+ if(['purchase','recruit','dismiss'].includes(c.kind)&&c.sourceId!=='central')throw Error('采办、招募与解散只能在中央办理；地方兵员请先调回中央');
  const d=state.domestic,depot=ownedDepot(d,c.sourceId),p=sourceProvince(d,c.sourceId),country=d.countries.find(c=>c.id===d.playerCountryId);
  let cost=0,details,lines,impact;
  if(c.kind==='purchase'){
   if(!c.quantities||Object.entries(c.quantities).some(([id,n])=>n!==0&&!ENABLED_KITS.includes(id)))throw Error('该兵种尚未开放采购');
-  const origin=kitOrigin(p),stable=p.status.situation==='stable'&&(!p.occupation||p.occupation.settled);
-  // Caller supplied country, origin and stability are intentionally ignored.
-  const q=quoteKitPurchase(c.quantities,origin,{stable}),discount=Math.floor(q.cost*industrialProcurement(d));cost=Math.ceil((q.cost-discount)*difficultyRules(d).kitPriceFactor*(recovery?difficultyFactor(d,'recoveryCostFactor'):1));details=q.quantities;
+  const detailsByKit={};let baseCost=0;
+  for(const [id,n]of Object.entries(kitQuantities(c.quantities))){
+   if(!n)continue;
+   const origin=d.provinces.find(p=>p.countryId===d.playerCountryId&&kitProductionAllowed(p,id));
+   if(!origin)throw Error('该兵装须控制对应稳定产地后才能由中央采购');
+   const q=quoteKitPurchase({[id]:n},kitOrigin(origin),{stable:true});baseCost=integer(baseCost+q.cost);detailsByKit[id]=n;
+  }
+  if(!baseCost)throw Error('请至少购买一人份兵种装备');
+  const discount=Math.floor(baseCost*industrialProcurement(d));cost=Math.ceil((baseCost-discount)*difficultyRules(d).kitPriceFactor*(recovery?difficultyFactor(d,'recoveryCostFactor'):1));details=detailsByKit;
   for(const [id,n]of Object.entries(details))integer(depot.stock[id]+n);
   lines=TROOP_KITS.filter(k=>details[k.id]).map(k=>`${k.name}装备 ${details[k.id]} 人份，单价 ${k.price} 两`);
   if(discount)lines.push(`本国工业采购能力减支${discount}两，实付${cost}两；仍按实有兵装入库。`);
  }else if(c.kind==='transfer'){
+  if((c.sourceId==='central')===(c.targetId==='central'))throw Error('调拨须在中央与地方之间办理');
   const target=ownedDepot(d,c.targetId);if(p!==sourceProvince(d,c.targetId))requirePopulationRoom(sourceProvince(d,c.targetId),c.soldiers??0);details=transferKitDepot(depot,target,{soldiers:c.soldiers??0,kits:c.quantities??{}});
   lines=[`${c.sourceId==='central'?'中央':p.name}调往${c.targetId==='central'?'中央':sourceProvince(d,c.targetId).name}，士兵 ${c.soldiers??0} 人`,...TROOP_KITS.filter(k=>c.quantities?.[k.id]).map(k=>`${k.name}装备 ${c.quantities[k.id]} 人份`)];
  }else if(c.kind==='recruit'||c.kind==='dismiss'){
@@ -71,7 +81,7 @@ export function quoteKitCommand(state,c,{recovery=false}={}){
   cost=c.kind==='recruit'?integer(Math.ceil(n*recruitRate(d)*(recovery?difficultyFactor(d,'recoveryCostFactor'):1))):0;details={amount:n,...(plan?{plan}:{})};lines=[`${c.kind==='recruit'?'招募':'解散'}${c.sourceId==='central'?'中央':p.name}士兵 ${n} 人；装备库存不变`];
   const preview=structuredClone(state);
   if(plan){recruitFromPlan(preview.domestic,plan,c.sourceId);lines.push(`先用空闲劳力${plan.filter(r=>!r.job).reduce((sum,r)=>sum+r.count,0)}人，抽调四业${plan.filter(r=>r.job).reduce((sum,r)=>sum+r.count,0)}人；各业累计在役抽调上限50%（士兵与民夫合计）`);}
-  else{const target=sourceProvince(preview.domestic,c.sourceId);target.population.professions.soldiers-=n;if(c.sourceId==='central')preview.domestic.centralArmy.soldiers-=n;releaseDrafts(preview.domestic,c.sourceId,n,{turn:state.turn});}
+  else{details.allocations=demobilizeCentral(preview.domestic,n,state.turn);lines.push(...details.allocations.map(r=>`安置${preview.domestic.provinces.find(p=>p.id===r.provinceId).name} ${r.count}人`));}
   if(c.kind==='recruit'){const e=recruitOrganization(d);lines.push(`兵部侍郎${e.source.name}：新兵训练额外＋${e.bonus}，最终不超过40；按新旧兵人数加权`);}
   impact=manpowerEffects(state,preview);lines=[...manpowerEffectLines(impact),...lines];
  }else throw Error('套装军令类型无效');
@@ -101,9 +111,9 @@ export function executeKitCommand(state,c,options={}){
  if(c.kind==='purchase'){for(const [id,n]of Object.entries(q.details))depot.stock[id]+=n;writeDepot(d,depot);}
  if(c.kind==='transfer'){writeDepot(d,q.details.source);writeDepot(d,q.details.target);moveSoldiers(d,c.sourceId,c.targetId,c.soldiers??0,q.details.target.training);}
  if(c.kind==='recruit')recruitFromPlan(d,q.details.plan,c.sourceId);
- if(c.kind==='dismiss'){p.population.professions.soldiers-=c.amount;if(c.sourceId==='central')d.centralArmy.soldiers-=c.amount;releaseDrafts(d,c.sourceId,c.amount,{turn:state.turn});}
+ if(c.kind==='dismiss')demobilizeCentral(d,c.amount,state.turn);
  if(!d.centralArmy.soldiers){d.centralArmy.training=0;d.general.ongoing=false;d.general.trainingFloor=0;}
- if(q.cost)postTreasury(d,d.playerCountryId,{turn:state.turn,expense:q.cost,reason:c.kind==='purchase'?'兵部购买兵种装备':'兵部招募士兵',key:`troop-kit:${c.id}:${c.kind}`});
+ if(q.cost)postTreasury(d,d.playerCountryId,{turn:state.turn,expense:q.cost,reason:c.kind==='purchase'?'户部采办中央兵装':'兵部招募士兵',key:`troop-kit:${c.id}:${c.kind}`});
  const receipt={id:c.id,turn:state.turn,kind:c.kind,cost:q.cost,lines:q.lines};d.troopKits.nextId++;d.troopKits.history.unshift(receipt);d.troopKits.history=d.troopKits.history.slice(0,100);
  next.stats.treasury=d.countries.find(c=>c.id===d.playerCountryId).fiscal.treasury;validateTroopKits(d);validateManpower(d);return {state:next,receipt};
 }

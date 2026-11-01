@@ -1,5 +1,5 @@
 import {justiceDeputyMarkup,openJusticeDeputy} from './justice-deputy-ui.mjs';
-import {openRitesDeputy,ritesDeputyMarkup} from './rites-deputy-ui.mjs';
+import {openRitesDeputy,ritesDeputyMarkup,openImperialReports,imperialReportsMarkup} from './rites-deputy-ui.mjs';
 import {openPersonnel} from './personnel-ui.mjs';
 import {worksDeputyMarkup,openWorksDeputy} from './works-deputy-ui.mjs';
 import {warDeputyMarkup,openWarDeputy} from './war-deputy-ui.mjs';
@@ -9,10 +9,12 @@ import {CENTRAL_OFFICES} from './personnel.mjs';
 import {countrySummary} from './domestic.mjs';
 import {governanceSummaryMarkup} from './court-governance-ui.mjs';
 const actions={
- 'revenue-minister':['atlas-grain','food-purchase','tax','subsidy','census','register'],
- 'works-minister':['atlas-build','industry','special','register','works-buildings','works-develop','works-expand','works-levy-militia','works-release-militia','works-special','works-schedule','works-records'],
- 'war-minister':['army-recovery','espionage','garrison','garrison-purchase','garrison-recruit','garrison-dismiss','garrison-transfer','campaign'],
- 'central-general':['register'],
+ 'revenue-minister':['garrison-purchase','atlas-grain','food-purchase','tax','subsidy','census','register'],
+ 'works-minister':['atlas-build','industry','special','register','works-buildings','works-develop','works-expand','works-levy-militia','works-release-militia','works-special','works-schedule'],
+ 'imperial-spy-chief':['espionage'],
+ 'imperial-spy-reader':[],
+ 'war-minister':['army-recovery','garrison-recruit','garrison-dismiss','campaign'],
+ 'central-general':['garrison-distribute','garrison-collect','garrison-transfer','register','general-train','general-ongoing','general-security'],
  'personnel-minister':['personnel','personnel-honor','personnel-dismiss','personnel-budget','personnel-delegate','personnel-exam','personnel-hanlin'],
  'justice-minister':['justice','justice-funding','justice-sentence','justice-amnesty','register'],
  'rites-minister':['diplomacy','register'],
@@ -20,9 +22,9 @@ const actions={
 };
 export function canOfficeNavigate(office,action){
  if(!CENTRAL_OFFICES.some(o=>o.id===office))return false;
- if(office==='war-deputy')return ['office-report','register'].includes(action);
+ if(office==='works-deputy')return ['office-report','works-records'].includes(action);
+ if(office==='war-deputy')return ['office-report','register','garrison'].includes(action);
  if(office==='justice-deputy')return ['office-report','justice-prison'].includes(action);
- if(office==='personnel-deputy')return ['office-report','personnel-profiles'].includes(action);
  if(office.endsWith('-deputy'))return action==='office-report';
  return action==='office-report'||Boolean(actions[office]?.includes(action));
 }
@@ -40,13 +42,13 @@ export function officeReport(state,office){
  else if(department==='吏部')rows=d.justice.officials.filter(o=>o.status==='serving').map(o=>[o.name,`${o.office}；政治${o.politics??50}，智力${o.intelligence??50}`]);
  else if(department==='礼部')rows=d.diplomacy.filter(r=>r.countryIds.includes(d.playerCountryId)).map(r=>[d.countries.find(c=>c.id===r.countryIds.find(id=>id!==d.playerCountryId))?.name??'未知邦国',`邦交${({none:'常态',ally:'盟好',hostile:'敌对'})[r.relation]??r.relation}；友善${r.friendship}`]);
  else if(department==='刑部')rows=[['已查实待决',d.justice.officials.filter(o=>o.status==='serving'&&o.discovered).length],['在押',d.justice.officials.filter(o=>o.status==='imprisoned').length]];
- return {title:office==='prime-minister'?'宰相·国政汇总':`${role.name}·本部查阅`,scope:office==='prime-minister'?'汇总国情与协调呈奏，具体事项由主管部门办理。':'本部只读资料；不提供任命、征兵、建设或拨款操作。',rows};
+ return {title:office==='prime-minister'?'宰相·国政汇总':`${role.name}·本部查阅`,scope:office==='prime-minister'?'臣已汇齐各部奏报，恭请陛下垂览。各项政务，可召主管大臣面议。':'臣已将本部簿册备齐，恭请陛下御览。若要任官、征兵、兴工或拨银，还须召见主管尚书颁旨。',rows};
 }
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-export function officeReportMarkup(state,office){if(office==='justice-deputy')return justiceDeputyMarkup(state);if(office==='rites-deputy')return ritesDeputyMarkup(state);if(office==='works-deputy')return worksDeputyMarkup(state);if(office==='war-deputy')return warDeputyMarkup(state);if(office==='revenue-deputy')return revenueDeputyMarkup(state);if(office==='prime-minister')return governanceSummaryMarkup(state);const r=officeReport(state,office);return `<p>${esc(r.scope)}</p><div class="civil-table"><table><thead><tr><th>项目</th><th>记录与口径</th></tr></thead><tbody>${r.rows.map(row=>`<tr>${row.map(v=>`<td>${esc(v)}</td>`).join('')}</tr>`).join('')}</tbody></table></div>`;}
-export function openOfficeReport(state,root,office,onClose,options={}){if(office==='justice-deputy')return openJusticeDeputy(state,root,onClose,options);if(office==='rites-deputy')return openRitesDeputy(state,root,onClose);if(office==='personnel-deputy')return openPersonnel(state,root,onClose);if(office==='works-deputy')return openWorksDeputy(state,root,onClose);if(office==='war-deputy')return openWarDeputy(state,root,onClose);if(office==='revenue-deputy')return openRevenueDeputy(state,root,onClose);const r=officeReport(state,office),d=document.createElement('dialog'),scroll=office==='prime-minister';d.className=scroll?'governance-dialog':'domestic-dialog turn-economy-report';d.setAttribute('aria-label',r.title);d.innerHTML=`${scroll?'<span class="governance-roller governance-roller--left" aria-hidden="true"></span><span class="governance-roller governance-roller--right" aria-hidden="true"></span>':''}<header class="${scroll?'governance-header':'civil-header'}"><h1>${esc(r.title)}</h1><button aria-label="关闭查阅" autofocus>${scroll?'关闭 ×':'×'}</button></header><div class="${scroll?'governance-content':'civil-content'}">${officeReportMarkup(state,office)}</div>`;d.querySelector('button').onclick=()=>d.close();d.onclose=()=>{d.remove();onClose?.();};root.append(d);d.showModal();return d;}
+export function officeReportMarkup(state,office){if(office==='imperial-spy-reader'||office==='imperial-spy-chief')return imperialReportsMarkup(state);if(office==='central-general')return warDeputyMarkup(state,{general:true});if(office==='justice-deputy')return justiceDeputyMarkup(state);if(office==='rites-deputy')return ritesDeputyMarkup(state);if(office==='works-deputy')return worksDeputyMarkup(state);if(office==='war-deputy')return warDeputyMarkup(state);if(office==='revenue-deputy')return revenueDeputyMarkup(state);if(office==='prime-minister')return governanceSummaryMarkup(state);const r=officeReport(state,office);return `<p>${esc(r.scope)}</p><div class="civil-table"><table><thead><tr><th>项目</th><th>簿册记载</th></tr></thead><tbody>${r.rows.map(row=>`<tr>${row.map(v=>`<td>${esc(v)}</td>`).join('')}</tr>`).join('')}</tbody></table></div>`;}
+export function openOfficeReport(state,root,office,onClose,options={}){if(office==='imperial-spy-reader'||office==='imperial-spy-chief')return openImperialReports(state,root,onClose);if(office==='central-general')return openWarDeputy(state,root,onClose,{general:true});if(office==='justice-deputy')return openJusticeDeputy(state,root,onClose,options);if(office==='rites-deputy')return openRitesDeputy(state,root,onClose);if(office==='personnel-deputy')return openPersonnel(state,root,onClose);if(office==='works-deputy')return openWorksDeputy(state,root,onClose);if(office==='war-deputy')return openWarDeputy(state,root,onClose);if(office==='revenue-deputy')return openRevenueDeputy(state,root,onClose);const r=officeReport(state,office),d=document.createElement('dialog'),scroll=office==='prime-minister';d.className=scroll?'governance-dialog':'domestic-dialog turn-economy-report';d.setAttribute('aria-label',r.title);d.innerHTML=`${scroll?'<span class="governance-roller governance-roller--left" aria-hidden="true"></span><span class="governance-roller governance-roller--right" aria-hidden="true"></span>':''}<header class="${scroll?'governance-header':'civil-header'}"><h1>${esc(r.title)}</h1><button aria-label="关闭查阅" autofocus>${scroll?'关闭 ×':'×'}</button></header><div class="${scroll?'governance-content':'civil-content'}">${officeReportMarkup(state,office)}</div>`;d.querySelector('button').onclick=()=>d.close();d.onclose=()=>{d.remove();onClose?.();};root.append(d);d.showModal();return d;}
 const surfaceViews={
- atlas:{'revenue-minister':['grain','finance'],'works-minister':['build'],'war-minister':['army']},
+ atlas:{'revenue-minister':['grain','finance'],'works-minister':['build'],'central-general':['army']},
  national:{'works-minister':['works'],'personnel-minister':['people','officials']}
 };
 export function officeSurfaceViews(office,surface,all){return office?all.filter(id=>surfaceViews[surface]?.[office]?.includes(id)):[...all];}

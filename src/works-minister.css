@@ -41,3 +41,98 @@
 .wm-impact{gap:7px 14px;padding:5px 0}.wm-impact .wm-compare{padding-bottom:4px}.wm-impact .wm-compare-values{margin:3px 0}.wm-impact .wm-glyph{height:20px;width:20px;font-size:14px}.wm-impact .wm-compare-values strong{font-size:clamp(14px,1.35cqw,20px)}
 .wm-help{box-sizing:border-box;width:min(580px,92vw);height:min(380px,75dvh);max-height:75dvh;padding:24px;overflow:visible;display:none;font:17px/1.6 GovernanceKai,serif}.wm-help[open]{display:flex;flex-direction:column;gap:16px}.wm-help>header{position:static;inset:auto;transform:none;display:flex;justify-content:space-between;align-items:center;min-height:0;height:auto;padding:0;margin:0;background:none}.wm-help>header h2{font-size:24px;margin:0}.wm-help>header button{position:static;inset:auto;transform:none}.wm-help-copy{flex:1;min-height:0;display:flex;flex-direction:column;justify-content:center}.wm-help-copy p{margin:4px 0;line-height:1.6;overflow-wrap:anywhere}.wm-help-copy h3{margin:0}.wm-help .wm-pager{flex:none;font-size:14px}.wm-help .wm-pager button{font:inherit;padding:4px 10px}.wm-help>[data-confirm-stop]{flex:none;width:100%;font-size:18px}
 @media(max-width:700px){.wm-help{font-size:15px;padding:18px}.wm-help>header h2{font-size:21px}}
+/* Construction stays on the map after a successful order. */
+.works-minister-dialog .wm-map-body{grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:3%;font-size:clamp(13px,1.15cqw,17px)}
+.wm-map-panel{min-width:0;min-height:0;display:flex;flex-direction:column;gap:10px}
+.wm-map-heading{display:flex;align-items:center;gap:12px;color:#715332}.wm-map-heading h2{font-size:1.3em;font-weight:500;margin:0 auto 0 0}.wm-map-heading button{border:1px solid #9c8052;border-radius:50%;background:transparent;color:#715332;width:30px;height:30px;font:20px GovernanceKai;cursor:pointer}
+.wm-map-legend{display:flex;gap:12px;flex-wrap:wrap;color:#52735d;font-size:.85em}.wm-map-legend>span:last-child{margin-left:auto;color:#836c49}.wm-map-legend .is-working{color:#9a7334}.wm-map-legend .is-paused{color:#9b4935}
+.wm-map{width:100%;flex:1;min-height:0;border:1px solid #b3986766;border-radius:4px;overflow:hidden;background:#e8dec3}
+.wm-map-region{fill:#aebd8a88;stroke:#82704d;stroke-width:.06;cursor:pointer}.wm-map-region.is-working{fill:#dbb86b99}.wm-map-region.is-paused{fill:#cd8e7688}.wm-map-region.is-foreign{fill:#ada08b66;cursor:default}.wm-map-region.is-selected{fill:#709e7999;stroke:#28523f;stroke-width:.18}.wm-map-region:hover:not(.is-foreign){fill:#94b59ba6}.wm-map-region:focus-visible{stroke:#8c3c2a;stroke-width:.22;outline:none}
+.wm-map-label{cursor:pointer;text-anchor:middle;fill:#344d37;paint-order:stroke;stroke:#f6ecd2;stroke-width:.12;stroke-linejoin:round;font-family:GovernanceKai,serif}.wm-map-name{font-size:.95px;font-weight:600}.wm-map-status{font-size:.65px}.wm-map-progress{font-size:.6px}.wm-map-label.is-working .wm-map-status{fill:#825512}.wm-map-label.is-paused .wm-map-status{fill:#983b2a}.wm-map-label:focus-visible{outline:none;stroke:#f9dda1;stroke-width:.2}
+.wm-map-receipt{margin:0;min-height:2.8em;color:#39664e;font-size:.9em;line-height:1.4;overflow-wrap:anywhere}
+.works-minister-dialog .wm-map-command{padding-left:6%;gap:10px}.wm-city-detail{min-height:0;overflow:auto}.wm-city-heading{display:flex;align-items:center;gap:12px;margin-bottom:12px}.wm-city-heading h2{font-size:1.7em;font-weight:500;color:#28523f;margin:0}.wm-city-heading>span{margin-left:auto;color:#836c49;font-size:.85em}.wm-city-heading [data-back-map]{display:none}
+.wm-map-command .wm-stats{gap:6px 12px;margin:0 0 14px}.wm-map-command .wm-stats strong{font-size:clamp(18px,1.7cqw,26px)}.wm-map-command .wm-stats small{font-size:.8em}.wm-building-choices{grid-column:1/-1;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:7px}.wm-building-choices button{min-width:0;min-height:55px;padding:6px;border:1px solid #b39867;background:#f3e6ca77;color:#715332;font:inherit;cursor:pointer;border-radius:3px;display:grid;gap:2px;text-align:center}.wm-building-choices button[aria-pressed=true]{background:#d7dfbd;border:2px solid #39664e;padding:5px;color:#28523f}.wm-building-choices strong{font-weight:500}.wm-building-choices small{font-size:.75em;white-space:nowrap}.wm-building-choices button:focus-visible{outline:2px solid #8c3c2a;outline-offset:1px}.wm-project-detail{font-size:.9em;margin-bottom:12px}.wm-map-command .wm-preview{overflow:auto}.wm-map-command .wm-preview p{word-break:normal;padding-right:0}.wm-map-command .wm-result-row{gap:10px}
+@media(max-width:1000px){.wm-building-choices{grid-template-columns:repeat(3,minmax(0,1fr))}.wm-map-legend{gap:5px 10px}.wm-map-legend>span:last-child{margin-left:0}}
+@media(max-width:700px){.works-minister-dialog .wm-map-body{display:flex;font-size:13px;inset:15% 9% 11%}.wm-map-panel,.works-minister-dialog .wm-map-command{width:100%;height:100%;box-sizing:border-box}.works-minister-dialog[data-mobile-page=map] .wm-map-command{display:none}.works-minister-dialog[data-mobile-page=detail] .wm-map-panel{display:none}.works-minister-dialog .wm-map-command{border:0;padding:0;grid-template-rows:auto minmax(0,1fr) auto}.wm-city-heading [data-back-map]{display:block;font:inherit;border:1px solid #b39867;background:#f3e6ca77;color:#715332;padding:6px}.wm-city-heading{flex-wrap:wrap;gap:8px}.wm-city-heading h2{font-size:22px}.wm-building-choices{grid-template-columns:repeat(4,minmax(0,1fr));gap:5px}.wm-building-choices button{min-height:48px}.wm-map-command .wm-stats{margin:0 0 10px;grid-template-columns:repeat(2,minmax(0,1fr))}.wm-map-command .wm-stats strong{font-size:21px}.wm-map-command .wm-chart-grid{padding:6px 0}.wm-map-name{font-size:1.05px}.wm-map-status{font-size:.7px}.wm-map-progress{font-size:.65px}}
+.wm-map .atlas-relief{pointer-events:none;mix-blend-mode:multiply}.wm-map .atlas-paper-texture{opacity:.28}.wm-map :is(.atlas-state-border,.atlas-country-border){fill:none;stroke:#715436;stroke-width:.065;pointer-events:none}.wm-map .atlas-country-border{stroke-width:.12}.wm-map .atlas-context{pointer-events:none}.wm-map .atlas-context-territory{fill:currentColor;stroke:#705c3e;stroke-width:.05}
+@media(min-width:701px) and (max-height:800px){.wm-map-command .wm-stats strong{font-size:18px}.wm-map-command .wm-stats{margin-bottom:8px}.wm-building-choices{grid-template-columns:repeat(4,minmax(0,1fr));gap:5px}.wm-building-choices button{min-height:43px}.wm-city-heading{margin-bottom:8px}.wm-map-command .wm-city-detail{max-height:52vh}.wm-map-command .wm-chart-grid{padding:5px 0}}
+
+/* SVG focus decorations otherwise scale with geographic map units. */
+.wm-map [tabindex]:focus{outline:none}
+.wm-map path.wm-map-region{vector-effect:non-scaling-stroke;stroke-width:1px}
+.wm-map path.wm-map-region.is-selected{stroke-width:2px}
+.wm-map path.wm-map-region:focus-visible{outline:none;stroke:#8c3c2a;stroke-width:2px}
+.wm-map .wm-map-label:focus-visible{outline:none}
+.wm-map .wm-map-label:focus-visible text{fill:#743c2d;text-decoration:underline}
+/* Consistent, compact controls for every works order. */
+.works-minister-dialog .wm-field{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:4px 8px;min-width:0;color:#715332}
+.wm-field>.wm-choices{grid-column:1/-1}
+.works-minister-dialog .wm-choices{display:flex;flex-wrap:wrap;gap:5px;min-width:0}
+.works-minister-dialog .wm-choices button{position:static;min-width:0;flex:1 1 auto;min-height:30px;padding:4px 8px;border:1px solid #b39867;border-radius:3px;background:#f3e6ca77;color:#715332;font:inherit;cursor:pointer;letter-spacing:0}
+.works-minister-dialog .wm-choices button[aria-pressed=true]{background:#d7dfbd;border-color:#39664e;color:#28523f;box-shadow:inset 0 0 0 1px #39664e}
+.works-minister-dialog .wm-choices button:focus-visible{outline:2px solid #8c3c2a;outline-offset:2px}
+.works-minister-dialog .wm-field>input[type=number]{width:85px;height:28px;text-align:right;padding:2px 6px;font-variant-numeric:tabular-nums;outline-offset:1px}
+.works-minister-dialog .wm-field>.quantity-controls{margin:0;gap:5px;flex-wrap:nowrap}
+.works-minister-dialog .quantity-controls input[type=range]{order:0;flex-basis:0!important;height:24px!important}
+.works-minister-dialog .quantity-controls button{min-height:24px!important;padding:2px 5px!important}
+.works-minister-dialog .wm-fields>p{grid-column:1/-1;margin:2px 0;font-size:.85em;line-height:1.4}
+.works-minister-dialog .wm-map-command{grid-template-rows:auto minmax(0,1fr) auto;gap:8px}
+.works-minister-dialog .wm-city-detail{overflow:visible;max-height:none}
+.works-minister-dialog .wm-map-command .wm-stats{margin-bottom:10px;gap:4px 12px}
+.works-minister-dialog .wm-city-heading{margin-bottom:8px}
+.works-minister-dialog .wm-map-command .wm-preview{overflow:auto}
+.works-minister-dialog .wm-order p:empty{display:none}
+.works-minister-dialog .wm-order{padding-top:6px}
+.works-minister-dialog .wm-order button{min-height:36px}
+@media(max-height:800px){
+ .works-minister-dialog .wm-map-command{gap:5px}
+ .works-minister-dialog .wm-map-command .wm-stats{margin-bottom:6px}
+ .works-minister-dialog .wm-fields{gap:5px 10px}
+ .works-minister-dialog .wm-choices button{min-height:26px;padding:3px 6px}
+ .works-minister-dialog .wm-field{gap:2px 6px}
+ .works-minister-dialog .wm-map-command .wm-stats strong{font-size:18px}
+ .works-minister-dialog .wm-map-command .wm-chart-grid{gap:4px 10px;padding:3px 0}
+ .works-minister-dialog .wm-compare>header{font-size:11px}
+ .works-minister-dialog .wm-glyph{display:none}
+ .works-minister-dialog .wm-compare-values{margin:2px 0}
+ .works-minister-dialog .wm-result-row{padding:3px 0}
+}
+@media(min-width:701px){
+ .works-minister-dialog .wm-map-command .wm-stats{grid-template-columns:repeat(4,minmax(0,1fr));gap:4px 8px}
+ .works-minister-dialog .wm-map-command .wm-stats strong{font-size:clamp(15px,1.35cqw,22px);white-space:nowrap}
+ .works-minister-dialog .wm-map-command .wm-stats em{font-size:10px;margin-left:2px}
+}
+.works-minister-dialog .wm-impact .wm-glyph{display:none}
+.works-minister-dialog .wm-impact .wm-compare>header{font-size:12px}
+.works-minister-dialog .wm-impact .wm-compare-values{margin:2px 0}
+.works-minister-dialog .wm-impact .wm-compare-values strong{font-size:16px}
+.works-minister-dialog .wm-impact .wm-compare svg{height:8px}
+@media(min-width:701px) and (max-height:720px){
+ .works-minister-dialog[data-works-page=levy-militia] .wm-fields{grid-template-columns:minmax(0,1fr);gap:4px}
+ .works-minister-dialog[data-works-page=levy-militia] .wm-field{grid-template-columns:minmax(0,1fr) 48px minmax(115px,1.2fr);gap:4px;font-size:11px}
+ .works-minister-dialog[data-works-page=levy-militia] .wm-field>input[type=number]{width:48px;height:24px}
+ .works-minister-dialog[data-works-page=levy-militia] .wm-field>.quantity-controls{grid-column:auto;min-width:0}
+ .works-minister-dialog[data-works-page=levy-militia] .quantity-controls button{min-width:28px!important;font-size:10px!important}
+}
+.wm-record-choices{display:grid;gap:5px;overflow:auto;min-height:0;max-height:55%}
+.wm-record-choices button{font:inherit;text-align:left;padding:6px 8px;background:#f3e6ca77;color:#715332;border:1px solid #b39867;border-radius:3px;cursor:pointer}
+.wm-record-choices button[aria-pressed=true]{background:#d7dfbd;border-color:#39664e;color:#28523f}
+.works-minister-dialog[data-works-page=special] .wm-fields>.wm-field{grid-column:1/-1}
+.works-minister-dialog[data-works-page=special] .wm-choices{display:grid;grid-template-columns:repeat(3,minmax(0,1fr))}
+@media(min-width:701px) and (max-height:720px){
+ .works-minister-dialog .wm-choices{gap:3px}
+ .works-minister-dialog .wm-choices button{padding:2px 4px;min-height:24px;font-size:12px}
+}
+
+.works-records-dialog{box-sizing:border-box;width:min(860px,94vw);height:min(650px,90dvh);max-height:90dvh;display:flex;flex-direction:column;overflow:hidden}
+.works-records-dialog .governance-header{flex:none}
+.works-records-content{flex:1;min-height:0;display:flex;flex-direction:column;gap:16px;padding:16px 7% 28px;color:#705333;box-sizing:border-box;overflow:hidden}
+.works-records-content>p{flex:none;margin:0;line-height:1.6}
+.works-records-content article{flex:1;min-height:0;overflow:auto;border-block:1px solid #b3986766;padding:18px 0;overflow-wrap:anywhere;line-height:1.8}
+.works-records-content article p{margin:12px 0}
+.works-records-content nav{flex:none;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.works-records-content button,.works-deputy-dialog [data-works-records]{font:inherit;color:#28523f;background:#eadab7;border:1px solid #b39867;border-radius:4px;padding:8px 18px;cursor:pointer}
+.works-records-content button:disabled{opacity:.4;cursor:default}
+.works-records-dialog .works-records-content{position:absolute;inset:16% 7% 15%;padding:0}
+.works-records-dialog .governance-header button{bottom:4%;min-height:36px}
+.works-records-dialog .governance-header h1{left:15%;right:15%;font-size:clamp(16px,2.5cqw,26px)}

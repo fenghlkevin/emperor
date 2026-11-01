@@ -7,6 +7,7 @@ export const GROWTH_LABELS={intelligence:'智力',martial:'武力',leadership:'�
 const historical=new Map(HISTORICAL_PEOPLE.map(p=>[p.id,p]));
 const originals=new Map(ORIGINAL_OFFICIAL_TEMPLATES.map(p=>[`original-${p.index}`,p]));
 const integer=n=>Number.isSafeInteger(n)&&n>=0&&n<=100;
+const TIGER_LEADERSHIP_BASELINES=new Map([['manual-1553',88],['manual-1554',82],['manual-1555',83],['manual-1556',78],['manual-1557',80]]);
 function sourceBase(p){const id=p.id?.replace(/^recruit-/,''),h=historical.get(id),o=originals.get(id);
  if(h)return h;
  if(o){const [,intelligence,martial,integrity]=o.u16_fields;return {intelligence,martial,integrity,leadership:martial,politics:intelligence};}
@@ -40,9 +41,22 @@ function potentialFrom(base,p,version=1){
 }
 // Potential is fixed at creation/migration, never recalculated from trained values.
 export function ensureOfficialGrowth(p){
+ const id=p.id?.replace(/^recruit-/,''),oldLeadership=TIGER_LEADERSHIP_BASELINES.get(id),source=historical.get(id);
+ if(oldLeadership!==undefined&&(!p.potential||p.potential.base?.leadership===oldLeadership)){
+  p.leadership=Math.max(p.leadership??0,source.leadership);
+  if(p.potential){
+   p.potential.base.leadership=source.leadership;
+   p.potential.caps={...HISTORICAL_POTENTIAL.get(source.name).caps};
+  }
+ }
+ // Upgrade the previous Lü Bu baseline, including saves with trained abilities.
+ if(p.id?.replace(/^recruit-/,'')==='general-285-45592'&&(!p.potential||p.potential.base?.martial===89)){
+  p.martial=100;
+  if(p.potential){p.potential.base.martial=100;p.potential.caps.martial=100;}
+ }
  if(p.potential!==undefined)return p.potential;
- const source=sourceBase(p),base=Object.fromEntries(GROWTH_KEYS.map(k=>[k,Math.max(0,Math.min(100,Math.round(source?.[k]??p[k]??0)))]));
- const version=p.generated&&!source?3:1;
+ const baseSource=sourceBase(p),base=Object.fromEntries(GROWTH_KEYS.map(k=>[k,Math.max(0,Math.min(100,Math.round(baseSource?.[k]??p[k]??0)))]));
+ const version=p.generated&&!baseSource?3:1;
  p.potential={version,base,caps:potentialFrom(base,p,version)};return p.potential;
 }
 export function abilityCap(p,key){const potential=p.potential??{caps:potentialFrom(Object.fromEntries(GROWTH_KEYS.map(k=>[k,sourceBase(p)?.[k]??p[k]??0])),p,p.generated?3:1)};return potential.caps[key];}

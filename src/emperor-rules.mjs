@@ -25,6 +25,6 @@ export function trainingGain(age,specialty,kind,random=Math.random){
 export function companionRecovery(person,member=true){
  return (person.baseAbility??Math.trunc(person.appearance**2/40))+(member?person.experience+(person.rank==null?5:person.rank<5?50:person.rank<14?20:5):0);
 }
-export function companyLifeCost(streak){return [0,0,2,4,8,16,24][streak]??32;}
+export function companyLifeCost(streak){return [0,0,2,3][streak]??4;}
 // Existing non-DOS talent/talent-generation models still operate on a 100 scale.
 export const ability100=value=>Math.max(0,Math.min(100,value/5));

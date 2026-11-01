@@ -1,3 +1,4 @@
+import {setQuantityLimits} from './quantity-controls.mjs';
 import {WEAPON_DEFINITIONS,normalizeWeaponSelection,weaponSelectionIds} from './card-battle-weapons.mjs';
 import {TROOP_KITS} from './troop-kits.mjs';
 import {worldKitDepot} from './troop-kit-world.mjs';
@@ -12,5 +13,5 @@ export function openWeaponDraft(state,formation,onApply,{sourceId='central',sour
  function read(){const v=normalizeWeaponSelection({version:1,counts}),usage={};for(const [id,n]of Object.entries(v.counts)){const kind=WEAPON_DEFINITIONS[id].kitKind;usage[kind]=(usage[kind]??0)+n;}for(const [kind,n]of Object.entries(usage))if(n+(used[kind]??0)>stock.kits[kind].available)throw Error(sourceName+'备用'+TROOP_KITS.find(k=>k.id===kind).name+'装备不足');return v;}
  function update(){try{const value=read(),n=weaponSelectionIds(value).length;d.querySelector('[data-weapon-status]').textContent=`已配${n}／2张武器 · 占用${n}套真实备用装`+(n!==initialCount&&formation.cardTactics?'；应用后计策改为自动。':'');d.querySelector('[data-weapon-apply]').disabled=false;}catch(e){d.querySelector('[data-weapon-status]').textContent=e.message;d.querySelector('[data-weapon-apply]').disabled=true;}}
  d.querySelector('[data-weapon-cancel]').onclick=()=>d.close();for(const e of d.querySelectorAll('[data-weapon-count]'))e.oninput=()=>{counts[e.dataset.weaponCount]=e.value===''?NaN:Number(e.value);update();};d.querySelector('[data-weapon-apply]').onclick=()=>{try{const value=read(),n=weaponSelectionIds(value).length;onApply(n?value:undefined,n!==initialCount);d.close();}catch(e){d.querySelector('[data-weapon-status]').textContent=e.message;}};
- d.addEventListener('close',()=>d.remove(),{once:true});update();d.showModal();return d;
+ d.addEventListener('close',()=>d.remove(),{once:true});update();setQuantityLimits(d,input=>input.matches('[data-weapon-count]')?Math.min(Math.max(0,2-Object.entries(counts).filter(([id])=>id!==input.dataset.weaponCount).reduce((n,[,v])=>n+(v||0),0)),Math.max(0,stock.kits[WEAPON_DEFINITIONS[input.dataset.weaponCount].kitKind].available-(used[WEAPON_DEFINITIONS[input.dataset.weaponCount].kitKind]??0))):undefined);d.showModal();return d;
 }

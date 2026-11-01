@@ -15,16 +15,20 @@ const central=[
  ['personnel-deputy','吏部侍郎','吏部','left',[23,35,7,15]],
  ['personnel-minister','吏部尚书','吏部','left',[18,42,10,18]],
  ['prime-minister','宰相','中枢','left',[9,43,10,20]],
- ['justice-deputy','刑部侍郎','刑部','right',[74,19,6,14]]
+ ['justice-deputy','刑部侍郎','刑部','right',[74,19,6,14]],
+ ['imperial-spy-chief','皇城司使','皇城司','left',[35,20,6,12]],
+ ['imperial-spy-reader','皇城司副使','皇城司','left',[29,20,6,12]]
 ];
-export const CENTRAL_OFFICES=central.map(([id,name,department,side,[x,y,w,h]])=>({id,name,department,side,x,y,w,h,description:`${name}奏事。`}));
+export const CENTRAL_OFFICES=central.map(([id,name,department,side,[x,y,w,h]])=>({id,name,department,side,x,y,w,h,description:department==='皇城司'?`${name}直属皇帝，${id==='imperial-spy-chief'?'承旨发布密令，掌对外刺探、对内反谍查奸':'汇呈内外密报，供陛下御览'}。`:`${name}奏事。`}));
 // Rear to front, matching the supplied court seating plan.
 export const COURT_SIDES=[
- ['左列 · 后至前',['works-deputy','works-minister','war-deputy','war-minister','revenue-deputy','revenue-minister','prime-minister']],
+ ['左列 · 后至前',['imperial-spy-reader','imperial-spy-chief','works-deputy','works-minister','war-deputy','war-minister','revenue-deputy','revenue-minister','prime-minister']],
  ['右列 · 后至前',['justice-minister','justice-deputy','rites-minister','rites-deputy','personnel-minister','personnel-deputy','central-general']]
 ];
 // Hit regions follow the heads and upper robes in the colored seating artwork.
 const courtSlots={
+ 'imperial-spy-chief':['left',[35,20,6,12]],
+ 'imperial-spy-reader':['left',[29,20,6,12]],
  'prime-minister':['left',[17.5,42,11,23]],
  'revenue-minister':['left',[25.3,35,7.5,17]],'revenue-deputy':['left',[12.5,33,8,19]],
  'war-minister':['left',[29.8,28.5,7,14]],'war-deputy':['left',[20,27,6.5,13]],

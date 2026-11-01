@@ -5,10 +5,10 @@ import {HISTORICAL_PEOPLE} from '../src/historical-people.mjs';
 import {newGame,validateSave} from '../src/game.mjs';
 import {executePersonnel,settlePersonnel} from '../src/personnel-actions.mjs';
 import {profilesTable} from '../src/historical-profile-ui.mjs';
-test('only the 100 original special templates appear in profiles',()=>{
- assert.equal(ACTIVE_HISTORICAL_PEOPLE.length,100);
- assert.equal(new Set(ACTIVE_HISTORICAL_PEOPLE.map(p=>p.id)).size,100);
- assert.match(profilesTable().html,/共 100 人/);
+test('the original special roster plus Ma Chao appear in profiles',()=>{
+ assert.equal(ACTIVE_HISTORICAL_PEOPLE.length,101);
+ assert.equal(new Set(ACTIVE_HISTORICAL_PEOPLE.map(p=>p.id)).size,101);
+ assert.match(profilesTable().html,/共 101 人/);
  assert.match(profilesTable({query:'朱熹'}).html,/共 0 人/);
 });
 test('charm and wisdom independently raise historical probability',()=>{

@@ -1,3 +1,6 @@
+import {battleReady,isMarching} from './campaign-march.mjs';
+import {recoverRest,applyOverwork,settleHealthyYear} from './emperor-balance.mjs';
+import {captureCourtReports} from './court-agenda.mjs';
 import {applyDifficultyOpening} from './difficulty-opening.mjs';
 import {initializeDifficulty,validateDifficulty,difficultyRandom} from './difficulty.mjs';
 import {refreshArmyRecoveryStatus} from './army-recovery.mjs';
@@ -9,7 +12,6 @@ import {settleBeautyTributes} from './beauty-tributes.mjs';
 import {settleEspionage,validateEspionage} from './espionage.mjs';
 import {PERIOD_NAMES} from './calendar.mjs';
 export {dateLabel} from './calendar.mjs';
-import {REST_LIFE_COST,EXHAUSTION_LIFE_COST} from './balance-rules.mjs';
 import {initializeEndings,settleEndings,validateEndings} from './endings.mjs';
 import {initializeAlchemy,validateAlchemy,settleAlchemy,alchemyBlock} from './alchemy.mjs';
 import {validateHunting} from './hunting.mjs';
@@ -34,9 +36,9 @@ export const buildings = [
  ['rest','紫宸殿',41,48,16,14,'召见内侍，查阅宫中玉牒。'], ['music','棋琴阁',6,53,20,19,'琴棋与修养。'],
  ['study','御书房',17,29,17,19,'阅读典籍，提升学识。'], ['mother','慈宁宫',30,13,15,19,'拜见太后。'],
  ['liming','礼明殿',64,43,9,12,'接见来京外国使臣，面议两国事务。'],
- ['dragon','金龙殿',6,24,17,15,'天子寝殿，独寝安眠。'], ['harem','后宫',4,2,23,20,'后宫人物与关系。'], ['martial','武道场',35,60,8,9,'习武强身，提升武术。']
+ ['dragon','金龙殿',6,24,17,15,'天子寝殿，独寝安眠。'], ['harem','后宫',4,2,23,20,'后宫人物与关系。'], ['martial','武道场',35,60,8,9,'习武强身，提升武术。'], ['garden','游园散心',15,51,12,11,'漫步池畔花园，舒展身心。每旬一次，消耗20体力，健康最多+5、快乐最多+20。'], ['medical','太医院',29,38,7,7,'请脉诊治，调养龙体。健康未满即可就诊，每旬一次；诊金与药后不适在院内说明。']
 ].map(([id,name,x,y,w,h,description],i)=>{
- const positions=[[42,39,16,13],[43,61,14,11],[73,30,8,10],[70,23,9,8],[46,15,8,8],[15,63,9,9],[29,26,8,9],[21,22,9,9],[64,43,9,12],[46,31,8,8],[28,10,11,10],[35,60,8,9]];
+ const positions=[[42,39,16,13],[43,61,14,11],[73,30,8,10],[70,23,9,8],[46,15,8,8],[35,60,8,9],[29,26,8,9],[21,22,9,9],[64,43,9,12],[46,31,8,8],[28,10,11,10],[15,63,9,9],[15,51,12,11],[29,38,7,7]];
  [x,y,w,h]=positions[i];return {id,name,x,y,w,h,description};
 });
 // Court and personnel register share the same central-office definitions.
@@ -56,8 +58,9 @@ export function advance(state) {
  initializeEmperor(state);
  initializeAuspices(state);
  if(state.stats.life===0)throw Error('寿元已尽，本朝终结');
- if(state.domestic.collapse?.pending)throw Error('京城失守，请先决定迁都或朝廷存亡');
- if(state.domestic.war?.battle)throw Error('请先结束战斗');
+ if(state.domestic.collapse?.pending)throw Error('陛下，京城已失守！是迁都续国，还是与京城共存亡，请速作决断。');
+ if(battleReady(state))throw Error('陛下，战事尚未了结，还请先定夺。');
+ captureCourtReports(state);
  state.turn++;
  settleMother(state);
  state.phase=0;
@@ -77,12 +80,14 @@ export function advance(state) {
  settleStrategy(state.domestic,state.turn);
  refreshArmyRecoveryStatus(state.domestic,state.turn);
  settleEspionage(state.domestic,state.turn);
+ settleHealthyYear(state);
  settleEndings(state);
  settleAlchemy(state);
  settleAuspices(state);
  state.stats.prestige=countrySummary(state.domestic).country.prestige;
  state.stats.treasury=countrySummary(state.domestic).country.fiscal.treasury;
  settleBeautyTributes(state);
+ captureCourtReports(state);
  settleProgress(state);
  settleReignResult(state);
  return state;
@@ -93,11 +98,12 @@ export function phaseLabel(s){return PHASES[s.phase??0];}
 export function roomBlock(s,id){
  initializeEmperor(s);
  if(s.stats.life===0)return '寿元已尽，本朝终结';
+ if(id==='medical')return '';
  if(id==='alchemy'&&alchemyBlock(s))return alchemyBlock(s);
- if(s.stats.energy<=0&&id!=='dragon')return '体力耗尽，请到金龙殿独寝恢复';
- if(s.phase===5&&!['dragon','harem'].includes(id))return '亥时只能独寝安眠或回后宫';
- if(id==='court'&&(s.phase??0)!==0)return '本旬仅早朝阶段可以上朝，退朝后请待下一旬早朝';
- if(s.phase===0&&!['court','dragon','harem'].includes(id))return '卯时请先到宣政殿早朝';
+ if(s.stats.energy<=0&&id!=='dragon')return '陛下已十分疲倦，奴才这就伺候您回金龙殿安歇。';
+ if(s.phase===5&&!['dragon','harem'].includes(id))return '陛下，夜已深了。可回金龙殿安寝，或往后宫歇息。';
+ if(id==='court'&&(s.phase??0)!==0)return '启禀陛下，今日早朝已毕，群臣已退。待下一旬卯时，再召百官议政。';
+ if(s.phase===0&&!['court','dragon','harem'].includes(id))return '陛下，百官已在宣政殿候驾，恭请临朝。';
  return id==='court'||id==='liming'?courtBlock(s):'';
 }
 export function leaveRoom(s){
@@ -108,23 +114,21 @@ export function leaveRoom(s){
 }
 export function resolveExhaustion(s){
  if(s.stats.energy>0||s.stats.life===0)return false;
- advance(s);s.stats.energy=s.stats.maxEnergy;s.stats.health=Math.min(100,s.stats.health+5);s.scene='palace';s.stats.life=Math.max(0,s.stats.life-EXHAUSTION_LIFE_COST);
- s.harem.history.unshift('体力耗尽晕倒，进入下一回合，体力回满、健康增加5，额外损失30寿元。');
+ applyOverwork(s);if(s.stats.life>0)advance(s);s.stats.energy=s.stats.maxEnergy;s.scene='palace';
+ s.harem.history.unshift('体力耗尽晕倒，进入下一回合，体力回满，健康与快乐各减少10，额外损失15寿元。');
  s.harem.history=s.harem.history.slice(0,30);settleReignResult(s);return true;
 }
 
 export function sleepUntilNextTurn(s){
  initializeEmperor(s);
  if(s.stats.life===0)throw Error('寿元已尽，本朝终结');
- if(s.domestic.war?.battle)throw Error('请先完成当前战斗');
- if(s.phase===5)throw Error('已是本回合最后阶段，请独寝安眠');
+ if(battleReady(s))throw Error('陛下，前线胜负未定，还请先料理眼前战事。');
+ if(s.phase===5)throw Error('陛下，已到亥时，该安寝了。请回金龙殿歇息。');
  const turn=s.turn;
- const before=s.stats.energy,health=s.stats.health,exhausted=before===0;
- s.stats.energy=exhausted?s.stats.maxEnergy:Math.min(s.stats.maxEnergy,before+150);
- s.stats.health=Math.min(100,health+5);s.stats.life=Math.max(0,s.stats.life-(exhausted?EXHAUSTION_LIFE_COST:REST_LIFE_COST));s.harem.streak=0;
+ const restMessage=recoverRest(s);s.harem.streak=0;
  if(s.stats.life===0){settleReignResult(s);return s;}
  advance(s);s.scene='palace';
- s.harem.history.unshift(`第${turn}旬：安寝至明，跳过剩余阶段，体力增加${s.stats.energy-before}，健康增加${s.stats.health-health}。`);
+ s.harem.history.unshift(`第${turn}旬：安寝至明，跳过剩余阶段，${restMessage}`);
  s.harem.history=s.harem.history.slice(0,30);
  return s;
 }

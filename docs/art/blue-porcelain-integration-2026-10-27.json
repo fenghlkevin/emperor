@@ -1,0 +1,16 @@
+{
+  "id": "original-summer-20261027-blue-porcelain",
+  "name": "青瓷佳人",
+  "asset": "assets/beauties/random/原创女子/青瓷佳人.png",
+  "source": "outputs/game-portrait-redraw/青瓷佳人-重绘立绘.png",
+  "regionId": "sheng",
+  "poolScope": "mainland",
+  "category": "原创女子",
+  "validation": {
+    "unitTestsPassed": 13,
+    "dataContractPassed": true,
+    "desktopPassed": true,
+    "checks": ["real random generation", "admission", "save and reload", "roster canvas loaded", "in-game enlarged portrait"],
+    "preview": "outputs/game-portrait-redraw/game-preview.png"
+  }
+}

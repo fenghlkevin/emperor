@@ -1,3 +1,4 @@
+import {planMilitia,applyManpower} from '../src/manpower.mjs';
 import {national,famine} from './helpers/national.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
@@ -21,7 +22,7 @@ test('rejection cools down repeated requests without spending',()=>{
 test('court presents pending and deferred requests for emperor decision and removes resolved requests',async()=>{
  const {courtAgenda}=await import('../src/court-agenda.mjs');const s=game(),before=JSON.stringify(s),a=courtAgenda(s,{limit:Infinity}).find(a=>a.requestId===1);assert.equal(a.action,'local-petition');assert.equal(a.office,'prime-minister');assert.match(a.summary,/600/);assert.equal(JSON.stringify(s),before);
  const rejected=decideLocalPetition(s,{id:1,approve:false}).state;assert.ok(!courtAgenda(rejected,{limit:Infinity}).some(a=>a.requestId===1));
- s.domestic.governance.reserve=s.stats.treasury;const deferred=decideLocalPetition(s,{id:1,approve:true}).state;assert.match(courtAgenda(deferred,{limit:Infinity}).find(a=>a.requestId===1).summary,/暂缓/);
+ s.domestic.governance.reserve=s.stats.treasury;const deferred=decideLocalPetition(s,{id:1,approve:true}).state;assert.ok(!courtAgenda(deferred,{limit:Infinity}).some(a=>a.requestId===1));
 });
 test('full advance automatically requests low-welfare work, imperial approval persists and work progresses',async()=>{
  const {advance}=await import('../src/game.mjs');const {persistCandidate}=await import('../src/persistence.mjs');
@@ -31,7 +32,7 @@ test('full advance automatically requests low-welfare work, imperial approval pe
  advance(s);s=validateSave(structuredClone(s));assert.equal(s.domestic.provinces[0].construction.project.progress,1);assert.equal(s.domestic.governance.petitions.items.find(r=>r.id===row.id).status,'executed');
 });
 function developed(){
- const s=game();s.turn=12;const d=s.domestic,c=national(d);delete d.governance.petitions;
+ const s=game();const origin=s.domestic.provinces[0];applyManpower(s.domestic,planMilitia(s.domestic,[origin],6000),'militia',origin.id);s.turn=12;const d=s.domestic,c=national(d);delete d.governance.petitions;
  c.fiscal.treasury=100000;c.fiscal.debt=0;c.fiscal.otherIncome=100000;c.fiscal.grain=1000000;s.stats.treasury=c.fiscal.treasury;
  for(const p of d.provinces.filter(p=>p.countryId===d.playerCountryId)){p.disaster=null;p.welfare.security=90;p.welfare.stability=90;p.status.livingStandard=70;}
  return s;
@@ -56,7 +57,7 @@ test('early or troubled countries suppress palace requests but retain essential 
   if(scenario==='disaster')p.disaster={kind:'drought',startTurn:12,endTurn:14};
   assert.equal(palacePetitionReady(d,s.turn),false,scenario);
   requestLocalConstruction(d,p,s.turn,'palaces','行宫');assert.equal(d.governance.petitions,undefined,scenario);
-  requestLocalConstruction(d,p,s.turn,'yamen','治安');assert.equal(d.governance.petitions.items[0].building,'yamen',scenario);
+  requestLocalConstruction(d,p,s.turn,'yamen','治安');assert.equal(d.governance.petitions?.items[0]?.building,scenario==='disaster'?undefined:'yamen',scenario);
  }
 });
 test('old pending palaces hide until ready, recheck approval and preserve read-only saves',async()=>{
@@ -76,4 +77,23 @@ test('early low loyalty does not generate palace petitions or block ordinary dev
  assert.ok(!(d.governance.petitions?.items??[]).some(r=>r.building==='palaces'));
  assert.ok(p.construction.project);assert.notEqual(p.construction.project.building,'palaces');
  assert.ok(!d.governance.records.some(r=>r.reason.includes('行宫')));
+});
+
+test('unexecutable construction stays out of petitions and court until conditions recover',async()=>{
+ const {courtAgenda}=await import('../src/court-agenda.mjs');
+ for(const scenario of ['disaster','project','labor','reserve','food']){
+  const s=game(),d=s.domestic,p=d.provinces[0],saved=structuredClone(d);
+  if(scenario==='disaster')p.disaster={kind:'drought',startTurn:s.turn,endTurn:s.turn+2};
+  if(scenario==='project')p.construction.project={building:'markets',progress:0,startedTurn:s.turn,requiredTurns:18};
+  if(scenario==='labor')p.population.professions.militia=0;
+  if(scenario==='reserve')national(d).fiscal.treasury=d.governance.reserve;
+  if(scenario==='food')famine(d);
+  const before=JSON.stringify(s);
+  assert.ok(!courtAgenda(s,{limit:Infinity}).some(a=>a.requestId===1),scenario);
+  assert.equal(JSON.stringify(s),before);
+  requestLocalConstruction(d,p,s.turn,'yamen','必要工程');
+  assert.equal(d.governance.petitions.items.length,1,scenario);
+  s.domestic=saved;
+  assert.ok(courtAgenda(s,{limit:Infinity}).some(a=>a.requestId===1),scenario);
+ }
 });

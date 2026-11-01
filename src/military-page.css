@@ -65,3 +65,127 @@ dialog.military-single-page:not([open]){display:none!important}
 .military-audience .court-audience-tasks:has(.court-task-category){gap:3px 10px;overflow:auto!important}
 .military-audience .court-audience-tasks:has(.court-task-category)>button{padding:8px 10px}
 @media(max-width:700px){.military-audience .court-audience-tasks>.court-task-category{font-size:10px;letter-spacing:2px;margin-top:5px}.military-audience .court-audience-tasks:has(.court-task-category)>button{padding:5px;gap:6px;grid-template-columns:28px minmax(0,1fr) 12px}.military-audience .court-audience-tasks:has(.court-task-category)>button>span{width:28px;height:28px}}
+
+/* Inventory keeps every troop type visible together; depot selection updates all counts. */
+.military-single-page[data-garrison-kind=inventory]>.military-layout{grid-template-columns:minmax(0,1fr) 27%!important}
+.military-single-page[data-garrison-kind=inventory] .garrison-map-frame{flex:1;min-height:0;overflow:auto!important}
+.garrison-overview>header{display:flex;align-items:baseline;justify-content:space-between;gap:8px;padding:8px 0 12px}
+.garrison-overview h2{margin:0;font-size:clamp(16px,1.7cqw,26px);font-weight:400}
+.garrison-overview>header span{font-size:clamp(10px,.9cqw,14px);color:#76613f}
+.garrison-stock-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.garrison-stock-grid article{display:grid;grid-template-columns:48px 1fr;align-items:center;gap:4px 8px;padding:12px;background:#fff7df66;border:1px solid #b69a6355;border-radius:4px;min-width:0}
+.garrison-stock-grid svg{width:48px;height:55px;grid-row:span 2}
+.garrison-stock-grid h3{margin:0;font-size:clamp(14px,1.4cqw,22px);font-weight:400}
+.garrison-stock-grid dl{grid-column:1/-1;display:flex;justify-content:space-between;gap:4px;margin:6px 0 0}
+.garrison-stock-grid dl div{display:grid;gap:4px}
+.garrison-stock-grid dt{font-size:clamp(10px,.9cqw,14px);color:#76613f}
+.garrison-stock-grid dd{margin:0;font-size:clamp(15px,1.7cqw,26px);font-variant-numeric:tabular-nums}
+.garrison-stock-grid dl div:last-child dd{color:#27604c}
+.military-single-page[data-garrison-kind=inventory] .personnel-scene-detail{overflow:auto!important}
+@media(max-width:700px){.military-single-page[data-garrison-kind=inventory]>.military-layout{grid-template-columns:minmax(0,1fr)!important}.military-single-page[data-garrison-kind=inventory] .personnel-scene-side{display:none!important}.garrison-stock-grid{gap:5px}.garrison-stock-grid article{padding:6px;grid-template-columns:24px 1fr;gap:3px}.garrison-stock-grid svg{width:24px;height:32px}.garrison-overview>header{padding:4px 0}}
+.garrison-recruit-capacity{margin:10px 0;padding:10px;border:1px solid #bca77d;background:#efe2c466}.garrison-recruit-capacity h3{margin:0 0 6px;color:#285e49;font-size:clamp(16px,1.5cqw,24px)}.garrison-recruit-capacity p{margin:4px 0;font-size:clamp(11px,.95cqw,15px)}.garrison-recruit-capacity small{font-size:11px}.military-amount:has([data-garrison-max]){display:flex;gap:6px}.military-amount:has([data-garrison-max])>div{flex:1;min-width:0}.military-amount>[data-garrison-max]{padding:0 12px;border:1px solid #ac8c4f;color:#644520;background:#e8d3a6;font-weight:bold}.garrison-depot-picker .garrison-central-entry{margin-left:12px;padding:8px 14px;border:1px solid #a98442;background:#e7d19e;color:#694820}.garrison-central-entry[aria-pressed=true]{background:#754735;color:#fff0c8}
+.garrison-central-entry{padding:8px 14px;border:1px solid #a98442;background:#e7d19e;color:#694820;font-size:14px;cursor:pointer}.garrison-central-entry:disabled{opacity:.5;cursor:default}.garrison-target-picker .garrison-central-entry{margin-left:8px}
+/* Procurement exposes the whole order in the space previously occupied by the map. */
+.military-single-page[data-garrison-kind=purchase] .garrison-map-frame{overflow:auto!important;min-height:0}
+.garrison-purchase-list{padding:4px 12px 16px 0;font-size:clamp(12px,1.15cqw,18px)}
+.garrison-purchase-list header{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.garrison-purchase-list h2{font-size:clamp(16px,1.7cqw,26px);font-weight:400;margin:8px 0}
+.garrison-purchase-list p{font-size:12px;color:#76613f}
+.garrison-purchase-list table{width:100%;border-collapse:collapse;text-align:left}
+.garrison-purchase-list :is(th,td){padding:8px 6px;border-bottom:1px solid #b5996155}
+.garrison-purchase-list small{display:block;font-size:11px;color:#76613f}
+.garrison-purchase-list input{box-sizing:border-box;width:100%;max-width:150px;min-width:60px;padding:7px;border:1px solid #b59961;background:#fff7df80;color:#342b20;font:inherit}
+.garrison-purchase-list input:disabled{opacity:.4}
+.garrison-purchase-list button{padding:6px 9px;border:1px solid #b59961;background:#ecdbb5;color:#644520;font:inherit;cursor:pointer}
+.garrison-purchase-summary p{line-height:1.9;color:#285e49}
+@media(max-width:700px){.garrison-purchase-list{padding-right:4px}.garrison-purchase-list :is(th,td){padding:6px 3px}.garrison-purchase-list button{padding:5px 3px;font-size:11px}}
+.central-transfers .transfer-list{overflow:auto!important;min-height:0;padding-right:10px}
+.transfer-direction{display:flex;gap:8px;margin:6px 0 12px}.transfer-direction button{padding:8px 12px;border:1px solid #b59961;background:#ecdbb5;color:#644520;font:inherit}.transfer-direction button[aria-pressed=true]{background:#754735;color:#fff0c8}
+.transfer-list article{border:1px solid #b5996155;padding:10px;margin-bottom:12px;background:#fff7df33}.transfer-list article>header{display:flex;align-items:center;justify-content:space-between;gap:8px}.central-transfers .transfer-list header label{flex-direction:row!important;align-items:center}.central-transfers input[type=checkbox]{width:18px!important;min-width:18px!important}.transfer-fields{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:6px}.transfer-fields small,.transfer-list header small{font-size:11px;color:#76613f}.central-transfers .transfer-fields input[type=number]{font-size:16px!important;padding:4px!important}
+@media(max-width:700px){.transfer-fields{grid-template-columns:repeat(2,minmax(0,1fr))}.transfer-list article>header{display:block}.transfer-direction button{font-size:12px;padding:5px}}
+.transfer-list>details{border:1px solid #b5996155;padding:10px;margin-bottom:8px;background:#fff7df33}.transfer-list>details>summary{display:flex;align-items:center;justify-content:space-between;gap:8px;cursor:pointer}.central-transfers .transfer-list summary label{flex-direction:row!important;align-items:center}.transfer-list>details>summary small{font-size:12px;color:#76613f}.transfer-list>details>button{padding:5px 10px;background:#ecdbb5;border:1px solid #b59961;color:#644520;font:inherit}
+@media(max-width:700px){.transfer-list>details>summary{display:block}.transfer-list>details>summary small{font-size:10px}}
+/* Illustrated military orders: existing painted scenes and the actual unit art. */
+.military-scene-art{position:relative;margin:0 0 12px;height:130px;overflow:hidden;border:1px solid #aa8c5655;background:#dac99f}
+.military-scene-art>img{width:100%;height:100%;object-fit:cover;object-position:center 45%;filter:saturate(.8)}
+.military-scene-art:after{content:"";position:absolute;inset:35% 0 0;background:linear-gradient(transparent,#352c1bd9);pointer-events:none}
+.military-scene-art figcaption{position:absolute;left:16px;bottom:10px;z-index:1;color:#fff1cc;letter-spacing:.13em;font-size:18px;text-shadow:0 1px 4px #291805}
+.military-troop-art{display:block;width:68px;height:76px;filter:drop-shadow(1px 3px 2px #63421e33)}
+.purchase-kit-cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.purchase-kit-card{display:grid;grid-template-columns:70px minmax(0,1fr);align-items:center;gap:4px 8px;padding:10px;border:1px solid #a8894c66;background:linear-gradient(135deg,#fff9e780,#ead8ad55);transition:border-color .15s,background .15s}
+.purchase-kit-card[data-selected=true]{border-color:#567465;background:linear-gradient(135deg,#eaf0da80,#d7ddba55);box-shadow:inset 3px 0 #567465}
+.purchase-kit-card.is-locked{background:#d5c8aa33}.purchase-kit-card.is-locked>.military-troop-art{filter:grayscale(.6);opacity:.55}
+.purchase-kit-info h3{font-size:18px;font-weight:400;margin:0 0 3px}.purchase-kit-info span{font-size:13px;color:#795733}.purchase-kit-info small{display:block;font-size:12px;color:#77684e;margin-top:3px}
+.purchase-kit-order{grid-column:1/-1;display:flex;align-items:center;gap:6px;margin-top:4px}.purchase-kit-order input[type=number]{width:38%!important;font-size:18px!important;min-width:0;flex:none;padding:4px!important}.purchase-kit-order button{flex:1;padding:6px 2px;font-size:12px}.purchase-origin-lock{font-size:11px;color:#877963}
+.military-single-page[data-garrison-kind=purchase] .garrison-strength{display:none}.military-single-page[data-garrison-kind=purchase] .personnel-scene-detail{overflow:auto!important}
+.military-enlist-scene .military-scene-art{height:clamp(180px,28cqw,420px)}.military-enlist-scene>p{line-height:1.8;color:#76613f}.court-garrison:is([data-garrison-kind=recruit],[data-garrison-kind=dismiss]) .garrison-map-frame{overflow:auto!important}
+.military-review>.military-scene-art{height:110px;margin-bottom:18px}
+.central-transfers .personnel-scene-detail{overflow:auto!important}.central-transfers .personnel-scene-detail>.military-scene-art{height:140px;margin-bottom:14px}.central-transfers .personnel-scene-detail>.military-scene-art figcaption{font-size:13px;left:9px}
+.transfer-list>details{transition:background .15s,border-color .15s}.transfer-list>details[open]{border-color:#99763d88;background:#fff6db55}.transfer-list>details>summary{justify-content:flex-start;gap:10px}.transfer-list>details>summary>.military-troop-art{width:34px;height:42px;flex:none}.transfer-list>details>summary small{margin-left:auto}.transfer-list>details>summary:after{content:"展开配拨 ＋";font-size:12px;color:#7c6239;white-space:nowrap}.transfer-list>details[open]>summary:after{content:"收起 −"}
+.transfer-fields{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-top:10px}.central-transfers .transfer-fields>.transfer-troop-card{display:grid!important;grid-template-columns:52px minmax(0,1fr);gap:3px 8px;padding:8px;margin:0!important;border:1px solid #b5996144;background:#fff8e555}.transfer-troop-card>.military-troop-art{grid-row:span 3;width:52px;height:64px}.transfer-troop-card>span{font-size:14px}.central-transfers .transfer-fields input[type=number]{font-size:18px!important;padding:3px!important;border-width:1px!important;max-width:100px}.transfer-troop-card small{font-size:10px}
+@media(max-width:1000px){.purchase-kit-card{grid-template-columns:45px minmax(0,1fr);gap:4px;padding:7px}.purchase-kit-card>.military-troop-art{width:45px;height:54px}.purchase-kit-info h3{font-size:14px}.purchase-kit-info span,.purchase-kit-info small{font-size:11px}.purchase-kit-order{flex-wrap:wrap}.purchase-kit-order button{font-size:10px}.military-scene-art{height:95px}.central-transfers .personnel-scene-detail>.military-scene-art{height:95px}}
+@media(max-width:700px){.purchase-kit-cards{grid-template-columns:repeat(2,minmax(0,1fr));gap:5px}.purchase-kit-card{grid-template-columns:36px minmax(0,1fr);padding:5px}.purchase-kit-card>.military-troop-art{width:36px;height:48px}.purchase-kit-order input[type=number]{font-size:14px!important}.purchase-kit-order button{font-size:10px;flex-basis:100%}.military-scene-art figcaption{font-size:12px;left:8px}.garrison-purchase-list h2{font-size:15px}.transfer-fields{grid-template-columns:repeat(2,minmax(0,1fr))}.central-transfers .transfer-fields>.transfer-troop-card{grid-template-columns:34px minmax(0,1fr);padding:5px;gap:3px}.transfer-troop-card>.military-troop-art{width:34px;height:48px}.transfer-troop-card>span{font-size:12px}.transfer-list>details>summary{display:flex;flex-wrap:wrap}.transfer-list>details>summary small{margin-left:0;flex-basis:100%}.transfer-list>details>summary:after{margin-left:auto}.central-transfers .personnel-scene-detail>.military-scene-art{height:80px}}
+.court-garrison .garrison-map-frame>.military-review{height:auto;min-height:100%;overflow:visible}
+.garrison-purchase-list>.military-scene-art{height:100px;margin-bottom:5px}.garrison-purchase-list>header h2{margin:7px 0}.purchase-kit-cards{gap:8px}.purchase-kit-card{padding:7px 9px}.purchase-kit-card>.military-troop-art{height:60px;width:60px}.purchase-kit-order button:disabled{opacity:.4;cursor:default}.purchase-kit-order input[type=number]{width:34%!important}.purchase-kit-order button{min-width:0;flex:1;white-space:nowrap}.purchase-kit-order{gap:4px}.military-enlist-scene .military-scene-art>img{object-position:center;object-fit:cover}
+@media(max-width:700px){.garrison-purchase-list>.military-scene-art{height:85px}.purchase-kit-card{padding:5px}.purchase-kit-card>.military-troop-art{width:36px;height:45px}.purchase-kit-order button{flex-basis:auto}.purchase-kit-order input[type=number]{width:100%!important}}
+.garrison-purchase-list>.military-scene-art{height:145px}
+@media(max-width:1000px){.garrison-purchase-list>.military-scene-art{height:100px}}@media(max-width:700px){.garrison-purchase-list>.military-scene-art{height:85px}}
+/* The campaign wizard dedicates the scroll to one decision at a time. */
+.court-campaign .campaign-steps{position:absolute;top:14%;left:8%;right:8%;display:flex;justify-content:space-between;gap:8px;font-size:clamp(11px,1.1cqw,17px);color:#79684b}
+.campaign-steps [aria-current=step]{color:#9b3928;border-bottom:2px solid #9b3928}
+.court-campaign[data-campaign-step]>.military-layout{top:21%!important;grid-template-columns:minmax(0,1fr) 42%!important}
+.court-campaign[data-campaign-step] .personnel-scene-detail{overflow:auto!important}
+.court-campaign [hidden]{display:none!important}
+.court-campaign[data-campaign-step="0"] :is(.campaign-formation-heading,.campaign-field,.campaign-field-actions,.campaign-original,.campaign-picker,.campaign-count,.personnel-scene-detail>h2,.personnel-scene-detail>.court-kicker,.cb-campaign-config){display:none!important}
+.court-campaign[data-campaign-step="0"]>.military-layout{grid-template-columns:minmax(0,1fr) 22%!important}
+.court-campaign[data-campaign-step="1"] :is(.campaign-target,.cb-campaign-config){display:none!important}
+.court-campaign[data-campaign-step="1"] .campaign-field{grid-template-columns:repeat(3,minmax(0,1fr))!important;overflow:auto;flex:1!important;align-content:start}
+.court-campaign[data-campaign-step="1"] .campaign-field svg{height:70px!important}
+.court-campaign[data-campaign-step="2"] :is(.campaign-target,.campaign-formation-heading,.campaign-field,.campaign-field-actions,.campaign-original,.campaign-picker,.campaign-count,.personnel-scene-detail){display:none!important}
+.court-campaign .campaign-choice-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:5px}
+.court-campaign .campaign-choice-grid button{padding:5px;min-height:44px;border:1px solid #b59961;background:#eadbbd;color:#59442d;font-size:13px}
+.court-campaign .campaign-choice-grid svg{height:42px;width:100%;display:block}
+.court-campaign .campaign-choice-grid [aria-pressed=true]{border:2px solid #9b3928;background:#d9bb83}
+.court-campaign .campaign-choice-grid :disabled{opacity:.4}
+.campaign-number,.campaign-step-actions{display:flex;gap:8px;align-items:center;margin-top:8px}.campaign-number input{flex:1}.campaign-step-actions button{flex:1;min-height:40px}
+.campaign-step-hint{line-height:1.8;margin:12px 0}
+.court-campaign[data-campaign-step="2"] .cb-campaign-config{grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:20px}
+.court-campaign[data-campaign-step="2"] .cb-campaign-config button{min-height:64px;font-size:17px}
+@media(max-width:700px){.court-campaign .campaign-choice-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.court-campaign .campaign-steps{gap:3px;font-size:10px}.court-campaign[data-campaign-step="1"] .campaign-field{grid-template-columns:repeat(2,minmax(0,1fr))!important}.court-campaign .campaign-choice-grid svg{height:28px}}
+.court-campaign .campaign-number{display:grid;grid-template-columns:minmax(80px,1fr) auto;gap:8px;width:100%}
+.court-campaign .campaign-number input{width:100%!important;min-width:80px!important;min-height:42px}
+.court-campaign .campaign-number button{min-height:42px;white-space:nowrap}
+
+/* Imperial intelligence shares the court scroll, with a read-only report pane. */
+.imperial-reports .personnel-scene-main{display:flex!important;flex-direction:column!important;gap:10px}
+.imperial-reports .foreign-cards{flex:1;min-height:0;overflow:auto}
+.imperial-reports .foreign-card{padding:0;border:0;background:none}
+.imperial-reports .foreign-stats{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.imperial-reports .foreign-stats>div{padding:0;min-height:56px;text-align:left;display:grid;grid-template-columns:65px 1fr;column-gap:8px;align-items:center}
+.imperial-reports .foreign-stats .governance-art{position:relative;inset:auto;grid-row:span 2;width:65px;height:46px}
+.imperial-reports .personnel-scene-detail{overflow:auto}
+.imperial-reports select{max-width:100%}
+.imperial-reports [data-report-history]{text-overflow:ellipsis}
+.court-campaign .campaign-current-leader{display:grid;grid-template-columns:1fr 1.3fr;gap:8px;padding:10px 12px;margin-bottom:12px;border:1px solid #b59961;background:#ddc99d55}
+.campaign-current-leader>div:first-child{display:flex;flex-direction:column;gap:4px}.campaign-current-leader b{font-size:23px}.campaign-current-leader>button{grid-column:1/-1;min-height:38px;border:1px solid #9c7750;background:#e9d5aa;color:#79452c;font-size:16px}
+.campaign-ability{display:flex;gap:20px;align-items:center}.campaign-ability>span{display:flex;flex-direction:column;gap:3px;font-size:14px;color:#6b5637}.campaign-ability strong{font-size:24px;color:#8b3b29}
+.court-campaign .campaign-field .campaign-leader-stats{font-size:14px;color:#72532d;margin:3px 0}
+dialog.campaign-officer-picker{width:min(850px,86vw);max-height:78dvh;box-sizing:border-box;padding:24px;border:3px double #a17d46;background:linear-gradient(120deg,#f6ecd6,#e8d5ac);color:#483722;box-shadow:0 15px 70px #0009;border-radius:8px;font-family:GovernanceKai,'Songti SC',serif}
+.campaign-officer-picker::backdrop{background:#17100bc0}.campaign-officer-picker header{display:flex;justify-content:space-between;align-items:center}.campaign-officer-picker h2{font-size:28px;margin:5px 0 14px}.campaign-officer-picker button{cursor:pointer;font:inherit;color:inherit}.campaign-officer-picker header button{padding:8px;border:1px solid #aa8c5c;background:transparent}
+.campaign-officer-tools{display:flex;gap:10px;flex-wrap:wrap}.campaign-officer-tools input{flex:1;min-width:140px;padding:10px;font:inherit;border:1px solid #ac8a56;background:#fff8e8}.campaign-officer-tools button{padding:8px 12px;border:1px solid #ac8a56;background:#e4d0a8}.campaign-officer-tools [aria-pressed=true]{background:#8e422d;color:#fff0ce}
+.campaign-officer-picker>p{line-height:1.5;font-size:14px}.campaign-officer-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;max-height:46dvh;overflow:auto;padding:3px}
+.campaign-officer-list>button{display:grid;grid-template-columns:1fr 1.5fr;gap:10px;text-align:left;padding:14px;border:1px solid #b59765;background:#f5e8ca;min-height:120px}.campaign-officer-list>button[aria-pressed=true]{border:2px solid #a1412a;background:#e7cea0}.campaign-officer-list b{font-size:21px}.campaign-officer-list small{display:block;margin-top:8px;color:#78633e;font-size:13px}.campaign-officer-list em{grid-column:1/-1;font-style:normal;color:#99452d;font-size:14px}.campaign-officer-list meter{width:100%;height:7px}.campaign-officer-list .campaign-ability{gap:16px}.campaign-officer-list .campaign-ability>span{flex:1}
+@media(max-width:600px){.campaign-officer-list{grid-template-columns:1fr}.campaign-current-leader .campaign-ability{gap:10px}.court-campaign .campaign-current-leader{grid-template-columns:1fr}.campaign-officer-picker{padding:14px}}
+.campaign-officer-picker .campaign-officer-list{display:block;max-height:48dvh;overflow:auto;padding:0;border:1px solid #b59765}
+.campaign-officer-table{width:100%;border-collapse:collapse;font-size:16px;white-space:nowrap}
+.campaign-officer-table thead{position:sticky;top:0;background:#e4cfa6;z-index:1}
+.campaign-officer-table th,.campaign-officer-table td{padding:9px 14px;text-align:left;border-bottom:1px solid #b5976555}
+.campaign-officer-table thead th{font-weight:400;color:#72532d;font-size:15px}
+.campaign-officer-name{display:flex;align-items:center;gap:14px}
+.campaign-officer-name img,.campaign-avatar-placeholder{width:48px;height:56px;object-fit:cover;object-position:top;border:1px solid #b59765;background:#d8c299;flex:none}
+.campaign-avatar-placeholder{display:grid;place-items:center}.campaign-officer-table .campaign-officer-name b{font-size:19px}
+.campaign-officer-table .campaign-officer-score{font-size:22px;color:#903f2a;font-variant-numeric:tabular-nums}
+.campaign-officer-table .is-current{background:#ddc08b}.campaign-officer-table .is-assigned{background:#e5d8bc;color:#7b705d}
+.campaign-officer-table button{min-height:36px;padding:6px 14px;border:1px solid #ad8352;background:#ead3a3;color:#893c29}
+.campaign-officer-table button:disabled{background:transparent;color:#88785d;border-color:#b7a587;cursor:default}
+@media(max-width:600px){.campaign-officer-table th,.campaign-officer-table td{padding:7px}.campaign-officer-name{gap:7px}.campaign-officer-name img{width:36px;height:44px}.campaign-officer-table .campaign-officer-name b{font-size:16px}}

@@ -59,7 +59,7 @@ export function companyBond(s,p){
  const random=eventRandom(s,p,'company');if(random()>=eventChance(p))return '';
  const kind=kinds[Math.floor(random()*kinds.length)],a=s.stats;
  if(kind==='longevity'||kind==='care'){
-  const gain=Math.min(kind==='care'?4:3,lifeRoom(s,p));
+  const gain=Math.min(kind==='care'?4+Math.floor(random()*5):3+Math.floor(random()*4),lifeRoom(s,p));
   a.life+=gain;r.lifeGranted+=gain;b.lifeGranted+=gain;
   const health=kind==='care'?Math.min(8,100-a.health):0;a.health+=health;
   return finish(s,p,kind,kind==='care'?`${p.name}依所长照料饮食起居，太医奏称调养渐见成效。`:`与${p.name}相知日久，朝夕宽慰，近日身心安泰。`,[gain?`寿元增加${gain}`:'',health?`健康增加${health}`:''].filter(Boolean).join('，'));
@@ -68,7 +68,7 @@ export function companyBond(s,p){
   b.harmony={personId:p.id,startedTurn:s.turn,untilTurn:s.turn+6};
   return finish(s,p,kind,`${p.name}以闲谈雅趣宽解朝堂纷扰，心境渐归平和。`,'未来六旬，办公时快乐消耗减少1');
  }
- const health=Math.min(4,100-a.health),happy=Math.min(6,100-a.happiness);a.health+=health;a.happiness+=happy;
+ const health=Math.min(5,100-a.health),happy=Math.min(5,100-a.happiness);a.health+=health;a.happiness+=happy;
  return finish(s,p,kind,`${p.name}见陛下劳心，温言劝谏，陪同调适作息。`,`健康增加${health}，快乐增加${happy}`);
 }
 export function educationBond(s,child){

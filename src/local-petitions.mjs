@@ -1,3 +1,4 @@
+import {requireProjectLabor} from './project-labor.mjs';
 import {constructionPlan} from './construction.mjs';
 import {countrySummary} from './domestic.mjs';
 import {welfareValue} from './building-effects.mjs';
@@ -14,9 +15,18 @@ export function palacePetitionReady(d,turn){
  const f=foodForecast(q.provinces[0],turn,turn+1,d),food=f.national??f;
  return food.shortfall===0&&(food.opening??food.grain)>=food.need*3;
 }
+// Present only work that an imperial approval can actually start now.
+export function constructionPetitionReady(d,p,turn,building){
+ const plan=constructionPlan(d,building),home=d.countries.find(c=>c.id===d.playerCountryId);
+ if(!p||!plan||p.countryId!==d.playerCountryId||!localAuthority(d,p).civil||activeDisaster(p,turn)||p.construction?.project)return false;
+ if(building==='palaces'&&!palacePetitionReady(d,turn))return false;
+ if(foodForecast(p,turn,turn+1,d).shortfall||home.fiscal.treasury-plan.cost<d.governance.reserve)return false;
+ try{requireProjectLabor(d,p,'construction',{building,laborScale:2});}catch{return false;}
+ return true;
+}
 // Optional extension: old saves acquire no fictitious petitions on read.
 export function requestLocalConstruction(d,p,turn,building,reason){
- if(p.resourceRulesVersion!==1||building==='palaces'&&!palacePetitionReady(d,turn))return;
+ if(p.resourceRulesVersion!==1||!constructionPetitionReady(d,p,turn,building))return;
  const plan=constructionPlan(d,building);if(!plan)throw Error('请旨建物无效');
  const book=d.governance.petitions??={nextId:1,items:[]};
  if(book.items.some(r=>r.provinceId===p.id&&r.building===building&&['pending','deferred'].includes(r.status)))return;

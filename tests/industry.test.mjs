@@ -16,7 +16,9 @@ import {validateFinance} from '../src/finance.mjs';
 const province=s=>s.domestic.provinces.find(p=>p.id==='hebei');
 const home=s=>s.domestic.countries[0];
 const targets=p=>Object.fromEntries(INDUSTRIES.map(([, ,job])=>[job,p.population.professions[job]]));
-const act=(s,c)=>executeIndustry(s,{id:s.domestic.industryActions.nextId,provinceId:'hebei',...c});
+// Preserve coverage of saved one-turn fixed-area projects; new projects are covered in industry-cycle.test.mjs.
+const legacyProject=result=>{for(const city of result.state.domestic.provinces){const project=city.development.project;if(project){delete project.requiredTurns;delete project.areaMin;}}return result;};
+const act=(s,c)=>legacyProject(executeIndustry(s,{id:s.domestic.industryActions.nextId,provinceId:'hebei',...c}));
 const roundtrip=s=>validateSave(JSON.parse(JSON.stringify(s)));
 const memory=()=>({value:null,setItem(key,value){assert.equal(key,SAVE_KEY);this.value=value;}});
 function isolatedProduction(){
@@ -140,7 +142,7 @@ test('failed persistence rolls back development cash, project, action cost and c
  const current=newGame('保存帝'),candidate=act(current,{kind:'develop',industry:'agriculture',area:500}).state,before=structuredClone(current),draft=structuredClone(candidate);
  const prepare=s=>{spendEnergy(s,true);resolveExhaustion(s);};
  assert.throws(()=>persistCandidate(current,candidate,{setItem(){throw Error('quota');}},prepare),/保存失败/);assert.deepEqual(current,before);assert.deepEqual(candidate,draft);
- const mem=memory(),next=persistCandidate(current,candidate,mem,prepare);assert.equal(home(next).fiscal.treasury,9000);assert.equal(next.stats.energy,199);assert.equal(next.domestic.industryActions.nextId,2);
+ const mem=memory(),next=persistCandidate(current,candidate,mem,prepare);assert.equal(home(next).fiscal.treasury,9000);assert.equal(next.stats.energy,198);assert.equal(next.domestic.industryActions.nextId,2);
  const loaded=validateSave(JSON.parse(mem.value));assert.deepEqual(loaded,next);assert.throws(()=>executeIndustry(loaded,{id:1,kind:'develop',provinceId:'hebei',industry:'commerce',area:1}),/已执行/);assert.throws(()=>persistCandidate(next,candidate,mem,prepare));validateFinance(next.domestic);
 });
 

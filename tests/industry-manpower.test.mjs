@@ -7,14 +7,16 @@ import {laborProfile} from '../src/labor.mjs';
 import {industryStaffing,settleIndustryHiring} from '../src/industry-labor.mjs';
 import {initializeIndustry,quoteIndustry,executeIndustry,settleIndustry} from '../src/industry.mjs';
 import {cityLand,CITY_EXPANSION_LAND} from '../src/city-capacity.mjs';
-import {activeDrafts,cityDraftCapacity,validateManpower} from '../src/manpower.mjs';
+import {activeDrafts,cityDraftCapacity,validateManpower,planMilitia,applyManpower} from '../src/manpower.mjs';
 import {quoteKitCommand,executeKitCommand,reserveWorldKits,settleWorldKits} from '../src/troop-kit-world.mjs';
 import {persistCandidate} from '../src/persistence.mjs';
 import {startConstruction} from '../src/construction.mjs';
 const p=s=>s.domestic.provinces[0];
-const game=()=>{const s=newGame('产业军役');initializeResourceEconomy(s.domestic);s.domestic.countries[0].fiscal.treasury=1e8;s.stats.treasury=1e8;s.domestic.disasters.lastTurn=10000;return s;};
-const industry=(s,c)=>executeIndustry(s,{id:s.domestic.industryActions.nextId,provinceId:p(s).id,...c});
-const army=(s,c)=>executeKitCommand(s,{id:s.domestic.troopKits.nextId,sourceId:p(s).id,...c});
+const game=()=>{const s=newGame('产业军役');initializeResourceEconomy(s.domestic);s.domestic.countries[0].fiscal.treasury=1e8;s.stats.treasury=1e8;s.domestic.disasters.lastTurn=10000;const old=s.domestic.provinces.find(p=>p.id===s.domestic.centralArmy.sourceProvinceId);old.population.professions.soldiers-=s.domestic.centralArmy.soldiers;p(s).population.professions.soldiers+=s.domestic.centralArmy.soldiers;s.domestic.centralArmy.sourceProvinceId=p(s).id;for(const city of s.domestic.provinces.filter(city=>city.countryId===s.domestic.playerCountryId&&city.id!==p(s).id))city.population.professions.militia+=laborProfile(city).available;return s;};
+// Preserve coverage of saved one-turn fixed-area projects; new projects are covered in industry-cycle.test.mjs.
+const legacyProject=result=>{for(const city of result.state.domestic.provinces){const project=city.development.project;if(project){delete project.requiredTurns;delete project.areaMin;}}return result;};
+const industry=(s,c)=>legacyProject(executeIndustry(s,{id:s.domestic.industryActions.nextId,provinceId:p(s).id,...c}));
+const army=(s,c)=>executeKitCommand(s,{id:s.domestic.troopKits.nextId,sourceId:'central',...c});
 const roundtrip=s=>validateSave(JSON.parse(JSON.stringify(s)));
 const production=s=>Object.fromEntries(['agriculture','pastoral','commerce','industry'].map(k=>[k,outputFor(p(s),k)]));
 
@@ -26,11 +28,18 @@ test('initial occupations and 75% labor stay unchanged; enabling industry staffi
  const base=structuredClone(p(s).industryLabor.base);initializeResourceEconomy(s.domestic);assert.deepEqual(p(s).industryLabor.base,base);
 });
 
-test('city expansion grows population capacity AND shared land; capped geographic land cannot be invented',()=>{
- const s=game(),before=structuredClone(s),q=quoteIndustry(s,{kind:'expand',provinceId:p(s).id}),r=industry(s,{kind:'expand'}).state;
- assert.equal(p(r).cityCapacity.land,p(s).cityCapacity.land+CITY_EXPANSION_LAND);assert.equal(q.landAfter.total,p(r).cityCapacity.land);assert.equal(p(r).cityCapacity.population,p(s).cityCapacity.population+10000);
- assert.deepEqual(p(r).population,p(s).population);assert.deepEqual(p(r).economy,p(s).economy);assert.equal(r.stats.treasury,s.stats.treasury-5000);assert.deepEqual(s,before);
- p(s).cityCapacity.land=p(s).terrainCapacity.landLimit-123;const last=industry(s,{kind:'expand'}).state;assert.equal(p(last).cityCapacity.land,p(last).terrainCapacity.landLimit);assert.throws(()=>industry(last,{kind:'expand'}),/土地上限/);
+test('city expansion reserves scaled labor and schedules capacity without inventing geographic land',()=>{
+ const s=game();applyManpower(s.domestic,planMilitia(s.domestic,[p(s)],6000),'militia',p(s).id);
+ const before=structuredClone(s),q=quoteIndustry(s,{kind:'expand',provinceId:p(s).id}),r=industry(s,{kind:'expand'}).state;
+ assert.equal(p(r).cityCapacity.land,p(s).cityCapacity.land);
+ assert.equal(p(r).cityCapacity.expansion.land,q.landAfter.total-p(s).cityCapacity.land);
+ assert.equal(p(r).cityCapacity.expansion.laborScale,2);
+ assert.equal(p(r).cityCapacity.population,p(s).cityCapacity.population);
+ assert.deepEqual(p(r).population,p(s).population);assert.deepEqual(p(r).economy,p(s).economy);
+ assert.equal(r.stats.treasury,s.stats.treasury-5000);assert.deepEqual(s,before);
+ p(s).cityCapacity.land=p(s).terrainCapacity.landLimit-123;
+ const last=industry(s,{kind:'expand'}).state;assert.equal(p(last).cityCapacity.expansion.land,123);
+ p(s).cityCapacity.land=p(s).terrainCapacity.landLimit;assert.throws(()=>industry(s,{kind:'expand'}),/土地上限/);
 });
 
 test('development hires corresponding idle workers on activation, not at payment or completion, without population growth',()=>{
@@ -59,7 +68,7 @@ test('land conversion releases donor jobs and hires the recipient from one share
 });
 
 test('recruitment preview shows production losses and extra running costs and stays read-only',()=>{
- const s=game(),city=p(s),amount=laborProfile(city).available+10000,before=structuredClone(s),command={kind:'recruit',sourceId:city.id,amount,draftRates:{farmers:50}};
+ const s=game(),city=p(s),amount=laborProfile(city).available+10000,before=structuredClone(s),command={kind:'recruit',sourceId:'central',amount,draftRates:{farmers:50}};
  const q=quoteKitCommand(s,command);assert.deepEqual(s,before);assert(q.impact.delta.production<0);assert(q.impact.delta.expenses>0);assert(q.impact.delta.officialRations>0);assert.equal(q.cost,amount*4);
  assert(q.lines.some(l=>l.includes('国库银税')));assert(q.lines.some(l=>l.includes('官府口粮')));
  const r=army(s,command).state;assert.equal(p(r).population.total,city.population.total);assert.equal(p(r).population.professions.farmers,city.population.professions.farmers-10000);assert.equal(activeDrafts(r.domestic,p(r),'farmers'),10000);roundtrip(r);
@@ -69,7 +78,7 @@ test('soldiers and militia share the cumulative 50% quota across repeated orders
  const s=game(),city=p(s),free=laborProfile(city).available,half=Math.floor(city.population.professions.farmers/2);
  const r=army(s,{kind:'recruit',amount:free+half,draftRates:{farmers:50}}).state,loaded=roundtrip(r),before=JSON.stringify(loaded);
  assert.equal(activeDrafts(loaded.domestic,p(loaded),'farmers'),half);
- assert.throws(()=>army(loaded,{kind:'recruit',amount:1,draftRates:{farmers:50}}),/50%/);
+ const other=army(loaded,{kind:'recruit',amount:1,draftRates:{farmers:50}}).state;assert.equal(activeDrafts(other.domestic,p(other),'farmers'),half);
  assert.throws(()=>industry(loaded,{kind:'levy-militia',amount:1,draftRates:{farmers:50}}),/50%/);assert.equal(JSON.stringify(loaded),before);
 });
 
@@ -96,21 +105,21 @@ test('transfers preserve origin quotas and dismissals return residents and resto
  s=army(s,{kind:'recruit',amount,draftRates:{farmers:50}}).state;
  s=army(s,{kind:'transfer',targetId:'henan',soldiers:100,quantities:{}}).state;
  assert.equal(s.domestic.manpower.drafts[0].stationId,'henan');assert.equal(activeDrafts(s.domestic,p(s),'farmers'),100);validateManpower(s.domestic);
- const total=s.domestic.provinces.reduce((n,p)=>n+p.population.total,0),r=army(s,{sourceId:'henan',kind:'dismiss',amount:100}).state;
+ const total=s.domestic.provinces.reduce((n,p)=>n+p.population.total,0),returned=army(s,{sourceId:'henan',targetId:'central',kind:'transfer',soldiers:100,quantities:{}}).state,r=army(returned,{kind:'dismiss',amount:100}).state;
  assert.equal(activeDrafts(r.domestic,p(r),'farmers'),0);assert.equal(p(r).population.professions.farmers,origin.population.professions.farmers);assert.equal(r.domestic.provinces.reduce((n,p)=>n+p.population.total,0),total);roundtrip(r);
 });
 
 test('casualties remove claims without resurrecting workers, and battle settlement is idempotent',()=>{
  const s=game(),n=laborProfile(p(s)).available+100,r=army(s,{kind:'recruit',amount:n,draftRates:{farmers:50}}).state,city=p(r),total=city.population.total,workers=city.population.professions.farmers;
- reserveWorldKits(r.domestic,city.id,'draft-loss',[{kind:'infantry',count:100}]);settleWorldKits(r.domestic,city.id,'draft-loss',[0]);
+ reserveWorldKits(r.domestic,'central','draft-loss',[{kind:'infantry',count:100}]);settleWorldKits(r.domestic,'central','draft-loss',[0]);
  assert.equal(city.population.total,total-100);assert.equal(city.population.professions.farmers,workers);assert.equal(activeDrafts(r.domestic,city,'farmers'),0);validateManpower(r.domestic);
- assert.throws(()=>settleWorldKits(r.domestic,city.id,'draft-loss',[0]));
+ assert.throws(()=>settleWorldKits(r.domestic,'central','draft-loss',[0]));
 });
 
 test('failed saves do not consume labor, quota or funds; invalid ratios and partial staffing records are rejected',()=>{
  const s=game(),amount=laborProfile(p(s)).available+100,before=structuredClone(s),r=industry(s,{kind:'levy-militia',amount,draftRates:{farmers:50}});
  assert.throws(()=>persistCandidate(s,r.state,{setItem(){throw Error('quota');}}),/保存失败/);assert.deepEqual(s,before);
- for(const rate of [-1,5,51,100,NaN])assert.throws(()=>quoteKitCommand(s,{kind:'recruit',sourceId:p(s).id,amount:1,draftRates:{farmers:rate}}),/比例/);
+ for(const rate of [-1,5,51,100,NaN])assert.throws(()=>quoteKitCommand(s,{kind:'recruit',sourceId:'central',amount:1,draftRates:{farmers:rate}}),/比例/);
  const corrupt=structuredClone(s);delete p(corrupt).industryLabor;assert.throws(()=>roundtrip(corrupt),/不完整/);
  const migrated=structuredClone(s);delete migrated.domestic.industryLaborVersion;for(const city of migrated.domestic.provinces)delete city.industryLabor;
  const jobs=structuredClone(p(migrated).population),normalized=roundtrip(migrated);assert.deepEqual(p(normalized).population,jobs);

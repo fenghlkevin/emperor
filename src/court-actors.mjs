@@ -3,6 +3,7 @@ import {officialArt,officialPortraitKey} from './official-art.mjs';
 // Formation coordinates: horizontal center and foot depth, in scene percentages.
 // Paired ranks follow the floor perspective towards the doorway.
 export const COURT_ACTOR_SLOTS={
+ 'imperial-spy-chief':[38,34],'imperial-spy-reader':[31,34],
  'works-deputy':[28,46],'works-minister':[36,46],
  'justice-minister':[64,46],'justice-deputy':[72,46],
  'war-deputy':[22,59],'war-minister':[32,59],
@@ -45,8 +46,8 @@ export function mountCourtActors(scene,domestic){
  if(records.some(r=>r.person&&!r.art?.court)){scene.querySelector(':scope>img').src='assets/scenes/court/sketch-court-emperor-pov-v7.png';scene.dataset.courtReady='fallback';return ()=>{};}
  scene.classList.add('has-court-actors');scene.dataset.courtReady='loading';
  const caption=document.createElement('span');caption.className='court-person-caption';caption.hidden=true;caption.setAttribute('aria-hidden','true');scene.append(caption);
- function syncCaption(){const actor=actors.find(a=>a.button.matches('.is-actor-hover,.is-focused,:focus-visible'))??actors.find(a=>a.button.classList.contains('selected'));caption.hidden=!actor;if(!actor)return;const [office,name]=actor.button.getAttribute('aria-label').split(' · ');caption.replaceChildren();const role=document.createElement('small'),person=document.createElement('strong');role.textContent=office;person.textContent=name;caption.append(role,person);const [center,foot,height]=actor.displaySlot??actor.slot;caption.style.top=`${foot-height*.05}%`;const half=caption.offsetWidth/2;const x=scene.clientWidth*center/100;caption.style.left=`${Math.max(half+8,Math.min(scene.clientWidth-half-8,x))}px`;}
- const captionObserver=new MutationObserver(syncCaption);
+ function syncCaption(){const actor=actors.find(a=>a.button.classList.contains('is-summoned'))??actors.find(a=>a.button.matches('.is-actor-hover,.is-focused,:focus-visible'))??actors.find(a=>a.button.classList.contains('selected'));caption.hidden=!actor;if(!actor)return;const [office,name]=actor.button.getAttribute('aria-label').split(' · ');caption.replaceChildren();const role=document.createElement('small'),person=document.createElement('strong');role.textContent=office;person.textContent=name;caption.append(role,person);const [center,foot,height]=actor.displaySlot??actor.slot;const summoned=actor.button.classList.contains('is-summoned');caption.classList.toggle('is-summoned-caption',summoned);caption.style.top=summoned?`${scene.clientHeight*(foot-height)/100-10}px`:`${foot-height*.05}%`;const half=caption.offsetWidth/2;const x=scene.clientWidth*center/100;caption.style.left=`${Math.max(half+8,Math.min(scene.clientWidth-half-8,x))}px`;}
+ const captionObserver=new MutationObserver(records=>{if(records.some(r=>r.target.classList.contains('is-summoned')!==String(r.oldValue??'').split(/\s+/).includes('is-summoned')))paint();else syncCaption();});
  scene.addEventListener('focusin',syncCaption,{signal:controller.signal});scene.addEventListener('focusout',()=>queueMicrotask(syncCaption),{signal:controller.signal});
  const originalButtons=records.map(({office})=>{const button=scene.querySelector(`[data-entry="${office.id}"]`);return {button,html:button.innerHTML,style:button.getAttribute('style'),label:button.getAttribute('aria-label'),title:button.title};});
  const ready=Promise.all(records.map(async record=>{
@@ -61,7 +62,7 @@ export function mountCourtActors(scene,domestic){
   if(!art?.court)throw Error(`${person.name}朝堂立绘未就绪`);
   const source=await loadArt(art.court);if(disposed)return;
   const canvas=document.createElement('canvas');canvas.className='court-person-canvas';canvas.setAttribute('aria-hidden','true');button.append(canvas);
-  captionObserver.observe(button,{attributes:true,attributeFilter:['class']});
+  captionObserver.observe(button,{attributes:true,attributeFilter:['class'],attributeOldValue:true});
   actors.push({button,canvas,source,slot,mask:null});
  }));
  function paint(){if(disposed||!loaded)return;const bounds=scene.getBoundingClientRect();if(!bounds.width||!bounds.height)return;
@@ -76,7 +77,7 @@ export function mountCourtActors(scene,domestic){
   const visibleFront=Math.min(frontFoot,(rear-bounds.top-14)/bounds.height*100);
   const depth=frontFoot-originalBack;
   const depthScale=depth>0?Math.max(0,(visibleFront-backFoot)/depth):0;
-  for(const actor of actors){const {button,canvas,source,slot}=actor;const [center,originalFoot]=slot;const foot=backFoot+(originalFoot-originalBack)*depthScale;const height=perspective.bodyHeight(bounds.height*foot/100)/bounds.height*100;actor.displaySlot=[center,foot,height];
+  for(const actor of actors){const {button,canvas,source,slot}=actor;const [slotCenter,originalFoot]=slot;const summoned=button.classList.contains('is-summoned');const center=summoned?50:slotCenter;const foot=summoned?visibleFront:backFoot+(originalFoot-originalBack)*depthScale;const height=perspective.bodyHeight(bounds.height*foot/100)/bounds.height*100;actor.displaySlot=[center,foot,height];
    const cssHeight=bounds.height*height/100,cssWidth=cssHeight*source.width/source.height;
    Object.assign(button.style,{left:`${center}%`,top:`${foot-height}%`,width:`${cssWidth}px`,height:`${cssHeight}px`,transform:'translateX(-50%)',zIndex:String(Math.round(foot))});
    const scale=Math.min(devicePixelRatio||1,2);canvas.width=Math.max(1,Math.round(cssWidth*scale));canvas.height=Math.max(1,Math.round(cssHeight*scale));

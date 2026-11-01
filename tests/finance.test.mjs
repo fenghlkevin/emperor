@@ -108,7 +108,7 @@ test('failed persistence leaves live state, candidate, energy, commands and stor
  assert.throws(()=>persistCandidate(initial,candidate,broken,prepare),/保存失败/);
  assert.deepEqual(initial,before);assert.deepEqual(candidate,draft);assert.equal(mem.value,previous);
  const stale=structuredClone(candidate),next=persistCandidate(initial,candidate,mem,prepare);
- assert.equal(home(next).fiscal.treasury,9700);assert.equal(next.stats.energy,initial.stats.energy-1);assert.equal(next.saveRevision,1);
+ assert.equal(home(next).fiscal.treasury,9700);assert.equal(next.stats.energy,initial.stats.energy-2);assert.equal(next.saveRevision,1);
  assert.throws(()=>persistCandidate(next,candidate,mem,prepare),/已更新|已执行/);
  assert.throws(()=>persistCandidate(next,stale,mem,prepare),/已更新/);
  const restored=validateSave(JSON.parse(mem.value));assert.deepEqual(restored,next);assert.throws(()=>executeRevenue(restored,{id:1,kind:'subsidy',amounts:{hebei:300}}));

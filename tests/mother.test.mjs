@@ -6,7 +6,7 @@ import {emperorPanel} from '../src/emperor-ui.mjs';
 test('mother visits increase hidden filial piety, reset neglect and clamp gains',()=>{
  let s=newGame('问安');s.phase=1;s.mother.neglectedTurns=4;s.mother.filialPiety=98;s.stats.happiness=98;
  const n=palaceAction(s,'mother').state;
- assert.equal(n.mother.filialPiety,100);assert.equal(n.mother.neglectedTurns,0);assert.equal(n.mother.lastVisitTurn,1);assert.equal(n.stats.happiness,100);assert.equal(n.stats.energy,199);assert.equal(s.mother.filialPiety,98);
+ assert.equal(n.mother.filialPiety,100);assert.equal(n.mother.neglectedTurns,0);assert.equal(n.mother.lastVisitTurn,1);assert.equal(n.stats.happiness,100);assert.equal(n.stats.energy,190);assert.equal(s.mother.filialPiety,98);
  assert.doesNotMatch(emperorPanel(n),/孝心|filialPiety/);
 });
 test('three completed neglected turns begin decay; visiting breaks the streak',()=>{

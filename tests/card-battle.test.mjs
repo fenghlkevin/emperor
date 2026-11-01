@@ -99,3 +99,16 @@ test('production card catalog matches its review artifact and uses fixed visible
  for(const hero of ['martial','intelligence','command']){const b=fixture({roster:ROSTERS.cavalry_1800,hero}),cards=Object.values(b.cards.catalog).filter(x=>x.side==='home'&&x.kind==='cavalry'&&x.definitionId.endsWith('_scout'));
  assert.ok(cards.length);assert.ok(cards.every(x=>x.definitionId===(hero==='martial'?'cavalry_scout':'cavalry_patrol_scout')));for(const x of cards){assert.equal(x.cost,2);assert.ok(x.tags.includes('rush'));assert.equal(x.printedAttack,hero==='martial'?3:2);assert.equal(x.printedHp,hero==='martial'?2:3);}}
 });
+
+test('every deployed non-commander gets one person card before scouts are allocated',()=>{
+ const b=fixture({roster:{infantry:1000,spears:100,cavalry:100,archers:100,'heavy-cavalry':100,crossbows:25}});
+ for(const side of ['home','enemy']){
+  const units=b.units.filter(u=>u.side===side&&!u.commander),cards=Object.values(b.cards.catalog).filter(x=>x.side===side),people=cards.filter(x=>x.type==='general');
+  assert.equal(people.length,6);
+  assert.deepEqual(people.map(x=>x.personId).sort(),units.map(u=>u.cardPersonId).sort());
+  assert.equal(cards.filter(x=>x.definitionId!=='coin').length,30);
+  assert.ok(b.cards.players[side].hand.some(id=>b.cards.catalog[id].front&&b.cards.catalog[id].cost===1));
+  for(const u of units)assert.equal(cards.filter(x=>x.unitId===u.id).reduce((n,x)=>n+x.count,0)+b.cards.players[side].reserve[u.id],u.initial);
+ }
+ validateCards(b);
+});

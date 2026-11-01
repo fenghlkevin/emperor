@@ -20,7 +20,7 @@ test('arranging consumes twenty energy once, no money or rewards until departure
  s.stats.energy=20;assert.throws(()=>scheduleTravel(s,'tour','guannei'),/保留体力/);
 });
 test('tour charges departure twenty thousand via ledger, caps happiness, finishes with ten lifespan',t=>{
- t.mock.method(Math,'random',()=>.99);let s=depart();assert.equal(s.stats.happiness,85);assert.equal(s.stats.life,2159);
+ t.mock.method(Math,'random',()=>.99);let s=depart();assert.equal(s.stats.happiness,95);assert.equal(s.stats.life,2519);
  const country=s.domestic.countries[0],entry=country.ledger[0].entries.find(e=>e.key==='travel:1');assert.equal(entry.expenditure,20000);
  assert.throws(()=>beginTravel(s),/已经/);const start=s.turn,life=s.stats.life,health=s.stats.health,energy=s.stats.energy;const result=finishTravel(s);s=result.state;
  assert.equal(s.turn,4);assert.equal(s.phase,0);assert.equal(s.stats.life,life-10-(s.turn-start));assert.equal(s.stats.health,health);assert.equal(s.stats.energy,energy);assert.equal(s.travel.pending,null);assert.equal(s.travel.history[0].reward.life,10);
@@ -37,7 +37,7 @@ test('cancel never charges treasury or grants rewards; revalidates lost destinat
  s=seed();s=scheduleTravel(s,'tour','guannei').state;advance(s);const c=s.domestic.countries[0];postTreasury(s.domestic,'sheng',{turn:s.turn,expense:c.fiscal.treasury,reason:'测试支出',key:'drain'});assert.throws(()=>beginTravel(s),/国库不足/);
 });
 test('incognito has fixed capital, free treasury, plus twenty happiness and minus eight lifespan',t=>{
- t.mock.method(Math,'random',()=>.99);let s=depart('incognito');assert.equal(s.travel.pending.provinceId,s.domestic.general.capitalProvinceId);assert.equal(travelDestinations(s,'incognito').length,1);assert.equal(s.travel.pending.reward.treasury,0);assert.equal(s.travel.pending.reward.happiness,20);assert.equal(s.travel.pending.reward.life,8);
+ t.mock.method(Math,'random',()=>.99);let s=depart('incognito');assert.equal(s.travel.pending.provinceId,s.domestic.general.capitalProvinceId);assert.equal(travelDestinations(s,'incognito').length,1);assert.equal(s.travel.pending.reward.treasury,0);assert.equal(s.travel.pending.reward.happiness,25);assert.equal(s.travel.pending.reward.life,8);
  const turn=s.turn,life=s.stats.life;s=finishTravel(s).state;assert.equal(s.turn,turn);assert.equal(s.phase,1);assert.equal(s.stats.life,life);assert.doesNotThrow(()=>validateSave(s));
 });
 test('brothel first five visits cannot trigger; sixth at 49 succeeds, at 50 fails',t=>{

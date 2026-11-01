@@ -28,3 +28,21 @@ test('保存失败不改变当前进度',()=>{
  const s=game(),snapshot=JSON.stringify(s),next=applyEditorChanges(s,'countries','sheng',{prestige:200}).next;
  assert.throws(()=>persistCandidate(s,next,{getItem:()=>null,setItem:()=>{throw Error('quota');}}),/保存失败/);assert.equal(JSON.stringify(s),snapshot);
 });
+test('皇帝属性支持同时调整上限、往返存档且不推进时间',()=>{
+ const s=game(),snapshot=JSON.stringify(s);
+ const values={'stats.age':35,'stats.energy':450,'stats.maxEnergy':450,'stats.health':88,'stats.happiness':90,'stats.charm':500,'stats.talent':499,'stats.wisdom':498,'stats.martial':497,'stats.life':4000,'stats.lifeLimit':5000};
+ const result=applyEditorChanges(s,'emperor','emperor',values);
+ const restored=validateSave(JSON.parse(JSON.stringify(result.next)));
+ for(const [key,value] of Object.entries(values))assert.equal(restored.stats[key.split('.')[1]],value);
+ assert.equal(restored.turn,s.turn);assert.equal(restored.phase,s.phase);
+ assert.equal(JSON.stringify(s),snapshot);assert.equal(result.changes.length,11);
+ assert.doesNotThrow(()=>validateSave(advance(restored)));
+});
+test('皇帝编辑拒绝超出上限及非法字段且不改变原进度',()=>{
+ const s=game(),snapshot=JSON.stringify(s);
+ for(const values of [{'stats.energy':501},{'stats.maxEnergy':0},{'stats.health':101},{'stats.wisdom':501},{'stats.age':2.5},{'stats.life':s.stats.lifeLimit+1},{'stats.maxEnergy':1},{'stats.lifeLimit':1},{'stats.treasury':1}]){
+  assert.throws(()=>applyEditorChanges(s,'emperor','emperor',values));
+  assert.equal(JSON.stringify(s),snapshot);
+ }
+ assert.throws(()=>applyEditorChanges(s,'emperor','missing',{'stats.health':80}),/不存在/);
+});

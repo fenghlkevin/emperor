@@ -1,0 +1,30 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {newGame,validateSave} from '../src/game.mjs';
+import {quoteIndustry,executeIndustry,settleIndustry} from '../src/industry.mjs';
+import {expansionPeople,expansionLand} from '../src/city-capacity.mjs';
+import {projectTotal} from '../src/project-work-orders.mjs';
+import {specialPlan} from '../src/special-buildings.mjs';
+test('expansion reserves proportional gains, survives saving and finishes after two years',()=>{
+ const s=newGame('扩城工期'),p=s.domestic.provinces.find(p=>p.id==='hebei');
+ p.population.professions.militia=10000;
+ const c={id:s.domestic.industryActions.nextId,kind:'expand',provinceId:p.id};
+ const q=quoteIndustry(s,c),people=expansionPeople(p),land=expansionLand(p);
+ assert(people>=Math.ceil(p.cityCapacity.population*.1));
+ assert.equal(q.earliestCompleteTurn,s.turn+72);
+ const next=executeIndustry(s,c).state,d=next.domestic,t=d.provinces.find(x=>x.id===p.id);
+ assert.equal(projectTotal('expansion',t.cityCapacity.expansion),72);
+ assert.equal(t.cityCapacity.population,p.cityCapacity.population);
+ validateSave(structuredClone(next));
+ for(let turn=2;turn<=72;turn++)settleIndustry(d,turn);
+ assert(t.cityCapacity.expansion);
+ settleIndustry(d,73);
+ assert.equal(t.cityCapacity.expansion,undefined);
+ assert.equal(t.cityCapacity.population,p.cityCapacity.population+people);
+ assert.equal(t.cityCapacity.land,p.cityCapacity.land+land);
+});
+test('major national works retain fifteen-year scope in balanced mode',()=>{
+ const d=newGame('大工程').domestic;
+ assert.equal(specialPlan(d,'canal').turns,540);
+ assert.equal(specialPlan(d,'greatWall').segmentTurns,180);
+});

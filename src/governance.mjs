@@ -1,3 +1,4 @@
+import {reconcileCourtRequests} from './court-request-rules.mjs';
 import {developmentRate} from './difficulty.mjs';
 import {constructionPlan} from './construction.mjs';
 import {recoveryGovernanceBudget,recoveryGovernanceReserve} from './army-recovery.mjs';
@@ -10,7 +11,7 @@ import {procurementEffect,purchaseCost} from './central-office-effects.mjs';
 import {cityLand} from './city-capacity.mjs';
 import {officialEffectSource} from './official-effects.mjs';
 import {trackLocalObstruction,validateLocalObstructions} from './local-obstructions.mjs';
-import {proposeLocalRecruitment,validateLocalMilitaryPetitions} from './local-military-petitions.mjs';
+import {validateLocalMilitaryPetitions} from './local-military-petitions.mjs';
 import {requestLocalConstruction,validateLocalPetitions,palacePetitionReady} from './local-petitions.mjs';
 import {executeKitCommand,quoteKitCommand,worldKitDepot} from './troop-kit-world.mjs';
 import {localPolicy,localAuthority} from './local-autonomy.mjs';
@@ -26,7 +27,7 @@ export function governorProfile(d,p){return officialEffectSource(d,`${p.id}-gove
 export function initializeGovernance(d){d.governance??={version:1,reserve:2000,budget:2000,turnBudget:2000,lastTurn:0,spent:0,records:[]};d.governance.turnBudget??=d.governance.budget;return d;}
 export function validateGovernance(d,turn=Infinity){validateCoordination(d,turn);validateLocalObstructions(d,turn);validateLocalPetitions(d,turn);validateLocalMilitaryPetitions(d,turn);const g=d.governance;if(!g||g.version!==1||!['reserve','budget','turnBudget','lastTurn','spent'].every(k=>Number.isSafeInteger(g[k])&&g[k]>=0)||g.turnBudget>1000000||g.budget>1000000||g.reserve>1000000||g.lastTurn>turn||g.spent>g.turnBudget||(g.reliefTurn!==undefined&&(!Number.isSafeInteger(g.reliefTurn)||g.reliefTurn<0||g.reliefTurn>turn))||!Array.isArray(g.records)||g.records.length>100)throw Error('地方治理记录无效');for(const r of g.records)if(!Number.isSafeInteger(r.turn)||r.turn<1||r.turn>turn||!d.provinces.some(p=>p.id===r.provinceId)||!Number.isSafeInteger(r.cost)||r.cost<0||typeof r.reason!=='string'||r.reason.length>500)throw Error('地方治理记录无效');}
 export function settleGovernance(d,turn,{reliefOnly=false}={}){
- initializeGovernance(d);const g=d.governance;if(g.lastTurn>=turn||(reliefOnly&&g.reliefTurn>=turn))return;
+ initializeGovernance(d);reconcileCourtRequests(d,turn);const g=d.governance;if(g.lastTurn>=turn||(reliefOnly&&g.reliefTurn>=turn))return;
  const rescued=g.reliefTurn===turn,protectedReserve=reliefOnly?0:recoveryGovernanceReserve(d,0,turn);
  if(!rescued){g.spent=0;g.turnBudget=reliefOnly?g.budget:recoveryGovernanceBudget(d,g.budget,turn);}
  if(rescued&&!reliefOnly)g.turnBudget=Math.max(g.spent,recoveryGovernanceBudget(d,g.budget,turn));
@@ -49,7 +50,7 @@ export function settleGovernance(d,turn,{reliefOnly=false}={}){
    if(balanced(d)){const regular=home().ledger[0]?.categories.regular;if(regular&&regular.income-regular.expenditure<10){record(city,'营建暂缓：常规收支尚不足承担后续维护');return false;}}
    if(key==='palaces'&&!palacePetitionReady(d,turn))return false;
    const escalate=()=>{if(trackLocalObstruction(d,city,turn,key,true)>=3){requestLocalConstruction(d,city,turn,key,'同一必要工程连续三旬受阻，呈请专项协调钱粮与民夫');record(city,label+'连续三旬受阻，已呈请协调');}};
-   if(!canStaff('construction')){escalate();return false;}
+   if(!canStaff('construction',{building:key,laborScale:2})){escalate();return false;}
    const cost=constructionPlan(current(),key).cost,total=cost+Math.ceil(cost*profile.lossRate),major=['walls','palaces'].includes(key);
    if(city.resourceRulesVersion===1&&(major||(critical&&total>available()))){requestLocalConstruction(d,city,turn,key,major?'重大工程须陛下专项核准':'民生工程超出日常可用预算，须专项请旨');record(city,label+'已呈请，未开工扣款');return false;}
    const done=apply(cost,label,()=>publish(startConstruction(state(),city.id,key)));
@@ -71,22 +72,22 @@ export function settleGovernance(d,turn,{reliefOnly=false}={}){
    const national=f.national??f,foodPriority=national.produced<national.need*1.25;
    const keys=foodPriority?['agriculture','pastoral']:policy.priority==='food'?['agriculture','commerce','industry']:['commerce','industry','agriculture','pastoral'];
    const proposals=keys.map(key=>{const area=Math.min(500,cityLand(city).available,industryLandAvailable(city,key),Math.floor(available(Boolean(home().fiscal.debt&&!foodPriority))/(developmentRate(d)*(1+profile.lossRate))));if(area<50)return null;const preview=structuredClone(city);preview.economy[key].developedArea+=area;reassignDevelopedLand(preview,key,undefined,turn);const gain=foodPriority?outputFor(preview,key,turn)-outputFor(city,key,turn):industryTax(preview,turn)-industryTax(city,turn);return {key,area,gain};}).filter(q=>q&&q.gain>0).sort((a,b)=>b.gain/b.area-a.gain/a.area);
-   const plan=proposals[0];if(plan&&canStaff('development',{area:plan.area}))apply(Math.ceil(plan.area*developmentRate(d)),`${foodPriority?'保障粮源':'按收益发展产业'}：${plan.key} ${plan.area}亩`,()=>publish(executeIndustry(state(),{id:d.industryActions.nextId,kind:'develop',provinceId:city.id,industry:plan.key,area:plan.area})),profile,Boolean(home().fiscal.debt&&!foodPriority));
+   const plan=proposals[0];if(plan&&canStaff('development',{area:plan.area}))apply(Math.ceil(plan.area*developmentRate(d)),`${foodPriority?'保障粮源':'按收益发展产业'}：${({agriculture:'农业',pastoral:'牧业',commerce:'商业',industry:'工业'})[plan.key]} ${plan.area}亩`,()=>publish(executeIndustry(state(),{id:d.industryActions.nextId,kind:'develop',provinceId:city.id,industry:plan.key,area:plan.area})),profile,Boolean(home().fiscal.debt&&!foodPriority));
   }
   if(authority.civil&&!civilRecoveryPending&&!current().construction.project&&(!balanced(d)||turn%6===0)){let key=Object.keys(CONSTRUCTION_PLANS).filter(k=>k!=='palaces'&&(k!=='granaries'||current().buildings.granaries<8)&&buildingMarginal(current(),k,turn)>0).sort((a,b)=>current().buildings[a]-current().buildings[b])[0];if(policy.priority==='economy'&&buildingMarginal(current(),'markets',turn)>0)key='markets';if(policy.priority==='security'&&buildingMarginal(current(),'yamen',turn)>0)key='yamen';if(key)build(key,'补齐地方设施：'+CONSTRUCTION_PLANS[key].name);}
   if(!authority.military||balanced(d)&&home().fiscal.debt)continue;
-  proposeLocalRecruitment(d,current(),turn);
+
   const militaryProfile=city.resourceRulesVersion===1?officialEffectSource(d,`${city.id}-general`,{provinceId:city.id,role:'general'}):profile;
   if(city.resourceRulesVersion===1&&d.troopKits){
    const depot=worldKitDepot(d,city.id),stock=Object.values(depot.stock).reduce((sum,n)=>sum+n,0),missing=Math.max(0,depot.soldiers-stock);
-   const command=amount=>({id:d.troopKits.nextId,kind:'purchase',sourceId:city.id,quantities:{infantry:amount}});
+   const command=amount=>({id:d.troopKits.nextId,kind:'purchase',sourceId:'central',quantities:{infantry:amount}});
    // Reserve and record the same discounted price that the command actually pays.
    // Governance loss is consistently based on that net procurement expense.
    let low=0,high=Math.min(missing,100);while(low<high){const mid=Math.ceil((low+high)/2),cost=quoteKitCommand(state(),command(mid)).cost;if(cost+Math.ceil(cost*militaryProfile.lossRate)<=available())low=mid;else high=mid-1;}
-   if(low>0)apply(quoteKitCommand(state(),command(low)).cost,`补充现有驻军刀盾兵装${low}人份`,()=>publish(executeKitCommand(state(),command(low))),militaryProfile);
+   if(low>0)apply(quoteKitCommand(state(),command(low)).cost,`补充现有驻军刀盾兵装${low}人份`,()=>{const bought=executeKitCommand(state(),command(low));const sent=executeKitCommand(bought.state,{id:bought.state.domestic.troopKits.nextId,kind:'transfer',sourceId:'central',targetId:city.id,soldiers:0,quantities:{infantry:low}});publish(sent);},militaryProfile);
    else if(missing>0)record(city,`驻军缺装${missing}人份：剩余预算不足，暂缓补充`);
   }
   if(current().population.professions.soldiers>0&&current().military.training<80)apply(100,'驻军训练不足，练兵',()=>{postTreasury(d,d.playerCountryId,{turn,expense:100,recurring:true,reason:`${city.name}委任练兵`,key:`delegation:${turn}:${city.id}:train`});current().military.training=Math.min(100,current().military.training+Math.max(1,Math.round(3*(.7+militaryProfile.ability/100))));},militaryProfile);
-  else if(city.resourceRulesVersion!==1&&current().population.professions.soldiers<current().population.total*.01){const p=current(),spare=laborProfile(p).available,n=Math.min(100,spare);if(n>0)apply(n*4,'驻军不足，征兵'+n+'人',()=>{postTreasury(d,d.playerCountryId,{turn,expense:n*4,reason:`${city.name}委任征兵`,key:`delegation:${turn}:${city.id}:recruit`});const old=p.population.professions.soldiers;p.military.training=Math.floor((old*p.military.training+n*newRecruitTraining(p))/(old+n));p.population.professions.soldiers+=n;});}
+
  }
 }

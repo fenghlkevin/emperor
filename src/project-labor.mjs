@@ -7,13 +7,14 @@ import {changeWelfare,welfareValue} from './building-effects.mjs';
 import {findProject,projectTotal} from './project-work-orders.mjs';
 // Trial staffing: existing militia are the shared construction workforce.
 // No automatic withdrawal from farming; unstaffed work pauses instead.
-import {SPECIAL_PROJECT_WORKERS} from './project-work-rules.mjs';
+import {SPECIAL_PROJECT_WORKERS,LEGACY_SPECIAL_PROJECT_WORKERS,CONSTRUCTION_PROJECT_WORKERS} from './project-work-rules.mjs';
 export {SPECIAL_PROJECT_WORKERS} from './project-work-rules.mjs';
 export function baseProjectWorkers(kind,project){
- if(kind==='construction')return 100;
- if(kind==='expansion')return 250;
+ if(project.laborScale!==undefined&&project.laborScale!==2)throw Error('工程用工版本无效');
+ if(kind==='construction')return project.laborScale===2?CONSTRUCTION_PROJECT_WORKERS[project.building]:100;
+ if(kind==='expansion')return project.laborScale===2?5000:250;
  if(kind==='development')return Math.max(20,Math.ceil(project.area/5));
- return SPECIAL_PROJECT_WORKERS[project.building];
+ return (project.laborScale===2?SPECIAL_PROJECT_WORKERS:LEGACY_SPECIAL_PROJECT_WORKERS)[project.building];
 }
 export function projectWorkers(kind,project,d){const base=baseProjectWorkers(kind,project);return d?laborOrganization(d,kind,base).workers:base;}
 function projects(d,p){
@@ -42,6 +43,13 @@ export function beginProjectLabor(d,turn){
    const remaining=projectTotal(row.kind,r)-r.progress;
    if(r.ownerId&&r.ownerId!==p.countryId){row.speed=0;row.reason='失地停工';continue;}
    if(!row.speed||activeDisaster(p,turn)){row.speed=0;row.reason=activeDisaster(p,turn)?'受灾停工':'民夫不足停工';continue;}
+   if(r.workOrder?.rush){
+    const cost=Math.ceil(row.workers*.5);
+    if(remaining<=1+(officer?.bonus??0))continue;
+    if(cost>home.fiscal.treasury){row.reason='银两不足，按常规施工';continue;}
+    row.mode=2;row.speed=Math.min(2,remaining);row.expense=cost;row.rush=true;row.reason='加急修建';
+    postTreasury(d,home.id,{turn,expense:cost,reason:`${p.name}加急修建`,key:`project-work:${turn}:${p.id}:${row.key}`});continue;
+   }
    if(!wanted||remaining<=1+(officer?.bonus??0))continue;
    if(welfareValue(p,'loyalty')<40||p.foodRelief?.lastSettlement?.shortfall>0){row.reason='粮食或民心不足，恢复常规';continue;}
    row.reason='钱人不足，恢复常规';
@@ -70,11 +78,11 @@ export function projectIsStaffed(d,p,kind,project,turn){
 }
 export function validateProjectLabor(d,turn=Infinity){
  const int=n=>Number.isSafeInteger(n)&&n>=0;
- for(const p of d.provinces){for(const row of projects(d,p)){const o=findProject(d,p,row.kind).workOrder;if(o&&(!int(o.mode)||o.mode>2||!int(o.untilTurn)||o.untilTurn<1||o.untilTurn>turn+3||(o.comfort!==undefined&&typeof o.comfort!=='boolean')))throw Error('施工投入授权无效');}
+ for(const p of d.provinces){for(const row of projects(d,p)){const o=findProject(d,p,row.kind).workOrder;if(o&&(!int(o.mode)||o.mode>2||!int(o.untilTurn)||o.untilTurn<1||(!o.rush&&o.untilTurn>turn+3)||(o.rush!==undefined&&typeof o.rush!=='boolean')||(o.comfort!==undefined&&typeof o.comfort!=='boolean')))throw Error('施工投入授权无效');}
  const pressure=p.projectLaborPressure;if(pressure&&(!int(pressure.turn)||pressure.turn>turn||!int(pressure.streak)||!int(pressure.loss)||pressure.loss>10))throw Error('劳役压力记录无效');
  const w=p.projectLabor;if(w===undefined)continue;
   if(p.resourceRulesVersion!==1||!int(w.turn)||w.turn<1||w.turn>turn||!int(w.capacity)||!Array.isArray(w.allocations)||w.allocations.length>4)throw Error('工程劳力记录无效');
-  let total=0;const keys=new Set();for(const r of w.allocations){if(!['construction','development','special','expansion'].includes(r.kind)||typeof r.key!=='string'||r.key.length>100||keys.has(r.key)||!int(r.startedTurn)||r.startedTurn<1||r.startedTurn>=w.turn||!int(r.workers)||r.workers<1||r.workers>1000||!int(r.granted)||r.granted>r.workers*2)throw Error('工程劳力记录无效');const live=projects(d,p).find(x=>x.key===r.key);if(r.laborEffect){const e=r.laborEffect,base=live?baseProjectWorkers(r.kind,findProject(d,p,r.kind)):e.baseWorkers;if(!validOfficeSource(e.source)||!int(e.baseWorkers)||e.baseWorkers<1||e.baseWorkers!==base||e.rate!==(r.kind==='development'?0:Math.floor(e.source.ability/10)/100)||e.workers!==Math.max(1,Math.ceil(e.baseWorkers*(1-e.rate)))||r.workers!==e.workers)throw Error('工程劳力官效无效');}else if(live&&baseProjectWorkers(r.kind,findProject(d,p,r.kind))!==r.workers)throw Error('工程劳力需求被篡改');if(r.speed!==undefined&&(![0,.5,1,1.5,2].includes(r.speed)||!int(r.expense)||!int(r.mode)||r.mode>2||(r.comfort!==undefined&&typeof r.comfort!=='boolean')||typeof r.reason!=='string'))throw Error('施工实绩无效');const officer=r.officerEffect;if(officer&&(![0,.5].includes(officer.bonus)||!Number.isSafeInteger(officer.ability)||officer.ability<0||officer.ability>100||typeof officer.name!=='string'||officer.name.length>80||!(officer.id===null||typeof officer.id==='string')||officer.bonus!==(officer.id!==null&&officer.ability>=75?.5:0)||(!Number.isFinite(officer.remaining)||officer.remaining<=0||officer.remaining>540||officer.remaining*2%1!==0)||![0,.5,1,1.5,2].includes(officer.baseSpeed)||officer.baseSpeed>officer.remaining||officer.applied!==r.speed-officer.baseSpeed||r.speed!==(officer.baseSpeed>0?Math.min(2,officer.remaining,officer.baseSpeed+officer.bonus):0)))throw Error('施工官效来源或限速无效');if(r.mode>0){const expected=Math.ceil(r.workers*(r.mode===2?.5:.2))+(r.comfort?Math.ceil(r.workers*.1):0);if(r.granted<Math.ceil(r.workers*(1+r.mode/2))||(officer?officer.baseSpeed:r.speed)>1+r.mode/2||r.expense!==expected)throw Error('赶工人数费用与速度不符');
+  let total=0;const keys=new Set();for(const r of w.allocations){if(!['construction','development','special','expansion'].includes(r.kind)||typeof r.key!=='string'||r.key.length>100||keys.has(r.key)||!int(r.startedTurn)||r.startedTurn<1||r.startedTurn>=w.turn||!int(r.workers)||r.workers<1||r.workers>1e12||!int(r.granted)||r.granted>r.workers*2)throw Error('工程劳力记录无效');const live=projects(d,p).find(x=>x.key===r.key);if(r.laborEffect){const e=r.laborEffect,base=live?baseProjectWorkers(r.kind,findProject(d,p,r.kind)):e.baseWorkers;if(!validOfficeSource(e.source)||!int(e.baseWorkers)||e.baseWorkers<1||e.baseWorkers!==base||e.rate!==(r.kind==='development'?0:Math.floor(e.source.ability/10)/100)||e.workers!==Math.max(1,Math.ceil(e.baseWorkers*(1-e.rate)))||r.workers!==e.workers)throw Error('工程劳力官效无效');}else if(live&&baseProjectWorkers(r.kind,findProject(d,p,r.kind))!==r.workers)throw Error('工程劳力需求被篡改');if(r.speed!==undefined&&(![0,.5,1,1.5,2].includes(r.speed)||!int(r.expense)||!int(r.mode)||r.mode>2||(r.rush!==undefined&&typeof r.rush!=='boolean')||(r.comfort!==undefined&&typeof r.comfort!=='boolean')||typeof r.reason!=='string'))throw Error('施工实绩无效');const officer=r.officerEffect;if(officer&&(![0,.5].includes(officer.bonus)||!Number.isSafeInteger(officer.ability)||officer.ability<0||officer.ability>100||typeof officer.name!=='string'||officer.name.length>80||!(officer.id===null||typeof officer.id==='string')||officer.bonus!==(officer.id!==null&&officer.ability>=75?.5:0)||(!Number.isFinite(officer.remaining)||officer.remaining<=0||officer.remaining>540||officer.remaining*2%1!==0)||![0,.5,1,1.5,2].includes(officer.baseSpeed)||officer.baseSpeed>officer.remaining||officer.applied!==r.speed-officer.baseSpeed||r.speed!==(officer.baseSpeed>0?Math.min(2,officer.remaining,officer.baseSpeed+officer.bonus):0)))throw Error('施工官效来源或限速无效');if(r.mode>0){const expected=Math.ceil(r.workers*(r.mode===2?.5:.2))+(r.comfort?Math.ceil(r.workers*.1):0);if((r.rush===true?r.granted!==r.workers||r.mode!==2||r.comfort:r.granted<Math.ceil(r.workers*(1+r.mode/2)))||(officer?officer.baseSpeed:r.speed)>1+r.mode/2||r.expense!==expected)throw Error('赶工人数费用与速度不符');
  const account=d.countries.find(c=>c.id===p.countryId)?.ledger.find(x=>!x.legacy&&x.turn===w.turn),key=`project-work:${w.turn}:${p.id}:${r.key}`;
  if(account&&!account.keys.includes(key))throw Error('赶工支出没有实际过账');
  }else if(r.expense||r.speed>(officer?Math.min(2,1+officer.bonus):1))throw Error('未赶工却收取额外费用或超速');total+=r.granted;keys.add(r.key);}
@@ -83,3 +91,11 @@ export function validateProjectLabor(d,turn=Infinity){
 }
 
 export function projectSpeed(d,p,kind,project,turn){if(p.resourceRulesVersion!==1)return 1;beginProjectLabor(d,turn);return p.projectLabor.allocations.find(r=>r.key===`${kind}:${project.startedTurn}:${project.building??project.id}`)?.speed??0;}
+
+// Invert the same staffing calculation used at start, including official bonuses.
+export function developmentLaborCapacity(d,p){
+ if(p.resourceRulesVersion!==1)return Math.min(1e12,p.area);
+ let low=0,high=Math.min(1e12,p.area);const available=projectLaborOverview(d,p).available;
+ while(low<high){const mid=Math.ceil((low+high)/2);if(projectWorkers('development',{area:mid},d)<=available)low=mid;else high=mid-1;}
+ return low;
+}

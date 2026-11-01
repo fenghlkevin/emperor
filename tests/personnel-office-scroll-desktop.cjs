@@ -9,7 +9,7 @@ app.whenReady().then(async()=>{
  await run(`window.modules={game:await import('./src/game.mjs'),ui:await import('./src/court-personnel-ui.mjs')};window.initial=modules.game.newGame('吏部验收');(await import('./src/province-resources.mjs')).initializeResourceEconomy(initial.domestic);const waiting=structuredClone(initial.domestic.justice.officials[0]);waiting.id='test-waiting';waiting.positionId=null;waiting.name='待命人才';waiting.office='待命';initial.domestic.justice.officials.push(waiting);window.result=null;window.openView=view=>modules.ui.openCourtPersonnel(structuredClone(initial),document.querySelector('#app'),next=>{window.result=next;},null,{view});`);
  for(const [width,height,label] of [[1440,1000,'1440'],[900,680,'900'],[390,760,'390']]){
  w.setSize(width,height);await new Promise(r=>setTimeout(r,120));
- for(const view of ['assign','honor','dismiss','delegate','budget','exam','hanlin','profiles']){
+ for(const view of ['assign','honor','dismiss','delegate','budget','exam','hanlin']){
  await run(`openView('${view}');if(document.querySelector('[data-personnel-view],.personnel-scene-views,.compact-header-menu'))throw Error('页面仍有功能切换');`);
  if(view==='assign')await run(`const order=[...document.querySelector('[data-office-pick]').options].map(o=>o.value);if(order.slice(0,6).join(',')!=='prime-minister,central-general,personnel-minister,personnel-deputy,revenue-minister,revenue-deputy')throw Error('官职排序错误');for(const id of order){const select=document.querySelector('[data-office-pick]');select.value=id;select.dispatchEvent(new Event('change'));if(!document.querySelector('[data-personnel-office="'+id+'"][aria-pressed=true]'))throw Error('官位选择未显示 '+id);}const select=document.querySelector('[data-office-pick]');select.value=order[0];select.dispatchEvent(new Event('change'));if(document.querySelector('[data-page]'))throw Error('仍有官位翻页');`);
  if(['assign','honor','dismiss'].includes(view))await run(`for(const card of document.querySelectorAll('[data-personnel-person]')){const person=initial.domestic.justice.officials.find(p=>p.id===card.dataset.personnelPerson);if(card.querySelectorAll('[data-card-attribute]').length!==6)throw Error('人选卡缺少属性');for(const attr of card.querySelectorAll('[data-card-attribute]'))if(attr.querySelector('b').textContent!==String(person[attr.dataset.cardAttribute]??'—'))throw Error('卡片属性不是实时值');}`);
@@ -30,11 +30,11 @@ app.whenReady().then(async()=>{
  await new Promise(r=>setTimeout(r,80));
  await run(`document.querySelector('#new-dynasty')?.click();document.querySelector('#name').value='入口验收';document.querySelector('#country-name').value='大晟';const era=document.querySelector('#era-name');if(era)era.value='承平';document.querySelector('#create').requestSubmit();`);await new Promise(r=>setTimeout(r,200));await run(`if(!document.querySelector('[data-scene=court]'))throw Error(document.body.innerText.slice(-1500));document.querySelector('[data-scene=court]').click();`);
  await new Promise(r=>setTimeout(r,1200));
- for(const [action,view]of [['personnel','assign'],['personnel-honor','honor'],['personnel-dismiss','dismiss'],['personnel-delegate','delegate'],['personnel-budget','budget'],['personnel-exam','exam'],['personnel-hanlin','hanlin'],['personnel-profiles','profiles']]){
- await run(`document.querySelector('[data-entry=${action==='personnel-profiles'?'personnel-deputy':'personnel-minister'}]').click();if(document.querySelectorAll('[data-court-action]').length!==${action==='personnel-profiles'?2:7})throw Error('独立入口缺失');`);
- if(action==='personnel')await shot('audience');if(action==='personnel-profiles')await shot('deputy-audience');
+ for(const [action,view]of [['personnel','assign'],['personnel-honor','honor'],['personnel-dismiss','dismiss'],['personnel-delegate','delegate'],['personnel-budget','budget'],['personnel-exam','exam'],['personnel-hanlin','hanlin']]){
+ await run(`document.querySelector('[data-entry=personnel-minister]').click();if(document.querySelectorAll('[data-court-action]').length!==7)throw Error('独立入口缺失');`);
+ if(action==='personnel')await shot('audience');
  await run(`document.querySelector('[data-court-action="${action}"]').click();if(document.querySelector('.court-personnel').dataset.personnelPage!=='${view}')throw Error('独立路由错误:${action}');document.querySelector('[data-personnel-close]').click();`);await new Promise(r=>setTimeout(r,100));
  }
- console.log('吏部独立页面通过：8功能、无内部切换、1440/900/390无溢出、问号说明、任命/加官/外调确认/地方授权/全国预算/开科/翰林院真实提交。');app.exit(0);
+ console.log('吏部独立页面通过：7功能、无内部切换、1440/900/390无溢出、问号说明、任命/加官/外调确认/地方授权/全国预算/开科/翰林院真实提交。');app.exit(0);
  }catch(e){console.error(e);app.exit(1);}
 });

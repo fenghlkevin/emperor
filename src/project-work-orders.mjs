@@ -1,3 +1,5 @@
+import {expansionTurns} from './city-capacity.mjs';
+export const PROJECT_WORK_DURATION_HELP='执行时长结束后，下一旬自动恢复常规施工，停止增派、赶工及额外补贴；未完工工程仍需满足常规施工条件。';
 import {resourceShortage} from './action-feedback.mjs';
 import {workOfficerEffect,effectiveWorkMode} from './official-effects.mjs';
 import {activeDisaster} from './disasters.mjs';
@@ -6,12 +8,27 @@ import {CONSTRUCTION_PLANS} from './construction.mjs';
 import {SPECIAL_PLANS,specialProjectPlan} from './special-buildings.mjs';
 import {projectWorkers,projectLaborOverview} from './project-labor.mjs';
 export function findProject(d,p,kind){return kind==='construction'?p.construction.project:kind==='development'?p.development.project:kind==='expansion'?p.cityCapacity.expansion:kind==='special'&&d.specialWorks.project?.provinceId===p.id?d.specialWorks.project:null;}
-export function projectTotal(kind,r){return kind==='construction'?(r.requiredTurns??CONSTRUCTION_PLANS[r.building].turns):kind==='development'?1:kind==='expansion'?6:specialProjectPlan(r).turns;}
+export function projectTotal(kind,r){return kind==='construction'?(r.requiredTurns??CONSTRUCTION_PLANS[r.building].turns):kind==='development'?(r.requiredTurns??1):kind==='expansion'?expansionTurns(r):specialProjectPlan(r).turns;}
+// Persistent rush orders use the existing work-order envelope for save compatibility.
+export function configureProjectRush(state,provinceId,kind,rush=false){
+ if(typeof rush!=='boolean')throw Error('加急选项无效');
+ const s=structuredClone(state),d=s.domestic,p=d.provinces.find(p=>p.id===provinceId&&p.countryId===d.playerCountryId);
+ if(!p||p.resourceRulesVersion!==1)throw Error('请选择本国工程');
+ const r=findProject(d,p,kind);if(!r)throw Error('项目不存在');
+ r.workOrder={mode:rush?2:0,untilTurn:state.turn,rush,comfort:false};
+ return {state:s,message:rush?'已开启加急，持续至完工；银两不足时自动按常规施工。':'已恢复常规施工，持续至完工。'};
+}
+export function quoteProjectRush(state,provinceId,kind,rush=false){
+ const candidate=configureProjectRush(state,provinceId,kind,rush),d=candidate.state.domestic,p=d.provinces.find(p=>p.id===provinceId),r=findProject(d,p,kind);
+ const workers=projectWorkers(kind,r,d),remaining=projectTotal(kind,r)-r.progress,normalSpeed=1+(workOfficerEffect(d,p,kind)?.bonus??0),normalTurns=Math.ceil(remaining/normalSpeed),fastTurns=Math.ceil(remaining/(rush?2:normalSpeed));
+ const perTurn=rush?Math.ceil(workers*.5):0;
+ return {workers,remaining,normalTurns,fastTurns,perTurn,blockedReason:activeDisaster(p,state.turn)?'受灾暂停，灾情结束后自动继续':projectLaborOverview(d,p).shortage?'民夫不足，补足后自动继续':null};
+}
 export function configureProjectWork(state,provinceId,kind,{mode=0,duration=1,comfort=false}={}){
  const s=structuredClone(state),d=s.domestic,p=d.provinces.find(p=>p.id===provinceId&&p.countryId===d.playerCountryId);
  if(!p||p.resourceRulesVersion!==1)throw Error('仅新制本国工程可调整投入');
  if(typeof comfort!=='boolean')throw Error('待遇选项无效');
- if(!Number.isInteger(mode)||mode<0||mode>2||!Number.isInteger(duration)||duration<1||duration>3)throw Error('施工档位为0–2，授权期限为1–3旬');
+ if(!Number.isInteger(mode)||mode<0||mode>2||!Number.isInteger(duration)||duration<1||duration>3)throw Error('施工档位为0–2，执行时长为1–3旬');
  const r=findProject(d,p,kind);if(!r)throw Error('项目不存在');
  mode=effectiveWorkMode(d,p,mode,kind);
  if(mode&&projectTotal(kind,r)-r.progress<=1+(workOfficerEffect(d,p,kind)?.bonus??0))throw Error('剩余工期不足以通过赶工提前，不必增加费用');

@@ -8,7 +8,7 @@ import {generateBeauty} from '../src/random-beauty-generation.mjs';
 import {newGame,validateSave} from '../src/game.mjs';
 import {palaceAction} from '../src/emperor.mjs';
 import {portraitDataUrl} from '../src/beauty-raster-portrait.mjs';
-const names=['刘雯','奚梦瑶','何穗','杜鹃','裴蓓','游天翼','秦舒培','雎晓雯','孙菲菲','张丽娜','陈碧舸','侯梦蝶','林志玲','贺聪','杨颖','赵佳丽','柳岩','徐若瑄'];
+const names=['刘雯','奚梦瑶','何穗','杜鹃','裴蓓','游天翼','秦舒培','雎晓雯','孙菲菲','张丽娜','陈碧舸','侯梦蝶','林志玲','贺聪','杨颖','赵佳丽','柳岩','何泓姗'];
 const additions=RANDOM_BEAUTY_ART.filter(r=>r.id.startsWith('model-couture-20261026-'));
 test('all eighteen portraits are registered once and Zhang Zilin keeps one catalogue entry',()=>{
  assert.equal(additions.length,18);
@@ -29,7 +29,7 @@ test('each mainland city can draw all eighteen portraits and admission persists 
 test('removed Lynn Hung is absent from all random catalogue entries',()=>{assert.ok(!RANDOM_BEAUTY_ART.some(r=>r.name.includes('熊黛林')));});
 
 test('replaced models leave the random pool and saved paths resolve to replacements',()=>{
- for(const [old,name] of [['乐基儿','贺聪'],['王李丹妮','赵佳丽']]){
+ for(const [old,name] of [['乐基儿','贺聪'],['王李丹妮','赵佳丽'],['徐若瑄','何泓姗']]){
   assert.ok(!RANDOM_BEAUTY_ART.some(r=>r.name.includes(old)));
   const row=RANDOM_BEAUTY_ART.find(r=>r.name===name+'-古绡模特');
   const legacy='assets/beauties/random/女明星/'+old+'-古绡模特.png';

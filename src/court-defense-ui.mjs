@@ -1,3 +1,4 @@
+import {bindCentralArmyEntries} from './central-army-entry.mjs';
 import {openLandmarkDraft} from './card-battle-landmark-draft-ui.mjs';
 import {openSecretDraft} from './card-battle-secret-draft-ui.mjs';
 import {openWeaponDraft} from './card-battle-weapon-draft-ui.mjs';
@@ -50,6 +51,7 @@ export function drawCourtDefense(dialog,getState,commit,onDone,{savePlans}={}){
  dialog.querySelector('[data-defense-seal]')?.addEventListener('click',()=>act(false));
  dialog.querySelector('[data-kit-defend-auto]').onclick=()=>act(true);
  dialog.querySelector('[data-kit-withdraw]').onclick=e=>{if(busy)return;if(!withdrawConfirmed){withdrawConfirmed=true;e.target.textContent='确认撤守：守方损4%、攻方损2%，可能失地';return;}busy=true;try{const r=withdrawKitDefense(getState(),{central:0});commit(r.state);onDone(r.receipt);}catch(e){error=e.message;status();busy=false;}};
+ bindCentralArmyEntries(dialog);
  if(stage==='confirm')dialog.querySelectorAll('[data-kit-central],[data-kit-defense-reset],[data-defense-add],[data-defense-remove],[data-defense-unit],[data-kit-defend-auto],[data-kit-withdraw]').forEach(b=>b.disabled=true);
  }
  draw();

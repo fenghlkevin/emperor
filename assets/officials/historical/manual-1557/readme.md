@@ -6,6 +6,8 @@
 
 来源：[《三国志》卷36人物本传](https://zh.wikisource.org/wiki/三國志/卷36)。由用户明确选择替换，不能据此声称原作作者原本采用此人。
 
-头像 avatar.png、个人全身像 full.png、朝堂 court.png 均由内置 image_gen 分别生成，以全身像为身份参考；战斗卡面另存 assets/battle/people/manual-1557-battle-v1.png。三张官员图保持透明alpha，战斗图是5:7完整场景。确切提示词、生成路径、尺寸与校验值见 docs/card-battle-identity-image-jobs.json。
+2026-10-27 根据用户反馈重做第二版人物形象：英挺白须老将、金铜重甲、赤色战袍与背弓。头像 avatar.png、个人全身像 full.png、朝堂 court.png 均由内置 image_gen 分别生成，以第二版全身像为身份参考；确切提示词见本目录 redesign-v2.json。朝堂形象保持正式接见服饰，三张官员图保持透明 alpha。
+
+战斗卡面另存 assets/battle/people/manual-1557-battle-v1.png，原始素材记录见 docs/card-battle-identity-image-jobs.json。
 
 容貌、年龄感及服饰是统一画风下的历史游戏解释，不是复原本人真实相貌。朝堂服装为本作正式接见设计，无明代乌纱翼、补子或战斗兵器。

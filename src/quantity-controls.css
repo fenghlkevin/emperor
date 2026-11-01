@@ -1,0 +1,41 @@
+/* A full-width drag target beneath the precise quantity field. */
+.quantity-controls{display:flex!important;align-items:center;gap:6px;flex:1 0 100%;width:100%;min-width:0;box-sizing:border-box;margin:5px 0 2px;grid-column:1 / -1}
+.quantity-controls button{flex:0 0 auto!important;min-width:36px!important;min-height:28px!important;padding:3px 6px!important;font-size:12px!important;line-height:1.2!important;color:#694723;background:#ebd9ae;border:1px solid #b08b4c;border-radius:3px;cursor:pointer}
+.quantity-controls input[type=range]{display:block!important;flex:1 1 0!important;width:0!important;min-width:24px!important;max-width:none!important;height:28px!important;margin:0!important;padding:0!important;accent-color:#92602f;cursor:ew-resize;box-shadow:none!important;border:0!important;background:transparent!important}
+.quantity-controls :disabled{opacity:.45;cursor:default!important}
+.transfer-troop-card .quantity-controls{grid-column:2 / -1;margin-top:0}
+.atlas-amount>div:has(>.quantity-controls),.purchase-kit-order:has(>.quantity-controls){flex-wrap:wrap}
+input[type=number]{appearance:textfield}
+input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{appearance:none;margin:0}
+/* Min / slider / Max replaces the old single-step buttons. */
+.atlas-amount>div:has(>.quantity-controls)>button:not(.quantity-controls button),.military-amount>button[data-garrison-max]{display:none}
+.transfer-troop-card>small{grid-column:2 / -1}
+@media(max-width:500px){.central-transfers .transfer-fields,.purchase-kit-cards{grid-template-columns:minmax(0,1fr)}.quantity-controls{gap:4px}}
+/* Legacy steppers used three grid columns. Once their +/- buttons are hidden,
+   the number and slider must each occupy the entire row. */
+.atlas-amount>div:has(>.quantity-controls){grid-template-columns:minmax(0,1fr)!important;gap:0!important;min-width:0}
+.atlas-amount>div:has(>.quantity-controls)>input[type=number]{grid-column:1 / -1!important;width:100%!important;max-width:100%!important;min-width:0!important;box-sizing:border-box!important}
+.atlas-amount>div>.quantity-controls{grid-column:1 / -1!important;padding:0 5px 3px}
+input[type=number]:has(+.quantity-controls){box-sizing:border-box!important;max-width:100%}
+.purchase-kit-order>input[type=number]:has(+.quantity-controls){width:100%!important;max-width:none!important;flex:1 0 100%!important}
+.central-transfers .transfer-fields input[type=number]:has(+.quantity-controls){width:100%!important;max-width:none!important;min-width:0!important}
+.quantity-controls button{letter-spacing:0!important;box-sizing:border-box!important}
+/* Keep numeric forms usable without horizontally hunting through fiscal tables. */
+@media(max-width:700px){
+ .revenue-fiscal .revenue-table:has(.quantity-controls){overflow:visible}
+ .revenue-fiscal .revenue-table:has(.quantity-controls) table{display:block;min-width:0!important;width:100%!important}
+ .revenue-fiscal .revenue-table:has(.quantity-controls) thead{display:none}
+ .revenue-fiscal .revenue-table:has(.quantity-controls) tbody{display:grid;gap:10px}
+ .revenue-fiscal .revenue-table:has(.quantity-controls) tr{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));border:1px solid #cebea1}
+ .revenue-fiscal .revenue-table:has(.quantity-controls) :is(th,td){display:block;min-width:0;padding:8px!important;overflow-wrap:anywhere}
+ .revenue-fiscal .revenue-table:has(.quantity-controls) th{grid-column:1 / -1;background:#e9decb}
+ .revenue-fiscal .revenue-table:has(.quantity-controls) td:before{content:attr(data-label);display:block;font-size:11px;color:#897453;margin-bottom:4px}
+ .revenue-fiscal .revenue-table td:has(.quantity-controls){grid-column:1 / -1}
+ .revenue-fiscal .revenue-table td:has(.quantity-controls)>input[type=number]{width:100%!important}
+}
+/* Short sidebars still need useful drag travel, rather than a thumb-sized track. */
+.quantity-controls{container-type:inline-size;flex-wrap:wrap}
+@container (max-width:180px){
+ .quantity-controls input[type=range]{flex-basis:100%!important;width:100%!important;order:-1}
+ .quantity-controls button:last-child{margin-left:auto!important}
+}

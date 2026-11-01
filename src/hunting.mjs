@@ -14,7 +14,7 @@ const SPECIES_SLOTS=[1,1,3,3,3,1,1,3,0,0,2,1,1,1,1,1,1,0,2,2,1,2,2,0,0,0,0,4,4,4
 export const HUNT_TARGETS=ORIGINAL_TARGETS.map((t,index)=>({...t,species:SPECIES_SLOTS[index],score:HUNT_SPECIES[SPECIES_SLOTS[index]].score,visible_ms:HUNT_SPECIES[SPECIES_SLOTS[index]].visible_ms}));
 export const HUNT_SECONDS=60, HUNT_ARROWS=30;
 export function huntingInterval(turn){return [2000,500,300][HUNT_SEASONS[Math.floor((turn-1)%36/3)]];}
-export function huntingBlock(s){return s.stats.life===0?'寿元已尽，本朝终结':s.stats.energy<=0?'体力耗尽，请先独寝恢复':s.phase===0?'卯时请先上朝':s.phase===5?'亥时只能独寝或相伴休息':'';}
+export function huntingBlock(s){return s.stats.life===0?'寿元已尽，本朝终结':s.stats.energy<20?'狩猎须有20体力，请先安寝养神。':s.phase===0?'陛下，已到卯时，百官正候您临朝。':s.phase===5?'陛下，夜已深了，今日就歇息吧。':'';}
 export function createHunt(s,now=0,id=globalThis.crypto.randomUUID()){
  const reason=huntingBlock(s);if(reason)throw Error(reason);
  return {id,turn:s.turn,phase:s.phase,startedAt:now,deadline:now+60000,interval:huntingInterval(s.turn),nextSpawn:now+huntingInterval(s.turn),arrows:30,hits:0,score:0,targets:[],ended:false};
@@ -49,10 +49,11 @@ export function settleHunt(state,h){
  if(state.hunting?.lastRoundId===h.id)throw Error('本场狩猎已结算');
  if(h.turn!==state.turn||h.phase!==state.phase)throw Error('时辰已变，请重新进入猎苑');
  if(!Number.isInteger(h.arrows)||h.arrows<0||h.arrows>30||!Number.isInteger(h.hits)||h.hits<0||h.hits>30-h.arrows||!Number.isInteger(h.score)||h.score<h.hits||h.score>h.hits*3)throw Error('狩猎成绩无效');
+ if(state.stats.energy<20)throw Error('狩猎须有20体力，请先安寝养神。');
  const s=structuredClone(state),reward=huntingReward(s.stats,h.score);
- s.stats.maxEnergy+=reward.maxEnergy;s.stats.health+=reward.health;s.stats.life-=reward.life;s.harem.streak=0;
+ s.stats.energy-=20;s.stats.happiness=Math.min(100,s.stats.happiness+10);s.stats.maxEnergy+=reward.maxEnergy;s.stats.health+=reward.health;s.stats.life-=reward.life;s.harem.streak=0;
  s.hunting={lastRoundId:h.id};
- s.harem.history.unshift(`第${s.turn}旬：巡游狩猎，命中${h.hits}只，积分${h.score}，体力上限增加${reward.maxEnergy}，健康增加${reward.health}，寿元减少${reward.life}。`);
+ s.harem.history.unshift(`第${s.turn}旬：巡游狩猎，命中${h.hits}只，积分${h.score}，体力上限增加${reward.maxEnergy}，健康增加${reward.health}，快乐增加${s.stats.happiness-state.stats.happiness}，体力减少20，寿元减少${reward.life}。`);
  s.harem.history=s.harem.history.slice(0,30);settleProgress(s);settleReignResult(s);
  return {state:s,reward};
 }

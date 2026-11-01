@@ -23,3 +23,17 @@ export function initialCardFormation(available,leaders){
  result.squads=rows.filter(u=>u.count);result.reserve=available.soldiers.available-result.commanderSquad.count-wanted;
  return result;
 }
+
+// Rank actual card strength, then spread available troops across melee and ranged roles.
+export function intelligentKitFormation(available,leaders,catalog){
+ const officers=[...leaders].sort((a,b)=>(b.leadership*2+b.martial)-(a.leadership*2+a.martial)||String(a.id).localeCompare(String(b.id)));
+ const strength=kind=>{const cards=catalog.cards.filter(c=>c.type==='troop'&&c.kind===kind&&c.equipment!=='unarmed');return cards.length?cards.reduce((sum,c)=>sum+(c.attack??0)+(c.health??0)+(c.tags?.length??0),0)/cards.length:0;};
+ const kits=TROOP_KITS.filter(k=>available.kits[k.id]?.available>0).sort((a,b)=>strength(b.id)-strength(a.id)||a.id.localeCompare(b.id));
+ const ranged=k=>['archers','crossbows','horse-archers'].includes(k.id);
+ const choices=[...new Set([kits.find(k=>!ranged(k)),kits.find(ranged),...kits].filter(Boolean))].slice(0,Math.min(7,officers.length));
+ if(!choices.length||available.soldiers.available<choices.length)return automaticKitFormation(available,officers);
+ let left=available.soldiers.available;const gear=Object.fromEntries(kits.map(k=>[k.id,available.kits[k.id].available]));
+ const rows=choices.map((k,i)=>{const count=Math.min(MAX_SQUAD_SOLDIERS,gear[k.id],Math.floor(left/(choices.length-i)));left-=count;gear[k.id]-=count;return {kind:k.id,count,generalId:officers[i].id};});
+ for(const row of rows){const extra=Math.min(left,gear[row.kind],MAX_SQUAD_SOLDIERS-row.count);row.count+=extra;gear[row.kind]-=extra;left-=extra;}
+ const [guard,...squads]=rows;return {generalId:guard.generalId,commanderSquad:{kind:guard.kind,count:guard.count},squads,reserve:left};
+}

@@ -25,6 +25,8 @@
 
 ## 下载独立运行版
 
+当前发行版本：**[v1.0.2](https://github.com/fenghlkevin/emperor/releases/tag/v1.0.2)** · [版本说明](docs/release-1.0.2.md)。
+
 前往 [GitHub Releases](https://github.com/fenghlkevin/emperor/releases/latest)，按设备选择发行包。包内包含运行环境、游戏代码和完整运行素材，不需要安装 Node.js、Python 或克隆仓库。
 
 | 设备 | 下载与运行 |

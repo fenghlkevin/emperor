@@ -1,3 +1,4 @@
+import {planMilitia,applyManpower} from '../src/manpower.mjs';
 import {executeSpecial} from '../src/special-buildings.mjs';
 import {captureArmyRecovery,offerArmyRecovery,quoteArmyRecovery,executeArmyRecovery,settleArmyRecovery} from '../src/army-recovery.mjs';
 import {loseForceKits} from '../src/kit-strategy.mjs';
@@ -32,10 +33,11 @@ import {capitalFalls} from '../src/capital-crisis.mjs';
 
 const root=resolve(fileURLToPath(new URL('..',import.meta.url)));
 const snapshots=[];
+const staffed=(s,id,n)=>{const p=s.domestic.provinces.find(p=>p.id===id);applyManpower(s.domestic,planMilitia(s.domestic,[p],n),'militia',id);return s;};
 const game=()=>{const s=newGame('数据契约');s.createdAt='2026-10-17T00:00:00.000Z';return s;};
 const capture=(label,state)=>{const s=validateSave(structuredClone(state));snapshots.push({label,type:'GameSave',value:s});return s;};
 const fresh=capture('new game',game());
-capture('novice discounted special project',executeSpecial(createPlayableGame('特殊工程契约','大晟',{difficulty:'novice',seed:7}),{id:1,building:'mausoleum',provinceId:'longyou'}).state);
+capture('novice discounted special project',executeSpecial(staffed(createPlayableGame('特殊工程契约','大晟',{difficulty:'novice',seed:7}),'longyou',15000),{id:1,building:'mausoleum',provinceId:'longyou'}).state);
 for(const difficulty of ['novice','standard','veteran'])capture('difficulty '+difficulty,createPlayableGame('难度契约','大晟',{difficulty,seed:7}));
 for(const kind of ['longevity','harmony']){
  const s=game();s.turn=40;s.harem.streak=1;
@@ -43,7 +45,7 @@ for(const kind of ['longevity','harmony']){
  let earned;for(let seed=1;seed<2000;seed++){const candidate=structuredClone(s);candidate.harem.portraitSeed=seed;companyBond(candidate,candidate.harem.members[0]);if(candidate.harem.bonds.history[0]?.kind===kind){earned=candidate;break;}}
  if(!earned)throw Error('Missing harem bond contract fixture: '+kind);capture('earned hidden harem '+kind,earned);
 }
-const playable=capture('canonical v2 new game',createPlayableGame('新版契约'));advance(playable);capture('canonical v2 settlement',playable);capture('v2 development plan',executeIndustry(createPlayableGame('计划契约'),{id:1,kind:'plan',provinceId:'hebei',industry:'commerce',area:1000,budget:2000}).state);capture('v2 expansion work',executeIndustry(createPlayableGame('扩城契约'),{id:1,kind:'expand',provinceId:'hebei'}).state);
+const playable=capture('canonical v2 new game',createPlayableGame('新版契约'));advance(playable);capture('canonical v2 settlement',playable);capture('v2 development plan',executeIndustry(createPlayableGame('计划契约'),{id:1,kind:'plan',provinceId:'hebei',industry:'commerce',area:1000,budget:2000}).state);capture('v2 expansion work',executeIndustry(staffed(createPlayableGame('扩城契约'),'hebei',6000),{id:1,kind:'expand',provinceId:'hebei'}).state);
 const resourceGame=game();initializeResourceEconomy(resourceGame.domestic);
 capture('resource economy new game',resourceGame);
 advance(resourceGame);capture('resource economy settled turn',resourceGame);
@@ -75,10 +77,10 @@ const industry=executeIndustry(game(),{id:1,kind:'develop',provinceId:'hebei',in
 capture('industry project',industry);advance(industry);capture('industry activation',industry);
 const converted=executeIndustry(game(),{id:1,kind:'convert',provinceId:'hebei',fromIndustry:'commerce',industry:'agriculture',area:10}).state;
 capture('land conversion project',converted);advance(converted);capture('land conversion activation',converted);
-capture('city capacity expansion',executeIndustry(game(),{id:1,kind:'expand',provinceId:'hebei'}).state);
+capture('city capacity expansion',executeIndustry(staffed(game(),'hebei',6000),{id:1,kind:'expand',provinceId:'hebei'}).state);
 const drafted=game();initializeResourceEconomy(drafted.domestic);drafted.domestic.countries[0].fiscal.treasury=100000;
 const enlisted=laborProfile(drafted.domestic.provinces[0]).available+100;
-capture('industry drafted soldiers',executeKitCommand(drafted,{id:1,kind:'recruit',sourceId:'hebei',amount:enlisted,draftRates:{farmers:50}}).state);
+capture('industry drafted soldiers',executeKitCommand(drafted,{id:1,kind:'recruit',sourceId:'central',amount:enlisted,draftRates:{farmers:50}}).state);
 capture('industry drafted militia',executeIndustry(drafted,{id:1,kind:'levy-militia',provinceId:'hebei',amount:enlisted,draftRates:{workers:50}}).state);
 const employer=executeIndustry(drafted,{id:1,kind:'develop',provinceId:'hebei',industry:'industry',area:100}).state;advance(employer);capture('industry pending hiring',employer);advance(employer);capture('industry hired workers',employer);
 const occupied=game();const target=occupied.domestic.provinces.find(p=>p.countryId==='japan');

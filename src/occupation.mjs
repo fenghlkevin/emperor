@@ -1,3 +1,4 @@
+import {refreshOfficialProduction} from './official-production.mjs';
 import {refreshSpecialBenefits} from './special-buildings.mjs';
 import {changeWelfare,welfareValue} from './building-effects.mjs';
 import {governorProfile} from './governance.mjs';
@@ -12,6 +13,7 @@ export function occupyProvince(d,targetId,turn,conquerorId=d.playerCountryId,pro
  if(!target.provinceIds.length)for(const r of d.diplomacy.filter(r=>r.countryIds.includes(targetId))){r.relation='none';r.trade.quota=0;Object.assign(r.agreement,{exports:0,imports:0,tribute:0,payerId:null});}
  d.personnel.delegations=d.personnel.delegations.filter(id=>d.provinces.some(p=>p.id===id&&p.countryId===d.playerCountryId));
  refreshSpecialBenefits(d,turn);
+ refreshOfficialProduction(d,turn);
  return {provinceId:p.id,name:p.name,previousOwner:targetId,annexed:target.provinceIds.length===0};
 }
 export function settleOccupation(d,turn){for(const p of d.provinces){const o=p.occupation;if(!o||o.lastTurn>=turn||p.countryId!==d.playerCountryId)continue;o.lastTurn=turn;if(o.settled)continue;

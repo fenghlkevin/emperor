@@ -37,8 +37,8 @@ test('an unused legacy ledger follows the initialized dynasty without carrying o
 });
 test('longevity changes actual lifespan, records its source, and survives save/load',()=>{
  const s=fixture(),n=trigger('longevity',s),p=n.harem.members[0];
- assert.equal(n.stats.life,s.stats.life+3);assert.equal(n.harem.bonds.lifeGranted,3);assert.equal(p.bond.lifeGranted,3);
- assert.match(n.harem.bonds.history[0].message,/寿元增加3/);assert.equal(pendingRoyalEvent(n),undefined);
+ assert.ok(n.harem.bonds.lifeGranted>=3&&n.harem.bonds.lifeGranted<=6);assert.equal(p.bond.lifeGranted,n.harem.bonds.lifeGranted);assert.equal(n.stats.life-s.stats.life,p.bond.lifeGranted);
+ assert.match(n.harem.bonds.history[0].message,/寿元增加[3-6]/);assert.equal(pendingRoyalEvent(n),undefined);
  assert.deepEqual(validateSave(JSON.parse(JSON.stringify(n))),n);
 });
 test('legacy bond popups are silently retired while real royal notices and earned benefits remain',()=>{
@@ -57,23 +57,23 @@ test('the real company action applies the reward once and preserves its input sn
   const x=structuredClone(s);x.harem.portraitSeed=seed;const next=palaceAction(x,'company',{id:x.harem.members[0].id});
   if(next.state.harem.bonds.history[0]?.kind==='longevity'){result=next;break;}
  }
- assert.ok(result);assert.equal(result.state.stats.life,s.stats.life+3);assert.match(result.message,/寿元增加3/);
+ assert.ok(result);assert.ok(result.state.stats.life>=s.stats.life+3&&result.state.stats.life<=s.stats.life+6);assert.match(result.message,/寿元增加[3-6]/);
  assert.equal(s.harem.members[0].bond.visits,6);assert.equal(s.harem.bonds.lifeGranted,0);
  assert.doesNotThrow(()=>validateSave(JSON.parse(JSON.stringify(result.state))));
 });
 test('medical hidden trait supplies health care and extra longevity; no trait no medical event',()=>{
  const s=fixture('医理');s.stats.health=70;const n=trigger('care',s);
- assert.equal(n.stats.health,78);assert.equal(n.stats.life,s.stats.life+4);
+ assert.equal(n.stats.health,78);assert.ok(n.stats.life>=s.stats.life+4&&n.stats.life<=s.stats.life+8);
  assert.equal(n.harem.bonds.history[0].kind,'care');
  const plain=fixture();for(let seed=1;seed<=40;seed++){const x=structuredClone(plain);x.harem.portraitSeed=seed;companyBond(x,x.harem.members[0]);assert.notEqual(x.harem.bonds.history[0]?.kind,'care');}
 });
 test('repeated company retains costs and cannot farm relationship or reward even after work',t=>{
  t.mock.method(Math,'random',()=>.99);
- const n=trigger('longevity'),id=n.harem.members[0].id,before=n.stats.life;
+ const n=trigger('longevity'),id=n.harem.members[0].id,before=n.stats.life;n.emperorBalance.turn=n.turn;n.emperorBalance.companyCount=1;
  let s=palaceAction(n,'company',{id}).state;
  assert.equal(s.stats.life,before-2);assert.equal(s.harem.members[0].bond.visits,n.harem.members[0].bond.visits);
  spendEnergy(s,true);s=palaceAction(s,'company',{id}).state;
- assert.equal(s.harem.bonds.history.length,1);assert.equal(s.harem.bonds.lifeGranted,3);
+ assert.equal(s.harem.bonds.history.length,1);assert.equal(s.harem.bonds.lifeGranted,n.harem.bonds.lifeGranted);
 });
 test('per-person and global cooldowns block events on subsequent turns',()=>{
  for(const scope of ['person','global']){
@@ -109,15 +109,15 @@ test('global life cap holds across many partners and turns',()=>{
  assert.ok(s.harem.members.every(p=>p.bond.lifeGranted<=BOND_RULES.personLifeCap));
 });
 test('harmony reduces real court mood cost, expires, and ceases for absent or cold-palace partner',()=>{
- const s=trigger('harmony',fixture('琴学')),before=s.stats.happiness;spendEnergy(s,true);assert.equal(s.stats.happiness,before-2);
+ const s=trigger('harmony',fixture('琴学')),before=s.stats.happiness;spendEnergy(s,true);assert.equal(s.stats.happiness,before);
  const n=validateSave(JSON.parse(JSON.stringify(s)));assert.ok(activeHarmony(n));
  n.harem.members[0].inColdPalace=true;assert.equal(activeHarmony(n),false);n.harem.members[0].inColdPalace=false;
- n.turn=s.turn+6;assert.equal(activeHarmony(n),false);const mood=n.stats.happiness;spendEnergy(n,true);assert.equal(n.stats.happiness,mood-3);
+ n.turn=s.turn+6;assert.equal(activeHarmony(n),false);const mood=n.stats.happiness;spendEnergy(n,true);assert.equal(n.stats.happiness,mood-1);
  n.turn=s.turn;n.harem.members=[];assert.equal(activeHarmony(n),false);
 });
 test('advice relieves actual health and mood only when the ruler needs it',()=>{
  const s=fixture('诗赋');s.stats.health=60;s.stats.happiness=50;const n=trigger('advice',s);
- assert.equal(n.stats.health,64);assert.equal(n.stats.happiness,56);
+ assert.equal(n.stats.health,65);assert.equal(n.stats.happiness,55);
 });
 test('education rewards the actual child through the existing teaching action and respects caps',()=>{
  const s=fixture('诗书');s.harem.children.push({id:'daughter',name:'明珠',age:8,gender:'女',motherId:s.harem.members[0].id,status:'palace'});

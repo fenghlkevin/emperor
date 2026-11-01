@@ -56,14 +56,14 @@ test('training opt-out skips the basic training priority and never silently chan
 function delegated(){
  let s=createPlayableGame('委任实支对账');
  for(const p of s.domestic.provinces.filter(p=>p.countryId===s.domestic.playerCountryId))s=executePersonnel(s,{id:s.domestic.personnel.nextId,kind:'localPolicy',provinceId:p.id,civil:false,military:p.id==='hebei',budget:1400,priority:'security',locks:[]}).state;
- return executeKitCommand(s,{id:s.domestic.troopKits.nextId,kind:'recruit',sourceId:'hebei',amount:100}).state;
+ s=executeKitCommand(s,{id:s.domestic.troopKits.nextId,kind:'recruit',sourceId:'central',amount:100}).state;return executeKitCommand(s,{id:s.domestic.troopKits.nextId,kind:'transfer',sourceId:'central',targetId:'hebei',soldiers:100,quantities:{}}).state;
 }
 for(const discount of ['zero','partial','cap'])test(`delegated ${discount} discount reconciles procurement, losses and training to actual cash`,()=>{
  let s=delegated(),d=s.domestic;
  // Explicit industrial-capacity fixtures, never presented as naturally played policies.
  if(discount!=='partial')for(const p of d.provinces.filter(p=>p.countryId===d.playerCountryId)){if(discount==='zero')p.population.professions.workers=0;else p.economy.industry.productivity=10000;}
  const rate=industrialProcurement(d);assert.ok(discount==='zero'?rate===0:discount==='cap'?rate===.2:rate>0&&rate<.2);
- const expected=quoteKitCommand(s,{kind:'purchase',sourceId:'hebei',quantities:{infantry:100}}).cost;
+ const expected=quoteKitCommand(s,{kind:'purchase',sourceId:'central',quantities:{infantry:100}}).cost;
  const actor=officialEffectSource(d,'hebei-general',{provinceId:'hebei',role:'general'}),cash=home(s).fiscal.treasury;
  settleGovernance(d,1);const record=d.governance.records.find(r=>r.reason.startsWith('补充现有驻军'));
  assert.equal(record.cost,expected+Math.ceil(expected*actor.lossRate));
@@ -77,7 +77,7 @@ for(const discount of ['zero','partial','cap'])test(`delegated ${discount} disco
  if(discount!=='cap')s=validateSave(JSON.parse(JSON.stringify(s)));
 });
 test('delegated procurement fits the discounted quote plus net-price loss at a tight cash boundary',()=>{
- const s=delegated(),d=s.domestic,actor=officialEffectSource(d,'hebei-general',{provinceId:'hebei',role:'general'}),q=quoteKitCommand(s,{kind:'purchase',sourceId:'hebei',quantities:{infantry:100}});
+ const s=delegated(),d=s.domestic,actor=officialEffectSource(d,'hebei-general',{provinceId:'hebei',role:'general'}),q=quoteKitCommand(s,{kind:'purchase',sourceId:'central',quantities:{infantry:100}});
  const allowed=q.cost+Math.ceil(q.cost*actor.lossRate);
  postTreasury(d,d.playerCountryId,{turn:1,expense:home(s).fiscal.treasury-d.governance.reserve-allowed,key:'fixture:cash',reason:'保留线边界夹具'});
  const before=worldKitDepot(d,'hebei').stock.infantry;settleGovernance(d,1);

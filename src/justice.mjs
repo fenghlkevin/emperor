@@ -22,6 +22,13 @@ export function initializeJustice(d){
   if(!d.justice.officials.some(o=>o.id==='justice-deputy'||o.positionId==='justice-deputy'))d.justice.officials.push({id:'justice-deputy',name:'周慎言',office:'刑部侍郎',provinceId:null,loyalty:65,status:'serving',discovered:false,plotTurn:null});
   d.justice.justiceDeputyVersion=1;
  }
+ // Add the emperor's two intelligence posts once to older saves.
+ if(!d.justice.imperialSpyVersion){
+  for(const [id,name,office] of [['imperial-spy-chief','卫承诏','皇城司使'],['imperial-spy-reader','裴知微','皇城司副使']]){
+   if(!d.justice.officials.some(o=>o.id===id||o.positionId===id))d.justice.officials.push({id,name,office,provinceId:null,loyalty:75,status:'serving',discovered:false,plotTurn:null});
+  }
+  d.justice.imperialSpyVersion=1;
+ }
  for(const o of d.justice.officials??[]){
   const historical=historicalCharacters.get(o.id.replace(/^recruit-/,''));
   if(historical&&o.personalityVersion!==historical.personalityVersion){for(const key of ['personality','characterTraits','personalityBasis','personalityEvidence','personalityMethod','personalitySource','personalityVersion'])o[key]=structuredClone(historical[key]);}

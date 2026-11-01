@@ -17,9 +17,9 @@ test('legacy over-capacity jobs survive, but have no new recruitment room',()=>{
 });
 test('recruitment cannot consume non-labor population',()=>{
  const s=newGame('劳动'),p=s.domestic.provinces.find(p=>p.id==='hebei');
- p.population.professions.farmers+=laborProfile(p).available;
+ for(const city of s.domestic.provinces.filter(city=>city.countryId===s.domestic.playerCountryId))city.population.professions.farmers+=laborProfile(city).available;
  const before=JSON.stringify(s);
- assert.throws(()=>executeKitCommand(s,{id:s.domestic.troopKits.nextId,kind:'recruit',sourceId:p.id,amount:1}),/可征平民不足/);
+ assert.throws(()=>executeKitCommand(s,{id:s.domestic.troopKits.nextId,kind:'recruit',sourceId:'central',amount:1}),/可征平民不足/);
  assert.equal(JSON.stringify(s),before);
 });
 test('production allocation shares the same labor ceiling as recruiting',()=>{
@@ -39,7 +39,7 @@ test('new-rule auspice arrivals preserve total population without assigning non-
  const {initializeResourceEconomy}=await import('../src/province-resources.mjs');
  for(const kind of ['craftsmen','farmers','herders']){
   const s=newGame('迁户');initializeResourceEconomy(s.domestic);const p=s.domestic.provinces[0];
-  p.population.professions.farmers+=laborProfile(p).available;
+  for(const city of s.domestic.provinces.filter(city=>city.countryId===s.domestic.playerCountryId))city.population.professions.farmers+=laborProfile(city).available;
   const jobsBefore={...p.population.professions};const before=p.population.total,assigned=laborProfile(p).assigned,e=AUSPICES.find(x=>x.id===kind),values=[0,(AUSPICES.indexOf(e)+.1)/AUSPICES.length,0];
   s.turn++;settleAuspices(s,()=>values.shift());
   assert.equal(p.population.total,before+e.amount);assert.equal(laborProfile(p).overCapacity,0);

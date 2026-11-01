@@ -1,0 +1,52 @@
+/* DOS Emperor inspired: a compact vertical command plaque over the court. */
+.court-play-dialog.court-audience[open]{position:fixed;inset: auto auto 18vh 16vw;margin:0;display:block;width:max-content;max-width:86vw;height:260px;min-height:0;max-height:70dvh;padding:7px;overflow:hidden;background:repeating-linear-gradient(135deg,#24324e 0 3px,#293e59 3px 6px);border:3px double #c8aa60;border-radius:0;box-shadow:0 0 0 2px #182334,5px 6px 0 #0005;color:#28291f}
+.court-play-dialog.court-audience::backdrop{background:#07100b16;backdrop-filter:none}
+.court-audience[open] .court-audience-person,.court-audience[open] .court-kicker,.court-audience[open] blockquote,.court-audience[open] .court-reading-note{display:none}
+.court-audience[open] .court-audience-copy{display:flex;flex-direction:row-reverse;gap:7px;height:100%;min-height:0;min-width:0;padding:0;background:none}
+.court-audience[open] .court-audience-copy h1{box-sizing:border-box;flex-shrink:0;width:44px;margin:0;padding:10px 3px 54px;font-size:0;letter-spacing:0;line-height:1;background:#1c3048;color:#d6b64c;border:1px solid #607388;display:flex;align-items:center;justify-content:flex-start}
+.court-audience[open] .court-audience-copy h1 small{display:block;writing-mode:vertical-rl;white-space:nowrap;font-size:22px;font-weight:400;letter-spacing:4px;margin:0;padding:0;border:0;color:#dfc768;line-height:1.4}
+.court-audience[open] .court-audience-tasks{box-sizing:border-box;display:flex;flex-direction:row-reverse;align-items:stretch;gap:0;margin:0;padding:12px 7px;background:#e0dbb6;border:3px double #8f885c;min-height:0;overflow:hidden}
+.court-audience[open] .court-audience-tasks>h3{display:none}
+.court-audience[open] .court-audience-tasks>button{box-sizing:border-box;display:flex;align-items:flex-start;justify-content:center;flex-shrink:0;width:52px;min-width:0;min-height:0;padding:7px 4px;margin:0;border:0;border-radius:0;background:none;box-shadow:none;color:#25291e;transition:none;animation:none}
+.court-audience[open] .court-audience-tasks>button>span,.court-audience[open] .court-audience-tasks small,.court-audience[open] .court-audience-tasks b{display:none}
+.court-audience[open] .court-audience-tasks>button>div{padding:0;min-width:0}
+.court-audience[open] .court-audience-tasks strong{display:block;writing-mode:vertical-rl;text-orientation:upright;white-space:nowrap;font-size:24px;font-weight:400;line-height:1.5;letter-spacing:5px;color:inherit}
+.court-audience[open] .court-audience-tasks>button:hover,.court-audience[open] .court-audience-tasks>button:focus-visible{color:#f8edbc;background:#263c52;transform:none;box-shadow:none;outline:1px solid #a58743;outline-offset:-2px}
+.court-audience[open] .court-dialog-close{position:absolute;right:12px;bottom:13px;top:auto;z-index:3;box-sizing:border-box;width:33px;height:36px;padding:0;display:grid;place-items:center;border:2px outset #7ca8a3;border-radius:0;background:#70b3ad;color:#163e58;font-size:23px;font-weight:400;line-height:1;letter-spacing:0}
+@media(max-width:760px){.court-play-dialog.court-audience[open]{left:5vw;bottom:15vh;height:230px;padding:5px}.court-audience[open] .court-audience-tasks{padding:8px 3px}.court-audience[open] .court-audience-tasks>button{width:40px;padding-inline:2px}.court-audience[open] .court-audience-tasks strong{font-size:21px;letter-spacing:3px}.court-audience[open] .court-audience-copy h1{width:38px}.court-audience[open] .court-audience-copy h1 small{font-size:19px}.court-audience[open] .court-dialog-close{right:9px;width:30px}}
+/* Commands grouped by responsibility; the plaque stays above the desk. */
+.court-play-dialog.court-audience[open]{height:190px;padding:5px}
+.court-audience[open] .court-audience-tasks{gap:8px;padding:7px 6px}
+.court-command-group{display:flex;flex-direction:column;gap:6px;min-width:0;padding:0 6px 0 0;border-right:1px solid #aaa16d88}
+.court-command-group:last-child{padding-left:0}
+.court-command-group>h3{font-size:11px;font-weight:400;letter-spacing:3px;line-height:1.4;margin:0;text-align:center;color:#837448;border-bottom:1px solid #aca16e77;padding-bottom:4px}
+.court-command-items{display:flex;flex-direction:row-reverse;flex:1;min-height:0}
+.court-audience[open] .court-command-items>button{box-sizing:border-box;display:flex;align-items:flex-start;justify-content:center;flex:0 0 39px;width:39px;min-width:0;min-height:0;padding:3px 0;margin:0;border:0;border-radius:0;background:none;box-shadow:none;color:#25291e;transition:none;animation:none}
+.court-audience[open] .court-command-items>button>span,.court-audience[open] .court-command-items small,.court-audience[open] .court-command-items b{display:none}
+.court-audience[open] .court-command-items strong{display:block;writing-mode:vertical-rl;text-orientation:upright;white-space:nowrap;font-size:22px;font-weight:400;line-height:1.4;letter-spacing:3px;color:inherit}
+.court-audience[open] .court-command-items>button:hover,.court-audience[open] .court-command-items>button:focus-visible{color:#f8edbc;background:#263c52;transform:none;box-shadow:none;outline:1px solid #a58743;outline-offset:-2px}
+.court-audience[open] .court-audience-copy h1{width:37px;padding-top:5px;align-items:flex-start}
+.court-audience[open] .court-audience-copy h1 small{font-size:18px;letter-spacing:2px}
+.court-audience[open] .court-dialog-close{right:10px;bottom:11px;width:29px;height:29px;font-size:21px}
+.is-court .scene.court .court-person{transition:left .35s ease,top .35s ease,width .35s ease,height .35s ease}
+.is-court .scene.court .court-person.is-summoned{z-index:114!important}
+@media(prefers-reduced-motion:reduce){.is-court .scene.court .court-person{transition:none}}
+@media(max-width:760px){.court-play-dialog.court-audience[open]{height:174px}.court-audience[open] .court-command-items>button{flex-basis:32px;width:32px}.court-audience[open] .court-command-items strong{font-size:20px;letter-spacing:2px}.court-audience[open] .court-audience-tasks{gap:5px}.court-command-group{padding-right:4px}}
+.court-audience[open] .court-command-items strong{font-size:20px;letter-spacing:2px}
+@media(max-width:760px){.court-audience[open] .court-command-items strong{font-size:18px;letter-spacing:1px}}
+/* Fit the longest vertical command instead of reserving a fixed empty footer. */
+.court-play-dialog.court-audience[open]{height:auto}
+.court-audience[open] .court-audience-copy{height:auto;align-items:stretch}
+.court-audience[open] .court-audience-tasks{height:auto;align-items:stretch}
+.court-command-items{flex:0 0 auto}
+.court-audience[open] .court-command-items>button{padding-top:3px;padding-bottom:5px}
+.court-audience[open] .court-audience-copy h1{padding-bottom:40px}
+@media(max-width:760px){.court-play-dialog.court-audience[open]{height:auto}}
+/* Title and return share one rail, so the return never crosses the paper edge. */
+.court-audience[open] .court-command-rail{box-sizing:border-box;display:flex;flex-direction:column;align-items:center;justify-content:space-between;gap:14px;flex:0 0 37px;width:37px;padding:7px 3px 5px;background:#1c3048;border:1px solid #607388}
+.court-audience[open] .court-command-rail h1{flex:0 0 auto;width:auto;min-height:0;margin:0;padding:0;border:0;background:none;display:block}
+.court-audience[open] .court-command-rail .court-dialog-close{position:static;inset:auto;flex:0 0 28px;width:28px;height:28px;margin:0;padding:0;align-self:center;display:grid;place-items:center;line-height:1;font-size:20px}
+/* The summoned official's name belongs above the portrait, in front of actors. */
+.is-court .court>.court-person-caption.is-summoned-caption{z-index:116;pointer-events:none;white-space:nowrap}
+
+.court-play-dialog.court-audience[open]{z-index:120}

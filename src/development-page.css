@@ -75,3 +75,12 @@ dialog.army-recovery-page .revenue-command [role=status]:not(:empty){display:blo
 .campaign-review-page .campaign-training{font-size:11px;color:#817052;margin-top:8px}
 .campaign-review-page .campaign-training+.campaign-meter{height:3px;margin-top:4px}
 @media(max-height:760px), (max-width:980px){.campaign-review-page .recovery-cost-grid>div{padding:8px 8px 8px 48px;min-height:50px}.campaign-review-page .campaign-ink-icon{width:28px;height:28px;left:10px;top:12px}.campaign-review-page .campaign-meter{margin-top:5px}.campaign-review-page .campaign-training{margin-top:5px}}
+
+.general-task-page .general-task-preview{margin-top:auto;padding:20px;background:#e9decb66;border-left:2px solid #a34232;font-size:18px;line-height:1.9;color:#674e30}
+.general-task-page .general-task-preview:empty{display:none}
+dialog.general-task-page .development-task form{display:block}
+dialog.general-task-page .development-task .general-plan-toggle{display:flex;flex-direction:row;align-items:center;gap:12px;margin:18px 0}
+dialog.general-task-page .development-task [data-enabled]{width:20px;min-height:20px;height:20px;accent-color:#a34232}
+dialog.general-task-page>.revenue-command{color:#674e30;text-align:left}
+dialog.general-task-page>.revenue-command>div{display:block;min-width:0}
+dialog.general-task-page>.revenue-command [data-status]{display:block!important;color:#817052!important}

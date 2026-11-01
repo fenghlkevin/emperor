@@ -41,12 +41,14 @@ function countryDetail(summary,tab,isHome,turn){const s=summary,c=s.country;let 
  if(tab==='detail'&&!isHome)body=`<p class="civil-note">邻邦目前以腹地概括，后续剧本可细分州郡。</p>${sectorTable(s.provinces)}`;
  return `<div class="civil-detail-title"><small>${isHome?'本国':'邻邦'} · 首都 ${esc(c.capital)}</small><h2>${esc(c.name)}</h2>${isHome?'':'<p class="civil-note">当前为初始剧本情报。</p>'}</div>${body}`;
 }
-export function openDomestic(state,root,{mode='domestic',onIndustry,onSubsidy}={}){
+export function openDomestic(state,root,{mode='domestic',onIndustry,onSubsidy,provinceId:initialProvinceId,onClose}={}){
  const diplomatic=mode==='diplomacy',works=mode==='works',military=mode==='military',department=works||military||diplomatic,viewTabs=diplomatic?[['diplomacy','外交总表'],['trade','贸易总表'],['detail','外交细查']]:works?[['buildings','建物统计表'],['special','特殊建物表'],['detail','民生细查']]:military?[['summary','军事总表'],['detail','军事细查']]:tabs;
- let level='world',countryId=null,provinceId=null,tab=department?'detail':'overview',view=[...CAMPAIGN_VIEW],drag=null,worksPage='welfare';
- const d=document.createElement('dialog');d.className='domestic-dialog ink-mode domestic-atlas';d.setAttribute('aria-label',diplomatic?'礼部侍郎外交统计':works?'工部侍郎建设统计':military?'兵部侍郎军务统计':'户部侍郎内政统计');root.append(d);d.onclose=()=>d.remove();
+ let level=initialProvinceId?'province':'world',countryId=initialProvinceId?state.domestic.provinces.find(p=>p.id===initialProvinceId)?.countryId:null,provinceId=initialProvinceId??null,tab=department?'detail':'overview',view=[...CAMPAIGN_VIEW],drag=null,worksPage='welfare';
+ const d=document.createElement('dialog');d.className='domestic-dialog ink-mode domestic-atlas';d.setAttribute('aria-label',diplomatic?'礼部侍郎外交统计':works?'工部侍郎建设统计':military?'兵部侍郎军务统计':'户部侍郎内政统计');root.append(d);d.onclose=()=>{d.remove();onClose?.();};
  const selectedProvince=()=>state.domestic.provinces.find(p=>p.id===provinceId);
  const provinceView=territoryView(localMapRegions(state.domestic));
+ if(initialProvinceId)view=[...provinceView];
+ const resume=next=>openDomestic(next??state,root,{mode,onIndustry,onSubsidy,provinceId});
  // Every map opens on the full campaign without preselecting a country.
  function selectCountry(id){const region=state.domestic.provinces.find(p=>p.id===id+'-core');if(region){countryId=region.countryId;provinceId=region.id;tab='detail';draw();return;}if(diplomatic)tab='detail';countryId=id;provinceId=null;if(id!=='sheng')level='world';draw();}
  function selectProvince(id){if(department){worksPage='welfare';countryId=state.domestic.provinces.find(p=>p.id===id)?.countryId||state.domestic.playerCountryId;provinceId=id;tab='detail';draw();return;}countryId=state.domestic.provinces.find(p=>p.id===id)?.countryId??state.domestic.playerCountryId;provinceId=id;tab='overview';draw();}
@@ -62,8 +64,8 @@ export function openDomestic(state,root,{mode='domestic',onIndustry,onSubsidy}={
   d.querySelectorAll('[data-indicator]').forEach(b=>b.onclick=()=>openIndicatorHelp(root,b.dataset.indicator,p,state.turn+1));
   d.querySelector('[data-province-geography]')?.addEventListener('click',()=>openProvinceGeography(root,p));
   d.querySelectorAll('[data-neighbor]').forEach(b=>b.onclick=()=>{const ps=info.provinces,i=ps.findIndex(x=>x.id===provinceId);provinceId=ps[(i+Number(b.dataset.neighbor)+ps.length)%ps.length].id;draw();});
-  d.querySelector('[data-province-action="subsidy"]')?.addEventListener('click',()=>{if(onSubsidy){d.close();onSubsidy(provinceId);}else openIndicatorHelp(root,'living');});
-  d.querySelectorAll('[data-open-industry]').forEach(button=>button.onclick=()=>{if(!onIndustry){openIndicatorHelp(root,button.dataset.openIndustry==='allocate'?'population':'stability');return;}const options={tab:button.dataset.openIndustry,provinceId:provinceId??undefined};d.close();onIndustry(options);});
+  d.querySelector('[data-province-action="subsidy"]')?.addEventListener('click',()=>{if(onSubsidy){d.close();onSubsidy(provinceId,resume);}else openIndicatorHelp(root,'living');});
+  d.querySelectorAll('[data-open-industry]').forEach(button=>button.onclick=()=>{if(!onIndustry){openIndicatorHelp(root,button.dataset.openIndustry==='allocate'?'population':'stability');return;}const options={tab:button.dataset.openIndustry,provinceId:provinceId??undefined};d.close();onIndustry({...options,onReturn:resume});});
   d.querySelector('[data-reset]').onclick=()=>{if(department)tab='detail';level='world';countryId=null;provinceId=null;view=[...CAMPAIGN_VIEW];draw();};
   d.querySelectorAll('[data-home]').forEach(b=>b.onclick=()=>{level='province';view=[...provinceView];selectCountry(state.domestic.playerCountryId);});
   d.querySelectorAll('[data-works-page]').forEach(b=>b.onclick=()=>{worksPage=b.dataset.worksPage;draw();});

@@ -17,6 +17,12 @@ function checkedEntries(values,provinces,all=false){
  const ids=new Set(provinces.map(p=>p.id));if(Object.keys(values).some(id=>!ids.has(id))||(all&&Object.keys(values).length!==ids.size))throw Error('只能设置本国各州');
  return provinces.filter(p=>Object.hasOwn(values,p.id)).map(p=>[p,values[p.id]]);
 }
+export function subsidyMaximum(p,turn){
+ const relief=quoteDisasterSubsidy(p,turn,0);
+ if(relief)return relief.maximum;
+ const remaining=Math.max(0,10000-Math.round(p.status.livingStandard*100));
+ return Number((BigInt(remaining)*BigInt(p.population.total)+9999n)/10000n);
+}
 export function quoteRevenue(state,command){
  const provinces=owned(state),s=countrySummary(state.domestic),kind=command.kind;
  if(kind==='levy')throw Error('全国钱粮统一结算，已取消地方拨款与府库加征');
@@ -33,8 +39,8 @@ export function quoteRevenue(state,command){
    const relief=quoteDisasterSubsidy(p,state.turn,requested);
    if(relief){const amount=relief.shortened?relief.minimum:0;return {provinceId:p.id,amount,before,after:before,disaster:quoteDisasterSubsidy(p,state.turn,amount)};}
    // Explicit project adaptation: 0.01 liang per resident raises living by one point.
-   const beforeHundredths=Math.round(before*100),population=BigInt(p.population.total);
-   const limit=Number((BigInt(10000-beforeHundredths)*population+9999n)/10000n),amount=Math.min(requested,limit);
+   const beforeHundredths=Math.round(before*100);
+   const amount=Math.min(requested,subsidyMaximum(p,state.turn));
    const after=Math.min(100,(beforeHundredths+Math.round(amount*10000/p.population.total))/100);
    return {provinceId:p.id,amount,before,after,disaster:quoteDisasterSubsidy(p,state.turn,amount)};
   }).filter(r=>r.amount>0&&(r.after>r.before||r.disaster?.shortened));
@@ -42,7 +48,7 @@ export function quoteRevenue(state,command){
    const entry=checkedEntries(command.amounts,provinces).find(([,n])=>n>0);
    if(!entry)throw Error('请设置有效补助：先选择州郡并填写大于0的补助金额。');
    const [p,n]=entry,relief=quoteDisasterSubsidy(p,state.turn,n),fmt=n=>n.toLocaleString('zh-CN');
-   const reason=relief?(relief.before<=1?'灾期仅剩1旬，不能再缩短。':p.disaster.lastReliefTurn===state.turn?'本旬已赈灾，每州每旬仅可办理一次。':`赈灾至少需${fmt(relief.minimum)}两，已填${fmt(n)}两，缺${fmt(relief.minimum-n)}两。`):p.status.livingStandard>=100?'生活水平已达100，不能继续提高。':`提高生活水平至少需${fmt(Math.max(1,Math.ceil(p.population.total/20000)))}两，已填${fmt(n)}两。`;
+   const reason=relief?(relief.blockedReason?relief.blockedReason:`赈灾至少需${fmt(relief.minimum)}两，已填${fmt(n)}两，缺${fmt(relief.minimum-n)}两。`):p.status.livingStandard>=100?'生活水平已达100，不能继续提高。':`提高生活水平至少需${fmt(Math.max(1,Math.ceil(p.population.total/20000)))}两，已填${fmt(n)}两。`;
    throw Error(`未形成有效补助：${p.name}${reason}`);
   }
   cost=changes.reduce((n,r)=>n+r.amount,0);

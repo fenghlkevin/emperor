@@ -119,3 +119,18 @@
 .petition-folded[data-urgent=true] .petition-seal{border-width:4px;font-weight:600;color:#a52e22;border-color:#a52e22}
 @media(max-width:700px){.petition-folded .petition-seal{font-size:17px;padding:5px 3px;letter-spacing:3px}.petition-folded .petition-heading{gap:12px}}
 .court-petition.petition-folded>section{background-color:#d3bc8b}
+
+/* 纸本随可用高度收缩，御批始终保留在窗口内；长奏文在纸内横向阅读。 */
+.court-petition.petition-folded[open]{display:flex;flex-direction:column;max-height:92dvh;overflow:hidden}
+.court-petition.petition-folded>section{flex:1 1 auto;min-height:0;height:clamp(260px,55dvh,580px);overflow:hidden}
+.petition-folded .petition-document{height:100%;min-width:0;max-height:100%;padding-top:38px;padding-bottom:28px}
+.petition-folded .petition-heading{min-height:0;overflow:auto;padding-top:30px;padding-bottom:20px;gap:12px}
+.petition-folded h1{flex-shrink:0;max-height: min(265px,35dvh)}
+.court-petition.petition-folded>.petition-review{flex:0 0 auto;max-height:45dvh;overflow:auto;margin-top:14px;padding:14px 22px}
+@media(max-width:700px){.petition-folded .petition-document{padding:28px 16px 20px}.petition-folded .petition-heading{padding:24px 9px 16px}.petition-folded h1{max-height:220px}.court-petition.petition-folded>.petition-review{padding:12px 16px;margin-top:10px}}
+
+/* Informational disaster reports are completed by acknowledgment. */
+.petition-folded .petition-decisions>[data-court-archive].court-vermilion{margin-left:0;padding:11px 16px;border:1px solid #914930;font-size:13px;background:#944d39;color:#fff0d0}
+
+/* 短窗口中六字标题也保持完整竖列，避免末字孤悬。 */
+.petition-folded h1{font-size:clamp(20px,3.4dvh,30px);letter-spacing:4px}

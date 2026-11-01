@@ -17,7 +17,7 @@
     "杨颖",
     "赵佳丽",
     "柳岩",
-    "徐若瑄"
+    "何泓姗"
   ],
   "skippedExisting": [],
   "pending": [],
@@ -30,11 +30,11 @@
     "杨颖": "杨颖.png",
     "熊黛林": "熊黛林.png",
     "柳岩": "柳岩-一字领轻纱-v6.png",
-    "徐若瑄": "徐若瑄-一字领轻纱-v6.png",
     "张梓琳": "张梓琳-头身修订-v3.png",
     "贺聪": "贺聪-一字肩轻纱-v1.png",
     "赵佳丽": "赵佳丽-站姿修订-v2.png",
-    "雎晓雯": "雎晓雯-完整全身-v2.png"
+    "雎晓雯": "雎晓雯-完整全身-v2.png",
+    "何泓姗": "outputs/hehongshan-replacement-20261029/何泓姗-粉绡-v1.png"
   },
   "registered": [
     {
@@ -140,10 +140,10 @@
       "sha256": "110c6337868e747b827dae7377c9851bbec0f1a15e74a7f1032de10f42fbf37c"
     },
     {
-      "name": "徐若瑄",
-      "asset": "assets/beauties/random/女明星/徐若瑄-古绡模特.png",
-      "source": "徐若瑄-一字领轻纱-v6.png",
-      "sha256": "2a93f9fd7df4561adf6c06767d891558f5a3ca46a148715ee142b5dd43258c82"
+      "name": "何泓姗",
+      "asset": "assets/beauties/random/女明星/何泓姗-古绡模特.png",
+      "source": "outputs/hehongshan-replacement-20261029/何泓姗-粉绡-v1.png",
+      "sha256": "3ef610a0b4a8bf3be183c98a1501ef9b066821acd60e001f3addc502c1130c34"
     }
   ],
   "existingRetained": {
@@ -155,11 +155,12 @@
   "removedFromPool": [
     "熊黛林",
     "乐基儿",
-    "王李丹妮"
+    "王李丹妮",
+    "徐若瑄"
   ],
   "reworkCompleted": [
     "柳岩",
-    "徐若瑄",
+    "何泓姗",
     "侯梦蝶",
     "游天翼",
     "张梓琳",
@@ -182,6 +183,11 @@
       "previous": "雎晓雯",
       "name": "雎晓雯",
       "source": "雎晓雯-完整全身-v2.png"
+    },
+    {
+      "previous": "徐若瑄",
+      "name": "何泓姗",
+      "source": "outputs/hehongshan-replacement-20261029/何泓姗-粉绡-v1.png"
     }
   ],
   "eventPortraits": {

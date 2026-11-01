@@ -26,7 +26,7 @@ export function officeEffectDescription(d,office){
  const pct=n=>`${Math.round(n*1000)/10}%`;
  if(office==='personnel-minister'){const e=selectionEffect(d);return `制举额外${e.extra}名候选；名士概率增加${Math.round(e.historicalBonus*1000)/10}个百分点，高能力新秀选拔概率${pct(e.highChance)}；另主持翰林院研习，最多${1+Math.floor(officialEffectSource(d,office).ability/40)}人（空缺暂停）。`;}
  if(office==='revenue-deputy'){const e=procurementEffect(d);return `购粮优惠${pct(e.discountRate)}，采买损耗${pct(e.lossRate)}；预览和实付按整两核算。`;}
- if(office==='works-deputy'){const e=laborOrganization(d,'construction',100);return `普通及特殊建设基础民夫需求减少${pct(e.rate)}，普通工程100→${e.workers}人；土地开垦不享受此减免。`;}
+ if(office==='works-deputy'){const e=laborOrganization(d,'construction',1000);return `普通及特殊建设基础民夫需求减少${pct(e.rate)}，寺庙基础1,000→${e.workers}人；土地开垦不享受此减免。`;}
  if(office==='war-minister'){const e=militaryOrganization(d);return `驻军军需及出征整备银优惠${pct(e.discountRate)}，军需损耗${pct(e.lossRate)}；口粮、军饷与装备采购数量不变。`;}
  if(office==='war-deputy'){const e=recruitOrganization(d);return `新兵初始训练额外＋${e.bonus}，最终不超过40；按新旧兵人数加权，不直接提高全军训练。`;}
  if(office==='prime-minister'){const e=coordinationEffect(d);return `每旬最多协调${e.limit}项缺粮或必要工程，最多调剂全国治理预算${pct(e.rate)}；从其他州预计闲置额度调入，遵守授权、国库保留线和重大工程审批。`;}

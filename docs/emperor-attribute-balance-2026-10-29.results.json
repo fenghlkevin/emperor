@@ -1,0 +1,129 @@
+{
+  "date": "2026-10-29",
+  "relatedTests": {
+    "passed": 165,
+    "failed": 0
+  },
+  "runtimeTypeSnapshots": 58,
+  "desktop": {
+    "passed": true,
+    "viewports": [
+      [
+        1440,
+        1000
+      ],
+      [
+        900,
+        720
+      ]
+    ],
+    "checks": [
+      "health and happiness panel",
+      "garden action persistence",
+      "sleep recovery persistence",
+      "layout bounds"
+    ]
+  },
+  "fullSuite": {
+    "total": 1270,
+    "passed": 1252,
+    "failed": 18,
+    "failures": [
+      {
+        "test": "tests/asset-usage.test.mjs:32:1",
+        "name": "all shipped non-beauty artwork has a runtime consumer, including dynamic paths (187.614292ms)",
+        "diagnostic": "AssertionError [ERR_ASSERTION]: unreferenced artwork must not remain in asset subdirectories\n  + actual - expected\n  \n  + [\n  +   'assets/characters/palace-attendant.png',\n  +   'assets/officials/historical/manual-1557/redesign-v2.json',\n  +   'assets/scenes/alchemy/sketch-alchemy-v1.png',\n  +   'assets/scenes/dragon/sketch-dragon-attendants.png',\n  +   'assets/scenes/martial/sketch-martial-court-v3.png',\n  +   'assets/scenes/military/generation.json',\n  +   'assets/scenes/mother/sketch-mother-v1.png',\n  +   'assets/scenes/theatre/sketch-theatre-eunuchs-v1.png',\n  +   'assets/scenes/zichen/sketch-zichen-color.png'\n  + ]\n  - []\n  \n      at TestContext.<anonymous> (file:///Users/fengheliang/"
+      },
+      {
+        "test": "tests/card-battle.test.mjs:57:1",
+        "name": "all 100 current historical identities have complete unique cards and existing art (0.846166ms)",
+        "diagnostic": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n  + actual - expected\n  ... Skipped lines\n  \n    [\n      'cbdb-1384',\n      'cbdb-1488',\n      'cbdb-17364',\n      'cbdb-1762',\n  ...\n      'manual-1555',\n  -   'manual-1556',\n      'manual-1557',\n      'manual-1561',\n      'manual-1565',\n      'manual-1569',\n      'manual-1579',\n  \n      at TestContext.<anonymous> (file:///Users/fengheliang/workbench/source/g20/games/tests/card-battle.test.mjs:58:51)\n      at Test.runInAsyncScope (node:async_hooks:214:14)\n      at Test.run (node:internal/test_runner/test:1106:25)\n      at Test.processPendingSubtests (node:internal/test_runner/test:788:18)\n      at Test.postRun (nod"
+      },
+      {
+        "test": "tests/court-formation.test.mjs:11:1",
+        "name": "court follows the requested four ranks from doorway to throne, with paired departments and mirrored positions (2.135667ms)",
+        "diagnostic": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n  + actual - expected\n  \n    [\n  +   'imperial-spy-chief',\n  +   'imperial-spy-reader',\n      'works-deputy',\n      'works-minister',\n      'justice-minister',\n      'justice-deputy',\n      'war-deputy',\n  \n      at TestContext.<anonymous> (file:///Users/fengheliang/workbench/source/g20/games/tests/court-formation.test.mjs:12:9)\n      at Test.runInAsyncScope (node:async_hooks:214:14)\n      at Test.run (node:internal/test_runner/test:1106:25)\n      at Test.start (node:internal/test_runner/test:1003:17)\n      at startSubtestAfterBootstrap (node:internal/test_runner/harness:358:17) {\n    generatedMessage: true,\n    cod"
+      },
+      {
+        "test": "tests/featured-beauties.test.mjs:9:1",
+        "name": "hidden old residents survive saves and old pending encounter is archived (17.238667ms)",
+        "diagnostic": "AssertionError [ERR_ASSERTION]: The input did not match the regular expression /本期开放/. Input:\n  \n  'Error: 陛下今夜想召哪位佳人相伴？请从可宣召之人中择选。'\n  \n      at TestContext.<anonymous> (file:///Users/fengheliang/workbench/source/g20/games/tests/featured-beauties.test.mjs:9:451)\n      at Test.runInAsyncScope (node:async_hooks:214:14)\n      at Test.run (node:internal/test_runner/test:1106:25)\n      at Test.processPendingSubtests (node:internal/test_runner/test:788:18)\n      at Test.postRun (node:internal/test_runner/test:1235:19)\n      at Test.run (node:internal/test_runner/test:1163:12)\n      at async Test.processPendingSubtests (node:internal/test_runner/test:788:7) {\n    generatedMessage: true,\n    code:"
+      },
+      {
+        "test": "tests/foreign-strategy.test.mjs:23:1",
+        "name": "defensive tactical battle persists provenance and applies fortification to the player side (35.710167ms)",
+        "diagnostic": "AssertionError [ERR_ASSERTION]: The input did not match the regular expression /结束战斗/. Input:\n  \n  'Error: 陛下，战事尚未了结，还请先定夺。'\n  \n      at TestContext.<anonymous> (file:///Users/fengheliang/workbench/source/g20/games/tests/foreign-strategy.test.mjs:23:527)\n      at Test.runInAsyncScope (node:async_hooks:214:14)\n      at Test.run (node:internal/test_runner/test:1106:25)\n      at Test.processPendingSubtests (node:internal/test_runner/test:788:18)\n      at Test.postRun (node:internal/test_runner/test:1235:19)\n      at Test.run (node:internal/test_runner/test:1163:12)\n      at async Test.processPendingSubtests (node:internal/test_runner/test:788:7) {\n    generatedMessage: true,\n    code: 'ERR_AS"
+      },
+      {
+        "test": "tests/hanlin.test.mjs:23:1",
+        "name": "historical ceilings are explicit per-person designs: Zhuge Liang martial 50, Lu Bu 100, selected replacements receive individual historical design ceilings (0.996292ms)",
+        "diagnostic": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n  \n  101 !== 100\n  \n      at TestContext.<anonymous> (file:///Users/fengheliang/workbench/source/g20/games/tests/hanlin.test.mjs:23:699)\n      at Test.runInAsyncScope (node:async_hooks:214:14)\n      at Test.run (node:internal/test_runner/test:1106:25)\n      at Test.processPendingSubtests (node:internal/test_runner/test:788:18)\n      at Test.postRun (node:internal/test_runner/test:1235:19)\n      at Test.run (node:internal/test_runner/test:1163:12)\n      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:358:3) {\n    generatedMessage: true,\n    code: 'ERR_ASSERTION',\n    actual: 101,\n    expected: 100,"
+      },
+      {
+        "test": "tests/justice-deputy.test.mjs:9:1",
+        "name": "justice deputy is a real central office and legacy saves gain one incumbent exactly once (19.390417ms)",
+        "diagnostic": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n  \n  16 !== 14\n  \n      at TestContext.<anonymous> (file:///Users/fengheliang/workbench/source/g20/games/tests/justice-deputy.test.mjs:12:9)\n      at Test.runInAsyncScope (node:async_hooks:214:14)\n      at Test.run (node:internal/test_runner/test:1106:25)\n      at Test.start (node:internal/test_runner/test:1003:17)\n      at startSubtestAfterBootstrap (node:internal/test_runner/harness:358:17) {\n    generatedMessage: true,\n    code: 'ERR_ASSERTION',\n    actual: 16,\n    expected: 14,\n    operator: 'strictEqual',\n    diff: 'simple'\n  }"
+      },
+      {
+        "test": "tests/longterm-expansion.test.mjs:62:1",
+        "name": "palace and national marriage routes cannot bypass a diplomatic refusal (10.245833ms)",
+        "diagnostic": "AssertionError [ERR_ASSERTION]: The input did not match the regular expression /外臣商议/. Input:\n  \n  'Error: 和亲之事，还须先与外臣议妥，再颁旨赐婚。'\n  \n      at TestContext.<anonymous> (file:///Users/fengheliang/workbench/source/g20/games/tests/longterm-expansion.test.mjs:62:269)\n      at Test.runInAsyncScope (node:async_hooks:214:14)\n      at Test.run (node:internal/test_runner/test:1106:25)\n      at Test.processPendingSubtests (node:internal/test_runner/test:788:18)\n      at Test.postRun (node:internal/test_runner/test:1235:19)\n      at Test.run (node:internal/test_runner/test:1163:12)\n      at async Test.processPendingSubtests (node:internal/test_runner/test:788:7) {\n    generatedMessage: true,\n    code: '"
+      },
+      {
+        "test": "tests/office-ability.test.mjs:12:1",
+        "name": "all thirteen central and both local offices have a canonical civil or military ability independent of personal 文武 label (0.680708ms)",
+        "diagnostic": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n  \n  14 !== 16\n  \n      at TestContext.<anonymous> (file:///Users/fengheliang/workbench/source/g20/games/tests/office-ability.test.mjs:12:140)\n      at Test.runInAsyncScope (node:async_hooks:214:14)\n      at Test.run (node:internal/test_runner/test:1106:25)\n      at Test.start (node:internal/test_runner/test:1003:17)\n      at startSubtestAfterBootstrap (node:internal/test_runner/harness:358:17) {\n    generatedMessage: true,\n    code: 'ERR_ASSERTION',\n    actual: 14,\n    expected: 16,\n    operator: 'strictEqual',\n    diff: 'simple'\n  }"
+      },
+      {
+        "test": "tests/official-art.test.mjs:11:1",
+        "name": "fourteen separate slots have seven left and seven right, and dismissed posts are empty (13.505708ms)",
+        "diagnostic": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n  \n  16 !== 14\n  \n      at TestContext.<anonymous> (file:///Users/fengheliang/workbench/source/g20/games/tests/official-art.test.mjs:11:173)\n      at Test.runInAsyncScope (node:async_hooks:214:14)\n      at Test.run (node:internal/test_runner/test:1106:25)\n      at Test.processPendingSubtests (node:internal/test_runner/test:788:18)\n      at Test.postRun (node:internal/test_runner/test:1235:19)\n      at Test.run (node:internal/test_runner/test:1163:12)\n      at async Test.processPendingSubtests (node:internal/test_runner/test:788:7) {\n    generatedMessage: true,\n    code: 'ERR_ASSERTION',\n    actual: 16,\n    expected: 14,"
+      },
+      {
+        "test": "tests/operation-result.test.mjs:4:1",
+        "name": "persisted candidate is published once; explicit rejection and storage errors propagate before UI completion (1.292875ms)",
+        "diagnostic": "AssertionError [ERR_ASSERTION]: The input did not match the regular expression /未保存/. Input:\n  \n  'Error: 这道旨意未能记妥，尚未生效，请再试一次。'\n  \n      at TestContext.<anonymous> (file:///Users/fengheliang/workbench/source/g20/games/tests/operation-result.test.mjs:8:9)\n      at Test.runInAsyncScope (node:async_hooks:214:14)\n      at Test.run (node:internal/test_runner/test:1106:25)\n      at Test.start (node:internal/test_runner/test:1003:17)\n      at startSubtestAfterBootstrap (node:internal/test_runner/harness:358:17) {\n    generatedMessage: true,\n    code: 'ERR_ASSERTION',\n    actual: Error: 这道旨意未能记妥，尚未生效，请再试一次。\n        at commitOperation (file:///Users/fengheliang/workbench/source/g20/games/src/operat"
+      },
+      {
+        "test": "tests/phases.test.mjs:5:1",
+        "name": "early court and all six phases advance only on leaving rooms (17.287833ms)",
+        "diagnostic": "AssertionError [ERR_ASSERTION]: The input did not match the regular expression /早朝/. Input:\n  \n  '陛下，百官已在宣政殿候驾，恭请临朝。'\n  \n      at TestContext.<anonymous> (file:///Users/fengheliang/workbench/source/g20/games/tests/phases.test.mjs:5:102)\n      at Test.runInAsyncScope (node:async_hooks:214:14)\n      at Test.run (node:internal/test_runner/test:1106:25)\n      at Test.start (node:internal/test_runner/test:1003:17)\n      at startSubtestAfterBootstrap (node:internal/test_runner/harness:358:17) {\n    generatedMessage: true,\n    code: 'ERR_ASSERTION',\n    actual: '陛下，百官已在宣政殿候驾，恭请临朝。',\n    expected: /早朝/,\n    operator: 'match',\n    diff: 'simple'\n  }"
+      },
+      {
+        "test": "tests/phases.test.mjs:7:1",
+        "name": "night only permits sleep or companionship; exhaustion settles once (8.213667ms)",
+        "diagnostic": "AssertionError [ERR_ASSERTION]: The input did not match the regular expression /亥时/. Input:\n  \n  'Error: 陛下，夜已深了，还是早些安歇吧。'\n  \n      at TestContext.<anonymous> (file:///Users/fengheliang/workbench/source/g20/games/tests/phases.test.mjs:7:116)\n      at Test.runInAsyncScope (node:async_hooks:214:14)\n      at Test.run (node:internal/test_runner/test:1106:25)\n      at Test.processPendingSubtests (node:internal/test_runner/test:788:18)\n      at Test.postRun (node:internal/test_runner/test:1235:19)\n      at Test.run (node:internal/test_runner/test:1163:12)\n      at async Test.processPendingSubtests (node:internal/test_runner/test:788:7) {\n    generatedMessage: true,\n    code: 'ERR_ASSERTION',"
+      },
+      {
+        "test": "tests/royal-family.test.mjs:9:1",
+        "name": "conception, ten month pregnancy, birth, birthday and save roundtrip (32.421667ms)",
+        "diagnostic": "AssertionError [ERR_ASSERTION]: The input did not match the regular expression /怀胎/. Input:\n  \n  'Error: 她已有身孕，太医嘱咐安心静养，待分娩后再伴驾。'\n  \n      at TestContext.<anonymous> (file:///Users/fengheliang/workbench/source/g20/games/tests/royal-family.test.mjs:12:9)\n      at Test.runInAsyncScope (node:async_hooks:214:14)\n      at Test.run (node:internal/test_runner/test:1106:25)\n      at Test.processPendingSubtests (node:internal/test_runner/test:788:18)\n      at Test.postRun (node:internal/test_runner/test:1235:19)\n      at Test.run (node:internal/test_runner/test:1163:12)\n      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:358:3) {\n    generatedMessage: true,\n    code: 'ERR_A"
+      },
+      {
+        "test": "tests/royal-family.test.mjs:20:1",
+        "name": "no conception on failed roll; palace cannot directly marry children (11.778ms)",
+        "diagnostic": "AssertionError [ERR_ASSERTION]: The input did not match the regular expression /外臣商议/. Input:\n  \n  'Error: 和亲之事，还须先与外臣议妥，再颁旨赐婚。'\n  \n      at TestContext.<anonymous> (file:///Users/fengheliang/workbench/source/g20/games/tests/royal-family.test.mjs:23:146)\n      at Test.runInAsyncScope (node:async_hooks:214:14)\n      at Test.run (node:internal/test_runner/test:1106:25)\n      at Test.processPendingSubtests (node:internal/test_runner/test:788:18)\n      at Test.postRun (node:internal/test_runner/test:1235:19)\n      at Test.run (node:internal/test_runner/test:1163:12)\n      at async Test.processPendingSubtests (node:internal/test_runner/test:788:7) {\n    generatedMessage: true,\n    code: 'ERR_AS"
+      },
+      {
+        "test": "tests/sleep-next-turn.test.mjs:17:1",
+        "name": "last phase and unavailable states cannot skip (11.415375ms)",
+        "diagnostic": "AssertionError [ERR_ASSERTION]: The input was expected to not match the regular expression /data-sleep-next-turn/. Input:\n  \n  '<section class=\"emperor-panel emperor-folio\" aria-label=\"皇帝属性\"><div class=\"emperor-heading\"><span class=\"emperor-mini-energy\" aria-label=\"体力 200 / 200\">体力 <b>200<small> / 200</small></b></span><div class=\"emperor-identity\"><small>天子起居</small><strong>安寝<i aria-hidden=\"true\">御</i></strong></div><span class=\"emperor-age\">20<small>岁</small></span><button class=\"emperor-toggle\" data-emperor-toggle aria-expanded=\"true\" aria-label=\"收起天子起居\" aria-controls=\"emperor-details\"><span aria-hidden=\"true\">−</span></button></div><div id=\"emperor-details\" ><div class=\"emperor-vitals"
+      },
+      {
+        "test": "tests/tour-events.test.mjs:25:1",
+        "name": "unhandled events prevent returning; all choices have a no-cash alternative (15.758125ms)",
+        "diagnostic": "AssertionError [ERR_ASSERTION]: The input did not match the regular expression /事件待处理/. Input:\n  \n  'Error: 陛下，沿途尚有事情候您裁决，请颁旨后再起驾回宫。'\n  \n      at TestContext.<anonymous> (file:///Users/fengheliang/workbench/source/g20/games/tests/tour-events.test.mjs:26:28)\n      at Test.runInAsyncScope (node:async_hooks:214:14)\n      at Test.run (node:internal/test_runner/test:1106:25)\n      at Test.processPendingSubtests (node:internal/test_runner/test:788:18)\n      at Test.postRun (node:internal/test_runner/test:1235:19)\n      at Test.run (node:internal/test_runner/test:1163:12)\n      at async Test.processPendingSubtests (node:internal/test_runner/test:788:7) {\n    generatedMessage: true,\n    code: 'ERR"
+      },
+      {
+        "test": "tests/tour-events.test.mjs:325:1",
+        "name": "Susu arrives pregnant and delivers exactly once next turn, with either gender and persisted portraits (17.805959ms)",
+        "diagnostic": "AssertionError [ERR_ASSERTION]: The input did not match the regular expression /怀胎/. Input:\n  \n  'Error: 她已有身孕，太医嘱咐安心静养，待分娩后再伴驾。'\n  \n      at TestContext.<anonymous> (file:///Users/fengheliang/workbench/source/g20/games/tests/tour-events.test.mjs:332:10)\n      at Test.runInAsyncScope (node:async_hooks:214:14)\n      at Test.run (node:internal/test_runner/test:1106:25)\n      at Test.processPendingSubtests (node:internal/test_runner/test:788:18)\n      at Test.postRun (node:internal/test_runner/test:1235:19)\n      at Test.run (node:internal/test_runner/test:1163:12)\n      at async Test.processPendingSubtests (node:internal/test_runner/test:788:7) {\n    generatedMessage: true,\n    code: 'ERR_AS"
+      }
+    ]
+  },
+  "notes": [
+    "Full suite remains non-green in other court/office, historical identity/art and existing message/presentation expectations.",
+    "No player save files modified; desktop verification uses an isolated temporary profile.",
+    "Old saved remaining life is preserved; initial 2520 applies to new games."
+  ]
+}

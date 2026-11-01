@@ -42,13 +42,15 @@ export interface Industry {
     productivity: number;
 }
 export interface DevelopmentProject {
-    workOrder?: {mode: number; untilTurn: number; comfort?: boolean};
+    workOrder?: {mode: number; untilTurn: number; rush?: boolean; comfort?: boolean};
     id: number;
     industry: IndustryKey;
     fromIndustry?: IndustryKey;
     area: number;
     cost: number;
-    progress: 0;
+    progress: number;
+    requiredTurns?: number;
+    areaMin?: number;
     startedTurn: number;
     ownerId: string;
 }
@@ -109,7 +111,7 @@ export interface Province {
     specialServiceBonus?: Partial<Record<BuildingKey,number>>;
     industryLabor?: {version:1; base:Record<IndustryKey,{area:number;workers:number}>; pending:Array<{industry:IndustryKey;fromIndustry?:IndustryKey;effectiveTurn:number}>};
     terrainCapacity: {version:1;kind:Terrain;landLimit:number;legacyLand:number;legacySectors:Record<IndustryKey,number>};
-    cityCapacity: {version: 1; land: number; population: number; expansion?: {id:number;startedTurn:number;ownerId:string;progress:number;land:number;workOrder?:{mode:number;untilTurn:number;comfort?:boolean}}};
+    cityCapacity: {version: 1; land: number; population: number; expansion?: {laborScale?:2;id:number;startedTurn:number;ownerId:string;progress:number;land:number;requiredTurns?:number;population?:number;workOrder?:{mode:number;untilTurn:number;rush?:boolean;comfort?:boolean}}};
     resourceRulesVersion?: 1;
     resourceSettlement?: {
         developmentBalanceVersion?: 2;
@@ -144,11 +146,12 @@ export interface Province {
     officialProduction?: OfficialProduction;
     localPolicy?: {version: 1; civil: boolean; military: boolean; budget: number; priority: string; locks: string[]; lastLaborTurn?: number};
     projectLaborPressure?: {turn: number; streak: number; loss: number};
-    projectLabor?: {turn: number; capacity: number; allocations: {kind: string; key: string; startedTurn: number; workers: number; granted: number; speed?: number; expense?: number; mode?: number; reason?: string; comfort?: boolean; laborEffect?: CentralLaborEffect; officerEffect?: {id:string|null;name:string;ability:number;bonus:number;remaining:number;baseSpeed:number;applied:number}}[]};
+    projectLabor?: {turn: number; capacity: number; allocations: {kind: string; key: string; startedTurn: number; workers: number; granted: number; speed?: number; expense?: number; mode?: number; reason?: string; rush?: boolean; comfort?: boolean; laborEffect?: CentralLaborEffect; officerEffect?: {id:string|null;name:string;ability:number;bonus:number;remaining:number;baseSpeed:number;applied:number}}[]};
     construction: {
         lastTurn: number;
         project: {
-            workOrder?: {mode: number; untilTurn: number; comfort?: boolean};
+            workOrder?: {mode: number; untilTurn: number; rush?: boolean; comfort?: boolean};
+            laborScale?: 2;
             building: string;
             requiredTurns?: number;
             progress: number;
@@ -268,6 +271,7 @@ export interface Country {
     ledger: LedgerEntry[];
 }
 export interface DomesticState {
+    courtReports?: {version:1;read:string[];events:Array<{key:string;id?:string;turn:number;provinceId?:string|null;countryId?:string;kind:'notice'|'report';title:string;summary:string;action:'special'|'atlas-build'|'atlas-grain'|'works-records'|'personnel-delegate'|'diplomacy'|'garrison';office:'works-minister'|'revenue-minister'|'personnel-minister'|'rites-minister'|'war-deputy'}>};
     difficulty?: DifficultyState;
     cardBattlePlans?: {version:1;nextId:number;plans:Array<{id:number;name:string;kind:'campaign'|'defense';formation:{kitVersion?:1;generalId:string;commander?:DeploymentSquad;commanderSquad?:KitSquad;squads:Array<KitSquad & {sourceId?:string;generalId:string}>;cardTactics?:CardTacticSelection;cardWeapons?:WeaponSelection;cardSecrets?:SecretSelection;cardLandmarks?:LandmarkSelection}}>};
     cardPeople?: CardPersonRegistry;
@@ -315,6 +319,7 @@ export interface DomesticState {
         nextId: number;
         lastTrainingTurn: number;
         manualTrainingTurn?: number;
+        securityInspectionTurn?: number;
         trainingEffect?: {turn:number;before:number;after:number;floor:number;delta:number;mode:"manual"|"ongoing";source:{id:string|null;name:string;ability:number};baseGain:number;gainCap:number;gain:number};
         ongoing: boolean;
         trainingFloor: number;
@@ -398,10 +403,11 @@ export interface DomesticState {
         nextId: number;
         lastTurn: number;
         project: {
+            laborScale?: 2;
             balanceVersion?: 2;
             difficultyId?: DifficultyId;
             id: number;
-            workOrder?: {mode: number; untilTurn: number; comfort?: boolean};
+            workOrder?: {mode: number; untilTurn: number; rush?: boolean; comfort?: boolean};
             building: string;
             provinceId: string;
             ownerId: string;
@@ -462,6 +468,7 @@ export interface GameSave {
     turn: number;
     scene: 'palace' | 'court';
     createdAt: string;
+    emperorBalance?: {version: 1; turn: number; courtHealth: number; courtHappiness: number; companyCount: number; restPhases: number[]; leisure: string[]; overworked: boolean; healthyTurns: number; annualTurn: number; martialAwards: number[]; drugLife: number; exceptionalDoses: number};
     stats: {
         treasury: number;
         health: number;
@@ -697,6 +704,7 @@ export interface JusticeOfficial extends PersonProfile {
 }
 export interface JusticeState {
     justiceDeputyVersion?: 1;
+    imperialSpyVersion?: 1;
     nextId: number;
     funding: number;
     lastTurn: number;

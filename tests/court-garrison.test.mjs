@@ -8,7 +8,7 @@ test('recruitment outlook uses the same scheduled economy as the actual recruit 
  const {initializeResourceEconomy}=await import('../src/province-resources.mjs');
  const {executeKitCommand}=await import('../src/troop-kit-world.mjs');
  const s=newGame('扩军收支');initializeResourceEconomy(s.domestic);const before=structuredClone(s);
- const q=courtGarrisonPlan(s,{kind:'recruit',sourceId:'hebei',amount:100});
+ const q=courtGarrisonPlan(s,{kind:'recruit',sourceId:'central',amount:100});
  assert.deepEqual(s,before);assert.deepEqual(q.economy.before,projectScheduledEconomy(s));
  const executed=executeKitCommand(s,q.command).state;
  assert.deepEqual(q.economy.after,projectScheduledEconomy(executed));

@@ -1,3 +1,7 @@
+import {isMarching,marchSummary} from './campaign-march.mjs';
+import {setQuantityLimits,affordableMaximum} from './quantity-controls.mjs';
+import {recruitmentCapacity} from './recruitment-capacity.mjs';
+import {openCourtGarrison} from './court-garrison-ui.mjs';
 import {openLandmarkDraft} from './card-battle-landmark-draft-ui.mjs';
 import {openSecretDraft} from './card-battle-secret-draft-ui.mjs';
 import {openWeaponDraft} from './card-battle-weapon-draft-ui.mjs';
@@ -31,6 +35,7 @@ const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&
 const kits=()=>TROOP_KITS.filter(k=>ENABLED_KITS.includes(k.id));
 const select=(items,value,attrs)=>`<select ${attrs}>${items.map(([id,name])=>`<option value="${esc(id)}" ${id===value?'selected':''}>${esc(name)}</option>`).join('')}</select>`;
 export function openKitOffice(initial,root,onCommit,onClose,options={}){
+ if(['purchase','recruit','dismiss','transfer'].includes(options.tab)&&!initial.domestic.war?.battle&&!initial.domestic.strategy?.pending&&!initial.domestic.collapse?.pending)return openCourtGarrison(initial,root,onCommit,onClose,{kind:options.tab});
  if((options.tab??'inventory')==='inventory'&&!initial.domestic.war?.battle&&!initial.domestic.strategy?.pending&&!initial.domestic.collapse?.pending)return openMilitaryRegister(initial,root,onClose);
  let state=structuredClone(initial),tab=options.tab??'inventory',sourceId=options.sourceId??'central',targetId=state.domestic.provinces.find(p=>p.countryId===state.domestic.playerCountryId)?.id,receipt=null,error='',draftRates={},warDraft,warStage=1;
  const dialog=document.createElement('dialog');root.append(dialog);dialog.onclose=()=>{dialog.remove();onClose?.();};
@@ -44,6 +49,7 @@ export function openKitOffice(initial,root,onCommit,onClose,options={}){
  function warRow(u,i,guard=false){return `<section class="defense-squad"><header><b>${guard?'主将亲卫':`第 ${i+1} 队`}</b>${guard?'':`<button data-kit-war-remove="${i}">移除</button>`}</header><label>兵种${select(kits().map(k=>[k.id,k.name]),u.kind,`data-kit-war-${guard?'guard':'row'}="${i}" data-field="kind"`)}</label><label>人数${formationCountSelect(u.count,MAX_SQUAD_SOLDIERS,`data-kit-war-${guard?'guard':'row'}="${i}" data-field="count" aria-label="编队人数"`)}</label>${guard?'':`<label>将领${select(generals(state.domestic).map(g=>[g.id,g.name]),u.generalId,`data-kit-war-row="${i}" data-field="generalId"`)}</label>`}</section>`;}
  function draw(){
   if(state.domestic.collapse?.pending){drawCapitalCrisis(dialog,state,commit,r=>{receipt={lines:[r.message]};draw();});return;}
+  if(isMarching(state)){dialog.innerHTML=`<h1>兵部行军奏报</h1><p>${esc(marchSummary(state.domestic.war.battle.command.march))}</p><p>距抵达尚余 ${state.domestic.war.battle.command.march.arrivalTurn-state.turn} 旬。部队与兵装已出征，可继续理政、安寝推进。</p><button data-march-close>返回朝堂</button>`;dialog.querySelector('[data-march-close]').onclick=()=>dialog.close();return;}
   if(state.domestic.war?.battle){drawBattle(dialog,()=>state,commit,r=>{receipt=r;draw();});return;}
   if(state.domestic.strategy?.pending?.defender===state.domestic.playerCountryId){drawKitDefenseDeployment(dialog,()=>state,commit,r=>{receipt=r;draw();},{savePlans:options.savePlans?next=>{const saved=commitOperation(options.savePlans,next);state=saved?.domestic?saved:next;return saved;}:undefined});return;}
   if(receipt?.report){drawWarResult(dialog,receipt,()=>{receipt=null;draw();},()=>dialog.close(),{onRecovery:()=>{dialog.onclose=()=>dialog.remove();dialog.close();openArmyRecovery(state,root,onCommit,onClose);}});return;}
@@ -90,5 +96,8 @@ export function openKitOffice(initial,root,onCommit,onClose,options={}){
   dialog.querySelector('[data-kit-execute]').onclick=()=>{try{const c=command();if(tab==='war'){if(warStage===1){if(!borderingCountries(state.domestic).some(v=>v.id===warDraft.targetId))throw Error('请选择接壤目标');warStage=2;draw();return;}quoteWar(state,c);if(warStage===2){warStage=3;draw();return;}commit(beginWar(state,c));receipt=null;warStage=1;}else{const r=executeKitCommand(state,c);commit(r.state);dialog.close();return;}error='';draw();}catch(e){error=e.message;preview();}};preview();militaryPage(dialog,nav.find(([id])=>id===tab)[1]);
  }
  function preview(){if(tab==='inventory'||receipt)return;const button=dialog.querySelector('[data-kit-execute]');if(tab==='war'&&warStage===1){const target=borderingCountries(state.domestic).find(c=>c.id===warDraft.targetId);dialog.querySelector('[data-kit-preview]').textContent=target?`${target.name} · ${state.domestic.provinces.filter(p=>p.countryId===target.id).length}州 · 现有驻军${worldKitSummary(state.domestic,target.id).reduce((n,r)=>n+r.soldiers.available,0)}人`:'请选择地图上高亮的接壤国家。';dialog.querySelector('[data-kit-status]').textContent=error||'选择目标后继续编队；此步不会调兵或扣装。';button.disabled=!target;return;}try{const q=tab==='war'?quoteWar(state,command()):quoteKitCommand(state,command());dialog.querySelector('[data-kit-preview]').innerHTML=(q.cost!==undefined?`<p>本次一次性支银 ${q.cost} 两，执行后国库 ${q.treasuryAfter} 两</p>`:'')+q.lines.map(l=>`<p>${esc(l)}</p>`).join('');dialog.querySelector('[data-kit-status]').textContent=error||(q.canAfford===false?quoteShortage(q,tab==='recruit'?`募兵${command().amount.toLocaleString('zh-CN')}人`:'采办兵装'):'核对通过，确认后执行并保存。');button.disabled=q.canAfford===false;}catch(e){button.disabled=true;dialog.querySelector('[data-kit-preview]').textContent='';dialog.querySelector('[data-kit-status]').textContent=error||e.message;}}
- draw();dialog.showModal();return dialog;
+ setQuantityLimits(dialog,input=>{
+ if(input.matches('[data-kit-amount]'))return tab==='recruit'?recruitmentCapacity(state,sourceId,draftRates).max:sources().find(r=>r.id===sourceId).soldiers.available;
+ if(input.matches('[data-kit-quantity]')&&tab==='purchase')return affordableMaximum(1000000,n=>{try{return quoteKitCommand(state,{...command(),quantities:{...quantities(),[input.dataset.kitQuantity]:n}}).canAfford;}catch{return false;}});
+ });draw();dialog.showModal();return dialog;
 }

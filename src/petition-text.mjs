@@ -22,7 +22,7 @@ export function chineseNumber(value){
 }
 export function petitionText(text){
  // Escape every nonnumeric fragment separately; reports never introduce markup.
- const source=String(text),pattern=/[+-]?(?:\d{1,3}(?:,\d{3})+|\d+)(?:\.\d+)?(?:%|％|两|石|旬|人|年|日|月|份|回合|点)?/g;
+ const source=String(text).replace(/\b(agriculture|pastoral|commerce|industry)\b/g,key=>({agriculture:'农业',pastoral:'牧业',commerce:'商业',industry:'工业'})[key]),pattern=/[+-]?(?:\d{1,3}(?:,\d{3})+|\d+)(?:\.\d+)?(?:%|％|两|石|旬|人|年|日|月|份|回合|点)?/g;
  let html='',cursor=0;
  for(const match of source.matchAll(pattern)){
   html+=escape(source.slice(cursor,match.index));
@@ -33,8 +33,8 @@ export function petitionText(text){
  return html+escape(source.slice(cursor));
 }
 export function petitionSeal(item){
- if(item.urgent)return '加急';
- if(item.action==='local-petition')return '请旨';
- if(['military-result','diplomatic-receipt','governance','works-complete','special-complete'].includes(item.id.split(':')[0]))return '复奏';
+ if(item.urgent||item.kind==='urgent')return '加急';
+ if(item.kind==='request'||item.action==='local-petition')return '请旨';
+ if(item.kind==='report'||['military-result','diplomatic-receipt','governance'].includes(item.id?.split(':')[0]))return '复奏';
  return '奏事';
 }

@@ -17,3 +17,7 @@ export const COURT_OUTLINES = {
 
 // The deputy has its own fallback hit region; actor mode uses its alpha silhouette.
 COURT_OUTLINES['justice-deputy']={...COURT_OUTLINES['justice-minister'],x:75.5};
+
+// Imperial intelligence officers stand together at the rear of the left rank, clear of the imperial aisle.
+COURT_OUTLINES['imperial-spy-chief']={...COURT_OUTLINES['rites-deputy'],x:35,y:20,w:6,h:12};
+COURT_OUTLINES['imperial-spy-reader']={...COURT_OUTLINES['war-deputy'],x:29,y:20,w:6,h:12};

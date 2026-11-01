@@ -14,13 +14,13 @@ const home=s=>s.domestic.countries.find(c=>c.id==='sheng');
 test('normal daily schedule and skip consume the same one-turn lifespan, including a year boundary',()=>{
  const a=newGame('普通作息'),b=structuredClone(a);a.turn=b.turn=36;
  a.phase=5;const night=palaceAction(a,'sleep').state;assert.equal(night.stats.life,a.stats.life);leaveRoom(night);sleepUntilNextTurn(b);
- assert.equal(night.turn,37);assert.equal(night.stats.age,21);assert.equal(night.stats.life,2159);assert.equal(b.stats.life,night.stats.life);assert.equal(b.stats.age,night.stats.age);
- const tired=newGame('过劳');tired.stats.energy=0;resolveExhaustion(tired);assert.equal(tired.stats.life,2129);assert.equal(tired.turn,2);
+ assert.equal(night.turn,37);assert.equal(night.stats.age,21);assert.equal(night.stats.life,2519);assert.equal(b.stats.life,night.stats.life);assert.equal(b.stats.age,night.stats.age);
+ const tired=newGame('过劳');tired.stats.energy=0;resolveExhaustion(tired);assert.equal(tired.stats.life,2504);assert.equal(tired.turn,2);
 });
 test('normal companionship is free of extra age loss but repetition retains a clear penalty',t=>{
  t.mock.method(Math,'random',()=>.99);let s=newGame('相伴');s.phase=5;const id=s.harem.members[0].id;
- s=palaceAction(s,'company',{id}).state;assert.equal(s.stats.life,2160);
- s=palaceAction(s,'company',{id}).state;assert.equal(s.stats.life,2158);
+ s=palaceAction(s,'company',{id}).state;assert.equal(s.stats.life,2520);
+ s=palaceAction(s,'company',{id}).state;assert.equal(s.stats.life,2518);
 });
 test('balance normalization preserves old resources, exhausted reigns and historical supply snapshots',()=>{
  const s=newGame('旧进度');delete s.balanceRulesVersion;s.stats.life=777;s.stats.age=45;
@@ -61,11 +61,11 @@ test('opening treasury can buy a meaningful basic company without eliminating pr
  assert.equal(quoteKitPurchase({elephant:100},'india').cost,6000);assert.throws(()=>quoteKitPurchase({elephant:100},'sheng'),/产地/);
  const p=TROOP_KITS.find(k=>k.id==='infantry').price;assert.ok(TROOP_KITS.find(k=>k.id==='heavy-cavalry').price>p*3);
 });
-test('full natural lifetime reaches age eighty and an eligible heir starts with the same age-to-life scale',async()=>{
- const {succeedDynasty}=await import('../src/national-actions.mjs');const s=newGame('六十年历法');s.dynasty.heirId='prince-1';
+test('full natural lifetime reaches age ninety and an eligible heir starts with the same age-to-life scale',async()=>{
+ const {succeedDynasty}=await import('../src/national-actions.mjs');const s=newGame('七十年历法');s.dynasty.heirId='prince-1';
  // Calendar/lineage isolation: foreign invasions are covered by real-start audits.
  for(const r of s.domestic.diplomacy)r.relation='nonaggression';
- for(let i=0;i<2160;i++){sleepUntilNextTurn(s);assert.equal(s.turn,i+2);}
- assert.equal(s.stats.age,80);assert.equal(s.stats.life,0);assert.ok(s.reignResult);
- const next=succeedDynasty(s);assert.equal(next.stats.life,(80-next.stats.age)*36);assert.ok(next.stats.life>0);assert.equal(next.dynasty.pastReigns.length,1);validateSave(next);
+ for(let i=0;i<2520;i++){s.stats.happiness=0;sleepUntilNextTurn(s);assert.equal(s.turn,i+2);}
+ assert.equal(s.stats.age,90);assert.equal(s.stats.life,0);assert.ok(s.reignResult);
+ const heir=s.domestic.royalFamily.find(p=>p.id===s.dynasty.heirId);Object.assign(heir,{age:40,status:'palace'});const next=succeedDynasty(s);assert.equal(next.stats.life,(90-next.stats.age)*36);assert.ok(next.stats.life>0);assert.equal(next.dynasty.pastReigns.length,1);validateSave(next);
 });

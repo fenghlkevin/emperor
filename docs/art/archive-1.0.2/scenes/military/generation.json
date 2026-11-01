@@ -1,0 +1,14 @@
+{
+  "mode": "built-in image_gen",
+  "date": "2026-10-28",
+  "assets": [
+    {
+      "file": "central-arsenal-v1.png",
+      "prompt": "Create a polished panoramic illustration asset for a Chinese ancient emperor strategy game, central imperial arsenal courtyard, Tang dynasty inspired. Warm muted parchment gold, aged timber, dark bronze iron, subtle cinnabar red, desaturated jade. Painterly detailed historical game concept art, grounded materials, elegant mature style matching illustrated silk scroll game interfaces. Wide horizontal composition, about 3:1. View from inside arsenal onto courtyard: foreground left and right orderly wooden racks with spears, straight swords, round shields, lamellar armor and helmets; middle distance a quartermaster in dark robe checking a bamboo ledger while two soldiers in lamellar armor carry a wooden crate of equipment. Roofed warehouses and a few distant assembled recruits with banners in the rear. Clearly military logistics, no weaving or civilian machinery, no battle, no fantasy magic. Keep the main weapon racks and soldier equipment near horizontal center band so it works cropped as a shallow UI banner, readable silhouettes, clean not cluttered. Soft late afternoon light, calm readiness. No letters, no text, no UI, no borders or watermark. Output one standalone image."
+    },
+    {
+      "file": "central-recruitment-v1.png",
+      "prompt": "A standalone wide panoramic 3:1 illustration for an ancient Chinese emperor strategy game: new recruits gathering at a Tang-dynasty central army camp registration courtyard, a calm military enlistment scene. Match warm muted parchment gold, aged timber, dark iron lamellar armor, restrained cinnabar red and jade tones, mature detailed painterly historical game art. Foreground left: seated military clerk at a sturdy desk recording names on bamboo slips, two commoner recruits in plain earth-toned tunics handing in their registration. Center: a few new recruits standing in orderly line, some carrying modest travel bundles, quartermaster supervising; right middle distance armored drill instructor and soldiers assembling under red standards. Timber gate and barracks, distant mountains. Soft daylight, hopeful dignified atmosphere, no fighting, no violence, no extravagance. Composition clear and readable, important activity within the middle horizontal band for shallow UI banner cropping. No visible writing, no text, no UI, no border, no watermark."
+    }
+  ]
+}

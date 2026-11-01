@@ -1,6 +1,6 @@
 import test from 'node:test';import assert from 'node:assert/strict';
 import {newGame,validateSave} from '../src/game.mjs';
-import {quoteRevenue,executeRevenue} from '../src/revenue.mjs';
+import {quoteRevenue,executeRevenue,subsidyMaximum} from '../src/revenue.mjs';
 import {quoteDisasterSubsidy,settleDisasters} from '../src/disasters.mjs';
 const fixture=()=>{const s=newGame('赈灾'),p=s.domestic.provinces[0];p.disaster={kind:'flood',startTurn:1,endTurn:7};p.status.situation='disaster';s.domestic.disasters.history.unshift({provinceId:p.id,turn:1,endTurn:7,kind:'flood',grainLoss:0,cashLoss:0});return s;};
 const command=(s,n=1600)=>({id:s.domestic.fiscalActions.nextId,kind:'subsidy',amounts:{hebei:n}});
@@ -11,3 +11,7 @@ test('last disaster turn remains and unaffordable aid is atomic',()=>{const s=fi
 test('shortened period settles naturally and forged shortening metadata rejects',()=>{let s=fixture();s=executeRevenue(s,command(s)).state;const bad=structuredClone(s);bad.domestic.provinces[0].disaster.reliefTurns++;assert.throws(()=>validateSave(bad));s.domestic.disasters.seed=0;settleDisasters(s.domestic,6);assert.ok(s.domestic.provinces[0].disaster?.startTurn!==1);});
 
 test('mixed-state subsidies apply disaster relief and living improvement independently',()=>{const s=fixture(),p=s.domestic.provinces[1],living=p.status.livingStandard,n=executeRevenue(s,{id:1,kind:'subsidy',amounts:{hebei:99999,henan:1910}}).state;assert.equal(n.domestic.provinces[0].status.livingStandard,38);assert.equal(n.domestic.provinces[0].disaster.endTurn,6);assert.equal(n.domestic.provinces[1].status.livingStandard,living+1);assert.equal(n.stats.treasury,s.stats.treasury-3510);validateSave(n);});
+
+test('same disaster has a cumulative two-turn relief cap and a new event resets it',()=>{let s=fixture();s=executeRevenue(s,command(s)).state;s.turn=2;s=executeRevenue(s,command(s)).state;s.turn=3;const p=s.domestic.provinces[0],before=JSON.stringify(s);assert.equal(quoteDisasterSubsidy(p,3,99999).maximum,0);assert.throws(()=>executeRevenue(s,command(s,99999)),/累计减灾已达2旬上限/);assert.equal(JSON.stringify(s),before);p.disaster={kind:'drought',startTurn:3,endTurn:12};assert.equal(quoteDisasterSubsidy(p,3,1600).shortened,1);});
+
+test('living subsidy is capped at the exact amount for 100 and stops at 100',()=>{const s=fixture(),p=s.domestic.provinces[1];p.status.livingStandard=99.37;const maximum=subsidyMaximum(p,s.turn);assert.equal(maximum,Math.ceil(63*p.population.total/10000));const cmd={id:s.domestic.fiscalActions.nextId,kind:'subsidy',amounts:{[p.id]:999999}};const q=quoteRevenue(s,cmd);assert.equal(q.cost,maximum);const n=executeRevenue(s,cmd).state,city=n.domestic.provinces.find(c=>c.id===p.id);assert.equal(city.status.livingStandard,100);assert.equal(subsidyMaximum(city,n.turn),0);assert.throws(()=>quoteRevenue(n,{...cmd,id:n.domestic.fiscalActions.nextId}),/生活水平已达100/);});

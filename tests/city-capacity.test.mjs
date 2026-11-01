@@ -87,18 +87,18 @@ test('amnesty and auspices respect the hard limit and record actual arrivals',()
 test('migration and military moves reject over-capacity targets without losing source residents',()=>{
  const s=newGame('迁民帝'),source=city(s),target=s.domestic.provinces[1];packed(target);target.welfare.stability=100;
  const before=structuredClone(s);assert.throws(()=>executeNational(s,{id:s.domestic.stateDevelopment.nextId,kind:'migration',sourceId:source.id,targetId:target.id,amount:1}),/超载上限/);
- assert.throws(()=>quoteKitCommand(s,{kind:'transfer',sourceId:source.id,targetId:target.id,soldiers:1}),/超载上限/);assert.deepEqual(s,before);
+ assert.throws(()=>quoteKitCommand(s,{kind:'transfer',sourceId:'central',targetId:target.id,soldiers:1}),/超载上限/);assert.deepEqual(s,before);
  packed(s.domestic.provinces.find(p=>p.id===s.domestic.centralArmy.sourceProvinceId));
  assert.throws(()=>quoteKitCommand(s,{kind:'recruit',sourceId:'central',amount:1}),/超载上限/);
 });
 
 test('expansion raises both population limits, preserves land and population, charges once and rolls back failed saves',()=>{
  const s=newGame('扩城帝'),p=city(s),before=structuredClone(s),r=action(s,{kind:'expand'});
- assert.equal(city(r.state).cityCapacity.population,p.cityCapacity.population+CITY_EXPANSION_PEOPLE);assert.deepEqual(city(r.state).population,p.population);assert.deepEqual(city(r.state).economy,p.economy);
+ assert.equal(city(r.state).cityCapacity.population,p.cityCapacity.population);assert.deepEqual(city(r.state).population,p.population);assert.deepEqual(city(r.state).economy,p.economy);
  assert.equal(r.state.stats.treasury,s.stats.treasury-CITY_EXPANSION_COST);
  assert.throws(()=>persistCandidate(s,r.state,{setItem(){throw Error('quota');}}),/保存失败/);assert.deepEqual(s,before);
  persistCandidate(s,r.state,{setItem(){}});assert.throws(()=>executeIndustry(r.state,{id:1,kind:'expand',provinceId:p.id}),/已执行/);
- assert.equal(validateSave(structuredClone(r.state)).domestic.provinces[0].cityCapacity.population,p.cityCapacity.population+CITY_EXPANSION_PEOPLE);
+ assert.equal(validateSave(structuredClone(r.state)).domestic.provinces[0].cityCapacity.population,p.cityCapacity.population);
 });
 
 test('old saves receive capacities once, preserve resources and pending reservations; partial or invalid records cannot reset limits',()=>{

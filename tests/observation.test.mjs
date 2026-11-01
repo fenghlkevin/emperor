@@ -11,7 +11,7 @@ test('prosperity increases attendance, deterministic and bounded',()=>{
 test('one reward per turn and attendance survives save round trip',()=>{
  const s=newGame('朝仪');s.phase=1;s.stats.happiness=40;
  const first=observe(s),second=observe(first.state);
- assert.equal(first.state.stats.happiness,45);assert.equal(second.state.stats.happiness,45);assert.equal(second.state.stats.energy,first.state.stats.energy);
+ assert.equal(first.state.stats.happiness,50);assert.equal(second.state.stats.happiness,50);assert.equal(second.state.stats.energy,first.state.stats.energy);
  assert.deepEqual(observationReport(validateSave(JSON.parse(JSON.stringify(first.state)))),first.report);
  const next=structuredClone(first.state);next.turn++;assert.equal(observationReport(next).turn,next.turn);
 });

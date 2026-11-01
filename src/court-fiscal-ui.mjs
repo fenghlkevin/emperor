@@ -1,7 +1,7 @@
 import {balanced} from './development-balance.mjs';
 import {quoteDisasterSubsidy} from './disasters.mjs';
 import {quoteProvinceResources} from './province-resources.mjs';
-import {CENSUS_COST,quoteRevenue} from './revenue.mjs';
+import {CENSUS_COST,quoteRevenue,subsidyMaximum} from './revenue.mjs';
 import {countrySummary} from './domestic.mjs';
 import {courtFiscalPlan} from './court-fiscal.mjs';
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -16,8 +16,8 @@ export function fiscalControls(state,p,kind,edits){
 }
 
 function localFiscalControls(state,p,kind,edits){
- const tax=kind==='tax',value=edits[p.id]??(tax?Math.round(p.budget.taxRate*100):0);
- return `<section class="fiscal-local-command" data-fiscal-province="${esc(p.id)}"><h3 class="atlas-section-title">${tax?'核定赋税':'中央补助'}</h3><div class="fiscal-local-baseline">${tax?`<span>当前税率 <strong>${Math.round(p.budget.taxRate*100)}%</strong></span>`:`<span>本州人口 <strong>${fmt(p.population.total)} 人</strong></span><span>生活水平 <strong>${fmt(p.status.livingStandard)} / 100</strong></span>`}</div><label class="atlas-amount">${tax?'拟定税率 / %':'补助金额 / 两'}<div><button data-fiscal-step="${tax?-1:-100}" aria-label="${tax?'降低1个百分点':'减少100两'}">−</button><input data-fiscal-value type="number" aria-label="${esc(p.name)}${tax?'拟定税率':'补助银两'}" min="0" max="${tax?50:1000000000}" step="1" value="${Number.isFinite(value)?value:''}"><button data-fiscal-step="${tax?1:100}" aria-label="${tax?'提高1个百分点':'增加100两'}">＋</button></div></label><div data-fiscal-outlook></div><div class="fiscal-draft-changes" data-fiscal-draft></div></section>`;
+ const tax=kind==='tax',maximum=tax?50:subsidyMaximum(p,state.turn),value=edits[p.id]??(tax?Math.round(p.budget.taxRate*100):0);
+ return `<section class="fiscal-local-command" data-fiscal-province="${esc(p.id)}"><h3 class="atlas-section-title">${tax?'核定赋税':'中央补助'}</h3><div class="fiscal-local-baseline">${tax?`<span>当前税率 <strong>${Math.round(p.budget.taxRate*100)}%</strong></span>`:`<span>本州人口 <strong>${fmt(p.population.total)} 人</strong></span><span>生活水平 <strong>${fmt(p.status.livingStandard)} / 100</strong></span>`}</div><label class="atlas-amount">${tax?'拟定税率 / %':'补助金额 / 两'}<div><button data-fiscal-step="${tax?-1:-100}" aria-label="${tax?'降低1个百分点':'减少100两'}">−</button><input data-fiscal-value type="number" aria-label="${esc(p.name)}${tax?'拟定税率':'补助银两'}" min="0" max="${maximum}" step="1" value="${Number.isFinite(value)?Math.min(value,maximum):''}" ${maximum===0?'disabled':''}><button data-fiscal-step="${tax?1:100}" aria-label="${tax?'提高1个百分点':'增加100两'}">＋</button></div></label><div data-fiscal-outlook></div><div class="fiscal-draft-changes" data-fiscal-draft></div></section>`;
 }
 function updateLocalFiscalPreview(root,state,kind,edits,plan){
  const p=state.domestic.provinces.find(p=>p.id===root.querySelector('[data-fiscal-province]')?.dataset.fiscalProvince);if(!p)return;
@@ -25,7 +25,7 @@ function updateLocalFiscalPreview(root,state,kind,edits,plan){
  if(kind==='subsidy'){
   const after=row?.after??p.status.livingStandard;
   const relief=row?.disaster??quoteDisasterSubsidy(p,state.turn,0);
-  outlook.innerHTML=`${relief?`<div class="fiscal-local-result"><small>本州剩余灾期</small><strong>${relief.before} <span>→</span> ${relief.after} <em>旬</em></strong></div><p class="fiscal-local-disaster">灾期 ${relief.before} → ${relief.after} 旬 · 生活水平不变 <span title="赈灾所需${fmt(relief.minimum)}两；每州每旬最多缩短1旬，至少保留1旬。受灾期间补助不增加生活水平。">?</span></p>`:`<div class="fiscal-local-result"><small>本州生活水平</small><strong>${fmt(p.status.livingStandard)} <span>→</span> ${fmt(after)} <em>/ 100</em></strong></div>`}${plan?`<p class="fiscal-local-total">合计拨款 <b>${fmt(plan.cost)} 两</b> · 国库余额 ${fmt(plan.treasuryAfter)} 两</p>`:''}`;
+  outlook.innerHTML=`${relief?`<div class="fiscal-local-result"><small title="赈灾所需${fmt(relief.minimum)}两；每州每旬最多缩短1旬，每场灾情累计最多2旬，至少保留1旬。">本州剩余灾期</small><strong>${relief.before} <span>→</span> ${relief.after} <em>旬</em></strong></div>`:`<div class="fiscal-local-result"><small>本州生活水平</small><strong>${fmt(p.status.livingStandard)} <span>→</span> ${fmt(after)} <em>/ 100</em></strong></div>`}${relief?`<p class="fiscal-local-help">${relief.blockedReason||`每次需 ${fmt(relief.minimum)} 两 · 本场还可减灾 ${relief.remaining} 旬`}</p>`:p.status.livingStandard>=100?'<p class="fiscal-local-help">生活水平已达100，不能继续补助。</p>':`<p class="fiscal-local-help">升至100最多需 ${fmt(subsidyMaximum(p,state.turn))} 两</p>`}${plan?`<p class="fiscal-local-total">合计拨款 <b>${fmt(plan.cost)} 两</b> · 国库余额 ${fmt(plan.treasuryAfter)} 两</p>`:''}`;
  }else{
   const rate=edits[p.id]??Math.round(p.budget.taxRate*100);
   if(!Number.isSafeInteger(rate)||rate<0||rate>50){outlook.innerHTML='<p class="atlas-warning">税率须为0–50的整数。</p>';return;}
@@ -34,6 +34,7 @@ function updateLocalFiscalPreview(root,state,kind,edits,plan){
  }
 }
 export function updateFiscalPreview(root,state,kind,edits){
+ const field=root.querySelector('[data-fiscal-value]');if(field){for(const b of root.querySelectorAll('[data-fiscal-step]'))b.disabled=field.disabled||(Number(b.dataset.fiscalStep)>0?Number(field.value)>=Number(field.max):Number(field.value)<=0);}
  const changes=root.querySelector('[data-fiscal-draft]'),outlook=root.querySelector('[data-fiscal-outlook]');if(!changes||!outlook)return;
  let plan;try{plan=courtFiscalPlan(state,kind,edits);}catch{plan=null;}
  const owned=countrySummary(state.domestic).provinces;

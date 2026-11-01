@@ -1,8 +1,21 @@
-import {national,famine} from './helpers/national.mjs';
 import test from 'node:test';import assert from 'node:assert/strict';
-import {newGame} from '../src/game.mjs';import {courtAgenda} from '../src/court-agenda.mjs';import {visibleCourtAgenda,archivePetition,restorePetitions,readArchived} from '../src/court-petition-preferences.mjs';
+import {newGame,validateSave} from '../src/game.mjs';
+import {courtAgenda} from '../src/court-agenda.mjs';
+import {acknowledgeCourtReport} from '../src/court-report-events.mjs';
+import {visibleCourtAgenda,archivePetition,readArchived} from '../src/court-petition-preferences.mjs';
 const storage=()=>{const data=new Map();return {getItem:k=>data.get(k)??null,setItem:(k,v)=>data.set(k,v),removeItem:k=>data.delete(k)};};
-function disaster(){const s=newGame('收折'),p=s.domestic.provinces[0];p.disaster={kind:'flood',startTurn:1,endTurn:7};return s;}
-test('sufficient food and ordinary storage loss do not create food petitions; disasters explain real wait and grain route',()=>{const s=disaster(),p=s.domestic.provinces[0];national(s.domestic).fiscal.grain=1000000;const a=courtAgenda(s);assert.ok(!a.some(a=>a.id==='food'||a.id==='storage'));const d=a.find(a=>a.id==='disaster');assert.equal(d.action,'atlas-grain');assert.match(d.summary,/足够/);assert.match(d.summary,/6旬/);assert.match(d.summary,/无法立即消退/);famine(s.domestic);assert.ok(courtAgenda(s).some(a=>a.id==='food'));assert.match(courtAgenda(s).find(a=>a.id==='disaster').summary,/全国/);});
-test('archive survives reread without changing game facts, restores manually, and a worse risk resurfaces',()=>{const s=disaster(),store=storage(),item=courtAgenda(s).find(a=>a.id==='disaster'),before=JSON.stringify(s);archivePetition(s,item,store);assert.equal(JSON.stringify(s),before);assert.ok(!visibleCourtAgenda(s,store).some(a=>a.id==='disaster'));s.turn++;assert.ok(!visibleCourtAgenda(s,store).some(a=>a.id==='disaster'));famine(s.domestic);assert.ok(visibleCourtAgenda(s,store).some(a=>a.id==='disaster'));const original=JSON.parse(before);assert.ok(original.domestic.provinces[0].disaster);restorePetitions(s,store);assert.deepEqual(readArchived(s,store),[]);});
-test('failed archive does not hide a petition; dynasty preferences and military emergency stay separate',()=>{const s=disaster(),store=storage(),item=courtAgenda(s).find(a=>a.id==='disaster'),before=JSON.stringify(s);assert.throws(()=>archivePetition(s,item,{getItem:()=>null,setItem(){throw Error('quota');}}),/保存失败/);assert.equal(JSON.stringify(s),before);archivePetition(s,item,store);const other=structuredClone(s);other.createdAt+='other';assert.ok(visibleCourtAgenda(other,store).some(a=>a.id==='disaster'));assert.throws(()=>archivePetition(s,{id:'war'},store),/须先处理/);});
+function completed(){const s=newGame('已阅');s.domestic.provinces[0].buildingEffects.pending={building:'granaries',completedTurn:1,effectiveTurn:2};return s;}
+test('read receipts survive save export and do not consume resources or resurrect completion notices',()=>{
+ const s=completed(),item=courtAgenda(s).find(a=>a.id.startsWith('works-complete')),before=JSON.stringify(s);
+ const next=acknowledgeCourtReport(s,item);assert.equal(JSON.stringify(s),before);assert.deepEqual(next.stats,s.stats);
+ const loaded=validateSave(JSON.parse(JSON.stringify(next)));assert.ok(!courtAgenda(loaded,{limit:Infinity}).some(a=>a.archiveKey===item.archiveKey));
+ assert.ok(courtAgenda(loaded,{limit:Infinity,includeRead:true}).some(a=>a.archiveKey===item.archiveKey));
+});
+test('legacy local receipts still filter notifications and remain isolated by dynasty',()=>{
+ const s=completed(),store=storage(),item=courtAgenda(s)[0];archivePetition(s,item,store);assert.ok(!visibleCourtAgenda(s,store).length);
+ const other=structuredClone(s);other.createdAt+='other';assert.ok(visibleCourtAgenda(other,store).length);assert.equal(readArchived(s,store).length,1);
+});
+test('emergencies and pending decisions cannot be marked as read; invalid journal saves are rejected',()=>{
+ const s=completed();assert.throws(()=>acknowledgeCourtReport(s,{urgent:true}),/须先办理/);assert.throws(()=>acknowledgeCourtReport(s,{kind:'request'}),/须先办理/);
+ s.domestic.courtReports={version:1,read:[null],events:[]};assert.throws(()=>validateSave(s),/奏章记录无效/);
+});

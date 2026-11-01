@@ -144,6 +144,7 @@ function cardForUnit(b,u,suffix,count){const variant=suffix==='scout'?b.cards.ru
 function allocate(units,k){
  const total=units.reduce((n,u)=>n+u.initial,0),rows=units.map((u,i)=>({u,i,q:Math.floor(k*u.initial/total),fraction:k*u.initial/total%1}));
  const order=[...rows].sort((a,b)=>b.fraction-a.fraction||KINDS.indexOf(a.u.kind)-KINDS.indexOf(b.u.kind)||a.i-b.i);
+ if(k>=units.length)for(const row of rows)if(!row.q){const donor=[...rows].sort((a,b)=>b.q-a.q)[0];if(donor.q>1){donor.q--;row.q++;}}
  const missing=k-rows.reduce((n,r)=>n+r.q,0);for(let i=0;i<missing;i++)order[i%order.length].q++;
  return rows;
 }
@@ -166,18 +167,18 @@ export function attachCards(b,{rulesVersion=3,seed,first,seeds}={}){
   const raw=[];
   for(const row of allocate(army,k))for(let j=0;j<row.q;j++){const count=Math.min(CARD_RULES.unitSize,CARD_RULES.compactArmy?Math.floor(row.u.initial/row.q)+(j<row.u.initial%row.q?1:0):p.reserve[row.u.id]);if(count){p.reserve[row.u.id]-=count;raw.push({u:row.u,count});}}
   raw.sort((a,b)=>CARD_DEFINITIONS[normalize(a.u.kind)+'_line'].cost-CARD_DEFINITIONS[normalize(b.u.kind)+'_line'].cost||KINDS.indexOf(a.u.kind)-KINDS.indexOf(b.u.kind));
+  const usedPeople=new Set([leader(b,side).cardPersonId]);
+  for(let i=0;i<raw.length;){
+   const row=raw[i],d=definitionFor(b,row.u);
+   if(d&&row.u.cardPersonId&&!usedPeople.has(row.u.cardPersonId)){
+    raw.splice(i,1);usedPeople.add(row.u.cardPersonId);p.deck.push(makeCard(b,side,d,row.u,row.count));
+   }else i++;
+  }
   if(raw.length){const front=raw.shift(),id=cardForUnit(b,front.u,'vanguard',front.count);c.catalog[id].front=true;p.hand.push(id);}
   const scoutCount=Math.min(5,Math.max(0,Math.ceil(k/3)-1));
   for(let j=0;j<scoutCount&&raw.length;j++){
    const counts=Object.fromEntries(KINDS.map(kind=>[kind,raw.filter(x=>x.u.kind===kind).length]));
    raw.sort((a,b)=>counts[b.u.kind]-counts[a.u.kind]||KINDS.indexOf(a.u.kind)-KINDS.indexOf(b.u.kind));const row=raw.shift();p.deck.push(cardForUnit(b,row.u,'scout',row.count));
-  }
-  const usedPeople=new Set([leader(b,side).cardPersonId]);let generals=0;
-  for(let i=0;i<raw.length&&generals<Math.min(3,Math.ceil(k/6));){
-   const row=raw[i],d=definitionFor(b,row.u);
-   if(d&&row.count>=(CARD_RULES.compactArmy?25:CARD_RULES.unitSize)&&row.u.cardPersonId&&!usedPeople.has(row.u.cardPersonId)){
-    raw.splice(i,1);usedPeople.add(row.u.cardPersonId);generals++;p.deck.push(makeCard(b,side,d,row.u,row.count));
-   }else i++;
   }
   raw.forEach((row,i)=>p.deck.push(cardForUnit(b,row.u,(i+1)%3===0?'elite':'line',row.count)));
   for(const definitionId of weaponSelectionIds(weaponAllocation?.[side]?.selection)){const d=c.definitionCatalog[definitionId],id=makeCard(b,side,d),x=c.catalog[id];x.attack=d.attack;x.durability=d.durability;c.weaponSupplies[id]={sourceId:weaponAllocation[side].sourceId,kind:d.kitKind,quantity:1,lost:false};p.deck.push(id);}

@@ -1,13 +1,15 @@
+import {bindCentralArmyEntries} from './central-army-entry.mjs';
 import {openMilitaryHelp} from './military-help-ui.mjs';
 // Reuse the fiscal scroll frame without replacing the military controls or rules.
 export function militaryPage(d,title){
+ bindCentralArmyEntries(d);
  d.classList.add('court-atlas','military-single-page');
  const header=d.querySelector(':scope>header');header.classList.add('atlas-header');header.querySelector('h1').textContent=title;
  const close=header.querySelector('button');close.classList.add('court-dialog-close');close.textContent='关闭 ×';close.setAttribute('aria-label','返回朝堂');
  d.querySelector(':scope>nav')?.remove();
  const body=d.querySelector('.personnel-scene-body,.revenue-body,.governance-content');body.classList.add('military-layout');
  const decision=d.querySelector('.personnel-decision');if(decision)decision.classList.add('atlas-order');
- for(const input of d.querySelectorAll('input[type=number]')){
+ for(const input of d.querySelectorAll('input[type=number]:not([data-purchase-kit]):not([data-transfer-amount])')){
   const field=document.createElement('div');field.className='military-amount atlas-amount';
   const controls=document.createElement('div');input.before(field);field.append(controls);
   const step=direction=>{if(direction<0)input.stepDown();else input.stepUp();input.dispatchEvent(new Event('input',{bubbles:true}));};

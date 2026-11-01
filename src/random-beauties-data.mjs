@@ -1,4 +1,7 @@
 export const RANDOM_BEAUTY_ART=[
+  {"id":"original-summer-20261027-blue-porcelain","name":"青瓷佳人","asset":"assets/beauties/random/原创女子/青瓷佳人.png","regionId":"sheng","poolScope":"mainland","legacyAssets":[],"category":"原创女子"},
+  {"id":"japan-aoi-short-20261027-01","name":"日本女子-葵司-短发碧绡","asset":"assets/beauties/random/番邦女子/日本女子-葵司-短发碧绡.png","regionId":"japan","legacyAssets":[],"category":"番邦女子"},
+  {"id":"original-summer-20261027-gray-plum","name":"灰绡梅影","asset":"assets/beauties/random/原创女子/灰绡梅影.png","regionId":"sheng","poolScope":"mainland","legacyAssets":[],"category":"原创女子"},
   {
     "id": "zhongyuan-expansion-20261021-03",
     "name": "陈瑶-杏绡桂囊",
@@ -2183,7 +2186,7 @@ export const RANDOM_BEAUTY_ART=[
   {"id": "model-couture-20261026-15", "name": "杨颖-古绡模特", "asset": "assets/beauties/random/女明星/杨颖-古绡模特.png", "regionId": "sheng", "poolScope": "mainland", "legacyAssets": [], "category": "女明星"},
   {"id":"model-couture-20261026-17","name":"赵佳丽-古绡模特","asset":"assets/beauties/random/女明星/赵佳丽-古绡模特.png","regionId":"sheng","poolScope":"mainland","legacyAssets":["assets/beauties/random/女明星/王李丹妮-古绡模特.png"],"category":"女明星"},
   {"id": "model-couture-20261026-18", "name": "柳岩-古绡模特", "asset": "assets/beauties/random/女明星/柳岩-古绡模特.png", "regionId": "sheng", "poolScope": "mainland", "legacyAssets": [], "category": "女明星"},
-  {"id": "model-couture-20261026-19", "name": "徐若瑄-古绡模特", "asset": "assets/beauties/random/女明星/徐若瑄-古绡模特.png", "regionId": "sheng", "poolScope": "mainland", "legacyAssets": [], "category": "女明星"},
+  {"id": "model-couture-20261026-19", "name": "何泓姗-古绡模特", "asset": "assets/beauties/random/女明星/何泓姗-古绡模特.png", "regionId": "sheng", "poolScope": "mainland", "legacyAssets": ["assets/beauties/random/女明星/徐若瑄-古绡模特.png"], "category": "女明星"},
   {"id":"liu-yifei-variants-20261026-紫绡团扇","name":"刘亦菲-紫绡团扇","asset":"assets/beauties/random/女明星/刘亦菲-青竹团扇-柳岩衣款-v2.png","regionId":"sheng","poolScope":"mainland","legacyAssets":[],"category":"女明星"},
   {"id":"liu-yifei-variants-20261026-月白轻纱","name":"刘亦菲-月白轻纱","asset":"assets/beauties/random/女明星/刘亦菲-月白抚琴-柳岩衣款-v2.png","regionId":"sheng","poolScope":"mainland","legacyAssets":[],"category":"女明星"},
   {"id":"liu-yifei-variants-20261026-赵灵儿","name":"刘亦菲-赵灵儿","asset":"assets/beauties/random/女明星/刘亦菲-赵灵儿.png","regionId":"sheng","poolScope":"mainland","legacyAssets":[],"category":"女明星"}

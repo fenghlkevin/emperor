@@ -8,13 +8,13 @@ export function openGameEditor(initial,commit){
  const discard=()=>!dirty||window.confirm('放弃尚未保存的修改？');
  function close(){if(discard())d.close();}
  d.querySelector('[data-close]').onclick=close;d.oncancel=e=>{e.preventDefault();close();};d.onclose=()=>d.remove();
- for(const [id,name] of [['people','文武人物'],['provinces','州郡城池'],['countries','国家势力']]){
+ for(const [id,name] of [['emperor','皇帝本人'],['people','文武人物'],['provinces','州郡城池'],['countries','国家势力']]){
   const b=document.createElement('button');b.type='button';b.textContent=name;b.dataset.kind=id;
-  b.onclick=()=>{if(!discard())return;kind=id;selected='';pending=null;dirty=false;draw();};d.querySelector('nav').append(b);
+  b.onclick=()=>{if(!discard())return;kind=id;selected=id==='emperor'?'emperor':'';query='';d.querySelector('input[type=search]').value='';pending=null;dirty=false;draw();};d.querySelector('nav').append(b);
  }
  d.querySelector('input[type=search]').oninput=e=>{query=e.target.value;drawList();};
  function drawList(){
-  d.querySelector('[data-list]').innerHTML=editorObjects(state,kind).filter(o=>`${o.name} ${o.office??''}`.includes(query.trim())).map(o=>`<button type="button" data-object="${esc(o.id)}" aria-pressed="${o.id===selected}"><b>${esc(o.name)}</b><small>${esc(kind==='people'?o.office:kind==='provinces'?state.domestic.countries.find(c=>c.id===o.countryId)?.name:o.id===state.domestic.playerCountryId?'本国':'外国')}</small></button>`).join('');
+  d.querySelector('[data-list]').innerHTML=editorObjects(state,kind).filter(o=>`${o.name} ${o.office??''}`.includes(query.trim())).map(o=>`<button type="button" data-object="${esc(o.id)}" aria-pressed="${o.id===selected}"><b>${esc(o.name)}</b><small>${esc(kind==='emperor'?'皇帝本人':kind==='people'?o.office:kind==='provinces'?state.domestic.countries.find(c=>c.id===o.countryId)?.name:o.id===state.domestic.playerCountryId?'本国':'外国')}</small></button>`).join('');
   d.querySelectorAll('[data-object]').forEach(b=>b.onclick=()=>{if(!discard())return;selected=b.dataset.object;pending=null;dirty=false;draw();});
  }
  function draw(){
@@ -23,6 +23,17 @@ export function openGameEditor(initial,commit){
   if(!editorAvailable(state)){panel.innerHTML='<h3>当前无法编辑</h3><p>请先完成当前战斗或危机；已经终评的王朝不可编辑。</p>';return;}
   if(!object){panel.innerHTML='<h3>选择编辑对象</h3><p>在左侧选择人物、州郡或国家，查看并修改当前数值。</p>';return;}
   panel.innerHTML=`<h3>${esc(object.name)}</h3><form><div class="editor-fields">${EDITOR_FIELDS[kind].map((f,i)=>{const value=editorValue(object,f.key)??f.min;return `<div class="editor-field"><label for="editor-number-${i}">${esc(f.label)}</label><input id="editor-number-${i}" name="${f.key}" type="number" min="${f.min}" max="${f.max}" step="1" required value="${value}"><input type="range" data-slider="${f.key}" min="${f.min}" max="${f.max}" step="1" value="${value}" aria-label="${esc(f.label)}滑条"><small>${f.min.toLocaleString()} — ${f.max.toLocaleString()}</small></div>`;}).join('')}</div><button class="primary" type="submit">核对修改</button></form><div data-review></div>`;
+  const form=panel.querySelector('form');
+  const syncLimits=()=>{
+   if(kind!=='emperor')return;
+   for(const [key,limit] of [['stats.energy','stats.maxEnergy'],['stats.life','stats.lifeLimit']]){
+    const number=form.elements.namedItem(key),cap=form.elements.namedItem(limit),slider=panel.querySelector(`[data-slider="${key}"]`);
+    const maximum=cap.value===''?Number(cap.min):Number(cap.value);
+    number.max=slider.max=String(maximum);
+    number.closest('.editor-field').querySelector('small').textContent=`${Number(number.min).toLocaleString()} — ${maximum.toLocaleString()}`;
+   }
+  };
+  syncLimits();
   panel.querySelectorAll('.editor-field').forEach(row=>{
    const number=row.querySelector('input[type=number]'),slider=row.querySelector('input[type=range]');
    const clamp=value=>Math.max(Number(number.min),Math.min(Number(number.max),Math.round(value)));
@@ -30,7 +41,18 @@ export function openGameEditor(initial,commit){
    number.oninput=()=>{if(number.value==='')return;const value=Number(number.value);if(Number.isFinite(value)){number.value=String(clamp(value));slider.value=number.value;}};
    number.onchange=()=>{number.value=String(clamp(Number(number.value)||Number(number.min)));slider.value=number.value;};
   });
-  panel.querySelector('form').oninput=()=>{dirty=true;pending=null;panel.querySelector('[data-review]').innerHTML='';message('数值尚未保存');};
+  const updateDraft=()=>{
+   syncLimits();
+   if(kind==='emperor')for(const key of ['stats.energy','stats.life']){
+    const number=form.elements.namedItem(key);
+    if(number.value!==''&&Number(number.value)>Number(number.max)){
+     number.value=number.max;panel.querySelector(`[data-slider="${key}"]`).value=number.value;
+    }
+   }
+   dirty=EDITOR_FIELDS[kind].some(f=>{const value=form.elements.namedItem(f.key).value;return value===''||Number(value)!==(editorValue(object,f.key)??f.min);});
+   pending=null;panel.querySelector('[data-review]').innerHTML='';message(dirty?'数值尚未保存':'');
+  };
+  form.oninput=updateDraft;form.onchange=updateDraft;
   panel.querySelector('form').onsubmit=e=>{e.preventDefault();try{
    const values=Object.fromEntries([...new FormData(e.target)].map(([k,v])=>[k,Number(v)]));pending=applyEditorChanges(state,kind,selected,values);
    panel.querySelector('[data-review]').innerHTML=`<h4>确认以下修改</h4><ul>${pending.changes.map(c=>`<li>${esc(c.label)}：${c.before} → <b>${c.after}</b></li>`).join('')}</ul><button type="button" data-apply class="primary">确认并保存</button>`;

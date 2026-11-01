@@ -1,3 +1,6 @@
+import {setQuantityLimits} from './quantity-controls.mjs';
+import {worldKitSummary} from './troop-kit-world.mjs';
+import {cityPopulation} from './city-capacity.mjs';
 import {specialPlan,specialProjectPlan} from './special-buildings.mjs';
 import {balanced} from './development-balance.mjs';
 import {quoteShortage} from './action-feedback.mjs';
@@ -40,5 +43,14 @@ export function openNational(initial,root,onCommit,onClose,options={}){let state
  function draw(){dialog.innerHTML=`<header><div><small>宰相 · 六部会办</small><h1>国政长策</h1></div><span>国库 ${fmt(state.stats.treasury)} 两</span>${allowedTabs.length>1?`<select data-national-switch aria-label="切换国政功能">${tabs.filter(([id])=>allowedTabs.includes(id)).map(([id,name])=>`<option value="${id}" ${id===tab?'selected':''}>${name}</option>`).join('')}</select>`:''}<button data-close aria-label="关闭国政长策">×</button></header><section class="national-body"><p class="national-status" role="status">${esc(message)}</p>${pending?`<div class="national-confirm" role="alert"><p>${esc(pending.label)}</p><button data-cancel>取消</button><button data-confirm class="primary">确认并保存</button></div>`:''}${body()}</section><footer>项目试行规则 · 查看免费，确认后保存并消耗一次行动</footer>`;dialog.querySelector('[data-close]').onclick=()=>dialog.close();dialog.querySelector('[data-national-switch]')?.addEventListener('change',e=>{assertOfficeSurface(options.office,'national',e.target.value);tab=e.target.value;pending=null;message='';draw();});dialog.querySelectorAll('[data-national-tab]').forEach(b=>b.onclick=()=>{tab=b.dataset.nationalTab;pending=null;message='';draw();});dialog.querySelector('[data-confirm]')?.addEventListener('click',()=>execute(pending.command));dialog.querySelector('[data-cancel]')?.addEventListener('click',()=>{pending=null;draw();});dialog.querySelectorAll('[data-national-form]').forEach(f=>f.onsubmit=e=>{e.preventDefault();const c={kind:f.dataset.nationalForm,...Object.fromEntries(new FormData(f))};if(c.amount!==undefined)c.amount=Number(c.amount);if(c.accept!==undefined)c.accept=c.accept==='true';if(c.kind==='return-garrison')c.quantities=Object.fromEntries(arms().map(([k])=>[k,Number(c['gear-'+k])]));try{assertOfficeSurface(options.office,'national',tab);assertNationalOfficeCommand(options.office,c.kind);if(c.kind==='special'){const q=quoteSpecial(state,c);if(!q.canAfford)throw Error(quoteShortage(q,q.name+'开工'));pending={command:c,label:`${q.name}：在${provinces().find(p=>p.id===c.provinceId).name}开工，预付${fmt(q.cost)}两，需${q.turns}个正常施工旬；${q.effect}`};}else{const preview=executeNational(state,{...c,id:state.domestic.stateDevelopment.nextId});pending={command:c,label:preview.message+(['abdicate','ascend'].includes(c.kind)?'。此操作会结束本局，请确认。':'。确认后执行并保存。')};}message='';draw();dialog.querySelector('.national-confirm')?.scrollIntoView({block:'nearest'});}catch(e){message=e.message;draw();}});
  bindProjectWorkControls(dialog,state,onCommit,result=>{state=result.state;dialog.close();});
  const f=dialog.querySelector('[data-national-form="special"]');if(f){const preview=()=>{const c=Object.fromEntries(new FormData(f)),p=specialPlan(state.domestic,c.building);let text=`${p.name} · ${fmt(p.cost)}两 · ${specialDuration(p)} · 民伕${p.workers}人 · 才艺${p.talent*5} · ${p.effect}`;try{const q=quoteSpecial(state,c);text=`${p.name} · 实支${fmt(q.cost)}两（基准${fmt(p.cost)}） · ${specialDuration(p)} · 民伕${p.workers}人 · ${p.effect}；执行后国库${fmt(q.treasuryAfter)}两${q.canAfford?'':'；'+quoteShortage(q,q.name+'开工')}`;}catch(e){text+='；'+e.message;}dialog.querySelector('[data-special-preview]').textContent=text;};f.onchange=preview;preview();}}
- draw();dialog.showModal();return dialog;
+ setQuantityLimits(dialog,input=>{
+ const form=input.closest('[data-national-form]');if(!form)return;
+ const kind=form.dataset.nationalForm,values=Object.fromEntries(new FormData(form));
+ if(kind==='gift')return state.stats.treasury;
+ if(kind==='migration'){
+ const p=provinces().find(p=>p.id===values.sourceId),target=provinces().find(p=>p.id===values.targetId);
+ return p&&target&&p!==target?Math.max(0,Math.min(p.population.total-Object.values(p.population.professions).reduce((a,b)=>a+b,0)-1,cityPopulation(target).limit-target.population.total,Math.floor(state.stats.treasury*10))):0;
+ }
+ if(kind==='return-garrison'){const row=worldKitSummary(state.domestic).find(r=>r.id===values.provinceId);return input.name==='amount'?row.soldiers.available:row.kits[input.name.slice(5)]?.available;}
+ });draw();dialog.showModal();return dialog;
 }

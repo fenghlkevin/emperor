@@ -18,12 +18,12 @@ test('ordinary training thresholds, age penalty and specialty order match recove
   }
  }
 });
-test('training costs forty even at cap, clamps low stamina and has no health/mood bonus',t=>{
+test('training costs thirty even at cap, clamps low stamina and has no health/mood bonus',t=>{
  t.mock.method(Math,'random',()=>.99);
  for(const [kind,key] of [['study','wisdom'],['music','charm'],['martial','martial'],['theatre','talent']]){
-  const s=newGame('修习');s.phase=1;Object.assign(s.stats,{[key]:499,energy:41,health:54,happiness:63});
+  const s=newGame('修习');s.phase=1;Object.assign(s.stats,{[key]:499,energy:31,health:54,happiness:63});
   const result=palaceAction(s,kind);assert.equal(result.state.stats[key],500);assert.equal(result.state.stats.energy,1);assert.equal(result.state.stats.health,54);assert.equal(result.state.stats.happiness,63);assert.match(result.message,/增加1/);assert.equal(s.stats[key],499);
-  result.state.stats.energy=40;const capped=palaceAction(result.state,kind);assert.equal(capped.state.stats[key],500);assert.equal(capped.state.stats.energy,0);assert.match(capped.message,/增加0/);assert.ok(resolveExhaustion(capped.state));assert.equal(capped.state.stats.energy,200);
+  result.state.stats.energy=30;const capped=palaceAction(result.state,kind);assert.equal(capped.state.stats[key],500);assert.equal(capped.state.stats.energy,0);assert.match(capped.message,/增加0/);assert.ok(resolveExhaustion(capped.state));assert.equal(capped.state.stats.energy,200);
   s.stats.energy=9;assert.equal(palaceAction(s,kind).state.stats.energy,0);
  }
 });
@@ -36,20 +36,20 @@ test('legacy energy ratios and ability progress migrate exactly once and reject 
 });
 test('sleep restores a bounded amount and turn transitions never refill stamina or health',()=>{
  let s=newGame('独寝');Object.assign(s.stats,{maxEnergy:500,energy:10,health:54});s.phase=1;
- s=palaceAction(s,'sleep').state;assert.equal(s.stats.energy,160);assert.equal(s.stats.health,59);const life=s.stats.life;
- advance(s);assert.equal(s.stats.energy,160);assert.equal(s.stats.health,59);assert.equal(s.stats.life,life-1);
+ s=palaceAction(s,'sleep').state;assert.equal(s.stats.energy,160);assert.equal(s.stats.health,64);const life=s.stats.life;
+ advance(s);assert.equal(s.stats.energy,160);assert.equal(s.stats.health,64);assert.equal(s.stats.life,life-1);
  s.stats.energy=490;s.stats.health=99;const capped=palaceAction(s,'sleep').state;assert.equal(capped.stats.energy,500);assert.equal(capped.stats.health,100);
  s.phase=5;const night=palaceAction(s,'sleep').state;assert.equal(night.stats.life,s.stats.life);leaveRoom(night);assert.equal(night.stats.energy,500);
- s.stats.energy=0;assert.equal(roomBlock(s,'dragon'),'');const exhausted=palaceAction(s,'sleep').state;assert.equal(exhausted.stats.energy,500);assert.equal(exhausted.stats.life,s.stats.life-30);
+ s.stats.energy=0;assert.equal(roomBlock(s,'dragon'),'');const exhausted=palaceAction(s,'sleep').state;assert.equal(exhausted.stats.energy,500);assert.equal(exhausted.stats.life,s.stats.life-15);
  s.phase=1;s.stats.energy=10;sleepUntilNextTurn(s);assert.equal(s.stats.energy,160);assert.equal(s.phase,0);
 });
 test('company restores actual capped energy, raises happiness five, and charges only repeated companionship life',t=>{
  t.mock.method(Math,'random',()=>.99);let s=newGame('后宫');s.stats.maxEnergy=500;s.stats.energy=1;s.stats.happiness=98;s.stats.health=54;
  const p=s.harem.members[0];Object.assign(p,{appearance:80,experience:0,rank:0});assert.equal(companionRecovery(p),210);const id=p.id;
- s=palaceAction(s,'company',{id}).state;assert.equal(s.stats.energy,211);assert.equal(s.stats.happiness,100);assert.equal(s.stats.health,54);assert.equal(s.stats.life,2160);assert.equal(s.harem.members[0].ability,210);assert.equal(s.harem.members[0].experience,1);assert.deepEqual(load(s),s);
+ s=palaceAction(s,'company',{id}).state;assert.equal(s.stats.energy,211);assert.equal(s.stats.happiness,100);assert.equal(s.stats.health,54);assert.equal(s.stats.life,2520);assert.equal(s.harem.members[0].ability,210);assert.equal(s.harem.members[0].experience,1);assert.deepEqual(load(s),s);
  for(const [rank,bonus] of [[0,50],[4,50],[5,20],[13,20],[14,5],[99,5],[null,5]])assert.equal(companionRecovery({appearance:40,experience:10,rank}),50+bonus);
  assert.equal(companionRecovery({appearance:40,experience:99,rank:0},false),40);
- assert.deepEqual(Array.from({length:9},(_,i)=>companyLifeCost(i+1)),[0,2,4,8,16,24,32,32,32]);
+ assert.deepEqual(Array.from({length:9},(_,i)=>companyLifeCost(i+1)),[0,2,3,4,4,4,4,4,4]);
  s.stats.energy=499;s.phase=5;const night=palaceAction(s,'company',{id});assert.equal(night.state.stats.energy,500);assert.match(night.message,/体力增加1/);assert.equal(night.state.stats.life,s.stats.life-2);
 });
 test('existing recruitment probability keeps its range on the new five-hundred scale',()=>{assert.equal(historicalChance({wisdom:0,charm:0}),.05);assert.ok(Math.abs(historicalChance({wisdom:500,charm:500})-.4)<1e-12);assert.ok(Math.abs(historicalChance({wisdom:250,charm:250})-.225)<1e-12);});

@@ -12,11 +12,14 @@ export const RITUAL_COST=1200,RITUAL_DURATION=12;
 export function initializeDisasters(d){if(!d||!Array.isArray(d.provinces))return d;d.disasters??={seed:184713,lastTurn:1,ritualUntil:0,lastRitualTurn:0,history:[]};for(const e of d.disasters.history||[])if(e.endTurn===undefined)e.endTurn=e.turn+(DISASTER_DURATIONS[e.kind]||3);
  for(const p of d.provinces){if(p.disaster===undefined){const e=d.disasters.history?.find(e=>e.provinceId===p.id&&e.endTurn>d.disasters.lastTurn);p.disaster=e?{kind:e.kind,startTurn:e.turn,endTurn:e.endTurn}:null;}}return d;}
 
+export const DISASTER_RELIEF_LIMIT=2;
 export function quoteDisasterSubsidy(p,turn,amount){
  const a=activeDisaster(p,turn),minimum=Math.max(1,Math.ceil(p.population.total*.01));
  if(!a)return null;
- const before=a.endTurn-turn,eligible=amount>=minimum&&a.lastReliefTurn!==turn&&before>1;
- return {before,after:eligible?before-1:before,shortened:eligible?1:0,minimum,endBefore:a.endTurn,endAfter:eligible?a.endTurn-1:a.endTurn};
+ const before=a.endTurn-turn,remaining=Math.max(0,DISASTER_RELIEF_LIMIT-(a.reliefTurns??0));
+ const blockedReason=remaining===0?'本场灾情累计减灾已达2旬上限。':before<=1?'灾期仅剩1旬，不能再缩短。':a.lastReliefTurn===turn?'本旬已赈灾，每州每旬仅可办理一次。':'';
+ const eligible=amount>=minimum&&!blockedReason;
+ return {remaining,blockedReason,maximum:blockedReason?0:minimum,before,after:eligible?before-1:before,shortened:eligible?1:0,minimum,endBefore:a.endTurn,endAfter:eligible?a.endTurn-1:a.endTurn};
 }
 export function applyDisasterSubsidy(d,p,turn,quote){
  if(!quote?.shortened)return;

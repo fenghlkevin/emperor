@@ -11,6 +11,13 @@ test('reports highlight numeric quantities including units without injecting mar
 test('seals distinguish urgent, requests and reports without implying approval',()=>{
  assert.equal(petitionSeal({urgent:true,action:'local-petition'}),'加急');
  assert.equal(petitionSeal({action:'local-petition'}),'请旨');
- assert.equal(petitionSeal({id:'works-complete:hebei'}),'复奏');
+ assert.equal(petitionSeal({id:'works-complete:hebei'}),'奏事');
  assert.equal(petitionSeal({id:'deficit'}),'奏事');
+});
+
+test('地方复奏兼容旧记录中的产业标识',()=>{
+ const html=petitionText('保障粮源：agriculture 89亩；pastoral、commerce、industry');
+ assert.ok(html.includes('农业'));
+ assert.ok(html.includes('牧业、商业、工业'));
+ assert.doesNotMatch(html,/agriculture|pastoral|commerce|industry/);
 });

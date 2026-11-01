@@ -1,0 +1,14 @@
+const {app,BrowserWindow}=require('electron');
+const path=require('node:path'),fs=require('node:fs');
+app.setPath('userData',`/private/tmp/emperor-works-unified-${process.pid}`);
+app.whenReady().then(async()=>{const w=new BrowserWindow({show:true,width:1440,height:1000,webPreferences:{sandbox:true,contextIsolation:true,nodeIntegration:false}});try{await w.loadFile(path.join(__dirname,'../index.html'));console.log(await w.webContents.executeJavaScript(`(async()=>{
+document.dispatchEvent(new KeyboardEvent('keydown',{key:'Escape',bubbles:true}));const {createPlayableGame}=await import('./src/game.mjs');const {openWorksMinister,WORKS_PAGES}=await import('./src/works-minister-ui.mjs');const {executeIndustry,settleIndustry,validateIndustry}=await import('./src/industry.mjs');
+const state=createPlayableGame('工部验收');for(const city of state.domestic.provinces){city.disaster=null;city.population.professions.militia=3000;}
+state.stats.treasury=100000;state.domestic.countries.find(c=>c.id===state.domestic.playerCountryId).fiscal.treasury=100000;
+for(const [kind] of WORKS_PAGES){const d=openWorksMinister(state,document.body,s=>s,()=>{},{kind});if(!d.querySelector('.wm-map-panel svg')||!d.querySelector('.wm-map-command'))throw Error(kind+'缺少地图布局');const city=d.querySelector('path[data-city]');city.dispatchEvent(new MouseEvent('click',{bubbles:true}));if(!d.open)throw Error(kind+'选择失败');d.close();}
+const p=state.domestic.provinces.find(p=>p.countryId===state.domestic.playerCountryId);const before=p.economy.agriculture.developedArea;
+const r=executeIndustry(state,{id:state.domestic.industryActions.nextId,kind:'develop',provinceId:p.id,industry:'agriculture',area:100});const target=r.state.domestic.provinces.find(c=>c.id===p.id);if(target.economy.agriculture.developedArea!==before||target.development.project.requiredTurns!==3)throw Error('开工提前完成');
+const d=openWorksMinister(r.state,document.body,s=>s,()=>{},{kind:'develop',provinceId:p.id});if(!d.querySelector('.wm-project-detail').textContent.includes('0 / 3'))throw Error('进度未展示');d.close();
+for(let turn=state.turn+1;turn<=state.turn+3;turn++){settleIndustry(r.state.domestic,turn);validateIndustry(r.state.domestic);if(turn===state.turn+1&&!target.development.project)throw Error('一旬即完工');}
+if(target.development.project||target.economy.agriculture.developedArea-before<80||target.economy.agriculture.developedArea-before>100)throw Error('随机完工范围错误');
+window.worksPreview=openWorksMinister(state,document.body,s=>s,()=>{},{kind:'develop',provinceId:p.id});return 'PASS: all works maps, selection, 3-turn development, save validation, random bounds';})()`));await new Promise(r=>setTimeout(r,700));fs.writeFileSync('/private/tmp/works-unified-map.png',(await w.webContents.capturePage()).toPNG());app.exit(0);}catch(e){console.error(e);app.exit(1);}});

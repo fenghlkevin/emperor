@@ -3,3 +3,10 @@
 .cb-v3 .cb-inspect.cb-landmark-inspect{pointer-events:auto}.cb-prototype .cb-card.landmark .cb-landmark-meter{font-size:clamp(7px,.64cqw,11px);padding:3px 0}.cb-landmark-inspect [data-landmark-inspect-close]{float:right;font:inherit;font-size:10px;background:transparent;border:0;color:#725737;cursor:pointer}
 
 .cb-landmark-draft>footer{position:sticky;bottom:-24px;z-index:2;background:#1c3027;padding:10px 0}.cb-landmark-draft [data-landmark-status]{color:#f4d694}.cb-landmark-draft>p{color:#ddcfad}
+/* An unaffordable facility follows the same disabled visual state as other hand cards. */
+.cb-prototype .cb-card.hand.unaffordable{filter:grayscale(.8) brightness(.72)!important;box-shadow:0 3px 6px #0007!important}
+.cb-prototype .cb-card.hand.unaffordable:hover{box-shadow:0 3px 6px #0007!important}
+/* Finished battle controls sit above cards, detail regions and transient effects. */
+.cb-prototype .cb-overlay.cb-result{z-index:90;pointer-events:auto}
+.cb-prototype .cb-result [data-settlement-error]{color:#ffd4bd;border:1px solid #ad6e50;padding:8px;background:#4b201be8;font-size:14px}
+.cb-prototype:has(.cb-result) .cb-inspect{display:none!important}

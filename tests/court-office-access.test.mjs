@@ -5,8 +5,8 @@ import {CENTRAL_OFFICES} from '../src/personnel.mjs';
 import {canOfficeNavigate,assertOfficeNavigation,officeReportMarkup} from '../src/court-office-access.mjs';
 import {officeTasks} from '../src/court-play-ui.mjs';
 test('all deputies only expose read-only department report; writable routes reject',()=>{
- for(const office of CENTRAL_OFFICES.filter(o=>o.id.endsWith('-deputy'))){assert.deepEqual(officeTasks(office.id).map(t=>t.action),office.id==='war-deputy'?['register','office-report']:office.id==='personnel-deputy'?['personnel-profiles','office-report']:office.id==='justice-deputy'?['justice-prison','office-report']:['office-report']);assert.equal(canOfficeNavigate(office.id,'office-report'),true);
- for(const action of ['register','atlas-grain','personnel','industry','campaign','tax'])if(office.id==='war-deputy'&&action==='register')assert.doesNotThrow(()=>assertOfficeNavigation(office.id,action));else assert.throws(()=>assertOfficeNavigation(office.id,action),/此职/);}
+ for(const office of CENTRAL_OFFICES.filter(o=>o.id.endsWith('-deputy'))){assert.deepEqual(officeTasks(office.id).map(t=>t.action),office.id==='works-deputy'?['office-report','works-records']:office.id==='war-deputy'?['garrison','register','office-report']:office.id==='justice-deputy'?['justice-prison','office-report']:['office-report']);assert.equal(canOfficeNavigate(office.id,'office-report'),true);
+ for(const action of ['register','atlas-grain','personnel','personnel-profiles','industry','campaign','tax'])if(office.id==='war-deputy'&&action==='register')assert.doesNotThrow(()=>assertOfficeNavigation(office.id,action));else assert.throws(()=>assertOfficeNavigation(office.id,action),/此职/);}
 });
 test('ministers operate own department and prime minister only coordinates summary and petitions',()=>{
  assert.equal(canOfficeNavigate('works-minister','industry'),true);assert.equal(canOfficeNavigate('works-minister','tax'),false);assert.equal(canOfficeNavigate('revenue-minister','tax'),true);assert.equal(canOfficeNavigate('personnel-minister','personnel'),true);
@@ -27,4 +27,4 @@ test('deep atlas and national views preserve department scope and reject cross-d
  assert.doesNotThrow(()=>assertNationalOfficeCommand('works-minister','special'));assert.doesNotThrow(()=>assertNationalOfficeCommand('works-minister','cancel-special'));
  assert.deepEqual(officeSurfaceViews(undefined,'atlas',['grain','build']),['grain','build']);
 });
-test('central general handles training and garrison organization, not military resource administration',()=>{assert.deepEqual(officeTasks('central-general').map(t=>t.action),['register','office-report']);for(const a of ['garrison-purchase','campaign','garrison'])assert.equal(canOfficeNavigate('central-general',a),false);assert.equal(canOfficeNavigate('central-general','register'),true);});
+test('central general handles training and central-local dispatch',()=>{assert.deepEqual(officeTasks('central-general').map(t=>t.action),['garrison-distribute','garrison-collect','general-train','general-ongoing','general-security','office-report']);for(const a of ['garrison-purchase','campaign','garrison'])assert.equal(canOfficeNavigate('central-general',a),false);assert.equal(canOfficeNavigate('central-general','register'),true);});

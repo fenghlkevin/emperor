@@ -13,6 +13,7 @@ export function portraitDataUrl(person){const cameo=tourCameo(person.travelOrigi
  const pool=local.length?local:RANDOM_BEAUTY_ART;
  const asset=saved??pool[(seed>>>0)%pool.length].asset;
  const url=new URL('../'+asset,import.meta.url);
+ if(asset==='assets/beauties/random/女明星/何泓姗-古绡模特.png')url.searchParams.set('v','20261029-hehongshan-v1');
  // Refresh replaced foreign artwork even when a save keeps the original asset path.
  if(asset.startsWith('assets/beauties/random/番邦女子/')){const region=RANDOM_BEAUTY_ART.find(row=>row.asset===asset)?.regionId;url.searchParams.set('v',region==='japan'||region==='korea'?'20261022-legs-feet-v3':'20261021-transparent');}
  return url.href;

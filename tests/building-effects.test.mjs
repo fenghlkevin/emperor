@@ -41,13 +41,13 @@ test('B03 market applies once to commerce and tax, preserves other industries, a
  assert.equal(commerceMultiplier(p,6),1+8/600);assert.equal(commerceMultiplier(p,7),1+10/600);
 });
 
-test('B04 central and delegated recruitment share fitness-based training and do not retrain old troops',()=>{
+test('B04 central recruitment uses fitness-based training; delegated government never recruits or retrains existing troops',()=>{
  let s=fixture();const d=s.domestic,source=d.provinces.find(p=>p.id===d.centralArmy.sourceProvinceId);
  for(const p of d.provinces.filter(p=>p.countryId==='sheng'))p.population.total=Math.ceil(Object.values(p.population.professions).reduce((a,b)=>a+b,0)/LABOR_RATIO);
  source.population.total=Math.ceil((Object.values(source.population.professions).reduce((a,b)=>a+b,0)+100)/LABOR_RATIO);source.welfare.fitness=80;source.buildingEffects.carry.fitness=0;d.centralArmy.soldiers=100;d.centralArmy.training=60;
  assert.equal(newRecruitTraining(source),16);s=executeKitCommand(s,{id:s.domestic.troopKits.nextId,kind:'recruit',sourceId:'central',amount:100}).state;assert.equal(s.domestic.centralArmy.training,38);
  const q=fixture(),p=city(q);p.welfare.fitness=80;for(const k of ['stability','security','loyalty'])p.welfare[k]=70;p.population.professions.soldiers=100;p.military.training=80;q.domestic.personnel.delegations=[p.id];p.construction.project={building:'markets',progress:0,startedTurn:1};
- settlePersonnel(q.domestic,2,()=>.9,q.stats);assert.equal(p.population.professions.soldiers,200);assert.equal(p.military.training,48);
+ settlePersonnel(q.domestic,2,()=>.9,q.stats);assert.equal(p.population.professions.soldiers,100);assert.equal(p.military.training,80);
  const old=p.military.training;p.buildings.trainingGrounds=8;settleBuildingEffects(p,3,true,false);assert.equal(p.military.training,old);
 });
 

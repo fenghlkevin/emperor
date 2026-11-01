@@ -1,9 +1,13 @@
 import {resourceShortage} from './action-feedback.mjs';
-import {initializeTerrainEconomy,validateTerrainEconomy} from './terrain-economy.mjs';
+import {initializeTerrainEconomy,validateTerrainEconomy,terrainLandLimit} from './terrain-economy.mjs';
 // Capacity is persisted once; loading a save must never raise its limits.
 const sectors=['agriculture','pastoral','commerce','industry'];
 const MAX=1e12;
 export const CITY_EXPANSION_PEOPLE=10000,CITY_EXPANSION_COST=5000,CITY_EXPANSION_LAND=5000;
+export const CITY_EXPANSION_TURNS=72;
+export const expansionTurns=r=>r?.requiredTurns??6;
+export const expansionPeople=p=>Math.max(CITY_EXPANSION_PEOPLE,Math.ceil(p.cityCapacity.population*.1));
+export const expansionLand=p=>Math.min(Math.max(CITY_EXPANSION_LAND,Math.ceil(p.cityCapacity.land*.1)),Math.max(0,terrainLandLimit(p)-p.cityCapacity.land));
 export const populationLimit=normal=>Math.floor(normal*1.2);
 export function initializeCityCapacity(d,options={}){
  if(d.capacityRulesVersion!==undefined){if(d.capacityRulesVersion!==1||d.provinces.some(p=>!p.cityCapacity))throw Error('城州容量记录不完整');initializeTerrainEconomy(d,options);return d;}

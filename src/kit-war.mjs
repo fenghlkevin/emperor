@@ -1,3 +1,4 @@
+import {campaignMarch} from './campaign-march.mjs';
 import {difficultyRules} from './difficulty.mjs';
 import {normalizeLandmarkSelection,landmarkSelectionIds,planLandmarkAllocation} from './card-battle-landmarks.mjs';
 import {normalizeSecretSelection,secretSelectionIds,planSecretAllocation} from './card-battle-secrets.mjs';
@@ -76,6 +77,7 @@ export function planKitWeapons(d,home,enemy,selection){
 function weaponSettlement(d,b,sourceId){return worldKitDepot(d,sourceId).reservations[b.command.kitBattleId]?.extraKits?{extraKitLoss:weaponLossForSource(b,sourceId)}:undefined;}
 
 export function beginKitWar(state,c){
+ if(c.march)c={...c,march:campaignMarch(state,quoteKitWar(state,c).details.provinceId)};
  const q=quoteKitWar(state,c),next=structuredClone(state),d=next.domestic;initializeWar(d);
  if(!Number.isSafeInteger(c.id)||c.id!==d.war.nextId)throw Error('军令已执行');
  const support=requestTreatyAid(d,d.playerCountryId,c.targetId,state.turn,`kit-war:${c.id}`),p=d.provinces.find(p=>p.id===q.details.provinceId),enemyCount=kitAvailability(worldKitDepot(d,p.id)).soldiers.available;

@@ -1,4 +1,4 @@
-import {laborProfile} from './labor.mjs';
+import {laborReserve} from './labor.mjs';
 export const INDUSTRY_JOBS=Object.freeze({agriculture:'farmers',pastoral:'herders',commerce:'merchants',industry:'workers'});
 export function effectiveIndustryArea(p,key,turn){
  const a=p.development?.activation;
@@ -22,7 +22,7 @@ export function industryStaffing(p,key,turn){
 export function fillIndustry(p,key,turn){
  if(!p.industryLabor)return 0;
  if(p.localPolicy?.locks?.includes(INDUSTRY_JOBS[key]))return 0;
- const q=industryStaffing(p,key,turn),n=Math.min(q.vacant,laborProfile(p).available);
+ const q=industryStaffing(p,key,turn),n=Math.min(q.vacant,laborReserve(p).hiringAvailable);
  p.population.professions[INDUSTRY_JOBS[key]]+=n;return n;
 }
 export function reassignDevelopedLand(p,key,fromKey,turn){

@@ -1,0 +1,7 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {newGame,validateSave} from '../src/game.mjs';
+import {appointmentSeats,changeAppointment,appointmentAssignments} from '../src/appointment-draft.mjs';
+import {executePersonnel} from '../src/personnel-actions.mjs';
+test('direct selection swaps officers and composes a three-person cycle without changing state',()=>{const s=newGame('整页任官表'),original=appointmentSeats(s.domestic),ids=Object.keys(original).filter(id=>original[id]).slice(0,3),before=structuredClone(s);let seats=changeAppointment(original,ids[0],original[ids[1]]);assert.equal(seats[ids[1]],original[ids[0]]);seats=changeAppointment(seats,ids[1],original[ids[2]]);const assignments=appointmentAssignments(original,seats);assert.equal(assignments.length,3);const next=executePersonnel(s,{kind:'assign-batch',assignments,id:s.domestic.personnel.nextId}).state;assert.deepEqual(appointmentSeats(next.domestic),seats);validateSave(next);assert.deepEqual(s,before);assert.deepEqual(changeAppointment(seats,ids[1],seats[ids[1]]),seats);});
+test('moving to a vacant seat leaves the source vacant and produces a valid minimal command',()=>{const original={a:'one',b:null},next=changeAppointment(original,'b','one');assert.deepEqual(next,{a:null,b:'one'});assert.deepEqual(appointmentAssignments(original,next),[{officeId:'b',officialId:'one'}]);assert.deepEqual(changeAppointment(next,'a','one'),original);assert.throws(()=>changeAppointment(original,'missing','one'));});

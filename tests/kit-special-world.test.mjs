@@ -11,11 +11,11 @@ test('original realms seed their own special kits and field them with actual equ
  const d=newGame('产地军').domestic;
  for(const [kind,origin]of cases){const p=d.provinces.find(p=>p.id===origin+'-core'),stock=d.troopKits.depots[p.id].stock;assert.ok(stock[kind]>0);const units=kitGarrison(d,p.id,p.population.professions.soldiers,{commander:true});assert.ok(units.some(u=>u.kind===kind));assert.ok(units.every(u=>u.equipped!==false));assert.equal(units.reduce((n,u)=>n+u.count,0),p.population.professions.soldiers);}
 });
-test('stable occupation permits local purchase and transport; losing origin stops buying but retains transported gear',()=>{
+test('stable controlled origins unlock central purchases; losing origin retains already purchased gear',()=>{
  for(const [kind,origin,price]of cases){let s=newGame('地域采购');const id=origin+'-core';assert.throws(()=>executeKitCommand(s,command(s,'central','purchase',{quantities:{[kind]:1},originId:origin,stable:true})),/产地/);
- occupyProvince(s.domestic,origin,s.turn,'sheng',id);assert.throws(()=>executeKitCommand(s,command(s,id,'purchase',{quantities:{[kind]:1}})),/产地/);let p=s.domestic.provinces.find(p=>p.id===id);p.status.situation='stable';p.occupation.settled=true;
- const before=s.domestic.troopKits.depots[id].stock[kind],r=executeKitCommand(s,command(s,id,'purchase',{quantities:{[kind]:7}}));assert.equal(r.receipt.cost,price*7);s=r.state;assert.equal(s.domestic.troopKits.depots[id].stock[kind],before+7);
- s=executeKitCommand(s,command(s,id,'transfer',{targetId:'central',amount:0,quantities:{[kind]:7}})).state;assert.equal(s.domestic.troopKits.depots.central.stock[kind],7);occupyProvince(s.domestic,'sheng',s.turn,origin,id);assert.throws(()=>executeKitCommand(s,command(s,id,'purchase',{quantities:{[kind]:1}})));assert.equal(s.domestic.troopKits.depots.central.stock[kind],7);validateSave(s);}
+ occupyProvince(s.domestic,origin,s.turn,'sheng',id);assert.throws(()=>executeKitCommand(s,command(s,'central','purchase',{quantities:{[kind]:1}})),/产地/);let p=s.domestic.provinces.find(p=>p.id===id);p.status.situation='stable';p.occupation.settled=true;
+ const before=s.domestic.troopKits.depots.central.stock[kind],r=executeKitCommand(s,command(s,'central','purchase',{quantities:{[kind]:7}}));assert.equal(r.receipt.cost,price*7);s=r.state;assert.equal(s.domestic.troopKits.depots.central.stock[kind],before+7);
+ occupyProvince(s.domestic,'sheng',s.turn,origin,id);assert.throws(()=>executeKitCommand(s,command(s,'central','purchase',{quantities:{[kind]:1}})));assert.equal(s.domestic.troopKits.depots.central.stock[kind],7);validateSave(s);}
 });
 test('foreign procurement obeys identical stable origin limits and whole-kit prices',()=>{
  for(const [kind,origin,price]of cases){const s=newGame('敌军采购'),d=s.domestic,p=d.provinces.find(p=>p.id===origin+'-core');d.troopKits.depots[p.id].stock[kind]=0;p.status.situation='unrest';buyForeignKits(d,p,1000,s.turn);assert.equal(d.troopKits.depots[p.id].stock[kind],0);p.status.situation='stable';const spent=buyForeignKits(d,p,1000,s.turn+1);assert.equal(spent,d.troopKits.depots[p.id].stock[kind]*price);assert.ok(spent>0);validateSave(s);}

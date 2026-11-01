@@ -1,3 +1,4 @@
+import {setQuantityLimits} from './quantity-controls.mjs';
 import {tacticDefinitions,tacticCopyLimit,normalizeTacticSelection} from './card-battle-tactics.mjs';
 import {cardText} from './card-battle.mjs';
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -19,5 +20,5 @@ export function openTacticDraft(defaultBattle,selection,onApply){
   d.querySelector('[data-tactic-status]').textContent=`已配 ${Number.isFinite(total)?total:'待核'} / ${slots}张`+(error?' · '+error:' · 可应用');
   d.querySelector('[data-tactic-apply]').disabled=!!error;d.querySelector('[data-tactic-mode]').textContent=automatic?'自动配置':'自选计策';
  }
- d.addEventListener('close',()=>d.remove(),{once:true});draw();d.showModal();return d;
+ d.addEventListener('close',()=>d.remove(),{once:true});setQuantityLimits(d,input=>input.matches('[data-tactic-count]')?Math.max(0,Math.min(limit,slots-Object.entries(counts).filter(([id])=>id!==input.dataset.tacticCount).reduce((n,[,v])=>n+(v||0),0))):undefined);draw();d.showModal();return d;
 }

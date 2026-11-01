@@ -500,6 +500,11 @@ export const OFFICIAL_ART={
     "full": "assets/officials/historical/cbdb-33662/full.png",
     "court": "assets/officials/historical/cbdb-33662/court.png"
   },
+  "manual-1556": {
+    "avatar": "assets/officials/historical/manual-1556/avatar.png",
+    "full": "assets/officials/historical/manual-1556/full.png",
+    "court": "assets/officials/historical/manual-1556/court.png"
+  },
   "random-civil-1": {
     "avatar": "assets/officials/random/random-civil-1/avatar.png",
     "full": "assets/officials/random/random-civil-1/full.png",
