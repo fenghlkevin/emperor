@@ -37,6 +37,7 @@ jobs:
             /docs/**/*.json
             /docs/**/*.md
             /docs/**/*.html
+            /docs/art/retired-assets/battle/people/
       - name: Free the ephemeral checkout pack cache
         run: node --input-type=module -e "import fs from 'node:fs';if(process.env.GITHUB_ACTIONS==='true'&&process.env.RUNNER_ENVIRONMENT==='github-hosted'){fs.rmSync('.git/objects/pack',{recursive:true,force:true});fs.mkdirSync('.git/objects/pack',{recursive:true});}"
       - uses: actions/setup-node@v5
@@ -44,6 +45,8 @@ jobs:
           node-version: '22'
           cache: npm
       - run: npm ci
+      - name: Verify archived illustration checksum fixtures
+        run: node --test tests/card-battle-person-art.test.mjs
       - name: Validate saved-state contracts and every unit regression
         run: npm test
   build:
