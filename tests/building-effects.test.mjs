@@ -62,14 +62,14 @@ test('B05 granaries protect only disaster grain losses with downward rounding',(
 
 test('B06 walls preserve the old baseline and activate only after completion, without reload stacking',()=>{
  let s=fixture(),p=city(s);p.buildings.walls=3;p.buildingEffects.baselineWalls=3;
- s=startConstruction(s,p.id,'walls').state;p=city(s);p.construction.project.progress=5;settleConstruction(s.domestic,2);
+ s=startConstruction(s,p.id,'walls').state;p=city(s);p.construction.project.progress=p.construction.project.requiredTurns-1;settleConstruction(s.domestic,2);
  assert.equal(p.buildings.walls,4);assert.equal(p.welfare.defense,30);settleBuildingEffects(p,2,true,false);assert.equal(p.welfare.defense,30);
  s.turn=2;s=save(s);p=city(s);settleBuildingEffects(p,3,true,false);assert.equal(p.welfare.defense,35);s.turn=3;assert.equal(city(save(save(s))).welfare.defense,35);
 });
 
 test('B07 every new building is excluded on its completion turn and included the next turn',()=>{
  for(const [building,metric]of [['temples','stability'],['yamen','security'],['markets','activity'],['trainingGrounds','fitness'],['palaces','loyalty']]){
- let s=fixture();s=startConstruction(s,'hebei',building).state;const p=city(s),initial=welfareValue(p,metric);p.construction.project.progress=({temples:4,yamen:5,markets:3,trainingGrounds:4,palaces:9}[building])-1;
+ let s=fixture();s=startConstruction(s,'hebei',building).state;const p=city(s),initial=welfareValue(p,metric);p.construction.project.progress=p.construction.project.requiredTurns-1;
  settleConstruction(s.domestic,2);settleBuildingEffects(p,2,true,false);assert.equal(welfareValue(p,metric),initial);
  settleBuildingEffects(p,3,true,false);assert.equal(welfareValue(p,metric),initial+(building==='palaces'?.1:.25));assert.equal(p.buildingEffects.last.counts[building],1);
  }

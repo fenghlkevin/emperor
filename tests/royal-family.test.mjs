@@ -9,7 +9,7 @@ test('per-turn risks match cumulative game targets',()=>{
 test('conception, ten month pregnancy, birth, birthday and save roundtrip',t=>{
  t.mock.method(Math,'random',()=>0);let s=newGame('帝'),id=s.harem.members[0].id;
  s=palaceAction(s,'company',{id}).state;assert.ok(s.harem.members[0].pregnancy);
- assert.throws(()=>palaceAction(s,'company',{id}),/怀胎/);
+ assert.throws(()=>palaceAction(s,'company',{id}),/已有身孕/);
  s=validateSave(JSON.parse(JSON.stringify(s)));t.mock.method(Math,'random',()=>.99);
  for(let i=0;i<29;i++)advance(s);assert.equal(s.harem.children.length,0);
  advance(s);assert.equal(s.harem.children.length,1);assert.equal(s.harem.children[0].age,0);assert.equal(s.harem.members[0].pregnancy,undefined);
@@ -20,7 +20,7 @@ test('conception, ten month pregnancy, birth, birthday and save roundtrip',t=>{
 test('no conception on failed roll; palace cannot directly marry children',t=>{
  t.mock.method(Math,'random',()=>.99);let s=newGame('帝');assert.equal(palaceAction(s,'company',{id:s.harem.members[0].id}).state.harem.members[0].pregnancy,undefined);
  s.phase=1;const countryId=s.domestic.countries.find(c=>c.id!==s.domestic.playerCountryId).id;
- for(const gender of ['男','女']){s.harem.children.push({id:gender,name:'皇嗣',gender,age:16,motherId:s.harem.members[0].id,status:'palace'});assert.throws(()=>palaceAction(s,'marry-child',{id:gender,countryId}),/外臣商议/);assert.equal(s.harem.children.at(-1).status,'palace');}
+ for(const gender of ['男','女']){s.harem.children.push({id:gender,name:'皇嗣',gender,age:16,motherId:s.harem.members[0].id,status:'palace'});assert.throws(()=>palaceAction(s,'marry-child',{id:gender,countryId}),/与外臣议妥/);assert.equal(s.harem.children.at(-1).status,'palace');}
  assert.equal(validateSave(JSON.parse(JSON.stringify(s))).harem.children.length,2);
 });
 test('miscarriage is random, ends pregnancy without a birth and permits company',()=>{

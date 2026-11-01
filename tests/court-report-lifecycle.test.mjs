@@ -15,8 +15,8 @@ test('real labor stop and resume report only transitions; completion is emitted 
  let events=s.domestic.courtReports.events.filter(e=>e.title==='河北粮仓停工');assert.equal(events.length,1);
  s=acknowledgeCourtReport(s,all(s).find(a=>a.title==='河北粮仓停工'));advance(s);
  assert.ok(!all(s).some(a=>a.title==='河北粮仓停工'));assert.equal(s.domestic.courtReports.events.filter(e=>e.title==='河北粮仓停工').length,1);
- s.domestic.provinces[0].population.professions.militia=200;advance(s);assert.ok(all(s).some(a=>a.title==='河北粮仓复工'));
- for(let i=0;i<8&&s.domestic.provinces[0].construction.project;i++)advance(s);
+ s.domestic.provinces[0].population.professions.militia=800;advance(s);assert.ok(all(s).some(a=>a.title==='河北粮仓复工'));
+ for(let i=0;i<36&&s.domestic.provinces[0].construction.project;i++)advance(s);
  assert.equal(s.domestic.provinces[0].construction.project,null);
  const done=all(s).filter(a=>a.title==='河北粮仓完成');assert.equal(done.length,1);assert.equal(done[0].kind,'notice');
  s=acknowledgeCourtReport(s,done[0]);s=validateSave(JSON.parse(JSON.stringify(s)));assert.ok(!all(s).some(a=>a.title==='河北粮仓完成'));

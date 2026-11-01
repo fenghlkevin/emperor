@@ -1101,6 +1101,17 @@ const rows={
     "evidence": [
       "https://zh.wikisource.org/wiki/三國志/卷58"
     ]
+  },
+  "manual-1556": {
+    "culture": "central",
+    "status": "regional-evidence-reviewed",
+    "period": "东汉末至蜀汉",
+    "region": "右扶风茂陵",
+    "identityStatus": "historical-roster-addition",
+    "conclusion": "依据本传的籍贯和活动区域，使用宽泛 central 游戏美术池，不作民族与服饰认证。",
+    "evidence": [
+      "https://zh.wikisource.org/wiki/三國志/卷36"
+    ]
   }
 };
 export const PERSON_CULTURE_REVIEWS=Object.freeze(Object.fromEntries(Object.entries(rows).map(([id,row])=>[id,Object.freeze({...row,evidence:Object.freeze(row.evidence)})])));

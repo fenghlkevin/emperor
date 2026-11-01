@@ -1,5 +1,5 @@
 import {provinceGeometry,realmGeometry} from './campaign-map.mjs';
-export const isMarching=s=>Boolean(s.domestic.war?.battle?.command.march&&s.turn<s.domestic.war.battle.command.march.arrivalTurn);
+export const isMarching=s=>Boolean(s.domestic.war?.battle?.command?.march&&s.turn<s.domestic.war.battle.command.march.arrivalTurn);
 export const battleReady=s=>Boolean(s.domestic.war?.battle&&!isMarching(s));
 export function campaignMarch(state,provinceId){
  const d=state.domestic,sourceId=d.centralArmy.sourceProvinceId;

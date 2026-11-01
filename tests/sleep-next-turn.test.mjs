@@ -17,8 +17,8 @@ test('skip each daytime phase into exactly one new turn with bounded recovery an
 test('last phase and unavailable states cannot skip',()=>{
  const s=newGame('安寝');s.phase=5;
  assert.doesNotMatch(emperorPanel(s),/data-sleep-next-turn/);
- assert.throws(()=>sleepUntilNextTurn(s),/最后阶段/);assert.equal(s.turn,1);
+ assert.throws(()=>sleepUntilNextTurn(s),/已到亥时/);assert.equal(s.turn,1);
  s.phase=1;s.stats.energy=0;sleepUntilNextTurn(s);assert.equal(s.stats.energy,200);
  s.stats.energy=1;s.stats.life=0;assert.throws(()=>sleepUntilNextTurn(s),/寿元已尽/);
- s.stats.life=100;s.domestic.war.battle={};assert.throws(()=>sleepUntilNextTurn(s),/战斗/);
+ s.stats.life=100;s.domestic.war.battle={};assert.throws(()=>sleepUntilNextTurn(s),/前线胜负未定/);
 });

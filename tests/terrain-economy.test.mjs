@@ -46,9 +46,9 @@ test('development AND conversion reject a full sector even with shared empty lan
 });
 test('expansion raises sector allowances at fixed ratios, stops at terrain cap and charges 5000 once',()=>{
  const s=newGame('扩城'),p=s.domestic.provinces[0],old=industryLandLimit(p,'agriculture');
- const r=act(s,{kind:'expand'}).state,q=r.domestic.provinces[0];assert.equal(r.stats.treasury,s.stats.treasury-5000);
+ const r=act(s,{kind:'expand'}).state;for(let t=2;t<=73;t++)settleIndustry(r.domestic,t);r.turn=73;const q=r.domestic.provinces[0];assert.equal(r.stats.treasury,s.stats.treasury-5000);
  assert.equal(industryLandLimit(q,'agriculture')-old,Math.floor(q.cityCapacity.land*terrainRule(p).shares[0])-Math.floor(p.cityCapacity.land*terrainRule(p).shares[0]));
- p.cityCapacity.land=terrainLandLimit(p)-123;const end=act(s,{kind:'expand'}).state;assert.equal(end.domestic.provinces[0].cityCapacity.land,terrainLandLimit(p));
+ p.cityCapacity.land=terrainLandLimit(p)-123;const end=act(s,{kind:'expand'}).state;for(let t=2;t<=73;t++)settleIndustry(end.domestic,t);end.turn=73;assert.equal(end.domestic.provinces[0].cityCapacity.land,terrainLandLimit(p));
  assert.throws(()=>act(end,{kind:'expand'}),/地形土地上限/);load(end);
 });
 test('legacy migration retains paid land and pending projects; reload cannot silently enlarge limits',()=>{

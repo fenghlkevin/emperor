@@ -8,8 +8,8 @@ import {CARD_CULTURES} from '../src/card-battle-cultures.mjs';
 test('production culture metadata matches all reviewed IDs with explicit user-selected historical adaptations',()=>{
  const evidence=JSON.parse(readFileSync(new URL('../docs/card-battle-person-cultural-evidence.json',import.meta.url),'utf8'));
  const manifest=personProductionManifest();
- assert.equal(manifest.length,100);
- assert.equal(Object.keys(PERSON_CULTURE_REVIEWS).length,100);
+ assert.equal(manifest.length,101);
+ assert.equal(Object.keys(PERSON_CULTURE_REVIEWS).length,101);
  for(const row of manifest){
   const source=evidence.people.find(p=>p.personId===row.personId);
   assert.equal(row.name,source.name);
@@ -21,7 +21,7 @@ test('production culture metadata matches all reviewed IDs with explicit user-se
   assert.equal(row.presentation.regionalArt,'pending');
   assert.ok(Object.values(row.acceptance).every(v=>!v));
  }
- assert.equal(manifest.filter(p=>p.culture).length,100);
+ assert.equal(manifest.filter(p=>p.culture).length,101);
  assert.equal(manifest.filter(p=>!p.culture).length,0);
 });
 

@@ -9,7 +9,7 @@ import {officeTasks} from '../src/court-play-ui.mjs';
 test('justice deputy is a real central office and legacy saves gain one incumbent exactly once',()=>{
  const s=newGame('刑部侍郎'),d=s.domestic;
  const deputy=courtOccupant(d,'justice-deputy');assert.equal(deputy.office,'刑部侍郎');assert.equal(deputy.provinceId,null);
- assert.equal(courtActorRecords(d).length,14);
+ assert.equal(courtActorRecords(d).length,16);
  d.justice.officials=d.justice.officials.filter(o=>o.id!=='justice-deputy');delete d.justice.justiceDeputyVersion;
  const before=structuredClone(d.justice.officials);initializeJustice(d);initializeJustice(d);
  assert.equal(d.justice.officials.filter(o=>o.id==='justice-deputy').length,1);

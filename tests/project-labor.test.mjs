@@ -6,22 +6,22 @@ import {startConstruction,settleConstruction} from '../src/construction.mjs';
 import {executeIndustry,settleIndustry} from '../src/industry.mjs';
 import {quoteSpecial} from '../src/special-buildings.mjs';
 import {projectLaborOverview,validateProjectLabor} from '../src/project-labor.mjs';
-function game(){const s=newGame('工程');initializeResourceEconomy(s.domestic);s.domestic.provinces[0].population.professions.militia=150;return s;}
+function game(){const s=newGame('工程');initializeResourceEconomy(s.domestic);s.domestic.provinces[0].population.professions.militia=550;return s;}
 function develop(s,area=250){return executeIndustry(s,{id:s.domestic.industryActions.nextId,kind:'develop',provinceId:s.domestic.provinces[0].id,industry:'agriculture',area}).state;}
 test('ordinary works, reclamation and special works reserve one shared militia pool',()=>{
  let s=game(),id=s.domestic.provinces[0].id;s=startConstruction(s,id,'markets').state;
- const before=JSON.stringify(s);assert.throws(()=>develop(s,500),/可用民夫不足/);assert.equal(JSON.stringify(s),before);
+ const before=JSON.stringify(s);assert.throws(()=>develop(s,500),/可用民夫最多支持/);assert.equal(JSON.stringify(s),before);
  s=develop(s);const p=s.domestic.provinces[0],q=projectLaborOverview(s.domestic,p);
- assert.equal(q.reserved,150);assert.equal(q.available,0);s.stats.talent=500;
+ assert.equal(q.reserved,550);assert.equal(q.available,0);s.stats.talent=500;
  assert.throws(()=>quoteSpecial(s,{provinceId:id,building:'shigu'}),/可用民夫不足/);
 });
 test('shortage pauses work, completed projects cannot recycle the same people in the same turn',()=>{
  let s=game();s=startConstruction(s,s.domestic.provinces[0].id,'markets').state;s=develop(s);
  const d=s.domestic,p=d.provinces[0],farmers=p.population.professions.farmers,cash=d.countries[0].fiscal.treasury;
- p.population.professions.militia=100;p.construction.project.progress=2;
+ p.population.professions.militia=500;p.construction.project.progress=p.construction.project.requiredTurns-1;p.development.project.progress=p.development.project.requiredTurns-1;
  settleConstruction(d,2);settleIndustry(d,2);s.turn=2;
- assert.equal(p.construction.project,null);assert.ok(p.development.project);assert.equal(p.development.project.progress,0);
- assert.equal(p.projectLabor.allocations.reduce((n,r)=>n+r.granted,0),100);
+ assert.equal(p.construction.project,null);assert.ok(p.development.project);assert.equal(p.development.project.progress,17);
+ assert.equal(p.projectLabor.allocations.reduce((n,r)=>n+r.granted,0),500);
  assert.equal(p.population.professions.farmers,farmers);assert.equal(d.countries[0].fiscal.treasury,cash);
  validateSave(structuredClone(s));
  settleIndustry(d,3);s.turn=3;assert.equal(p.development.project,null);assert.equal(projectLaborOverview(d,p).reserved,0);validateSave(structuredClone(s));

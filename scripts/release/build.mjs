@@ -51,5 +51,5 @@ for(const name of files){
 }
 writeFileSync(path.join(artifacts,`SHA256SUMS-${process.platform}-${arch}.txt`),sums.join('\n')+'\n');
 const pixelReport=JSON.parse(readFileSync(path.join(work,'asset-verification.json'),'utf8'));
-writeFileSync(path.join(artifacts,`verification-${process.platform}-${arch}.json`),JSON.stringify({...smoke,assetPixelVerification:pixelReport.pixelExact,assetCount:pixelReport.files,convertedImages:pixelReport.converted,sourceAssetBytes:pixelReport.sourceBytes,releaseAssetBytes:pixelReport.outputBytes},null,2));
+writeFileSync(path.join(artifacts,`verification-${process.platform}-${arch}.json`),JSON.stringify({...smoke,sourceRevision:process.env.GITHUB_SHA??option('source-revision')??null,assetPixelVerification:pixelReport.pixelExact,assetCount:pixelReport.files,convertedImages:pixelReport.converted,sourceAssetBytes:pixelReport.sourceBytes,releaseAssetBytes:pixelReport.outputBytes},null,2));
 console.log('Release artifacts verified:',artifacts);

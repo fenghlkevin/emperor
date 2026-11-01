@@ -2,8 +2,9 @@ import {personCultureReview} from './card-battle-person-culture-data.mjs';
 import {battlePersonArt} from './card-battle-person-art.mjs';
 import {CARD_CATALOG} from './card-battle-data.mjs';
 // Presentation only. IDs come from the existing historical catalog; never match a name/portrait.
-export const PERSON_PRESENTATION_VERSION=45;
+export const PERSON_PRESENTATION_VERSION=46;
 export const PERSON_PRESENTATIONS=Object.freeze({
+ 'manual-1556':Object.freeze({id:'manual-1556',theme:'machao-western-charge',motif:'西凉突阵',enterLine:'西凉诸军，随我破阵！',skillLine:'整队突进，直取敌阵！',commandLine:'马超：诸部听令，稳守军阵。',basis:'历史身份沿用《三国志》卷36马超传；突袭为游戏设计，台词为原创，不作为史传原话。'}),
  'cbdb-33662':Object.freeze({"id":"cbdb-33662","theme":"luxun-patient-watch","motif":"持重军亭","enterLine":"审势待机，诸军勿躁。","skillLine":"整军养锐，静候其时。","commandLine":"陆逊：诸军依令，审势而行。","basis":"陆逊历史身份见《三国志》卷58人物本传。持重整军采用原位置既有正式效果，保持费用、攻命、关键词、目标与数值；台词为原创游戏改编，不当作史传原话。"}),
  'original-89':Object.freeze({"id": "original-89", "theme": "muster-docket", "motif": "瓦岗聚众", "enterLine": "瓦岗聚众，审势而进。", "skillLine": "聚众筹兵，再议军策。", "commandLine": "依册调度，诸军守序。", "basis": "依据现有原作筹兵抽1部队及本回合下一计策减1费，不新增兵员设计专属展示；不改正式数值、目标、时限或真实资源，台词为原创。历史身份按用户指定采用已核史料；台词与数值为游戏改编，不是史传原话。"}),
  'cbdb-3332':Object.freeze({"id": "cbdb-3332", "theme": "rally-tablet", "motif": "振作军简", "enterLine": "军务在前，安定人心。", "skillLine": "安顿伤疲，重整军容。", "commandLine": "诸部守序，振作待令。", "basis": "依据现有振作军心主将治疗3，不复活真实兵员设计专属展示；不改正式数值、目标、时限或真实资源，台词为原创。"}),
@@ -106,7 +107,7 @@ export const PERSON_PRESENTATIONS=Object.freeze({
  'cbdb-8175':Object.freeze({id:'cbdb-8175',theme:'infantry-banners',motif:'步伍军旗',enterLine:'列阵听令，步伍齐进。',skillLine:'诸军协力，奋勇向前。',commandLine:'整军肃队，稳住阵脚。',basis:'依现有岳家军令的步兵群体临时攻击设计，以队列军旗表示，不改变兵种或数值。'})
 });
 export const personPresentation=id=>typeof id==='string'?PERSON_PRESENTATIONS[id]??null:null;
-export function personMotifMarkup(id){const p=personPresentation(id);if(!p)return '';const drawings={"xunyu-recommendation":"<path d=\"M20 15h42v68H20zM27 28h27m-27 10h27m-27 10h16M64 30h18v47H64zM69 39h8m-8 9h8M14 89h73\"/><circle cx=\"41\" cy=\"64\" r=\"8\"/>","huangzhong-standard":"<path d=\"M27 88V13h43l-7 23H27M20 88h32M56 76V48l17-9 15 9v28L72 88 56 76zM63 56h18m-9-9v30M19 18l8-9 8 9\"/>","pangtong-three-routes":"<path d=\"M15 83V18h70v65H15zM25 73l21-24 28-23M46 49l27 5m-27-5 4-22M24 32h10M63 73h13\"/><circle cx=\"46\" cy=\"49\" r=\"5\"/>","luxun-patient-watch":"<path d=\"M13 86h75M20 73V33l18-13 18 13v40M27 44h23M38 33v40M64 19v56m0-53h23l-7 17H64M57 80h31M20 80h32\"/>",
+export function personMotifMarkup(id){const p=personPresentation(id);if(!p)return '';const drawings={"machao-western-charge":"<path d=\"M18 82l48-62m-8 0h15v18M22 67l12 10M15 88h70M42 56l18 10 14-5M48 30l-8 13\"/>","xunyu-recommendation":"<path d=\"M20 15h42v68H20zM27 28h27m-27 10h27m-27 10h16M64 30h18v47H64zM69 39h8m-8 9h8M14 89h73\"/><circle cx=\"41\" cy=\"64\" r=\"8\"/>","huangzhong-standard":"<path d=\"M27 88V13h43l-7 23H27M20 88h32M56 76V48l17-9 15 9v28L72 88 56 76zM63 56h18m-9-9v30M19 18l8-9 8 9\"/>","pangtong-three-routes":"<path d=\"M15 83V18h70v65H15zM25 73l21-24 28-23M46 49l27 5m-27-5 4-22M24 32h10M63 73h13\"/><circle cx=\"46\" cy=\"49\" r=\"5\"/>","luxun-patient-watch":"<path d=\"M13 86h75M20 73V33l18-13 18 13v40M27 44h23M38 33v40M64 19v56m0-53h23l-7 17H64M57 80h31M20 80h32\"/>",
  'reorganize-shelter':'<path d="M13 39l37-23 37 23M21 39h58v44H21zM36 83V56h28v27M31 48h38M44 66h12m-6-6v12M12 90h76"/>',
  'muster-docket':'<path d="M16 20h31v63H16zM54 20h30v63H54zM24 32h15m-15 12h15M62 32h14m-14 12h14M33 66h35m-9-9 9 9-9 9M11 89h78"/>',
  'rally-tablet':'<path d="M30 16h40v68H30zM39 28h22m-22 12h22M50 51v23m-10-13 10-10 10 10M16 86h68M17 42h7m52 0h7"/>',

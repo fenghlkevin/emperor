@@ -159,7 +159,7 @@ export function validateIndustry(d,currentTurn=Infinity){
   for(const r of a.history){
     if(!r||!integer(r.id)||r.id<1||r.id>=a.nextId||!integer(r.turn)||r.turn<1||r.turn>currentTurn||r.turn>previous||
       !['develop','convert','expand','levy-militia','release-militia','allocate','complete','plan','stop-plan'].includes(r.kind)||!d.provinces.some(p=>p.id===r.provinceId)||!integer(r.cost)||
-      (['develop','convert'].includes(r.kind)?(r.cost<1||r.cost>Math.ceil(DEVELOPMENT_MAX_AREA*developmentRate(d))||Math.ceil(Math.floor(r.cost/developmentRate(d))*developmentRate(d))!==r.cost):r.kind==='expand'?![2000,CITY_EXPANSION_COST].includes(r.cost):r.cost!==0)||typeof r.message!=='string'||r.message.length>3000||records.has(`${r.kind}:${r.id}`))invalid();
+      (['develop','convert'].includes(r.kind)?(r.cost<1||r.cost>Math.ceil(DEVELOPMENT_MAX_AREA*developmentRate(d))||Math.ceil(Math.round(r.cost/developmentRate(d))*developmentRate(d))!==r.cost):r.kind==='expand'?![2000,CITY_EXPANSION_COST].includes(r.cost):r.cost!==0)||typeof r.message!=='string'||r.message.length>3000||records.has(`${r.kind}:${r.id}`))invalid();
     records.add(`${r.kind}:${r.id}`);previous=r.turn;
   }
   for(const p of d.provinces){

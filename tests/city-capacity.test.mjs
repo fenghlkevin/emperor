@@ -17,13 +17,14 @@ const action=(s,c)=>executeIndustry(s,{id:s.domestic.industryActions.nextId,prov
 const full=p=>{let left=cityLand(p).available;for(const k of ['pastoral','industry','commerce','agriculture']){const n=Math.min(left,industryLandLimit(p,k)-p.economy[k].developedArea);p.economy[k].developedArea+=n;left-=n;}assert.equal(left,0);};
 const packed=p=>{p.population.total=cityPopulation(p).limit;};
 
-test('four industries spend one shared land budget, reserve construction land and never exceed geographic area',()=>{
+test('four industries spend one shared land budget, reserve construction land and never exceed geographic area',t=>{
+ t.mock.method(Math,'random',()=>.999999);
  const s=newGame('土地帝'),p=city(s);p.cityCapacity.land=cityLand(p).used+123;
  for(const industry of Object.keys(p.economy)){
   const q=quoteIndustry(s,{kind:'develop',provinceId:p.id,industry,area:123});assert.equal(q.cost,246);
   assert.throws(()=>action(s,{kind:'develop',industry,area:124}),/剩余土地/);
   const r=action(s,{kind:'develop',industry,area:123}).state;assert.equal(cityLand(city(r)).available,0);assert.equal(cityLand(city(r)).reserved,123);
-  settleIndustry(r.domestic,2);assert.equal(cityLand(city(r)).used,p.cityCapacity.land);assert.equal(cityLand(city(r)).reserved,0);validateCityCapacity(r.domestic);
+  for(let t=2;t<=19;t++)settleIndustry(r.domestic,t);assert.equal(cityLand(city(r)).used,p.cityCapacity.land);assert.equal(cityLand(city(r)).reserved,0);validateCityCapacity(r.domestic);
  }
  const bad=structuredClone(s);city(bad).cityCapacity.land=city(bad).area+1;assert.throws(()=>validateSave(bad),/容量/);
 });
@@ -34,13 +35,13 @@ test('full city can convert land; donor and recipient output switch together on 
  assert(q.outputs.find(x=>x.key==='commerce').after<oldDonor);assert.deepEqual(s,before);
  const r=action(s,{kind:'convert',fromIndustry:'commerce',industry:'agriculture',area}).state;
  assert.deepEqual(city(r).economy,p.economy);assert.equal(cityLand(city(r)).reserved,0);
- settleIndustry(r.domestic,2);const c=city(r);
+ for(let t=2;t<=19;t++)settleIndustry(r.domestic,t);const c=city(r);
  assert.equal(c.economy.commerce.developedArea,p.economy.commerce.developedArea-area);assert.equal(c.economy.agriculture.developedArea,p.economy.agriculture.developedArea+area);
  assert.equal(cityLand(c).used,cityLand(p).used);assert.deepEqual(c.population,p.population);
- assert.equal(outputFor(c,'commerce',2),oldDonor);assert.equal(outputFor(c,'agriculture',2),oldTarget);
- assert(outputFor(c,'commerce',3)<oldDonor);assert.equal(outputFor(c,'agriculture',3),q.outputs.find(x=>x.key==='agriculture').after);
- r.turn=2;assert.deepEqual(validateSave(structuredClone(r)).domestic.provinces[0].development.activation,c.development.activation);
- const saved=JSON.stringify(r);settleIndustry(r.domestic,2);assert.equal(JSON.stringify(r),saved);
+ assert.equal(outputFor(c,'commerce',19),oldDonor);assert.equal(outputFor(c,'agriculture',19),oldTarget);
+ assert(outputFor(c,'commerce',20)<oldDonor);assert.equal(outputFor(c,'agriculture',20),q.outputs.find(x=>x.key==='agriculture').after);
+ r.turn=19;assert.deepEqual(validateSave(structuredClone(r)).domestic.provinces[0].development.activation,c.development.activation);
+ const saved=JSON.stringify(r);settleIndustry(r.domestic,19);assert.equal(JSON.stringify(r),saved);
 });
 
 test('conversion rejects missing, equal, unknown, insufficient and not-yet-active donor land atomically',()=>{

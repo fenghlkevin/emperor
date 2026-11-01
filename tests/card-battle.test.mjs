@@ -54,12 +54,12 @@ test('hero powers, armor, fatigue and hand burn use normal Hearthstone timing',(
  b=blank();p=b.cards.players.home;p.grave.push(...p.deck);p.deck=[];p.reserve=Object.fromEntries(Object.entries(p.reserve).map(([id,n])=>[id,n]));p.gaps=[];actCardsMutable(b,{type:'end'});actCardsMutable(b,{type:'end'});assert.equal(p.hero,29);assert.equal(p.fatigue,1);
 });
 
-test('all 100 current historical identities have complete unique cards and existing art',()=>{
- assert.equal(HISTORICAL_CARDS.length,100);assert.deepEqual([...HISTORICAL_CARDS.map(d=>d.person_id)].sort(),[...ACTIVE_HISTORICAL_PEOPLE.map(d=>d.id)].sort());assert.equal(new Set(HISTORICAL_CARDS.map(d=>d.id)).size,100);
+test('all 101 current historical identities have complete unique cards and existing art',()=>{
+ assert.equal(HISTORICAL_CARDS.length,101);assert.deepEqual([...HISTORICAL_CARDS.map(d=>d.person_id)].sort(),[...ACTIVE_HISTORICAL_PEOPLE.map(d=>d.id)].sort());assert.equal(new Set(HISTORICAL_CARDS.map(d=>d.id)).size,101);
  for(const d of HISTORICAL_CARDS){assert.ok(d.cost>=1&&d.cost<=10);assert.ok(d.skill);for(const file of Object.values(d.art))assert.ok(fs.existsSync(file));const p=createFixedCardPerson({id:'recruit-'+d.person_id,name:d.name,...d.source});assert.equal(p.historicalDefinitionId,d.person_id);assert.equal(p.definitionId,d.id);assert.equal(p.portraitId,d.person_id);}
 });
 
-test('each of the 100 historical cards deploys with its own printed skill and resolves legally',()=>{
+test('each of the 101 historical cards deploys with its own printed skill and resolves legally',()=>{
  for(const d of HISTORICAL_CARDS){const b=fixture(),selected=Object.values(b.cards.catalog).find(x=>x.side==='home'&&x.type==='general'),u=b.units.find(u=>u.id===selected.unitId);u.general={...u.general,id:d.person_id,name:d.name,...d.source};u.cardPersonId=d.person_id;b.cardPeople[d.person_id]=createFixedCardPerson(u.general);attachCards(b,{first:'home'});start(b);const p=b.cards.players.home,id=Object.values(b.cards.catalog).find(x=>x.side==='home'&&x.personId===d.person_id)?.id;assert.ok(id,d.name+' deployment card');for(const z of ['deck','hand','grave'])p[z]=p[z].filter(x=>x!==id);p.hand.push(id);p.mana=p.maxMana=10;const a=place(b,'home'),t=place(b,'enemy');t.hp=Math.max(1,t.maxHp-1);t.lossPeak=1-t.hp/t.maxHp;
  const target=legalCardTargets(b,id)[0];actCardsMutable(b,{type:'play',id,...(target?{target}:{})});assert.ok(p.board.includes(id),d.name);assert.equal(b.cards.catalog[id].definition.skill,d.skill);assert.ok(b.cards.catalog[id].personId===d.person_id);
  }

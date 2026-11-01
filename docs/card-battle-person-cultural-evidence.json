@@ -1,8 +1,8 @@
 {
-  "updated": "2026-10-25",
+  "updated": "2026-11-01",
   "scope": "独立证据登记，不直接改变生产身份、服饰或完整验收标志。",
-  "total": 100,
-  "regionalEvidenceReviewed": 100,
+  "total": 101,
+  "regionalEvidenceReviewed": 101,
   "pendingRegionalEvidence": 0,
   "historicalLinkPending": 0,
   "people": [
@@ -3186,6 +3186,33 @@
         "authorIntentProved": false,
         "originalAuthorIntentProved": false
       }
+    },
+    {
+      "personId": "manual-1556",
+      "name": "马超",
+      "catalogDynasty": "三国",
+      "catalogSource": {
+        "url": "https://zh.wikisource.org/wiki/三國志/卷36",
+        "title": "《三国志》卷36·马超传",
+        "catalogVerified": true,
+        "evidenceStatus": "人物本传已核",
+        "reviewStatus": "reviewed-historical-adaptation"
+      },
+      "identityStatus": "historical-roster-addition",
+      "cultureStatus": "regional-evidence-reviewed",
+      "culture": "central",
+      "evidence": [
+        {
+          "url": "https://zh.wikisource.org/wiki/三國志/卷36",
+          "publisher": "《三国志》卷36数字转录",
+          "accessed": "2026-11-01",
+          "summary": "马超字孟起，右扶风茂陵人，统父亲部曲，与韩遂等在关中作战，后归刘备。",
+          "limitations": "游戏卡牌数值、台词与突袭表现为设计，不作为史实或历史容貌考证。"
+        }
+      ],
+      "period": "东汉末至蜀汉",
+      "region": "右扶风茂陵",
+      "mappingRationale": "依据本传的籍贯和活动区域，使用宽泛 central 游戏美术池，不作民族与服饰认证。"
     }
   ],
   "reviewedIdentityUnresolved": 0,

@@ -1,3 +1,4 @@
+import {staffProject} from './helpers/project-fixture.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {newGame} from '../src/game.mjs';
@@ -29,7 +30,7 @@ for(const [name,run] of [
  ['刑部经费',s=>executeJustice(s,{id:s.domestic.justice.nextId,kind:'funding',amount:1000})],
  ['礼部祭祀',s=>holdRitual(s)],
  ['工部营建',s=>startConstruction(s,'hebei','temples')],
- ['工部特殊工程',s=>{s.stats.talent=1000;return courtSpecialPlan(s,{kind:'special',provinceId:'hebei',building:'shigu'});}],
+ ['工部特殊工程',s=>{s.stats.talent=1000;staffProject(s,'hebei',6000);return courtSpecialPlan(s,{kind:'special',provinceId:'hebei',building:'shigu'});}],
  ['工部扩城',s=>executeIndustry(s,{id:s.domestic.industryActions.nextId,kind:'expand',provinceId:'hebei'})],
  ['共用财政入账',s=>postTreasury(s.domestic,s.domestic.playerCountryId,{turn:s.turn,expense:100,reason:'开科取士',key:'feedback-test'})],
 ])test(name+' reports actual treasury numbers',()=>{money(rejected(()=>run(fixture())));});

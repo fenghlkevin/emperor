@@ -1,9 +1,13 @@
 import {commitOperation} from './operation-result.mjs';
 import {configureProjectRush,quoteProjectRush,findProject,cancelProjectWork} from './project-work-orders.mjs';
+const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 export function projectWorkControls(state,p,kind){
- if(p.resourceRulesVersion!==1||!findProject(state.domestic,p,kind))return '';
+ if(p.resourceRulesVersion!==1)return '';
+ const row=p.projectLabor?.allocations.find(a=>a.kind===kind),project=findProject(state.domestic,p,kind);
+ const report=row?`<p class="project-work-receipt">第${p.projectLabor.turn}旬：${row.speed}倍进度，额外支银${row.expense}两，占用民夫${row.granted}人。${row.officerEffect?`当旬${kind==='development'?'刺史':'工部'}${esc(row.officerEffect.name)}组织施工。`:''}${project?'':'后续民夫占用已释放。'}</p>`:'';
+ if(!project)return report;
  const rush=Boolean(findProject(state.domestic,p,kind).workOrder?.rush);
- return `<section class="project-work-controls"><h3>工程进度</h3><form data-project-work="${kind}" data-project-province="${p.id}"><label><input type="checkbox" name="rush" ${rush?'checked':''}>加急修建</label><p>自动施工至完工；受灾或缺员时暂停，条件恢复后自动继续。加急只增加银两支出。</p><p data-work-preview aria-live="polite"></p><button type="submit">${rush?'改为常规修建':'加急修建'}</button><p data-work-status role="status"></p></form>${kind==='special'?'':`<button type="button" data-cancel-project="${kind}" data-province="${p.id}">停建工程</button><p>已付费用不退，释放后续民夫占用。</p><p data-cancel-status role="status"></p>`}</section>`;
+ return `<section class="project-work-controls"><h3>工程进度</h3>${report}<form data-project-work="${kind}" data-project-province="${p.id}"><label><input type="checkbox" name="rush" ${rush?'checked':''}>加急修建</label><p>自动施工至完工；受灾或缺员时暂停，条件恢复后自动继续。加急只增加银两支出。</p><p data-work-preview aria-live="polite"></p><button type="submit">${rush?'改为常规修建':'加急修建'}</button><p data-work-status role="status"></p></form>${kind==='special'?'':`<button type="button" data-cancel-project="${kind}" data-province="${p.id}">停建工程</button><p>已付费用不退，释放后续民夫占用。</p><p data-cancel-status role="status"></p>`}</section>`;
 }
 export function bindProjectWorkControls(root,state,onCommit,onResult){
  root.querySelectorAll('[data-cancel-project]').forEach(button=>button.onclick=()=>{try{const result=cancelProjectWork(state,button.dataset.province,button.dataset.cancelProject,state.domestic.industryActions.nextId);commitOperation(onCommit,result.state);onResult(result);}catch(error){button.parentElement.querySelector('[data-cancel-status]').textContent=error.message;}});

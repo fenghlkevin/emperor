@@ -13,7 +13,41 @@ concurrency:
   group: desktop-release-${{ inputs.release_tag }}
   cancel-in-progress: false
 jobs:
+  regression:
+    name: Full source regression
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: ${{ github.sha }}
+          fetch-depth: 1
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            /package.json
+            /package-lock.json
+            /desktop*.cjs
+            /preload.cjs
+            /index.html
+            /README.md
+            /src/
+            /assets/
+            /scripts/
+            /tests/
+            /docs/**/*.json
+            /docs/**/*.md
+            /docs/**/*.html
+      - name: Free the ephemeral checkout pack cache
+        run: node --input-type=module -e "import fs from 'node:fs';if(process.env.GITHUB_ACTIONS==='true'&&process.env.RUNNER_ENVIRONMENT==='github-hosted'){fs.rmSync('.git/objects/pack',{recursive:true,force:true});fs.mkdirSync('.git/objects/pack',{recursive:true});}"
+      - uses: actions/setup-node@v5
+        with:
+          node-version: '22'
+          cache: npm
+      - run: npm ci
+      - name: Validate saved-state contracts and every unit regression
+        run: npm test
   build:
+    needs: regression
     permissions:
       contents: write
     strategy:
@@ -56,6 +90,7 @@ jobs:
             /tests/release-assets.test.mjs
             /tests/release-assets-desktop.cjs
             /tests/asset-usage.test.mjs
+            /tests/palace-dashboard-desktop.cjs
       - uses: actions/setup-node@v5
         with:
           node-version: '22'
@@ -74,6 +109,9 @@ jobs:
       - run: node --test tests/release-assets.test.mjs tests/asset-usage.test.mjs
       - name: Verify legacy image URLs in the native Electron runtime
         run: npx electron tests/release-assets-desktop.cjs
+      - name: Verify palace dashboard layouts and real completion notices
+        if: runner.os == 'macOS' && matrix.arch == 'arm64'
+        run: npx electron tests/palace-dashboard-desktop.cjs
       - name: Build independent applications and run packaged smoke test
         run: npm run build:release -- --arch=${{ matrix.arch }}
       - name: Upload verified packages to the draft release

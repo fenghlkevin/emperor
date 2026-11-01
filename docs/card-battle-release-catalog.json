@@ -6142,6 +6142,51 @@
     "服饰与时代、文武身份相符",
     "技能表现采用军令、兵器、阵形或军需，不画无史据法术"
    ]
+  },
+  {
+   "id": "person_manual-1556",
+   "person_id": "manual-1556",
+   "name": "马超",
+   "type": "general",
+   "kind": "source",
+   "cost": 6,
+   "attack": 5,
+   "health": 5,
+   "tags": [
+    "rush"
+   ],
+   "skill": "西凉突阵",
+   "enter": [],
+   "death": [],
+   "source": {
+    "id": "manual-1556",
+    "name": "马超",
+    "role": "武将",
+    "martial": 97,
+    "intelligence": 67,
+    "leadership": 92,
+    "tags": [
+     "勇将"
+    ],
+    "biography": "东汉末、蜀汉将领，参与关中反曹之战，后归刘备，个人威望与武勇较高。",
+    "dynasty": "三国",
+    "source": "https://zh.wikisource.org/wiki/三國志/卷36",
+    "sourceTitle": "《三国志》卷36·马超传",
+    "historicalVerified": true
+   },
+   "historical_definition_id": "manual-1556",
+   "art": {
+    "avatar": "assets/officials/historical/manual-1556/avatar.png",
+    "full": "assets/officials/historical/manual-1556/full.png",
+    "court": "assets/officials/historical/manual-1556/court.png"
+   },
+   "evidence_status": "沿用已核验历史人物资料",
+   "design_basis": "沿用人物登记及立绘；突袭体现骑军冲阵，费用覆盖5/5身材及突袭关键词。",
+   "ui_archetype": "骑军勇将",
+   "cost_basis": "6费支付5攻5命与突袭，不能立即攻击主将。",
+   "ui_requirements": [
+    "使用本人已登记立绘"
+   ]
   }
  ],
  "initial_generals": [

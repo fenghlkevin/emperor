@@ -1,6 +1,6 @@
 // An office, not a person's biography/文武 label, selects its bonus ability.
 export const OFFICE_ABILITY_TYPES={
- 'prime-minister':'civil','personnel-minister':'civil','personnel-deputy':'civil',
+ 'imperial-spy-chief':'civil','imperial-spy-reader':'civil','prime-minister':'civil','personnel-minister':'civil','personnel-deputy':'civil',
  'revenue-minister':'civil','revenue-deputy':'civil','works-minister':'civil','works-deputy':'civil',
  'rites-minister':'civil','rites-deputy':'civil','justice-minister':'civil','justice-deputy':'civil',
  'war-minister':'military','war-deputy':'military','central-general':'military'

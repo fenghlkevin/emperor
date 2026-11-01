@@ -1,3 +1,4 @@
+import {staffProject} from './helpers/project-fixture.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {createPlayableGame,newGame,advance,validateSave} from '../src/game.mjs';
@@ -76,16 +77,17 @@ test('existing facilities no longer automatically maximize civic welfare',()=>{
  assert.ok(q.welfare.security<90);assert.ok(q.welfare.activity<90);assert.ok(q.welfare.fitness<90);reload(s);
 });
 test('city expansion takes shared labor and cannot apply capacity instantly or repeat',()=>{
- let s=game(),p=province(s),land=p.cityCapacity.land,people=p.cityCapacity.population;
+ let s=staffProject(game(),'hebei',5000),p=province(s),land=p.cityCapacity.land,people=p.cityCapacity.population;const expectedLand=Math.max(5000,Math.ceil(land*.1)),expectedPeople=Math.max(10000,Math.ceil(people*.1));
  s=executeIndustry(s,{id:1,kind:'expand',provinceId:p.id}).state;p=province(s);assert.equal(p.cityCapacity.land,land);assert.equal(p.cityCapacity.population,people);
  assert.ok(projectLaborOverview(s.domestic,p).reserved>=200);assert.throws(()=>executeIndustry(s,{id:2,kind:'expand',provinceId:p.id}));
- for(let turn=2;turn<=7;turn++){settleIndustry(s.domestic,turn);s.turn=turn;s=reload(s);}
- assert.equal(province(s).cityCapacity.land,land+5000);assert.equal(province(s).cityCapacity.population,people+10000);assert.equal(province(s).cityCapacity.expansion,undefined);
+ for(let turn=2;turn<=73;turn++){settleIndustry(s.domestic,turn);s.turn=turn;s=reload(s);}
+ assert.equal(province(s).cityCapacity.land,land+expectedLand);assert.equal(province(s).cityCapacity.population,people+expectedPeople);assert.equal(province(s).cityCapacity.expansion,undefined);
 });
-test('a development plan posts only funded batches and obeys its total budget',()=>{
+test('a development plan posts only funded batches and obeys its total budget',t=>{
+ t.mock.method(Math,'random',()=>.999999);
  let s=manual(game()),p=province(s),area=p.economy.commerce.developedArea,cash=home(s).fiscal.treasury;
  s=executeIndustry(s,{id:1,kind:'plan',provinceId:p.id,industry:'commerce',area:2000,budget:1000}).state;assert.equal(home(s).fiscal.treasury,cash);
- for(let turn=2;turn<=6;turn++){settleIndustry(s.domestic,turn);s.turn=turn;reload(s);}
+ for(let turn=2;turn<=22;turn++){settleIndustry(s.domestic,turn);s.turn=turn;reload(s);}
  assert.equal(province(s).economy.commerce.developedArea,area+500);assert.equal(home(s).fiscal.treasury,cash-1000);assert.equal(province(s).development.plan,undefined);
 });
 test('census requires actual job demand and amnesty has a recovery interval',()=>{
@@ -103,8 +105,8 @@ test('central training is paid, once per turn, and recruit dilution is not repla
 });
 test('partial canal benefits persist and activate only after the segment completion turn',()=>{
  let s=game();postTreasury(s.domestic,'sheng',{turn:1,income:30000,reason:'工程边界夹具',key:'fixture:special'});s.stats.talent=500;
- s=executeIndustry(s,{id:1,kind:'levy-militia',provinceId:'guannei',amount:400}).state;s=executeSpecial(s,{id:1,building:'canal',provinceId:'guannei'}).state;
- s.domestic.specialWorks.project.progress=89;settleSpecialWorks(s.domestic,2);s.turn=2;assert.equal(specialFraction(s.domestic,'canal',2),0);assert.equal(specialFraction(s.domestic,'canal',3),1/3);reload(s);
+ s=executeIndustry(s,{id:1,kind:'levy-militia',provinceId:'guannei',amount:20000}).state;s=executeSpecial(s,{id:1,building:'canal',provinceId:'guannei'}).state;
+ s.domestic.specialWorks.project.progress=179;settleSpecialWorks(s.domestic,2);s.turn=2;assert.equal(specialFraction(s.domestic,'canal',2),0);assert.equal(specialFraction(s.domestic,'canal',3),1/3);reload(s);
  assert.ok(province(s,'guannei').specialWorkSegments.canal.count===1);assert.equal(specialDefenseBonus(s.domestic,3),0);
 });
 test('industrial and pastoral investment have distinct procurement and logistics value',()=>{

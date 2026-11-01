@@ -23,7 +23,7 @@ test('three weighted events are unique, stable on reload, and recent events are 
  s.travel.history=[{encounters:a}];assert.notDeepEqual(createTourEncounters(s,s.travel.pending).map(e=>e.type),a.map(e=>e.type));
 });
 test('unhandled events prevent returning; all choices have a no-cash alternative',()=>{
- const s=starting();assert.throws(()=>finishTravel(s),/事件待处理/);
+ const s=starting();assert.throws(()=>finishTravel(s),/尚有事情候您裁决/);
  for(const def of TOUR_EVENTS){const s=fixture(def.id);s.domestic.countries[0].fiscal.treasury=0;s.stats.treasury=0;assert.ok(def.choices.some(c=>!tourChoiceBlock(s,nextTourEvent(s),c)),def.id);}
 });
 test('petition applies finance, local welfare and judicial record without inventing an official conviction',()=>{
@@ -329,7 +329,7 @@ test('Susu arrives pregnant and delivers exactly once next turn, with either gen
   const mother=r.harem.members.find(p=>p.travelOrigin?.easterEgg==='susu');
   assert.deepEqual(mother.pregnancy,{conceivedTurn:r.turn,arrivalDueTurn:r.turn+1});
   assert.ok(portraitDataUrl(mother).endsWith('susu-pregnant-v1.png'));
-  assert.throws(()=>palaceAction(r,'company',{id:mother.id}),/怀胎/);
+  assert.throws(()=>palaceAction(r,'company',{id:mother.id}),/已有身孕/);
   r=validateSave(JSON.parse(JSON.stringify(r)));
   settleRoyalFamily(r,()=>draw);assert.equal(r.harem.children.length,0);
   r.turn++;settleRoyalFamily(r,()=>draw);

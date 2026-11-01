@@ -1,12 +1,13 @@
 {
   "version": "1.0.2",
+  "rebuild": "2026-11-01",
   "tests": 1301,
-  "passed": 1240,
-  "failed": 61,
-  "assetAuditAfterArchive": {
-    "passed": 8,
-    "failed": 0
-  },
+  "passed": 1301,
+  "failed": 0,
+  "cancelled": 0,
+  "skipped": 0,
+  "dataContractSnapshots": 58,
+  "resolvedBaselineFailures": 61,
   "sourceDesktopSmoke": {
     "passed": true,
     "packaged": false,
@@ -24,311 +25,29 @@
     ],
     "errors": []
   },
-  "failures": [
+  "desktopChecks": [
     {
-      "location": "tests/action-feedback.test.mjs:35:3",
-      "test": "工部特殊工程 reports actual treasury numbers (7.7675ms)",
-      "error": "AssertionError [ERR_ASSERTION]: The input did not match the regular expression /国库.*不足/. Input:"
+      "test": "tests/palace-dashboard-desktop.cjs",
+      "passed": true,
+      "checks": [
+        "four viewport layouts",
+        "visible and accessible hotspots",
+        "cancel/advance persistence",
+        "court phase guard",
+        "national report",
+        "ordinary construction creates no task",
+        "real completion notice",
+        "read acknowledgement persists through reload"
+      ]
     },
     {
-      "location": "tests/asset-usage.test.mjs:32:1",
-      "test": "all shipped non-beauty artwork has a runtime consumer, including dynamic paths (182.198833ms)",
-      "error": "AssertionError [ERR_ASSERTION]: unreferenced artwork must not remain in asset subdirectories"
+      "test": "tests/central-military-flow-desktop.cjs",
+      "passed": true
     },
     {
-      "location": "tests/building-effects.test.mjs:63:1",
-      "test": "B06 walls preserve the old baseline and activate only after completion, without reload stacking (10.656292ms)",
-      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:"
-    },
-    {
-      "location": "tests/building-effects.test.mjs:70:1",
-      "test": "B07 every new building is excluded on its completion turn and included the next turn (13.472708ms)",
-      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:"
-    },
-    {
-      "location": "tests/card-battle.test.mjs:57:1",
-      "test": "all 100 current historical identities have complete unique cards and existing art (4.565292ms)",
-      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:"
-    },
-    {
-      "location": "tests/city-capacity.test.mjs:20:1",
-      "test": "four industries spend one shared land budget, reserve construction land and never exceed geographic area (43.275375ms)",
-      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:"
-    },
-    {
-      "location": "tests/city-capacity.test.mjs:31:1",
-      "test": "full city can convert land; donor and recipient output switch together on the next turn without new land or people (25.904958ms)",
-      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:"
-    },
-    {
-      "location": "tests/court-formation.test.mjs:11:1",
-      "test": "court follows the requested four ranks from doorway to throne, with paired departments and mirrored positions (1.139292ms)",
-      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:"
-    },
-    {
-      "location": "tests/court-report-lifecycle.test.mjs:12:1",
-      "test": "real labor stop and resume report only transitions; completion is emitted once and survives loading (335.721166ms)",
-      "error": "AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:"
-    },
-    {
-      "location": "tests/court-special.test.mjs:2:1",
-      "test": "special plan uses actual officer cost, preserves population and cancels without a refund (22.705ms)",
-      "error": "Error: 本州民夫不足：石鼓书院开工需6,000人，现有2,280人，缺3,720人。"
-    },
-    {
-      "location": "tests/court-special.test.mjs:3:1",
-      "test": "work status derives pauses from actual disaster, ownership and workers without advancing progress (6.192042ms)",
-      "error": "Error: 本州民夫不足：石鼓书院开工需6,000人，现有2,280人，缺3,720人。"
-    },
-    {
-      "location": "tests/court-special.test.mjs:4:1",
-      "test": "long projects retain all 540 construction turns and activate only after completion (8.572834ms)",
-      "error": "Error: 本州民夫不足：大运河开工需20,000人，现有2,280人，缺17,720人。"
-    },
-    {
-      "location": "tests/development-balance-v2.test.mjs:78:1",
-      "test": "city expansion takes shared labor and cannot apply capacity instantly or repeat (19.036292ms)",
-      "error": "Error: 本州可用民夫不足：工程开工需4,750人，现有400人，缺4,350人。在建工程占用0人；请先征调或等待完工。"
-    },
-    {
-      "location": "tests/development-balance-v2.test.mjs:85:1",
-      "test": "a development plan posts only funded batches and obeys its total budget (73.31725ms)",
-      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:"
-    },
-    {
-      "location": "tests/development-balance-v2.test.mjs:104:1",
-      "test": "partial canal benefits persist and activate only after the segment completion turn (36.519875ms)",
-      "error": "Error: 本州可用民夫不足：工程开工需19,000人，现有1,092人，缺17,908人。在建工程占用0人；请先征调或等待完工。"
-    },
-    {
-      "location": "tests/difficulty.test.mjs:28:1",
-      "test": "development quote, deduction, active project and automatic plan use same difficulty price (31.909167ms)",
-      "error": "Error: 产业开发或职业调配存档无效"
-    },
-    {
-      "location": "tests/difficulty.test.mjs:30:1",
-      "test": "construction discount and captured duration apply to actual completion (8.552292ms)",
-      "error": "Error: 本州可用民夫不足：工程开工需950人，现有400人，缺550人。在建工程占用0人；请先征调或等待完工。"
-    },
-    {
-      "location": "tests/difficulty.test.mjs:45:1",
-      "test": "special works receive the same leisure building discount and persist their shortened duration (6.359042ms)",
-      "error": "Error: 本州可用民夫不足：工程开工需11,400人，现有878人，缺10,522人。在建工程占用0人；请先征调或等待完工。"
-    },
-    {
-      "location": "tests/featured-beauties.test.mjs:9:1",
-      "test": "hidden old residents survive saves and old pending encounter is archived (18.203292ms)",
-      "error": "AssertionError [ERR_ASSERTION]: The input did not match the regular expression /本期开放/. Input:"
-    },
-    {
-      "location": "tests/foreign-strategy.test.mjs:23:1",
-      "test": "defensive tactical battle persists provenance and applies fortification to the player side (23.170083ms)",
-      "error": "AssertionError [ERR_ASSERTION]: The input did not match the regular expression /结束战斗/. Input:"
-    },
-    {
-      "location": "tests/governor-experience.test.mjs:12:1",
-      "test": "construction rewards only completion, once, to the governor serving at completion (17.831125ms)",
-      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:"
-    },
-    {
-      "location": "tests/governor-experience.test.mjs:13:1",
-      "test": "land development rewards completion, never starting or repeating settlement (12.772792ms)",
-      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:"
-    },
-    {
-      "location": "tests/hanlin.test.mjs:23:1",
-      "test": "historical ceilings are explicit per-person designs: Zhuge Liang martial 50, Lu Bu 100, selected replacements receive individual historical design ceilings (0.765583ms)",
-      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:"
-    },
-    {
-      "location": "tests/japan-request-list-portraits.test.mjs:35:1",
-      "test": "the random portrait directory contains no unused old PNG files (3.247541ms)",
-      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:"
-    },
-    {
-      "location": "tests/justice-deputy.test.mjs:9:1",
-      "test": "justice deputy is a real central office and legacy saves gain one incumbent exactly once (35.472209ms)",
-      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:"
-    },
-    {
-      "location": "tests/longterm-expansion.test.mjs:24:1",
-      "test": "special construction is prepaid once, national unique, has disaster/labour pauses and next-turn activation (32.6395ms)",
-      "error": "Error: 本州民夫不足：大佛寺开工需8,000人，现有1,500人，缺6,500人。"
-    },
-    {
-      "location": "tests/longterm-expansion.test.mjs:25:1",
-      "test": "all twelve special plans expose concrete costs, workers, requirements and effects (20.409834ms)",
-      "error": "AssertionError [ERR_ASSERTION]: The input did not match the regular expression /国库/. Input:"
-    },
-    {
-      "location": "tests/longterm-expansion.test.mjs:28:1",
-      "test": "captured special site pauses unfinished project; existing building benefits follow owner (12.649458ms)",
-      "error": "Error: 本州民夫不足：大运河开工需20,000人，现有1,500人，缺18,500人。"
-    },
-    {
-      "location": "tests/longterm-expansion.test.mjs:41:1",
-      "test": "legacy migration is neutral and malformed records are rejected; failed storage never publishes new projects (7.985042ms)",
-      "error": "Error: 本州民夫不足：御苑开工需8,000人，现有1,500人，缺6,500人。"
-    },
-    {
-      "location": "tests/longterm-expansion.test.mjs:42:1",
-      "test": "216-turn peaceful combined development completes disaster-delayed projects and preserves saves (17.360375ms)",
-      "error": "Error: 本州民夫不足：石鼓书院开工需6,000人，现有1,500人，缺4,500人。"
-    },
-    {
-      "location": "tests/longterm-expansion.test.mjs:52:1",
-      "test": "cancelled special works release the queue without refunds or replay, and failed save stays atomic (15.343916ms)",
-      "error": "Error: 本州民夫不足：大运河开工需20,000人，现有1,500人，缺18,500人。"
-    },
-    {
-      "location": "tests/longterm-expansion.test.mjs:60:1",
-      "test": "a complete fifty-year reign reaches legitimate abdication and the successor continues the same realm (19.964041ms)",
-      "error": "Error: 本州民夫不足：皇陵开工需12,000人，现有1,500人，缺10,500人。"
-    },
-    {
-      "location": "tests/longterm-expansion.test.mjs:62:1",
-      "test": "palace and national marriage routes cannot bypass a diplomatic refusal (11.578875ms)",
-      "error": "AssertionError [ERR_ASSERTION]: The input did not match the regular expression /外臣商议/. Input:"
-    },
-    {
-      "location": "tests/longterm-expansion.test.mjs:66:1",
-      "test": "canal and great wall build three five-year segments and activate only after full completion (15.768958ms)",
-      "error": "Error: 本州民夫不足：大运河开工需20,000人，现有1,500人，缺18,500人。"
-    },
-    {
-      "location": "tests/office-ability.test.mjs:12:1",
-      "test": "all thirteen central and both local offices have a canonical civil or military ability independent of personal 文武 label (0.710208ms)",
-      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:"
-    },
-    {
-      "location": "tests/official-art.test.mjs:11:1",
-      "test": "fourteen separate slots have seven left and seven right, and dismissed posts are empty (6.809417ms)",
-      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:"
-    },
-    {
-      "location": "tests/official-work.test.mjs:3:1",
-      "test": "high works ability and rush share cap; redundant 2x investment is normalized to cheaper 1.5x staffing (29.553709ms)",
-      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:"
-    },
-    {
-      "location": "tests/official-work.test.mjs:4:1",
-      "test": "normal work gets bounded organization gain without rush fee or morale charge; attribution survives reassignment (19.090875ms)",
-      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:"
-    },
-    {
-      "location": "tests/official-work.test.mjs:6:1",
-      "test": "land development uses only the serving local governor; vacancy has no bonus (13.60525ms)",
-      "error": "AssertionError [ERR_ASSERTION]: The input did not match the regular expression /刺史开垦刺史/. Input:"
-    },
-    {
-      "location": "tests/operation-result.test.mjs:4:1",
-      "test": "persisted candidate is published once; explicit rejection and storage errors propagate before UI completion (0.710083ms)",
-      "error": "AssertionError [ERR_ASSERTION]: The input did not match the regular expression /未保存/. Input:"
-    },
-    {
-      "location": "tests/phases.test.mjs:5:1",
-      "test": "early court and all six phases advance only on leaving rooms (34.85ms)",
-      "error": "AssertionError [ERR_ASSERTION]: The input did not match the regular expression /早朝/. Input:"
-    },
-    {
-      "location": "tests/phases.test.mjs:7:1",
-      "test": "night only permits sleep or companionship; exhaustion settles once (8.312333ms)",
-      "error": "AssertionError [ERR_ASSERTION]: The input did not match the regular expression /亥时/. Input:"
-    },
-    {
-      "location": "tests/project-labor.test.mjs:11:1",
-      "test": "ordinary works, reclamation and special works reserve one shared militia pool (32.637666ms)",
-      "error": "Error: 本州可用民夫不足：工程开工需500人，现有150人，缺350人。在建工程占用0人；请先征调或等待完工。"
-    },
-    {
-      "location": "tests/project-labor.test.mjs:18:1",
-      "test": "shortage pauses work, completed projects cannot recycle the same people in the same turn (12.463375ms)",
-      "error": "Error: 本州可用民夫不足：工程开工需500人，现有150人，缺350人。在建工程占用0人；请先征调或等待完工。"
-    },
-    {
-      "location": "tests/project-labor.test.mjs:29:1",
-      "test": "labor records reject duplicated allocations, over-allocation and falsified capacity arithmetic (40.482125ms)",
-      "error": "Error: 本州可用民夫不足：工程开工需500人，现有150人，缺350人。在建工程占用0人；请先征调或等待完工。"
-    },
-    {
-      "location": "tests/project-work-orders.test.mjs:9:1",
-      "test": "rush spends extra money and people, caps speed at two and leaves farmers intact (46.358917ms)",
-      "error": "Error: 本州可用民夫不足：工程开工需3,000人，现有1,500人，缺1,500人。在建工程占用0人；请先征调或等待完工。"
-    },
-    {
-      "location": "tests/project-work-orders.test.mjs:15:1",
-      "test": "money shortage falls back without partial charges; food and low morale block acceleration (16.930292ms)",
-      "error": "Error: 本州可用民夫不足：工程开工需3,000人，现有1,500人，缺1,500人。在建工程占用0人；请先征调或等待完工。"
-    },
-    {
-      "location": "tests/project-work-orders.test.mjs:21:1",
-      "test": "authorization expires, pressure eases without instant morale refund, absent staff cannot progress (9.935208ms)",
-      "error": "Error: 本州可用民夫不足：工程开工需3,000人，现有1,500人，缺1,500人。在建工程占用0人；请先征调或等待完工。"
-    },
-    {
-      "location": "tests/project-work-orders.test.mjs:26:1",
-      "test": "paid comfort mitigates without removing pressure, and is charged only with actual acceleration (12.274708ms)",
-      "error": "Error: 本州可用民夫不足：工程开工需3,000人，现有1,500人，缺1,500人。在建工程占用0人；请先征调或等待完工。"
-    },
-    {
-      "location": "tests/project-work-orders.test.mjs:35:1",
-      "test": "same-province projects aggregate pressure and sustained acceleration increases the loss (9.077875ms)",
-      "error": "Error: 本州可用民夫不足：工程开工需3,000人，现有1,500人，缺1,500人。在建工程占用0人；请先征调或等待完工。"
-    },
-    {
-      "location": "tests/project-work-orders.test.mjs:48:1",
-      "test": "cancellation releases future commitments without refund and rejects replay (9.461ms)",
-      "error": "Error: 本州可用民夫不足：工程开工需3,000人，现有1,500人，缺1,500人。在建工程占用0人；请先征调或等待完工。"
-    },
-    {
-      "location": "tests/project-work-orders.test.mjs:56:1",
-      "test": "tampered rush speed, workforce or fee cannot load (14.288542ms)",
-      "error": "Error: 本州可用民夫不足：工程开工需3,000人，现有1,500人，缺1,500人。在建工程占用0人；请先征调或等待完工。"
-    },
-    {
-      "location": "tests/project-work-orders.test.mjs:60:1",
-      "test": "rush completes remaining two units through full advance and persistence without losing actual report (14.352083ms)",
-      "error": "Error: 本州可用民夫不足：工程开工需3,000人，现有1,500人，缺1,500人。在建工程占用0人；请先征调或等待完工。"
-    },
-    {
-      "location": "tests/project-work-ui.test.mjs:8:1",
-      "test": "work preview is read-only, exposes actual extra fees and bounded term (38.895042ms)",
-      "error": "Error: 本州可用民夫不足：工程开工需3,000人，现有1,500人，缺1,500人。在建工程占用0人；请先征调或等待完工。"
-    },
-    {
-      "location": "tests/royal-family.test.mjs:9:1",
-      "test": "conception, ten month pregnancy, birth, birthday and save roundtrip (26.138917ms)",
-      "error": "AssertionError [ERR_ASSERTION]: The input did not match the regular expression /怀胎/. Input:"
-    },
-    {
-      "location": "tests/royal-family.test.mjs:20:1",
-      "test": "no conception on failed roll; palace cannot directly marry children (15.100542ms)",
-      "error": "AssertionError [ERR_ASSERTION]: The input did not match the regular expression /外臣商议/. Input:"
-    },
-    {
-      "location": "tests/sleep-next-turn.test.mjs:17:1",
-      "test": "last phase and unavailable states cannot skip (12.163583ms)",
-      "error": "AssertionError [ERR_ASSERTION]: The input was expected to not match the regular expression /data-sleep-next-turn/. Input:"
-    },
-    {
-      "location": "tests/special-local-boundary.test.mjs:4:1",
-      "test": "special imperial order rechecks changed food and reserve at execution; failed approval changes nothing (31.958459ms)",
-      "error": "Error: 本州可用民夫不足：工程开工需6,000人，现有1,500人，缺4,500人。在建工程占用0人；请先征调或等待完工。"
-    },
-    {
-      "location": "tests/terrain-economy.test.mjs:47:1",
-      "test": "expansion raises sector allowances at fixed ratios, stops at terrain cap and charges 5000 once (17.306584ms)",
-      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:"
-    },
-    {
-      "location": "tests/tour-events.test.mjs:25:1",
-      "test": "unhandled events prevent returning; all choices have a no-cash alternative (16.140708ms)",
-      "error": "AssertionError [ERR_ASSERTION]: The input did not match the regular expression /事件待处理/. Input:"
-    },
-    {
-      "location": "tests/tour-events.test.mjs:325:1",
-      "test": "Susu arrives pregnant and delivers exactly once next turn, with either gender and persisted portraits (23.047208ms)",
-      "error": "AssertionError [ERR_ASSERTION]: The input did not match the regular expression /怀胎/. Input:"
+      "test": "tests/works-simple-desktop.cjs",
+      "passed": true
     }
-  ]
+  ],
+  "failures": []
 }
